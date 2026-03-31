@@ -1,0 +1,616 @@
+GROUP: Adultos
+  - Botas de fútbol → /es/botas-de-futbol HAS CHILDREN
+    customLinks: [Botas fútbol → /es/botas-de-futbol, Botas fútbol mujer → /es/botas-futbol-mujer]
+    sizeLinks: [← Niño → /es/kids/zapatillas-futbol-infantil, Hombre → → /es/botas-de-futbol, 38 EU → /es/botas-de-futbol/38, 39 EU → /es/botas-de-futbol/39, 40 EU → /es/botas-de-futbol/40, 41 EU → /es/botas-de-futbol/41, 42 EU → /es/botas-de-futbol/42, 43 EU → /es/botas-de-futbol/43, 44 EU → /es/botas-de-futbol/44, 45 EU → /es/botas-de-futbol/45, 46 EU → /es/botas-de-futbol/46, 47 EU → /es/botas-de-futbol/47, 48 EU → /es/botas-de-futbol/48]
+    bottomLinks: [Fútbol 11 → /es/botas-de-futbol, Fútbol 7 → /es/adulto/miscelanea/botas-futbol-7, Accesorios → /es/adulto/complementos/calzado]
+    - Botas de fútbol adidas → /es/botas-futbol-adidas HAS CHILDREN
+      - adidas Predator → /es/botas-futbol-adidas-Predator NO CHILDREN
+      - adidas X → /es/botas-futbol-adidas-X NO CHILDREN
+      - adidas F50 → /es/botas-futbol-adidas-F50 NO CHILDREN
+      - adidas COPA → /es/botas-futbol-adidas-COPA NO CHILDREN
+    - Botas de fútbol Puma → /es/botas-futbol-Puma HAS CHILDREN
+      - Puma Future → /es/botas-futbol-Puma-Future NO CHILDREN
+      - Puma Ultra → /es/botas-futbol-puma-ultra NO CHILDREN
+      - Puma King → /es/botas-futbol-puma-king NO CHILDREN
+    - Botas de fútbol New Balance → /es/botas-futbol-New-Balance HAS CHILDREN
+      - New Balance 442 → /es/botas-futbol-NB-442 NO CHILDREN
+      - New Balance Furon → /es/botas-futbol-NB-Furon NO CHILDREN
+      - New Balance Tekela → /es/botas-futbol-NB-Tekela NO CHILDREN
+    - Botas de fútbol Mizuno → /es/botas-futbol-Mizuno NO CHILDREN
+    - Botas de fútbol Joma → /es/botas-futbol-Joma NO CHILDREN
+    - Botas de fútbol Kelme → /es/botas-futbol-Kelme NO CHILDREN
+    - Botas de fútbol Nike → /es/botas-futbol-Nike HAS CHILDREN
+      - Nike Mercurial → /es/botas-futbol-Nike-Mercurial HAS CHILDREN
+        - Nike Mercurial Superfly → /es/Superfly-Nike-botas-futbol NO CHILDREN
+        - Nike Mercurial Vapor → /es/Vapor-Nike-botas-futbol NO CHILDREN
+      - Nike Phantom → /es/botas-nike-phantom HAS CHILDREN
+        - Nike Phantom GT → /es/nike-phantom-gt NO CHILDREN
+        - Nike Phantom GT DF → /es/nike-phantom-gt-df NO CHILDREN
+        - Nike Phantom GX → /es/botas-nike-phantom-gx NO CHILDREN
+        - Nike Phantom Luna → /es/nike-phantom-luna NO CHILDREN
+      - Nike Tiempo → /es/botas-futbol-Nike-Tiempo HAS CHILDREN
+        - Nike Tiempo Legend → /es/Legend-Nike-botas-futbol NO CHILDREN
+      - Nike Premier III → /es/nike-premier-3 NO CHILDREN
+    - Botas de fútbol Lotto → /es/botas-futbol-Lotto NO CHILDREN
+    - Botas de fútbol Munich → /es/botas-futbol-Munich NO CHILDREN
+    - Botas de fútbol Diadora → /es/botas-futbol-Diadora NO CHILDREN
+    - Botas de fútbol clásicas → /es/botas-futbol-clasicas HAS CHILDREN
+      - adidas Copa Mundial → /es/botas-futbol-adidas-Copa-Mundial NO CHILDREN
+      - adidas Kaiser → /es/botas-futbol-adidas-Kaiser-5 NO CHILDREN
+      - adidas World Cup → /es/botas-futbol-adidas-World-Cup NO CHILDREN
+      - Diadora Brasil → /es/botas-diadora-brasil NO CHILDREN
+      - Joma Águila → /es/botas-joma-aguila NO CHILDREN
+      - Lotto Stadio → /es/botas-lotto-stadio NO CHILDREN
+      - Mizuno Morelia → /es/botas-mizuno-morelia NO CHILDREN
+      - Munich Mundial → /es/botas-munich-mundial NO CHILDREN
+      - Nike Premier → /es/botas-futbol-Nike-Premier NO CHILDREN
+      - Puma King → /es/botas-futbol-Puma-King-clasicas NO CHILDREN
+    - Botas de tacos → (no link) HAS CHILDREN
+      - Botas de fútbol tacos aluminio → /es/botas-futbol-SG NO CHILDREN
+      - Botas de fútbol AG → /es/botas-futbol-AG NO CHILDREN
+      - Botas de fútbol FG → /es/botas-futbol-FG NO CHILDREN
+      - Botas de fútbol tacos goma → /es/adulto/botas-de-futbol/suela/botas-tacos-goma NO CHILDREN
+    - Superficie → (no link) HAS CHILDREN
+      - Botas de fútbol césped natural → /es/botas-futbol-hierba-natural NO CHILDREN
+      - Botas de fútbol césped artificial → /es/botas-futbol-cesped-sintetico NO CHILDREN
+      - Botas de fútbol para tierra → /es/botas-futbol-terreno-duro NO CHILDREN
+    - Gama → (no link) HAS CHILDREN
+      - Botas de fútbol gama alta → /es/botas-futbol-profesionales NO CHILDREN
+      - Botas de fútbol gama media → /es/botas-futbol-gama-media NO CHILDREN
+      - Botas de fútbol gama básica → /es/botas-futbol-economicas NO CHILDREN
+    - Parte superior → (no link) HAS CHILDREN
+      - Botas de fútbol de piel → /es/botas-futbol-piel NO CHILDREN
+      - Botas de fútbol con tobillera → /es/botas-futbol-con-calcetin NO CHILDREN
+      - Botas de fútbol sin cordones → /es/botas-futbol-sin-cordones NO CHILDREN
+      - Botas de fútbol de piel de canguro → /es/botas-futbol-piel-canguro NO CHILDREN
+    - Botas de jugadores → /es/botas-futbol-jugadores HAS CHILDREN
+      - Botas CR7 → /es/botas-de-cristiano-ronaldo NO CHILDREN
+      - Botas de Messi → /es/botas-messi NO CHILDREN
+      - Botas de Bellingham → /es/botas-bellingham NO CHILDREN
+      - Botas de Neymar → /es/botas-neymar NO CHILDREN
+      - Botas de Lamine Yamal → /es/botas-lamine-yamal NO CHILDREN
+    - Botas de fútbol negras → /es/adulto/botas-de-futbol/botas-negras NO CHILDREN
+  - Botas multitaco → /es/botas-multitaco HAS CHILDREN
+    customLinks: [Botas multitacos → /es/botas-multitaco]
+    sizeLinks: [← Niño → /es/kids/botas-multitaco-infantil, Hombre → → /es/botas-multitaco, 38 EU → /es/botas-multitaco/38, 39 EU → /es/botas-multitaco/39, 40 EU → /es/botas-multitaco/40, 41 EU → /es/botas-multitaco/41, 42 EU → /es/botas-multitaco/42, 43 EU → /es/botas-multitaco/43, 44 EU → /es/botas-multitaco/44, 45 EU → /es/botas-multitaco/45, 46 EU → /es/botas-multitaco/46, 47 EU → /es/botas-multitaco/47, 48 EU → /es/botas-multitaco/48]
+    bottomLinks: [Fútbol 11 → /es/botas-de-futbol, Fútbol 7 → /es/adulto/miscelanea/botas-futbol-7, Zapatilleros → /es/zapatillero-futbol, Limpieza botas → /es/adulto/complementos/calzado/cuidado-botas, Cordones → /es/adulto/complementos/calzado/cordones]
+    - Multitacos adidas → /es/botas-multitaco-adidas HAS CHILDREN
+      - adidas Predator turf → /es/botas-multitaco-adidas-Predator NO CHILDREN
+      - adidas F50 turf → /es/botas-multitaco-adidas-F50 NO CHILDREN
+      - adidas X turf → /es/botas-multitaco-adidas-X NO CHILDREN
+      - adidas COPA turf → /es/adidas-COPA-multitaco NO CHILDREN
+      - adidas Mundial Team turf → /es/botas-multitaco-adidas-Mundial-Team NO CHILDREN
+      - adidas Kaiser multitaco → /es/botas-multitaco-adidas-Kaiser-5 NO CHILDREN
+    - Multitacos New Balance → /es/botas-multitaco-New-Balance NO CHILDREN
+    - Nike multitaco → /es/botas-multitaco-Nike HAS CHILDREN
+      - Nike Mercurial multitaco → /es/botas-multitaco-Nike-MercurialX NO CHILDREN
+      - Nike Phantom multitaco → /es/botas-multitaco-nike-phantom NO CHILDREN
+      - Nike Tiempo multitaco → /es/botas-multitaco-Nike-TiempoX NO CHILDREN
+    - Munich multitacos → /es/botas-multitaco-Munich NO CHILDREN
+    - Joma multitaco → /es/botas-multitaco-Joma NO CHILDREN
+    - Puma multitaco → /es/botas-multitaco-Puma NO CHILDREN
+    - Gama → (no link) HAS CHILDREN
+      - Botas multitaco gama alta → /es/botas-multitaco-profesionales NO CHILDREN
+      - Botas multitaco gama media → /es/botas-multitaco-gama-media NO CHILDREN
+      - Botas multitaco gama básica → /es/botas-multitaco-economicos NO CHILDREN
+    - Parte superior → (no link) HAS CHILDREN
+      - Botas multitaco con tobillera → /es/botas-multitaco-tobilleras NO CHILDREN
+      - Botas multitaco de piel → /es/botas-multitaco-piel NO CHILDREN
+    - Multitaco de jugadores → /es/botas-multitaco-jugadores HAS CHILDREN
+      - Botas multitaco Neymar → /es/multitacos-neymar NO CHILDREN
+    - Últimas colecciones → /es/nuevas-botas-multitaco NO CHILDREN
+  - Zapatillas fútbol sala → /es/zapatillas-de-futbol-sala HAS CHILDREN
+    customLinks: [Zapatillas de fútbol sala → /es/zapatillas-de-futbol-sala]
+    sizeLinks: [← Niño → /es/kids/zapatillas-futbol-sala-infantil, Hombre → → /es/zapatillas-de-futbol-sala, 38 EU → /es/zapatillas-de-futbol-sala/38, 39 EU → /es/zapatillas-de-futbol-sala/39, 40 EU → /es/zapatillas-de-futbol-sala/40, 41 EU → /es/zapatillas-de-futbol-sala/41, 42 EU → /es/zapatillas-de-futbol-sala/42, 43 EU → /es/zapatillas-de-futbol-sala/43, 44 EU → /es/zapatillas-de-futbol-sala/44, 45 EU → /es/zapatillas-de-futbol-sala/45, 46 EU → /es/zapatillas-de-futbol-sala/46, 47 EU → /es/zapatillas-de-futbol-sala/47, 48 EU → /es/zapatillas-de-futbol-sala/48]
+    bottomLinks: [Balones futsal → /es/balon-futbol-sala, Zapatillas calle → /es/zapatillas-deportivas, Complementos → /es/adulto/complementos/calzado, Zapatilleros → /es/zapatillero-futbol, Limpieza zapatillas → /es/adulto/complementos/calzado/cuidado-botas, Cordones → /es/adulto/complementos/calzado/cordones]
+    - Zapatillas fútbol sala Nike → /es/zapatillas-de-futbol-sala-nike HAS CHILDREN
+      - Nike Mercurial fútbol sala → /es/mercurial-futbol-sala NO CHILDREN
+      - Nike Phantom fútbol sala → /es/nike-phantom-futbol-sala HAS CHILDREN
+        - Nike Phantom GT fútbol sala → /es/nike-phantom-gt-futbol-sala NO CHILDREN
+      - Nike Gato → /es/nike-gato HAS CHILDREN
+        - Nike Lunar Gato → /es/nike-lunar-gato NO CHILDREN
+      - Nike Tiempo fútbol sala → /es/nike-tiempo-futsal NO CHILDREN
+    - Mizuno fútbol sala → /es/mizuno-futbol-sala NO CHILDREN
+    - Zapatillas fútbol sala New Balance → /es/zapatillas-futbol-sala-New-Balance NO CHILDREN
+    - Zapatillas fútbol sala adidas → /es/zapatillas-de-futbol-sala-adidas HAS CHILDREN
+      - adidas Predator fútbol sala → /es/zapatillas-futbol-sala-adidas-Predator NO CHILDREN
+      - Zapatillas fútbol sala Messi → /es/adidas-messi-futbol-sala NO CHILDREN
+      - adidas X fútbol sala → /es/adidas-x-futsal NO CHILDREN
+      - adidas COPA fútbol sala → /es/adidas-COPA-sala NO CHILDREN
+      - adidas F50 fútbol sala → /es/adidas-F50-sala NO CHILDREN
+      - adidas Top Sala → /es/top-sala NO CHILDREN
+      - adidas Samba fútbol sala → /es/adidas-samba-futbol-sala NO CHILDREN
+      - adidas Mundial Goal → /es/adidas-mundial-goal NO CHILDREN
+      - adidas Kaiser 5 Goal → /es/adidas-kaiser-5-goal NO CHILDREN
+    - Zapatillas fútbol sala Lotto → /es/zapatillas-futbol-sala-Lotto NO CHILDREN
+    - Zapatillas fútbol sala Puma → /es/zapatillas-futbol-sala-Puma NO CHILDREN
+    - Zapatillas Munich fútbol sala → /es/zapatillas-de-futbol-sala-munich HAS CHILDREN
+      - Munich Continental → /es/munich-futbol-sala-continental NO CHILDREN
+      - Munich Gresca → /es/zapatillas-munich-gresca NO CHILDREN
+      - Munich G3 → /es/zapatillas-munich-g3 NO CHILDREN
+      - Munich Tiga → /es/zapatillas-munich-tiga NO CHILDREN
+      - Munich Prisma → /es/zapatillas-munich-prisma NO CHILDREN
+      - Munich One → /es/zapatillas-munich-one NO CHILDREN
+    - Zapatillas Joma fútbol sala → /es/zapatillas-de-futbol-sala-joma HAS CHILDREN
+      - Joma Dribling → /es/joma-dribling NO CHILDREN
+      - Joma Liga 5 → /es/joma-liga-5 NO CHILDREN
+      - Joma Top Flex → /es/joma-top-flex NO CHILDREN
+      - Joma Mundial → /es/joma-mundial-futbol-sala NO CHILDREN
+      - Joma Táctico → /es/adulto/zapatillas-futbol-sala/joma/joma-tactico NO CHILDREN
+      - Joma FS Reactive → /es/adulto/zapatillas-futbol-sala/joma/joma-fs-reactive NO CHILDREN
+    - Kelme fútbol sala → /es/kelme-futsal HAS CHILDREN
+      - Kelme Precision → /es/zapatillas-futbol-sala-Kelme-Precision NO CHILDREN
+      - Kelme Indoor Copa → /es/kelme-indoor-copa NO CHILDREN
+    - Gama → (no link) HAS CHILDREN
+      - Zapatillas fútbol sala gama alta → /es/zapatillas-futbol-sala-profesionales NO CHILDREN
+      - Zapatillas fútbol sala gama media → /es/zapatillas-futbol-sala-gama-media NO CHILDREN
+    - Parte superior → (no link) HAS CHILDREN
+      - Zapatillas fútbol sala con tobillera → /es/zapatillas-de-futbol-sala-con-tobillera NO CHILDREN
+      - Zapatillas fútbol sala piel → /es/zapatillas-futbol-sala-piel NO CHILDREN
+    - Nuevas zapatillas fútbol sala → /es/nuevas-botas-de-futbol-sala NO CHILDREN
+    - Zapatillas jugadores → /es/zapatillas-futbol-sala-jugadores NO CHILDREN
+  - Espinilleras fútbol → /es/espinilleras-futbol HAS CHILDREN
+    customLinks: [Espinilleras → /es/espinilleras-futbol, Espinilleras niño → /es/kids/espinilleras-futbol]
+    bottomLinks: [Sujeta espinilleras → /es/sujeta-espinilleras, Fundas espinilleras → /es/adulto/complementos/fundas-espinilleras, Guard stay → /es/adulto/complementos/guarda-espinilleras, Tape espinilleras → /es/adulto/complementos/sujeciones/esparadrapo-color/tape-espinilleras]
+    - Espinilleras adidas → /es/espinilleras-futbol-adidas HAS CHILDREN
+      - X → /es/adulto/espinilleras/marcas/adidas/x NO CHILDREN
+      - Predator → /es/espinilleras-predator NO CHILDREN
+    - Espinilleras G-Form → /es/espinilleras-G-Form NO CHILDREN
+    - Espinilleras New Balance → /es/espinilleras-New-Balance NO CHILDREN
+    - Espinilleras Nike → /es/espinilleras-futbol-Nike HAS CHILDREN
+      - Mercurial → /es/espinilleras-Nike-Mercurial NO CHILDREN
+      - Protegga → /es/adulto/espinilleras/marcas/nike/protegga NO CHILDREN
+      - Charge → /es/adulto/espinilleras/marcas/nike/charge NO CHILDREN
+    - Espinilleras Puma → /es/espinilleras-Puma-futbol NO CHILDREN
+    - Tipo sujección → (no link) HAS CHILDREN
+      - Espinilleras con malla → /es/espinilleras-con-malla NO CHILDREN
+      - Espinilleras con tobillera → /es/espinilleras-con-tobillera NO CHILDREN
+      - Espinilleras sin tobillera → /es/adulto/espinilleras/tipo/sin-tobillera NO CHILDREN
+    - Gama → (no link) HAS CHILDREN
+      - Espinilleras profesionales → /es/espinilleras-futbol-profesional NO CHILDREN
+      - Espinilleras gama media → /es/espinilleras-futbol-gama-media NO CHILDREN
+  - Balón de fútbol → /es/balon-de-futbol HAS CHILDREN
+    customLinks: [Pelota de fútbol → /es/balon-de-futbol]
+    bottomLinks: [Accesorios → /es/adulto/complementos/accesorios, Agujas → /es/adulto/complementos/accesorios/agujas, Infladores → /es/adulto/complementos/accesorios/infladores, Redes → /es/adulto/complementos/accesorios/redes]
+    - Marcas balones → (no link) HAS CHILDREN
+      - Balones de fútbol adidas → /es/balon-adidas NO CHILDREN
+      - Balones de fútbol Joma → /es/balon-Joma NO CHILDREN
+      - Balones de fútbol New Balance → /es/balon-New-Balance NO CHILDREN
+      - Balones de fútbol Nike → /es/balon-Nike NO CHILDREN
+      - Balones de fútbol Puma → /es/balon-Puma NO CHILDREN
+    - Balones de fútbol oficiales → /es/balon-oficial-futbol HAS CHILDREN
+      - Balón Mundial de Clubes 2025 → /es/balon-oficial-fcwc-2025 NO CHILDREN
+      - Balón del Mundial 2026 → /es/balon-oficial-mundial-2026-trionda NO CHILDREN
+      - Balón de La Liga → /es/balon-oficial-La-Liga NO CHILDREN
+      - Balón de La Liga femenina → /es/balon-oficial-La-Liga-femenina NO CHILDREN
+      - Balón competiciones femeninas → /es/balon-oficial-competiciones-femeninas NO CHILDREN
+      - Balón de la Champions → /es/balon-oficial-Liga-Campeones-UEFA NO CHILDREN
+      - Balón de la Champions femenina → /es/adulto/balones-de-futbol/oficiales/balon-de-la-champions-femenina NO CHILDREN
+      - Balón Premier League → /es/balon-oficial-Premier NO CHILDREN
+      - Balón Liga Italiana → /es/balon-oficial-Serie-A NO CHILDREN
+      - Balón Eurocopa 2025 Femenina → /es/balon-oficial-weuro-2025 NO CHILDREN
+    - Específicos → (no link) HAS CHILDREN
+      - Balón entreno porteros → /es/adulto/balones-de-futbol/especificos/reflejos-porteros NO CHILDREN
+      - Balón de reglamento → /es/balon-futbol-competicion NO CHILDREN
+      - Balón de invierno → /es/adulto/balones-de-futbol/especificos/balones-invierno NO CHILDREN
+    - Tipo de juego → (no link) HAS CHILDREN
+      - Balón fútbol 11 → /es/balon-futbol-11 NO CHILDREN
+      - Balón fútbol 7 → /es/balon-futbol-7 NO CHILDREN
+      - Balón fútbol 5 → /es/adulto/balones-de-futbol/tipo-juego/balon-futbol-5 NO CHILDREN
+      - Balón fútbol sala → /es/balon-futbol-sala NO CHILDREN
+    - Balones de equipos de fútbol → /es/adulto/balones-de-futbol/pelotas-fan NO CHILDREN
+    - Tallas balones fútbol → (no link) HAS CHILDREN
+      - Balón fútbol talla 5 → /es/balon-futbol-talla-5 NO CHILDREN
+      - Balón fútbol talla 4 → /es/balon-futbol-talla-4 NO CHILDREN
+      - Mini balones de fútbol → /es/adulto/balones-de-futbol/tama-o/habilidades-mini NO CHILDREN
+  - Guantes de portero → /es/guantes-de-portero HAS CHILDREN
+    customLinks: [Guantes portero → /es/guantes-de-portero]
+    sizeLinks: [← Niño → /es/kids/guantes-portero-infantil, Hombre → → /es/guantes-de-portero, Talla 6 → /es/kids/guantes-portero-infantil/6, Talla 7 → /es/guantes-de-portero/7, Talla 8 → /es/guantes-de-portero/8, Talla 9 → /es/guantes-de-portero/9, Talla 10 → /es/guantes-de-portero/10, Talla 11 → /es/guantes-de-portero/11, Talla 12 → /es/guantes-de-portero/12]
+    bottomLinks: [Ropa porteros → /es/ropa-portero-futbol, Accesorios → /es/adulto/complementos/protecciones]
+    - Guantes adidas → /es/guantes-portero-adidas HAS CHILDREN
+      - Guantes adidas Predator → /es/guantes-predator NO CHILDREN
+    - Guantes HO Soccer → /es/guantes-portero-HO-Soccer NO CHILDREN
+    - Guantes Uhlsport → /es/guantes-portero-Uhlsport NO CHILDREN
+    - Guantes de portero Nike → /es/guantes-portero-Nike NO CHILDREN
+    - Guantes Puma → /es/guantes-portero-Puma HAS CHILDREN
+      - Guantes Puma One → /es/adulto/guantes-de-portero/puma/one NO CHILDREN
+      - Guantes Puma Future → /es/adulto/guantes-de-portero/puma/guantes-puma-future NO CHILDREN
+      - Guantes Puma Ultra → /es/guantes-portero-Puma-Ultra NO CHILDREN
+    - Guantes de portero Elite → /es/guantes-portero-Elite-Sports NO CHILDREN
+    - Guantes de portero New Balance → /es/guantes-portero-New-Balance NO CHILDREN
+    - Guantes Rinat → /es/guantes-portero-Rinat HAS CHILDREN
+      - Rinat Asimetrik → /es/guantes-portero-Rinat-Asimetrik NO CHILDREN
+      - Rinat Egotiko → /es/guantes-portero-Rinat-Egotiko NO CHILDREN
+      - Rinat Kraken → /es/guantes-portero-Rinat-Kraken NO CHILDREN
+      - Rinat NKAM → /es/guantes-portero-Rinat-Nkam NO CHILDREN
+    - Guantes Reusch → /es/guantes-portero-Reusch HAS CHILDREN
+      - Reusch Attrakt → /es/guantes-portero-Reusch-Attrakt NO CHILDREN
+      - Guantes Reusch Pure Contact → /es/guantes-portero-Reusch-Pure-Contact NO CHILDREN
+    - Guantes de portero profesionales → /es/guantes-portero-gama-alta HAS CHILDREN
+      - Guantes adidas profesionales → /es/adulto/guantes-de-portero/gama/guantes-profesionales/adidas-pro NO CHILDREN
+      - Guantes Rinat profesionales → /es/adulto/guantes-de-portero/gama/guantes-profesionales/rinat-pro NO CHILDREN
+      - Guantes Uhlsport profesionales → /es/adulto/guantes-de-portero/gama/guantes-profesionales/uhlsport-supergrip NO CHILDREN
+      - Guantes Nike profesionales → /es/adulto/guantes-de-portero/gama/guantes-profesionales/nike HAS CHILDREN
+        - Nike Mercurial Touch Elite → /es/mercurial-touch-elite NO CHILDREN
+    - Competición → /es/guantes-portero-gama-media HAS CHILDREN
+      - adidas → /es/adulto/guantes-de-portero/gama/entrenamiento/adidas HAS CHILDREN
+        - League → /es/adulto/guantes-de-portero/gama/entrenamiento/adidas/league NO CHILDREN
+      - Rinat Semi → /es/adulto/guantes-de-portero/gama/entrenamiento/rinat-semi NO CHILDREN
+      - Uhlsport → /es/adulto/guantes-de-portero/gama/entrenamiento/uhlsport HAS CHILDREN
+        - Absolutgrip → /es/adulto/guantes-de-portero/gama/entrenamiento/uhlsport/absolutgrip NO CHILDREN
+        - Supersoft → /es/adulto/guantes-de-portero/gama/entrenamiento/uhlsport/supersoft NO CHILDREN
+    - Guantes portero protección dedos → /es/guantes-portero-varilla-protectora HAS CHILDREN
+      - adidas Fingersave → /es/adulto/guantes-de-portero/especificos/guantes-con-protecciones/adidas-fingersave NO CHILDREN
+      - Reusch Finger Support → /es/adulto/guantes-de-portero/especificos/guantes-con-protecciones/finger-support NO CHILDREN
+      - Puma Protect → /es/adulto/guantes-de-portero/especificos/guantes-con-protecciones/puma-protect NO CHILDREN
+    - Específicos → (no link) HAS CHILDREN
+      - Guantes de portero para césped artificial → /es/guantes-portero-resistente-abrasion NO CHILDREN
+      - Guantes de portero para agua → /es/guantes-portero-agarre-mojado NO CHILDREN
+    - Guantes básicos → /es/guantes-portero-economicos NO CHILDREN
+  - Medias y calcetines → /es/adulto/medias-y-calcetines HAS CHILDREN
+    customLinks: [Ver todo → /es/adulto/medias-y-calcetines]
+    bottomLinks: [Sujeta medias → /es/sujeta-medias-futbol, Cinta para medias → /es/adulto/complementos/cintas-para-medias, Tape medias → /es/adulto/complementos/sujeciones/esparadrapo-color/tape-medias, Vendas medias → /es/adulto/complementos/sujeciones/esparadrapo-color/vendas-adhesivas]
+    - Medias fútbol → /es/adulto/medias-y-calcetines/medias-futbol HAS CHILDREN
+      - Medias amarillas fútbol → /es/medias-de-futbol-amarillas NO CHILDREN
+      - Medias azules fútbol → /es/medias-de-futbol-azules NO CHILDREN
+      - Medias blancas fútbol → /es/medias-de-futbol-blancas NO CHILDREN
+      - Medias celestes fútbol → /es/medias-de-futbol-celestes NO CHILDREN
+      - Medias moradas fútbol → /es/medias-de-futbol-moradas NO CHILDREN
+      - Medias naranjas fútbol → /es/medias-de-futbol-naranjas NO CHILDREN
+      - Medias negras fútbol → /es/medias-de-futbol-negras NO CHILDREN
+      - Medias rojas fútbol → /es/medias-de-futbol-rojas NO CHILDREN
+      - Medias verdes fútbol → /es/medias-de-futbol-verdes NO CHILDREN
+    - Medias para fútbol → /es/medias-futbol HAS CHILDREN
+      - Medias adidas fútbol → /es/medias-adidas-de-futbol NO CHILDREN
+      - Medias Nike fútbol → /es/medias-futbol-Nike NO CHILDREN
+    - Calcetines fútbol → /es/calcetines-de-futbol HAS CHILDREN
+      - Calcetines adidas fútbol → /es/calcetines-de-futbol-adidas NO CHILDREN
+      - Calcetines Nike fútbol → /es/calcetines-de-futbol-nike NO CHILDREN
+      - Calcetines Trusox → /es/calcetines-de-futbol-trusox NO CHILDREN
+    - Antideslizantes → /es/calcetines-futbol-antideslizantes HAS CHILDREN
+      - Calcetines antideslizantes fútbol → /es/adulto/equipaciones/antideslizantes/calcetines NO CHILDREN
+    - Medias cortadas fútbol → /es/medias-futbol-sin-pie NO CHILDREN
+    - Medias equipos fútbol → /es/adulto/medias-y-calcetines/medias-equipos-futbol NO CHILDREN
+    - Medias portero → /es/medias-portero NO CHILDREN
+    - Medias y mangas de compresión → /es/medias-mangas-compresion NO CHILDREN
+  - Camisetas de fútbol → /es/camisetas-futbol HAS CHILDREN
+    customLinks: [Camisetas fútbol → /es/camisetas-futbol, Camiseta fútbol mujer → /es/camisetas-de-mujer-futbol]
+    - Camisetas de fútbol → /es/adulto/camisetas-futbol/camisetas-de-futbol HAS CHILDREN
+      - adidas → /es/adulto/camisetas-futbol/camisetas-de-futbol/adidas NO CHILDREN
+      - Errea → /es/adulto/camisetas-futbol/camisetas-de-futbol/errea NO CHILDREN
+      - Joma → /es/adulto/camisetas-futbol/camisetas-de-futbol/joma NO CHILDREN
+      - Kelme → /es/adulto/camisetas-futbol/camisetas-de-futbol/kelme NO CHILDREN
+      - Macron → /es/adulto/camisetas-futbol/camisetas-de-futbol/macron NO CHILDREN
+      - New Balance → /es/adulto/camisetas-futbol/camisetas-de-futbol/new-balance NO CHILDREN
+      - Nike → /es/adulto/camisetas-futbol/camisetas-de-futbol/nike NO CHILDREN
+      - Puma → /es/adulto/camisetas-futbol/camisetas-de-futbol/puma NO CHILDREN
+    - Camisetas de fútbol para equipos → /es/adulto/camisetas-futbol/camisetas-futbol NO CHILDREN
+    - Camisetas portero → /es/adulto/camisetas-futbol/camisetas-portero NO CHILDREN
+    - Camisetas árbitro → /es/adulto/camisetas-futbol/camisetas-arbitro NO CHILDREN
+    - Camisetas LaLiga → /es/adulto/camisetas-futbol/camisetas-la-liga HAS CHILDREN
+      - Camiseta Athletic → /es/camiseta-Athletic-Bilbao NO CHILDREN
+      - Camiseta Atlético de Madrid → /es/camiseta-Atletico-Madrid NO CHILDREN
+      - Camiseta Barcelona → /es/camiseta-FC-Barcelona NO CHILDREN
+      - Camiseta Betis → /es/camiseta-Real-Betis NO CHILDREN
+      - Camiseta Espanyol → /es/camiseta-RCD-Espanyol NO CHILDREN
+      - Camiseta Getafe → /es/camiseta-Getafe-CF NO CHILDREN
+      - Camiseta Girona → /es/camiseta-Girona-FC NO CHILDREN
+      - Camiseta Real Madrid → /es/camiseta-de-Real-Madrid NO CHILDREN
+      - Camiseta Real Sociedad → /es/camiseta-de-la-Real-Sociedad NO CHILDREN
+      - Camiseta Sevilla → /es/camiseta-Sevilla-FC NO CHILDREN
+      - Camiseta Valencia → /es/camiseta-Valencia-CF NO CHILDREN
+      - Camiseta Villarreal → /es/camiseta-CF-Villarreal NO CHILDREN
+    - Camisetas Premier League → /es/adulto/camisetas-futbol/camisetas-premier HAS CHILDREN
+      - Camiseta Arsenal → /es/camiseta-de-Arsenal NO CHILDREN
+      - Camiseta Chelsea → /es/camiseta-de-Chelsea NO CHILDREN
+      - Camiseta Liverpool → /es/camiseta-de-Liverpool NO CHILDREN
+      - Camiseta Manchester City → /es/camiseta-City NO CHILDREN
+      - Camiseta Manchester United → /es/camiseta-United NO CHILDREN
+      - Camiseta Tottenham → /es/camiseta-de-Tottenham NO CHILDREN
+      - Camiseta Newcastle → /es/camiseta-newcastle NO CHILDREN
+    - Camisetas Serie A → /es/adulto/camisetas-futbol/camisetas-calcio HAS CHILDREN
+      - Camiseta Inter de Milán → /es/camiseta-Inter NO CHILDREN
+      - Camiseta Juventus → /es/camiseta-Juve NO CHILDREN
+      - Camiseta Roma → /es/camiseta-de-la-Roma NO CHILDREN
+      - Camiseta Milan → /es/adulto/camisetas-futbol/camisetas-calcio/camiseta-milan NO CHILDREN
+    - Camisetas MLS → /es/camisetas-MLS NO CHILDREN
+    - Camisetas Bundesliga → /es/adulto/camisetas-futbol/camisetas-bundesliga HAS CHILDREN
+      - Camiseta Bayern Munich → /es/camiseta-Bayern NO CHILDREN
+      - Camiseta Borussia Dortmund → /es/camiseta-Dortmund NO CHILDREN
+      - Camiseta Bayer Leverkusen → /es/camiseta_Leverkusen NO CHILDREN
+    - Camisetas Ligue 1 → /es/adulto/camisetas-futbol/camisetas-ligue-1 HAS CHILDREN
+      - Camiseta PSG → /es/camiseta-Paris-Saint-Germain NO CHILDREN
+      - Camiseta Marsella → /es/camiseta-Olympique-de-Marsella NO CHILDREN
+      - Camiseta Lyon → /es/camiseta-olympique-lyon NO CHILDREN
+    - Camisetas liga holandesa → /es/adulto/camisetas-futbol/camisetas-eredivise HAS CHILDREN
+      - Camiseta Ado Den Haag → /es/ado-den-haag-camiseta NO CHILDREN
+    - Camisetas liga portuguesa → /es/adulto/camisetas-futbol/camisetas-primeira-liga NO CHILDREN
+    - Camisetas fútbol internacional → /es/adulto/camisetas-futbol/camisetas-futbol-internacional HAS CHILDREN
+      - Camiseta Boca Juniors → /es/camiseta-boca NO CHILDREN
+      - Camiseta Inter Miami CF → /es/adulto/camisetas-futbol/camisetas-futbol-internacional/camiseta-inter-miami-cf NO CHILDREN
+      - Camiseta Kaizer Chiefs → /es/adulto/camisetas-futbol/camisetas-futbol-internacional/camiseta-kaizer-chiefs NO CHILDREN
+      - Camiseta Pumas UNAM → /es/adulto/camisetas-futbol/camisetas-futbol-internacional/camiseta-pumas-unam NO CHILDREN
+    - Camisetas selecciones → /es/adulto/camisetas-futbol/camisetas-selecciones HAS CHILDREN
+      - Camiseta Alemania → /es/camiseta-de-alemania NO CHILDREN
+      - Camiseta Argentina → /es/camiseta-seleccion-argentina NO CHILDREN
+      - Camiseta Brasil → /es/camiseta-de-brasil NO CHILDREN
+      - Camiseta Colombia → /es/adulto/camisetas-futbol/camisetas-selecciones/colombia NO CHILDREN
+      - Camiseta Selección Española → /es/camiseta-seleccion-espanola NO CHILDREN
+      - Camiseta Italia → /es/camiseta-italia NO CHILDREN
+    - Camisetas oficiales fútbol → /es/adulto/camisetas-futbol/camisetas-oficiales HAS CHILDREN
+      - Primera camiseta → /es/adulto/camisetas-futbol/camisetas-oficiales/primera-equipacion NO CHILDREN
+      - Segunda camiseta → /es/adulto/camisetas-futbol/camisetas-oficiales/segunda-equipacion NO CHILDREN
+      - Tercera camiseta → /es/adulto/camisetas-futbol/camisetas-oficiales/tercera-equipacion NO CHILDREN
+      - Camiseta portero → /es/adulto/camisetas-futbol/camisetas-oficiales/portero NO CHILDREN
+      - Camiseta entrenamiento → /es/adulto/camisetas-futbol/camisetas-oficiales/entrenamiento NO CHILDREN
+      - Camiseta prepartido → /es/adulto/camisetas-futbol/camisetas-oficiales/prepartido NO CHILDREN
+      - Camiseta paseo → /es/adulto/camisetas-futbol/camisetas-oficiales/paseo NO CHILDREN
+  - Equipaciones de fútbol → /es/adulto/equipaciones-futbol HAS CHILDREN
+    customLinks: [Equipación fútbol mujer → /es/adulto/miscelanea/mujer/equipaciones-mujer]
+    - Equipaciones para equipos → /es/adulto/equipaciones-futbol/equipaciones-para-equipos HAS CHILDREN
+      - Equipaciones adidas → /es/adulto/equipaciones-futbol/equipaciones-para-equipos/adidas NO CHILDREN
+      - Equipaciones Nike → /es/adulto/equipaciones-futbol/equipaciones-para-equipos/nike NO CHILDREN
+    - Equipaciones portero → /es/adulto/equipaciones-futbol/equipaciones-portero HAS CHILDREN
+      - Equipación portero adidas → /es/adulto/equipaciones-futbol/equipaciones-portero/adidas NO CHILDREN
+      - Equipación portero Joma → /es/adulto/equipaciones-futbol/equipaciones-portero/joma NO CHILDREN
+      - Equipación portero Rinat → /es/adulto/equipaciones-futbol/equipaciones-portero/rinat NO CHILDREN
+      - Equipación portero Uhlsport → /es/adulto/equipaciones-futbol/equipaciones-portero/uhlsport NO CHILDREN
+    - Equipaciones árbitro → /es/adulto/equipaciones-futbol/equipaciones-arbitro NO CHILDREN
+    - Equipaciones liga española → /es/adulto/equipaciones-futbol/la-liga HAS CHILDREN
+      - Equipación Athletic → /es/equipacion-Athletic-Bilbao NO CHILDREN
+      - Equipación Atlético de Madrid → /es/equipacion-Atleti NO CHILDREN
+      - Equipación del Barcelona → /es/equipacion-FC-Barcelona NO CHILDREN
+      - Equipación Betis → /es/equipacion-Real-Betis NO CHILDREN
+      - Equipación Espanyol → /es/RCD-Espanyol-equipacion NO CHILDREN
+      - Equipación Getafe → /es/Getafe-CF-equipacion NO CHILDREN
+      - Equipación Real Madrid → /es/equipacion-Madrid NO CHILDREN
+      - Equipación Sevilla → /es/equipacion-Sevilla-FC NO CHILDREN
+      - Equipación Valencia → /es/equipacion-Valencia-CF NO CHILDREN
+      - Equipación Villarreal → /es/Villarreal-equipacion NO CHILDREN
+    - Equipaciones Premier League → /es/adulto/equipaciones-futbol/premier-league HAS CHILDREN
+      - Equipación Arsenal → /es/equipacion-Arsenal-FC NO CHILDREN
+      - Equipación Chelsea → /es/equipacion-Chelsea-FC NO CHILDREN
+      - Equipación Liverpool → /es/equipacion-Liverpool NO CHILDREN
+      - Equipación Manchester City → /es/equipacion-City NO CHILDREN
+      - Equipación Manchester United → /es/equipacion-Manchester-United NO CHILDREN
+      - Equipación Tottenham → /es/equipacion-del-Tottenham NO CHILDREN
+    - Equipaciones liga francesa → /es/adulto/equipaciones-futbol/ligue-1 HAS CHILDREN
+      - Equipación PSG → /es/equipacion-Paris-Saint-Germain NO CHILDREN
+      - Equipación Marsella → /es/adulto/equipaciones-futbol/ligue-1/olympique-marsella NO CHILDREN
+      - Equipación Lyon → /es/adulto/equipaciones-futbol/ligue-1/equipacion-lyon NO CHILDREN
+    - Equipaciones liga italiana → /es/adulto/equipaciones-futbol/serie-a HAS CHILDREN
+      - Equipación Inter de Milán → /es/equipacion-Inter NO CHILDREN
+      - Equipación Juventus → /es/equipacion-Juve NO CHILDREN
+      - Equipación Roma → /es/equipacion-de-la-Roma NO CHILDREN
+    - Equipaciones Bundesliga → /es/adulto/equipaciones-futbol/bundesliga HAS CHILDREN
+      - Equipación Bayern Munich → /es/equipacion-Bayern NO CHILDREN
+      - Equipación Borussia Dortmund → /es/equipacion-Borussia-Dortmund NO CHILDREN
+      - Equipación Bayer Leverkusen → /es/equipacion-Bayer-Leverkusen NO CHILDREN
+    - Equipaciones selecciones fútbol → /es/adulto/equipaciones-futbol/selecciones HAS CHILDREN
+      - Equipación Alemania → /es/adulto/equipaciones-futbol/selecciones/alemania NO CHILDREN
+      - Equipación Bélgica → /es/adulto/equipaciones-futbol/selecciones/belgica NO CHILDREN
+      - Equipación Brasil → /es/adulto/equipaciones-futbol/selecciones/brasil NO CHILDREN
+      - Equipación Colombia → /es/adulto/equipaciones-futbol/selecciones/colombia NO CHILDREN
+      - Equipación España → /es/equipacion-seleccion-espanola NO CHILDREN
+      - Equipación Francia → /es/adulto/equipaciones-futbol/selecciones/francia NO CHILDREN
+      - Equipación Inglaterra → /es/adulto/equipaciones-futbol/selecciones/inglaterra NO CHILDREN
+      - Equipación Italia → /es/adulto/equipaciones-futbol/selecciones/italia NO CHILDREN
+      - Equipación Portugal → /es/adulto/equipaciones-futbol/selecciones/portugal NO CHILDREN
+    - Equipaciones selecciones fútbol mujer → /es/adulto/equipaciones-futbol/equipaciones-selecciones-futbol-mujer NO CHILDREN
+    - Equipaciones de fútbol oficiales → /es/adulto/equipaciones-futbol/equipaciones-oficiales HAS CHILDREN
+      - Primera equipación → /es/adulto/equipaciones-futbol/equipaciones-oficiales/primera-equipacion NO CHILDREN
+      - Segunda equipación → /es/adulto/equipaciones-futbol/equipaciones-oficiales/segunda-equipacion NO CHILDREN
+      - Tercera equipación → /es/adulto/equipaciones-futbol/equipaciones-oficiales/tercera-equipacion NO CHILDREN
+      - Portero → /es/adulto/equipaciones-futbol/equipaciones-oficiales/portero NO CHILDREN
+  - Ropa entrenamiento → /es/adulto/ropa-entrenamiento HAS CHILDREN
+    customLinks: [Ropa de entrenamiento fútbol → /es/ropa-entrenamiento-futbol, Ropa de entrenamiento fútbol mujer → /es/adulto/miscelanea/mujer/ropa-entreno-mujer]
+    - Ropa entrenamiento fútbol adidas → /es/adulto/ropa-entrenamiento/ropa-entrenamiento-futbol-adidas NO CHILDREN
+    - Ropa entrenamiento fútbol Nike → /es/adulto/ropa-entrenamiento/ropa-entrenamiento-futbol-nike NO CHILDREN
+    - Ropa entrenamiento fútbol Puma → /es/adulto/ropa-entrenamiento/ropa-entrenamiento-futbol-puma NO CHILDREN
+    - Ropa de entrenamiento fútbol → /es/ropa-entrenamiento-futbol HAS CHILDREN
+      - Camisetas entrenamiento fútbol → /es/camiseta-entrenamiento-futbol HAS CHILDREN
+        - Tops entrenamiento fútbol → /es/sujetador-deportivo-futbol NO CHILDREN
+      - Pantalón entrenamiento fútbol → /es/pantalon-entrenamiento-futbol HAS CHILDREN
+        - Pantalón corto entrenamiento → /es/adulto/equipaciones/entrenamiento/pantalones/cortos NO CHILDREN
+        - Pantalón largo entrenamiento fútbol → /es/adulto/equipaciones/entrenamiento/pantalones/largos NO CHILDREN
+      - Chaquetas entrenamiento fútbol → /es/chaqueta-entrenamiento-futbol NO CHILDREN
+      - Sudaderas entrenamiento fútbol → /es/sudadera-entrenamiento-futbol NO CHILDREN
+      - Chándal entrenamiento fútbol → /es/chandal-entrenamiento-futbol NO CHILDREN
+    - Ropa de entrenamiento de equipos de fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales HAS CHILDREN
+      - Camisetas de entrenamiento de equipos de fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales/camisetas NO CHILDREN
+      - Pantalón entrenamiento equipos fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales/pantalones HAS CHILDREN
+        - Pantalón corto entrenamiento equipos fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales/pantalones/cortos NO CHILDREN
+        - Pantalón largo entrenamiento equipos fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales/pantalones/largos NO CHILDREN
+      - Sudaderas entrenamiento equipos fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales/sudaderas NO CHILDREN
+      - Chándal entrenamiento equipos fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales/chandal NO CHILDREN
+      - Chaquetas entrenamiento equipos fútbol → /es/adulto/ropa-entrenamiento/equipos-oficiales/chaquetas NO CHILDREN
+    - Guantes → /es/adulto/ropa-entrenamiento/guantes NO CHILDREN
+    - Gorros → /es/adulto/ropa-entrenamiento/gorros NO CHILDREN
+  - Ropa de fútbol → /es/ropa-futbol HAS CHILDREN
+    customLinks: [Ropa fútbol → /es/ropa-futbol, Ropa fútbol mujer → /es/ropa-futbol-mujer, Ropa fútbol niño → /es/kids/equipacion-futbol-infantil]
+    - Ropa de fútbol adidas → /es/adulto/equipaciones/adidas NO CHILDREN
+    - Ropa de fútbol Joma → /es/adulto/equipaciones/joma NO CHILDREN
+    - Ropa de fútbol Kelme → /es/adulto/equipaciones/kelme NO CHILDREN
+    - Ropa de fútbol Macron → /es/adulto/equipaciones/macron NO CHILDREN
+    - Ropa de fútbol New Balance → /es/adulto/equipaciones/new-balance NO CHILDREN
+    - Ropa de fútbol Nike → /es/adulto/equipaciones/nike NO CHILDREN
+    - Ropa de fútbol Puma → /es/adulto/equipaciones/puma NO CHILDREN
+    - Ropa porteros → /es/ropa-portero-futbol HAS CHILDREN
+      - Camisetas portero → /es/camiseta-portero HAS CHILDREN
+        - Camiseta portero manga corta → /es/adulto/equipaciones/ropa-de-portero/camisetas/manga-corta NO CHILDREN
+        - Camiseta portero manga larga → /es/adulto/equipaciones/ropa-de-portero/camisetas/manga-larga NO CHILDREN
+      - Pantalones portero → /es/pantalon-portero HAS CHILDREN
+        - Pantalón corto portero → /es/adulto/equipaciones/ropa-de-portero/pantalones-de-portero/cortos NO CHILDREN
+        - Pantalón largo portero → /es/adulto/equipaciones/ropa-de-portero/pantalones-de-portero/largos NO CHILDREN
+        - Pantalón pirata portero → /es/adulto/equipaciones/ropa-de-portero/pantalones-de-portero/piratas NO CHILDREN
+      - Medias de portero → /es/adulto/equipaciones/ropa-de-portero/medias-largas NO CHILDREN
+      - Chubasqueros → /es/adulto/equipaciones/ropa-de-portero/chubasqueros NO CHILDREN
+    - Ropa fútbol → /es/adulto/equipaciones/ropa-futbol HAS CHILDREN
+      - Camisetas → /es/adulto/equipaciones/ropa-futbol/camisetas NO CHILDREN
+      - Polos → /es/adulto/equipaciones/ropa-futbol/polos NO CHILDREN
+      - Pantalones → /es/adulto/equipaciones/ropa-futbol/pantalones HAS CHILDREN
+        - Cortos → /es/adulto/equipaciones/ropa-futbol/pantalones/cortos NO CHILDREN
+        - Largos → /es/adulto/equipaciones/ropa-futbol/pantalones/largos NO CHILDREN
+        - Piratas → /es/adulto/equipaciones/ropa-futbol/pantalones/piratas NO CHILDREN
+      - Sudaderas → /es/adulto/equipaciones/ropa-futbol/sudaderas NO CHILDREN
+      - Chaquetas → /es/chaquetas-de-futbol HAS CHILDREN
+        - Chaquetas invierno fútbol → /es/adulto/equipaciones/ropa-futbol/chaquetas/chaquetas-invierno-futbol NO CHILDREN
+        - Chaquetas entretiempo fútbol → /es/adulto/equipaciones/ropa-futbol/chaquetas/chaquetas-entretiempo-futbol NO CHILDREN
+      - Chándal → /es/chandal-de-futbol NO CHILDREN
+      - Ropa calle → /es/adulto/equipaciones/ropa-futbol/ropa-calle NO CHILDREN
+    - Ropa compresiva → /es/ropa-termica-futbol HAS CHILDREN
+      - Camisetas → /es/camiseta-compresiva-futbol HAS CHILDREN
+        - Sin mangas → /es/adulto/equipaciones/termica-y-compresiva/camisetas/sin-mangas NO CHILDREN
+        - Manga corta → /es/adulto/equipaciones/termica-y-compresiva/camisetas/manga-corta NO CHILDREN
+        - Manga larga → /es/adulto/equipaciones/termica-y-compresiva/camisetas/manga-larga NO CHILDREN
+      - Mallas → /es/malla-compresiva-futbol HAS CHILDREN
+        - Cortas → /es/adulto/equipaciones/termica-y-compresiva/mallas/cortas NO CHILDREN
+        - Largas → /es/adulto/equipaciones/termica-y-compresiva/mallas/largas NO CHILDREN
+      - Medias y Mangas → /es/medias-mangas-compresivas NO CHILDREN
+    - Compresiva portero → /es/adulto/equipaciones/compresiva-portero HAS CHILDREN
+      - Camisetas → /es/adulto/equipaciones/compresiva-portero/camisetas NO CHILDREN
+      - Mallas → /es/licras-portero HAS CHILDREN
+        - Cortas → /es/adulto/equipaciones/ropa-de-portero/mallas/cortas NO CHILDREN
+        - Largas → /es/adulto/equipaciones/ropa-de-portero/mallas/largas NO CHILDREN
+    - Árbitros → /es/equipacion-arbitro HAS CHILDREN
+      - Camisetas → /es/camiseta-arbitro-futbol NO CHILDREN
+    - Soy futbolmaniaco → /es/adulto/equipaciones/futbolmaniaco HAS CHILDREN
+      - Soy culé → /es/adulto/equipaciones/futbolmaniaco/futbolmaniaco-fcb NO CHILDREN
+      - Soy PSG → /es/adulto/equipaciones/futbolmaniaco/futbolmaniaco-psg NO CHILDREN
+      - Soy colchonero → /es/adulto/equipaciones/futbolmaniaco/futbolmaniaco-atm NO CHILDREN
+      - Soy madridista → /es/adulto/equipaciones/futbolmaniaco/futbolmaniaco-rm NO CHILDREN
+    - Soy futbolmaniaca → /es/adulto/equipaciones/futbolmaniaca HAS CHILDREN
+      - Soy culé → /es/adulto/equipaciones/futbolmaniaca/futbolmaniaca-fcb NO CHILDREN
+      - Soy colchonera → /es/adulto/equipaciones/futbolmaniaca/futbolmaniaca-atm NO CHILDREN
+    - TeamGeist → /es/adulto/equipaciones/teamgeist NO CHILDREN
+    - Nike FC → /es/Nike-FC NO CHILDREN
+    - adidas Icons → /es/adidas-Icons NO CHILDREN
+    - Joga Bonito → /es/adulto/equipaciones/joga-bonito NO CHILDREN
+  - Accesorios fútbol → /es/accesorios-futbol HAS CHILDREN
+    customLinks: [Accesorios de fútbol → /es/accesorios-futbol, Accesorios fútbol niños → /es/kids/accesorios-futbol]
+    - Bolsas → /es/bolsa-futbol HAS CHILDREN
+      - Zapatilleros → /es/zapatillero-futbol NO CHILDREN
+      - Bolsas deporte → /es/bolsa-deporte-futbol NO CHILDREN
+      - Mochilas → /es/mochila-futbol NO CHILDREN
+      - Gymsacks → /es/Mochilas-de-cuerdas-futbol NO CHILDREN
+    - Ortopedia y protección → /es/ortopedia-protecciones-futbol NO CHILDREN
+    - Complementos frío → /es/complementos-para-frio-futbol HAS CHILDREN
+      - Gorros → /es/gorro-para-frio-futbol NO CHILDREN
+      - Cuellos → /es/bragas-cuello-futbol NO CHILDREN
+      - Guantes → /es/guantes-para-frio-futbol NO CHILDREN
+    - Refresco → (no link) HAS CHILDREN
+      - Botellas → /es/botella-hidratacion NO CHILDREN
+      - Gorras → /es/gorra-futbol NO CHILDREN
+      - Gafas de sol → /es/gafas-de-sol NO CHILDREN
+    - Tape vendaje → /es/esparadrapo-color-medias-futbol HAS CHILDREN
+      - Tape espinilleras → /es/adulto/complementos/sujeciones/esparadrapo-color/tape-espinilleras NO CHILDREN
+      - Tape medias → /es/adulto/complementos/sujeciones/esparadrapo-color/tape-medias NO CHILDREN
+      - Vendas adhesivas → /es/adulto/complementos/sujeciones/esparadrapo-color/vendas-adhesivas NO CHILDREN
+    - Sujeta medias → /es/sujeta-medias-futbol NO CHILDREN
+    - Cintas para medias → /es/adulto/complementos/cintas-para-medias NO CHILDREN
+    - Sujeta espinilleras → /es/sujeta-espinilleras NO CHILDREN
+    - Fundas espinilleras → /es/adulto/complementos/fundas-espinilleras NO CHILDREN
+    - Guarda espinilleras → /es/adulto/complementos/guarda-espinilleras NO CHILDREN
+    - Cintas pelo → /es/cinta-pelo-para-futbol NO CHILDREN
+    - Calzado → /es/adulto/complementos/calzado HAS CHILDREN
+      - Tacos recambiables → /es/tacos-recambiables-botas-futbol HAS CHILDREN
+        - Tacos aluminio → /es/adulto/complementos/calzado/tacos/tacos-aluminio NO CHILDREN
+        - Tacos goma → /es/adulto/complementos/calzado/tacos/tacos-goma NO CHILDREN
+      - Llaves → /es/llave-tacos-botas-futbol NO CHILDREN
+      - Cordones → /es/cordones-botas-futbol NO CHILDREN
+      - Cuidado botas → /es/limpieza-botas-futbol NO CHILDREN
+      - Plantillas → /es/plantillas-calzado-deportivo NO CHILDREN
+    - Porteros → /es/accesorios-portero-futbol HAS CHILDREN
+      - Rodilleras → /es/rodilleras-portero-futbol NO CHILDREN
+      - Coderas → /es/coderas-portero-futbol NO CHILDREN
+      - Manguitos → /es/manguitos-para-porteros NO CHILDREN
+      - Portaguantes → /es/guanteras-futbol NO CHILDREN
+      - Cuidado guantes → /es/cuidado-guantes-portero NO CHILDREN
+    - Brazaletes capitán → /es/brazalete-capitan-futbol NO CHILDREN
+    - Árbitros → /es/accesorios-arbitro-futbol HAS CHILDREN
+      - Silbatos → /es/silbato-futbol NO CHILDREN
+      - Tarjetas → /es/tarjetas-arbitro-futbol NO CHILDREN
+      - Banderines → /es/banderin-juez-linea-futbol NO CHILDREN
+    - Técnicos → /es/accesorios-para-tecnico-futbol HAS CHILDREN
+      - Pizarras tácticas → /es/pizarra-tactica-futbol NO CHILDREN
+      - Brazaletes delegado → /es/brazaletes-delegado-futbol NO CHILDREN
+      - Petos → /es/petos-entrenamiento-futbol NO CHILDREN
+      - Material entrenamiento → /es/material-entrenamiento-futbol NO CHILDREN
+    - Balones → /es/accesorios-balon-futbol HAS CHILDREN
+      - Infladores → /es/hinchador-balon-futbol NO CHILDREN
+      - Agujas → /es/aguja-balon-futbol NO CHILDREN
+      - Redes → /es/red-balon-futbol NO CHILDREN
+    - Baño → /es/complementos-ducha NO CHILDREN
+  - Ofertas fútbol → /es/productos-futbol-ofertas HAS CHILDREN
+    customLinks: [Ofertas de fútbol → /es/productos-futbol-ofertas, Ofertas fútbol para niños → /es/kids/futbol-infantil-ofertas]
+    - Ropa fútbol → /es/ropa-futbol-ofertas HAS CHILDREN
+      - Camisetas → /es/camiseta-futbol-ofertas NO CHILDREN
+      - Pantalones → /es/pantalon-futbol-ofertas NO CHILDREN
+      - Chaquetas → /es/chaqueta-futbol-ofertas NO CHILDREN
+      - Sudaderas → /es/sudadera-futbol-ofertas NO CHILDREN
+      - Chándales → /es/chandal-futbol-ofertas NO CHILDREN
+    - Calzado → /es/calzado-futbol-ofertas HAS CHILDREN
+      - Botas fútbol → /es/botas-futbol-ofertas NO CHILDREN
+      - Fútbol sala → /es/zapatillas-futbol-sala-ofertas HAS CHILDREN
+        - Ofertas Munich fútbol sala → /es/oferta-munich-zapatillas-futbol-sala NO CHILDREN
+      - Multitacos → /es/botas-multitaco-ofertas NO CHILDREN
+      - Calle → /es/zapatillas-deportivas-ofertas NO CHILDREN
+    - Balones → /es/balon-futbol-ofertas NO CHILDREN
+    - Espinilleras → /es/espinilleras-futbol-ofertas NO CHILDREN
+    - Guantes portero → /es/guantes-portero-ofertas NO CHILDREN
+    - Complementos → /es/complementos-futbol-ofertas NO CHILDREN
+  - Equipos fútbol → /es/futbol-internacional HAS CHILDREN
+    customLinks: [Ver todo → /es/futbol-internacional, Niños → /es/kids/futbol-internacional-infantill]
+    sizeLinks: [Selecciones: → /es/equipacion-seleccion-nacional-futbol, Alemania → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/alemania, Bélgica → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/belgica, Colombia → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/colombia, España → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/espana, Italia → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/italia]
+    - La Liga → /es/tienda-oficial-La-Liga HAS CHILDREN
+      - FC Barcelona → /es/tienda-oficial-FC-Barcelona NO CHILDREN
+      - Real Madrid CF → /es/tienda-oficial-Real-Madrid NO CHILDREN
+      - Athletic Club Bilbao → /es/tienda-oficial-Athletic-Club NO CHILDREN
+      - Atlético Madrid → /es/tienda-oficial-Atletico-Madrid NO CHILDREN
+      - Getafe CF → /es/tienda-oficial-Getafe-CF NO CHILDREN
+      - Girona FC → /es/tienda-oficial-Girona-FC NO CHILDREN
+      - RCD Espanyol → /es/tienda-oficial-RCD-Espanyol NO CHILDREN
+      - Real Betis Balompié → /es/tienda-oficial-Real-Betis-Balompie NO CHILDREN
+      - Real Sociedad → /es/tienda-oficial-Real-Sociedad NO CHILDREN
+      - Sevilla FC → /es/tienda-oficial-Sevilla-FC NO CHILDREN
+      - Valencia CF → /es/tienda-oficial-Valencia-CF NO CHILDREN
+      - Villarreal CF → /es/tienda-oficial-Villarreal-CF NO CHILDREN
+    - Premier League → /es/tienda-oficial-Premier-League HAS CHILDREN
+      - Arsenal FC → /es/tienda-oficial-Arsenal-FC NO CHILDREN
+      - Chelsea FC → /es/tienda-oficial-Chelsea-FC NO CHILDREN
+      - Liverpool FC → /es/tienda-oficial-Liverpool-FC NO CHILDREN
+      - Manchester City → /es/tienda-oficial-Manchester-City NO CHILDREN
+      - Manchester United → /es/tienda-oficial-Manchester-United NO CHILDREN
+      - Tottenham HFC → /es/tienda-oficial-Tottenham-HFC NO CHILDREN
+    - Ligue 1 → /es/tienda-oficial-Ligue-1 HAS CHILDREN
+      - AS Monaco → /es/tienda-oficial-Monaco-FC NO CHILDREN
+      - Olympique Lyon → /es/tienda-oficial-Olympique-Lyon NO CHILDREN
+      - Olympique Marsella → /es/tienda-oficial-Olympique-Marsella NO CHILDREN
+      - Paris Saint-Germain → /es/tienda-oficial-PSG NO CHILDREN
+    - Bundesliga → /es/tienda-oficial-Bundesliga HAS CHILDREN
+      - Borussia Dortmund → /es/tienda-oficial-BVB NO CHILDREN
+      - FC Bayern Munich → /es/tienda-oficial-Bayern NO CHILDREN
+      - Bayer Leverkusen → /es/tienda-oficial-Bayer-Leverkusen NO CHILDREN
+      - VFL Wolfsburg → /es/tienda-oficial-VFL-Wolfsburg NO CHILDREN
+    - Serie A → /es/tienda-oficial-Serie-A HAS CHILDREN
+      - AC Milan → /es/tienda-oficial-AC-Milan NO CHILDREN
+      - AS Roma → /es/tienda-oficial-AS-Roma NO CHILDREN
+      - Atalanta BC → /es/tienda-oficial-Atalanta-BC NO CHILDREN
+      - FC Inter Milán → /es/tienda-oficial-Inter NO CHILDREN
+      - Juventus FC → /es/tienda-oficial-Juventus-FC NO CHILDREN
+      - SS Lazio → /es/tienda-oficial-SS-Lazio NO CHILDREN
+    - Liga MLS → /es/tienda-oficial-MLS NO CHILDREN
+    - Primeira Liga → /es/tienda-oficial-Primeira-Liga NO CHILDREN
+    - Eredivisie → /es/tienda-oficial-Eredivisie NO CHILDREN
+    - Selecciones → /es/equipacion-seleccion-nacional-futbol HAS CHILDREN
+      - Alemania → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/alemania NO CHILDREN
+      - Argentina → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/argentina NO CHILDREN
+      - Bélgica → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/belgica NO CHILDREN
+      - Brasil → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/brasil NO CHILDREN
+      - Colombia → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/colombia NO CHILDREN
+      - España → /es/tienda-oficial-seleccion-espanola NO CHILDREN
+      - Francia → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/francia NO CHILDREN
+      - Inglaterra → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/inglaterra NO CHILDREN
+      - Italia → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/italia NO CHILDREN
+      - Portugal → /es/adulto/clubes-y-selecciones/federaciones-nacionales-de-futbol/portugal NO CHILDREN
+

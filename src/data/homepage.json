@@ -1,0 +1,652 @@
+{
+    "hero_carousel": {
+        "id": "hero",
+        "auto_switch_ms": 5000,
+        "banners": [
+            {
+                "id": "hero-1",
+                "title": "Dominate Every Surface",
+                "subtitle": "The latest football boots engineered for elite performance",
+                "button_text": "Shop Now",
+                "link": "/football-boots",
+                "gradient": "from-gray-900 via-gray-800 to-green-900",
+                "accent_color": "#22c55e",
+                "image": null
+            },
+            {
+                "id": "hero-2",
+                "title": "Adidas Predator Pro",
+                "subtitle": "Total control. Unmatched precision.",
+                "button_text": "Shop Predator",
+                "link": "/adidas-predator-football-boots",
+                "gradient": "from-black via-gray-900 to-red-900",
+                "accent_color": "#ef4444",
+                "image": null
+            },
+            {
+                "id": "hero-3",
+                "title": "Nike Phantom GX",
+                "subtitle": "Feel every touch. Own every moment.",
+                "button_text": "Shop Phantom",
+                "link": "/nike-phantom-football-boots",
+                "gradient": "from-gray-900 via-blue-950 to-gray-900",
+                "accent_color": "#3b82f6",
+                "image": null
+            },
+            {
+                "id": "hero-4",
+                "title": "Firm Ground Classics",
+                "subtitle": "Built for grass. Born to win.",
+                "button_text": "Shop FG Boots",
+                "link": "/fg-football-boots",
+                "gradient": "from-green-950 via-gray-900 to-gray-800",
+                "accent_color": "#22c55e",
+                "image": null
+            },
+            {
+                "id": "hero-5",
+                "title": "New Season. New Boots.",
+                "subtitle": "Fresh drops from top brands every week",
+                "button_text": "See New Arrivals",
+                "link": "/football-boots",
+                "gradient": "from-gray-900 via-purple-950 to-gray-900",
+                "accent_color": "#a855f7",
+                "image": null
+            },
+            {
+                "id": "hero-6",
+                "title": "Goalkeeper Essentials",
+                "subtitle": "Gloves, jerseys and gear for the last line of defence",
+                "button_text": "Shop Goalkeeper",
+                "link": "/goalkeeper-gloves",
+                "gradient": "from-gray-900 via-yellow-950 to-gray-900",
+                "accent_color": "#eab308",
+                "image": null
+            }
+        ]
+    },
+    "sections": [
+        {
+            "id": "section-1",
+            "type": "category_carousel",
+            "auto_switch_ms": 4000,
+            "cards": [
+                {
+                    "id": "cc1-1",
+                    "title": "Football Boots",
+                    "subtitle": "All surfaces",
+                    "link": "/football-boots",
+                    "gradient": "from-green-600 to-green-900",
+                    "emoji": "👟",
+                    "image": null
+                },
+                {
+                    "id": "cc1-2",
+                    "title": "Firm Ground",
+                    "subtitle": "Natural grass",
+                    "link": "/fg-football-boots",
+                    "gradient": "from-emerald-600 to-emerald-900",
+                    "emoji": "⚽",
+                    "image": null
+                },
+                {
+                    "id": "cc1-3",
+                    "title": "Artificial Ground",
+                    "subtitle": "3G & 4G pitches",
+                    "link": "/ag-football-boots",
+                    "gradient": "from-teal-600 to-teal-900",
+                    "emoji": "🏟️",
+                    "image": null
+                },
+                {
+                    "id": "cc1-4",
+                    "title": "Turf Boots",
+                    "subtitle": "Astroturf & hard ground",
+                    "link": "/tf-football-boots",
+                    "gradient": "from-cyan-600 to-cyan-900",
+                    "emoji": "🌱",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-2",
+            "type": "product_carousel",
+            "title": "Top Football Boots",
+            "subtitle": "Best sellers this season",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all boots"
+        },
+        {
+            "id": "section-3",
+            "type": "category_carousel",
+            "auto_switch_ms": 4000,
+            "cards": [
+                {
+                    "id": "cc3-1",
+                    "title": "Adidas Boots",
+                    "subtitle": "Predator, X Crazyfast & more",
+                    "link": "/adidas-football-boots",
+                    "gradient": "from-black to-gray-700",
+                    "emoji": "🦅",
+                    "image": null
+                },
+                {
+                    "id": "cc3-2",
+                    "title": "Nike Boots",
+                    "subtitle": "Phantom, Mercurial & more",
+                    "link": "/nike-football-boots",
+                    "gradient": "from-orange-600 to-red-900",
+                    "emoji": "✔️",
+                    "image": null
+                },
+                {
+                    "id": "cc3-3",
+                    "title": "Puma Boots",
+                    "subtitle": "Future, King & more",
+                    "link": "/puma-football-boots",
+                    "gradient": "from-red-600 to-red-900",
+                    "emoji": "🐾",
+                    "image": null
+                },
+                {
+                    "id": "cc3-4",
+                    "title": "New Balance",
+                    "subtitle": "Furon, Tekela & more",
+                    "link": "/new-balance-football-boots",
+                    "gradient": "from-gray-600 to-gray-900",
+                    "emoji": "⚡",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-4",
+            "type": "product_carousel",
+            "title": "Adidas Football Boots",
+            "subtitle": "Shop the full adidas range",
+            "filter": {
+                "brand": "adidas"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/adidas-football-boots",
+            "link_label": "View all adidas"
+        },
+        {
+            "id": "section-5",
+            "type": "product_carousel",
+            "title": "Nike Football Boots",
+            "subtitle": "Shop the full Nike range",
+            "filter": {
+                "brand": "Nike"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/nike-football-boots",
+            "link_label": "View all Nike"
+        },
+        {
+            "id": "section-6",
+            "type": "category_carousel",
+            "auto_switch_ms": 4000,
+            "cards": [
+                {
+                    "id": "cc6-1",
+                    "title": "Predator",
+                    "subtitle": "Built for control",
+                    "link": "/adidas-predator-football-boots",
+                    "gradient": "from-red-600 to-red-900",
+                    "emoji": "🎯",
+                    "image": null
+                },
+                {
+                    "id": "cc6-2",
+                    "title": "Phantom GX",
+                    "subtitle": "Touch & precision",
+                    "link": "/nike-phantom-football-boots",
+                    "gradient": "from-blue-600 to-blue-900",
+                    "emoji": "👻",
+                    "image": null
+                },
+                {
+                    "id": "cc6-3",
+                    "title": "X Crazyfast",
+                    "subtitle": "Pure speed",
+                    "link": "/adidas-x-crazyfast-football-boots",
+                    "gradient": "from-yellow-500 to-orange-700",
+                    "emoji": "💨",
+                    "image": null
+                },
+                {
+                    "id": "cc6-4",
+                    "title": "Mercurial",
+                    "subtitle": "Speed redefined",
+                    "link": "/nike-mercurial-football-boots",
+                    "gradient": "from-orange-500 to-red-700",
+                    "emoji": "🚀",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-7",
+            "type": "product_carousel",
+            "title": "Predator Collection",
+            "subtitle": "Control the game",
+            "filter": {
+                "model_line": "Predator"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/adidas-predator-football-boots",
+            "link_label": "View all Predator"
+        },
+        {
+            "id": "section-8",
+            "type": "product_carousel",
+            "title": "Speed Boots",
+            "subtitle": "For the fast players",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all"
+        },
+        {
+            "id": "section-9",
+            "type": "category_carousel",
+            "auto_switch_ms": 4000,
+            "cards": [
+                {
+                    "id": "cc9-1",
+                    "title": "AG Boots",
+                    "subtitle": "Artificial grass",
+                    "link": "/ag-football-boots",
+                    "gradient": "from-green-700 to-green-950",
+                    "emoji": "🏗️",
+                    "image": null
+                },
+                {
+                    "id": "cc9-2",
+                    "title": "FG Boots",
+                    "subtitle": "Firm natural grass",
+                    "link": "/fg-football-boots",
+                    "gradient": "from-lime-600 to-green-900",
+                    "emoji": "🌿",
+                    "image": null
+                },
+                {
+                    "id": "cc9-3",
+                    "title": "TF Boots",
+                    "subtitle": "Turf & hard ground",
+                    "link": "/tf-football-boots",
+                    "gradient": "from-amber-600 to-orange-900",
+                    "emoji": "🏜️",
+                    "image": null
+                },
+                {
+                    "id": "cc9-4",
+                    "title": "Indoor Boots",
+                    "subtitle": "Futsal & indoor",
+                    "link": "/ic-football-boots",
+                    "gradient": "from-purple-600 to-purple-900",
+                    "emoji": "🏠",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-10",
+            "type": "product_carousel",
+            "title": "AG Football Boots",
+            "subtitle": "Optimised for artificial grass",
+            "filter": {
+                "traction": "AG"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/ag-football-boots",
+            "link_label": "View all AG boots"
+        },
+        {
+            "id": "section-11",
+            "type": "category_carousel",
+            "auto_switch_ms": 4000,
+            "cards": [
+                {
+                    "id": "cc11-1",
+                    "title": "Goalkeeper Gloves",
+                    "subtitle": "Pro level protection",
+                    "link": "/goalkeeper-gloves",
+                    "gradient": "from-yellow-600 to-yellow-900",
+                    "emoji": "🥅",
+                    "image": null
+                },
+                {
+                    "id": "cc11-2",
+                    "title": "Shin Guards",
+                    "subtitle": "Lightweight protection",
+                    "link": "/football-shin-guards",
+                    "gradient": "from-blue-600 to-blue-900",
+                    "emoji": "🦵",
+                    "image": null
+                },
+                {
+                    "id": "cc11-3",
+                    "title": "Footballs",
+                    "subtitle": "Match & training balls",
+                    "link": "/football-balls",
+                    "gradient": "from-gray-600 to-gray-900",
+                    "emoji": "⚽",
+                    "image": null
+                },
+                {
+                    "id": "cc11-4",
+                    "title": "Training Gear",
+                    "subtitle": "Train like a pro",
+                    "link": "/football-training",
+                    "gradient": "from-purple-600 to-purple-900",
+                    "emoji": "💪",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-12",
+            "type": "product_carousel",
+            "title": "FG Football Boots",
+            "subtitle": "Classic firm ground studs",
+            "filter": {
+                "traction": "FG"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/fg-football-boots",
+            "link_label": "View all FG boots"
+        },
+        {
+            "id": "section-13",
+            "type": "product_carousel",
+            "title": "Best Deals Right Now",
+            "subtitle": "Biggest discounts this week",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "biggest_discount",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all deals"
+        },
+        {
+            "id": "section-14",
+            "type": "category_section",
+            "panels": [
+                {
+                    "id": "cs14-1",
+                    "title": "Adidas Predator",
+                    "subtitle": "Grip. Control. Dominate.",
+                    "link": "/adidas-predator-football-boots",
+                    "gradient": "from-red-700 to-gray-900",
+                    "emoji": "🎯",
+                    "badge": "New Season",
+                    "image": null
+                },
+                {
+                    "id": "cs14-2",
+                    "title": "Nike Phantom",
+                    "subtitle": "Feel the game like never before.",
+                    "link": "/nike-phantom-football-boots",
+                    "gradient": "from-blue-700 to-gray-900",
+                    "emoji": "👻",
+                    "badge": "Bestseller",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-15",
+            "type": "product_carousel",
+            "title": "Top Picks This Week",
+            "subtitle": "Handpicked for performance",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "biggest_discount",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all"
+        },
+        {
+            "id": "section-16",
+            "type": "product_carousel",
+            "title": "Budget Boots Under EUR 50",
+            "subtitle": "Quality that won't break the bank",
+            "filter": {
+                "category": "Football Boots",
+                "max_price": 50
+            },
+            "sort": "price_asc",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all budget boots"
+        },
+        {
+            "id": "section-17",
+            "type": "category_section",
+            "panels": [
+                {
+                    "id": "cs17-1",
+                    "title": "Goalkeeper Gloves",
+                    "subtitle": "Pro-level protection for every keeper.",
+                    "link": "/goalkeeper-gloves",
+                    "gradient": "from-yellow-600 to-gray-900",
+                    "emoji": "🥅",
+                    "badge": "New In",
+                    "image": null
+                },
+                {
+                    "id": "cs17-2",
+                    "title": "Training Gear",
+                    "subtitle": "Train harder. Recover faster.",
+                    "link": "/football-training",
+                    "gradient": "from-purple-700 to-gray-900",
+                    "emoji": "💪",
+                    "badge": null,
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-18",
+            "type": "product_carousel",
+            "title": "New Arrivals",
+            "subtitle": "Fresh stock just landed",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "See all new arrivals"
+        },
+        {
+            "id": "section-19",
+            "type": "product_carousel",
+            "title": "Goalkeeper Essentials",
+            "subtitle": "Everything a keeper needs",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all"
+        },
+        {
+            "id": "section-20",
+            "type": "category_section",
+            "panels": [
+                {
+                    "id": "cs20-1",
+                    "title": "Puma Future",
+                    "subtitle": "Adaptability meets speed.",
+                    "link": "/puma-future-football-boots",
+                    "gradient": "from-red-600 to-red-950",
+                    "emoji": "🐾",
+                    "badge": null,
+                    "image": null
+                },
+                {
+                    "id": "cs20-2",
+                    "title": "Mercurial Superfly",
+                    "subtitle": "The speed boot. Reimagined.",
+                    "link": "/nike-mercurial-football-boots",
+                    "gradient": "from-orange-600 to-red-950",
+                    "emoji": "🚀",
+                    "badge": "Limited",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-21",
+            "type": "category_section",
+            "panels": [
+                {
+                    "id": "cs21-1",
+                    "title": "X Crazyfast",
+                    "subtitle": "Born to break records.",
+                    "link": "/adidas-x-crazyfast-football-boots",
+                    "gradient": "from-yellow-500 to-orange-800",
+                    "emoji": "💨",
+                    "badge": "New",
+                    "image": null
+                },
+                {
+                    "id": "cs21-2",
+                    "title": "Puma King",
+                    "subtitle": "A legend reborn.",
+                    "link": "/puma-king-football-boots",
+                    "gradient": "from-gray-700 to-gray-950",
+                    "emoji": "👑",
+                    "badge": null,
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-22",
+            "type": "product_carousel",
+            "title": "Puma & Nike Speed Boots",
+            "subtitle": "For players who play fast",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "price_desc",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all"
+        },
+        {
+            "id": "section-23",
+            "type": "category_section",
+            "panels": [
+                {
+                    "id": "cs23-1",
+                    "title": "Premium Boots",
+                    "subtitle": "Top tier, no compromise.",
+                    "link": "/football-boots",
+                    "gradient": "from-gray-800 to-gray-950",
+                    "emoji": "⭐",
+                    "badge": "Premium",
+                    "image": null
+                },
+                {
+                    "id": "cs23-2",
+                    "title": "Sale Boots",
+                    "subtitle": "Big brands, bigger discounts.",
+                    "link": "/football-boots",
+                    "gradient": "from-red-700 to-red-950",
+                    "emoji": "🏷️",
+                    "badge": "Sale",
+                    "image": null
+                }
+            ]
+        },
+        {
+            "id": "section-24",
+            "type": "product_carousel",
+            "title": "Premium Boots",
+            "subtitle": "Top tier performance, no compromise",
+            "filter": {
+                "category": "Football Boots",
+                "min_price": 150
+            },
+            "sort": "price_desc",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View premium range"
+        },
+        {
+            "id": "section-25",
+            "type": "product_carousel",
+            "title": "Adidas X Crazyfast",
+            "subtitle": "Speed is everything",
+            "filter": {
+                "model_line": "X Crazyfast"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/adidas-x-crazyfast-football-boots",
+            "link_label": "View all X Crazyfast"
+        },
+        {
+            "id": "section-26",
+            "type": "product_carousel",
+            "title": "Staff Picks",
+            "subtitle": "Our team's favourite boots this season",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "biggest_discount",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "See staff picks"
+        },
+        {
+            "id": "section-27",
+            "type": "product_carousel",
+            "title": "Under EUR 100",
+            "subtitle": "Great boots at a great price",
+            "filter": {
+                "category": "Football Boots",
+                "max_price": 100
+            },
+            "sort": "price_asc",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all"
+        },
+        {
+            "id": "section-28",
+            "type": "product_carousel",
+            "title": "Top Rated Brands",
+            "subtitle": "The best from adidas, Nike and Puma",
+            "filter": {
+                "category": "Football Boots"
+            },
+            "sort": "newest",
+            "limit": 10,
+            "link": "/football-boots",
+            "link_label": "View all"
+        }
+    ]
+}
