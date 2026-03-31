@@ -8,28 +8,53 @@ export default function ProductDescription({ product }: ProductDescriptionProps)
     const { description } = product;
 
     return (
-        <div className="border-t border-gray-100 pt-8 mt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h2 className="text-lg font-black text-gray-900 mb-2">
-                        {description.tagline}
-                    </h2>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                        {description.intro}
-                    </p>
+        <div className="bg-surface-container-low -mx-6 px-6 py-24 mt-8">
+            <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+
+                {/* Left: Tagline + Intro + Benefits */}
+                <div className="space-y-10">
+                    <div>
+                        <h2 className="text-4xl font-black font-headline tracking-tighter uppercase mb-6 leading-tight">
+                            {description.tagline.split(".").map((part, i, arr) =>
+                                i === arr.length - 2 ? (
+                                    <span key={i}>
+                                        {part}.{" "}
+                                        <br />
+                                        <span className="text-primary">{arr[arr.length - 1]}</span>
+                                    </span>
+                                ) : i < arr.length - 2 ? (
+                                    <span key={i}>{part}. </span>
+                                ) : null
+                            )}
+                            {/* Fallback if tagline has no period split */}
+                            {!description.tagline.includes(".") && (
+                                <span>{description.tagline}</span>
+                            )}
+                        </h2>
+                        <p className="text-secondary text-lg leading-relaxed max-w-xl">
+                            {description.intro}
+                        </p>
+                    </div>
 
                     {description.key_benefits.length > 0 && (
                         <div>
-                            <h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3">
-                                Key Benefits
+                            <h3 className="font-black uppercase tracking-widest text-xs mb-6 text-on-surface">
+                                Key Performance Benefits
                             </h3>
-                            <ul className="space-y-2">
+                            <ul className="space-y-4">
                                 {description.key_benefits.map((benefit, index) => (
-                                    <li key={index} className="flex items-start gap-2">
-                                        <span className="w-5 h-5 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">
-                                            ✓
+                                    <li key={index} className="flex items-start gap-3">
+                                        <span
+                                            className="material-symbols-outlined text-primary mt-0.5"
+                                            style={{ fontVariationSettings: "'FILL' 1" }}
+                                        >
+                                            check_circle
                                         </span>
-                                        <span className="text-sm text-gray-600">{benefit}</span>
+                                        <div>
+                                            <span className="font-bold block uppercase text-xs">
+                                                {benefit}
+                                            </span>
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
@@ -37,73 +62,37 @@ export default function ProductDescription({ product }: ProductDescriptionProps)
                     )}
                 </div>
 
-                <div>
-                    <h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3">
-                        Technical Details
+                {/* Right: Technical Specifications */}
+                <div className="bg-surface-container-lowest p-10 border border-surface-container shadow-sm">
+                    <h3 className="font-black uppercase tracking-widest text-xs mb-8 text-on-surface border-b border-surface-container pb-4">
+                        Technical Specifications
                     </h3>
-                    <div className="bg-gray-50 rounded-lg overflow-hidden">
-                        <table className="w-full text-sm">
-                            <tbody>
-                                <tr className="border-b border-gray-100">
-                                    <td className="px-4 py-3 font-medium text-gray-500 w-1/2">
-                                        Brand
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">{product.brand}</td>
-                                </tr>
-                                <tr className="border-b border-gray-100">
-                                    <td className="px-4 py-3 font-medium text-gray-500">
-                                        Model Line
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">
-                                        {product.model_line || "—"}
-                                    </td>
-                                </tr>
-                                <tr className="border-b border-gray-100">
-                                    <td className="px-4 py-3 font-medium text-gray-500">
-                                        Surface
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">
-                                        {description.technical_details.sole_type}
-                                    </td>
-                                </tr>
-                                <tr className="border-b border-gray-100">
-                                    <td className="px-4 py-3 font-medium text-gray-500">
-                                        Upper Material
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">
-                                        {description.technical_details.upper_material}
-                                    </td>
-                                </tr>
-                                <tr className="border-b border-gray-100">
-                                    <td className="px-4 py-3 font-medium text-gray-500">
-                                        Adjustment
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">
-                                        {description.technical_details.adjustment}
-                                    </td>
-                                </tr>
-                                <tr className="border-b border-gray-100">
-                                    <td className="px-4 py-3 font-medium text-gray-500">
-                                        Range
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">
-                                        {description.technical_details.range}
-                                    </td>
-                                </tr>
-                                <tr className="border-b border-gray-100">
-                                    <td className="px-4 py-3 font-medium text-gray-500">
-                                        Gender
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">{product.gender}</td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-3 font-medium text-gray-500">
-                                        Color
-                                    </td>
-                                    <td className="px-4 py-3 text-gray-900">{product.color}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div className="space-y-4">
+                        {[
+                            { label: "Brand", value: product.brand },
+                            { label: "Model Line", value: product.model_line || "—" },
+                            { label: "Surface", value: description.technical_details.sole_type },
+                            { label: "Upper Material", value: description.technical_details.upper_material },
+                            { label: "Adjustment", value: description.technical_details.adjustment },
+                            { label: "Range", value: description.technical_details.range },
+                            { label: "Gender", value: product.gender },
+                            { label: "Primary Color", value: product.color },
+                        ].map((row, i, arr) => (
+                            <div
+                                key={row.label}
+                                className={`flex justify-between py-2 ${i < arr.length - 1
+                                        ? "border-b border-surface-container/50"
+                                        : ""
+                                    }`}
+                            >
+                                <span className="text-secondary text-sm font-label uppercase">
+                                    {row.label}
+                                </span>
+                                <span className="font-bold text-sm text-right">
+                                    {row.value}
+                                </span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

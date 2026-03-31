@@ -35,36 +35,52 @@ export default function ProductCarousel({
     }
 
     return (
-        <div className="py-8">
-            <div className="flex items-center justify-between mb-4">
+        <div className="py-24">
+            {/* Header */}
+            <div className="flex justify-between items-end mb-10">
                 <div>
-                    <h2 className="text-lg font-black text-gray-900 ">{title}</h2>
+                    <h2 className="text-3xl font-black font-headline uppercase tracking-tighter">
+                        {title}
+                    </h2>
                     {subtitle && (
-                        <p className="text-sm text-gray-500 mt-0.5">{subtitle}</p>
+                        <p className="text-secondary text-sm mt-1">{subtitle}</p>
                     )}
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-4">
                     {link && (
-                        <Link href={link} className="text-sm text-green-500 hover:text-green-600 transition-colors mr-2">
-                            {linkLabel || "View all"}
+                        <Link
+                            href={link}
+                            className="text-xs font-bold uppercase tracking-widest text-primary flex items-center hover:translate-x-1 transition-transform"
+                        >
+                            {linkLabel || "View All"}
+                            <span className="material-symbols-outlined text-[16px] ml-1">
+                                arrow_forward
+                            </span>
                         </Link>
                     )}
-                    <button onClick={scrollLeft} className="w-8 h-8 flex items-center justify-center border border-gray-200 rounded hover:border-green-500 hover:text-green-500 transition-colors">
-                        ‹
+                    <button
+                        onClick={scrollLeft}
+                        className="w-8 h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary hover:text-primary transition-colors"
+                    >
+                        <span className="material-symbols-outlined text-[18px]">chevron_left</span>
                     </button>
-                    <button onClick={scrollRight} className="w-8 h-8 flex items-center justify-center border border-gray-200 rounded hover:border-green-500 hover:text-green-500 transition-colors">
-                        ›
+                    <button
+                        onClick={scrollRight}
+                        className="w-8 h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary hover:text-primary transition-colors"
+                    >
+                        <span className="material-symbols-outlined text-[18px]">chevron_right</span>
                     </button>
                 </div>
             </div>
 
+            {/* Scrollable cards */}
             <div
                 ref={scrollRef}
-                className="flex gap-3 overflow-x-auto pb-4"
+                className="flex gap-6 overflow-x-auto pb-4"
                 style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
                 {products.map((product) => (
-                    <div key={product.id} className="flex-shrink-0" style={{ width: "240px" }}>
+                    <div key={product.id} className="flex-shrink-0 w-72">
                         <ProductCard product={product} />
                     </div>
                 ))}

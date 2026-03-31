@@ -36,104 +36,145 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
     }
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-6">
+
+            {/* Brand + Title + Subtitle */}
             <div>
-                <p className="text-sm font-bold text-green-500 uppercase tracking-wider mb-1">
-                    {product.brand}
+                <p className="text-sm font-bold font-headline text-[#008a00] uppercase tracking-tighter mb-1">
+                    {product.brand} Performance
                 </p>
-                <h1 className="text-2xl font-black text-gray-900 leading-tight">
+                <h1 className="text-5xl font-black font-headline tracking-tighter uppercase leading-none mb-2">
                     {product.model}
                 </h1>
-                <p className="text-gray-500 text-sm mt-1">{product.description.subtitle}</p>
+                <p className="text-secondary font-body text-lg">
+                    {product.description.subtitle}
+                </p>
             </div>
 
-            <div className="flex items-center gap-2 flex-wrap">
-                {product.traction && (
-                    <span className="px-2 py-1 bg-gray-900 text-white text-xs font-bold rounded">
-                        {product.traction}
-                    </span>
-                )}
-                {product.category && (
-                    <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">
-                        {product.category}
-                    </span>
-                )}
-                {product.description.collection && (
-                    <span className="px-2 py-1 bg-green-50 text-green-700 text-xs font-medium rounded border border-green-200">
-                        {product.description.collection}
-                    </span>
-                )}
-            </div>
-
-            <div className="flex items-center gap-3">
-                {hasDiscount ? (
-                    <>
-                        <span className="text-3xl font-black text-gray-900">
-                            {product.price.currency} {product.price.current}
+            {/* Tags / Badges */}
+            {(product.traction || product.category || product.description.collection) && (
+                <div className="flex flex-wrap gap-2">
+                    {product.traction && (
+                        <span className="bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase px-2 py-1">
+                            {product.traction}
                         </span>
-                        <span className="text-lg text-gray-400 line-through">
+                    )}
+                    {product.category && (
+                        <span className="bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase px-2 py-1">
+                            {product.category}
+                        </span>
+                    )}
+                    {product.description.collection && (
+                        <span className="bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase px-2 py-1">
+                            {product.description.collection}
+                        </span>
+                    )}
+                </div>
+            )}
+
+            {/* Price */}
+            <div className="flex items-baseline gap-4">
+                <span className="text-3xl font-black font-headline text-primary">
+                    {product.price.currency} {product.price.current}
+                </span>
+                {hasDiscount && (
+                    <>
+                        <span className="text-xl text-secondary line-through">
                             {product.price.currency} {product.price.original}
                         </span>
-                        <span className="px-2 py-1 bg-red-500 text-white text-sm font-bold rounded">
-                            -{product.price.discount_percent.toFixed(0)}%
+                        <span className="bg-primary-container text-on-primary-container text-[12px] font-black px-2 py-0.5">
+                            -{product.price.discount_percent.toFixed(0)}% OFF
                         </span>
                     </>
-                ) : (
-                    <span className="text-3xl font-black text-gray-900">
-                        {product.price.currency} {product.price.current}
-                    </span>
                 )}
             </div>
 
+            {/* Color variants */}
             {product.color_variants.length > 0 && (
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">
-                        Color: <span className="text-gray-700 normal-case font-medium">{product.color}</span>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-secondary mb-3">
+                        Color: {product.color}
                     </p>
-                    <div className="flex items-center gap-2 flex-wrap">
-                        <div className="w-8 h-8 rounded border-2 border-green-500 overflow-hidden bg-gray-50" title={product.color}>
-                            <img src={product.thumbnail} alt={product.color} className="w-full h-full object-contain p-0.5" />
-                        </div>
+                    <div className="flex gap-3">
+                        {/* Current product color swatch */}
+                        <button
+                            className="w-10 h-10 border-2 border-primary ring-2 ring-offset-2 ring-transparent overflow-hidden bg-surface-container-low"
+                            title={product.color}
+                        >
+                            <img
+                                src={product.thumbnail}
+                                alt={product.color}
+                                className="w-full h-full object-contain p-0.5"
+                            />
+                        </button>
                         {product.color_variants.map((variant) => (
                             <Link key={variant.product_id} href={`/${variant.product_id}`}>
-                                <div className="w-8 h-8 rounded border-2 border-gray-200 hover:border-green-500 transition-colors overflow-hidden bg-gray-50" title={variant.color}>
-                                    <img src={variant.thumbnail} alt={variant.color} className="w-full h-full object-contain p-0.5" />
-                                </div>
+                                <button
+                                    className="w-10 h-10 border border-surface-container-highest hover:border-primary transition-all overflow-hidden bg-surface-container-low"
+                                    title={variant.color}
+                                >
+                                    <img
+                                        src={variant.thumbnail}
+                                        alt={variant.color}
+                                        className="w-full h-full object-contain p-0.5"
+                                    />
+                                </button>
                             </Link>
                         ))}
                     </div>
                 </div>
             )}
 
+            {/* Size picker */}
             <div>
-                <div className="flex items-center justify-between mb-2">
-                    <p className="text-xs font-bold uppercase tracking-wider text-gray-400">
-                        Size: {selectedSize && (
-                            <span className="text-gray-700 normal-case font-medium">{selectedSize}</span>
+                <div className="flex items-center justify-between mb-3">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-secondary">
+                        Select Size (EU)
+                        {selectedSize && (
+                            <span className="text-on-surface normal-case font-medium ml-2">
+                                — {selectedSize}
+                            </span>
                         )}
                     </p>
-                    {availableSizes.length === 0 && (
-                        <span className="text-xs text-red-500 font-medium">Out of Stock</span>
+                    {availableSizes.length === 0 ? (
+                        <span className="text-[10px] font-bold uppercase text-primary">
+                            Out of Stock
+                        </span>
+                    ) : (
+                        <button className="text-[10px] font-bold uppercase text-primary underline underline-offset-4">
+                            Size Guide
+                        </button>
                     )}
                 </div>
-                <div className="grid grid-cols-4 sm:grid-cols-5 gap-2">
+
+                <div className="grid grid-cols-4 gap-2">
                     {product.sizes.map((s) => {
                         const isSelected = selectedSize === s.size;
                         const isAvailable = s.available;
-                        let cls = "py-2 text-xs rounded border transition-colors text-center ";
+
                         if (!isAvailable) {
-                            cls += "border-gray-100 text-gray-300 cursor-not-allowed line-through";
-                        } else if (isSelected) {
-                            cls += "border-green-500 bg-green-500 text-white font-bold cursor-pointer";
-                        } else {
-                            cls += "border-gray-200 text-gray-700 hover:border-green-500 hover:text-green-500 cursor-pointer";
+                            return (
+                                <button
+                                    key={s.size}
+                                    disabled
+                                    className="py-3 bg-surface-container text-zinc-400 font-bold text-sm cursor-not-allowed relative overflow-hidden"
+                                >
+                                    {s.size}
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="w-full h-[1px] bg-zinc-300 rotate-45" />
+                                    </div>
+                                </button>
+                            );
                         }
+
                         return (
                             <button
                                 key={s.size}
-                                disabled={!isAvailable}
                                 onClick={() => setSelectedSize(s.size)}
-                                className={cls}
+                                className={`py-3 font-bold text-sm transition-colors ${isSelected
+                                        ? "bg-zinc-900 text-white"
+                                        : "border border-surface-container-highest hover:border-primary"
+                                    }`}
                             >
                                 {s.size}
                             </button>
@@ -142,20 +183,28 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            {/* CTA Buttons */}
+            <div className="space-y-3">
                 <button
                     onClick={handleAddToCart}
-                    className={`w-full py-3 rounded font-bold text-sm transition-colors ${addedToCart ? "bg-green-700 text-white" : "bg-gray-900 text-white hover:bg-gray-700"}`}
+                    className={`w-full py-5 font-black uppercase tracking-widest text-sm flex items-center justify-center gap-2 transition-colors duration-300 ${addedToCart
+                            ? "bg-[#008a00] text-white"
+                            : "bg-zinc-900 text-white hover:bg-zinc-700"
+                        }`}
                 >
-                    {addedToCart ? "Added to Cart!" : selectedSize ? "Add to Cart" : "Select Size to Add to Cart"}
+                    <span>{addedToCart ? "Added to Cart!" : "Add to Cart"}</span>
                 </button>
 
                 <button
                     onClick={handleBuyNow}
                     disabled={!amazonLink}
-                    className={`w-full py-3 rounded font-bold text-sm transition-colors border ${amazonLink ? "border-green-500 text-green-600 hover:bg-green-500 hover:text-white" : "border-gray-200 text-gray-300 cursor-not-allowed"}`}
+                    className={`w-full border-2 py-5 font-black uppercase tracking-widest text-sm flex items-center justify-center gap-2 transition-colors ${amazonLink
+                            ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
+                            : "border-surface-container-highest text-zinc-300 cursor-not-allowed"
+                        }`}
                 >
-                    {amazonLink ? "Buy Now on Amazon" : "Amazon Link Coming Soon"}
+                    <span className="material-symbols-outlined text-[18px]">shopping_bag</span>
+                    <span>{amazonLink ? "Buy Now on Amazon" : "Amazon Link Coming Soon"}</span>
                 </button>
             </div>
 

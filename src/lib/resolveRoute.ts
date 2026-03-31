@@ -171,7 +171,14 @@ const slugToFilterMap: Record<string, CategoryRoute> = {
 };
 
 export function resolveRoute(slugArray: string[]): ResolvedRoute {
-    const slug = slugArray.join("/");
+    // Join the slug and remove optional language prefix (e.g., 'en/', 'es/')
+    let slug = slugArray.join("/");
+    if (slug.startsWith("en/") || slug.startsWith("es/")) {
+        slug = slug.substring(3);
+    } else if (slug === "en" || slug === "es") {
+        slug = "";
+    }
+
     const products = getAllProducts();
 
     const matchedProduct = products.find((p) => p.url_slug === slug);
