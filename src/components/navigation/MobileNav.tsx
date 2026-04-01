@@ -15,7 +15,7 @@ function L4Item({ l4Item, onClose }: { l4Item: NavItem; onClose: () => void }) {
         <div className="pl-4 mt-2 space-y-2 border-l border-neutral-300">
             {l4Item.href && !l4Item.disabled ? (
                 <Link
-                    href={l4Item.href ?? undefined}
+                    href={l4Item.href || "#"}
                     onClick={onClose}
                     className="block text-[10px] font-medium text-neutral-500 uppercase tracking-widest hover:text-primary py-1 transition-colors"
                 >
@@ -39,7 +39,7 @@ function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
             <div className="flex items-center justify-between py-1 group">
                 {l3Item.href && !l3Item.disabled ? (
                     <Link
-                        href={l3Item.href ?? undefined}
+                        href={l3Item.href || "#"}
                         onClick={onClose}
                         className={`flex-1 font-bold text-xs uppercase transition-colors ${isOpen ? "text-primary" : "text-on-surface hover:text-primary"}`}
                     >
@@ -81,7 +81,7 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
             <div className={`w-full flex items-center justify-between pl-12 pr-4 py-3 group`}>
                 {l2Item.href && !l2Item.disabled ? (
                     <Link
-                        href={l2Item.href ?? undefined}
+                        href={l2Item.href || "#"}
                         onClick={onClose}
                         className={`flex-1 font-semibold text-xs tracking-wider uppercase transition-colors ${isOpen ? "text-on-surface" : "text-neutral-500 opacity-80 group-hover:text-primary group-hover:opacity-100"}`}
                     >
@@ -156,7 +156,7 @@ function SubMenuPanel({
                 <div className="bg-surface-container-low rounded-lg">
                     {/* L1 header */}
                     <Link
-                        href={item.href ?? undefined}
+                        href={item.href || "#"}
                         onClick={onClose}
                         className="w-full flex items-center justify-between p-4 text-primary font-headline font-bold text-sm tracking-tight uppercase group"
                     >
