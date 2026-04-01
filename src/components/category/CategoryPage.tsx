@@ -60,9 +60,7 @@ export default function CategoryPage({
         if (maxPrice) filters.max_price = parseFloat(maxPrice);
 
         const sort = searchParams.get("sort");
-        if (sort) {
-            filters.sort = sort as ActiveFilters["sort"];
-        }
+        if (sort) filters.sort = sort as ActiveFilters["sort"];
 
         return filters;
     }, [searchParams, baseFilters]);
@@ -87,48 +85,64 @@ export default function CategoryPage({
     }, [filteredProducts, safePage]);
 
     return (
-        <div className="container mx-auto px-4 py-6">
+        <main className="max-w-[1024px] mx-auto px-6 py-8">
+
+            {/* Breadcrumb */}
             <Breadcrumb items={breadcrumbs} />
 
-            <div className="mb-6">
-                <h1 className="text-2xl font-black text-gray-900">{pageTitle}</h1>
+            {/* Category header — red left border, big italic title, full description */}
+            <div className="mb-12 border-l-8 border-primary pl-8 py-2">
+                <h1 className="text-6xl font-black italic tracking-tighter uppercase mb-2 font-headline">
+                    {pageTitle}
+                </h1>
                 {pageSubtitle && (
-                    <p className="text-gray-500 mt-1 text-sm">{pageSubtitle}</p>
+                    <p className="text-secondary max-w-2xl font-body text-lg leading-relaxed">
+                        {pageSubtitle}
+                    </p>
                 )}
             </div>
 
+            {/* Active filters bar */}
             <ActiveFiltersBar />
 
-            <div className="flex items-center justify-between py-3 border-b border-gray-100 mb-6">
-                <div className="flex items-center gap-3">
-                    <button
-                        onClick={() => setIsFilterOpen(true)}
-                        className="lg:hidden flex items-center gap-2 px-3 py-1.5 border border-gray-200 rounded text-sm hover:border-green-500 hover:text-green-500 transition-colors"
-                    >
-                        <span>⚙</span>
-                        <span>Filters</span>
-                    </button>
-                    <p className="text-sm text-gray-500">
-                        {totalProducts} {totalProducts === 1 ? "product" : "products"}
-                    </p>
-                </div>
-                <SortDropdown />
-            </div>
+            {/* Sidebar + grid */}
+            <div className="flex flex-col lg:flex-row gap-12">
 
-            <div className="flex gap-8">
+                {/* Filter sidebar */}
                 <FilterSidebar
                     filterOptions={filterOptions}
                     isOpen={isFilterOpen}
                     onClose={() => setIsFilterOpen(false)}
                 />
 
+                {/* Product area */}
                 <div className="flex-1 min-w-0">
+
+                    {/* Count + sort row */}
+                    <div className="flex justify-between items-center mb-8 pb-4 border-b border-surface-container">
+                        <div className="flex items-center gap-4">
+                            {/* Mobile filter toggle */}
+                            <button
+                                onClick={() => setIsFilterOpen(true)}
+                                className="lg:hidden flex items-center gap-2 px-3 py-2 border border-surface-container-highest text-sm font-bold uppercase tracking-wide hover:border-primary hover:text-primary transition-colors"
+                            >
+                                <span className="material-symbols-outlined text-[18px]">tune</span>
+                                <span>Filters</span>
+                            </button>
+                            <span className="text-sm font-label uppercase text-secondary tracking-widest">
+                                Showing {totalProducts} products
+                            </span>
+                        </div>
+                        <SortDropdown />
+                    </div>
+
                     <ProductGrid
                         products={paginatedProducts}
                         totalProducts={totalProducts}
                         currentPage={safePage}
                         productsPerPage={PRODUCTS_PER_PAGE}
                     />
+
                     <Pagination
                         totalProducts={totalProducts}
                         productsPerPage={PRODUCTS_PER_PAGE}
@@ -136,6 +150,6 @@ export default function CategoryPage({
                     />
                 </div>
             </div>
-        </div>
+        </main>
     );
 }

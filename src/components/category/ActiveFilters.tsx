@@ -27,7 +27,7 @@ export default function ActiveFilters() {
             activeFilters.push({
                 key,
                 value,
-                label: `${filterLabels[key] || key}: ${value}`,
+                label: value,
             });
         }
     });
@@ -53,25 +53,27 @@ export default function ActiveFilters() {
     }
 
     return (
-        <div className="flex items-center gap-2 flex-wrap py-3 border-b border-gray-100">
-            <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
-                Active Filters:
+        <div className="flex flex-wrap items-center gap-3 mb-10">
+            <span className="text-xs font-label font-bold uppercase text-neutral-400 mr-2">
+                Filtros Activos:
             </span>
+
             {activeFilters.map((filter) => (
                 <button
                     key={`${filter.key}-${filter.value}`}
                     onClick={() => removeFilter(filter.key, filter.value)}
-                    className="flex items-center gap-1 px-2 py-1 bg-green-50 border border-green-200 text-green-700 rounded text-xs hover:bg-red-50 hover:border-red-200 hover:text-red-600 transition-colors"
+                    className="bg-surface-container-highest px-3 py-1.5 text-xs font-bold uppercase flex items-center gap-2 hover:bg-surface-container-high transition-colors"
                 >
                     <span>{filter.label}</span>
-                    <span className="font-bold">x</span>
+                    <span className="material-symbols-outlined text-[14px]">close</span>
                 </button>
             ))}
+
             <button
                 onClick={clearAll}
-                className="text-xs text-gray-400 hover:text-red-500 transition-colors underline ml-1"
+                className="text-xs font-label font-bold uppercase text-primary hover:underline underline-offset-4 ml-2 transition-colors"
             >
-                Clear all
+                Limpiar Todo
             </button>
         </div>
     );

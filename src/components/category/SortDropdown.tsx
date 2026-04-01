@@ -3,10 +3,10 @@
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
 const sortOptions = [
-    { value: "newest", label: "Newest" },
-    { value: "price_asc", label: "Price: Low to High" },
-    { value: "price_desc", label: "Price: High to Low" },
-    { value: "biggest_discount", label: "Biggest Discount" },
+    { value: "newest", label: "Novedades" },
+    { value: "price_asc", label: "Precio: Menor a Mayor" },
+    { value: "price_desc", label: "Precio: Mayor a Menor" },
+    { value: "biggest_discount", label: "Más Populares" },
 ];
 
 export default function SortDropdown() {
@@ -28,14 +28,14 @@ export default function SortDropdown() {
     }
 
     return (
-        <div className="flex items-center gap-2">
-            <label className="text-sm text-gray-500 whitespace-nowrap">
-                Sort by:
-            </label>
+        <div className="flex items-center gap-4">
+            <span className="text-xs font-bold uppercase text-neutral-400 tracking-widest whitespace-nowrap">
+                Ordenar por:
+            </span>
             <select
                 value={currentSort}
                 onChange={(e) => handleChange(e.target.value)}
-                className="text-sm border border-gray-200 rounded px-3 py-1.5 bg-white focus:outline-none focus:border-green-500 transition-colors cursor-pointer"
+                className="bg-transparent border-none text-sm font-bold uppercase focus:ring-0 cursor-pointer text-on-surface"
             >
                 {sortOptions.map((option) => (
                     <option key={option.value} value={option.value}>

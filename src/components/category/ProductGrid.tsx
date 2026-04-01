@@ -23,18 +23,18 @@ export default function ProductGrid({
     if (products.length === 0) {
         return (
             <div className="flex flex-col items-center justify-center py-24 text-center">
-                <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-3xl">🔍</span>
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <span className="material-symbols-outlined text-6xl text-surface-container-highest mb-6">
+                    search_off
+                </span>
+                <h3 className="font-headline font-black text-xl uppercase tracking-tight mb-2">
                     No products found
                 </h3>
-                <p className="text-gray-500 text-sm mb-6">
+                <p className="text-secondary text-sm mb-8 max-w-sm">
                     Try adjusting your filters to find what you are looking for
                 </p>
                 <Link
                     href="/"
-                    className="px-6 py-2 bg-green-500 text-white rounded font-medium hover:bg-green-600 transition-colors text-sm"
+                    className="px-8 py-3 bg-primary text-white font-black text-xs uppercase tracking-widest hover:bg-on-surface transition-colors"
                 >
                     Back to Home
                 </Link>
@@ -44,10 +44,10 @@ export default function ProductGrid({
 
     return (
         <div>
-            <p className="text-sm text-gray-500 mb-4">
-                Showing {start}–{end} of {totalProducts} products
+            <p className="text-sm font-label uppercase text-secondary tracking-widest mb-8">
+                Mostrando {start}–{end} de {totalProducts} productos
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-12">
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}

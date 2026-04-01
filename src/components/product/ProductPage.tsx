@@ -25,7 +25,7 @@ export default function ProductPage({
     breadcrumbs,
 }: ProductPageProps) {
     return (
-        <main className="max-w-screen-2xl mx-auto px-6 py-8">
+        <main className="max-w-[1400px] mx-auto px-6 py-8">
 
             {/* Breadcrumb */}
             <Breadcrumb items={breadcrumbs} />

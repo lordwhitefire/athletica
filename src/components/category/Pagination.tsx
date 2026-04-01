@@ -35,17 +35,13 @@ export default function Pagination({
     function getPageNumbers(): (number | string)[] {
         const pages: (number | string)[] = [];
         if (totalPages <= 7) {
-            for (let i = 1; i <= totalPages; i++) {
-                pages.push(i);
-            }
+            for (let i = 1; i <= totalPages; i++) pages.push(i);
         } else {
             pages.push(1);
             if (currentPage > 3) pages.push("...");
             const start = Math.max(2, currentPage - 1);
             const end = Math.min(totalPages - 1, currentPage + 1);
-            for (let i = start; i <= end; i++) {
-                pages.push(i);
-            }
+            for (let i = start; i <= end; i++) pages.push(i);
             if (currentPage < totalPages - 2) pages.push("...");
             pages.push(totalPages);
         }
@@ -55,19 +51,27 @@ export default function Pagination({
     const pageNumbers = getPageNumbers();
 
     return (
-        <div className="flex items-center justify-center gap-1 py-8">
+        <div className="mt-20 flex justify-center items-center gap-2">
+
+            {/* Prev */}
             <button
                 onClick={() => goToPage(currentPage - 1)}
                 disabled={currentPage === 1}
-                className="px-3 py-2 text-sm border border-gray-200 rounded hover:border-green-500 hover:text-green-500 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+                className="w-12 h-12 flex items-center justify-center border border-surface-container-highest hover:bg-surface-container-low transition-colors group disabled:opacity-30 disabled:cursor-not-allowed"
             >
-                Prev
+                <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">
+                    chevron_left
+                </span>
             </button>
 
+            {/* Page numbers */}
             {pageNumbers.map((page, index) => {
                 if (page === "...") {
                     return (
-                        <span key={`dots-${index}`} className="px-2 py-2 text-sm text-gray-400">
+                        <span
+                            key={`dots-${index}`}
+                            className="px-4 text-neutral-400 text-sm"
+                        >
                             ...
                         </span>
                     );
@@ -78,19 +82,25 @@ export default function Pagination({
                     <button
                         key={pageNum}
                         onClick={() => goToPage(pageNum)}
-                        className={`w-9 h-9 text-sm rounded border transition-colors ${isActive ? "bg-green-500 border-green-500 text-white font-bold" : "border-gray-200 hover:border-green-500 hover:text-green-500"}`}
+                        className={`w-12 h-12 flex items-center justify-center border text-sm font-bold transition-colors ${isActive
+                                ? "border-primary bg-primary text-white font-black"
+                                : "border-surface-container-highest hover:bg-surface-container-low"
+                            }`}
                     >
                         {pageNum}
                     </button>
                 );
             })}
 
+            {/* Next */}
             <button
                 onClick={() => goToPage(currentPage + 1)}
                 disabled={currentPage === totalPages}
-                className="px-3 py-2 text-sm border border-gray-200 rounded hover:border-green-500 hover:text-green-500 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+                className="w-12 h-12 flex items-center justify-center border border-surface-container-highest hover:bg-surface-container-low transition-colors group disabled:opacity-30 disabled:cursor-not-allowed"
             >
-                Next
+                <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                    chevron_right
+                </span>
             </button>
         </div>
     );
