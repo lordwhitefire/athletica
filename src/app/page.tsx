@@ -22,7 +22,7 @@ export default function HomePage() {
     });
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen overflow-x-hidden">
             <HeroCarousel
                 banners={config.hero_carousel.banners}
                 autoSwitchMs={config.hero_carousel.auto_switch_ms}
