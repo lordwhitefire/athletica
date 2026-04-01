@@ -92,7 +92,7 @@ export default function CategoryPage({
 
             {/* Category header — red left border, big italic title, full description */}
             <div className="mb-12 border-l-8 border-primary pl-8 py-2">
-                <h1 className="text-6xl font-black italic tracking-tighter uppercase mb-2 font-headline">
+                <h1 className="text-4xl md:text-6xl font-black italic tracking-tighter uppercase mb-2 font-headline">
                     {pageTitle}
                 </h1>
                 {pageSubtitle && (
@@ -119,8 +119,8 @@ export default function CategoryPage({
                 <div className="flex-1 min-w-0">
 
                     {/* Count + sort row */}
-                    <div className="flex justify-between items-center mb-8 pb-4 border-b border-surface-container">
-                        <div className="flex items-center gap-4">
+                    <div className="flex flex-wrap justify-between items-center gap-4 mb-8 pb-4 border-b border-surface-container">
+                        <div className="flex flex-wrap items-center gap-4">
                             {/* Mobile filter toggle */}
                             <button
                                 onClick={() => setIsFilterOpen(true)}

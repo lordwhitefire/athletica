@@ -158,8 +158,8 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                                     key={size}
                                     onClick={() => toggleFilter("size", size)}
                                     className={`aspect-square flex items-center justify-center text-xs font-bold border transition-colors ${isActive
-                                            ? "border-primary bg-primary text-white"
-                                            : "border-surface-container-highest hover:border-primary hover:text-primary"
+                                        ? "border-primary bg-primary text-white"
+                                        : "border-surface-container-highest hover:border-primary hover:text-primary"
                                         }`}
                                 >
                                     {size}
@@ -196,7 +196,7 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
 
             {/* Price range */}
             <FilterSection title="Precio" defaultOpen={false}>
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                     <div className="flex-1">
                         <label className="text-xs text-secondary mb-1 block uppercase tracking-widest">Min</label>
                         <input
@@ -239,7 +239,7 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
             )}
 
             {/* Mobile drawer */}
-            <div className={`fixed top-0 left-0 h-full w-80 bg-surface z-50 shadow-2xl transition-transform duration-300 lg:hidden flex flex-col ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            <div className={`fixed top-0 left-0 h-full w-[85vw] max-w-[320px] bg-surface z-50 shadow-2xl transition-transform duration-300 lg:hidden flex flex-col ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex items-center justify-between px-6 py-5 border-b border-surface-container-highest">
                     <h2 className="font-headline font-bold uppercase tracking-widest text-sm">Filtros</h2>
                     <button
