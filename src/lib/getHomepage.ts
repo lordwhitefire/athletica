@@ -1,24 +1,19 @@
 import homepageData from "@/data/homepage.json";
 import { getAllProducts } from "@/lib/getProducts";
 import { filterProducts } from "@/lib/filterProducts";
-import {
-    HomepageConfig,
-    HomepageSection,
-    ProductCarouselSection,
-} from "@/types/homepage";
+import { HomepageConfig, HomepageSection, ProductCarouselSection } from "@/types/homepage";
 import { Product, ActiveFilters } from "@/types/product";
 
 export function getHomepageConfig(): HomepageConfig {
-    return homepageData as HomepageConfig;
+    return homepageData as unknown as HomepageConfig;
 }
 
 export function getHomepageSections(): HomepageSection[] {
-    return homepageData.sections as HomepageSection[];
+    return homepageData.sections as unknown as HomepageSection[];
 }
 
 export function getProductsForCarousel(section: ProductCarouselSection): Product[] {
     const allProducts = getAllProducts();
-
     const filters: ActiveFilters = {};
 
     if (section.filter.category) filters.category = [section.filter.category];

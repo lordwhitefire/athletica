@@ -22,12 +22,12 @@ export default function HomePage() {
     });
 
     return (
-        <div className="min-h-screen ">
+        <div className="min-h-screen">
             <HeroCarousel
                 banners={config.hero_carousel.banners}
                 autoSwitchMs={config.hero_carousel.auto_switch_ms}
             />
-            <div style={{ marginTop: "24px", marginBottom: "24px" }}>
+            <div style={{ marginTop: "48px" }}>
                 <HomepageRenderer sectionsWithProducts={sectionsWithProducts} />
             </div>
         </div>

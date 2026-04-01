@@ -10,9 +10,14 @@ export interface AuthState {
     isLoggedIn: boolean;
 }
 
+export interface AuthResponse {
+    success: boolean;
+    error?: string;
+}
+
 export interface AuthContextType {
     auth: AuthState;
-    login: (name: string, email: string, password: string) => void;
-    register: (name: string, email: string, password: string) => void;
+    login: (email: string, password: string, name?: string) => Promise<AuthResponse>;
+    register: (name: string, email: string, password: string) => Promise<AuthResponse>;
     logout: () => void;
 }

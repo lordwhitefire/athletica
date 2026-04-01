@@ -15,25 +15,46 @@ export interface HeroCarousel {
     banners: HeroBanner[];
 }
 
+export interface CategoryGridItem {
+    label: string;
+    href: string;
+    image?: string;
+    bg?: string;
+    textColor?: string;
+    accent?: string;
+    height?: string;
+}
+
+export type CategorySectionVariant =
+    | "grid-4-equal"
+    | "scroll-brands"
+    | "grid-tiles-dark"
+    | "grid-3-bordered"
+    | "scroll-categories"
+    | "asymmetric-3-2"
+    | "split-1-2"
+    | "asymmetric-2-split"
+    | "stacked-banners";
+
 export interface CategoryCard {
     id: string;
     title: string;
     subtitle: string;
     link: string;
+    image?: string;
     gradient: string;
     emoji: string;
-    image: string | null;
 }
 
-export interface CategoryPanel {
+export interface CategoryGridSection {
     id: string;
+    type: "category_grid";
     title: string;
-    subtitle: string;
-    link: string;
-    gradient: string;
-    emoji: string;
-    badge: string | null;
-    image: string | null;
+    variant: CategorySectionVariant;
+    bg?: string;
+    viewAllHref?: string;
+    viewAllLabel?: string;
+    items: CategoryGridItem[];
 }
 
 export interface ProductCarouselFilter {
@@ -43,13 +64,6 @@ export interface ProductCarouselFilter {
     traction?: string;
     min_price?: number;
     max_price?: number;
-}
-
-export interface CategoryCarouselSection {
-    id: string;
-    type: "category_carousel";
-    auto_switch_ms: number;
-    cards: CategoryCard[];
 }
 
 export interface ProductCarouselSection {
@@ -64,16 +78,7 @@ export interface ProductCarouselSection {
     link_label?: string;
 }
 
-export interface CategorySectionBlock {
-    id: string;
-    type: "category_section";
-    panels: CategoryPanel[];
-}
-
-export type HomepageSection =
-    | CategoryCarouselSection
-    | ProductCarouselSection
-    | CategorySectionBlock;
+export type HomepageSection = CategoryGridSection | ProductCarouselSection;
 
 export interface HomepageConfig {
     hero_carousel: HeroCarousel;

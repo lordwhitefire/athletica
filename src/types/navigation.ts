@@ -9,6 +9,7 @@ export interface NavItem {
     label: string;
     href: string | null;
     disabled?: boolean;
+    description?: string;
     customLinks?: NavLink[];
     sizeLinks?: NavLink[];
     bottomLinks?: NavLink[];

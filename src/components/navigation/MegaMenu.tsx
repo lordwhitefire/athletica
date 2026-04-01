@@ -49,11 +49,11 @@ function buildColumns(item: NavItem): Column[] {
         if (!l2HasChildren) {
             // Rule 1 — no children, add as normal item
             if (!currentColumn || slotsUsed() >= 5) {
-                startNewColumn(item.label, item.href);
+                startNewColumn(item.label, item.href ?? undefined);
             }
             currentColumn!.items.push({
                 label: l2.label,
-                href: l2.href,
+                href: l2.href ?? undefined,
                 level: 2,
                 disabled: l2.disabled,
             });
@@ -65,12 +65,12 @@ function buildColumns(item: NavItem): Column[] {
             const childrenExceedThree = l2Children.length > 3;
 
             if (childrenExceedThree || !currentColumn || !fits(totalNeeded)) {
-                startNewColumn(item.label, item.href);
+                startNewColumn(item.label, item.href ?? undefined);
             }
 
             currentColumn!.items.push({
                 label: l2.label,
-                href: l2.href,
+                href: l2.href ?? undefined,
                 level: 2,
                 disabled: l2.disabled,
             });
@@ -83,17 +83,17 @@ function buildColumns(item: NavItem): Column[] {
                 if (!l3HasChildren) {
                     // Simple Level 3 — check if fits
                     if (slotsUsed() >= 5) {
-                        startNewColumn(item.label, item.href);
+                        startNewColumn(item.label, item.href ?? undefined);
                         currentColumn!.items.push({
                             label: l2.label,
-                            href: l2.href,
+                            href: l2.href ?? undefined,
                             level: 2,
                             disabled: l2.disabled,
                         });
                     }
                     currentColumn!.items.push({
                         label: l3.label,
-                        href: l3.href,
+                        href: l3.href ?? undefined,
                         level: 3,
                         disabled: l3.disabled,
                     });
@@ -103,10 +103,10 @@ function buildColumns(item: NavItem): Column[] {
                     const totalNeededForL3 = 1 + l3Children.length;
 
                     if (l3ChildrenExceedThree || !fits(totalNeededForL3)) {
-                        startNewColumn(item.label, item.href);
+                        startNewColumn(item.label, item.href ?? undefined);
                         currentColumn!.items.push({
                             label: l2.label,
-                            href: l2.href,
+                            href: l2.href ?? undefined,
                             level: 2,
                             disabled: l2.disabled,
                         });
@@ -114,7 +114,7 @@ function buildColumns(item: NavItem): Column[] {
 
                     currentColumn!.items.push({
                         label: l3.label,
-                        href: l3.href,
+                        href: l3.href ?? undefined,
                         level: 3,
                         disabled: l3.disabled,
                     });
@@ -129,23 +129,23 @@ function buildColumns(item: NavItem): Column[] {
                         for (const l4 of batch) {
                             currentColumn!.items.push({
                                 label: l4.label,
-                                href: l4.href,
+                                href: l4.href ?? undefined,
                                 level: 4,
                                 disabled: l4.disabled,
                             });
                         }
 
                         if (l4Batch.length > 0) {
-                            startNewColumn(item.label, item.href);
+                            startNewColumn(item.label, item.href ?? undefined);
                             currentColumn!.items.push({
                                 label: l2.label,
-                                href: l2.href,
+                                href: l2.href ?? undefined,
                                 level: 2,
                                 disabled: l2.disabled,
                             });
                             currentColumn!.items.push({
                                 label: l3.label,
-                                href: l3.href,
+                                href: l3.href ?? undefined,
                                 level: 3,
                                 disabled: l3.disabled,
                             });

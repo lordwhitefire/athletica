@@ -2,39 +2,18 @@
 
 import Link from "next/link";
 
-// ─── Types ─────────────────────────────────────────────────────────────────────
+import { CategoryGridItem, CategorySectionVariant } from "@/types/homepage";
 
-export interface CategoryItem {
-    label: string;
-    href: string;
-    image?: string;
-    bg?: string;         // bg-* class e.g. "bg-black", "bg-primary"
-    textColor?: string;  // text-* class e.g. "text-white", "text-neutral-900"
-    accent?: string;     // border accent class e.g. "border-primary", "border-black"
-    height?: string;     // h-* class override
-}
-
-type CategorySectionVariant =
-    | "grid-4-equal"        // 4 equal image columns with label overlay — ground type
-    | "scroll-brands"       // horizontal scroll, big branded cards — titans
-    | "grid-tiles-dark"     // 4-column dark square tiles — collections
-    | "grid-3-bordered"     // 3-column with left border accent — surface pro
-    | "scroll-categories"   // horizontal scroll, bordered cards on colored bg — performance gear
-    | "asymmetric-3-2"      // 3+2 col grid with image + white/colored label box — category section 1
-    | "split-1-2"           // 1/3 + 2/3 split — category section 2 / training gear
-    | "asymmetric-2-split"  // 2 col with thick border accent — category section 4
-    | "stacked-banners";    // stacked full-width banners — category section 5
+// ─── Component ─────────────────────────────────────────────────────────────────
 
 interface CategoryGridSectionProps {
     title: string;
-    items: CategoryItem[];
+    items: CategoryGridItem[];
     variant: CategorySectionVariant;
     viewAllHref?: string;
     viewAllLabel?: string;
     bg?: string; // section background
 }
-
-// ─── Component ─────────────────────────────────────────────────────────────────
 
 export default function CategoryGridSection({
     title,
@@ -111,8 +90,17 @@ export default function CategoryGridSection({
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {items.map((item) => (
                         <Link key={item.label} href={item.href}>
-                            <div className={`aspect-square ${item.bg || "bg-neutral-800"} flex items-center justify-center font-black text-3xl italic hover:bg-primary cursor-pointer transition-colors ${item.textColor || "text-white"}`}>
-                                {item.label}
+                            <div className={`relative aspect-square ${item.bg || "bg-neutral-800"} flex items-center justify-center font-black text-3xl italic hover:bg-primary cursor-pointer transition-colors group overflow-hidden`}>
+                                {item.image && (
+                                    <img
+                                        src={item.image}
+                                        alt={item.label}
+                                        className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform"
+                                    />
+                                )}
+                                <span className={`relative z-10 ${item.textColor || "text-white"}`}>
+                                    {item.label}
+                                </span>
                             </div>
                         </Link>
                     ))}
@@ -123,8 +111,15 @@ export default function CategoryGridSection({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {items.map((item) => (
                         <Link key={item.label} href={item.href}>
-                            <div className={`h-64 ${item.bg || "bg-surface-container-low"} flex items-center justify-center ${item.accent || "border-l-8 border-primary"} cursor-pointer hover:opacity-90 transition-opacity`}>
-                                <span className={`font-black text-2xl uppercase ${item.textColor || "text-on-surface"}`}>
+                            <div className={`relative h-64 ${item.bg || "bg-surface-container-low"} flex items-center justify-center ${item.accent || "border-l-8 border-primary"} cursor-pointer hover:opacity-90 transition-opacity group overflow-hidden`}>
+                                {item.image && (
+                                    <img
+                                        src={item.image}
+                                        alt={item.label}
+                                        className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform"
+                                    />
+                                )}
+                                <span className={`relative z-10 font-black text-2xl uppercase ${item.textColor || "text-on-surface"}`}>
                                     {item.label}
                                 </span>
                             </div>
@@ -137,8 +132,17 @@ export default function CategoryGridSection({
                 <div className="flex gap-6 overflow-x-auto no-scrollbar">
                     {items.map((item) => (
                         <Link key={item.label} href={item.href}>
-                            <div className={`min-w-[200px] aspect-video border-4 ${item.accent || "border-white"} flex items-center justify-center font-bold uppercase cursor-pointer hover:bg-white/10 transition-colors ${item.textColor || "text-white"}`}>
-                                {item.label}
+                            <div className={`relative min-w-[200px] aspect-video border-4 ${item.accent || "border-white"} flex items-center justify-center font-bold uppercase cursor-pointer hover:bg-white/10 transition-colors group overflow-hidden`}>
+                                {item.image && (
+                                    <img
+                                        src={item.image}
+                                        alt={item.label}
+                                        className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform"
+                                    />
+                                )}
+                                <span className={`relative z-10 ${item.textColor || "text-white"}`}>
+                                    {item.label}
+                                </span>
                             </div>
                         </Link>
                     ))}
@@ -187,7 +191,7 @@ export default function CategoryGridSection({
                                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform"
                             />
                         )}
-                        <div className={`absolute inset-0 ${items[0].bg || "bg-black"}`} style={{ opacity: items[0].image ? 0 : 1 }} />
+                        <div className={`absolute inset-0 ${items[0].bg || "bg-black"}`} style={{ opacity: items[0].image ? 0.4 : 1 }} />
                         <h3 className={`relative font-headline text-3xl font-black italic ${items[0].textColor || "text-white"}`}>
                             {items[0].label}
                         </h3>
@@ -201,7 +205,7 @@ export default function CategoryGridSection({
                                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform"
                             />
                         )}
-                        <div className={`absolute inset-0 ${items[1].bg || "bg-primary"}`} style={{ opacity: items[1].image ? 0 : 1 }} />
+                        <div className={`absolute inset-0 ${items[1].bg || "bg-primary"}`} style={{ opacity: items[1].image ? 0.4 : 1 }} />
                         <h3 className={`relative font-headline text-5xl font-black italic ${items[1].textColor || "text-white"}`}>
                             {items[1].label}
                         </h3>
