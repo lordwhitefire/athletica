@@ -83,3 +83,14 @@ body {
     --font-body: "Inter", sans-serif;
     --font-label: "Inter", sans-serif;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

@@ -78,22 +78,26 @@
                 {
                     "label": "FG",
                     "href": "/fg-football-boots",
-                    "bg": "bg-black"
+                    "bg": "bg-black",
+                    "image": "/FG.jpg"
                 },
                 {
                     "label": "AG",
                     "href": "/ag-football-boots",
-                    "bg": "bg-neutral-800"
+                    "bg": "bg-neutral-800",
+                    "image": "/AG.jpg"
                 },
                 {
                     "label": "TF",
                     "href": "/tf-football-boots",
-                    "bg": "bg-neutral-700"
+                    "bg": "bg-neutral-700",
+                    "image": "/TF.jpg"
                 },
                 {
                     "label": "SG",
                     "href": "/sg-football-boots",
-                    "bg": "bg-neutral-600"
+                    "bg": "bg-neutral-600",
+                    "image": "/SG.jpg"
                 }
             ]
         },
@@ -120,23 +124,27 @@
                 {
                     "label": "ADIDAS",
                     "href": "/adidas-football-boots",
-                    "bg": "bg-black"
+                    "bg": "bg-black",
+                    "image": "/ADIDASLOGO.jpg"
                 },
                 {
                     "label": "NIKE",
                     "href": "/nike-football-boots",
-                    "bg": "bg-red-600"
+                    "bg": "bg-red-600",
+                    "image": "/NIKELOGO.jpg"
                 },
                 {
                     "label": "PUMA",
                     "href": "/puma-football-boots",
-                    "bg": "bg-neutral-800"
+                    "bg": "bg-neutral-800",
+                    "image": "/PUMALOGO.jpg"
                 },
                 {
                     "label": "NEW BALANCE",
                     "href": "/new-balance-football-boots",
                     "bg": "bg-neutral-200",
-                    "textColor": "text-neutral-900"
+                    "textColor": "text-neutral-900",
+                    "image": "/NEWBALANCELOGO.jpg"
                 }
             ]
         },
@@ -322,12 +330,14 @@
                 {
                     "label": "Adidas Predator",
                     "href": "/adidas-predator-football-boots",
-                    "bg": "bg-black"
+                    "bg": "bg-black",
+                    "image": "/adidas.jpg"
                 },
                 {
                     "label": "Nike Phantom",
                     "href": "/nike-phantom-football-boots",
-                    "bg": "bg-red-600"
+                    "bg": "bg-red-600",
+                    "image": "/nike.jpg"
                 }
             ]
         },
@@ -368,12 +378,14 @@
                 {
                     "label": "GK Gloves",
                     "href": "/goalkeeper-gloves",
-                    "bg": "bg-black"
+                    "bg": "bg-black",
+                    "image": "/GLOVE.jpg"
                 },
                 {
                     "label": "Training Gear",
                     "href": "/football-training",
-                    "bg": "bg-red-600"
+                    "bg": "bg-red-600",
+                    "image": "/GEAR.jpg"
                 }
             ]
         },
@@ -413,12 +425,14 @@
                 {
                     "label": "Puma Future",
                     "href": "/puma-future-football-boots",
-                    "bg": "bg-black"
+                    "bg": "bg-black",
+                    "image": "/PUMAFUTURE.jpg"
                 },
                 {
                     "label": "Mercurial Superfly",
                     "href": "/nike-mercurial-football-boots",
-                    "bg": "bg-neutral-900"
+                    "bg": "bg-neutral-900",
+                    "image": "/MERCURIAL.jpg"
                 }
             ]
         },
@@ -432,12 +446,13 @@
                 {
                     "label": "X Crazyfast",
                     "href": "/adidas-x-crazyfast-football-boots",
-                    "accent": "border-r-8 border-red-600"
+                    "accent": "border-r-8 border-red-600",
+                    "image": "/CRAZYFAST.jpg"
                 },
                 {
                     "label": "Puma King",
                     "href": "/puma-king-football-boots",
-                    "bg": "bg-red-600"
+                    "image": "/PUMAKING.jpg"
                 }
             ]
         },
@@ -465,13 +480,15 @@
                     "label": "Premium Boots",
                     "href": "/football-boots",
                     "bg": "bg-black",
-                    "height": "h-48"
+                    "height": "h-48",
+                    "image": "/PREMIUM.jpg"
                 },
                 {
                     "label": "Sale — Up to 50%",
                     "href": "/football-boots",
                     "bg": "bg-red-600",
-                    "height": "h-80"
+                    "height": "h-80",
+                    "image": "/SALE.jpg"
                 }
             ]
         },

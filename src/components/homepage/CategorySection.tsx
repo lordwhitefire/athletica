@@ -66,23 +66,46 @@ export default function CategoryGridSection({
             )}
 
             {variant === "scroll-brands" && (
-                <div className="flex gap-4 overflow-x-auto no-scrollbar">
-                    {items.map((item) => (
-                        <Link key={item.label} href={item.href}>
-                            <div className={`min-w-[400px] h-64 ${item.bg || "bg-zinc-800"} flex items-center justify-center group cursor-pointer relative overflow-hidden`}>
-                                {item.image && (
-                                    <img
-                                        src={item.image}
-                                        alt={item.label}
-                                        className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform"
-                                    />
-                                )}
-                                <span className={`relative font-headline text-5xl font-black italic ${item.textColor || "text-white"}`}>
-                                    {item.label}
-                                </span>
-                            </div>
-                        </Link>
-                    ))}
+                <div className="relative">
+                    {/* Desktop nav arrows — hidden on mobile */}
+                    <button
+                        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                        onClick={() => {
+                            const el = document.getElementById("scroll-brands-track");
+                            if (el) el.scrollBy({ left: -420, behavior: "smooth" });
+                        }}
+                    >
+                        <span className="material-symbols-outlined">chevron_left</span>
+                    </button>
+
+                    <button
+                        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                        onClick={() => {
+                            const el = document.getElementById("scroll-brands-track");
+                            if (el) el.scrollBy({ left: 420, behavior: "smooth" });
+                        }}
+                    >
+                        <span className="material-symbols-outlined">chevron_right</span>
+                    </button>
+
+                    <div id="scroll-brands-track" className="flex gap-4 overflow-x-auto no-scrollbar">
+                        {items.map((item) => (
+                            <Link key={item.label} href={item.href}>
+                                <div className={`min-w-[400px] h-64 ${item.bg || "bg-zinc-800"} flex items-center justify-center group cursor-pointer relative overflow-hidden`}>
+                                    {item.image && (
+                                        <img
+                                            src={item.image}
+                                            alt={item.label}
+                                            className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform"
+                                        />
+                                    )}
+                                    <span className={`relative font-headline text-5xl font-black italic ${item.textColor || "text-white"}`}>
+                                        {item.label}
+                                    </span>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             )}
 
