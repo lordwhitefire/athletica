@@ -31,8 +31,11 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
         >
-            <div className="max-w-7xl w-full px-6 " >
-                <div className="relative overflow-visible" style={{ height: "400px" }}>
+            <div className="max-w-7xl w-full px-3 md:px-6">
+                <div
+                    className="relative overflow-visible"
+                    style={{ height: "clamp(180px, 50vw, 400px)" }}
+                >
                     <div className="absolute inset-0 flex items-center justify-center">
                         {banners.map((banner, index) => {
                             const total = banners.length;
@@ -54,7 +57,13 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
                                 <div
                                     key={banner.id}
                                     className="absolute transition-all duration-500 ease-in-out rounded-xl overflow-hidden"
-                                    style={{ width: "100%", height: "360px", transform, opacity, zIndex }}
+                                    style={{
+                                        width: "100%",
+                                        height: "clamp(160px, 46vw, 360px)",
+                                        transform,
+                                        opacity,
+                                        zIndex,
+                                    }}
                                 >
                                     <Link href={banner.link} className="block w-full h-full">
                                         {banner.image ? (
@@ -62,11 +71,14 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
                                         ) : (
                                             <div className={`w-full h-full bg-gradient-to-br ${banner.gradient} flex items-center justify-center relative overflow-hidden`}>
                                                 <div className="absolute inset-0 opacity-10 flex items-center justify-center text-9xl select-none">⚽</div>
-                                                <div className="relative z-10 text-center text-white px-12">
-                                                    <p className="text-xs font-bold uppercase tracking-widest mb-3 opacity-60">Athletica</p>
-                                                    <h2 className="text-4xl font-black mb-3 leading-tight">{banner.title}</h2>
-                                                    <p className="text-gray-300 text-base mb-6 opacity-80">{banner.subtitle}</p>
-                                                    <span className="inline-block px-8 py-3 font-bold rounded text-sm text-white" style={{ backgroundColor: banner.accent_color }}>
+                                                <div className="relative z-10 text-center text-white px-4 md:px-12">
+                                                    <p className="text-xs font-bold uppercase tracking-widest mb-2 md:mb-3 opacity-60">Athletica</p>
+                                                    <h2 className="text-xl md:text-4xl font-black mb-2 md:mb-3 leading-tight">{banner.title}</h2>
+                                                    <p className="text-gray-300 text-xs md:text-base mb-3 md:mb-6 opacity-80 hidden sm:block">{banner.subtitle}</p>
+                                                    <span
+                                                        className="inline-block px-4 md:px-8 py-2 md:py-3 font-bold rounded text-xs md:text-sm text-white"
+                                                        style={{ backgroundColor: banner.accent_color }}
+                                                    >
                                                         {banner.button_text}
                                                     </span>
                                                 </div>
@@ -85,7 +97,11 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
                             key={index}
                             onClick={() => setActiveIndex(index)}
                             className="transition-all duration-300 rounded-full"
-                            style={{ width: index === activeIndex ? "24px" : "8px", height: "8px", backgroundColor: index === activeIndex ? "#22c55e" : "rgba(255,255,255,0.3)" }}
+                            style={{
+                                width: index === activeIndex ? "24px" : "8px",
+                                height: "8px",
+                                backgroundColor: index === activeIndex ? "#22c55e" : "rgba(255,255,255,0.3)",
+                            }}
                             aria-label={`Go to slide ${index + 1}`}
                         />
                     ))}

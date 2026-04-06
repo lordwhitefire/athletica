@@ -14,7 +14,7 @@ interface HomepageRendererProps {
     sectionsWithProducts: SectionWithProducts[];
 }
 
-const MAX_W = "max-w-7xl mx-auto px-6";
+const MAX_W = "max-w-7xl mx-auto px-3 md:px-6";
 
 export default function HomepageRenderer({ sectionsWithProducts }: HomepageRendererProps) {
     return (
@@ -23,7 +23,7 @@ export default function HomepageRenderer({ sectionsWithProducts }: HomepageRende
                 if (section.type === "category_grid") {
                     const s = section as CategoryGridSection;
                     return (
-                        <div key={s.id} className={`w-full py-10 border-b border-gray-100 ${s.bg || ""}`}>
+                        <div key={s.id} className={`w-full py-6 md:py-10 border-b border-gray-100 ${s.bg || ""}`}>
                             <div className={MAX_W}>
                                 <CategoryGridSectionComponent
                                     title={s.title}
@@ -42,7 +42,7 @@ export default function HomepageRenderer({ sectionsWithProducts }: HomepageRende
                     const s = section as ProductCarouselSection;
                     if (!products || products.length === 0) return null;
                     return (
-                        <div key={s.id} className="w-full flex justify-center py-2 border-b border-gray-100">
+                        <div key={s.id} className="w-full py-2 border-b border-gray-100">
                             <div className={MAX_W}>
                                 <ProductCarousel
                                     title={s.title}
