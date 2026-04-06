@@ -44,10 +44,10 @@ export default function ProductGrid({
 
     return (
         <div>
-            <p className="text-sm font-label uppercase text-secondary tracking-widest mb-8">
+            <p className="text-xs md:text-sm font-label uppercase text-secondary tracking-widest mb-4 md:mb-8">
                 Mostrando {start}–{end} de {totalProducts} productos
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-12">
+            <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-x-3 gap-y-6 md:gap-x-6 md:gap-y-12">
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
