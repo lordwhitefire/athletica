@@ -5,6 +5,31 @@ import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 
+function ConfirmationScreen({ email, onBack }: { email: string; onBack: () => void }) {
+    return (
+        <div className="min-h-screen bg-surface flex items-center justify-center px-4 py-12">
+            <div className="w-full max-w-md text-center">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <span className="material-symbols-outlined text-4xl text-on-primary" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
+                </div>
+                <h1 className="text-3xl font-black font-headline text-on-surface mb-3">Check your email</h1>
+                <p className="text-on-surface-variant max-w-md mb-2">
+                    We sent a confirmation link to <strong className="text-on-surface">{email}</strong>
+                </p>
+                <p className="text-on-surface-variant text-sm mb-10">Click the link to activate your account, then sign in.</p>
+                <div className="flex flex-col gap-3 items-center">
+                    <Link href="/login" className="px-8 py-3.5 bg-primary text-on-primary font-bold rounded hover:bg-primary-container hover:text-on-primary-container transition-colors">
+                        Sign In
+                    </Link>
+                    <button onClick={onBack} className="text-sm text-primary font-bold hover:text-primary-container transition-colors">
+                        Use a different email
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function RegisterForm() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -14,6 +39,7 @@ export default function RegisterForm() {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
+    const [confirmedEmail, setConfirmedEmail] = useState<string | null>(null);
     const { register } = useAuth();
     const router = useRouter();
 
@@ -22,6 +48,15 @@ export default function RegisterForm() {
         hasMatch: confirmPassword.length > 0 && password === confirmPassword,
         hasMismatch: confirmPassword.length > 0 && password !== confirmPassword,
     };
+
+    if (confirmedEmail) {
+        return (
+            <ConfirmationScreen
+                email={confirmedEmail}
+                onBack={() => setConfirmedEmail(null)}
+            />
+        );
+    }
 
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
@@ -48,6 +83,11 @@ export default function RegisterForm() {
 
         if (!result.success) {
             setError(result.error || "Something went wrong. Please try again.");
+            return;
+        }
+
+        if (result.needsEmailConfirmation) {
+            setConfirmedEmail(email);
             return;
         }
 

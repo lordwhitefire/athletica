@@ -13,6 +13,7 @@ export interface AuthState {
 export interface AuthResponse {
     success: boolean;
     error?: string;
+    needsEmailConfirmation?: boolean;
 }
 
 export interface AuthContextType {
