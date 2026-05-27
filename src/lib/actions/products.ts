@@ -17,10 +17,24 @@ export async function getProductByIdAdmin(id: string) {
     return adminClient.fetch(`*[_id == $id][0]`, { id });
 }
 
+function imgRef(assetId: string | null) {
+    if (!assetId) return undefined;
+    return { _type: "image" as const, asset: { _type: "reference" as const, _ref: assetId } };
+}
+
+function parseGalleryAssets(raw: string): { _type: "image"; asset: { _type: "reference"; _ref: string }; _key: string }[] {
+    if (!raw) return [];
+    return raw.split(",").filter(Boolean).map((id, i) => ({
+        _type: "image" as const,
+        asset: { _type: "reference" as const, _ref: id.trim() },
+        _key: `gallery-${i}`,
+    }));
+}
+
 export async function createProduct(formData: FormData) {
     const raw = Object.fromEntries(formData.entries());
 
-    const doc = {
+    const doc: Record<string, unknown> = {
         _type: "product",
         _id: raw.id as string,
         id: raw.id as string,
@@ -56,14 +70,24 @@ export async function createProduct(formData: FormData) {
         },
     };
 
-    await adminClient.createOrReplace(doc);
+    const mainImg = imgRef((raw.main_image_asset as string) || null);
+    const thumb = imgRef((raw.thumbnail_asset as string) || null);
+    const logo = imgRef((raw.brand_logo_asset as string) || null);
+    const gallery = parseGalleryAssets(raw.gallery_assets as string);
+
+    if (mainImg) doc.main_image = mainImg;
+    if (thumb) doc.thumbnail = thumb;
+    if (logo) doc.brand_logo = logo;
+    if (gallery.length > 0) doc.image_gallery = gallery;
+
+    await adminClient.createOrReplace(doc as Parameters<typeof adminClient.createOrReplace>[0]);
     revalidatePath("/admin/products");
 }
 
 export async function updateProduct(id: string, formData: FormData) {
     const raw = Object.fromEntries(formData.entries());
 
-    const patch = {
+    const patch: Record<string, unknown> = {
         model: raw.model as string,
         brand: raw.brand as string,
         category: raw.category as string,
@@ -80,6 +104,20 @@ export async function updateProduct(id: string, formData: FormData) {
             currency: (raw.currency as string) || "EUR",
         },
     };
+
+    const mainImg = imgRef((raw.main_image_asset as string) || null);
+    const thumb = imgRef((raw.thumbnail_asset as string) || null);
+    const logo = imgRef((raw.brand_logo_asset as string) || null);
+    const gallery = parseGalleryAssets(raw.gallery_assets as string);
+
+    if (mainImg !== undefined) patch.main_image = mainImg;
+    if (thumb !== undefined) patch.thumbnail = thumb;
+    if (logo !== undefined) patch.brand_logo = logo;
+    if (gallery.length > 0) {
+        patch.image_gallery = gallery;
+    } else {
+        patch.image_gallery = [];
+    }
 
     await adminClient.patch(id).set(patch).commit();
     revalidatePath("/admin/products");

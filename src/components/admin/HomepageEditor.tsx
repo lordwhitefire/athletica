@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import {
     updateBanner, addBanner, deleteBanner,
     updateSection, addSection, deleteSection,
@@ -8,6 +8,15 @@ import {
 } from "@/lib/actions/homepage";
 import { useRouter } from "next/navigation";
 import ImageSelector from "./ImageSelector";
+
+function assetToUrl(assetId: string | null): string | null {
+    if (!assetId) return null;
+    const withoutPrefix = assetId.replace(/^image-/, "");
+    const parts = withoutPrefix.split("-");
+    const ext = parts.pop()!;
+    const dims = parts.pop()!;
+    return `https://cdn.sanity.io/images/cuiis46d/production/${parts.join("-")}-${dims}.${ext}`;
+}
 
 interface Props {
     doc: Record<string, unknown> | null;
@@ -97,7 +106,7 @@ export default function HomepageEditor({ doc }: Props) {
         const [image, setImage] = useState(banner.image as string | null);
 
         async function save() {
-            await updateBanner(index, { title, subtitle, button_text: buttonText, link, gradient, accent_color: accentColor, image });
+            await updateBanner(index, { title, subtitle, button_text: buttonText, link, gradient, accent_color: accentColor, image: assetToUrl(image) });
             setEditing(false);
             router.refresh();
         }
@@ -140,7 +149,7 @@ export default function HomepageEditor({ doc }: Props) {
                     <Field label="Gradient" value={gradient} onChange={setGradient} placeholder="from-gray-900 via-gray-800 to-red-900" />
                     <Field label="Accent Color" value={accentColor} onChange={setAccentColor} placeholder="#ef4444" />
                 </div>
-                <ImageSelector value={image} onChange={setImage} label="Banner Image" />
+                <ImageSelector name="banner_image" value={image} onChange={setImage} label="Banner Image" />
                 <div className="flex gap-2 pt-1">
                     <button onClick={save} className="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">Save</button>
                 </div>
@@ -299,7 +308,8 @@ export default function HomepageEditor({ doc }: Props) {
 
         async function save() {
             const updated: Record<string, unknown> = { label, href };
-            if (image) updated.image = image;
+            const imageUrl = assetToUrl(image);
+            if (imageUrl) updated.image = imageUrl;
             if (itemBg) updated.bg = itemBg;
             if (textColor) updated.textColor = textColor;
             if (accent) updated.accent = accent;
@@ -324,7 +334,7 @@ export default function HomepageEditor({ doc }: Props) {
                     <Field label="Accent" value={accent} onChange={setAccent} />
                     <Field label="Height" value={height} onChange={setHeight} />
                 </div>
-                <ImageSelector value={image} onChange={setImage} label="Item Image" />
+                <ImageSelector name="item_image" value={image} onChange={setImage} label="Item Image" />
                 <div className="flex gap-2 pt-1">
                     <button onClick={save} className="bg-red-600 hover:bg-red-700 text-white text-[10px] font-bold px-3 py-1 rounded transition-colors">Save Item</button>
                     <button onClick={remove} className="text-red-500 hover:text-red-400 text-[10px] font-medium px-3 py-1">Delete</button>

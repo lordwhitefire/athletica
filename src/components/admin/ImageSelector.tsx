@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface Props {
-    value: string | null;
-    onChange: (v: string | null) => void;
+    name: string;
     label: string;
+    value?: string | null;
+    onChange?: (assetId: string | null) => void;
 }
 
 interface Asset {
@@ -14,12 +15,13 @@ interface Asset {
     originalFilename: string;
 }
 
-export default function ImageSelector({ value, onChange, label }: Props) {
-    const [mode, setMode] = useState<"url" | "picker">(value ? "url" : "picker");
-    const [url, setUrl] = useState(value || "");
+export default function ImageSelector({ name, label, value, onChange }: Props) {
+    const fileRef = useRef<HTMLInputElement>(null);
+    const [uploading, setUploading] = useState(false);
     const [assets, setAssets] = useState<Asset[]>([]);
     const [loading, setLoading] = useState(false);
     const [showPicker, setShowPicker] = useState(false);
+    const [preview, setPreview] = useState<string | null>(null);
 
     useEffect(() => {
         if (showPicker && assets.length === 0) {
@@ -31,56 +33,85 @@ export default function ImageSelector({ value, onChange, label }: Props) {
         }
     }, [showPicker, assets.length]);
 
-    useEffect(() => {
-        if (mode === "url" && url) {
-            onChange(url);
+    async function handleUpload(e: React.ChangeEvent<HTMLInputElement>) {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        setUploading(true);
+        try {
+            const formData = new FormData();
+            formData.append("file", file);
+            const res = await fetch("/api/admin/media/upload", {
+                method: "POST",
+                body: formData,
+            });
+            const asset = await res.json();
+            selectAsset(asset);
+        } catch (err) {
+            console.error(err);
+            alert("Upload failed");
+        } finally {
+            setUploading(false);
+            if (fileRef.current) fileRef.current.value = "";
         }
-    }, [url, mode, onChange]);
+    }
+
+    function selectAsset(asset: Asset) {
+        onChange?.(asset._id);
+        setPreview(asset.url);
+        setShowPicker(false);
+    }
+
+    function clearSelection() {
+        onChange?.(null);
+        setPreview(null);
+    }
+
+    const selectedAsset = assets.find((a) => a._id === value);
 
     return (
         <div>
             <div className="flex items-center justify-between mb-1">
                 <label className="block text-zinc-500 text-xs font-medium">{label}</label>
                 <div className="flex gap-2">
-                    <button onClick={() => { setMode("url"); setShowPicker(false); }}
-                        className={`text-[10px] uppercase tracking-wider font-medium ${mode === "url" ? "text-red-500" : "text-zinc-600 hover:text-zinc-400"}`}>
-                        URL
-                    </button>
-                    <button onClick={() => { setMode("picker"); setShowPicker(true); }}
-                        className={`text-[10px] uppercase tracking-wider font-medium ${mode === "picker" ? "text-red-500" : "text-zinc-600 hover:text-zinc-400"}`}>
+                    <label className={`text-[10px] uppercase tracking-wider font-medium cursor-pointer ${uploading ? "opacity-50 pointer-events-none" : "text-zinc-600 hover:text-zinc-400"}`}>
+                        {uploading ? "Uploading..." : "Upload"}
+                        <input ref={fileRef} type="file" accept="image/*" onChange={handleUpload} className="hidden" />
+                    </label>
+                    <button type="button" onClick={() => setShowPicker((v) => !v)}
+                        className={`text-[10px] uppercase tracking-wider font-medium ${showPicker ? "text-red-500" : "text-zinc-600 hover:text-zinc-400"}`}>
                         Media Library
                     </button>
+                    {value && (
+                        <button type="button" onClick={clearSelection} className="text-[10px] uppercase tracking-wider font-medium text-zinc-600 hover:text-red-500">
+                            Clear
+                        </button>
+                    )}
                 </div>
             </div>
 
-            {mode === "url" && (
-                <div className="flex gap-2">
-                    <input type="text" value={url} onChange={(e) => setUrl(e.target.value)}
-                        placeholder="https://..."
-                        className="flex-1 px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600" />
-                    {url && <button onClick={() => { setUrl(""); onChange(null); }} className="text-zinc-500 hover:text-red-500 text-xs">Clear</button>}
+            <input type="hidden" name={name} value={value || ""} />
+
+            {(preview || selectedAsset) && (
+                <div className="relative w-32 h-32 bg-neutral-800 border border-neutral-700 rounded overflow-hidden mb-2">
+                    <img src={preview || selectedAsset?.url || ""} alt="" className="w-full h-full object-cover" />
                 </div>
             )}
 
-            {mode === "picker" && showPicker && (
+            {showPicker && (
                 <div className="mt-1">
                     {loading ? (
                         <p className="text-xs text-zinc-500">Loading...</p>
                     ) : assets.length === 0 ? (
-                        <p className="text-xs text-zinc-500">No media uploaded yet. Go to Media page to upload.</p>
+                        <p className="text-xs text-zinc-500">No media uploaded yet. Upload one above.</p>
                     ) : (
                         <div className="grid grid-cols-6 gap-2 max-h-40 overflow-y-auto">
-                            <button
-                                onClick={() => onChange(null)}
-                                className={`aspect-square bg-neutral-800 border-2 rounded flex items-center justify-center text-xs text-zinc-500 hover:border-zinc-600 transition-colors ${!value ? "border-red-600" : "border-transparent"}`}
-                            >
-                                None
-                            </button>
                             {assets.map((asset) => (
                                 <button
                                     key={asset._id}
-                                    onClick={() => onChange(asset.url)}
-                                    className={`aspect-square bg-neutral-800 border-2 rounded overflow-hidden hover:border-red-600/50 transition-colors ${value === asset.url ? "border-red-600" : "border-transparent"}`}
+                                    type="button"
+                                    onClick={() => selectAsset(asset)}
+                                    className={`aspect-square bg-neutral-800 border-2 rounded overflow-hidden hover:border-red-600/50 transition-colors ${value === asset._id ? "border-red-600" : "border-transparent"}`}
                                     title={asset.originalFilename}
                                 >
                                     <img src={asset.url} alt={asset.originalFilename} className="w-full h-full object-cover" />

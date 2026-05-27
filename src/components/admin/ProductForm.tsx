@@ -1,7 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import ImageSelector from "./ImageSelector";
 
 interface ProductFormProps {
     action: (formData: FormData) => Promise<void>;
@@ -9,15 +10,68 @@ interface ProductFormProps {
     productId?: string;
 }
 
+function assetRef(img: unknown): string | null {
+    if (!img || typeof img !== "object") return null;
+    const asset = (img as Record<string, unknown>).asset;
+    if (!asset || typeof asset !== "object") return null;
+    const ref = (asset as Record<string, unknown>)._ref;
+    return typeof ref === "string" ? ref : null;
+}
+
+function assetRefs(imgs: unknown): string[] {
+    if (!Array.isArray(imgs)) return [];
+    return imgs.map((img) => assetRef(img)).filter(Boolean) as string[];
+}
+
+function assetUrl(assetId: string): string {
+    const withoutPrefix = assetId.replace(/^image-/, "");
+    const parts = withoutPrefix.split("-");
+    const ext = parts.pop()!;
+    const dims = parts.pop()!;
+    return `https://cdn.sanity.io/images/cuiis46d/production/${parts.join("-")}-${dims}.${ext}`;
+}
+
 export default function ProductForm({ action, initial, productId }: ProductFormProps) {
     const router = useRouter();
     const [saving, setSaving] = useState(false);
+
+    const [mainImageAsset, setMainImageAsset] = useState<string | null>(assetRef(initial?.main_image));
+    const [thumbnailAsset, setThumbnailAsset] = useState<string | null>(assetRef(initial?.thumbnail));
+    const [brandLogoAsset, setBrandLogoAsset] = useState<string | null>(assetRef(initial?.brand_logo));
+    const [galleryAssets, setGalleryAssets] = useState<string[]>(assetRefs(initial?.image_gallery));
+
+    const galleryFileRef = useRef<HTMLInputElement>(null);
+    const [uploadingGallery, setUploadingGallery] = useState(false);
+
+    async function handleGalleryUpload(e: React.ChangeEvent<HTMLInputElement>) {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        setUploadingGallery(true);
+        try {
+            const fd = new FormData();
+            fd.append("file", file);
+            const res = await fetch("/api/admin/media/upload", { method: "POST", body: fd });
+            const asset = await res.json();
+            setGalleryAssets((prev) => [...prev, asset._id]);
+        } catch (err) {
+            console.error(err);
+            alert("Upload failed");
+        } finally {
+            setUploadingGallery(false);
+            if (galleryFileRef.current) galleryFileRef.current.value = "";
+        }
+    }
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setSaving(true);
         const form = e.currentTarget;
         const data = new FormData(form);
+
+        data.set("main_image_asset", mainImageAsset || "");
+        data.set("thumbnail_asset", thumbnailAsset || "");
+        data.set("brand_logo_asset", brandLogoAsset || "");
+        data.set("gallery_assets", galleryAssets.join(","));
 
         try {
             if (productId) {
@@ -50,6 +104,40 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
     return (
         <form onSubmit={handleSubmit} className="max-w-3xl space-y-6">
+            <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
+                <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Images</h2>
+                <ImageSelector name="main_image_sel" label="Main Image" value={mainImageAsset} onChange={setMainImageAsset} />
+                <div className="grid grid-cols-2 gap-4">
+                    <ImageSelector name="thumbnail_sel" label="Thumbnail" value={thumbnailAsset} onChange={setThumbnailAsset} />
+                    <ImageSelector name="brand_logo_sel" label="Brand Logo" value={brandLogoAsset} onChange={setBrandLogoAsset} />
+                </div>
+
+                <div>
+                    <div className="flex items-center justify-between mb-2">
+                        <label className="block text-zinc-500 text-xs font-medium">Image Gallery</label>
+                        <label className={`text-[10px] uppercase tracking-wider font-medium cursor-pointer ${uploadingGallery ? "opacity-50 pointer-events-none" : "text-zinc-600 hover:text-zinc-400"}`}>
+                            {uploadingGallery ? "Uploading..." : "Add Image"}
+                            <input ref={galleryFileRef} type="file" accept="image/*" onChange={handleGalleryUpload} className="hidden" />
+                        </label>
+                    </div>
+                    {galleryAssets.length === 0 && (
+                        <p className="text-xs text-zinc-600">No gallery images yet.</p>
+                    )}
+                    <div className="grid grid-cols-4 gap-2">
+                        {galleryAssets.map((assetId, i) => (
+                            <div key={`${assetId}-${i}`} className="relative group aspect-square bg-neutral-800 border border-neutral-700 rounded overflow-hidden">
+                                <img src={assetUrl(assetId)} alt="" className="w-full h-full object-cover"
+                                    onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                                <button type="button" onClick={() => setGalleryAssets((prev) => prev.filter((_, j) => j !== i))}
+                                    className="absolute top-1 right-1 bg-red-600 text-white text-[10px] w-5 h-5 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    ×
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
             <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Basic Info</h2>
 
