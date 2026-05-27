@@ -141,7 +141,7 @@ export default function HomepageEditor({ doc }: Props) {
                     <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Banner {index + 1}</span>
                     <button onClick={() => setEditing(false)} className="text-zinc-500 hover:text-white text-xs">Cancel</button>
                 </div>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <Field label="Title" value={title} onChange={setTitle} />
                     <Field label="Button Text" value={buttonText} onChange={setButtonText} />
                     <Field label="Subtitle" value={subtitle} onChange={setSubtitle} />
@@ -244,7 +244,7 @@ export default function HomepageEditor({ doc }: Props) {
                     <button onClick={() => setEditing(false)} className="text-zinc-500 hover:text-white text-xs">Cancel</button>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <Field label="Title" value={title} onChange={setTitle} />
                     {type === "category_grid" && (
                         <>
@@ -326,7 +326,7 @@ export default function HomepageEditor({ doc }: Props) {
 
         return (
             <div className="bg-neutral-750 border border-neutral-700 rounded p-3 space-y-2">
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <Field label="Label" value={label} onChange={setLabel} />
                     <Field label="Href" value={href} onChange={setHref} />
                     <Field label="Background" value={itemBg} onChange={setItemBg} />
@@ -382,7 +382,7 @@ export default function HomepageEditor({ doc }: Props) {
         return (
             <div className="bg-neutral-800 rounded p-4 space-y-3 border border-dashed border-neutral-700">
                 <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">New Section</span>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                         <label className="block text-zinc-500 text-xs font-medium mb-0.5">Type</label>
                         <select value={newType} onChange={(e) => setNewType(e.target.value as "category_grid" | "product_carousel")}

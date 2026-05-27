@@ -16,6 +16,7 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
             </div>
 
             <div className="bg-neutral-900 border border-neutral-800 rounded overflow-hidden">
+                <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                     <thead className="bg-neutral-800">
                         <tr className="text-zinc-400 uppercase tracking-wider text-xs">
@@ -58,6 +59,7 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
                         )}
                     </tbody>
                 </table>
+                </div>
             </div>
         </div>
     );

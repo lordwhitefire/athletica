@@ -107,7 +107,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
             <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Images</h2>
                 <ImageSelector name="main_image_sel" label="Main Image" value={mainImageAsset} onChange={setMainImageAsset} />
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <ImageSelector name="thumbnail_sel" label="Thumbnail" value={thumbnailAsset} onChange={setThumbnailAsset} />
                     <ImageSelector name="brand_logo_sel" label="Brand Logo" value={brandLogoAsset} onChange={setBrandLogoAsset} />
                 </div>
@@ -123,7 +123,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                     {galleryAssets.length === 0 && (
                         <p className="text-xs text-zinc-600">No gallery images yet.</p>
                     )}
-                    <div className="grid grid-cols-4 gap-2">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                         {galleryAssets.map((assetId, i) => (
                             <div key={`${assetId}-${i}`} className="relative group aspect-square bg-neutral-800 border border-neutral-700 rounded overflow-hidden">
                                 <img src={assetUrl(assetId)} alt="" className="w-full h-full object-cover"
@@ -141,20 +141,20 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
             <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Basic Info</h2>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Product ID" name="id" required defaultValue={val("id")} />
                     <Field label="URL Slug" name="url_slug" required defaultValue={val("url_slug")} />
                 </div>
                 <Field label="Model Name" name="model" required defaultValue={val("model")} />
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Brand" name="brand" required defaultValue={val("brand")} />
                     <Field label="Category" name="category" required defaultValue={val("category")} />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Traction (FG/AG/TF/SG)" name="traction" defaultValue={val("traction")} />
                     <Field label="Model Line" name="model_line" defaultValue={val("model_line")} />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Gender" name="gender" defaultValue={val("gender") || "Unisex"} />
                     <Field label="Age Group" name="age_group" defaultValue={val("age_group") || "Adult"} />
                 </div>
@@ -163,11 +163,11 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
             <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Pricing</h2>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Current Price" name="price_current" type="number" step="0.01" defaultValue={val("price", "current")} />
                     <Field label="Original Price" name="price_original" type="number" step="0.01" defaultValue={val("price", "original")} />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Discount %" name="discount_percent" type="number" defaultValue={val("price", "discount_percent")} />
                     <Field label="Member Price" name="member_price" type="number" step="0.01" defaultValue={val("price", "member_price")} />
                 </div>
@@ -184,7 +184,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
             <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Technical Details</h2>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Range" name="tech_range" defaultValue={val("description", "technical_details", "range")} />
                     <Field label="Sole Type" name="tech_sole" defaultValue={val("description", "technical_details", "sole_type")} />
                     <Field label="Upper Material" name="tech_upper" defaultValue={val("description", "technical_details", "upper_material")} />
@@ -192,7 +192,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                 </div>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
                 <button type="submit" disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold px-6 py-2.5 rounded transition-colors">
                     {saving ? "Saving..." : productId ? "Update Product" : "Create Product"}
                 </button>

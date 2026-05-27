@@ -105,7 +105,7 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
                     ) : assets.length === 0 ? (
                         <p className="text-xs text-zinc-500">No media uploaded yet. Upload one above.</p>
                     ) : (
-                        <div className="grid grid-cols-6 gap-2 max-h-40 overflow-y-auto">
+                        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 max-h-40 overflow-y-auto">
                             {assets.map((asset) => (
                                 <button
                                     key={asset._id}

@@ -134,7 +134,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
         setItems(updated);
     }
 
-    const indentStyle = { marginLeft: `${depth * 24}px` };
+    const indentStyle = { marginLeft: `${Math.min(depth * 24, 60)}px` };
 
     return (
         <div className="bg-neutral-800 border border-neutral-700 rounded overflow-hidden" style={indentStyle}>
@@ -148,7 +148,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                     className="flex-1 min-w-0 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600" />
                 <input value={item.href as string || ""} onChange={(e) => updateField("href", e.target.value)}
                     placeholder="/path"
-                    className="w-48 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs font-mono focus:outline-none focus:border-red-600" />
+                    className="w-full sm:w-48 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs font-mono focus:outline-none focus:border-red-600" />
                 <input value={item.description as string || ""} onChange={(e) => updateField("description", e.target.value)}
                     placeholder="Description (optional)"
                     className="flex-1 min-w-0 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600 hidden md:block" />
@@ -228,7 +228,7 @@ function LinkRow({ link, onChange, onRemove }: {
                 className="flex-1 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600" />
             <input value={link.href as string || ""} onChange={(e) => onChange("href", e.target.value)}
                 placeholder="/path"
-                className="w-32 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] font-mono focus:outline-none focus:border-red-600" />
+                className="w-full sm:w-32 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] font-mono focus:outline-none focus:border-red-600" />
             <input value={link.description as string || ""} onChange={(e) => onChange("description", e.target.value)}
                 placeholder="Description"
                 className="flex-1 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600 hidden md:block" />
