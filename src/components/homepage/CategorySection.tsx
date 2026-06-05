@@ -29,7 +29,7 @@ export default function CategoryGridSection({
                 {viewAllHref && (
                     <Link
                         href={viewAllHref}
-                        className="text-primary font-bold text-xs md:text-sm uppercase tracking-widest hover:underline underline-offset-4 flex items-center gap-1 transition-transform hover:translate-x-1"
+                        className="text-primary-container font-bold text-xs md:text-sm uppercase tracking-widest hover:underline underline-offset-4 flex items-center gap-1 transition-transform hover:translate-x-1"
                     >
                         {viewAllLabel}
                         <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
@@ -59,7 +59,7 @@ export default function CategoryGridSection({
             {variant === "scroll-brands" && (
                 <div className="relative">
                     <button
-                        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors"
                         onClick={() => {
                             const el = document.getElementById("scroll-brands-track");
                             if (el) el.scrollBy({ left: -420, behavior: "smooth" });
@@ -68,7 +68,7 @@ export default function CategoryGridSection({
                         <span className="material-symbols-outlined">chevron_left</span>
                     </button>
                     <button
-                        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors"
                         onClick={() => {
                             const el = document.getElementById("scroll-brands-track");
                             if (el) el.scrollBy({ left: 420, behavior: "smooth" });
@@ -97,7 +97,7 @@ export default function CategoryGridSection({
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
                     {items.map((item) => (
                         <Link key={item.label} href={item.href}>
-                            <div className={`relative aspect-square ${item.bg || "bg-neutral-800"} flex items-center justify-center font-black text-xl md:text-3xl italic hover:bg-primary cursor-pointer transition-colors group overflow-hidden`}>
+                            <div className={`relative aspect-square ${item.bg || "bg-neutral-800"} flex items-center justify-center font-black text-xl md:text-3xl italic hover:bg-primary-container hover:text-on-primary-container cursor-pointer transition-colors group overflow-hidden`}>
                                 {item.image && (
                                     <img src={item.image} alt={item.label} className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform" />
                                 )}
@@ -114,7 +114,7 @@ export default function CategoryGridSection({
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                     {items.map((item) => (
                         <Link key={item.label} href={item.href}>
-                            <div className={`relative h-32 md:h-64 ${item.bg || "bg-surface-container-low"} flex items-center justify-center ${item.accent || "border-l-8 border-primary"} cursor-pointer hover:opacity-90 transition-opacity group overflow-hidden`}>
+                            <div className={`relative h-32 md:h-64 ${item.bg || "bg-surface-container-low"} flex items-center justify-center ${item.accent || "border-l-8 border-primary-container"} cursor-pointer hover:opacity-90 transition-opacity group overflow-hidden`}>
                                 {item.image && (
                                     <img src={item.image} alt={item.label} className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform" />
                                 )}
@@ -158,7 +158,7 @@ export default function CategoryGridSection({
                         {items[1].image && (
                             <img src={items[1].image} alt={items[1].label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                         )}
-                        <div className={`absolute bottom-4 left-4 md:bottom-10 md:left-10 ${items[1].bg || "bg-primary"} p-3 md:p-8 text-white`}>
+                        <div className={`absolute bottom-4 left-4 md:bottom-10 md:left-10 ${items[1].bg || "bg-primary"} p-3 md:p-8 text-on-primary`}>
                             <h3 className="text-xl md:text-3xl font-black italic">{items[1].label}</h3>
                         </div>
                     </Link>
@@ -190,7 +190,7 @@ export default function CategoryGridSection({
 
             {variant === "asymmetric-2-split" && items.length >= 2 && (
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8 md:h-[500px]">
-                    <Link href={items[0].href} className={`relative overflow-hidden group h-48 md:h-full ${items[0].accent || "border-r-[24px] border-primary"}`}>
+                    <Link href={items[0].href} className={`relative overflow-hidden group h-48 md:h-full ${items[0].accent || "border-r-[24px] border-primary-container"}`}>
                         {items[0].image && (
                             <img src={items[0].image} alt={items[0].label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                         )}

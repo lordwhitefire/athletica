@@ -21,7 +21,7 @@ function ConfirmationScreen({ email, onBack }: { email: string; onBack: () => vo
                     <Link href="/login" className="px-8 py-3.5 bg-primary text-on-primary font-bold rounded hover:bg-primary-container hover:text-on-primary-container transition-colors">
                         Sign In
                     </Link>
-                    <button onClick={onBack} className="text-sm text-primary font-bold hover:text-primary-container transition-colors">
+                    <button onClick={onBack} className="text-sm text-primary-container font-bold hover:text-primary transition-colors">
                         Use a different email
                     </button>
                 </div>
@@ -126,7 +126,7 @@ export default function RegisterForm() {
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 placeholder="John Smith"
-                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary text-sm transition-colors"
+                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                             />
                         </div>
 
@@ -139,7 +139,7 @@ export default function RegisterForm() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="you@example.com"
-                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary text-sm transition-colors"
+                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                             />
                         </div>
 
@@ -153,7 +153,7 @@ export default function RegisterForm() {
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     placeholder="At least 6 characters"
-                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary text-sm transition-colors"
+                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                                 />
                                 <button
                                     type="button"
@@ -168,7 +168,7 @@ export default function RegisterForm() {
                             </div>
                             {password && (
                                 <div className="flex items-center gap-1.5 mt-1.5">
-                                    <span className={`text-[10px] font-bold uppercase tracking-wider ${passwordChecks.minLength ? "text-primary" : "text-on-surface-variant/50"}`}>
+                                    <span className={`text-[10px] font-bold uppercase tracking-wider ${passwordChecks.minLength ? "text-primary-container" : "text-on-surface-variant/50"}`}>
                                         {passwordChecks.minLength ? (
                                             <span className="flex items-center gap-1">
                                                 <span className="material-symbols-outlined text-[12px]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -195,7 +195,7 @@ export default function RegisterForm() {
                                     value={confirmPassword}
                                     onChange={(e) => setConfirmPassword(e.target.value)}
                                     placeholder="Repeat your password"
-                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary text-sm transition-colors"
+                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                                 />
                                 <button
                                     type="button"
@@ -215,7 +215,7 @@ export default function RegisterForm() {
                                 </p>
                             )}
                             {passwordChecks.hasMatch && (
-                                <p className="text-xs text-primary mt-1.5 flex items-center gap-1">
+                                <p className="text-xs text-primary-container mt-1.5 flex items-center gap-1">
                                     <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                                     Passwords match
                                 </p>
@@ -244,7 +244,7 @@ export default function RegisterForm() {
                     <div className="mt-6 text-center">
                         <p className="text-sm text-on-surface-variant">
                             Already have an account?{" "}
-                            <Link href="/login" className="text-primary font-bold hover:text-primary-container transition-colors">
+                            <Link href="/login" className="text-primary-container font-bold hover:text-primary transition-colors">
                                 Sign in
                             </Link>
                         </p>

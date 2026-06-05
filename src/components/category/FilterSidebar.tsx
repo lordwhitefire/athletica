@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
-import { FilterOptions } from "@/types/product";
+import { FilterOptions, BrandOption } from "@/types/product";
 
 interface FilterSidebarProps {
     filterOptions: FilterOptions;
@@ -79,18 +79,21 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
             {filterOptions.brands.length > 0 && (
                 <FilterSection title="Brand">
                     <div className="space-y-3">
-                        {filterOptions.brands.map((brand) => {
-                            const isActive = getActiveValues("brand").includes(brand);
+                        {filterOptions.brands.map((brand: BrandOption) => {
+                            const isActive = getActiveValues("brand").includes(brand.name);
                             return (
-                                <label key={brand} className="flex items-center gap-3 cursor-pointer group">
+                                <label key={brand.name} className="flex items-center gap-3 cursor-pointer group">
                                     <input
                                         type="checkbox"
                                         checked={isActive}
-                                        onChange={() => toggleFilter("brand", brand)}
-                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
+                                        onChange={() => toggleFilter("brand", brand.name)}
+                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary-container focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
                                     />
-                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary ${isActive ? "text-primary" : "text-on-surface"}`}>
-                                        {brand}
+                                    {brand.logo && (
+                                        <img src={brand.logo} alt="" className="w-5 h-5 object-contain flex-shrink-0" />
+                                    )}
+                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary-container ${isActive ? "text-primary-container" : "text-on-surface"}`}>
+                                        {brand.name}
                                     </span>
                                 </label>
                             );
@@ -99,21 +102,21 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                 </FilterSection>
             )}
 
-            {/* Model line */}
-            {filterOptions.model_lines.length > 0 && (
-                <FilterSection title="Model Line" defaultOpen={false}>
+            {/* Model */}
+            {filterOptions.models.length > 0 && (
+                <FilterSection title="Model" defaultOpen={false}>
                     <div className="space-y-3">
-                        {filterOptions.model_lines.map((model) => {
-                            const isActive = getActiveValues("model_line").includes(model);
+                        {filterOptions.models.map((model) => {
+                            const isActive = getActiveValues("model").includes(model);
                             return (
                                 <label key={model} className="flex items-center gap-3 cursor-pointer group">
                                     <input
                                         type="checkbox"
                                         checked={isActive}
-                                        onChange={() => toggleFilter("model_line", model)}
-                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
+                                        onChange={() => toggleFilter("model", model)}
+                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary-container focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
                                     />
-                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary ${isActive ? "text-primary" : "text-on-surface"}`}>
+                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary-container ${isActive ? "text-primary-container" : "text-on-surface"}`}>
                                         {model}
                                     </span>
                                 </label>
@@ -135,9 +138,9 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                                         type="checkbox"
                                         checked={isActive}
                                         onChange={() => toggleFilter("traction", traction)}
-                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
+                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary-container focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
                                     />
-                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary ${isActive ? "text-primary" : "text-on-surface"}`}>
+                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary-container ${isActive ? "text-primary-container" : "text-on-surface"}`}>
                                         {traction}
                                     </span>
                                 </label>
@@ -159,7 +162,7 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                                     onClick={() => toggleFilter("size", size)}
                                     className={`aspect-square flex items-center justify-center text-xs font-bold border transition-colors ${isActive
                                         ? "border-primary bg-primary text-white"
-                                        : "border-surface-container-highest hover:border-primary hover:text-primary"
+                                        : "border-surface-container-highest hover:border-primary-container hover:text-primary-container"
                                         }`}
                                 >
                                     {size}
@@ -182,9 +185,9 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                                         type="checkbox"
                                         checked={isActive}
                                         onChange={() => toggleFilter("color", color)}
-                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
+                                        className="w-4 h-4 border-2 border-surface-container-highest accent-primary-container focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
                                     />
-                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary ${isActive ? "text-primary" : "text-on-surface"}`}>
+                                    <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary-container ${isActive ? "text-primary-container" : "text-on-surface"}`}>
                                         {color}
                                     </span>
                                 </label>
@@ -204,7 +207,7 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                             placeholder={filterOptions.min_price.toString()}
                             value={minPrice}
                             onChange={(e) => handlePriceChange("min", e.target.value)}
-                            className="w-full px-3 py-2 text-sm border border-surface-container-highest bg-surface focus:outline-none focus:border-primary transition-colors"
+                            className="w-full px-3 py-2 text-sm border border-surface-container-highest bg-surface focus:outline-none focus:border-primary-container transition-colors"
                         />
                     </div>
                     <span className="text-secondary mt-5">—</span>
@@ -215,7 +218,7 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                             placeholder={filterOptions.max_price.toString()}
                             value={maxPrice}
                             onChange={(e) => handlePriceChange("max", e.target.value)}
-                            className="w-full px-3 py-2 text-sm border border-surface-container-highest bg-surface focus:outline-none focus:border-primary transition-colors"
+                            className="w-full px-3 py-2 text-sm border border-surface-container-highest bg-surface focus:outline-none focus:border-primary-container transition-colors"
                         />
                     </div>
                 </div>

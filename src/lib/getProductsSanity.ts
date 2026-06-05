@@ -6,13 +6,11 @@ const productsQuery = `*[_type == "product"]{
   id,
   "url_slug": url_slug.current,
   model,
-  brand,
-  brand_logo,
+  "brand": coalesce(brand->name, brand),
   category,
   traction,
-  model_line,
+  name,
   gender,
-  age_group,
   main_image,
   image_gallery,
   thumbnail,
@@ -31,13 +29,11 @@ const productBySlugQuery = `*[_type == "product" && url_slug.current == $slug][0
   id,
   "url_slug": url_slug.current,
   model,
-  brand,
-  brand_logo,
+  "brand": coalesce(brand->name, brand),
   category,
   traction,
-  model_line,
+  name,
   gender,
-  age_group,
   main_image,
   image_gallery,
   thumbnail,
@@ -97,15 +93,15 @@ export async function getProductByIdSanity(id: string): Promise<Product | undefi
     return products.find((p) => p.id === id);
 }
 
-export async function getProductsByModelLineSanity(modelLine: string, excludeId?: string): Promise<Product[]> {
+export async function getProductsByNameSanity(name: string, excludeId?: string): Promise<Product[]> {
     const products = await getAllProductsSanity();
-    return products.filter((p) => p.model_line === modelLine && p.id !== excludeId);
+    return products.filter((p) => p.name === name && p.id !== excludeId);
 }
 
-export async function getProductsByBrandSanity(brand: string, excludeModelLine?: string, excludeId?: string): Promise<Product[]> {
+export async function getProductsByBrandSanity(brand: string, excludeName?: string, excludeId?: string): Promise<Product[]> {
     const products = await getAllProductsSanity();
     return products.filter(
-        (p) => p.brand === brand && p.model_line !== excludeModelLine && p.id !== excludeId
+        (p) => p.brand === brand && p.name !== excludeName && p.id !== excludeId
     );
 }
 

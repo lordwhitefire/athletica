@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useEffect } from "react";
 import {
     updateBanner, addBanner, deleteBanner,
     updateSection, addSection, deleteSection,
@@ -8,14 +8,34 @@ import {
 } from "@/lib/actions/homepage";
 import { useRouter } from "next/navigation";
 import ImageSelector from "./ImageSelector";
+import AutoSuggest from "./AutoSuggest";
+import { suggestCategories, suggestBrands, suggestNames, suggestRoutes } from "@/lib/actions/suggestions";
 
-function assetToUrl(assetId: string | null): string | null {
-    if (!assetId) return null;
-    const withoutPrefix = assetId.replace(/^image-/, "");
-    const parts = withoutPrefix.split("-");
-    const ext = parts.pop()!;
-    const dims = parts.pop()!;
-    return `https://cdn.sanity.io/images/cuiis46d/production/${parts.join("-")}-${dims}.${ext}`;
+function extractAssetId(value: unknown): string | null {
+    if (!value) return null;
+    if (typeof value === "string" && value.startsWith("image-")) return value;
+    if (typeof value === "object" && value !== null) {
+        const obj = value as Record<string, unknown>;
+        const asset = obj.asset;
+        if (asset && typeof asset === "object") {
+            const ref = (asset as Record<string, unknown>)._ref;
+            if (typeof ref === "string") return ref;
+        }
+    }
+    if (typeof value === "string" && value.includes("cdn.sanity.io")) {
+        const match = value.match(/production\/(.+)\.(\w+)$/);
+        if (match) {
+            const base = match[1];
+            const ext = match[2];
+            const lastDash = base.lastIndexOf("-");
+            if (lastDash !== -1) {
+                const hash = base.substring(0, lastDash);
+                const dims = base.substring(lastDash + 1);
+                return `image-${hash}-${dims}-${ext}`;
+            }
+        }
+    }
+    return null;
 }
 
 interface Props {
@@ -103,18 +123,28 @@ export default function HomepageEditor({ doc }: Props) {
         const [link, setLink] = useState(banner.link as string || "");
         const [gradient, setGradient] = useState(banner.gradient as string || "");
         const [accentColor, setAccentColor] = useState(banner.accent_color as string || "");
-        const [image, setImage] = useState(banner.image as string | null);
+        const [image, setImage] = useState<string | null>(extractAssetId(banner.image));
 
         async function save() {
-            await updateBanner(index, { title, subtitle, button_text: buttonText, link, gradient, accent_color: accentColor, image: assetToUrl(image) });
-            setEditing(false);
-            router.refresh();
+            try {
+                await updateBanner(index, { title, subtitle, button_text: buttonText, link, gradient, accent_color: accentColor, image: image ? { _type: "image", asset: { _ref: image, _type: "reference" } } : null });
+                setEditing(false);
+                router.refresh();
+            } catch (err) {
+                console.error("Failed to save banner:", err);
+                alert("Save failed");
+            }
         }
 
         async function remove() {
             if (!confirm(`Delete banner "${title}"?`)) return;
-            await deleteBanner(index);
-            router.refresh();
+            try {
+                await deleteBanner(index);
+                router.refresh();
+            } catch (err) {
+                console.error("Failed to delete banner:", err);
+                alert("Delete failed");
+            }
         }
 
         if (!editing) {
@@ -127,7 +157,7 @@ export default function HomepageEditor({ doc }: Props) {
                         </div>
                         <p className="text-xs text-zinc-500 truncate mt-0.5">{banner.subtitle as string}</p>
                     </div>
-                    <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="flex items-center gap-1">
                         <button onClick={() => setEditing(true)} className="text-zinc-500 hover:text-white p-1"><span className="material-symbols-outlined text-[16px]">edit</span></button>
                         <button onClick={remove} className="text-zinc-500 hover:text-red-500 p-1"><span className="material-symbols-outlined text-[16px]">delete</span></button>
                     </div>
@@ -139,13 +169,13 @@ export default function HomepageEditor({ doc }: Props) {
             <div className="bg-neutral-800 rounded p-4 space-y-3">
                 <div className="flex items-center justify-between mb-1">
                     <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Banner {index + 1}</span>
-                    <button onClick={() => setEditing(false)} className="text-zinc-500 hover:text-white text-xs">Cancel</button>
+                    <button onClick={() => setEditing(false)} className="text-xs bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors">Cancel</button>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <Field label="Title" value={title} onChange={setTitle} />
                     <Field label="Button Text" value={buttonText} onChange={setButtonText} />
                     <Field label="Subtitle" value={subtitle} onChange={setSubtitle} />
-                    <Field label="Link" value={link} onChange={setLink} />
+                    <AutoSuggest label="Link" value={link} onChange={setLink} fetchSuggestions={suggestRoutes} />
                     <Field label="Gradient" value={gradient} onChange={setGradient} placeholder="from-gray-900 via-gray-800 to-red-900" />
                     <Field label="Accent Color" value={accentColor} onChange={setAccentColor} placeholder="#ef4444" />
                 </div>
@@ -173,11 +203,18 @@ export default function HomepageEditor({ doc }: Props) {
         const [linkLabel, setLinkLabel] = useState(section.link_label as string || "");
         const [category, setCategory] = useState(((section.filter as Record<string, unknown>)?.category as string) || "");
         const [brand, setBrand] = useState(((section.filter as Record<string, unknown>)?.brand as string) || "");
-        const [modelLine, setModelLine] = useState(((section.filter as Record<string, unknown>)?.model_line as string) || "");
+        const [modelLine, setModelLine] = useState(((section.filter as Record<string, unknown>)?.name as string) || "");
         const [traction, setTraction] = useState(((section.filter as Record<string, unknown>)?.traction as string) || "");
+        const [tractionOptions, setTractionOptions] = useState<string[]>([]);
         const [minPrice, setMinPrice] = useState(String(((section.filter as Record<string, unknown>)?.min_price as number) ?? ""));
         const [maxPrice, setMaxPrice] = useState(String(((section.filter as Record<string, unknown>)?.max_price as number) ?? ""));
         const items = section.items as Record<string, unknown>[] || [];
+
+        useEffect(() => {
+            import("@/lib/actions/homepage").then(m =>
+                m.getDistinctTractions().then(setTractionOptions)
+            );
+        }, []);
 
         async function saveSection() {
             const base: Record<string, unknown> = { id: section.id, title, type: type };
@@ -196,7 +233,7 @@ export default function HomepageEditor({ doc }: Props) {
                 base.filter = {};
                 if (category) (base.filter as Record<string, unknown>).category = category;
                 if (brand) (base.filter as Record<string, unknown>).brand = brand;
-                if (modelLine) (base.filter as Record<string, unknown>).model_line = modelLine;
+                if (modelLine) (base.filter as Record<string, unknown>).name = modelLine;
                 if (traction) (base.filter as Record<string, unknown>).traction = traction;
                 if (minPrice) (base.filter as Record<string, unknown>).min_price = parseFloat(minPrice);
                 if (maxPrice) (base.filter as Record<string, unknown>).max_price = parseFloat(maxPrice);
@@ -229,7 +266,7 @@ export default function HomepageEditor({ doc }: Props) {
                             )}
                         </div>
                     </div>
-                    <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="flex items-center gap-1">
                         <button onClick={() => setEditing(true)} className="text-zinc-500 hover:text-white p-1"><span className="material-symbols-outlined text-[16px]">edit</span></button>
                         <button onClick={remove} className="text-zinc-500 hover:text-red-500 p-1"><span className="material-symbols-outlined text-[16px]">delete</span></button>
                     </div>
@@ -241,30 +278,60 @@ export default function HomepageEditor({ doc }: Props) {
             <div className="bg-neutral-800 rounded p-4 space-y-3">
                 <div className="flex items-center justify-between mb-1">
                     <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">{type === "category_grid" ? "Category Grid" : "Product Carousel"}</span>
-                    <button onClick={() => setEditing(false)} className="text-zinc-500 hover:text-white text-xs">Cancel</button>
+                    <button onClick={() => setEditing(false)} className="text-xs bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors">Cancel</button>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <Field label="Title" value={title} onChange={setTitle} />
                     {type === "category_grid" && (
                         <>
-                            <Field label="Variant" value={variant} onChange={setVariant} placeholder="grid-4-equal" />
+                            <div>
+                                <label className="block text-zinc-500 text-xs font-medium mb-0.5">Variant</label>
+                                <select value={variant} onChange={(e) => setVariant(e.target.value)}
+                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                                    <option value="grid-4-equal">Grid 4 Equal</option>
+                                    <option value="scroll-brands">Scroll Brands</option>
+                                    <option value="grid-tiles-dark">Grid Tiles Dark</option>
+                                    <option value="grid-3-bordered">Grid 3 Bordered</option>
+                                    <option value="scroll-categories">Scroll Categories</option>
+                                    <option value="asymmetric-3-2">Asymmetric 3-2</option>
+                                    <option value="split-1-2">Split 1-2</option>
+                                    <option value="asymmetric-2-split">Asymmetric 2 Split</option>
+                                    <option value="stacked-banners">Stacked Banners</option>
+                                </select>
+                            </div>
                             <Field label="Background" value={bg} onChange={setBg} />
-                            <Field label="View All Href" value={viewAllHref} onChange={setViewAllHref} />
+                            <AutoSuggest label="View All Href" value={viewAllHref} onChange={setViewAllHref} fetchSuggestions={suggestRoutes} />
                             <Field label="View All Label" value={viewAllLabel} onChange={setViewAllLabel} />
                         </>
                     )}
                     {type === "product_carousel" && (
                         <>
                             <Field label="Subtitle" value={subtitle} onChange={setSubtitle} />
-                            <Field label="Sort" value={sort} onChange={setSort} placeholder="newest" />
+                            <div>
+                                <label className="block text-zinc-500 text-xs font-medium mb-0.5">Sort</label>
+                                <select value={sort} onChange={(e) => setSort(e.target.value)}
+                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                                    <option value="newest">Newest</option>
+                                    <option value="price_asc">Price: Low to High</option>
+                                    <option value="price_desc">Price: High to Low</option>
+                                    <option value="biggest_discount">Biggest Discount</option>
+                                </select>
+                            </div>
                             <Field label="Limit" value={limit} onChange={setLimit} type="number" />
-                            <Field label="Link" value={link} onChange={setLink} />
+                            <AutoSuggest label="Link" value={link} onChange={setLink} fetchSuggestions={suggestRoutes} />
                             <Field label="Link Label" value={linkLabel} onChange={setLinkLabel} />
-                            <Field label="Category Filter" value={category} onChange={setCategory} />
-                            <Field label="Brand Filter" value={brand} onChange={setBrand} />
-                            <Field label="Model Line Filter" value={modelLine} onChange={setModelLine} />
-                            <Field label="Traction Filter" value={traction} onChange={setTraction} />
+                            <AutoSuggest label="Category Filter" value={category} onChange={setCategory} fetchSuggestions={suggestCategories} />
+                            <AutoSuggest label="Brand Filter" value={brand} onChange={setBrand} fetchSuggestions={suggestBrands} />
+                            <AutoSuggest label="Name Filter" value={modelLine} onChange={setModelLine} fetchSuggestions={suggestNames} />
+                            <div>
+                                <label className="block text-zinc-500 text-xs font-medium mb-0.5">Traction Filter</label>
+                                <select value={traction} onChange={(e) => setTraction(e.target.value)}
+                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                                    <option value="">Any</option>
+                                    {tractionOptions.map(t => <option key={t} value={t}>{t}</option>)}
+                                </select>
+                            </div>
                             <Field label="Min Price" value={minPrice} onChange={setMinPrice} type="number" />
                             <Field label="Max Price" value={maxPrice} onChange={setMaxPrice} type="number" />
                         </>
@@ -300,44 +367,50 @@ export default function HomepageEditor({ doc }: Props) {
     function CategoryItemEditor({ sectionIndex, item, itemIndex }: { sectionIndex: number; item: Record<string, unknown>; itemIndex: number }) {
         const [label, setLabel] = useState(item.label as string || "");
         const [href, setHref] = useState(item.href as string || "");
-        const [image, setImage] = useState(item.image as string | null);
+        const [image, setImage] = useState<string | null>(extractAssetId(item.image));
         const [itemBg, setItemBg] = useState(item.bg as string || "");
         const [textColor, setTextColor] = useState(item.textColor as string || "");
         const [accent, setAccent] = useState(item.accent as string || "");
-        const [height, setHeight] = useState(item.height as string || "");
 
         async function save() {
-            const updated: Record<string, unknown> = { label, href };
-            const imageUrl = assetToUrl(image);
-            if (imageUrl) updated.image = imageUrl;
-            if (itemBg) updated.bg = itemBg;
-            if (textColor) updated.textColor = textColor;
-            if (accent) updated.accent = accent;
-            if (height) updated.height = height;
-            await updateSectionItem(sectionIndex, itemIndex, updated);
-            router.refresh();
+            try {
+                const updated: Record<string, unknown> = { label, href };
+                if (image) updated.image = { _type: "image", asset: { _ref: image, _type: "reference" } };
+                if (itemBg) updated.bg = itemBg;
+                if (textColor) updated.textColor = textColor;
+                if (accent) updated.accent = accent;
+                await updateSectionItem(sectionIndex, itemIndex, updated);
+                router.refresh();
+            } catch (err) {
+                console.error("Failed to save category item:", err);
+                alert("Save failed");
+            }
         }
 
         async function remove() {
             if (!confirm(`Delete item "${label}"?`)) return;
-            await deleteSectionItem(sectionIndex, itemIndex);
-            router.refresh();
+            try {
+                await deleteSectionItem(sectionIndex, itemIndex);
+                router.refresh();
+            } catch (err) {
+                console.error("Failed to delete category item:", err);
+                alert("Delete failed");
+            }
         }
 
         return (
             <div className="bg-neutral-750 border border-neutral-700 rounded p-3 space-y-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <Field label="Label" value={label} onChange={setLabel} />
-                    <Field label="Href" value={href} onChange={setHref} />
+                    <AutoSuggest label="Href" value={href} onChange={setHref} fetchSuggestions={suggestRoutes} />
                     <Field label="Background" value={itemBg} onChange={setItemBg} />
                     <Field label="Text Color" value={textColor} onChange={setTextColor} />
                     <Field label="Accent" value={accent} onChange={setAccent} />
-                    <Field label="Height" value={height} onChange={setHeight} />
                 </div>
                 <ImageSelector name="item_image" value={image} onChange={setImage} label="Item Image" />
                 <div className="flex gap-2 pt-1">
                     <button onClick={save} className="bg-red-600 hover:bg-red-700 text-white text-[10px] font-bold px-3 py-1 rounded transition-colors">Save Item</button>
-                    <button onClick={remove} className="text-red-500 hover:text-red-400 text-[10px] font-medium px-3 py-1">Delete</button>
+                    <button onClick={remove} className="text-[10px] bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-1 rounded transition-colors">Delete</button>
                 </div>
             </div>
         );
@@ -393,12 +466,26 @@ export default function HomepageEditor({ doc }: Props) {
                     </div>
                     <Field label="Title" value={newTitle} onChange={setNewTitle} />
                     {newType === "category_grid" && (
-                        <Field label="Variant" value={newVariant} onChange={setNewVariant} placeholder="grid-4-equal" />
+                        <div>
+                            <label className="block text-zinc-500 text-xs font-medium mb-0.5">Variant</label>
+                            <select value={newVariant} onChange={(e) => setNewVariant(e.target.value)}
+                                className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                                <option value="grid-4-equal">Grid 4 Equal</option>
+                                <option value="scroll-brands">Scroll Brands</option>
+                                <option value="grid-tiles-dark">Grid Tiles Dark</option>
+                                <option value="grid-3-bordered">Grid 3 Bordered</option>
+                                <option value="scroll-categories">Scroll Categories</option>
+                                <option value="asymmetric-3-2">Asymmetric 3-2</option>
+                                <option value="split-1-2">Split 1-2</option>
+                                <option value="asymmetric-2-split">Asymmetric 2 Split</option>
+                                <option value="stacked-banners">Stacked Banners</option>
+                            </select>
+                        </div>
                     )}
                 </div>
                 <div className="flex gap-2">
                     <button onClick={handleAdd} className="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">Add</button>
-                    <button onClick={() => setShowForm(false)} className="text-zinc-500 hover:text-white text-xs px-4 py-1.5">Cancel</button>
+                    <button onClick={() => setShowForm(false)} className="text-xs bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors">Cancel</button>
                 </div>
             </div>
         );

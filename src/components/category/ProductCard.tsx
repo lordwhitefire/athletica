@@ -83,7 +83,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 {/* Product Info */}
                 <div className="px-1 pb-4">
                     <Link href={`/${product.url_slug}`}>
-                        <h3 className="font-black uppercase text-sm mb-1 truncate hover:text-primary transition-colors">
+                        <h3 className="font-black uppercase text-sm mb-1 truncate hover:text-primary-container transition-colors">
                             {product.model}
                         </h3>
 
@@ -100,7 +100,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                                         member {product.price.currency}
                                     </span>
                                     <span className="text-[12px] font-bold">
-                                        {(product.price.current * 0.95).toFixed(2)}
+                                        {product.price.member_price.toFixed(2)}
                                     </span>
                                 </div>
                             )}

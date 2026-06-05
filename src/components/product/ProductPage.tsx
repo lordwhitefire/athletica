@@ -10,7 +10,7 @@ import Breadcrumb, { BreadcrumbItem } from "@/components/navigation/Breadcrumb";
 interface ProductPageProps {
     product: Product;
     amazonLink: string | null;
-    relatedByModelLine: Product[];
+    relatedByName: Product[];
     relatedByBrand: Product[];
     relatedByTraction: Product[];
     breadcrumbs: BreadcrumbItem[];
@@ -19,7 +19,7 @@ interface ProductPageProps {
 export default function ProductPage({
     product,
     amazonLink,
-    relatedByModelLine,
+    relatedByName,
     relatedByBrand,
     relatedByTraction,
     breadcrumbs,
@@ -59,17 +59,17 @@ export default function ProductPage({
 
             {/* Related carousels */}
             <section className="space-y-0">
-                {relatedByModelLine.length > 0 && (
+                {relatedByName.length > 0 && (
                     <ProductCarousel
-                        title={`More ${product.model_line || product.brand} Boots`}
+                        title={`More ${product.name || product.brand} Boots`}
                         subtitle="Same model line, different options"
-                        products={relatedByModelLine}
+                        products={relatedByName}
                         link={
-                            product.model_line
-                                ? `/${product.brand.toLowerCase()}-${product.model_line.toLowerCase()}-football-boots`
+                            product.name
+                                ? `/${product.brand.toLowerCase()}-${product.name.toLowerCase()}-football-boots`
                                 : undefined
                         }
-                        linkLabel={`View All ${product.model_line}`}
+                        linkLabel={`View All ${product.name}`}
                     />
                 )}
 

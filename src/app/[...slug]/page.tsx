@@ -1,7 +1,10 @@
 import { resolveRoute } from "@/lib/resolveRoute";
-import { getAllProducts, getProductsByModelLine, getProductsByBrand, getProductsByTraction } from "@/lib/getProducts";
+import { getAllProducts, getProductsByName, getProductsByBrand, getProductsByTraction } from "@/lib/getProducts";
 import { getAmazonLink } from "@/lib/getAmazonLinks";
 import { getNavigation } from "@/lib/getNavigation";
+import { getBrandLogoMap } from "@/lib/actions/brands";
+import { urlFor } from "@/lib/sanity";
+import type { SanityImageSource } from "@sanity/image-url";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import CategoryPage from "@/components/category/CategoryPage";
@@ -55,13 +58,13 @@ export default async function SlugPage({ params }: SlugPageProps) {
         const product = resolved.product;
         const amazonLink = await getAmazonLink(product.id);
 
-        const [relatedByModelLine, relatedByBrand, relatedByTraction] = await Promise.all([
-            product.model_line
-                ? getProductsByModelLine(product.model_line, product.id).then((p) => p.slice(0, 10))
+        const [relatedByName, relatedByBrand, relatedByTraction] = await Promise.all([
+            product.name
+                ? getProductsByName(product.name, product.id).then((p) => p.slice(0, 10))
                 : Promise.resolve([]),
             getProductsByBrand(
                 product.brand,
-                product.model_line || undefined,
+                product.name || undefined,
                 product.id
             ).then((p) => p.slice(0, 10)),
             product.traction
@@ -79,7 +82,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
             <ProductPage
                 product={product}
                 amazonLink={amazonLink}
-                relatedByModelLine={relatedByModelLine}
+                relatedByName={relatedByName}
                 relatedByBrand={relatedByBrand}
                 relatedByTraction={relatedByTraction}
                 breadcrumbs={breadcrumbs}
@@ -92,6 +95,17 @@ export default async function SlugPage({ params }: SlugPageProps) {
             { label: resolved.pageTitle },
         ];
 
+        const brandLogoMap = await getBrandLogoMap();
+        const brandName = resolved.filters.brand?.[0];
+        const brandLogo = brandName ? brandLogoMap[brandName] || null : null;
+
+        let featuredImage: string | null = null;
+        if (resolved.featuredImage) {
+            try {
+                featuredImage = urlFor(resolved.featuredImage as SanityImageSource).width(1920).url();
+            } catch { featuredImage = null; }
+        }
+
         return (
             <Suspense fallback={<div className="container mx-auto px-4 py-8">Loading...</div>}>
                 <CategoryPage
@@ -99,6 +113,9 @@ export default async function SlugPage({ params }: SlugPageProps) {
                     baseFilters={resolved.filters}
                     pageTitle={resolved.pageTitle}
                     pageSubtitle={resolved.pageSubtitle}
+                    featuredImage={featuredImage}
+                    brandLogo={brandLogo}
+                    brandLogoMap={brandLogoMap}
                     breadcrumbs={breadcrumbs}
                 />
             </Suspense>

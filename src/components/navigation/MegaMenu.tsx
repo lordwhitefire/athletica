@@ -181,7 +181,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                             {/* Column header — the repeating parent label */}
                             <p className="text-xs font-black uppercase tracking-widest text-gray-500 mb-2 pb-1 border-b border-gray-800">
                                 {col.parentHref ? (
-                                    <Link href={col.parentHref} onClick={onClose} className="hover:text-red-500 transition-colors">
+                                    <Link href={col.parentHref} onClick={onClose} className="hover:text-primary-container transition-colors">
                                         {col.parentLabel}
                                     </Link>
                                 ) : col.parentLabel}
@@ -192,7 +192,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                 if (colItem.level === 2) {
                                     return (
                                         <div key={itemIndex} className="flex items-center gap-2 mt-1">
-                                            <div className="w-0.5 h-4 bg-red-600 flex-shrink-0" />
+                                            <div className="w-0.5 h-4 bg-primary flex-shrink-0" />
                                             {colItem.disabled || !colItem.href ? (
                                                 <span className="text-sm font-black text-white uppercase tracking-wide cursor-default">
                                                     {colItem.label}
@@ -201,7 +201,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                                 <Link
                                                     href={colItem.href}
                                                     onClick={onClose}
-                                                    className="text-sm font-black text-white uppercase tracking-wide hover:text-red-500 transition-colors"
+                                                    className="text-sm font-black text-white uppercase tracking-wide hover:text-primary-container transition-colors"
                                                 >
                                                     {colItem.label}
                                                 </Link>
@@ -221,7 +221,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                                 <Link
                                                     href={colItem.href}
                                                     onClick={onClose}
-                                                    className="text-sm font-bold text-gray-200 hover:text-red-500 transition-colors"
+                                                    className="text-sm font-bold text-gray-200 hover:text-primary-container transition-colors"
                                                 >
                                                     {colItem.label}
                                                 </Link>
@@ -241,7 +241,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                                 <Link
                                                     href={colItem.href}
                                                     onClick={onClose}
-                                                    className="text-xs text-gray-500 hover:text-red-500 transition-colors"
+                                                    className="text-xs text-gray-500 hover:text-primary-container transition-colors"
                                                 >
                                                     {colItem.label}
                                                 </Link>
@@ -269,7 +269,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                             className="block rounded overflow-hidden relative"
                             style={{ height: "180px" }}
                         >
-                            <div className="w-full h-full bg-gradient-to-br from-red-900 via-gray-900 to-black flex flex-col items-start justify-end p-3">
+                            <div className="w-full h-full bg-gradient-to-br from-primary-container via-gray-900 to-black flex flex-col items-start justify-end p-3">
                                 <div className="absolute inset-0 opacity-20 flex items-center justify-center text-6xl select-none">
                                     ⚽
                                 </div>
@@ -279,7 +279,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                 <p className="relative z-10 text-xs text-gray-400 mb-2">
                                     Shop the collection
                                 </p>
-                                <span className="relative z-10 text-xs bg-red-600 text-white px-2 py-1 rounded font-bold">
+                                <span className="relative z-10 text-xs bg-primary text-on-primary px-2 py-1 rounded font-bold">
                                     Shop Now
                                 </span>
                             </div>

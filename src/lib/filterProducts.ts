@@ -18,18 +18,19 @@ export function filterProducts(
     // Filter by brand
     if (filters.brand && filters.brand.length > 0) {
         result = result.filter((p) =>
-            filters.brand!.some((b) => b.toLowerCase() === p.brand.toLowerCase())
+            p.brand && filters.brand!.some((b) => b.toLowerCase() === p.brand.toLowerCase())
         );
     }
 
-    // Filter by model line
-    if (filters.model_line && filters.model_line.length > 0) {
-        result = result.filter(
-            (p) =>
-                p.model_line &&
-                filters.model_line!.some(
-                    (m) => m.toLowerCase() === p.model_line!.toLowerCase()
-                )
+    // Filter by model (comma-separated path from nav, e.g. "Mercurial,Superfly")
+    if (filters.model && filters.model.length > 0) {
+        result = result.filter((p) =>
+            filters.model!.some((segPath) => {
+                const prefix = segPath + ",";
+                return (
+                    p.model === segPath || p.model.toLowerCase().startsWith(prefix.toLowerCase())
+                );
+            })
         );
     }
 

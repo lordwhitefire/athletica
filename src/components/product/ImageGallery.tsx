@@ -74,7 +74,7 @@ export default function ImageGallery({
                             key={index}
                             onClick={() => setActiveIndex(index)}
                             className={`flex-shrink-0 w-24 h-24 bg-surface-container p-1 transition-all ${activeIndex === index
-                                    ? "border-2 border-primary"
+                                    ? "border-2 border-primary-container"
                                     : "opacity-60 hover:opacity-100"
                                 }`}
                         >

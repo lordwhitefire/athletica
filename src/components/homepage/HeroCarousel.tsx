@@ -34,7 +34,7 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
             <div className="max-w-7xl w-full px-3 md:px-6">
                 <div
                     className="relative overflow-visible"
-                    style={{ height: "clamp(180px, 50vw, 400px)" }}
+                    style={{ height: "clamp(250px, 40vw, 550px)" }}
                 >
                     <div className="absolute inset-0 flex items-center justify-center">
                         {banners.map((banner, index) => {
@@ -56,10 +56,10 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
                             return (
                                 <div
                                     key={banner.id}
-                                    className="absolute transition-all duration-500 ease-in-out rounded-xl overflow-hidden"
+                                    className="absolute transition-all duration-500 ease-in-out rounded-lg overflow-hidden"
                                     style={{
                                         width: "100%",
-                                        height: "clamp(160px, 46vw, 360px)",
+                                        height: "clamp(220px, 36vw, 500px)",
                                         transform,
                                         opacity,
                                         zIndex,

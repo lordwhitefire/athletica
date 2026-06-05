@@ -5,8 +5,6 @@ import type { SanityImageSource } from "@sanity/image-url";
 import type { HomepageConfig, HomepageSection, ProductCarouselSection } from "@/types/homepage";
 import type { Product, ActiveFilters } from "@/types/product";
 
-let cachedConfig: HomepageConfig | null = null;
-
 function resolveImage(value: unknown): string | null {
     if (!value) return null;
     if (typeof value === "string") return value;
@@ -53,11 +51,9 @@ function resolveHomepageImages(config: Record<string, unknown>): Record<string, 
 }
 
 export async function getHomepageConfig(): Promise<HomepageConfig> {
-    if (cachedConfig) return cachedConfig;
     const data = await client.fetch(`*[_type == "homepage"][0]`);
     const resolved = resolveHomepageImages(data);
-    cachedConfig = resolved as unknown as HomepageConfig;
-    return cachedConfig;
+    return resolved as unknown as HomepageConfig;
 }
 
 export async function getHomepageSections(): Promise<HomepageSection[]> {
@@ -71,7 +67,7 @@ export async function getProductsForCarousel(section: ProductCarouselSection): P
 
     if (section.filter.category) filters.category = [section.filter.category];
     if (section.filter.brand) filters.brand = [section.filter.brand];
-    if (section.filter.model_line) filters.model_line = [section.filter.model_line];
+    if (section.filter.model) filters.model = [section.filter.model];
     if (section.filter.traction) filters.traction = [section.filter.traction];
     if (section.filter.min_price) filters.min_price = section.filter.min_price;
     if (section.filter.max_price) filters.max_price = section.filter.max_price;

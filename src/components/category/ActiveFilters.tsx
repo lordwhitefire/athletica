@@ -4,7 +4,7 @@ import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
 const filterLabels: Record<string, string> = {
     brand: "Brand",
-    model_line: "Model",
+    name: "Name",
     traction: "Surface",
     color: "Color",
     gender: "Gender",
@@ -71,7 +71,7 @@ export default function ActiveFilters() {
 
             <button
                 onClick={clearAll}
-                className="text-xs font-label font-bold uppercase text-primary hover:underline underline-offset-4 ml-2 transition-colors"
+                className="text-xs font-label font-bold uppercase text-primary-container hover:underline underline-offset-4 ml-2 transition-colors"
             >
                 Clear All
             </button>

@@ -23,7 +23,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
               return (
                   p.model.toLowerCase().includes(search) ||
                   p.brand.toLowerCase().includes(search) ||
-                  p.model_line?.toLowerCase().includes(search) ||
+                  p.name?.toLowerCase().includes(search) ||
                   p.category?.toLowerCase().includes(search) ||
                   p.color.toLowerCase().includes(search) ||
                   p.traction?.toLowerCase().includes(search)

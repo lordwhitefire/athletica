@@ -3,7 +3,7 @@ import type { NavigationData, NavItem } from "@/types/navigation";
 
 export type ResolvedRoute =
     | { type: "product"; product: Product }
-    | { type: "category"; filters: ActiveFilters; pageTitle: string; pageSubtitle?: string }
+    | { type: "category"; filters: ActiveFilters; pageTitle: string; pageSubtitle?: string; featuredImage?: string; brandLogo?: string }
     | { type: "not_found" };
 
 interface NavNode {
@@ -46,14 +46,16 @@ function deriveFilters(node: NavNode): ActiveFilters {
         filters.brand = [extractBrand(l2.label)];
     }
 
-    const l3 = chain.find((n) => n.level === 3);
-    if (l3 && !isTractionNode(l3)) {
-        filters.model_line = [extractModelLine(l3.label)];
+    const modelSegments: string[] = [];
+    for (const n of chain) {
+        if (n.level >= 3 && !isTractionNode(n)) {
+            for (const segment of extractName(n.label).split(" ")) {
+                modelSegments.push(segment);
+            }
+        }
     }
-
-    const l4 = chain.find((n) => n.level === 4);
-    if (l4) {
-        filters.model_line = [extractModelLine(l4.label)];
+    if (modelSegments.length > 0) {
+        filters.model = [modelSegments.join(",")];
     }
 
     const traction = detectTraction(chain.map((n) => n.label).join(" "));
@@ -61,7 +63,7 @@ function deriveFilters(node: NavNode): ActiveFilters {
         filters.traction = [traction];
         if (isTractionNode(item)) {
             delete filters.brand;
-            delete filters.model_line;
+            delete filters.model;
         }
     }
 
@@ -91,7 +93,7 @@ function extractBrand(label: string): string {
     return label.split(" ")[0];
 }
 
-function extractModelLine(label: string): string {
+function extractName(label: string): string {
     const brandPrefixes = [
         "Adidas", "adidas", "Nike", "Puma", "New Balance",
         "Mizuno", "Joma", "Kelme", "Lotto", "Munich", "Diadora",
@@ -132,6 +134,7 @@ export function resolveRoute(slugArray: string[], products: Product[], navigatio
             filters: deriveFilters(matchedNode),
             pageTitle: matchedNode.item.label,
             pageSubtitle: deriveSubtitle(matchedNode),
+            featuredImage: matchedNode.item.featuredImage,
         };
     }
 

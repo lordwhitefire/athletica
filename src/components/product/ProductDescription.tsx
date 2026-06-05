@@ -20,7 +20,7 @@ export default function ProductDescription({ product }: ProductDescriptionProps)
                                     <span key={i}>
                                         {part}.{" "}
                                         <br />
-                                        <span className="text-primary">{arr[arr.length - 1]}</span>
+                                        <span className="text-primary-container">{arr[arr.length - 1]}</span>
                                     </span>
                                 ) : i < arr.length - 2 ? (
                                     <span key={i}>{part}. </span>
@@ -45,7 +45,7 @@ export default function ProductDescription({ product }: ProductDescriptionProps)
                                 {description.key_benefits.map((benefit, index) => (
                                     <li key={index} className="flex items-start gap-3">
                                         <span
-                                            className="material-symbols-outlined text-primary mt-0.5"
+                                            className="material-symbols-outlined text-primary-container mt-0.5"
                                             style={{ fontVariationSettings: "'FILL' 1" }}
                                         >
                                             check_circle
@@ -70,7 +70,7 @@ export default function ProductDescription({ product }: ProductDescriptionProps)
                     <div className="space-y-4">
                         {[
                             { label: "Brand", value: product.brand },
-                            { label: "Model Line", value: product.model_line || "—" },
+                            { label: "Name", value: product.name || "—" },
                             { label: "Surface", value: description.technical_details.sole_type },
                             { label: "Upper Material", value: description.technical_details.upper_material },
                             { label: "Adjustment", value: description.technical_details.adjustment },

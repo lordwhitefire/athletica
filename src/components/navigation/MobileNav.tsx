@@ -18,7 +18,7 @@ function L4Item({ l4Item, onClose }: { l4Item: NavItem; onClose: () => void }) {
                 <Link
                     href={l4Item.href || "#"}
                     onClick={onClose}
-                    className="block text-[10px] font-medium text-neutral-500 uppercase tracking-widest hover:text-primary py-1 transition-colors"
+                    className="block text-[10px] font-medium text-neutral-500 uppercase tracking-widest hover:text-primary-container py-1 transition-colors"
                 >
                     {l4Item.label}
                 </Link>
@@ -42,7 +42,7 @@ function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
                     <Link
                         href={l3Item.href || "#"}
                         onClick={onClose}
-                        className={`flex-1 font-bold text-xs uppercase transition-colors ${isOpen ? "text-primary" : "text-on-surface hover:text-primary"}`}
+                        className={`flex-1 font-bold text-xs uppercase transition-colors ${isOpen ? "text-primary-container" : "text-on-surface hover:text-primary-container"}`}
                     >
                         {l3Item.label}
                     </Link>
@@ -55,7 +55,7 @@ function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
                 {hasChildren && (
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary" : "text-neutral-400"}`}
+                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-neutral-400"}`}
                     >
                         <span className="material-symbols-outlined text-xs">expand_more</span>
                     </button>
@@ -84,7 +84,7 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
                     <Link
                         href={l2Item.href || "#"}
                         onClick={onClose}
-                        className={`flex-1 font-semibold text-xs tracking-wider uppercase transition-colors ${isOpen ? "text-on-surface" : "text-neutral-500 opacity-80 group-hover:text-primary group-hover:opacity-100"}`}
+                        className={`flex-1 font-semibold text-xs tracking-wider uppercase transition-colors ${isOpen ? "text-on-surface" : "text-neutral-500 opacity-80 group-hover:text-primary-container group-hover:opacity-100"}`}
                     >
                         {l2Item.label}
                     </Link>
@@ -97,7 +97,7 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
                 {hasChildren && (
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary" : "text-neutral-400"}`}
+                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-neutral-400"}`}
                     >
                         <span className="material-symbols-outlined text-sm">expand_more</span>
                     </button>
@@ -105,7 +105,7 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
             </div>
 
             {hasChildren && isOpen && (
-                <div className="pl-16 space-y-3 mt-2 border-l-2 border-primary/20 ml-12">
+                <div className="pl-16 space-y-3 mt-2 border-l-2 border-primary-container/20 ml-12">
                     {l2Item.children!.map((l3) => (
                         <L3Item key={l3.id} l3Item={l3} onClose={onClose} />
                     ))}
@@ -133,7 +133,7 @@ function SubMenuPanel({
 
             {/* ── Header ── */}
             <div className="flex justify-between items-center py-8 px-6">
-                <h2 className="text-xl font-black text-primary font-headline tracking-widest uppercase">
+                <h2 className="text-xl font-black text-primary-container font-headline tracking-widest uppercase">
                     THE GALLERY
                 </h2>
                 <button
@@ -163,7 +163,7 @@ function SubMenuPanel({
                     <Link
                         href={item.href || "#"}
                         onClick={onClose}
-                        className="w-full flex items-center justify-between p-4 text-primary font-headline font-bold text-sm tracking-tight uppercase group"
+                        className="w-full flex items-center justify-between p-4 text-primary-container font-headline font-bold text-sm tracking-tight uppercase group"
                     >
                         <div className="flex items-center gap-3 group-hover:pl-2 transition-all">
                             <span className="material-symbols-outlined text-lg">sports_soccer</span>
@@ -266,7 +266,7 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                     {/* Header */}
                     <div className="flex items-center justify-between mb-10 px-2">
                         <Link href="/" onClick={handleClose}>
-                            <span className="text-xl font-black text-[#e30613] font-headline tracking-widest uppercase">
+                            <span className="text-xl font-black text-white font-headline tracking-widest uppercase">
                                 athletica
                             </span>
                         </Link>
@@ -289,7 +289,7 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                                     <span className="font-headline font-medium text-sm tracking-tight uppercase">
                                         {l1Item.label}
                                     </span>
-                                    <span className="text-white/30 group-hover:text-[#e30613] text-xl font-light transition-colors">
+                                    <span className="text-white/30 group-hover:text-white text-xl font-light transition-colors">
                                         +
                                     </span>
                                 </button>
@@ -311,7 +311,7 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                                 </Link>
                                 <button
                                     onClick={() => { logout(); handleClose(); }}
-                                    className="w-full py-4 bg-[#e30613] text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-[#b5000b] transition-colors text-center"
+                                    className="w-full py-4 bg-primary text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary transition-colors text-center"
                                 >
                                     Sign Out
                                 </button>
@@ -328,7 +328,7 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                                 <Link
                                     href="/register"
                                     onClick={handleClose}
-                                    className="w-full py-4 bg-[#e30613] text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-[#b5000b] transition-colors text-center"
+                                    className="w-full py-4 bg-primary text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary transition-colors text-center"
                                 >
                                     Create Account
                                 </Link>

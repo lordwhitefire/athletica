@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { urlFor } from "@/lib/sanity";
+import type { SanityImageSource } from "@sanity/image-url";
 
 interface Props {
     name: string;
@@ -32,6 +34,19 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
                 .finally(() => setLoading(false));
         }
     }, [showPicker, assets.length]);
+
+    useEffect(() => {
+        if (value && value.startsWith("image-")) {
+            try {
+                const url = urlFor({ _ref: value } as SanityImageSource).width(200).url();
+                setPreview(url);
+            } catch {
+                setPreview(null);
+            }
+        } else if (!value) {
+            setPreview(null);
+        }
+    }, [value]);
 
     async function handleUpload(e: React.ChangeEvent<HTMLInputElement>) {
         const file = e.target.files?.[0];
@@ -74,16 +89,16 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
             <div className="flex items-center justify-between mb-1">
                 <label className="block text-zinc-500 text-xs font-medium">{label}</label>
                 <div className="flex gap-2">
-                    <label className={`text-[10px] uppercase tracking-wider font-medium cursor-pointer ${uploading ? "opacity-50 pointer-events-none" : "text-zinc-600 hover:text-zinc-400"}`}>
+                    <label className={`text-[11px] uppercase tracking-wider font-medium cursor-pointer bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors ${uploading ? "opacity-50 pointer-events-none" : ""}`}>
                         {uploading ? "Uploading..." : "Upload"}
                         <input ref={fileRef} type="file" accept="image/*" onChange={handleUpload} className="hidden" />
                     </label>
                     <button type="button" onClick={() => setShowPicker((v) => !v)}
-                        className={`text-[10px] uppercase tracking-wider font-medium ${showPicker ? "text-red-500" : "text-zinc-600 hover:text-zinc-400"}`}>
+                        className={`text-[11px] uppercase tracking-wider font-medium px-3 py-1.5 rounded transition-colors ${showPicker ? "bg-red-600 text-white" : "bg-neutral-700 hover:bg-neutral-600 text-white"}`}>
                         Media Library
                     </button>
                     {value && (
-                        <button type="button" onClick={clearSelection} className="text-[10px] uppercase tracking-wider font-medium text-zinc-600 hover:text-red-500">
+                        <button type="button" onClick={clearSelection} className="text-[11px] uppercase tracking-wider font-medium bg-neutral-700 hover:bg-red-600 text-white px-3 py-1.5 rounded transition-colors">
                             Clear
                         </button>
                     )}

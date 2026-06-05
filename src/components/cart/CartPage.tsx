@@ -74,7 +74,7 @@ export default function CartPage() {
                                             <p className="text-xs text-on-surface-variant uppercase tracking-wider">{item.product.brand}</p>
                                             <Link
                                                 href={`/${item.product.url_slug}`}
-                                                className="font-bold text-on-surface hover:text-primary transition-colors line-clamp-2"
+                                                className="font-bold text-on-surface hover:text-primary-container transition-colors line-clamp-2"
                                             >
                                                 {item.product.model}
                                             </Link>
@@ -162,7 +162,7 @@ export default function CartPage() {
                             </button>
                             <Link
                                 href="/football-boots"
-                                className="block w-full py-3.5 border border-outline-variant text-on-surface-variant font-bold rounded hover:border-primary hover:text-primary transition-colors text-center text-sm"
+                                className="block w-full py-3.5 border border-outline-variant text-on-surface-variant font-bold rounded hover:border-primary-container hover:text-primary-container transition-colors text-center text-sm"
                             >
                                 Continue Shopping
                             </Link>

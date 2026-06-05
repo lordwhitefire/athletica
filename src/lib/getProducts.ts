@@ -2,7 +2,7 @@ import type { Product } from "@/types/product";
 import {
     getAllProductsSanity,
     getProductBySlugSanity,
-    getProductsByModelLineSanity,
+    getProductsByNameSanity,
     getProductsByBrandSanity,
     getProductsByTractionSanity,
 } from "@/lib/getProductsSanity";
@@ -37,16 +37,16 @@ export async function getProductById(id: string): Promise<Product | undefined> {
     return products.find((p) => p.id === id);
 }
 
-export async function getProductsByModelLine(modelLine: string, excludeId?: string): Promise<Product[]> {
+export async function getProductsByName(name: string, excludeId?: string): Promise<Product[]> {
     const cached = cachedProducts;
-    if (cached) return cached.filter((p) => p.model_line === modelLine && p.id !== excludeId);
-    return getProductsByModelLineSanity(modelLine, excludeId);
+    if (cached) return cached.filter((p) => p.name === name && p.id !== excludeId);
+    return getProductsByNameSanity(name, excludeId);
 }
 
-export async function getProductsByBrand(brand: string, excludeModelLine?: string, excludeId?: string): Promise<Product[]> {
+export async function getProductsByBrand(brand: string, excludeName?: string, excludeId?: string): Promise<Product[]> {
     const cached = cachedProducts;
-    if (cached) return cached.filter((p) => p.brand === brand && p.model_line !== excludeModelLine && p.id !== excludeId);
-    return getProductsByBrandSanity(brand, excludeModelLine, excludeId);
+    if (cached) return cached.filter((p) => p.brand === brand && p.name !== excludeName && p.id !== excludeId);
+    return getProductsByBrandSanity(brand, excludeName, excludeId);
 }
 
 export async function getProductsByTraction(traction: string, excludeId?: string): Promise<Product[]> {

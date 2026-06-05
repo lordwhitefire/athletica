@@ -44,7 +44,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
 
             {/* Brand + Title + Subtitle */}
             <div>
-                <p className="text-sm font-bold font-headline text-primary uppercase tracking-tighter mb-1">
+                <p className="text-sm font-bold font-headline text-primary-container uppercase tracking-tighter mb-1">
                     {product.brand} Performance
                 </p>
                 <h1 className="text-5xl font-black font-headline tracking-tighter uppercase leading-none mb-2">
@@ -102,7 +102,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                     <div className="flex gap-3">
                         {/* Current product color swatch */}
                         <button
-                            className="w-10 h-10 border-2 border-primary ring-2 ring-offset-2 ring-transparent overflow-hidden bg-surface-container-low"
+                            className="w-10 h-10 border-2 border-primary-container ring-2 ring-offset-2 ring-transparent overflow-hidden bg-surface-container-low"
                             title={product.color}
                         >
                             <img
@@ -114,7 +114,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                         {product.color_variants?.map((variant) => (
                             <Link key={variant.product_id} href={`/${variant.product_id}`}>
                                 <button
-                                    className="w-10 h-10 border border-surface-container-highest hover:border-primary transition-all overflow-hidden bg-surface-container-low"
+                                    className="w-10 h-10 border border-surface-container-highest hover:border-primary-container transition-all overflow-hidden bg-surface-container-low"
                                     title={variant.color}
                                 >
                                     <img
@@ -141,13 +141,13 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                         )}
                     </p>
                     {availableSizes.length === 0 ? (
-                        <span className="text-[10px] font-bold uppercase text-primary">
+                        <span className="text-[10px] font-bold uppercase text-primary-container">
                             Out of Stock
                         </span>
                     ) : (
                         <button
                             onClick={() => setIsSizeGuideOpen(true)}
-                            className="text-[10px] font-bold uppercase text-primary underline underline-offset-4 hover:text-primary-container transition-colors"
+                            className="text-[10px] font-bold uppercase text-primary-container underline underline-offset-4 hover:text-primary transition-colors"
                         >
                             Size Guide
                         </button>
@@ -178,12 +178,17 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                             <button
                                 key={s.size}
                                 onClick={() => setSelectedSize(s.size)}
-                                className={`py-3 font-bold text-sm transition-colors ${isSelected
+                                className={`py-3 font-bold text-sm transition-colors relative ${isSelected
                                         ? "bg-zinc-900 text-white"
-                                        : "border border-surface-container-highest hover:border-primary"
+                                        : "border border-surface-container-highest hover:border-primary-container"
                                     }`}
                             >
                                 {s.size}
+                                {s.stock !== undefined && s.stock <= 3 && s.stock > 0 && (
+                                    <span className="absolute -top-1.5 -right-1.5 bg-amber-500 text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold">
+                                        {s.stock}
+                                    </span>
+                                )}
                             </button>
                         );
                     })}

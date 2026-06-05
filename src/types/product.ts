@@ -39,12 +39,10 @@ export interface Product {
     url_slug: string;
     model: string;
     brand: string;
-    brand_logo: string | null;
     category: string;
     traction: string | null;
-    model_line: string | null;
+    name: string | null;
     gender: string;
-    age_group: string;
     main_image: string;
     image_gallery: string[];
     thumbnail: string;
@@ -55,9 +53,14 @@ export interface Product {
     description: Description;
 }
 
+export interface BrandOption {
+    name: string;
+    logo: string | null;
+}
+
 export interface FilterOptions {
-    brands: string[];
-    model_lines: string[];
+    brands: BrandOption[];
+    models: string[];
     tractions: string[];
     colors: string[];
     categories: string[];
@@ -69,7 +72,7 @@ export interface FilterOptions {
 
 export interface ActiveFilters {
     brand?: string[];
-    model_line?: string[];
+    model?: string[];
     traction?: string[];
     color?: string[];
     category?: string[];

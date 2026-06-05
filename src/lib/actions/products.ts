@@ -8,18 +8,28 @@ export async function getAllProductsAdmin(search?: string) {
     if (search) {
         query = `*[_type == "product" && model match $search]`;
     }
-    query += ` | order(model asc) { _id, id, model, brand, category, price, url_slug, color }`;
+    query += ` | order(model asc) { _id, id, model, "brand_name": coalesce(brand->name, brand), "brand_ref": brand._ref, category, price, url_slug, color }`;
     const params = search ? { search: `${search}*` } : {};
     return adminClient.fetch(query, params);
 }
 
 export async function getProductByIdAdmin(id: string) {
-    return adminClient.fetch(`*[_id == $id][0]`, { id });
+    return adminClient.fetch(`*[_id == $id][0] { ..., "brand_name": coalesce(brand->name, brand), "brand_ref": brand._ref }`, { id });
 }
 
 function imgRef(assetId: string | null) {
     if (!assetId) return undefined;
     return { _type: "image" as const, asset: { _type: "reference" as const, _ref: assetId } };
+}
+
+function parseJsonArray(raw: string | undefined): string[] {
+    if (!raw) return [];
+    try {
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed.filter((s): s is string => typeof s === "string") : [];
+    } catch {
+        return [];
+    }
 }
 
 function parseGalleryAssets(raw: string): { _type: "image"; asset: { _type: "reference"; _ref: string }; _key: string }[] {
@@ -34,18 +44,19 @@ function parseGalleryAssets(raw: string): { _type: "image"; asset: { _type: "ref
 export async function createProduct(formData: FormData) {
     const raw = Object.fromEntries(formData.entries());
 
+    const brandRef = raw.brand_ref as string;
     const doc: Record<string, unknown> = {
         _type: "product",
         _id: raw.id as string,
         id: raw.id as string,
         url_slug: { _type: "slug", current: raw.url_slug as string },
         model: raw.model as string,
-        brand: raw.brand as string,
+        brand: brandRef ? { _type: "reference", _ref: brandRef } : null,
         category: raw.category as string,
         traction: (raw.traction as string) || null,
-        model_line: (raw.model_line as string) || null,
+        name: (raw.name as string) || null,
         gender: (raw.gender as string) || "Unisex",
-        age_group: (raw.age_group as string) || "Adult",
+
         color: (raw.color as string) || "",
         price: {
             current: parseFloat(raw.price_current as string) || 0,
@@ -60,7 +71,7 @@ export async function createProduct(formData: FormData) {
             tagline: (raw.desc_tagline as string) || "",
             intro: (raw.desc_intro as string) || "",
             collection: (raw.desc_collection as string) || "",
-            key_benefits: [],
+            key_benefits: parseJsonArray(raw.key_benefits_json as string),
             technical_details: {
                 range: (raw.tech_range as string) || "",
                 sole_type: (raw.tech_sole as string) || "",
@@ -72,12 +83,10 @@ export async function createProduct(formData: FormData) {
 
     const mainImg = imgRef((raw.main_image_asset as string) || null);
     const thumb = imgRef((raw.thumbnail_asset as string) || null);
-    const logo = imgRef((raw.brand_logo_asset as string) || null);
     const gallery = parseGalleryAssets(raw.gallery_assets as string);
 
     if (mainImg) doc.main_image = mainImg;
     if (thumb) doc.thumbnail = thumb;
-    if (logo) doc.brand_logo = logo;
     if (gallery.length > 0) doc.image_gallery = gallery;
 
     await adminClient.createOrReplace(doc as Parameters<typeof adminClient.createOrReplace>[0]);
@@ -87,14 +96,15 @@ export async function createProduct(formData: FormData) {
 export async function updateProduct(id: string, formData: FormData) {
     const raw = Object.fromEntries(formData.entries());
 
+    const brandRef = raw.brand_ref as string;
     const patch: Record<string, unknown> = {
         model: raw.model as string,
-        brand: raw.brand as string,
+        brand: brandRef ? { _type: "reference", _ref: brandRef } : null,
         category: raw.category as string,
         traction: (raw.traction as string) || null,
-        model_line: (raw.model_line as string) || null,
+        name: (raw.name as string) || null,
         gender: (raw.gender as string) || "Unisex",
-        age_group: (raw.age_group as string) || "Adult",
+
         color: (raw.color as string) || "",
         price: {
             current: parseFloat(raw.price_current as string) || 0,
@@ -103,16 +113,27 @@ export async function updateProduct(id: string, formData: FormData) {
             member_price: parseFloat(raw.member_price as string) || 0,
             currency: (raw.currency as string) || "EUR",
         },
+        description: {
+            subtitle: (raw.desc_subtitle as string) || "",
+            tagline: (raw.desc_tagline as string) || "",
+            intro: (raw.desc_intro as string) || "",
+            collection: (raw.desc_collection as string) || "",
+            key_benefits: parseJsonArray(raw.key_benefits_json as string),
+            technical_details: {
+                range: (raw.tech_range as string) || "",
+                sole_type: (raw.tech_sole as string) || "",
+                upper_material: (raw.tech_upper as string) || "",
+                adjustment: (raw.tech_adjustment as string) || "",
+            },
+        },
     };
 
     const mainImg = imgRef((raw.main_image_asset as string) || null);
     const thumb = imgRef((raw.thumbnail_asset as string) || null);
-    const logo = imgRef((raw.brand_logo_asset as string) || null);
     const gallery = parseGalleryAssets(raw.gallery_assets as string);
 
     if (mainImg !== undefined) patch.main_image = mainImg;
     if (thumb !== undefined) patch.thumbnail = thumb;
-    if (logo !== undefined) patch.brand_logo = logo;
     if (gallery.length > 0) {
         patch.image_gallery = gallery;
     } else {

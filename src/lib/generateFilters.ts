@@ -1,6 +1,6 @@
-import { Product, FilterOptions } from "@/types/product";
+import { Product, FilterOptions, BrandOption } from "@/types/product";
 
-export function generateFilters(products: Product[]): FilterOptions {
+export function generateFilters(products: Product[], brandLogoMap?: Record<string, string | null>): FilterOptions {
     // Collect all available sizes from all products
     // Only include sizes that are available (in stock)
     const availableSizes = products.flatMap((p) =>
@@ -16,21 +16,26 @@ export function generateFilters(products: Product[]): FilterOptions {
     // Get all prices to calculate min and max
     const allPrices = products.map((p) => p.price.current);
 
-    // Get all model lines — filter out null values
-    const allModelLines = products
-        .map((p) => p.model_line)
-        .filter((m): m is string => m !== null);
+    // Get all model prefixes (first segment before comma)
+    const allModels = products
+        .map((p) => p.model.split(",")[0])
+        .filter((m) => m && m.trim().length > 0)
+        .map((m) => m.trim());
 
     // Get all tractions — filter out null values
     const allTractions = products
         .map((p) => p.traction)
         .filter((t): t is string => t !== null);
 
-    return {
-        // Remove duplicates and sort alphabetically
-        brands: [...new Set(products.map((p) => p.brand))].sort(),
+    const rawBrands = [...new Set(products.map((p) => p.brand))].sort();
 
-        model_lines: [...new Set(allModelLines)].sort(),
+    return {
+        brands: rawBrands.map((name) => ({
+            name,
+            logo: brandLogoMap?.[name] || null,
+        })),
+
+        models: [...new Set(allModels)].sort(),
 
         tractions: [...new Set(allTractions)].sort(),
 

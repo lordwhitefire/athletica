@@ -68,12 +68,12 @@ export default function MediaBrowser({ assets }: Props) {
                         <div key={id} className="bg-neutral-900 border border-neutral-800 rounded overflow-hidden group">
                             <div className="aspect-square bg-neutral-800 relative">
                                 <img src={url} alt={filename} className="w-full h-full object-cover" />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
-                                    <button onClick={() => copyUrl(url)} className="bg-white text-black text-xs font-bold px-2 py-1 rounded" title="Copy URL">
-                                        <span className="material-symbols-outlined text-[14px]">link</span>
+                                <div className="absolute top-1 right-1 flex items-center gap-1">
+                                    <button onClick={() => copyUrl(url)} className="bg-neutral-800/80 text-white text-[10px] w-6 h-6 rounded flex items-center justify-center hover:bg-neutral-700 transition-colors" title="Copy URL">
+                                        <span className="material-symbols-outlined text-[12px]">link</span>
                                     </button>
-                                    <button onClick={() => handleDelete(id)} className="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded" title="Delete">
-                                        <span className="material-symbols-outlined text-[14px]">delete</span>
+                                    <button onClick={() => handleDelete(id)} className="bg-red-600/80 text-white text-[10px] w-6 h-6 rounded flex items-center justify-center hover:bg-red-700 transition-colors" title="Delete">
+                                        <span className="material-symbols-outlined text-[12px]">delete</span>
                                     </button>
                                 </div>
                             </div>

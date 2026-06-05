@@ -2,7 +2,7 @@
     {
         "id": "KI6297",
         "url_slug": "adidas-predator-pro-ft-ag-black",
-        "model": "Predator Pro FT AG",
+        "model": "Predator,Pro-FT-AG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -281,7 +281,7 @@
     {
         "id": "JI1140",
         "url_slug": "adidas-predator-league-mg-white-light-green",
-        "model": "Predator League MG",
+        "model": "Predator,League-MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -476,7 +476,7 @@
     {
         "id": "JI1114",
         "url_slug": "adidas-predator-league-ft-fg-mg-white",
-        "model": "Predator League FT FG/MG",
+        "model": "Predator,League-FT-FG/MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -709,7 +709,7 @@
     {
         "id": "JI1113",
         "url_slug": "adidas-predator-league-ft-fg-mg-beckham-pink",
-        "model": "Predator League FT FG/MG Beckham",
+        "model": "Predator,League-FT-FG/MG-Beckham",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -949,7 +949,7 @@
     {
         "id": "JI1112",
         "url_slug": "adidas-predator-league-ft-fg-mg-orange",
-        "model": "Predator League FT FG/MG",
+        "model": "Predator,League-FT-FG/MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -1171,7 +1171,7 @@
     {
         "id": "JI1111",
         "url_slug": "adidas-predator-league-ft-fg-mg-white-light-green",
-        "model": "Predator League FT FG/MG",
+        "model": "Predator,League-FT-FG/MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -1304,7 +1304,7 @@
     {
         "id": "JI1110",
         "url_slug": "adidas-predator-league-ft-fg-mg-black",
-        "model": "Predator League FT FG/MG",
+        "model": "Predator,League-FT-FG/MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -1523,7 +1523,7 @@
     {
         "id": "JI1096",
         "url_slug": "adidas-predator-elite-ft-fg-black",
-        "model": "Predator Elite FT FG",
+        "model": "Predator,Elite-FT-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -1752,7 +1752,7 @@
     {
         "id": "JI1095",
         "url_slug": "adidas-predator-elite-ft-fg-white",
-        "model": "Predator Elite FT FG",
+        "model": "Predator,Elite-FT-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -1948,7 +1948,7 @@
             ]
         },
         "_inferred": {
-            "gender": "Inferred from typical adidas Predator Elite adult range as Men (common for pro-level FG boots)",
+            "gender": "Primarily marketed to men in pro contexts, though technically unisex-capable",
             "benefits_level": "Inferred from 'Elite' positioning, high original price (€280), and pro technologies",
             "season": "From collection name 'Road to Glory' and page context (2025)",
             "upper_material": "From HTML and product knowledge: HybridTouch synthetic with PRIMEKNIT",
@@ -1956,14 +1956,13 @@
             "technologies": "From HTML description and adidas knowledge: HybridTouch, Strikeskin, Controlframe 2.0, PRIMEKNIT",
             "weight_grams": "Not specified in HTML or consistent sources – set to null",
             "in_stock": "Overridden to false based on explicit 'agotado' / sold out status for all sizes, despite JSON-LD 'InStock'",
-            "color_variants": "Pulled from related products section; thumbnails limited or inferred for non-main variants",
-            "gender": "Primarily marketed to men in pro contexts, though technically unisex-capable"
+            "color_variants": "Pulled from related products section; thumbnails limited or inferred for non-main variants"
         }
     },
     {
         "id": "JI1094",
         "url_slug": "adidas-predator-elite-ft-fg-beckham-pink",
-        "model": "Predator Elite FT FG Beckham",
+        "model": "Predator,Elite-FT-FG-Beckham",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -2171,7 +2170,7 @@
     {
         "id": "JI1093",
         "url_slug": "adidas-predator-elite-ft-fg-orange",
-        "model": "Predator Elite FT FG",
+        "model": "Predator,Elite-FT-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -2340,7 +2339,7 @@
     {
         "id": "JI1092",
         "url_slug": "adidas-predator-elite-ft-fg-white-light-green",
-        "model": "Predator Elite FT FG",
+        "model": "Predator,Elite-FT-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -2509,7 +2508,7 @@
     {
         "id": "JI1085",
         "url_slug": "adidas-predator-elite-fg-black",
-        "model": "Predator Elite FG",
+        "model": "Predator,Elite-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -2603,7 +2602,7 @@
     {
         "id": "JI1076",
         "url_slug": "adidas-predator-elite-ll-fg-orange",
-        "model": "Predator Elite LL FG",
+        "model": "Predator,Elite-LL-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -2770,7 +2769,7 @@
     {
         "id": "JI1075",
         "url_slug": "adidas-predator-elite-ll-fg-white-light-green",
-        "model": "Predator Elite LL FG",
+        "model": "Predator,Elite-LL-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -2938,7 +2937,7 @@
     {
         "id": "JH8875",
         "url_slug": "adidas-predator-elite-ll-ag-orange",
-        "model": "Predator Elite LL AG",
+        "model": "Predator,Elite-LL-AG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -3108,7 +3107,7 @@
     {
         "id": "IF6448",
         "url_slug": "adidas-predator-elite-ll-fg-white",
-        "model": "Predator Elite LL FG",
+        "model": "Predator,Elite-LL-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -3356,7 +3355,7 @@
     {
         "id": "IF6346",
         "url_slug": "adidas-predator-league-fg-white",
-        "model": "Predator League FG",
+        "model": "Predator,League-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -3595,7 +3594,7 @@
     {
         "id": "IF6333",
         "url_slug": "adidas-predator-league-ll-fg-blue",
-        "model": "Predator League LL FG",
+        "model": "Predator,League-LL-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -3866,7 +3865,7 @@
     {
         "id": "IF6331",
         "url_slug": "adidas-predator-league-ll-fg-silver",
-        "model": "Predator League LL FG",
+        "model": "Predator,League-LL-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -4035,7 +4034,7 @@
     {
         "id": "IF6330",
         "url_slug": "adidas-predator-pro-fg-blue",
-        "model": "Predator Pro FG",
+        "model": "Predator,Pro-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -4274,7 +4273,7 @@
     {
         "id": "IF6327",
         "url_slug": "adidas-predator-pro-fg-silver",
-        "model": "Predator Pro FG",
+        "model": "Predator,Pro-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -4554,7 +4553,7 @@
     {
         "id": "IF1465",
         "url_slug": "adidas-predator-league-ll-fg-white-solar-pink",
-        "model": "Predator League LL FG",
+        "model": "Predator,League-LL-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -4776,7 +4775,7 @@
     {
         "id": "ID1326",
         "url_slug": "adidas-predator-club-fg-mg-red",
-        "model": "Predator Club FG/MG",
+        "model": "Predator,Club-FG/MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -5015,7 +5014,7 @@
     {
         "id": "ID1323",
         "url_slug": "id1323",
-        "model": "adidas Predator Club FG/MG",
+        "model": "Predator,Club-FG/MG",
         "brand": "adidas",
         "brand_logo": "https://media.futbolmania.com/media/wysiwyg/Marcas/Iconos/iconos-adidas-gris-nuevo.png",
         "category": "Football Boots",
@@ -5259,7 +5258,7 @@
     {
         "id": "ID1320",
         "url_slug": "adidas-predator-league-ft-fg-mg-white",
-        "model": "Predator League FT FG/MG",
+        "model": "Predator,League-FT-FG/MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -5483,7 +5482,7 @@
     {
         "id": "ID1319",
         "url_slug": "adidas-predator-league-ft-fg-mg-red",
-        "model": "Predator League FT FG/MG",
+        "model": "Predator,League-FT-FG/MG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -5688,7 +5687,7 @@
     {
         "id": "HQ4516",
         "url_slug": "adidas-x-crazyfast-1-fg-white-fluorescent-yellow",
-        "model": "X Crazyfast.1 FG",
+        "model": "X,Crazyfast.1-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",
@@ -5868,7 +5867,7 @@
     {
         "id": "GW8470",
         "url_slug": "adidas-x-speedportal-3-ll-fg-light-blue",
-        "model": "X Speedportal.3 LL FG",
+        "model": "X,Speedportal.3-LL-FG",
         "brand": "adidas",
         "brand_logo": null,
         "category": "Football Boots",

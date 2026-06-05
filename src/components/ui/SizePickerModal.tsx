@@ -87,12 +87,17 @@ export default function SizePickerModal({ product, isOpen, onClose }: SizePicker
                                 <button
                                     key={s.size}
                                     onClick={() => setSelectedSize(s.size)}
-                                    className={`py-3 font-bold text-sm rounded transition-colors ${isSelected
+                                    className={`py-3 font-bold text-sm rounded transition-colors relative ${isSelected
                                             ? "bg-zinc-900 text-white"
-                                            : "border border-surface-container-highest text-on-surface hover:border-primary hover:text-primary"
+                                            : "border border-surface-container-highest text-on-surface hover:border-primary-container hover:text-primary-container"
                                         }`}
                                 >
                                     {s.size}
+                                    {s.stock !== undefined && s.stock <= 3 && s.stock > 0 && (
+                                        <span className="absolute -top-1.5 -right-1.5 bg-amber-500 text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold">
+                                            {s.stock}
+                                        </span>
+                                    )}
                                 </button>
                             );
                         })}

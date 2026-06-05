@@ -33,7 +33,7 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
                             <tr key={p._id as string} className="hover:bg-neutral-800/50 transition-colors">
                                 <td className="p-3 text-zinc-400 font-mono text-xs">{p.id as string}</td>
                                 <td className="p-3 font-medium">{p.model as string}</td>
-                                <td className="p-3 text-zinc-300">{p.brand as string}</td>
+                                <td className="p-3 text-zinc-300">{(p as Record<string, unknown>).brand_name as string || "—"}</td>
                                 <td className="p-3 text-zinc-400">{p.category as string}</td>
                                 <td className="p-3 text-zinc-300">
                                     {p.price && typeof p.price === "object" && "current" in (p.price as Record<string, unknown>)

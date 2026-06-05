@@ -14,3 +14,14 @@ const builder = createImageUrlBuilder(client);
 export function urlFor(source: SanityImageSource) {
     return builder.image(source);
 }
+
+export async function getSiteLogoUrl(): Promise<string | null> {
+    try {
+        const doc = await client.fetch(`*[_type == "siteSettings"][0]{site_logo}`);
+        const logo = doc?.site_logo;
+        if (!logo) return null;
+        return urlFor(logo as SanityImageSource).width(200).url();
+    } catch {
+        return null;
+    }
+}

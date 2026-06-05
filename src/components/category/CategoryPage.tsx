@@ -19,6 +19,9 @@ interface CategoryPageProps {
     baseFilters: ActiveFilters;
     pageTitle: string;
     pageSubtitle?: string;
+    featuredImage?: string | null;
+    brandLogo?: string | null;
+    brandLogoMap?: Record<string, string | null>;
     breadcrumbs: BreadcrumbItem[];
 }
 
@@ -27,6 +30,9 @@ export default function CategoryPage({
     baseFilters,
     pageTitle,
     pageSubtitle,
+    featuredImage,
+    brandLogo,
+    brandLogoMap,
     breadcrumbs,
 }: CategoryPageProps) {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -38,8 +44,8 @@ export default function CategoryPage({
         const brands = searchParams.getAll("brand");
         if (brands.length > 0) filters.brand = brands;
 
-        const modelLines = searchParams.getAll("model_line");
-        if (modelLines.length > 0) filters.model_line = modelLines;
+        const models = searchParams.getAll("model");
+        if (models.length > 0) filters.model = models;
 
         const tractions = searchParams.getAll("traction");
         if (tractions.length > 0) filters.traction = tractions;
@@ -71,7 +77,7 @@ export default function CategoryPage({
 
     const filterOptions = useMemo(() => {
         const baseFiltered = filterProducts(allProducts, baseFilters);
-        return generateFilters(baseFiltered);
+        return generateFilters(baseFiltered, brandLogoMap);
     }, [allProducts, baseFilters]);
 
     const currentPage = parseInt(searchParams.get("page") || "1", 10);
@@ -85,13 +91,39 @@ export default function CategoryPage({
     }, [filteredProducts, safePage]);
 
     return (
-        <main className="max-w-[1024px] mx-auto px-6 py-8">
+        <main>
+
+            {/* Hero section */}
+            {(featuredImage || brandLogo) && (
+                <div className="relative w-full h-[300px] md:h-[400px] bg-neutral-900 overflow-hidden">
+                    {featuredImage && (
+                        <img src={featuredImage} alt={pageTitle} className="absolute inset-0 w-full h-full object-cover" />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 max-w-screen-2xl mx-auto">
+                        {brandLogo && (
+                            <img src={brandLogo} alt="" className="w-12 h-12 md:w-16 md:h-16 object-contain mb-4" />
+                        )}
+                        <h1 className="text-4xl md:text-6xl font-black italic tracking-tighter uppercase font-headline text-white">
+                            {pageTitle}
+                        </h1>
+                        {pageSubtitle && (
+                            <p className="text-zinc-300 max-w-2xl font-body text-lg leading-relaxed mt-2">
+                                {pageSubtitle}
+                            </p>
+                        )}
+                    </div>
+                </div>
+            )}
+
+            <div className="max-w-[1024px] mx-auto px-6 py-8">
 
             {/* Breadcrumb */}
             <Breadcrumb items={breadcrumbs} />
 
-            {/* Category header — red left border, big italic title, full description */}
-            <div className="mb-12 border-l-8 border-primary pl-8 py-2">
+            {/* Category header — red left border, big italic title, full description (fallback when no hero) */}
+            {!featuredImage && !brandLogo && (
+            <div className="mb-12 border-l-8 border-primary-container pl-8 py-2">
                 <h1 className="text-4xl md:text-6xl font-black italic tracking-tighter uppercase mb-2 font-headline">
                     {pageTitle}
                 </h1>
@@ -101,6 +133,7 @@ export default function CategoryPage({
                     </p>
                 )}
             </div>
+            )}
 
             {/* Active filters bar */}
             <ActiveFiltersBar />
@@ -124,7 +157,7 @@ export default function CategoryPage({
                             {/* Mobile filter toggle */}
                             <button
                                 onClick={() => setIsFilterOpen(true)}
-                                className="lg:hidden flex items-center gap-2 px-3 py-2 border border-surface-container-highest text-sm font-bold uppercase tracking-wide hover:border-primary hover:text-primary transition-colors"
+                                className="lg:hidden flex items-center gap-2 px-3 py-2 border border-surface-container-highest text-sm font-bold uppercase tracking-wide hover:border-primary-container hover:text-primary-container transition-colors"
                             >
                                 <span className="material-symbols-outlined text-[18px]">tune</span>
                                 <span>Filters</span>
@@ -149,6 +182,7 @@ export default function CategoryPage({
                         currentPage={safePage}
                     />
                 </div>
+            </div>
             </div>
         </main>
     );

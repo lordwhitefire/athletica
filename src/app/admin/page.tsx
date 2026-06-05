@@ -2,14 +2,16 @@ import { adminClient } from "@/lib/admin-sanity";
 import Link from "next/link";
 
 export default async function AdminDashboard() {
-    const [productCount, navCount, linkCount] = await Promise.all([
+    const [productCount, brandCount, navCount, linkCount] = await Promise.all([
         adminClient.fetch(`count(*[_type == "product"])`),
+        adminClient.fetch(`count(*[_type == "brand"])`),
         adminClient.fetch(`count(*[_type == "navigation"])`),
         adminClient.fetch(`count(*[_type == "amazonLinks"])`),
     ]);
 
     const statCards = [
         { label: "Products", value: productCount, href: "/admin/products", icon: "inventory_2" },
+        { label: "Brands", value: brandCount, href: "/admin/brands", icon: "local_offer" },
         { label: "Navigation Menus", value: navCount, href: "/admin/navigation", icon: "menu" },
         { label: "Amazon Links", value: linkCount, href: "/admin/amazon-links", icon: "link" },
     ];
@@ -18,7 +20,7 @@ export default async function AdminDashboard() {
         <div>
             <h1 className="text-2xl font-black uppercase tracking-tight mb-8">Dashboard</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
                 {statCards.map((card) => (
                     <Link key={card.href} href={card.href} className="bg-neutral-900 border border-neutral-800 rounded p-6 hover:border-red-600/50 transition-colors group">
                         <div className="flex items-center justify-between mb-3">
@@ -37,6 +39,7 @@ export default async function AdminDashboard() {
                 <QuickAction href="/admin/navigation" label="Edit Navigation" icon="edit" />
                 <QuickAction href="/admin/amazon-links" label="Manage Links" icon="edit" />
                 <QuickAction href="/admin/media" label="Upload Media" icon="upload" />
+                <QuickAction href="/admin/brands" label="Manage Brands" icon="local_offer" />
             </div>
         </div>
     );

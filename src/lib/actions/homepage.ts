@@ -3,15 +3,25 @@
 import { revalidatePath } from "next/cache";
 import { adminClient } from "@/lib/admin-sanity";
 
+function ensureKey(item: Record<string, unknown>): Record<string, unknown> {
+    if (item._key) return item;
+    return { ...item, _key: `key-${Date.now()}-${Math.random().toString(36).slice(2, 8)}` };
+}
+
 export async function getHomepageDoc() {
     return adminClient.fetch(`*[_type == "homepage"][0]`);
+}
+
+export async function getDistinctTractions(): Promise<string[]> {
+    const results = await adminClient.fetch(`*[_type == "product" && defined(traction)].traction`);
+    return [...new Set(results as string[])].sort();
 }
 
 export async function updateBanner(index: number, banner: Record<string, unknown>) {
     const doc = await getHomepageDoc();
     if (!doc?.hero_carousel?.banners) return;
     const banners = [...doc.hero_carousel.banners];
-    banners[index] = { ...banners[index], ...banner };
+    banners[index] = ensureKey({ ...banners[index], ...banner });
     await adminClient.patch(doc._id).set({ "hero_carousel.banners": banners }).commit();
     revalidatePath("/admin/homepage");
 }
@@ -28,7 +38,7 @@ export async function deleteSection(sectionIndex: number) {
 export async function addSection(section: Record<string, unknown>) {
     const doc = await getHomepageDoc();
     if (!doc?.sections) return;
-    const sections = [...doc.sections, section];
+    const sections = [...doc.sections, ensureKey(section)];
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
 }
@@ -37,7 +47,7 @@ export async function updateSection(index: number, section: Record<string, unkno
     const doc = await getHomepageDoc();
     if (!doc?.sections) return;
     const sections = [...doc.sections];
-    sections[index] = section;
+    sections[index] = ensureKey({ ...sections[index], ...section });
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
 }
@@ -52,7 +62,7 @@ export async function updateHeroCarousel(heroCarousel: Record<string, unknown>) 
 export async function addBanner(banner: Record<string, unknown>) {
     const doc = await getHomepageDoc();
     if (!doc?.hero_carousel?.banners) return;
-    const banners = [...doc.hero_carousel.banners, banner];
+    const banners = [...doc.hero_carousel.banners, ensureKey(banner)];
     await adminClient.patch(doc._id).set({ "hero_carousel.banners": banners }).commit();
     revalidatePath("/admin/homepage");
 }
@@ -81,7 +91,7 @@ export async function addSectionItem(sectionIndex: number, item: Record<string, 
     if (!doc?.sections?.[sectionIndex]) return;
     const sections = [...doc.sections];
     const section = { ...sections[sectionIndex] as Record<string, unknown> };
-    const items = [...(section.items as Record<string, unknown>[] || []), item];
+    const items = [...(section.items as Record<string, unknown>[] || []), ensureKey(item)];
     section.items = items;
     sections[sectionIndex] = section;
     await adminClient.patch(doc._id).set({ sections }).commit();

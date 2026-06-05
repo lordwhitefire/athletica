@@ -16,7 +16,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                 <li>
                     <Link
                         href="/"
-                        className="text-sm text-gray-500 hover:text-primary transition-colors"
+                        className="text-sm text-gray-500 hover:text-primary-container transition-colors"
                     >
                         Home
                     </Link>
@@ -34,7 +34,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                             ) : (
                                 <Link
                                     href={item.href}
-className="text-sm text-gray-500 hover:text-primary transition-colors"
+className="text-sm text-gray-500 hover:text-primary-container transition-colors"
                                 >
                                     {item.label}
                                 </Link>

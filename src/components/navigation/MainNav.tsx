@@ -52,8 +52,8 @@ export default function MainNav({ navigation }: MainNavProps) {
                                 <Link
                                     href={child.href}
                                     className={`flex items-center justify-center px-3 py-2.5 text-xs font-bold transition-colors text-center leading-tight border-b-2 w-20 h-full ${activeItem?.id === child.id
-                                        ? "text-red-600 border-red-600"
-                                        : "text-gray-700 border-transparent hover:text-red-600 hover:border-red-600"
+                                        ? "text-primary-container border-primary"
+                                        : "text-gray-700 border-transparent hover:text-primary-container hover:border-primary-container"
                                         }`}
                                     style={{ wordBreak: "break-word" }}
                                 >

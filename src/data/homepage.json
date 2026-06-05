@@ -19,7 +19,7 @@
                 "subtitle": "Total control. Unmatched precision.",
                 "button_text": "Shop Predator",
                 "link": "/adidas-predator-football-boots",
-                "gradient": "from-black via-gray-900 to-red-900",
+                "gradient": "from-black via-gray-900 to-green-900",
                 "accent_color": "#ef4444",
                 "image": null
             },
@@ -130,7 +130,7 @@
                 {
                     "label": "NIKE",
                     "href": "/nike-football-boots",
-                    "bg": "bg-red-600",
+                    "bg": "bg-primary",
                     "image": "/NIKELOGO.jpg"
                 },
                 {
@@ -236,19 +236,19 @@
                     "label": "Natural Grass",
                     "href": "/fg-football-boots",
                     "bg": "bg-neutral-100",
-                    "accent": "border-l-8 border-red-600"
+                    "accent": "border-l-8 border-primary"
                 },
                 {
                     "label": "Artificial Turf",
                     "href": "/ag-football-boots",
                     "bg": "bg-neutral-200",
-                    "accent": "border-l-8 border-red-600"
+                    "accent": "border-l-8 border-primary"
                 },
                 {
                     "label": "Hard Ground",
                     "href": "/tf-football-boots",
                     "bg": "bg-neutral-300",
-                    "accent": "border-l-8 border-red-600"
+                    "accent": "border-l-8 border-primary"
                 }
             ]
         },
@@ -283,7 +283,7 @@
             "type": "category_grid",
             "title": "Performance Gear",
             "variant": "scroll-categories",
-            "bg": "bg-red-600",
+            "bg": "bg-primary",
             "items": [
                 {
                     "label": "Gloves",
@@ -336,7 +336,7 @@
                 {
                     "label": "Nike Phantom",
                     "href": "/nike-phantom-football-boots",
-                    "bg": "bg-red-600",
+                    "bg": "bg-primary",
                     "image": "/nike.jpg"
                 }
             ]
@@ -384,7 +384,7 @@
                 {
                     "label": "Training Gear",
                     "href": "/football-training",
-                    "bg": "bg-red-600",
+                    "bg": "bg-primary",
                     "image": "/GEAR.jpg"
                 }
             ]
@@ -446,7 +446,7 @@
                 {
                     "label": "X Crazyfast",
                     "href": "/adidas-x-crazyfast-football-boots",
-                    "accent": "border-r-8 border-red-600",
+                    "accent": "border-r-8 border-primary",
                     "image": "/CRAZYFAST.jpg"
                 },
                 {
@@ -486,7 +486,7 @@
                 {
                     "label": "Sale — Up to 50%",
                     "href": "/football-boots",
-                    "bg": "bg-red-600",
+                    "bg": "bg-primary",
                     "height": "h-80",
                     "image": "/SALE.jpg"
                 }

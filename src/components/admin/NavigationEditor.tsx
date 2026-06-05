@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import AutoSuggest from "./AutoSuggest";
+import { suggestRoutes } from "@/lib/actions/suggestions";
 import { saveNavigation } from "@/lib/actions/navigation";
 import { useRouter } from "next/navigation";
 
@@ -139,20 +141,19 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
     return (
         <div className="bg-neutral-800 border border-neutral-700 rounded overflow-hidden" style={indentStyle}>
             {/* Header row */}
-            <div className="flex items-center gap-2 p-3 bg-neutral-750">
-                <button onClick={() => setExpanded(!expanded)} className="text-zinc-500 hover:text-white p-0.5">
+            <div className="flex flex-wrap items-center gap-2 p-3 bg-neutral-750">
+                <button onClick={() => setExpanded(!expanded)} className="text-zinc-500 hover:text-white p-0.5 flex-none">
                     <span className="material-symbols-outlined text-[14px]">{expanded ? "expand_more" : "chevron_right"}</span>
                 </button>
                 <input value={item.label as string || ""} onChange={(e) => updateField("label", e.target.value)}
                     placeholder="Label"
-                    className="flex-1 min-w-0 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600" />
-                <input value={item.href as string || ""} onChange={(e) => updateField("href", e.target.value)}
-                    placeholder="/path"
-                    className="w-full sm:w-48 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs font-mono focus:outline-none focus:border-red-600" />
+                    className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600" />
+                <AutoSuggest value={item.href as string || ""} onChange={(v) => updateField("href", v)}
+                    fetchSuggestions={suggestRoutes} label="Href" hideLabel className="flex-1 min-w-0 basis-[100px]" placeholder="/path" />
                 <input value={item.description as string || ""} onChange={(e) => updateField("description", e.target.value)}
                     placeholder="Description (optional)"
-                    className="flex-1 min-w-0 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600 hidden md:block" />
-                <button onClick={remove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-shrink-0">
+                    className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600 hidden md:block" />
+                <button onClick={remove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-none">
                     <span className="material-symbols-outlined text-[14px]">close</span>
                 </button>
             </div>
@@ -222,17 +223,16 @@ function LinkRow({ link, onChange, onRemove }: {
     onRemove: () => void;
 }) {
     return (
-        <div className="flex items-center gap-2 mt-1">
+        <div className="flex flex-wrap items-center gap-2 mt-1">
             <input value={link.label as string || ""} onChange={(e) => onChange("label", e.target.value)}
                 placeholder="Label"
-                className="flex-1 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600" />
-            <input value={link.href as string || ""} onChange={(e) => onChange("href", e.target.value)}
-                placeholder="/path"
-                className="w-full sm:w-32 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] font-mono focus:outline-none focus:border-red-600" />
+                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600" />
+            <AutoSuggest value={link.href as string || ""} onChange={(v) => onChange("href", v)}
+                fetchSuggestions={suggestRoutes} label="Href" hideLabel className="flex-1 min-w-0 basis-[100px]" placeholder="/path" />
             <input value={link.description as string || ""} onChange={(e) => onChange("description", e.target.value)}
                 placeholder="Description"
-                className="flex-1 px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600 hidden md:block" />
-            <button onClick={onRemove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-shrink-0">
+                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600 hidden md:block" />
+            <button onClick={onRemove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-none">
                 <span className="material-symbols-outlined text-[12px]">close</span>
             </button>
         </div>

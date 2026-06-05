@@ -6,9 +6,11 @@ import { useState } from "react";
 const navItems = [
     { label: "Dashboard", href: "/admin", icon: "grid_view" },
     { label: "Products", href: "/admin/products", icon: "inventory_2" },
+    { label: "Brands", href: "/admin/brands", icon: "local_offer" },
     { label: "Homepage", href: "/admin/homepage", icon: "home" },
     { label: "Navigation", href: "/admin/navigation", icon: "menu" },
     { label: "Amazon Links", href: "/admin/amazon-links", icon: "link" },
+    { label: "Settings", href: "/admin/settings", icon: "settings" },
     { label: "Media", href: "/admin/media", icon: "photo_library" },
 ];
 

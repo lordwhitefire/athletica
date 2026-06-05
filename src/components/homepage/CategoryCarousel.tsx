@@ -97,13 +97,13 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
                     <>
                         <button
                             onClick={prev}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary hover:text-primary transition-colors z-10 text-lg"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
                         >
                             ‹
                         </button>
                         <button
                             onClick={next}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary hover:text-primary transition-colors z-10 text-lg"
+                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
                         >
                             ›
                         </button>

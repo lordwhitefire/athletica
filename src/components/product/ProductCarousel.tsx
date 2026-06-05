@@ -50,7 +50,7 @@ export default function ProductCarousel({
                         {link && (
                             <Link
                                 href={link}
-                                className="text-xs font-bold uppercase tracking-widest text-primary flex items-center hover:translate-x-1 transition-transform"
+                                className="text-xs font-bold uppercase tracking-widest text-primary-container flex items-center hover:translate-x-1 transition-transform"
                             >
                                 <span className="hidden sm:inline">{linkLabel || "View All"}</span>
                                 <span className="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
@@ -58,13 +58,13 @@ export default function ProductCarousel({
                         )}
                         <button
                             onClick={scrollLeft}
-                            className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary hover:text-primary transition-colors"
+                            className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary-container hover:text-primary-container transition-colors"
                         >
                             <span className="material-symbols-outlined text-[16px] md:text-[18px]">chevron_left</span>
                         </button>
                         <button
                             onClick={scrollRight}
-                            className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary hover:text-primary transition-colors"
+                            className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary-container hover:text-primary-container transition-colors"
                         >
                             <span className="material-symbols-outlined text-[16px] md:text-[18px]">chevron_right</span>
                         </button>

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import AutoSuggest from "./AutoSuggest";
+import { suggestProductIds } from "@/lib/actions/suggestions";
 import { saveAmazonLinks } from "@/lib/actions/amazon-links";
 import { useRouter } from "next/navigation";
 
@@ -72,10 +74,14 @@ export default function AmazonLinksEditor({ doc }: Props) {
                         {links.map((link, i) => (
                             <tr key={i} className="hover:bg-neutral-800/50">
                                 <td className="p-2">
-                                    <input
+                                    <AutoSuggest
                                         value={link.productId}
-                                        onChange={(e) => update(i, "productId", e.target.value)}
-                                        className="w-full px-2 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600"
+                                        onChange={(v) => {
+                                            const match = v.match(/\(([^)]+)\)$/);
+                                            update(i, "productId", match ? match[1] : v);
+                                        }}
+                                        fetchSuggestions={suggestProductIds}
+                                        label="Product ID"
                                     />
                                 </td>
                                 <td className="p-2">

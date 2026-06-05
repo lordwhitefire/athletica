@@ -8,6 +8,7 @@ import Header from "@/components/navigation/Header";
 import Footer from "@/components/ui/Footer";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import { getNavigation } from "@/lib/getNavigation";
+import { getSiteLogoUrl } from "@/lib/sanity";
 
 export const metadata: Metadata = {
     title: {
@@ -33,7 +34,10 @@ export default async function RootLayout({
 }: {
     children: React.ReactNode;
 }) {
-    const navigation = await getNavigation();
+    const [navigation, siteLogoUrl] = await Promise.all([
+        getNavigation(),
+        getSiteLogoUrl(),
+    ]);
 
     return (
         <html lang="en">
@@ -50,9 +54,9 @@ export default async function RootLayout({
                     <CartProvider>
                         <ToastProvider>
                             <WishlistProvider>
-                                <Header navigation={navigation} />
+                                <Header navigation={navigation} siteLogoUrl={siteLogoUrl} />
                                 <main>{children}</main>
-                                <Footer />
+                                <Footer siteLogoUrl={siteLogoUrl} />
                                 <ScrollToTop />
                             </WishlistProvider>
                         </ToastProvider>

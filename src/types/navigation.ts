@@ -1,6 +1,7 @@
 export interface NavLink {
     label: string;
     href: string;
+    description?: string;
 }
 
 export interface NavItem {
@@ -10,6 +11,8 @@ export interface NavItem {
     href: string | null;
     disabled?: boolean;
     description?: string;
+    slug?: string;
+    featuredImage?: string;
     customLinks?: NavLink[];
     sizeLinks?: NavLink[];
     bottomLinks?: NavLink[];

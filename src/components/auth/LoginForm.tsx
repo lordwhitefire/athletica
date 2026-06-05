@@ -69,7 +69,7 @@ export default function LoginForm() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="you@example.com"
-                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary text-sm transition-colors"
+                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                             />
                         </div>
 
@@ -83,7 +83,7 @@ export default function LoginForm() {
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     placeholder="••••••••"
-                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary text-sm transition-colors"
+                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                                 />
                                 <button
                                     type="button"
@@ -99,7 +99,7 @@ export default function LoginForm() {
                         </div>
 
                         <div className="flex items-center justify-end">
-                            <Link href="/forgot-password" className="text-xs font-bold text-primary hover:text-primary-container transition-colors">
+                            <Link href="/forgot-password" className="text-xs font-bold text-primary-container hover:text-primary transition-colors">
                                 Forgot password?
                             </Link>
                         </div>
@@ -126,7 +126,7 @@ export default function LoginForm() {
                     <div className="mt-6 text-center">
                         <p className="text-sm text-on-surface-variant">
                             Don&apos;t have an account?{" "}
-                            <Link href="/register" className="text-primary font-bold hover:text-primary-container transition-colors">
+                            <Link href="/register" className="text-primary-container font-bold hover:text-primary transition-colors">
                                 Create one
                             </Link>
                         </p>

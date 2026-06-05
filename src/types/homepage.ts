@@ -22,7 +22,6 @@ export interface CategoryGridItem {
     bg?: string;
     textColor?: string;
     accent?: string;
-    height?: string;
 }
 
 export type CategorySectionVariant =
@@ -60,7 +59,7 @@ export interface CategoryGridSection {
 export interface ProductCarouselFilter {
     category?: string;
     brand?: string;
-    model_line?: string;
+    model?: string;
     traction?: string;
     min_price?: number;
     max_price?: number;
