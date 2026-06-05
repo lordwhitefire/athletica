@@ -18,8 +18,10 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     const pathname = usePathname();
     const router = useRouter();
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [loggingOut, setLoggingOut] = useState(false);
 
     async function handleLogout() {
+        setLoggingOut(true);
         await fetch("/api/admin/logout", { method: "POST" });
         router.push("/admin/login");
     }
@@ -58,9 +60,9 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
                 </nav>
 
                 <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-neutral-800">
-                    <button onClick={handleLogout} className="flex items-center gap-3 text-zinc-500 hover:text-red-500 text-sm transition-colors w-full">
+                    <button onClick={handleLogout} disabled={loggingOut} className="flex items-center gap-3 text-zinc-500 hover:text-red-500 disabled:text-zinc-700 text-sm transition-colors w-full">
                         <span className="material-symbols-outlined text-[18px]">logout</span>
-                        Logout
+                        {loggingOut ? "Logging out..." : "Logout"}
                     </button>
                 </div>
             </aside>

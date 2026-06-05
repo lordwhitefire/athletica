@@ -18,6 +18,7 @@ interface HeaderProps {
 export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
     const [isMiniCartOpen, setIsMiniCartOpen] = useState(false);
+    const [signingOut, setSigningOut] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const { cart } = useCart();
     const { auth, logout } = useAuth();
@@ -82,10 +83,11 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                                     </p>
                                 </Link>
                                 <button
-                                    onClick={logout}
-                                    className="text-xs text-gray-400 hover:text-primary-container transition-colors font-medium uppercase tracking-wider shrink-0"
+                                    onClick={async () => { setSigningOut(true); await logout(); }}
+                                    disabled={signingOut}
+                                    className="text-xs text-gray-400 hover:text-primary-container disabled:text-gray-300 transition-colors font-medium uppercase tracking-wider shrink-0"
                                 >
-                                    Sign Out
+                                    {signingOut ? "Signing Out..." : "Sign Out"}
                                 </button>
                                 <Link
                                     href="/account"

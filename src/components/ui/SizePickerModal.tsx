@@ -14,6 +14,7 @@ interface SizePickerModalProps {
 export default function SizePickerModal({ product, isOpen, onClose }: SizePickerModalProps) {
     const [selectedSize, setSelectedSize] = useState<string | null>(null);
     const [added, setAdded] = useState(false);
+    const [addingToCart, setAddingToCart] = useState(false);
     const { addToCart } = useCart();
     const { addToast } = useToast();
 
@@ -21,11 +22,13 @@ export default function SizePickerModal({ product, isOpen, onClose }: SizePicker
 
     function handleAddToCart() {
         if (!selectedSize) return;
+        setAddingToCart(true);
         addToCart(product, selectedSize);
         setAdded(true);
         addToast(`${product.model} added to cart`);
         setTimeout(() => {
             setAdded(false);
+            setAddingToCart(false);
             setSelectedSize(null);
             onClose();
         }, 1000);
@@ -105,7 +108,7 @@ export default function SizePickerModal({ product, isOpen, onClose }: SizePicker
 
                     <button
                         onClick={handleAddToCart}
-                        disabled={!selectedSize || added}
+                        disabled={!selectedSize || added || addingToCart}
                         className={`w-full py-3.5 rounded font-bold text-sm transition-colors flex items-center justify-center gap-2 ${selectedSize && !added
                                 ? "bg-zinc-900 text-white hover:bg-zinc-800"
                                 : added

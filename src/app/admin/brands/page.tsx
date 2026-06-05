@@ -1,4 +1,5 @@
-import { getAllBrandsAdmin, deleteBrand } from "@/lib/actions/brands";
+import { getAllBrandsAdmin } from "@/lib/actions/brands";
+import DeleteBrandButton from "./DeleteBrandButton";
 import Link from "next/link";
 import { urlFor } from "@/lib/sanity";
 import type { SanityImageSource } from "@sanity/image-url";
@@ -54,7 +55,7 @@ export default async function AdminBrandsPage() {
                       <Link href={`/admin/brands/${b._id}/edit`} className="text-red-500 hover:text-red-400 text-xs font-bold uppercase tracking-wider transition-colors">
                         Edit
                       </Link>
-                      <DeleteButton id={b._id as string} />
+                      <DeleteBrandButton id={b._id as string} />
                     </div>
                   </td>
                 </tr>
@@ -74,16 +75,4 @@ export default async function AdminBrandsPage() {
   );
 }
 
-function DeleteButton({ id }: { id: string }) {
-  return (
-    <form action={async () => {
-      "use server";
-      await deleteBrand(id);
-    }}>
-      <button type="submit" className="text-zinc-500 hover:text-red-500 text-xs font-bold uppercase tracking-wider transition-colors"
-        onClick={(e: React.MouseEvent) => { if (!confirm("Delete this brand?")) e.preventDefault(); }}>
-        Delete
-      </button>
-    </form>
-  );
-}
+

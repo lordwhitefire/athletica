@@ -128,6 +128,7 @@ function SubMenuPanel({
     isLoggedIn: boolean;
     logout: () => void;
 }) {
+    const [signingOut, setSigningOut] = useState(false);
     return (
         <div className="absolute w-full inset-0 bg-white flex flex-col">
 
@@ -207,10 +208,11 @@ function SubMenuPanel({
             <div className="absolute bottom-0 left-0 w-full p-6 bg-white border-t border-neutral-100 flex gap-4">
                 {isLoggedIn ? (
                     <button
-                        onClick={() => { logout(); onClose(); }}
-                        className="flex-1 bg-surface-container-highest text-on-surface h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform"
+                        onClick={async () => { setSigningOut(true); await logout(); onClose(); }}
+                        disabled={signingOut}
+                        className="flex-1 bg-surface-container-highest text-on-surface h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform disabled:opacity-50"
                     >
-                        Sign Out
+                        {signingOut ? "Signing Out..." : "Sign Out"}
                     </button>
                 ) : (
                     <Link
@@ -236,6 +238,7 @@ function SubMenuPanel({
 export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProps) {
     const { auth, logout } = useAuth();
     const [activeL1, setActiveL1] = useState<NavItem | null>(null);
+    const [signingOut, setSigningOut] = useState(false);
     const allL1Items = navigation.flatMap((group) => group.children || []);
 
     function handleClose() {
@@ -310,10 +313,11 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                                     My Account
                                 </Link>
                                 <button
-                                    onClick={() => { logout(); handleClose(); }}
-                                    className="w-full py-4 bg-primary text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary transition-colors text-center"
+                                    onClick={async () => { setSigningOut(true); await logout(); handleClose(); }}
+                                    disabled={signingOut}
+                                    className="w-full py-4 bg-primary text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary disabled:opacity-50 transition-colors text-center"
                                 >
-                                    Sign Out
+                                    {signingOut ? "Signing Out..." : "Sign Out"}
                                 </button>
                             </>
                         ) : (

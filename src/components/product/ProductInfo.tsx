@@ -16,6 +16,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
     const [selectedSize, setSelectedSize] = useState<string | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [addedToCart, setAddedToCart] = useState(false);
+    const [addingToCart, setAddingToCart] = useState(false);
     const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
     const { addToCart } = useCart();
     const { addToast } = useToast();
@@ -28,10 +29,11 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
             setIsModalOpen(true);
             return;
         }
+        setAddingToCart(true);
         addToCart(product, selectedSize);
         setAddedToCart(true);
         addToast(`${product.model} added to cart`);
-        setTimeout(() => setAddedToCart(false), 2000);
+        setTimeout(() => { setAddedToCart(false); setAddingToCart(false); }, 2000);
     }
 
     function handleBuyNow() {
@@ -199,6 +201,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
             <div className="space-y-3">
                 <button
                     onClick={handleAddToCart}
+                    disabled={addingToCart}
                     className={`w-full py-5 font-black uppercase tracking-widest text-sm flex items-center justify-center gap-2 transition-colors duration-300 ${addedToCart
                             ? "bg-primary text-on-primary"
                             : "bg-zinc-900 text-white hover:bg-zinc-700"

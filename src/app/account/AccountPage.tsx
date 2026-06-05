@@ -2,9 +2,11 @@
 
 import { useAuth } from "@/context/AuthContext";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function AccountPage() {
     const { auth, logout } = useAuth();
+    const [signingOut, setSigningOut] = useState(false);
 
     if (!auth.isLoggedIn) {
         return (
@@ -27,11 +29,12 @@ export default function AccountPage() {
                 <div className="flex items-center justify-between mb-10">
                     <h1 className="text-3xl font-black font-headline text-on-surface">My Account</h1>
                     <button
-                        onClick={logout}
-                        className="text-sm text-on-surface-variant hover:text-error transition-colors flex items-center gap-1"
+                        onClick={async () => { setSigningOut(true); await logout(); }}
+                        disabled={signingOut}
+                        className="text-sm text-on-surface-variant hover:text-error disabled:text-on-surface-variant/40 transition-colors flex items-center gap-1"
                     >
                         <span className="material-symbols-outlined text-[16px]">logout</span>
-                        Sign Out
+                        {signingOut ? "Signing Out..." : "Sign Out"}
                     </button>
                 </div>
 

@@ -44,6 +44,7 @@ interface Props {
 
 export default function HomepageEditor({ doc }: Props) {
     const router = useRouter();
+    const [addingBanner, setAddingBanner] = useState(false);
     if (!doc) return <p className="text-zinc-500">No homepage document found in Sanity.</p>;
 
     const heroCarousel = doc.hero_carousel as Record<string, unknown> | undefined;
@@ -60,11 +61,13 @@ export default function HomepageEditor({ doc }: Props) {
                         <BannerEditor key={banner.id as string || i} banner={banner} index={i} />
                     ))}
                     <button onClick={async () => {
+                        setAddingBanner(true);
                         const id = `hero-${Date.now()}`;
                         await addBanner({ id, title: "New Banner", subtitle: "", button_text: "Shop Now", link: "/", gradient: "from-gray-900 via-gray-800 to-gray-900", accent_color: "#ef4444", image: null });
                         router.refresh();
-                    }} className="text-sm text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
-                        <span className="material-symbols-outlined text-[16px]">add</span> Add Banner
+                        setAddingBanner(false);
+                    }} disabled={addingBanner} className="text-sm text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[16px]">add</span> {addingBanner ? "Adding..." : "Add Banner"}
                     </button>
                 </div>
             </Section>
@@ -117,6 +120,8 @@ export default function HomepageEditor({ doc }: Props) {
 
     function BannerEditor({ banner, index }: { banner: Record<string, unknown>; index: number }) {
         const [editing, setEditing] = useState(false);
+        const [saving, setSaving] = useState(false);
+        const [deleting, setDeleting] = useState(false);
         const [title, setTitle] = useState(banner.title as string || "");
         const [subtitle, setSubtitle] = useState(banner.subtitle as string || "");
         const [buttonText, setButtonText] = useState(banner.button_text as string || "");
@@ -126,6 +131,7 @@ export default function HomepageEditor({ doc }: Props) {
         const [image, setImage] = useState<string | null>(extractAssetId(banner.image));
 
         async function save() {
+            setSaving(true);
             try {
                 await updateBanner(index, { title, subtitle, button_text: buttonText, link, gradient, accent_color: accentColor, image: image ? { _type: "image", asset: { _ref: image, _type: "reference" } } : null });
                 setEditing(false);
@@ -133,17 +139,22 @@ export default function HomepageEditor({ doc }: Props) {
             } catch (err) {
                 console.error("Failed to save banner:", err);
                 alert("Save failed");
+            } finally {
+                setSaving(false);
             }
         }
 
         async function remove() {
             if (!confirm(`Delete banner "${title}"?`)) return;
+            setDeleting(true);
             try {
                 await deleteBanner(index);
                 router.refresh();
             } catch (err) {
                 console.error("Failed to delete banner:", err);
                 alert("Delete failed");
+            } finally {
+                setDeleting(false);
             }
         }
 
@@ -181,7 +192,7 @@ export default function HomepageEditor({ doc }: Props) {
                 </div>
                 <ImageSelector name="banner_image" value={image} onChange={setImage} label="Banner Image" />
                 <div className="flex gap-2 pt-1">
-                    <button onClick={save} className="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">Save</button>
+                    <button onClick={save} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Saving..." : "Save"}</button>
                 </div>
             </div>
         );
@@ -189,6 +200,9 @@ export default function HomepageEditor({ doc }: Props) {
 
     function SectionEditor({ section, index }: { section: Record<string, unknown>; index: number }) {
         const [editing, setEditing] = useState(false);
+        const [saving, setSaving] = useState(false);
+        const [deleting, setDeleting] = useState(false);
+        const [addingItem, setAddingItem] = useState(false);
         const type = (section._type || section.type) as string;
 
         const [title, setTitle] = useState(section.title as string || "");
@@ -217,6 +231,7 @@ export default function HomepageEditor({ doc }: Props) {
         }, []);
 
         async function saveSection() {
+            setSaving(true);
             const base: Record<string, unknown> = { id: section.id, title, type: type };
             if (type === "category_grid") {
                 base.variant = variant;
@@ -241,12 +256,15 @@ export default function HomepageEditor({ doc }: Props) {
             await updateSection(index, base);
             setEditing(false);
             router.refresh();
+            setSaving(false);
         }
 
         async function remove() {
             if (!confirm(`Delete section "${title}"?`)) return;
+            setDeleting(true);
             await deleteSection(index);
             router.refresh();
+            setDeleting(false);
         }
 
         if (!editing) {
@@ -348,17 +366,19 @@ export default function HomepageEditor({ doc }: Props) {
                                 <CategoryItemEditor key={ii} sectionIndex={index} item={item} itemIndex={ii} />
                             ))}
                             <button onClick={async () => {
+                                setAddingItem(true);
                                 await addSectionItem(index, { label: "New Item", href: "/" });
                                 router.refresh();
-                            }} className="text-xs text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
-                                <span className="material-symbols-outlined text-[14px]">add</span> Add Item
+                                setAddingItem(false);
+                            }} disabled={addingItem} className="text-xs text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
+                                <span className="material-symbols-outlined text-[14px]">add</span> {addingItem ? "Adding..." : "Add Item"}
                             </button>
                         </div>
                     </div>
                 )}
 
                 <div className="flex gap-2 pt-1">
-                    <button onClick={saveSection} className="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">Save Section</button>
+                    <button onClick={saveSection} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Saving..." : "Save Section"}</button>
                 </div>
             </div>
         );
@@ -371,8 +391,11 @@ export default function HomepageEditor({ doc }: Props) {
         const [itemBg, setItemBg] = useState(item.bg as string || "");
         const [textColor, setTextColor] = useState(item.textColor as string || "");
         const [accent, setAccent] = useState(item.accent as string || "");
+        const [saving, setSaving] = useState(false);
+        const [deleting, setDeleting] = useState(false);
 
         async function save() {
+            setSaving(true);
             try {
                 const updated: Record<string, unknown> = { label, href };
                 if (image) updated.image = { _type: "image", asset: { _ref: image, _type: "reference" } };
@@ -384,17 +407,22 @@ export default function HomepageEditor({ doc }: Props) {
             } catch (err) {
                 console.error("Failed to save category item:", err);
                 alert("Save failed");
+            } finally {
+                setSaving(false);
             }
         }
 
         async function remove() {
             if (!confirm(`Delete item "${label}"?`)) return;
+            setDeleting(true);
             try {
                 await deleteSectionItem(sectionIndex, itemIndex);
                 router.refresh();
             } catch (err) {
                 console.error("Failed to delete category item:", err);
                 alert("Delete failed");
+            } finally {
+                setDeleting(false);
             }
         }
 
@@ -409,8 +437,8 @@ export default function HomepageEditor({ doc }: Props) {
                 </div>
                 <ImageSelector name="item_image" value={image} onChange={setImage} label="Item Image" />
                 <div className="flex gap-2 pt-1">
-                    <button onClick={save} className="bg-red-600 hover:bg-red-700 text-white text-[10px] font-bold px-3 py-1 rounded transition-colors">Save Item</button>
-                    <button onClick={remove} className="text-[10px] bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-1 rounded transition-colors">Delete</button>
+                    <button onClick={save} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-[10px] font-bold px-3 py-1 rounded transition-colors">{saving ? "Saving..." : "Save Item"}</button>
+                    <button onClick={remove} disabled={deleting} className="text-[10px] bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold px-3 py-1 rounded transition-colors">{deleting ? "Deleting..." : "Delete"}</button>
                 </div>
             </div>
         );
@@ -418,12 +446,14 @@ export default function HomepageEditor({ doc }: Props) {
 
     function AddSectionForm() {
         const [showForm, setShowForm] = useState(false);
+        const [saving, setSaving] = useState(false);
         const [newType, setNewType] = useState<"category_grid" | "product_carousel">("category_grid");
         const [newTitle, setNewTitle] = useState("");
         const [newVariant, setNewVariant] = useState("grid-4-equal");
 
         async function handleAdd() {
             if (!newTitle.trim()) return;
+            setSaving(true);
             const section: Record<string, unknown> = {
                 id: `section-${Date.now()}`,
                 type: newType,
@@ -439,6 +469,7 @@ export default function HomepageEditor({ doc }: Props) {
                 section.limit = 10;
             }
             await addSection(section);
+            setSaving(false);
             setShowForm(false);
             setNewTitle("");
             router.refresh();
@@ -484,7 +515,7 @@ export default function HomepageEditor({ doc }: Props) {
                     )}
                 </div>
                 <div className="flex gap-2">
-                    <button onClick={handleAdd} className="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">Add</button>
+                    <button onClick={handleAdd} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Adding..." : "Add"}</button>
                     <button onClick={() => setShowForm(false)} className="text-xs bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors">Cancel</button>
                 </div>
             </div>
