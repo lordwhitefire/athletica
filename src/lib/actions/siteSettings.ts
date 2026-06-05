@@ -56,4 +56,5 @@ export async function saveSiteSettings(formData: FormData) {
     });
   }
   revalidatePath("/admin/settings");
+  revalidatePath("/");
 }
