@@ -48,7 +48,7 @@ export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | n
         <div className="md:col-span-1">
           <Link href="/">
             {siteLogoUrl ? (
-              <img src={siteLogoUrl} alt={brand_name} className="h-10 w-auto mb-4" />
+              <img src={siteLogoUrl} alt={brand_name} className="w-32 h-auto mb-4" />
             ) : (
               <div className="text-3xl font-black text-white italic font-headline mb-4">
                 {brand_name}
