@@ -40,7 +40,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                     {/* Logo — left, shrinks to fit */}
                     <Link href="/" className="flex items-center gap-2 flex-shrink-0">
                         {siteLogoUrl ? (
-                            <img src={siteLogoUrl} alt="Athletica" className="w-28 h-auto" />
+                            <img src={siteLogoUrl} alt="Athletica" className="w-56 h-auto" />
                         ) : (
                             <>
                                 <div className="w-8 h-8 bg-primary flex items-center justify-center rounded-sm">
