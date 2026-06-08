@@ -24,6 +24,7 @@ export async function updateBanner(index: number, banner: Record<string, unknown
     banners[index] = ensureKey({ ...banners[index], ...banner });
     await adminClient.patch(doc._id).set({ "hero_carousel.banners": banners }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function deleteSection(sectionIndex: number) {
@@ -33,6 +34,7 @@ export async function deleteSection(sectionIndex: number) {
     sections.splice(sectionIndex, 1);
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function addSection(section: Record<string, unknown>) {
@@ -41,6 +43,7 @@ export async function addSection(section: Record<string, unknown>) {
     const sections = [...doc.sections, ensureKey(section)];
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function updateSection(index: number, section: Record<string, unknown>) {
@@ -50,6 +53,7 @@ export async function updateSection(index: number, section: Record<string, unkno
     sections[index] = ensureKey({ ...sections[index], ...section });
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function updateHeroCarousel(heroCarousel: Record<string, unknown>) {
@@ -57,6 +61,7 @@ export async function updateHeroCarousel(heroCarousel: Record<string, unknown>) 
     if (!doc) return;
     await adminClient.patch(doc._id).set({ hero_carousel: heroCarousel }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function addBanner(banner: Record<string, unknown>) {
@@ -65,6 +70,7 @@ export async function addBanner(banner: Record<string, unknown>) {
     const banners = [...doc.hero_carousel.banners, ensureKey(banner)];
     await adminClient.patch(doc._id).set({ "hero_carousel.banners": banners }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function deleteBanner(index: number) {
@@ -74,6 +80,7 @@ export async function deleteBanner(index: number) {
     banners.splice(index, 1);
     await adminClient.patch(doc._id).set({ "hero_carousel.banners": banners }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function reorderSections(fromIndex: number, toIndex: number) {
@@ -84,6 +91,7 @@ export async function reorderSections(fromIndex: number, toIndex: number) {
     sections.splice(toIndex, 0, moved);
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function addSectionItem(sectionIndex: number, item: Record<string, unknown>) {
@@ -96,6 +104,7 @@ export async function addSectionItem(sectionIndex: number, item: Record<string, 
     sections[sectionIndex] = section;
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function updateSectionItem(sectionIndex: number, itemIndex: number, item: Record<string, unknown>) {
@@ -109,6 +118,7 @@ export async function updateSectionItem(sectionIndex: number, itemIndex: number,
     sections[sectionIndex] = section;
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }
 
 export async function deleteSectionItem(sectionIndex: number, itemIndex: number) {
@@ -122,4 +132,5 @@ export async function deleteSectionItem(sectionIndex: number, itemIndex: number)
     sections[sectionIndex] = section;
     await adminClient.patch(doc._id).set({ sections }).commit();
     revalidatePath("/admin/homepage");
+    revalidatePath("/");
 }

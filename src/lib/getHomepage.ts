@@ -10,7 +10,7 @@ function resolveImage(value: unknown): string | null {
     if (typeof value === "string") return value;
     if (typeof value === "object" && value !== null) {
         try {
-            return urlFor(value as SanityImageSource).url();
+            return `${urlFor(value as SanityImageSource).url()}?v=${Date.now()}`;
         } catch {
             return null;
         }

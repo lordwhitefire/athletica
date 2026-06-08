@@ -6,7 +6,7 @@ export const client = createClient({
     projectId: "cuiis46d",
     dataset: "production",
     apiVersion: "2025-01-01",
-    useCdn: true,
+    useCdn: false,
 });
 
 const builder = createImageUrlBuilder(client);
@@ -20,7 +20,7 @@ export async function getSiteLogoUrl(): Promise<string | null> {
         const doc = await client.fetch(`*[_type == "siteSettings"][0]{site_logo}`);
         const logo = doc?.site_logo;
         if (!logo) return null;
-        return urlFor(logo as SanityImageSource).width(1000).url();
+        return `${urlFor(logo as SanityImageSource).width(1000).url()}?v=${Date.now()}`;
     } catch {
         return null;
     }
