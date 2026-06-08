@@ -20,7 +20,7 @@ export async function getSiteLogoUrl(): Promise<string | null> {
         const doc = await client.fetch(`*[_type == "siteSettings"][0]{site_logo}`);
         const logo = doc?.site_logo;
         if (!logo) return null;
-        return `${urlFor(logo as SanityImageSource).width(1000).url()}?v=${Date.now()}`;
+        return urlFor(logo as SanityImageSource).width(1000).url();
     } catch {
         return null;
     }
