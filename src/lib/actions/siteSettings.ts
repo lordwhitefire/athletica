@@ -48,7 +48,11 @@ export async function saveSiteSettings(formData: FormData) {
   }
 
   if (doc) {
-    await adminClient.patch(doc._id).set(patch).commit();
+    const op = adminClient.patch(doc._id).set(patch);
+    if (!raw.site_logo_asset) {
+      op.unset(["site_logo"]);
+    }
+    await op.commit();
   } else {
     await adminClient.create({
       _type: "siteSettings",
