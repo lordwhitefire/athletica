@@ -1,14 +1,38 @@
 import { NextResponse } from "next/server";
-import { COOKIE_NAME } from "@/lib/admin-auth";
+import { createServerClient } from "@supabase/ssr";
+import { cookies } from "next/headers";
 
 export async function POST() {
-    const response = NextResponse.json({ success: true });
-    response.cookies.set(COOKIE_NAME, "", {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "lax",
-        path: "/",
-        maxAge: 0,
-    });
-    return response;
+    try {
+        const cookieStore = await cookies();
+        const supabase = createServerClient(
+            process.env.NEXT_PUBLIC_SUPABASE_URL!,
+            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+            {
+                cookies: {
+                    getAll() {
+                        return cookieStore.getAll();
+                    },
+                    setAll(cookiesToSet) {
+                        cookiesToSet.forEach(({ name, value, options }) =>
+                            cookieStore.set(name, value, options)
+                        );
+                    },
+                },
+            }
+        );
+
+        await supabase.auth.signOut();
+
+        return NextResponse.json(
+            { data: { message: "Logged out" }, error: null },
+            { status: 200 }
+        );
+    } catch (error) {
+        console.error("Admin logout error:", error);
+        return NextResponse.json(
+            { data: null, error: { type: "api_error", code: "logout_failed", message: "Logout failed. Please try again." } },
+            { status: 500 }
+        );
+    }
 }

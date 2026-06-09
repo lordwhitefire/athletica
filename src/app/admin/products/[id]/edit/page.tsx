@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 
 export default async function EditProductPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
-    const product = await getProductByIdAdmin(id);
+    const productResult = await getProductByIdAdmin(id);
+    const product = productResult.data as Record<string, unknown> | undefined;
 
     if (!product) notFound();
 

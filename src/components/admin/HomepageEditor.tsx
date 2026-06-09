@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 import ImageSelector from "./ImageSelector";
 import AutoSuggest from "./AutoSuggest";
 import { suggestCategories, suggestBrands, suggestNames, suggestRoutes } from "@/lib/actions/suggestions";
+import { logger } from "@/lib/logger";
 
 function extractAssetId(value: unknown): string | null {
     if (!value) return null;
@@ -133,12 +134,16 @@ export default function HomepageEditor({ doc }: Props) {
         async function save() {
             setSaving(true);
             try {
-                await updateBanner(index, { title, subtitle, button_text: buttonText, link, gradient, accent_color: accentColor, image: image ? { _type: "image", asset: { _ref: image, _type: "reference" } } : null });
+                const result = await updateBanner(index, { title, subtitle, button_text: buttonText, link, gradient, accent_color: accentColor, image: image ? { _type: "image", asset: { _ref: image, _type: "reference" } } : null });
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
                 setEditing(false);
                 router.refresh();
             } catch (err) {
-                console.error("Failed to save banner:", err);
-                alert("Save failed");
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Save failed due to an unexpected error.");
             } finally {
                 setSaving(false);
             }
@@ -148,11 +153,15 @@ export default function HomepageEditor({ doc }: Props) {
             if (!confirm(`Delete banner "${title}"?`)) return;
             setDeleting(true);
             try {
-                await deleteBanner(index);
+                const result = await deleteBanner(index);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
                 router.refresh();
             } catch (err) {
-                console.error("Failed to delete banner:", err);
-                alert("Delete failed");
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Delete failed due to an unexpected error.");
             } finally {
                 setDeleting(false);
             }
@@ -226,7 +235,7 @@ export default function HomepageEditor({ doc }: Props) {
 
         useEffect(() => {
             import("@/lib/actions/homepage").then(m =>
-                m.getDistinctTractions().then(setTractionOptions)
+                m.getDistinctTractions().then(r => { if (r.data) setTractionOptions(r.data); })
             );
         }, []);
 
@@ -253,18 +262,38 @@ export default function HomepageEditor({ doc }: Props) {
                 if (minPrice) (base.filter as Record<string, unknown>).min_price = parseFloat(minPrice);
                 if (maxPrice) (base.filter as Record<string, unknown>).max_price = parseFloat(maxPrice);
             }
-            await updateSection(index, base);
-            setEditing(false);
-            router.refresh();
-            setSaving(false);
+            try {
+                const result = await updateSection(index, base);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
+                setEditing(false);
+                router.refresh();
+            } catch (err) {
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Save failed due to an unexpected error.");
+            } finally {
+                setSaving(false);
+            }
         }
 
         async function remove() {
             if (!confirm(`Delete section "${title}"?`)) return;
             setDeleting(true);
-            await deleteSection(index);
-            router.refresh();
-            setDeleting(false);
+            try {
+                const result = await deleteSection(index);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
+                router.refresh();
+            } catch (err) {
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Delete failed due to an unexpected error.");
+            } finally {
+                setDeleting(false);
+            }
         }
 
         if (!editing) {
@@ -367,9 +396,19 @@ export default function HomepageEditor({ doc }: Props) {
                             ))}
                             <button onClick={async () => {
                                 setAddingItem(true);
-                                await addSectionItem(index, { label: "New Item", href: "/" });
-                                router.refresh();
-                                setAddingItem(false);
+                                try {
+                                    const result = await addSectionItem(index, { label: "New Item", href: "/" });
+                                    if (result.error) {
+                                        alert(result.error.message);
+                                        return;
+                                    }
+                                    router.refresh();
+                                } catch (err) {
+                                    logger.error(err, "Unexpected error in HomepageEditor");
+                                    alert("Save failed due to an unexpected error.");
+                                } finally {
+                                    setAddingItem(false);
+                                }
                             }} disabled={addingItem} className="text-xs text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
                                 <span className="material-symbols-outlined text-[14px]">add</span> {addingItem ? "Adding..." : "Add Item"}
                             </button>
@@ -402,11 +441,15 @@ export default function HomepageEditor({ doc }: Props) {
                 if (itemBg) updated.bg = itemBg;
                 if (textColor) updated.textColor = textColor;
                 if (accent) updated.accent = accent;
-                await updateSectionItem(sectionIndex, itemIndex, updated);
+                const result = await updateSectionItem(sectionIndex, itemIndex, updated);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
                 router.refresh();
             } catch (err) {
-                console.error("Failed to save category item:", err);
-                alert("Save failed");
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Save failed due to an unexpected error.");
             } finally {
                 setSaving(false);
             }
@@ -416,11 +459,15 @@ export default function HomepageEditor({ doc }: Props) {
             if (!confirm(`Delete item "${label}"?`)) return;
             setDeleting(true);
             try {
-                await deleteSectionItem(sectionIndex, itemIndex);
+                const result = await deleteSectionItem(sectionIndex, itemIndex);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
                 router.refresh();
             } catch (err) {
-                console.error("Failed to delete category item:", err);
-                alert("Delete failed");
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Delete failed due to an unexpected error.");
             } finally {
                 setDeleting(false);
             }
@@ -468,11 +515,21 @@ export default function HomepageEditor({ doc }: Props) {
                 section.sort = "newest";
                 section.limit = 10;
             }
-            await addSection(section);
-            setSaving(false);
-            setShowForm(false);
-            setNewTitle("");
-            router.refresh();
+            try {
+                const result = await addSection(section);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
+                setShowForm(false);
+                setNewTitle("");
+                router.refresh();
+            } catch (err) {
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Save failed due to an unexpected error.");
+            } finally {
+                setSaving(false);
+            }
         }
 
         if (!showForm) {

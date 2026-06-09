@@ -1,8 +1,11 @@
+import type { ApiResult } from "@/lib/api-types";
+
 export interface User {
     userId: string;
     name: string;
     email: string;
     createdAt: string;
+    role: "customer" | "admin";
 }
 
 export interface AuthState {
@@ -10,15 +13,19 @@ export interface AuthState {
     isLoggedIn: boolean;
 }
 
-export interface AuthResponse {
-    success: boolean;
-    error?: string;
+export interface LoginResult {
+    userId: string;
+    role: "customer" | "admin";
+}
+
+export interface RegisterResult {
     needsEmailConfirmation?: boolean;
 }
 
 export interface AuthContextType {
     auth: AuthState;
-    login: (email: string, password: string, name?: string) => Promise<AuthResponse>;
-    register: (name: string, email: string, password: string) => Promise<AuthResponse>;
-    logout: () => void;
+    isAdmin: boolean;
+    login: (email: string, password: string, name?: string) => Promise<ApiResult<LoginResult>>;
+    register: (name: string, email: string, password: string) => Promise<ApiResult<RegisterResult>>;
+    logout: () => Promise<ApiResult<{ success: true }>>;
 }

@@ -11,6 +11,8 @@ import CategoryPage from "@/components/category/CategoryPage";
 import ProductPage from "@/components/product/ProductPage";
 import { Suspense } from "react";
 
+export const revalidate = 60;
+
 interface SlugPageProps {
     params: Promise<{
         slug: string[];
@@ -19,10 +21,16 @@ interface SlugPageProps {
 
 export async function generateMetadata({ params }: SlugPageProps): Promise<Metadata> {
     const { slug } = await params;
-    const [allProducts, navigation] = await Promise.all([
+    const [productsResult, navigationResult] = await Promise.all([
         getAllProducts(),
         getNavigation(),
     ]);
+
+    if (productsResult.error) throw new Error(productsResult.error.message);
+    if (navigationResult.error) throw new Error(navigationResult.error.message);
+
+    const allProducts = productsResult.data;
+    const navigation = navigationResult.data;
     const resolved = resolveRoute(slug, allProducts, navigation);
 
     if (resolved.type === "product") {
@@ -44,10 +52,16 @@ export async function generateMetadata({ params }: SlugPageProps): Promise<Metad
 
 export default async function SlugPage({ params }: SlugPageProps) {
     const { slug } = await params;
-    const [allProducts, navigation] = await Promise.all([
+    const [productsResult, navigationResult] = await Promise.all([
         getAllProducts(),
         getNavigation(),
     ]);
+
+    if (productsResult.error) throw new Error(productsResult.error.message);
+    if (navigationResult.error) throw new Error(navigationResult.error.message);
+
+    const allProducts = productsResult.data;
+    const navigation = navigationResult.data;
     const resolved = resolveRoute(slug, allProducts, navigation);
 
     if (resolved.type === "not_found") {
@@ -56,21 +70,26 @@ export default async function SlugPage({ params }: SlugPageProps) {
 
     if (resolved.type === "product") {
         const product = resolved.product;
-        const amazonLink = await getAmazonLink(product.id);
+        const amazonLinkResult = await getAmazonLink(product.id);
+        const amazonLink = amazonLinkResult.data ?? null;
 
-        const [relatedByName, relatedByBrand, relatedByTraction] = await Promise.all([
+        const [byNameResult, byBrandResult, byTractionResult] = await Promise.all([
             product.name
-                ? getProductsByName(product.name, product.id).then((p) => p.slice(0, 10))
-                : Promise.resolve([]),
+                ? getProductsByName(product.name, product.id)
+                : Promise.resolve({ data: [], error: null } as const),
             getProductsByBrand(
                 product.brand,
                 product.name || undefined,
                 product.id
-            ).then((p) => p.slice(0, 10)),
+            ),
             product.traction
-                ? getProductsByTraction(product.traction, product.id).then((p) => p.slice(0, 10))
-                : Promise.resolve([]),
+                ? getProductsByTraction(product.traction, product.id)
+                : Promise.resolve({ data: [], error: null } as const),
         ]);
+
+        const relatedByName = (byNameResult.data ?? []).slice(0, 10);
+        const relatedByBrand = (byBrandResult.data ?? []).slice(0, 10);
+        const relatedByTraction = (byTractionResult.data ?? []).slice(0, 10);
 
         const breadcrumbs = [
             { label: product.category, href: `/${product.category.toLowerCase().replace(/ /g, "-")}` },
@@ -95,7 +114,8 @@ export default async function SlugPage({ params }: SlugPageProps) {
             { label: resolved.pageTitle },
         ];
 
-        const brandLogoMap = await getBrandLogoMap();
+        const brandLogoMapResult = await getBrandLogoMap();
+        const brandLogoMap = brandLogoMapResult.data ?? {};
         const brandName = resolved.filters.brand?.[0];
         const brandLogo = brandName ? brandLogoMap[brandName] || null : null;
 

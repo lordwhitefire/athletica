@@ -4,7 +4,8 @@ import BrandForm from "../../new/BrandForm";
 
 export default async function EditBrandPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const brand = await getBrandByIdAdmin(id);
+  const brandResult = await getBrandByIdAdmin(id);
+  const brand = brandResult.data as Record<string, unknown> | undefined;
   if (!brand) notFound();
 
   return (

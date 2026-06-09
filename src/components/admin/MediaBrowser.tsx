@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { uploadImage, deleteAsset } from "@/lib/actions/media";
 import { useRouter } from "next/navigation";
+import { logger } from "@/lib/logger";
 
 interface Props {
     assets: Record<string, unknown>[];
@@ -24,7 +25,7 @@ export default function MediaBrowser({ assets }: Props) {
             await uploadImage(formData);
             router.refresh();
         } catch (err) {
-            console.error(err);
+            logger.error(err, "MediaBrowser error");
             alert("Upload failed");
         } finally {
             setUploading(false);
@@ -38,7 +39,7 @@ export default function MediaBrowser({ assets }: Props) {
             await deleteAsset(id);
             router.refresh();
         } catch (err) {
-            console.error(err);
+            logger.error(err, "MediaBrowser error");
             alert("Delete failed");
         }
     }

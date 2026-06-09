@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export default async function AdminProductsPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
     const { q } = await searchParams;
-    const products = await getAllProductsAdmin(q);
+    const result = await getAllProductsAdmin(q);
+    const products = (result.data ?? []) as Record<string, unknown>[];
 
     return (
         <div>

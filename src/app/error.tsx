@@ -17,7 +17,9 @@ export default function Error({ error, reset }: ErrorProps) {
                 Something went wrong
             </h1>
             <p className="text-on-surface-variant max-w-md mb-10">
-                An unexpected error occurred. Please try again or go back to the homepage.
+                {process.env.NODE_ENV === "development"
+                    ? error.message
+                    : "An unexpected error occurred. Please try again or go back to the homepage."}
             </p>
             <div className="flex gap-4">
                 <button

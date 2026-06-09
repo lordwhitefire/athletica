@@ -5,6 +5,7 @@ create table if not exists profiles (
     name text,
     email text,
     avatar_url text,
+    role text not null default 'customer' check (role in ('customer', 'admin')),
     created_at timestamptz default now(),
     updated_at timestamptz default now()
 );

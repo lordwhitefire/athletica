@@ -2,39 +2,39 @@
 
 import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { adminLogin } from "@/lib/actions/admin-auth";
 
 export default function AdminLoginPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
     const [loading, setLoading] = useState(false);
     const router = useRouter();
 
     async function handleSubmit(e: FormEvent) {
         e.preventDefault();
         setError("");
+        setFieldErrors({});
         setLoading(true);
 
-        try {
-            const res = await fetch("/api/admin/login", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email, password }),
-            });
+        const result = await adminLogin(email, password);
 
-            const data = await res.json();
-
-            if (!res.ok) {
-                setError(data.error || "Login failed");
-                return;
+        if (result.error) {
+            if (result.error.fields) {
+                const errors: Record<string, string> = {};
+                for (const f of result.error.fields) {
+                    errors[f.field] = f.message;
+                }
+                setFieldErrors(errors);
+            } else {
+                setError(result.error.message);
             }
-
-            router.push("/admin");
-        } catch {
-            setError("Network error");
-        } finally {
             setLoading(false);
+            return;
         }
+
+        router.push("/admin");
     }
 
     return (
@@ -58,8 +58,10 @@ export default function AdminLoginPage() {
                             className="w-full px-4 py-2.5 bg-zinc-800 border border-zinc-700 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
                             placeholder="admin@example.com"
                         />
+                        {fieldErrors.email && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.email}</p>
+                        )}
                     </div>
-
                     <div>
                         <label className="block text-zinc-400 text-sm font-medium mb-1.5">Password</label>
                         <input
@@ -69,6 +71,9 @@ export default function AdminLoginPage() {
                             required
                             className="w-full px-4 py-2.5 bg-zinc-800 border border-zinc-700 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
                         />
+                        {fieldErrors.password && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.password}</p>
+                        )}
                     </div>
 
                     {error && (

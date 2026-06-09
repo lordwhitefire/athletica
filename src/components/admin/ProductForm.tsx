@@ -13,9 +13,11 @@ import {
 import { urlFor } from "@/lib/sanity";
 import type { SanityImageSource } from "@sanity/image-url";
 import type { ModelNavNode } from "@/lib/getNavigation";
+import type { ApiResult } from "@/lib/api-types";
+import { logger } from "@/lib/logger";
 
 interface ProductFormProps {
-    action?: (formData: FormData) => Promise<void>;
+    action?: (formData: FormData) => Promise<ApiResult<{ id: string }>>;
     initial?: Record<string, unknown>;
     productId?: string;
 }
@@ -50,6 +52,7 @@ function assetUrl(assetId: string): string {
 export default function ProductForm({ action, initial, productId }: ProductFormProps) {
     const router = useRouter();
     const [saving, setSaving] = useState(false);
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
 
     const [mainImageAsset, setMainImageAsset] = useState<string | null>(assetRef(initial?.main_image));
     const [thumbnailAsset, setThumbnailAsset] = useState<string | null>(assetRef(initial?.thumbnail));
@@ -108,10 +111,10 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
     useEffect(() => {
         import("@/lib/actions/brands").then(m =>
-            m.getAllBrandsAdmin().then(setBrandOptions)
+            m.getAllBrandsAdmin().then(r => { if (r.data) setBrandOptions(r.data as BrandOption[]); })
         );
         import("@/lib/getNavigation").then(m =>
-            m.getModelNavTree().then(setModelNavTree)
+            m.getModelNavTree().then(r => { if (r.data) setModelNavTree(r.data); })
         );
     }, []);
 
@@ -128,7 +131,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
             const asset = await res.json();
             setGalleryAssets((prev) => [...prev, asset._id]);
         } catch (err) {
-            console.error(err);
+            logger.error(err, "ProductForm error");
             alert("Upload failed");
         } finally {
             setUploadingGallery(false);
@@ -139,6 +142,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setSaving(true);
+        setFieldErrors({});
         const form = e.currentTarget;
         const data = new FormData(form);
 
@@ -149,16 +153,29 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
         data.set("key_benefits_json", JSON.stringify(keyBenefits));
 
         try {
+            let result;
             if (productId) {
                 const { updateProduct } = await import("@/lib/actions/products");
-                await updateProduct(productId, data);
+                result = await updateProduct(productId, data);
             } else if (action) {
-                await action(data);
+                result = await action(data);
+            }
+            if (result && result.error) {
+                if (result.error.fields) {
+                    const errors: Record<string, string> = {};
+                    for (const f of result.error.fields) {
+                        errors[f.field] = f.message;
+                    }
+                    setFieldErrors(errors);
+                } else {
+                    alert(result.error.message);
+                }
+                return;
             }
             router.push("/admin/products");
             router.refresh();
         } catch (err) {
-            console.error(err);
+            logger.error(err, "ProductForm error");
             alert("Failed to save product");
         } finally {
             setSaving(false);
@@ -199,6 +216,9 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                                     className="w-8 h-8 object-contain rounded bg-neutral-800" />
                             )}
                         </div>
+                        {fieldErrors.brand_ref && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.brand_ref}</p>
+                        )}
                     </div>
                 </div>
 
@@ -241,14 +261,32 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">URL Slug</label>
                         <input type="text" name="url_slug" required value={slugValue} onChange={(e) => setSlugValue(e.target.value)}
                             className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                        {fieldErrors.url_slug && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.url_slug}</p>
+                        )}
                     </div>
                 </div>
                 <input type="hidden" name="model" value={modelName} />
-                <ModelInput modelNavTree={modelNavTree} value={modelName} onChange={handleModelChange} onValidChange={setModelValid} />
-                <AutoSuggest name="category" label="Category" value={category} onChange={setCategory} fetchSuggestions={suggestCategories} />
+                <div>
+                    <ModelInput modelNavTree={modelNavTree} value={modelName} onChange={handleModelChange} onValidChange={setModelValid} />
+                    {fieldErrors.model && (
+                        <p className="text-red-500 text-xs mt-1">{fieldErrors.model}</p>
+                    )}
+                </div>
+                <div>
+                    <AutoSuggest name="category" label="Category" value={category} onChange={setCategory} fetchSuggestions={suggestCategories} />
+                    {fieldErrors.category && (
+                        <p className="text-red-500 text-xs mt-1">{fieldErrors.category}</p>
+                    )}
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <AutoSuggest name="traction" label="Traction (FG/AG/TF/SG)" value={traction} onChange={setTraction} fetchSuggestions={suggestTractions} />
-                    <AutoSuggest name="name" label="Name" value={productName} onChange={setProductName} fetchSuggestions={suggestNames} />
+                    <div>
+                        <AutoSuggest name="name" label="Name" value={productName} onChange={setProductName} fetchSuggestions={suggestNames} />
+                        {fieldErrors.name && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.name}</p>
+                        )}
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
@@ -261,18 +299,43 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         </select>
                     </div>
                 </div>
-                <AutoSuggest name="color" label="Color" value={color} onChange={setColor} fetchSuggestions={suggestColors} />
+                <div>
+                    <AutoSuggest name="color" label="Color" value={color} onChange={setColor} fetchSuggestions={suggestColors} />
+                    {fieldErrors.color && (
+                        <p className="text-red-500 text-xs mt-1">{fieldErrors.color}</p>
+                    )}
+                </div>
             </div>
 
             <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Pricing</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <Field label="Current Price" name="price_current" type="number" step="0.01" defaultValue={val("price", "current")} />
-                    <Field label="Original Price" name="price_original" type="number" step="0.01" defaultValue={val("price", "original")} />
+                    <div>
+                        <Field label="Current Price" name="price_current" type="number" step="0.01" defaultValue={val("price", "current")} />
+                        {fieldErrors.price_current && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.price_current}</p>
+                        )}
+                    </div>
+                    <div>
+                        <Field label="Original Price" name="price_original" type="number" step="0.01" defaultValue={val("price", "original")} />
+                        {fieldErrors.price_original && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.price_original}</p>
+                        )}
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <Field label="Discount %" name="discount_percent" type="number" defaultValue={val("price", "discount_percent")} />
-                    <Field label="Member Price" name="member_price" type="number" step="0.01" defaultValue={val("price", "member_price")} />
+                    <div>
+                        <Field label="Discount %" name="discount_percent" type="number" defaultValue={val("price", "discount_percent")} />
+                        {fieldErrors.discount_percent && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.discount_percent}</p>
+                        )}
+                    </div>
+                    <div>
+                        <Field label="Member Price" name="member_price" type="number" step="0.01" defaultValue={val("price", "member_price")} />
+                        {fieldErrors.member_price && (
+                            <p className="text-red-500 text-xs mt-1">{fieldErrors.member_price}</p>
+                        )}
+                    </div>
                 </div>
                 <div>
                     <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Currency</label>
@@ -282,6 +345,9 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         <option value="USD">USD</option>
                         <option value="GBP">GBP</option>
                     </select>
+                    {fieldErrors.currency && (
+                        <p className="text-red-500 text-xs mt-1">{fieldErrors.currency}</p>
+                    )}
                 </div>
             </div>
 

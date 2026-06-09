@@ -6,6 +6,7 @@ import ImageSelector from "@/components/admin/ImageSelector";
 import AutoSuggest from "@/components/admin/AutoSuggest";
 import { suggestRoutes, suggestMaterialIcons } from "@/lib/actions/suggestions";
 import { saveSiteSettings } from "@/lib/actions/siteSettings";
+import { logger } from "@/lib/logger";
 
 function assetRef(img: unknown): string | null {
   if (!img || typeof img !== "object") return null;
@@ -71,6 +72,7 @@ function footerArr<T>(doc: Record<string, unknown> | null, path: string, default
 export default function SiteSettingsForm({ doc }: { doc: Record<string, unknown> | null }) {
   const router = useRouter();
   const [saving, setSaving] = useState(false);
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [siteLogoAsset, setSiteLogoAsset] = useState<string | null>(assetRef(doc?.site_logo));
   const [brandName, setBrandName] = useState(footerVal(doc, "brand_name", DEFAULT_BRAND_NAME));
   const [brandDesc, setBrandDesc] = useState(footerVal(doc, "brand_description", DEFAULT_BRAND_DESC));
@@ -121,6 +123,7 @@ export default function SiteSettingsForm({ doc }: { doc: Record<string, unknown>
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSaving(true);
+    setFieldErrors({});
     const data = new FormData();
     data.set("site_logo_asset", siteLogoAsset || "");
     data.set("brand_name", brandName);
@@ -131,11 +134,23 @@ export default function SiteSettingsForm({ doc }: { doc: Record<string, unknown>
     data.set("bottom_tags", JSON.stringify(bottomTags));
 
     try {
-      await saveSiteSettings(data);
+      const result = await saveSiteSettings(data);
+      if (result.error) {
+        if (result.error.fields) {
+          const errors: Record<string, string> = {};
+          for (const f of result.error.fields) {
+            errors[f.field] = f.message;
+          }
+          setFieldErrors(errors);
+        } else {
+          alert(result.error.message);
+        }
+        return;
+      }
       router.refresh();
       alert("Saved!");
     } catch (err) {
-      console.error(err);
+      logger.error(err, "SiteSettingsForm error");
       alert("Failed to save");
     } finally {
       setSaving(false);

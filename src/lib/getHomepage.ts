@@ -4,6 +4,8 @@ import { filterProducts } from "@/lib/filterProducts";
 import type { SanityImageSource } from "@sanity/image-url";
 import type { HomepageConfig, HomepageSection, ProductCarouselSection } from "@/types/homepage";
 import type { Product, ActiveFilters } from "@/types/product";
+import type { ApiResult } from "@/lib/api-types";
+import { ok, fromCaughtError } from "@/lib/api-types";
 
 function resolveImage(value: unknown): string | null {
     if (!value) return null;
@@ -50,19 +52,27 @@ function resolveHomepageImages(config: Record<string, unknown>): Record<string, 
     return resolved;
 }
 
-export async function getHomepageConfig(): Promise<HomepageConfig> {
-    const data = await client.fetch(`*[_type == "homepage"][0]`);
-    const resolved = resolveHomepageImages(data);
-    return resolved as unknown as HomepageConfig;
+export async function getHomepageConfig(): Promise<ApiResult<HomepageConfig>> {
+    try {
+        const data = await client.fetch(`*[_type == "homepage"][0]`);
+        const resolved = resolveHomepageImages(data);
+        return ok(resolved as unknown as HomepageConfig);
+    } catch (err) {
+        return fromCaughtError(err, "homepage_fetch_failed");
+    }
 }
 
-export async function getHomepageSections(): Promise<HomepageSection[]> {
-    const config = await getHomepageConfig();
-    return config.sections;
+export async function getHomepageSections(): Promise<ApiResult<HomepageSection[]>> {
+    const result = await getHomepageConfig();
+    if (result.error) return result;
+    return ok(result.data.sections);
 }
 
-export async function getProductsForCarousel(section: ProductCarouselSection): Promise<Product[]> {
-    const allProducts = await getAllProducts();
+export async function getProductsForCarousel(section: ProductCarouselSection): Promise<ApiResult<Product[]>> {
+    const productsResult = await getAllProducts();
+    if (productsResult.error) return productsResult;
+
+    const allProducts = productsResult.data;
     const filters: ActiveFilters = {};
 
     if (section.filter.category) filters.category = [section.filter.category];
@@ -87,5 +97,5 @@ export async function getProductsForCarousel(section: ProductCarouselSection): P
         filtered = [...filtered, ...extras];
     }
 
-    return filtered.slice(0, section.limit);
+    return ok(filtered.slice(0, section.limit));
 }

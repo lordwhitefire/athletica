@@ -7,9 +7,12 @@ import {
     useEffect,
     ReactNode,
 } from "react";
-import { AuthContextType, AuthState, User } from "@/types/auth";
+import { AuthContextType, AuthState, User, LoginResult } from "@/types/auth";
 import { createClient } from "@/lib/supabase/client";
 import type { Session } from "@supabase/supabase-js";
+import type { ApiResult } from "@/lib/api-types";
+import { ok, fail, fromCaughtError } from "@/lib/api-types";
+import { logger } from "@/lib/logger";
 
 const initialAuthState: AuthState = {
     user: null,
@@ -35,6 +38,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             if (session?.user) {
                 setAuthFromSession(session);
             } else {
+                logger.clearUser();
                 setAuth(initialAuthState);
             }
         });
@@ -47,7 +51,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
         const { data: profile } = await supabase
             .from("profiles")
-            .select("name")
+            .select("name, role")
             .eq("id", id)
             .single();
 
@@ -60,16 +64,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 "User",
             email: email || "",
             createdAt: created_at || new Date().toISOString(),
+            role: profile?.role || "customer",
         };
 
         setAuth({ user, isLoggedIn: true });
+        logger.setUser({ id: user.userId, email: user.email });
     }
 
     async function register(
         name: string,
         email: string,
         password: string
-    ): Promise<{ success: boolean; error?: string; needsEmailConfirmation?: boolean }> {
+    ): Promise<ApiResult<{ needsEmailConfirmation?: boolean }>> {
         const { data, error } = await supabase.auth.signUp({
             email,
             password,
@@ -77,40 +83,76 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         });
 
         if (error) {
-            return { success: false, error: error.message };
+            if (error.message.includes("User already registered")) {
+                return fail("auth_error", "email_already_exists", "An account with this email already exists.");
+            }
+            if (error.message.includes("Password should be at least 6 characters")) {
+                return fail("validation_error", "password_too_short", "Password must be at least 6 characters.");
+            }
+            if (error.message.includes("Unable to validate email")) {
+                return fail("validation_error", "invalid_email", "The email address you entered is not valid.");
+            }
+            return fail("auth_error", "registration_failed", "Registration failed. Please try again.");
         }
 
         const needsEmailConfirmation = !data.session;
 
-        return { success: true, needsEmailConfirmation };
+        return ok({ needsEmailConfirmation });
     }
 
     async function login(
         email: string,
         password: string,
         _name?: string
-    ): Promise<{ success: boolean; error?: string }> {
-        const { error } = await supabase.auth.signInWithPassword({
+    ): Promise<ApiResult<LoginResult>> {
+        const { data, error } = await supabase.auth.signInWithPassword({
             email,
             password,
         });
 
         if (error) {
-            return { success: false, error: error.message };
+            if (error.message.includes("Invalid login credentials")) {
+                return fail("auth_error", "invalid_credentials", "The email or password you entered is incorrect.");
+            }
+            if (error.message.includes("Email not confirmed")) {
+                return fail("auth_error", "email_not_confirmed", "Please confirm your email address before logging in.");
+            }
+            return fail("auth_error", "login_failed", "Login failed. Please try again.");
         }
 
-        return { success: true };
+        const userId = data.user?.id ?? "";
+
+        let role: "customer" | "admin" = "customer";
+        try {
+            const { data: profile } = await supabase
+                .from("profiles")
+                .select("role")
+                .eq("id", userId)
+                .single();
+            if (profile?.role === "admin") role = "admin";
+        } catch {
+            // Default to customer if profile fetch fails
+        }
+
+        return ok({ userId, role });
     }
 
-    async function logout() {
-        await supabase.auth.signOut();
-        setAuth(initialAuthState);
+    async function logout(): Promise<ApiResult<{ success: true }>> {
+        try {
+            await supabase.auth.signOut();
+            logger.clearUser();
+            setAuth(initialAuthState);
+            return ok({ success: true });
+        } catch (err) {
+            return fromCaughtError(err, "logout_failed");
+        }
     }
 
     return (
         <AuthContext.Provider
             value={{
                 auth,
+                isAdmin: auth.user?.role === "admin",
                 login,
                 register,
                 logout,

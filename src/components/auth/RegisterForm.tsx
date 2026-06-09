@@ -38,6 +38,7 @@ export default function RegisterForm() {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [error, setError] = useState("");
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
     const [loading, setLoading] = useState(false);
     const [confirmedEmail, setConfirmedEmail] = useState<string | null>(null);
     const { register } = useAuth();
@@ -61,6 +62,7 @@ export default function RegisterForm() {
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
         setError("");
+        setFieldErrors({});
 
         if (!name || !email || !password || !confirmPassword) {
             setError("Please fill in all fields.");
@@ -68,12 +70,12 @@ export default function RegisterForm() {
         }
 
         if (password.length < 6) {
-            setError("Password must be at least 6 characters.");
+            setFieldErrors({ password: "Password must be at least 6 characters." });
             return;
         }
 
         if (password !== confirmPassword) {
-            setError("Passwords do not match.");
+            setFieldErrors({ confirmPassword: "Passwords do not match." });
             return;
         }
 
@@ -81,12 +83,20 @@ export default function RegisterForm() {
         const result = await register(name, email, password);
         setLoading(false);
 
-        if (!result.success) {
-            setError(result.error || "Something went wrong. Please try again.");
+        if (result.error) {
+            if (result.error.fields) {
+                const errors: Record<string, string> = {};
+                for (const f of result.error.fields) {
+                    errors[f.field] = f.message;
+                }
+                setFieldErrors(errors);
+            } else {
+                setError(result.error.message);
+            }
             return;
         }
 
-        if (result.needsEmailConfirmation) {
+        if (result.data.needsEmailConfirmation) {
             setConfirmedEmail(email);
             return;
         }
@@ -128,6 +138,9 @@ export default function RegisterForm() {
                                 placeholder="John Smith"
                                 className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                             />
+                            {fieldErrors.name && (
+                                <p className="text-xs text-error mt-1">{fieldErrors.name}</p>
+                            )}
                         </div>
 
                         <div>
@@ -141,6 +154,9 @@ export default function RegisterForm() {
                                 placeholder="you@example.com"
                                 className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                             />
+                            {fieldErrors.email && (
+                                <p className="text-xs text-error mt-1">{fieldErrors.email}</p>
+                            )}
                         </div>
 
                         <div>
@@ -166,6 +182,9 @@ export default function RegisterForm() {
                                     </span>
                                 </button>
                             </div>
+                            {fieldErrors.password && (
+                                <p className="text-xs text-error mt-1">{fieldErrors.password}</p>
+                            )}
                             {password && (
                                 <div className="flex items-center gap-1.5 mt-1.5">
                                     <span className={`text-[10px] font-bold uppercase tracking-wider ${passwordChecks.minLength ? "text-primary-container" : "text-on-surface-variant/50"}`}>
@@ -208,7 +227,10 @@ export default function RegisterForm() {
                                     </span>
                                 </button>
                             </div>
-                            {passwordChecks.hasMismatch && (
+                            {fieldErrors.confirmPassword && (
+                                <p className="text-xs text-error mt-1.5">{fieldErrors.confirmPassword}</p>
+                            )}
+                            {!fieldErrors.confirmPassword && passwordChecks.hasMismatch && (
                                 <p className="text-xs text-error mt-1.5 flex items-center gap-1">
                                     <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>cancel</span>
                                     Passwords do not match

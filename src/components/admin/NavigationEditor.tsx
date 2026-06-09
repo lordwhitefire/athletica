@@ -5,6 +5,7 @@ import AutoSuggest from "./AutoSuggest";
 import { suggestRoutes } from "@/lib/actions/suggestions";
 import { saveNavigation } from "@/lib/actions/navigation";
 import { useRouter } from "next/navigation";
+import { logger } from "@/lib/logger";
 
 interface Props {
     doc: Record<string, unknown> | null;
@@ -22,7 +23,7 @@ export default function NavigationEditor({ doc }: Props) {
             await saveNavigation(navItems);
             router.refresh();
         } catch (err) {
-            console.error(err);
+            logger.error(err, "NavigationEditor error");
             alert("Failed to save");
         } finally {
             setSaving(false);

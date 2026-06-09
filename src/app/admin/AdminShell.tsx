@@ -1,7 +1,8 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useAuth } from "@/context/AuthContext";
 
 const navItems = [
     { label: "Dashboard", href: "/admin", icon: "grid_view" },
@@ -17,12 +18,35 @@ const navItems = [
 export default function AdminShell({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     const router = useRouter();
+    const { auth, isAdmin, logout } = useAuth();
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [loggingOut, setLoggingOut] = useState(false);
 
+    // Defense-in-depth: client-side admin check
+    useEffect(() => {
+        if (pathname === "/admin/login") return;
+        if (auth.user && !isAdmin) {
+            router.push("/admin/login");
+        }
+    }, [auth.user, isAdmin, pathname, router]);
+
+    // Show nothing while checking auth on page load
+    if (pathname !== "/admin/login" && auth.user && !isAdmin) {
+        return null;
+    }
+
+    // Still loading auth state — show nothing to prevent flash
+    if (pathname !== "/admin/login" && auth.user === undefined) {
+        return null;
+    }
+
     async function handleLogout() {
         setLoggingOut(true);
-        await fetch("/api/admin/logout", { method: "POST" });
+        const result = await logout();
+        if (result.error) {
+            setLoggingOut(false);
+            return;
+        }
         router.push("/admin/login");
     }
 

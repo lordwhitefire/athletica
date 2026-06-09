@@ -10,6 +10,7 @@ export default function LoginForm() {
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
     const [error, setError] = useState("");
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
     const [loading, setLoading] = useState(false);
     const { login } = useAuth();
     const router = useRouter();
@@ -17,6 +18,7 @@ export default function LoginForm() {
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
         setError("");
+        setFieldErrors({});
 
         if (!email || !password) {
             setError("Please fill in all fields.");
@@ -27,8 +29,16 @@ export default function LoginForm() {
         const result = await login(email, password);
         setLoading(false);
 
-        if (!result.success) {
-            setError(result.error || "Invalid email or password.");
+        if (result.error) {
+            if (result.error.fields) {
+                const errors: Record<string, string> = {};
+                for (const f of result.error.fields) {
+                    errors[f.field] = f.message;
+                }
+                setFieldErrors(errors);
+            } else {
+                setError(result.error.message);
+            }
             return;
         }
 
@@ -71,6 +81,9 @@ export default function LoginForm() {
                                 placeholder="you@example.com"
                                 className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
                             />
+                            {fieldErrors.email && (
+                                <p className="text-xs text-error mt-1">{fieldErrors.email}</p>
+                            )}
                         </div>
 
                         <div>
@@ -96,6 +109,9 @@ export default function LoginForm() {
                                     </span>
                                 </button>
                             </div>
+                            {fieldErrors.password && (
+                                <p className="text-xs text-error mt-1">{fieldErrors.password}</p>
+                            )}
                         </div>
 
                         <div className="flex items-center justify-end">

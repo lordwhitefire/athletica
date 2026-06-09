@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { urlFor } from "@/lib/sanity";
 import type { SanityImageSource } from "@sanity/image-url";
+import { logger } from "@/lib/logger";
 
 interface Props {
     name: string;
@@ -63,7 +64,7 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
             const asset = await res.json();
             selectAsset(asset);
         } catch (err) {
-            console.error(err);
+            logger.error(err, "ImageSelector error");
             alert("Upload failed");
         } finally {
             setUploading(false);

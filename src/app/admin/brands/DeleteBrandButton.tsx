@@ -11,7 +11,12 @@ export default function DeleteBrandButton({ id }: { id: string }) {
   async function handleDelete() {
     if (!confirm("Delete this brand?")) return;
     setDeleting(true);
-    await deleteBrand(id);
+    const result = await deleteBrand(id);
+    if (result.error) {
+      alert(result.error.message);
+      setDeleting(false);
+      return;
+    }
     router.refresh();
   }
 

@@ -1,5 +1,7 @@
 import { client } from "@/lib/sanity";
 import type { NavigationData, NavItem } from "@/types/navigation";
+import type { ApiResult } from "@/lib/api-types";
+import { ok, fromCaughtError } from "@/lib/api-types";
 
 let cachedNavigation: NavigationData[] | null = null;
 
@@ -66,8 +68,6 @@ function applyHierarchicalHrefs(items: NavItem[], ancestorSegments: string[]): v
 function computeHierarchicalHrefs(data: NavigationData[]): NavigationData[] {
     for (const group of data) {
         if (group.level === 0) {
-            // Level 0 is a wrapper/passthrough (e.g., "Adultos").
-            // Compute hrefs for its children as top-level groups.
             if (group.children && group.children.length > 0) {
                 for (const child of group.children) {
                     const href = setHierarchicalHref(child, []);
@@ -88,16 +88,21 @@ function computeHierarchicalHrefs(data: NavigationData[]): NavigationData[] {
     return data;
 }
 
-export async function getNavigation(): Promise<NavigationData[]> {
-    if (cachedNavigation) return cachedNavigation;
-    const data = await client.fetch(`*[_type == "navigation"][0]`);
-    cachedNavigation = computeHierarchicalHrefs((data?.items ?? []) as NavigationData[]);
-    return cachedNavigation;
+export async function getNavigation(): Promise<ApiResult<NavigationData[]>> {
+    if (cachedNavigation) return ok(cachedNavigation);
+    try {
+        const data = await client.fetch(`*[_type == "navigation"][0]`);
+        cachedNavigation = computeHierarchicalHrefs((data?.items ?? []) as NavigationData[]);
+        return ok(cachedNavigation);
+    } catch (err) {
+        return fromCaughtError(err, "navigation_fetch_failed");
+    }
 }
 
-export async function getNavItemBySlug(slug: string): Promise<NavigationData | undefined> {
-    const nav = await getNavigation();
-    return nav.find((n) => n.slug === slug);
+export async function getNavItemBySlug(slug: string): Promise<ApiResult<NavigationData | undefined>> {
+    const result = await getNavigation();
+    if (result.error) return result;
+    return ok(result.data.find((n) => n.slug === slug));
 }
 
 export function flattenNavigation(items: NavItem[]): NavItem[] {
@@ -110,16 +115,19 @@ export function flattenNavigation(items: NavItem[]): NavItem[] {
     }, []);
 }
 
-export async function findNavItemByHref(href: string): Promise<NavItem | undefined> {
-    const nav = await getNavigation();
-    const allItems = nav.flatMap((n) =>
+export async function findNavItemByHref(href: string): Promise<ApiResult<NavItem | undefined>> {
+    const result = await getNavigation();
+    if (result.error) return result;
+    const allItems = result.data.flatMap((n) =>
         flattenNavigation(n.children || [])
     );
-    return allItems.find((item) => item.href === href);
+    return ok(allItems.find((item) => item.href === href));
 }
 
-export async function getBreadcrumbs(href: string): Promise<NavItem[]> {
-    const nav = await getNavigation();
+export async function getBreadcrumbs(href: string): Promise<ApiResult<NavItem[]>> {
+    const result = await getNavigation();
+    if (result.error) return result;
+    const nav = result.data;
     const breadcrumbs: NavItem[] = [];
 
     function searchTree(items: NavItem[], targetHref: string): boolean {
@@ -144,7 +152,7 @@ export async function getBreadcrumbs(href: string): Promise<NavItem[]> {
         }
     });
 
-    return breadcrumbs;
+    return ok(breadcrumbs);
 }
 
 export interface ModelNavNode {
@@ -152,8 +160,10 @@ export interface ModelNavNode {
     children: ModelNavNode[];
 }
 
-export async function getModelNavTree(): Promise<ModelNavNode[]> {
-    const nav = await getNavigation();
+export async function getModelNavTree(): Promise<ApiResult<ModelNavNode[]>> {
+    const result = await getNavigation();
+    if (result.error) return result;
+    const nav = result.data;
 
     const brandPrefixes = [
         "Adidas", "adidas", "Nike", "Puma", "New Balance",
@@ -192,15 +202,15 @@ export async function getModelNavTree(): Promise<ModelNavNode[]> {
         return nodes;
     }
 
-    const result: ModelNavNode[] = [];
+    const rawNodes: ModelNavNode[] = [];
     for (const group of nav) {
         if (group.children) {
-            result.push(...buildTree(group.children));
+            rawNodes.push(...buildTree(group.children));
         }
     }
 
     const merged = new Map<string, ModelNavNode>();
-    for (const node of result) {
+    for (const node of rawNodes) {
         if (merged.has(node.label)) {
             const existing = merged.get(node.label)!;
             for (const child of node.children) {
@@ -213,5 +223,5 @@ export async function getModelNavTree(): Promise<ModelNavNode[]> {
         }
     }
 
-    return [...merged.values()];
+    return ok([...merged.values()]);
 }

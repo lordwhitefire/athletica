@@ -15,7 +15,11 @@ interface SearchPageProps {
 export default async function SearchPage({ searchParams }: SearchPageProps) {
     const { q } = await searchParams;
     const query = (q || "").trim();
-    const allProducts = await getAllProducts();
+    const result = await getAllProducts();
+
+    if (result.error) throw new Error(result.error.message);
+
+    const allProducts = result.data;
 
     const results = query
         ? allProducts.filter((p) => {

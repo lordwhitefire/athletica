@@ -1,66 +1,56 @@
+import { cache } from "react";
 import type { Product } from "@/types/product";
-import {
-    getAllProductsSanity,
-    getProductBySlugSanity,
-    getProductsByNameSanity,
-    getProductsByBrandSanity,
-    getProductsByTractionSanity,
-} from "@/lib/getProductsSanity";
+import type { ApiResult } from "@/lib/api-types";
+import { ok } from "@/lib/api-types";
+import { getAllProductsSanity } from "@/lib/getProductsSanity";
 
-let cachedProducts: Product[] | null = null;
-let cachePromise: Promise<Product[]> | null = null;
+const getCachedProducts = cache(async (): Promise<ApiResult<Product[]>> => {
+    return getAllProductsSanity();
+});
 
-async function getCachedProducts(): Promise<Product[]> {
-    if (cachedProducts) return cachedProducts;
-    if (cachePromise) return cachePromise;
-    cachePromise = getAllProductsSanity().then((products) => {
-        cachedProducts = products;
-        return products;
-    });
-    return cachePromise;
-}
-
-export async function getAllProducts(): Promise<Product[]> {
+export async function getAllProducts(): Promise<ApiResult<Product[]>> {
     return getCachedProducts();
 }
 
-export async function getProductBySlug(slug: string): Promise<Product | undefined> {
-    const cached = cachedProducts?.find((p) => p.url_slug === slug);
-    if (cached) return cached;
-    return getProductBySlugSanity(slug);
+export async function getProductBySlug(slug: string): Promise<ApiResult<Product | null>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    const found = result.data.find((p) => p.url_slug === slug);
+    return ok(found ?? null);
 }
 
-export async function getProductById(id: string): Promise<Product | undefined> {
-    const cached = cachedProducts?.find((p) => p.id === id);
-    if (cached) return cached;
-    const products = await getCachedProducts();
-    return products.find((p) => p.id === id);
+export async function getProductById(id: string): Promise<ApiResult<Product | undefined>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    return ok(result.data.find((p) => p.id === id));
 }
 
-export async function getProductsByName(name: string, excludeId?: string): Promise<Product[]> {
-    const cached = cachedProducts;
-    if (cached) return cached.filter((p) => p.name === name && p.id !== excludeId);
-    return getProductsByNameSanity(name, excludeId);
+export async function getProductsByName(name: string, excludeId?: string): Promise<ApiResult<Product[]>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    return ok(result.data.filter((p) => p.name === name && p.id !== excludeId));
 }
 
-export async function getProductsByBrand(brand: string, excludeName?: string, excludeId?: string): Promise<Product[]> {
-    const cached = cachedProducts;
-    if (cached) return cached.filter((p) => p.brand === brand && p.name !== excludeName && p.id !== excludeId);
-    return getProductsByBrandSanity(brand, excludeName, excludeId);
+export async function getProductsByBrand(brand: string, excludeName?: string, excludeId?: string): Promise<ApiResult<Product[]>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    return ok(result.data.filter((p) => p.brand === brand && p.name !== excludeName && p.id !== excludeId));
 }
 
-export async function getProductsByTraction(traction: string, excludeId?: string): Promise<Product[]> {
-    const cached = cachedProducts;
-    if (cached) return cached.filter((p) => p.traction === traction && p.id !== excludeId);
-    return getProductsByTractionSanity(traction, excludeId);
+export async function getProductsByTraction(traction: string, excludeId?: string): Promise<ApiResult<Product[]>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    return ok(result.data.filter((p) => p.traction === traction && p.id !== excludeId));
 }
 
-export async function getAllBrands(): Promise<string[]> {
-    const products = await getCachedProducts();
-    return [...new Set(products.map((p) => p.brand))].sort();
+export async function getAllBrands(): Promise<ApiResult<string[]>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    return ok([...new Set(result.data.map((p) => p.brand))].sort());
 }
 
-export async function getAllCategories(): Promise<string[]> {
-    const products = await getCachedProducts();
-    return [...new Set(products.map((p) => p.category))].sort();
+export async function getAllCategories(): Promise<ApiResult<string[]>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    return ok([...new Set(result.data.map((p) => p.category))].sort());
 }

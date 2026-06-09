@@ -16,7 +16,8 @@ function brandLogoUrl(logo: unknown): string | null {
 }
 
 export default async function AdminBrandsPage() {
-  const brands = await getAllBrandsAdmin();
+  const brandsResult = await getAllBrandsAdmin();
+  const brands = brandsResult.data ?? [];
 
   return (
     <div>
@@ -38,7 +39,7 @@ export default async function AdminBrandsPage() {
             </tr>
           </thead>
           <tbody className="divide-y divide-neutral-800">
-            {brands.map((b: Record<string, unknown>) => {
+            {(brands as Record<string, unknown>[]).map((b) => {
               const logoUrl = brandLogoUrl(b.logo);
               return (
                 <tr key={b._id as string} className="hover:bg-neutral-800/50 transition-colors">

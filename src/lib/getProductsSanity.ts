@@ -1,31 +1,12 @@
 import type { SanityImageSource } from "@sanity/image-url";
 import { client, urlFor } from "@/lib/sanity";
 import type { Product } from "@/types/product";
+import type { ApiResult } from "@/lib/api-types";
+import { ok, fromCaughtError } from "@/lib/api-types";
+import { z } from "zod";
+import { productSanitySchema } from "@/lib/schemas/product";
 
 const productsQuery = `*[_type == "product"]{
-  id,
-  "url_slug": url_slug.current,
-  model,
-  "brand": coalesce(brand->name, brand),
-  category,
-  traction,
-  name,
-  gender,
-  main_image,
-  image_gallery,
-  thumbnail,
-  color,
-  color_variants[]{
-    color,
-    product_id,
-    thumbnail
-  },
-  price,
-  sizes,
-  description
-}`;
-
-const productBySlugQuery = `*[_type == "product" && url_slug.current == $slug][0]{
   id,
   "url_slug": url_slug.current,
   model,
@@ -77,35 +58,20 @@ function resolveImages(product: Record<string, unknown>): Record<string, unknown
     return resolved;
 }
 
-export async function getAllProductsSanity(): Promise<Product[]> {
-    const products = await client.fetch(productsQuery);
-    return products.map((p: Record<string, unknown>) => resolveImages(p)) as unknown as Product[];
+export async function getAllProductsSanity(): Promise<ApiResult<Product[]>> {
+    try {
+        const products = await client.fetch(productsQuery);
+        const parsed = z.array(productSanitySchema).safeParse(products);
+        if (!parsed.success) {
+            console.warn("Sanity product shape mismatch:", parsed.error.issues);
+            const resolved = products.map((p: Record<string, unknown>) => resolveImages(p)) as unknown as Product[];
+            return ok(resolved);
+        }
+        const resolved = parsed.data.map((p: Record<string, unknown>) => resolveImages(p)) as unknown as Product[];
+        return ok(resolved);
+    } catch (err) {
+        return fromCaughtError(err, "products_fetch_failed");
+    }
 }
 
-export async function getProductBySlugSanity(slug: string): Promise<Product | undefined> {
-    const product = await client.fetch(productBySlugQuery, { slug });
-    if (!product) return undefined;
-    return resolveImages(product) as unknown as Product;
-}
 
-export async function getProductByIdSanity(id: string): Promise<Product | undefined> {
-    const products = await getAllProductsSanity();
-    return products.find((p) => p.id === id);
-}
-
-export async function getProductsByNameSanity(name: string, excludeId?: string): Promise<Product[]> {
-    const products = await getAllProductsSanity();
-    return products.filter((p) => p.name === name && p.id !== excludeId);
-}
-
-export async function getProductsByBrandSanity(brand: string, excludeName?: string, excludeId?: string): Promise<Product[]> {
-    const products = await getAllProductsSanity();
-    return products.filter(
-        (p) => p.brand === brand && p.name !== excludeName && p.id !== excludeId
-    );
-}
-
-export async function getProductsByTractionSanity(traction: string, excludeId?: string): Promise<Product[]> {
-    const products = await getAllProductsSanity();
-    return products.filter((p) => p.traction === traction && p.id !== excludeId);
-}

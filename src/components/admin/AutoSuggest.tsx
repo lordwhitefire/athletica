@@ -1,11 +1,12 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import type { ApiResult } from "@/lib/api-types";
 
 interface AutoSuggestProps {
   value: string;
   onChange: (value: string) => void;
-  fetchSuggestions: (query: string) => Promise<string[]>;
+  fetchSuggestions: (query: string) => Promise<ApiResult<string[]>>;
   label: string;
   placeholder?: string;
   name?: string;
@@ -50,9 +51,9 @@ export default function AutoSuggest({ value, onChange, fetchSuggestions, label, 
     debounceRef.current = setTimeout(async () => {
       setLoading(true);
       try {
-        const results = await fetchSuggestions(newValue);
-        setSuggestions(results);
-        setShowDropdown(results.length > 0);
+        const result = await fetchSuggestions(newValue);
+        setSuggestions(result.data ?? []);
+        setShowDropdown((result.data ?? []).length > 0);
         setSelectedIndex(-1);
       } catch {
         setSuggestions([]);

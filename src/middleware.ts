@@ -1,38 +1,17 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { verifyToken, COOKIE_NAME } from "@/lib/admin-auth";
 import { createServerClient } from "@supabase/ssr";
+import { getEnv } from "@/lib/env";
 
 export async function middleware(request: NextRequest) {
+    const env = getEnv();
     const { pathname } = request.nextUrl;
 
-    // ── Admin auth (existing) ──────────────────────────────
-    if (pathname.startsWith("/admin")) {
-        if (pathname === "/admin/login") {
-            return NextResponse.next();
-        }
-
-        const token = request.cookies.get(COOKIE_NAME)?.value;
-
-        if (!token) {
-            return NextResponse.redirect(new URL("/admin/login", request.url));
-        }
-
-        const payload = await verifyToken(token);
-
-        if (!payload) {
-            return NextResponse.redirect(new URL("/admin/login", request.url));
-        }
-
-        return NextResponse.next();
-    }
-
-    // ── Supabase session refresh (all non-admin routes) ────
     let supabaseResponse = NextResponse.next({ request });
 
     const supabase = createServerClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        env.NEXT_PUBLIC_SUPABASE_URL,
+        env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
         {
             cookies: {
                 getAll() {
@@ -51,8 +30,32 @@ export async function middleware(request: NextRequest) {
         }
     );
 
-    await supabase.auth.getUser();
+    const { data: { user } } = await supabase.auth.getUser();
 
+    // ── Admin auth ──────────────────────────────────────────
+    if (pathname.startsWith("/admin")) {
+        if (pathname === "/admin/login") {
+            return NextResponse.next();
+        }
+
+        if (!user) {
+            return NextResponse.redirect(new URL("/admin/login", request.url));
+        }
+
+        const { data: profile } = await supabase
+            .from("profiles")
+            .select("role")
+            .eq("id", user.id)
+            .single();
+
+        if (profile?.role !== "admin") {
+            return NextResponse.redirect(new URL("/admin/login", request.url));
+        }
+
+        return NextResponse.next();
+    }
+
+    // ── Customer session refresh ────────────────────────────
     return supabaseResponse;
 }
 

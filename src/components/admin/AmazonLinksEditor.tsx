@@ -5,6 +5,7 @@ import AutoSuggest from "./AutoSuggest";
 import { suggestProductIds } from "@/lib/actions/suggestions";
 import { saveAmazonLinks } from "@/lib/actions/amazon-links";
 import { useRouter } from "next/navigation";
+import { logger } from "@/lib/logger";
 
 interface Props {
     doc: Record<string, unknown> | null;
@@ -24,7 +25,7 @@ export default function AmazonLinksEditor({ doc }: Props) {
             await saveAmazonLinks(links);
             router.refresh();
         } catch (err) {
-            console.error(err);
+            logger.error(err, "AmazonLinksEditor error");
             alert("Failed to save");
         } finally {
             setSaving(false);
