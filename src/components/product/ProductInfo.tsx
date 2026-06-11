@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Product } from "@/types/product";
 import { useCart } from "@/context/CartContext";
 import { useToast } from "@/context/ToastContext";
@@ -80,7 +81,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
 
             {/* Price */}
             <div className="flex items-baseline gap-4">
-                <span className="text-3xl font-black font-headline text-primary">
+                <span data-testid="product-price" className="text-3xl font-black font-headline text-primary">
                     {product.price.currency} {product.price.current}
                 </span>
                 {hasDiscount && (
@@ -104,25 +105,29 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                     <div className="flex gap-3">
                         {/* Current product color swatch */}
                         <button
-                            className="w-10 h-10 border-2 border-primary-container ring-2 ring-offset-2 ring-transparent overflow-hidden bg-surface-container-low"
+                            className="relative w-10 h-10 border-2 border-primary-container ring-2 ring-offset-2 ring-transparent overflow-hidden bg-surface-container-low"
                             title={product.color}
                         >
-                            <img
+                            <Image
                                 src={product.thumbnail}
                                 alt={product.color}
-                                className="w-full h-full object-contain p-0.5"
+                                fill
+                                className="object-contain p-0.5"
+                                sizes="40px"
                             />
                         </button>
                         {product.color_variants?.map((variant) => (
                             <Link key={variant.product_id} href={`/${variant.product_id}`}>
                                 <button
-                                    className="w-10 h-10 border border-surface-container-highest hover:border-primary-container transition-all overflow-hidden bg-surface-container-low"
+                                    className="relative w-10 h-10 border border-surface-container-highest hover:border-primary-container transition-all overflow-hidden bg-surface-container-low"
                                     title={variant.color}
                                 >
-                                    <img
+                                    <Image
                                         src={variant.thumbnail}
                                         alt={variant.color}
-                                        className="w-full h-full object-contain p-0.5"
+                                        fill
+                                        className="object-contain p-0.5"
+                                        sizes="40px"
                                     />
                                 </button>
                             </Link>
@@ -163,28 +168,30 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
 
                         if (!isAvailable) {
                             return (
+                                    <button
+                                        key={s.size}
+                                        disabled
+                                        data-testid="size-option"
+                                        className="py-3 bg-surface-container text-zinc-400 font-bold text-sm cursor-not-allowed relative overflow-hidden"
+                                    >
+                                        {s.size}
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <div className="w-full h-[1px] bg-zinc-300 rotate-45" />
+                                        </div>
+                                    </button>
+                                );
+                            }
+
+                            return (
                                 <button
                                     key={s.size}
-                                    disabled
-                                    className="py-3 bg-surface-container text-zinc-400 font-bold text-sm cursor-not-allowed relative overflow-hidden"
-                                >
-                                    {s.size}
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <div className="w-full h-[1px] bg-zinc-300 rotate-45" />
-                                    </div>
-                                </button>
-                            );
-                        }
-
-                        return (
-                            <button
-                                key={s.size}
-                                onClick={() => setSelectedSize(s.size)}
-                                className={`py-3 font-bold text-sm transition-colors relative ${isSelected
+                                    onClick={() => setSelectedSize(s.size)}
+                                    data-testid="size-option"
+                                    className={`py-3 font-bold text-sm transition-colors relative ${isSelected
                                         ? "bg-zinc-900 text-white"
                                         : "border border-surface-container-highest hover:border-primary-container"
                                     }`}
-                            >
+                                >
                                 {s.size}
                                 {s.stock !== undefined && s.stock <= 3 && s.stock > 0 && (
                                     <span className="absolute -top-1.5 -right-1.5 bg-amber-500 text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold">

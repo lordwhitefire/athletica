@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { FilterOptions, BrandOption } from "@/types/product";
 
@@ -90,7 +91,7 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                                         className="w-4 h-4 border-2 border-surface-container-highest accent-primary-container focus:ring-0 focus:ring-offset-0 rounded-none cursor-pointer"
                                     />
                                     {brand.logo && (
-                                        <img src={brand.logo} alt="" className="w-5 h-5 object-contain flex-shrink-0" />
+                                        <Image src={brand.logo} alt="" width={20} height={20} className="object-contain flex-shrink-0" />
                                     )}
                                     <span className={`text-sm font-medium uppercase transition-colors group-hover:text-primary-container ${isActive ? "text-primary-container" : "text-on-surface"}`}>
                                         {brand.name}

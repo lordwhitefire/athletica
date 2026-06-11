@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface ImageGalleryProps {
     mainImage: string;
@@ -36,10 +37,12 @@ export default function ImageGallery({
                 onMouseLeave={() => setIsZoomed(false)}
                 onMouseMove={handleMouseMove}
             >
-                <img
+                <Image
                     src={allImages[activeIndex]}
                     alt={productName}
-                    className="w-full h-full object-cover transition-transform duration-500 ease-out"
+                    fill
+                    className="object-cover transition-transform duration-500 ease-out"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     style={
                         isZoomed
                             ? {
@@ -73,15 +76,17 @@ export default function ImageGallery({
                         <button
                             key={index}
                             onClick={() => setActiveIndex(index)}
-                            className={`flex-shrink-0 w-24 h-24 bg-surface-container p-1 transition-all ${activeIndex === index
+                            className={`relative flex-shrink-0 w-24 h-24 bg-surface-container p-1 transition-all ${activeIndex === index
                                     ? "border-2 border-primary-container"
                                     : "opacity-60 hover:opacity-100"
                                 }`}
                         >
-                            <img
+                            <Image
                                 src={image}
                                 alt={`${productName} view ${index + 1}`}
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="96px"
                             />
                         </button>
                     ))}

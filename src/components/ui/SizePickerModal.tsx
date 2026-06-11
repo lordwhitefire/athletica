@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Product } from "@/types/product";
 import { useCart } from "@/context/CartContext";
 import { useToast } from "@/context/ToastContext";
@@ -16,6 +17,17 @@ export default function SizePickerModal({ product, isOpen, onClose }: SizePicker
     const [added, setAdded] = useState(false);
     const [addingToCart, setAddingToCart] = useState(false);
     const { addToCart } = useCart();
+
+    useEffect(() => {
+        if (!isOpen) return;
+        function handleKeyDown(e: KeyboardEvent) {
+            if (e.key === "Escape") {
+                onClose();
+            }
+        }
+        document.addEventListener("keydown", handleKeyDown);
+        return () => document.removeEventListener("keydown", handleKeyDown);
+    }, [isOpen, onClose]);
     const { addToast } = useToast();
 
     if (!isOpen) return null;
@@ -36,7 +48,7 @@ export default function SizePickerModal({ product, isOpen, onClose }: SizePicker
 
     return (
         <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4">
-            <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
+            <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} aria-hidden="true" />
             <div className="relative bg-surface-container-lowest rounded-t-2xl sm:rounded-2xl w-full max-w-md z-10 overflow-hidden shadow-xl">
                 <div className="flex items-center justify-between px-4 py-4 border-b border-surface">
                     <h3 className="font-bold text-on-surface">Select Size</h3>
@@ -50,8 +62,8 @@ export default function SizePickerModal({ product, isOpen, onClose }: SizePicker
 
                 <div className="p-4">
                     <div className="flex gap-3 mb-4">
-                        <div className="w-16 h-16 bg-surface-container rounded overflow-hidden flex-shrink-0">
-                            <img src={product.thumbnail} alt={product.model} className="w-full h-full object-contain" />
+                        <div className="relative w-16 h-16 bg-surface-container rounded overflow-hidden flex-shrink-0">
+                            <Image src={product.thumbnail} alt={product.model} fill className="object-contain" sizes="64px" />
                         </div>
                         <div>
                             <p className="font-medium text-on-surface text-sm">{product.model}</p>

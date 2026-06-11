@@ -2,42 +2,36 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useForm, FormProvider } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { loginSchema, LoginInput } from "@/lib/schemas/auth";
+import { Input } from "@/components/ui/Input";
+import { SubmitButton } from "@/components/ui/SubmitButton";
+import { Form } from "@/components/ui/Form";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
-    const [error, setError] = useState("");
-    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
-    const [loading, setLoading] = useState(false);
     const { login } = useAuth();
     const router = useRouter();
 
-    async function handleSubmit(e: React.FormEvent) {
-        e.preventDefault();
-        setError("");
-        setFieldErrors({});
+    const methods = useForm<LoginInput>({
+        resolver: zodResolver(loginSchema),
+    });
 
-        if (!email || !password) {
-            setError("Please fill in all fields.");
-            return;
-        }
+    const { handleSubmit, setError, formState: { errors } } = methods;
 
-        setLoading(true);
-        const result = await login(email, password);
-        setLoading(false);
+    async function onSubmit(data: LoginInput) {
+        const result = await login(data.email, data.password);
 
         if (result.error) {
             if (result.error.fields) {
-                const errors: Record<string, string> = {};
                 for (const f of result.error.fields) {
-                    errors[f.field] = f.message;
+                    setError(f.field as keyof LoginInput, { message: f.message });
                 }
-                setFieldErrors(errors);
             } else {
-                setError(result.error.message);
+                setError("root", { message: result.error.message });
             }
             return;
         }
@@ -62,82 +56,54 @@ export default function LoginForm() {
                 </div>
 
                 <div className="bg-surface-container-lowest rounded-xl shadow-sm p-8 border border-surface">
-                    {error && (
+                    {errors.root && (
                         <div className="mb-4 p-4 bg-error-container border border-error-container text-on-error-container text-sm rounded flex items-start gap-3">
                             <span className="material-symbols-outlined text-[18px] mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>error</span>
-                            <span>{error}</span>
+                            <span>{errors.root.message}</span>
                         </div>
                     )}
 
-                    <form onSubmit={handleSubmit} className="space-y-5">
-                        <div>
-                            <label className="block text-sm font-medium text-on-surface mb-1.5">
-                                Email address
-                            </label>
-                            <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="you@example.com"
-                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
-                            />
-                            {fieldErrors.email && (
-                                <p className="text-xs text-error mt-1">{fieldErrors.email}</p>
-                            )}
-                        </div>
+                    <FormProvider {...methods}>
+                        <Form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                            <Input label="Email address" type="email" placeholder="you@example.com" registration={methods.register("email")} error={errors.email?.message} className="border-outline-variant focus:border-primary-container" />
 
-                        <div>
-                            <label className="block text-sm font-medium text-on-surface mb-1.5">
-                                Password
-                            </label>
-                            <div className="relative">
-                                <input
-                                    type={showPassword ? "text" : "password"}
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    placeholder="••••••••"
-                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
-                                />
-                                <button
-                                    type="button"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors"
-                                    tabIndex={-1}
-                                >
-                                    <span className="material-symbols-outlined text-[18px]">
-                                        {showPassword ? "visibility_off" : "visibility"}
-                                    </span>
-                                </button>
+                            <div>
+                                <label htmlFor="password" className="block text-sm font-medium text-on-surface mb-1.5">Password</label>
+                                <div className="relative">
+                                    <input
+                                        id="password"
+                                        type={showPassword ? "text" : "password"}
+                                        {...methods.register("password")}
+                                        aria-invalid={!!errors.password}
+                                        aria-describedby={errors.password ? "password-error" : undefined}
+                                        placeholder="Password"
+                                        className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowPassword(!showPassword)}
+                                        className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors"
+                                        tabIndex={-1}
+                                    >
+                                        <span className="material-symbols-outlined text-[18px]">
+                                            {showPassword ? "visibility_off" : "visibility"}
+                                        </span>
+                                    </button>
+                                </div>
+                                {errors.password && (
+                                    <p id="password-error" className="text-xs text-error mt-1" role="alert">{errors.password.message}</p>
+                                )}
                             </div>
-                            {fieldErrors.password && (
-                                <p className="text-xs text-error mt-1">{fieldErrors.password}</p>
-                            )}
-                        </div>
 
-                        <div className="flex items-center justify-end">
-                            <Link href="/forgot-password" className="text-xs font-bold text-primary-container hover:text-primary transition-colors">
-                                Forgot password?
-                            </Link>
-                        </div>
+                            <div className="flex items-center justify-end">
+                                <Link href="/forgot-password" className="text-xs font-bold text-primary-container hover:text-primary transition-colors">
+                                    Forgot password?
+                                </Link>
+                            </div>
 
-                        <button
-                            type="submit"
-                            disabled={loading}
-                            className={`w-full py-3.5 rounded font-bold text-sm flex items-center justify-center gap-2 transition-colors ${loading
-                                    ? "bg-surface-container-high text-on-surface-variant cursor-not-allowed"
-                                    : "bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container"
-                                }`}
-                        >
-                            {loading ? (
-                                <>
-                                    <span className="w-4 h-4 border-2 border-on-surface-variant border-t-transparent rounded-full animate-spin" />
-                                    Signing in...
-                                </>
-                            ) : (
-                                "Sign In"
-                            )}
-                        </button>
-                    </form>
+                            <SubmitButton label="Sign In" />
+                        </Form>
+                    </FormProvider>
 
                     <div className="mt-6 text-center">
                         <p className="text-sm text-on-surface-variant">

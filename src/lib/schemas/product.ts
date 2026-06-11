@@ -19,22 +19,22 @@ export const productFormSchema = z.object({
     discount_percent: z.string().regex(discountPercentRegex, "Invalid discount."),
     member_price: z.string().regex(memberPriceRegex, "Invalid member price."),
     currency: z.string().min(1, "Currency is required."),
-    desc_subtitle: z.string().optional().default(""),
-    desc_tagline: z.string().optional().default(""),
-    desc_intro: z.string().optional().default(""),
-    desc_collection: z.string().optional().default(""),
-    key_benefits_json: z.string().optional().default("[]"),
-    tech_range: z.string().optional().default(""),
-    tech_sole: z.string().optional().default(""),
-    tech_upper: z.string().optional().default(""),
-    tech_adjustment: z.string().optional().default(""),
-    main_image_asset: z.string().optional().default(""),
-    thumbnail_asset: z.string().optional().default(""),
-    gallery_assets: z.string().optional().default(""),
+    desc_subtitle: z.string().default(""),
+    desc_tagline: z.string().default(""),
+    desc_intro: z.string().default(""),
+    desc_collection: z.string().default(""),
+    key_benefits_json: z.string().default("[]"),
+    tech_range: z.string().default(""),
+    tech_sole: z.string().default(""),
+    tech_upper: z.string().default(""),
+    tech_adjustment: z.string().default(""),
+    main_image_asset: z.string().default(""),
+    thumbnail_asset: z.string().default(""),
+    gallery_assets: z.string().default(""),
     id: z.string().optional(),
 });
 
-export type ProductFormData = z.infer<typeof productFormSchema>;
+export type ProductFormData = z.output<typeof productFormSchema>;
 
 export const productSanitySchema = z.object({
     _id: z.string(),

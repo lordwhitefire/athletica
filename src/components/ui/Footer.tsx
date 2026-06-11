@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { client } from "@/lib/sanity";
 
 interface SocialLink { label: string; url: string; icon: string }
@@ -48,7 +49,7 @@ export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | n
         <div className="md:col-span-1">
           <Link href="/">
             {siteLogoUrl ? (
-              <img src={siteLogoUrl} alt={brand_name} className="w-64 h-auto mb-4" />
+              <Image src={siteLogoUrl} alt={brand_name} width={256} height={56} className="w-64 h-auto mb-4" />
             ) : (
               <div className="text-3xl font-black text-white italic font-headline mb-4">
                 {brand_name}

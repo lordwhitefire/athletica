@@ -1,0 +1,42 @@
+import { test, expect } from "@playwright/test";
+
+test.describe("Product detail page", () => {
+    test.beforeEach(async ({ page }) => {
+        await page.goto("/football-boots");
+        await page.locator("[data-testid='product-card']").first().click();
+        await page.waitForLoadState("networkidle");
+    });
+
+    test("should display the product name as h1", async ({ page }) => {
+        await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    });
+
+    test("should display the product price", async ({ page }) => {
+        await expect(page.locator("[data-testid='product-price']")).toBeVisible();
+    });
+
+    test("should display at least one product image", async ({ page }) => {
+        await expect(page.locator("img").first()).toBeVisible();
+    });
+
+    test("should display size options", async ({ page }) => {
+        await expect(page.locator("[data-testid='size-option']").first()).toBeVisible({ timeout: 10000 });
+    });
+
+    test("should display Add to Cart button", async ({ page }) => {
+        await expect(page.getByRole("button", { name: /add to cart/i })).toBeVisible({ timeout: 10000 });
+    });
+
+    test("should add product to cart and open the cart drawer", async ({ page }) => {
+        // Wait for React to hydrate so click handlers are attached to size buttons
+        await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => {});
+
+        const sizeOptions = page.locator("[data-testid='size-option']:not([disabled])");
+        if (await sizeOptions.count() > 0) {
+            await sizeOptions.first().click();
+        }
+
+        await page.getByRole("button", { name: /add to cart/i }).click();
+        await expect(page.getByTestId("cart-count").first()).toContainText("1", { timeout: 5000 });
+    });
+});

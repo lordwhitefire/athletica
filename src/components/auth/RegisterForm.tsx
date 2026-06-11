@@ -2,6 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useForm, FormProvider } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { registerSchema, RegisterInput } from "@/lib/schemas/auth";
+import { Input } from "@/components/ui/Input";
+import { SubmitButton } from "@/components/ui/SubmitButton";
+import { Form } from "@/components/ui/Form";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 
@@ -31,23 +37,24 @@ function ConfirmationScreen({ email, onBack }: { email: string; onBack: () => vo
 }
 
 export default function RegisterForm() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
-    const [confirmPassword, setConfirmPassword] = useState("");
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-    const [error, setError] = useState("");
-    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
-    const [loading, setLoading] = useState(false);
     const [confirmedEmail, setConfirmedEmail] = useState<string | null>(null);
-    const { register } = useAuth();
+    const { register: authRegister } = useAuth();
     const router = useRouter();
 
+    const methods = useForm<RegisterInput>({
+        resolver: zodResolver(registerSchema),
+    });
+
+    const { handleSubmit, setError, watch, formState: { errors } } = methods;
+    const password = watch("password");
+    const confirmPassword = watch("confirmPassword");
+
     const passwordChecks = {
-        minLength: password.length >= 6,
-        hasMatch: confirmPassword.length > 0 && password === confirmPassword,
-        hasMismatch: confirmPassword.length > 0 && password !== confirmPassword,
+        minLength: (password?.length || 0) >= 6,
+        hasMatch: (confirmPassword?.length || 0) > 0 && password === confirmPassword,
+        hasMismatch: (confirmPassword?.length || 0) > 0 && password !== confirmPassword,
     };
 
     if (confirmedEmail) {
@@ -59,45 +66,22 @@ export default function RegisterForm() {
         );
     }
 
-    async function handleSubmit(e: React.FormEvent) {
-        e.preventDefault();
-        setError("");
-        setFieldErrors({});
-
-        if (!name || !email || !password || !confirmPassword) {
-            setError("Please fill in all fields.");
-            return;
-        }
-
-        if (password.length < 6) {
-            setFieldErrors({ password: "Password must be at least 6 characters." });
-            return;
-        }
-
-        if (password !== confirmPassword) {
-            setFieldErrors({ confirmPassword: "Passwords do not match." });
-            return;
-        }
-
-        setLoading(true);
-        const result = await register(name, email, password);
-        setLoading(false);
+    async function onSubmit(data: RegisterInput) {
+        const result = await authRegister(data.name, data.email, data.password);
 
         if (result.error) {
             if (result.error.fields) {
-                const errors: Record<string, string> = {};
                 for (const f of result.error.fields) {
-                    errors[f.field] = f.message;
+                    setError(f.field as keyof RegisterInput, { message: f.message });
                 }
-                setFieldErrors(errors);
             } else {
-                setError(result.error.message);
+                setError("root", { message: result.error.message });
             }
             return;
         }
 
         if (result.data.needsEmailConfirmation) {
-            setConfirmedEmail(email);
+            setConfirmedEmail(data.email);
             return;
         }
 
@@ -119,149 +103,107 @@ export default function RegisterForm() {
                 </div>
 
                 <div className="bg-surface-container-lowest rounded-xl shadow-sm p-8 border border-surface">
-                    {error && (
+                    {errors.root && (
                         <div className="mb-4 p-4 bg-error-container border border-error-container text-on-error-container text-sm rounded flex items-start gap-3">
                             <span className="material-symbols-outlined text-[18px] mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>error</span>
-                            <span>{error}</span>
+                            <span>{errors.root.message}</span>
                         </div>
                     )}
 
-                    <form onSubmit={handleSubmit} className="space-y-5">
-                        <div>
-                            <label className="block text-sm font-medium text-on-surface mb-1.5">
-                                Full name
-                            </label>
-                            <input
-                                type="text"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                placeholder="John Smith"
-                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
-                            />
-                            {fieldErrors.name && (
-                                <p className="text-xs text-error mt-1">{fieldErrors.name}</p>
-                            )}
-                        </div>
+                    <FormProvider {...methods}>
+                        <Form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                            <Input label="Full name" type="text" placeholder="John Smith" registration={methods.register("name")} error={errors.name?.message} className="border-outline-variant focus:border-primary-container" />
 
-                        <div>
-                            <label className="block text-sm font-medium text-on-surface mb-1.5">
-                                Email address
-                            </label>
-                            <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="you@example.com"
-                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
-                            />
-                            {fieldErrors.email && (
-                                <p className="text-xs text-error mt-1">{fieldErrors.email}</p>
-                            )}
-                        </div>
+                            <Input label="Email address" type="email" placeholder="you@example.com" registration={methods.register("email")} error={errors.email?.message} className="border-outline-variant focus:border-primary-container" />
 
-                        <div>
-                            <label className="block text-sm font-medium text-on-surface mb-1.5">
-                                Password
-                            </label>
-                            <div className="relative">
-                                <input
-                                    type={showPassword ? "text" : "password"}
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    placeholder="At least 6 characters"
-                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
-                                />
-                                <button
-                                    type="button"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors"
-                                    tabIndex={-1}
-                                >
-                                    <span className="material-symbols-outlined text-[18px]">
-                                        {showPassword ? "visibility_off" : "visibility"}
-                                    </span>
-                                </button>
-                            </div>
-                            {fieldErrors.password && (
-                                <p className="text-xs text-error mt-1">{fieldErrors.password}</p>
-                            )}
-                            {password && (
-                                <div className="flex items-center gap-1.5 mt-1.5">
-                                    <span className={`text-[10px] font-bold uppercase tracking-wider ${passwordChecks.minLength ? "text-primary-container" : "text-on-surface-variant/50"}`}>
-                                        {passwordChecks.minLength ? (
-                                            <span className="flex items-center gap-1">
-                                                <span className="material-symbols-outlined text-[12px]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                                                6+ characters
-                                            </span>
-                                        ) : (
-                                            <span className="flex items-center gap-1">
-                                                <span className="material-symbols-outlined text-[12px]">radio_button_unchecked</span>
-                                                6+ characters
-                                            </span>
-                                        )}
-                                    </span>
+                            <div>
+                                <label htmlFor="password" className="block text-sm font-medium text-on-surface mb-1.5">Password</label>
+                                <div className="relative">
+                                    <input
+                                        id="password"
+                                        type={showPassword ? "text" : "password"}
+                                        {...methods.register("password")}
+                                        aria-invalid={!!errors.password}
+                                        aria-describedby={errors.password ? "password-error" : undefined}
+                                        placeholder="Password"
+                                        className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowPassword(!showPassword)}
+                                        className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors"
+                                        tabIndex={-1}
+                                    >
+                                        <span className="material-symbols-outlined text-[18px]">
+                                            {showPassword ? "visibility_off" : "visibility"}
+                                        </span>
+                                    </button>
                                 </div>
-                            )}
-                        </div>
-
-                        <div>
-                            <label className="block text-sm font-medium text-on-surface mb-1.5">
-                                Confirm password
-                            </label>
-                            <div className="relative">
-                                <input
-                                    type={showConfirmPassword ? "text" : "password"}
-                                    value={confirmPassword}
-                                    onChange={(e) => setConfirmPassword(e.target.value)}
-                                    placeholder="Repeat your password"
-                                    className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
-                                />
-                                <button
-                                    type="button"
-                                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors"
-                                    tabIndex={-1}
-                                >
-                                    <span className="material-symbols-outlined text-[18px]">
-                                        {showConfirmPassword ? "visibility_off" : "visibility"}
-                                    </span>
-                                </button>
+                                {errors.password && (
+                                    <p id="password-error" className="text-xs text-error mt-1" role="alert">{errors.password.message}</p>
+                                )}
+                                {password && (
+                                    <div className="flex items-center gap-1.5 mt-1.5">
+                                        <span className={`text-[10px] font-bold uppercase tracking-wider ${passwordChecks.minLength ? "text-primary-container" : "text-on-surface-variant/50"}`}>
+                                            {passwordChecks.minLength ? (
+                                                <span className="flex items-center gap-1">
+                                                    <span className="material-symbols-outlined text-[12px]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                                                    6+ characters
+                                                </span>
+                                            ) : (
+                                                <span className="flex items-center gap-1">
+                                                    <span className="material-symbols-outlined text-[12px]">radio_button_unchecked</span>
+                                                    6+ characters
+                                                </span>
+                                            )}
+                                        </span>
+                                    </div>
+                                )}
                             </div>
-                            {fieldErrors.confirmPassword && (
-                                <p className="text-xs text-error mt-1.5">{fieldErrors.confirmPassword}</p>
-                            )}
-                            {!fieldErrors.confirmPassword && passwordChecks.hasMismatch && (
-                                <p className="text-xs text-error mt-1.5 flex items-center gap-1">
-                                    <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>cancel</span>
-                                    Passwords do not match
-                                </p>
-                            )}
-                            {passwordChecks.hasMatch && (
-                                <p className="text-xs text-primary-container mt-1.5 flex items-center gap-1">
-                                    <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                                    Passwords match
-                                </p>
-                            )}
-                        </div>
 
-                        <button
-                            type="submit"
-                            disabled={loading}
-                            className={`w-full py-3.5 rounded font-bold text-sm flex items-center justify-center gap-2 transition-colors ${loading
-                                    ? "bg-surface-container-high text-on-surface-variant cursor-not-allowed"
-                                    : "bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container"
-                                }`}
-                        >
-                            {loading ? (
-                                <>
-                                    <span className="w-4 h-4 border-2 border-on-surface-variant border-t-transparent rounded-full animate-spin" />
-                                    Creating account...
-                                </>
-                            ) : (
-                                "Create Account"
-                            )}
-                        </button>
-                    </form>
+                            <div>
+                                <label htmlFor="confirmPassword" className="block text-sm font-medium text-on-surface mb-1.5">Confirm password</label>
+                                <div className="relative">
+                                    <input
+                                        id="confirmPassword"
+                                        type={showConfirmPassword ? "text" : "password"}
+                                        {...methods.register("confirmPassword")}
+                                        aria-invalid={!!errors.confirmPassword}
+                                        aria-describedby={errors.confirmPassword ? "confirmPassword-error" : undefined}
+                                        placeholder="Repeat your password"
+                                        className="w-full px-4 py-2.5 pr-10 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary-container text-sm transition-colors"
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                                        className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors"
+                                        tabIndex={-1}
+                                    >
+                                        <span className="material-symbols-outlined text-[18px]">
+                                            {showConfirmPassword ? "visibility_off" : "visibility"}
+                                        </span>
+                                    </button>
+                                </div>
+                                {errors.confirmPassword && (
+                                    <p id="confirmPassword-error" className="text-xs text-error mt-1.5" role="alert">{errors.confirmPassword.message}</p>
+                                )}
+                                {!errors.confirmPassword && passwordChecks.hasMismatch && (
+                                    <p className="text-xs text-error mt-1.5 flex items-center gap-1">
+                                        <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>cancel</span>
+                                        Passwords do not match
+                                    </p>
+                                )}
+                                {passwordChecks.hasMatch && (
+                                    <p className="text-xs text-primary-container mt-1.5 flex items-center gap-1">
+                                        <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                                        Passwords match
+                                    </p>
+                                )}
+                            </div>
+
+                            <SubmitButton label="Create Account" />
+                        </Form>
+                    </FormProvider>
 
                     <div className="mt-6 text-center">
                         <p className="text-sm text-on-surface-variant">

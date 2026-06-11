@@ -3,7 +3,7 @@ import ProductForm from "@/components/admin/ProductForm";
 
 export default function NewProductPage() {
     return (
-        <div>
+        <div data-testid="product-form-page">
             <h1 className="text-2xl font-black uppercase tracking-tight mb-6">New Product</h1>
             <ProductForm action={createProduct} />
         </div>

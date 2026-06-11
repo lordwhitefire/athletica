@@ -7,10 +7,10 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
     const products = (result.data ?? []) as Record<string, unknown>[];
 
     return (
-        <div>
+        <div data-testid="admin-products-page">
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-black uppercase tracking-tight">Products</h1>
-                <Link href="/admin/products/new" className="bg-red-600 hover:bg-red-700 text-white text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
+                <Link href="/admin/products/new" data-testid="admin-new-product-link" className="bg-red-600 hover:bg-red-700 text-white text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
                     <span className="material-symbols-outlined text-[16px]">add</span>
                     New Product
                 </Link>
@@ -18,7 +18,7 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
 
             <div className="bg-neutral-900 border border-neutral-800 rounded overflow-hidden">
                 <div className="overflow-x-auto">
-                <table className="w-full text-sm">
+                <table data-testid="admin-products-table" className="w-full text-sm">
                     <thead className="bg-neutral-800">
                         <tr className="text-zinc-400 uppercase tracking-wider text-xs">
                             <th className="text-left p-3 font-medium">ID</th>

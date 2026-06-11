@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { Product } from "@/types/product";
 import ProductCard from "@/components/category/ProductCard";
 
@@ -34,8 +35,30 @@ export default function ProductCarousel({
         scrollRef.current.scrollBy({ left: 660, behavior: "smooth" });
     }
 
+    const handleScrollKeyDown = (
+        e: React.KeyboardEvent<HTMLDivElement>,
+    ) => {
+        if (!scrollRef.current) return;
+
+        if (e.key === "ArrowLeft") {
+            scrollRef.current.scrollBy({ left: -660, behavior: "smooth" });
+            e.preventDefault();
+        } else if (e.key === "ArrowRight") {
+            scrollRef.current.scrollBy({ left: 660, behavior: "smooth" });
+            e.preventDefault();
+        }
+    };
+
     return (
-        <div className="py-8 md:py-20">
+        <motion.div
+            role="region"
+            aria-label={`${title} carousel`}
+            className="py-8 md:py-20"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+        >
             <div className="w-full">
                 <div className="flex justify-between items-end mb-4 md:mb-10">
                     <div>
@@ -58,12 +81,14 @@ export default function ProductCarousel({
                         )}
                         <button
                             onClick={scrollLeft}
+                            aria-label="Previous products"
                             className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary-container hover:text-primary-container transition-colors"
                         >
                             <span className="material-symbols-outlined text-[16px] md:text-[18px]">chevron_left</span>
                         </button>
                         <button
                             onClick={scrollRight}
+                            aria-label="Next products"
                             className="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center border border-surface-container-highest hover:border-primary-container hover:text-primary-container transition-colors"
                         >
                             <span className="material-symbols-outlined text-[16px] md:text-[18px]">chevron_right</span>
@@ -74,6 +99,9 @@ export default function ProductCarousel({
                 <div
                     ref={scrollRef}
                     className="flex gap-3 md:gap-6 overflow-x-auto pb-4"
+                    tabIndex={0}
+                    onKeyDown={handleScrollKeyDown}
+                    aria-label="Scrollable products"
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                 >
                     {products.map((product) => (
@@ -83,6 +111,6 @@ export default function ProductCarousel({
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }

@@ -2,33 +2,43 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useForm, FormProvider } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { Input } from "@/components/ui/Input";
+import { SubmitButton } from "@/components/ui/SubmitButton";
+import { Form } from "@/components/ui/Form";
 import { createClient } from "@/lib/supabase/client";
 
+const forgotSchema = z.object({
+    email: z.string().email("Enter a valid email address."),
+});
+
+type ForgotInput = z.infer<typeof forgotSchema>;
+
 export default function ForgotPassword() {
-    const [email, setEmail] = useState("");
     const [sent, setSent] = useState(false);
-    const [error, setError] = useState("");
-    const [loading, setLoading] = useState(false);
+    const [email, setEmail] = useState("");
 
-    async function handleSubmit(e: React.FormEvent) {
-        e.preventDefault();
-        setError("");
+    const methods = useForm<ForgotInput>({
+        resolver: zodResolver(forgotSchema),
+    });
 
-        if (!email) return;
+    const { handleSubmit, setError, formState: { errors } } = methods;
 
-        setLoading(true);
+    async function onSubmit(data: ForgotInput) {
         const supabase = createClient();
         const { error: resetError } =
-            await supabase.auth.resetPasswordForEmail(email, {
+            await supabase.auth.resetPasswordForEmail(data.email, {
                 redirectTo: `${window.location.origin}/login`,
             });
-        setLoading(false);
 
         if (resetError) {
-            setError(resetError.message);
+            setError("root", { message: resetError.message });
             return;
         }
 
+        setEmail(data.email);
         setSent(true);
     }
 
@@ -87,7 +97,7 @@ export default function ForgotPassword() {
                 </div>
 
                 <div className="bg-surface-container-lowest rounded-xl shadow-sm p-8 border border-surface">
-                    {error && (
+                    {errors.root && (
                         <div className="mb-4 p-4 bg-error-container border border-error-container text-on-error-container text-sm rounded flex items-start gap-3">
                             <span
                                 className="material-symbols-outlined text-[18px] mt-0.5"
@@ -95,43 +105,16 @@ export default function ForgotPassword() {
                             >
                                 error
                             </span>
-                            <span>{error}</span>
+                            <span>{errors.root.message}</span>
                         </div>
                     )}
 
-                    <form onSubmit={handleSubmit} className="space-y-5">
-                        <div>
-                            <label className="block text-sm font-medium text-on-surface mb-1.5">
-                                Email address
-                            </label>
-                            <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="you@example.com"
-                                required
-                                className="w-full px-4 py-2.5 border border-outline-variant rounded bg-surface focus:outline-none focus:border-primary text-sm transition-colors"
-                            />
-                        </div>
-                        <button
-                            type="submit"
-                            disabled={loading}
-                            className={`w-full py-3.5 font-bold rounded flex items-center justify-center gap-2 transition-colors ${
-                                loading
-                                    ? "bg-surface-container-high text-on-surface-variant cursor-not-allowed"
-                                    : "bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container"
-                            }`}
-                        >
-                            {loading ? (
-                                <>
-                                    <span className="w-4 h-4 border-2 border-on-surface-variant border-t-transparent rounded-full animate-spin" />
-                                    Sending...
-                                </>
-                            ) : (
-                                "Send Reset Link"
-                            )}
-                        </button>
-                    </form>
+                    <FormProvider {...methods}>
+                        <Form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                            <Input label="Email address" type="email" placeholder="you@example.com" registration={methods.register("email")} error={errors.email?.message} className="border-outline-variant focus:border-primary" />
+                            <SubmitButton label="Send Reset Link" />
+                        </Form>
+                    </FormProvider>
                     <div className="mt-6 text-center">
                         <Link
                             href="/login"

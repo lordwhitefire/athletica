@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { CategoryCard } from "@/types/homepage";
 
 interface CategoryCarouselProps {
@@ -21,6 +23,20 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
     const prev = useCallback(() => {
         setActiveIndex((prev) => (prev - 1 + cards.length) % cards.length);
     }, [cards.length]);
+
+    const handleScrollKeyDown = useCallback(
+        (e: React.KeyboardEvent<HTMLDivElement>) => {
+            if (!scrollRef.current) return;
+            if (e.key === "ArrowLeft") {
+                scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
+                e.preventDefault();
+            } else if (e.key === "ArrowRight") {
+                scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
+                e.preventDefault();
+            }
+        },
+        [],
+    );
 
     useEffect(() => {
         if (isPaused || cards.length <= 1) return;
@@ -43,8 +59,14 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
     if (cards.length === 0) return null;
 
     return (
-        <div
+        <motion.div
+            role="region"
+            aria-label="Category carousel"
             className="w-full"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
         >
@@ -52,6 +74,9 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
                 <div
                     ref={scrollRef}
                     className="flex gap-4 overflow-x-auto pb-2"
+                    tabIndex={0}
+                    onKeyDown={handleScrollKeyDown}
+                    aria-label="Scrollable categories"
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                 >
                     {cards.map((card, index) => (
@@ -67,10 +92,12 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
                                 style={{ aspectRatio: "16/9" }}
                             >
                                 {card.image ? (
-                                    <img
+                                    <Image
                                         src={card.image}
                                         alt={card.title}
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 50vw, 25vw"
                                     />
                                 ) : (
                                     <div className={`w-full h-full bg-gradient-to-br ${card.gradient} flex flex-col items-center justify-center relative overflow-hidden`}>
@@ -97,12 +124,14 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
                     <>
                         <button
                             onClick={prev}
+                            aria-label="Previous category"
                             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
                         >
                             ‹
                         </button>
                         <button
                             onClick={next}
+                            aria-label="Next category"
                             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
                         >
                             ›
@@ -112,6 +141,6 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
             </div>
 
 
-        </div>
+        </motion.div>
     );
 }

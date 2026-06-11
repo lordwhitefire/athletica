@@ -1,36 +1,34 @@
 "use client";
 
-import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { useForm, FormProvider } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { loginSchema, LoginInput } from "@/lib/schemas/auth";
+import { Input } from "@/components/ui/Input";
+import { SubmitButton } from "@/components/ui/SubmitButton";
+import { Form } from "@/components/ui/Form";
 import { adminLogin } from "@/lib/actions/admin-auth";
 
 export default function AdminLoginPage() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
-    const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
-    const [loading, setLoading] = useState(false);
     const router = useRouter();
 
-    async function handleSubmit(e: FormEvent) {
-        e.preventDefault();
-        setError("");
-        setFieldErrors({});
-        setLoading(true);
+    const methods = useForm<LoginInput>({
+        resolver: zodResolver(loginSchema),
+    });
 
-        const result = await adminLogin(email, password);
+    const { handleSubmit, setError, formState: { errors } } = methods;
+
+    async function onSubmit(data: LoginInput) {
+        const result = await adminLogin(data.email, data.password);
 
         if (result.error) {
             if (result.error.fields) {
-                const errors: Record<string, string> = {};
                 for (const f of result.error.fields) {
-                    errors[f.field] = f.message;
+                    setError(f.field as keyof LoginInput, { message: f.message });
                 }
-                setFieldErrors(errors);
             } else {
-                setError(result.error.message);
+                setError("root", { message: result.error.message });
             }
-            setLoading(false);
             return;
         }
 
@@ -47,47 +45,18 @@ export default function AdminLoginPage() {
                     <h1 className="text-white text-2xl font-black uppercase tracking-tight">Admin Login</h1>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-5">
-                    <div>
-                        <label className="block text-zinc-400 text-sm font-medium mb-1.5">Email</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            className="w-full px-4 py-2.5 bg-zinc-800 border border-zinc-700 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
-                            placeholder="admin@example.com"
-                        />
-                        {fieldErrors.email && (
-                            <p className="text-red-500 text-xs mt-1">{fieldErrors.email}</p>
-                        )}
-                    </div>
-                    <div>
-                        <label className="block text-zinc-400 text-sm font-medium mb-1.5">Password</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                            className="w-full px-4 py-2.5 bg-zinc-800 border border-zinc-700 text-white rounded focus:outline-none focus:border-red-600 transition-colors"
-                        />
-                        {fieldErrors.password && (
-                            <p className="text-red-500 text-xs mt-1">{fieldErrors.password}</p>
-                        )}
-                    </div>
+                <FormProvider {...methods}>
+                    <Form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                        <Input label="Email" type="email" placeholder="admin@example.com" registration={methods.register("email")} error={errors.email?.message} className="bg-zinc-800 border-zinc-700 text-white focus:border-red-600 placeholder:text-zinc-500" />
+                        <Input label="Password" type="password" registration={methods.register("password")} error={errors.password?.message} className="bg-zinc-800 border-zinc-700 text-white focus:border-red-600" />
 
-                    {error && (
-                        <p className="text-red-500 text-sm">{error}</p>
-                    )}
+                        {errors.root && (
+                            <p className="text-red-500 text-sm">{errors.root.message}</p>
+                        )}
 
-                    <button
-                        type="submit"
-                        disabled={loading}
-                        className="w-full bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold py-2.5 px-4 rounded transition-colors uppercase tracking-wider text-sm"
-                    >
-                        {loading ? "Signing in..." : "Sign In"}
-                    </button>
-                </form>
+                        <SubmitButton label="Sign In" />
+                    </Form>
+                </FormProvider>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { NavigationData, NavItem } from "@/types/navigation";
 import { useAuth } from "@/context/AuthContext";
 
@@ -12,13 +13,19 @@ interface MobileNavProps {
 }
 
 function L4Item({ l4Item, onClose }: { l4Item: NavItem; onClose: () => void }) {
+    const pathname = usePathname();
+    const isActive = !l4Item.disabled && l4Item.href && (
+        pathname === l4Item.href ||
+        (l4Item.href !== "/" && pathname.startsWith(l4Item.href))
+    );
     return (
         <div className="pl-4 mt-2 space-y-2 border-l border-neutral-300">
             {l4Item.href && !l4Item.disabled ? (
                 <Link
                     href={l4Item.href || "#"}
+                    aria-current={isActive ? "page" : undefined}
                     onClick={onClose}
-                    className="block text-[10px] font-medium text-neutral-500 uppercase tracking-widest hover:text-primary-container py-1 transition-colors"
+                    className={`block text-[10px] font-medium uppercase tracking-widest py-1 transition-colors ${isActive ? "text-primary-container" : "text-neutral-500 hover:text-primary-container"}`}
                 >
                     {l4Item.label}
                 </Link>
@@ -34,6 +41,11 @@ function L4Item({ l4Item, onClose }: { l4Item: NavItem; onClose: () => void }) {
 function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
     const [isOpen, setIsOpen] = useState(false);
     const hasChildren = l3Item.children && l3Item.children.length > 0;
+    const pathname = usePathname();
+    const isActive = !l3Item.disabled && l3Item.href && (
+        pathname === l3Item.href ||
+        (l3Item.href !== "/" && pathname.startsWith(l3Item.href))
+    );
 
     return (
         <div className="relative">
@@ -41,8 +53,9 @@ function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
                 {l3Item.href && !l3Item.disabled ? (
                     <Link
                         href={l3Item.href || "#"}
+                        aria-current={isActive ? "page" : undefined}
                         onClick={onClose}
-                        className={`flex-1 font-bold text-xs uppercase transition-colors ${isOpen ? "text-primary-container" : "text-on-surface hover:text-primary-container"}`}
+                        className={`flex-1 font-bold text-xs uppercase transition-colors ${isActive || isOpen ? "text-primary-container" : "text-on-surface hover:text-primary-container"}`}
                     >
                         {l3Item.label}
                     </Link>
@@ -55,6 +68,7 @@ function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
                 {hasChildren && (
                     <button
                         onClick={() => setIsOpen(!isOpen)}
+                        aria-expanded={isOpen}
                         className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-neutral-400"}`}
                     >
                         <span className="material-symbols-outlined text-xs">expand_more</span>
@@ -76,6 +90,11 @@ function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
 function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
     const [isOpen, setIsOpen] = useState(false);
     const hasChildren = l2Item.children && l2Item.children.length > 0;
+    const pathname = usePathname();
+    const isActive = !l2Item.disabled && l2Item.href && (
+        pathname === l2Item.href ||
+        (l2Item.href !== "/" && pathname.startsWith(l2Item.href))
+    );
 
     return (
         <div className="mt-2">
@@ -83,8 +102,9 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
                 {l2Item.href && !l2Item.disabled ? (
                     <Link
                         href={l2Item.href || "#"}
+                        aria-current={isActive ? "page" : undefined}
                         onClick={onClose}
-                        className={`flex-1 font-semibold text-xs tracking-wider uppercase transition-colors ${isOpen ? "text-on-surface" : "text-neutral-500 opacity-80 group-hover:text-primary-container group-hover:opacity-100"}`}
+                        className={`flex-1 font-semibold text-xs tracking-wider uppercase transition-colors ${isActive || isOpen ? "text-primary-container" : "text-neutral-500 opacity-80 group-hover:text-primary-container group-hover:opacity-100"}`}
                     >
                         {l2Item.label}
                     </Link>
@@ -97,6 +117,7 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
                 {hasChildren && (
                     <button
                         onClick={() => setIsOpen(!isOpen)}
+                        aria-expanded={isOpen}
                         className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-neutral-400"}`}
                     >
                         <span className="material-symbols-outlined text-sm">expand_more</span>
@@ -129,6 +150,12 @@ function SubMenuPanel({
     logout: () => void;
 }) {
     const [signingOut, setSigningOut] = useState(false);
+    const pathname = usePathname();
+
+    function navActive(href: string): boolean {
+        return pathname === href || (href !== "/" && pathname.startsWith(href));
+    }
+
     return (
         <div className="absolute w-full inset-0 bg-white flex flex-col">
 
@@ -151,8 +178,9 @@ function SubMenuPanel({
                 {/* Elite Performance — above grey card */}
                 <Link
                     href="/shop?collection=elite"
+                    aria-current={navActive("/shop?collection=elite") ? "page" : undefined}
                     onClick={onClose}
-                    className="flex items-center gap-3 p-4 text-neutral-700 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer"
+                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?collection=elite") ? "text-primary-container" : "text-neutral-700"}`}
                 >
                     <span className="material-symbols-outlined text-lg">workspace_premium</span>
                     <span>Elite Performance</span>
@@ -163,6 +191,7 @@ function SubMenuPanel({
                     {/* L1 header */}
                     <Link
                         href={item.href || "#"}
+                        aria-current={navActive(item.href || "#") ? "page" : undefined}
                         onClick={onClose}
                         className="w-full flex items-center justify-between p-4 text-primary-container font-headline font-bold text-sm tracking-tight uppercase group"
                     >
@@ -186,8 +215,9 @@ function SubMenuPanel({
                 {/* Training Gear — below grey card */}
                 <Link
                     href="/shop?category=training"
+                    aria-current={navActive("/shop?category=training") ? "page" : undefined}
                     onClick={onClose}
-                    className="flex items-center gap-3 p-4 text-neutral-700 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer"
+                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?category=training") ? "text-primary-container" : "text-neutral-700"}`}
                 >
                     <span className="material-symbols-outlined text-lg">fitness_center</span>
                     <span>Training Gear</span>
@@ -196,8 +226,9 @@ function SubMenuPanel({
                 {/* Fan Zone — below grey card */}
                 <Link
                     href="/shop?collection=fan"
+                    aria-current={navActive("/shop?collection=fan") ? "page" : undefined}
                     onClick={onClose}
-                    className="flex items-center gap-3 p-4 text-neutral-700 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer"
+                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?collection=fan") ? "text-primary-container" : "text-neutral-700"}`}
                 >
                     <span className="material-symbols-outlined text-lg">groups</span>
                     <span>Fan Zone</span>
@@ -217,16 +248,18 @@ function SubMenuPanel({
                 ) : (
                     <Link
                         href="/login"
+                        aria-current={navActive("/login") ? "page" : undefined}
                         onClick={onClose}
-                        className="flex-1 bg-surface-container-highest text-on-surface h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform"
+                        className={`flex-1 h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform ${navActive("/login") ? "bg-primary text-white" : "bg-surface-container-highest text-on-surface"}`}
                     >
                         Sign In
                     </Link>
                 )}
                 <Link
                     href="/shop"
+                    aria-current={navActive("/shop") ? "page" : undefined}
                     onClick={onClose}
-                    className="flex-1 bg-primary text-white h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform shadow-xl shadow-primary/20"
+                    className={`flex-1 h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform ${navActive("/shop") ? "bg-surface-container-highest text-primary shadow-xl shadow-primary/20" : "bg-primary text-white shadow-xl shadow-primary/20"}`}
                 >
                     Shop All
                 </Link>
@@ -237,6 +270,7 @@ function SubMenuPanel({
 
 export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProps) {
     const { auth, logout } = useAuth();
+    const pathname = usePathname();
     const [activeL1, setActiveL1] = useState<NavItem | null>(null);
     const [signingOut, setSigningOut] = useState(false);
     const allL1Items = navigation.flatMap((group) => group.children || []);
@@ -253,11 +287,13 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                 <div
                     className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
                     onClick={handleClose}
+                    aria-hidden="true"
                 />
             )}
 
             {/* Drawer shell */}
             <aside
+                id="mobile-nav-menu"
                 className={`fixed top-0 left-0 h-full w-full max-w-[400px] z-50 overflow-hidden shadow-2xl shadow-black/50 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"
                     }`}
             >
@@ -307,8 +343,9 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                             <>
                                 <Link
                                     href="/account"
+                                    aria-current={pathname === "/account" ? "page" : undefined}
                                     onClick={handleClose}
-                                    className="w-full py-4 bg-transparent border border-white/20 text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-colors text-center"
+                                    className={`w-full py-4 font-headline font-bold text-xs tracking-widest uppercase text-center transition-colors ${pathname === "/account" ? "bg-white/20 text-white" : "bg-transparent border border-white/20 text-white hover:bg-white hover:text-black"}`}
                                 >
                                     My Account
                                 </Link>
@@ -324,15 +361,17 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                             <>
                                 <Link
                                     href="/login"
+                                    aria-current={pathname === "/login" ? "page" : undefined}
                                     onClick={handleClose}
-                                    className="w-full py-4 bg-transparent border border-white/20 text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-colors text-center"
+                                    className={`w-full py-4 font-headline font-bold text-xs tracking-widest uppercase text-center transition-colors ${pathname === "/login" ? "bg-white/20 text-white" : "bg-transparent border border-white/20 text-white hover:bg-white hover:text-black"}`}
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     href="/register"
+                                    aria-current={pathname === "/register" ? "page" : undefined}
                                     onClick={handleClose}
-                                    className="w-full py-4 bg-primary text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary transition-colors text-center"
+                                    className={`w-full py-4 font-headline font-bold text-xs tracking-widest uppercase text-center transition-colors ${pathname === "/register" ? "bg-primary/50 text-white" : "bg-primary text-white hover:bg-primary"}`}
                                 >
                                     Create Account
                                 </Link>

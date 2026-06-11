@@ -8,7 +8,8 @@ export const client = createClient({
     projectId: "cuiis46d",
     dataset: "production",
     apiVersion: "2025-01-01",
-    useCdn: false,
+    useCdn: true,
+    timeout: 10000,
 });
 
 const builder = createImageUrlBuilder(client);

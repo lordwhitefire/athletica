@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { NavItem } from "@/types/navigation";
 import { Truck, ShieldCheck, Headset } from 'lucide-react';
 
@@ -259,8 +260,8 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                 {/* ── FEATURED BANNER ── */}
                 <div className="flex-shrink-0 w-40 self-start">
                     {featuredImage ? (
-                        <Link href={item.href || "/"} onClick={onClose} className="block rounded overflow-hidden">
-                            <img src={featuredImage} alt={item.label} className="w-full h-48 object-cover" />
+                        <Link href={item.href || "/"} onClick={onClose} className="block rounded overflow-hidden relative w-full h-48">
+                            <Image src={featuredImage} alt={item.label} fill className="object-cover" sizes="(max-width: 768px) 100vw, 300px" />
                         </Link>
                     ) : (
                         <Link

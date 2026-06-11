@@ -72,6 +72,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
                             <a
                                 key={item.href}
                                 href={item.href}
+                                aria-current={active ? "page" : undefined}
                                 className={`flex items-center gap-3 px-3 py-2.5 rounded text-sm transition-colors ${
                                     active ? "bg-red-600 text-white" : "text-zinc-400 hover:text-white hover:bg-neutral-800"
                                 }`}
@@ -93,7 +94,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
 
             {/* Overlay for mobile */}
             {sidebarOpen && (
-                <div className="fixed inset-0 bg-black/50 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} />
+                <div className="fixed inset-0 bg-black/50 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} aria-hidden="true" />
             )}
 
             {/* Main */}

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 import { NavigationData } from "@/types/navigation";
 import MainNav from "@/components/navigation/MainNav";
 import MobileNav from "@/components/navigation/MobileNav";
@@ -23,6 +24,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
     const { cart } = useCart();
     const { auth, logout } = useAuth();
     const router = useRouter();
+    const pathname = usePathname();
 
     function handleSearch(e: React.FormEvent) {
         e.preventDefault();
@@ -40,7 +42,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                     {/* Logo — left, shrinks to fit */}
                     <Link href="/" className="flex items-center gap-2 flex-shrink-0">
                         {siteLogoUrl ? (
-                            <img src={siteLogoUrl} alt="Athletica" className="w-56 h-auto" />
+                            <Image src={siteLogoUrl} alt="Athletica" width={224} height={56} className="w-56 h-auto" />
                         ) : (
                             <>
                                 <div className="w-8 h-8 bg-primary flex items-center justify-center rounded-sm">
@@ -55,6 +57,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                     <form onSubmit={handleSearch} className="hidden lg:flex flex-1 justify-center">
                         <div className="flex items-center max-w-xl w-full h-[40px]  bg-gray-50 border border-gray-200 rounded focus-within:border-primary-container transition-colors gap-2">
                             <svg
+                                aria-hidden="true"
                                 className="text-gray-400 w-4 h-4 flex-shrink-0 relative left-[20px]"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -91,7 +94,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                                 </button>
                                 <Link
                                     href="/account"
-                                    className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary-container transition-colors"
+                                    className={`w-8 h-8 flex items-center justify-center transition-colors ${pathname === "/account" ? "text-primary-container" : "text-gray-500 hover:text-primary-container"}`}
                                     aria-label="My Account"
                                 >
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -103,7 +106,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                         ) : (
                             <Link
                                 href="/login"
-                                className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary-container transition-colors"
+                                className={`w-8 h-8 flex items-center justify-center transition-colors ${pathname === "/login" ? "text-primary-container" : "text-gray-500 hover:text-primary-container"}`}
                                 aria-label="Login"
                             >
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -115,6 +118,9 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
 
                         <button
                             onClick={() => setIsMiniCartOpen(true)}
+                            aria-expanded={isMiniCartOpen}
+                            aria-controls="mini-cart"
+                            data-testid="cart-icon"
                             className="relative w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary-container transition-colors"
                             aria-label="Open cart"
                         >
@@ -124,7 +130,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                                 <path d="M16 10a4 4 0 0 1-8 0" />
                             </svg>
                             {cart.totalItems > 0 && (
-                                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-on-primary text-xs font-bold rounded-full flex items-center justify-center leading-none">
+                                <span data-testid="cart-count" className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-on-primary text-xs font-bold rounded-full flex items-center justify-center leading-none">
                                     {cart.totalItems > 99 ? "99+" : cart.totalItems}
                                 </span>
                             )}
@@ -138,6 +144,8 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                     {/* Left — hamburger + logo */}
                     <button
                         onClick={() => setIsMobileNavOpen(true)}
+                        aria-expanded={isMobileNavOpen}
+                        aria-controls="mobile-nav-menu"
                         className="flex items-center justify-center w-8 h-8 text-gray-700 hover:text-primary-container transition-colors flex-shrink-0 mr-2"
                         aria-label="Open menu"
                     >
@@ -150,7 +158,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
 
                     <Link href="/" className="flex items-center gap-2 flex-shrink-0">
                         {siteLogoUrl ? (
-                            <img src={siteLogoUrl} alt="Athletica" className="h-8 w-auto" />
+                            <Image src={siteLogoUrl} alt="Athletica" width={32} height={32} className="h-8 w-auto" />
                         ) : (
                             <>
                                 <div className="w-8 h-8 bg-primary flex items-center justify-center rounded-sm">
@@ -173,38 +181,42 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                         ) : null}
                         <Link
                             href={auth.isLoggedIn ? "/account" : "/login"}
-                            className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary-container transition-colors"
+                            className={`w-8 h-8 flex items-center justify-center transition-colors ${pathname === (auth.isLoggedIn ? "/account" : "/login") ? "text-primary-container" : "text-gray-500 hover:text-primary-container"}`}
                             aria-label={auth.isLoggedIn ? "My Account" : "Login"}
                         >
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                                 <circle cx="12" cy="7" r="4" />
-                            </svg>
-                        </Link>
+                        </svg>
+                            </Link>
 
-                        <button
-                            onClick={() => setIsMiniCartOpen(true)}
-                            className="relative w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary-container transition-colors"
-                            aria-label="Open cart"
-                        >
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-                                <line x1="3" y1="6" x2="21" y2="6" />
-                                <path d="M16 10a4 4 0 0 1-8 0" />
-                            </svg>
-                            {cart.totalItems > 0 && (
-                                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-on-primary text-xs font-bold rounded-full flex items-center justify-center leading-none">
-                                    {cart.totalItems > 99 ? "99+" : cart.totalItems}
-                                </span>
-                            )}
-                        </button>
+                            <button
+                                onClick={() => setIsMiniCartOpen(true)}
+                                aria-expanded={isMiniCartOpen}
+                                aria-controls="mini-cart"
+                                data-testid="cart-icon"
+                                className="relative w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary-container transition-colors"
+                                aria-label="Open cart"
+                            >
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                                    <line x1="3" y1="6" x2="21" y2="6" />
+                                    <path d="M16 10a4 4 0 0 1-8 0" />
+                                </svg>
+                                {cart.totalItems > 0 && (
+                                    <span data-testid="cart-count" className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-on-primary text-xs font-bold rounded-full flex items-center justify-center leading-none">
+                                        {cart.totalItems > 99 ? "99+" : cart.totalItems}
+                                    </span>
+                                )}
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                {/* ── MOBILE SEARCH BAR — second row ── */}
+                    {/* ── MOBILE SEARCH BAR — second row ── */}
                 <form onSubmit={handleSearch} className="flex lg:hidden w-full px-4 pb-2">
                     <div className="relative w-full">
                         <svg
+                            aria-hidden="true"
                             className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none"
                             fill="none"
                             viewBox="0 0 24 24"

@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { CartProvider } from "@/context/CartContext";
-import { AuthProvider } from "@/context/AuthContext";
-import { ToastProvider } from "@/context/ToastContext";
-import { WishlistProvider } from "@/context/WishlistContext";
+import { Providers } from "@/components/Providers";
+import { PageTransition } from "@/components/PageTransition";
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/ui/Footer";
 import ScrollToTop from "@/components/ui/ScrollToTop";
@@ -45,18 +43,17 @@ export default async function RootLayout({
     return (
         <html lang="en">
             <body className="antialiased">
-                <AuthProvider>
-                    <CartProvider>
-                        <ToastProvider>
-                            <WishlistProvider>
-                                <Header navigation={navigation} siteLogoUrl={siteLogoUrl} />
-                                <main>{children}</main>
-                                <Footer siteLogoUrl={siteLogoUrl} />
-                                <ScrollToTop />
-                            </WishlistProvider>
-                        </ToastProvider>
-                    </CartProvider>
-                </AuthProvider>
+                <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:bg-primary focus:text-on-primary focus:rounded">
+                    Skip to main content
+                </a>
+                <Providers>
+                    <Header navigation={navigation} siteLogoUrl={siteLogoUrl} />
+                    <PageTransition>
+                        <main id="main-content">{children}</main>
+                    </PageTransition>
+                    <Footer siteLogoUrl={siteLogoUrl} />
+                    <ScrollToTop />
+                </Providers>
             </body>
         </html>
     );

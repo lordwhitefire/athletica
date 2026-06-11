@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { client, urlFor } from "@/lib/sanity";
 import { getAllProducts } from "@/lib/getProducts";
 import { filterProducts } from "@/lib/filterProducts";
@@ -52,7 +53,7 @@ function resolveHomepageImages(config: Record<string, unknown>): Record<string, 
     return resolved;
 }
 
-export async function getHomepageConfig(): Promise<ApiResult<HomepageConfig>> {
+const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => {
     try {
         const data = await client.fetch(`*[_type == "homepage"][0]`);
         const resolved = resolveHomepageImages(data);
@@ -60,6 +61,10 @@ export async function getHomepageConfig(): Promise<ApiResult<HomepageConfig>> {
     } catch (err) {
         return fromCaughtError(err, "homepage_fetch_failed");
     }
+});
+
+export async function getHomepageConfig(): Promise<ApiResult<HomepageConfig>> {
+    return getCachedHomepage();
 }
 
 export async function getHomepageSections(): Promise<ApiResult<HomepageSection[]>> {

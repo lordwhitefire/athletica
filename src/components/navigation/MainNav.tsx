@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { NavigationData, NavItem } from "@/types/navigation";
 import MegaMenu from "@/components/navigation/MegaMenu";
 
@@ -12,6 +13,7 @@ interface MainNavProps {
 export default function MainNav({ navigation }: MainNavProps) {
     const [activeItem, setActiveItem] = useState<NavItem | null>(null);
     const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    const pathname = usePathname();
 
     function handleMouseEnter(item: NavItem) {
         if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -36,8 +38,13 @@ export default function MainNav({ navigation }: MainNavProps) {
         <nav className="relative w-full bg-white">
             {/* Full width, items centered */}
             <ul className="w-full flex items-stretch  justify-center flex-wrap">
-                {navigation.map((topLevel) =>
-                    topLevel.children?.map((child) => (
+                    {navigation.map((topLevel) =>
+                    topLevel.children?.map((child) => {
+                        const isActive = !child.disabled && child.href && (
+                            pathname === child.href ||
+                            (child.href !== "/" && pathname.startsWith(child.href))
+                        );
+                        return (
                         <li
                             key={child.id}
                             onMouseEnter={() => handleMouseEnter(child)}
@@ -51,7 +58,10 @@ export default function MainNav({ navigation }: MainNavProps) {
                             ) : (
                                 <Link
                                     href={child.href}
-                                    className={`flex items-center justify-center px-3 py-2.5 text-xs font-bold transition-colors text-center leading-tight border-b-2 w-20 h-full ${activeItem?.id === child.id
+                                    aria-current={isActive ? "page" : undefined}
+                                    aria-expanded={activeItem?.id === child.id}
+                                    aria-controls={child.children?.length ? `mega-menu-${child.id}` : undefined}
+                                    className={`flex items-center justify-center px-3 py-2.5 text-xs font-bold transition-colors text-center leading-tight border-b-2 w-20 h-full ${activeItem?.id === child.id || isActive
                                         ? "text-primary-container border-primary"
                                         : "text-gray-700 border-transparent hover:text-primary-container hover:border-primary-container"
                                         }`}
@@ -61,7 +71,8 @@ export default function MainNav({ navigation }: MainNavProps) {
                                 </Link>
                             )}
                         </li>
-                    ))
+                        );
+                    })
                 )}
             </ul>
 

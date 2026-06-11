@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { Product } from "@/types/product";
 import { useWishlist } from "@/context/WishlistContext";
 import SizePickerModal from "@/components/ui/SizePickerModal";
@@ -20,8 +22,14 @@ export default function ProductCard({ product }: ProductCardProps) {
 
     return (
         <>
-            <div
+            <motion.div
+                data-testid="product-card"
                 className="group flex flex-col bg-white transition-all duration-200"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                whileHover={{ y: -4 }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
@@ -30,10 +38,12 @@ export default function ProductCard({ product }: ProductCardProps) {
                     href={`/${product.url_slug}`}
                     className="relative aspect-[4/5] overflow-hidden bg-surface-container"
                 >
-                    <img
+                    <Image
                         src={(isHovered ? hoverImage : product.main_image) || ""}
                         alt={product.model}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 768px) 50vw, 25vw"
                     />
 
                     {/* Wishlist heart */}
@@ -107,7 +117,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                         </div>
                     </Link>
                 </div>
-            </div>
+            </motion.div>
 
             <SizePickerModal
                 product={product}

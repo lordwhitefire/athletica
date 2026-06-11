@@ -26,9 +26,9 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                     const isLast = index === items.length - 1;
                     return (
                         <li key={index} className="flex items-center gap-1">
-                            <span className="text-gray-300 text-sm">/</span>
+                            <span className="text-gray-300 text-sm" aria-hidden="true">/</span>
                             {isLast || !item.href ? (
-                                <span className="text-sm text-gray-900 font-medium">
+                                <span className="text-sm text-gray-900 font-medium" aria-current="page">
                                     {item.label}
                                 </span>
                             ) : (

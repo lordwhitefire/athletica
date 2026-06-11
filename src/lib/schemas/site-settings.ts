@@ -1,13 +1,13 @@
 import { z } from "zod";
 
 export const siteSettingsSchema = z.object({
-    site_logo_asset: z.string().optional().default(""),
-    brand_name: z.string().optional().default(""),
-    brand_description: z.string().optional().default(""),
-    social_links: z.string().optional().default("[]"),
-    link_columns: z.string().optional().default("[]"),
-    copyright: z.string().optional().default(""),
-    bottom_tags: z.string().optional().default("[]"),
+    site_logo_asset: z.string().default(""),
+    brand_name: z.string().default(""),
+    brand_description: z.string().default(""),
+    social_links: z.string().default("[]"),
+    link_columns: z.string().default("[]"),
+    copyright: z.string().default(""),
+    bottom_tags: z.string().default("[]"),
 });
 
-export type SiteSettingsFormData = z.infer<typeof siteSettingsSchema>;
+export type SiteSettingsFormData = z.output<typeof siteSettingsSchema>;

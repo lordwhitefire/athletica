@@ -20,7 +20,7 @@ export default function MiniCart({ isOpen, onClose }: MiniCartProps) {
     return (
         <div>
             <div className={overlayClass} onClick={onClose} />
-            <div className={drawerClass}>
+            <div id="mini-cart" data-testid="mini-cart" className={drawerClass}>
                 <div className="flex items-center justify-between px-4 py-4 border-b border-surface">
                     <h2 className="text-lg font-bold text-on-surface">
                         Your Cart
@@ -63,7 +63,7 @@ export default function MiniCart({ isOpen, onClose }: MiniCartProps) {
                                 const key = `${item.product.id}-${item.selectedSize}`;
                                 const total = (item.product.price.current * item.quantity).toFixed(2);
                                 return (
-                                    <li key={key} className="flex gap-3">
+                                    <li key={key} data-testid="cart-item" className="flex gap-3">
                                         <div className="w-20 h-20 bg-surface-container rounded overflow-hidden flex-shrink-0">
                                             {item.product.thumbnail ? (
                                                 <Image

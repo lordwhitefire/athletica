@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { Product, ActiveFilters } from "@/types/product";
 import { filterProducts } from "@/lib/filterProducts";
@@ -97,12 +98,14 @@ export default function CategoryPage({
             {(featuredImage || brandLogo) && (
                 <div className="relative w-full h-[300px] md:h-[400px] bg-neutral-900 overflow-hidden">
                     {featuredImage && (
-                        <img src={featuredImage} alt={pageTitle} className="absolute inset-0 w-full h-full object-cover" />
+                        <Image src={featuredImage} alt={pageTitle} fill className="object-cover" priority sizes="100vw" />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 max-w-screen-2xl mx-auto">
                         {brandLogo && (
-                            <img src={brandLogo} alt="" className="w-12 h-12 md:w-16 md:h-16 object-contain mb-4" />
+                            <div className="relative w-12 h-12 md:w-16 md:h-16 mb-4">
+                                <Image src={brandLogo} alt="" fill className="object-contain" sizes="64px" />
+                            </div>
                         )}
                         <h1 className="text-4xl md:text-6xl font-black italic tracking-tighter uppercase font-headline text-white">
                             {pageTitle}
