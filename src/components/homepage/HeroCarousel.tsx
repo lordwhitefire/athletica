@@ -13,10 +13,48 @@ interface HeroCarouselProps {
 
 function SlideContent({ banner, logicalIndex }: { banner: HeroBanner; logicalIndex: number }) {
     return (
-        <Link href={banner.link} className="relative block w-full h-full">
+        <Link href={banner.link} className="relative flex flex-col md:block w-full h-full bg-white md:bg-transparent overflow-hidden group">
             {banner.image ? (
-                <Image src={banner.image} alt={banner.title} fill className="object-cover" priority sizes="100vw" />
+                <>
+                    {/* ── IMAGE REGION ── */}
+                    {/* Locked to 2.44 aspect ratio container as requested via Tailwind class */}
+                    <div className="w-full aspect-[2.44/1] relative flex-none">
+                        <Image src={banner.image} alt={banner.title} fill className="object-cover" priority sizes="100vw" />
+
+                        {/* DESKTOP TEXT OVERLAY (Hidden on mobile < 768px) */}
+                        <div className="absolute inset-0 hidden md:flex flex-col justify-center px-10 lg:px-20 z-10 w-full max-w-[40%] lg:max-w-[30%]">
+                            <h2 className="text-white text-3xl lg:text-5xl font-black mb-3 leading-tight drop-shadow-md">
+                                {banner.title}
+                            </h2>
+                            {banner.subtitle && (
+                                <p className="text-white/90 text-sm lg:text-lg mb-6 drop-shadow shadow-black/50 line-clamp-2">
+                                    {banner.subtitle}
+                                </p>
+                            )}
+                            <span
+                                className="inline-block px-8 py-3 font-bold rounded text-sm text-black self-start shadow-lg transition-transform group-hover:scale-105"
+                                style={{ backgroundColor: banner.accent_color || '#d1fd40' }}
+                            >
+                                {banner.button_text}
+                            </span>
+                        </div>
+                    </div>
+
+                    {/* MOBILE TEXT ZONE (Hidden on md+ 768px+) */}
+                    <div className="md:hidden w-full bg-black flex flex-col justify-center pt-4 items-center text-center px-4">
+                        <h2 className="text-white text-sm sm:text-lg font-black leading-tight mb-1">
+                            {banner.title}
+                        </h2>
+                        {banner.subtitle && (
+                            <p className="text-zinc-400 text-xs sm:text-sm line-clamp-2">
+                                {banner.subtitle}
+                            </p>
+                        )}
+                        {/* No button rendered below 768px - whole `<Link>` is clickable */}
+                    </div>
+                </>
             ) : (
+                /* ── FALLBACK (Untouched) ── */
                 <div className={`w-full h-full bg-gradient-to-br ${banner.gradient} flex items-center justify-center relative overflow-hidden`}>
                     <div className="absolute inset-0 opacity-10 flex items-center justify-center text-9xl select-none">⚽</div>
                     <motion.div
@@ -131,7 +169,7 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
         const b = banners[0];
         return (
             <section role="region" aria-label="Hero banner" className="w-full bg-black">
-                <div className="bg-black max-2xl:overflow-hidden" style={{ height: "clamp(280px, 42vw, 560px)" }}>
+                <div className="bg-black max-2xl:overflow-hidden relative w-full">
                     <div className="relative h-full 2xl:max-w-[1500px] 2xl:mx-auto">
                         <SlideContent banner={b} logicalIndex={0} />
                     </div>
@@ -151,7 +189,7 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
             onKeyDown={handleKeyDown}
             className="w-full bg-black"
         >
-            <div className="bg-black max-2xl:overflow-hidden" style={{ height: "clamp(280px, 42vw, 560px)" }}>
+            <div className="bg-black max-2xl:overflow-hidden relative w-full">
                 <div className="relative h-full 2xl:max-w-[1500px] 2xl:mx-auto">
                     <motion.div
                         className="flex h-full"
@@ -164,8 +202,8 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
                             const key = idx === 0
                                 ? `${b.id}-clone-last`
                                 : idx === N + 1
-                                ? `${b.id}-clone-first`
-                                : b.id;
+                                    ? `${b.id}-clone-first`
+                                    : b.id;
                             return (
                                 <div
                                     key={key}

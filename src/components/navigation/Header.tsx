@@ -151,6 +151,15 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
                         <MainNav navigation={navigation} />
                     </div>
                 </div>
+                {/* ── OFFERS PROMO BAR ── */}
+                <div className="w-full bg-[#d1fd40] px-4 py-2 flex items-center justify-center gap-3 border-t border-zinc-800">
+                    <span className="text-black font-black text-xs md:text-sm tracking-tight uppercase">
+                        Offers on thousands of products
+                    </span>
+                    <span className="bg-black text-[#d1fd40] text-[10px] md:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider cursor-pointer hover:bg-zinc-800 transition-colors">
+                        View More
+                    </span>
+                </div>
             </header>
 
             <MobileNav
