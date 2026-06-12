@@ -51,7 +51,7 @@ export default function MainNav({ navigation }: MainNavProps) {
                                 className="relative"
                             >
                                 {child.disabled || !child.href ? (
-                                    <span className="flex items-center px-4 py-3 whitespace-nowrap text-xs font-bold text-zinc-500 cursor-default">
+                                    <span className="flex items-center px-4 py-3 whitespace-nowrap text-sm font-bold text-zinc-500 cursor-default">
                                         {child.label}
                                     </span>
                                 ) : (
@@ -60,7 +60,7 @@ export default function MainNav({ navigation }: MainNavProps) {
                                         aria-current={isActive ? "page" : undefined}
                                         aria-expanded={activeItem?.id === child.id}
                                         aria-controls={child.children?.length ? `mega-menu-${child.id}` : undefined}
-                                        className={`flex items-center px-4 py-3 whitespace-nowrap text-xs font-bold transition-colors border-b-2 h-full ${activeItem?.id === child.id || isActive
+                                        className={`flex items-center px-4 py-3 whitespace-nowrap text-sm font-bold transition-colors border-b-2 h-full ${activeItem?.id === child.id || isActive
                                             ? "text-primary-container border-primary"
                                             : "text-zinc-300 border-transparent hover:text-primary-container hover:border-primary-container"
                                             }`}
