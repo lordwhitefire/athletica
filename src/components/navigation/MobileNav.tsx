@@ -19,18 +19,18 @@ function L4Item({ l4Item, onClose }: { l4Item: NavItem; onClose: () => void }) {
         (l4Item.href !== "/" && pathname.startsWith(l4Item.href))
     );
     return (
-        <div className="pl-4 mt-2 space-y-2 border-l border-neutral-300">
+        <div className="pl-4 mt-2 space-y-2 border-l border-zinc-700">
             {l4Item.href && !l4Item.disabled ? (
                 <Link
                     href={l4Item.href || "#"}
                     aria-current={isActive ? "page" : undefined}
                     onClick={onClose}
-                    className={`block text-[10px] font-medium uppercase tracking-widest py-1 transition-colors ${isActive ? "text-primary-container" : "text-neutral-500 hover:text-primary-container"}`}
+                    className={`block text-[10px] font-medium uppercase tracking-widest py-1 transition-colors ${isActive ? "text-primary-container" : "text-zinc-400 hover:text-primary-container"}`}
                 >
                     {l4Item.label}
                 </Link>
             ) : (
-                <span className="block text-[10px] font-medium text-neutral-500 uppercase tracking-widest py-1">
+                <span className="block text-[10px] font-medium text-zinc-400 uppercase tracking-widest py-1">
                     {l4Item.label}
                 </span>
             )}
@@ -69,7 +69,7 @@ function L3Item({ l3Item, onClose }: { l3Item: NavItem; onClose: () => void }) {
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         aria-expanded={isOpen}
-                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-neutral-400"}`}
+                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-zinc-500"}`}
                     >
                         <span className="material-symbols-outlined text-xs">expand_more</span>
                     </button>
@@ -104,12 +104,12 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
                         href={l2Item.href || "#"}
                         aria-current={isActive ? "page" : undefined}
                         onClick={onClose}
-                        className={`flex-1 font-semibold text-xs tracking-wider uppercase transition-colors ${isActive || isOpen ? "text-primary-container" : "text-neutral-500 opacity-80 group-hover:text-primary-container group-hover:opacity-100"}`}
+                        className={`flex-1 font-semibold text-xs tracking-wider uppercase transition-colors ${isActive || isOpen ? "text-primary-container" : "text-zinc-400 opacity-80 group-hover:text-primary-container group-hover:opacity-100"}`}
                     >
                         {l2Item.label}
                     </Link>
                 ) : (
-                    <span className="flex-1 font-semibold text-xs tracking-wider uppercase text-neutral-400">
+                    <span className="flex-1 font-semibold text-xs tracking-wider uppercase text-zinc-500">
                         {l2Item.label}
                     </span>
                 )}
@@ -118,7 +118,7 @@ function L2Item({ l2Item, onClose }: { l2Item: NavItem; onClose: () => void }) {
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         aria-expanded={isOpen}
-                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-neutral-400"}`}
+                        className={`p-1 transition-transform ${isOpen ? "rotate-180 text-primary-container" : "text-zinc-500"}`}
                     >
                         <span className="material-symbols-outlined text-sm">expand_more</span>
                     </button>
@@ -157,7 +157,7 @@ function SubMenuPanel({
     }
 
     return (
-        <div className="absolute w-full inset-0 bg-white flex flex-col">
+        <div className="absolute w-full inset-0 bg-zinc-900 flex flex-col">
 
             {/* ── Header ── */}
             <div className="flex justify-between items-center py-8 px-6">
@@ -180,7 +180,7 @@ function SubMenuPanel({
                     href="/shop?collection=elite"
                     aria-current={navActive("/shop?collection=elite") ? "page" : undefined}
                     onClick={onClose}
-                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?collection=elite") ? "text-primary-container" : "text-neutral-700"}`}
+                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?collection=elite") ? "text-primary-container" : "text-zinc-300"}`}
                 >
                     <span className="material-symbols-outlined text-lg">workspace_premium</span>
                     <span>Elite Performance</span>
@@ -217,7 +217,7 @@ function SubMenuPanel({
                     href="/shop?category=training"
                     aria-current={navActive("/shop?category=training") ? "page" : undefined}
                     onClick={onClose}
-                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?category=training") ? "text-primary-container" : "text-neutral-700"}`}
+                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?category=training") ? "text-primary-container" : "text-zinc-300"}`}
                 >
                     <span className="material-symbols-outlined text-lg">fitness_center</span>
                     <span>Training Gear</span>
@@ -228,7 +228,7 @@ function SubMenuPanel({
                     href="/shop?collection=fan"
                     aria-current={navActive("/shop?collection=fan") ? "page" : undefined}
                     onClick={onClose}
-                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?collection=fan") ? "text-primary-container" : "text-neutral-700"}`}
+                    className={`flex items-center gap-3 p-4 font-headline font-medium text-sm tracking-tight uppercase hover:pl-6 transition-all duration-300 cursor-pointer ${navActive("/shop?collection=fan") ? "text-primary-container" : "text-zinc-300"}`}
                 >
                     <span className="material-symbols-outlined text-lg">groups</span>
                     <span>Fan Zone</span>
@@ -236,7 +236,7 @@ function SubMenuPanel({
             </div>
 
             {/* ── Sticky footer ── */}
-            <div className="absolute bottom-0 left-0 w-full p-6 bg-white border-t border-neutral-100 flex gap-4">
+            <div className="absolute bottom-0 left-0 w-full p-6 bg-zinc-900 border-t border-zinc-800 flex gap-4">
                 {isLoggedIn ? (
                     <button
                         onClick={async () => { setSigningOut(true); await logout(); onClose(); }}

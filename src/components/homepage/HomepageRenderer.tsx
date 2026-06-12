@@ -36,7 +36,7 @@ export default function HomepageRenderer({ sectionsWithProducts }: HomepageRende
                     if (section.type === "category_grid") {
                         const s = section as CategoryGridSection;
                         return (
-                            <div key={s.id} className={`w-full py-6 md:py-10 border-b border-gray-100 ${s.bg || ""}`}>
+                            <div key={s.id} className={`w-full py-6 md:py-10 border-b border-zinc-800 ${s.bg || ""}`}>
                                 <div className={MAX_W}>
                                     <CategoryGridSectionComponent
                                         title={s.title}
@@ -54,7 +54,7 @@ export default function HomepageRenderer({ sectionsWithProducts }: HomepageRende
                     if (section.type === "product_carousel") {
                         const s = section as ProductCarouselSection;
                         return (
-                            <div key={s.id} className="w-full py-2 border-b border-gray-100">
+                            <div key={s.id} className="w-full py-2 border-b border-zinc-800">
                                 <div className={MAX_W}>
                                     <ProductCarousel
                                         title={s.title}
@@ -71,7 +71,7 @@ export default function HomepageRenderer({ sectionsWithProducts }: HomepageRende
                     return null;
                 } catch {
                     return (
-                        <div key={section.id || Math.random().toString()} className="w-full py-6 border-b border-gray-100">
+                        <div key={section.id || Math.random().toString()} className="w-full py-6 border-b border-zinc-800">
                             <SectionError message={`Failed to load "${section.title || "section"}"`} />
                         </div>
                     );

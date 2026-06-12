@@ -221,8 +221,8 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                     onClick={handleBuyNow}
                     disabled={!amazonLink}
                     className={`w-full border-2 py-5 font-black uppercase tracking-widest text-sm flex items-center justify-center gap-2 transition-colors ${amazonLink
-                            ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
-                            : "border-surface-container-highest text-zinc-300 cursor-not-allowed"
+                            ? "border-zinc-600 text-zinc-200 hover:bg-zinc-800 hover:text-white"
+                            : "border-surface-container-highest text-zinc-500 cursor-not-allowed"
                         }`}
                 >
                     <span className="material-symbols-outlined text-[18px]">shopping_bag</span>

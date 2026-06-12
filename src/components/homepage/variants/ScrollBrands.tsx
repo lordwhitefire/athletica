@@ -19,7 +19,7 @@ export default function ScrollBrands({ items }: Props) {
             transition={{ duration: 0.5, ease: "easeOut" }}
         >
             <button
-                className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors"
+                className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-zinc-900 shadow-lg items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors"
                 onClick={() => {
                     const el = document.getElementById("scroll-brands-track");
                     if (el) el.scrollBy({ left: -420, behavior: "smooth" });
@@ -28,7 +28,7 @@ export default function ScrollBrands({ items }: Props) {
                 <span className="material-symbols-outlined">chevron_left</span>
             </button>
             <button
-                className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white shadow-lg items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors"
+                className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-zinc-900 shadow-lg items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors"
                 onClick={() => {
                     const el = document.getElementById("scroll-brands-track");
                     if (el) el.scrollBy({ left: 420, behavior: "smooth" });

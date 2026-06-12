@@ -40,7 +40,7 @@ export default async function HomePage() {
                 banners={config.hero_carousel.banners}
                 autoSwitchMs={config.hero_carousel.auto_switch_ms}
             />
-            <div style={{ marginTop: "48px" }}>
+            <div style={{ marginTop: "8px" }}>
                 <HomepageRenderer sectionsWithProducts={sectionsWithProducts} />
             </div>
         </div>

@@ -180,7 +180,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                     {columns.map((col, colIndex) => (
                         <div key={colIndex} className="flex flex-col gap-1" style={{ minWidth: "140px" }}>
                             {/* Column header — the repeating parent label */}
-                            <p className="text-xs font-black uppercase tracking-widest text-gray-500 mb-2 pb-1 border-b border-gray-800">
+                            <p className="text-xs font-black uppercase tracking-widest text-zinc-400 mb-2 pb-1 border-b border-gray-800">
                                 {col.parentHref ? (
                                     <Link href={col.parentHref} onClick={onClose} className="hover:text-primary-container transition-colors">
                                         {col.parentLabel}
@@ -215,14 +215,14 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                     return (
                                         <div key={itemIndex} className="pl-3">
                                             {colItem.disabled || !colItem.href ? (
-                                                <span className="text-sm font-bold text-gray-200 cursor-default">
+                                                <span className="text-sm font-bold text-zinc-200 cursor-default">
                                                     {colItem.label}
                                                 </span>
                                             ) : (
                                                 <Link
                                                     href={colItem.href}
                                                     onClick={onClose}
-                                                    className="text-sm font-bold text-gray-200 hover:text-primary-container transition-colors"
+                                                    className="text-sm font-bold text-zinc-200 hover:text-primary-container transition-colors"
                                                 >
                                                     {colItem.label}
                                                 </Link>
@@ -235,14 +235,14 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                     return (
                                         <div key={itemIndex} className="pl-5">
                                             {colItem.disabled || !colItem.href ? (
-                                                <span className="text-xs text-gray-500 cursor-default">
+                                                <span className="text-xs text-zinc-400 cursor-default">
                                                     {colItem.label}
                                                 </span>
                                             ) : (
                                                 <Link
                                                     href={colItem.href}
                                                     onClick={onClose}
-                                                    className="text-xs text-gray-500 hover:text-primary-container transition-colors"
+                                                    className="text-xs text-zinc-400 hover:text-primary-container transition-colors"
                                                 >
                                                     {colItem.label}
                                                 </Link>
@@ -277,7 +277,7 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                                 <p className="relative z-10 text-xs font-black text-white leading-tight mb-1">
                                     {item.label}
                                 </p>
-                                <p className="relative z-10 text-xs text-gray-400 mb-2">
+                                <p className="relative z-10 text-xs text-zinc-500 mb-2">
                                     Shop the collection
                                 </p>
                                 <span className="relative z-10 text-xs bg-primary text-on-primary px-2 py-1 rounded font-bold">

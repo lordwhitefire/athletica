@@ -113,7 +113,7 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
                                 )}
                                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-200" />
                             </div>
-                            <p className="text-sm font-medium text-gray-700 mt-2 text-center truncate">
+                            <p className="text-sm font-medium text-zinc-300 mt-2 text-center truncate">
                                 {card.title}
                             </p>
                         </Link>
@@ -125,14 +125,14 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
                         <button
                             onClick={prev}
                             aria-label="Previous category"
-                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-8 h-8 bg-zinc-900 border border-zinc-700 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
                         >
                             ‹
                         </button>
                         <button
                             onClick={next}
                             aria-label="Next category"
-                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-8 h-8 bg-white border border-gray-200 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
+                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-8 h-8 bg-zinc-900 border border-zinc-700 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
                         >
                             ›
                         </button>

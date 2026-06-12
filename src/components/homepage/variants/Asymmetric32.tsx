@@ -23,7 +23,7 @@ export default function Asymmetric32({ items }: Props) {
                 {items[0].image && (
                     <Image src={items[0].image} alt={items[0].label} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 50vw" />
                 )}
-                <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-white p-3 md:p-8">
+                <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-zinc-900 p-3 md:p-8">
                     <h3 className="text-xl md:text-4xl font-black italic">{items[0].label}</h3>
                 </div>
             </Link>

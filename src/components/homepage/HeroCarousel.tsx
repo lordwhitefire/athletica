@@ -14,8 +14,8 @@ interface HeroCarouselProps {
 const slideVariants: Variants = {
     enter: (direction: number) => ({
         x: direction > 0 ? "104%" : "-104%",
-        scale: 0.93,
-        opacity: 0.45,
+        scale: 0.97,
+        opacity: 0.6,
     }),
     center: {
         x: "0%",
@@ -24,8 +24,8 @@ const slideVariants: Variants = {
     },
     exit: (direction: number) => ({
         x: direction > 0 ? "-104%" : "104%",
-        scale: 0.93,
-        opacity: 0.45,
+        scale: 0.97,
+        opacity: 0.6,
     }),
 };
 
@@ -97,66 +97,57 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
             onKeyDown={handleKeyDown}
-            className="w-full bg-gray-950 flex justify-center"
+            className="w-full bg-gray-950 relative overflow-hidden"
+            style={{ height: "clamp(280px, 42vw, 560px)" }}
         >
-            <div className="max-w-7xl w-full px-3 md:px-6">
-                <div
-                    className="relative overflow-visible"
-                    style={{ height: "clamp(250px, 40vw, 550px)" }}
+            <AnimatePresence mode="popLayout" custom={direction}>
+                <motion.div
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label={`Slide ${activeIndex + 1} of ${banners.length}`}
+                    key={banner.id}
+                    custom={direction}
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="absolute inset-0 overflow-hidden"
                 >
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <AnimatePresence mode="popLayout" custom={direction}>
-                            <motion.div
-                                role="group"
-                                aria-roledescription="slide"
-                                aria-label={`Slide ${activeIndex + 1} of ${banners.length}`}
-                                key={banner.id}
-                                custom={direction}
-                                variants={slideVariants}
-                                initial="enter"
-                                animate="center"
-                                exit="exit"
-                                transition={{ duration: 0.5, ease: "easeInOut" }}
-                                className="absolute rounded-lg overflow-hidden"
-                                style={{
-                                    width: "100%",
-                                    height: "clamp(220px, 36vw, 500px)",
-                                }}
-                            >
-                                <Link href={banner.link} className="relative block w-full h-full">
-                                    {banner.image ? (
-                                        <Image src={banner.image} alt={banner.title} fill className="object-cover" priority sizes="100vw" />
-                                    ) : (
-                                        <div className={`w-full h-full bg-gradient-to-br ${banner.gradient} flex items-center justify-center relative overflow-hidden`}>
-                                            <div className="absolute inset-0 opacity-10 flex items-center justify-center text-9xl select-none">⚽</div>
-                                            <motion.div className="relative z-10 text-center text-white px-4 md:px-12" variants={textVariants}>
-                                                <motion.p className="text-xs font-bold uppercase tracking-widest mb-2 md:mb-3 opacity-60" variants={childVariants} initial={{ opacity: 0, y: 20 }}>
-                                                    Athletica
-                                                </motion.p>
-                                                <motion.h2 className="text-xl md:text-4xl font-black mb-2 md:mb-3 leading-tight" variants={childVariants} initial={{ opacity: 0, y: 20 }}>
-                                                    {banner.title}
-                                                </motion.h2>
-                                                <motion.p className="text-gray-300 text-xs md:text-base mb-3 md:mb-6 opacity-80 hidden sm:block" variants={childVariants} initial={{ opacity: 0, y: 20 }}>
-                                                    {banner.subtitle}
-                                                </motion.p>
-                                                <motion.span
-                                                    className="inline-block px-4 md:px-8 py-2 md:py-3 font-bold rounded text-xs md:text-sm text-white"
-                                                    style={{ backgroundColor: banner.accent_color }}
-                                                    variants={childVariants}
-                                                    initial={{ opacity: 0, y: 20 }}
-                                                >
-                                                    {banner.button_text}
-                                                </motion.span>
-                                            </motion.div>
-                                        </div>
-                                    )}
-                                </Link>
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
-                </div>
+                    <Link href={banner.link} className="relative block w-full h-full">
+                        {banner.image ? (
+                            <Image src={banner.image} alt={banner.title} fill className="object-cover" priority sizes="100vw" />
+                        ) : (
+                            <div className={`w-full h-full bg-gradient-to-br ${banner.gradient} flex items-center justify-center relative overflow-hidden`}>
+                                <div className="absolute inset-0 opacity-10 flex items-center justify-center text-9xl select-none">⚽</div>
+                                <motion.div className="relative z-10 text-center text-white px-4 md:px-12" variants={textVariants}>
+                                    <motion.p className="text-xs font-bold uppercase tracking-widest mb-2 md:mb-3 opacity-60" variants={childVariants} initial={{ opacity: 0, y: 20 }}>
+                                        Athletica
+                                    </motion.p>
+                                    <motion.h2 className="text-xl md:text-4xl font-black mb-2 md:mb-3 leading-tight" variants={childVariants} initial={{ opacity: 0, y: 20 }}>
+                                        {banner.title}
+                                    </motion.h2>
+                                    <motion.p className="text-gray-300 text-xs md:text-base mb-3 md:mb-6 opacity-80 hidden sm:block" variants={childVariants} initial={{ opacity: 0, y: 20 }}>
+                                        {banner.subtitle}
+                                    </motion.p>
+                                    <motion.span
+                                        className="inline-block px-4 md:px-8 py-2 md:py-3 font-bold rounded text-xs md:text-sm text-white"
+                                        style={{ backgroundColor: banner.accent_color }}
+                                        variants={childVariants}
+                                        initial={{ opacity: 0, y: 20 }}
+                                    >
+                                        {banner.button_text}
+                                    </motion.span>
+                                </motion.div>
+                            </div>
+                        )}
+                    </Link>
+                </motion.div>
+            </AnimatePresence>
 
-                <div className="flex items-center justify-center gap-2 pb-4 h-8">
+            {/* Dot indicators — overlaid inside the banner, bottom-center */}
+            {banners.length > 1 && (
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
                     {banners.map((_, index) => (
                         <button
                             key={index}
@@ -165,14 +156,14 @@ export default function HeroCarousel({ banners, autoSwitchMs }: HeroCarouselProp
                             style={{
                                 width: index === activeIndex ? "24px" : "8px",
                                 height: "8px",
-                                backgroundColor: index === activeIndex ? "var(--color-primary)" : "rgba(255,255,255,0.3)",
+                                backgroundColor: index === activeIndex ? "var(--color-primary)" : "rgba(255,255,255,0.4)",
                             }}
                             aria-current={index === activeIndex ? "true" : undefined}
                             aria-label={`Go to slide ${index + 1}`}
                         />
                     ))}
                 </div>
-            </div>
+            )}
         </section>
     );
 }

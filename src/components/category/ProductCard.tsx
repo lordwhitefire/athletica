@@ -24,7 +24,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <>
             <motion.div
                 data-testid="product-card"
-                className="group flex flex-col bg-white transition-all duration-200"
+                className="group flex flex-col bg-black transition-all duration-200"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -55,7 +55,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                         className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 ${
                             wishlisted
                                 ? "bg-primary text-on-primary"
-                                : "bg-white/80 text-on-surface-variant opacity-0 group-hover:opacity-100"
+                                : "bg-black/80 text-on-surface-variant opacity-0 group-hover:opacity-100"
                         }`}
                         aria-label={wishlisted ? "Remove from wishlist" : "Add to wishlist"}
                     >

@@ -35,42 +35,40 @@ export default function MainNav({ navigation }: MainNavProps) {
     }
 
     return (
-        <nav className="relative w-full bg-white">
-            {/* Full width, items centered */}
-            <ul className="w-full flex items-stretch  justify-center flex-wrap">
-                    {navigation.map((topLevel) =>
+        <nav className="bg-black">
+            <ul className="flex items-stretch flex-nowrap">
+                {navigation.map((topLevel) =>
                     topLevel.children?.map((child) => {
                         const isActive = !child.disabled && child.href && (
                             pathname === child.href ||
                             (child.href !== "/" && pathname.startsWith(child.href))
                         );
                         return (
-                        <li
-                            key={child.id}
-                            onMouseEnter={() => handleMouseEnter(child)}
-                            onMouseLeave={handleMouseLeave}
-                            className="relative"
-                        >
-                            {child.disabled || !child.href ? (
-                                <span className="flex items-center justify-center px-3 py-2.5 text-xs font-bold text-gray-400 cursor-default text-center leading-tight w-20">
-                                    {child.label}
-                                </span>
-                            ) : (
-                                <Link
-                                    href={child.href}
-                                    aria-current={isActive ? "page" : undefined}
-                                    aria-expanded={activeItem?.id === child.id}
-                                    aria-controls={child.children?.length ? `mega-menu-${child.id}` : undefined}
-                                    className={`flex items-center justify-center px-3 py-2.5 text-xs font-bold transition-colors text-center leading-tight border-b-2 w-20 h-full ${activeItem?.id === child.id || isActive
-                                        ? "text-primary-container border-primary"
-                                        : "text-gray-700 border-transparent hover:text-primary-container hover:border-primary-container"
-                                        }`}
-                                    style={{ wordBreak: "break-word" }}
-                                >
-                                    {child.label}
-                                </Link>
-                            )}
-                        </li>
+                            <li
+                                key={child.id}
+                                onMouseEnter={() => handleMouseEnter(child)}
+                                onMouseLeave={handleMouseLeave}
+                                className="relative"
+                            >
+                                {child.disabled || !child.href ? (
+                                    <span className="flex items-center px-4 py-3 whitespace-nowrap text-xs font-bold text-zinc-500 cursor-default">
+                                        {child.label}
+                                    </span>
+                                ) : (
+                                    <Link
+                                        href={child.href}
+                                        aria-current={isActive ? "page" : undefined}
+                                        aria-expanded={activeItem?.id === child.id}
+                                        aria-controls={child.children?.length ? `mega-menu-${child.id}` : undefined}
+                                        className={`flex items-center px-4 py-3 whitespace-nowrap text-xs font-bold transition-colors border-b-2 h-full ${activeItem?.id === child.id || isActive
+                                            ? "text-primary-container border-primary"
+                                            : "text-zinc-300 border-transparent hover:text-primary-container hover:border-primary-container"
+                                            }`}
+                                    >
+                                        {child.label}
+                                    </Link>
+                                )}
+                            </li>
                         );
                     })
                 )}

@@ -54,7 +54,7 @@ export default function ActiveFilters() {
 
     return (
         <div className="flex flex-wrap items-center gap-3 mb-10">
-            <span className="text-xs font-label font-bold uppercase text-neutral-400 mr-2">
+            <span className="text-xs font-label font-bold uppercase text-zinc-400 mr-2">
                 Active Filters:
             </span>
 

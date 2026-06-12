@@ -40,7 +40,7 @@ export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | n
   } = await getFooterData();
 
   return (
-    <footer className="bg-zinc-900 w-full pt-16 pb-8">
+    <footer className="bg-black w-full pt-16 pb-8">
 
       {/* Main grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-screen-2xl mx-auto font-body text-sm tracking-wide">
