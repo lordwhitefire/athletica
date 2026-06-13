@@ -52,7 +52,7 @@ export default function MediaBrowser({ assets }: Props) {
         <div>
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-black uppercase tracking-tight">Media</h1>
-                <label className={`bg-red-600 hover:bg-red-700 text-white text-sm font-bold px-4 py-2 rounded transition-colors cursor-pointer flex items-center gap-1.5 ${uploading ? "opacity-50 pointer-events-none" : ""}`}>
+                <label className={`bg-primary hover:brightness-75 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors cursor-pointer flex items-center gap-1.5 ${uploading ? "opacity-50 pointer-events-none" : ""}`}>
                     <span className="material-symbols-outlined text-[16px]">upload</span>
                     {uploading ? "Uploading..." : "Upload"}
                     <input ref={fileRef} type="file" accept="image/*" onChange={handleUpload} className="hidden" />

@@ -162,7 +162,7 @@ export default function ModelInput({ modelNavTree, value, onChange, onValidChang
                 Model
             </label>
             <div
-                className={`flex flex-wrap gap-1.5 px-3 py-2 bg-neutral-800 border rounded text-sm transition-colors cursor-text ${error ? "border-red-500" : "border-neutral-700 focus-within:border-red-600"
+                className={`flex flex-wrap gap-1.5 px-3 py-2 bg-neutral-800 border rounded text-sm transition-colors cursor-text ${error ? "border-red-500" : "border-neutral-700 focus-within:border-primary"
                     }`}
                 onClick={() => inputRef.current?.focus()}
             >

@@ -20,7 +20,7 @@ export default function AdminError({ error, reset }: ErrorProps) {
             <div className="flex gap-4">
                 <button
                     onClick={reset}
-                    className="px-8 py-3.5 bg-red-600 text-white font-black rounded hover:bg-red-700 transition-colors"
+                    className="px-8 py-3.5 bg-primary text-on-primary font-black rounded hover:brightness-75 transition-colors"
                 >
                     Try Again
                 </button>

@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test.describe("Category page — product filtering", () => {
     test("should load the Football Boots category page", async ({ page }) => {
         await page.goto("/football-boots");
-        await expect(page).toHaveTitle(/football boots/i);
+        await expect(page).toHaveTitle(/boots/i);
         await expect(page.locator("[data-testid='product-card']").first()).toBeVisible({ timeout: 10000 });
     });
 

@@ -10,7 +10,7 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
         <div data-testid="admin-products-page">
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-black uppercase tracking-tight">Products</h1>
-                <Link href="/admin/products/new" data-testid="admin-new-product-link" className="bg-red-600 hover:bg-red-700 text-white text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
+                <Link href="/admin/products/new" data-testid="admin-new-product-link" className="bg-primary hover:brightness-75 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
                     <span className="material-symbols-outlined text-[16px]">add</span>
                     New Product
                 </Link>
@@ -44,7 +44,7 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
                                 <td className="p-3 text-right">
                                     <Link
                                         href={`/admin/products/${p._id}/edit`}
-                                        className="text-red-500 hover:text-red-400 text-xs font-bold uppercase tracking-wider transition-colors"
+                                        className="text-primary hover:text-primary text-xs font-bold uppercase tracking-wider transition-colors"
                                     >
                                         Edit
                                     </Link>

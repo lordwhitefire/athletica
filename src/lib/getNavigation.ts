@@ -47,7 +47,7 @@ function setHierarchicalHref(target: { level: number; label: string; href?: stri
     const segment = getSegment(target.label, target.level);
     const segments = [...ancestorSegments, segment];
     const href = `/en/${segments.join("/")}`;
-    if (target.href !== undefined) {
+    if (target.href == null) {
         (target as Record<string, unknown>).href = href;
     }
     return href;

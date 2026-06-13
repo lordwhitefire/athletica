@@ -97,7 +97,7 @@ export default function AutoSuggest({ value, onChange, fetchSuggestions, label, 
         onKeyDown={handleKeyDown}
         placeholder={placeholder}
         autoComplete="off"
-        className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors"
+        className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors"
       />
       {loading && (
         <div className="absolute right-3 top-8">
@@ -112,7 +112,7 @@ export default function AutoSuggest({ value, onChange, fetchSuggestions, label, 
               type="button"
               onClick={() => selectSuggestion(suggestion)}
               className={`w-full text-left px-3 py-2 text-sm transition-colors ${
-                i === selectedIndex ? "bg-red-600 text-white" : "text-zinc-300 hover:bg-neutral-700"
+                i === selectedIndex ? "bg-primary text-on-primary" : "text-zinc-300 hover:bg-neutral-700"
               }`}
             >
               {suggestion}

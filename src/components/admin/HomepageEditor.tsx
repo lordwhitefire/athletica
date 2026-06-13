@@ -40,6 +40,49 @@ function extractAssetId(value: unknown): string | null {
     return null;
 }
 
+const VARIANT_OPTIONS: Record<string, { value: string; label: string }[]> = {
+    category_grid: [
+        { value: "grid-4-equal", label: "Grid 4 Equal" },
+        { value: "scroll-brands", label: "Scroll Brands" },
+        { value: "grid-tiles-dark", label: "Grid Tiles Dark" },
+        { value: "grid-3-bordered", label: "Grid 3 Bordered" },
+        { value: "scroll-categories", label: "Scroll Categories" },
+        { value: "asymmetric-3-2", label: "Asymmetric 3-2" },
+        { value: "split-1-2", label: "Split 1-2" },
+        { value: "asymmetric-2-split", label: "Asymmetric 2 Split" },
+        { value: "stacked-banners", label: "Stacked Banners" },
+    ],
+    product_carousel: [
+        { value: "default", label: "Default" },
+    ],
+    category_carousel: [
+        { value: "default", label: "Default" },
+    ],
+};
+
+function VariantSelect({ type, value, onChange }: { type: string; value: string; onChange: (v: string) => void }) {
+    const options = VARIANT_OPTIONS[type] || [];
+    if (options.length <= 1) return null;
+    return (
+        <div>
+            <label className="block text-zinc-500 text-xs font-medium mb-0.5">Variant</label>
+            <select value={value} onChange={(e) => onChange(e.target.value)}
+                className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary">
+                {options.map((o) => (<option key={o.value} value={o.value}>{o.label}</option>))}
+            </select>
+        </div>
+    );
+}
+
+function typeLabel(type: string): string {
+    switch (type) {
+        case "category_grid": return "Category Grid";
+        case "product_carousel": return "Product Carousel";
+        case "category_carousel": return "Category Carousel";
+        default: return type;
+    }
+}
+
 interface Props {
     doc: Record<string, unknown> | null;
 }
@@ -68,7 +111,7 @@ export default function HomepageEditor({ doc }: Props) {
                         await addBanner({ id, title: "New Banner", subtitle: "", button_text: "Shop Now", link: "/", gradient: "from-gray-900 via-gray-800 to-gray-900", accent_color: "#ef4444", image: null });
                         router.refresh();
                         setAddingBanner(false);
-                    }} disabled={addingBanner} className="text-sm text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
+                    }} disabled={addingBanner} className="text-sm text-primary hover:text-primary disabled:text-zinc-600 font-medium flex items-center gap-1">
                         <span className="material-symbols-outlined text-[16px]">add</span> {addingBanner ? "Adding..." : "Add Banner"}
                     </button>
                 </div>
@@ -105,7 +148,7 @@ export default function HomepageEditor({ doc }: Props) {
                 <label className="block text-zinc-500 text-xs font-medium mb-0.5">{label}</label>
                 <input type={type} value={value} onChange={(e) => onChange(e.target.value)} step={step}
                     placeholder={placeholder}
-                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600 transition-colors" />
+                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary transition-colors" />
             </div>
         );
     }
@@ -115,7 +158,7 @@ export default function HomepageEditor({ doc }: Props) {
             <div>
                 <label className="block text-zinc-500 text-xs font-medium mb-0.5">{label}</label>
                 <textarea value={value} onChange={(e) => onChange(e.target.value)} rows={2}
-                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600 transition-colors" />
+                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary transition-colors" />
             </div>
         );
     }
@@ -202,7 +245,7 @@ export default function HomepageEditor({ doc }: Props) {
                 </div>
                 <ImageSelector name="banner_image" value={image} onChange={setImage} label="Banner Image" />
                 <div className="flex gap-2 pt-1">
-                    <button onClick={save} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Saving..." : "Save"}</button>
+                        <button onClick={save} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Saving..." : "Save"}</button>
                 </div>
             </div>
         );
@@ -360,7 +403,7 @@ export default function HomepageEditor({ doc }: Props) {
                             <div>
                                 <label className="block text-zinc-500 text-xs font-medium mb-0.5">Sort</label>
                                 <select value={sort} onChange={(e) => setSort(e.target.value)}
-                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary">
                                     <option value="newest">Newest</option>
                                     <option value="price_asc">Price: Low to High</option>
                                     <option value="price_desc">Price: High to Low</option>
@@ -376,7 +419,7 @@ export default function HomepageEditor({ doc }: Props) {
                             <div>
                                 <label className="block text-zinc-500 text-xs font-medium mb-0.5">Traction Filter</label>
                                 <select value={traction} onChange={(e) => setTraction(e.target.value)}
-                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary">
                                     <option value="">Any</option>
                                     {tractionOptions.map(t => <option key={t} value={t}>{t}</option>)}
                                 </select>
@@ -414,7 +457,7 @@ export default function HomepageEditor({ doc }: Props) {
                                 } finally {
                                     setAddingItem(false);
                                 }
-                            }} disabled={addingItem} className="text-xs text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
+                            }} disabled={addingItem} className="text-xs text-primary hover:text-primary disabled:text-zinc-600 font-medium flex items-center gap-1">
                                 <span className="material-symbols-outlined text-[14px]">add</span> {addingItem ? "Adding..." : "Add Item"}
                             </button>
                         </div>
@@ -445,7 +488,7 @@ export default function HomepageEditor({ doc }: Props) {
                                 } finally {
                                     setAddingItem(false);
                                 }
-                            }} disabled={addingItem} className="text-xs text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
+                            }} disabled={addingItem} className="text-xs text-primary hover:text-primary disabled:text-zinc-600 font-medium flex items-center gap-1">
                                 <span className="material-symbols-outlined text-[14px]">add</span> {addingItem ? "Adding..." : "Add Card"}
                             </button>
                         </div>
@@ -453,7 +496,7 @@ export default function HomepageEditor({ doc }: Props) {
                 )}
 
                 <div className="flex gap-2 pt-1">
-                    <button onClick={saveSection} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Saving..." : "Save Section"}</button>
+                    <button onClick={saveSection} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Saving..." : "Save Section"}</button>
                 </div>
             </div>
         );
@@ -520,54 +563,11 @@ export default function HomepageEditor({ doc }: Props) {
                 </div>
                 <ImageSelector name="item_image" value={image} onChange={setImage} label="Item Image" />
                 <div className="flex gap-2 pt-1">
-                    <button onClick={save} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-[10px] font-bold px-3 py-1 rounded transition-colors">{saving ? "Saving..." : "Save Item"}</button>
+                    <button onClick={save} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-[10px] font-bold px-3 py-1 rounded transition-colors">{saving ? "Saving..." : "Save Item"}</button>
                     <button onClick={remove} disabled={deleting} className="text-[10px] bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold px-3 py-1 rounded transition-colors">{deleting ? "Deleting..." : "Delete"}</button>
                 </div>
             </div>
         );
-    }
-
-    const VARIANT_OPTIONS: Record<string, { value: string; label: string }[]> = {
-        category_grid: [
-            { value: "grid-4-equal", label: "Grid 4 Equal" },
-            { value: "scroll-brands", label: "Scroll Brands" },
-            { value: "grid-tiles-dark", label: "Grid Tiles Dark" },
-            { value: "grid-3-bordered", label: "Grid 3 Bordered" },
-            { value: "scroll-categories", label: "Scroll Categories" },
-            { value: "asymmetric-3-2", label: "Asymmetric 3-2" },
-            { value: "split-1-2", label: "Split 1-2" },
-            { value: "asymmetric-2-split", label: "Asymmetric 2 Split" },
-            { value: "stacked-banners", label: "Stacked Banners" },
-        ],
-        product_carousel: [
-            { value: "default", label: "Default" },
-        ],
-        category_carousel: [
-            { value: "default", label: "Default" },
-        ],
-    };
-
-    function VariantSelect({ type, value, onChange }: { type: string; value: string; onChange: (v: string) => void }) {
-        const options = VARIANT_OPTIONS[type] || [];
-        if (options.length <= 1) return null;
-        return (
-            <div>
-                <label className="block text-zinc-500 text-xs font-medium mb-0.5">Variant</label>
-                <select value={value} onChange={(e) => onChange(e.target.value)}
-                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
-                    {options.map((o) => (<option key={o.value} value={o.value}>{o.label}</option>))}
-                </select>
-            </div>
-        );
-    }
-
-    function typeLabel(type: string): string {
-        switch (type) {
-            case "category_grid": return "Category Grid";
-            case "product_carousel": return "Product Carousel";
-            case "category_carousel": return "Category Carousel";
-            default: return type;
-        }
     }
 
     function CardEditor({ sectionIndex, card, cardIndex }: { sectionIndex: number; card: Record<string, unknown>; cardIndex: number }) {
@@ -628,7 +628,7 @@ export default function HomepageEditor({ doc }: Props) {
                 </div>
                 <ImageSelector name="card_image" value={cardImage} onChange={setCardImage} label="Card Image" />
                 <div className="flex gap-2 pt-1">
-                    <button onClick={save} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-[10px] font-bold px-3 py-1 rounded transition-colors">{saving ? "Saving..." : "Save Card"}</button>
+                    <button onClick={save} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-[10px] font-bold px-3 py-1 rounded transition-colors">{saving ? "Saving..." : "Save Card"}</button>
                     <button onClick={remove} disabled={deleting} className="text-[10px] bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold px-3 py-1 rounded transition-colors">{deleting ? "Deleting..." : "Delete Card"}</button>
                 </div>
             </div>
@@ -688,7 +688,7 @@ export default function HomepageEditor({ doc }: Props) {
 
         if (!showForm) {
             return (
-                <button onClick={() => setShowForm(true)} className="text-sm text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
+                <button onClick={() => setShowForm(true)} className="text-sm text-primary hover:text-primary font-medium flex items-center gap-1">
                     <span className="material-symbols-outlined text-[16px]">add</span> Add Section
                 </button>
             );
@@ -699,9 +699,9 @@ export default function HomepageEditor({ doc }: Props) {
                 <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">New Section</span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                        <label className="block text-zinc-500 text-xs font-medium mb-0.5">Type</label>
-                        <select value={newType} onChange={(e) => setNewType(e.target.value as "category_grid" | "product_carousel" | "category_carousel")}
-                            className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                        <label htmlFor="add-section-type" className="block text-zinc-500 text-xs font-medium mb-0.5">Type</label>
+                        <select id="add-section-type" value={newType} onChange={(e) => setNewType(e.target.value as "category_grid" | "product_carousel" | "category_carousel")}
+                            className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary">
                             <option value="category_grid">Category Grid</option>
                             <option value="product_carousel">Product Carousel</option>
                             <option value="category_carousel">Category Carousel</option>
@@ -711,7 +711,7 @@ export default function HomepageEditor({ doc }: Props) {
                     <VariantSelect type={newType} value={newVariant} onChange={setNewVariant} />
                 </div>
                 <div className="flex gap-2">
-                    <button onClick={handleAdd} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Adding..." : "Add"}</button>
+                    <button onClick={handleAdd} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Adding..." : "Add"}</button>
                     <button onClick={() => setShowForm(false)} className="text-xs bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors">Cancel</button>
                 </div>
             </div>

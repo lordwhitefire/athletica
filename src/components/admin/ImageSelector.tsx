@@ -95,11 +95,11 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
                         <input ref={fileRef} type="file" accept="image/*" onChange={handleUpload} className="hidden" />
                     </label>
                     <button type="button" onClick={() => setShowPicker((v) => !v)}
-                        className={`text-[11px] uppercase tracking-wider font-medium px-3 py-1.5 rounded transition-colors ${showPicker ? "bg-red-600 text-white" : "bg-neutral-700 hover:bg-neutral-600 text-white"}`}>
+                        className={`text-[11px] uppercase tracking-wider font-medium px-3 py-1.5 rounded transition-colors ${showPicker ? "bg-primary text-on-primary" : "bg-neutral-700 hover:bg-neutral-600 text-white"}`}>
                         Media Library
                     </button>
                     {value && (
-                        <button type="button" onClick={clearSelection} className="text-[11px] uppercase tracking-wider font-medium bg-neutral-700 hover:bg-red-600 text-white px-3 py-1.5 rounded transition-colors">
+                        <button type="button" onClick={clearSelection} className="text-[11px] uppercase tracking-wider font-medium bg-neutral-700 hover:bg-primary text-white px-3 py-1.5 rounded transition-colors">
                             Clear
                         </button>
                     )}
@@ -127,7 +127,7 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
                                     key={asset._id}
                                     type="button"
                                     onClick={() => selectAsset(asset)}
-                                    className={`aspect-square bg-neutral-800 border-2 rounded overflow-hidden hover:border-red-600/50 transition-colors ${value === asset._id ? "border-red-600" : "border-transparent"}`}
+                                    className={`aspect-square bg-neutral-800 border-2 rounded overflow-hidden hover:border-primary/50 transition-colors ${value === asset._id ? "border-primary" : "border-transparent"}`}
                                     title={asset.originalFilename}
                                 >
                                     <img src={asset.url} alt={asset.originalFilename} className="w-full h-full object-cover" />

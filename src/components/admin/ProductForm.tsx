@@ -272,7 +272,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                                         setBrandRef(v);
                                         setValue("brand_ref", v || "");
                                     }}
-                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors"
+                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors"
                                 >
                                     <option value="">Select brand...</option>
                                     {brandOptions.map(b => (
@@ -327,12 +327,12 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         <div>
                             <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Product ID</label>
                             <input type="text" {...register("id")}
-                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                         </div>
                         <div>
                             <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">URL Slug</label>
                             <input type="text" {...register("url_slug")}
-                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             {errors.url_slug && (
                                 <p className="text-red-500 text-xs mt-1">{errors.url_slug.message}</p>
                             )}
@@ -386,7 +386,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         <div>
                             <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Gender</label>
                             <select {...register("gender")}
-                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors">
+                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors">
                                 <option value="Unisex">Unisex</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -413,13 +413,13 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         <div>
                             <Field label="Current Price" error={errors.price_current?.message}>
                                 <input type="number" step="0.01" {...register("price_current")}
-                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
                         </div>
                         <div>
                             <Field label="Original Price" error={errors.price_original?.message}>
                                 <input type="number" step="0.01" {...register("price_original")}
-                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
                         </div>
                     </div>
@@ -427,20 +427,20 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         <div>
                             <Field label="Discount %" error={errors.discount_percent?.message}>
                                 <input type="number" {...register("discount_percent")}
-                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
                         </div>
                         <div>
                             <Field label="Member Price" error={errors.member_price?.message}>
                                 <input type="number" step="0.01" {...register("member_price")}
-                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
                         </div>
                     </div>
                     <div>
                         <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Currency</label>
                         <select {...register("currency")}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors">
+                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors">
                             <option value="EUR">EUR</option>
                             <option value="USD">USD</option>
                             <option value="GBP">GBP</option>
@@ -455,19 +455,19 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                     <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Description</h2>
                     <Field label="Subtitle" error={errors.desc_subtitle?.message}>
                         <input type="text" {...register("desc_subtitle")}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                     </Field>
                     <Field label="Tagline" error={errors.desc_tagline?.message}>
                         <input type="text" {...register("desc_tagline")}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                     </Field>
                     <Field label="Intro" error={errors.desc_intro?.message}>
                         <textarea {...register("desc_intro")} rows={3}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                     </Field>
                     <Field label="Collection" error={errors.desc_collection?.message}>
                         <input type="text" {...register("desc_collection")}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors" />
+                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                     </Field>
                 </div>
 
@@ -486,7 +486,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                                         setKeyBenefits(updated);
                                         setValue("key_benefits_json", JSON.stringify(updated));
                                     }}
-                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors"
+                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors"
                                 />
                                 <button
                                     type="button"
@@ -550,7 +550,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                 </div>
 
                 <div className="flex gap-3 flex-wrap items-center">
-                    <button type="submit" disabled={isSubmitting || !modelValid} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold px-6 py-2.5 rounded transition-colors">
+                    <button type="submit" disabled={isSubmitting || !modelValid} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary font-bold px-6 py-2.5 rounded transition-colors">
                         {isSubmitting ? "Saving..." : productId ? "Update Product" : "Create Product"}
                     </button>
                     {!modelValid && watch("model") && (

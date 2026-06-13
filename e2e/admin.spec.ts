@@ -36,4 +36,30 @@ test.describe("Admin area — authenticated", () => {
         await page.goto("/admin");
         await expect(page).toHaveURL(/admin\/login/);
     });
+
+    test("should load the homepage editor and display its sections", async ({ adminPage }) => {
+        await adminPage.goto("/admin/homepage");
+        await expect(adminPage.getByRole("heading", { name: /homepage editor/i })).toBeVisible({ timeout: 15000 });
+        await expect(adminPage.getByText("Hero Carousel")).toBeVisible();
+        await expect(adminPage.getByRole("button", { name: /add banner/i })).toBeVisible();
+        await expect(adminPage.getByRole("button", { name: /add section/i })).toBeVisible();
+    });
+
+    test("should open the Add Section form when clicking Add Section", async ({ adminPage }) => {
+        await adminPage.goto("/admin/homepage");
+        await expect(adminPage.getByRole("heading", { name: /homepage editor/i })).toBeVisible({ timeout: 15000 });
+        await adminPage.getByRole("button", { name: /add section/i }).click();
+        await expect(adminPage.getByText("New Section")).toBeVisible();
+        await expect(adminPage.getByRole("combobox", { name: /type/i })).toBeVisible();
+        await expect(adminPage.getByRole("button", { name: /^add$/i })).toBeVisible();
+        await expect(adminPage.getByRole("button", { name: /^cancel$/i })).toBeVisible();
+        await adminPage.getByRole("button", { name: /^cancel$/i }).click();
+        await expect(adminPage.getByText("New Section")).not.toBeVisible();
+    });
+
+    test("should navigate without error (no crash regression)", async ({ adminPage }) => {
+        await adminPage.goto("/admin/homepage");
+        await expect(adminPage.getByRole("heading", { name: /homepage editor/i })).toBeVisible({ timeout: 15000 });
+        await expect(adminPage.getByText("Something went wrong")).not.toBeVisible({ timeout: 5000 });
+    });
 });

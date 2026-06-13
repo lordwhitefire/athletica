@@ -47,8 +47,8 @@ export default function AdminLoginPage() {
 
                 <FormProvider {...methods}>
                     <Form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-                        <Input label="Email" type="email" placeholder="admin@example.com" registration={methods.register("email")} error={errors.email?.message} className="bg-zinc-800 border-zinc-700 text-white focus:border-red-600 placeholder:text-zinc-500" />
-                        <Input label="Password" type="password" registration={methods.register("password")} error={errors.password?.message} className="bg-zinc-800 border-zinc-700 text-white focus:border-red-600" />
+                        <Input label="Email" type="email" placeholder="admin@example.com" registration={methods.register("email")} error={errors.email?.message} className="bg-zinc-800 border-zinc-700 text-white focus:border-primary placeholder:text-zinc-500" />
+                        <Input label="Password" type="password" registration={methods.register("password")} error={errors.password?.message} className="bg-zinc-800 border-zinc-700 text-white focus:border-primary" />
 
                         {errors.root && (
                             <p className="text-red-500 text-sm">{errors.root.message}</p>

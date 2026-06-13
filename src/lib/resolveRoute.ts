@@ -18,6 +18,21 @@ function flattenNavTree(
     const result: NavNode[] = [];
     for (const item of items) {
         result.push({ item, ancestors });
+        if (item.customLinks) {
+            for (const link of item.customLinks) {
+                result.push({ item: link, ancestors: [...ancestors, item] });
+            }
+        }
+        if (item.sizeLinks) {
+            for (const link of item.sizeLinks) {
+                result.push({ item: link, ancestors: [...ancestors, item] });
+            }
+        }
+        if (item.bottomLinks) {
+            for (const link of item.bottomLinks) {
+                result.push({ item: link, ancestors: [...ancestors, item] });
+            }
+        }
         if (item.children && item.children.length > 0) {
             result.push(...flattenNavTree(item.children, [...ancestors, item]));
         }

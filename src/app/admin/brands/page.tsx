@@ -23,7 +23,7 @@ export default async function AdminBrandsPage() {
     <div>
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-black uppercase tracking-tight">Brands</h1>
-        <Link href="/admin/brands/new" className="bg-red-600 hover:bg-red-700 text-white text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
+        <Link href="/admin/brands/new" className="bg-primary hover:brightness-75 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
           <span className="material-symbols-outlined text-[16px]">add</span>
           New Brand
         </Link>
@@ -53,7 +53,7 @@ export default async function AdminBrandsPage() {
                   <td className="p-3 font-medium">{b.name as string}</td>
                   <td className="p-3 text-right">
                     <div className="flex items-center justify-end gap-2">
-                      <Link href={`/admin/brands/${b._id}/edit`} className="text-red-500 hover:text-red-400 text-xs font-bold uppercase tracking-wider transition-colors">
+                      <Link href={`/admin/brands/${b._id}/edit`} className="text-primary hover:text-primary text-xs font-bold uppercase tracking-wider transition-colors">
                         Edit
                       </Link>
                       <DeleteBrandButton id={b._id as string} />

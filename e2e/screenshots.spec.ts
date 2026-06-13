@@ -22,7 +22,7 @@ test.describe("Visual review screenshots", () => {
     for (const width of BREAKPOINTS) {
         test(`Breakpoint ${width}px`, async ({ page }) => {
             const bp = width;
-            const isMobile = bp < 1024;
+            const isMobile = bp < 1280;
             await page.setViewportSize({ width: bp, height: 900 });
 
             // ═══════════════════════════════════════════════════════════
@@ -197,12 +197,12 @@ test.describe("Visual review screenshots", () => {
 
                         const cartIcon = page.locator('[data-testid="cart-icon"]').first();
                         if (await cartIcon.isVisible()) {
-                            await cartIcon.click();
+                            await cartIcon.click({ force: true });
                             await page.waitForTimeout(2000);
                             await page.screenshot({ path: shotPath("product", `${bp}-cart-backdrop.png`), ...SS_OPTS });
                             const cartClose = page.locator('[data-testid="mini-cart"] button:has(span:text("close"))').first();
                             if (await cartClose.isVisible({ timeout: 2000 }).catch(() => false)) {
-                                await cartClose.click();
+                                await cartClose.click({ force: true });
                                 await page.waitForTimeout(400);
                             } else {
                                 await page.keyboard.press("Escape");

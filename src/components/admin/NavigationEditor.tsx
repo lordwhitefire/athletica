@@ -38,7 +38,7 @@ export default function NavigationEditor({ doc }: Props) {
         <div>
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-black uppercase tracking-tight">Navigation</h1>
-                <button onClick={handleSave} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-sm font-bold px-4 py-2 rounded transition-colors">
+                <button onClick={handleSave} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors">
                     {saving ? "Saving..." : "Save Changes"}
                 </button>
             </div>
@@ -55,7 +55,7 @@ export default function NavigationEditor({ doc }: Props) {
                 ))}
                 <button onClick={() => {
                     setNavItems([...navItems, { id: `nav-${Date.now()}`, level: 0, label: "", href: "/", children: [] }]);
-                }} className="text-sm text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
+                }} className="text-sm text-primary hover:text-primary font-medium flex items-center gap-1">
                     <span className="material-symbols-outlined text-[16px]">add</span> Add Top-Level Item
                 </button>
             </div>
@@ -148,12 +148,12 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                 </button>
                 <input value={item.label as string || ""} onChange={(e) => updateField("label", e.target.value)}
                     placeholder="Label"
-                    className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600" />
+                    className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary" />
                 <AutoSuggest value={item.href as string || ""} onChange={(v) => updateField("href", v)}
                     fetchSuggestions={suggestRoutes} label="Href" hideLabel className="flex-1 min-w-0 basis-[100px]" placeholder="/path" />
                 <input value={item.description as string || ""} onChange={(e) => updateField("description", e.target.value)}
                     placeholder="Description (optional)"
-                    className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600 hidden md:block" />
+                    className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary hidden md:block" />
                 <button onClick={remove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-none">
                     <span className="material-symbols-outlined text-[14px]">close</span>
                 </button>
@@ -170,7 +170,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                             ))}
                         </div>
                     )}
-                    <button onClick={addChild} className="text-[10px] text-red-500 hover:text-red-400 font-medium flex items-center gap-0.5">
+                    <button onClick={addChild} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5">
                         <span className="material-symbols-outlined text-[12px]">add</span> Add Sub-Item
                     </button>
 
@@ -183,7 +183,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                             ))}
                         </div>
                     )}
-                    <button onClick={() => addLinkTo("customLinks")} className="text-[10px] text-red-500 hover:text-red-400 font-medium flex items-center gap-0.5 mt-1">
+                    <button onClick={() => addLinkTo("customLinks")} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5 mt-1">
                         <span className="material-symbols-outlined text-[12px]">add</span> Add Custom Link
                     </button>
 
@@ -196,7 +196,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                             ))}
                         </div>
                     )}
-                    <button onClick={() => addLinkTo("sizeLinks")} className="text-[10px] text-red-500 hover:text-red-400 font-medium flex items-center gap-0.5 mt-1">
+                    <button onClick={() => addLinkTo("sizeLinks")} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5 mt-1">
                         <span className="material-symbols-outlined text-[12px]">add</span> Add Size Link
                     </button>
 
@@ -209,7 +209,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                             ))}
                         </div>
                     )}
-                    <button onClick={() => addLinkTo("bottomLinks")} className="text-[10px] text-red-500 hover:text-red-400 font-medium flex items-center gap-0.5 mt-1">
+                    <button onClick={() => addLinkTo("bottomLinks")} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5 mt-1">
                         <span className="material-symbols-outlined text-[12px]">add</span> Add Bottom Link
                     </button>
                 </div>
@@ -227,12 +227,12 @@ function LinkRow({ link, onChange, onRemove }: {
         <div className="flex flex-wrap items-center gap-2 mt-1">
             <input value={link.label as string || ""} onChange={(e) => onChange("label", e.target.value)}
                 placeholder="Label"
-                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600" />
+                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-primary" />
             <AutoSuggest value={link.href as string || ""} onChange={(v) => onChange("href", v)}
                 fetchSuggestions={suggestRoutes} label="Href" hideLabel className="flex-1 min-w-0 basis-[100px]" placeholder="/path" />
             <input value={link.description as string || ""} onChange={(e) => onChange("description", e.target.value)}
                 placeholder="Description"
-                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-red-600 hidden md:block" />
+                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-primary hidden md:block" />
             <button onClick={onRemove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-none">
                 <span className="material-symbols-outlined text-[12px]">close</span>
             </button>

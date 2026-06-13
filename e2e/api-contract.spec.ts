@@ -61,12 +61,9 @@ test.describe("Next.js API routes", () => {
 });
 
 test.describe("Sanity API contract (via running app)", () => {
-    test("should display products fetched from Sanity on the football boots category page", async ({ request }) => {
-        const response = await request.get("/football-boots");
-        expect(response.status()).toBe(200);
-
-        const html = await response.text();
-        expect(html).toMatch(/<article|data-testid="product-card"/);
+    test("should display products fetched from Sanity on the football boots category page", async ({ page }) => {
+        await page.goto("/football-boots");
+        await expect(page.locator("[data-testid='product-card']").first()).toBeVisible({ timeout: 10000 });
     });
 
     test("product detail page should return 200 for a known product slug", async ({ request }) => {

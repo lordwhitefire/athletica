@@ -16,7 +16,7 @@ test.describe("Product detail page", () => {
     });
 
     test("should display at least one product image", async ({ page }) => {
-        await expect(page.locator("img").first()).toBeVisible();
+        await expect(page.locator("main img").first()).toBeVisible();
     });
 
     test("should display size options", async ({ page }) => {

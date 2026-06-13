@@ -55,7 +55,7 @@ export default function AmazonLinksEditor({ doc }: Props) {
                         <span className="material-symbols-outlined text-[16px]">add</span>
                         Add Link
                     </button>
-                    <button onClick={handleSave} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-sm font-bold px-4 py-2 rounded transition-colors">
+                    <button onClick={handleSave} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors">
                         {saving ? "Saving..." : "Save Changes"}
                     </button>
                 </div>
@@ -89,7 +89,7 @@ export default function AmazonLinksEditor({ doc }: Props) {
                                     <input
                                         value={link.url}
                                         onChange={(e) => update(i, "url", e.target.value)}
-                                        className="w-full px-2 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-red-600"
+                                        className="w-full px-2 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary"
                                     />
                                 </td>
                                 <td className="p-2 text-right">

@@ -199,7 +199,7 @@ export default function SiteSettingsForm({ doc, mainCategoryHref }: { doc: Recor
                             <button type="button" onClick={() => removeSocial(i)} className="text-red-500 hover:text-red-400 p-1 text-xs">×</button>
                         </div>
                     ))}
-                    <button type="button" onClick={addSocial} className="text-xs text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
+                    <button type="button" onClick={addSocial} className="text-xs text-primary hover:text-primary font-medium flex items-center gap-1">
                         <span className="material-symbols-outlined text-[14px]">add</span> Add Social Link
                     </button>
                 </Section>
@@ -226,13 +226,13 @@ export default function SiteSettingsForm({ doc, mainCategoryHref }: { doc: Recor
                                 </div>
                             ))}
                             {col.links.length < 4 && (
-                                <button type="button" onClick={() => addColumnLink(ci)} className="text-xs text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
+                                <button type="button" onClick={() => addColumnLink(ci)} className="text-xs text-primary hover:text-primary font-medium flex items-center gap-1">
                                     <span className="material-symbols-outlined text-[14px]">add</span> Add Link
                                 </button>
                             )}
                         </div>
                     ))}
-                    <button type="button" onClick={addColumn} className="text-sm text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
+                    <button type="button" onClick={addColumn} className="text-sm text-primary hover:text-primary font-medium flex items-center gap-1">
                         <span className="material-symbols-outlined text-[16px]">add</span> Add Column
                     </button>
                 </Section>
@@ -251,7 +251,7 @@ export default function SiteSettingsForm({ doc, mainCategoryHref }: { doc: Recor
                                 <button type="button" onClick={() => removeTag(i)} className="text-red-500 hover:text-red-400 p-1 text-xs">×</button>
                             </div>
                         ))}
-                        <button type="button" onClick={addTag} className="text-xs text-red-500 hover:text-red-400 font-medium flex items-center gap-1">
+                        <button type="button" onClick={addTag} className="text-xs text-primary hover:text-primary font-medium flex items-center gap-1">
                             <span className="material-symbols-outlined text-[14px]">add</span> Add Tag
                         </button>
                     </div>
@@ -284,7 +284,7 @@ function CharField({ label, fieldName, max, textarea }: {
     const { register } = useFormContext();
     const charsLeft = max - value.length;
     const isOver = charsLeft < 0;
-    const inputClass = `w-full px-3 py-2 bg-neutral-800 border text-white rounded text-sm focus:outline-none focus:border-red-600 transition-colors ${isOver ? "border-red-600" : "border-neutral-700"}`;
+    const inputClass = `w-full px-3 py-2 bg-neutral-800 border text-white rounded text-sm focus:outline-none focus:border-primary transition-colors ${isOver ? "border-red-600" : "border-neutral-700"}`;
     return (
         <div>
             <div className="flex items-center justify-between mb-1">
