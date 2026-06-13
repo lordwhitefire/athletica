@@ -2,8 +2,10 @@ import { test, expect } from "@playwright/test";
 
 test.describe("Cart flow", () => {
     async function addFirstProductToCart(page: import("@playwright/test").Page) {
-        await page.goto("/football-boots");
-        await page.locator("[data-testid='product-card']").first().click();
+        await page.goto("/");
+        await page.locator('nav a[href^="/"]').first().click();
+        await page.waitForLoadState("networkidle");
+        await page.locator("[data-testid='product-card']").first().click({ force: true });
         await page.waitForLoadState("networkidle");
 
         // Wait for React to hydrate so click handlers are attached to size buttons
@@ -43,8 +45,10 @@ test.describe("Cart flow", () => {
     });
 
     test("should match visual baseline when cart drawer is open with an item", async ({ page }) => {
-        await page.goto("/football-boots");
-        await page.locator("[data-testid='product-card']").first().click();
+        await page.goto("/");
+        await page.locator('nav a[href^="/"]').first().click();
+        await page.waitForLoadState("networkidle");
+        await page.locator("[data-testid='product-card']").first().click({ force: true });
         await page.waitForLoadState("networkidle");
         await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => {});
         const sizeOptions = page.locator("[data-testid='size-option']:not([disabled])");

@@ -1,5 +1,5 @@
 import type { Product, ActiveFilters } from "@/types/product";
-import type { NavigationData, NavItem } from "@/types/navigation";
+import type { NavigationData, NavItem, NavLink } from "@/types/navigation";
 
 export type ResolvedRoute =
     | { type: "product"; product: Product }
@@ -7,7 +7,7 @@ export type ResolvedRoute =
     | { type: "not_found" };
 
 interface NavNode {
-    item: NavItem;
+    item: NavItem | NavLink;
     ancestors: NavItem[];
 }
 
@@ -53,17 +53,17 @@ function deriveFilters(node: NavNode): ActiveFilters {
 
     const chain = [...ancestors, item];
 
-    const l1 = chain.find((n) => n.level === 1);
+    const l1 = chain.find((n) => 'level' in n && n.level === 1);
     if (l1) filters.category = [l1.label];
 
-    const l2 = chain.find((n) => n.level === 2);
+    const l2 = chain.find((n) => 'level' in n && n.level === 2);
     if (l2 && !isTractionNode(l2)) {
         filters.brand = [extractBrand(l2.label)];
     }
 
     const modelSegments: string[] = [];
     for (const n of chain) {
-        if (n.level >= 3 && !isTractionNode(n)) {
+        if ('level' in n && n.level >= 3 && !isTractionNode(n)) {
             for (const segment of extractName(n.label).split(" ")) {
                 modelSegments.push(segment);
             }
@@ -87,7 +87,7 @@ function deriveFilters(node: NavNode): ActiveFilters {
 
 const TRACTION_CODES = ["FG", "AG", "MG", "SG", "TF", "IC", "HG"];
 
-function isTractionNode(item: NavItem): boolean {
+function isTractionNode(item: NavItem | NavLink): boolean {
     return TRACTION_CODES.some((code) =>
         new RegExp(`\\b${code}\\b`, "i").test(item.label)
     );
@@ -149,7 +149,7 @@ export function resolveRoute(slugArray: string[], products: Product[], navigatio
             filters: deriveFilters(matchedNode),
             pageTitle: matchedNode.item.label,
             pageSubtitle: deriveSubtitle(matchedNode),
-            featuredImage: matchedNode.item.featuredImage,
+            featuredImage: 'featuredImage' in matchedNode.item ? matchedNode.item.featuredImage : undefined,
         };
     }
 

@@ -15,7 +15,7 @@ test.describe("Category page — product filtering", () => {
 
     test("should filter products when a brand filter is selected", async ({ page }) => {
         await page.goto("/football-boots");
-        await page.getByLabel(/adidas/i).first().click();
+        await page.getByRole('checkbox', { name: /adidas/i }).click();
 
         const productCards = page.locator("[data-testid='product-card']");
         await expect(productCards.first()).toBeVisible({ timeout: 10000 });

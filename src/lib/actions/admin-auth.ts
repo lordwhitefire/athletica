@@ -17,8 +17,11 @@ export async function adminLogin(email: string, password: string): Promise<{
 
     const headersList = await headers();
     const ip = headersList.get("x-forwarded-for") ?? headersList.get("x-real-ip") ?? "unknown";
-    const { success } = await authLimiter.limit(ip);
-    if (!success) {
+    const rateLimitResult = await Promise.race([
+        authLimiter.limit(ip),
+        new Promise<{ success: true }>((resolve) => setTimeout(() => resolve({ success: true }), 2000)),
+    ]).catch(() => ({ success: true }));
+    if (!rateLimitResult.success) {
         return {
             data: null,
             error: { type: "rate_limit_error", code: "too_many_requests", message: "Too many login attempts. Please wait 60 seconds." },

@@ -12,10 +12,10 @@ export interface DashboardCounts {
 export async function getDashboardCounts(): Promise<ApiResult<DashboardCounts>> {
     try {
         const [productCount, brandCount, navCount, linkCount] = await Promise.all([
-            adminClient.fetch(`count(*[_type == "product"])`),
-            adminClient.fetch(`count(*[_type == "brand"])`),
-            adminClient.fetch(`count(*[_type == "navigation"])`),
-            adminClient.fetch(`count(*[_type == "amazonLinks"])`),
+            adminClient.fetch(`count(*[_type == "product"])`, {}, { signal: AbortSignal.timeout(5000) }),
+            adminClient.fetch(`count(*[_type == "brand"])`, {}, { signal: AbortSignal.timeout(5000) }),
+            adminClient.fetch(`count(*[_type == "navigation"])`, {}, { signal: AbortSignal.timeout(5000) }),
+            adminClient.fetch(`count(*[_type == "amazonLinks"])`, {}, { signal: AbortSignal.timeout(5000) }),
         ]);
 
         return ok({ productCount, brandCount, navCount, linkCount });

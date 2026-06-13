@@ -11,6 +11,17 @@ function shotPath(pageName: string, filename: string) {
     return path.join(dir, filename);
 }
 
+async function freezeCarousels(page: import("@playwright/test").Page) {
+    await page.evaluate(() => {
+        document.querySelectorAll(
+            '[class*="carousel"], [class*="slider"], [class*="swiper"]'
+        ).forEach(el => {
+            (el as HTMLElement).style.animation = 'none';
+            (el as HTMLElement).style.transition = 'none';
+        });
+    });
+}
+
 const ADMIN_EMAIL = process.env.ADMIN_TEST_EMAIL ?? "admin@athletica.com";
 const ADMIN_PASSWORD = process.env.ADMIN_TEST_PASSWORD ?? "4603bb34-13ce55de";
 
@@ -39,6 +50,7 @@ test.describe("Visual review screenshots", () => {
             await page.goto("/");
             await page.waitForLoadState("networkidle");
             await page.waitForTimeout(500);
+            await freezeCarousels(page);
             await page.screenshot({ path: shotPath("homepage", `${bp}-loaded.png`), ...SS_OPTS });
 
             // Mobile menu open
