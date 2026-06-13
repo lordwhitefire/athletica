@@ -14,6 +14,10 @@ interface ProductPageProps {
     relatedByBrand: Product[];
     relatedByTraction: Product[];
     breadcrumbs: BreadcrumbItem[];
+    brandCategoryHref: string | null;
+    tractionCategoryHref: string | null;
+    productCategoryHref: string | null;
+    mainCategoryHref: string;
 }
 
 export default function ProductPage({
@@ -23,6 +27,9 @@ export default function ProductPage({
     relatedByBrand,
     relatedByTraction,
     breadcrumbs,
+    brandCategoryHref,
+    tractionCategoryHref,
+    productCategoryHref,
 }: ProductPageProps) {
     return (
         <main className="max-w-[1400px] overflow-x-hidden mx-auto px-6 py-8">
@@ -64,11 +71,7 @@ export default function ProductPage({
                         title={`More ${product.name || product.brand} Boots`}
                         subtitle="Same model line, different options"
                         products={relatedByName}
-                        link={
-                            product.name
-                                ? `/${product.brand.toLowerCase()}-${product.name.toLowerCase()}-football-boots`
-                                : undefined
-                        }
+                        link={productCategoryHref ?? undefined}
                         linkLabel={`View All ${product.name}`}
                     />
                 )}
@@ -78,7 +81,7 @@ export default function ProductPage({
                         title={`More ${product.brand} Products`}
                         subtitle="Other products from this brand"
                         products={relatedByBrand}
-                        link={`/${product.brand.toLowerCase()}-football-boots`}
+                        link={brandCategoryHref ?? undefined}
                         linkLabel={`Explore Brand`}
                     />
                 )}
@@ -88,11 +91,7 @@ export default function ProductPage({
                         title={`More ${product.traction} Boots`}
                         subtitle="Other boots for the same surface"
                         products={relatedByTraction}
-                        link={
-                            product.traction
-                                ? `/${product.traction.toLowerCase()}-football-boots`
-                                : undefined
-                        }
+                        link={tractionCategoryHref ?? undefined}
                         linkLabel={`Shop ${product.traction} Range`}
                     />
                 )}

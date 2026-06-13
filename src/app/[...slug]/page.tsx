@@ -1,7 +1,7 @@
 import { resolveRoute } from "@/lib/resolveRoute";
 import { getAllProducts, getProductsByName, getProductsByBrand, getProductsByTraction } from "@/lib/getProducts";
 import { getAmazonLink } from "@/lib/getAmazonLinks";
-import { getNavigation } from "@/lib/getNavigation";
+import { getNavigation, getMainCategoryHref, getBrandCategoryHref, getProductCategoryHref, getTractionCategoryHref } from "@/lib/getNavigation";
 import { getBrandLogoMap } from "@/lib/actions/brands";
 import { urlFor } from "@/lib/sanity";
 import type { SanityImageSource } from "@sanity/image-url";
@@ -91,9 +91,16 @@ export default async function SlugPage({ params }: SlugPageProps) {
         const relatedByBrand = (byBrandResult.data ?? []).slice(0, 10);
         const relatedByTraction = (byTractionResult.data ?? []).slice(0, 10);
 
+        const [mainCategoryHref, brandCategoryHref, productCategoryHref, tractionCategoryHref] = await Promise.all([
+            getMainCategoryHref(),
+            getBrandCategoryHref(product.brand),
+            product.name ? getProductCategoryHref(product.brand, product.name) : Promise.resolve(null),
+            product.traction ? getTractionCategoryHref(product.traction) : Promise.resolve(null),
+        ]);
+
         const breadcrumbs = [
-            { label: product.category, href: `/${product.category.toLowerCase().replace(/ /g, "-")}` },
-            { label: product.brand, href: `/${product.brand.toLowerCase()}-football-boots` },
+            { label: product.category, href: mainCategoryHref },
+            { label: product.brand, href: brandCategoryHref ?? undefined },
             { label: product.model },
         ];
 
@@ -105,6 +112,10 @@ export default async function SlugPage({ params }: SlugPageProps) {
                 relatedByBrand={relatedByBrand}
                 relatedByTraction={relatedByTraction}
                 breadcrumbs={breadcrumbs}
+                brandCategoryHref={brandCategoryHref}
+                tractionCategoryHref={tractionCategoryHref}
+                productCategoryHref={productCategoryHref}
+                mainCategoryHref={mainCategoryHref}
             />
         );
     }

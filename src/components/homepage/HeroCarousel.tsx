@@ -33,7 +33,7 @@ function SlideContent({ banner, logicalIndex }: { banner: HeroBanner; logicalInd
                             )}
                             <span
                                 className="inline-block px-8 py-3 font-bold rounded text-sm text-black self-start shadow-lg transition-transform group-hover:scale-105"
-                                style={{ backgroundColor: banner.accent_color || '#d1fd40' }}
+                                style={{ backgroundColor: banner.accent_color || 'var(--color-primary)' }}
                             >
                                 {banner.button_text}
                             </span>

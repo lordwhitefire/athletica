@@ -68,36 +68,46 @@
     "sections": [
         {
             "id": "section-1",
-            "type": "category_grid",
+            "type": "category_carousel",
+            "variant": "default",
             "title": "Shop by Surface",
-            "variant": "grid-4-equal",
-            "viewAllHref": "/football-boots",
-            "viewAllLabel": "View All",
-            "bg": "bg-surface",
-            "items": [
+            "autoSwitchMs": 4000,
+            "cards": [
                 {
-                    "label": "FG",
-                    "href": "/fg-football-boots",
-                    "bg": "bg-black",
-                    "image": "/FG.jpg"
+                    "id": "surface-fg",
+                    "title": "FG",
+                    "subtitle": "Firm Ground",
+                    "link": "/fg-football-boots",
+                    "image": null,
+                    "gradient": "from-green-900 to-green-700",
+                    "emoji": "⚡"
                 },
                 {
-                    "label": "AG",
-                    "href": "/ag-football-boots",
-                    "bg": "bg-neutral-800",
-                    "image": "/AG.jpg"
+                    "id": "surface-ag",
+                    "title": "AG",
+                    "subtitle": "Artificial Ground",
+                    "link": "/ag-football-boots",
+                    "image": null,
+                    "gradient": "from-blue-900 to-blue-700",
+                    "emoji": "🏟️"
                 },
                 {
-                    "label": "TF",
-                    "href": "/tf-football-boots",
-                    "bg": "bg-neutral-700",
-                    "image": "/TF.jpg"
+                    "id": "surface-tf",
+                    "title": "TF",
+                    "subtitle": "Turf",
+                    "link": "/tf-football-boots",
+                    "image": null,
+                    "gradient": "from-amber-900 to-amber-700",
+                    "emoji": "🧱"
                 },
                 {
-                    "label": "SG",
-                    "href": "/sg-football-boots",
-                    "bg": "bg-neutral-600",
-                    "image": "/SG.jpg"
+                    "id": "surface-sg",
+                    "title": "SG",
+                    "subtitle": "Soft Ground",
+                    "link": "/sg-football-boots",
+                    "image": null,
+                    "gradient": "from-stone-900 to-stone-700",
+                    "emoji": "🌧️"
                 }
             ]
         },
@@ -107,7 +117,7 @@
             "title": "Top Football Boots",
             "subtitle": "Best sellers this season",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "newest",
             "limit": 10,
@@ -218,7 +228,7 @@
             "title": "Speed Boots",
             "subtitle": "Built for pace",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "newest",
             "limit": 10,
@@ -235,19 +245,19 @@
                 {
                     "label": "Natural Grass",
                     "href": "/fg-football-boots",
-                    "bg": "bg-neutral-100",
+                    "bg": "bg-neutral-800",
                     "accent": "border-l-8 border-primary"
                 },
                 {
                     "label": "Artificial Turf",
                     "href": "/ag-football-boots",
-                    "bg": "bg-neutral-200",
+                    "bg": "bg-neutral-900",
                     "accent": "border-l-8 border-primary"
                 },
                 {
                     "label": "Hard Ground",
                     "href": "/tf-football-boots",
-                    "bg": "bg-neutral-300",
+                    "bg": "bg-black",
                     "accent": "border-l-8 border-primary"
                 }
             ]
@@ -288,22 +298,22 @@
                 {
                     "label": "Gloves",
                     "href": "/goalkeeper-gloves",
-                    "textColor": "text-white"
+                    "textColor": "text-black"
                 },
                 {
                     "label": "Shin Guards",
                     "href": "/shin-guards",
-                    "textColor": "text-white"
+                    "textColor": "text-black"
                 },
                 {
                     "label": "Match Balls",
                     "href": "/football-balls",
-                    "textColor": "text-white"
+                    "textColor": "text-black"
                 },
                 {
                     "label": "Training Vests",
                     "href": "/football-training",
-                    "textColor": "text-white"
+                    "textColor": "text-black"
                 }
             ]
         },
@@ -313,7 +323,7 @@
             "title": "Best Deals Right Now",
             "subtitle": "Biggest discounts this week",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "biggest_discount",
             "limit": 10,
@@ -347,7 +357,7 @@
             "title": "Top Picks This Week",
             "subtitle": "Handpicked for performance",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "biggest_discount",
             "limit": 10,
@@ -360,7 +370,7 @@
             "title": "Budget Boots Under EUR 50",
             "subtitle": "Quality that won't break the bank",
             "filter": {
-                "category": "Football Boots",
+                "category": "Boots",
                 "max_price": 50
             },
             "sort": "price_asc",
@@ -395,7 +405,7 @@
             "title": "New Arrivals",
             "subtitle": "Fresh stock just landed",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "newest",
             "limit": 10,
@@ -408,7 +418,7 @@
             "title": "Goalkeeper Essentials",
             "subtitle": "Everything a keeper needs",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "newest",
             "limit": 10,
@@ -462,7 +472,7 @@
             "title": "Puma & Nike Speed Boots",
             "subtitle": "For players who play fast",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "price_desc",
             "limit": 10,
@@ -498,7 +508,7 @@
             "title": "Premium Boots",
             "subtitle": "Top tier performance, no compromise",
             "filter": {
-                "category": "Football Boots",
+                "category": "Boots",
                 "min_price": 150
             },
             "sort": "price_desc",
@@ -525,7 +535,7 @@
             "title": "Staff Picks",
             "subtitle": "Our team's favourite boots this season",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "biggest_discount",
             "limit": 10,
@@ -538,7 +548,7 @@
             "title": "Under EUR 100",
             "subtitle": "Great boots at a great price",
             "filter": {
-                "category": "Football Boots",
+                "category": "Boots",
                 "max_price": 100
             },
             "sort": "price_asc",
@@ -552,7 +562,7 @@
             "title": "Top Rated Brands",
             "subtitle": "The best from adidas, Nike and Puma",
             "filter": {
-                "category": "Football Boots"
+                "category": "Boots"
             },
             "sort": "newest",
             "limit": 10,

@@ -1,9 +1,8 @@
+import { cache } from "react";
 import { client } from "@/lib/sanity";
 import type { NavigationData, NavItem } from "@/types/navigation";
 import type { ApiResult } from "@/lib/api-types";
 import { ok, fromCaughtError } from "@/lib/api-types";
-
-let cachedNavigation: NavigationData[] | null = null;
 
 const BRAND_PREFIXES = [
     "Adidas", "adidas", "Nike", "Puma", "New Balance",
@@ -88,12 +87,15 @@ function computeHierarchicalHrefs(data: NavigationData[]): NavigationData[] {
     return data;
 }
 
+const fetchNavigationData = cache(async () => {
+    return client.fetch(`*[_type == "navigation"][0]`);
+});
+
 export async function getNavigation(): Promise<ApiResult<NavigationData[]>> {
-    if (cachedNavigation) return ok(cachedNavigation);
     try {
-        const data = await client.fetch(`*[_type == "navigation"][0]`);
-        cachedNavigation = computeHierarchicalHrefs((data?.items ?? []) as NavigationData[]);
-        return ok(cachedNavigation);
+        const data = await fetchNavigationData();
+        const navData = computeHierarchicalHrefs((data?.items ?? []) as NavigationData[]);
+        return ok(navData);
     } catch (err) {
         return fromCaughtError(err, "navigation_fetch_failed");
     }
@@ -224,4 +226,76 @@ export async function getModelNavTree(): Promise<ApiResult<ModelNavNode[]>> {
     }
 
     return ok([...merged.values()]);
+}
+
+const TRACTION_CODES = ["FG", "AG", "MG", "SG", "TF", "IC", "HG"];
+
+function extractBrand(label: string): string {
+    const multiWordBrands = ["New Balance"];
+    for (const brand of multiWordBrands) {
+        if (label.toLowerCase().startsWith(brand.toLowerCase())) return brand;
+    }
+    return label.split(" ")[0];
+}
+
+function findFirstL1(nav: NavigationData[]): NavItem | undefined {
+    for (const group of nav) {
+        for (const child of group.children ?? []) {
+            if (child.level === 1 && !child.disabled) return child;
+        }
+    }
+    return undefined;
+}
+
+function findDescendant(items: NavItem[], predicate: (item: NavItem) => boolean): NavItem | undefined {
+    for (const item of items) {
+        if (predicate(item)) return item;
+        if (item.children) {
+            const found = findDescendant(item.children, predicate);
+            if (found) return found;
+        }
+    }
+    return undefined;
+}
+
+export async function getMainCategoryHref(): Promise<string> {
+    const result = await getNavigation();
+    if (result.error) return "/";
+    const l1 = findFirstL1(result.data);
+    return l1?.href ?? "/";
+}
+
+export async function getBrandCategoryHref(brand: string): Promise<string | null> {
+    const result = await getNavigation();
+    if (result.error) return null;
+    const l1 = findFirstL1(result.data);
+    if (!l1?.children) return null;
+    const found = findDescendant(l1.children, (item) =>
+        item.level >= 2 && extractBrand(item.label).toLowerCase() === brand.toLowerCase()
+    );
+    return found?.href ?? null;
+}
+
+export async function getProductCategoryHref(brand: string, name: string): Promise<string | null> {
+    const result = await getNavigation();
+    if (result.error) return null;
+    const l1 = findFirstL1(result.data);
+    if (!l1?.children) return null;
+    const searchLabel = `${brand.toLowerCase()} ${name.toLowerCase()}`;
+    const found = findDescendant(l1.children, (item) =>
+        item.label.toLowerCase().includes(searchLabel)
+    );
+    return found?.href ?? null;
+}
+
+export async function getTractionCategoryHref(traction: string): Promise<string | null> {
+    const result = await getNavigation();
+    if (result.error) return null;
+    const l1 = findFirstL1(result.data);
+    if (!l1?.children) return null;
+    const code = traction.toUpperCase();
+    const found = findDescendant(l1.children, (item) =>
+        new RegExp(`\\b${code}\\b`, "i").test(item.label)
+    );
+    return found?.href ?? null;
 }

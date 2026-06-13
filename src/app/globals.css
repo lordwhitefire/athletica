@@ -14,8 +14,8 @@ body {
 
 @theme {
     /* ── Brand colors ── */
-    --color-primary: #33691e;
-    --color-primary-container: #33691e;
+    --color-primary: #d1fd40;
+    --color-primary-container: #d1fd40;
 
     /* ── Surface colors ── */
     --color-surface: #121212;
@@ -27,17 +27,17 @@ body {
     --color-surface-container-high: #282828;
     --color-surface-container-highest: #323232;
     --color-surface-variant: #2a2a2a;
-    --color-surface-tint: #33691e;
+    --color-surface-tint: #d1fd40;
     --color-background: #000000;
 
     /* ── On colors ── */
-    --color-on-surface: #e4e4e4;
-    --color-on-surface-variant: #c8e870;
-    --color-on-background: #e4e4e4;
-    --color-on-primary: #ffffff;
-    --color-on-primary-container: #ffffff;
-    --color-on-primary-fixed: #1a2000;
-    --color-on-primary-fixed-variant: #4a6000;
+    --color-on-surface: #ffffff;
+    --color-on-surface-variant: #d1fd40;
+    --color-on-background: #ffffff;
+    --color-on-primary: #000000;
+    --color-on-primary-container: #000000;
+    --color-on-primary-fixed: #000000;
+    --color-on-primary-fixed-variant: #000000;
 
     /* ── Secondary colors ── */
     --color-secondary: #b0b0b0;
@@ -66,17 +66,17 @@ body {
     --color-on-error-container: #ffdad6;
 
     /* ── Outline colors ── */
-    --color-outline: #8fa84f;
-    --color-outline-variant: #3b4e1a;
+    --color-outline: #d1fd40;
+    --color-outline-variant: #282828;
 
     /* ── Inverse colors ── */
     --color-inverse-surface: #e4e4e4;
     --color-inverse-on-surface: #121212;
-    --color-inverse-primary: #33691e;
+    --color-inverse-primary: #d1fd40;
 
     /* ── Fixed colors ── */
-    --color-primary-fixed: #e8fca0;
-    --color-primary-fixed-dim: #c5f050;
+    --color-primary-fixed: #d1fd40;
+    --color-primary-fixed-dim: #d1fd40;
 
     /* ── Fonts ── */
     --font-headline: "Lexend", sans-serif;

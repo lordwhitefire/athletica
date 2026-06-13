@@ -8,7 +8,7 @@ function makeProduct(overrides: Partial<Product>): Product {
         url_slug: overrides.url_slug ?? "test-slug",
         model: overrides.model ?? "TestModel",
         name: overrides.name ?? "Test Product",
-        category: overrides.category ?? "Football Boots",
+        category: overrides.category ?? "Boots",
         brand: overrides.brand ?? "Nike",
         traction: overrides.traction ?? null,
         gender: overrides.gender ?? "Men",
@@ -43,8 +43,8 @@ function makeProduct(overrides: Partial<Product>): Product {
     };
 }
 
-const nikeProduct = makeProduct({ id: "1", brand: "Nike", category: "Football Boots", traction: "FG", color: "Red", gender: "Men", price: { current: 80, original: 100, discount_percent: 20, member_price: 75, currency: "GBP" }, sizes: [{ size: "UK 9", available: true, stock: 5 }] });
-const adidasProduct = makeProduct({ id: "2", brand: "Adidas", category: "Football Boots", traction: "AG", color: "Blue", gender: "Women", price: { current: 60, original: 80, discount_percent: 25, member_price: 55, currency: "GBP" }, sizes: [{ size: "UK 7", available: true, stock: 3 }] });
+const nikeProduct = makeProduct({ id: "1", brand: "Nike", category: "Boots", traction: "FG", color: "Red", gender: "Men", price: { current: 80, original: 100, discount_percent: 20, member_price: 75, currency: "GBP" }, sizes: [{ size: "UK 9", available: true, stock: 5 }] });
+const adidasProduct = makeProduct({ id: "2", brand: "Adidas", category: "Boots", traction: "AG", color: "Blue", gender: "Women", price: { current: 60, original: 80, discount_percent: 25, member_price: 55, currency: "GBP" }, sizes: [{ size: "UK 7", available: true, stock: 3 }] });
 const pumaProduct = makeProduct({ id: "3", brand: "Puma", category: "Training Shoes", traction: "TF", color: "White", gender: "Kids", price: { current: 40, original: 50, discount_percent: 20, member_price: 38, currency: "GBP" }, sizes: [{ size: "UK 4", available: false, stock: 0 }] });
 
 const allProducts = [nikeProduct, adidasProduct, pumaProduct];
@@ -91,10 +91,10 @@ describe("filterProducts", () => {
     });
 
     describe("category filter", () => {
-        it("should return only Football Boots when category=['Football Boots']", () => {
-            const result = filterProducts(allProducts, { category: ["Football Boots"] });
+        it("should return only Boots when category=['Boots']", () => {
+            const result = filterProducts(allProducts, { category: ["Boots"] });
             expect(result).toHaveLength(2);
-            result.forEach((p) => expect(p.category).toBe("Football Boots"));
+            result.forEach((p) => expect(p.category).toBe("Boots"));
         });
 
         it("should return Training Shoes products only", () => {
@@ -104,7 +104,7 @@ describe("filterProducts", () => {
         });
 
         it("should be case-insensitive", () => {
-            const result = filterProducts(allProducts, { category: ["football boots"] });
+            const result = filterProducts(allProducts, { category: ["boots"] });
             expect(result).toHaveLength(2);
         });
     });
@@ -208,7 +208,7 @@ describe("filterProducts", () => {
         });
 
         it("should apply category AND gender together", () => {
-            const result = filterProducts(allProducts, { category: ["Football Boots"], gender: ["Women"] });
+            const result = filterProducts(allProducts, { category: ["Boots"], gender: ["Women"] });
             expect(result).toHaveLength(1);
             expect(result[0].brand).toBe("Adidas");
         });
@@ -240,7 +240,7 @@ describe("filterProducts", () => {
         });
 
         it("should apply sort after all filters", () => {
-            const result = filterProducts(allProducts, { category: ["Football Boots"], sort: "price_asc" });
+            const result = filterProducts(allProducts, { category: ["Boots"], sort: "price_asc" });
             expect(result).toHaveLength(2);
             expect(result[0].price.current).toBeLessThanOrEqual(result[1].price.current);
         });

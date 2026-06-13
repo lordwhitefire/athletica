@@ -7,9 +7,10 @@ import ProductCard from "@/components/category/ProductCard";
 interface SearchResultsProps {
     query: string;
     results: Product[];
+    mainCategoryHref: string;
 }
 
-export default function SearchResults({ query, results }: SearchResultsProps) {
+export default function SearchResults({ query, results, mainCategoryHref }: SearchResultsProps) {
     return (
         <main className="bg-surface min-h-screen">
             <div className="max-w-7xl mx-auto px-4 py-10">
@@ -34,7 +35,7 @@ export default function SearchResults({ query, results }: SearchResultsProps) {
                                     Try adjusting your search terms or browse our categories.
                                 </p>
                                 <Link
-                                    href="/football-boots"
+                                    href={mainCategoryHref}
                                     className="px-8 py-3 bg-primary text-on-primary font-black text-xs uppercase tracking-widest rounded hover:bg-primary-container hover:text-on-primary-container transition-colors"
                                 >
                                     Browse Football Boots

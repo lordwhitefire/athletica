@@ -83,7 +83,7 @@ export default function Pagination({
                         key={pageNum}
                         onClick={() => goToPage(pageNum)}
                         className={`w-12 h-12 flex items-center justify-center border text-sm font-bold transition-colors ${isActive
-                                ? "border-primary bg-primary text-white font-black"
+                                ? "border-primary bg-primary text-on-primary font-black"
                                 : "border-surface-container-highest hover:bg-surface-container-low"
                             }`}
                     >

@@ -39,11 +39,24 @@ function resolveHomepageImages(config: Record<string, unknown>): Record<string, 
     if (Array.isArray(resolved.sections)) {
         resolved.sections = (resolved.sections as Record<string, unknown>[]).map((section) => {
             const s = { ...section };
+            if (s.type === "category_carousel" && !s.variant) {
+                s.variant = "default";
+            }
+            if (s.type === "product_carousel" && !s.variant) {
+                s.variant = "default";
+            }
             if (s.type === "category_grid" && Array.isArray(s.items)) {
                 s.items = (s.items as Record<string, unknown>[]).map((item) => {
                     const it = { ...item };
                     it.image = resolveImage(it.image);
                     return it;
+                });
+            }
+            if (s.type === "category_carousel" && Array.isArray(s.cards)) {
+                s.cards = (s.cards as Record<string, unknown>[]).map((card) => {
+                    const c = { ...card };
+                    c.image = resolveImage(c.image);
+                    return c;
                 });
             }
             return s;

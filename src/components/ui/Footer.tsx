@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "@/lib/sanity";
+import { getMainCategoryHref } from "@/lib/getNavigation";
 
 interface SocialLink { label: string; url: string; icon: string }
 interface FooterLink { label: string; href: string }
@@ -33,7 +34,7 @@ export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | n
       { label: "Email", url: "#", icon: "mail" },
     ],
     link_columns = [
-      { title: "Store", links: [{ label: "Football Boots", href: "/football-boots" }] },
+      { title: "Store", links: [{ label: "Football Boots", href: await getMainCategoryHref() }] },
     ],
     copyright = "Athletica Performance. Engineered for Excellence.",
     bottom_tags = ["Fast Global Shipping", "Secure Payments", "Elite Service"],
@@ -49,7 +50,7 @@ export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | n
         <div className="md:col-span-1">
           <Link href="/">
             {siteLogoUrl ? (
-              <Image src={siteLogoUrl} alt={brand_name} width={256} height={56} className="w-64 h-auto mb-4" />
+              <Image src={siteLogoUrl} alt={brand_name} width={240} height={100} className="w-[240px] h-[100px] object-cover mb-4" />
             ) : (
               <div className="text-3xl font-black text-white italic font-headline mb-4">
                 {brand_name}
@@ -62,25 +63,25 @@ export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | n
           <div className="flex gap-4">
             {social_links.filter((s) => s.url && s.url !== "#").length > 0
               ? social_links.filter((s) => s.url && s.url !== "#").map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.url}
-                    aria-label={s.label}
-                    className="text-zinc-400 hover:text-white transition-colors"
-                  >
-                    <span className="material-symbols-outlined">{s.icon}</span>
-                  </a>
-                ))
+                <a
+                  key={s.label}
+                  href={s.url}
+                  aria-label={s.label}
+                  className="text-zinc-400 hover:text-white transition-colors"
+                >
+                  <span className="material-symbols-outlined">{s.icon}</span>
+                </a>
+              ))
               : social_links.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.url}
-                    aria-label={s.label}
-                    className="text-zinc-400 hover:text-white transition-colors"
-                  >
-                    <span className="material-symbols-outlined">{s.icon}</span>
-                  </a>
-                ))}
+                <a
+                  key={s.label}
+                  href={s.url}
+                  aria-label={s.label}
+                  className="text-zinc-400 hover:text-white transition-colors"
+                >
+                  <span className="material-symbols-outlined">{s.icon}</span>
+                </a>
+              ))}
           </div>
         </div>
 

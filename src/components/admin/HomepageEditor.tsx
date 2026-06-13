@@ -5,6 +5,7 @@ import {
     updateBanner, addBanner, deleteBanner,
     updateSection, addSection, deleteSection,
     updateSectionItem, addSectionItem, deleteSectionItem,
+    addCarouselCard, updateCarouselCard, deleteCarouselCard,
 } from "@/lib/actions/homepage";
 import { useRouter } from "next/navigation";
 import ImageSelector from "./ImageSelector";
@@ -232,6 +233,15 @@ export default function HomepageEditor({ doc }: Props) {
         const [minPrice, setMinPrice] = useState(String(((section.filter as Record<string, unknown>)?.min_price as number) ?? ""));
         const [maxPrice, setMaxPrice] = useState(String(((section.filter as Record<string, unknown>)?.max_price as number) ?? ""));
         const items = section.items as Record<string, unknown>[] || [];
+        const cards = section.cards as Record<string, unknown>[] || [];
+        const [autoSwitchMs, setAutoSwitchMs] = useState(String(section.autoSwitchMs ?? "4000"));
+
+        // Pre-fill variant for section types that always need one
+        useEffect(() => {
+            if ((type === "product_carousel" || type === "category_carousel") && !variant) {
+                setVariant("default");
+            }
+        }, [type, variant]);
 
         useEffect(() => {
             import("@/lib/actions/homepage").then(m =>
@@ -241,14 +251,13 @@ export default function HomepageEditor({ doc }: Props) {
 
         async function saveSection() {
             setSaving(true);
-            const base: Record<string, unknown> = { id: section.id, title, type: type };
+            const base: Record<string, unknown> = { id: section.id, title, type, variant };
             if (type === "category_grid") {
-                base.variant = variant;
                 base.bg = bg;
                 base.viewAllHref = viewAllHref || undefined;
                 base.viewAllLabel = viewAllLabel || undefined;
                 base.items = items;
-            } else {
+            } else if (type === "product_carousel") {
                 base.subtitle = subtitle || undefined;
                 base.sort = sort;
                 base.limit = parseInt(limit) || 10;
@@ -261,6 +270,9 @@ export default function HomepageEditor({ doc }: Props) {
                 if (traction) (base.filter as Record<string, unknown>).traction = traction;
                 if (minPrice) (base.filter as Record<string, unknown>).min_price = parseFloat(minPrice);
                 if (maxPrice) (base.filter as Record<string, unknown>).max_price = parseFloat(maxPrice);
+            } else if (type === "category_carousel") {
+                base.autoSwitchMs = parseInt(autoSwitchMs) || 4000;
+                base.cards = cards;
             }
             try {
                 const result = await updateSection(index, base);
@@ -301,7 +313,8 @@ export default function HomepageEditor({ doc }: Props) {
                 <div className="bg-neutral-800 rounded p-3 flex items-center justify-between group">
                     <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2">
-                            <span className="bg-zinc-700 text-zinc-400 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">{type === "category_grid" ? "Grid" : "Carousel"}</span>
+                            <span className="bg-zinc-700 text-zinc-400 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">{typeLabel(type)}</span>
+                            <span className="text-[10px] text-zinc-500 font-mono">{variant}</span>
                             <span className="text-sm font-medium text-zinc-200 truncate">{title || "Untitled"}</span>
                         </div>
                         <div className="flex flex-wrap gap-1 mt-1">
@@ -310,6 +323,9 @@ export default function HomepageEditor({ doc }: Props) {
                             ))}
                             {type === "product_carousel" && (
                                 <span className="text-[10px] text-zinc-500">{subtitle} &middot; limit: {String(section.limit ?? "")}</span>
+                            )}
+                            {type === "category_carousel" && (
+                                <span className="text-[10px] text-zinc-500">{String((section.cards as Record<string, unknown>[] | undefined)?.length ?? 0)} cards</span>
                             )}
                         </div>
                     </div>
@@ -324,29 +340,15 @@ export default function HomepageEditor({ doc }: Props) {
         return (
             <div className="bg-neutral-800 rounded p-4 space-y-3">
                 <div className="flex items-center justify-between mb-1">
-                    <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">{type === "category_grid" ? "Category Grid" : "Product Carousel"}</span>
+                    <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">{typeLabel(type)}</span>
                     <button onClick={() => setEditing(false)} className="text-xs bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors">Cancel</button>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <Field label="Title" value={title} onChange={setTitle} />
+                    <VariantSelect type={type} value={variant} onChange={setVariant} />
                     {type === "category_grid" && (
                         <>
-                            <div>
-                                <label className="block text-zinc-500 text-xs font-medium mb-0.5">Variant</label>
-                                <select value={variant} onChange={(e) => setVariant(e.target.value)}
-                                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
-                                    <option value="grid-4-equal">Grid 4 Equal</option>
-                                    <option value="scroll-brands">Scroll Brands</option>
-                                    <option value="grid-tiles-dark">Grid Tiles Dark</option>
-                                    <option value="grid-3-bordered">Grid 3 Bordered</option>
-                                    <option value="scroll-categories">Scroll Categories</option>
-                                    <option value="asymmetric-3-2">Asymmetric 3-2</option>
-                                    <option value="split-1-2">Split 1-2</option>
-                                    <option value="asymmetric-2-split">Asymmetric 2 Split</option>
-                                    <option value="stacked-banners">Stacked Banners</option>
-                                </select>
-                            </div>
                             <Field label="Background" value={bg} onChange={setBg} />
                             <AutoSuggest label="View All Href" value={viewAllHref} onChange={setViewAllHref} fetchSuggestions={suggestRoutes} />
                             <Field label="View All Label" value={viewAllLabel} onChange={setViewAllLabel} />
@@ -383,6 +385,9 @@ export default function HomepageEditor({ doc }: Props) {
                             <Field label="Max Price" value={maxPrice} onChange={setMaxPrice} type="number" />
                         </>
                     )}
+                    {type === "category_carousel" && (
+                        <Field label="Auto Switch (ms)" value={autoSwitchMs} onChange={setAutoSwitchMs} type="number" />
+                    )}
                 </div>
 
                 {type === "category_grid" && (
@@ -411,6 +416,37 @@ export default function HomepageEditor({ doc }: Props) {
                                 }
                             }} disabled={addingItem} className="text-xs text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
                                 <span className="material-symbols-outlined text-[14px]">add</span> {addingItem ? "Adding..." : "Add Item"}
+                            </button>
+                        </div>
+                    </div>
+                )}
+
+                {type === "category_carousel" && (
+                    <div className="border-t border-neutral-700 pt-3 mt-3">
+                        <div className="flex items-center justify-between mb-2">
+                            <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider">Cards ({cards.length})</span>
+                        </div>
+                        <div className="space-y-2">
+                            {cards.map((card, ci) => (
+                                <CardEditor key={ci} sectionIndex={index} card={card} cardIndex={ci} />
+                            ))}
+                            <button onClick={async () => {
+                                setAddingItem(true);
+                                try {
+                                    const result = await addCarouselCard(index, { id: `card-${Date.now()}`, title: "New Card", subtitle: "", link: "/", gradient: "from-gray-900 via-gray-800 to-gray-900", emoji: "⚡", image: null });
+                                    if (result.error) {
+                                        alert(result.error.message);
+                                        return;
+                                    }
+                                    router.refresh();
+                                } catch (err) {
+                                    logger.error(err, "Unexpected error in HomepageEditor");
+                                    alert("Save failed due to an unexpected error.");
+                                } finally {
+                                    setAddingItem(false);
+                                }
+                            }} disabled={addingItem} className="text-xs text-red-500 hover:text-red-400 disabled:text-zinc-600 font-medium flex items-center gap-1">
+                                <span className="material-symbols-outlined text-[14px]">add</span> {addingItem ? "Adding..." : "Add Card"}
                             </button>
                         </div>
                     </div>
@@ -491,12 +527,127 @@ export default function HomepageEditor({ doc }: Props) {
         );
     }
 
+    const VARIANT_OPTIONS: Record<string, { value: string; label: string }[]> = {
+        category_grid: [
+            { value: "grid-4-equal", label: "Grid 4 Equal" },
+            { value: "scroll-brands", label: "Scroll Brands" },
+            { value: "grid-tiles-dark", label: "Grid Tiles Dark" },
+            { value: "grid-3-bordered", label: "Grid 3 Bordered" },
+            { value: "scroll-categories", label: "Scroll Categories" },
+            { value: "asymmetric-3-2", label: "Asymmetric 3-2" },
+            { value: "split-1-2", label: "Split 1-2" },
+            { value: "asymmetric-2-split", label: "Asymmetric 2 Split" },
+            { value: "stacked-banners", label: "Stacked Banners" },
+        ],
+        product_carousel: [
+            { value: "default", label: "Default" },
+        ],
+        category_carousel: [
+            { value: "default", label: "Default" },
+        ],
+    };
+
+    function VariantSelect({ type, value, onChange }: { type: string; value: string; onChange: (v: string) => void }) {
+        const options = VARIANT_OPTIONS[type] || [];
+        if (options.length <= 1) return null;
+        return (
+            <div>
+                <label className="block text-zinc-500 text-xs font-medium mb-0.5">Variant</label>
+                <select value={value} onChange={(e) => onChange(e.target.value)}
+                    className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
+                    {options.map((o) => (<option key={o.value} value={o.value}>{o.label}</option>))}
+                </select>
+            </div>
+        );
+    }
+
+    function typeLabel(type: string): string {
+        switch (type) {
+            case "category_grid": return "Category Grid";
+            case "product_carousel": return "Product Carousel";
+            case "category_carousel": return "Category Carousel";
+            default: return type;
+        }
+    }
+
+    function CardEditor({ sectionIndex, card, cardIndex }: { sectionIndex: number; card: Record<string, unknown>; cardIndex: number }) {
+        const [cardTitle, setCardTitle] = useState(card.title as string || "");
+        const [cardSubtitle, setCardSubtitle] = useState(card.subtitle as string || "");
+        const [cardLink, setCardLink] = useState(card.link as string || "");
+        const [cardGradient, setCardGradient] = useState(card.gradient as string || "");
+        const [cardEmoji, setCardEmoji] = useState(card.emoji as string || "");
+        const [cardImage, setCardImage] = useState<string | null>(extractAssetId(card.image));
+        const [saving, setSaving] = useState(false);
+        const [deleting, setDeleting] = useState(false);
+
+        async function save() {
+            setSaving(true);
+            try {
+                const updated: Record<string, unknown> = { title: cardTitle, subtitle: cardSubtitle, link: cardLink, gradient: cardGradient, emoji: cardEmoji };
+                if (cardImage) updated.image = { _type: "image", asset: { _ref: cardImage, _type: "reference" } };
+                const result = await updateCarouselCard(sectionIndex, cardIndex, updated);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
+                router.refresh();
+            } catch (err) {
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Save failed due to an unexpected error.");
+            } finally {
+                setSaving(false);
+            }
+        }
+
+        async function remove() {
+            if (!confirm(`Delete card "${cardTitle}"?`)) return;
+            setDeleting(true);
+            try {
+                const result = await deleteCarouselCard(sectionIndex, cardIndex);
+                if (result.error) {
+                    alert(result.error.message);
+                    return;
+                }
+                router.refresh();
+            } catch (err) {
+                logger.error(err, "Unexpected error in HomepageEditor");
+                alert("Delete failed due to an unexpected error.");
+            } finally {
+                setDeleting(false);
+            }
+        }
+
+        return (
+            <div className="bg-neutral-750 border border-neutral-700 rounded p-3 space-y-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <Field label="Title" value={cardTitle} onChange={setCardTitle} />
+                    <Field label="Subtitle" value={cardSubtitle} onChange={setCardSubtitle} />
+                    <AutoSuggest label="Link" value={cardLink} onChange={setCardLink} fetchSuggestions={suggestRoutes} />
+                    <Field label="Gradient" value={cardGradient} onChange={setCardGradient} placeholder="from-gray-900 via-gray-800 to-red-900" />
+                    <Field label="Emoji" value={cardEmoji} onChange={setCardEmoji} />
+                </div>
+                <ImageSelector name="card_image" value={cardImage} onChange={setCardImage} label="Card Image" />
+                <div className="flex gap-2 pt-1">
+                    <button onClick={save} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-[10px] font-bold px-3 py-1 rounded transition-colors">{saving ? "Saving..." : "Save Card"}</button>
+                    <button onClick={remove} disabled={deleting} className="text-[10px] bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold px-3 py-1 rounded transition-colors">{deleting ? "Deleting..." : "Delete Card"}</button>
+                </div>
+            </div>
+        );
+    }
+
     function AddSectionForm() {
         const [showForm, setShowForm] = useState(false);
         const [saving, setSaving] = useState(false);
-        const [newType, setNewType] = useState<"category_grid" | "product_carousel">("category_grid");
+        const [newType, setNewType] = useState<"category_grid" | "product_carousel" | "category_carousel">("category_grid");
         const [newTitle, setNewTitle] = useState("");
         const [newVariant, setNewVariant] = useState("grid-4-equal");
+
+        const currentOptions = VARIANT_OPTIONS[newType] || [];
+        useEffect(() => {
+            if (currentOptions.length > 0 && !currentOptions.find((o) => o.value === newVariant)) {
+                setNewVariant(currentOptions[0].value);
+            }
+        }, [newType, currentOptions, newVariant]);
 
         async function handleAdd() {
             if (!newTitle.trim()) return;
@@ -505,15 +656,18 @@ export default function HomepageEditor({ doc }: Props) {
                 id: `section-${Date.now()}`,
                 type: newType,
                 title: newTitle,
+                variant: currentOptions.length === 1 ? currentOptions[0].value : newVariant,
             };
             if (newType === "category_grid") {
-                section.variant = newVariant;
                 section.bg = "bg-surface";
                 section.items = [];
-            } else {
+            } else if (newType === "product_carousel") {
                 section.filter = {};
                 section.sort = "newest";
                 section.limit = 10;
+            } else if (newType === "category_carousel") {
+                section.autoSwitchMs = 4000;
+                section.cards = [];
             }
             try {
                 const result = await addSection(section);
@@ -546,30 +700,15 @@ export default function HomepageEditor({ doc }: Props) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                         <label className="block text-zinc-500 text-xs font-medium mb-0.5">Type</label>
-                        <select value={newType} onChange={(e) => setNewType(e.target.value as "category_grid" | "product_carousel")}
+                        <select value={newType} onChange={(e) => setNewType(e.target.value as "category_grid" | "product_carousel" | "category_carousel")}
                             className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
                             <option value="category_grid">Category Grid</option>
                             <option value="product_carousel">Product Carousel</option>
+                            <option value="category_carousel">Category Carousel</option>
                         </select>
                     </div>
                     <Field label="Title" value={newTitle} onChange={setNewTitle} />
-                    {newType === "category_grid" && (
-                        <div>
-                            <label className="block text-zinc-500 text-xs font-medium mb-0.5">Variant</label>
-                            <select value={newVariant} onChange={(e) => setNewVariant(e.target.value)}
-                                className="w-full px-2.5 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-red-600">
-                                <option value="grid-4-equal">Grid 4 Equal</option>
-                                <option value="scroll-brands">Scroll Brands</option>
-                                <option value="grid-tiles-dark">Grid Tiles Dark</option>
-                                <option value="grid-3-bordered">Grid 3 Bordered</option>
-                                <option value="scroll-categories">Scroll Categories</option>
-                                <option value="asymmetric-3-2">Asymmetric 3-2</option>
-                                <option value="split-1-2">Split 1-2</option>
-                                <option value="asymmetric-2-split">Asymmetric 2 Split</option>
-                                <option value="stacked-banners">Stacked Banners</option>
-                            </select>
-                        </div>
-                    )}
+                    <VariantSelect type={newType} value={newVariant} onChange={setNewVariant} />
                 </div>
                 <div className="flex gap-2">
                     <button onClick={handleAdd} disabled={saving} className="bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white text-xs font-bold px-4 py-1.5 rounded transition-colors">{saving ? "Adding..." : "Add"}</button>

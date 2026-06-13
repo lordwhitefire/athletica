@@ -162,7 +162,7 @@ export default function FilterSidebar({ filterOptions, isOpen, onClose }: Filter
                                     key={size}
                                     onClick={() => toggleFilter("size", size)}
                                     className={`aspect-square flex items-center justify-center text-xs font-bold border transition-colors ${isActive
-                                        ? "border-primary bg-primary text-white"
+                                        ? "border-primary bg-primary text-on-primary"
                                         : "border-surface-container-highest hover:border-primary-container hover:text-primary-container"
                                         }`}
                                 >

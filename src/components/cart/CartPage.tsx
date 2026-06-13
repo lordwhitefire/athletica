@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 
-export default function CartPage() {
+export default function CartPage({ mainCategoryHref }: { mainCategoryHref: string }) {
     const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
     const router = useRouter();
 
@@ -20,7 +20,7 @@ export default function CartPage() {
                 <h1 className="text-2xl font-black text-on-surface mb-2">Your cart is empty</h1>
                 <p className="text-on-surface-variant mb-8">Looks like you haven&apos;t added anything yet.</p>
                 <Link
-                    href="/football-boots"
+                    href={mainCategoryHref}
                     className="px-8 py-3.5 bg-primary text-on-primary font-bold rounded hover:bg-primary-container hover:text-on-primary-container transition-colors"
                 >
                     Shop Football Boots
@@ -161,7 +161,7 @@ export default function CartPage() {
                                 Proceed to Checkout
                             </button>
                             <Link
-                                href="/football-boots"
+                                href={mainCategoryHref}
                                 className="block w-full py-3.5 border border-outline-variant text-on-surface-variant font-bold rounded hover:border-primary-container hover:text-primary-container transition-colors text-center text-sm"
                             >
                                 Continue Shopping

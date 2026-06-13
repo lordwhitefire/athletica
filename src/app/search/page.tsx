@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getAllProducts } from "@/lib/getProducts";
+import { getMainCategoryHref } from "@/lib/getNavigation";
 import SearchResults from "./SearchResults";
 
 export const metadata: Metadata = {
@@ -35,5 +36,6 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
           })
         : [];
 
-    return <SearchResults query={query} results={results} />;
+    const mainCategoryHref = await getMainCategoryHref();
+    return <SearchResults query={query} results={results} mainCategoryHref={mainCategoryHref} />;
 }

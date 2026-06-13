@@ -4,7 +4,7 @@ import { useAuth } from "@/context/AuthContext";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function AccountPage() {
+export default function AccountPage({ mainCategoryHref }: { mainCategoryHref: string }) {
     const { auth, logout } = useAuth();
     const [signingOut, setSigningOut] = useState(false);
 
@@ -61,7 +61,7 @@ export default function AccountPage() {
                 <div className="bg-surface-container-lowest rounded-lg p-6 border border-surface">
                     <h2 className="font-bold text-on-surface text-lg mb-4">Recent Orders</h2>
                     <p className="text-on-surface-variant text-sm">No orders yet. Start shopping to see your order history here.</p>
-                    <Link href="/football-boots" className="inline-block mt-4 px-6 py-2.5 bg-primary text-on-primary font-bold rounded text-sm hover:bg-primary-container hover:text-on-primary-container transition-colors">
+                    <Link href={mainCategoryHref} className="inline-block mt-4 px-6 py-2.5 bg-primary text-on-primary font-bold rounded text-sm hover:bg-primary-container hover:text-on-primary-container transition-colors">
                         Shop Now
                     </Link>
                 </div>

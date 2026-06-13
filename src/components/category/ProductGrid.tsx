@@ -34,7 +34,7 @@ export default function ProductGrid({
                 </p>
                 <Link
                     href="/"
-                    className="px-8 py-3 bg-primary text-white font-black text-xs uppercase tracking-widest hover:bg-on-surface transition-colors"
+                    className="px-8 py-3 bg-primary text-on-primary font-black text-xs uppercase tracking-widest hover:bg-on-surface transition-colors"
                 >
                     Back to Home
                 </Link>

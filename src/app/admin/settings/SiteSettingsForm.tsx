@@ -27,32 +27,6 @@ const DEFAULT_SOCIALS = [
     { label: "Website", url: "#", icon: "public" },
     { label: "Email", url: "#", icon: "mail" },
 ];
-const DEFAULT_LINK_COLUMNS = [
-    {
-        title: "Store",
-        links: [
-            { label: "Football Boots", href: "/football-boots" },
-            { label: "Goalkeeper Gloves", href: "/goalkeeper-gloves" },
-            { label: "Other Products", href: "/other-products" },
-        ],
-    },
-    {
-        title: "Account",
-        links: [
-            { label: "My Account", href: "/account" },
-            { label: "Order Status", href: "/orders" },
-            { label: "Returns", href: "/returns" },
-        ],
-    },
-    {
-        title: "Support",
-        links: [
-            { label: "Privacy Policy", href: "/privacy-policy" },
-            { label: "Terms of Service", href: "/terms" },
-            { label: "Cookie Settings", href: "/cookies" },
-        ],
-    },
-];
 const DEFAULT_COPYRIGHT = "Athletica Performance. Engineered for Excellence.";
 const DEFAULT_TAGS = ["Fast Global Shipping", "Secure Payments", "Elite Service"];
 
@@ -74,10 +48,36 @@ function footerArr<T>(doc: Record<string, unknown> | null, path: string, default
     return Array.isArray(v) ? (v as T[]) : defaultArr;
 }
 
-export default function SiteSettingsForm({ doc }: { doc: Record<string, unknown> | null }) {
+export default function SiteSettingsForm({ doc, mainCategoryHref }: { doc: Record<string, unknown> | null; mainCategoryHref: string }) {
     const router = useRouter();
     const [socialLinks, setSocialLinks] = useState<SocialLink[]>(footerArr<SocialLink>(doc, "social_links", DEFAULT_SOCIALS));
-    const [linkColumns, setLinkColumns] = useState<LinkColumn[]>(footerArr<LinkColumn>(doc, "link_columns", DEFAULT_LINK_COLUMNS));
+    const defaultLinkColumns: LinkColumn[] = [
+        {
+            title: "Store",
+            links: [
+                { label: "Football Boots", href: mainCategoryHref },
+                { label: "Goalkeeper Gloves", href: "/goalkeeper-gloves" },
+                { label: "Other Products", href: "/other-products" },
+            ],
+        },
+        {
+            title: "Account",
+            links: [
+                { label: "My Account", href: "/account" },
+                { label: "Order Status", href: "/orders" },
+                { label: "Returns", href: "/returns" },
+            ],
+        },
+        {
+            title: "Support",
+            links: [
+                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "Terms of Service", href: "/terms" },
+                { label: "Cookie Settings", href: "/cookies" },
+            ],
+        },
+    ];
+    const [linkColumns, setLinkColumns] = useState<LinkColumn[]>(footerArr<LinkColumn>(doc, "link_columns", defaultLinkColumns));
     const [bottomTags, setBottomTags] = useState<string[]>(footerArr<string>(doc, "bottom_tags", DEFAULT_TAGS));
 
     const methods = useForm({

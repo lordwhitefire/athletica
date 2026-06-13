@@ -21,13 +21,7 @@ const sectionItemSchema = z.object({
     link: z.string().optional().default(""),
 });
 
-const sectionSchema = z.object({
-    _key: z.string().optional(),
-    title: z.string().optional().default(""),
-    section_type: z.string().optional().default(""),
-    display_style: z.string().optional().default("grid"),
-    items: z.array(sectionItemSchema).optional().default([]),
-});
+
 
 const heroCarouselSchema = z.object({
     _key: z.string().optional(),
@@ -40,12 +34,11 @@ const heroCarouselSchema = z.object({
 
 export const homepageValidation = {
     banner: bannerSchema,
-    section: sectionSchema,
     sectionItem: sectionItemSchema,
     heroCarousel: heroCarouselSchema,
 };
 
 export type BannerInput = z.infer<typeof bannerSchema>;
-export type SectionInput = z.infer<typeof sectionSchema>;
+
 export type SectionItemInput = z.infer<typeof sectionItemSchema>;
 export type HeroCarouselInput = z.infer<typeof heroCarouselSchema>;

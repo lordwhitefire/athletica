@@ -56,6 +56,8 @@ export interface CategoryGridSection {
     items: CategoryGridItem[];
 }
 
+export type ProductCarouselVariant = "default";
+
 export interface ProductCarouselFilter {
     category?: string;
     brand?: string;
@@ -69,6 +71,7 @@ export interface ProductCarouselSection {
     id: string;
     type: "product_carousel";
     title: string;
+    variant: ProductCarouselVariant;
     subtitle?: string;
     filter: ProductCarouselFilter;
     sort: "newest" | "price_asc" | "price_desc" | "biggest_discount";
@@ -77,7 +80,18 @@ export interface ProductCarouselSection {
     link_label?: string;
 }
 
-export type HomepageSection = CategoryGridSection | ProductCarouselSection;
+export type CategoryCarouselVariant = "default";
+
+export interface CategoryCarouselSection {
+    id: string;
+    type: "category_carousel";
+    title: string;
+    variant: CategoryCarouselVariant;
+    autoSwitchMs: number;
+    cards: CategoryCard[];
+}
+
+export type HomepageSection = CategoryGridSection | ProductCarouselSection | CategoryCarouselSection;
 
 export interface HomepageConfig {
     hero_carousel: HeroCarousel;

@@ -8,7 +8,7 @@ function makeValidFormData(overrides: Record<string, string> = {}): FormData {
     fd.append("url_slug", "nike-mercurial-v16");
     fd.append("model", "Mercurial Vapor 16");
     fd.append("name", "Nike Mercurial Vapor 16 Pro FG");
-    fd.append("category", "Football Boots");
+    fd.append("category", "Boots");
     fd.append("brand_ref", "brand-reference-id");
     fd.append("gender", "Men");
     fd.append("color", "Black/Volt");

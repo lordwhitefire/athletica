@@ -250,7 +250,7 @@ function SubMenuPanel({
                         href="/login"
                         aria-current={navActive("/login") ? "page" : undefined}
                         onClick={onClose}
-                        className={`flex-1 h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform ${navActive("/login") ? "bg-primary text-white" : "bg-surface-container-highest text-on-surface"}`}
+                        className={`flex-1 h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform ${navActive("/login") ? "bg-primary text-on-primary" : "bg-surface-container-highest text-on-surface"}`}
                     >
                         Sign In
                     </Link>
@@ -259,7 +259,7 @@ function SubMenuPanel({
                     href="/shop"
                     aria-current={navActive("/shop") ? "page" : undefined}
                     onClick={onClose}
-                    className={`flex-1 h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform ${navActive("/shop") ? "bg-surface-container-highest text-primary shadow-xl shadow-primary/20" : "bg-primary text-white shadow-xl shadow-primary/20"}`}
+                    className={`flex-1 h-12 text-[10px] font-black uppercase tracking-widest flex items-center justify-center active:scale-95 duration-150 transition-transform ${navActive("/shop") ? "bg-surface-container-highest text-primary shadow-xl shadow-primary/20" : "bg-primary text-on-primary shadow-xl shadow-primary/20"}`}
                 >
                     Shop All
                 </Link>
@@ -352,7 +352,7 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                                 <button
                                     onClick={async () => { setSigningOut(true); await logout(); handleClose(); }}
                                     disabled={signingOut}
-                                    className="w-full py-4 bg-primary text-white font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary disabled:opacity-50 transition-colors text-center"
+                                    className="w-full py-4 bg-primary text-on-primary font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary disabled:opacity-50 transition-colors text-center"
                                 >
                                     {signingOut ? "Signing Out..." : "Sign Out"}
                                 </button>
@@ -371,7 +371,7 @@ export default function MobileNav({ navigation, isOpen, onClose }: MobileNavProp
                                     href="/register"
                                     aria-current={pathname === "/register" ? "page" : undefined}
                                     onClick={handleClose}
-                                    className={`w-full py-4 font-headline font-bold text-xs tracking-widest uppercase text-center transition-colors ${pathname === "/register" ? "bg-primary/50 text-white" : "bg-primary text-white hover:bg-primary"}`}
+                                    className={`w-full py-4 font-headline font-bold text-xs tracking-widest uppercase text-center transition-colors ${pathname === "/register" ? "bg-primary/50 text-black" : "bg-primary text-on-primary hover:bg-primary"}`}
                                 >
                                     Create Account
                                 </Link>

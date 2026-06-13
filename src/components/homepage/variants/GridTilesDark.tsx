@@ -12,7 +12,7 @@ interface Props {
 export default function GridTilesDark({ items }: Props) {
     return (
         <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -20,7 +20,7 @@ export default function GridTilesDark({ items }: Props) {
         >
             {items.map((item) => (
                 <Link key={item.label} href={item.href}>
-                    <div className={`relative aspect-square ${item.bg || "bg-neutral-800"} flex items-center justify-center font-black text-xl md:text-3xl italic hover:bg-primary-container hover:text-on-primary-container cursor-pointer transition-colors group overflow-hidden`}>
+                    <div className={`w-full relative aspect-square max-h-[250px] ${item.bg || "bg-neutral-800"} flex items-center justify-center font-black text-xl md:text-3xl italic hover:bg-primary-container hover:text-on-primary-container cursor-pointer transition-colors group overflow-hidden`}>
                         {item.image && (
                             <Image src={item.image} alt={item.label} fill className="object-cover opacity-40 group-hover:scale-105 transition-transform" sizes="(max-width: 768px) 50vw, 25vw" />
                         )}

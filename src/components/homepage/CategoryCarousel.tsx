@@ -4,57 +4,66 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { CategoryCard } from "@/types/homepage";
+import { CategoryCard, CategoryCarouselVariant } from "@/types/homepage";
 
 interface CategoryCarouselProps {
     cards: CategoryCard[];
     autoSwitchMs: number;
+    variant?: CategoryCarouselVariant;
 }
 
-export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarouselProps) {
+const GAP = 10;
+
+export default function CategoryCarousel({ cards, autoSwitchMs, variant: _variant }: CategoryCarouselProps) {
+    const variant = _variant ?? "default";
     const [activeIndex, setActiveIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
-    const scrollRef = useRef<HTMLDivElement>(null);
+    const [cardsVisible, setCardsVisible] = useState(3);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [containerWidth, setContainerWidth] = useState(0);
+
+    useEffect(() => {
+        function update() {
+            const w = window.innerWidth;
+            if (w < 768) setCardsVisible(1);
+            else if (w < 1024) setCardsVisible(2);
+            else setCardsVisible(3);
+            if (containerRef.current) {
+                setContainerWidth(containerRef.current.offsetWidth);
+            }
+        }
+        update();
+        window.addEventListener("resize", update);
+        return () => window.removeEventListener("resize", update);
+    }, []);
+
+    const cardWidth = containerWidth > 0
+        ? (containerWidth - GAP * (cardsVisible - 1)) / cardsVisible
+        : 0;
+
+    const step = cardWidth + GAP;
+    const maxIndex = Math.max(0, cards.length - cardsVisible);
 
     const next = useCallback(() => {
-        setActiveIndex((prev) => (prev + 1) % cards.length);
-    }, [cards.length]);
+        setActiveIndex((prev) => Math.min(prev + 1, maxIndex));
+    }, [maxIndex]);
 
     const prev = useCallback(() => {
-        setActiveIndex((prev) => (prev - 1 + cards.length) % cards.length);
-    }, [cards.length]);
+        setActiveIndex((prev) => Math.max(prev - 1, 0));
+    }, []);
 
-    const handleScrollKeyDown = useCallback(
-        (e: React.KeyboardEvent<HTMLDivElement>) => {
-            if (!scrollRef.current) return;
-            if (e.key === "ArrowLeft") {
-                scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
-                e.preventDefault();
-            } else if (e.key === "ArrowRight") {
-                scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
-                e.preventDefault();
-            }
-        },
-        [],
-    );
+    const canGoNext = activeIndex < maxIndex;
+    const canGoPrev = activeIndex > 0;
 
     useEffect(() => {
-        if (isPaused || cards.length <= 1) return;
+        if (isPaused || cards.length <= 1 || !canGoNext) return;
         const timer = setInterval(next, autoSwitchMs);
         return () => clearInterval(timer);
-    }, [isPaused, next, autoSwitchMs, cards.length]);
+    }, [isPaused, next, autoSwitchMs, cards.length, canGoNext]);
 
     useEffect(() => {
-        if (!scrollRef.current) return;
-        const card = scrollRef.current.children[activeIndex] as HTMLElement;
-        if (!card) return;
-        const container = scrollRef.current;
-        const cardLeft = card.offsetLeft;
-        const cardWidth = card.offsetWidth;
-        const containerWidth = container.offsetWidth;
-        const scrollTo = cardLeft - containerWidth / 2 + cardWidth / 2;
-        container.scrollTo({ left: scrollTo, behavior: "smooth" });
-    }, [activeIndex]);
+        setActiveIndex((prev) => Math.min(prev, maxIndex));
+    }, [maxIndex]);
 
     if (cards.length === 0) return null;
 
@@ -70,77 +79,79 @@ export default function CategoryCarousel({ cards, autoSwitchMs }: CategoryCarous
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
         >
-            <div className="relative">
-                <div
-                    ref={scrollRef}
-                    className="flex gap-4 overflow-x-auto pb-2"
-                    tabIndex={0}
-                    onKeyDown={handleScrollKeyDown}
-                    aria-label="Scrollable categories"
-                    style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-                >
-                    {cards.map((card, index) => (
-                        <Link
-                            key={card.id}
-                            href={card.link}
-                            className="flex-shrink-0 group"
-                            style={{ width: "495px", height: "250px" }}
-                            onClick={() => setActiveIndex(index)}
-                        >
-                            <div
-                                className={`relative overflow-hidden rounded-lg transition-all duration-300 ${activeIndex === index ? "ring-2 ring-primary" : "opacity-80 hover:opacity-100"}`}
-                                style={{ aspectRatio: "16/9" }}
+            <div className="relative flex items-center">
+                {cards.length > 1 && (
+                    <button
+                        onClick={prev}
+                        disabled={!canGoPrev}
+                        aria-label="Previous category"
+                        className={`absolute left-0 z-10 -translate-x-1/2 w-9 h-9 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center transition-colors text-lg hover:border-primary hover:text-primary ${!canGoPrev ? "opacity-30 cursor-not-allowed" : ""}`}
+                    >
+                        ‹
+                    </button>
+                )}
+
+                <div ref={containerRef} className="overflow-hidden w-full 2xl:max-w-[1536px] 2xl:mx-auto">
+                    <motion.div
+                        className="flex"
+                        style={{ gap: `${GAP}px` }}
+                        animate={{ x: cardWidth > 0 ? -activeIndex * step : 0 }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+                    >
+                        {cards.map((card) => (
+                            <Link
+                                key={card.id}
+                                href={card.link}
+                                className="flex-shrink-0 group"
+                                style={{ width: cardWidth > 0 ? `${cardWidth}px` : `${100 / cardsVisible}%` }}
                             >
-                                {card.image ? (
-                                    <Image
-                                        src={card.image}
-                                        alt={card.title}
-                                        fill
-                                        className="object-cover"
-                                        sizes="(max-width: 768px) 50vw, 25vw"
-                                    />
-                                ) : (
-                                    <div className={`w-full h-full bg-gradient-to-br ${card.gradient} flex flex-col items-center justify-center relative overflow-hidden`}>
-                                        <div className="absolute inset-0 opacity-10 text-white text-9xl flex items-center justify-center">
-                                            {card.emoji}
+                                <div
+                                    className="w-full relative overflow-hidden"
+                                    style={{ aspectRatio: "2.44/1" }}
+                                >
+                                    {card.image ? (
+                                        <Image
+                                            src={card.image}
+                                            alt={card.title}
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                        />
+                                    ) : (
+                                        <div
+                                            className={`w-full h-full bg-gradient-to-br ${card.gradient} flex items-center justify-center relative overflow-hidden`}
+                                        >
+                                            <div className="absolute inset-0 opacity-10 text-white text-7xl flex items-center justify-center select-none">
+                                                {card.emoji}
+                                            </div>
+                                            <div className="relative z-10 text-center text-white">
+                                                <div className="text-3xl mb-1">{card.emoji}</div>
+                                                <h3 className="font-black text-base leading-tight">{card.title}</h3>
+                                                <p className="text-[11px] opacity-75 mt-0.5">{card.subtitle}</p>
+                                            </div>
                                         </div>
-                                        <div className="relative z-10 text-center text-white p-4">
-                                            <div className="text-4xl mb-2">{card.emoji}</div>
-                                            <h3 className="font-black text-lg leading-tight">{card.title}</h3>
-                                            <p className="text-xs opacity-75 mt-1">{card.subtitle}</p>
-                                        </div>
-                                    </div>
-                                )}
-                                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-200" />
-                            </div>
-                            <p className="text-sm font-medium text-zinc-300 mt-2 text-center truncate">
-                                {card.title}
-                            </p>
-                        </Link>
-                    ))}
+                                    )}
+                                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-200" />
+                                </div>
+                                <p className="text-sm font-medium text-zinc-300 mt-2 truncate text-center">
+                                    {card.title}
+                                </p>
+                            </Link>
+                        ))}
+                    </motion.div>
                 </div>
 
-                {cards.length > 3 && (
-                    <>
-                        <button
-                            onClick={prev}
-                            aria-label="Previous category"
-                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-8 h-8 bg-zinc-900 border border-zinc-700 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
-                        >
-                            ‹
-                        </button>
-                        <button
-                            onClick={next}
-                            aria-label="Next category"
-                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-8 h-8 bg-zinc-900 border border-zinc-700 rounded-full shadow flex items-center justify-center hover:border-primary-container hover:text-primary-container transition-colors z-10 text-lg"
-                        >
-                            ›
-                        </button>
-                    </>
+                {cards.length > 1 && (
+                    <button
+                        onClick={next}
+                        disabled={!canGoNext}
+                        aria-label="Next category"
+                        className={`absolute right-0 z-10 translate-x-1/2 w-9 h-9 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center transition-colors text-lg hover:border-primary hover:text-primary ${!canGoNext ? "opacity-30 cursor-not-allowed" : ""}`}
+                    >
+                        ›
+                    </button>
                 )}
             </div>
-
-
         </motion.div>
     );
 }

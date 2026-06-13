@@ -68,8 +68,6 @@ export async function deleteSection(sectionIndex: number): Promise<ApiResult<{ d
 
 export async function addSection(section: Record<string, unknown>): Promise<ApiResult<{ added: true }>> {
     try {
-        const parsed = validateOrFail(homepageValidation.section, section);
-        if ("error" in parsed) return parsed.error;
         const docResult = await getHomepageDoc();
         if (docResult.error) return docResult;
         const docAny = docResult.data as Record<string, unknown>;
@@ -86,8 +84,6 @@ export async function addSection(section: Record<string, unknown>): Promise<ApiR
 
 export async function updateSection(index: number, section: Record<string, unknown>): Promise<ApiResult<{ updated: true }>> {
     try {
-        const parsed = validateOrFail(homepageValidation.section, section);
-        if ("error" in parsed) return parsed.error;
         const docResult = await getHomepageDoc();
         if (docResult.error) return docResult;
         const docAny = docResult.data as Record<string, unknown>;
@@ -238,5 +234,70 @@ export async function deleteSectionItem(sectionIndex: number, itemIndex: number)
         return ok({ deleted: true });
     } catch (err) {
         return fromCaughtError(err, "section_item_delete_failed");
+    }
+}
+
+export async function addCarouselCard(sectionIndex: number, card: Record<string, unknown>): Promise<ApiResult<{ added: true }>> {
+    try {
+        const docResult = await getHomepageDoc();
+        if (docResult.error) return docResult;
+        const docAny = docResult.data as Record<string, unknown>;
+        const sections = (docAny.sections as Record<string, unknown>[] | undefined);
+        if (!sections?.[sectionIndex]) return fail("not_found", "section_not_found", "Section not found.");
+        const updatedSections = [...sections];
+        const section = { ...updatedSections[sectionIndex] as Record<string, unknown> };
+        const cards = [...(section.cards as Record<string, unknown>[] || []), ensureKey(card)];
+        section.cards = cards;
+        updatedSections[sectionIndex] = section;
+        await adminClient.patch(docAny._id as string).set({ sections: updatedSections }).commit();
+        revalidatePath("/admin/homepage");
+        revalidatePath("/");
+        return ok({ added: true });
+    } catch (err) {
+        return fromCaughtError(err, "carousel_card_add_failed");
+    }
+}
+
+export async function updateCarouselCard(sectionIndex: number, cardIndex: number, card: Record<string, unknown>): Promise<ApiResult<{ updated: true }>> {
+    try {
+        const docResult = await getHomepageDoc();
+        if (docResult.error) return docResult;
+        const docAny = docResult.data as Record<string, unknown>;
+        const sections = (docAny.sections as Record<string, unknown>[] | undefined);
+        if (!sections?.[sectionIndex]) return fail("not_found", "section_not_found", "Section not found.");
+        const updatedSections = [...sections];
+        const section = { ...updatedSections[sectionIndex] as Record<string, unknown> };
+        const cards = [...(section.cards as Record<string, unknown>[] || [])];
+        cards[cardIndex] = { ...cards[cardIndex], ...card };
+        section.cards = cards;
+        updatedSections[sectionIndex] = section;
+        await adminClient.patch(docAny._id as string).set({ sections: updatedSections }).commit();
+        revalidatePath("/admin/homepage");
+        revalidatePath("/");
+        return ok({ updated: true });
+    } catch (err) {
+        return fromCaughtError(err, "carousel_card_update_failed");
+    }
+}
+
+export async function deleteCarouselCard(sectionIndex: number, cardIndex: number): Promise<ApiResult<{ deleted: true }>> {
+    try {
+        const docResult = await getHomepageDoc();
+        if (docResult.error) return docResult;
+        const docAny = docResult.data as Record<string, unknown>;
+        const sections = (docAny.sections as Record<string, unknown>[] | undefined);
+        if (!sections?.[sectionIndex]) return fail("not_found", "section_not_found", "Section not found.");
+        const updatedSections = [...sections];
+        const section = { ...updatedSections[sectionIndex] as Record<string, unknown> };
+        const cards = [...(section.cards as Record<string, unknown>[] || [])];
+        cards.splice(cardIndex, 1);
+        section.cards = cards;
+        updatedSections[sectionIndex] = section;
+        await adminClient.patch(docAny._id as string).set({ sections: updatedSections }).commit();
+        revalidatePath("/admin/homepage");
+        revalidatePath("/");
+        return ok({ deleted: true });
+    } catch (err) {
+        return fromCaughtError(err, "carousel_card_delete_failed");
     }
 }

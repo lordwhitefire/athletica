@@ -8,7 +8,7 @@ describe("Sanity MSW handler response contract", () => {
         url_slug: { current: "nike-mercurial-fg" },
         model: "Mercurial Vapor 16",
         brand: { _ref: "brand-nike-ref" },
-        category: "Football Boots",
+        category: "Boots",
         traction: "FG",
         name: "Nike Mercurial Vapor 16 Pro FG",
         gender: "Men",

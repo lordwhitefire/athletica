@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { getMainCategoryHref } from "@/lib/getNavigation";
 import CheckoutForm from "./CheckoutForm";
 
 export const metadata: Metadata = {
     title: "Checkout",
 };
 
-export default function CheckoutPage() {
-    return <CheckoutForm />;
+export default async function CheckoutPage() {
+    const mainCategoryHref = await getMainCategoryHref();
+    return <CheckoutForm mainCategoryHref={mainCategoryHref} />;
 }

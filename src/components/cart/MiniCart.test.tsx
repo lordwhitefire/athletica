@@ -37,7 +37,7 @@ function makeCartItem(overrides: Partial<CartItem> = {}): CartItem {
             url_slug: "nike-mercurial",
             model: "Mercurial",
             name: "Nike Mercurial Vapor 16 FG",
-            category: "Football Boots",
+            category: "Boots",
             brand: "Nike",
             traction: "FG",
             gender: "Men",

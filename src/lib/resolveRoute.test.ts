@@ -9,7 +9,7 @@ function makeProduct(slug: string, overrides: Partial<Product> = {}): Product {
         url_slug: slug,
         model: "Model",
         name: "Product",
-        category: "Football Boots",
+        category: "Boots",
         brand: "Nike",
         traction: "FG",
         gender: "Men",
@@ -73,7 +73,7 @@ describe("resolveRoute", () => {
     describe("when slug matches a navigation href", () => {
         it("should return type='category' with derived filters", () => {
             const nav = makeNavData("Footwear", [
-                makeNavItem("n1", { label: "Football Boots", href: "/football-boots", level: 1, children: [] }),
+                makeNavItem("n1", { label: "Boots", href: "/football-boots", level: 1, children: [] }),
             ]);
             const result = resolveRoute(["football-boots"], [], nav);
             expect(result.type).toBe("category");
@@ -81,18 +81,18 @@ describe("resolveRoute", () => {
 
         it("should set category filter from the L1 nav node label", () => {
             const nav = makeNavData("Footwear", [
-                makeNavItem("n1", { label: "Football Boots", href: "/football-boots", level: 1, children: [] }),
+                makeNavItem("n1", { label: "Boots", href: "/football-boots", level: 1, children: [] }),
             ]);
             const result = resolveRoute(["football-boots"], [], nav);
             if (result.type === "category") {
-                expect(result.filters.category).toContain("Football Boots");
+                expect(result.filters.category).toContain("Boots");
             }
         });
 
         it("should set brand filter from L2 nav node label", () => {
             const nav = makeNavData("Footwear", [
                 makeNavItem("n1", {
-                    id: "n1", label: "Football Boots", href: "/football-boots", level: 1,
+                    id: "n1", label: "Boots", href: "/football-boots", level: 1,
                     children: [
                         makeNavItem("n2", { label: "Nike", href: "/football-boots/nike", level: 2, children: [] }),
                     ],
@@ -106,11 +106,11 @@ describe("resolveRoute", () => {
 
         it("should include the nav node label as pageTitle", () => {
             const nav = makeNavData("Footwear", [
-                makeNavItem("n1", { label: "Football Boots", href: "/football-boots", level: 1, children: [] }),
+                makeNavItem("n1", { label: "Boots", href: "/football-boots", level: 1, children: [] }),
             ]);
             const result = resolveRoute(["football-boots"], [], nav);
             if (result.type === "category") {
-                expect(result.pageTitle).toBe("Football Boots");
+                expect(result.pageTitle).toBe("Boots");
             }
         });
     });
@@ -119,7 +119,7 @@ describe("resolveRoute", () => {
         it("should set traction filter when slug resolves to an FG node", () => {
             const nav = makeNavData("Footwear", [
                 makeNavItem("n1", {
-                    id: "n1", label: "Football Boots", href: "/football-boots", level: 1,
+                    id: "n1", label: "Boots", href: "/football-boots", level: 1,
                     children: [
                         makeNavItem("n2", {
                             id: "n2", label: "Nike", href: "/football-boots/nike", level: 2,
@@ -146,7 +146,7 @@ describe("resolveRoute", () => {
         it("should prefer product match over navigation match if both exist", () => {
             const products = [makeProduct("football-boots")];
             const nav = makeNavData("Footwear", [
-                makeNavItem("n1", { label: "Football Boots", href: "/football-boots", level: 1, children: [] }),
+                makeNavItem("n1", { label: "Boots", href: "/football-boots", level: 1, children: [] }),
             ]);
             const result = resolveRoute(["football-boots"], products, nav);
             expect(result.type).toBe("product");

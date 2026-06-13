@@ -47,7 +47,7 @@ export default function CategoryGridSection({
     return (
         <section className={`px-4 py-8 md:px-12 md:py-20 ${bg}`}>
             <div className="flex justify-between items-end mb-6 md:mb-12">
-                <h2 className="font-headline text-2xl md:text-4xl font-black uppercase italic tracking-tighter">
+                <h2 className={`font-headline text-2xl md:text-4xl font-black uppercase italic tracking-tighter ${bg === "bg-primary" || bg === "bg-primary-container" ? "text-black" : "text-on-surface"}`}>
                     {title}
                 </h2>
                 {viewAllHref && (
