@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { client } from "@/lib/sanity";
-import { getMainCategoryHref } from "@/lib/getNavigation";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
 
 interface SocialLink { label: string; url: string; icon: string }
 interface FooterLink { label: string; href: string }
@@ -34,7 +34,7 @@ export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | n
       { label: "Email", url: "#", icon: "mail" },
     ],
     link_columns = [
-      { title: "Store", links: [{ label: "Football Boots", href: await getMainCategoryHref() }] },
+      { title: "Store", links: [{ label: await getMainCategoryLabel(), href: await getMainCategoryHref() }] },
     ],
     copyright = "Athletica Performance. Engineered for Excellence.",
     bottom_tags = ["Fast Global Shipping", "Secure Payments", "Elite Service"],

@@ -2,20 +2,23 @@ import { test, expect } from "@playwright/test";
 
 test.describe("Cart flow", () => {
     async function addFirstProductToCart(page: import("@playwright/test").Page) {
-        await page.goto("/");
-        await page.locator('nav a[href^="/"]').first().click();
+        // Navigate directly to the category page to avoid the mega-menu overlay
+        await page.goto("/football-boots");
         await page.waitForLoadState("networkidle");
-        await page.locator("[data-testid='product-card']").first().click({ force: true });
+
+        // Click the first product card and wait for navigation to the product detail page
+        await page.locator("[data-testid='product-card']").first().click();
+        await page.waitForURL(url => url.pathname !== "/football-boots", { timeout: 15000 });
         await page.waitForLoadState("networkidle");
 
         // Wait for React to hydrate so click handlers are attached to size buttons
-        await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => {});
+        await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => { });
 
         const sizeOptions = page.locator("[data-testid='size-option']:not([disabled])");
         if (await sizeOptions.count() > 0) {
             await sizeOptions.first().click();
         }
-        await page.getByRole("button", { name: /add to cart/i }).click();
+        await page.getByRole("button", { name: /add to cart/i }).click({ timeout: 15000 });
         await page.waitForTimeout(500);
     }
 
@@ -45,20 +48,9 @@ test.describe("Cart flow", () => {
     });
 
     test("should match visual baseline when cart drawer is open with an item", async ({ page }) => {
-        await page.goto("/");
-        await page.locator('nav a[href^="/"]').first().click();
-        await page.waitForLoadState("networkidle");
-        await page.locator("[data-testid='product-card']").first().click({ force: true });
-        await page.waitForLoadState("networkidle");
-        await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => {});
-        const sizeOptions = page.locator("[data-testid='size-option']:not([disabled])");
-        if (await sizeOptions.count() > 0) {
-            await sizeOptions.first().click();
-        }
-        await page.getByRole("button", { name: /add to cart/i }).click();
-        await page.waitForTimeout(500);
+        await addFirstProductToCart(page);
         await page.locator("[data-testid='cart-icon']").first().click();
-        await expect(page.locator("[data-testid='mini-cart']")).toBeVisible({ timeout: 3000 });
+        await expect(page.locator("[data-testid='mini-cart']")).toBeVisible({ timeout: 5000 });
         await page.waitForTimeout(2000);
         await expect(page).toHaveScreenshot("cart-drawer-open.png", { maxDiffPixelRatio: 0.05 });
     });

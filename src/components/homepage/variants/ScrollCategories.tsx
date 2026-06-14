@@ -20,7 +20,7 @@ export default function ScrollCategories({ items }: Props) {
         >
             {items.map((item) => (
                 <Link key={item.label} href={item.href}>
-                    <div className={`relative min-w-[140px] md:min-w-[200px] aspect-video border-4 ${item.accent || "border-white"} flex items-center justify-center font-bold uppercase cursor-pointer hover:bg-white/10 transition-colors group overflow-hidden`}>
+                    <div className={`relative min-w-[140px] md:min-w-[200px] aspect-video border-4 ${item.accent || "border-black"} flex items-center justify-center font-bold uppercase cursor-pointer hover:bg-white/10 transition-colors group overflow-hidden`}>
                         {item.image && (
                             <Image src={item.image} alt={item.label} fill className="object-cover opacity-30 group-hover:scale-105 transition-transform" sizes="150px" />
                         )}

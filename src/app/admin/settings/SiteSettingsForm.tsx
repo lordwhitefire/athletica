@@ -48,14 +48,14 @@ function footerArr<T>(doc: Record<string, unknown> | null, path: string, default
     return Array.isArray(v) ? (v as T[]) : defaultArr;
 }
 
-export default function SiteSettingsForm({ doc, mainCategoryHref }: { doc: Record<string, unknown> | null; mainCategoryHref: string }) {
+export default function SiteSettingsForm({ doc, mainCategoryHref, mainCategoryLabel }: { doc: Record<string, unknown> | null; mainCategoryHref: string; mainCategoryLabel: string }) {
     const router = useRouter();
     const [socialLinks, setSocialLinks] = useState<SocialLink[]>(footerArr<SocialLink>(doc, "social_links", DEFAULT_SOCIALS));
     const defaultLinkColumns: LinkColumn[] = [
         {
             title: "Store",
             links: [
-                { label: "Football Boots", href: mainCategoryHref },
+                { label: mainCategoryLabel, href: mainCategoryHref },
                 { label: "Goalkeeper Gloves", href: "/goalkeeper-gloves" },
                 { label: "Other Products", href: "/other-products" },
             ],

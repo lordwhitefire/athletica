@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 
-export default function CartPage({ mainCategoryHref }: { mainCategoryHref: string }) {
+export default function CartPage({ mainCategoryHref, mainCategoryLabel }: { mainCategoryHref: string; mainCategoryLabel: string }) {
     const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
     const router = useRouter();
 
@@ -23,7 +23,7 @@ export default function CartPage({ mainCategoryHref }: { mainCategoryHref: strin
                     href={mainCategoryHref}
                     className="px-8 py-3.5 bg-primary text-on-primary font-bold rounded hover:bg-primary-container hover:text-on-primary-container transition-colors"
                 >
-                    Shop Football Boots
+                    Shop {mainCategoryLabel}
                 </Link>
             </div>
         );

@@ -10,7 +10,7 @@ import { SubmitButton } from "@/components/ui/SubmitButton";
 import { Form } from "@/components/ui/Form";
 import { useCart } from "@/context/CartContext";
 
-export default function CheckoutForm({ mainCategoryHref }: { mainCategoryHref: string }) {
+export default function CheckoutForm({ mainCategoryHref, mainCategoryLabel }: { mainCategoryHref: string; mainCategoryLabel: string }) {
     const { cart } = useCart();
     const [submitted, setSubmitted] = useState(false);
 
@@ -34,7 +34,7 @@ export default function CheckoutForm({ mainCategoryHref }: { mainCategoryHref: s
                 <h1 className="text-2xl font-black text-on-surface mb-2">Your cart is empty</h1>
                 <p className="text-on-surface-variant mb-8">Add some products before checking out.</p>
                 <Link href={mainCategoryHref} className="px-8 py-3.5 bg-primary text-on-primary font-bold rounded hover:bg-primary-container hover:text-on-primary-container transition-colors">
-                    Shop Football Boots
+                    Shop {mainCategoryLabel}
                 </Link>
             </div>
         );

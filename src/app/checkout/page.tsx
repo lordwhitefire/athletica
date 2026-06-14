@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getMainCategoryHref } from "@/lib/getNavigation";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
 import CheckoutForm from "./CheckoutForm";
 
 export const metadata: Metadata = {
@@ -8,5 +8,6 @@ export const metadata: Metadata = {
 
 export default async function CheckoutPage() {
     const mainCategoryHref = await getMainCategoryHref();
-    return <CheckoutForm mainCategoryHref={mainCategoryHref} />;
+    const mainCategoryLabel = await getMainCategoryLabel();
+    return <CheckoutForm mainCategoryHref={mainCategoryHref} mainCategoryLabel={mainCategoryLabel} />;
 }

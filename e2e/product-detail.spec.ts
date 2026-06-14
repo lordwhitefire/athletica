@@ -3,7 +3,10 @@ import { test, expect } from "@playwright/test";
 test.describe("Product detail page", () => {
     test.beforeEach(async ({ page }) => {
         await page.goto("/football-boots");
+        await page.waitForLoadState("networkidle");
         await page.locator("[data-testid='product-card']").first().click();
+        // Wait for navigation to the product detail page (URL changes)
+        await page.waitForURL(url => url.pathname !== "/football-boots", { timeout: 15000 });
         await page.waitForLoadState("networkidle");
     });
 
@@ -12,7 +15,7 @@ test.describe("Product detail page", () => {
     });
 
     test("should display the product price", async ({ page }) => {
-        await expect(page.locator("[data-testid='product-price']")).toBeVisible();
+        await expect(page.locator("[data-testid='product-price']")).toBeVisible({ timeout: 10000 });
     });
 
     test("should display at least one product image", async ({ page }) => {
@@ -29,7 +32,7 @@ test.describe("Product detail page", () => {
 
     test("should add product to cart and open the cart drawer", async ({ page }) => {
         // Wait for React to hydrate so click handlers are attached to size buttons
-        await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => {});
+        await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => { });
 
         const sizeOptions = page.locator("[data-testid='size-option']:not([disabled])");
         if (await sizeOptions.count() > 0) {

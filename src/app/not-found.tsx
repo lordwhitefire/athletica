@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { getMainCategoryHref } from "@/lib/getNavigation";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
 
 export default async function NotFound() {
     const mainHref = await getMainCategoryHref();
+    const mainLabel = await getMainCategoryLabel();
     return (
         <div className="min-h-[70vh] bg-surface flex flex-col items-center justify-center text-center px-4 py-24">
             <div className="w-20 h-20 bg-primary rounded-sm flex items-center justify-center mb-8">
@@ -24,7 +25,7 @@ export default async function NotFound() {
                     href={mainHref}
                     className="px-8 py-3.5 border border-outline-variant text-on-surface font-bold rounded hover:border-primary hover:text-primary transition-colors"
                 >
-                    Shop Football Boots
+                    Shop {mainLabel}
                 </Link>
             </div>
         </div>

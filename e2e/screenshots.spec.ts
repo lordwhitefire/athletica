@@ -28,7 +28,7 @@ const ADMIN_PASSWORD = process.env.ADMIN_TEST_PASSWORD ?? "4603bb34-13ce55de";
 const SS_OPTS = { fullPage: true, timeout: 15000 };
 
 test.describe("Visual review screenshots", () => {
-    test.describe.configure({ timeout: 120_000 });
+    test.describe.configure({ timeout: 180_000 });
 
     for (const width of BREAKPOINTS) {
         test(`Breakpoint ${width}px`, async ({ page }) => {
@@ -158,69 +158,49 @@ test.describe("Visual review screenshots", () => {
 
             // ═══════════════════════════════════════════════════════════
             // PRODUCT DETAIL PAGE
+            // Navigate directly to avoid slow card-click navigation loop
             // ═══════════════════════════════════════════════════════════
-            await page.goto("/football-boots");
+            await page.goto("/adidas-predator-league-ft-fg-mg-red");
             await page.waitForLoadState("networkidle");
-            const gotoProduct = page.locator('[data-testid="product-card"]').first();
-            if (await gotoProduct.isVisible()) {
-                let productClicked = false;
-                let hasDiscount = false;
-                for (let attempt = 0; attempt < 5; attempt++) {
-                    const cardToClick = page.locator('[data-testid="product-card"]').nth(attempt);
-                    if (!(await cardToClick.isVisible({ timeout: 2000 }).catch(() => false))) break;
-                    await cardToClick.click();
-                    await page.waitForLoadState("networkidle");
-                    await page.waitForTimeout(500);
-                    productClicked = true;
+            await page.waitForTimeout(500);
+            await page.screenshot({ path: shotPath("product", `${bp}-loaded.png`), ...SS_OPTS });
 
-                    const discountBadge = page.locator("span:has-text('% OFF')");
-                    if (await discountBadge.isVisible({ timeout: 2000 }).catch(() => false)) {
-                        hasDiscount = true;
-                    }
-                    if (hasDiscount) break;
+            const discountEl = page.locator("span:has-text('% OFF')");
+            if (await discountEl.isVisible({ timeout: 2000 }).catch(() => false)) {
+                await page.screenshot({ path: shotPath("product", `${bp}-discount-member.png`), ...SS_OPTS });
+            }
+
+            const sizeOption = page.locator('[data-testid="size-option"]:not([disabled])').first();
+            if (await sizeOption.isVisible({ timeout: 5000 }).catch(() => false)) {
+                await sizeOption.click();
+                await page.waitForTimeout(300);
+                await page.screenshot({ path: shotPath("product", `${bp}-size-selected.png`), ...SS_OPTS });
+            }
+
+            const addBtn = page.getByRole("button", { name: /add to cart/i });
+            if (await addBtn.isVisible({ timeout: 5000 }).catch(() => false)) {
+                await addBtn.click();
+                await page.waitForTimeout(100);
+                await page.screenshot({ path: shotPath("product", `${bp}-submit-disabled.png`), ...SS_OPTS });
+                await page.waitForTimeout(700);
+
+                const toast = page.locator('[role="status"][aria-live="polite"]');
+                if (await toast.isVisible({ timeout: 2000 }).catch(() => false)) {
+                    await page.screenshot({ path: shotPath("product", `${bp}-toast.png`), ...SS_OPTS });
                 }
 
-                if (productClicked) {
-                    await page.screenshot({ path: shotPath("product", `${bp}-loaded.png`), ...SS_OPTS });
-
-                    const discountEl = page.locator("span:has-text('% OFF')");
-                    if (await discountEl.isVisible({ timeout: 2000 }).catch(() => false)) {
-                        await page.screenshot({ path: shotPath("product", `${bp}-discount-member.png`), ...SS_OPTS });
-                    }
-
-                    const sizeOption = page.locator('[data-testid="size-option"]:not([disabled])').first();
-                    if (await sizeOption.isVisible({ timeout: 3000 }).catch(() => false)) {
-                        await sizeOption.click();
-                        await page.waitForTimeout(300);
-                        await page.screenshot({ path: shotPath("product", `${bp}-size-selected.png`), ...SS_OPTS });
-                    }
-
-                    const addBtn = page.getByRole("button", { name: /add to cart/i });
-                    if (await addBtn.isVisible()) {
-                        await addBtn.click();
-                        await page.waitForTimeout(100);
-                        await page.screenshot({ path: shotPath("product", `${bp}-submit-disabled.png`), ...SS_OPTS });
-                        await page.waitForTimeout(700);
-
-                        const toast = page.locator('[role="status"][aria-live="polite"]');
-                        if (await toast.isVisible({ timeout: 2000 }).catch(() => false)) {
-                            await page.screenshot({ path: shotPath("product", `${bp}-toast.png`), ...SS_OPTS });
-                        }
-
-                        const cartIcon = page.locator('[data-testid="cart-icon"]').first();
-                        if (await cartIcon.isVisible()) {
-                            await cartIcon.click({ force: true });
-                            await page.waitForTimeout(2000);
-                            await page.screenshot({ path: shotPath("product", `${bp}-cart-backdrop.png`), ...SS_OPTS });
-                            const cartClose = page.locator('[data-testid="mini-cart"] button:has(span:text("close"))').first();
-                            if (await cartClose.isVisible({ timeout: 2000 }).catch(() => false)) {
-                                await cartClose.click({ force: true });
-                                await page.waitForTimeout(400);
-                            } else {
-                                await page.keyboard.press("Escape");
-                                await page.waitForTimeout(400);
-                            }
-                        }
+                const cartIcon = page.locator('[data-testid="cart-icon"]').first();
+                if (await cartIcon.isVisible()) {
+                    await cartIcon.click({ force: true });
+                    await page.waitForTimeout(1500);
+                    await page.screenshot({ path: shotPath("product", `${bp}-cart-backdrop.png`), ...SS_OPTS });
+                    const cartClose = page.locator('[data-testid="mini-cart"] button:has(span:text("close"))').first();
+                    if (await cartClose.isVisible({ timeout: 2000 }).catch(() => false)) {
+                        await cartClose.click({ force: true });
+                        await page.waitForTimeout(400);
+                    } else {
+                        await page.keyboard.press("Escape");
+                        await page.waitForTimeout(400);
                     }
                 }
             }

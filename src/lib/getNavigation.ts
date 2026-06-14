@@ -265,6 +265,13 @@ export async function getMainCategoryHref(): Promise<string> {
     return l1?.href ?? "/";
 }
 
+export async function getMainCategoryLabel(): Promise<string> {
+    const result = await getNavigation();
+    if (result.error) return "Products";
+    const l1 = findFirstL1(result.data);
+    return l1?.label ?? "Products";
+}
+
 export async function getBrandCategoryHref(brand: string): Promise<string | null> {
     const result = await getNavigation();
     if (result.error) return null;
