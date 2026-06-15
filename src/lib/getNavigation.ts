@@ -4,52 +4,15 @@ import type { NavigationData, NavItem } from "@/types/navigation";
 import type { ApiResult } from "@/lib/api-types";
 import { ok, fromCaughtError } from "@/lib/api-types";
 
-const BRAND_PREFIXES = [
-    "Adidas", "adidas", "Nike", "Puma", "New Balance",
-    "Mizuno", "Joma", "Kelme", "Lotto", "Munich", "Diadora",
-    "G-Form", "Macron",
-];
-
 function slugify(text: string): string {
     return text.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 }
 
-function getSegment(label: string, level: number): string {
-    if (level === 1 || level === 0) return slugify(label);
-
-    let name = label.replace(/\b(Football Boots?|Boots?|Shoes?|Gloves?)\b/gi, "").trim();
-
-    for (const brand of BRAND_PREFIXES) {
-        if (name.toLowerCase() === brand.toLowerCase()) {
-            return slugify(brand);
-        }
-    }
-
-    for (const brand of BRAND_PREFIXES) {
-        if (name.toLowerCase().startsWith(brand.toLowerCase())) {
-            name = name.slice(brand.length).trim();
-            break;
-        }
-    }
-
-    if (!name) {
-        const MULTI_WORD = ["New Balance"];
-        for (const brand of MULTI_WORD) {
-            if (label.toLowerCase().startsWith(brand.toLowerCase())) return slugify(brand);
-        }
-        return slugify(label.split(" ")[0]);
-    }
-
-    return slugify(name);
-}
-
 function setHierarchicalHref(target: { level: number; label: string; href?: string | null }, ancestorSegments: string[]): string {
-    const segment = getSegment(target.label, target.level);
+    const segment = slugify(target.label);
     const segments = [...ancestorSegments, segment];
     const href = `/en/${segments.join("/")}`;
-    if (target.href == null) {
-        (target as Record<string, unknown>).href = href;
-    }
+    (target as Record<string, unknown>).href = href;
     return href;
 }
 
@@ -167,24 +130,6 @@ export async function getModelNavTree(): Promise<ApiResult<ModelNavNode[]>> {
     if (result.error) return result;
     const nav = result.data;
 
-    const brandPrefixes = [
-        "Adidas", "adidas", "Nike", "Puma", "New Balance",
-        "Mizuno", "Joma", "Kelme", "Lotto", "Munich", "Diadora",
-        "G-Form", "Macron",
-    ];
-
-    function extractKeyword(label: string): string {
-        let result = label;
-        for (const brand of brandPrefixes) {
-            if (result.toLowerCase().startsWith(brand.toLowerCase())) {
-                result = result.slice(brand.length).trim();
-                break;
-            }
-        }
-        result = result.replace(/\b(Football Boots?|Boots?|Shoes?|Gloves?)\b/gi, "").trim();
-        return result;
-    }
-
     function buildTree(items: NavItem[]): ModelNavNode[] {
         const nodes: ModelNavNode[] = [];
         for (const item of items) {
@@ -194,7 +139,7 @@ export async function getModelNavTree(): Promise<ApiResult<ModelNavNode[]>> {
                 }
                 continue;
             }
-            const label = extractKeyword(item.label);
+            const label = item.label;
             if (!label) continue;
             nodes.push({
                 label,
