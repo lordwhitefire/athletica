@@ -1,3 +1,4 @@
+import { splitModel } from "@/lib/model";
 import { Product, ActiveFilters } from "@/types/product";
 
 export function filterProducts(
@@ -22,11 +23,11 @@ export function filterProducts(
         );
     }
 
-    // Filter by model (comma-separated path from nav, e.g. "Mercurial,Superfly")
+    // Filter by model (slash-separated path from nav, e.g. "Mercurial/Superfly")
     if (filters.model && filters.model.length > 0) {
         result = result.filter((p) =>
             filters.model!.some((segPath) => {
-                const prefix = segPath + ",";
+                const prefix = segPath + "/";
                 return (
                     p.model === segPath || p.model.toLowerCase().startsWith(prefix.toLowerCase())
                 );

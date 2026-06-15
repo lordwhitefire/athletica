@@ -1,3 +1,4 @@
+import { splitModel } from "@/lib/model";
 import { Product, FilterOptions, BrandOption } from "@/types/product";
 
 export function generateFilters(products: Product[], brandLogoMap?: Record<string, string | null>): FilterOptions {
@@ -16,9 +17,9 @@ export function generateFilters(products: Product[], brandLogoMap?: Record<strin
     // Get all prices to calculate min and max
     const allPrices = products.map((p) => p.price.current);
 
-    // Get all model prefixes (first segment before comma)
+    // Get all model prefixes (first segment)
     const allModels = products
-        .map((p) => p.model.split(",")[0])
+        .map((p) => splitModel(p.model)[0])
         .filter((m) => m && m.trim().length > 0)
         .map((m) => m.trim());
 

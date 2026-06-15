@@ -94,8 +94,8 @@ export default async function SlugPage({ params }: SlugPageProps) {
         const [mainCategoryHref, brandCategoryHref, productCategoryHref, tractionCategoryHref] = await Promise.all([
             getMainCategoryHref(),
             getBrandCategoryHref(product.brand),
-            product.name ? getProductCategoryHref(product.brand, product.name) : Promise.resolve(null),
-            product.traction ? getTractionCategoryHref(product.traction) : Promise.resolve(null),
+            Promise.resolve(getProductCategoryHref(product)),
+            product.traction ? Promise.resolve(getTractionCategoryHref(product.traction)) : Promise.resolve(null),
         ]);
 
         const breadcrumbs = [

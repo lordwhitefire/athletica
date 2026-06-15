@@ -9,8 +9,8 @@ Sentry.init({
 });
 
 function sendWebVitalToSentry(metric: { name: string; value: number; rating: string }) {
-    Sentry.metrics.increment(`web_vital_${metric.name}`, 1, {
-        tags: { value: metric.value.toString(), rating: metric.rating },
+    Sentry.metrics.count(`web_vital_${metric.name}`, 1, {
+        attributes: { value: metric.value.toString(), rating: metric.rating },
     });
 }
 

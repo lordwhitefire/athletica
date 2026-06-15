@@ -1,3 +1,4 @@
+import { joinModel } from "@/lib/model";
 import type { Product, ActiveFilters } from "@/types/product";
 import type { NavigationData, NavItem, NavLink } from "@/types/navigation";
 
@@ -70,7 +71,7 @@ function deriveFilters(node: NavNode): ActiveFilters {
         }
     }
     if (modelSegments.length > 0) {
-        filters.model = [modelSegments.join(",")];
+        filters.model = [joinModel(modelSegments)];
     }
 
     const traction = detectTraction(chain.map((n) => n.label).join(" "));

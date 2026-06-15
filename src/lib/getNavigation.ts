@@ -1,7 +1,9 @@
 import { cache } from "react";
 import { client } from "@/lib/sanity";
+import { splitModel } from "@/lib/model";
 import type { NavigationData, NavItem } from "@/types/navigation";
 import type { ApiResult } from "@/lib/api-types";
+import type { Product } from "@/types/product";
 import { ok, fromCaughtError } from "@/lib/api-types";
 
 function slugify(text: string): string {
@@ -228,26 +230,17 @@ export async function getBrandCategoryHref(brand: string): Promise<string | null
     return found?.href ?? null;
 }
 
-export async function getProductCategoryHref(brand: string, name: string): Promise<string | null> {
-    const result = await getNavigation();
-    if (result.error) return null;
-    const l1 = findFirstL1(result.data);
-    if (!l1?.children) return null;
-    const searchLabel = `${brand.toLowerCase()} ${name.toLowerCase()}`;
-    const found = findDescendant(l1.children, (item) =>
-        item.label.toLowerCase().includes(searchLabel)
-    );
-    return found?.href ?? null;
+export function getProductCategoryHref(product: Product): string {
+    const modelSegments = splitModel(product.model);
+    const hierarchySegments = modelSegments.slice(0, -1);
+    const segments = [
+        slugify(product.category),
+        slugify(product.brand),
+        ...hierarchySegments.map(s => slugify(s)),
+    ];
+    return `/en/${segments.join("/")}`;
 }
 
-export async function getTractionCategoryHref(traction: string): Promise<string | null> {
-    const result = await getNavigation();
-    if (result.error) return null;
-    const l1 = findFirstL1(result.data);
-    if (!l1?.children) return null;
-    const code = traction.toUpperCase();
-    const found = findDescendant(l1.children, (item) =>
-        new RegExp(`\\b${code}\\b`, "i").test(item.label)
-    );
-    return found?.href ?? null;
+export function getTractionCategoryHref(traction: string): string {
+    return `/en/traction/${slugify(traction)}`;
 }

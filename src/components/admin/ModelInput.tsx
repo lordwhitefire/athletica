@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
+import { splitModel, joinModel } from "@/lib/model";
 import type { ModelNavNode } from "@/lib/getNavigation";
 
 interface ModelInputProps {
@@ -25,7 +26,7 @@ export default function ModelInput({ modelNavTree, value, onChange, onValidChang
 
     const segments = useMemo(() => {
         if (!value) return [];
-        return value.split(",").filter((s) => s.trim().length > 0);
+        return splitModel(value).filter((s) => s.trim().length > 0);
     }, [value]);
 
     const isComplete = useMemo(() => {
@@ -109,12 +110,12 @@ export default function ModelInput({ modelNavTree, value, onChange, onValidChang
         setError(null);
 
         const newSegments = [...segments, suggestion.label];
-        onChange(newSegments.join(",") + (suggestion.type === "T" ? "" : ","));
+        onChange(joinModel(newSegments) + (suggestion.type === "T" ? "" : "/"));
     }
 
     function removeSegment(index: number) {
         const newSegments = segments.filter((_, i) => i !== index);
-        onChange(newSegments.length > 0 ? newSegments.join(",") + "," : "");
+        onChange(newSegments.length > 0 ? joinModel(newSegments) + "/" : "");
         setError(null);
         inputRef.current?.focus();
     }
