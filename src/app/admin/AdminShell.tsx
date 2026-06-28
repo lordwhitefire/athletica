@@ -7,6 +7,7 @@ import { useAuth } from "@/context/AuthContext";
 const navItems = [
     { label: "Dashboard", href: "/admin", icon: "grid_view" },
     { label: "Products", href: "/admin/products", icon: "inventory_2" },
+    { label: "Batch Upload", href: "/admin/products/batch-upload", icon: "archive" },
     { label: "Brands", href: "/admin/brands", icon: "local_offer" },
     { label: "Homepage", href: "/admin/homepage", icon: "home" },
     { label: "Navigation", href: "/admin/navigation", icon: "menu" },

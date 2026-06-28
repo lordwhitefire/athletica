@@ -10,10 +10,16 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
         <div data-testid="admin-products-page">
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-black uppercase tracking-tight">Products</h1>
-                <Link href="/admin/products/new" data-testid="admin-new-product-link" className="bg-primary hover:brightness-75 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
-                    <span className="material-symbols-outlined text-[16px]">add</span>
-                    New Product
-                </Link>
+                <div className="flex items-center gap-2">
+                    <Link href="/admin/products/batch-upload" className="bg-neutral-800 hover:bg-neutral-700 text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-[16px]">archive</span>
+                        Batch Upload
+                    </Link>
+                    <Link href="/admin/products/new" data-testid="admin-new-product-link" className="bg-primary hover:brightness-75 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-[16px]">add</span>
+                        New Product
+                    </Link>
+                </div>
             </div>
 
             <div className="bg-neutral-900 border border-neutral-800 rounded overflow-hidden">
