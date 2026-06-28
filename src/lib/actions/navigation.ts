@@ -22,7 +22,7 @@ export async function saveNavigation(items: Record<string, unknown>[]): Promise<
     try {
         const parsed = validateOrFail(navigationSchema, items);
         if ("error" in parsed) return parsed.error;
-        const rebuilt = rebuildNavUrls(parsed as NavItem[]);
+        const rebuilt = rebuildNavUrls(parsed.data as NavItem[]);
         const docResult = await getNavigationDoc();
         if (docResult.error) return docResult;
         const doc = docResult.data;
