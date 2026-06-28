@@ -96,7 +96,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
         const [mainCategoryHref, brandCategoryHref, productCategoryHref, tractionCategoryHref] = await Promise.all([
             getMainCategoryHref(),
             getBrandCategoryHref(product.brand),
-            Promise.resolve(getProductCategoryHref(product)),
+            getProductCategoryHref(product),
             product.traction ? Promise.resolve(getTractionCategoryHref(product.traction)) : Promise.resolve(null),
         ]);
 

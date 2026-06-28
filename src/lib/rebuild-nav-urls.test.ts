@@ -46,8 +46,8 @@ describe("rebuildNavUrls", () => {
 
         const result = rebuildNavUrls(items);
 
-        expect(result[0].href).toBe("/en/boots");
-        expect(result[1].href).toBe("/en/accessories");
+        expect(result[0].href).toBe("/en/1");
+        expect(result[1].href).toBe("/en/2");
     });
 
     it("should build hierarchical URLs for nested children", () => {
@@ -62,8 +62,8 @@ describe("rebuildNavUrls", () => {
 
         const result = rebuildNavUrls(items);
 
-        expect(result[0].href).toBe("/en/boots");
-        expect(result[0].children![0].href).toBe("/en/boots/adidas");
+        expect(result[0].href).toBe("/en/1");
+        expect(result[0].children![0].href).toBe("/en/1/2");
     });
 
     it("should handle deep nesting (L1 → L2 → L3 → L4)", () => {
@@ -87,10 +87,10 @@ describe("rebuildNavUrls", () => {
         ];
 
         const result = rebuildNavUrls(items);
-        expect(result[0].href).toBe("/en/boots");
-        expect(result[0].children![0].href).toBe("/en/boots/adidas");
-        expect(result[0].children![0].children![0].href).toBe("/en/boots/adidas/predator");
-        expect(result[0].children![0].children![0].children![0].href).toBe("/en/boots/adidas/predator/elite");
+        expect(result[0].href).toBe("/en/1");
+        expect(result[0].children![0].href).toBe("/en/1/2");
+        expect(result[0].children![0].children![0].href).toBe("/en/1/2/3");
+        expect(result[0].children![0].children![0].children![0].href).toBe("/en/1/2/3/4");
     });
 
     it("should preserve existing id and generate missing ones", () => {
@@ -106,14 +106,14 @@ describe("rebuildNavUrls", () => {
         expect(result[1].id).toHaveLength(6);
     });
 
-    it("should use item.slug when available (deprecated but supported)", () => {
+    it("should use item.id for URL segments (not label slug)", () => {
         const items: NavItem[] = [
-            { id: "1", level: 1, label: "Boots", slug: "custom-slug", href: null },
+            { id: "custom-id", level: 1, label: "Boots", href: null },
         ];
 
         const result = rebuildNavUrls(items);
 
-        expect(result[0].href).toBe("/en/boots");
+        expect(result[0].href).toBe("/en/custom-id");
     });
 
     it("should preserve other fields on items", () => {
@@ -139,13 +139,13 @@ describe("rebuildNavUrls", () => {
         expect(result).toEqual([]);
     });
 
-    it("should handle items with empty label", () => {
+    it("should use id when label is empty", () => {
         const items: NavItem[] = [
-            { id: "1", level: 1, label: "", href: null },
+            { id: "abc", level: 1, label: "", href: null },
         ];
 
         const result = rebuildNavUrls(items);
-        expect(result[0].href).toBe("/en/");
+        expect(result[0].href).toBe("/en/abc");
     });
 
     it("should not mutate original items", () => {
@@ -163,7 +163,7 @@ describe("rebuildNavUrls", () => {
 describe("hasCorrectUrls", () => {
     it("should return true when all URLs match", () => {
         const items: NavItem[] = [
-            { id: "1", level: 1, label: "Boots", href: "/en/boots" },
+            { id: "abc", level: 1, label: "Boots", href: "/en/abc" },
         ];
 
         expect(hasCorrectUrls(items)).toBe(true);
@@ -171,7 +171,7 @@ describe("hasCorrectUrls", () => {
 
     it("should return false when a URL does not match", () => {
         const items: NavItem[] = [
-            { id: "1", level: 1, label: "Boots", href: "/en/wrong" },
+            { id: "abc", level: 1, label: "Boots", href: "/en/wrong" },
         ];
 
         expect(hasCorrectUrls(items)).toBe(false);
@@ -180,9 +180,9 @@ describe("hasCorrectUrls", () => {
     it("should check nested children recursively", () => {
         const items: NavItem[] = [
             {
-                id: "1", level: 1, label: "Boots", href: "/en/boots",
+                id: "a", level: 1, label: "Boots", href: "/en/a",
                 children: [
-                    { id: "2", level: 2, label: "Adidas", href: "/en/boots/adidas" },
+                    { id: "b", level: 2, label: "Adidas", href: "/en/a/b" },
                 ],
             },
         ];
@@ -191,9 +191,9 @@ describe("hasCorrectUrls", () => {
 
         const wrongItems: NavItem[] = [
             {
-                id: "1", level: 1, label: "Boots", href: "/en/boots",
+                id: "a", level: 1, label: "Boots", href: "/en/a",
                 children: [
-                    { id: "2", level: 2, label: "Adidas", href: "/en/boots/wrong" },
+                    { id: "b", level: 2, label: "Adidas", href: "/en/a/wrong" },
                 ],
             },
         ];

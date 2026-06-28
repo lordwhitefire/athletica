@@ -26,7 +26,7 @@ test.describe("Category page — product filtering", () => {
         const productCards = page.locator("[data-testid='product-card']");
         await expect(productCards.first()).toBeVisible({ timeout: 10000 });
 
-        await expect(page).toHaveURL(/brand/);
+        await expect(page).toHaveURL(/brand=/);
     });
 
     test("should show no products when filtering produces an empty result", async ({ page }) => {

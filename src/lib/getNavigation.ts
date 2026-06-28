@@ -184,15 +184,48 @@ export async function getBrandCategoryHref(brand: string): Promise<string | null
     return found?.href ?? null;
 }
 
-export function getProductCategoryHref(product: Product): string {
-    const modelSegments = splitModel(product.model);
-    const hierarchySegments = modelSegments.slice(0, -1);
-    const segments = [
-        slugify(product.category),
-        slugify(product.brand),
-        ...hierarchySegments.map(s => slugify(s)),
-    ];
-    return `/en/${segments.join("/")}`;
+export async function getProductCategoryHref(product: Product): Promise<string> {
+    const result = await getNavigation();
+    if (result.error) return "/";
+
+    const allL1Items = result.data.flatMap((group) => group.children ?? []);
+    const categorySlug = slugify(product.category);
+
+    const l1 = allL1Items.find(
+        (item) => item.level === 1 && slugify(item.label) === categorySlug
+    );
+    if (!l1) return "/";
+
+    const ids: string[] = [l1.id];
+    let currentItems = l1.children;
+
+    if (currentItems && product.brand) {
+        const brandSlug = slugify(product.brand);
+        const l2 = currentItems.find(
+            (item) => item.level >= 2 && slugify(extractBrand(item.label)) === brandSlug
+        );
+        if (l2) {
+            ids.push(l2.id);
+            currentItems = l2.children;
+        }
+    }
+
+    const modelSegments = splitModel(product.model).slice(0, -1);
+    for (const seg of modelSegments) {
+        if (!currentItems) break;
+        const segSlug = slugify(seg);
+        const match = currentItems.find(
+            (item) => item.level >= 3 && slugify(item.label) === segSlug
+        );
+        if (match) {
+            ids.push(match.id);
+            currentItems = match.children;
+        } else {
+            break;
+        }
+    }
+
+    return `/en/${ids.join("/")}`;
 }
 
 export function getTractionCategoryHref(traction: string): string {
