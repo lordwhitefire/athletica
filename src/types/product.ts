@@ -44,7 +44,7 @@ export interface Product {
     name: string | null;
     gender: string;
     main_image: string;
-    image_gallery: string[];
+    image_gallery?: string[];
     thumbnail: string;
     color: string;
     color_variants?: ColorVariant[];

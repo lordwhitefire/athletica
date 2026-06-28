@@ -6,8 +6,8 @@ import { Select } from "./Select";
 describe("Select component visual states", () => {
     const defaultRegistration = {
         name: "gender",
-        onChange: () => {},
-        onBlur: () => {},
+        onChange: async () => {},
+        onBlur: async () => {},
         ref: () => {},
     };
 

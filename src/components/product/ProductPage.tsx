@@ -1,5 +1,6 @@
 "use client";
 
+import { splitModel } from "@/lib/model";
 import { Product } from "@/types/product";
 import ImageGallery from "@/components/product/ImageGallery";
 import ProductInfo from "@/components/product/ProductInfo";
@@ -10,7 +11,7 @@ import Breadcrumb, { BreadcrumbItem } from "@/components/navigation/Breadcrumb";
 interface ProductPageProps {
     product: Product;
     amazonLink: string | null;
-    relatedByName: Product[];
+    relatedByModelLevel: Product[];
     relatedByBrand: Product[];
     relatedByTraction: Product[];
     breadcrumbs: BreadcrumbItem[];
@@ -23,7 +24,7 @@ interface ProductPageProps {
 export default function ProductPage({
     product,
     amazonLink,
-    relatedByName,
+    relatedByModelLevel,
     relatedByBrand,
     relatedByTraction,
     breadcrumbs,
@@ -31,6 +32,8 @@ export default function ProductPage({
     tractionCategoryHref,
     productCategoryHref,
 }: ProductPageProps) {
+    const segments = splitModel(product.model);
+    const levelName = segments.slice(-2, -1)[0] || product.brand;
     return (
         <main className="max-w-[1400px] overflow-x-hidden mx-auto px-6 py-8">
 
@@ -66,13 +69,13 @@ export default function ProductPage({
 
             {/* Related carousels */}
             <section className="space-y-0">
-                {relatedByName.length > 0 && (
+                {relatedByModelLevel.length > 0 && (
                     <ProductCarousel
-                        title={`More ${product.name || product.brand} Boots`}
+                        title={`More ${levelName} Boots`}
                         subtitle="Same model line, different options"
-                        products={relatedByName}
+                        products={relatedByModelLevel}
                         link={productCategoryHref ?? undefined}
-                        linkLabel={`View All ${product.name}`}
+                        linkLabel={`View All ${levelName}`}
                     />
                 )}
 

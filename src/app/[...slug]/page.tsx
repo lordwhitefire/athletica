@@ -1,5 +1,6 @@
 import { resolveRoute } from "@/lib/resolveRoute";
-import { getAllProducts, getProductsByName, getProductsByBrand, getProductsByTraction } from "@/lib/getProducts";
+import { splitModel } from "@/lib/model";
+import { getAllProducts, getProductsByModelPrefix, getProductsByBrand, getProductsByTraction } from "@/lib/getProducts";
 import { getAmazonLink } from "@/lib/getAmazonLinks";
 import { getNavigation, getMainCategoryHref, getBrandCategoryHref, getProductCategoryHref, getTractionCategoryHref } from "@/lib/getNavigation";
 import { getBrandLogoMap } from "@/lib/actions/brands";
@@ -26,8 +27,9 @@ export async function generateMetadata({ params }: SlugPageProps): Promise<Metad
         getNavigation(),
     ]);
 
-    if (productsResult.error) throw new Error(productsResult.error.message);
-    if (navigationResult.error) throw new Error(navigationResult.error.message);
+    if (productsResult.error || navigationResult.error) {
+        return { title: "Page Not Found" };
+    }
 
     const allProducts = productsResult.data;
     const navigation = navigationResult.data;
@@ -57,8 +59,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
         getNavigation(),
     ]);
 
-    if (productsResult.error) throw new Error(productsResult.error.message);
-    if (navigationResult.error) throw new Error(navigationResult.error.message);
+    if (productsResult.error || navigationResult.error) { notFound(); }
 
     const allProducts = productsResult.data;
     const navigation = navigationResult.data;
@@ -74,9 +75,10 @@ export default async function SlugPage({ params }: SlugPageProps) {
         const amazonLink = amazonLinkResult.data ?? null;
 
         const [byNameResult, byBrandResult, byTractionResult] = await Promise.all([
-            product.name
-                ? getProductsByName(product.name, product.id)
-                : Promise.resolve({ data: [], error: null } as const),
+            getProductsByModelPrefix(
+                splitModel(product.model).slice(0, -1).join("/"),
+                product.id
+            ),
             getProductsByBrand(
                 product.brand,
                 product.name || undefined,
@@ -87,7 +89,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
                 : Promise.resolve({ data: [], error: null } as const),
         ]);
 
-        const relatedByName = (byNameResult.data ?? []).slice(0, 10);
+        const relatedByModelLevel = (byNameResult.data ?? []).slice(0, 10);
         const relatedByBrand = (byBrandResult.data ?? []).slice(0, 10);
         const relatedByTraction = (byTractionResult.data ?? []).slice(0, 10);
 
@@ -108,7 +110,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
             <ProductPage
                 product={product}
                 amazonLink={amazonLink}
-                relatedByName={relatedByName}
+                relatedByModelLevel={relatedByModelLevel}
                 relatedByBrand={relatedByBrand}
                 relatedByTraction={relatedByTraction}
                 breadcrumbs={breadcrumbs}

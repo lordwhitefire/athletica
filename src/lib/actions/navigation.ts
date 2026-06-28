@@ -6,6 +6,8 @@ import type { ApiResult } from "@/lib/api-types";
 import { ok, fromCaughtError } from "@/lib/api-types";
 import { validateOrFail } from "@/lib/validate";
 import { navigationSchema } from "@/lib/schemas/navigation";
+import { rebuildNavUrls } from "@/lib/rebuild-nav-urls";
+import type { NavItem } from "@/types/navigation";
 
 export async function getNavigationDoc(): Promise<ApiResult<Record<string, unknown>>> {
     try {
@@ -20,13 +22,14 @@ export async function saveNavigation(items: Record<string, unknown>[]): Promise<
     try {
         const parsed = validateOrFail(navigationSchema, items);
         if ("error" in parsed) return parsed.error;
+        const rebuilt = rebuildNavUrls(parsed as NavItem[]);
         const docResult = await getNavigationDoc();
         if (docResult.error) return docResult;
         const doc = docResult.data;
         if (!doc) {
-            await adminClient.create({ _type: "navigation", _id: "navigation", title: "Main Navigation", items });
+            await adminClient.create({ _type: "navigation", _id: "navigation", title: "Main Navigation", items: rebuilt });
         } else {
-            await adminClient.patch(doc._id as string).set({ items }).commit();
+            await adminClient.patch(doc._id as string).set({ items: rebuilt }).commit();
         }
         revalidatePath("/admin/navigation");
         return ok({ saved: true });

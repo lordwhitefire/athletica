@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { navigateToCategory } from "./constants";
 
 test.describe("Next.js API routes", () => {
     test.describe("POST /api/admin/login", () => {
@@ -61,13 +62,13 @@ test.describe("Next.js API routes", () => {
 });
 
 test.describe("Sanity API contract (via running app)", () => {
-    test("should display products fetched from Sanity on the football boots category page", async ({ page }) => {
-        await page.goto("/football-boots");
+    test("should display products fetched from Sanity on the category page", async ({ page }) => {
+        await navigateToCategory(page);
         await expect(page.locator("[data-testid='product-card']").first()).toBeVisible({ timeout: 10000 });
     });
 
     test("product detail page should return 200 for a known product slug", async ({ request }) => {
-        const KNOWN_SLUG = process.env.TEST_PRODUCT_SLUG ?? "football-boots/nike-mercurial";
+        const KNOWN_SLUG = process.env.TEST_PRODUCT_SLUG ?? "adidas-predator-league-ft-fg-mg-red";
 
         const response = await request.get(`/${KNOWN_SLUG}`);
         expect([200, 301, 302]).toContain(response.status());

@@ -37,7 +37,7 @@ export const productFormSchema = z.object({
 export type ProductFormData = z.output<typeof productFormSchema>;
 
 export const productSanitySchema = z.object({
-    _id: z.string(),
+    id: z.string(),
     url_slug: z.object({ current: z.string() }).or(z.string()),
     model: z.string(),
     brand: z.union([
@@ -55,7 +55,7 @@ export const productSanitySchema = z.object({
     thumbnail: z.union([
         z.object({ asset: z.object({ _ref: z.string(), _type: z.string() }) }),
         z.string(),
-    ]).optional(),
+    ]).nullable().optional(),
     color: z.string(),
     price: z.object({
         current: z.number(),
@@ -64,6 +64,15 @@ export const productSanitySchema = z.object({
         member_price: z.number(),
         currency: z.string(),
     }),
+    image_gallery: z.array(z.union([
+        z.object({ asset: z.object({ _ref: z.string(), _type: z.string() }) }),
+        z.string(),
+    ])).nullable().optional(),
+    sizes: z.array(z.object({
+        size: z.string(),
+        available: z.boolean(),
+        stock: z.number(),
+    })).optional(),
     description: z.object({
         subtitle: z.string().optional(),
         tagline: z.string().optional(),

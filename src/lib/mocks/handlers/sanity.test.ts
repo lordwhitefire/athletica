@@ -4,7 +4,7 @@ import { z } from "zod";
 
 describe("Sanity MSW handler response contract", () => {
     const validSanityProduct = {
-        _id: "prod-test-001",
+        id: "prod-test-001",
         url_slug: { current: "nike-mercurial-fg" },
         model: "Mercurial Vapor 16",
         brand: { _ref: "brand-nike-ref" },
@@ -42,8 +42,8 @@ describe("Sanity MSW handler response contract", () => {
         expect(result.success).toBe(true);
     });
 
-    it("should fail when a required field (_id) is missing", () => {
-        const { _id, ...withoutId } = validSanityProduct;
+    it("should fail when a required field (id) is missing", () => {
+        const { id, ...withoutId } = validSanityProduct;
         const result = productSanitySchema.safeParse(withoutId);
         expect(result.success).toBe(false);
     });
@@ -55,12 +55,12 @@ describe("Sanity MSW handler response contract", () => {
     });
 
     it("should validate an array of products (array schema)", () => {
-        const arrayResult = z.array(productSanitySchema).safeParse([validSanityProduct, { ...validSanityProduct, _id: "prod-test-002" }]);
+        const arrayResult = z.array(productSanitySchema).safeParse([validSanityProduct, { ...validSanityProduct, id: "prod-test-002" }]);
         expect(arrayResult.success).toBe(true);
     });
 
     it("should fail with a useful error message (not a raw Zod error string)", () => {
-        const result = productSanitySchema.safeParse({ _id: "prod-test", brand: "INVALID" });
+        const result = productSanitySchema.safeParse({ id: "prod-test", brand: "INVALID" });
         if (!result.success) {
             const messages = result.error.issues.map((i) => i.message);
             messages.forEach((msg) => {

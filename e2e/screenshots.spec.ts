@@ -1,6 +1,7 @@
 import { test } from "@playwright/test";
 import fs from "fs";
 import path from "path";
+import { navigateToCategory, PRODUCT_SLUGS } from "./constants";
 
 const BREAKPOINTS = [375, 640, 768, 1024, 1280, 1536];
 const SCREENSHOT_DIR = path.resolve(process.cwd(), "screenshots");
@@ -98,7 +99,7 @@ test.describe("Visual review screenshots", () => {
             // ═══════════════════════════════════════════════════════════
             // CATEGORY PAGE
             // ═══════════════════════════════════════════════════════════
-            await page.goto("/football-boots");
+            await navigateToCategory(page);
             await page.waitForLoadState("networkidle");
             await page.waitForTimeout(500);
             await page.screenshot({ path: shotPath("category", `${bp}-loaded.png`), ...SS_OPTS });
@@ -151,7 +152,8 @@ test.describe("Visual review screenshots", () => {
             }
 
             // Empty results
-            await page.goto("/football-boots?brand=NonExistentBrand");
+            await navigateToCategory(page);
+            await page.goto(page.url() + "?brand=NonExistentBrand");
             await page.waitForLoadState("networkidle");
             await page.waitForTimeout(400);
             await page.screenshot({ path: shotPath("category", `${bp}-empty-results.png`), ...SS_OPTS });
@@ -160,7 +162,7 @@ test.describe("Visual review screenshots", () => {
             // PRODUCT DETAIL PAGE
             // Navigate directly to avoid slow card-click navigation loop
             // ═══════════════════════════════════════════════════════════
-            await page.goto("/adidas-predator-league-ft-fg-mg-red");
+            await page.goto(`/${PRODUCT_SLUGS.PREDATOR_LEAGUE_RED}`);
             await page.waitForLoadState("networkidle");
             await page.waitForTimeout(500);
             await page.screenshot({ path: shotPath("product", `${bp}-loaded.png`), ...SS_OPTS });
@@ -172,6 +174,7 @@ test.describe("Visual review screenshots", () => {
 
             const sizeOption = page.locator('[data-testid="size-option"]:not([disabled])').first();
             if (await sizeOption.isVisible({ timeout: 5000 }).catch(() => false)) {
+                await page.getByPlaceholder("Search elite performance gear...").click();
                 await sizeOption.click();
                 await page.waitForTimeout(300);
                 await page.screenshot({ path: shotPath("product", `${bp}-size-selected.png`), ...SS_OPTS });

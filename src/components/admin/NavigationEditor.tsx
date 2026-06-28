@@ -6,6 +6,7 @@ import { suggestRoutes } from "@/lib/actions/suggestions";
 import { saveNavigation } from "@/lib/actions/navigation";
 import { useRouter } from "next/navigation";
 import { logger } from "@/lib/logger";
+import { generateId } from "@/lib/rebuild-nav-urls";
 
 interface Props {
     doc: Record<string, unknown> | null;
@@ -54,7 +55,7 @@ export default function NavigationEditor({ doc }: Props) {
                     />
                 ))}
                 <button onClick={() => {
-                    setNavItems([...navItems, { id: `nav-${Date.now()}`, level: 0, label: "", href: "/", children: [] }]);
+                    setNavItems([...navItems, { id: generateId(), level: 0, label: "", href: "/", children: [] }]);
                 }} className="text-sm text-primary hover:text-primary font-medium flex items-center gap-1">
                     <span className="material-symbols-outlined text-[16px]">add</span> Add Top-Level Item
                 </button>
@@ -94,7 +95,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
     }
 
     function addChild() {
-        const newChild: Record<string, unknown> = { id: `nav-${Date.now()}`, level: (item.level as number || 0) + 1, label: "", href: "/", children: [] };
+        const newChild: Record<string, unknown> = { id: generateId(), level: (item.level as number || 0) + 1, label: "", href: "/", children: [] };
         const updated = [...items];
         const target = { ...updated[index] };
         target.children = [...(target.children as Record<string, unknown>[] || []), newChild];

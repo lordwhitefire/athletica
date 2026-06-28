@@ -9,7 +9,7 @@ export const client = createClient({
     dataset: "production",
     apiVersion: "2025-01-01",
     useCdn: true,
-    timeout: 10000,
+    timeout: 20000,
 });
 
 const builder = createImageUrlBuilder(client);

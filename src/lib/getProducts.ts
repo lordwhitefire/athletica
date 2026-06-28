@@ -1,4 +1,5 @@
 import { cache } from "react";
+import { splitModel } from "@/lib/model";
 import type { Product } from "@/types/product";
 import type { ApiResult } from "@/lib/api-types";
 import { ok } from "@/lib/api-types";
@@ -29,6 +30,16 @@ export async function getProductsByName(name: string, excludeId?: string): Promi
     const result = await getCachedProducts();
     if (result.error) return result;
     return ok(result.data.filter((p) => p.name === name && p.id !== excludeId));
+}
+
+export async function getProductsByModelPrefix(prefix: string, excludeId?: string): Promise<ApiResult<Product[]>> {
+    const result = await getCachedProducts();
+    if (result.error) return result;
+    return ok(result.data.filter((p) => {
+        if (p.id === excludeId) return false;
+        const otherPrefix = splitModel(p.model).slice(0, -1).join("/");
+        return otherPrefix === prefix;
+    }));
 }
 
 export async function getProductsByBrand(brand: string, excludeName?: string, excludeId?: string): Promise<ApiResult<Product[]>> {

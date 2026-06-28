@@ -6,8 +6,8 @@ import { Input } from "./Input";
 describe("Input component visual states", () => {
     const defaultRegistration = {
         name: "test",
-        onChange: () => {},
-        onBlur: () => {},
+        onChange: async () => {},
+        onBlur: async () => {},
         ref: () => {},
     };
 

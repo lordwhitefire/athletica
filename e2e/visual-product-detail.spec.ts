@@ -1,8 +1,11 @@
 import { test, expect } from "@playwright/test";
+import { navigateToCategory } from "./constants";
 
 test.describe("Visual — Product detail page", () => {
     test("product detail page should match visual baseline", async ({ page }) => {
-        await page.goto("/football-boots");
+        await navigateToCategory(page);
+        await page.locator("[data-testid='cart-icon']").hover();
+        await page.waitForTimeout(200);
         await page.locator("[data-testid='product-card']").first().click();
         await page.waitForLoadState("networkidle");
         await page.waitForTimeout(2000);

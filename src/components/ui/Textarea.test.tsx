@@ -6,8 +6,8 @@ import { Textarea } from "./Textarea";
 describe("Textarea component visual states", () => {
     const defaultRegistration = {
         name: "bio",
-        onChange: () => {},
-        onBlur: () => {},
+        onChange: async () => {},
+        onBlur: async () => {},
         ref: () => {},
     };
 

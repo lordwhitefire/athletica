@@ -1,17 +1,17 @@
 import { test, expect } from "@playwright/test";
+import { navigateToCategory } from "./constants";
 
 test.describe("Cart flow", () => {
     async function addFirstProductToCart(page: import("@playwright/test").Page) {
-        // Navigate directly to the category page to avoid the mega-menu overlay
-        await page.goto("/football-boots");
-        await page.waitForLoadState("networkidle");
+        await navigateToCategory(page);
 
-        // Click the first product card and wait for navigation to the product detail page
+        await page.locator("[data-testid='cart-icon']").hover();
+        await page.waitForTimeout(200);
+
         await page.locator("[data-testid='product-card']").first().click();
-        await page.waitForURL(url => url.pathname !== "/football-boots", { timeout: 15000 });
+        await page.waitForURL(url => url.pathname !== "/", { timeout: 15000 });
         await page.waitForLoadState("networkidle");
 
-        // Wait for React to hydrate so click handlers are attached to size buttons
         await page.getByTestId("size-option").first().waitFor({ state: "attached", timeout: 10000 }).catch(() => { });
 
         const sizeOptions = page.locator("[data-testid='size-option']:not([disabled])");

@@ -23,7 +23,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
     const { addToast } = useToast();
 
     const hasDiscount = product.price.discount_percent > 0;
-    const availableSizes = product.sizes.filter((s) => s.available);
+    const availableSizes = (product.sizes ?? []).filter((s) => s.available);
 
     function handleAddToCart() {
         if (!selectedSize) {
@@ -162,7 +162,7 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                 </div>
 
                 <div className="grid grid-cols-4 gap-2">
-                    {product.sizes.map((s) => {
+                    {(product.sizes ?? []).map((s) => {
                         const isSelected = selectedSize === s.size;
                         const isAvailable = s.available;
 

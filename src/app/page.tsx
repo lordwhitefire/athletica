@@ -17,8 +17,13 @@ export default async function HomePage() {
         getHomepageSections(),
     ]);
 
-    if (configResult.error) throw new Error(configResult.error.message);
-    if (sectionsResult.error) throw new Error(sectionsResult.error.message);
+    if (configResult.error || sectionsResult.error) {
+        return (
+            <div className="min-h-screen overflow-x-hidden flex items-center justify-center">
+                <p className="text-on-surface-variant">Unable to load homepage. Please try again later.</p>
+            </div>
+        );
+    }
 
     const config = configResult.data;
     const sections = sectionsResult.data;

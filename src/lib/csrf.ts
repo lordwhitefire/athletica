@@ -2,6 +2,7 @@ import { NextRequest } from "next/server";
 
 const ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "http://localhost:3001",
     "https://athletica-blond.vercel.app",
 ];
 

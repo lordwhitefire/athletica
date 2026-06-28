@@ -5,52 +5,7 @@ import type { NavigationData, NavItem } from "@/types/navigation";
 import type { ApiResult } from "@/lib/api-types";
 import type { Product } from "@/types/product";
 import { ok, fromCaughtError } from "@/lib/api-types";
-
-function slugify(text: string): string {
-    return text.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
-}
-
-function setHierarchicalHref(target: { level: number; label: string; href?: string | null }, ancestorSegments: string[]): string {
-    const segment = slugify(target.label);
-    const segments = [...ancestorSegments, segment];
-    const href = `/en/${segments.join("/")}`;
-    (target as Record<string, unknown>).href = href;
-    return href;
-}
-
-function applyHierarchicalHrefs(items: NavItem[], ancestorSegments: string[]): void {
-    for (const child of items) {
-        if (child.disabled) continue;
-        const href = setHierarchicalHref(child, ancestorSegments);
-        if (child.children && child.children.length > 0) {
-            const segments = href.replace(/^\/en\//, "").split("/");
-            applyHierarchicalHrefs(child.children, segments);
-        }
-    }
-}
-
-function computeHierarchicalHrefs(data: NavigationData[]): NavigationData[] {
-    for (const group of data) {
-        if (group.level === 0) {
-            if (group.children && group.children.length > 0) {
-                for (const child of group.children) {
-                    const href = setHierarchicalHref(child, []);
-                    if (child.children && child.children.length > 0) {
-                        const segments = href.replace(/^\/en\//, "").split("/");
-                        applyHierarchicalHrefs(child.children, segments);
-                    }
-                }
-            }
-        } else {
-            const href = setHierarchicalHref(group, []);
-            if (group.children && group.children.length > 0) {
-                const segments = href.replace(/^\/en\//, "").split("/");
-                applyHierarchicalHrefs(group.children, segments);
-            }
-        }
-    }
-    return data;
-}
+import { slugify } from "@/lib/rebuild-nav-urls";
 
 const fetchNavigationData = cache(async () => {
     return client.fetch(`*[_type == "navigation"][0]`);
@@ -59,8 +14,7 @@ const fetchNavigationData = cache(async () => {
 export async function getNavigation(): Promise<ApiResult<NavigationData[]>> {
     try {
         const data = await fetchNavigationData();
-        const navData = computeHierarchicalHrefs((data?.items ?? []) as NavigationData[]);
-        return ok(navData);
+        return ok((data?.items ?? []) as NavigationData[]);
     } catch (err) {
         return fromCaughtError(err, "navigation_fetch_failed");
     }

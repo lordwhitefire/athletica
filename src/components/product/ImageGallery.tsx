@@ -5,16 +5,16 @@ import Image from "next/image";
 
 interface ImageGalleryProps {
     mainImage: string;
-    gallery: string[];
+    gallery?: string[];
     productName: string;
     badges?: string[];
 }
 
 export default function ImageGallery({
     mainImage,
-    gallery,
     productName,
     badges = [],
+    gallery = [],
 }: ImageGalleryProps) {
     const allImages = [mainImage, ...gallery];
     const [activeIndex, setActiveIndex] = useState(0);

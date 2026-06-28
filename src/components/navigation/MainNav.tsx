@@ -51,12 +51,13 @@ export default function MainNav({ navigation }: MainNavProps) {
                                 className="relative"
                             >
                                 {child.disabled || !child.href ? (
-                                    <span className="flex items-center px-4 py-3 whitespace-nowrap text-sm font-bold text-zinc-500 cursor-default">
+                                    <span data-testid={`nav-item-${child.id}`} className="flex items-center px-4 py-3 whitespace-nowrap text-sm font-bold text-zinc-500 cursor-default">
                                         {child.label}
                                     </span>
                                 ) : (
                                     <Link
                                         href={child.href}
+                                        data-testid={`nav-item-${child.id}`}
                                         aria-current={isActive ? "page" : undefined}
                                         aria-expanded={activeItem?.id === child.id}
                                         aria-controls={child.children?.length ? `mega-menu-${child.id}` : undefined}
