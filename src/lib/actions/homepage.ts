@@ -39,7 +39,7 @@ export async function updateBanner(index: number, banner: Record<string, unknown
         const docAny = docResult.data as Record<string, unknown>;
         if (!(docAny.hero_carousel as Record<string, unknown>)?.banners) return fail("not_found", "banners_not_found", "No banners found.");
         const banners = [...(docAny.hero_carousel as Record<string, unknown>).banners as Record<string, unknown>[]];
-        banners[index] = ensureKey({ ...banners[index], ...banner });
+        banners[index] = ensureKey({ ...banners[index], ...parsed.data as Record<string, unknown> });
         await adminClient.patch(docAny._id as string).set({ "hero_carousel.banners": banners }).commit();
         revalidatePath("/admin/homepage");
         revalidatePath("/");
@@ -106,7 +106,7 @@ export async function updateHeroCarousel(heroCarousel: Record<string, unknown>):
         const docResult = await getHomepageDoc();
         if (docResult.error) return docResult;
         const docAny = docResult.data as Record<string, unknown>;
-        await adminClient.patch(docAny._id as string).set({ hero_carousel: heroCarousel }).commit();
+        await adminClient.patch(docAny._id as string).set({ hero_carousel: parsed.data }).commit();
         revalidatePath("/admin/homepage");
         revalidatePath("/");
         return ok({ updated: true });
@@ -123,7 +123,7 @@ export async function addBanner(banner: Record<string, unknown>): Promise<ApiRes
         if (docResult.error) return docResult;
         const docAny = docResult.data as Record<string, unknown>;
         if (!(docAny.hero_carousel as Record<string, unknown>)?.banners) return fail("not_found", "banners_not_found", "No banners found.");
-        const banners = [...(docAny.hero_carousel as Record<string, unknown>).banners as Record<string, unknown>[], ensureKey(banner)];
+        const banners = [...(docAny.hero_carousel as Record<string, unknown>).banners as Record<string, unknown>[], ensureKey(parsed.data as Record<string, unknown>)];
         await adminClient.patch(docAny._id as string).set({ "hero_carousel.banners": banners }).commit();
         revalidatePath("/admin/homepage");
         revalidatePath("/");
@@ -179,7 +179,7 @@ export async function addSectionItem(sectionIndex: number, item: Record<string, 
         if (!sections?.[sectionIndex]) return fail("not_found", "section_not_found", "Section not found.");
         const updatedSections = [...sections];
         const section = { ...updatedSections[sectionIndex] as Record<string, unknown> };
-        const items = [...(section.items as Record<string, unknown>[] || []), ensureKey(item)];
+        const items = [...(section.items as Record<string, unknown>[] || []), ensureKey(parsed.data as Record<string, unknown>)];
         section.items = items;
         updatedSections[sectionIndex] = section;
         await adminClient.patch(docAny._id as string).set({ sections: updatedSections }).commit();
@@ -203,7 +203,7 @@ export async function updateSectionItem(sectionIndex: number, itemIndex: number,
         const updatedSections = [...sections];
         const section = { ...updatedSections[sectionIndex] as Record<string, unknown> };
         const items = [...(section.items as Record<string, unknown>[] || [])];
-        items[itemIndex] = { ...items[itemIndex], ...item };
+        items[itemIndex] = { ...items[itemIndex], ...parsed.data as Record<string, unknown> };
         section.items = items;
         updatedSections[sectionIndex] = section;
         await adminClient.patch(docAny._id as string).set({ sections: updatedSections }).commit();

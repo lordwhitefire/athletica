@@ -2,14 +2,14 @@ import { z } from "zod";
 
 const bannerSchema = z.object({
     _key: z.string().optional(),
-    image_asset: z.string().optional().default(""),
+    id: z.string().optional(),
     title: z.string().optional().default(""),
     subtitle: z.string().optional().default(""),
-    cta_text: z.string().optional().default(""),
-    cta_link: z.string().optional().default(""),
-    text_color: z.string().optional().default(""),
-    overlay_opacity: z.number().optional().default(0),
-    text_position: z.string().optional().default("center"),
+    button_text: z.string().optional().default(""),
+    link: z.string().optional().default(""),
+    gradient: z.string().optional().default(""),
+    accent_color: z.string().optional().default(""),
+    image: z.union([z.string(), z.null(), z.record(z.string(), z.unknown())]).optional().default(null),
 });
 
 const sectionItemSchema = z.object({

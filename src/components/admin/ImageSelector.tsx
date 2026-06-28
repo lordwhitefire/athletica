@@ -31,7 +31,7 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
             setLoading(true);
             fetch("/api/admin/media/assets")
                 .then((r) => r.json())
-                .then(setAssets)
+                .then((res) => setAssets(res.data || res))
                 .finally(() => setLoading(false));
         }
     }, [showPicker, assets.length]);
@@ -61,7 +61,7 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
                 method: "POST",
                 body: formData,
             });
-            const asset = await res.json();
+            const asset = (await res.json()).data;
             selectAsset(asset);
         } catch (err) {
             logger.error(err, "ImageSelector error");
