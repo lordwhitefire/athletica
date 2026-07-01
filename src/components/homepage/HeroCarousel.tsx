@@ -19,7 +19,7 @@ function SlideContent({ banner, logicalIndex }: { banner: HeroBanner; logicalInd
                     {/* ── IMAGE REGION ── */}
                     {/* Locked to 2.44 aspect ratio container as requested via Tailwind class */}
                     <div className="w-full aspect-[2.44/1] relative flex-none">
-                        <Image src={banner.image} alt={banner.title} fill className="object-cover" priority sizes="100vw" />
+                        <Image src={banner.image} alt={banner.title} fill className="object-cover" priority sizes="100vw" unoptimized />
 
                         {/* DESKTOP TEXT OVERLAY (Hidden on mobile < 768px) */}
                         <div className="absolute inset-0 hidden md:flex flex-col justify-center px-10 lg:px-20 z-10 w-full max-w-[40%] lg:max-w-[30%]">

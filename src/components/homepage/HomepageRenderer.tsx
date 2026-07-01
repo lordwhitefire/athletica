@@ -45,13 +45,13 @@ export default function HomepageRenderer({ sectionsWithProducts }: HomepageRende
                         return (
                             <div key={s.id} className={`w-full ${sectionPadding} border-b border-zinc-800 ${s.bg || ""}`}>
                                 <div className={MAX_W}>
-                                    <CategoryGridSectionComponent
+<CategoryGridSectionComponent
                                         title={s.title}
                                         variant={s.variant}
-                                        viewAllHref={s.viewAllHref}
+                                        viewAllLink={s.viewAllLink}
                                         viewAllLabel={s.viewAllLabel}
-                                        bg={s.bg}
                                         items={s.items}
+                                        bg={s.bg}
                                     />
                                 </div>
                             </div>

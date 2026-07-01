@@ -17,7 +17,7 @@ export interface HeroCarousel {
 
 export interface CategoryGridItem {
     label: string;
-    href: string;
+    link: string;
     image?: string;
     bg?: string;
     textColor?: string;
@@ -51,7 +51,7 @@ export interface CategoryGridSection {
     title: string;
     variant: CategorySectionVariant;
     bg?: string;
-    viewAllHref?: string;
+    viewAllLink?: string;
     viewAllLabel?: string;
     items: CategoryGridItem[];
 }

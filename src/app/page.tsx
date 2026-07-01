@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getHomepageConfig, getHomepageSections, getProductsForCarousel } from "@/lib/getHomepage";
+import { getHomepageConfig, getHomepageSections, getProductsForCarousel } from "@/lib/getHomepageJson";
 import { ProductCarouselSection } from "@/types/homepage";
 import HeroCarousel from "@/components/homepage/HeroCarousel";
 import HomepageRenderer from "@/components/homepage/HomepageRenderer";

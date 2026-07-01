@@ -19,7 +19,7 @@ export default function StackedBanners({ items }: Props) {
             transition={{ duration: 0.5, ease: "easeOut" }}
         >
             {items.map((item, i) => (
-                <Link key={item.label} href={item.href}>
+                <Link key={item._key || item.label} href={item.link || "/"}>
                     <div className={`${i === 0 ? "h-32 md:h-48" : "h-48 md:h-80"} ${item.bg || "bg-black"} ${item.textColor || "text-white"} flex items-center justify-between px-6 md:px-20 group cursor-pointer overflow-hidden relative`}>
                         {item.image && (
                             <Image src={item.image} alt={item.label} fill className="object-cover opacity-30 group-hover:scale-105 transition-transform" sizes="(max-width: 768px) 100vw, 50vw" />

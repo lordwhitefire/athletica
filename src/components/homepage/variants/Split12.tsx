@@ -19,7 +19,7 @@ export default function Split12({ items }: Props) {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
         >
-            <Link href={items[0].href} className="md:w-1/3 relative group overflow-hidden flex items-center justify-center h-40 md:h-full">
+            <Link href={items[0].link || "/"} className="md:w-1/3 relative group overflow-hidden flex items-center justify-center h-40 md:h-full">
                 {items[0].image && (
                     <Image src={items[0].image} alt={items[0].label} fill className="object-cover opacity-60 group-hover:scale-105 transition-transform" sizes="(max-width: 768px) 100vw, 50vw" />
                 )}
@@ -28,7 +28,7 @@ export default function Split12({ items }: Props) {
                     {items[0].label}
                 </h3>
             </Link>
-            <Link href={items[1].href} className="md:w-2/3 relative group overflow-hidden flex items-center justify-center h-40 md:h-full">
+            <Link href={items[1].link || "/"} className="md:w-2/3 relative group overflow-hidden flex items-center justify-center h-40 md:h-full">
                 {items[1].image && (
                     <Image src={items[1].image} alt={items[1].label} fill className="object-cover opacity-60 group-hover:scale-105 transition-transform" sizes="(max-width: 768px) 100vw, 50vw" />
                 )}

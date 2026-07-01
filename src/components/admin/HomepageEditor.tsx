@@ -261,7 +261,7 @@ export default function HomepageEditor({ doc }: Props) {
         const [title, setTitle] = useState(section.title as string || "");
         const [variant, setVariant] = useState(section.variant as string || "grid-4-equal");
         const [bg, setBg] = useState(section.bg as string || "bg-surface");
-        const [viewAllHref, setViewAllHref] = useState(section.viewAllHref as string || "");
+        const [viewAllLink, setViewAllLink] = useState(section.viewAllLink as string || "");
         const [viewAllLabel, setViewAllLabel] = useState(section.viewAllLabel as string || "");
         const [subtitle, setSubtitle] = useState(section.subtitle as string || "");
         const [sort, setSort] = useState(section.sort as string || "newest");
@@ -297,7 +297,7 @@ export default function HomepageEditor({ doc }: Props) {
             const base: Record<string, unknown> = { id: section.id, title, type, variant };
             if (type === "category_grid") {
                 base.bg = bg;
-                base.viewAllHref = viewAllHref || undefined;
+                base.viewAllLink = viewAllLink || undefined;
                 base.viewAllLabel = viewAllLabel || undefined;
                 base.items = items;
             } else if (type === "product_carousel") {
@@ -393,7 +393,7 @@ export default function HomepageEditor({ doc }: Props) {
                     {type === "category_grid" && (
                         <>
                             <Field label="Background" value={bg} onChange={setBg} />
-                            <AutoSuggest label="View All Href" value={viewAllHref} onChange={setViewAllHref} fetchSuggestions={suggestRoutes} />
+                            <AutoSuggest label="View All Link" value={viewAllLink} onChange={setViewAllLink} fetchSuggestions={suggestRoutes} />
                             <Field label="View All Label" value={viewAllLabel} onChange={setViewAllLabel} />
                         </>
                     )}
@@ -445,7 +445,7 @@ export default function HomepageEditor({ doc }: Props) {
                             <button onClick={async () => {
                                 setAddingItem(true);
                                 try {
-                                    const result = await addSectionItem(index, { label: "New Item", href: "/" });
+                                    const result = await addSectionItem(index, { label: "New Item", link: "/" });
                                     if (result.error) {
                                         alert(result.error.message);
                                         return;
@@ -504,7 +504,7 @@ export default function HomepageEditor({ doc }: Props) {
 
     function CategoryItemEditor({ sectionIndex, item, itemIndex }: { sectionIndex: number; item: Record<string, unknown>; itemIndex: number }) {
         const [label, setLabel] = useState(item.label as string || "");
-        const [href, setHref] = useState(item.href as string || "");
+        const [link, setLink] = useState(item.link as string || "");
         const [image, setImage] = useState<string | null>(extractAssetId(item.image));
         const [itemBg, setItemBg] = useState(item.bg as string || "");
         const [textColor, setTextColor] = useState(item.textColor as string || "");
@@ -515,7 +515,7 @@ export default function HomepageEditor({ doc }: Props) {
         async function save() {
             setSaving(true);
             try {
-                const updated: Record<string, unknown> = { label, href };
+                const updated: Record<string, unknown> = { label, link };
                 if (image) updated.image = { _type: "image", asset: { _ref: image, _type: "reference" } };
                 if (itemBg) updated.bg = itemBg;
                 if (textColor) updated.textColor = textColor;
@@ -556,7 +556,7 @@ export default function HomepageEditor({ doc }: Props) {
             <div className="bg-neutral-750 border border-neutral-700 rounded p-3 space-y-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <Field label="Label" value={label} onChange={setLabel} />
-                    <AutoSuggest label="Href" value={href} onChange={setHref} fetchSuggestions={suggestRoutes} />
+                    <AutoSuggest label="Link" value={link} onChange={setLink} fetchSuggestions={suggestRoutes} />
                     <Field label="Background" value={itemBg} onChange={setItemBg} />
                     <Field label="Text Color" value={textColor} onChange={setTextColor} />
                     <Field label="Accent" value={accent} onChange={setAccent} />

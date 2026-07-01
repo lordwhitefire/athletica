@@ -28,7 +28,7 @@ interface CategoryGridSectionProps {
     title: string;
     items: CategoryGridItem[];
     variant: CategorySectionVariant;
-    viewAllHref?: string;
+    viewAllLink?: string;
     viewAllLabel?: string;
     bg?: string;
 }
@@ -37,7 +37,7 @@ export default function CategoryGridSection({
     title,
     items,
     variant,
-    viewAllHref,
+    viewAllLink,
     viewAllLabel = "View All",
     bg = "bg-surface",
 }: CategoryGridSectionProps) {
@@ -50,9 +50,9 @@ export default function CategoryGridSection({
                 <h2 className={`font-headline text-2xl md:text-4xl font-black uppercase italic tracking-tighter ${bg === "bg-primary" || bg === "bg-primary-container" ? "text-black" : "text-on-surface"}`}>
                     {title}
                 </h2>
-                {viewAllHref && (
+                {viewAllLink && (
                     <Link
-                        href={viewAllHref}
+                        href={viewAllLink}
                         className="text-primary-container font-bold text-xs md:text-sm uppercase tracking-widest hover:underline underline-offset-4 flex items-center gap-1 transition-transform hover:translate-x-1"
                     >
                         {viewAllLabel}

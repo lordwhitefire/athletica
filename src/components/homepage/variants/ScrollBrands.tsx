@@ -89,8 +89,8 @@ export default function ScrollBrands({ items }: Props) {
                     >
                         {items.map((item) => (
                             <Link
-                                key={item.label}
-                                href={item.href}
+                                key={item._key || item.label}
+                                href={item.link || "/"}
                                 className="flex-shrink-0 group"
                                 style={{ minWidth: cardWidth > 0 ? `${cardWidth}px` : undefined }}
                             >

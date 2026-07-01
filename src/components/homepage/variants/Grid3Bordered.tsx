@@ -19,11 +19,20 @@ export default function Grid3Bordered({ items }: Props) {
             transition={{ duration: 0.5, ease: "easeOut" }}
         >
             {items.map((item) => (
-                <Link key={item.label} href={item.href}>
+                <Link key={item._key || item.label} href={item.link || "/"}>
                     <div className={`relative h-32 md:h-64 ${item.bg || "bg-surface-container-low"} flex items-center justify-center ${item.accent || "border-l-8 border-primary-container"} cursor-pointer hover:opacity-90 transition-opacity group overflow-hidden`}>
-                        {item.image && (
-                            <Image src={item.image} alt={item.label} fill className="object-cover opacity-20 group-hover:scale-105 transition-transform" sizes="(max-width: 768px) 50vw, 33vw" />
-                        )}
+                        {item.image ? (
+                            <Image 
+                                src={item.image} 
+                                alt={item.label} 
+                                fill 
+                                className="object-cover opacity-20 group-hover:scale-105 transition-transform" 
+                                sizes="(max-width: 768px) 50vw, 33vw"
+                                onError={(e) => {
+                                    e.currentTarget.style.display = 'none';
+                                }}
+                            />
+                        ) : null}
                         <span className={`relative z-10 font-black text-lg md:text-2xl uppercase ${item.textColor || "text-on-surface"}`}>
                             {item.label}
                         </span>
