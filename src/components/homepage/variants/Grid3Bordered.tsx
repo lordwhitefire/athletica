@@ -9,7 +9,18 @@ interface Props {
     items: CategoryGridItem[];
 }
 
-export default function Grid3Bordered({ items }: Props) {
+export default function Grid3Bordered({ items: raw }: Props) {
+    const MIN = 3;
+    const items = raw.length < MIN
+        ? Array.from({ length: MIN }, (_, i) => ({
+            _key: `ph-${i}`,
+            label: `Placeholder ${i + 1}`,
+            link: "#",
+          }) as CategoryGridItem[])
+        : raw.slice(0, MIN);
+    if (raw.length > MIN) {
+        console.warn(`[Grid3Bordered] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));
+    }
     return (
         <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8"

@@ -9,7 +9,18 @@ interface Props {
     items: CategoryGridItem[];
 }
 
-export default function ScrollCategories({ items }: Props) {
+export default function ScrollCategories({ items: raw }: Props) {
+    const MIN = 4;
+    const items = raw.length < MIN
+        ? Array.from({ length: MIN }, (_, i) => ({
+            _key: `ph-${i}`,
+            label: `Placeholder ${i + 1}`,
+            link: "#",
+          }) as CategoryGridItem[])
+        : raw.slice(0, MIN);
+    if (raw.length > MIN) {
+        console.warn(`[ScrollCategories] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));
+    }
     return (
         <motion.div
             className="flex gap-3 md:gap-6 overflow-x-auto no-scrollbar"
@@ -20,7 +31,7 @@ export default function ScrollCategories({ items }: Props) {
         >
             {items.map((item) => (
                 <Link key={item.label} href={item.link}>
-                    <div className={`relative min-w-[140px] md:min-w-[200px] aspect-video border-4 ${item.accent || "border-black"} flex items-center justify-center font-bold uppercase cursor-pointer hover:bg-white/10 transition-colors group overflow-hidden`}>
+                    <div className={`relative min-w-[140px] md:min-w-[200px] aspect-video border-4 ${item.accent || "border-black"} ${item.bg || "bg-neutral-900"} flex items-center justify-center font-bold uppercase cursor-pointer hover:bg-white/10 transition-colors group overflow-hidden`}>
                         {item.image && (
                             <Image src={item.image} alt={item.label} fill className="object-cover opacity-30 group-hover:scale-105 transition-transform" sizes="150px" />
                         )}

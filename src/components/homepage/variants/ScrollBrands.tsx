@@ -10,7 +10,18 @@ interface Props {
     items: CategoryGridItem[];
 }
 
-export default function ScrollBrands({ items }: Props) {
+export default function ScrollBrands({ items: raw }: Props) {
+    const MIN = 4;
+    const items = raw.length < MIN
+        ? Array.from({ length: MIN }, (_, i) => ({
+            _key: `ph-${i}`,
+            label: `Placeholder ${i + 1}`,
+            link: "#",
+          }) as CategoryGridItem[])
+        : raw.slice(0, MIN);
+    if (raw.length > MIN) {
+        console.warn(`[ScrollBrands] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));
+    }
     const [cardsVisible, setCardsVisible] = useState(3);
     const containerRef = useRef<HTMLDivElement>(null);
     const trackRef = useRef<HTMLDivElement>(null);
@@ -59,8 +70,6 @@ export default function ScrollBrands({ items }: Props) {
             trackRef.current.scrollBy({ left: direction * step, behavior: "smooth" });
         }
     };
-
-    if (!items || items.length === 0) return null;
 
     return (
         <motion.div

@@ -9,7 +9,18 @@ interface Props {
     items: CategoryGridItem[];
 }
 
-export default function Grid4Equal({ items }: Props) {
+export default function Grid4Equal({ items: raw }: Props) {
+    const MIN = 4;
+    const items = raw.length < MIN
+        ? Array.from({ length: MIN }, (_, i) => ({
+            _key: `ph-${i}`,
+            label: `Placeholder ${i + 1}`,
+            link: "#",
+          }) as CategoryGridItem[])
+        : raw.slice(0, MIN);
+    if (raw.length > MIN) {
+        console.warn(`[Grid4Equal] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));
+    }
     return (
         <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"

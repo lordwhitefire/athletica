@@ -9,8 +9,18 @@ interface Props {
     items: CategoryGridItem[];
 }
 
-export default function Split12({ items }: Props) {
-    if (items.length < 2) return null;
+export default function Split12({ items: raw }: Props) {
+    const MIN = 2;
+    const items = raw.length < MIN
+        ? Array.from({ length: MIN }, (_, i) => ({
+            _key: `ph-${i}`,
+            label: `Placeholder ${i + 1}`,
+            link: "#",
+          }) as CategoryGridItem[])
+        : raw.slice(0, MIN);
+    if (raw.length > MIN) {
+        console.warn(`[Split12] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));
+    }
     return (
         <motion.div
             className="flex flex-col md:flex-row gap-3 md:gap-4 md:h-[500px]"

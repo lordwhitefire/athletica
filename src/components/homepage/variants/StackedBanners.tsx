@@ -9,7 +9,18 @@ interface Props {
     items: CategoryGridItem[];
 }
 
-export default function StackedBanners({ items }: Props) {
+export default function StackedBanners({ items: raw }: Props) {
+    const MIN = 2;
+    const items = raw.length < MIN
+        ? Array.from({ length: MIN }, (_, i) => ({
+            _key: `ph-${i}`,
+            label: `Placeholder ${i + 1}`,
+            link: "#",
+          }) as CategoryGridItem[])
+        : raw.slice(0, MIN);
+    if (raw.length > MIN) {
+        console.warn(`[StackedBanners] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));
+    }
     return (
         <motion.div
             className="flex flex-col gap-3 md:gap-4"

@@ -9,8 +9,18 @@ interface Props {
     items: CategoryGridItem[];
 }
 
-export default function Asymmetric2Split({ items }: Props) {
-    if (items.length < 2) return null;
+export default function Asymmetric2Split({ items: raw }: Props) {
+    const MIN = 2;
+    const items = raw.length < MIN
+        ? Array.from({ length: MIN }, (_, i) => ({
+            _key: `ph-${i}`,
+            label: `Placeholder ${i + 1}`,
+            link: "#",
+          }) as CategoryGridItem[])
+        : raw.slice(0, MIN);
+    if (raw.length > MIN) {
+        console.warn(`[Asymmetric2Split] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));
+    }
     return (
         <motion.div
             className="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8 md:h-[500px]"
