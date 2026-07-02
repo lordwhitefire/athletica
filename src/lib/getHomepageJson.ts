@@ -9,7 +9,7 @@ import { filterProducts } from "@/lib/filterProducts";
 
 // Helper function to resolve CDN URLs
 function resolveCdnUrl(url: string): string {
-  if (!url) return null;
+  if (!url) return url;
   return url;
 }
 
