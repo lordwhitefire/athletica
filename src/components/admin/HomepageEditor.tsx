@@ -157,7 +157,7 @@ export default function HomepageEditor({ doc }: Props) {
     // Banner editing states - all visible at once
     const [bannerStates, setBannerStates] = useState(banners.map((banner, i) => ({
         index: i,
-        _key: banner._key || `banner-${i}`,
+        _key: (banner._key as string) || `banner-${i}`,
         title: banner.title as string || "",
         subtitle: banner.subtitle as string || "",
         button_text: banner.button_text as string || "",
@@ -171,7 +171,7 @@ export default function HomepageEditor({ doc }: Props) {
     // Section editing states - all visible at once
     const [sectionStates, setSectionStates] = useState(sections.map((section, i) => ({
         index: i,
-        _key: section._key || `section-${i}`,
+        _key: (section._key as string) || `section-${i}`,
         type: (section._type || section.type) as string,
         title: section.title as string || "",
         variant: section.variant as string || "grid-4-equal",
