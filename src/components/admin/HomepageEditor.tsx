@@ -144,6 +144,53 @@ interface Props {
     doc: Record<string, unknown> | null;
 }
 
+interface SectionStateItem {
+    _key: string;
+    label: string;
+    link: string;
+    bg: string;
+    textColor: string;
+    accent: string;
+    image: string | null;
+}
+
+interface SectionStateCard {
+    _key: string;
+    title: string;
+    subtitle: string;
+    link: string;
+    gradient: string;
+    emoji: string;
+    image: string | null;
+}
+
+interface SectionState {
+    index: number;
+    _key: string;
+    type: string;
+    title: string;
+    variant: string;
+    bg: string;
+    viewAllLink: string;
+    viewAllLabel: string;
+    subtitle: string;
+    sort: string;
+    limit: string;
+    link: string;
+    link_label: string;
+    category: string;
+    brand: string;
+    modelLine: string;
+    traction: string;
+    minPrice: string;
+    maxPrice: string;
+    autoSwitchMs: string;
+    items: SectionStateItem[];
+    cards: SectionStateCard[];
+    saving: boolean;
+    previewProducts: Record<string, unknown>[];
+}
+
 export default function HomepageEditor({ doc }: Props) {
     const router = useRouter();
     const [addingBanner, setAddingBanner] = useState(false);
@@ -169,7 +216,7 @@ export default function HomepageEditor({ doc }: Props) {
     })));
 
     // Section editing states - all visible at once
-    const [sectionStates, setSectionStates] = useState(sections.map((section, i) => ({
+    const [sectionStates, setSectionStates] = useState<SectionState[]>(sections.map((section, i) => ({
         index: i,
         _key: (section._key as string) || `section-${i}`,
         type: (section._type || section.type) as string,
@@ -191,16 +238,16 @@ export default function HomepageEditor({ doc }: Props) {
         maxPrice: String(((section.filter as Record<string, unknown>)?.max_price as number) ?? ""),
         autoSwitchMs: String(section.autoSwitchMs ?? "4000"),
         items: (section.items as Record<string, unknown>[] || []).map((item, ii) => ({
-            _key: item._key || `item-${ii}`,
-            label: item.title || item.label || "",
-            link: item.link as string || "/",
-            bg: item.bg as string || "",
-            textColor: item.textColor as string || "text-on-surface",
-            accent: item.accent as string || "",
+            _key: (item._key as string) || `item-${ii}`,
+            label: (item.title as string) || (item.label as string) || "",
+            link: (item.link as string) || "/",
+            bg: (item.bg as string) || "",
+            textColor: (item.textColor as string) || "text-on-surface",
+            accent: (item.accent as string) || "",
             image: extractAssetId(item.image),
         })),
         cards: (section.cards as Record<string, unknown>[] || []).map((card, ii) => ({
-            _key: card._key || `card-${ii}`,
+            _key: (card._key as string) || `card-${ii}`,
             title: card.title as string || "",
             subtitle: card.subtitle as string || "",
             link: card.link as string || "/",
