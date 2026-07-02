@@ -977,7 +977,7 @@ export default function HomepageEditor({ doc }: Props) {
                                             </h4>
                                             <div className="space-y-4">
                                                 {section.items.map((item, itemIndex) => (
-                                                    <div key={item._key} className="bg-neutral-800 border border-neutral-700 rounded-lg p-4">
+                                                    <div key={item._key as string} className="bg-neutral-800 border border-neutral-700 rounded-lg p-4">
                                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                             <div>
                                                                 <label className="flex items-center gap-2 mb-1">
