@@ -122,7 +122,7 @@ const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => 
     console.log("✅ Successfully loaded homepage JSON with", transformed.sections?.length || 0, "sections");
     return ok(resolved as unknown as HomepageConfig);
   } catch (err) {
-    console.error("❌ Error reading homepage JSON:", err.message);
+    console.error("❌ Error reading homepage JSON:", err instanceof Error ? err.message : err);
     return fromCaughtError(err, "homepage_json_fetch_failed");
   }
 });
