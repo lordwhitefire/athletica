@@ -19,7 +19,7 @@ interface BuildStatusProps {
 export default function BuildStatus({ className = '' }: BuildStatusProps) {
   const [status, setStatus] = useState<BuildStatus>({
     status: 'idle',
-    lastBuild: null,
+    lastBuild: undefined,
     dataTypes: {},
     errors: []
   })

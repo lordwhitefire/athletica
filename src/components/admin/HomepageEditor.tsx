@@ -401,13 +401,13 @@ export default function HomepageEditor({ doc }: Props) {
         }
     };
 
-    const deleteSection = async (index: number) => {
+    const handleDeleteSection = async (index: number) => {
         if (!confirm(`Delete section "${sectionStates[index].title}"?`)) return;
         
         setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: true } : s));
         
         try {
-            const result = await deleteSection(index);
+            const result = await handleDeleteSection(index);
             if (result.error) {
                 alert(result.error.message);
                 return;
@@ -715,7 +715,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                 {section.saving ? "Saving..." : "Save Section"}
                                             </button>
                                             <button
-                                                onClick={() => deleteSection(section.index)}
+                                                onClick={() => handleDeleteSection(section.index)}
                                                 disabled={section.saving}
                                                 className="text-xs bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white px-3 py-1.5 rounded transition-colors"
                                             >
