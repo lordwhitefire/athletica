@@ -213,7 +213,7 @@ export default function HomepageEditor({ doc }: Props) {
     })));
 
     // Banner editing functions
-    const updateBannerField = (index: number, field: string, value: string) => {
+    const updateBannerField = (index: number, field: string, value: string | null) => {
         setBannerStates(prev => prev.map((b, i) => i === index ? { ...b, [field]: value } : b));
     };
 
@@ -288,11 +288,11 @@ export default function HomepageEditor({ doc }: Props) {
     };
 
     // Section editing functions
-    const updateSectionField = (index: number, field: string, value: string) => {
+    const updateSectionField = (index: number, field: string, value: string | null) => {
         setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, [field]: value } : s));
     };
 
-    const updateSectionItem = (sectionIndex: number, itemIndex: number, field: string, value: string) => {
+    const updateSectionItem = (sectionIndex: number, itemIndex: number, field: string, value: string | null) => {
         setSectionStates(prev => prev.map((s, i) => {
             if (i === sectionIndex) {
                 const updatedItems = [...s.items];
@@ -303,7 +303,7 @@ export default function HomepageEditor({ doc }: Props) {
         }));
     };
 
-    const updateSectionCard = (sectionIndex: number, cardIndex: number, field: string, value: string) => {
+    const updateSectionCard = (sectionIndex: number, cardIndex: number, field: string, value: string | null) => {
         setSectionStates(prev => prev.map((s, i) => {
             if (i === sectionIndex) {
                 const updatedCards = [...s.cards];
