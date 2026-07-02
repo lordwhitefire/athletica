@@ -583,6 +583,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                 <InfoTooltip text="Page to navigate to when button is clicked" />
                                             </label>
                                             <AutoSuggest
+                                                label="Link"
                                                 value={banner.link}
                                                 onChange={(value) => updateBannerField(index, "link", value)}
                                                 fetchSuggestions={suggestRoutes}
@@ -765,6 +766,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                         <InfoTooltip text="Link to view all items in this category" />
                                                     </label>
                                                     <AutoSuggest
+                                                        label="View All Link"
                                                         value={section.viewAllLink}
                                                         onChange={(value) => updateSectionField(section.index, "viewAllLink", value)}
                                                         fetchSuggestions={suggestRoutes}
@@ -838,6 +840,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                         <InfoTooltip text="Link to view all products in this carousel" />
                                                     </label>
                                                     <AutoSuggest
+                                                        label="Link"
                                                         value={section.link}
                                                         onChange={(value) => updateSectionField(section.index, "link", value)}
                                                         fetchSuggestions={suggestRoutes}
@@ -863,6 +866,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                         <InfoTooltip text="Filter products by category" />
                                                     </label>
                                                     <AutoSuggest
+                                                        label="Category Filter"
                                                         value={section.category}
                                                         onChange={(value) => updateSectionField(section.index, "category", value)}
                                                         fetchSuggestions={suggestCategories}
@@ -875,6 +879,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                         <InfoTooltip text="Filter products by brand" />
                                                     </label>
                                                     <AutoSuggest
+                                                        label="Brand Filter"
                                                         value={section.brand}
                                                         onChange={(value) => updateSectionField(section.index, "brand", value)}
                                                         fetchSuggestions={suggestBrands}
@@ -887,6 +892,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                         <InfoTooltip text="Filter products by model name (last segment after /)" />
                                                     </label>
                                                     <AutoSuggest
+                                                        label="Model Filter"
                                                         value={section.modelLine}
                                                         onChange={(value) => updateSectionField(section.index, "modelLine", value)}
                                                         fetchSuggestions={suggestNames}
@@ -992,6 +998,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                                     <InfoTooltip text="Page to navigate to when item is clicked" />
                                                                 </label>
                                                                 <AutoSuggest
+                                                                    label="Link"
                                                                     value={item.link}
                                                                     onChange={(value) => updateSectionItem(section.index, itemIndex, "link", value)}
                                                                     fetchSuggestions={suggestRoutes}
@@ -1097,6 +1104,7 @@ export default function HomepageEditor({ doc }: Props) {
                                                                     <InfoTooltip text="Page to navigate to when card is clicked" />
                                                                 </label>
                                                                 <AutoSuggest
+                                                                    label="Link"
                                                                     value={card.link}
                                                                     onChange={(value) => updateSectionCard(section.index, cardIndex, "link", value)}
                                                                     fetchSuggestions={suggestRoutes}
