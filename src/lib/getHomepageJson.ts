@@ -68,7 +68,7 @@ const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => 
     // Transform Sanity data into the frontend shape
     const transformed = {
       hero_carousel: {
-        banners: (rawData.hero_carousel || {}).banners?.map((banner) => ({
+        banners: (rawData.hero_carousel || {}).banners?.map((banner: Record<string, unknown>) => ({
           _key: banner._key,
           id: banner.id || banner._key || "",
           title: banner.title || "",
@@ -81,14 +81,14 @@ const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => 
         })) || [],
         auto_switch_ms: 4000,
       },
-      sections: (rawData.sections || []).map((section) => ({
+      sections: (rawData.sections || []).map((section: Record<string, unknown>) => ({
         id: section.id || section._key || "",
         type: section.type || section._type || "category_grid",
         variant: section.variant || section.type || section._type || "grid-4-equal",
         title: section.title || "",
         subtitle: section.subtitle || "",
         bg: section.bg || "bg-surface",
-        items: (section.items || []).map((item) => ({
+        items: (section.items || []).map((item: Record<string, unknown>) => ({
           _key: item._key,
           label: item.title || item.label || "",
           link: item.link || "/",
@@ -104,7 +104,7 @@ const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => 
         limit: section.limit ?? 10,
         viewAllLink: section.link || "",
         viewAllLabel: section.link_label || "",
-        cards: (section.cards || []).map((card) => ({
+        cards: (section.cards || []).map((card: Record<string, unknown>) => ({
           _key: card._key,
           id: card.id || card._key || "",
           title: card.title || "",
