@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import { splitModel, joinModel } from "@/lib/model";
 import type { ModelNavNode } from "@/lib/getNavigation";
+import InfoTooltip from "@/components/ui/InfoTooltip";
 
 interface ModelInputProps {
     modelNavTree: ModelNavNode[];
@@ -159,8 +160,9 @@ export default function ModelInput({ modelNavTree, value, onChange, onValidChang
 
     return (
         <div>
-            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">
+            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
                 Model
+                <InfoTooltip text="C=Classification (category), T=Type (specific product). Build your model by selecting classifications first, then end with a product type. Example: 'Football Boots/FG/Mercurial Vapor/FG-Elite/FG'." />
             </label>
             <div
                 className={`flex flex-wrap gap-1.5 px-3 py-2 bg-neutral-800 border rounded text-sm transition-colors cursor-text ${error ? "border-red-500" : "border-neutral-700 focus-within:border-primary"
@@ -206,6 +208,18 @@ export default function ModelInput({ modelNavTree, value, onChange, onValidChang
             {error && (
                 <p className="text-red-400 text-xs mt-1">{error}</p>
             )}
+
+            {/* Legend */}
+            <div className="flex gap-4 mt-2 text-xs">
+                <div className="flex items-center gap-2">
+                    <span className="w-3 h-3 bg-blue-900/50 rounded"></span>
+                    <span className="text-blue-300">Classification (Category)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <span className="w-3 h-3 bg-amber-900/50 rounded"></span>
+                    <span className="text-amber-300">Product Type</span>
+                </div>
+            </div>
 
             {/* Dropdown */}
             {showDropdown && suggestions.length > 0 && (

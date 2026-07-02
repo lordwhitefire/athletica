@@ -1,20 +1,48 @@
 import { cache } from "react";
-import { client } from "@/lib/sanity";
+import * as fs from "fs";
+import * as path from "path";
 import { splitModel } from "@/lib/model";
-import type { NavigationData, NavItem } from "@/types/navigation";
+import type { NavigationData, NavItem, NavLink } from "@/types/navigation";
 import type { ApiResult } from "@/lib/api-types";
 import type { Product } from "@/types/product";
 import { ok, fromCaughtError } from "@/lib/api-types";
 import { slugify } from "@/lib/rebuild-nav-urls";
 
+function transformNavItems(items: Record<string, unknown>[]): NavItem[] {
+    return items.map(item => ({
+        id: (item.id as string) || (item._key as string) || "",
+        level: (item.level as number) ?? 0,
+        label: (item.label as string) || "",
+        href: (item.href as string) ?? null,
+        description: item.description as string | undefined,
+        slug: item.slug as string | undefined,
+        featuredImage: item.featuredImage as string | undefined,
+        disabled: item.disabled as boolean | undefined,
+        customLinks: item.customLinks as NavLink[] | undefined,
+        sizeLinks: item.sizeLinks as NavLink[] | undefined,
+        bottomLinks: item.bottomLinks as NavLink[] | undefined,
+        children: item.children ? transformNavItems(item.children as Record<string, unknown>[]) : undefined,
+    }));
+}
+
 const fetchNavigationData = cache(async () => {
-    return client.fetch(`*[_type == "navigation"][0]`);
+    const jsonPath = path.join(process.cwd(), "..", "data", "navigation.json");
+    const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
+    return raw;
 });
 
 export async function getNavigation(): Promise<ApiResult<NavigationData[]>> {
     try {
         const data = await fetchNavigationData();
-        return ok((data?.items ?? []) as NavigationData[]);
+        const items = (data?.items ?? []).map((item: Record<string, unknown>) => ({
+            id: item._key || item.id || "",
+            level: item.level ?? 0,
+            slug: item._key || "",
+            label: item.label || "",
+            href: item.href || "",
+            children: transformNavItems((item.children || []) as Record<string, unknown>[]),
+        }));
+        return ok(items);
     } catch (err) {
         return fromCaughtError(err, "navigation_fetch_failed");
     }

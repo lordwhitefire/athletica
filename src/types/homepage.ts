@@ -16,6 +16,7 @@ export interface HeroCarousel {
 }
 
 export interface CategoryGridItem {
+    _key?: string;
     label: string;
     link: string;
     image?: string;

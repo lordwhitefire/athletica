@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DashboardStats from "./dashboard-stats";
 import BuildStatus from "@/components/admin/BuildStatus";
-import AdminHomepageEditor from "@/components/admin/AdminHomepageEditor";
+import DashboardPreviewHub from "@/components/admin/DashboardPreviewHub";
 
 export default function AdminDashboard() {
     return (
@@ -26,10 +26,8 @@ export default function AdminDashboard() {
                 <QuickAction href="/admin/brands" label="Manage Brands" icon="local_offer" />
             </div>
 
-            <div className="border-t border-neutral-800 pt-8">
-                <h2 className="text-lg font-bold uppercase tracking-wider text-zinc-400 mb-4">Homepage Editor</h2>
-                <AdminHomepageEditor />
-            </div>
+            <h2 className="text-lg font-bold uppercase tracking-wider text-zinc-400 mb-4 mt-10">Management Overview</h2>
+            <DashboardPreviewHub />
         </div>
     );
 }

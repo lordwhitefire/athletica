@@ -8,6 +8,8 @@ import { validateOrFail } from "@/lib/validate";
 import { navigationSchema } from "@/lib/schemas/navigation";
 import { rebuildNavUrls } from "@/lib/rebuild-nav-urls";
 import type { NavItem } from "@/types/navigation";
+import { getModelNavTree } from "@/lib/getNavigation";
+import type { ModelNavNode } from "@/lib/getNavigation";
 
 export async function getNavigationDoc(): Promise<ApiResult<Record<string, unknown>>> {
     try {
@@ -35,5 +37,14 @@ export async function saveNavigation(items: Record<string, unknown>[]): Promise<
         return ok({ saved: true });
     } catch (err) {
         return fromCaughtError(err, "navigation_save_failed");
+    }
+}
+
+export async function getModelNavTreeAction(): Promise<ApiResult<ModelNavNode[]>> {
+    try {
+        const result = await getModelNavTree();
+        return result;
+    } catch (err) {
+        return fromCaughtError(err, "model_nav_tree_failed");
     }
 }

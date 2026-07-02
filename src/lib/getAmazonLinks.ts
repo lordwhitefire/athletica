@@ -1,32 +1,31 @@
-import { client } from "@/lib/sanity";
+import { cache } from "react";
+import * as fs from "fs";
+import * as path from "path";
 import type { ApiResult } from "@/lib/api-types";
 import { ok, fromCaughtError } from "@/lib/api-types";
 
-let cachedLinks: Record<string, string> | null = null;
+const loadCachedLinks = cache(async (): Promise<Record<string, string>> => {
+    const jsonPath = path.join(process.cwd(), "..", "data", "amazon-links.json");
+    const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
+    const doc = raw["0"] ?? raw;
+    const map: Record<string, string> = {};
+    for (const entry of doc.links ?? []) {
+        map[entry.productId] = entry.url;
+    }
+    return map;
+});
 
-async function loadCachedLinks(): Promise<ApiResult<void>> {
-    if (cachedLinks) return ok(undefined);
+export async function getAmazonLink(productId: string): Promise<ApiResult<string | null>> {
     try {
-        const data = await client.fetch(`*[_type == "amazonLinks"][0]`);
-        const linksArray = data?.links ?? [];
-        cachedLinks = {};
-        for (const entry of linksArray) {
-            cachedLinks[entry.productId] = entry.url;
+        const links = await loadCachedLinks();
+        const link = links[productId];
+        if (!link || link.trim() === "") {
+            return ok(null);
         }
-        return ok(undefined);
+        return ok(link);
     } catch (err) {
         return fromCaughtError(err, "amazon_links_fetch_failed");
     }
-}
-
-export async function getAmazonLink(productId: string): Promise<ApiResult<string | null>> {
-    const loadResult = await loadCachedLinks();
-    if (loadResult.error) return loadResult;
-    const link = cachedLinks![productId];
-    if (!link || link.trim() === "") {
-        return ok(null);
-    }
-    return ok(link);
 }
 
 export async function hasAmazonLink(productId: string): Promise<ApiResult<boolean>> {
@@ -36,10 +35,13 @@ export async function hasAmazonLink(productId: string): Promise<ApiResult<boolea
 }
 
 export async function getLinkedProductIds(): Promise<ApiResult<string[]>> {
-    const loadResult = await loadCachedLinks();
-    if (loadResult.error) return loadResult;
-    const ids = Object.entries(cachedLinks!)
-        .filter(([, link]) => link && link.trim() !== "")
-        .map(([id]) => id);
-    return ok(ids);
+    try {
+        const links = await loadCachedLinks();
+        const ids = Object.entries(links)
+            .filter(([, link]) => link && link.trim() !== "")
+            .map(([id]) => id);
+        return ok(ids);
+    } catch (err) {
+        return fromCaughtError(err, "amazon_links_fetch_failed");
+    }
 }

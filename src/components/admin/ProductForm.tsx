@@ -9,12 +9,13 @@ import { Form } from "@/components/ui/Form";
 import ImageSelector from "./ImageSelector";
 import AutoSuggest from "./AutoSuggest";
 import ModelInput from "./ModelInput";
+import InfoTooltip from "@/components/ui/InfoTooltip";
 import {
     suggestCategories, suggestTractions, suggestNames,
     suggestModels, suggestColors, suggestTechSole,
     suggestTechUpper, suggestTechRange, suggestTechAdjustment,
 } from "@/lib/actions/suggestions";
-import { urlFor } from "@/lib/sanity";
+import { urlFor } from "@/lib/sanity-client";
 import type { SanityImageSource } from "@sanity/image-url";
 import type { ModelNavNode } from "@/lib/getNavigation";
 import type { ApiResult } from "@/lib/api-types";
@@ -149,8 +150,8 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
         import("@/lib/actions/brands").then(m =>
             m.getAllBrandsAdmin().then(r => { if (r.data) setBrandOptions(r.data as BrandOption[]); })
         );
-        import("@/lib/getNavigation").then(m =>
-            m.getModelNavTree().then(r => { if (r.data) setModelNavTree(r.data); })
+        import("@/lib/actions/navigation").then(m =>
+            m.getModelNavTreeAction().then(r => { if (r.data) setModelNavTree(r.data); })
         );
     }, []);
 
@@ -259,6 +260,50 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                             name="thumbnail_asset"
                             control={control}
                             render={({ field }) => (
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Thumbnail
+                                        <InfoTooltip text="Small preview image used in product lists and search results. Recommended: 200x200px." />
+                                    </label>
+                                    <ImageSelector name="thumbnail_sel" label="Thumbnail" value={field.value || null} onChange={(v) => { field.onChange(v); setThumbnailAsset(v); }} />
+                                </div>
+                            )}
+                        />
+                        <div>
+                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                Brand
+                                <InfoTooltip text="Select the brand for this product. Brand logo will be displayed automatically." />
+                            </label>
+                            <div className="flex items-center gap-3">
+                                <select
+                                    value={brandRef || ""}
+                                    onChange={(e) => {
+                                        const v = e.target.value || null;
+                                        setBrandRef(v);
+                                        setValue("brand_ref", v || "");
+                                    }}
+                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors"
+                                >
+                                    <option value="">Select brand...</option>
+                                    {brandOptions.map(b => (
+                                        <option key={b._id} value={b._id}>{b.name}</option>
+                                    ))}
+                                </select>
+                                {selectedBrand?.logo && (
+                                    <img src={assetUrl((selectedBrand.logo.asset as { _ref: string })._ref)} alt={selectedBrand.name}
+                                        className="w-8 h-8 object-contain rounded bg-neutral-800" />
+                                )}
+                            </div>
+                            {errors.brand_ref && (
+                                <p className="text-red-500 text-xs mt-1">{errors.brand_ref.message}</p>
+                            )}
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <Controller
+                            name="thumbnail_asset"
+                            control={control}
+                            render={({ field }) => (
                                 <ImageSelector name="thumbnail_sel" label="Thumbnail" value={field.value || null} onChange={(v) => { field.onChange(v); setThumbnailAsset(v); }} />
                             )}
                         />
@@ -292,7 +337,10 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
                     <div>
                         <div className="flex items-center justify-between mb-2">
-                            <label className="block text-zinc-500 text-xs font-medium">Image Gallery</label>
+                            <label className="block text-zinc-500 text-xs font-medium flex items-center gap-2">
+                                Image Gallery
+                                <InfoTooltip text="Additional product images shown in the product detail page. Recommended: Multiple angles, features, and lifestyle shots." />
+                            </label>
                             <label className={`text-[11px] uppercase tracking-wider font-medium cursor-pointer bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded transition-colors ${uploadingGallery ? "opacity-50 pointer-events-none" : ""}`}>
                                 {uploadingGallery ? "Uploading..." : "Add Image"}
                                 <input ref={galleryFileRef} type="file" accept="image/*" onChange={handleGalleryUpload} className="hidden" />
@@ -325,12 +373,18 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Product ID</label>
+                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                Product ID
+                                <InfoTooltip text="Internal identifier for the product. Used for system tracking and reference." />
+                            </label>
                             <input type="text" {...register("id")}
                                 className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                         </div>
                         <div>
-                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">URL Slug</label>
+                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                URL Slug
+                                <InfoTooltip text="Web-friendly version of the product name used in URLs. Auto-generated from model name." />
+                            </label>
                             <input type="text" {...register("url_slug")}
                                 className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             {errors.url_slug && (
@@ -343,18 +397,30 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                         name="model"
                         control={control}
                         render={({ field }) => (
-                            <ModelInput modelNavTree={modelNavTree} value={field.value || ""} onChange={handleModelChange} onValidChange={setModelValid} />
+                            <div>
+                                <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                    Model
+                                    <InfoTooltip text="Product classification using C/T system: C=Classification (category), T=Type (specific product). Must end with a product type (e.g., 'Football Boots/FG/Mercurial Vapor/FG-Elite/FG')." />
+                                </label>
+                                <ModelInput modelNavTree={modelNavTree} value={field.value || ""} onChange={handleModelChange} onValidChange={setModelValid} />
+                                {errors.model && (
+                                    <p className="text-red-500 text-xs mt-1">{errors.model.message}</p>
+                                )}
+                            </div>
                         )}
                     />
-                    {errors.model && (
-                        <p className="text-red-500 text-xs mt-1">{errors.model.message}</p>
-                    )}
                     <div>
                         <Controller
                             name="category"
                             control={control}
                             render={({ field }) => (
-                                <AutoSuggest name="category" label="Category" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestCategories} />
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Category
+                                        <InfoTooltip text="Main product category (e.g., Football Boots, Running Shoes, Training Apparel)." />
+                                    </label>
+                                    <AutoSuggest name="category" label="Category" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestCategories} />
+                                </div>
                             )}
                         />
                         {errors.category && (
@@ -366,7 +432,13 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                             name="traction"
                             control={control}
                             render={({ field }) => (
-                                <AutoSuggest name="traction" label="Traction (FG/AG/TF/SG)" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTractions} />
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Traction
+                                        <InfoTooltip text="Sole configuration: FG=Firm Ground, AG=Artificial Grass, TF=Turf, SG=Soft Ground." />
+                                    </label>
+                                    <AutoSuggest name="traction" label="Traction (FG/AG/TF/SG)" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTractions} />
+                                </div>
                             )}
                         />
                         <div>
@@ -374,7 +446,13 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                                 name="name"
                                 control={control}
                                 render={({ field }) => (
-                                    <AutoSuggest name="name" label="Name" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestNames} />
+                                    <div>
+                                        <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                            Name
+                                            <InfoTooltip text="Official product name (e.g., 'Mercurial Vapor', 'Ultra Boost')." />
+                                        </label>
+                                        <AutoSuggest name="name" label="Name" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestNames} />
+                                    </div>
                                 )}
                             />
                             {errors.name && (
@@ -384,7 +462,10 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Gender</label>
+                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                Gender
+                                <InfoTooltip text="Target gender demographic for the product." />
+                            </label>
                             <select {...register("gender")}
                                 className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors">
                                 <option value="Unisex">Unisex</option>
@@ -398,7 +479,13 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                             name="color"
                             control={control}
                             render={({ field }) => (
-                                <AutoSuggest name="color" label="Color" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestColors} />
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Color
+                                        <InfoTooltip text="Primary color of the product (e.g., Black, White, Red, Blue)." />
+                                    </label>
+                                    <AutoSuggest name="color" label="Color" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestColors} />
+                                </div>
                             )}
                         />
                         {errors.color && (
@@ -415,12 +502,18 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                                 <input type="number" step="0.01" {...register("price_current")}
                                     className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
+                            <p className="text-xs text-zinc-500 mt-1 flex items-center gap-1">
+                                <InfoTooltip text="Current selling price of the product. This is the price customers will pay." />
+                            </p>
                         </div>
                         <div>
                             <Field label="Original Price" error={errors.price_original?.message}>
                                 <input type="number" step="0.01" {...register("price_original")}
                                     className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
+                            <p className="text-xs text-zinc-500 mt-1 flex items-center gap-1">
+                                <InfoTooltip text="Original MSRP or retail price before any discounts." />
+                            </p>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -429,16 +522,25 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                                 <input type="number" {...register("discount_percent")}
                                     className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
+                            <p className="text-xs text-zinc-500 mt-1 flex items-center gap-1">
+                                <InfoTooltip text="Percentage discount from original price. Auto-calculated if both prices are set." />
+                            </p>
                         </div>
                         <div>
                             <Field label="Member Price" error={errors.member_price?.message}>
                                 <input type="number" step="0.01" {...register("member_price")}
                                     className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
                             </Field>
+                            <p className="text-xs text-zinc-500 mt-1 flex items-center gap-1">
+                                <InfoTooltip text="Special price for loyalty program members or subscribers." />
+                            </p>
                         </div>
                     </div>
                     <div>
-                        <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Currency</label>
+                        <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                            Currency
+                            <InfoTooltip text="Currency code for all pricing fields (EUR, USD, GBP)." />
+                        </label>
                         <select {...register("currency")}
                             className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors">
                             <option value="EUR">EUR</option>
@@ -453,27 +555,54 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
                 <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                     <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Description</h2>
-                    <Field label="Subtitle" error={errors.desc_subtitle?.message}>
-                        <input type="text" {...register("desc_subtitle")}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
-                    </Field>
-                    <Field label="Tagline" error={errors.desc_tagline?.message}>
-                        <input type="text" {...register("desc_tagline")}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
-                    </Field>
-                    <Field label="Intro" error={errors.desc_intro?.message}>
-                        <textarea {...register("desc_intro")} rows={3}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
-                    </Field>
-                    <Field label="Collection" error={errors.desc_collection?.message}>
-                        <input type="text" {...register("desc_collection")}
-                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
-                    </Field>
+                    <div>
+                        <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                            Subtitle
+                            <InfoTooltip text="Short secondary title or product line description." />
+                        </label>
+                        <Field error={errors.desc_subtitle?.message}>
+                            <input type="text" {...register("desc_subtitle")}
+                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
+                        </Field>
+                    </div>
+                    <div>
+                        <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                            Tagline
+                            <InfoTooltip text="Catchy slogan or marketing phrase for the product." />
+                        </label>
+                        <Field error={errors.desc_tagline?.message}>
+                            <input type="text" {...register("desc_tagline")}
+                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
+                        </Field>
+                    </div>
+                    <div>
+                        <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                            Intro
+                            <InfoTooltip text="Brief introduction paragraph about the product's key features and benefits." />
+                        </label>
+                        <Field error={errors.desc_intro?.message}>
+                            <textarea {...register("desc_intro")} rows={3}
+                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
+                        </Field>
+                    </div>
+                    <div>
+                        <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                            Collection
+                            <InfoTooltip text="Product series or collection name (e.g., 'Mercurial Series', 'Ultra Boost Line')." />
+                        </label>
+                        <Field error={errors.desc_collection?.message}>
+                            <input type="text" {...register("desc_collection")}
+                                className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors" />
+                        </Field>
+                    </div>
                 </div>
 
                 <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                     <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Key Benefits</h2>
-                    <p className="text-xs text-zinc-500">Product highlights shown in bullet points</p>
+                    <div className="flex items-start gap-2">
+                        <p className="text-xs text-zinc-500 flex-1">Product highlights shown in bullet points</p>
+                        <InfoTooltip text="Main selling points and unique features that differentiate this product from competitors." />
+                    </div>
                     <div className="space-y-2">
                         {keyBenefits.map((benefit, idx) => (
                             <div key={idx} className="flex gap-2 items-center">
@@ -522,28 +651,52 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                             name="tech_range"
                             control={control}
                             render={({ field }) => (
-                                <AutoSuggest name="tech_range" label="Range" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechRange} />
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Range
+                                        <InfoTooltip text="Product performance range or series (e.g., 'Pro Range', 'Elite Series')." />
+                                    </label>
+                                    <AutoSuggest name="tech_range" label="Range" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechRange} />
+                                </div>
                             )}
                         />
                         <Controller
                             name="tech_sole"
                             control={control}
                             render={({ field }) => (
-                                <AutoSuggest name="tech_sole" label="Sole Type" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechSole} />
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Sole Type
+                                        <InfoTooltip text="Type of sole construction (e.g., 'Stud', 'Blade', 'Conical', 'Mixed')." />
+                                    </label>
+                                    <AutoSuggest name="tech_sole" label="Sole Type" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechSole} />
+                                </div>
                             )}
                         />
                         <Controller
                             name="tech_upper"
                             control={control}
                             render={({ field }) => (
-                                <AutoSuggest name="tech_upper" label="Upper Material" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechUpper} />
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Upper Material
+                                        <InfoTooltip text="Material used for the upper part of the shoe (e.g., 'Synthetic', 'Leather', 'Knit', 'Mesh')." />
+                                    </label>
+                                    <AutoSuggest name="tech_upper" label="Upper Material" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechUpper} />
+                                </div>
                             )}
                         />
                         <Controller
                             name="tech_adjustment"
                             control={control}
                             render={({ field }) => (
-                                <AutoSuggest name="tech_adjustment" label="Adjustment" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechAdjustment} />
+                                <div>
+                                    <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                        Adjustment
+                                        <InfoTooltip text="Fit adjustment system or technology (e.g., 'Lacing System', 'Boa Dial', 'Flywire')." />
+                                    </label>
+                                    <AutoSuggest name="tech_adjustment" label="Adjustment" value={field.value || ""} onChange={field.onChange} fetchSuggestions={suggestTechAdjustment} />
+                                </div>
                             )}
                         />
                     </div>
@@ -565,10 +718,10 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
     );
 }
 
-function Field({ label, error, children }: { label: string; error?: string; children: React.ReactNode }) {
+function Field({ label, error, children }: { label?: string; error?: string; children: React.ReactNode }) {
     return (
         <div>
-            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">{label}</label>
+            {label && <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">{label}</label>}
             {children}
             {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
         </div>

@@ -16,7 +16,7 @@ export default function StackedBanners({ items: raw }: Props) {
             _key: `ph-${i}`,
             label: `Placeholder ${i + 1}`,
             link: "#",
-          }) as CategoryGridItem[])
+          })) as CategoryGridItem[]
         : raw.slice(0, MIN);
     if (raw.length > MIN) {
         console.warn(`[StackedBanners] Received ${raw.length} items, max ${MIN}. Discarded:`, raw.slice(MIN).map(i => i.label));

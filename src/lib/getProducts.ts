@@ -1,12 +1,32 @@
 import { cache } from "react";
+import * as fs from "fs";
+import * as path from "path";
 import { splitModel } from "@/lib/model";
 import type { Product } from "@/types/product";
 import type { ApiResult } from "@/lib/api-types";
-import { ok } from "@/lib/api-types";
-import { getAllProductsSanity } from "@/lib/getProductsSanity";
+import { ok, fromCaughtError } from "@/lib/api-types";
+
+function normalizeProduct(raw: Record<string, unknown>): Product {
+  return {
+    ...raw,
+    brand: typeof raw.brand === "object" && raw.brand ? (raw.brand as Record<string, unknown>).name as string : raw.brand as string,
+  } as Product;
+}
 
 const getCachedProducts = cache(async (): Promise<ApiResult<Product[]>> => {
-    return getAllProductsSanity();
+    try {
+        const productsDir = path.join(process.cwd(), "..", "data", "products");
+        const files = await fs.promises.readdir(productsDir);
+        const products: Product[] = [];
+        for (const file of files.filter(f => f.endsWith(".json"))) {
+            const filePath = path.join(productsDir, file);
+            const raw = JSON.parse(await fs.promises.readFile(filePath, "utf-8"));
+            products.push(normalizeProduct(raw));
+        }
+        return ok(products);
+    } catch (err) {
+        return fromCaughtError(err, "products_read_failed");
+    }
 });
 
 export async function getAllProducts(): Promise<ApiResult<Product[]>> {

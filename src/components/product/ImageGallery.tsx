@@ -59,7 +59,7 @@ export default function ImageGallery({
                         {badges.map((badge, i) => (
                             <span
                                 key={i}
-                                className={`text-white text-[10px] px-3 py-1 font-bold tracking-tighter uppercase ${i === 0 ? "bg-primary" : "bg-zinc-900"
+                                className={`${i === 0 ? "text-black" : "text-white"} text-[10px] px-3 py-1 font-bold tracking-tighter uppercase ${i === 0 ? "bg-primary" : "bg-zinc-900"
                                     }`}
                             >
                                 {badge}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { urlFor } from "@/lib/sanity";
+import { urlFor } from "@/lib/sanity-client";
 import type { SanityImageSource } from "@sanity/image-url";
 import { logger } from "@/lib/logger";
 
@@ -109,7 +109,7 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
             <input type="hidden" name={name} value={value || ""} />
 
             {(preview || selectedAsset) && (
-                <div className="relative w-32 h-32 bg-neutral-800 border border-neutral-700 rounded overflow-hidden mb-2">
+                <div className="relative w-full h-48 bg-neutral-800 border border-neutral-700 rounded overflow-hidden mb-2">
                     <img src={preview || selectedAsset?.url || ""} alt="" className="w-full h-full object-cover" />
                 </div>
             )}

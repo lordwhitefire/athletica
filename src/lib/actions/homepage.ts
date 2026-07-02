@@ -301,3 +301,55 @@ export async function deleteCarouselCard(sectionIndex: number, cardIndex: number
         return fromCaughtError(err, "carousel_card_delete_failed");
     }
 }
+
+export async function getPreviewProducts(
+    filter: Record<string, unknown>,
+    sort: string,
+    limit: number
+): Promise<ApiResult<Record<string, unknown>[]>> {
+    try {
+        const conditions: string[] = [`_type == "product"`];
+        if (filter.category) conditions.push(`category == $category`);
+        if (filter.brand) conditions.push(`brand == $brand`);
+        if (filter.name) conditions.push(`name == $name`);
+        if (filter.traction) conditions.push(`traction == $traction`);
+        if (filter.min_price) conditions.push(`price.current >= $minPrice`);
+        if (filter.max_price) conditions.push(`price.current <= $maxPrice`);
+
+        let order = "_createdAt desc";
+        if (sort === "price_asc") order = "price.current asc";
+        else if (sort === "price_desc") order = "price.current desc";
+        else if (sort === "biggest_discount") order = "price.discount_percent desc";
+        else if (sort === "newest") order = "_createdAt desc";
+
+        const query = `*[${conditions.join(" && ")}] | order(${order}) [0...$limit] {
+            _id,
+            id,
+            url_slug,
+            model,
+            brand,
+            category,
+            traction,
+            name,
+            gender,
+            "main_image": main_image.asset->url,
+            "url_slug": url_slug.current,
+            color,
+            price
+        }`;
+
+        const params: Record<string, unknown> = {};
+        if (filter.category) params.category = filter.category;
+        if (filter.brand) params.brand = filter.brand;
+        if (filter.name) params.name = filter.name;
+        if (filter.traction) params.traction = filter.traction;
+        if (filter.min_price) params.minPrice = parseFloat(filter.min_price as string);
+        if (filter.max_price) params.maxPrice = parseFloat(filter.max_price as string);
+        params.limit = limit;
+
+        const results = await adminClient.fetch(query, params);
+        return ok(results as Record<string, unknown>[]);
+    } catch (err) {
+        return fromCaughtError(err, "preview_products_fetch_failed");
+    }
+}

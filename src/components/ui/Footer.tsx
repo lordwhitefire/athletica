@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { client } from "@/lib/sanity";
+import * as fs from "fs";
+import * as path from "path";
 import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
 
 interface SocialLink { label: string; url: string; icon: string }
@@ -17,8 +18,9 @@ interface FooterData {
 
 async function getFooterData(): Promise<FooterData> {
   try {
-    const doc = await client.fetch(`*[_type == "siteSettings"][0]{footer}`);
-    return doc?.footer || {};
+    const jsonPath = path.join(process.cwd(), "..", "data", "site-settings.json");
+    const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
+    return raw?.footer || {};
   } catch {
     return {};
   }

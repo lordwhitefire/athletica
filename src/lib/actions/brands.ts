@@ -1,9 +1,9 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import * as fs from "fs";
+import * as path from "path";
 import { adminClient } from "@/lib/admin-sanity";
-import { client, urlFor } from "@/lib/sanity";
-import type { SanityImageSource } from "@sanity/image-url";
 import type { ApiResult } from "@/lib/api-types";
 import { ok, fail, fromCaughtError } from "@/lib/api-types";
 import { validateOrFail } from "@/lib/validate";
@@ -11,14 +11,14 @@ import { brandFormSchema } from "@/lib/schemas/brand";
 
 export async function getBrandLogoMap(): Promise<ApiResult<Record<string, string | null>>> {
   try {
-    const brands = await client.fetch(`*[_type == "brand" && defined(logo)] { name, logo }`);
+    const jsonPath = path.join(process.cwd(), "..", "data", "brands.json");
+    const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
     const map: Record<string, string | null> = {};
-    for (const b of brands as { name: string; logo: unknown }[]) {
-      try {
-        map[b.name] = urlFor(b.logo as SanityImageSource).width(48).height(48).url();
-      } catch {
-        map[b.name] = null;
-      }
+    for (const b of Object.values(raw)) {
+      if (typeof b !== "object" || !b) continue;
+      const entry = b as Record<string, unknown>;
+      if (!entry.name) continue;
+      map[(entry.name as string).trim()] = (entry.logo as string) || null;
     }
     return ok(map);
   } catch (err) {
