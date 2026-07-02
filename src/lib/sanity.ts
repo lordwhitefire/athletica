@@ -15,6 +15,7 @@ export async function getSiteLogoUrl(): Promise<ApiResult<string | null>> {
         const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
         const logo = raw?.site_logo;
         if (!logo) return ok(null);
+        if (typeof logo === "string") return ok(logo);
         const ref = logo?.asset?._ref;
         if (!ref) return ok(null);
         const url = sanityCdnUrl(ref as string);

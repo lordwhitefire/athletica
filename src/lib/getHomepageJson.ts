@@ -68,7 +68,7 @@ const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => 
     // Transform Sanity data into the frontend shape
     const transformed = {
       hero_carousel: {
-        banners: (rawData.hero_carousel || {}).banners?.map((banner: Record<string, unknown>) => ({
+        banners: ((rawData.hero_carousel || {}).banners as Record<string, unknown>[] | undefined)?.map((banner: Record<string, unknown>) => ({
           _key: banner._key,
           id: banner.id || banner._key || "",
           title: banner.title || "",
@@ -88,7 +88,7 @@ const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => 
         title: section.title || "",
         subtitle: section.subtitle || "",
         bg: section.bg || "bg-surface",
-        items: (section.items || []).map((item: Record<string, unknown>) => ({
+        items: ((section.items || []) as Record<string, unknown>[]).map((item: Record<string, unknown>) => ({
           _key: item._key,
           label: item.title || item.label || "",
           link: item.link || "/",
@@ -104,7 +104,7 @@ const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => 
         limit: section.limit ?? 10,
         viewAllLink: section.link || "",
         viewAllLabel: section.link_label || "",
-        cards: (section.cards || []).map((card: Record<string, unknown>) => ({
+        cards: ((section.cards || []) as Record<string, unknown>[]).map((card: Record<string, unknown>) => ({
           _key: card._key,
           id: card.id || card._key || "",
           title: card.title || "",
