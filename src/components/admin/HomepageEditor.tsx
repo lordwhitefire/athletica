@@ -407,7 +407,7 @@ export default function HomepageEditor({ doc }: Props) {
         setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: true } : s));
         
         try {
-            const result = await handleDeleteSection(index);
+            const result = await deleteSection(index);
             if (result.error) {
                 alert(result.error.message);
                 return;
