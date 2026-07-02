@@ -60,7 +60,7 @@ function resolveHomepageImages(config: Record<string, unknown>): Record<string, 
 
 const getCachedHomepage = cache(async (): Promise<ApiResult<HomepageConfig>> => {
   try {
-    const jsonPath = path.join(process.cwd(), "..", "data", "homepage.json");
+    const jsonPath = path.join(process.cwd(), "data", "homepage.json");
     console.log("📁 Reading homepage JSON from:", jsonPath);
     
     const rawData = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
@@ -145,7 +145,7 @@ function normalizeProduct(raw: Record<string, unknown>): Product {
 }
 
 const getCachedProductsFromJson = cache(async (): Promise<Product[]> => {
-  const productsDir = path.join(process.cwd(), "..", "data", "products");
+  const productsDir = path.join(process.cwd(), "data", "products");
   const files = await fs.promises.readdir(productsDir);
   const jsonFiles = files.filter((f) => f.endsWith(".json"));
 

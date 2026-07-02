@@ -15,7 +15,7 @@ function normalizeProduct(raw: Record<string, unknown>): Product {
 
 const getCachedProducts = cache(async (): Promise<ApiResult<Product[]>> => {
     try {
-        const productsDir = path.join(process.cwd(), "..", "data", "products");
+        const productsDir = path.join(process.cwd(), "data", "products");
         const files = await fs.promises.readdir(productsDir);
         const products: Product[] = [];
         for (const file of files.filter(f => f.endsWith(".json"))) {

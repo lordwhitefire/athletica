@@ -5,7 +5,7 @@ import type { ApiResult } from "@/lib/api-types";
 import { ok, fromCaughtError } from "@/lib/api-types";
 
 const loadCachedLinks = cache(async (): Promise<Record<string, string>> => {
-    const jsonPath = path.join(process.cwd(), "..", "data", "amazon-links.json");
+    const jsonPath = path.join(process.cwd(), "data", "amazon-links.json");
     const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
     const doc = raw["0"] ?? raw;
     const map: Record<string, string> = {};

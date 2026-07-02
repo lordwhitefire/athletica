@@ -1,0 +1,188 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "White",
+  "color_variants": [
+    {
+      "_key": "cv-fluorescent-yellow",
+      "color": "Fluorescent Yellow",
+      "product_id": "JH6421",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-orange",
+      "color": "Orange",
+      "product_id": "JI1076",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-blue",
+      "color": "Blue",
+      "product_id": "IF6447",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-silver",
+      "color": "Silver",
+      "product_id": "IF6443",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red",
+      "color": "Red",
+      "product_id": "ID3877",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "ID3874",
+      "thumbnail": null
+    }
+  ],
+  "description": {
+    "collection": "Road to Glory",
+    "intro": "Dominate every play with lethal precision. The adidas Predator Elite FT FG are designed to deliver control, fit, and power with every touch. Their professional design elevates your performance on top-level pitches.",
+    "key_benefits": [
+      "Perfect contact: HybridTouch upper with Strikeskin rubber fins for enhanced grip and ball control.",
+      "Iconic fold-over tongue: Provides a clean striking surface and secure fit.",
+      "Stability and reactivity: Controlframe 2.0 full-length plate for explosive movement and firm footing.",
+      "Adaptive comfort: PRIMEKNIT collar wraps the ankle for support without restriction."
+    ],
+    "subtitle": "Football boots with tongue adidas FG for firm natural or latest-generation artificial grass - white",
+    "tagline": "Lethal precision and total control for elite players",
+    "technical_details": {
+      "adjustment": "Lace-up with fold-over tongue",
+      "range": "Professional / Elite level",
+      "sole_type": "FG (Firm Ground) - optimized for natural grass and dry latest-gen artificial surfaces",
+      "upper_material": "HybridTouch synthetic with PRIMEKNIT elements"
+    }
+  },
+  "gender": "Men",
+  "id": "JI1095",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/920c2ae09051efcd964ba1dd632012223d69d5db-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f28be6b9930bf05ee6e2e58395b5ab77beac4d72-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8d456f5b7effae25adb424765c7827fd16a9bae5-768x768.jpg",
+  "model": "Predator/Elite-FT-FG",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 167.99,
+    "discount_percent": 40,
+    "member_price": 275.99,
+    "original": 280
+  },
+  "sizes": [
+    {
+      "_key": "size-0",
+      "size": "37 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-1",
+      "size": "38 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-2",
+      "size": "39 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-3",
+      "size": "40 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-4",
+      "size": "40 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-5",
+      "size": "41 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-6",
+      "size": "42 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-7",
+      "size": "42 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-8",
+      "size": "43 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-9",
+      "size": "44 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-10",
+      "size": "44 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-11",
+      "size": "45 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-12",
+      "size": "46 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-13",
+      "size": "46 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-14",
+      "size": "47 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-15",
+      "size": "48 EU",
+      "available": false,
+      "stock": 0
+    }
+  ],
+  "thumbnail": null,
+  "traction": "FG",
+  "url_slug": "adidas-predator-elite-ft-fg-white",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.837Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

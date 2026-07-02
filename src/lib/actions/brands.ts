@@ -11,7 +11,7 @@ import { brandFormSchema } from "@/lib/schemas/brand";
 
 export async function getBrandLogoMap(): Promise<ApiResult<Record<string, string | null>>> {
   try {
-    const jsonPath = path.join(process.cwd(), "..", "data", "brands.json");
+    const jsonPath = path.join(process.cwd(), "data", "brands.json");
     const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
     const map: Record<string, string | null> = {};
     for (const b of Object.values(raw)) {

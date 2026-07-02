@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "Silver",
+  "color_variants": [],
+  "description": {
+    "collection": "Vivid Horizon Pack 2024",
+    "intro": "The adidas Predator League LL FG feature a laceless design with Hybridfeel technology for enhanced ball grip and control, ideal for players focused on powerful, accurate shots.",
+    "key_benefits": [
+      "Superior ball contact: Hybridfeel with 3D texture and Strikescale fins for improved grip and shooting precision.",
+      "Stable support: ControlPlate 2.0 outsole provides firmness in the plant foot during strikes and multidirectional traction.",
+      "Comfortable fit: Soft synthetic leather combined with breathable mesh upper (50% recycled materials).",
+      "Laceless convenience: Sock-like entry with no laces for a clean, distraction-free strike zone."
+    ],
+    "subtitle": "Laceless football boots adidas FG for firm ground or latest-generation artificial turf - silver",
+    "tagline": "Precision shooting without laces",
+    "technical_details": {
+      "adjustment": "Laceless / collar entry",
+      "range": "League / mid-range",
+      "sole_type": "FG (firm ground)",
+      "upper_material": "Soft synthetic leather and breathable mesh (50% recycled)"
+    }
+  },
+  "gender": "Unisex",
+  "id": "IF6331",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/08ea3ab7c785191b6fefb3c2e9706cc8830cee20-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4d7fad42db998ab17c684c7f97f93639e2ba3d4a-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ca06b8a30ca1df81f3f2e927b53e71e0357c1c3c-768x768.jpg",
+  "model": "Predator/League-LL-FG",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 48.99,
+    "discount_percent": 51,
+    "member_price": 0,
+    "original": 100
+  },
+  "sizes": [
+    {
+      "_key": "size-0",
+      "size": "39 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-1",
+      "size": "40 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-2",
+      "size": "40 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-3",
+      "size": "41 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-4",
+      "size": "42 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-5",
+      "size": "42 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-6",
+      "size": "43 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-7",
+      "size": "44 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-8",
+      "size": "44 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-9",
+      "size": "45 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-10",
+      "size": "46 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-11",
+      "size": "46 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-12",
+      "size": "47 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-13",
+      "size": "48 EU",
+      "available": false,
+      "stock": 0
+    }
+  ],
+  "thumbnail": null,
+  "traction": "FG",
+  "url_slug": "adidas-predator-league-ll-fg-silver",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.821Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

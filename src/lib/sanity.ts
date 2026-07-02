@@ -11,7 +11,7 @@ const DATASET = "production";
 
 export async function getSiteLogoUrl(): Promise<ApiResult<string | null>> {
     try {
-        const jsonPath = path.join(process.cwd(), "..", "data", "site-settings.json");
+        const jsonPath = path.join(process.cwd(), "data", "site-settings.json");
         const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
         const logo = raw?.site_logo;
         if (!logo) return ok(null);

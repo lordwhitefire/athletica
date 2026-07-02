@@ -1,0 +1,182 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "Red",
+  "color_variants": [
+    {
+      "_key": "cv-white-and-green",
+      "color": "White and Green",
+      "product_id": "JI1111",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "JR7900",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-blue",
+      "color": "Blue",
+      "product_id": "IF6333",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-silver",
+      "color": "Silver",
+      "product_id": "IF6383",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "ID1320",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red-and-orange",
+      "color": "Red and Orange",
+      "product_id": "JI1167",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-fluorescent-yellow",
+      "color": "Fluorescent Yellow",
+      "product_id": "JH6471",
+      "thumbnail": null
+    }
+  ],
+  "description": {
+    "collection": "Pure Victory Pack",
+    "intro": "The adidas Predator League FT FG/MG deliver control and striking power with a fold-over tongue design, ideal for players who want accuracy in shots and passes on firm natural grass and modern artificial turf.",
+    "key_benefits": [
+      "Enhanced striking zone: textured Hybridfeel upper boosts ball grip and shot accuracy.",
+      "Secure fit: fold-over tongue with strap covers laces for clean contact and lockdown.",
+      "Versatile traction: FG/MG outsole provides excellent grip on firm ground and multi-ground surfaces.",
+      "Comfort and durability: lightweight synthetic build for all-day performance."
+    ],
+    "subtitle": "Football boots with tongue adidas FG/MG for firm ground and multi-ground - red",
+    "tagline": "Precision and power on firm and mixed surfaces",
+    "technical_details": {
+      "adjustment": "Lace-up with fold-over tongue",
+      "range": "League / mid-range",
+      "sole_type": "FG/MG (Firm Ground / Multi-Ground)",
+      "upper_material": "Hybridfeel synthetic"
+    }
+  },
+  "gender": "Unisex",
+  "id": "ID1319",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fbe196dfd1f2d2b08de36a6623b205c2ea521b63-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5e6b50b60ae05eb9850d89bbf016826e01898370-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/634699e8e05e01a179c31a13ab89abe753f04253-768x768.jpg",
+  "model": "Predator/League-FT-(FG/MG)",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 51.99,
+    "discount_percent": 48.01,
+    "member_price": 0,
+    "original": 100
+  },
+  "sizes": [
+    {
+      "_key": "size-0",
+      "size": "39 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-1",
+      "size": "40 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-2",
+      "size": "40 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-3",
+      "size": "41 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-4",
+      "size": "42 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-5",
+      "size": "42 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-6",
+      "size": "43 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-7",
+      "size": "44 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-8",
+      "size": "44 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-9",
+      "size": "45 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-10",
+      "size": "46 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-11",
+      "size": "46 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-12",
+      "size": "47 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-13",
+      "size": "48 EU",
+      "available": true,
+      "stock": 1
+    }
+  ],
+  "thumbnail": null,
+  "traction": "FG/MG",
+  "url_slug": "adidas-predator-league-ft-fg-mg-red",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.805Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

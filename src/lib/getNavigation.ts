@@ -26,7 +26,7 @@ function transformNavItems(items: Record<string, unknown>[]): NavItem[] {
 }
 
 const fetchNavigationData = cache(async () => {
-    const jsonPath = path.join(process.cwd(), "..", "data", "navigation.json");
+    const jsonPath = path.join(process.cwd(), "data", "navigation.json");
     const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
     return raw;
 });
