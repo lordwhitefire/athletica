@@ -206,6 +206,18 @@
       "variant": "default"
     },
     {
+      "_key": "k-25",
+      "filter": {},
+      "limit": 10,
+      "link": "/boots/adidas/predator",
+      "link_label": "View all Predator",
+      "sort": "price_desc",
+      "subtitle": "Dominate with control",
+      "title": "Predator Elite",
+      "type": "product_carousel",
+      "variant": "default"
+    },
+    {
       "_key": "k-20",
       "bg": "bg-surface",
       "items": [
@@ -249,18 +261,6 @@
       "title": "The Collections",
       "type": "category_grid",
       "variant": "grid-4-equal"
-    },
-    {
-      "_key": "k-25",
-      "filter": {},
-      "limit": 10,
-      "link": "/boots/adidas/predator",
-      "link_label": "View all Predator",
-      "sort": "price_desc",
-      "subtitle": "Dominate with control",
-      "title": "Predator Elite",
-      "type": "product_carousel",
-      "variant": "default"
     },
     {
       "_key": "k-26",
@@ -715,7 +715,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-03T02:30:15.368Z",
+    "lastUpdated": "2026-07-03T03:39:29.455Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
