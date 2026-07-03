@@ -182,18 +182,6 @@
       "variant": "grid-4-equal"
     },
     {
-      "_key": "k-19",
-      "filter": {},
-      "limit": 10,
-      "link": "/boots/adidas/predator",
-      "link_label": "View all Predator",
-      "sort": "newest",
-      "subtitle": "Control the game",
-      "title": "Adidas Predator",
-      "type": "product_carousel",
-      "variant": "default"
-    },
-    {
       "_key": "k-18",
       "filter": {},
       "limit": 10,
@@ -202,6 +190,18 @@
       "sort": "newest",
       "subtitle": "Shop the full adidas range",
       "title": "Adidas Football Boots",
+      "type": "product_carousel",
+      "variant": "default"
+    },
+    {
+      "_key": "k-19",
+      "filter": {},
+      "limit": 10,
+      "link": "/boots/adidas/predator",
+      "link_label": "View all Predator",
+      "sort": "newest",
+      "subtitle": "Control the game",
+      "title": "Adidas Predator",
       "type": "product_carousel",
       "variant": "default"
     },
@@ -715,7 +715,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-03T03:42:10.754Z",
+    "lastUpdated": "2026-07-03T03:51:25.137Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
