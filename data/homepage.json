@@ -62,13 +62,24 @@
       {
         "_key": "k-6",
         "accent_color": "#d1fd40",
-        "button_text": "Shop No",
+        "button_text": "Get Now",
         "gradient": "from-gray-900 via-yellow-950 to-gray-900",
         "id": "hero-6",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/8ad0aed90ac47346eeb263412e44f42af891f002-1738x905.png",
         "link": "/kits",
-        "subtitle": "Gloves, jerseys and gear for the last line of defence",
+        "subtitle": "Buy are all club kit .",
         "title": "CFC HOME KIT 26/27"
+      },
+      {
+        "_key": "key-1783007527669-zmujkd",
+        "accent_color": "#d1fd40",
+        "button_text": "BUY",
+        "gradient": "from-gray-900 via-gray-800 to-gray-900",
+        "id": "hero-1783007526392",
+        "image": "https://cdn.sanity.io/images/cuiis46d/production/8bca28c22763ef25c0f3727a21a4ab0307729c61-3264x1332.jpg",
+        "link": "/",
+        "subtitle": "Fresh drops from top clubs every week",
+        "title": "F.C BARCELONA"
       }
     ],
     "id": "hero"
@@ -82,7 +93,6 @@
           "_key": "key-1782670679272-ybjo3d",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-gray-900",
-          "id": "card-1782670660017",
           "image": "https://cdn.sanity.io/images/cuiis46d/production/7203ab5a1aeefae046daf0060f02d93c9780d5af-1959x803.png",
           "link": "/boots/adidas/predator",
           "subtitle": "Predator FT ",
@@ -92,7 +102,6 @@
           "_key": "key-1782670787772-q3ia8f",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-gray-900",
-          "id": "card-1782670762302",
           "image": "https://cdn.sanity.io/images/cuiis46d/production/b7148da8ee28ed3a3037d463ae872c40285cca23-1956x804.png",
           "link": "/boots/adidas/f50",
           "subtitle": "F50 Laceless ",
@@ -102,37 +111,39 @@
           "_key": "key-1782743574421-5tfxv0",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-gray-900",
-          "id": "card-1782743562532",
           "image": "https://cdn.sanity.io/images/cuiis46d/production/ae330429ca46d215689f8ea916eaee3b7c738ffc-3264x1332.jpg",
           "link": "/boots",
           "subtitle": "",
           "title": "Neymar Jnr KidSuper "
         }
       ],
-      "title": "NEW Arrivals ",
+      "id": "k-7",
+      "title": "Signature Boots ",
       "type": "category_carousel",
       "variant": "default"
     },
     {
       "_key": "k-12",
       "filter": {},
+      "id": "k-12",
       "limit": 10,
       "link": "/boots",
       "link_label": "View all boots",
       "sort": "newest",
       "subtitle": "Best sellers this season",
-      "title": "Top Football Boots",
+      "title": "LATEST DROPS",
       "type": "product_carousel",
       "variant": "default"
     },
     {
       "_key": "k-13",
       "bg": "bg-surface",
+      "id": "k-13",
       "items": [
         {
           "_key": "k-21",
           "accent": "",
-          "bg": "bg-surface-container",
+          "bg": "bg-surface",
           "image": null,
           "label": "PREDATOR",
           "link": "/boots/adidas/predator",
@@ -141,7 +152,7 @@
         {
           "_key": "k-24",
           "accent": "",
-          "bg": "bg-surface-container",
+          "bg": "bg-surface",
           "image": null,
           "label": "MERCURIAL",
           "link": "/boots/nike/mercurial",
@@ -150,8 +161,8 @@
         {
           "_key": "k-23",
           "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
+          "bg": "bg-surface",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/5ecc2b4189cda166960c8216f3cf9295e8d731dc-1080x1350.jpg",
           "label": "X SPEED",
           "link": "/boots/adidas/x",
           "textColor": "text-on-surface"
@@ -159,8 +170,8 @@
         {
           "_key": "k-24",
           "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
+          "bg": "bg-surface",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8ef77557ad9064f526d90c8745632d297288ea11-1080x1350.jpg",
           "label": "MERCURIAL",
           "link": "/boots/nike/mercurial",
           "textColor": "text-on-surface"
@@ -265,7 +276,8 @@
     },
     {
       "_key": "k-27",
-      "bg": "bg-surface",
+      "bg": "bg-surface-container",
+      "id": "k-27",
       "items": [
         {
           "_key": "k-30",
@@ -551,12 +563,13 @@
     {
       "_key": "k-56",
       "bg": "bg-surface",
+      "id": "k-56",
       "items": [
         {
           "_key": "k-57",
           "accent": "",
-          "bg": "bg-black",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/42a0826376cc99097705f66815afb09d8aa3b384-2976x336.jpg",
+          "bg": "bg-surface",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/9982787697ea220c341543c68e7d663084ab73ba-1966x800.png",
           "label": "Premium Boots",
           "link": "/boots",
           "textColor": "text-on-surface"
@@ -564,8 +577,8 @@
         {
           "_key": "k-58",
           "accent": "",
-          "bg": "bg-primary",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/725d85345b63169a7a4efb9c16e8cc97199fdb30-2368x432.jpg",
+          "bg": "bg-surface",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/cc56656683f9ae3949a1c5dec62ba5e72d0c30d9-1962x802.png",
           "label": "Sale — Up to 50%",
           "link": "/boots",
           "textColor": "text-on-surface"
@@ -578,12 +591,13 @@
     {
       "_key": "k-59",
       "filter": {},
+      "id": "k-59",
       "limit": 10,
       "link": "/boots",
       "link_label": "View premium range",
       "sort": "price_desc",
       "subtitle": "Top tier performance, no compromise",
-      "title": "Premium Boots",
+      "title": "Club Home Kit 2027",
       "type": "product_carousel",
       "variant": "default"
     },
@@ -634,11 +648,74 @@
       "title": "Top Rated Brands",
       "type": "product_carousel",
       "variant": "default"
+    },
+    {
+      "_key": "key-1782982979122-0u1rvf",
+      "bg": "bg-surface",
+      "id": "section-1782982978234",
+      "items": [],
+      "title": "New Section",
+      "type": "category_grid",
+      "variant": "grid-4-equal"
+    },
+    {
+      "_key": "key-1782982982982-d560s9",
+      "bg": "bg-surface",
+      "id": "section-1782982982166",
+      "items": [],
+      "title": "New Section",
+      "type": "category_grid",
+      "variant": "grid-4-equal"
+    },
+    {
+      "_key": "key-1782982986002-550dbx",
+      "bg": "bg-surface",
+      "id": "section-1782982983671",
+      "items": [],
+      "title": "New Section",
+      "type": "category_grid",
+      "variant": "grid-4-equal"
+    },
+    {
+      "_key": "key-1782983014146-3p2qlg",
+      "bg": "bg-surface",
+      "id": "section-1782983012966",
+      "items": [],
+      "title": "New Section",
+      "type": "category_grid",
+      "variant": "grid-4-equal"
+    },
+    {
+      "_key": "key-1782983016737-s4hoyk",
+      "bg": "bg-surface",
+      "id": "section-1782983015881",
+      "items": [],
+      "title": "New Section",
+      "type": "category_grid",
+      "variant": "grid-4-equal"
+    },
+    {
+      "_key": "key-1783010787211-na88bn",
+      "bg": "bg-surface",
+      "id": "section-1783010785580",
+      "items": [],
+      "title": "New Section",
+      "type": "category_grid",
+      "variant": "grid-4-equal"
+    },
+    {
+      "_key": "key-1783010789888-mn15el",
+      "bg": "bg-surface",
+      "id": "section-1783010788888",
+      "items": [],
+      "title": "New Section",
+      "type": "category_grid",
+      "variant": "grid-4-equal"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-02T03:44:21.084Z",
+    "lastUpdated": "2026-07-03T02:30:15.368Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }

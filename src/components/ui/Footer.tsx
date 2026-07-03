@@ -18,7 +18,7 @@ interface FooterData {
 
 async function getFooterData(): Promise<FooterData> {
   try {
-    const jsonPath = path.join(process.cwd(), "..", "data", "site-settings.json");
+    const jsonPath = path.join(process.cwd(), "data", "site-settings.json");
     const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
     return raw?.footer || {};
   } catch {
