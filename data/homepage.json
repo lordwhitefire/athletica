@@ -86,8 +86,21 @@
   },
   "sections": [
     {
+      "_key": "k-12",
+      "filter": {},
+      "id": "k-12",
+      "limit": 10,
+      "link": "/boots",
+      "link_label": "View all boots",
+      "sort": "newest",
+      "subtitle": "Best sellers this season",
+      "title": "LATEST DROPS",
+      "type": "product_carousel",
+      "variant": "default"
+    },
+    {
       "_key": "k-7",
-      "autoSwitchMs": 4000,
+      "autoSwitchMs": 5000,
       "cards": [
         {
           "_key": "key-1782670679272-ybjo3d",
@@ -120,19 +133,6 @@
       "id": "k-7",
       "title": "Signature Boots ",
       "type": "category_carousel",
-      "variant": "default"
-    },
-    {
-      "_key": "k-12",
-      "filter": {},
-      "id": "k-12",
-      "limit": 10,
-      "link": "/boots",
-      "link_label": "View all boots",
-      "sort": "newest",
-      "subtitle": "Best sellers this season",
-      "title": "LATEST DROPS",
-      "type": "product_carousel",
       "variant": "default"
     },
     {
@@ -715,7 +715,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-03T03:57:29.712Z",
+    "lastUpdated": "2026-07-03T08:41:32.524Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
