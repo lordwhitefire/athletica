@@ -80,6 +80,17 @@
         "link": "/",
         "subtitle": "Fresh drops from top clubs every week",
         "title": "F.C BARCELONA"
+      },
+      {
+        "_key": "key-1783168990719-amc5h3",
+        "accent_color": "#d1fd40",
+        "button_text": "Shop Now",
+        "gradient": "from-gray-900 via-gray-800 to-gray-900",
+        "id": "hero-1783168989672",
+        "image": null,
+        "link": "/",
+        "subtitle": "",
+        "title": "New Banner"
       }
     ],
     "id": "hero"
@@ -715,7 +726,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-03T15:23:32.749Z",
+    "lastUpdated": "2026-07-04T12:43:40.045Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
