@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AutoSuggest from "./AutoSuggest";
 import { suggestRoutes } from "@/lib/actions/suggestions";
 import { saveNavigation } from "@/lib/actions/navigation";
 import { useRouter } from "next/navigation";
 import { logger } from "@/lib/logger";
 import { generateId } from "@/lib/rebuild-nav-urls";
+import { useUnsavedChanges } from "@/lib/hooks/useUnsavedChanges";
 
 interface Props {
     doc: Record<string, unknown> | null;
@@ -14,18 +15,41 @@ interface Props {
 
 export default function NavigationEditor({ doc }: Props) {
     const router = useRouter();
+    const { isDirty, markDirty, markClean } = useUnsavedChanges();
+    const [lastSaved, setLastSaved] = useState<number | null>(null);
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (lastSaved === null) return;
+        const t = setTimeout(() => setLastSaved(null), 2500);
+        return () => clearTimeout(t);
+    }, [lastSaved]);
+
+    useEffect(() => {
+        if (errorMessage === null) return;
+        const t = setTimeout(() => setErrorMessage(null), 5000);
+        return () => clearTimeout(t);
+    }, [errorMessage]);
+
     const items = (doc?.items as Record<string, unknown>[]) || [];
     const [navItems, setNavItems] = useState<Record<string, unknown>[]>(items);
     const [saving, setSaving] = useState(false);
 
     async function handleSave() {
+        setErrorMessage(null);
         setSaving(true);
         try {
-            await saveNavigation(navItems);
+            const result = await saveNavigation(navItems);
+            if (result.error) {
+                setErrorMessage(result.error.message);
+                return;
+            }
+            markClean();
+            setLastSaved(Date.now());
             router.refresh();
         } catch (err) {
             logger.error(err, "NavigationEditor error");
-            alert("Failed to save");
+            setErrorMessage("Failed to save");
         } finally {
             setSaving(false);
         }
@@ -33,15 +57,25 @@ export default function NavigationEditor({ doc }: Props) {
 
     function updateTree(items: Record<string, unknown>[]) {
         setNavItems([...items]);
+        markDirty();
     }
 
     return (
         <div>
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-black uppercase tracking-tight">Navigation</h1>
-                <button onClick={handleSave} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors">
-                    {saving ? "Saving..." : "Save Changes"}
-                </button>
+                <div className="flex items-center gap-3">
+                    {errorMessage !== null && (
+                        <span className="text-xs text-red-400 font-medium flex items-center gap-1">
+                            <span className="material-symbols-outlined text-[14px]">error</span>
+                            {errorMessage}
+                        </span>
+                    )}
+                    {isDirty && errorMessage === null && <span className="text-xs text-amber-400 font-medium">Unsaved changes</span>}
+                    <button onClick={handleSave} disabled={!isDirty || saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors">
+                        {saving ? "Saving..." : lastSaved !== null ? "Saved! ✓" : "Save Changes"}
+                    </button>
+                </div>
             </div>
 
             <div className="space-y-2">
@@ -56,6 +90,7 @@ export default function NavigationEditor({ doc }: Props) {
                 ))}
                 <button onClick={() => {
                     setNavItems([...navItems, { id: generateId(), level: 0, label: "", href: "/", children: [] }]);
+                    markDirty();
                 }} className="text-sm text-primary hover:text-primary font-medium flex items-center gap-1">
                     <span className="material-symbols-outlined text-[16px]">add</span> Add Top-Level Item
                 </button>

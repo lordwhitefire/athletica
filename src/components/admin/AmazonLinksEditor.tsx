@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AutoSuggest from "./AutoSuggest";
 import { suggestProductIds } from "@/lib/actions/suggestions";
 import { saveAmazonLinks } from "@/lib/actions/amazon-links";
 import { useRouter } from "next/navigation";
 import { logger } from "@/lib/logger";
+import { useUnsavedChanges } from "@/lib/hooks/useUnsavedChanges";
 
 interface Props {
     doc: Record<string, unknown> | null;
@@ -13,6 +14,22 @@ interface Props {
 
 export default function AmazonLinksEditor({ doc }: Props) {
     const router = useRouter();
+    const { isDirty, markDirty, markClean } = useUnsavedChanges();
+    const [lastSaved, setLastSaved] = useState<number | null>(null);
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (lastSaved === null) return;
+        const t = setTimeout(() => setLastSaved(null), 2500);
+        return () => clearTimeout(t);
+    }, [lastSaved]);
+
+    useEffect(() => {
+        if (errorMessage === null) return;
+        const t = setTimeout(() => setErrorMessage(null), 5000);
+        return () => clearTimeout(t);
+    }, [errorMessage]);
+
     const rawLinks = (doc?.links as Record<string, unknown>[]) || [];
     const [links, setLinks] = useState<{ productId: string; url: string }[]>(
         rawLinks.map((l) => ({ productId: (l.productId as string) || "", url: (l.url as string) || "" }))
@@ -20,13 +37,20 @@ export default function AmazonLinksEditor({ doc }: Props) {
     const [saving, setSaving] = useState(false);
 
     async function handleSave() {
+        setErrorMessage(null);
         setSaving(true);
         try {
-            await saveAmazonLinks(links);
+            const result = await saveAmazonLinks(links);
+            if (result.error) {
+                setErrorMessage(result.error.message);
+                return;
+            }
+            markClean();
+            setLastSaved(Date.now());
             router.refresh();
         } catch (err) {
             logger.error(err, "AmazonLinksEditor error");
-            alert("Failed to save");
+            setErrorMessage("Failed to save");
         } finally {
             setSaving(false);
         }
@@ -36,27 +60,37 @@ export default function AmazonLinksEditor({ doc }: Props) {
         const updated = [...links];
         updated[index] = { ...updated[index], [field]: value };
         setLinks(updated);
+        markDirty();
     }
 
     function add() {
         setLinks([...links, { productId: "", url: "" }]);
+        markDirty();
     }
 
     function remove(index: number) {
         setLinks(links.filter((_, i) => i !== index));
+        markDirty();
     }
 
     return (
         <div>
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-black uppercase tracking-tight">Amazon Links</h1>
-                <div className="flex gap-2">
+                <div className="flex items-center gap-3">
+                    {errorMessage !== null && (
+                        <span className="text-xs text-red-400 font-medium flex items-center gap-1">
+                            <span className="material-symbols-outlined text-[14px]">error</span>
+                            {errorMessage}
+                        </span>
+                    )}
+                    {isDirty && errorMessage === null && <span className="text-xs text-amber-400 font-medium">Unsaved changes</span>}
                     <button onClick={add} className="bg-neutral-800 hover:bg-neutral-700 text-zinc-300 text-sm font-medium px-4 py-2 rounded transition-colors flex items-center gap-1.5">
                         <span className="material-symbols-outlined text-[16px]">add</span>
                         Add Link
                     </button>
-                    <button onClick={handleSave} disabled={saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors">
-                        {saving ? "Saving..." : "Save Changes"}
+                    <button onClick={handleSave} disabled={!isDirty || saving} className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors">
+                        {saving ? "Saving..." : lastSaved !== null ? "Saved! ✓" : "Save Changes"}
                     </button>
                 </div>
             </div>

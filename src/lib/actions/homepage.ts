@@ -353,3 +353,23 @@ export async function getPreviewProducts(
         return fromCaughtError(err, "preview_products_fetch_failed");
     }
 }
+
+export async function saveHomepage(data: {
+    hero_carousel: Record<string, unknown>;
+    sections: Record<string, unknown>[];
+}): Promise<ApiResult<{ saved: true }>> {
+    try {
+        const docResult = await getHomepageDoc();
+        if (docResult.error) return docResult;
+        const docAny = docResult.data as Record<string, unknown>;
+        await adminClient.patch(docAny._id as string).set({
+            hero_carousel: data.hero_carousel,
+            sections: data.sections,
+        }).commit();
+        revalidatePath("/admin/homepage");
+        revalidatePath("/");
+        return ok({ saved: true });
+    } catch (err) {
+        return fromCaughtError(err, "homepage_save_failed");
+    }
+}

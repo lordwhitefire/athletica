@@ -3,12 +3,10 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
-    updateBanner, addBanner, deleteBanner,
-    updateSection, addSection, deleteSection,
-    updateSectionItem, addSectionItem, deleteSectionItem,
-    addCarouselCard, updateCarouselCard, deleteCarouselCard,
     getPreviewProducts,
+    saveHomepage,
 } from "@/lib/actions/homepage";
+import { useUnsavedChanges } from "@/lib/hooks/useUnsavedChanges";
 import type { Product } from "@/types/product";
 import ImageSelector from "./ImageSelector";
 import AutoSuggest from "./AutoSuggest";
@@ -193,8 +191,23 @@ interface SectionState {
 
 export default function HomepageEditor({ doc }: Props) {
     const router = useRouter();
-    const [addingBanner, setAddingBanner] = useState(false);
-    
+    const { isDirty, markDirty, markClean } = useUnsavedChanges();
+    const [isSaving, setIsSaving] = useState(false);
+    const [lastSaved, setLastSaved] = useState<number | null>(null);
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (lastSaved === null) return;
+        const t = setTimeout(() => setLastSaved(null), 2500);
+        return () => clearTimeout(t);
+    }, [lastSaved]);
+
+    useEffect(() => {
+        if (errorMessage === null) return;
+        const t = setTimeout(() => setErrorMessage(null), 5000);
+        return () => clearTimeout(t);
+    }, [errorMessage]);
+
     if (!doc) return <p className="text-zinc-500">No homepage document found in Sanity.</p>;
 
     const heroCarousel = doc.hero_carousel as Record<string, unknown> | undefined;
@@ -262,81 +275,35 @@ export default function HomepageEditor({ doc }: Props) {
     // Banner editing functions
     const updateBannerField = (index: number, field: string, value: string | null) => {
         setBannerStates(prev => prev.map((b, i) => i === index ? { ...b, [field]: value } : b));
+        markDirty();
     };
 
-    const saveBanner = async (index: number) => {
-        setBannerStates(prev => prev.map((b, i) => i === index ? { ...b, saving: true } : b));
-        
-        const banner = bannerStates[index];
-        try {
-            const result = await updateBanner(index, {
-                title: banner.title,
-                subtitle: banner.subtitle,
-                button_text: banner.button_text,
-                link: banner.link,
-                gradient: banner.gradient,
-                accent_color: banner.accent_color,
-                image: banner.image ? { _type: "image", asset: { _ref: banner.image, _type: "reference" } } : null,
-            });
-            if (result.error) {
-                alert(result.error.message);
-                return;
-            }
-            router.refresh();
-        } catch (err) {
-            logger.error(err, "Unexpected error in HomepageEditor");
-            alert("Save failed due to an unexpected error.");
-        } finally {
-            setBannerStates(prev => prev.map((b, i) => i === index ? { ...b, saving: false } : b));
-        }
+    const addNewBanner = () => {
+        setBannerStates(prev => [...prev, {
+            index: prev.length,
+            _key: `hero-${Date.now()}`,
+            title: "New Banner",
+            subtitle: "",
+            button_text: "Shop Now",
+            link: "/",
+            gradient: "from-gray-900 via-gray-800 to-gray-900",
+            accent_color: "#d1fd40",
+            image: null,
+            saving: false,
+        }]);
+        markDirty();
     };
 
-    const addNewBanner = async () => {
-        setAddingBanner(true);
-        try {
-            const id = `hero-${Date.now()}`;
-            await addBanner({ 
-                id, 
-                title: "New Banner", 
-                subtitle: "", 
-                button_text: "Shop Now", 
-                link: "/", 
-                gradient: "from-gray-900 via-gray-800 to-gray-900", 
-                accent_color: "#d1fd40", 
-                image: null 
-            });
-            router.refresh();
-        } catch (err) {
-            logger.error(err, "Unexpected error in HomepageEditor");
-            alert("Save failed due to an unexpected error.");
-        } finally {
-            setAddingBanner(false);
-        }
-    };
-
-    const deleteBannerFunc = async (index: number) => {
+    const deleteBannerFunc = (index: number) => {
         if (!confirm(`Delete banner "${bannerStates[index].title}"?`)) return;
-        
-        setBannerStates(prev => prev.map((b, i) => i === index ? { ...b, saving: true } : b));
-        
-        try {
-            const result = await deleteBanner(index);
-            if (result.error) {
-                alert(result.error.message);
-                return;
-            }
-            router.refresh();
-        } catch (err) {
-            logger.error(err, "Unexpected error in HomepageEditor");
-            alert("Delete failed due to an unexpected error.");
-        } finally {
-            setBannerStates(prev => prev.map((b, i) => i === index ? { ...b, saving: false } : b));
-        }
+        setBannerStates(prev => prev.filter((_, i) => i !== index).map((b, i) => ({ ...b, index: i })));
+        markDirty();
     };
 
     // Section editing functions
     const updateSectionField = (index: number, field: string, value: string | null) => {
         setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, [field]: value } : s));
+        markDirty();
     };
 
     const updateSectionItem = (sectionIndex: number, itemIndex: number, field: string, value: string | null) => {
@@ -348,6 +315,7 @@ export default function HomepageEditor({ doc }: Props) {
             }
             return s;
         }));
+        markDirty();
     };
 
     const updateSectionCard = (sectionIndex: number, cardIndex: number, field: string, value: string | null) => {
@@ -359,114 +327,43 @@ export default function HomepageEditor({ doc }: Props) {
             }
             return s;
         }));
+        markDirty();
     };
 
-    const saveSection = async (index: number) => {
-        setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: true } : s));
-        
-        const section = sectionStates[index];
-        
-        // Validation
-        const rules = VARIANT_RULES[section.variant as keyof typeof VARIANT_RULES];
-        if (rules) {
-            if (section.items.length < rules.minItems) {
-                alert(`${rules.name} requires at least ${rules.minItems} items`);
-                setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: false } : s));
-                return;
-            }
-            if (section.items.length > rules.maxItems) {
-                alert(`${rules.name} cannot have more than ${rules.maxItems} items`);
-                setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: false } : s));
-                return;
-            }
-        }
-        
-        if (section.type === "category_carousel" && section.cards.length < 3) {
-            alert("Category Carousel requires at least 3 cards");
-            setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: false } : s));
-            return;
-        }
-        
-        try {
-            const base: Record<string, unknown> = { 
-                id: section._key, 
-                title: section.title, 
-                type: section.type, 
-                variant: section.variant 
-            };
-            
-            if (section.type === "category_grid") {
-                base.bg = section.bg;
-                base.viewAllLink = section.viewAllLink || undefined;
-                base.viewAllLabel = section.viewAllLabel || undefined;
-                base.items = section.items.map(item => ({
-                    _key: item._key,
-                    label: item.label,
-                    link: item.link,
-                    bg: item.bg,
-                    textColor: item.textColor,
-                    accent: item.accent,
-                    image: item.image ? { _type: "image", asset: { _ref: item.image, _type: "reference" } } : null,
-                }));
-            } else if (section.type === "product_carousel") {
-                base.subtitle = section.subtitle || undefined;
-                base.sort = section.sort;
-                base.limit = parseInt(section.limit) || 10;
-                base.link = section.link || undefined;
-                base.link_label = section.link_label || undefined;
-                base.filter = {};
-                if (section.category) (base.filter as Record<string, unknown>).category = section.category;
-                if (section.brand) (base.filter as Record<string, unknown>).brand = section.brand;
-                if (section.modelLine) (base.filter as Record<string, unknown>).name = section.modelLine;
-                if (section.traction) (base.filter as Record<string, unknown>).traction = section.traction;
-                if (section.minPrice) (base.filter as Record<string, unknown>).min_price = parseFloat(section.minPrice);
-                if (section.maxPrice) (base.filter as Record<string, unknown>).max_price = parseFloat(section.maxPrice);
-            } else if (section.type === "category_carousel") {
-                base.autoSwitchMs = parseInt(section.autoSwitchMs) || 4000;
-                base.cards = section.cards.map(card => ({
-                    _key: card._key,
-                    title: card.title,
-                    subtitle: card.subtitle,
-                    link: card.link,
-                    gradient: card.gradient,
-                    emoji: card.emoji,
-                    image: card.image ? { _type: "image", asset: { _ref: card.image, _type: "reference" } } : null,
-                }));
-            }
-            
-            const result = await updateSection(index, base);
-            if (result.error) {
-                alert(result.error.message);
-                return;
-            }
-            router.refresh();
-        } catch (err) {
-            logger.error(err, "Unexpected error in HomepageEditor");
-            alert("Save failed due to an unexpected error.");
-        } finally {
-            setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: false } : s));
-        }
-    };
-
-    const handleDeleteSection = async (index: number) => {
+    const handleDeleteSection = (index: number) => {
         if (!confirm(`Delete section "${sectionStates[index].title}"?`)) return;
-        
-        setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: true } : s));
-        
-        try {
-            const result = await deleteSection(index);
-            if (result.error) {
-                alert(result.error.message);
-                return;
-            }
-            router.refresh();
-        } catch (err) {
-            logger.error(err, "Unexpected error in HomepageEditor");
-            alert("Delete failed due to an unexpected error.");
-        } finally {
-            setSectionStates(prev => prev.map((s, i) => i === index ? { ...s, saving: false } : s));
-        }
+        setSectionStates(prev => prev.filter((_, i) => i !== index).map((s, i) => ({ ...s, index: i })));
+        markDirty();
     };
+
+    // Add Section dialog state
+    const [showAddDialog, setShowAddDialog] = useState(false);
+    const [newSectionType, setNewSectionType] = useState<"category_grid" | "product_carousel" | "category_carousel">("category_grid");
+    const [newSectionVariant, setNewSectionVariant] = useState("grid-4-equal");
+
+    function generateEmptyItems(count: number): SectionStateItem[] {
+        return Array.from({ length: count }, (_, i) => ({
+            _key: `item-${Date.now()}-${i}`,
+            label: "",
+            link: "/",
+            bg: "",
+            textColor: "text-on-surface",
+            accent: "",
+            image: null,
+        }));
+    }
+
+    function generateEmptyCards(count: number): SectionStateCard[] {
+        return Array.from({ length: count }, (_, i) => ({
+            _key: `card-${Date.now()}-${i}`,
+            title: "",
+            subtitle: "",
+            link: "/",
+            gradient: "from-gray-900 via-gray-800 to-red-900",
+            emoji: "⚡",
+            image: null,
+        }));
+    }
 
     // Fetch preview products for product_carousel sections
     const productCarouselDepKey = sectionStates
@@ -502,46 +399,186 @@ export default function HomepageEditor({ doc }: Props) {
         fetchAll();
     }, [productCarouselDepKey]);
 
-    const addNewSection = async () => {
-        const newType: "category_grid" | "product_carousel" | "category_carousel" = "category_grid";
-        const newVariant = VARIANT_OPTIONS[newType][0].value;
-        
-        try {
-            const section: Record<string, unknown> = {
-                id: `section-${Date.now()}`,
-                type: newType,
-                title: "New Section",
-                variant: newVariant,
-            };
-            
-            if (newType === "category_grid") {
-                section.bg = "bg-surface";
-                section.items = [];
-            } else if (newType === "product_carousel") {
-                section.filter = {};
-                section.sort = "newest";
-                section.limit = 10;
-            } else if (newType === "category_carousel") {
-                section.autoSwitchMs = 4000;
-                section.cards = [];
+    const handleAddSectionConfirmed = () => {
+        setShowAddDialog(false);
+        const rules = newSectionType === "category_grid"
+            ? VARIANT_RULES[newSectionVariant as keyof typeof VARIANT_RULES]
+            : null;
+
+        const section: SectionState = {
+            index: sectionStates.length,
+            _key: `section-${Date.now()}`,
+            type: newSectionType,
+            title: "New Section",
+            variant: newSectionVariant,
+            bg: "bg-surface",
+            viewAllLink: "",
+            viewAllLabel: "",
+            subtitle: "",
+            sort: "newest",
+            limit: "10",
+            link: "",
+            link_label: "",
+            category: "",
+            brand: "",
+            modelLine: "",
+            traction: "",
+            minPrice: "",
+            maxPrice: "",
+            autoSwitchMs: "4000",
+            items: newSectionType === "category_grid" ? generateEmptyItems(rules?.minItems || 4) : [],
+            cards: newSectionType === "category_carousel" ? generateEmptyCards(3) : [],
+            saving: false,
+            previewProducts: [],
+        };
+
+        setSectionStates(prev => [...prev, section]);
+        markDirty();
+    };
+
+    function sectionToRaw(s: SectionState): Record<string, unknown> {
+        const base: Record<string, unknown> = {
+            _key: s._key,
+            title: s.title,
+            _type: s.type,
+            variant: s.variant,
+        };
+        if (s.type === "category_grid") {
+            base.bg = s.bg;
+            base.viewAllLink = s.viewAllLink || undefined;
+            base.viewAllLabel = s.viewAllLabel || undefined;
+            base.items = s.items.map(item => ({
+                _key: item._key,
+                title: item.label,
+                link: item.link,
+                bg: item.bg,
+                textColor: item.textColor,
+                accent: item.accent,
+                image: item.image ? { _type: "image", asset: { _ref: item.image, _type: "reference" } } : null,
+            }));
+        } else if (s.type === "product_carousel") {
+            base.subtitle = s.subtitle || undefined;
+            base.sort = s.sort;
+            base.limit = parseInt(s.limit) || 10;
+            base.link = s.link || undefined;
+            base.link_label = s.link_label || undefined;
+            base.filter = {} as Record<string, unknown>;
+            if (s.category) (base.filter as Record<string, unknown>).category = s.category;
+            if (s.brand) (base.filter as Record<string, unknown>).brand = s.brand;
+            if (s.modelLine) (base.filter as Record<string, unknown>).name = s.modelLine;
+            if (s.traction) (base.filter as Record<string, unknown>).traction = s.traction;
+            if (s.minPrice) (base.filter as Record<string, unknown>).min_price = parseFloat(s.minPrice);
+            if (s.maxPrice) (base.filter as Record<string, unknown>).max_price = parseFloat(s.maxPrice);
+        } else if (s.type === "category_carousel") {
+            base.autoSwitchMs = parseInt(s.autoSwitchMs) || 4000;
+            base.cards = s.cards.map(card => ({
+                _key: card._key,
+                title: card.title,
+                subtitle: card.subtitle,
+                link: card.link,
+                gradient: card.gradient,
+                emoji: card.emoji,
+                image: card.image ? { _type: "image", asset: { _ref: card.image, _type: "reference" } } : null,
+            }));
+        }
+        return base;
+    }
+
+    const handleSaveAll = async () => {
+        setErrorMessage(null);
+
+        // Validate all sections
+        for (const s of sectionStates) {
+            const rules = VARIANT_RULES[s.variant as keyof typeof VARIANT_RULES];
+            if (rules) {
+                if (s.items.length < rules.minItems) {
+                    setErrorMessage(`"${s.title || "Untitled"}" (${rules.name}) requires at least ${rules.minItems} items`);
+                    return;
+                }
+                if (s.items.length > rules.maxItems) {
+                    setErrorMessage(`"${s.title || "Untitled"}" (${rules.name}) cannot have more than ${rules.maxItems} items`);
+                    return;
+                }
             }
-            
-            const result = await addSection(section);
-            if (result.error) {
-                alert(result.error.message);
+            if (s.type === "category_carousel" && s.cards.length < 3) {
+                setErrorMessage(`"${s.title || "Untitled"}" requires at least 3 cards`);
                 return;
             }
+        }
+
+        setIsSaving(true);
+        try {
+            const hero_carousel = {
+                banners: bannerStates.map(b => ({
+                    _key: b._key,
+                    title: b.title,
+                    subtitle: b.subtitle,
+                    button_text: b.button_text,
+                    link: b.link,
+                    gradient: b.gradient,
+                    accent_color: b.accent_color,
+                    image: b.image ? { _type: "image", asset: { _ref: b.image, _type: "reference" } } : null,
+                })),
+            };
+            const sections = sectionStates.map(sectionToRaw);
+            const result = await saveHomepage({ hero_carousel, sections });
+            if (result.error) {
+                setErrorMessage(result.error.message);
+                return;
+            }
+            markClean();
+            setLastSaved(Date.now());
             router.refresh();
         } catch (err) {
             logger.error(err, "Unexpected error in HomepageEditor");
-            alert("Save failed due to an unexpected error.");
+            setErrorMessage("Save failed due to an unexpected error.");
+        } finally {
+            setIsSaving(false);
         }
     };
 
     return (
         <div className="bg-neutral-950 min-h-screen">
             <div className="max-w-7xl mx-auto px-6 py-8">
-                <h1 className="text-2xl font-black uppercase tracking-tight mb-8">Homepage Editor</h1>
+                <div className="flex items-center justify-between mb-8">
+                    <h1 className="text-2xl font-black uppercase tracking-tight">Homepage Editor</h1>
+                    <div className="flex items-center gap-3">
+                        {errorMessage !== null && (
+                            <span className="text-xs text-red-400 font-medium flex items-center gap-1">
+                                <span className="material-symbols-outlined text-[14px]">error</span>
+                                {errorMessage}
+                            </span>
+                        )}
+                        {lastSaved !== null && errorMessage === null && (
+                            <span className="text-xs text-green-400 font-medium flex items-center gap-1">
+                                <span className="material-symbols-outlined text-[14px]">check_circle</span>
+                                Saved!
+                            </span>
+                        )}
+                        {isDirty && errorMessage === null && (
+                            <span className="text-xs text-amber-400 font-medium">Unsaved changes</span>
+                        )}
+                        <button
+                            onClick={handleSaveAll}
+                            disabled={!isDirty || isSaving}
+                            className="bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary text-sm font-bold px-5 py-2 rounded transition-colors flex items-center gap-2"
+                        >
+                            {isSaving ? (
+                                <>
+                                    <span className="w-4 h-4 border-2 border-on-primary border-t-transparent rounded-full animate-spin" />
+                                    Saving...
+                                </>
+                            ) : lastSaved !== null ? (
+                                <>
+                                    <span className="material-symbols-outlined text-[16px]">check</span>
+                                    Saved
+                                </>
+                            ) : (
+                                "Save All"
+                            )}
+                        </button>
+                    </div>
+                </div>
 
                 {/* Hero Section */}
                 <div className="mb-12">
@@ -549,11 +586,10 @@ export default function HomepageEditor({ doc }: Props) {
                         <h2 className="text-lg font-bold text-white">Hero Carousel</h2>
                         <button 
                             onClick={addNewBanner}
-                            disabled={addingBanner}
-                            className="text-sm bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary px-4 py-2 rounded transition-colors flex items-center gap-2"
+                            className="text-sm bg-primary hover:brightness-75 text-on-primary px-4 py-2 rounded transition-colors flex items-center gap-2"
                         >
                             <span className="material-symbols-outlined text-[18px]">add</span>
-                            {addingBanner ? "Adding..." : "Add Banner"}
+                            Add Banner
                         </button>
                     </div>
 
@@ -565,16 +601,8 @@ export default function HomepageEditor({ doc }: Props) {
                                         <h3 className="text-sm font-bold text-white">Banner {index + 1}</h3>
                                         <div className="flex gap-2">
                                             <button
-                                                onClick={() => saveBanner(index)}
-                                                disabled={banner.saving}
-                                                className="text-xs bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary px-3 py-1.5 rounded transition-colors"
-                                            >
-                                                {banner.saving ? "Saving..." : "Save"}
-                                            </button>
-                                            <button
                                                 onClick={() => deleteBannerFunc(index)}
-                                                disabled={banner.saving}
-                                                className="text-xs bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white px-3 py-1.5 rounded transition-colors"
+                                                className="text-xs bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors"
                                             >
                                                 Delete
                                             </button>
@@ -726,13 +754,88 @@ export default function HomepageEditor({ doc }: Props) {
                     <div className="flex items-center justify-between mb-6">
                         <h2 className="text-lg font-bold text-white">Homepage Sections</h2>
                         <button 
-                            onClick={addNewSection}
+                            onClick={() => { setNewSectionType("category_grid"); setNewSectionVariant("grid-4-equal"); setShowAddDialog(true); }}
                             className="text-sm bg-primary hover:brightness-75 text-on-primary px-4 py-2 rounded transition-colors flex items-center gap-2"
                         >
                             <span className="material-symbols-outlined text-[18px]">add</span>
                             Add Section
                         </button>
                     </div>
+
+                    {/* Add Section Dialog */}
+                    {showAddDialog && (
+                        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
+                            <div className="bg-neutral-900 border border-neutral-700 rounded-xl p-6 w-full max-w-md">
+                                <h3 className="text-lg font-bold text-white mb-4">Add Section</h3>
+                                
+                                <label className="text-xs text-zinc-500 block mb-2">Section Type</label>
+                                <div className="flex gap-2 mb-4">
+                                    {(["category_grid", "product_carousel", "category_carousel"] as const).map((t) => (
+                                        <button
+                                            key={t}
+                                            onClick={() => {
+                                                setNewSectionType(t);
+                                                const firstVariant = VARIANT_OPTIONS[t][0]?.value || "default";
+                                                setNewSectionVariant(firstVariant);
+                                            }}
+                                            className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                                                newSectionType === t
+                                                    ? "bg-primary text-on-primary"
+                                                    : "bg-neutral-800 text-zinc-400 hover:text-white"
+                                            }`}
+                                        >
+                                            {typeLabel(t)}
+                                        </button>
+                                    ))}
+                                </div>
+
+                                {newSectionType === "category_grid" && (
+                                    <>
+                                        <label className="text-xs text-zinc-500 block mb-2">Variant</label>
+                                        <select
+                                            value={newSectionVariant}
+                                            onChange={(e) => setNewSectionVariant(e.target.value)}
+                                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm mb-4"
+                                        >
+                                            {VARIANT_OPTIONS.category_grid.map((opt) => (
+                                                <option key={opt.value} value={opt.value}>
+                                                    {opt.label}
+                                                </option>
+                                            ))}
+                                        </select>
+                                        {newSectionVariant && VARIANT_RULES[newSectionVariant as keyof typeof VARIANT_RULES] && (
+                                            <p className="text-xs text-zinc-500 mb-4">
+                                                Requires {VARIANT_RULES[newSectionVariant as keyof typeof VARIANT_RULES].minItems}–{VARIANT_RULES[newSectionVariant as keyof typeof VARIANT_RULES].maxItems} items
+                                            </p>
+                                        )}
+                                    </>
+                                )}
+
+                                {newSectionType === "category_carousel" && (
+                                    <p className="text-xs text-zinc-500 mb-4">Starts with 3 cards (minimum). You can add more later.</p>
+                                )}
+
+                                {newSectionType === "product_carousel" && (
+                                    <p className="text-xs text-zinc-500 mb-4">A product carousel with filter options. Configure after adding.</p>
+                                )}
+
+                                <div className="flex gap-2 justify-end">
+                                    <button
+                                        onClick={() => setShowAddDialog(false)}
+                                        className="px-4 py-2 text-sm text-zinc-400 hover:text-white bg-neutral-800 rounded transition-colors"
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button
+                                        onClick={handleAddSectionConfirmed}
+                                        className="px-4 py-2 text-sm bg-primary text-on-primary rounded hover:brightness-75 transition-colors"
+                                    >
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
 
                     <div className="space-y-6">
                         {sectionStates.map((section) => (
@@ -742,6 +845,9 @@ export default function HomepageEditor({ doc }: Props) {
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <div className="flex items-center gap-3">
+                                                <span className="bg-zinc-800 text-zinc-500 text-[10px] font-mono font-bold px-2 py-1 rounded">
+                                                    #{section.index + 1}
+                                                </span>
                                                 <span className="bg-zinc-700 text-zinc-400 text-[10px] font-bold px-2 py-1 rounded uppercase">
                                                     {typeLabel(section.type)}
                                                 </span>
@@ -756,16 +862,42 @@ export default function HomepageEditor({ doc }: Props) {
                                         </div>
                                         <div className="flex gap-2">
                                             <button
-                                                onClick={() => saveSection(section.index)}
-                                                disabled={section.saving}
-                                                className="text-xs bg-primary hover:brightness-75 disabled:opacity-50 text-on-primary px-3 py-1.5 rounded transition-colors"
+                                                onClick={() => {
+                                                    const from = section.index;
+                                                    setSectionStates(prev => {
+                                                        const next = [...prev];
+                                                        const [moved] = next.splice(from, 1);
+                                                        next.splice(from - 1, 0, moved);
+                                                        return next.map((s, i) => ({ ...s, index: i }));
+                                                    });
+                                                    markDirty();
+                                                }}
+                                                disabled={section.index === 0}
+                                                className="text-xs bg-neutral-700 hover:bg-neutral-600 disabled:opacity-30 text-zinc-300 px-2 py-1.5 rounded transition-colors"
+                                                title="Move up"
                                             >
-                                                {section.saving ? "Saving..." : "Save Section"}
+                                                <span className="material-symbols-outlined text-[16px]">arrow_upward</span>
+                                            </button>
+                                            <button
+                                                onClick={() => {
+                                                    const from = section.index;
+                                                    setSectionStates(prev => {
+                                                        const next = [...prev];
+                                                        const [moved] = next.splice(from, 1);
+                                                        next.splice(from + 1, 0, moved);
+                                                        return next.map((s, i) => ({ ...s, index: i }));
+                                                    });
+                                                    markDirty();
+                                                }}
+                                                disabled={section.index === sectionStates.length - 1}
+                                                className="text-xs bg-neutral-700 hover:bg-neutral-600 disabled:opacity-30 text-zinc-300 px-2 py-1.5 rounded transition-colors"
+                                                title="Move down"
+                                            >
+                                                <span className="material-symbols-outlined text-[16px]">arrow_downward</span>
                                             </button>
                                             <button
                                                 onClick={() => handleDeleteSection(section.index)}
-                                                disabled={section.saving}
-                                                className="text-xs bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white px-3 py-1.5 rounded transition-colors"
+                                                className="text-xs bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded transition-colors"
                                             >
                                                 Delete
                                             </button>
