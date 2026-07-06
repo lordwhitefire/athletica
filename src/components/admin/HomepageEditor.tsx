@@ -223,7 +223,7 @@ export default function HomepageEditor({ doc }: Props) {
                 try {
                     const dataUrl = await toPng(el, { quality: 0.3, pixelRatio: 0.4 });
                     if (!cancelled) captured[s._key] = dataUrl;
-                } catch { /* silent */ }
+                } catch (err) { console.error("Snapshot capture failed for", s._key, err); }
             })
         ).then(() => {
             if (!cancelled && Object.keys(captured).length > 0) {
@@ -731,10 +731,10 @@ export default function HomepageEditor({ doc }: Props) {
                 )}
             </EditPopup>
 
-            {/* Offscreen section snapshots for overview thumbnails */}
-            <div className="fixed -left-[9999px] top-0" aria-hidden="true">
+            {/* Hidden section snapshots for overview thumbnails — rendered but invisible so html-to-image can capture */}
+            <div className="absolute left-0 top-0 w-0 h-0 overflow-hidden" aria-hidden="true">
                 {sectionStates.map(s => (
-                    <div key={s._key} ref={el => { captureRefs.current[s._key] = el; }} className="w-[400px]">
+                    <div key={s._key} ref={el => { captureRefs.current[s._key] = el; }} className="w-[400px] opacity-0 pointer-events-none">
                         {s.type === "category_grid" && <CategoryGridPreview section={s} />}
                         {s.type === "category_carousel" && <CategoryCarouselPreview section={s} />}
                         {s.type === "product_carousel" && <ProductCarouselPreview section={s} />}
