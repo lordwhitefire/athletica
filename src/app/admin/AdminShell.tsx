@@ -58,7 +58,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     return (
         <div className="min-h-screen bg-neutral-950 text-white flex">
             {/* Sidebar */}
-            <aside className={`fixed top-[236px] bottom-0 left-0 z-50 w-64 bg-neutral-900 border-r border-neutral-800 transform transition-transform duration-200 lg:translate-x-0 lg:z-40 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            <aside className={`fixed top-0 bottom-0 left-0 z-50 w-64 bg-neutral-900 border-r border-neutral-800 transform transition-transform duration-200 lg:translate-x-0 lg:top-[236px] lg:z-40 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex items-center justify-between p-4 border-b border-neutral-800">
                     <div className="bg-zinc-800 text-white w-fit px-2 py-1">
                         <span className="text-sm font-black italic tracking-tighter">AT</span>
