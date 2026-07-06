@@ -1,0 +1,120 @@
+From: critical-fixes PR
+Subject: [PATCH] critical-fixes: ProductForm dup thumbnail + suggestions url_slug + homepage keys/groq
+
+--- orig/src/components/admin/ProductForm.tsx	2026-07-06 02:49:36.994428489 +0000
++++ src/components/admin/ProductForm.tsx	2026-07-06 02:47:54.312087469 +0000
+@@ -299,41 +299,6 @@
+                             )}
+                         </div>
+                     </div>
+-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+-                        <Controller
+-                            name="thumbnail_asset"
+-                            control={control}
+-                            render={({ field }) => (
+-                                <ImageSelector name="thumbnail_sel" label="Thumbnail" value={field.value || null} onChange={(v) => { field.onChange(v); setThumbnailAsset(v); }} />
+-                            )}
+-                        />
+-                        <div>
+-                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Brand</label>
+-                            <div className="flex items-center gap-3">
+-                                <select
+-                                    value={brandRef || ""}
+-                                    onChange={(e) => {
+-                                        const v = e.target.value || null;
+-                                        setBrandRef(v);
+-                                        setValue("brand_ref", v || "");
+-                                    }}
+-                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors"
+-                                >
+-                                    <option value="">Select brand...</option>
+-                                    {brandOptions.map(b => (
+-                                        <option key={b._id} value={b._id}>{b.name}</option>
+-                                    ))}
+-                                </select>
+-                                {selectedBrand?.logo && (
+-                                    <img src={assetUrl((selectedBrand.logo.asset as { _ref: string })._ref)} alt={selectedBrand.name}
+-                                        className="w-8 h-8 object-contain rounded bg-neutral-800" />
+-                                )}
+-                            </div>
+-                            {errors.brand_ref && (
+-                                <p className="text-red-500 text-xs mt-1">{errors.brand_ref.message}</p>
+-                            )}
+-                        </div>
+-                    </div>
+ 
+                     <div>
+                         <div className="flex items-center justify-between mb-2">
+--- orig/src/lib/actions/suggestions.ts	2026-07-06 02:49:37.410429872 +0000
++++ src/lib/actions/suggestions.ts	2026-07-06 02:48:52.599280858 +0000
+@@ -137,7 +137,7 @@
+       `*[_type == "navigation"][0].items[].children[].href`
+     );
+     const productRoutes: string[] = await adminClient.fetch(
+-      `*[_type == "product" && defined(url_slug)] {url_slug} | order(url_slug asc) [0...20].url_slug`
++      `*[_type == "product" && defined(url_slug.current)] | order(url_slug.current asc) [0...20].url_slug.current`
+     );
+     const all = [
+       "/",
+--- orig/src/lib/actions/homepage.ts	2026-07-06 02:49:37.807431193 +0000
++++ src/lib/actions/homepage.ts	2026-07-06 02:49:16.989361955 +0000
+@@ -1,5 +1,6 @@
+ "use server";
+ 
++import { randomUUID } from "node:crypto";
+ import { revalidatePath } from "next/cache";
+ import { adminClient } from "@/lib/admin-sanity";
+ import type { ApiResult } from "@/lib/api-types";
+@@ -9,7 +10,27 @@
+ 
+ function ensureKey(item: Record<string, unknown>): Record<string, unknown> {
+     if (item._key) return item;
+-    return { ...item, _key: `key-${Date.now()}-${Math.random().toString(36).slice(2, 8)}` };
++    return { ...item, _key: `k-${randomUUID()}` };
++}
++
++// Recursively walk a homepage document and ensure every array item that
++// represents a Sanity object (banners, sections, items, cards) carries a
++// stable _key. Used by saveHomepage so the bulk-save path matches the
++// per-item save paths (addBanner / addSection / addSectionItem / etc).
++function ensureKeysDeep(value: unknown): unknown {
++    if (Array.isArray(value)) {
++        return value.map((v) =>
++            v && typeof v === "object" ? ensureKey(ensureKeysDeep(v) as Record<string, unknown>) : v
++        );
++    }
++    if (value && typeof value === "object") {
++        const out: Record<string, unknown> = {};
++        for (const [k, v] of Object.entries(value as Record<string, unknown>)) {
++            out[k] = ensureKeysDeep(v);
++        }
++        return out;
++    }
++    return value;
+ }
+ 
+ export async function getHomepageDoc(): Promise<ApiResult<Record<string, unknown>>> {
+@@ -325,7 +346,6 @@
+         const query = `*[${conditions.join(" && ")}] | order(${order}) [0...$limit] {
+             _id,
+             id,
+-            url_slug,
+             model,
+             brand,
+             category,
+@@ -362,9 +382,13 @@
+         const docResult = await getHomepageDoc();
+         if (docResult.error) return docResult;
+         const docAny = docResult.data as Record<string, unknown>;
++        // Mirror the per-item save paths: never write an array element to
++        // Sanity without a stable _key. Bug #3 from the issues doc.
++        const heroCarousel = ensureKeysDeep(data.hero_carousel) as Record<string, unknown>;
++        const sections = ensureKeysDeep(data.sections) as Record<string, unknown>[];
+         await adminClient.patch(docAny._id as string).set({
+-            hero_carousel: data.hero_carousel,
+-            sections: data.sections,
++            hero_carousel: heroCarousel,
++            sections,
+         }).commit();
+         revalidatePath("/admin/homepage");
+         revalidatePath("/");

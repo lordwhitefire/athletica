@@ -1,5 +1,6 @@
 "use server";
 
+import { randomUUID } from "node:crypto";
 import { revalidatePath } from "next/cache";
 import { adminClient } from "@/lib/admin-sanity";
 import type { ApiResult } from "@/lib/api-types";
@@ -9,7 +10,27 @@ import { homepageValidation } from "@/lib/schemas/homepage";
 
 function ensureKey(item: Record<string, unknown>): Record<string, unknown> {
     if (item._key) return item;
-    return { ...item, _key: `key-${Date.now()}-${Math.random().toString(36).slice(2, 8)}` };
+    return { ...item, _key: `k-${randomUUID()}` };
+}
+
+// Recursively walk a homepage document and ensure every array item that
+// represents a Sanity object (banners, sections, items, cards) carries a
+// stable _key. Used by saveHomepage so the bulk-save path matches the
+// per-item save paths (addBanner / addSection / addSectionItem / etc).
+function ensureKeysDeep(value: unknown): unknown {
+    if (Array.isArray(value)) {
+        return value.map((v) =>
+            v && typeof v === "object" ? ensureKey(ensureKeysDeep(v) as Record<string, unknown>) : v
+        );
+    }
+    if (value && typeof value === "object") {
+        const out: Record<string, unknown> = {};
+        for (const [k, v] of Object.entries(value as Record<string, unknown>)) {
+            out[k] = ensureKeysDeep(v);
+        }
+        return out;
+    }
+    return value;
 }
 
 export async function getHomepageDoc(): Promise<ApiResult<Record<string, unknown>>> {
@@ -325,7 +346,6 @@ export async function getPreviewProducts(
         const query = `*[${conditions.join(" && ")}] | order(${order}) [0...$limit] {
             _id,
             id,
-            url_slug,
             model,
             brand,
             category,
@@ -362,9 +382,13 @@ export async function saveHomepage(data: {
         const docResult = await getHomepageDoc();
         if (docResult.error) return docResult;
         const docAny = docResult.data as Record<string, unknown>;
+        // Mirror the per-item save paths: never write an array element to
+        // Sanity without a stable _key. Bug #3 from the issues doc.
+        const heroCarousel = ensureKeysDeep(data.hero_carousel) as Record<string, unknown>;
+        const sections = ensureKeysDeep(data.sections) as Record<string, unknown>[];
         await adminClient.patch(docAny._id as string).set({
-            hero_carousel: data.hero_carousel,
-            sections: data.sections,
+            hero_carousel: heroCarousel,
+            sections,
         }).commit();
         revalidatePath("/admin/homepage");
         revalidatePath("/");

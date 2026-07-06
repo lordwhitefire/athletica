@@ -1,0 +1,243 @@
+From: perf PR #4
+Subject: [PATCH] perf: kill the 60s homepage editor cold-load (bug #11)
+
+--- a/src/lib/sanity-client.ts
++++ b/src/lib/sanity-client.ts
+@@ -19,10 +19,25 @@
+     return builder.image(source);
+ }
+ 
++// sanityCdnUrl is a pure string transform over a deterministic asset ref,
++// so its result is safe to memoize for the lifetime of the process. The
++// homepage editor calls this once per image per render (banners + every
++// item in every section + every card), which previously meant hundreds of
++// redundant string ops on each re-render. The cache keeps the produced
++// URL strings referentially stable, which also prevents downstream
++// preview components from re-rendering when nothing actually changed.
++// See issues/homepage-editor-bugs.md bug #11.
++const sanityCdnUrlCache = new Map<string, string>();
++
+ export function sanityCdnUrl(assetRef: string): string {
++    const cached = sanityCdnUrlCache.get(assetRef);
++    if (cached) return cached;
++
+     const parts = assetRef.replace(/^image-/, "").split("-");
+     const ext = parts.pop();
+     const dims = parts.pop();
+     const hash = parts.join("-");
+-    return `https://cdn.sanity.io/images/${PROJECT_ID}/${DATASET}/${hash}-${dims}.${ext}`;
++    const url = `https://cdn.sanity.io/images/${PROJECT_ID}/${DATASET}/${hash}-${dims}.${ext}`;
++    sanityCdnUrlCache.set(assetRef, url);
++    return url;
+ }
+--- a/src/app/admin/homepage/loading.tsx
++++ b/src/app/admin/homepage/loading.tsx
+@@ -0,0 +1,56 @@
++// Next.js App Router auto-renders this file inside <Suspense> while the
++// parent page.tsx server component (getHomepageDoc) is running. Without
++// it, /admin/homepage shows a blank page for the entire duration of the
++// Sanity fetch — historically 60+ seconds with a large homepage doc.
++// See issues/homepage-editor-bugs.md bug #11.
++export default function Loading() {
++    return (
++        <div className="min-h-[70vh] bg-surface px-4 py-8 animate-pulse">
++            <div className="max-w-7xl mx-auto space-y-6">
++                {/* Top toolbar skeleton */}
++                <div className="flex items-center justify-between">
++                    <div className="space-y-3">
++                        <div className="h-8 w-64 bg-surface-container-highest rounded" />
++                        <div className="h-4 w-48 bg-surface-container-highest rounded" />
++                    </div>
++                    <div className="flex gap-3">
++                        <div className="h-10 w-28 bg-surface-container-highest rounded" />
++                        <div className="h-10 w-28 bg-surface-container-highest rounded" />
++                    </div>
++                </div>
++
++                {/* Banner card skeleton */}
++                <div className="bg-surface-container rounded p-6 space-y-4">
++                    <div className="h-5 w-32 bg-surface-container-highest rounded" />
++                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
++                        <div className="aspect-[16/9] bg-surface-container-highest rounded" />
++                        <div className="space-y-3 py-2">
++                            <div className="h-4 w-full bg-surface-container-highest rounded" />
++                            <div className="h-4 w-3/4 bg-surface-container-highest rounded" />
++                            <div className="h-4 w-1/2 bg-surface-container-highest rounded" />
++                            <div className="h-9 w-40 bg-surface-container-highest rounded mt-4" />
++                        </div>
++                    </div>
++                </div>
++
++                {/* Section card skeletons */}
++                {Array.from({ length: 3 }).map((_, i) => (
++                    <div key={i} className="bg-surface-container rounded p-6 space-y-4">
++                        <div className="flex items-center justify-between">
++                            <div className="h-5 w-40 bg-surface-container-highest rounded" />
++                            <div className="h-8 w-20 bg-surface-container-highest rounded" />
++                        </div>
++                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
++                            {Array.from({ length: 4 }).map((_, j) => (
++                                <div key={j} className="space-y-2">
++                                    <div className="aspect-square bg-surface-container-highest rounded" />
++                                    <div className="h-3 w-20 bg-surface-container-highest rounded" />
++                                </div>
++                            ))}
++                        </div>
++                    </div>
++                ))}
++            </div>
++        </div>
++    );
++}
+--- a/src/components/admin/HomepageEditor.tsx
++++ b/src/components/admin/HomepageEditor.tsx
+@@ -187,6 +187,13 @@
+     cards: SectionStateCard[];
+     saving: boolean;
+     previewProducts: Record<string, unknown>[];
++    // Lazy preview loading (bug #11). The previous implementation fired
++    // getPreviewProducts for every product_carousel on mount, which was
++    // the dominant cause of the 60s+ cold-load. Now previews are fetched
++    // only when the user explicitly asks for them (Load preview button)
++    // or when a filter changes on a section whose preview is already live.
++    previewLoaded: boolean;
++    previewLoading: boolean;
+ }
+ 
+ export default function HomepageEditor({ doc }: Props) {
+@@ -270,6 +277,8 @@
+         })),
+         saving: false,
+         previewProducts: [] as Record<string, unknown>[],
++        previewLoaded: false,
++        previewLoading: false,
+     })));
+ 
+     // Banner editing functions
+@@ -365,39 +374,66 @@
+         }));
+     }
+ 
+-    // Fetch preview products for product_carousel sections
+-    const productCarouselDepKey = sectionStates
+-        .filter(s => s.type === "product_carousel")
++    // Lazy preview loader for a single product_carousel section. Replaces
++    // the previous mount-time "fetch all carousels in parallel" effect
++    // that was the dominant cause of the 60s+ cold-load (bug #11).
++    //
++    // Behaviour:
++    //   - On mount: NOTHING is fetched. Each carousel shows a Load preview
++    //     button instead of empty preview space.
++    //   - On click of Load preview: fetches just that one section.
++    //   - On filter change: refetches only if the section's preview is
++    //     already live (previewLoaded === true). Editing filters on a
++    //     carousel that hasn't been previewed yet does not auto-fetch.
++    // This pattern is forward-compatible with the redesign in
++    // prompts/homepage-editor-redesign.md, where the popup open will
++    // simply call loadPreview(sectionIndex) instead of the button.
++    const loadPreview = async (sectionIndex: number) => {
++        const section = sectionStates.find(s => s.index === sectionIndex);
++        if (!section || section.type !== "product_carousel") return;
++        if (section.previewLoading) return;
++
++        setSectionStates(prev => prev.map(s =>
++            s.index === sectionIndex ? { ...s, previewLoading: true } : s
++        ));
++
++        const filter: Record<string, unknown> = {};
++        if (section.category) filter.category = section.category;
++        if (section.brand) filter.brand = section.brand;
++        if (section.modelLine) filter.name = section.modelLine;
++        if (section.traction) filter.traction = section.traction;
++        if (section.minPrice) filter.minPrice = parseFloat(section.minPrice);
++        if (section.maxPrice) filter.maxPrice = parseFloat(section.maxPrice);
++
++        const result = await getPreviewProducts(filter, section.sort, parseInt(section.limit) || 10);
++        const products = (!result.error && result.data) ? result.data : [];
++
++        setSectionStates(prev => prev.map(s =>
++            s.index === sectionIndex
++                ? { ...s, previewProducts: products, previewLoaded: true, previewLoading: false }
++                : s
++        ));
++    };
++
++    // Refetch-on-filter-change, but ONLY for sections whose preview is
++    // already live. Sections that have never been previewed stay unloaded
++    // until the user clicks Load preview.
++    const liveCarouselDepKey = sectionStates
++        .filter(s => s.type === "product_carousel" && s.previewLoaded)
+         .map(s => `${s.index}:${s.category}|${s.brand}|${s.modelLine}|${s.traction}|${s.minPrice}|${s.maxPrice}|${s.sort}|${s.limit}`)
+         .join("||");
+ 
+     useEffect(() => {
+-        const fetchAll = async () => {
+-            const updates = await Promise.all(
+-                sectionStates
+-                    .filter(s => s.type === "product_carousel")
+-                    .map(async (section) => {
+-                        const filter: Record<string, unknown> = {};
+-                        if (section.category) filter.category = section.category;
+-                        if (section.brand) filter.brand = section.brand;
+-                        if (section.modelLine) filter.name = section.modelLine;
+-                        if (section.traction) filter.traction = section.traction;
+-                        if (section.minPrice) filter.minPrice = parseFloat(section.minPrice);
+-                        if (section.maxPrice) filter.maxPrice = parseFloat(section.maxPrice);
+-
+-                        const result = await getPreviewProducts(filter, section.sort, parseInt(section.limit) || 10);
+-                        return { index: section.index, products: (!result.error && result.data) ? result.data : [] };
+-                    })
+-            );
+-
+-            setSectionStates(prev => prev.map(s => {
+-                const update = updates.find(u => u.index === s.index);
+-                return update ? { ...s, previewProducts: update.products } : s;
+-            }));
+-        };
+-
+-        fetchAll();
+-    }, [productCarouselDepKey]);
++        if (!liveCarouselDepKey) return;
++        const liveIndexes = sectionStates
++            .filter(s => s.type === "product_carousel" && s.previewLoaded)
++            .map(s => s.index);
++        // Refetch each live carousel whose filter signature is in the dep
++        // key. We don't try to diff which one changed; we just refetch
++        // all live ones — typically only one is live at a time.
++        liveIndexes.forEach(loadPreview);
++        // eslint-disable-next-line react-hooks/exhaustive-deps
++    }, [liveCarouselDepKey]);
+ 
+     const handleAddSectionConfirmed = () => {
+         setShowAddDialog(false);
+@@ -430,6 +466,8 @@
+             cards: newSectionType === "category_carousel" ? generateEmptyCards(3) : [],
+             saving: false,
+             previewProducts: [],
++            previewLoaded: false,
++            previewLoading: false,
+         };
+ 
+         setSectionStates(prev => [...prev, section]);
+@@ -1384,6 +1422,21 @@
+                                                     linkLabel={section.link_label || undefined}
+                                                 />
+                                             )}
++                                            {section.type === "product_carousel" && !section.previewLoaded && (
++                                                <div className="flex flex-col items-center justify-center gap-3 py-10 text-center">
++                                                    <p className="text-xs text-zinc-500">
++                                                        Preview is not loaded yet — loading it on demand keeps the page fast.
++                                                    </p>
++                                                    <button
++                                                        type="button"
++                                                        onClick={() => loadPreview(section.index)}
++                                                        disabled={section.previewLoading}
++                                                        className="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-primary text-on-primary rounded hover:brightness-90 disabled:opacity-50 disabled:cursor-wait transition-colors"
++                                                    >
++                                                        {section.previewLoading ? "Loading…" : "Load preview"}
++                                                    </button>
++                                                </div>
++                                            )}
+                                         </div>
+                                     </div>
+                                 </div>

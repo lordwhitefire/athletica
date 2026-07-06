@@ -137,7 +137,7 @@ export async function suggestRoutes(query: string): Promise<ApiResult<string[]>>
       `*[_type == "navigation"][0].items[].children[].href`
     );
     const productRoutes: string[] = await adminClient.fetch(
-      `*[_type == "product" && defined(url_slug)] {url_slug} | order(url_slug asc) [0...20].url_slug`
+      `*[_type == "product" && defined(url_slug.current)] | order(url_slug.current asc) [0...20].url_slug.current`
     );
     const all = [
       "/",

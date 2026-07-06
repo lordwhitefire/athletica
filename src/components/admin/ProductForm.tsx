@@ -299,41 +299,6 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                             )}
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <Controller
-                            name="thumbnail_asset"
-                            control={control}
-                            render={({ field }) => (
-                                <ImageSelector name="thumbnail_sel" label="Thumbnail" value={field.value || null} onChange={(v) => { field.onChange(v); setThumbnailAsset(v); }} />
-                            )}
-                        />
-                        <div>
-                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider">Brand</label>
-                            <div className="flex items-center gap-3">
-                                <select
-                                    value={brandRef || ""}
-                                    onChange={(e) => {
-                                        const v = e.target.value || null;
-                                        setBrandRef(v);
-                                        setValue("brand_ref", v || "");
-                                    }}
-                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors"
-                                >
-                                    <option value="">Select brand...</option>
-                                    {brandOptions.map(b => (
-                                        <option key={b._id} value={b._id}>{b.name}</option>
-                                    ))}
-                                </select>
-                                {selectedBrand?.logo && (
-                                    <img src={assetUrl((selectedBrand.logo.asset as { _ref: string })._ref)} alt={selectedBrand.name}
-                                        className="w-8 h-8 object-contain rounded bg-neutral-800" />
-                                )}
-                            </div>
-                            {errors.brand_ref && (
-                                <p className="text-red-500 text-xs mt-1">{errors.brand_ref.message}</p>
-                            )}
-                        </div>
-                    </div>
 
                     <div>
                         <div className="flex items-center justify-between mb-2">
