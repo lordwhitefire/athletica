@@ -58,7 +58,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     return (
         <div className="min-h-screen bg-neutral-950 text-white flex">
             {/* Sidebar */}
-            <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-neutral-900 border-r border-neutral-800 transform transition-transform duration-200 lg:translate-x-0 lg:static lg:inset-auto ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-neutral-900 border-r border-neutral-800 transform transition-transform duration-200 lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex items-center justify-between p-4 border-b border-neutral-800">
                     <div className="bg-zinc-800 text-white w-fit px-2 py-1">
                         <span className="text-sm font-black italic tracking-tighter">AT</span>
@@ -99,7 +99,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
             )}
 
             {/* Main */}
-            <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0 lg:ml-64">
                 <header className="sticky top-0 z-30 bg-neutral-950/80 backdrop-blur border-b border-neutral-800 px-4 py-3 flex items-center gap-3 lg:hidden">
                     <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-zinc-400 hover:text-white">
                         <span className="material-symbols-outlined">menu</span>
