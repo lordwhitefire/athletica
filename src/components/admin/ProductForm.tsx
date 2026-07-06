@@ -165,13 +165,17 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
             const fd = new FormData();
             fd.append("file", file);
             const res = await fetch("/api/admin/media/upload", { method: "POST", body: fd });
-            const asset = await res.json();
+            const json = await res.json();
+            if (!res.ok || json.error) {
+                throw new Error(json.error?.message || "Upload failed");
+            }
+            const asset = json.data;
             const updated = [...galleryAssets, asset._id];
             setGalleryAssets(updated);
             setValue("gallery_assets", updated.join(","));
         } catch (err) {
-            logger.error(err, "ProductForm error");
-            alert("Upload failed");
+            const msg = err instanceof Error ? err.message : "Upload failed";
+            alert(msg);
         } finally {
             setUploadingGallery(false);
             if (galleryFileRef.current) galleryFileRef.current.value = "";
