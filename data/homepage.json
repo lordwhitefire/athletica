@@ -94,9 +94,17 @@
       "limit": 10,
       "link": "/boots",
       "link_label": "View all boots",
+      "snapshot": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4710229fe277f9847ceb42ef41449101b0dfbcdc-308x300-png",
+          "_type": "reference"
+        }
+      },
       "sort": "newest",
       "subtitle": "Best sellers this season",
-      "title": "LATEST DROPS"
+      "title": "LATEST DROPS",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-7",
@@ -132,7 +140,8 @@
           "title": "Neymar Jnr KidSuper "
         }
       ],
-      "title": "Signature Boots "
+      "title": "Signature Boots ",
+      "variant": "curated-cards"
     },
     {
       "_key": "k-13",
@@ -193,7 +202,8 @@
       "link_label": "View all adidas",
       "sort": "newest",
       "subtitle": "Shop the full adidas range",
-      "title": "Adidas Football Boots"
+      "title": "Adidas Football Boots",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-19",
@@ -205,7 +215,8 @@
       "link_label": "View all Predator",
       "sort": "newest",
       "subtitle": "Control the game",
-      "title": "Adidas Predator"
+      "title": "Adidas Predator",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-25",
@@ -217,7 +228,8 @@
       "link_label": "View all Predator",
       "sort": "price_desc",
       "subtitle": "Dominate with control",
-      "title": "Predator Elite"
+      "title": "Predator Elite",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-20",
@@ -278,7 +290,8 @@
       "link_label": "View all",
       "sort": "newest",
       "subtitle": "Built for pace",
-      "title": "Speed Boots"
+      "title": "Speed Boots",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-27",
@@ -329,7 +342,8 @@
       "link_label": "Shop AG Range",
       "sort": "newest",
       "subtitle": "Engineered for artificial grass",
-      "title": "AG Football Boots"
+      "title": "AG Football Boots",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-32",
@@ -341,7 +355,8 @@
       "link_label": "Shop FG Range",
       "sort": "newest",
       "subtitle": "Built for natural grass",
-      "title": "FG Football Boots"
+      "title": "FG Football Boots",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-33",
@@ -402,7 +417,8 @@
       "link_label": "View all deals",
       "sort": "biggest_discount",
       "subtitle": "Biggest discounts this week",
-      "title": "Best Deals Right Now"
+      "title": "Best Deals Right Now",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-39",
@@ -443,7 +459,8 @@
       "link_label": "View all",
       "sort": "biggest_discount",
       "subtitle": "Handpicked for performance",
-      "title": "Top Picks This Week"
+      "title": "Top Picks This Week",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-43",
@@ -455,7 +472,8 @@
       "link_label": "View all budget boots",
       "sort": "price_asc",
       "subtitle": "Quality that won't break the bank",
-      "title": "Budget Boots Under EUR 50"
+      "title": "Budget Boots Under EUR 50",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-44",
@@ -496,7 +514,8 @@
       "link_label": "See all new arrivals",
       "sort": "newest",
       "subtitle": "Fresh stock just landed",
-      "title": "New Arrivals"
+      "title": "New Arrivals",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-48",
@@ -508,7 +527,8 @@
       "link_label": "View all",
       "sort": "newest",
       "subtitle": "Everything a keeper needs",
-      "title": "Goalkeeper Essentials"
+      "title": "Goalkeeper Essentials",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-49",
@@ -578,7 +598,8 @@
       "link_label": "View all",
       "sort": "price_desc",
       "subtitle": "For players who play fast",
-      "title": "Puma & Nike Speed Boots"
+      "title": "Puma & Nike Speed Boots",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-56",
@@ -619,7 +640,8 @@
       "link_label": "View premium range",
       "sort": "price_desc",
       "subtitle": "Top tier performance, no compromise",
-      "title": "Club Home Kit 2027"
+      "title": "Club Home Kit 2027",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-60",
@@ -631,7 +653,8 @@
       "link_label": "View all X Crazyfast",
       "sort": "newest",
       "subtitle": "Speed is everything",
-      "title": "Adidas X Crazyfast"
+      "title": "Adidas X Crazyfast",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-61",
@@ -643,7 +666,8 @@
       "link_label": "See staff picks",
       "sort": "biggest_discount",
       "subtitle": "Our team's favourite boots this season",
-      "title": "Staff Picks"
+      "title": "Staff Picks",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-62",
@@ -655,7 +679,8 @@
       "link_label": "View all",
       "sort": "price_asc",
       "subtitle": "Great boots at a great price",
-      "title": "Under EUR 100"
+      "title": "Under EUR 100",
+      "variant": "filtered-feed"
     },
     {
       "_key": "k-63",
@@ -667,12 +692,13 @@
       "link_label": "View all",
       "sort": "newest",
       "subtitle": "The best from adidas, Nike and Puma",
-      "title": "Top Rated Brands"
+      "title": "Top Rated Brands",
+      "variant": "filtered-feed"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-06T06:46:33.214Z",
+    "lastUpdated": "2026-07-06T09:07:49.797Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
