@@ -146,8 +146,8 @@ export function CategoryCarouselPreview({ section }: { section: SectionState }) 
     return (
         <div className="rounded overflow-hidden">
             <CategoryCarousel
-                title={section.title}
                 cards={section.cards.map(card => ({
+                    id: card._key,
                     _key: card._key,
                     title: card.title,
                     subtitle: card.subtitle,

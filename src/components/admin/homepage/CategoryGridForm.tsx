@@ -177,7 +177,7 @@ export function CategoryGridPreview({ section }: { section: SectionState }) {
                     bg: item.bg,
                     textColor: item.textColor,
                     accent: item.accent,
-                    image: item.image ? sanityCdnUrl(item.image) : null,
+                    image: item.image ? sanityCdnUrl(item.image) : undefined,
                 }))}
                 variant={section.variant as any}
                 viewAllLink={section.viewAllLink || undefined}

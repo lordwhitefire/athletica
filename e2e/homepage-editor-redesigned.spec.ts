@@ -57,7 +57,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
         // real environment. If 0, skip — the editor still works on
         // empty docs.
         if (count === 0) {
-            test.skip("no banners or sections in Sanity — overview has no Edit buttons to test");
+            test.skip(true, "no banners or sections in Sanity — overview has no Edit buttons to test");
             return;
         }
         // At least the first one should be visible
@@ -70,7 +70,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
         const editButtons = adminPage.getByRole("button", { name: /^Edit$/i });
         const count = await editButtons.count();
         if (count === 0) {
-            test.skip("no banners or sections in Sanity — cannot test popup");
+            test.skip(true, "no banners or sections in Sanity — cannot test popup");
             return;
         }
 
@@ -143,7 +143,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
         // with placeholder "/path/to/page".
         const linkInput = dialog.getByPlaceholder("/path/to/page").first();
         if (!(await linkInput.isVisible().catch(() => false))) {
-            test.skip("first edit target is not a banner — no link field to test");
+            test.skip(true, "first edit target is not a banner — no link field to test");
             return;
         }
 
@@ -160,7 +160,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
             const suggestionButtons = dropdown.locator("button");
             const suggestionCount = await suggestionButtons.count();
             if (suggestionCount === 0) {
-                test.skip("no suggestions returned — Sanity may be empty");
+                test.skip(true, "no suggestions returned — Sanity may be empty");
                 return;
             }
             for (let i = 0; i < suggestionCount; i++) {
@@ -189,7 +189,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
         // Accent color label should be visible in the banner form
         const accentLabel = dialog.getByText("Accent Color");
         if (!(await accentLabel.isVisible().catch(() => false))) {
-            test.skip("first edit target is not a banner");
+            test.skip(true, "first edit target is not a banner");
             return;
         }
 
@@ -206,7 +206,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
         const productChips = adminPage.getByText("Products", { exact: true });
         const productCount = await productChips.count();
         if (productCount === 0) {
-            test.skip("no product_carousel sections in Sanity");
+            test.skip(true, "no product_carousel sections in Sanity");
             return;
         }
 
@@ -236,7 +236,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
         const scrollChips = adminPage.getByText(/scroll (brands|categories)/i);
         const scrollCount = await scrollChips.count();
         if (scrollCount === 0) {
-            test.skip("no scroll-brands or scroll-categories sections in Sanity");
+            test.skip(true, "no scroll-brands or scroll-categories sections in Sanity");
             return;
         }
 
@@ -275,7 +275,7 @@ test.describe("Redesigned Homepage Editor (PR #5)", () => {
         const editButtons = adminPage.getByRole("button", { name: /^Edit$/i });
         const count = await editButtons.count();
         if (count < 2) {
-            test.skip("need at least 2 cards to test DnD reorder");
+            test.skip(true, "need at least 2 cards to test DnD reorder");
             return;
         }
 

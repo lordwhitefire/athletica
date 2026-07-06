@@ -88,7 +88,7 @@ test.describe("Admin Homepage Editor", () => {
         const beforeCount = await bannerInputs.count();
 
         if (beforeCount === 0) {
-            test.skip("no banners to delete");
+            test.skip(true, "no banners to delete");
             return;
         }
 
@@ -152,7 +152,7 @@ test.describe("Admin Homepage Editor", () => {
         const beforeCount = await sections.count();
 
         if (beforeCount === 0) {
-            test.skip("no sections to delete");
+            test.skip(true, "no sections to delete");
             return;
         }
 
@@ -160,7 +160,7 @@ test.describe("Admin Homepage Editor", () => {
         const deleteBtns = adminPage.locator("button").filter({ hasText: /^Delete$/ });
         const deleteCount = await deleteBtns.count();
         if (deleteCount === 0) {
-            test.skip("no delete buttons found");
+            test.skip(true, "no delete buttons found");
             return;
         }
 
@@ -245,7 +245,7 @@ test.describe("Admin Homepage Editor", () => {
 
         // If no sections exist, skip
         if (previewCount === 0) {
-            test.skip("no sections to preview");
+            test.skip(true, "no sections to preview");
             return;
         }
 

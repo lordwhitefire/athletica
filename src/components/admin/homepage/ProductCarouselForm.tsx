@@ -264,3 +264,23 @@ function mapRawToProduct(raw: Record<string, unknown>): Product {
         },
     };
 }
+
+function Field({
+    label,
+    tooltip,
+    children,
+}: {
+    label: string;
+    tooltip: string;
+    children: React.ReactNode;
+}) {
+    return (
+        <div>
+            <label className="flex items-center gap-2 mb-1">
+                <span className="text-xs text-zinc-500">{label}</span>
+                <InfoTooltip text={tooltip} />
+            </label>
+            {children}
+        </div>
+    );
+}
