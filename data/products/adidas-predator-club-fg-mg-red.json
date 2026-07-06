@@ -83,7 +83,13 @@
   },
   "gender": "Unisex",
   "id": "ID1326",
-  "image_gallery": [],
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e201673ef3392b0f64fa713746699bf4e9ab8f77-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aea64a6bbb6fd148b6c614b5fd71aecfe2cde941-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ec952b34f2364b458f44171557a4c21b6e5b2547-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/85868441563f2f99f3c367402c941e57b12e48d0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/19b57fb13ac0141df9b7b28f7a5e1d62e14688fb-1500x1500.jpg"
+  ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/236b4cd98187c3b2ee7c17f0732d61f4b9a4a867-1500x1500.jpg",
   "model": "Mercurial Vapour 17",
   "name": "Nike Mercurial Vapor 17 Elite AG-Pro ",
@@ -204,12 +210,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/236b4cd98187c3b2ee7c17f0732d61f4b9a4a867-1500x1500.jpg",
   "traction": "AG",
   "url_slug": "adidas-predator-club-fg-mg-red",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-06T20:32:02.990Z",
+    "lastUpdated": "2026-07-06T20:32:44.838Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
