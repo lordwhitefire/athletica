@@ -1,27 +1,32 @@
 {
   "0": {
-    "_id": "brand-new-balance",
-    "name": "New Balance",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/3ac08538dd05f3092c87615d2b29ec8445e39513-3264x3264.jpg"
+    "_id": "6yqUYpoiTaXm0bmHKEUDdy",
+    "name": "MIZUNO",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/fc115c97fa1b471af5355fab10703cf921711761-3264x3264.jpg"
   },
   "1": {
+    "_id": "brand-new-balance",
+    "name": "NEW BALANCE",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/3ac08538dd05f3092c87615d2b29ec8445e39513-3264x3264.jpg"
+  },
+  "2": {
     "_id": "brand-puma",
     "name": "Puma",
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/f17fb2829c28c8233dff0d21bcc8f2d901cc0572-1080x1080.jpg"
   },
-  "2": {
+  "3": {
     "_id": "brand-adidas",
     "name": "adidas",
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg"
   },
-  "3": {
+  "4": {
     "_id": "brand-nike",
     "name": "nike",
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg"
   },
   "_metadata": {
     "dataType": "brands",
-    "lastUpdated": "2026-07-06T20:32:44.825Z",
+    "lastUpdated": "2026-07-06T22:24:59.566Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
