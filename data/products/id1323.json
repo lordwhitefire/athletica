@@ -84,8 +84,11 @@
   "gender": "Unisex",
   "id": "ID1323",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/b92aa5f9876ebbae50e65b40df38ef60a04d6091-1500x1500.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/f24732581cd89949d17ca488bb2b4418b51b893f-1500x1500.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/f24732581cd89949d17ca488bb2b4418b51b893f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/839974b7b867832a72c45d89b28a71921edc2a87-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/91dd034fcd14690216e5d3b18cdd619c6a016036-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/91dd034fcd14690216e5d3b18cdd619c6a016036-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2d765ec855e26321075362db8278037d34278e60-1500x1500.jpg"
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b92aa5f9876ebbae50e65b40df38ef60a04d6091-1500x1500.jpg",
   "model": "(Predator/Elite-AG)",
@@ -224,7 +227,7 @@
   "url_slug": "id1323",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-06T20:08:57.938Z",
+    "lastUpdated": "2026-07-06T20:09:56.233Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
