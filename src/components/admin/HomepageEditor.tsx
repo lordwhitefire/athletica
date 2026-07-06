@@ -1,13 +1,12 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { getPreviewProducts, saveHomepage } from "@/lib/actions/homepage";
+import { getPreviewProducts, saveHomepage, uploadSnapshotImage } from "@/lib/actions/homepage";
 import { useUnsavedChanges } from "@/lib/hooks/useUnsavedChanges";
 import { logger } from "@/lib/logger";
 import { suggestRoutes } from "@/lib/actions/suggestions";
 import { sanityCdnUrl } from "@/lib/sanity-client";
-import { toPng } from "html-to-image";
 import EditPopup from "./homepage/EditPopup";
 import Overview, { type OverviewItem } from "./homepage/Overview";
 import BannerForm, { BannerPreview } from "./homepage/BannerForm";
@@ -148,6 +147,7 @@ export default function HomepageEditor({ doc }: Props) {
             emoji: card.emoji as string || "⚡",
             image: extractAssetId(card.image),
         })),
+        snapshot: extractAssetId(section.snapshot),
         saving: false,
         previewProducts: [] as Record<string, unknown>[],
         previewLoaded: false,
@@ -211,29 +211,6 @@ export default function HomepageEditor({ doc }: Props) {
         liveIndexes.forEach(loadPreview);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [liveCarouselDepKey]);
-
-    // --- Capture section snapshots for overview thumbnails ---
-    useEffect(() => {
-        const captured: Record<string, string> = {};
-        let cancelled = false;
-        Promise.all(
-            sectionStates.map(async (s) => {
-                const el = captureRefs.current[s._key];
-                if (!el) return;
-                try {
-                    const dataUrl = await toPng(el, { quality: 0.3, pixelRatio: 0.4 });
-                    if (!cancelled) captured[s._key] = dataUrl;
-                } catch (err) { console.error("Snapshot capture failed for", s._key, err); }
-            })
-        ).then(() => {
-            if (!cancelled && Object.keys(captured).length > 0) {
-                setSectionThumbs(prev => ({ ...prev, ...captured }));
-            }
-        });
-        return () => { cancelled = true; };
-        // Only re-capture when section count changes (add/remove/reorder)
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [sectionStates.length]);
 
     // --- Banner editing ---
     const updateBannerField = (index: number, field: keyof BannerState, value: string | null) => {
@@ -412,6 +389,7 @@ export default function HomepageEditor({ doc }: Props) {
             autoSwitchMs: "4000",
             items: newSectionType === "category_grid" ? generateEmptyItems(rules?.minItems || 4) : [],
             cards: newSectionType === "category_carousel" ? generateEmptyCards(3) : [],
+            snapshot: null,
             saving: false,
             previewProducts: [],
             previewLoaded: false,
@@ -425,11 +403,19 @@ export default function HomepageEditor({ doc }: Props) {
     const [editingBanner, setEditingBanner] = useState<number | null>(null);
     const [editingSection, setEditingSection] = useState<number | null>(null);
 
-    const [sectionThumbs, setSectionThumbs] = useState<Record<string, string>>({});
-    const captureRefs = useRef<Record<string, HTMLDivElement | null>>({});
+    // Locally-captured snapshot data URLs (keyed by section _key).
+    // Persisted to Sanity as image assets on "Save All".
+    const [sectionSnapshots, setSectionSnapshots] = useState<Record<string, string>>({});
 
     const editingBannerState = editingBanner !== null ? bannerStates[editingBanner] : null;
     const editingSectionState = editingSection !== null ? sectionStates[editingSection] : null;
+
+    // --- Snapshot capture (manual, triggered by admin in EditPopup) ---
+    const handleCaptureSection = useCallback((dataUrl: string) => {
+        if (!editingSectionState) return;
+        setSectionSnapshots(prev => ({ ...prev, [editingSectionState._key]: dataUrl }));
+        markDirty();
+    }, [editingSectionState, markDirty]);
 
     // --- Save All ---
     const sectionToRaw = (s: SectionState): Record<string, unknown> => {
@@ -439,6 +425,9 @@ export default function HomepageEditor({ doc }: Props) {
             title: s.title,
             bg: s.bg,
         };
+        if (s.snapshot) {
+            base.snapshot = { _type: "image", asset: { _ref: s.snapshot, _type: "reference" } };
+        }
         if (s.type === "category_grid") {
             base.variant = s.variant;
             base.viewAllLink = s.viewAllLink || undefined;
@@ -514,12 +503,34 @@ export default function HomepageEditor({ doc }: Props) {
                     image: b.image ? { _type: "image", asset: { _ref: b.image, _type: "reference" } } : null,
                 })),
             };
-            const sections = sectionStates.map(sectionToRaw);
+            // Upload any locally-captured snapshots to Sanity as image assets
+            const snapshotRefs: Record<string, string> = {};
+            for (const [key, dataUrl] of Object.entries(sectionSnapshots)) {
+                const result = await uploadSnapshotImage(dataUrl);
+                if (result.error) {
+                    setErrorMessage(`Snapshot upload failed: ${result.error.message}`);
+                    return;
+                }
+                snapshotRefs[key] = result.data!._ref;
+            }
+
+            // Build raw sections, injecting uploaded snapshot refs
+            const sections = sectionStates.map(s => {
+                const raw = sectionToRaw(s);
+                const snapRef = snapshotRefs[s._key] || s.snapshot;
+                if (snapRef) {
+                    raw.snapshot = { _type: "image", asset: { _ref: snapRef, _type: "reference" } };
+                }
+                return raw;
+            });
+
             const result = await saveHomepage({ hero_carousel, sections });
             if (result.error) {
                 setErrorMessage(result.error.message);
                 return;
             }
+            // Clear local snapshots so next load uses Sanity CDN URLs
+            setSectionSnapshots({});
             markClean();
             setLastSaved(Date.now());
             router.refresh();
@@ -547,7 +558,7 @@ export default function HomepageEditor({ doc }: Props) {
         title: s.title,
         index: s.index,
         itemCount: s.type === "category_grid" ? s.items.length : s.type === "category_carousel" ? s.cards.length : undefined,
-        thumbUrl: sectionThumbs[s._key] || null,
+        thumbUrl: sectionSnapshots[s._key] || (s.snapshot ? sanityCdnUrl(s.snapshot) : null),
     }));
 
     // =========================================================================
@@ -606,6 +617,8 @@ export default function HomepageEditor({ doc }: Props) {
                     onReorderSections={reorderSections}
                     onEditBanner={(index) => setEditingBanner(index)}
                     onEditSection={(index) => setEditingSection(index)}
+                    onDeleteBanner={deleteBannerFunc}
+                    onDeleteSection={handleDeleteSection}
                     onAddBanner={addNewBanner}
                     onAddSection={() => { setNewSectionType("category_grid"); setNewSectionVariant("grid-4-equal"); setShowAddDialog(true); }}
                 />
@@ -684,6 +697,7 @@ export default function HomepageEditor({ doc }: Props) {
                         : ""
                 }
                 onClose={() => setEditingSection(null)}
+                onCapture={handleCaptureSection}
                 preview={editingSectionState && (
                     <>
                         {editingSectionState.type === "category_grid" && (
@@ -730,17 +744,6 @@ export default function HomepageEditor({ doc }: Props) {
                     </>
                 )}
             </EditPopup>
-
-            {/* Hidden section snapshots for overview thumbnails — rendered but invisible so html-to-image can capture */}
-            <div className="absolute left-0 top-0 w-0 h-0 overflow-hidden" aria-hidden="true">
-                {sectionStates.map(s => (
-                    <div key={s._key} ref={el => { captureRefs.current[s._key] = el; }} className="w-[400px] opacity-0 pointer-events-none">
-                        {s.type === "category_grid" && <CategoryGridPreview section={s} />}
-                        {s.type === "category_carousel" && <CategoryCarouselPreview section={s} />}
-                        {s.type === "product_carousel" && <ProductCarouselPreview section={s} />}
-                    </div>
-                ))}
-            </div>
         </div>
     );
 }

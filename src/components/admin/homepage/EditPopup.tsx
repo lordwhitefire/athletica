@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import { toPng } from "html-to-image";
 
 interface EditPopupProps {
     open: boolean;
@@ -18,6 +19,12 @@ interface EditPopupProps {
      * section. Bug #8 from issues/homepage-editor-bugs.md.
      */
     preview?: ReactNode;
+    /**
+     * When provided, shows a floating "Capture Snapshot" button over the
+     * preview panel. The admin clicks it to manually capture the visible
+     * preview as a PNG data URL for the overview thumbnail.
+     */
+    onCapture?: (dataUrl: string) => void;
 }
 
 /**
@@ -39,6 +46,7 @@ export default function EditPopup({
     saveDisabled = false,
     children,
     preview,
+    onCapture,
 }: EditPopupProps) {
     // Trap ESC to close, and lock body scroll while open.
     useEffect(() => {
@@ -55,6 +63,22 @@ export default function EditPopup({
         };
     }, [open, onClose, saving]);
 
+    const previewRef = useRef<HTMLDivElement>(null);
+    const [capturing, setCapturing] = useState(false);
+
+    const handleCapture = async () => {
+        if (!previewRef.current || !onCapture) return;
+        setCapturing(true);
+        try {
+            const dataUrl = await toPng(previewRef.current, { quality: 0.3, pixelRatio: 0.4 });
+            onCapture(dataUrl);
+        } catch (err) {
+            console.error("Snapshot capture failed", err);
+        } finally {
+            setCapturing(false);
+        }
+    };
+
     if (!open) return null;
 
     return (
@@ -64,7 +88,6 @@ export default function EditPopup({
             aria-modal="true"
             aria-label={title}
             onClick={(e) => {
-                // Click on backdrop (not on the panel) closes
                 if (e.target === e.currentTarget && !saving) onClose();
             }}
         >
@@ -94,11 +117,29 @@ export default function EditPopup({
                         {children}
                     </div>
                     {preview && (
-                        <div className="md:w-[55%] md:max-w-[820px] border-t md:border-t-0 md:border-l border-neutral-800 bg-neutral-950 overflow-y-auto p-4">
-                            <p className="text-[10px] text-zinc-500 uppercase tracking-wider font-medium mb-3">
-                                Live Preview (full size)
-                            </p>
-                            {preview}
+                        <div className="md:w-[55%] md:max-w-[820px] border-t md:border-t-0 md:border-l border-neutral-800 bg-neutral-950 overflow-y-auto p-4 relative">
+                            <div className="flex items-center justify-between mb-3">
+                                <p className="text-[10px] text-zinc-500 uppercase tracking-wider font-medium">
+                                    Live Preview (full size)
+                                </p>
+                                {onCapture && (
+                                    <button
+                                        type="button"
+                                        onClick={handleCapture}
+                                        disabled={capturing}
+                                        className="flex items-center gap-1.5 px-3 py-1.5 bg-primary text-on-primary text-xs font-bold rounded hover:brightness-90 disabled:opacity-50 transition-colors"
+                                        title="Capture snapshot for overview thumbnail"
+                                    >
+                                        <span className="material-symbols-outlined text-[14px]">
+                                            {capturing ? "hourglass_empty" : "photo_camera"}
+                                        </span>
+                                        {capturing ? "Capturing..." : "Snapshot"}
+                                    </button>
+                                )}
+                            </div>
+                            <div ref={previewRef}>
+                                {preview}
+                            </div>
                         </div>
                     )}
                 </div>

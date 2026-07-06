@@ -37,6 +37,8 @@ interface OverviewProps {
     onReorderSections: (from: number, to: number) => void;
     onEditBanner: (index: number) => void;
     onEditSection: (index: number) => void;
+    onDeleteBanner?: (index: number) => void;
+    onDeleteSection?: (index: number) => void;
     onAddBanner: () => void;
     onAddSection: () => void;
 }
@@ -60,6 +62,8 @@ export default function Overview({
     onReorderSections,
     onEditBanner,
     onEditSection,
+    onDeleteBanner,
+    onDeleteSection,
     onAddBanner,
     onAddSection,
 }: OverviewProps) {
@@ -69,12 +73,14 @@ export default function Overview({
                 items={banners}
                 onReorder={onReorderBanners}
                 onEdit={onEditBanner}
+                onDelete={onDeleteBanner}
                 onAdd={onAddBanner}
             />
             <SectionList
                 items={sections}
                 onReorder={onReorderSections}
                 onEdit={onEditSection}
+                onDelete={onDeleteSection}
                 onAdd={onAddSection}
             />
         </div>
@@ -85,11 +91,13 @@ function BannerList({
     items,
     onReorder,
     onEdit,
+    onDelete,
     onAdd,
 }: {
     items: OverviewItem[];
     onReorder: (from: number, to: number) => void;
     onEdit: (index: number) => void;
+    onDelete?: (index: number) => void;
     onAdd: () => void;
 }) {
     return (
@@ -116,6 +124,7 @@ function BannerList({
                 items={items}
                 onReorder={onReorder}
                 onEdit={onEdit}
+                onDelete={onDelete}
                 typeLabel={() => "Banner"}
             />
         </section>
@@ -126,11 +135,13 @@ function SectionList({
     items,
     onReorder,
     onEdit,
+    onDelete,
     onAdd,
 }: {
     items: OverviewItem[];
     onReorder: (from: number, to: number) => void;
     onEdit: (index: number) => void;
+    onDelete?: (index: number) => void;
     onAdd: () => void;
 }) {
     return (
@@ -157,6 +168,7 @@ function SectionList({
                 items={items}
                 onReorder={onReorder}
                 onEdit={onEdit}
+                onDelete={onDelete}
                 typeLabel={(item) => typeLabel(item.type)}
                 variantLabel={(item) => item.variant ? variantLabel(item.variant) : undefined}
             />
@@ -169,6 +181,7 @@ function SortableGrid({
     items,
     onReorder,
     onEdit,
+    onDelete,
     typeLabel,
     variantLabel,
 }: {
@@ -176,6 +189,7 @@ function SortableGrid({
     items: OverviewItem[];
     onReorder: (from: number, to: number) => void;
     onEdit: (index: number) => void;
+    onDelete?: (index: number) => void;
     typeLabel: (item: OverviewItem) => string;
     variantLabel?: (item: OverviewItem) => string | undefined;
 }) {
@@ -233,6 +247,7 @@ function SortableGrid({
                             item={item}
                             active={activeId === `${idPrefix}-${item._key}`}
                             onEdit={() => onEdit(item.index)}
+                            onDelete={onDelete ? () => onDelete(item.index) : undefined}
                             typeLabel={typeLabel(item)}
                             variantLabel={variantLabel ? variantLabel(item) : undefined}
                         />
@@ -248,6 +263,7 @@ function SortableCard({
     item,
     active,
     onEdit,
+    onDelete,
     typeLabel,
     variantLabel,
 }: {
@@ -255,6 +271,7 @@ function SortableCard({
     item: OverviewItem;
     active: boolean;
     onEdit: () => void;
+    onDelete?: () => void;
     typeLabel: string;
     variantLabel?: string;
 }) {
@@ -328,13 +345,25 @@ function SortableCard({
                         {item.itemCount} item{item.itemCount === 1 ? "" : "s"}
                     </p>
                 )}
-                <button
-                    type="button"
-                    onClick={onEdit}
-                    className="mt-auto self-start px-4 py-2 text-xs font-bold uppercase tracking-wider bg-primary text-on-primary rounded hover:brightness-90 transition-colors"
-                >
-                    Edit
-                </button>
+                <div className="mt-auto flex items-center gap-2">
+                    <button
+                        type="button"
+                        onClick={onEdit}
+                        className="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-primary text-on-primary rounded hover:brightness-90 transition-colors"
+                    >
+                        Edit
+                    </button>
+                    {onDelete && (
+                        <button
+                            type="button"
+                            onClick={onDelete}
+                            aria-label="Delete"
+                            className="p-2 text-zinc-500 hover:text-red-400 hover:bg-red-500/10 rounded transition-colors"
+                        >
+                            <span className="material-symbols-outlined text-[18px]">delete</span>
+                        </button>
+                    )}
+                </div>
             </div>
         </div>
     );

@@ -172,11 +172,11 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
     ];
 
     return (
-        <div className="absolute left-0 w-screen flex justify-center bg-black shadow-2xl z-50 border-t border-gray-800 overflow-y-auto max-h-screen">
-            <div className="max-w-[1400px]  px-6 py-6 flex gap-6 mb-[50px]">
+        <div className="absolute left-0 top-full w-screen flex justify-center bg-black shadow-2xl z-50 border-t border-gray-800">
+            <div className="max-w-[1400px] px-6 py-6 flex gap-6 mb-[50px]">
 
                 {/* ── MAIN COLUMNS AREA ── */}
-                <div className="flex-1 flex flex-wrap gap-x-6 gap-y-6 content-start">
+                <div className="flex-1 flex flex-wrap gap-x-6 gap-y-6 content-start max-h-[40vh] overflow-y-auto">
                     {columns.map((col, colIndex) => (
                         <div key={colIndex} className="flex flex-col gap-1" style={{ minWidth: "140px" }}>
                             {/* Column header — the repeating parent label */}
@@ -293,27 +293,6 @@ export default function MegaMenu({ item, onClose }: MegaMenuProps) {
                 {(sizeLinks.length > 0 || quickLinks.length > 0) && (
 
                     <div className="self-start bg-[#0a0b0d] w-[400px] flex flex-col text-white p-8 font-sans">
-
-                        {/* Shop By Size */}
-                        {sizeLinks.length > 0 && (
-                            <section className="w-[300px] mb-12 mt-[30px]">
-                                <h2 className="text-xl italic font-black tracking-tighter uppercase mb-6">
-                                    Shop by Size
-                                </h2>
-                                <div className="grid grid-cols-3 gap-4 max-w-xs ">
-                                    {sizeLinks.map((sizeLink, i) => (
-                                        <Link
-                                            key={i}
-                                            href={sizeLink.href || "#"}
-                                            onClick={onClose}
-                                            className="border border-zinc-800 py-4 px-12 text-sm h-[40px] w-[80px] font-bold hover:bg-zinc-800 transition-colors duration-200 flex items-center justify-center"
-                                        >
-                                            {sizeLink.label}
-                                        </Link>
-                                    ))}
-                                </div>
-                            </section>
-                        )}
 
                         {/* Quick Links */}
                         <section className=" w-[300px]">

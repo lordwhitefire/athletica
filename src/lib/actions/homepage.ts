@@ -374,6 +374,20 @@ export async function getPreviewProducts(
     }
 }
 
+export async function uploadSnapshotImage(dataUrl: string): Promise<ApiResult<{ _ref: string }>> {
+    try {
+        const base64Data = dataUrl.split(",")[1];
+        const buffer = Buffer.from(base64Data, "base64");
+        const asset = await adminClient.assets.upload("image", buffer, {
+            filename: "snapshot.png",
+            contentType: "image/png",
+        });
+        return ok({ _ref: asset._id });
+    } catch (err) {
+        return fromCaughtError(err, "snapshot_upload_failed");
+    }
+}
+
 export async function saveHomepage(data: {
     hero_carousel: Record<string, unknown>;
     sections: Record<string, unknown>[];

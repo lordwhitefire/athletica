@@ -62,6 +62,7 @@ export interface SectionState {
     previewProducts: Record<string, unknown>[];
     previewLoaded: boolean;
     previewLoading: boolean;
+    snapshot: string | null;
 }
 
 // Validation rules per category_grid variant. Bug #7 from the issues

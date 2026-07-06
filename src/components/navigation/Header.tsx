@@ -33,7 +33,7 @@ export default function Header({ navigation, siteLogoUrl }: HeaderProps) {
 
     return (
         <>
-            <header className="w-full bg-black sticky top-0 z-30 border-b border-zinc-800">
+            <header className="w-full bg-black sticky top-0 z-40 border-b border-zinc-800">
 
                 {/* ── ROW 1 — Search + Icons — ALL screen sizes ── */}
                 <div className="flex items-center justify-between w-full px-4 md:px-8 py-3 gap-3">
