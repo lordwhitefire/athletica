@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { getPreviewProducts, saveHomepage } from "@/lib/actions/homepage";
 import { useUnsavedChanges } from "@/lib/hooks/useUnsavedChanges";
 import { logger } from "@/lib/logger";
 import { suggestRoutes } from "@/lib/actions/suggestions";
 import { sanityCdnUrl } from "@/lib/sanity-client";
+import { toPng } from "html-to-image";
 import EditPopup from "./homepage/EditPopup";
 import Overview, { type OverviewItem } from "./homepage/Overview";
 import BannerForm, { BannerPreview } from "./homepage/BannerForm";
@@ -211,6 +212,29 @@ export default function HomepageEditor({ doc }: Props) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [liveCarouselDepKey]);
 
+    // --- Capture section snapshots for overview thumbnails ---
+    useEffect(() => {
+        const captured: Record<string, string> = {};
+        let cancelled = false;
+        Promise.all(
+            sectionStates.map(async (s) => {
+                const el = captureRefs.current[s._key];
+                if (!el) return;
+                try {
+                    const dataUrl = await toPng(el, { quality: 0.3, pixelRatio: 0.4 });
+                    if (!cancelled) captured[s._key] = dataUrl;
+                } catch { /* silent */ }
+            })
+        ).then(() => {
+            if (!cancelled && Object.keys(captured).length > 0) {
+                setSectionThumbs(prev => ({ ...prev, ...captured }));
+            }
+        });
+        return () => { cancelled = true; };
+        // Only re-capture when section count changes (add/remove/reorder)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [sectionStates.length]);
+
     // --- Banner editing ---
     const updateBannerField = (index: number, field: keyof BannerState, value: string | null) => {
         setBannerStates(prev => prev.map((b, i) => i === index ? { ...b, [field]: value } : b));
@@ -401,6 +425,9 @@ export default function HomepageEditor({ doc }: Props) {
     const [editingBanner, setEditingBanner] = useState<number | null>(null);
     const [editingSection, setEditingSection] = useState<number | null>(null);
 
+    const [sectionThumbs, setSectionThumbs] = useState<Record<string, string>>({});
+    const captureRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
     const editingBannerState = editingBanner !== null ? bannerStates[editingBanner] : null;
     const editingSectionState = editingSection !== null ? sectionStates[editingSection] : null;
 
@@ -520,6 +547,7 @@ export default function HomepageEditor({ doc }: Props) {
         title: s.title,
         index: s.index,
         itemCount: s.type === "category_grid" ? s.items.length : s.type === "category_carousel" ? s.cards.length : undefined,
+        thumbUrl: sectionThumbs[s._key] || null,
     }));
 
     // =========================================================================
@@ -702,6 +730,17 @@ export default function HomepageEditor({ doc }: Props) {
                     </>
                 )}
             </EditPopup>
+
+            {/* Offscreen section snapshots for overview thumbnails */}
+            <div className="fixed -left-[9999px] top-0" aria-hidden="true">
+                {sectionStates.map(s => (
+                    <div key={s._key} ref={el => { captureRefs.current[s._key] = el; }} className="w-[400px]">
+                        {s.type === "category_grid" && <CategoryGridPreview section={s} />}
+                        {s.type === "category_carousel" && <CategoryCarouselPreview section={s} />}
+                        {s.type === "product_carousel" && <ProductCarouselPreview section={s} />}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
