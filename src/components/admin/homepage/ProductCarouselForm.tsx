@@ -11,49 +11,69 @@ import {
 } from "@/lib/actions/suggestions";
 import ProductCarousel from "@/components/product/ProductCarousel";
 import type { Product } from "@/types/product";
-import type { SectionState } from "./types";
+import { PRODUCT_CAROUSEL_VARIANTS, type ProductCarouselVariant, type SectionState } from "./types";
 
 interface ProductCarouselFormProps {
     section: SectionState;
     onUpdateField: (field: keyof SectionState, value: string | null) => void;
-    /**
-     * Lazy-load the preview. The parent (HomepageEditor) owns the actual
-     * fetch — we just call it once on mount of this form (i.e. when the
-     * popup opens) and let the parent's refetch-on-filter-change effect
-     * take over from there. This replaces the old "Load preview" button
-     * from PR #4 — when the popup opens, we auto-load. Bug #11.
-     */
     onLoadPreview: () => void;
 }
 
 const inputCls = "w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors";
 
 /**
- * Popup form contents for a product_carousel section. Per the redesign
- * plan (Step 6), this variant has no items or cards — only filter
- * settings. The form is just subtitle / sort / limit / link / link label
- * plus all the filter fields (category, brand, model, traction, min/max
- * price).
- *
- * When the popup opens, this component fires onLoadPreview() once. The
- * parent's existing refetch-on-filter-change effect (see HomepageEditor)
- * then keeps the preview live as the editor changes filters.
+ * Variant-specific form for a product_carousel section.
+ * Currently one variant ("filtered-feed"): subtitle / sort / limit / link /
+ * link_label plus filter fields (category, brand, model, traction, min/max
+ * price). New variants add a case in the switch below.
  */
 export default function ProductCarouselForm({
     section,
     onUpdateField,
     onLoadPreview,
 }: ProductCarouselFormProps) {
-    // Auto-load the preview when the popup opens. This is the deferred
-    // fetch that used to be a button in PR #4 — now it happens
-    // automatically because the user explicitly opened the popup.
+    const variant = (section.variant as ProductCarouselVariant) || "filtered-feed";
+
     useEffect(() => {
         onLoadPreview();
-        // We intentionally only fire this on mount. Subsequent filter
-        // changes are handled by the parent's dep-key effect.
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    const variantOptions = Object.entries(PRODUCT_CAROUSEL_VARIANTS).map(([key, v]) => ({
+        value: key,
+        label: v.name,
+    }));
+
+    return (
+        <div className="space-y-5">
+            {/* Variant selector */}
+            <div className="flex items-center gap-3">
+                <label className="text-xs text-zinc-500">Variant</label>
+                <select
+                    value={variant}
+                    onChange={(e) => onUpdateField("variant", e.target.value)}
+                    className="px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs"
+                >
+                    {variantOptions.map((opt) => (
+                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                    ))}
+                </select>
+            </div>
+
+            {variant === "filtered-feed" && (
+                <FilteredFeedForm section={section} onUpdateField={onUpdateField} />
+            )}
+        </div>
+    );
+}
+
+function FilteredFeedForm({
+    section,
+    onUpdateField,
+}: {
+    section: SectionState;
+    onUpdateField: (field: keyof SectionState, value: string | null) => void;
+}) {
     return (
         <div className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -194,9 +214,6 @@ export default function ProductCarouselForm({
 /**
  * Full-size ProductCarousel preview for the popup's right panel.
  * Reads from section.previewProducts (the lazy-loaded products).
- * Shows a loading state while previewLoading is true, and a prompt
- * (shouldn't happen since we auto-load, but defensive) when no
- * products have loaded yet.
  */
 export function ProductCarouselPreview({ section }: { section: SectionState }) {
     if (section.previewLoading && section.previewProducts.length === 0) {
@@ -230,8 +247,6 @@ export function ProductCarouselPreview({ section }: { section: SectionState }) {
     );
 }
 
-// Local copy of the mapper that lived in the old HomepageEditor. Kept
-// here so this form component is self-contained for the preview.
 function mapRawToProduct(raw: Record<string, unknown>): Product {
     const price = raw.price as Record<string, unknown> | undefined;
     return {

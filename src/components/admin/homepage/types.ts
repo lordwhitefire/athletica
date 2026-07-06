@@ -83,8 +83,34 @@ export const VARIANT_RULES = {
 export type VariantKey = keyof typeof VARIANT_RULES;
 export type ItemField = (typeof VARIANT_RULES)[VariantKey]["fields"][number];
 
+export const PRODUCT_CAROUSEL_VARIANTS = {
+    "filtered-feed": {
+        name: "Filtered Feed",
+        fields: ["title", "subtitle", "sort", "limit", "link", "link_label",
+                  "category", "brand", "modelLine", "traction", "minPrice", "maxPrice"] as const,
+    },
+} as const;
+
+export const CATEGORY_CAROUSEL_VARIANTS = {
+    "curated-cards": {
+        name: "Curated Cards",
+        fields: ["title", "autoSwitchMs", "cards"] as const,
+    },
+} as const;
+
+export type ProductCarouselVariant = keyof typeof PRODUCT_CAROUSEL_VARIANTS;
+export type CategoryCarouselVariant = keyof typeof CATEGORY_CAROUSEL_VARIANTS;
+
 // True if items can be added/removed by the editor. False for the seven
 // fixed-slot variants where the slot count is hardcoded.
 export function variantIsFlexible(variant: string): boolean {
     return variant === "scroll-brands" || variant === "scroll-categories";
+}
+
+export function defaultVariantForType(type: string): string {
+    switch (type) {
+        case "product_carousel": return "filtered-feed";
+        case "category_carousel": return "curated-cards";
+        default: return "grid-4-equal";
+    }
 }

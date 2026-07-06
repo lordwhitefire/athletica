@@ -15,6 +15,9 @@ import CategoryCarouselForm, { CategoryCarouselPreview } from "./homepage/Catego
 import ProductCarouselForm, { ProductCarouselPreview } from "./homepage/ProductCarouselForm";
 import {
     VARIANT_RULES,
+    PRODUCT_CAROUSEL_VARIANTS,
+    CATEGORY_CAROUSEL_VARIANTS,
+    defaultVariantForType,
     type BannerState,
     type SectionState,
     type SectionStateCard,
@@ -113,7 +116,7 @@ export default function HomepageEditor({ doc }: Props) {
         _key: (section._key as string) || `section-${i}`,
         type: (section._type || section.type) as string,
         title: section.title as string || "",
-        variant: section.variant as string || "grid-4-equal",
+        variant: (section.variant as string) || defaultVariantForType((section._type || section.type) as string),
         bg: section.bg as string || "bg-surface",
         viewAllLink: section.viewAllLink as string || "",
         viewAllLabel: section.viewAllLabel as string || "",
@@ -422,6 +425,7 @@ export default function HomepageEditor({ doc }: Props) {
         const base: Record<string, unknown> = {
             _key: s._key,
             _type: s.type,
+            variant: s.variant,
             title: s.title,
             bg: s.bg,
         };
@@ -776,6 +780,8 @@ function AddSectionDialog({
             { value: "asymmetric-2-split", label: "Asymmetric 2 Split" },
             { value: "stacked-banners", label: "Stacked Banners" },
         ],
+        product_carousel: Object.entries(PRODUCT_CAROUSEL_VARIANTS).map(([k, v]) => ({ value: k, label: v.name })),
+        category_carousel: Object.entries(CATEGORY_CAROUSEL_VARIANTS).map(([k, v]) => ({ value: k, label: v.name })),
     };
 
     return (
@@ -821,6 +827,21 @@ function AddSectionDialog({
                                 Requires {VARIANT_RULES[newSectionVariant as VariantKey].minItems}–{VARIANT_RULES[newSectionVariant as VariantKey].maxItems} items
                             </p>
                         )}
+                    </>
+                )}
+
+                {(newSectionType === "product_carousel" || newSectionType === "category_carousel") && (
+                    <>
+                        <label className="text-xs text-zinc-500 block mb-2">Variant</label>
+                        <select
+                            value={newSectionVariant}
+                            onChange={(e) => onSetVariant(e.target.value)}
+                            className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm mb-4"
+                        >
+                            {VARIANT_OPTIONS[newSectionType]?.map((opt) => (
+                                <option key={opt.value} value={opt.value}>{opt.label}</option>
+                            ))}
+                        </select>
                     </>
                 )}
 
@@ -872,6 +893,8 @@ function variantLabel(variant: string): string {
         "split-1-2": "Split 1-2",
         "asymmetric-2-split": "Asymmetric 2 Split",
         "stacked-banners": "Stacked Banners",
+        "filtered-feed": "Filtered Feed",
+        "curated-cards": "Curated Cards",
     };
     return labels[variant] || variant;
 }

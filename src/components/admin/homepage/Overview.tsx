@@ -391,6 +391,8 @@ function variantLabel(variant: string): string {
         "split-1-2": "Split 1-2",
         "asymmetric-2-split": "Asymmetric 2 Split",
         "stacked-banners": "Stacked Banners",
+        "filtered-feed": "Filtered Feed",
+        "curated-cards": "Curated Cards",
     };
     return labels[variant] || variant;
 }

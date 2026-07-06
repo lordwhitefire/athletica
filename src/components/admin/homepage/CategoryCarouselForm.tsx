@@ -23,7 +23,7 @@ import InfoTooltip from "@/components/ui/InfoTooltip";
 import { suggestRoutes } from "@/lib/actions/suggestions";
 import { sanityCdnUrl } from "@/lib/sanity-client";
 import CategoryCarousel from "@/components/homepage/CategoryCarousel";
-import type { SectionState, SectionStateCard } from "./types";
+import { CATEGORY_CAROUSEL_VARIANTS, type CategoryCarouselVariant, type SectionState, type SectionStateCard } from "./types";
 
 interface CategoryCarouselFormProps {
     section: SectionState;
@@ -39,12 +39,56 @@ const inputCls = "w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text
 const MIN_CARDS = 3;
 
 /**
- * Popup form contents for a category_carousel section. Per the redesign
- * plan (Step 5), this variant has only one form: a minimum of 3 cards,
- * no maximum, each with title / subtitle / link / gradient / emoji /
- * image. Add/Remove/Reorder buttons for cards.
+ * Variant-specific form for a category_carousel section.
+ * Currently one variant ("curated-cards"): title / auto-switch / cards
+ * with add/remove/reorder. New variants add a case in the switch below.
  */
 export default function CategoryCarouselForm({
+    section,
+    onUpdateField,
+    onUpdateCard,
+    onAddCard,
+    onRemoveCard,
+    onReorderCards,
+}: CategoryCarouselFormProps) {
+    const variant = (section.variant as CategoryCarouselVariant) || "curated-cards";
+
+    const variantOptions = Object.entries(CATEGORY_CAROUSEL_VARIANTS).map(([key, v]) => ({
+        value: key,
+        label: v.name,
+    }));
+
+    return (
+        <div className="space-y-6">
+            {/* Variant selector */}
+            <div className="flex items-center gap-3">
+                <label className="text-xs text-zinc-500">Variant</label>
+                <select
+                    value={variant}
+                    onChange={(e) => onUpdateField("variant", e.target.value)}
+                    className="px-3 py-1.5 bg-neutral-800 border border-neutral-700 text-white rounded text-xs"
+                >
+                    {variantOptions.map((opt) => (
+                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                    ))}
+                </select>
+            </div>
+
+            {variant === "curated-cards" && (
+                <CuratedCardsForm
+                    section={section}
+                    onUpdateField={onUpdateField}
+                    onUpdateCard={onUpdateCard}
+                    onAddCard={onAddCard}
+                    onRemoveCard={onRemoveCard}
+                    onReorderCards={onReorderCards}
+                />
+            )}
+        </div>
+    );
+}
+
+function CuratedCardsForm({
     section,
     onUpdateField,
     onUpdateCard,
