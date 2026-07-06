@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useAuth } from "@/context/AuthContext";
 
 const navItems = [
@@ -22,6 +22,18 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     const { auth, isAdmin, logout } = useAuth();
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [loggingOut, setLoggingOut] = useState(false);
+    const [headerHeight, setHeaderHeight] = useState(0);
+    const headerObserver = useRef<ResizeObserver | null>(null);
+
+    useEffect(() => {
+        const header = document.querySelector<HTMLElement>("header");
+        if (!header) return;
+        const update = () => setHeaderHeight(header.offsetHeight);
+        update();
+        headerObserver.current = new ResizeObserver(update);
+        headerObserver.current.observe(header);
+        return () => headerObserver.current?.disconnect();
+    }, []);
 
     // Defense-in-depth: client-side admin check
     useEffect(() => {
@@ -58,7 +70,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     return (
         <div className="min-h-screen bg-neutral-950 text-white flex">
             {/* Sidebar */}
-            <aside className={`fixed top-0 bottom-0 left-0 z-50 w-64 bg-neutral-900 border-r border-neutral-800 transform transition-transform duration-200 lg:translate-x-0 lg:top-[236px] lg:z-40 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            <aside style={{ top: headerHeight || undefined }} className={`fixed bottom-0 left-0 z-50 w-64 bg-neutral-900 border-r border-neutral-800 transform transition-transform duration-200 lg:translate-x-0 lg:z-40 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex items-center justify-between p-4 border-b border-neutral-800">
                     <div className="bg-zinc-800 text-white w-fit px-2 py-1">
                         <span className="text-sm font-black italic tracking-tighter">AT</span>
