@@ -2,14 +2,12 @@
   "_id": "homepage",
   "_type": "homepage",
   "hero_carousel": {
-    "auto_switch_ms": 5000,
     "banners": [
       {
         "_key": "k-1",
         "accent_color": "#d1fd40",
         "button_text": "Shop Puma",
         "gradient": "",
-        "id": "hero-1",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/ea68324bd9dddfaea4c1cc3606478c1c27cbf182-3264x1332.jpg",
         "link": "/boots",
         "subtitle": "The Puma new Future, Ultra and King are Live ",
@@ -20,7 +18,6 @@
         "accent_color": "#d1fd40",
         "button_text": "Shop Adidas ",
         "gradient": "from-black via-gray-900 to-green-900",
-        "id": "hero-2",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/d09a79daa138be27c5b17d081447bad673ef8d4f-1962x801.png",
         "link": "/boots/adidas/predator",
         "subtitle": "The new Predator, F50 and Copa are here ",
@@ -31,7 +28,6 @@
         "accent_color": "#d1fd40",
         "button_text": "Shop Phantom",
         "gradient": "from-gray-900 via-blue-950 to-gray-900",
-        "id": "hero-3",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/7dd2d9e5dd95013f92f3f0c92aa316de24d7ab19-3264x1332.jpg",
         "link": "/boots/nike/phantom",
         "subtitle": "Phantom precision ",
@@ -42,7 +38,6 @@
         "accent_color": "#d1fd40",
         "button_text": "Shop Nike",
         "gradient": "from-green-950 via-gr",
-        "id": "hero-4",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/7036974b98c57d583929ce5bedc925062094d33f-3264x1332.jpg",
         "link": "/boots",
         "subtitle": "New Mercurial Superfly, Vapour, Phantom and Tiempo Maestro ",
@@ -53,7 +48,6 @@
         "accent_color": "#d1fd40",
         "button_text": "SHOP JERSEY ",
         "gradient": "from-gray-900 via-purple-950 to-gray-900",
-        "id": "hero-5",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/eaddb7527a230cbb318999a86b60cd9c0bdcd05d-3264x1332.jpg",
         "link": "/boots",
         "subtitle": "Fresh drops from top clubs every week",
@@ -64,7 +58,6 @@
         "accent_color": "#d1fd40",
         "button_text": "Get Now",
         "gradient": "from-gray-900 via-yellow-950 to-gray-900",
-        "id": "hero-6",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/8ad0aed90ac47346eeb263412e44f42af891f002-1738x905.png",
         "link": "/kits",
         "subtitle": "Buy are all club kit .",
@@ -75,7 +68,6 @@
         "accent_color": "#d1fd40",
         "button_text": "BUY",
         "gradient": "from-gray-900 via-gray-800 to-gray-900",
-        "id": "hero-1783007526392",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/8bca28c22763ef25c0f3727a21a4ab0307729c61-3264x1332.jpg",
         "link": "/",
         "subtitle": "Fresh drops from top clubs every week",
@@ -86,32 +78,31 @@
         "accent_color": "#d1fd40",
         "button_text": "Shop Now",
         "gradient": "from-gray-900 via-gray-800 to-gray-900",
-        "id": "hero-1783168989672",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/443191435aba92edc987f83e2be92b8d6c982a68-3264x1332.jpg",
         "link": "/",
         "subtitle": "All Club Home , Away and Alternate kit are live ",
         "title": "GALATASARAY S.K."
       }
-    ],
-    "id": "hero"
+    ]
   },
   "sections": [
     {
       "_key": "k-12",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
-      "id": "k-12",
       "limit": 10,
       "link": "/boots",
       "link_label": "View all boots",
       "sort": "newest",
       "subtitle": "Best sellers this season",
-      "title": "LATEST DROPS",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "LATEST DROPS"
     },
     {
       "_key": "k-7",
+      "_type": "category_carousel",
       "autoSwitchMs": 5000,
+      "bg": "bg-surface",
       "cards": [
         {
           "_key": "key-1782670679272-ybjo3d",
@@ -141,15 +132,12 @@
           "title": "Neymar Jnr KidSuper "
         }
       ],
-      "id": "k-7",
-      "title": "Signature Boots ",
-      "type": "category_carousel",
-      "variant": "default"
+      "title": "Signature Boots "
     },
     {
       "_key": "k-13",
+      "_type": "category_grid",
       "bg": "bg-surface",
-      "id": "k-13",
       "items": [
         {
           "_key": "k-21",
@@ -158,7 +146,8 @@
           "image": null,
           "label": "PREDATOR",
           "link": "/boots/adidas/predator",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "PREDATOR"
         },
         {
           "_key": "k-24",
@@ -167,7 +156,8 @@
           "image": null,
           "label": "MERCURIAL",
           "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "MERCURIAL"
         },
         {
           "_key": "k-23",
@@ -176,7 +166,8 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/5ecc2b4189cda166960c8216f3cf9295e8d731dc-1080x1350.jpg",
           "label": "X SPEED",
           "link": "/boots/adidas/x",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "X SPEED"
         },
         {
           "_key": "k-24",
@@ -185,51 +176,52 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/8ef77557ad9064f526d90c8745632d297288ea11-1080x1350.jpg",
           "label": "MERCURIAL",
           "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "MERCURIAL"
         }
       ],
       "title": "Home Kit 2027",
-      "type": "category_grid",
       "variant": "grid-4-equal"
     },
     {
       "_key": "k-18",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots/adidas",
       "link_label": "View all adidas",
       "sort": "newest",
       "subtitle": "Shop the full adidas range",
-      "title": "Adidas Football Boots",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Adidas Football Boots"
     },
     {
       "_key": "k-19",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots/adidas/predator",
       "link_label": "View all Predator",
       "sort": "newest",
       "subtitle": "Control the game",
-      "title": "Adidas Predator",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Adidas Predator"
     },
     {
       "_key": "k-25",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots/adidas/predator",
       "link_label": "View all Predator",
       "sort": "price_desc",
       "subtitle": "Dominate with control",
-      "title": "Predator Elite",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Predator Elite"
     },
     {
       "_key": "k-20",
+      "_type": "category_grid",
       "bg": "bg-surface",
       "items": [
         {
@@ -239,7 +231,8 @@
           "image": null,
           "label": "PREDATOR",
           "link": "/boots/adidas/predator",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "PREDATOR"
         },
         {
           "_key": "k-24",
@@ -248,7 +241,8 @@
           "image": null,
           "label": "MERCURIAL",
           "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "MERCURIAL"
         },
         {
           "_key": "k-23",
@@ -257,7 +251,8 @@
           "image": null,
           "label": "X SPEED",
           "link": "/boots/adidas/x",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "X SPEED"
         },
         {
           "_key": "k-24",
@@ -266,29 +261,29 @@
           "image": null,
           "label": "MERCURIAL",
           "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "MERCURIAL"
         }
       ],
       "title": "The Collections",
-      "type": "category_grid",
       "variant": "grid-4-equal"
     },
     {
       "_key": "k-26",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all",
       "sort": "newest",
       "subtitle": "Built for pace",
-      "title": "Speed Boots",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Speed Boots"
     },
     {
       "_key": "k-27",
+      "_type": "category_grid",
       "bg": "bg-surface-container",
-      "id": "k-27",
       "items": [
         {
           "_key": "k-30",
@@ -297,7 +292,8 @@
           "image": null,
           "label": "Hard Ground",
           "link": "/boots/surface/hard-ground--dirt",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Hard Ground"
         },
         {
           "_key": "k-29",
@@ -306,7 +302,8 @@
           "image": null,
           "label": "Artificial Turf",
           "link": "/boots/surface/artificial-turf",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Artificial Turf"
         },
         {
           "_key": "k-30",
@@ -315,39 +312,40 @@
           "image": null,
           "label": "Hard Ground",
           "link": "/boots/surface/hard-ground--dirt",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Hard Ground"
         }
       ],
       "title": "Surface Pro",
-      "type": "category_grid",
       "variant": "grid-3-bordered"
     },
     {
       "_key": "k-31",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "Shop AG Range",
       "sort": "newest",
       "subtitle": "Engineered for artificial grass",
-      "title": "AG Football Boots",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "AG Football Boots"
     },
     {
       "_key": "k-32",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "Shop FG Range",
       "sort": "newest",
       "subtitle": "Built for natural grass",
-      "title": "FG Football Boots",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "FG Football Boots"
     },
     {
       "_key": "k-33",
+      "_type": "category_grid",
       "bg": "bg-primary",
       "items": [
         {
@@ -357,7 +355,8 @@
           "image": null,
           "label": "Gloves",
           "link": "/apparel/gloves",
-          "textColor": "text-black"
+          "textColor": "text-black",
+          "title": "Gloves"
         },
         {
           "_key": "k-35",
@@ -366,7 +365,8 @@
           "image": null,
           "label": "Shin Guards",
           "link": "/shin-guards",
-          "textColor": "text-black"
+          "textColor": "text-black",
+          "title": "Shin Guards"
         },
         {
           "_key": "k-37",
@@ -375,7 +375,8 @@
           "image": null,
           "label": "Training Vests",
           "link": "/vest",
-          "textColor": "text-black"
+          "textColor": "text-black",
+          "title": "Training Vests"
         },
         {
           "_key": "k-37",
@@ -384,27 +385,28 @@
           "image": null,
           "label": "Training Vests",
           "link": "/vest",
-          "textColor": "text-black"
+          "textColor": "text-black",
+          "title": "Training Vests"
         }
       ],
       "title": "Performance Gear",
-      "type": "category_grid",
       "variant": "scroll-categories"
     },
     {
       "_key": "k-38",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all deals",
       "sort": "biggest_discount",
       "subtitle": "Biggest discounts this week",
-      "title": "Best Deals Right Now",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Best Deals Right Now"
     },
     {
       "_key": "k-39",
+      "_type": "category_grid",
       "bg": "bg-surface",
       "items": [
         {
@@ -414,7 +416,8 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/2af79c67f05a54affddb0f60324906d3337a6fb0-1168x784.jpg",
           "label": "Adidas Predator",
           "link": "/boots/adidas/predator",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Adidas Predator"
         },
         {
           "_key": "k-41",
@@ -423,39 +426,40 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/a41cc6b67fc5f714ea007b3659775e539e5055f6-1168x784.jpg",
           "label": "Nike Phantom",
           "link": "/boots/nike/phantom",
-          "textColor": "text-black"
+          "textColor": "text-black",
+          "title": "Nike Phantom"
         }
       ],
       "title": "Featured Collections",
-      "type": "category_grid",
       "variant": "asymmetric-3-2"
     },
     {
       "_key": "k-42",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all",
       "sort": "biggest_discount",
       "subtitle": "Handpicked for performance",
-      "title": "Top Picks This Week",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Top Picks This Week"
     },
     {
       "_key": "k-43",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all budget boots",
       "sort": "price_asc",
       "subtitle": "Quality that won't break the bank",
-      "title": "Budget Boots Under EUR 50",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Budget Boots Under EUR 50"
     },
     {
       "_key": "k-44",
+      "_type": "category_grid",
       "bg": "bg-surface",
       "items": [
         {
@@ -465,7 +469,8 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/815b21a305b97e6a7d1627ea4ee25fc71a12a10f-1072x960.jpg",
           "label": "GK Gloves",
           "link": "/apparel/gloves",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "GK Gloves"
         },
         {
           "_key": "k-46",
@@ -474,39 +479,40 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/8e1ad7fe7689fc611f5e51013fdf522651f97f7c-1520x672.jpg",
           "label": "Training Gear",
           "link": "/vest",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Training Gear"
         }
       ],
       "title": "Gear Up",
-      "type": "category_grid",
       "variant": "split-1-2"
     },
     {
       "_key": "k-47",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "See all new arrivals",
       "sort": "newest",
       "subtitle": "Fresh stock just landed",
-      "title": "New Arrivals",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "New Arrivals"
     },
     {
       "_key": "k-48",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all",
       "sort": "newest",
       "subtitle": "Everything a keeper needs",
-      "title": "Goalkeeper Essentials",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Goalkeeper Essentials"
     },
     {
       "_key": "k-49",
+      "_type": "category_grid",
       "bg": "bg-surface",
       "items": [
         {
@@ -516,7 +522,8 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/98ec690d13b28b7da1a067add8f25f6e83213dd3-1600x640.jpg",
           "label": "Puma Future",
           "link": "/boots/puma/future",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Puma Future"
         },
         {
           "_key": "k-51",
@@ -525,15 +532,16 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/8ffd627526eeb9684604022e1260c516f47f0eee-1312x784.jpg",
           "label": "Mercurial Superfly",
           "link": "/boots/nike/mercurial/superfly",
-          "textColor": "text-black"
+          "textColor": "text-black",
+          "title": "Mercurial Superfly"
         }
       ],
       "title": "Speed Machines",
-      "type": "category_grid",
       "variant": "asymmetric-3-2"
     },
     {
       "_key": "k-52",
+      "_type": "category_grid",
       "bg": "bg-surface",
       "items": [
         {
@@ -543,7 +551,8 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/a0ace4245838f810af5ade9b3f7c900e46db94df-1280x816.jpg",
           "label": "X Crazyfast",
           "link": "/boots/adidas/x",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "X Crazyfast"
         },
         {
           "_key": "k-54",
@@ -552,29 +561,29 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/2854231675da2cf950a296f6ac252f76cc770bca-1280x816.jpg",
           "label": "Puma King",
           "link": "/boots/puma/king",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Puma King"
         }
       ],
       "title": "Signature Silos",
-      "type": "category_grid",
       "variant": "asymmetric-2-split"
     },
     {
       "_key": "k-55",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all",
       "sort": "price_desc",
       "subtitle": "For players who play fast",
-      "title": "Puma & Nike Speed Boots",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Puma & Nike Speed Boots"
     },
     {
       "_key": "k-56",
+      "_type": "category_grid",
       "bg": "bg-surface",
-      "id": "k-56",
       "items": [
         {
           "_key": "k-57",
@@ -583,7 +592,8 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/9982787697ea220c341543c68e7d663084ab73ba-1966x800.png",
           "label": "Premium Boots",
           "link": "/boots",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Premium Boots"
         },
         {
           "_key": "k-58",
@@ -592,141 +602,77 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/cc56656683f9ae3949a1c5dec62ba5e72d0c30d9-1962x802.png",
           "label": "Sale — Up to 50%",
           "link": "/boots",
-          "textColor": "text-on-surface"
+          "textColor": "text-on-surface",
+          "title": "Sale — Up to 50%"
         }
       ],
       "title": "Don't Miss",
-      "type": "category_grid",
       "variant": "stacked-banners"
     },
     {
       "_key": "k-59",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
-      "id": "k-59",
       "limit": 10,
       "link": "/boots",
       "link_label": "View premium range",
       "sort": "price_desc",
       "subtitle": "Top tier performance, no compromise",
-      "title": "Club Home Kit 2027",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Club Home Kit 2027"
     },
     {
       "_key": "k-60",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots/adidas/x",
       "link_label": "View all X Crazyfast",
       "sort": "newest",
       "subtitle": "Speed is everything",
-      "title": "Adidas X Crazyfast",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Adidas X Crazyfast"
     },
     {
       "_key": "k-61",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "See staff picks",
       "sort": "biggest_discount",
       "subtitle": "Our team's favourite boots this season",
-      "title": "Staff Picks",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Staff Picks"
     },
     {
       "_key": "k-62",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all",
       "sort": "price_asc",
       "subtitle": "Great boots at a great price",
-      "title": "Under EUR 100",
-      "type": "product_carousel",
-      "variant": "default"
+      "title": "Under EUR 100"
     },
     {
       "_key": "k-63",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
       "filter": {},
       "limit": 10,
       "link": "/boots",
       "link_label": "View all",
       "sort": "newest",
       "subtitle": "The best from adidas, Nike and Puma",
-      "title": "Top Rated Brands",
-      "type": "product_carousel",
-      "variant": "default"
-    },
-    {
-      "_key": "key-1782982979122-0u1rvf",
-      "bg": "bg-surface",
-      "id": "section-1782982978234",
-      "items": [],
-      "title": "New Section",
-      "type": "category_grid",
-      "variant": "grid-4-equal"
-    },
-    {
-      "_key": "key-1782982982982-d560s9",
-      "bg": "bg-surface",
-      "id": "section-1782982982166",
-      "items": [],
-      "title": "New Section",
-      "type": "category_grid",
-      "variant": "grid-4-equal"
-    },
-    {
-      "_key": "key-1782982986002-550dbx",
-      "bg": "bg-surface",
-      "id": "section-1782982983671",
-      "items": [],
-      "title": "New Section",
-      "type": "category_grid",
-      "variant": "grid-4-equal"
-    },
-    {
-      "_key": "key-1782983014146-3p2qlg",
-      "bg": "bg-surface",
-      "id": "section-1782983012966",
-      "items": [],
-      "title": "New Section",
-      "type": "category_grid",
-      "variant": "grid-4-equal"
-    },
-    {
-      "_key": "key-1782983016737-s4hoyk",
-      "bg": "bg-surface",
-      "id": "section-1782983015881",
-      "items": [],
-      "title": "New Section",
-      "type": "category_grid",
-      "variant": "grid-4-equal"
-    },
-    {
-      "_key": "key-1783010787211-na88bn",
-      "bg": "bg-surface",
-      "id": "section-1783010785580",
-      "items": [],
-      "title": "New Section",
-      "type": "category_grid",
-      "variant": "grid-4-equal"
-    },
-    {
-      "_key": "key-1783010789888-mn15el",
-      "bg": "bg-surface",
-      "id": "section-1783010788888",
-      "items": [],
-      "title": "New Section",
-      "type": "category_grid",
-      "variant": "grid-4-equal"
+      "title": "Top Rated Brands"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-04T18:48:29.905Z",
+    "lastUpdated": "2026-07-06T06:43:19.419Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
