@@ -28,10 +28,10 @@
         "accent_color": "#d1fd40",
         "button_text": "Shop New Balance ",
         "gradient": "from-gray-900 via-blue-950 to-gray-900",
-        "image": "https://cdn.sanity.io/images/cuiis46d/production/893a4376682d95329711f4ccab94204dbbd80cf2-3264x1332.jpg",
+        "image": "https://cdn.sanity.io/images/cuiis46d/production/1b11036ce1c0eb9c52b43900984fc0a01d3854f0-3264x1332.jpg",
         "link": "/boots/nike/phantom",
         "subtitle": "New 422, Furon , Tekela",
-        "title": "NEON TIDE "
+        "title": "NEON-TIDE  "
       },
       {
         "_key": "k-4",
@@ -412,11 +412,48 @@
       "subtitle": "The best from adidas, Nike and Puma",
       "title": "Top Rated Brands",
       "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1783465230259",
+      "_type": "category_carousel",
+      "autoSwitchMs": 4000,
+      "bg": "bg-surface",
+      "cards": [
+        {
+          "_key": "card-1783465230261-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/cc56656683f9ae3949a1c5dec62ba5e72d0c30d9-1962x802.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Man United Kit 2027"
+        },
+        {
+          "_key": "card-1783465230261-1",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": null,
+          "link": "/",
+          "subtitle": "",
+          "title": ""
+        },
+        {
+          "_key": "card-1783465230261-2",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": null,
+          "link": "/",
+          "subtitle": "",
+          "title": ""
+        }
+      ],
+      "title": "Club Kit 2027",
+      "variant": "curated-cards"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-07T22:58:40.830Z",
+    "lastUpdated": "2026-07-07T23:05:54.849Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
