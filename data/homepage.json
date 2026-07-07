@@ -144,55 +144,6 @@
       "variant": "curated-cards"
     },
     {
-      "_key": "k-13",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "k-21",
-          "accent": "",
-          "bg": "bg-surface",
-          "image": null,
-          "label": "PREDATOR",
-          "link": "/boots/adidas/predator",
-          "textColor": "text-on-surface",
-          "title": "PREDATOR"
-        },
-        {
-          "_key": "k-24",
-          "accent": "",
-          "bg": "bg-surface",
-          "image": null,
-          "label": "MERCURIAL",
-          "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface",
-          "title": "MERCURIAL"
-        },
-        {
-          "_key": "k-23",
-          "accent": "",
-          "bg": "bg-surface",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/5ecc2b4189cda166960c8216f3cf9295e8d731dc-1080x1350.jpg",
-          "label": "X SPEED",
-          "link": "/boots/adidas/x",
-          "textColor": "text-on-surface",
-          "title": "X SPEED"
-        },
-        {
-          "_key": "k-24",
-          "accent": "",
-          "bg": "bg-surface",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/8ef77557ad9064f526d90c8745632d297288ea11-1080x1350.jpg",
-          "label": "MERCURIAL",
-          "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface",
-          "title": "MERCURIAL"
-        }
-      ],
-      "title": "Home Kit 2027",
-      "variant": "grid-4-equal"
-    },
-    {
       "_key": "k-18",
       "_type": "product_carousel",
       "bg": "bg-surface",
@@ -232,55 +183,6 @@
       "variant": "filtered-feed"
     },
     {
-      "_key": "k-20",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "k-21",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "PREDATOR",
-          "link": "/boots/adidas/predator",
-          "textColor": "text-on-surface",
-          "title": "PREDATOR"
-        },
-        {
-          "_key": "k-24",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "MERCURIAL",
-          "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface",
-          "title": "MERCURIAL"
-        },
-        {
-          "_key": "k-23",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "X SPEED",
-          "link": "/boots/adidas/x",
-          "textColor": "text-on-surface",
-          "title": "X SPEED"
-        },
-        {
-          "_key": "k-24",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "MERCURIAL",
-          "link": "/boots/nike/mercurial",
-          "textColor": "text-on-surface",
-          "title": "MERCURIAL"
-        }
-      ],
-      "title": "The Collections",
-      "variant": "grid-4-equal"
-    },
-    {
       "_key": "k-26",
       "_type": "product_carousel",
       "bg": "bg-surface",
@@ -292,45 +194,6 @@
       "subtitle": "Built for pace",
       "title": "Speed Boots",
       "variant": "filtered-feed"
-    },
-    {
-      "_key": "k-27",
-      "_type": "category_grid",
-      "bg": "bg-surface-container",
-      "items": [
-        {
-          "_key": "k-30",
-          "accent": "border-l-8 border-primary",
-          "bg": "bg-black",
-          "image": null,
-          "label": "Hard Ground",
-          "link": "/boots/surface/hard-ground--dirt",
-          "textColor": "text-on-surface",
-          "title": "Hard Ground"
-        },
-        {
-          "_key": "k-29",
-          "accent": "border-l-8 border-primary",
-          "bg": "bg-neutral-900",
-          "image": null,
-          "label": "Artificial Turf",
-          "link": "/boots/surface/artificial-turf",
-          "textColor": "text-on-surface",
-          "title": "Artificial Turf"
-        },
-        {
-          "_key": "k-30",
-          "accent": "border-l-8 border-primary",
-          "bg": "bg-black",
-          "image": null,
-          "label": "Hard Ground",
-          "link": "/boots/surface/hard-ground--dirt",
-          "textColor": "text-on-surface",
-          "title": "Hard Ground"
-        }
-      ],
-      "title": "Surface Pro",
-      "variant": "grid-3-bordered"
     },
     {
       "_key": "k-31",
@@ -421,35 +284,6 @@
       "variant": "filtered-feed"
     },
     {
-      "_key": "k-39",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "k-40",
-          "accent": "",
-          "bg": "bg-black",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/2af79c67f05a54affddb0f60324906d3337a6fb0-1168x784.jpg",
-          "label": "Adidas Predator",
-          "link": "/boots/adidas/predator",
-          "textColor": "text-on-surface",
-          "title": "Adidas Predator"
-        },
-        {
-          "_key": "k-41",
-          "accent": "",
-          "bg": "bg-primary",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/a41cc6b67fc5f714ea007b3659775e539e5055f6-1168x784.jpg",
-          "label": "Nike Phantom",
-          "link": "/boots/nike/phantom",
-          "textColor": "text-black",
-          "title": "Nike Phantom"
-        }
-      ],
-      "title": "Featured Collections",
-      "variant": "asymmetric-3-2"
-    },
-    {
       "_key": "k-42",
       "_type": "product_carousel",
       "bg": "bg-surface",
@@ -474,35 +308,6 @@
       "subtitle": "Quality that won't break the bank",
       "title": "Budget Boots Under EUR 50",
       "variant": "filtered-feed"
-    },
-    {
-      "_key": "k-44",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "k-45",
-          "accent": "",
-          "bg": "bg-black",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/815b21a305b97e6a7d1627ea4ee25fc71a12a10f-1072x960.jpg",
-          "label": "GK Gloves",
-          "link": "/apparel/gloves",
-          "textColor": "text-on-surface",
-          "title": "GK Gloves"
-        },
-        {
-          "_key": "k-46",
-          "accent": "",
-          "bg": "bg-primary",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/8e1ad7fe7689fc611f5e51013fdf522651f97f7c-1520x672.jpg",
-          "label": "Training Gear",
-          "link": "/vest",
-          "textColor": "text-on-surface",
-          "title": "Training Gear"
-        }
-      ],
-      "title": "Gear Up",
-      "variant": "split-1-2"
     },
     {
       "_key": "k-47",
@@ -531,64 +336,6 @@
       "variant": "filtered-feed"
     },
     {
-      "_key": "k-49",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "k-50",
-          "accent": "",
-          "bg": "bg-black",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/98ec690d13b28b7da1a067add8f25f6e83213dd3-1600x640.jpg",
-          "label": "Puma Future",
-          "link": "/boots/puma/future",
-          "textColor": "text-on-surface",
-          "title": "Puma Future"
-        },
-        {
-          "_key": "k-51",
-          "accent": "",
-          "bg": "bg-primary",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/8ffd627526eeb9684604022e1260c516f47f0eee-1312x784.jpg",
-          "label": "Mercurial Superfly",
-          "link": "/boots/nike/mercurial/superfly",
-          "textColor": "text-black",
-          "title": "Mercurial Superfly"
-        }
-      ],
-      "title": "Speed Machines",
-      "variant": "asymmetric-3-2"
-    },
-    {
-      "_key": "k-52",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "k-53",
-          "accent": "border-r-8 border-primary",
-          "bg": "bg-surface-container",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/a0ace4245838f810af5ade9b3f7c900e46db94df-1280x816.jpg",
-          "label": "X Crazyfast",
-          "link": "/boots/adidas/x",
-          "textColor": "text-on-surface",
-          "title": "X Crazyfast"
-        },
-        {
-          "_key": "k-54",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/2854231675da2cf950a296f6ac252f76cc770bca-1280x816.jpg",
-          "label": "Puma King",
-          "link": "/boots/puma/king",
-          "textColor": "text-on-surface",
-          "title": "Puma King"
-        }
-      ],
-      "title": "Signature Silos",
-      "variant": "asymmetric-2-split"
-    },
-    {
       "_key": "k-55",
       "_type": "product_carousel",
       "bg": "bg-surface",
@@ -600,35 +347,6 @@
       "subtitle": "For players who play fast",
       "title": "Puma & Nike Speed Boots",
       "variant": "filtered-feed"
-    },
-    {
-      "_key": "k-56",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "k-57",
-          "accent": "",
-          "bg": "bg-surface",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/9982787697ea220c341543c68e7d663084ab73ba-1966x800.png",
-          "label": "Premium Boots",
-          "link": "/boots",
-          "textColor": "text-on-surface",
-          "title": "Premium Boots"
-        },
-        {
-          "_key": "k-58",
-          "accent": "",
-          "bg": "bg-surface",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/cc56656683f9ae3949a1c5dec62ba5e72d0c30d9-1962x802.png",
-          "label": "Sale — Up to 50%",
-          "link": "/boots",
-          "textColor": "text-on-surface",
-          "title": "Sale — Up to 50%"
-        }
-      ],
-      "title": "Don't Miss",
-      "variant": "stacked-banners"
     },
     {
       "_key": "k-59",
@@ -698,7 +416,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-07T22:44:03.983Z",
+    "lastUpdated": "2026-07-07T22:50:31.311Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
