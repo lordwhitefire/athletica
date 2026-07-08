@@ -190,55 +190,6 @@
       "variant": "filtered-feed"
     },
     {
-      "_key": "k-33",
-      "_type": "category_grid",
-      "bg": "bg-primary",
-      "items": [
-        {
-          "_key": "k-34",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "Gloves",
-          "link": "/apparel/gloves",
-          "textColor": "text-black",
-          "title": "Gloves"
-        },
-        {
-          "_key": "k-35",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "Shin Guards",
-          "link": "/shin-guards",
-          "textColor": "text-black",
-          "title": "Shin Guards"
-        },
-        {
-          "_key": "k-37",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "Training Vests",
-          "link": "/vest",
-          "textColor": "text-black",
-          "title": "Training Vests"
-        },
-        {
-          "_key": "k-37",
-          "accent": "",
-          "bg": "bg-surface-container",
-          "image": null,
-          "label": "Training Vests",
-          "link": "/vest",
-          "textColor": "text-black",
-          "title": "Training Vests"
-        }
-      ],
-      "title": "Performance Gear",
-      "variant": "scroll-categories"
-    },
-    {
       "_key": "section-1783465230259",
       "_type": "category_carousel",
       "autoSwitchMs": 4000,
@@ -301,11 +252,23 @@
       ],
       "title": "Club Kit 2027",
       "variant": "curated-cards"
+    },
+    {
+      "_key": "section-1783540823304",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
+      "filter": {},
+      "limit": 10,
+      "link_label": "View All ",
+      "sort": "newest",
+      "subtitle": "First touch. Perfect pass. Total control.",
+      "title": "Control Boots ",
+      "variant": "filtered-feed"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-08T19:45:20.905Z",
+    "lastUpdated": "2026-07-08T20:04:29.774Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
