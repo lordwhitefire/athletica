@@ -264,11 +264,22 @@
       "subtitle": "First touch. Perfect pass. Total control.",
       "title": "Control Boots ",
       "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1783541067264",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
+      "filter": {},
+      "limit": 10,
+      "sort": "newest",
+      "subtitle": "Built for Pace ",
+      "title": "Speed Boots ",
+      "variant": "filtered-feed"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-08T20:04:29.774Z",
+    "lastUpdated": "2026-07-08T20:07:08.890Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
