@@ -191,13 +191,14 @@
       "_key": "k-25",
       "_type": "product_carousel",
       "bg": "bg-surface",
-      "filter": {},
+      "filter": {
+        "brand": "NIKE"
+      },
       "limit": 10,
       "link": "/boots/adidas/predator",
-      "link_label": "View all Predator",
       "sort": "price_desc",
-      "subtitle": "Dominate with control",
-      "title": "Predator Elite",
+      "subtitle": "Mercurial Superfly, Vapour, Phantom, Tiempo....",
+      "title": "Nike Football Boots",
       "variant": "filtered-feed"
     },
     {
@@ -498,7 +499,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-08T05:43:17.296Z",
+    "lastUpdated": "2026-07-08T19:19:11.700Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
