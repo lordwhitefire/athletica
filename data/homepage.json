@@ -178,13 +178,15 @@
       "_key": "k-19",
       "_type": "product_carousel",
       "bg": "bg-surface",
-      "filter": {},
+      "filter": {
+        "brand": "Nike "
+      },
       "limit": 10,
       "link": "/boots/adidas/predator",
-      "link_label": "View all Predator",
+      "link_label": "View all Nike ",
       "sort": "newest",
-      "subtitle": "Control the game",
-      "title": "Adidas Predator",
+      "subtitle": "Mercurial, Phantom, Tiempo & more. Shop the latest drops",
+      "title": "Nike Football Boots",
       "variant": "filtered-feed"
     },
     {
@@ -499,7 +501,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-08T19:19:11.700Z",
+    "lastUpdated": "2026-07-08T19:24:41.416Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
