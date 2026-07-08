@@ -248,6 +248,24 @@
           "link": "/",
           "subtitle": "",
           "title": "Galatasaray S.K 2027"
+        },
+        {
+          "_key": "card-1783541994864-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/a9e6091c19bfdf8b59a4960e963629c0cf663172-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Bayer Leverkusen 2027"
+        },
+        {
+          "_key": "card-1783541996326-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": null,
+          "link": "/",
+          "subtitle": "",
+          "title": "Borussia Dortmund 2027"
         }
       ],
       "title": "Club Kit 2027",
@@ -275,11 +293,48 @@
       "subtitle": "Built for Pace ",
       "title": "Speed Boots ",
       "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1783541955970",
+      "_type": "category_carousel",
+      "autoSwitchMs": 4000,
+      "bg": "bg-surface",
+      "cards": [
+        {
+          "_key": "card-1783541955970-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": null,
+          "link": "/",
+          "subtitle": "",
+          "title": ""
+        },
+        {
+          "_key": "card-1783541955970-1",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": null,
+          "link": "/",
+          "subtitle": "",
+          "title": ""
+        },
+        {
+          "_key": "card-1783541955970-2",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": null,
+          "link": "/",
+          "subtitle": "",
+          "title": ""
+        }
+      ],
+      "title": "New Section",
+      "variant": "curated-cards"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-08T20:22:17.195Z",
+    "lastUpdated": "2026-07-08T20:23:02.018Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
