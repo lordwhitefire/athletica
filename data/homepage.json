@@ -444,7 +444,7 @@
           "image": "https://cdn.sanity.io/images/cuiis46d/production/cc56656683f9ae3949a1c5dec62ba5e72d0c30d9-1962x802.png",
           "link": "/",
           "subtitle": "",
-          "title": "Man United 2027"
+          "title": "Manchester United 2027"
         },
         {
           "_key": "card-1783465230261-1",
@@ -463,6 +463,33 @@
           "link": "/",
           "subtitle": "",
           "title": "Bayern Munich 2027"
+        },
+        {
+          "_key": "card-1783489112266-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8ad0aed90ac47346eeb263412e44f42af891f002-1738x905.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Chelsea FC 2027"
+        },
+        {
+          "_key": "card-1783489136160-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8bca28c22763ef25c0f3727a21a4ab0307729c61-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "F.C Barcelona 2027"
+        },
+        {
+          "_key": "card-1783489141474-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/443191435aba92edc987f83e2be92b8d6c982a68-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Galatasaray S.K 2027"
         }
       ],
       "title": "Club Kit 2027",
@@ -471,7 +498,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-07T23:28:35.986Z",
+    "lastUpdated": "2026-07-08T05:43:17.296Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
