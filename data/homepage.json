@@ -48,10 +48,10 @@
         "accent_color": "#d1fd40",
         "button_text": "BUY",
         "gradient": "from-gray-900 via-purple-950 to-gray-900",
-        "image": "https://cdn.sanity.io/images/cuiis46d/production/eaddb7527a230cbb318999a86b60cd9c0bdcd05d-3264x1332.jpg",
+        "image": "https://cdn.sanity.io/images/cuiis46d/production/cb428627075c9502d3896e28c97c301f0177c20a-1280x522.png",
         "link": "/boots",
         "subtitle": "Fresh drops from top clubs every week",
-        "title": "ATLETICO DE MADRID"
+        "title": "PARIS SAINT-GERMAIN"
       },
       {
         "_key": "k-6",
@@ -275,6 +275,15 @@
           "link": "/",
           "subtitle": "",
           "title": "Atletico de Madrid 2027"
+        },
+        {
+          "_key": "card-1783622137420-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/cb428627075c9502d3896e28c97c301f0177c20a-1280x522.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "PSG | Home & Away 2027"
         }
       ],
       "title": "Club Kit 2027",
@@ -463,7 +472,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T18:35:53.297Z",
+    "lastUpdated": "2026-07-09T18:37:41.111Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
