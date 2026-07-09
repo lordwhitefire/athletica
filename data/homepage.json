@@ -477,11 +477,21 @@
       "subtitle": "Biggest discount this week ",
       "title": "Best Deals Right Now ",
       "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1783624009686",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
+      "filter": {},
+      "limit": 10,
+      "sort": "newest",
+      "title": "New Section",
+      "variant": "filtered-feed"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T19:06:01.639Z",
+    "lastUpdated": "2026-07-09T19:10:19.963Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
