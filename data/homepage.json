@@ -6,7 +6,7 @@
       {
         "_key": "k-1",
         "accent_color": "#d1fd40",
-        "button_text": "Shop Puma",
+        "button_text": "BUY",
         "gradient": "",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/ea68324bd9dddfaea4c1cc3606478c1c27cbf182-3264x1332.jpg",
         "link": "/boots",
@@ -16,7 +16,7 @@
       {
         "_key": "k-2",
         "accent_color": "#d1fd40",
-        "button_text": "Shop Adidas ",
+        "button_text": "BUY",
         "gradient": "from-black via-gray-900 to-green-900",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/d09a79daa138be27c5b17d081447bad673ef8d4f-1962x801.png",
         "link": "/boots/adidas/predator",
@@ -36,7 +36,7 @@
       {
         "_key": "k-4",
         "accent_color": "#d1fd40",
-        "button_text": "SHOP NIKE",
+        "button_text": "BUY",
         "gradient": "from-green-950 via-gr",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/7036974b98c57d583929ce5bedc925062094d33f-3264x1332.jpg",
         "link": "/boots",
@@ -46,7 +46,7 @@
       {
         "_key": "k-5",
         "accent_color": "#d1fd40",
-        "button_text": "SHOP JERSEY ",
+        "button_text": "BUY",
         "gradient": "from-gray-900 via-purple-950 to-gray-900",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/eaddb7527a230cbb318999a86b60cd9c0bdcd05d-3264x1332.jpg",
         "link": "/boots",
@@ -76,7 +76,7 @@
       {
         "_key": "key-1783168990719-amc5h3",
         "accent_color": "#d1fd40",
-        "button_text": "Shop Now",
+        "button_text": "BUY",
         "gradient": "from-gray-900 via-gray-800 to-gray-900",
         "image": "https://cdn.sanity.io/images/cuiis46d/production/443191435aba92edc987f83e2be92b8d6c982a68-3264x1332.jpg",
         "link": "/",
@@ -376,10 +376,10 @@
           "_key": "card-1783580948442-0",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-red-900",
-          "image": null,
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/918c500bcf1d1cd1b41a0aceb602f5934590b070-1960x802.png",
           "link": "/",
           "subtitle": "",
-          "title": ""
+          "title": "Germany | Home & Away Kits "
         }
       ],
       "title": "National team Kits",
@@ -388,7 +388,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T12:16:58.313Z",
+    "lastUpdated": "2026-07-09T12:57:54.400Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
