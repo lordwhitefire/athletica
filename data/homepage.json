@@ -419,11 +419,40 @@
       "subtitle": "Built for natural grass",
       "title": "FG football boots ",
       "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1783611945691",
+      "_type": "category_grid",
+      "bg": "bg-surface",
+      "items": [
+        {
+          "_key": "item-1783611945691-0",
+          "accent": "",
+          "bg": "",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/a9b6e2e9dc76c400175c28c2a6d1e65fa591b27b-1080x1350.jpg",
+          "label": "",
+          "link": "/",
+          "textColor": "text-on-surface",
+          "title": ""
+        },
+        {
+          "_key": "item-1783611945691-1",
+          "accent": "",
+          "bg": "",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/5ecc2b4189cda166960c8216f3cf9295e8d731dc-1080x1350.jpg",
+          "label": "",
+          "link": "/",
+          "textColor": "text-on-surface",
+          "title": ""
+        }
+      ],
+      "title": "MATCH Balls",
+      "variant": "asymmetric-3-2"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T15:47:37.835Z",
+    "lastUpdated": "2026-07-09T15:49:26.455Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
