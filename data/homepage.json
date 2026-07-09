@@ -393,11 +393,37 @@
       ],
       "title": "National team Kits",
       "variant": "curated-cards"
+    },
+    {
+      "_key": "section-1783610432801",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
+      "filter": {
+        "traction": "Artificial Grass"
+      },
+      "limit": 10,
+      "sort": "newest",
+      "subtitle": "Engineered artificial grass ",
+      "title": "AG football Boots ",
+      "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1783610552678",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
+      "filter": {
+        "traction": "Firm Ground"
+      },
+      "limit": 10,
+      "sort": "newest",
+      "subtitle": "Built for natural grass",
+      "title": "FG football boots ",
+      "variant": "filtered-feed"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T15:19:14.958Z",
+    "lastUpdated": "2026-07-09T15:25:16.313Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
