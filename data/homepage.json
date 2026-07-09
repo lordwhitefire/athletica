@@ -266,6 +266,15 @@
           "link": "/",
           "subtitle": "",
           "title": "Borussia Dortmund 2027"
+        },
+        {
+          "_key": "card-1783610222834-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/eaddb7527a230cbb318999a86b60cd9c0bdcd05d-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Atletico de Madrid 2027"
         }
       ],
       "title": "Club Kit 2027",
@@ -388,7 +397,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T12:57:54.400Z",
+    "lastUpdated": "2026-07-09T15:19:14.958Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
