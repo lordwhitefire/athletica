@@ -313,19 +313,37 @@
           "_key": "card-1783541955970-1",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-red-900",
-          "image": null,
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/46cbac9cc29449a40afa80094e8dd2703b73a118-1960x802.png",
           "link": "/",
           "subtitle": "",
-          "title": ""
+          "title": "Colombia | Home & Away Kits"
         },
         {
           "_key": "card-1783541955970-2",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-red-900",
-          "image": null,
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/378ec043ac459046622907081f46eebed2db77e6-1584x640.jpg",
           "link": "/",
           "subtitle": "",
-          "title": ""
+          "title": "Brazil | Home & Away Kits "
+        },
+        {
+          "_key": "card-1783579681917-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/ea968c2e71efc46cac0004ddff39242920e1642b-1959x803.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Japan | Home & Away Kits "
+        },
+        {
+          "_key": "card-1783579682365-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/017468ac375bb06c4d8800365d5c8f6105f81dcc-2548x1044.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "USA | Home & Away Kits "
         }
       ],
       "title": "National team Kits",
@@ -334,7 +352,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T06:48:52.387Z",
+    "lastUpdated": "2026-07-09T07:00:55.084Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
