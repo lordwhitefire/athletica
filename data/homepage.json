@@ -448,11 +448,22 @@
       ],
       "title": "FIFA World Cup Finals Trionda ",
       "variant": "asymmetric-3-2"
+    },
+    {
+      "_key": "section-1783614437415",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
+      "filter": {},
+      "limit": 10,
+      "sort": "newest",
+      "subtitle": "Biggest discount this week ",
+      "title": "Best Deals Right Now ",
+      "variant": "filtered-feed"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-09T16:26:47.574Z",
+    "lastUpdated": "2026-07-09T16:31:29.400Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
