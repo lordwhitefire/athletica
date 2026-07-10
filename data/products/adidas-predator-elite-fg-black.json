@@ -10,12 +10,7 @@
   "description": {
     "collection": "Manchester United Store",
     "intro": "The adidas Manchester United Authentic 26/27 Jersey is designed for peak performance on the pitch. Inspired by the club's rich history and legacy from the 1970s, this player version combines innovation, lightweight construction, and an iconic design that embodies the greatness of the Red Devils.\r\n\r\nIts tailored cut and high-level technical materials provide a professional feel identical to that used by Manchester United footballers in competition.",
-    "key_benefits": [
-      "Garment type: Game jersey",
-      "Material: 100% polyester",
-      "Technology: Climacool+ (advanced ventilation to keep you cool)",
-      "Additional details: Heat-transferred crest, ventilation panels, authentic label"
-    ],
+    "key_benefits": [],
     "subtitle": "Manchester United 2026-2027 adidas Home Player Version Shirt - Red",
     "tagline": "The Old Trafford elite on the pitch",
     "technical_details": {
@@ -33,7 +28,7 @@
     "https://cdn.sanity.io/images/cuiis46d/production/82f2d308b9fd30a9884df94b3889e7406ed90458-1500x1500.jpg"
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/fe5ec823618948bab5aa877a3828e561f3982de8-1500x1500.jpg",
-  "model": "Game jersey",
+  "model": "Manchester/Game Jersey",
   "name": "adidas Manchester United authentic 26 27 t-shirt",
   "price": {
     "currency": "USD",
@@ -48,7 +43,7 @@
   "url_slug": "adidas-predator-elite-fg-black",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-10T07:01:29.663Z",
+    "lastUpdated": "2026-07-10T07:04:57.270Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
