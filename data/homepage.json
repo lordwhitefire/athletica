@@ -439,59 +439,55 @@
       "variant": "filtered-feed"
     },
     {
-      "_key": "section-1783611945691",
+      "_key": "section-1783696044226",
       "_type": "category_grid",
       "bg": "bg-surface",
       "items": [
         {
-          "_key": "item-1783611945691-0",
+          "_key": "item-1783696044229-0",
           "accent": "",
           "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/7f607bdc09cb2f3a79b50c7b7763b11fb77483cb-1170x1560.jpg",
-          "label": "",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/3d67584e057010499d23887ab7d18e26f04c1fc3-715x293.jpg",
+          "label": "La liga ",
           "link": "/",
           "textColor": "text-on-surface",
-          "title": ""
+          "title": "La liga "
         },
         {
-          "_key": "item-1783611945691-1",
+          "_key": "item-1783696044229-1",
           "accent": "",
           "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/5c739577d1bb4dfde851239be7a759bf0262a8bd-3000x4000.jpg",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/2b2e0888f699b2eb70cf0731c630c7ce48700dfd-2446x3264.jpg",
+          "label": "Premier League",
+          "link": "/",
+          "textColor": "text-on-surface",
+          "title": "Premier League"
+        },
+        {
+          "_key": "item-1783696044229-2",
+          "accent": "",
+          "bg": "",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/5ecc2b4189cda166960c8216f3cf9295e8d731dc-1080x1350.jpg",
           "label": "",
           "link": "/",
           "textColor": "text-on-surface",
           "title": ""
         }
       ],
-      "title": "FIFA World Cup Finals Trionda ",
-      "variant": "asymmetric-3-2"
-    },
-    {
-      "_key": "section-1783614437415",
-      "_type": "product_carousel",
-      "bg": "bg-surface",
-      "filter": {},
-      "limit": 10,
-      "sort": "newest",
-      "subtitle": "Biggest discount this week ",
-      "title": "Best Deals Right Now ",
-      "variant": "filtered-feed"
-    },
-    {
-      "_key": "section-1783624009686",
-      "_type": "product_carousel",
-      "bg": "bg-surface",
-      "filter": {},
-      "limit": 10,
-      "sort": "newest",
-      "title": "New Section",
-      "variant": "filtered-feed"
+      "snapshot": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-325bec81c29c3012d6fb65395eaa20b1cbb0a251-214x133-png",
+          "_type": "reference"
+        }
+      },
+      "title": "Match Balls ",
+      "variant": "scroll-brands"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-10T15:10:42.706Z",
+    "lastUpdated": "2026-07-10T15:13:14.435Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
