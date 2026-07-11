@@ -10,19 +10,14 @@
   "description": {
     "collection": "ICE COLD PRECISION PACK",
     "intro": "The adidas F50 League LL FG/MG boots are designed for players seeking maximum speed with a clean, laceless fit. Their lightweight construction promotes immediate acceleration; the F50 is pure speed. This model is designed for wingers and direct players who prioritize explosiveness and direct ball control.",
-    "key_benefits": [
-      "Wrap-around fit: Knit collar provides comfortable support without the need for laces.",
-      "Versatile traction: FG/MG outsole optimized for dry natural and artificial grass.",
-      "Laceless design: Clean surface for a more direct and precise strike.",
-      "Constant acceleration: Lightweight construction that enhances runs and changes of pace."
-    ],
+    "key_benefits": [],
     "subtitle": "adidas FG/MG laceless football boots for artificial grass - turquoise",
     "tagline": "Distraction-free speed",
     "technical_details": {
       "adjustment": "Lace-up with fold-over tongue",
       "range": "Elite / top tier",
-      "sole_type": "FG (Firm Ground) – molded studs for natural grass and high-quality artificial turf",
-      "upper_material": "HybridTouch synthetic with grippy texture and Strikeskin fins"
+      "sole_type": "",
+      "upper_material": "Upper Fiberskin with strategic 3D lines fins"
     }
   },
   "gender": "Unisex",
@@ -34,7 +29,7 @@
     "https://cdn.sanity.io/images/cuiis46d/production/9ba9565eee4df26a1555c2d561e0614068bc5e78-800x800.jpg"
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f9d10657639d9f42f547d2d8a57219fbabde6cd2-800x800.jpg",
-  "model": "Predator/Elite-FT-FG",
+  "model": "(F50/Elite/FG)/",
   "name": "adidas F50 League Laceless FG/MG",
   "price": {
     "currency": "€",
@@ -134,7 +129,7 @@
   "url_slug": "adidas-predator-elite-ft-fg-orange",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-11T15:09:53.148Z",
+    "lastUpdated": "2026-07-11T15:16:48.903Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
