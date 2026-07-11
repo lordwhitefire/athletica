@@ -71,12 +71,16 @@
   "description": {
     "collection": "Road To Glory Pack (WC26)",
     "intro": "adidas Predator Elite FT AG — Control the Turf\r\n\r\nBuilt for artificial surfaces, the Predator Elite FT AG gives you the precision, stability, and grip to own every touch. \r\nCarrying the legacy of the Predator line, it pairs elite tech with a lightweight, aggressive build. Lock in, stay stable, and take over when the game is on the line.",
-    "key_benefits": [],
+    "key_benefits": [
+      "Nanostrike+: Technical upper with grip optimized for precise control.",
+      "AG sole: Specific traction for the latest generation of artificial turf.",
+      "Fold-Over Tongue: Classic tongue that improves the hitting surface."
+    ],
     "subtitle": "adidas AG football boots with tongue for artificial grass - Pink",
     "tagline": "Absolute control to master artificial turf",
     "technical_details": {
       "adjustment": "Lace-up with tongue",
-      "range": "Predator/Elite FT AG",
+      "range": "Elite / top tier",
       "sole_type": "AG (artificial grass)",
       "upper_material": "Soft synthetic leather with 20% recycled materials"
     }
@@ -227,7 +231,7 @@
   "url_slug": "id1323",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-11T09:36:16.549Z",
+    "lastUpdated": "2026-07-11T09:46:29.657Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
