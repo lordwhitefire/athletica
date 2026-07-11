@@ -10,13 +10,7 @@
   "description": {
     "collection": "Radiant Blaze Pack",
     "intro": "The adidas Predator Elite FT FG deliver professional-level control with advanced technologies for dominating shots, passes, and ball manipulation on firm ground surfaces.",
-    "key_benefits": [
-      "Total precision: Advanced strike zone with raised texture for improved accuracy on shots and passes.",
-      "Optimized stability: Ergonomic fit and structured plate for confident movement at high speeds.",
-      "Superior ball contact: HybridTouch 2.0 synthetic upper molds to the foot for responsive touch.",
-      "Enhanced traction: ControlFrame 2.0 sole plate optimized for firm natural and modern artificial grass.",
-      "Pro-level fit: Fold-over tongue and lacing system for secure, customized lockdown."
-    ],
+    "key_benefits": [],
     "subtitle": "Football boots with tongue adidas FG for firm natural grass or latest-generation artificial - white and light green",
     "tagline": "Total control and precision for elite performance",
     "technical_details": {
@@ -29,12 +23,14 @@
   "gender": "Men",
   "id": "JI1092",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/50b528407002f03a06205a42247f3eae4e70af5c-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/989be85432bbb0ef8a6b3347759b1de1c10deac3-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/a319fa0adb818096b396f4461cd3ad4fece00b15-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/db09adc837f6054540c699b6032a87d042fca9fc-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cf09bf8b84af47e82cbb405085585b5c084321d8-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6a3202c0d9105b6408b9ef93345633e8f0507499-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/bc15197ddc3f2b1047dab1dfe186f1b94ef109c2-768x768.jpg",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/24429763f3209c9b8ea858c40c3b89b380f3a483-800x800.jpg",
   "model": "Predator/Elite-FT-FG",
-  "name": null,
+  "name": "adidas Predator Pro FT FG",
   "price": {
     "currency": "€",
     "current": 167.99,
@@ -128,12 +124,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d9cdb0929015986688cca23c134e46cd616d91d6-800x800.jpg",
   "traction": "FG",
   "url_slug": "adidas-predator-elite-ft-fg-white-light-green",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-11T09:04:51.443Z",
+    "lastUpdated": "2026-07-11T09:05:45.656Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
