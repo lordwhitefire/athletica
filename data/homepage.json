@@ -439,42 +439,42 @@
       "variant": "filtered-feed"
     },
     {
-      "_key": "section-1783696705975",
+      "_key": "section-1783756220472",
       "_type": "category_grid",
       "bg": "bg-surface",
       "items": [
         {
-          "_key": "item-1783696705975-0",
-          "accent": "",
-          "bg": "bg-primary",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/2417a2e0f3992088dfe16706c4cca0fd4a4610d8-1170x1560.jpg",
-          "label": "",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": ""
-        },
-        {
-          "_key": "item-1783696705975-1",
+          "_key": "item-1783756220473-0",
           "accent": "",
           "bg": "",
-          "image": null,
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/00f4c8d849e78704b14561cdb78b037314506f9c-800x800.jpg",
           "label": "",
           "link": "/",
           "textColor": "text-on-surface",
           "title": ""
         },
         {
-          "_key": "item-1783696705975-2",
+          "_key": "item-1783756220473-1",
           "accent": "",
           "bg": "",
-          "image": null,
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/cb428627075c9502d3896e28c97c301f0177c20a-1280x522.png",
           "label": "",
           "link": "/",
           "textColor": "text-on-surface",
           "title": ""
         },
         {
-          "_key": "item-1783696705975-3",
+          "_key": "item-1783756220473-2",
+          "accent": "",
+          "bg": "",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/918c500bcf1d1cd1b41a0aceb602f5934590b070-1960x802.png",
+          "label": "",
+          "link": "/",
+          "textColor": "text-on-surface",
+          "title": ""
+        },
+        {
+          "_key": "item-1783756371368-0",
           "accent": "",
           "bg": "",
           "image": null,
@@ -484,13 +484,13 @@
           "title": ""
         }
       ],
-      "title": "Match Balls ",
-      "variant": "grid-4-equal"
+      "title": "MATCH Balls ",
+      "variant": "scroll-brands"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-11T07:53:04.059Z",
+    "lastUpdated": "2026-07-11T07:58:15.705Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
