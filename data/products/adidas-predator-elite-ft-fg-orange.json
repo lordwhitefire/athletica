@@ -5,17 +5,22 @@
     "name": "ADIDAS"
   },
   "category": "Boots",
-  "color": "Orange",
+  "color": "Blue",
   "color_variants": [],
   "description": {
-    "collection": "Coral Blaze Pack – 2025 season",
-    "intro": "The adidas Predator Elite FT FG deliver professional-grade precision, grip, and shooting power with a striking Coral Blaze Pack design. Built for players who demand maximum ball mastery and goal threat on firm surfaces.",
-    "key_benefits": [],
-    "subtitle": "Football boots with fold-over tongue adidas FG for natural grass or latest-generation artificial turf - orange",
-    "tagline": "Elite-level control and power in vibrant orange",
+    "collection": "ICE COLD PRECISION PACK",
+    "intro": "The adidas F50 League LL FG/MG boots are designed for players seeking maximum speed with a clean, laceless fit. Their lightweight construction promotes immediate acceleration; the F50 is pure speed. This model is designed for wingers and direct players who prioritize explosiveness and direct ball control.",
+    "key_benefits": [
+      "Wrap-around fit: Knit collar provides comfortable support without the need for laces.",
+      "Versatile traction: FG/MG outsole optimized for dry natural and artificial grass.",
+      "Laceless design: Clean surface for a more direct and precise strike.",
+      "Constant acceleration: Lightweight construction that enhances runs and changes of pace."
+    ],
+    "subtitle": "adidas FG/MG laceless football boots for artificial grass - turquoise",
+    "tagline": "Distraction-free speed",
     "technical_details": {
       "adjustment": "Lace-up with fold-over tongue",
-      "range": "Elite / top-tier professional",
+      "range": "Elite / top tier",
       "sole_type": "FG (Firm Ground) – molded studs for natural grass and high-quality artificial turf",
       "upper_material": "HybridTouch synthetic with grippy texture and Strikeskin fins"
     }
@@ -34,9 +39,9 @@
   "price": {
     "currency": "€",
     "current": 167.99,
-    "discount_percent": 0,
+    "discount_percent": 2,
     "member_price": 0,
-    "original": 0
+    "original": 200
   },
   "sizes": [
     {
@@ -129,7 +134,7 @@
   "url_slug": "adidas-predator-elite-ft-fg-orange",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-11T14:58:27.741Z",
+    "lastUpdated": "2026-07-11T15:09:53.148Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
