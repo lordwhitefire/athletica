@@ -486,50 +486,11 @@
       ],
       "title": "MATCH Balls ",
       "variant": "scroll-brands"
-    },
-    {
-      "_key": "section-1783757080363",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "item-1783757080364-0",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/99283bb24feaa9be2e79980e414f5a65c59eb9e7-800x800.jpg",
-          "label": "Premier League ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Premier League "
-        },
-        {
-          "_key": "item-1783757080364-1",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/00f4c8d849e78704b14561cdb78b037314506f9c-800x800.jpg",
-          "label": "Premier league ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Premier league "
-        },
-        {
-          "_key": "item-1783757080364-2",
-          "accent": "",
-          "bg": "",
-          "image": null,
-          "label": "Premier league ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Premier league "
-        }
-      ],
-      "title": "Match Balls ",
-      "variant": "scroll-categories"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-11T08:08:55.135Z",
+    "lastUpdated": "2026-07-11T08:33:00.971Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
