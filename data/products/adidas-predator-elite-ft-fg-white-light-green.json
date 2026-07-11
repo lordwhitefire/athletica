@@ -8,16 +8,20 @@
   "color": "Black",
   "color_variants": [],
   "description": {
-    "collection": "Radiant Blaze Pack",
-    "intro": "The adidas Predator Elite FT FG deliver professional-level control with advanced technologies for dominating shots, passes, and ball manipulation on firm ground surfaces.",
-    "key_benefits": [],
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "intro": "The Predator Elite FT FG boots are designed for creative footballers. Their professional construction and integrated technologies offer maximum control and powerful striking on natural grass pitches.",
+    "key_benefits": [
+      "Powerful strike: Reinforcements on the instep for greater precision.",
+      "Advanced traction: Plate specifically designed for natural grass.",
+      "Professional fit: Integrated tongue that adapts to the foot"
+    ],
     "subtitle": "adidas FG football boots with tongue for natural or next-generation artificial grass - black",
-    "tagline": "Total control and precision for elite performance",
+    "tagline": "Master the pitch with total precision",
     "technical_details": {
       "adjustment": "Lace-up with fold-over tongue",
-      "range": "Elite / Professional - maximum performance with premium materials and technologies",
-      "sole_type": "FG (Firm Ground) - for dry natural grass and latest-generation artificial turf",
-      "upper_material": "HybridTouch 2.0 synthetic"
+      "range": "Elite / Professional",
+      "sole_type": "FG (Firm Ground) - optimized for natural grass and dry latest-gen artificial surfaces",
+      "upper_material": "Technical and synthetic fabric"
     }
   },
   "gender": "Men",
@@ -30,7 +34,7 @@
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/24429763f3209c9b8ea858c40c3b89b380f3a483-800x800.jpg",
   "model": "Predator/Elite-FT-FG",
-  "name": "adidas Predator Pro FT FG",
+  "name": "adidas Predator Elite FT FG",
   "price": {
     "currency": "USD",
     "current": 167.99,
@@ -129,7 +133,7 @@
   "url_slug": "adidas-predator-elite-ft-fg-white-light-green",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-11T09:07:30.072Z",
+    "lastUpdated": "2026-07-11T09:20:59.679Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
