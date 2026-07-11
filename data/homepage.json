@@ -494,14 +494,25 @@
       "filter": {},
       "limit": 10,
       "sort": "newest",
-      "subtitle": "Our most popular picks, all in one place",
-      "title": "Best Sellers ",
+      "subtitle": "FIFA, league, and tournament official match balls",
+      "title": "Tournaments and league balls",
+      "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1783758997161",
+      "_type": "product_carousel",
+      "bg": "bg-surface",
+      "filter": {},
+      "limit": 10,
+      "sort": "newest",
+      "subtitle": "Gloves, protection, and gear to own your box",
+      "title": "Goalkeeper Essentials ",
       "variant": "filtered-feed"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-11T08:41:04.446Z",
+    "lastUpdated": "2026-07-11T08:47:56.554Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
