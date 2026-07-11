@@ -10,12 +10,7 @@
   "description": {
     "collection": "Coral Blaze Pack – 2025 season",
     "intro": "The adidas Predator Elite FT FG deliver professional-grade precision, grip, and shooting power with a striking Coral Blaze Pack design. Built for players who demand maximum ball mastery and goal threat on firm surfaces.",
-    "key_benefits": [
-      "Superior ball control: Control Zone textured zones and Strikeskin rubber fins for enhanced grip, swerve, and accuracy.",
-      "Optimized fit: Fold-over tongue (lengüeta) provides secure lockdown and clean striking surface.",
-      "Premium traction: Controlframe 2.0 outsole engineered for explosive acceleration and stability on firm ground.",
-      "Power and precision: HybridTouch upper balances softness, responsiveness, and durability for elite performance."
-    ],
+    "key_benefits": [],
     "subtitle": "Football boots with fold-over tongue adidas FG for natural grass or latest-generation artificial turf - orange",
     "tagline": "Elite-level control and power in vibrant orange",
     "technical_details": {
@@ -28,12 +23,14 @@
   "gender": "Unisex",
   "id": "JI1093",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/69ff9c40740203e1db02a07db4db4596b78c2e3e-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/00d4fa8d0df948c6f24db2e5c75bb93484e69a6d-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/3186a233ef32272805b01fd61e675580adce2c2b-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bf06794cf834a24223a8d315b624b97608080d08-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fb9126d5b0d7ad7abe30ec3dc9fa2872650c2309-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9ba9565eee4df26a1555c2d561e0614068bc5e78-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/1ea90f55de9279800edca99f2df2c4ecc4aa658d-768x768.jpg",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f9d10657639d9f42f547d2d8a57219fbabde6cd2-800x800.jpg",
   "model": "Predator/Elite-FT-FG",
-  "name": null,
+  "name": "adidas F50 League Laceless FG/MG",
   "price": {
     "currency": "€",
     "current": 167.99,
@@ -127,12 +124,12 @@
       "stock": 1
     }
   ],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5bc18254f9bbc2839574093f36598743401fd089-800x800.jpg",
   "traction": "FG",
   "url_slug": "adidas-predator-elite-ft-fg-orange",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-11T14:57:45.144Z",
+    "lastUpdated": "2026-07-11T14:58:27.741Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
