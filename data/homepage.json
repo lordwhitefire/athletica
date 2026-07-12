@@ -78,10 +78,10 @@
         "accent_color": "#d1fd40",
         "button_text": "BUY",
         "gradient": "from-gray-900 via-gray-800 to-gray-900",
-        "image": "https://cdn.sanity.io/images/cuiis46d/production/66def4b7fe846df2f89bb0a0a0789543c00b41d7-3264x1332.jpg",
+        "image": "https://cdn.sanity.io/images/cuiis46d/production/8627d45eb5d63a6d1dfa19e4966314f0fd0ce63e-3264x1332.jpg",
         "link": "/",
         "subtitle": "All Club Home , Away and Alternate kit are live ",
-        "title": "CHAOS VS CONTROL "
+        "title": "ASTON VILLA "
       }
     ]
   },
@@ -293,6 +293,15 @@
           "link": "/",
           "subtitle": "",
           "title": "PSG | Home & Away 2027"
+        },
+        {
+          "_key": "card-1783849923880-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8627d45eb5d63a6d1dfa19e4966314f0fd0ce63e-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Aston Villa 2027"
         }
       ],
       "title": "Club Kit 2027",
@@ -512,7 +521,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-12T09:46:02.763Z",
+    "lastUpdated": "2026-07-12T09:53:09.566Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
