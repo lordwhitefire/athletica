@@ -47,11 +47,7 @@
   "description": {
     "collection": "National Team Store ",
     "intro": "This adidas Argentina 2026 jersey is designed for fans who want to experience the World Cup in style, comfort, and with sky blue and white pride.",
-    "key_benefits": [
-      "Design faithful to the original: Identical to the official",
-      "It keeps you dry: Climacool technology for greater",
-      "Emotional connection: Historical details and embroidered crest."
-    ],
+    "key_benefits": [],
     "subtitle": "Argentina national team adidas home jersey 2026 - Albiceleste",
     "tagline": "Argentine passion in every stitch",
     "technical_details": {
@@ -71,7 +67,7 @@
     "https://cdn.sanity.io/images/cuiis46d/production/e4bf16f3ceee9b03b06223170747f84a3d4fe7f4-800x800.jpg"
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/636cf10a6557cdf2afee4d35c3c03d41bf8def97-800x800.jpg",
-  "model": "National Team/",
+  "model": "Argentina Jersey",
   "name": "adidas Argentina 26 jersey",
   "price": {
     "currency": "USD",
@@ -183,7 +179,7 @@
   "url_slug": "adidas-predator-elite-ft-fg-white",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-12T12:17:07.173Z",
+    "lastUpdated": "2026-07-12T12:19:28.000Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
