@@ -4,8 +4,8 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "Pink",
+  "category": "Jerseys",
+  "color": "Red",
   "color_variants": [
     {
       "_key": "cv-white",
@@ -57,36 +57,38 @@
     }
   ],
   "description": {
-    "collection": "Beckham Collection",
-    "intro": "The adidas Predator Elite FT FG Beckham feature a premium synthetic upper with HybridTouch 2.0 for flexibility and support, designed for players who dominate the ball.",
+    "collection": "Liverpool Store",
+    "intro": "The adidas Liverpool 26/27 jersey recaptures the essence of the historic kits from the 1980s with a vibrant and modern design that pays homage to the club's identity. Its combination of retro details and current technologies makes it the perfect garment for supporting Liverpool both on and off the pitch.",
     "key_benefits": [
-      "Perfect fit and superior comfort with fold-over tongue construction",
-      "Enhanced ball control via Strikeskin rubber fins and ControlFrame 2.0 outsole",
-      "Iconic Beckham-inspired design for standout style and precision",
-      "Optimized traction on firm natural or modern artificial grass"
+      "Official design: Inspired by Liverpool's 26/27 kit.",
+      "Slim fit: Provides a modern, sporty look.",
+      "Breathable fabric: Promotes ventilation and comfort.",
+      "CLIMACOOL: Promotes ventilation and keeps skin cool and dry."
     ],
-    "subtitle": "Football boots with fold-over tongue adidas FG Beckham - pink",
-    "tagline": "Maximum control inspired by David Beckham",
+    "subtitle": "Liverpool 2026-2027 adidas Home Shirt - Red",
+    "tagline": "The spirit of Anfield with a legendary design",
     "technical_details": {
-      "adjustment": "Lace-up with fold-over tongue",
-      "range": "Elite / Professional grade",
-      "sole_type": "FG (Firm Ground)",
-      "upper_material": "HybridTouch 2.0 synthetic"
+      "adjustment": "",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
-  "gender": "Men",
+  "gender": "Male",
   "id": "JI1094",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/b85e57500c61136211f46efa70c9d995b3939930-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/670e65b451104d34fdedfea10a162e0438d120f6-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/3c1e775f11a8b515e27abe41a8d3e3ad04c9c1d9-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ae5944446607399e4676ff4b155de62ed46f86fb-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/41bb3064c443b0734a2ea86dc99cc2d3ab46bc2a-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5ce4687be49774c18cda6b8c95f2998a1e3f7a8e-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9af527ca1d1ac5b6af7c41ea22bcb12c6496dcb2-768x768.jpg",
-  "model": "Predator/Elite-FT-FG-Beckham",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/39cd42e4d414803da154949e013acf9f2281c88d-800x800.jpg",
+  "model": "Liverpool Jersey",
+  "name": "adidas Liverpool 26/27 Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 209.99,
-    "discount_percent": 27.59,
+    "discount_percent": 20,
     "member_price": 0,
     "original": 290
   },
@@ -176,12 +178,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/39cd42e4d414803da154949e013acf9f2281c88d-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-elite-ft-fg-beckham-pink",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-12T11:47:50.771Z",
+    "lastUpdated": "2026-07-12T11:56:14.495Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
