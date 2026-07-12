@@ -1,11 +1,11 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-puma",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/f17fb2829c28c8233dff0d21bcc8f2d901cc0572-1080x1080.jpg",
+    "name": "PUMA"
   },
-  "category": "Boots",
-  "color": "Black",
+  "category": "Jerseys ",
+  "color": "Light Blue ",
   "color_variants": [
     {
       "_key": "cv-white",
@@ -51,34 +51,34 @@
     }
   ],
   "description": {
-    "collection": "Electric Stealth Pack",
-    "intro": "The adidas Predator Elite FT FG feature a fold-over tongue design and advanced textured upper for maximum ball control and powerful strikes. Part of the Electric Stealth Pack, these premium boots deliver pro-grade performance on natural and high-quality artificial surfaces.",
+    "collection": "Manchester City Store ",
+    "intro": "The Puma Manchester City 26/27 home shirt features the official design of the club's kit. Inspired by the shirt worn by the players at the Etihad Stadium, it combines comfort, breathability, and style for everyday wear and matches. Made with lightweight fabric and dryCELL technology, it helps keep skin dry and cool even during the most intense moments",
     "key_benefits": [
-      "Superior contact: HybridTouch upper with rubber Strikeskin fins for perfect ball grip and clean striking surface.",
-      "Precision power: Control Zone textured areas enhance accuracy on passes, shots, and first touch.",
-      "Responsive stability: Controlframe 2.0 outsole optimized for firm ground traction and explosive movement.",
-      "Premium fit: Fold-over tongue provides secure, comfortable lockdown without pressure points."
+      "Comfortable fit: Ideal fit for cheering and playing freely",
+      "Jacquard fabric: Greater comfort, lightness and breathability.",
+      "dryCELL technology: Helps keep skin dry and comfortable during play."
     ],
-    "subtitle": "Football boots with tongue adidas FG for natural grass or latest-generation artificial turf - black",
-    "tagline": "Elite-level control and precision on firm ground",
+    "subtitle": "Manchester City 2026-2027 Puma Home Shirt - Light Blue",
+    "tagline": "Citizen's passion for every match",
     "technical_details": {
-      "adjustment": "Lace-up with fold-over tongue",
-      "range": "Elite / top tier",
+      "adjustment": "Double-sided jacquard fabric, round neck",
+      "range": "Game Jersey ",
       "sole_type": "FG (Firm Ground)",
-      "upper_material": "HybridTouch synthetic"
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "JI1096",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/c52f1ab730f9743786270b1e62ee54ff9f621a0a-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/b4ef195cf5a935402621e6ace62b4488d8b5cbf3-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/4efc5dcea16c9c9b86db9b104a0015a061d4f422-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a0c6c0f7832e7d04f5d7594deea403a0b5e6e091-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6b464d3347bbe1683361dea5e2230d0b235a5e8e-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d5dc1843de3ece4a810c489af44f0e50207a5a80-768x768.jpg",
-  "model": "Predator/Elite-FT-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c45b5148fd96e25bf7004a6e464c121537761300-800x800.jpg",
+  "model": "Manchester/Home Jersey",
+  "name": "Puma Manchester City 26/27 Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 167.99,
     "discount_percent": 40,
     "member_price": 253.99,
@@ -200,12 +200,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c45b5148fd96e25bf7004a6e464c121537761300-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-elite-ft-fg-black",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-12T07:05:45.825Z",
+    "lastUpdated": "2026-07-12T07:07:53.153Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
