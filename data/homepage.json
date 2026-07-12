@@ -311,7 +311,9 @@
       "_key": "section-1783540823304",
       "_type": "product_carousel",
       "bg": "bg-surface",
-      "filter": {},
+      "filter": {
+        "category": "Home Jersey"
+      },
       "limit": 10,
       "link_label": "View All ",
       "sort": "newest",
@@ -521,7 +523,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-12T12:21:29.518Z",
+    "lastUpdated": "2026-07-12T15:05:52.174Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
