@@ -1,11 +1,11 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
-  "category": "Boots",
-  "color": "Red",
+  "category": "Jerseys",
+  "color": "Navy Blue ",
   "color_variants": [
     {
       "_key": "cv-white-and-green",
@@ -51,36 +51,33 @@
     }
   ],
   "description": {
-    "collection": "Pure Victory Pack",
-    "intro": "The adidas Predator League FT FG/MG deliver control and striking power with a fold-over tongue design, ideal for players who want accuracy in shots and passes on firm natural grass and modern artificial turf.",
-    "key_benefits": [
-      "Enhanced striking zone: textured Hybridfeel upper boosts ball grip and shot accuracy.",
-      "Secure fit: fold-over tongue with strap covers laces for clean contact and lockdown.",
-      "Versatile traction: FG/MG outsole provides excellent grip on firm ground and multi-ground surfaces.",
-      "Comfort and durability: lightweight synthetic build for all-day performance."
-    ],
-    "subtitle": "Football boots with tongue adidas FG/MG for firm ground and multi-ground - red",
-    "tagline": "Precision and power on firm and mixed surfaces",
+    "collection": "TOTTENHAM HOTSPUR STORE ",
+    "intro": "The Tottenham Hotspur 26/27 Dri-FIT Stadium Away Shirt features an innovative aesthetic inspired by the energy and dynamism of modern London. Its striking graphic design on a navy blue base creates a bold, contemporary look that reflects Tottenham Hotspur's ambition both on and off the pitch.",
+    "key_benefits": [],
+    "subtitle": "II1936-452  Tottenham 2026-2027 Nike Away Shirt - Navy",
+    "tagline": "A groundbreaking design for the new era of Spurs",
     "technical_details": {
-      "adjustment": "Lace-up with fold-over tongue",
-      "range": "League / mid-range",
-      "sole_type": "FG/MG (Firm Ground / Multi-Ground)",
-      "upper_material": "Hybridfeel synthetic"
+      "adjustment": "Nike Dri-FIT: Manages moisture to provide coolness and comfort.",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "ID1319",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/fbe196dfd1f2d2b08de36a6623b205c2ea521b63-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/5e6b50b60ae05eb9850d89bbf016826e01898370-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/b57770b38d9d65384dc258fe7b151650ef82e458-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8dacd56c398a1304fa7ec7e53d849725af8da5e6-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b3e4ec448205bf29a14cc0f91fd8457002923017-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8a08c588173c36a51ffe3f578686dd61983035a4-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/634699e8e05e01a179c31a13ab89abe753f04253-768x768.jpg",
-  "model": "Predator/League-FT-(FG/MG)",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/7c262773adec45ace6625d128ba4c671ea062224-800x800.jpg",
+  "model": "Jerseys/Tottenham Hotspur Home Jersey",
+  "name": "Nike Tottenham Hotspur 26/27 Dri-FIT Stadium Away Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 51.99,
-    "discount_percent": 48.01,
+    "discount_percent": 1,
     "member_price": 0,
     "original": 100
   },
@@ -170,12 +167,12 @@
       "stock": 1
     }
   ],
-  "thumbnail": null,
-  "traction": "FG/MG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/7c262773adec45ace6625d128ba4c671ea062224-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-league-ft-fg-mg-red",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T15:47:11.097Z",
+    "lastUpdated": "2026-07-13T15:52:58.207Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
