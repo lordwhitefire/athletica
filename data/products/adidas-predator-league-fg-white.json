@@ -1,11 +1,11 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
-  "category": "Boots",
-  "color": "White",
+  "category": "Jerseys",
+  "color": "Black",
   "color_variants": [
     {
       "_key": "cv-white-and-green",
@@ -63,36 +63,32 @@
     }
   ],
   "description": {
-    "collection": "Day Spark Pack",
-    "intro": "The adidas Predator League FG feature a Hybridfeel upper with 3D texture and StrikeScale fins for enhanced shooting accuracy and ball grip on firm ground surfaces.",
-    "key_benefits": [
-      "Improved shooting precision: grippy StrikeScale elements and textured zones for better contact.",
-      "Comfortable and secure fit: flexible synthetic upper with lace closure.",
-      "Versatile FG sole: optimized for natural grass and firm artificial surfaces.",
-      "Value positioning: mid-tier boot inspired by elite Predator technology."
-    ],
-    "subtitle": "Football boots adidas FG for natural or artificial grass - white",
-    "tagline": "Precision and control at league level",
+    "collection": "ATLETICO DE MADRID STORE",
+    "intro": "The Atlético de Madrid 26/27 Nike away shirt features a design inspired by the energy and passion of the Madrid club. Its black color scheme with fluorescent details reflects Atlético's intensity both on and off the pitch.\r\n\r\nMade with Nike Dri-FIT technology, it helps keep skin dry and comfortable during workouts, games or everyday life, offering a look inspired by that used by professional players.",
+    "key_benefits": [],
+    "subtitle": "Atletico Madrid 2026-2027 Nike Away Shirt - Black",
+    "tagline": "The Atlético spirit with an electrifying design",
     "technical_details": {
-      "adjustment": "Lace-up",
-      "range": "League / Mid-range",
-      "sole_type": "FG (Firm Ground)",
-      "upper_material": "Hybridfeel synthetic"
+      "adjustment": "Nike Dri-FIT (wicks away sweat and keeps skin dry)",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "IF6346",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/bce031939ddc3fdb655600f245b446a22dc7d3fc-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/72bdf77ecfd48d850d8255a74d6e28e78695e6e8-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/b4737f62c4138062756dc942c607f6485a57e869-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/84b586762f9ebe775529ced6a847b452f49aac72-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2a74c248a8f62c0528bf48fcb1c8d97e705589fd-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/161df08f6a693787af5a7e39ce2b7eb3c1d32b62-768x768.jpg",
-  "model": "Predator/League-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6e66644456dc46f22b2676aafa3f4541c276a168-800x800.jpg",
+  "model": "Jerseys/Atletico Madrid Away Jersey/",
+  "name": "Nike Atletico Madrid 26/27 Dri-FIT Stadium Away Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 43.99,
-    "discount_percent": 51.12222222222222,
+    "discount_percent": 2,
     "member_price": 87.99,
     "original": 90
   },
@@ -212,12 +208,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/6e66644456dc46f22b2676aafa3f4541c276a168-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-league-fg-white",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T12:46:57.965Z",
+    "lastUpdated": "2026-07-13T12:50:56.719Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
