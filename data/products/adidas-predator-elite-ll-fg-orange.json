@@ -1,41 +1,40 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
   "category": "Boots",
-  "color": "Orange",
+  "color": "Red and White ",
   "color_variants": [],
   "description": {
-    "collection": "CORAL BLAZE",
-    "intro": "The adidas Predator Elite LL FG deliver elite-level performance with a laceless design for direct, clean ball contact on firm ground surfaces.",
+    "collection": "ATLETICO DE MADRID STORE",
+    "intro": "The Nike Atlético de Madrid 26/27 Dri-FIT Stadium home kit is steeped in the club's identity. Its design combines white, red, and blue with a tonal trident pattern integrated into the red stripes as a nod to the Neptune Fountain, a traditional location for Atlético de Madrid's title celebrations.\r\n\r\nMade from lightweight technical fabric and equipped with Nike Dri-FIT technology, it offers comfort, breathability and freedom of movement, whether you're cheering on your team or dressing in sporty style.",
     "key_benefits": [
-      "Laceless construction: Direct contact with the ball for maximum precision in shooting and passing.",
-      "Elite technologies: Premium materials and pro-level features used by top players.",
-      "Optimized FG traction: Controlframe Pro outsole designed for quick movements and stability on dry natural grass or firm artificial turf.",
-      "Striking aesthetics: Modern, eye-catching Predator design in vibrant orange."
+      "Red and white identity: Design inspired by the Neptune Fountain and athletic celebrations.",
+      "Trident pattern: Tonal detail integrated into the red stripes that represents strength and victory.",
+      "Official Stadium Design: Inspired by the kit worn by Atlético de Madrid players.",
+      "Nike Dri-FIT: Wicks away sweat to keep your skin dry and comfortable."
     ],
-    "subtitle": "Laceless football boots adidas FG for firm natural or latest-generation artificial grass - orange",
-    "tagline": "Control without distractions",
+    "subtitle": "Atlético Madrid 2026-2027 Nike Home Shirt - Red, White",
+    "tagline": "The red and white passion inspired by the Neptune Fountain",
     "technical_details": {
-      "adjustment": "Laceless",
-      "range": "Professional / Elite level",
-      "sole_type": "FG (Firm Ground) for dry natural grass or firm artificial surfaces",
-      "upper_material": "Synthetic (Hybridtouch with Strikeskin rubber elements)"
+      "adjustment": "Nike Dri-FIT: Manages moisture to provide coolness and comfort.",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "JI1076",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/6cd4da5cea9ec026626ba6ce6d94fdb27a88f225-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/bc0c63262515edd3434eb25f80292aa656b28671-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/f89d63af48281a6fcba49b4b6f63999d2fa9199b-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6d08a98c215a0edcca2012d1b263633c74f78b5f-768x768.jpg",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c3c84b86e77d6421589abc09c86ea04780bb366a-800x800.jpg",
   "model": "Predator/Elite-LL-FG",
-  "name": null,
+  "name": "Nike Atlético 26 27 Dri-Fit Stadium T-shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 161.99,
     "discount_percent": 40,
     "member_price": 0,
@@ -127,12 +126,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c3c84b86e77d6421589abc09c86ea04780bb366a-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-elite-ll-fg-orange",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T09:01:14.885Z",
+    "lastUpdated": "2026-07-13T09:07:56.627Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
