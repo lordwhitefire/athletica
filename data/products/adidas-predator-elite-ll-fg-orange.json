@@ -4,18 +4,13 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
     "name": "NIKE"
   },
-  "category": "Boots",
+  "category": "Jerseys",
   "color": "Red and White ",
   "color_variants": [],
   "description": {
     "collection": "ATLETICO DE MADRID STORE",
     "intro": "The Nike Atlético de Madrid 26/27 Dri-FIT Stadium home kit is steeped in the club's identity. Its design combines white, red, and blue with a tonal trident pattern integrated into the red stripes as a nod to the Neptune Fountain, a traditional location for Atlético de Madrid's title celebrations.\r\n\r\nMade from lightweight technical fabric and equipped with Nike Dri-FIT technology, it offers comfort, breathability and freedom of movement, whether you're cheering on your team or dressing in sporty style.",
-    "key_benefits": [
-      "Red and white identity: Design inspired by the Neptune Fountain and athletic celebrations.",
-      "Trident pattern: Tonal detail integrated into the red stripes that represents strength and victory.",
-      "Official Stadium Design: Inspired by the kit worn by Atlético de Madrid players.",
-      "Nike Dri-FIT: Wicks away sweat to keep your skin dry and comfortable."
-    ],
+    "key_benefits": [],
     "subtitle": "Atlético Madrid 2026-2027 Nike Home Shirt - Red, White",
     "tagline": "The red and white passion inspired by the Neptune Fountain",
     "technical_details": {
@@ -31,7 +26,7 @@
     "https://cdn.sanity.io/images/cuiis46d/production/f89d63af48281a6fcba49b4b6f63999d2fa9199b-800x800.jpg"
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c3c84b86e77d6421589abc09c86ea04780bb366a-800x800.jpg",
-  "model": "Predator/Elite-LL-FG",
+  "model": "Jerseys/Atletico Madrid Home Jersey",
   "name": "Nike Atlético 26 27 Dri-Fit Stadium T-shirt",
   "price": {
     "currency": "USD",
@@ -131,7 +126,7 @@
   "url_slug": "adidas-predator-elite-ll-fg-orange",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T09:07:56.627Z",
+    "lastUpdated": "2026-07-13T09:10:21.576Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
