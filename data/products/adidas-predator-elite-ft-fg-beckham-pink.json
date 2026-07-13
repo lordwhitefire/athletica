@@ -59,12 +59,7 @@
   "description": {
     "collection": "Liverpool Store",
     "intro": "The adidas Liverpool 26/27 jersey recaptures the essence of the historic kits from the 1980s with a vibrant and modern design that pays homage to the club's identity. Its combination of retro details and current technologies makes it the perfect garment for supporting Liverpool both on and off the pitch.",
-    "key_benefits": [
-      "Official design: Inspired by Liverpool's 26/27 kit.",
-      "Slim fit: Provides a modern, sporty look.",
-      "Breathable fabric: Promotes ventilation and comfort.",
-      "CLIMACOOL: Promotes ventilation and keeps skin cool and dry."
-    ],
+    "key_benefits": [],
     "subtitle": "Liverpool 2026-2027 adidas Home Shirt - Red",
     "tagline": "The spirit of Anfield with a legendary design",
     "technical_details": {
@@ -83,7 +78,7 @@
     "https://cdn.sanity.io/images/cuiis46d/production/5ce4687be49774c18cda6b8c95f2998a1e3f7a8e-800x800.jpg"
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/39cd42e4d414803da154949e013acf9f2281c88d-800x800.jpg",
-  "model": "Liverpool Jersey",
+  "model": "Jerseys/Liverpool Home Jersey",
   "name": "adidas Liverpool 26/27 Home Shirt",
   "price": {
     "currency": "USD",
@@ -183,7 +178,7 @@
   "url_slug": "adidas-predator-elite-ft-fg-beckham-pink",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T05:59:53.465Z",
+    "lastUpdated": "2026-07-13T06:01:55.020Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
