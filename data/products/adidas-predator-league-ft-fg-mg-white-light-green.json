@@ -5,7 +5,7 @@
     "name": "ADIDAS"
   },
   "category": "Boots",
-  "color": "White and Light Green",
+  "color": "Red",
   "color_variants": [
     {
       "_key": "cv-black",
@@ -51,46 +51,43 @@
     }
   ],
   "description": {
-    "collection": "RADIANT BLAZE",
-    "intro": "The adidas Predator League FT FG/MG are the ideal choice for players seeking versatility and precision on firm ground and modern artificial turf. Featuring a fold-over tongue structure and dynamic design, these boots offer a secure fit and precise strikes in every play.",
-    "key_benefits": [
-      "Versatility across surfaces: Sole optimized for firm natural grass and next-generation artificial turf",
-      "Enhanced striking power: Textured strike zones boost shot force and accuracy",
-      "Comfortable and secure fit: Flexible synthetic upper with lace-up system for distraction-free performance",
-      "Bold on-pitch presence: Striking white/light green colorway from the Radiant Blaze Pack"
-    ],
-    "subtitle": "Football boots with fold-over tongue adidas FG/MG for firm natural grass and artificial turf - white and light green",
-    "tagline": "Total control on every playing surface",
+    "collection": "BAYERN MUNICH STORE ",
+    "intro": "The Bayern Munich 26/27 adidas long-sleeve jersey combines the club's historic heritage with adidas' current innovation. Its red design with vertical stripes pays homage to Bayern's identity, delivering a classic style with a modern twist.\r\n\r\nPerfect for everyday wear or for cheering in the stadium, it offers comfort and performance at all times.",
+    "key_benefits": [],
+    "subtitle": "Bayern Munich 2026-2027 Home Long Sleeve Adidas Jersey - Red",
+    "tagline": "Tradition and performance in every match",
     "technical_details": {
-      "adjustment": "Lace-up with fold-over tongue",
-      "range": "Mid-range / League level – excellent balance of performance, durability, and value for regular training and matches",
-      "sole_type": "FG/MG (Firm Ground / Multi-Ground) – Controlplate outsole with nylon/rubber studs",
-      "upper_material": "Hybridfeel synthetic with 3D texture"
+      "adjustment": "",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Men",
   "id": "JI1111",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/d52efa2e663396f5ba6ba3dd01e0c042f3f5d1f2-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/4b1ca975e3ba3253106de1568b79dd91ac48b0ba-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/6ede514e25efd5074fd54a2c15c20eb7780b02f4-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/42a4f474f6898608dddec3754a44d190dd2d5bf8-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5cc93955db459c1009522fc66cd59449d23b2557-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2d376466c89ca8009fbd89af4ecdcfb7042dd758-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b93976355923ab0f186224730a3789d583f193f7-768x768.jpg",
-  "model": "Predator/League-FT-(FG/MG)",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e8197250c5eafe2becc1263cd3f8d7a045e3751c-800x800.jpg",
+  "model": "Jerseys/Bayern Munich Home Jersey",
+  "name": "adidas Bayern Munich 26/27 Home LS Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 59.99,
     "discount_percent": 40,
     "member_price": 98.99,
     "original": 100
   },
   "sizes": [],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e8197250c5eafe2becc1263cd3f8d7a045e3751c-800x800.jpg",
   "traction": "FG/MG",
   "url_slug": "adidas-predator-league-ft-fg-mg-white-light-green",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T18:43:13.033Z",
+    "lastUpdated": "2026-07-13T18:44:37.348Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
