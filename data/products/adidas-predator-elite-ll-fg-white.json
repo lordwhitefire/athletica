@@ -4,8 +4,8 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "White",
+  "category": "Jerseys",
+  "color": "Blue and Red ",
   "color_variants": [
     {
       "_key": "cv-orange",
@@ -63,34 +63,36 @@
     }
   ],
   "description": {
-    "collection": "Day Spark Pack",
-    "intro": "The adidas Predator Elite LL FG deliver unmatched accuracy and power with a clean, laceless striking surface and advanced grip technologies.",
+    "collection": "PARIS SAINT-GERMAIN STORES ",
+    "intro": "The Nike PSG 26/27 Stadium jersey maintains the classic design with the central stripe that defines the identity of Paris Saint-Germain. A model that combines tradition and modern style to represent one of the most renowned clubs in the world.\r\n\r\nInspired by the official kit, it offers comfort and performance both on and off the field.",
     "key_benefits": [
-      "Clean striking zone: Laceless construction for consistent, powerful shots.",
-      "Superior ball grip: High Definition Grip (HDG) rubber elements on the upper for enhanced control in all conditions.",
-      "Adaptive fit: HybridTouch 2.0 upper molds to the foot with PRIMEKNIT collar for lockdown comfort.",
-      "Explosive traction: Controlframe 2.0 outsole with conical studs for stability, rotation, and quick direction changes on firm ground."
+      "Iconic PSG design: Classic central stripe with club identity",
+      "Lightweight fabric: Provides comfort and freedom of movement.",
+      "High breathability: Promotes ventilation during play.",
+      "Stadium Design: Inspired by the kit worn by the players.",
+      "Nike Dri-FIT technology: Wicks away sweat to keep your skin dry and comfortable."
     ],
-    "subtitle": "Laceless football boots adidas FG for firm natural grass - white",
-    "tagline": "Precision shooting and maximum control – laceless elite performance",
+    "subtitle": "Paris Saint-Germain 2026-2027 Nike Home Jersey - Blue, Red",
+    "tagline": "The iconic PSG jersey for every match",
     "technical_details": {
-      "adjustment": "Laceless",
-      "range": "Elite / Professional",
-      "sole_type": "FG (Firm Ground)",
-      "upper_material": "HybridTouch 2.0 (Primeknit + PU coating, 20% recycled content)"
+      "adjustment": "Nike Dri-FIT (wicks away sweat and keeps skin dry)",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "IF6448",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/14f02d956246a4eeb03ea403719487c96e749cb5-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/90f0f171010582dbcfb61186bfe25440f02e71ec-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/1ad9988c1b9fa2def9f3c16c35315abf3ece4c6d-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ab39b76e2d95314fb88c7b840749ffefef40afa1-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/145754089b18fd6a98c1afa0f70b7112a65f6652-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b53bd97b72b1f318625b7d072c5f7f6f822c2e57-768x768.jpg",
-  "model": "Predator/Elite-LL-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2e03b6ccb1493b7e538cd39482c2a8dcaf57170e-800x800.jpg",
+  "model": "Jerseys/PSG Home Jersey",
+  "name": "Nike Paris Saint-Germain 26/27 Dri-FIT ADV Match Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 134.99,
     "discount_percent": 50,
     "member_price": 0,
@@ -218,12 +220,12 @@
       "stock": 1
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2e03b6ccb1493b7e538cd39482c2a8dcaf57170e-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-elite-ll-fg-white",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T08:20:19.820Z",
+    "lastUpdated": "2026-07-13T08:26:32.689Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
