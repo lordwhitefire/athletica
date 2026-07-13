@@ -4,40 +4,36 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "Orange",
+  "category": "Jerseys",
+  "color": "Blue",
   "color_variants": [],
   "description": {
-    "collection": "Coral Blaze",
-    "intro": "The adidas Predator Elite LL AG combine laceless innovation and striking style so your game stays cleaner, faster, and more technical on artificial surfaces.",
-    "key_benefits": [
-      "Laceless fit: Direct ball contact for cleaner strikes and better feel.",
-      "Elite construction: Professional-level design used by top players.",
-      "AG traction: Optimized for modern artificial turf fields.",
-      "Iconic Predator aesthetics: Bold, modern look with enhanced Strikeskin elements."
-    ],
-    "subtitle": "Laceless football boots adidas AG for artificial grass - orange",
-    "tagline": "Elite control and speed without laces",
+    "collection": "CHELSEA STORE",
+    "intro": "The Nike Chelsea 26/27 Dri-Fit Stadium Jersey features the official design of Chelsea FC's home kit for the 2026/27 season. Inspired by the jersey worn by the players on the pitch, it combines tradition, blue identity, and comfort to accompany you on and off the field.\r\n\r\nThanks to Nike Dri-FIT technology, sweat is quickly wicked away to keep you cool and comfortable during workouts, games, or everyday life.",
+    "key_benefits": [],
+    "subtitle": "Chelsea 2026-2027 Nike Home Shirt - Blue",
+    "tagline": "The blue pride of Stamford Bridge",
     "technical_details": {
-      "adjustment": "Laceless (LL - Laceless)",
-      "range": "Elite / Professional range",
-      "sole_type": "AG (artificial grass)",
-      "upper_material": "HybridTouch synthetic"
+      "adjustment": "Perfect for cheerleading, training, or dressing up in sporty style",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "JH8875",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/86f658772b7735d5f07528d4a5db72bf0076fd2e-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/356869c6cfeaadcffbefdd4f09b896d235988e6e-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/8dad2fe239e47e2a229fe09d403a3eb4abbda3c7-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7c817d5a9cc60ffba36d8bf78b0b41573cda405c-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2bf9b370b75e39f1e461b41a6aeda02f5a0db40b-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ed27c5474d338f47bc0e4708e61effbbb4f95e37-768x768.jpg",
-  "model": "Predator/Elite-LL-AG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d553d175de06869d7d78f0a4ecb280f8ca319f9a-800x800.jpg",
+  "model": "Jerseys/Chelsea Jersey",
+  "name": "Nike Chelsea 26/27 Dri-FIT Stadium Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 161.99,
-    "discount_percent": 40,
+    "discount_percent": 10,
     "member_price": 0,
     "original": 270
   },
@@ -127,12 +123,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "AG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d553d175de06869d7d78f0a4ecb280f8ca319f9a-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-elite-ll-ag-orange",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T05:56:24.368Z",
+    "lastUpdated": "2026-07-13T05:59:53.465Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
