@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import type { BatchUploadParseResult, BatchUploadCreateResult } from "@/lib/schemas/batch-upload";
 import { batchCreateProducts } from "@/lib/actions/batch-upload";
 
+const MAX_ZIP_SIZE = 50 * 1024 * 1024; // 50MB
+
 type Step = "upload" | "preview" | "result";
 
 export default function BatchUploadForm() {
@@ -20,6 +22,12 @@ export default function BatchUploadForm() {
     const handleFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
         if (file) {
+            if (file.size > MAX_ZIP_SIZE) {
+                setError(`File is too large. Maximum ZIP file size is 50MB (your file: ${(file.size / (1024 * 1024)).toFixed(1)}MB).`);
+                if (fileInputRef.current) fileInputRef.current.value = "";
+                setFileName("");
+                return;
+            }
             setFileName(file.name);
             setError(null);
         }
@@ -29,6 +37,11 @@ export default function BatchUploadForm() {
         const file = fileInputRef.current?.files?.[0];
         if (!file) {
             setError("Please select a ZIP file.");
+            return;
+        }
+
+        if (file.size > MAX_ZIP_SIZE) {
+            setError(`File is too large. Maximum ZIP file size is 50MB (your file: ${(file.size / (1024 * 1024)).toFixed(1)}MB).`);
             return;
         }
 
