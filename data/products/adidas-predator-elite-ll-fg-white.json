@@ -1,8 +1,8 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
   "category": "Jerseys",
   "color": "Blue and Red ",
@@ -65,13 +65,7 @@
   "description": {
     "collection": "PARIS SAINT-GERMAIN STORES ",
     "intro": "The Nike PSG 26/27 Stadium jersey maintains the classic design with the central stripe that defines the identity of Paris Saint-Germain. A model that combines tradition and modern style to represent one of the most renowned clubs in the world.\r\n\r\nInspired by the official kit, it offers comfort and performance both on and off the field.",
-    "key_benefits": [
-      "Iconic PSG design: Classic central stripe with club identity",
-      "Lightweight fabric: Provides comfort and freedom of movement.",
-      "High breathability: Promotes ventilation during play.",
-      "Stadium Design: Inspired by the kit worn by the players.",
-      "Nike Dri-FIT technology: Wicks away sweat to keep your skin dry and comfortable."
-    ],
+    "key_benefits": [],
     "subtitle": "Paris Saint-Germain 2026-2027 Nike Home Jersey - Blue, Red",
     "tagline": "The iconic PSG jersey for every match",
     "technical_details": {
@@ -225,7 +219,7 @@
   "url_slug": "adidas-predator-elite-ll-fg-white",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T08:41:04.854Z",
+    "lastUpdated": "2026-07-13T09:01:14.885Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }

@@ -1,41 +1,42 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
-  "category": "Boots",
-  "color": "White and Light Green",
+  "category": "Jerseys",
+  "color": "Blue and Red ",
   "color_variants": [],
   "description": {
-    "collection": "RADIANT BLAZE",
-    "intro": "The adidas Predator Elite LL FG are crafted for players who control the game with pinpoint accuracy. The laceless design and high-definition 3D texture deliver consistent, clean ball contact on every touch.",
+    "collection": "BARCELONA STORE",
+    "intro": "The Nike FC Barcelona 26/27 Dri-FIT Stadium Jersey presents an innovative interpretation of the traditional Blaugrana colors. Inspired by the exterior architecture of the renovated Camp Nou, it features a unique design with three shades of blue and three shades of red that create a dynamic and modern visual effect. Made from lightweight technical fabric and equipped with Nike Dri-FIT technology.",
     "key_benefits": [
-      "Lace-free strike zone: Completely uniform surface for maximum precision in shots and passes.",
-      "Optimized FG traction: Stability, acceleration, and secure grip on dry natural grass and modern artificial surfaces.",
-      "Premium fit and feel: Ultra-light, enveloping construction with strategic flexibility and support.",
-      "Elite performance: Inspired by and worn by top professional players worldwide."
+      "Nike Dri-FIT: Wicks away sweat to keep your skin dry and comfortable.",
+      "Lightweight fabric: Promotes comfort and freedom of movement throughout the day.",
+      "Official Stadium Design: Inspired by the kit worn by FC Barcelona players.",
+      "Exclusive multicolor graphic: Combines three shades of blue and three shades of red in homage to the new Camp Nou."
     ],
-    "subtitle": "Laceless football boots adidas FG for firm natural grass - white and light green",
-    "tagline": "Surgical precision, zero distractions",
+    "subtitle": "FC Barcelona 2026-2027 Nike Home Shirt - Blue and Red",
+    "tagline": "The essence of Barça reinvented for a new era",
     "technical_details": {
-      "adjustment": "Laceless",
-      "range": "Professional / Elite range – maximum performance with premium materials and technologies",
-      "sole_type": "FG (firm ground – dry natural grass and latest-generation artificial turf)",
-      "upper_material": "Synthetic (HybridTouch / Fibertouch)"
+      "adjustment": "Nike Dri-FIT: Manages moisture to provide coolness and comfort.",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "JI1075",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/b31997002377f64d5525071916f60e3c6817e5ee-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/09cd6d4adfdae3b670db60ad485ab666b5d08bfd-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/024a4ba913fab5faa83ed99e27c664a1ae718ae3-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/08eb4088cb1d5cda39f1e75e408a08f6a4afe161-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4b9b4260faf093732cfab0c157046ca66c0c800d-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/88a6a5ef1fd078f2e066e1b0a731a69ae4842e4b-768x768.jpg",
-  "model": "Predator/Elite-LL-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b82d8bcb439b1e6136abdf7af3aea92acb337b52-800x800.jpg",
+  "model": "Jerseys/Barcelona Home Jersey",
+  "name": "Nike FC Barcelona 26/27 Dri-FIT Stadium Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 161.99,
     "discount_percent": 40,
     "member_price": 0,
@@ -127,12 +128,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b82d8bcb439b1e6136abdf7af3aea92acb337b52-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-elite-ll-fg-white-light-green",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T08:41:04.855Z",
+    "lastUpdated": "2026-07-13T09:01:14.885Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
