@@ -51,13 +51,9 @@
     }
   ],
   "description": {
-    "collection": "Manchester City Store ",
+    "collection": "MANCHESTER CITY STORE ",
     "intro": "The Puma Manchester City 26/27 home shirt features the official design of the club's kit. Inspired by the shirt worn by the players at the Etihad Stadium, it combines comfort, breathability, and style for everyday wear and matches. Made with lightweight fabric and dryCELL technology, it helps keep skin dry and cool even during the most intense moments",
-    "key_benefits": [
-      "Comfortable fit: Ideal fit for cheering and playing freely",
-      "Jacquard fabric: Greater comfort, lightness and breathability.",
-      "dryCELL technology: Helps keep skin dry and comfortable during play."
-    ],
+    "key_benefits": [],
     "subtitle": "Manchester City 2026-2027 Puma Home Shirt - Light Blue",
     "tagline": "Citizen's passion for every match",
     "technical_details": {
@@ -75,7 +71,7 @@
     "https://cdn.sanity.io/images/cuiis46d/production/6b464d3347bbe1683361dea5e2230d0b235a5e8e-800x800.jpg"
   ],
   "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c45b5148fd96e25bf7004a6e464c121537761300-800x800.jpg",
-  "model": "Manchester/Home Jersey",
+  "model": "Jerseys/Manchester City Home Jersey",
   "name": "Puma Manchester City 26/27 Home Shirt",
   "price": {
     "currency": "USD",
@@ -205,7 +201,7 @@
   "url_slug": "adidas-predator-elite-ft-fg-black",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-13T06:13:37.116Z",
+    "lastUpdated": "2026-07-13T06:15:09.502Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
