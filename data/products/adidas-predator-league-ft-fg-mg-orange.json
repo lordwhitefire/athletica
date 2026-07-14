@@ -1,11 +1,11 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-puma",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/f17fb2829c28c8233dff0d21bcc8f2d901cc0572-1080x1080.jpg",
+    "name": "PUMA"
   },
-  "category": "Boots",
-  "color": "Orange",
+  "category": "Jerseys",
+  "color": "Yellow",
   "color_variants": [
     {
       "_key": "cv-white-and-green",
@@ -51,34 +51,30 @@
     }
   ],
   "description": {
-    "collection": "Coral Blaze Pack",
-    "intro": "The adidas Predator League FT FG/MG deliver mid-range Predator performance with a fold-over tongue, grippy strike elements, and hybrid sole for reliable traction on firm natural grass and modern artificial surfaces.",
-    "key_benefits": [
-      "Enhanced ball manipulation: all-over 3D texture and Strikescale fins for grip and control on shots/passes.",
-      "Comfortable secure fit: fold-over tongue reduces pressure and provides a clean striking area.",
-      "Versatile traction: Controlplate FG/MG outsole optimized for firm ground and multi-ground surfaces.",
-      "Mid-tier value: League-level features inspired by pro models at an accessible price point."
-    ],
-    "subtitle": "Football boots with fold-over tongue adidas FG/MG for firm ground and multi-ground - orange",
-    "tagline": "Precision control and power on firm & mixed surfaces",
+    "collection": "BORUSSIA DORTMUND STORE",
+    "intro": "Stand behind Die Schwarzgelben as they set their sights on a return to the pinnacle of German football in the PUMA Borussia Dortmund 26/27 Home Shirt in Faster Yellow/PUMA Black, a comfortable jersey packed with Schwarzgelben pride.\r\n\r\nBased on the kits worn by the likes of Julian Ryerson and Kjell Watjen at the very highest level of German football, the 2026/27 home shirt shows your support for BVB as they compete for Bundesliga, DFB-Pokal and Champions League glory. Inspired by the old industrial architecture that shaped Dortmund and its people, the vibrant Faster Yellow base is elevated with tonal graphics that showcase the last Collier Minister Stein and the Dortmunder U to celebrate the city’s history. A BVB crest emblazoned over your left chest proudly declares which team your heart belongs to.\r\n\r\nStrategically placed mesh panels enhance breathability in high-heat zones, and moisture-wicking dryCELL technology draws sweat away from your skin and dries quickly to keep you cool and comfortable in any situation, whether you’re running laps of the pitch to improve your cardio in preseason training, fighting for every ball in intense competitive play or making noise and pushing the team on from the stands. The lightweight, flexible construction provides full freedom of movement, so you can pound up and down the touchline without restriction, like Julian Ryerson.\r\n\r\nMade with PUMA’s RE:FIBRE fabric, this shirt contributes to the recycling of excess textiles and cuts down on the production of plastic waste.",
+    "key_benefits": [],
+    "subtitle": "Borussia Dortmund 2026-2027 Puma Home Shirt - Yellow",
+    "tagline": "Experience every match with Borussia Dortmund",
     "technical_details": {
-      "adjustment": "Lace-up with fold-over tongue",
-      "range": "League / Mid-range",
-      "sole_type": "FG/MG (Firm Ground / Multi-Ground hybrid)",
-      "upper_material": "Hybridfeel synthetic with 3D texture"
+      "adjustment": "",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "JI1112",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/88bad35663d1ec4c85ac5f87dfcbc2a0f53b0729-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/946fcf16f02237f9dcee228998ebb4f41efb7285-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/79d50c0fa5ceef7bebe5f21ea77e895518ebba37-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ba3eadc588ac5b03fc5c6898507b776c63641ff9-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1b0bba21ae74545498a17d7cdbdb123e73d23774-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f31e0a0b463484c049afbf3bbdfab98a8c6f8b46-768x768.jpg",
-  "model": "Predator/League-FT-(FG/MG)",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/36d22bea25b7c0a98b65edc077fa0c7d2f3ee1c9-800x800.jpg",
+  "model": "Jerseys/Borussia Dortmund Home Jersey/",
+  "name": "Puma Borussia Dortmund 26 27 T-shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 59.99,
     "discount_percent": 40,
     "member_price": 0,
@@ -188,12 +184,12 @@
       "stock": 1
     }
   ],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/36d22bea25b7c0a98b65edc077fa0c7d2f3ee1c9-800x800.jpg",
   "traction": "FG/MG",
   "url_slug": "adidas-predator-league-ft-fg-mg-orange",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-14T03:51:16.630Z",
+    "lastUpdated": "2026-07-14T03:57:56.235Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
