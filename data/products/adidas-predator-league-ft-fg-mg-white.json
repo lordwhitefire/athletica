@@ -4,8 +4,8 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "White",
+  "category": "Training Jersey ",
+  "color": "Green",
   "color_variants": [
     {
       "_key": "cv-black",
@@ -57,32 +57,29 @@
     }
   ],
   "description": {
-    "collection": "Road to Glory",
-    "intro": "The adidas Predator League FT FG/MG deliver classic fit, enhanced precision, and dominant touch on natural and artificial surfaces. Crafted for players who want to dominate from midfield.",
-    "key_benefits": [
-      "Superior ball control: Hybridfeel upper with all-over 3D texture and Strikescale fins for grip during strikes and passes.",
-      "Precision shooting: Fold-over tongue design for clean ball contact.",
-      "Stability and durability: Controlplate sole provides rigid support and traction on mixed surfaces.",
-      "Versatile performance: Optimized for firm natural grass and modern artificial turf."
-    ],
-    "subtitle": "Football boots with fold-over tongue adidas FG/MG for firm ground and multi-ground - white",
-    "tagline": "Total control in every play",
+    "collection": "REAL MADRID STORE ",
+    "intro": "Stand with Los Blancos as they look to reclaim their spot at the top of world football in the adidas Real Madrid 26/27 Training Sleeveless Shirt in Aurora Ivy/Wild Pink, a high-performance training vest dripping with Madridista pride.\r\n\r\nPart of the official Real Madrid 2026/27 training range, the Tiro 26 vest is worn by Jude Bellingham, Trent Alexander-Arnold, Eder Militao, Dean Huijsen and the rest of the first-team squad as they hone their skills and compete for a record-extending 16th UEFA Champions League title. The rich Aurora Ivy base is elevated with vivid Wild Pink contrast accents to create a sleek, sporty look that easily complements the rest of your workout wardrobe, and the iconic Real Madrid crest emblazoned over your heart displays your club pride for the world to see.\r\n\r\nThe stretchy, lightweight fabric delivers full freedom of movement for unrestricted performance, whether you’re pumping iron in the gym, pounding the pavement to improve your cardio or running drills on the training pitch. New Climacool fabric utilises strategically placed ventilation and moisture-wicking technology to draw sweat away from the skin and keep you cool, dry and comfortable, no matter how hard you push.\r\n\r\nMade from 100% recycled polyester, this sleeveless shirt is perfect for the environmentally conscious Madridista looking to make a difference.",
+    "key_benefits": [],
+    "subtitle": "Real Madrid 2026-2027 adidas Training Sleeveless Shirt - Green",
+    "tagline": "Train with the intensity of Real Madrid",
     "technical_details": {
-      "adjustment": "Lace-up with fold-over tongue",
-      "range": "Mid-range / League level",
-      "sole_type": "FG/MG (Firm Ground / Multi-Ground) molded studs",
-      "upper_material": "Hybridfeel synthetic with 3D texture"
+      "adjustment": "",
+      "range": "Training Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "JI1114",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/ca644239a8ca36a97cbb40384ca681a4b875b596-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/b0808dc7a7aa34a3cfef44b7074f85ca38bb94cc-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/a6c1ffa64b20a581fa77eaa6e726c032d35fd6b3-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d63fc91b494581c084161ba6af81c24b1c6d15cc-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/48c6ce5189330ceaffe7dad94c935ba47aa253d9-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4ab7e00879280c6c7202fde834be99b8460124e4-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9553050c4fe77c9956f3fa7579c1d312b54c4efd-768x768.jpg",
-  "model": "Predator/League-FT-(FG/MG)",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/44ae99d8ae19e60e2f82802ca567856164fe212d-800x800.jpg",
+  "model": "Training/Real Madrid Training Jersey/",
+  "name": "adidas Real Madrid training sleeveless shirt",
   "price": {
     "currency": "€",
     "current": 59.99,
@@ -206,12 +203,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG/MG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/44ae99d8ae19e60e2f82802ca567856164fe212d-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-league-ft-fg-mg-white",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-14T04:04:50.221Z",
+    "lastUpdated": "2026-07-14T04:09:19.682Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
