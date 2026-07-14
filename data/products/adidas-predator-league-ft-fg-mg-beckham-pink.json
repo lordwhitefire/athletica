@@ -4,7 +4,7 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
+  "category": "Jerseys",
   "color": "Pink",
   "color_variants": [
     {
@@ -57,14 +57,9 @@
     }
   ],
   "description": {
-    "collection": "adidas de Beckham",
-    "intro": "The adidas Predator League FT FG/MG Beckham feature a fold-over tongue and grippy design elements, paying homage to David Beckham's iconic style while delivering modern control on firm and multi-ground surfaces.",
-    "key_benefits": [
-      "Enhanced ball manipulation: all-over 3D texture and Strikescale fins for better grip and spin.",
-      "Comfortable fit: Hybridfeel upper adapts to the foot with a fold-over tongue for secure lockdown.",
-      "Versatile traction: FG/MG sole works on firm natural grass and modern artificial surfaces.",
-      "Iconic look: Inspired by David Beckham for a standout, classic aesthetic."
-    ],
+    "collection": "REAL MADRID STORE ",
+    "intro": "Stand with Los Blancos as they look to reclaim their spot at the top of world football in the adidas Real Madrid 26/27 Authentic Home Shirt in White, a high-performance home jersey dripping with Madridista pride.\r\n\r\nWorn by Jude Bellingham, Trent Alexander-Arnold, Eder Militao, Dean Huijsen and the rest of the first-team squad at the pinnacle of the club game, the 2026/27 home shirt shows your undying support for the Kings of Europe as they compete for a record-extending 16th UEFA Champions League title. Inspired by iconic kits of the past, that distinctive all-white base is modernised with eye-catching dark green and pink contrast accents to create a striking look that nods to beloved previous away and third shirts, and the legendary Real Madrid crest emblazoned over your heart displays your club pride for the world to see.\r\n\r\nNew Climacool+ technology utilises 3D body mapping and strategically placed ventilation to promote airflow and offer superb breathability that keeps you cool no matter how hard you push on the pitch, and mechanical stretch fabric delivers full freedom of movement for unrestricted performance. Moisture-wicking properties draw sweat away from the skin to ensure that you stay dry and comfortable while you compete in elite competitive matches, hone your body and skills in intense training sessions, and push the team on to greatness from the Bernabeu stands.\r\n\r\nMade from 100% recycled polyester, this shirt is perfect for the environmentally conscious Madridista looking to make a difference.",
+    "key_benefits": [],
     "subtitle": "Football boots with tongue adidas FG/MG for artificial grass - pink",
     "tagline": "Beckham-inspired control and precision",
     "technical_details": {
@@ -77,16 +72,17 @@
   "gender": "Men",
   "id": "JI1113",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/81daef9b3897452d498cfc540a554c0d3f85acf0-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/ef806ca9eae7f60f20834c24157f8c7fd07b5615-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/3a9fb28d778a055957aba416e02d541cbe007359-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a540475eeb8e21851cb2724e6530ad604922cf66-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a41c5deb4c82e47988c449a57e9bc2c7adc6538b-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/00b13750209caac0363a046a541ceef270770c5e-768x768.jpg",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/44ff7565703d148d6d34f83ca7c2833d31019402-800x800.jpg",
   "model": "Predator/League-FT-(FG/MG)-Beckham",
-  "name": null,
+  "name": "adidas Real Madrid 26/27 Authentic Home Shirt",
   "price": {
     "currency": "€",
     "current": 69.99,
-    "discount_percent": 36.37,
+    "discount_percent": 36,
     "member_price": 0,
     "original": 110
   },
@@ -212,12 +208,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/44ff7565703d148d6d34f83ca7c2833d31019402-800x800.jpg",
   "traction": "FG/MG",
   "url_slug": "adidas-predator-league-ft-fg-mg-beckham-pink",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-14T09:18:20.825Z",
+    "lastUpdated": "2026-07-14T09:22:32.174Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
