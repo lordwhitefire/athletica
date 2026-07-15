@@ -1,10 +1,10 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
-  "category": "Boots",
+  "category": "National Team Jersey ",
   "color": "White and Light Green",
   "color_variants": [
     {
@@ -45,34 +45,30 @@
     }
   ],
   "description": {
-    "collection": "Radiant Blaze Pack",
-    "intro": "The adidas Predator League MG offer multisurface adaptability with precision control features, ideal for players who demand accuracy and stability across dry natural grass and modern artificial turf.",
-    "key_benefits": [
-      "Multisurface traction: MG sole optimized for dry natural grass and latest-generation artificial turf.",
-      "Enhanced precision: StrikeZone textured upper improves ball contact, shots, and directional control.",
-      "Comfortable fit: Flexible synthetic upper with lace closure for secure, balanced performance.",
-      "Inspired by pros: Designed with influence from elite midfielders like Jude Bellingham and Pedri."
-    ],
-    "subtitle": "Football boots adidas MG for natural or artificial grass - white and light green",
-    "tagline": "Control and versatility on mixed surfaces",
+    "collection": "ENGLAND STORE",
+    "intro": "The Nike England 2026 home shirt represents the unity and diversity of the country with a sleek and modern design. Inspired by the spirit of the Three Lions, it combines tradition and contemporary style to stand out on and off the pitch.",
+    "key_benefits": [],
+    "subtitle": "England 2026 Home Nike Shirt - White",
+    "tagline": "The Nike England 2026",
     "technical_details": {
-      "adjustment": "Lace-up",
-      "range": "Mid-range / League level",
-      "sole_type": "MG (Multi-Ground)",
-      "upper_material": "Flexible synthetic"
+      "adjustment": "Nike Dri-FIT: Manages moisture to provide coolness and comfort.",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "JI1140",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/02593e335a5ab179d8070cf76744fe4033ceccdb-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/56943e41593604f2340cf4f228ba0c0b878b5842-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/06ff055333491831510468ae731bffd2f33d57d6-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2224f57e6ec6a28e25a5a512e6e09fd85c33fd34-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/311acb21d7f22f158dec5d3b414732f344ec6116-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/962cdd883a232d41000d1de6d328504b251582b7-768x768.jpg",
-  "model": "Predator/League-MG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ec37d3633cc25285febe44f57f59b4ffd39e3619-800x800.jpg",
+  "model": "Jerseys/England Home Jersey/",
+  "name": "Nike England 26 Dri-Fit Stadium Jersey",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 56.99,
     "discount_percent": 40,
     "member_price": 93.99,
@@ -164,12 +160,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "MG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ec37d3633cc25285febe44f57f59b4ffd39e3619-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-league-mg-white-light-green",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-15T19:58:55.593Z",
+    "lastUpdated": "2026-07-15T20:02:01.775Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
