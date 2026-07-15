@@ -4,38 +4,35 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "Silver",
+  "category": "Jerseys",
+  "color": "Blue and Black ",
   "color_variants": [],
   "description": {
-    "collection": "Vivid Horizon Pack 2024",
-    "intro": "The adidas Predator League LL FG feature a laceless design with Hybridfeel technology for enhanced ball grip and control, ideal for players focused on powerful, accurate shots.",
-    "key_benefits": [
-      "Superior ball contact: Hybridfeel with 3D texture and Strikescale fins for improved grip and shooting precision.",
-      "Stable support: ControlPlate 2.0 outsole provides firmness in the plant foot during strikes and multidirectional traction.",
-      "Comfortable fit: Soft synthetic leather combined with breathable mesh upper (50% recycled materials).",
-      "Laceless convenience: Sock-like entry with no laces for a clean, distraction-free strike zone."
-    ],
-    "subtitle": "Laceless football boots adidas FG for firm ground or latest-generation artificial turf - silver",
-    "tagline": "Precision shooting without laces",
+    "collection": "INTER MILAN STORE ",
+    "intro": "Stand behind the reigning Serie A champions as they set their sights on European glory in the Nike Inter Milan 26/27 Dri-FIT Stadium Home Shirt in Lyon Blue/Black/University Gold, a comfortable home jersey that embodies Nerazzurri pride.\r\n\r\nBased on the kits worn by Lautaro Martinez, Nicolo Barella, Marcus Thuram, Hakan Calhanoglu, Pio Esposito and the rest of a star-studded squad at the pinnacle of club football, the 2026/27 home shirt shows your support for Il Biscione as they fight to win another Scudetto and aim for a fourth UEFA Champions League title. Those iconic black and blue stripes combine with a timeless polo collar to create a heritage look that evokes the kits of the 90s and 00s, while subtle zig-zag detailing adds a modern touch, and the legendary Inter crest emblazoned across the heart displays your passion for the world to see.\r\n\r\nThe ultra-lightweight, flexible construction provides full freedom of movement, so you can sprint across the turf, slide into tackles and leap into aerial challenges without restriction. Breathable, sweat-wicking Dri-FIT performance fabric promotes airflow, absorbs moisture and dries quickly to keep you cool, dry and comfortable as you push past your limits, whether you're straining to hit a new personal best in the gym, honing your technique in training, fighting to win every duel on the pitch or wildly celebrating a crucial goal in the stands of the San Siro.",
+    "key_benefits": [],
+    "subtitle": "Inter Milan 2026-2027 Nike Home Shirt - Blue, Black",
+    "tagline": "Feel the Nerazzurri passion",
     "technical_details": {
-      "adjustment": "Laceless / collar entry",
-      "range": "League / mid-range",
-      "sole_type": "FG (firm ground)",
-      "upper_material": "Soft synthetic leather and breathable mesh (50% recycled)"
+      "adjustment": "Nike Dri-FIT: Manages moisture to provide coolness and comfort.",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "IF6331",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/08ea3ab7c785191b6fefb3c2e9706cc8830cee20-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/4d7fad42db998ab17c684c7f97f93639e2ba3d4a-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/a8091845ed757c0a1f2624eda6fd8aaa86810c9d-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/873eb251245055d23b2ea5f849e86a4c4ba573e8-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/91623985ddd37796408d4536f7159ecb1ece7f33-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2fef2b38d0f243263e08280b00724558a60243d9-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ca06b8a30ca1df81f3f2e927b53e71e0357c1c3c-768x768.jpg",
-  "model": "Predator/League-LL-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/35ff2d423a117bfcea816df07700a2ce520865bf-800x800.jpg",
+  "model": "Je/",
+  "name": "Nike Inter Milan 26/27 Dri-FIT Stadium Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 48.99,
     "discount_percent": 51,
     "member_price": 0,
@@ -127,12 +124,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/35ff2d423a117bfcea816df07700a2ce520865bf-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-league-ll-fg-silver",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-15T08:02:52.108Z",
+    "lastUpdated": "2026-07-15T08:07:44.293Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
