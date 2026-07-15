@@ -4,8 +4,8 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "Blue",
+  "category": "Jersey ",
+  "color": "White and Black",
   "color_variants": [
     {
       "_key": "cv-white-and-green",
@@ -99,34 +99,31 @@
     }
   ],
   "description": {
-    "collection": "Advancement Pack",
-    "intro": "The adidas Predator League LL FG are laceless boots designed for sharpshooters, featuring a Hybridfeel upper with 3D texture and Strikescale elements for enhanced grip and shooting accuracy on firm ground.",
-    "key_benefits": [
-      "Laceless construction with ankle support for secure, distraction-free fit",
-      "Hybridfeel upper with all-over 3D texture and grippy Strikescale fins for improved ball control and shooting precision",
-      "Controlplate 2.0 firm ground outsole for stability, reactivity, and optimized traction on natural and firm artificial surfaces",
-      "Made with breathable materials including recycled content for comfort"
-    ],
-    "subtitle": "Lace-less football boots with ankle support adidas FG for natural or latest-generation artificial grass - blue",
-    "tagline": "Precision shooting and control for decisive moments",
+    "collection": "JUVENTUS STORE ",
+    "intro": "Stand with La Vecchia Signora as they set their sights on a return to the top of Serie A in the adidas Juventus 26/27 Authentic Home Shirt in White/Black, a high-performance home jersey dripping with Piedmontese pride.\r\n\r\nWorn by Kenan Yildiz, Jonathan David, Khephren Thuram, Lloyd Kelly, Bremer and the rest of the first-team squad at the pinnacle of the club game, the 2026/27 home shirt shows your undying support for the Bianconeri as they compete for a record-extending 37th Serie A title and aim for European glory. Returning to tradition, the classic black and white stripes are elevated with elegant gold detailing and a classy fold-over polo collar to create a tasteful, minimalist look befitting the most successful side in Italy, and the legendary Juve crest emblazoned over your heart displays your club pride for the world to see.\r\n\r\nNew Climacool+ technology utilises 3D body mapping and strategically placed ventilation to promote airflow and offer superb breathability that keeps you cool no matter how hard you push on the pitch, and mechanical stretch fabric delivers full freedom of movement for unrestricted performance. Moisture-wicking properties draw sweat away from the skin to ensure that you stay dry and comfortable while you compete in elite competitive matches, hone your body and skills in intense training sessions, and push the team on to greatness from the Juventus Stadium stands.\r\n\r\nMade from 100% recycled polyester, this shirt is perfect for the environmentally conscious Juve fan looking to make a difference.",
+    "key_benefits": [],
+    "subtitle": "Juventus 2026-2027 Home Kit by adidas - White, Black",
+    "tagline": "Juventus' tradition and performance",
     "technical_details": {
-      "adjustment": "Laceless with ankle collar/support",
-      "range": "League / mid-range",
+      "adjustment": "Climacool (keeps you dry)",
+      "range": "Game Jersey ",
       "sole_type": "FG (Firm Ground)",
-      "upper_material": "Hybridfeel (synthetic with 3D texture and Strikescale elements)"
+      "upper_material": "100% polyester"
     }
   },
-  "gender": "Men",
+  "gender": "Unisex",
   "id": "IF6333",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/7d2ba908995dbfd2a7100ed3c093f6eb2b6eeca7-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/11a7ee46bc72fabeb7c2a6e959394736e495fe34-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/1600d1ccc290ee4dd8c8a8cd3c722dd52197dc02-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8c9dca1ee2e88592dec26a7db27dc9bda02e1b1d-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ca291c8989e0be851277d5e3e22118f780c2184b-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fa8af7e82f5106a643c08665cf36c5a18e82a0c2-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/22f1fe0d0b1187294bb12b3035f8adfa2de4c853-768x768.jpg",
-  "model": "Predator/League-LL-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e7a3e4ea2325216b033b169e0a7b7a49f5be356d-800x800.jpg",
+  "model": "Jerseys/Juventus Home Jersey/",
+  "name": "adidas Juventus 26/27 Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 48.99,
     "discount_percent": 51,
     "member_price": 0,
@@ -254,12 +251,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e7a3e4ea2325216b033b169e0a7b7a49f5be356d-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-league-ll-fg-blue",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-15T08:26:37.182Z",
+    "lastUpdated": "2026-07-15T19:49:58.418Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
