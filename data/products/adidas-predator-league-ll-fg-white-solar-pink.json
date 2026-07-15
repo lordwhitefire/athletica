@@ -4,8 +4,8 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "White and Pink",
+  "category": "Jerseys",
+  "color": "Red",
   "color_variants": [
     {
       "_key": "cv-white-and-green",
@@ -51,34 +51,31 @@
     }
   ],
   "description": {
-    "collection": "Reemergence Pack 2024",
-    "intro": "The adidas Predator League LL FG deliver laceless convenience with ankle support (tobillera) and High Definition Texture for superior ball grip and control on firm ground surfaces.",
-    "key_benefits": [
-      "Laceless fit with integrated ankle support for secure lockdown and sock-like feel.",
-      "High Definition Texture upper improves ball contact, spin, and accuracy on shots/passes.",
-      "Breathable synthetic upper (50% recycled materials) for comfort and sustainability.",
-      "FG soleplate provides stability, reactivity, and easy rotation on natural and firm artificial grass."
-    ],
-    "subtitle": "Laceless football boots with ankle support adidas FG for firm natural or latest-generation artificial grass - white and pink",
-    "tagline": "Precision control, laceless comfort",
+    "collection": "ARSENAL STORE ",
+    "intro": "Stand behind the Gunners as they set their sights on football’s biggest honours in the adidas Arsenal 26/27 Authentic Home Shirt in Better Scarlet, a high-performance home jersey dripping with North London pride.\r\n\r\nWorn by Declan Rice, Gabriel, Jurrien Timber, Martin Zubimendi and the rest of the first-team squad at the pinnacle of the club game, the 2026/27 home shirt shows your undying support for the Gunners as they compete for Premier League and Champions League glory. Sticking to tradition, a classic Better Scarlet and white base creates that distinctly Arsenal look, while maroon contrast accents add a modern flourish and subtle lightning bolt motifs on the collar celebrate the past with a nod to the famed Royal Arsenal Gatehouse, where the club was founded back in 1886. A minimalist, monochrome Arsenal crest emblazoned over the heart displays your club pride for the world to see.\r\n\r\nNew Climacool+ technology utilises 3D body mapping and strategically placed ventilation to promote airflow and offer superb breathability that keeps you cool no matter how hard you push on the pitch, and mechanical stretch fabric delivers full freedom of movement for unrestricted performance. Moisture-wicking properties draw sweat away from the skin to ensure that you stay dry and comfortable while you compete in elite competitive matches, hone your body and skills in intense training sessions, and push the team on to greatness from the Emirates Stadium stands.\r\n\r\nMade from 100% recycled polyester.",
+    "key_benefits": [],
+    "subtitle": "Arsenal 2026-2027 adidas Home Player Version Shirt - Red",
+    "tagline": "The shirt worn by Arsenal players",
     "technical_details": {
-      "adjustment": "Laceless with ankle support",
-      "range": "Mid-range / League level",
-      "sole_type": "FG (Firm Ground)",
-      "upper_material": "Synthetic leather + breathable mesh (50% recycled)"
+      "adjustment": "",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "IF1465",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/3d754033f2a43c3d6a529230c094644b0dc68b0c-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/eeb1137960776ac859cf5b87dc88d800371d3487-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/3e67eb92343fac76ecd7af934e72ca062a2cebc9-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5a7fe1111c56fed548acb8fe3c62e7f0bc2925c6-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ac40b3fc507e3406d891ea7c4de9628c05e7f15c-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f19bc4d068a1b1fc6ac313748749b95226c3331b-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cf087b6a204c8a1dbaa24f86b09564ec7782b9c6-768x768.jpg",
-  "model": "Predator/League-LL-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0b1f64769831c33ac8843d3c55b88ac36852fc80-800x800.jpg",
+  "model": "Jerseys/Arsenal Home Jersey",
+  "name": "Adidas Arsenal 26/27 Authentic Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 49.99,
     "discount_percent": 50,
     "member_price": 0,
@@ -194,12 +191,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0b1f64769831c33ac8843d3c55b88ac36852fc80-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-league-ll-fg-white-solar-pink",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-15T07:41:30.924Z",
+    "lastUpdated": "2026-07-15T07:46:37.427Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
