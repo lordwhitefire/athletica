@@ -116,10 +116,10 @@
           "_key": "key-1782670679272-ybjo3d",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-gray-900",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/7203ab5a1aeefae046daf0060f02d93c9780d5af-1959x803.png",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/d09a79daa138be27c5b17d081447bad673ef8d4f-1962x801.png",
           "link": "/boots/adidas/predator",
-          "subtitle": "Predator FT ",
-          "title": "Jude Bellingham's Predator "
+          "subtitle": " Predator, F50, Copa ",
+          "title": "ROAD TO GLORY PACK"
         },
         {
           "_key": "key-1782670787772-q3ia8f",
@@ -165,6 +165,15 @@
           "link": "/",
           "subtitle": "",
           "title": "Kylian Mbappé Mercurial Superfly "
+        },
+        {
+          "_key": "card-1784232973896-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/7203ab5a1aeefae046daf0060f02d93c9780d5af-1959x803.png",
+          "link": "/",
+          "subtitle": "Predator FT",
+          "title": "Jude Bellingham's Predator "
         }
       ],
       "snapshot": {
@@ -537,7 +546,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-16T20:16:39.056Z",
+    "lastUpdated": "2026-07-16T20:20:24.341Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
