@@ -167,6 +167,13 @@
           "title": "Kylian Mbappé Mercurial Superfly "
         }
       ],
+      "snapshot": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-2f9a2a36c32c3940ffb3b4c3c28f186f56515b41-314x53-png",
+          "_type": "reference"
+        }
+      },
       "title": "Signature Boots ",
       "variant": "curated-cards"
     },
@@ -178,6 +185,13 @@
       "limit": 10,
       "link": "/boots/adidas",
       "link_label": "View all adidas",
+      "snapshot": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-94eaf0885cd7aba7073464c627de7d13c09d8ab2-308x300-png",
+          "_type": "reference"
+        }
+      },
       "sort": "newest",
       "subtitle": "Shop the full adidas range",
       "title": "Adidas Football Boots",
@@ -523,7 +537,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-15T20:12:44.408Z",
+    "lastUpdated": "2026-07-16T17:04:03.377Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
