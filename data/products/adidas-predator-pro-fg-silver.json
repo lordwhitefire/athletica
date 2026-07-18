@@ -4,8 +4,8 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "Silver",
+  "category": "Jerseys",
+  "color": "Red",
   "color_variants": [
     {
       "_key": "cv-white",
@@ -117,36 +117,32 @@
     }
   ],
   "description": {
-    "collection": "Vivid Horizon Pack",
-    "intro": "The adidas Predator Pro FG feature an advanced HybridTouch 2.0 upper for silky smooth ball control, exceptional fit, and reduced weight. Ideal for players who demand accuracy in shots, passes, and dribbling on natural firm grass.",
-    "key_benefits": [
-      "Superior control: Strikeskin rubber fins and textured zones for deadly finishing and spin.",
-      "Comfortable, lightweight fit: Flexible synthetic suede and foil upper with improved lockdown.",
-      "Firm ground traction: Optimized FG plate for stability and acceleration on natural grass.",
-      "Pro pedigree: Worn by stars like Jude Bellingham – celebrates 30 years of Predator legacy."
-    ],
-    "subtitle": "Football boots adidas FG for firm natural grass - silver",
-    "tagline": "Pro-level control and precision on firm ground",
+    "collection": "NATIONAL TEAM STORE ",
+    "intro": "Official Spain 2026 jersey, with breathable fabric and a comfortable fit. Wear your national pride to every corner of the world.",
+    "key_benefits": [],
+    "subtitle": "Spain national team adidas home shirt 2026 - red",
+    "tagline": "The classic, renewed for a new era",
     "technical_details": {
-      "adjustment": "Lace-up",
-      "range": "Pro / Advanced Range",
-      "sole_type": "FG (Firm Ground)",
-      "upper_material": "HybridTouch 2.0 synthetic suede with foil"
+      "adjustment": "",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "IF6327",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/7d4ca03873dde9b4b7c764c2e9d2f05307fd4963-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/13f7f4a55853ee1f3a1351c4bd9703f9f9cf04bf-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/7d87a690903de0d7f308e2f352dc1ae1c6ae7c81-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a7f47d20ce005041a63c1104898ec5d4f2e0929d-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/456fa9d0a1238d3b33bd5ec1a5adec78b3d8234e-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/75206f9b829dcf5cf08d603f708ad06926175ad8-768x768.jpg",
-  "model": "Predator/Pro-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/5a38bebd5316b0062fd48015012ce87d96d5eb30-800x800.jpg",
+  "model": "Spain National Team Jersey",
+  "name": "adidas Spain 2026 Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 72.99,
-    "discount_percent": 51.34,
+    "discount_percent": 20,
     "member_price": 145.99,
     "original": 150
   },
@@ -260,12 +256,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5a38bebd5316b0062fd48015012ce87d96d5eb30-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-predator-pro-fg-silver",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-18T21:33:09.339Z",
+    "lastUpdated": "2026-07-18T21:37:28.979Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
