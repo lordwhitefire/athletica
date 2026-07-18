@@ -50,7 +50,7 @@ export async function POST(request: Request) {
             .from("profiles")
             .select("role")
             .eq("id", data.user.id)
-            .single();
+            .maybeSingle();
 
         if (profile?.role !== "admin") {
             return NextResponse.json(

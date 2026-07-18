@@ -33,8 +33,8 @@ export async function proxy(request: NextRequest) {
     const { data: { user } } = await supabase.auth.getUser();
 
     // ── Admin auth ──────────────────────────────────────────
-    if (pathname.startsWith("/admin")) {
-        if (pathname === "/admin/login") {
+    if (pathname.startsWith("/admin") || pathname.startsWith("/api/admin")) {
+        if (pathname === "/admin/login" || pathname === "/api/admin/login") {
             return NextResponse.next();
         }
 
@@ -46,7 +46,7 @@ export async function proxy(request: NextRequest) {
             .from("profiles")
             .select("role")
             .eq("id", user.id)
-            .single();
+            .maybeSingle();
 
         if (profile?.role !== "admin") {
             return NextResponse.redirect(new URL("/admin/login", request.url));
