@@ -4,40 +4,38 @@
     "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
     "name": "ADIDAS"
   },
-  "category": "Boots",
-  "color": "Light Blue Multicolor",
+  "category": "Jerseys",
+  "color": "White",
   "color_variants": [],
   "description": {
-    "collection": "Al Rihla Pack",
-    "intro": "The adidas X Speedportal.3 LL FG are laceless speed boots from the iconic Al Rihla collection (2022 FIFA World Cup Qatar), featuring a snug textile fit and optimized traction for explosive acceleration on firm ground.",
-    "key_benefits": [
-      "Laceless secure fit: elastic textile upper hugs the foot for a sock-like feel and clean striking area.",
-      "Superior traction: FG soleplate with carbon-fiber imitation and arrow-shaped studs for grip on natural and long-pile artificial grass.",
-      "Enhanced ball control: texturized finish on the upper improves grip and precision during fast play.",
-      "Lightweight speed design: built for wingers and forwards who prioritize acceleration and quick changes of direction."
-    ],
-    "subtitle": "Laceless football boots adidas FG for firm natural grass or latest-generation artificial turf - light blue multicolor",
-    "tagline": "Speed and clean striking surface in the Al Rihla World Cup pack",
+    "collection": "NATIONAL TEAM STORE ",
+    "intro": "The Germany 2026 home shirt embodies the history, style, and ambition of the Mannschaft in every stitch. Designed for true fans.",
+    "key_benefits": [],
+    "subtitle": "Germany national team adidas home shirt 2026 - white",
+    "tagline": "Germany's pride dresses in white",
     "technical_details": {
-      "adjustment": "Laceless",
-      "range": "Entry / League level (third tier in the X Speedportal line)",
-      "sole_type": "FG (Firm Ground)",
-      "upper_material": "Textile with elastic textile"
+      "adjustment": "Dri-FIT",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "GW8470",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/e9e4e1b846335acff11138aa0787baafe9b2a774-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/c64e7aee1d19beaf2c72604147c29eaa98f38308-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/03b2eb8c2ad86aa4441f52a9200377b04708a8be-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8375c55214933922decadc9cbd02ac4ff24ba6a8-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/acd917cc4e3b1a08e8dd9e695d701841d607af23-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9231b5c979f6d38f849cdaef6a187df0d5e32bef-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/659c4b0874ca8b5d34dbc3a12d79be7771442dd4-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6f5c49b4bdf97daf33aec8b9b522a4e6650cc698-768x768.jpg",
-  "model": "X/Speedportal.3-LL-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/994bf26cc76c4f2dcdf2e2fda1aaeebb4d64d12a-800x800.jpg",
+  "model": "Germany Jersey",
+  "name": "adidas Germany 2026 Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 39.99,
-    "discount_percent": 55.57,
+    "discount_percent": 5,
     "member_price": 0,
     "original": 90
   },
@@ -163,12 +161,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/994bf26cc76c4f2dcdf2e2fda1aaeebb4d64d12a-800x800.jpg",
   "traction": "FG",
   "url_slug": "adidas-x-speedportal-3-ll-fg-light-blue",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-19T06:04:15.941Z",
+    "lastUpdated": "2026-07-19T06:09:11.482Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
