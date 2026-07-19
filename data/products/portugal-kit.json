@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "_id": "brand-puma",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/f17fb2829c28c8233dff0d21bcc8f2d901cc0572-1080x1080.jpg",
+    "name": "PUMA"
+  },
+  "category": "Jerseys",
+  "color": "Red",
+  "color_variants": [],
+  "description": {
+    "collection": "NATIONAL TEAM STORE ",
+    "intro": "The Puma Portugal Authentic 26 jersey is designed for those who truly feel the colors. Its ultra-lightweight ULTRAWEAVE fabric and technical fit offer superior performance with every play.",
+    "key_benefits": [],
+    "subtitle": "Puma Portugal 2026 Home Jersey Player Version - Red",
+    "tagline": "Designed to perform like a profession",
+    "technical_details": {
+      "adjustment": "",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
+    }
+  },
+  "gender": "Unisex",
+  "id": "y1fs6q",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d3403acf9399d94de40560f82d27dd1768e4995b-800x800.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4ac7a8dd166227393e6329d2e2f904b2fd787d72-800x800.jpg",
+  "model": "Portugal Kit",
+  "name": "Puma Portugal 2026 Authentic Home Shirt",
+  "price": {
+    "currency": "USD",
+    "current": 250,
+    "discount_percent": 0,
+    "member_price": 250,
+    "original": 250
+  },
+  "sizes": [],
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4ac7a8dd166227393e6329d2e2f904b2fd787d72-800x800.jpg",
+  "traction": null,
+  "url_slug": "portugal-kit",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-19T10:09:12.337Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}
