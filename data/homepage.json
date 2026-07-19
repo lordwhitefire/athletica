@@ -285,6 +285,16 @@
           "link": "/",
           "textColor": "text-on-surface",
           "title": "F.C Barcelona 2027"
+        },
+        {
+          "_key": "item-1784487091467-0",
+          "accent": "",
+          "bg": "",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8627d45eb5d63a6d1dfa19e4966314f0fd0ce63e-3264x1332.jpg",
+          "label": "Aston Villa 2027 ",
+          "link": "/",
+          "textColor": "text-on-surface",
+          "title": "Aston Villa 2027 "
         }
       ],
       "title": "Club Kits",
@@ -293,7 +303,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-19T18:50:38.868Z",
+    "lastUpdated": "2026-07-19T18:53:22.835Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
