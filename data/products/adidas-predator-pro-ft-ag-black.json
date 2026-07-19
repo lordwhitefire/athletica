@@ -1,8 +1,8 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
   "category": "Boots",
   "color": "White",
@@ -267,7 +267,7 @@
   "url_slug": "adidas-predator-pro-ft-ag-black",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-19T05:52:30.616Z",
+    "lastUpdated": "2026-07-19T05:53:05.302Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
