@@ -1,43 +1,39 @@
 {
   "brand": {
-    "_id": "brand-adidas",
-    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
-    "name": "ADIDAS"
+    "_id": "brand-nike",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+    "name": "NIKE"
   },
   "category": "Boots",
-  "color": "White and Fluorescent Yellow",
+  "color": "Light Green",
   "color_variants": [],
   "description": {
-    "collection": "Crazyrush Pack 2023",
-    "intro": "The adidas X Crazyfast.1 FG are high-performance speed boots designed for explosive players, featuring a lightweight Primeknit upper for perfect fit and Aeroplate outsole for maximum reactivity on firm ground.",
-    "key_benefits": [
-      "Lightning speed: Aeroplate carbon fiber plate delivers explosive acceleration and dynamic movements.",
-      "Superior ball touch: Soft microfibre lining and textured upper for exceptional grip and control.",
-      "Perfect fit: Primeknit upper provides anatomical, breathable comfort with supportive Aerocage elements.",
-      "Optimized traction: Arrow-shaped FG studs excel on natural and firm artificial grass."
-    ],
-    "subtitle": "Football boots adidas FG for firm/natural grass - white and fluorescent yellow",
-    "tagline": "Engineered for crazy-fast speed and acceleration",
+    "collection": "NATIONAL TEAM STORE ",
+    "intro": "Stand with Les Bleus as they look to win a third FIFA World Cup with the Nike France 2026 Dri-FIT Stadium Away Shirt in Igloo/Monarch/Monarch, a comfortable change jersey packed with patriotism.\r\n\r\nBased on the kits worn by Kylian Mbappe, William Saliba, Ousmane Dembele, Michael Olise, Dayot Upamecano and the rest of a star-studded squad at the pinnacle of international football, the 2026 away shirt shows your support for France as they travel to North America, take on the likes of Senegal and Norway in Group I, and set their sights on the FIFA World Cup trophy. Designed in tribute to the historical connection between France and their American tournament hosts, the sleek Igloo base evokes the distinctive celadon patina of the Statue of Liberty – which France gifted to the USA in 1886 to commemorate 100 years since the American Declaration of Independence. The iconic Federation Francaise de Football (FFF) Gallic rooster crest takes pride of place over the heart to display your passion for all to see.",
+    "key_benefits": [],
+    "subtitle": "France 2026 Nike Away Jersey - Light Green",
+    "tagline": "Historical inspiration with a unique design",
     "technical_details": {
-      "adjustment": "Lace-up",
-      "range": "Elite / top tier",
-      "sole_type": "FG (Firm Ground)",
-      "upper_material": "Primeknit"
+      "adjustment": "Nike Dri-FIT (wicks away sweat and keeps skin dry)",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
-  "gender": "Men",
+  "gender": "Unisex",
   "id": "HQ4516",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/71d4610c1226357a2ed3ab43d403939efa2d7412-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/4e0752e6b14ddcd5fb1c30be2c6d009bac12a2d9-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/145b9ec5b1ea1d1a1e81c2ff1aaba2741b14c915-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c2e62769dc3f83fbdcd2743fd04f07f259bd948d-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/83769e226e11a47fc5bb661d5c43f579d9472a6d-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d315066456ffb362de06a4b48008eb38a2638fb1-768x768.jpg",
-  "model": "X/Crazyfast.1-FG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/29b5e56e424983e820b22a185649920239ed7fff-800x800.jpg",
+  "model": "France Kit",
+  "name": "Nike France 2026 Dri-FIT Stadium Away Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 121.99,
-    "discount_percent": 53,
+    "discount_percent": 10,
     "member_price": 0,
     "original": 260
   },
@@ -139,12 +135,12 @@
       "stock": 1
     }
   ],
-  "thumbnail": null,
-  "traction": "FG",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/29b5e56e424983e820b22a185649920239ed7fff-800x800.jpg",
+  "traction": null,
   "url_slug": "adidas-x-crazyfast-1-fg-white-fluorescent-yellow",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-19T05:49:39.836Z",
+    "lastUpdated": "2026-07-19T05:52:30.615Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
