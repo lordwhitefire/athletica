@@ -221,11 +221,102 @@
       "subtitle": "Mercurial, Phantom, Tiempo & more. Shop the latest drops",
       "title": "Nike Football Boots",
       "variant": "filtered-feed"
+    },
+    {
+      "_key": "section-1784488496389",
+      "_type": "category_carousel",
+      "autoSwitchMs": 4000,
+      "bg": "bg-surface",
+      "cards": [
+        {
+          "_key": "card-1784488496390-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8bca28c22763ef25c0f3727a21a4ab0307729c61-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "F.C Barcelona 2027"
+        },
+        {
+          "_key": "card-1784488496390-1",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/cb428627075c9502d3896e28c97c301f0177c20a-1280x522.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "PSG 2027"
+        },
+        {
+          "_key": "card-1784488496390-2",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8627d45eb5d63a6d1dfa19e4966314f0fd0ce63e-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Aston Villa 2027"
+        },
+        {
+          "_key": "card-1784488722010-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/9982787697ea220c341543c68e7d663084ab73ba-1966x800.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Bayern Munich 2027"
+        },
+        {
+          "_key": "card-1784488790887-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/8ad0aed90ac47346eeb263412e44f42af891f002-1738x905.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Chelsea F.C 2027"
+        },
+        {
+          "_key": "card-1784488791889-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/cc56656683f9ae3949a1c5dec62ba5e72d0c30d9-1962x802.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Manchester United 2027"
+        },
+        {
+          "_key": "card-1784489072411-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/443191435aba92edc987f83e2be92b8d6c982a68-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Greta salary Galatasaray S.K 2027"
+        },
+        {
+          "_key": "card-1784489096845-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/e951aaa165c796408f340130cb653888b38c6d49-1962x802.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Real Madrid 2027"
+        },
+        {
+          "_key": "card-1784489226517-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/a9e6091c19bfdf8b59a4960e963629c0cf663172-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Bayer Leverkusen 2027"
+        }
+      ],
+      "title": "Club Kit",
+      "variant": "curated-cards"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-19T19:22:22.975Z",
+    "lastUpdated": "2026-07-19T19:28:30.270Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
