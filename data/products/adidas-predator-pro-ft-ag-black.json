@@ -5,7 +5,7 @@
     "name": "ADIDAS"
   },
   "category": "Boots",
-  "color": "Black",
+  "color": "White",
   "color_variants": [
     {
       "_key": "cv-white",
@@ -141,35 +141,32 @@
     }
   ],
   "description": {
-    "collection": "IMMORTAL DNA BLACK PACK",
-    "intro": "The Predator Pro FT AG combine an optimized sole for AG with flexible materials that improve stability and response.",
-    "key_benefits": [
-      "Effortless control: reinforced zones for greater precision.",
-      "Natural fit: tongue that adapts pressure to the foot.",
-      "Stability on AG: sole designed for firmness without rigidity."
-    ],
-    "subtitle": "Football boots with tongue adidas AG for artificial grass - black",
-    "tagline": "Pro performance, absolute control",
+    "collection": "NATIONAL TEAM STORE ",
+    "intro": "The Nike USA 2026 jersey celebrates American soccer pride and identity with a design inspired by the colors of the flag. Its wavy red, white, and blue stripes evoke the movement of the flag in motion, representing the passion and unity of the team on and off the field.",
+    "key_benefits": [],
+    "subtitle": "2026 USA National Team Nike Home Jersey - White",
+    "tagline": "The United States Home Jersey ",
     "technical_details": {
-      "adjustment": "With tongue.",
-      "range": "Advanced Range - high quality with optimized technologies, great performance and better durability.",
-      "sole_type": "AG (artificial grass).",
-      "upper_material": "Adaptable synthetic."
+      "adjustment": "Nike Dri-FIT (wicks away sweat and keeps skin dry)",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
     }
   },
   "gender": "Unisex",
   "id": "KI6297",
   "image_gallery": [
-    "https://cdn.sanity.io/images/cuiis46d/production/b0b1035fd73bafddd308d348d1f892d3f215efc5-768x768.jpg",
-    "https://cdn.sanity.io/images/cuiis46d/production/6711565ba01b24a1b6eff3e29427ddf4ab70369f-768x768.jpg"
+    "https://cdn.sanity.io/images/cuiis46d/production/8fc8f14c3b7dd6cfcfb3c9f28cd92a9a485b04b9-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8a226fe4f0113cef8975715fa1635e19989f98d3-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/367e95bfe966be1f656e596b1360b980d5ed9a91-800x800.jpg"
   ],
-  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2a9b8aa7a358712b08b1f6092b27ddd05e8c4c1a-768x768.jpg",
-  "model": "Predator/Pro-FT-AG",
-  "name": null,
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/baad41c55975f76ed8e23b531ac4bbefe73da25d-800x800.jpg",
+  "model": "USA Jersey",
+  "name": "Nike USA 2026 Dri-FIT Stadium Home Shirt",
   "price": {
-    "currency": "€",
+    "currency": "USD",
     "current": 157.99,
-    "discount_percent": 1.25,
+    "discount_percent": 1,
     "member_price": 157.99,
     "original": 160
   },
@@ -265,12 +262,12 @@
       "stock": 0
     }
   ],
-  "thumbnail": null,
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/baad41c55975f76ed8e23b531ac4bbefe73da25d-800x800.jpg",
   "traction": "AG",
   "url_slug": "adidas-predator-pro-ft-ag-black",
   "_metadata": {
     "dataType": "product",
-    "lastUpdated": "2026-07-19T04:48:03.430Z",
+    "lastUpdated": "2026-07-19T04:51:59.459Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
