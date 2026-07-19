@@ -211,99 +211,21 @@
       "_type": "product_carousel",
       "bg": "bg-surface",
       "filter": {
-        "brand": "Nike "
+        "brand": "Nike ",
+        "category": "Boots"
       },
       "limit": 10,
-      "link": "/boots/adidas/predator",
+      "link": "/boots/Nike",
       "link_label": "View all Nike ",
       "sort": "newest",
       "subtitle": "Mercurial, Phantom, Tiempo & more. Shop the latest drops",
       "title": "Nike Football Boots",
       "variant": "filtered-feed"
-    },
-    {
-      "_key": "section-1784486436924",
-      "_type": "category_grid",
-      "bg": "bg-surface",
-      "items": [
-        {
-          "_key": "item-1784486436925-0",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/cb428627075c9502d3896e28c97c301f0177c20a-1280x522.png",
-          "label": "PSG 2027 ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "PSG 2027 "
-        },
-        {
-          "_key": "item-1784486436925-1",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/e951aaa165c796408f340130cb653888b38c6d49-1962x802.png",
-          "label": "Real Madrid 2027 ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Real Madrid 2027 "
-        },
-        {
-          "_key": "item-1784486436925-2",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/9982787697ea220c341543c68e7d663084ab73ba-1966x800.png",
-          "label": "Bayern Munich 2027 ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Bayern Munich 2027 "
-        },
-        {
-          "_key": "item-1784486692112-0",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/cc56656683f9ae3949a1c5dec62ba5e72d0c30d9-1962x802.png",
-          "label": "Manchester United 2027 ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Manchester United 2027 "
-        },
-        {
-          "_key": "item-1784486808500-0",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/bd08122cf44b90e7497f0d63397ef7e2e29b9cbe-1959x803.jpg",
-          "label": "Borussia Dortmund 2027",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Borussia Dortmund 2027"
-        },
-        {
-          "_key": "item-1784486819786-0",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/8bca28c22763ef25c0f3727a21a4ab0307729c61-3264x1332.jpg",
-          "label": "F.C Barcelona 2027",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "F.C Barcelona 2027"
-        },
-        {
-          "_key": "item-1784487091467-0",
-          "accent": "",
-          "bg": "",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/8627d45eb5d63a6d1dfa19e4966314f0fd0ce63e-3264x1332.jpg",
-          "label": "Aston Villa 2027 ",
-          "link": "/",
-          "textColor": "text-on-surface",
-          "title": "Aston Villa 2027 "
-        }
-      ],
-      "title": "Club Kits",
-      "variant": "scroll-brands"
     }
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-19T18:53:22.835Z",
+    "lastUpdated": "2026-07-19T19:15:14.152Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
