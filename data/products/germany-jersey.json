@@ -1,0 +1,50 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "ADIDAS"
+  },
+  "category": "Jerseys",
+  "color": "Navy Blue ",
+  "color_variants": [],
+  "description": {
+    "collection": "NATIONAL TEAM STORE ",
+    "intro": "The adidas Germany 2026 away shirt combines tradition and innovation in a design meant to represent the history and future of one of the most iconic national teams in world football. Inspired by legendary moments in German football, this kit blends classic elements with a modern style ready for the challenges of today's game.",
+    "key_benefits": [],
+    "subtitle": "Germany 2026 adidas away kit shirt - navy blue",
+    "tagline": "The new generation of the Mannschaft",
+    "technical_details": {
+      "adjustment": "Climacool (keeps you dry)",
+      "range": "Game Jersey ",
+      "sole_type": "",
+      "upper_material": "100% polyester"
+    }
+  },
+  "gender": "Unisex",
+  "id": "dYkYha",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9fd3341cb5a3e721c104710ca65cd3c20aa6f0f3-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/918b5cd09c465a3943328e5516f129b6d743c22e-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5a67317220440bd398d11efa6de02e4dd50575ee-800x800.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8e474cbce8c18e35c5150bb049e14bd805f2a9ed-800x800.jpg",
+  "model": "Germany Jersey",
+  "name": "adidas Originals Germany 2026 Away Shirt",
+  "price": {
+    "currency": "USD",
+    "current": 300,
+    "discount_percent": 0,
+    "member_price": 300,
+    "original": 300
+  },
+  "sizes": [],
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8e474cbce8c18e35c5150bb049e14bd805f2a9ed-800x800.jpg",
+  "traction": null,
+  "url_slug": "germany-jersey",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-19T08:15:22.850Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}
