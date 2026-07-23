@@ -299,6 +299,15 @@
           "link": "/",
           "subtitle": "",
           "title": "Bayer Leverkusen 2027"
+        },
+        {
+          "_key": "card-1784757764653-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/18011951c03b15ed3f0b3cf474b4b05411a8dbac-3264x1332.jpg",
+          "link": "/",
+          "subtitle": "",
+          "title": "Juventus 2027"
         }
       ],
       "title": "Club Kit",
@@ -307,7 +316,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-22T22:03:59.371Z",
+    "lastUpdated": "2026-07-23T04:08:14.567Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
