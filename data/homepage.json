@@ -190,7 +190,9 @@
       "_key": "k-18",
       "_type": "product_carousel",
       "bg": "bg-surface",
-      "filter": {},
+      "filter": {
+        "category": "Jerseys"
+      },
       "limit": 10,
       "link": "/boots/adidas",
       "link_label": "View all adidas",
@@ -325,7 +327,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-28T21:58:09.050Z",
+    "lastUpdated": "2026-07-28T21:59:44.674Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
