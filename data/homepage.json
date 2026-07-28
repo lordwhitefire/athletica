@@ -38,7 +38,7 @@
         "accent_color": "#d1fd40",
         "button_text": "BUY",
         "gradient": "from-green-950 via-gr",
-        "image": "https://cdn.sanity.io/images/cuiis46d/production/26fe1a0dcae6916e3d7d803a63880637b939d134-3264x1332.jpg",
+        "image": "https://cdn.sanity.io/images/cuiis46d/production/e7bca620be00128facbc10ea12859fda7038b060-1960x802.png",
         "link": "/boots",
         "subtitle": "New Mercurial Superfly, Vapour, Phantom and Tiempo Maestro ",
         "title": "BREAK ÈM PACK"
@@ -250,10 +250,10 @@
           "_key": "card-1784488496390-2",
           "emoji": "⚡",
           "gradient": "from-gray-900 via-gray-800 to-red-900",
-          "image": "https://cdn.sanity.io/images/cuiis46d/production/14f85b51f0ad1dc50e7483e113b9803a679934cf-1962x802.png",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/47dea1f07eb37049a15513509d9578085680f94d-1962x801.png",
           "link": "/",
           "subtitle": "",
-          "title": "Chelsea F.C 2027"
+          "title": "F.C Barcelona 2027"
         },
         {
           "_key": "card-1784488722010-0",
@@ -308,6 +308,15 @@
           "link": "/",
           "subtitle": "",
           "title": "Juventus 2027"
+        },
+        {
+          "_key": "card-1785110046241-0",
+          "emoji": "⚡",
+          "gradient": "from-gray-900 via-gray-800 to-red-900",
+          "image": "https://cdn.sanity.io/images/cuiis46d/production/14f85b51f0ad1dc50e7483e113b9803a679934cf-1962x802.png",
+          "link": "/",
+          "subtitle": "",
+          "title": "Chelsea 2027"
         }
       ],
       "title": "Club Kit",
@@ -316,7 +325,7 @@
   ],
   "_metadata": {
     "dataType": "homepage",
-    "lastUpdated": "2026-07-26T23:56:37.183Z",
+    "lastUpdated": "2026-07-28T21:57:32.683Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }
