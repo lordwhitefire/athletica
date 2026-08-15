@@ -36,10 +36,6 @@ A full-featured e-commerce platform for football gear (boots, kits, jerseys, bal
 ## Screenshots
 
 ![Homepage](public/screenshots/homepage.png)
-![Category](public/screenshots/category.png)
-![Product](public/screenshots/product.png)
-![Cart](public/screenshots/cart.png)
-![Account](public/screenshots/account.png)
 
 ## Getting Started
 
