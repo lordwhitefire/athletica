@@ -48,3 +48,16 @@ next-env.d.ts
 
 # WebForge (project memory)
 .webforge/
+
+# agent/planning leftovers
+/INVENTORY.md
+/NAVIGATION_TREE.txt
+/navigation-tree.txt
+/athletica-audit.md
+/athletica-patches/
+/plan/
+/prompts/
+/issues/
+/memory/
+/docs/
+/extract_nav.py

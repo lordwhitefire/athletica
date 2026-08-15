@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Athletica — Football Store
+
+A full-featured e-commerce platform for football gear (boots, kits, jerseys, balls, accessories). Live at **[athletica-blond.vercel.app](https://athletica-blond.vercel.app/)**.
+
+## Features
+
+- **Shop** — browsable catalog with categories (Boots, Kits, Jerseys, Balls, Accessories), search, filters, and product pages
+- **Cart & Checkout** — add-to-cart, quantity management, and a full checkout flow
+- **Accounts** — register, login, password reset, and a profile page
+- **Admin panel** — manage products and site content
+- **Order tracking** — view order status and history
+- **SEO-ready** — metadata, OG/Twitter tags, sitemap-friendly routes
+- **Rate-limited APIs** — Upstash rate limiting protects server routes
+- **Responsive** — layouts and tested breakpoints from mobile (375px) to desktop (1536px)
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Framework | Next.js 16 (App Router), React 19 |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4, Framer Motion |
+| Database & Auth | Supabase |
+| CMS | Sanity (content stored via Sanity and synced to JSON) |
+| Edge/monitoring | Upstash Redis + Rate Limit, Sentry |
+| Forms/validation | React Hook Form, Zod |
+| State | Zustand |
+| Extras | dnd-kit (sortable), papaparse (CSV), html-to-image |
+
+## Testing
+
+- **Unit/component tests** — Vitest + React Testing Library + MSW (mock API handlers), with `jest-axe` accessibility checks on components
+- **E2E tests** — Playwright
+- CI script: `npm run ci` runs unit tests then e2e tests
+
+## Screenshots
+
+![Homepage](public/screenshots/homepage.png)
+![Category](public/screenshots/category.png)
+![Product](public/screenshots/product.png)
+![Cart](public/screenshots/cart.png)
+![Account](public/screenshots/account.png)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Environment variables (see `.env.example`):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
-## Learn More
+# Sanity
+NEXT_PUBLIC_SANITY_PROJECT_ID=
+NEXT_PUBLIC_SANITY_DATASET=
+...
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Script | Purpose |
+|---|---|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint |
+| `npm test` | Run unit tests |
+| `npm run e2e` | Run Playwright e2e tests |
+| `npm run ci` | Unit + e2e tests in sequence |
