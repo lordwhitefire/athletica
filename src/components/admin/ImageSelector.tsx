@@ -37,14 +37,16 @@ export default function ImageSelector({ name, label, value, onChange }: Props) {
     }, [showPicker, assets.length]);
 
     useEffect(() => {
-        if (value && value.startsWith("image-")) {
+        if (value && value.startsWith("http")) {
+            setPreview(value);
+        } else if (value && value.startsWith("image-")) {
             try {
                 const url = urlFor({ _ref: value } as SanityImageSource).width(200).url();
                 setPreview(url);
             } catch {
                 setPreview(null);
             }
-        } else if (!value) {
+        } else {
             setPreview(null);
         }
     }, [value]);

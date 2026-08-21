@@ -17,8 +17,8 @@ test.describe("Next.js API routes", () => {
         test("should return 200 with valid credentials", async ({ request }) => {
             const response = await request.post("/api/admin/login", {
                 data: {
-                    email: process.env.ADMIN_TEST_EMAIL ?? "admin@atletica.com",
-                    password: process.env.ADMIN_TEST_PASSWORD ?? "4603bb34-13ce55de",
+                    email: process.env.ADMIN_TEST_EMAIL ?? "admin@athletica.com",
+                    password: process.env.ADMIN_TEST_PASSWORD ?? "",
                 },
             });
             test.skip(response.status() === 404, "Route /api/admin/login does not exist");

@@ -1,0 +1,469 @@
+/* =========================================================
+   ATHLETICA ADMIN — AFFILIATE SETTINGS INTERACTION / STATE LAYER
+   Port of athletica_affiliate_settings_interaction_patch.md,
+   scoped under .affiliate-interaction-layer
+   ========================================================= */
+
+.affiliate-interaction-layer {
+    --interaction-lime: #c8ff00;
+    --interaction-bg: #090909;
+    --interaction-panel: #101010;
+    --interaction-border: #343434;
+    --interaction-text: #f3f3f3;
+    --interaction-muted: #999;
+    --interaction-danger: #ff5c5c;
+    --interaction-success: #91e62d;
+    --interaction-z-dropdown: 1000;
+    --interaction-z-modal: 1200;
+    --interaction-z-toast: 1300;
+}
+
+/* ---------- shared state ---------- */
+
+.affiliate-interaction-layer .is-hidden {
+    display: none !important;
+}
+
+.affiliate-interaction-layer .is-busy {
+    pointer-events: none;
+    cursor: wait !important;
+}
+
+/* ---------- keyboard focus ---------- */
+
+.affiliate-interaction-layer button:focus-visible,
+.affiliate-interaction-layer input:focus-visible,
+.affiliate-interaction-layer select:focus-visible {
+    outline: 2px solid var(--interaction-lime);
+    outline-offset: 2px;
+}
+
+/* ---------- dropdown anchors ---------- */
+
+.affiliate-interaction-layer .aff-dropdown-anchor {
+    position: relative;
+}
+
+/* ---------- dropdown surfaces ---------- */
+
+.affiliate-interaction-layer .interaction-dropdown {
+    position: absolute;
+    top: calc(100% + 7px);
+    right: 0;
+    min-width: 238px;
+    max-height: min(360px, calc(100vh - 100px));
+    overflow: auto;
+    padding: 5px;
+    border: 1px solid var(--interaction-border);
+    border-radius: 7px;
+    background: #0c0c0c;
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.6);
+    z-index: var(--interaction-z-dropdown);
+    transform-origin: top right;
+    animation: interaction-dropdown-in 0.13s ease-out;
+}
+
+.affiliate-interaction-layer .interaction-dropdown[data-placement="left"] {
+    right: auto;
+    left: 0;
+    transform-origin: top left;
+}
+
+.affiliate-interaction-layer .interaction-dropdown-item {
+    width: 100%;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: #ddd;
+    text-align: left;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.affiliate-interaction-layer .interaction-dropdown-item:hover,
+.affiliate-interaction-layer .interaction-dropdown-item[data-active="true"] {
+    background: #191919;
+    color: #fff;
+}
+
+.affiliate-interaction-layer .interaction-dropdown-item[data-danger="true"] {
+    color: var(--interaction-danger);
+}
+
+.affiliate-interaction-layer .interaction-dropdown-divider {
+    height: 1px;
+    margin: 5px 2px;
+    background: #262626;
+}
+
+.affiliate-interaction-layer .interaction-check {
+    margin-left: auto;
+    color: var(--interaction-lime);
+    opacity: 0;
+    flex: 0 0 auto;
+}
+
+.affiliate-interaction-layer .interaction-dropdown-item[data-selected="true"] .interaction-check {
+    opacity: 1;
+}
+
+@keyframes interaction-dropdown-in {
+    from {
+        opacity: 0;
+        transform: translateY(-4px) scale(0.985);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ---------- product search surface ---------- */
+
+.affiliate-interaction-layer .interaction-product-dropdown {
+    left: 0;
+    right: 0;
+    min-width: 0;
+    padding: 7px;
+}
+
+.affiliate-interaction-layer .interaction-product-search {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 6px;
+    padding: 0 10px;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    outline: 0;
+    background: #050505;
+    color: #eee;
+    font: inherit;
+    font-size: 12px;
+}
+
+.affiliate-interaction-layer .interaction-product-search:focus {
+    border-color: #7d9d13;
+}
+
+.affiliate-interaction-layer .interaction-product-row {
+    width: 100%;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: #eee;
+    text-align: left;
+    cursor: pointer;
+}
+
+.affiliate-interaction-layer .interaction-product-row:hover {
+    background: #181818;
+}
+
+.affiliate-interaction-layer .interaction-product-row[data-selected="true"] {
+    background: #141b0b;
+}
+
+.affiliate-interaction-layer .interaction-product-thumb {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    flex: 0 0 auto;
+    border-radius: 4px;
+    background: #f2f2f2;
+}
+
+.affiliate-interaction-layer .interaction-product-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.affiliate-interaction-layer .interaction-product-meta {
+    min-width: 0;
+    flex: 1;
+}
+
+.affiliate-interaction-layer .interaction-product-title {
+    display: block;
+    overflow: hidden;
+    color: #eee;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.affiliate-interaction-layer .interaction-product-asin {
+    display: block;
+    margin-top: 3px;
+    color: #888;
+    font-size: 10px;
+}
+
+.affiliate-interaction-layer .interaction-empty {
+    padding: 17px 10px;
+    color: #888;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* ---------- unsaved state ---------- */
+
+.affiliate-interaction-layer .interaction-unsaved-dot {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin-left: 6px;
+    border-radius: 50%;
+    background: var(--interaction-lime);
+    box-shadow: 0 0 8px rgba(200, 255, 0, 0.35);
+    vertical-align: middle;
+}
+
+.affiliate-interaction-layer .interaction-save-button[data-dirty="true"] {
+    box-shadow: 0 0 0 1px rgba(200, 255, 0, 0.25), 0 0 18px rgba(200, 255, 0, 0.08);
+}
+
+/* ---------- validation ---------- */
+
+.affiliate-interaction-layer .interaction-field-error {
+    margin: 6px 0 0;
+    color: var(--interaction-danger);
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+.affiliate-interaction-layer .interaction-invalid {
+    border-color: #8d2929 !important;
+    box-shadow: 0 0 0 2px rgba(255, 70, 70, 0.06);
+}
+
+/* ---------- confirmation modal ---------- */
+
+.affiliate-interaction-layer .interaction-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: var(--interaction-z-modal);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.72);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.16s ease;
+    backdrop-filter: blur(3px);
+}
+
+.affiliate-interaction-layer .interaction-modal-backdrop[data-open="true"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.affiliate-interaction-layer .interaction-modal {
+    width: min(100%, 430px);
+    padding: 21px;
+    border: 1px solid #333;
+    border-radius: 9px;
+    background: #0d0d0d;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.7);
+    transform: translateY(8px) scale(0.985);
+    transition: transform 0.16s ease;
+}
+
+.affiliate-interaction-layer .interaction-modal-backdrop[data-open="true"] .interaction-modal {
+    transform: translateY(0) scale(1);
+}
+
+.affiliate-interaction-layer .interaction-modal-title {
+    margin: 0;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.affiliate-interaction-layer .interaction-modal-copy {
+    margin: 8px 0 0;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.affiliate-interaction-layer .interaction-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+    margin-top: 19px;
+}
+
+.affiliate-interaction-layer .interaction-modal-button {
+    min-height: 38px;
+    padding: 0 14px;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    background: #080808;
+    color: #eee;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.affiliate-interaction-layer .interaction-modal-button:hover {
+    background: #151515;
+}
+
+.affiliate-interaction-layer .interaction-modal-button.primary {
+    border-color: var(--interaction-lime);
+    background: var(--interaction-lime);
+    color: #070707;
+    font-weight: 700;
+}
+
+.affiliate-interaction-layer .interaction-modal-button.primary:hover {
+    background: #d6ff33;
+}
+
+/* ---------- toast ---------- */
+
+.affiliate-interaction-layer .interaction-toast-stack {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: var(--interaction-z-toast);
+    width: min(360px, calc(100vw - 28px));
+    display: grid;
+    gap: 8px;
+    pointer-events: none;
+}
+
+.affiliate-interaction-layer .interaction-toast {
+    min-height: 46px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 11px 12px;
+    border: 1px solid #343434;
+    border-radius: 6px;
+    background: #101010;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.48);
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.affiliate-interaction-layer .interaction-toast[data-visible="true"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.affiliate-interaction-layer .interaction-toast[data-type="success"] {
+    border-color: #405c1b;
+}
+
+.affiliate-interaction-layer .interaction-toast[data-type="error"] {
+    border-color: #652727;
+}
+
+.affiliate-interaction-layer .interaction-toast-icon {
+    color: var(--interaction-lime);
+    flex: 0 0 auto;
+}
+
+.affiliate-interaction-layer .interaction-toast[data-type="error"] .interaction-toast-icon {
+    color: var(--interaction-danger);
+}
+
+.affiliate-interaction-layer .interaction-toast-copy {
+    min-width: 0;
+}
+
+.affiliate-interaction-layer .interaction-toast-title {
+    margin: 0;
+    color: #eee;
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.affiliate-interaction-layer .interaction-toast-message {
+    margin: 3px 0 0;
+    color: #929292;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+/* ---------- responsive interaction surfaces ---------- */
+
+@media (max-width: 760px) {
+    .affiliate-interaction-layer .interaction-dropdown {
+        max-width: calc(100vw - 28px);
+    }
+
+    .affiliate-interaction-layer .interaction-modal-backdrop {
+        align-items: end;
+        padding: 10px;
+    }
+
+    .affiliate-interaction-layer .interaction-modal {
+        width: 100%;
+        border-radius: 9px;
+    }
+
+    .affiliate-interaction-layer .interaction-modal-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .affiliate-interaction-layer .interaction-modal-button {
+        width: 100%;
+    }
+
+    .affiliate-interaction-layer .interaction-toast-stack {
+        right: 14px;
+        bottom: 14px;
+        width: calc(100vw - 28px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .affiliate-interaction-layer .interaction-toast-stack {
+        right: 28px;
+        bottom: 28px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .affiliate-interaction-layer .interaction-dropdown {
+        min-width: 250px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .affiliate-interaction-layer .interaction-toast-stack {
+        right: 36px;
+        bottom: 36px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .affiliate-interaction-layer *,
+    .affiliate-interaction-layer *::before,
+    .affiliate-interaction-layer *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

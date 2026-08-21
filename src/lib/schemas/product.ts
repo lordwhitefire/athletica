@@ -31,6 +31,10 @@ export const productFormSchema = z.object({
     main_image_asset: z.string().default(""),
     thumbnail_asset: z.string().default(""),
     gallery_assets: z.string().default(""),
+    asin: z
+        .string()
+        .regex(/^$|^[A-Z0-9]{10}$/i, "ASIN must be 10 letters/digits.")
+        .default(""),
     id: z.string().optional(),
 });
 

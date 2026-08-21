@@ -73,7 +73,7 @@ export async function saveSiteSettings(formData: FormData): Promise<ApiResult<{ 
         ...patch,
       });
     }
-    revalidatePath("/admin/settings");
+    revalidatePath("/admin/site-settings");
     revalidatePath("/");
     return ok({ saved: true });
   } catch (err) {

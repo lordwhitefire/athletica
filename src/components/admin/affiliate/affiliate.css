@@ -1,0 +1,737 @@
+/* =========================================================
+   ATHLETICA ADMIN — AFFILIATE SETTINGS PAGE (scoped under .affiliate-page)
+   Port of athletica_affiliate_settings.md
+   ========================================================= */
+
+.affiliate-page {
+    --lime: #c8ff00;
+    --lime-2: #baf000;
+    --lime-dark: #8eb400;
+    --radius: 9px;
+    --content-max: 1800px;
+    color: #f5f5f5;
+    font-size: 13px;
+    min-width: 0;
+    padding: 29px 31px 36px;
+}
+
+.affiliate-inner {
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+}
+
+/* ---------- topbar ---------- */
+
+.affiliate-page .topbar {
+    min-height: 65px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 22px;
+    margin-bottom: 19px;
+}
+
+.affiliate-page .page-title {
+    margin: 0;
+    color: #f4f4f4;
+    font-size: 27px;
+    line-height: 1.1;
+    letter-spacing: -0.9px;
+    font-weight: 600;
+}
+
+.affiliate-page .page-description {
+    margin: 5px 0 0;
+    color: #a4a4a4;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.affiliate-page .top-actions {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    flex: 0 0 auto;
+}
+
+.affiliate-page .date-button,
+.affiliate-page .save-button {
+    height: 42px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.affiliate-page .date-button {
+    min-width: 240px;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0 14px;
+    border: 1px solid #303030;
+    background: #060606;
+    color: #f0f0f0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.affiliate-page .date-button .date-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.affiliate-page .date-button:hover {
+    border-color: #4a4a4a;
+}
+
+.affiliate-page .save-button {
+    min-width: 167px;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--lime);
+    background: var(--lime);
+    color: #050505;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.affiliate-page .save-button:hover:not(:disabled) {
+    background: #d6ff33;
+}
+
+.affiliate-page .save-button:disabled {
+    opacity: .6;
+    cursor: default;
+}
+
+/* ---------- settings grid / cards ---------- */
+
+.affiliate-page .settings-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
+    gap: 21px;
+    align-items: stretch;
+}
+
+.affiliate-page .card {
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+    background: radial-gradient(circle at 40% 0%, rgba(255, 255, 255, 0.012), transparent 35%),
+        linear-gradient(180deg, #0c0c0c 0%, #090909 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.01);
+}
+
+.affiliate-page .configuration-card {
+    min-height: 825px;
+    padding: 26px 25px 28px;
+}
+
+.affiliate-page .testing-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.affiliate-page .testing-card {
+    padding: 25px 24px 21px;
+}
+
+.affiliate-page .preview-card {
+    padding: 25px 24px 19px;
+}
+
+.affiliate-page .how-card {
+    padding: 25px 24px 24px;
+}
+
+.affiliate-page .card-heading {
+    margin: 0;
+    color: var(--lime);
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 650;
+    letter-spacing: -0.35px;
+}
+
+.affiliate-page .preview-card .card-heading,
+.affiliate-page .how-card .card-heading {
+    color: #f0f0f0;
+}
+
+.affiliate-page .card-description {
+    margin: 7px 0 0;
+    color: #b0b0b0;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+/* ---------- form ---------- */
+
+.affiliate-page .form-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 16px;
+    row-gap: 22px;
+    margin-top: 26px;
+}
+
+.affiliate-page .field.full {
+    grid-column: 1 / -1;
+}
+
+.affiliate-page .field-label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0 0 9px;
+    color: #ededed;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.affiliate-page .info-icon {
+    width: 14px;
+    height: 14px;
+    color: #a4a4a4;
+}
+
+.affiliate-page .control {
+    width: 100%;
+    height: 41px;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    outline: none;
+    background: #020202;
+    color: #eeeeee;
+    font-size: 14px;
+    font-weight: 450;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.affiliate-page input.control {
+    padding: 0 12px;
+}
+
+.affiliate-page .control:focus {
+    border-color: #8bad00;
+    box-shadow: 0 0 0 2px rgba(200, 255, 0, 0.08);
+}
+
+.affiliate-page .select-wrap {
+    position: relative;
+}
+
+.affiliate-page select.control {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0 38px 0 12px;
+    cursor: pointer;
+}
+
+.affiliate-page .select-wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid #cfcfcf;
+    border-bottom: 1.5px solid #cfcfcf;
+    transform: translateY(-65%) rotate(45deg);
+    pointer-events: none;
+}
+
+.affiliate-page .field-help {
+    margin: 7px 0 0;
+    color: #8c8c8c;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+/* ---------- other settings ---------- */
+
+.affiliate-page .other-settings {
+    margin-top: 29px;
+}
+
+.affiliate-page .checkbox-list {
+    margin-top: 18px;
+    display: grid;
+    gap: 13px;
+}
+
+.affiliate-page .checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 20px;
+    color: #dcdcdc;
+    font-size: 13px;
+    line-height: 1.3;
+    cursor: pointer;
+    user-select: none;
+}
+
+.affiliate-page .checkbox-row input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.affiliate-page .custom-checkbox {
+    width: 21px;
+    height: 21px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    border: 1px solid #4b4b4b;
+    border-radius: 3px;
+    background: #050505;
+}
+
+.affiliate-page .checkbox-row input:checked + .custom-checkbox {
+    border-color: var(--lime);
+    background: var(--lime);
+}
+
+.affiliate-page .checkbox-row input:checked + .custom-checkbox::after {
+    content: "";
+    width: 9px;
+    height: 5px;
+    margin-top: -2px;
+    border-left: 2px solid #101010;
+    border-bottom: 2px solid #101010;
+    transform: rotate(-45deg);
+}
+
+.affiliate-page .settings-note {
+    margin: 19px 0 0;
+    color: #8c8c8c;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* ---------- product selector ---------- */
+
+.affiliate-page .product-selector {
+    margin-top: 24px;
+    padding: 16px 20px 20px;
+    border: 1px solid #2c2c2c;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.008);
+}
+
+.affiliate-page .product-selector-label {
+    margin: 0 0 11px;
+    color: #eeeeee;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.affiliate-page .product-select {
+    position: relative;
+}
+
+.affiliate-page .product-select-button {
+    width: 100%;
+    min-height: 67px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 11px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #070707;
+    cursor: pointer;
+    text-align: left;
+}
+
+.affiliate-page .product-select-button:hover {
+    border-color: #484848;
+}
+
+.affiliate-page .product-image {
+    width: 45px;
+    height: 45px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f3f3f3;
+}
+
+.affiliate-page .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.affiliate-page .product-copy {
+    min-width: 0;
+    flex: 1;
+}
+
+.affiliate-page .product-name {
+    margin: 0;
+    color: #eeeeee;
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.affiliate-page .product-asin {
+    margin: 4px 0 0;
+    color: #8e8e8e;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.affiliate-page .product-select-chevron {
+    color: #d5d5d5;
+    margin-right: 2px;
+}
+
+.affiliate-page .product-help {
+    margin: 9px 0 0;
+    color: #9a9a9a;
+    font-size: 11px;
+}
+
+.affiliate-page .test-button {
+    width: 100%;
+    height: 41px;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--lime);
+    color: #090909;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.affiliate-page .test-button:hover:not(:disabled) {
+    background: #d6ff33;
+}
+
+.affiliate-page .test-button:disabled {
+    opacity: .7;
+    cursor: default;
+}
+
+/* ---------- generated link preview ---------- */
+
+.affiliate-page .preview-content {
+    margin-top: 23px;
+}
+
+.affiliate-page .generated-link {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border: 1px solid #5a760c;
+    border-radius: 5px;
+    background: #020202;
+    color: var(--lime);
+    font-size: 12px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.affiliate-page .generated-url {
+    min-width: 0;
+    flex: 1;
+}
+
+.affiliate-page .copy-button {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: #d5d5d5;
+    cursor: pointer;
+}
+
+.affiliate-page .copy-button:hover {
+    background: #151515;
+}
+
+.affiliate-page .open-link-button {
+    height: 40px;
+    margin-top: 13px;
+    padding: 0 17px;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #050505;
+    color: #f1f1f1;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.affiliate-page .open-link-button:hover {
+    background: #101010;
+    border-color: #4b4b4b;
+}
+
+.affiliate-page .success-message {
+    margin-top: 18px;
+    padding: 15px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #385719;
+    border-radius: 6px;
+    background: #101b0c;
+}
+
+.affiliate-page .success-icon {
+    color: #73d919;
+    margin-top: 1px;
+    flex: 0 0 auto;
+}
+
+.affiliate-page .success-title {
+    margin: 0;
+    color: #8ee22c;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.affiliate-page .success-copy {
+    margin: 5px 0 0;
+    color: #a4a4a4;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+/* ---------- how it works ---------- */
+
+.affiliate-page .how-list {
+    margin: 18px 0 0;
+    padding-left: 17px;
+    color: #c6c6c6;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.affiliate-page .how-list li {
+    padding-left: 2px;
+    margin: 4px 0;
+}
+
+/* ---------- responsive: large desktop ---------- */
+
+@media (min-width: 1440px) {
+    .affiliate-page {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .affiliate-page .configuration-card {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .affiliate-page {
+        padding: 31px 38px 42px;
+    }
+
+    .affiliate-page .page-title {
+        font-size: 28px;
+    }
+
+    .affiliate-page .settings-grid {
+        gap: 23px;
+    }
+
+    .affiliate-page .configuration-card {
+        min-height: 850px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .affiliate-page {
+        padding: 35px 45px 50px;
+    }
+
+    .affiliate-inner {
+        max-width: 1860px;
+    }
+
+    .affiliate-page .page-title {
+        font-size: 29px;
+    }
+
+    .affiliate-page .configuration-card {
+        min-height: 880px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .affiliate-inner {
+        max-width: 1980px;
+    }
+}
+
+/* ---------- responsive: tablet / phone ---------- */
+
+@media (max-width: 1100px) {
+    .affiliate-page {
+        padding: 20px 22px 32px;
+    }
+
+    .affiliate-page .settings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .affiliate-page .configuration-card {
+        min-height: auto;
+    }
+
+    .affiliate-page .testing-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .affiliate-page .how-card {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 760px) {
+    .affiliate-page {
+        padding: 16px 14px 25px;
+    }
+
+    .affiliate-page .topbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .affiliate-page .top-actions {
+        width: 100%;
+    }
+
+    .affiliate-page .date-button,
+    .affiliate-page .save-button {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .affiliate-page .page-title {
+        font-size: 24px;
+    }
+
+    .affiliate-page .page-description {
+        font-size: 13px;
+    }
+
+    .affiliate-page .form-grid {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .affiliate-page .field.full {
+        grid-column: auto;
+    }
+
+    .affiliate-page .configuration-card,
+    .affiliate-page .testing-card,
+    .affiliate-page .preview-card,
+    .affiliate-page .how-card {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .affiliate-page .testing-column {
+        grid-template-columns: 1fr;
+    }
+
+    .affiliate-page .how-card {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .affiliate-page .top-actions {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .affiliate-page .date-button,
+    .affiliate-page .save-button {
+        width: 100%;
+        flex: none;
+    }
+
+    .affiliate-page .configuration-card {
+        padding-top: 20px;
+    }
+
+    .affiliate-page .card-heading {
+        font-size: 17px;
+    }
+
+    .affiliate-page .card-description {
+        font-size: 12px;
+    }
+
+    .affiliate-page .product-selector {
+        padding: 14px;
+    }
+
+    .affiliate-page .product-name {
+        font-size: 12px;
+    }
+
+    .affiliate-page .generated-link {
+        font-size: 11px;
+    }
+
+    .affiliate-page .success-message {
+        padding: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .affiliate-page {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .affiliate-page .configuration-card,
+    .affiliate-page .testing-card,
+    .affiliate-page .preview-card,
+    .affiliate-page .how-card {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}

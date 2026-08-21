@@ -1,6 +1,5 @@
 "use client";
 
-import { splitModel } from "@/lib/model";
 import { Product } from "@/types/product";
 import ImageGallery from "@/components/product/ImageGallery";
 import ProductInfo from "@/components/product/ProductInfo";
@@ -19,6 +18,7 @@ interface ProductPageProps {
     tractionCategoryHref: string | null;
     productCategoryHref: string | null;
     mainCategoryHref: string;
+    modelLineName: string;
 }
 
 export default function ProductPage({
@@ -31,9 +31,8 @@ export default function ProductPage({
     brandCategoryHref,
     tractionCategoryHref,
     productCategoryHref,
+    modelLineName,
 }: ProductPageProps) {
-    const segments = splitModel(product.model);
-    const levelName = segments.slice(-2, -1)[0] || product.brand;
     return (
         <main className="max-w-[1400px] overflow-x-hidden mx-auto px-6 py-8">
 
@@ -71,11 +70,11 @@ export default function ProductPage({
             <section className="space-y-0">
                 {relatedByModelLevel.length > 0 && (
                     <ProductCarousel
-                        title={`More ${levelName} Boots`}
+                        title={`More ${modelLineName} Boots`}
                         subtitle="Same model line, different options"
                         products={relatedByModelLevel}
                         link={productCategoryHref ?? undefined}
-                        linkLabel={`View All ${levelName}`}
+                        linkLabel={`View All ${modelLineName}`}
                     />
                 )}
 

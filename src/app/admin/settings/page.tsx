@@ -1,12 +1,24 @@
-import { getSiteSettingsDoc, saveSiteSettings } from "@/lib/actions/siteSettings";
-import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
-import SiteSettingsForm from "./SiteSettingsForm";
+"use client";
 
-export const dynamic = "force-dynamic";
+import { useAuth } from "@/context/AuthContext";
+import AdminSettingsPage from "@/components/admin/admin-settings/AdminSettingsPage";
 
-export default async function AdminSettingsPage() {
-  const result = await getSiteSettingsDoc();
-  const mainCategoryHref = await getMainCategoryHref();
-  const mainCategoryLabel = await getMainCategoryLabel();
-  return <SiteSettingsForm doc={result.data} mainCategoryHref={mainCategoryHref} mainCategoryLabel={mainCategoryLabel} />;
+export default function AdminSettingsRoute() {
+    const { auth } = useAuth();
+    const user = auth.user;
+    const role = user?.role === "admin" ? "Owner" : user?.role ? user.role.charAt(0).toUpperCase() + user.role.slice(1) : "Owner";
+    const memberSince = user?.createdAt
+        ? new Date(user.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
+        : "May 13, 2025";
+
+    return (
+        <AdminSettingsPage
+            profile={{
+                name: user?.name || "Admin",
+                email: user?.email || "admin@athletica.com",
+                role,
+                memberSince,
+            }}
+        />
+    );
 }

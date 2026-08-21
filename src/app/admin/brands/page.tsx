@@ -1,79 +1,57 @@
-import { getAllBrandsAdmin } from "@/lib/actions/brands";
-import DeleteBrandButton from "./DeleteBrandButton";
-import Link from "next/link";
-import { urlFor } from "@/lib/sanity";
-import type { SanityImageSource } from "@sanity/image-url";
+"use client";
 
-export const dynamic = "force-dynamic";
+import { Suspense } from "react";
+import { InteractionProvider, useDashboardInteraction } from "@/components/admin/dashboard-v2/interaction-store";
+import SpecSidebar from "@/components/admin/dashboard-v2/SpecSidebar";
+import { BrandManagementInteractionLayer } from "@/components/admin/brands/BrandManagementInteractionLayer";
+import { BrandManagementPresentation } from "@/components/admin/brands/BrandManagementPresentation";
 
-function brandLogoUrl(logo: unknown): string | null {
-  if (!logo || typeof logo !== "object") return null;
-  try {
-    return urlFor(logo as SanityImageSource).width(48).height(48).url();
-  } catch {
-    return null;
-  }
+function MobileTopbar() {
+    const { openMobileSidebar } = useDashboardInteraction();
+    return (
+        <div className="fixed top-0 left-0 right-0 z-[55] h-14 flex items-center justify-between px-4 bg-neutral-950/96 border-b border-neutral-800 backdrop-blur max-[760px]:flex hidden">
+            <button
+                type="button"
+                onClick={openMobileSidebar}
+                aria-label="Open navigation"
+                className="w-9 h-9 grid place-items-center border border-neutral-700 rounded bg-neutral-900 text-neutral-200"
+            >
+                <span className="material-symbols-outlined">menu</span>
+            </button>
+            <div className="text-[#b8ff18] text-[17px] font-black tracking-tight">ATHLETICA</div>
+            <div className="w-9" />
+        </div>
+    );
 }
 
-export default async function AdminBrandsPage() {
-  const brandsResult = await getAllBrandsAdmin();
-  const brands = brandsResult.data ?? [];
-
-  return (
-    <div>
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-black uppercase tracking-tight">Brands</h1>
-        <Link href="/admin/brands/new" className="bg-primary hover:brightness-75 text-on-primary text-sm font-bold px-4 py-2 rounded transition-colors flex items-center gap-1.5">
-          <span className="material-symbols-outlined text-[16px]">add</span>
-          New Brand
-        </Link>
-      </div>
-
-      <div className="bg-neutral-900 border border-neutral-800 rounded overflow-hidden">
-        <table className="w-full text-sm">
-          <thead className="bg-neutral-800">
-            <tr className="text-zinc-400 uppercase tracking-wider text-xs">
-              <th className="text-left p-3 font-medium w-12">Logo</th>
-              <th className="text-left p-3 font-medium">Name</th>
-              <th className="text-right p-3 font-medium">Actions</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-neutral-800">
-            {(brands as Record<string, unknown>[]).map((b) => {
-              const logoUrl = brandLogoUrl(b.logo);
-              return (
-                <tr key={b._id as string} className="hover:bg-neutral-800/50 transition-colors">
-                  <td className="p-3">
-                    {logoUrl ? (
-                      <img src={logoUrl} alt={b.name as string} className="w-8 h-8 object-contain rounded" />
-                    ) : (
-                      <div className="w-8 h-8 bg-neutral-800 rounded flex items-center justify-center text-zinc-600 text-[10px]">—</div>
-                    )}
-                  </td>
-                  <td className="p-3 font-medium">{b.name as string}</td>
-                  <td className="p-3 text-right">
-                    <div className="flex items-center justify-end gap-2">
-                      <Link href={`/admin/brands/${b._id}/edit`} className="text-primary hover:text-primary text-xs font-bold uppercase tracking-wider transition-colors">
-                        Edit
-                      </Link>
-                      <DeleteBrandButton id={b._id as string} />
-                    </div>
-                  </td>
-                </tr>
-              );
-            })}
-            {brands.length === 0 && (
-              <tr>
-                <td colSpan={3} className="p-8 text-center text-zinc-500">
-                  No brands found. Create your first brand.
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
+function BrandsBody() {
+    return (
+        <Suspense
+            fallback={
+                <div className="p-6 space-y-4 animate-pulse">
+                    <div className="h-9 bg-neutral-800 rounded w-72" />
+                    <div className="h-16 bg-neutral-900 border border-neutral-800 rounded-lg" />
+                    <div className="h-40 bg-neutral-900 border border-neutral-800 rounded-lg" />
+                </div>
+            }
+        >
+            <BrandManagementInteractionLayer>
+                <BrandManagementPresentation />
+            </BrandManagementInteractionLayer>
+        </Suspense>
+    );
 }
 
-
+export default function AdminBrandsPage() {
+    return (
+        <InteractionProvider>
+            <SpecSidebar />
+            <MobileTopbar />
+            <div className="min-h-screen ml-0 max-[1100px]:min-[761px]:ml-16 min-[1101px]:ml-64 max-[760px]:pt-14">
+                <div className="p-4 md:p-6">
+                    <BrandsBody />
+                </div>
+            </div>
+        </InteractionProvider>
+    );
+}

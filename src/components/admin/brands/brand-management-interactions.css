@@ -1,0 +1,1043 @@
+/* ============================================================
+   Interaction layer
+   Existing presentation styles remain authoritative.
+   These styles only govern newly revealed interaction surfaces
+   and responsive fallbacks.
+   ============================================================ */
+
+.brand-management-interaction-layer {
+  position: relative;
+  min-width: 0;
+  isolation: isolate;
+}
+
+.brand-management-interaction-layer button,
+.brand-management-interaction-layer input,
+.brand-management-interaction-layer select,
+.brand-management-interaction-layer textarea {
+  font: inherit;
+}
+
+.brand-management-interaction-layer button {
+  cursor: pointer;
+}
+
+.brand-management-interaction-layer button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.brand-interaction-primary {
+  background: #b8ff00;
+  color: #090909;
+  border: 1px solid #b8ff00;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.brand-icon-button {
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,.025);
+  color: rgba(255,255,255,.9);
+}
+
+.brand-interaction-control {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,.025);
+  color: rgba(255,255,255,.92);
+}
+
+/* ------------------------------------------------------------
+   Export menu
+   ------------------------------------------------------------ */
+
+.brand-export-menu {
+  position: fixed;
+  z-index: 1000;
+  top: 74px;
+  right: 122px;
+  width: 180px;
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 10px;
+  background: #111;
+  box-shadow: 0 18px 50px rgba(0,0,0,.48);
+}
+
+.brand-export-menu button,
+.brand-row-action-menu button {
+  width: 100%;
+  min-height: 38px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: rgba(255,255,255,.88);
+  text-align: left;
+}
+
+.brand-export-menu button:hover,
+.brand-row-action-menu button:hover {
+  background: rgba(255,255,255,.07);
+}
+
+.brand-export-menu button:focus-visible,
+.brand-row-action-menu button:focus-visible {
+  outline: 2px solid #b8ff00;
+  outline-offset: -2px;
+}
+
+/* ------------------------------------------------------------
+   Filter panel
+   ------------------------------------------------------------ */
+
+.brand-filter-panel {
+  position: fixed;
+  z-index: 990;
+  top: 0;
+  right: 0;
+  width: min(390px, 100vw);
+  height: 100dvh;
+  padding: 24px;
+  overflow-y: auto;
+  border-left: 1px solid rgba(255,255,255,.10);
+  background: #0c0c0c;
+  box-shadow: -20px 0 60px rgba(0,0,0,.42);
+}
+
+.brand-filter-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.brand-filter-panel-header > div {
+  display: grid;
+  gap: 5px;
+}
+
+.brand-filter-panel-header span {
+  color: rgba(255,255,255,.48);
+  font-size: 12px;
+}
+
+.brand-filter-panel label,
+.brand-dialog-body label {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.brand-filter-panel label > span,
+.brand-dialog-body label > span,
+.brand-mobile-filter-surface label > span {
+  color: rgba(255,255,255,.56);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.brand-filter-panel select,
+.brand-dialog-body input,
+.brand-dialog-body select,
+.brand-dialog-body textarea,
+.brand-mobile-filter-surface input,
+.brand-mobile-filter-surface select {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  background: #111;
+  color: rgba(255,255,255,.92);
+  padding: 0 12px;
+  outline: none;
+}
+
+.brand-dialog-body textarea {
+  min-height: 100px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+.brand-filter-panel select:focus,
+.brand-dialog-body input:focus,
+.brand-dialog-body select:focus,
+.brand-dialog-body textarea:focus,
+.brand-mobile-filter-surface input:focus,
+.brand-mobile-filter-surface select:focus {
+  border-color: rgba(184,255,0,.68);
+  box-shadow: 0 0 0 3px rgba(184,255,0,.08);
+}
+
+.brand-filter-panel-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.brand-filter-panel-actions button {
+  min-height: 42px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,.03);
+  color: rgba(255,255,255,.88);
+}
+
+/* ------------------------------------------------------------
+   Row action menu
+   ------------------------------------------------------------ */
+
+.brand-row-action-menu {
+  position: fixed;
+  z-index: 1000;
+  right: 28px;
+  top: 300px;
+  width: 190px;
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 10px;
+  background: #111;
+  box-shadow: 0 18px 50px rgba(0,0,0,.52);
+}
+
+.brand-row-action-menu .is-danger {
+  color: #ff7777;
+}
+
+/* ------------------------------------------------------------
+   Dialogs
+   ------------------------------------------------------------ */
+
+.brand-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(0,0,0,.72);
+  backdrop-filter: blur(5px);
+}
+
+.brand-dialog,
+.brand-details-dialog {
+  width: min(560px, 100%);
+  max-height: min(820px, calc(100dvh - 40px));
+  overflow: auto;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 14px;
+  background: #0e0e0e;
+  box-shadow: 0 30px 100px rgba(0,0,0,.60);
+}
+
+.brand-details-dialog {
+  width: min(620px, 100%);
+}
+
+.brand-delete-dialog {
+  width: min(460px, 100%);
+  border: 1px solid rgba(255,110,110,.22);
+  border-radius: 14px;
+  background: #0e0e0e;
+  box-shadow: 0 30px 100px rgba(0,0,0,.60);
+}
+
+.brand-delete-copy {
+  margin: 0;
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.brand-delete-confirm {
+  background: #e5484d !important;
+  border-color: #e5484d !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.brand-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 22px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.brand-dialog-header > div {
+  display: grid;
+  gap: 5px;
+}
+
+.brand-dialog-header span {
+  color: rgba(255,255,255,.48);
+  font-size: 12px;
+}
+
+.brand-dialog-body,
+.brand-details-body {
+  padding: 22px;
+}
+
+.brand-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 22px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.brand-dialog-footer button {
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,.03);
+  color: rgba(255,255,255,.9);
+}
+
+.brand-form-error {
+  padding: 10px 12px;
+  border: 1px solid rgba(255,100,100,.22);
+  border-radius: 8px;
+  background: rgba(255,70,70,.08);
+  color: #ff9a9a;
+  font-size: 13px;
+}
+
+.brand-details-identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.brand-details-identity-logo {
+  width: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.brand-details-identity-logo svg,
+.brand-details-identity-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-details-identity > div:last-child {
+  display: grid;
+  gap: 5px;
+}
+
+.brand-details-identity span {
+  color: rgba(255,255,255,.46);
+  font-size: 12px;
+}
+
+.brand-details-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.brand-details-metric-grid > div {
+  display: grid;
+  gap: 5px;
+  padding: 13px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 9px;
+  background: rgba(255,255,255,.025);
+}
+
+.brand-details-metric-grid span,
+.brand-details-section > span {
+  color: rgba(255,255,255,.46);
+  font-size: 11px;
+}
+
+.brand-details-metric-grid strong {
+  font-size: 15px;
+}
+
+.brand-details-section {
+  display: grid;
+  gap: 7px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+
+.brand-details-section p,
+.brand-details-section a {
+  margin: 0;
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ------------------------------------------------------------
+   Toast
+   ------------------------------------------------------------ */
+
+.brand-toast {
+  position: fixed;
+  z-index: 1500;
+  right: 24px;
+  bottom: 24px;
+  max-width: min(390px, calc(100vw - 48px));
+  padding: 12px 15px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 9px;
+  background: #151515;
+  color: rgba(255,255,255,.92);
+  box-shadow: 0 16px 40px rgba(0,0,0,.42);
+  font-size: 13px;
+}
+
+.brand-toast.is-success {
+  border-color: rgba(184,255,0,.28);
+}
+
+.brand-toast.is-error {
+  border-color: rgba(255,100,100,.28);
+}
+
+.brand-toast.is-info {
+  border-color: rgba(80,160,255,.28);
+}
+
+/* ------------------------------------------------------------
+   Revealed right-rail surfaces
+   ------------------------------------------------------------ */
+
+.brand-right-rail-interaction-surfaces {
+  position: relative;
+  z-index: 5;
+}
+
+.brand-revealed-list {
+  position: fixed;
+  z-index: 1050;
+  inset: 80px 28px 28px auto;
+  width: min(560px, calc(100vw - 56px));
+  overflow: auto;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 12px;
+  background: #0d0d0d;
+  box-shadow: 0 30px 80px rgba(0,0,0,.56);
+}
+
+.brand-revealed-list > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.brand-revealed-list > header button {
+  border: 0;
+  background: transparent;
+  color: rgba(255,255,255,.55);
+}
+
+.brand-revealed-list-row {
+  width: 100%;
+  min-height: 58px;
+  display: grid;
+  grid-template-columns: 28px 40px minmax(0,1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  background: transparent;
+  color: rgba(255,255,255,.88);
+  text-align: left;
+}
+
+.brand-revealed-list-row:hover {
+  background: rgba(255,255,255,.035);
+}
+
+.brand-revealed-list-row svg,
+.brand-revealed-list-row img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.brand-revealed-list-row > span:nth-child(3) {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.brand-revealed-list-row > span:nth-child(4) {
+  color: rgba(255,255,255,.5);
+  font-size: 11px;
+}
+
+.brand-revealed-list-row > span:nth-child(5) {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.brand-revealed-list-row .brand-status-pill {
+  margin-left: auto;
+}
+
+/* ------------------------------------------------------------
+   Mobile-only surfaces
+   ------------------------------------------------------------ */
+
+.brand-responsive-mobile-toolbar,
+.brand-mobile-filter-surface,
+.brand-mobile-list,
+.brand-mobile-pagination,
+.brand-mobile-navigation {
+  display: none;
+}
+
+.brand-mobile-navigation {
+  position: fixed;
+  inset: 0;
+  z-index: 1400;
+  width: min(330px, 88vw);
+  padding: 18px;
+  border-right: 1px solid rgba(255,255,255,.10);
+  background: #0b0b0b;
+  box-shadow: 20px 0 60px rgba(0,0,0,.46);
+}
+
+.brand-mobile-navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.brand-mobile-navigation-list {
+  display: grid;
+  gap: 3px;
+  padding-top: 16px;
+}
+
+.brand-mobile-navigation-list a {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0 11px;
+  border-radius: 7px;
+  color: rgba(255,255,255,.62);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.brand-mobile-navigation-list a:hover,
+.brand-mobile-navigation-list a.is-current {
+  background: rgba(184,255,0,.10);
+  color: #b8ff00;
+}
+
+.brand-mobile-filter-surface {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: #0a0a0a;
+}
+
+.brand-mobile-filter-surface label {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.brand-mobile-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.brand-mobile-filter-grid label:last-child {
+  grid-column: 1 / -1;
+}
+
+.brand-mobile-reset {
+  width: 100%;
+  min-height: 38px;
+  margin-top: 4px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255,255,255,.7);
+}
+
+.brand-mobile-list {
+  padding: 12px;
+}
+
+.brand-mobile-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0 12px;
+  color: rgba(255,255,255,.46);
+  font-size: 11px;
+}
+
+.brand-check-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.brand-check-control input {
+  accent-color: #b8ff00;
+}
+
+.brand-mobile-card {
+  padding: 13px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  background: rgba(255,255,255,.018);
+}
+
+.brand-mobile-card-top {
+  display: grid;
+  grid-template-columns: auto 44px minmax(0,1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mobile-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.brand-mobile-card-title {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.brand-mobile-card-title strong,
+.brand-mobile-card-title span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brand-mobile-card-title span {
+  color: rgba(255,255,255,.45);
+  font-size: 11px;
+}
+
+.brand-mobile-card-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 7px;
+  margin: 13px 0;
+}
+
+.brand-mobile-card-metrics > div {
+  display: grid;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 7px;
+  background: rgba(255,255,255,.025);
+}
+
+.brand-mobile-card-metrics span {
+  color: rgba(255,255,255,.4);
+  font-size: 9px;
+}
+
+.brand-mobile-card-metrics strong {
+  font-size: 12px;
+}
+
+.brand-mobile-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.brand-status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.brand-status-pill.is-active {
+  color: #b8ff00;
+  background: rgba(184,255,0,.09);
+}
+
+.brand-status-pill.is-inactive {
+  color: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.07);
+}
+
+.brand-mobile-card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.brand-mobile-card-actions button {
+  min-height: 30px;
+  padding: 0 9px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255,255,255,.7);
+  font-size: 11px;
+}
+
+.brand-empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding: 50px 20px;
+  color: rgba(255,255,255,.5);
+  text-align: center;
+}
+
+.brand-empty-state strong {
+  color: rgba(255,255,255,.85);
+}
+
+.brand-mobile-pagination {
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.brand-mobile-pagination > button {
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 7px;
+  background: transparent;
+  color: rgba(255,255,255,.78);
+}
+
+.brand-mobile-pagination > span {
+  color: rgba(255,255,255,.5);
+  font-size: 11px;
+}
+
+.brand-mobile-pagination label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-mobile-pagination select {
+  min-height: 32px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 7px;
+  background: #111;
+  color: rgba(255,255,255,.8);
+}
+
+/* ============================================================
+   PHONE
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .brand-management-interaction-layer {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /*
+   * Existing desktop table/right rail stay untouched in the DOM,
+   * but the interaction layer presents the mobile equivalent.
+   */
+  .brand-responsive-mobile-toolbar,
+  .brand-mobile-filter-surface,
+  .brand-mobile-list,
+  .brand-mobile-pagination {
+    display: block;
+  }
+
+  .brand-responsive-mobile-toolbar {
+    min-height: 58px;
+    display: grid;
+    grid-template-columns: auto minmax(0,1fr) auto;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    background: #090909;
+  }
+
+  .brand-responsive-mobile-title {
+    min-width: 0;
+    display: grid;
+    justify-items: center;
+    gap: 2px;
+  }
+
+  .brand-responsive-mobile-title strong {
+    font-size: 13px;
+  }
+
+  .brand-responsive-mobile-title span {
+    color: rgba(255,255,255,.42);
+    font-size: 10px;
+  }
+
+  .brand-interaction-control {
+    min-height: 34px;
+    padding: 0 9px;
+    font-size: 11px;
+  }
+
+  .brand-dialog-backdrop {
+    padding: 0;
+    align-items: end;
+  }
+
+  .brand-dialog,
+  .brand-details-dialog,
+  .brand-delete-dialog {
+    width: 100%;
+    max-height: 92dvh;
+    border-radius: 14px 14px 0 0;
+  }
+
+  .brand-details-metric-grid {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+
+  .brand-toast {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: none;
+  }
+
+  .brand-filter-panel {
+    width: 100%;
+  }
+
+  .brand-export-menu {
+    top: 58px;
+    right: 10px;
+  }
+
+  .brand-revealed-list {
+    inset: 64px 10px 10px;
+    width: auto;
+  }
+
+  .brand-revealed-list-row {
+    grid-template-columns: 34px minmax(0,1fr);
+  }
+
+  .brand-revealed-list-row > :nth-child(1),
+  .brand-revealed-list-row > :nth-child(4),
+  .brand-revealed-list-row > :nth-child(5) {
+    display: none;
+  }
+}
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .brand-responsive-mobile-toolbar {
+    display: grid;
+    grid-template-columns: auto minmax(0,1fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+
+  .brand-mobile-filter-surface,
+  .brand-mobile-list,
+  .brand-mobile-pagination {
+    display: block;
+  }
+
+  .brand-mobile-filter-surface {
+    padding: 14px 16px;
+  }
+
+  .brand-mobile-list {
+    padding: 16px;
+  }
+
+  .brand-mobile-pagination {
+    display: flex;
+  }
+
+  .brand-mobile-card {
+    display: grid;
+    grid-template-columns: minmax(0,1.4fr) minmax(260px,1fr) auto;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .brand-mobile-card-metrics {
+    margin: 0;
+  }
+
+  .brand-mobile-card-bottom {
+    display: grid;
+    justify-items: end;
+  }
+
+  .brand-mobile-card-actions {
+    margin-top: 6px;
+  }
+
+  .brand-mobile-navigation {
+    display: block;
+  }
+
+  .brand-dialog {
+    width: min(620px, calc(100vw - 40px));
+  }
+}
+
+/* ============================================================
+   DESKTOP 1200–1439
+   ============================================================ */
+
+@media (min-width: 1200px) {
+  .brand-responsive-mobile-toolbar,
+  .brand-mobile-filter-surface,
+  .brand-mobile-list,
+  .brand-mobile-pagination {
+    display: none;
+  }
+}
+
+/* ============================================================
+   DESKTOP 1440
+   ============================================================ */
+
+@media (min-width: 1440px) {
+  .brand-export-menu {
+    top: 76px;
+    right: 128px;
+  }
+
+  .brand-filter-panel {
+    width: 400px;
+  }
+}
+
+/* ============================================================
+   DESKTOP 1680
+   ============================================================ */
+
+@media (min-width: 1680px) {
+  .brand-filter-panel {
+    width: 420px;
+  }
+
+  .brand-dialog {
+    width: 600px;
+  }
+
+  .brand-revealed-list {
+    width: 620px;
+  }
+}
+
+/* ============================================================
+   DESKTOP 1920
+   ============================================================ */
+
+@media (min-width: 1920px) {
+  .brand-filter-panel {
+    width: 440px;
+  }
+
+  .brand-dialog {
+    width: 640px;
+  }
+
+  .brand-details-dialog {
+    width: 680px;
+  }
+
+  .brand-revealed-list {
+    width: 680px;
+  }
+}
+
+/* ============================================================
+   ABOVE 1920
+   ============================================================ */
+
+@media (min-width: 2400px) {
+  .brand-filter-panel {
+    width: 460px;
+  }
+
+  .brand-dialog {
+    width: 680px;
+  }
+
+  .brand-details-dialog {
+    width: 720px;
+  }
+
+  .brand-revealed-list {
+    width: 720px;
+  }
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-management-interaction-layer *,
+  .brand-management-interaction-layer *::before,
+  .brand-management-interaction-layer *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

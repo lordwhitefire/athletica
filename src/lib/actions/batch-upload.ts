@@ -1,20 +1,92 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
-import { adminClient } from "@/lib/admin-sanity";
+import { revalidatePath, revalidateTag } from "next/cache";
+import { adminSupabase } from "@/lib/supabase/admin";
 import { ok, fail, fromCaughtError } from "@/lib/api-types";
 import type { ApiResult } from "@/lib/api-types";
 import { slugify, generateId } from "@/lib/rebuild-nav-urls";
 import { batchProcessedRowSchema, type BatchProcessedRow, type BatchUploadCreateResult } from "@/lib/schemas/batch-upload";
+import { resolveModelPath } from "@/lib/products/product-service";
 
-async function getBrandRef(brandName: string): Promise<string | null> {
-    try {
-        const query = `*[_type == "brand" && lower(name) == $name][0] { _id }`;
-        const result = await adminClient.fetch<{ _id: string } | null>(query, { name: brandName.toLowerCase() });
-        return result?._id ?? null;
-    } catch {
-        return null;
+function assetRefToUrl(ref: string): string {
+    if (ref.startsWith("http")) return ref;
+    if (!ref.startsWith("image-")) return ref;
+    return `https://cdn.sanity.io/images/cuiis46d/production/${ref
+        .replace("image-", "")
+        .replace(/-([^-]+)$/, ".$1")}`;
+}
+
+function imageLinksOf(row: BatchProcessedRow): string[] {
+    const links: string[] = [];
+    if (row.main_image?.asset._ref) links.push(assetRefToUrl(row.main_image.asset._ref));
+    if (row.thumbnail?.asset._ref) links.push(assetRefToUrl(row.thumbnail.asset._ref));
+    for (const img of row.image_gallery) {
+        if (img.asset._ref) links.push(assetRefToUrl(img.asset._ref));
     }
+    return links;
+}
+
+async function resolveBrandId(brandName: string): Promise<string | null> {
+    const { data } = await adminSupabase
+        .from("brands")
+        .select("id")
+        .or(`name.ilike.${brandName},slug.ilike.${brandName}`)
+        .limit(1);
+    if (data && data.length > 0) return data[0].id;
+
+    const { data: created, error } = await adminSupabase
+        .from("brands")
+        .insert({ slug: slugify(brandName), name: brandName, logo_link: null })
+        .select("id")
+        .single();
+    if (error || !created) return null;
+    return created.id;
+}
+
+async function resolveCategoryId(categoryName: string): Promise<string | null> {
+    if (!categoryName.trim()) return null;
+    const { data } = await adminSupabase
+        .from("categories")
+        .select("id")
+        .or(`name.ilike.${categoryName},slug.ilike.${categoryName}`)
+        .limit(1);
+    return data && data.length > 0 ? data[0].id : null;
+}
+
+async function resolveLeafModelId(model: string): Promise<string | null> {
+    if (!model.trim()) return null;
+    const node = await resolveModelPath(model);
+    if (!node || node.hasChildren) return null;
+    return node.id;
+}
+
+async function uniqueProductSlug(base: string): Promise<string> {
+    const slug = slugify(base) || "product";
+    const { data } = await adminSupabase.from("products").select("slug").like("slug", `${slug}%`);
+    const existing = new Set(
+        (data ?? [])
+            .map((r) => r.slug)
+            .filter((s): s is string => Boolean(s)),
+    );
+    if (!existing.has(slug)) return slug;
+    let candidate = slug;
+    let n = 2;
+    while (existing.has(candidate)) {
+        candidate = `${slug}-${n}`;
+        n += 1;
+    }
+    return candidate;
+}
+
+function rowErrorMessage(err: unknown): string {
+    if (err && typeof err === "object") {
+        const e = err as { code?: string; message?: string; details?: string };
+        if (e.code === "23505") return `duplicate value${e.details ? `: ${e.details}` : " (unique constraint)"}`;
+        if (e.code === "23503") return `referenced record not found${e.details ? `: ${e.details}` : ""}`;
+        if (e.code === "22P02") return `invalid value format${e.details ? `: ${e.details}` : ""}`;
+        if (e.message) return e.message;
+    }
+    return err instanceof Error ? err.message : "Unknown error";
 }
 
 export async function batchCreateProducts(
@@ -35,29 +107,17 @@ export async function batchCreateProducts(
             const productId = generateId();
 
             try {
-                const brandRef = await getBrandRef(row.brand);
+                const brandId = await resolveBrandId(row.brand);
+                const categoryId = await resolveCategoryId(row.category);
+                const leafModelId = await resolveLeafModelId(row.model);
+                const imageLinks = imageLinksOf(row);
 
-                const doc: Record<string, unknown> = {
-                    _type: "product",
-                    _id: productId,
+                const rowData: Record<string, unknown> = {
                     id: productId,
-                    url_slug: { _type: "slug", current: slugify(row.model) },
+                    slug: await uniqueProductSlug(row.model),
+                    name: row.name || row.model,
                     model: row.model,
-                    brand: brandRef ? { _type: "reference", _ref: brandRef } : row.brand,
-                    category: row.category || "",
-                    traction: row.traction || null,
-                    name: row.name || null,
-                    gender: (row.gender as string) || "Unisex",
-                    color: row.color || "",
-                    price: {
-                        current: row.price_current,
-                        original: row.price_original || 0,
-                        discount_percent: row.price_discount_percent || 0,
-                        member_price: row.price_member_price || 0,
-                        currency: row.price_currency,
-                    },
-                    sizes: row.sizes.length > 0 ? row.sizes : [],
-                    description: {
+                    description: JSON.stringify({
                         subtitle: row.description_subtitle || "",
                         tagline: row.description_tagline || "",
                         intro: row.description_intro || "",
@@ -69,25 +129,44 @@ export async function batchCreateProducts(
                             upper_material: row.technical_upper_material || "",
                             adjustment: row.technical_adjustment || "",
                         },
+                    }),
+                    price: row.price_current,
+                    gender: row.gender,
+                    color: row.color || "",
+                    sizes: row.sizes.map((s) => s.size),
+                    attributes: {
+                        price: {
+                            current: row.price_current,
+                            original: row.price_original || 0,
+                            discount_percent: row.price_discount_percent || 0,
+                            member_price: row.price_member_price || 0,
+                            currency: row.price_currency,
+                        },
+                        traction: row.traction || null,
+                        sizes_detail: row.sizes,
                     },
+                    status: "published",
+                    asin: null,
+                    category_id: categoryId,
+                    brand_id: brandId,
+                    leaf_model_id: leafModelId,
+                    image_links: imageLinks.length > 0 ? imageLinks : null,
                 };
 
-                if (row.main_image) doc.main_image = row.main_image;
-                if (row.thumbnail) doc.thumbnail = row.thumbnail;
-                if (row.image_gallery && row.image_gallery.length > 0) doc.image_gallery = row.image_gallery;
-
-                await adminClient.createOrReplace(doc as Parameters<typeof adminClient.createOrReplace>[0]);
+                const { error } = await adminSupabase.from("products").insert(rowData as never);
+                if (error) throw error;
                 created++;
                 results.push({ index: i, id: productId, success: true });
             } catch (err) {
                 failed++;
-                const msg = err instanceof Error ? err.message : "Unknown error";
-                results.push({ index: i, id: productId, success: false, error: msg });
+                results.push({ index: i, id: productId, success: false, error: rowErrorMessage(err) });
             }
         }
 
+        revalidateTag("products", "max");
         revalidatePath("/admin/products");
         revalidatePath("/admin/products/batch-upload");
+        revalidatePath("/admin/import-center");
 
         return ok({ created, failed, results });
     } catch (err) {

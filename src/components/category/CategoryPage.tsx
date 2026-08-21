@@ -1,11 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
-import { Product, ActiveFilters } from "@/types/product";
-import { filterProducts } from "@/lib/filterProducts";
-import { generateFilters } from "@/lib/generateFilters";
+import { Product, FilterOptions } from "@/types/product";
 import ProductGrid from "@/components/category/ProductGrid";
 import FilterSidebar from "@/components/category/FilterSidebar";
 import SortDropdown from "@/components/category/SortDropdown";
@@ -16,84 +13,36 @@ import Breadcrumb, { BreadcrumbItem } from "@/components/navigation/Breadcrumb";
 const PRODUCTS_PER_PAGE = 24;
 
 interface CategoryPageProps {
-    allProducts: Product[];
-    baseFilters: ActiveFilters;
+    products: Product[];
+    filterOptions: FilterOptions;
+    totalProducts: number;
+    currentPage: number;
+    totalPages: number;
     pageTitle: string;
     pageSubtitle?: string;
     featuredImage?: string | null;
     brandLogo?: string | null;
-    brandLogoMap?: Record<string, string | null>;
     breadcrumbs: BreadcrumbItem[];
 }
 
 export default function CategoryPage({
-    allProducts,
-    baseFilters,
+    products,
+    filterOptions,
+    totalProducts,
+    currentPage,
+    totalPages,
     pageTitle,
     pageSubtitle,
     featuredImage,
     brandLogo,
-    brandLogoMap,
     breadcrumbs,
 }: CategoryPageProps) {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
-    const searchParams = useSearchParams();
 
-    const activeFilters: ActiveFilters = useMemo(() => {
-        const filters: ActiveFilters = { ...baseFilters };
-
-        const brands = searchParams.getAll("brand");
-        if (brands.length > 0) filters.brand = brands;
-
-        const models = searchParams.getAll("model");
-        if (models.length > 0) filters.model = models;
-
-        const tractions = searchParams.getAll("traction");
-        if (tractions.length > 0) filters.traction = tractions;
-
-        const colors = searchParams.getAll("color");
-        if (colors.length > 0) filters.color = colors;
-
-        const genders = searchParams.getAll("gender");
-        if (genders.length > 0) filters.gender = genders;
-
-        const sizes = searchParams.getAll("size");
-        if (sizes.length > 0) filters.size = sizes;
-
-        const minPrice = searchParams.get("min_price");
-        if (minPrice) filters.min_price = parseFloat(minPrice);
-
-        const maxPrice = searchParams.get("max_price");
-        if (maxPrice) filters.max_price = parseFloat(maxPrice);
-
-        const sort = searchParams.get("sort");
-        if (sort) filters.sort = sort as ActiveFilters["sort"];
-
-        return filters;
-    }, [searchParams, baseFilters]);
-
-    const filteredProducts = useMemo(() => {
-        return filterProducts(allProducts, activeFilters);
-    }, [allProducts, activeFilters]);
-
-    const filterOptions = useMemo(() => {
-        const baseFiltered = filterProducts(allProducts, baseFilters);
-        return generateFilters(baseFiltered, brandLogoMap);
-    }, [allProducts, baseFilters]);
-
-    const currentPage = parseInt(searchParams.get("page") || "1", 10);
-    const totalProducts = filteredProducts.length;
-    const totalPages = Math.ceil(totalProducts / PRODUCTS_PER_PAGE);
     const safePage = Math.min(Math.max(1, currentPage), Math.max(1, totalPages));
-
-    const paginatedProducts = useMemo(() => {
-        const start = (safePage - 1) * PRODUCTS_PER_PAGE;
-        return filteredProducts.slice(start, start + PRODUCTS_PER_PAGE);
-    }, [filteredProducts, safePage]);
 
     return (
         <main>
-
             {/* Hero section */}
             {(featuredImage || brandLogo) && (
                 <div className="relative w-full h-[300px] md:h-[400px] bg-neutral-900 overflow-hidden">
@@ -173,7 +122,7 @@ export default function CategoryPage({
                     </div>
 
                     <ProductGrid
-                        products={paginatedProducts}
+                        products={products}
                         totalProducts={totalProducts}
                         currentPage={safePage}
                         productsPerPage={PRODUCTS_PER_PAGE}

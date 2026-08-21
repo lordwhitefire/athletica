@@ -1,14 +1,38 @@
 "use server";
 
-import { adminClient } from "@/lib/admin-sanity";
+import { adminSupabase } from "@/lib/supabase/admin";
 import type { ApiResult } from "@/lib/api-types";
 import { ok, fromCaughtError } from "@/lib/api-types";
 
+function parseDescription(raw: unknown): Record<string, unknown> {
+    if (!raw) return {};
+    try {
+        const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
+        return parsed && typeof parsed === "object" ? parsed : {};
+    } catch {
+        return {};
+    }
+}
+
+function technicalValues(rows: { description: unknown }[], key: string): string[] {
+    const values = new Set<string>();
+    for (const row of rows) {
+        const technical = parseDescription(row.description).technical_details as Record<string, unknown> | undefined;
+        const value = technical?.[key];
+        if (typeof value === "string" && value.trim()) values.add(value.trim());
+    }
+    return [...values].sort((a, b) => a.localeCompare(b)).slice(0, 10);
+}
+
 export async function suggestBrands(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "brand" && name match $q] | order(name asc) [0...10].name` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok(results as string[]);
+    const { data } = await adminSupabase
+      .from("brands")
+      .select("name")
+      .ilike("name", `%${query}%`)
+      .order("name")
+      .limit(10);
+    return ok((data ?? []).map((b) => b.name));
   } catch (err) {
     return fromCaughtError(err, "suggest_brands_failed");
   }
@@ -16,9 +40,13 @@ export async function suggestBrands(query: string): Promise<ApiResult<string[]>>
 
 export async function suggestCategories(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && category match $q] | order(category asc) [0...10].category` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("categories")
+      .select("name")
+      .ilike("name", `%${query}%`)
+      .order("name")
+      .limit(10);
+    return ok([...new Set((data ?? []).map((c) => c.name))]);
   } catch (err) {
     return fromCaughtError(err, "suggest_categories_failed");
   }
@@ -26,9 +54,18 @@ export async function suggestCategories(query: string): Promise<ApiResult<string
 
 export async function suggestTractions(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && traction match $q] | order(traction asc) [0...10].traction` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("attributes")
+      .filter("attributes->>traction", "ilike", `%${query}%`)
+      .limit(20);
+    const values = new Set<string>();
+    for (const row of data ?? []) {
+      const attrs = (row.attributes ?? {}) as Record<string, unknown>;
+      const value = attrs.traction;
+      if (typeof value === "string" && value.trim()) values.add(value.trim());
+    }
+    return ok([...values].sort((a, b) => a.localeCompare(b)).slice(0, 10));
   } catch (err) {
     return fromCaughtError(err, "suggest_tractions_failed");
   }
@@ -36,9 +73,14 @@ export async function suggestTractions(query: string): Promise<ApiResult<string[
 
 export async function suggestNames(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && name match $q] | order(name asc) [0...10].name` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("name")
+      .not("name", "is", null)
+      .ilike("name", `%${query}%`)
+      .order("name")
+      .limit(10);
+    return ok([...new Set((data ?? []).map((p) => p.name as string))]);
   } catch (err) {
     return fromCaughtError(err, "suggest_names_failed");
   }
@@ -46,9 +88,14 @@ export async function suggestNames(query: string): Promise<ApiResult<string[]>> 
 
 export async function suggestModels(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && model match $q] | order(model asc) [0...10].model` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("model")
+      .not("model", "is", null)
+      .ilike("model", `%${query}%`)
+      .order("model")
+      .limit(10);
+    return ok([...new Set((data ?? []).map((p) => p.model as string))]);
   } catch (err) {
     return fromCaughtError(err, "suggest_models_failed");
   }
@@ -56,9 +103,14 @@ export async function suggestModels(query: string): Promise<ApiResult<string[]>>
 
 export async function suggestColors(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && color match $q] | order(color asc) [0...10].color` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("color")
+      .not("color", "is", null)
+      .ilike("color", `%${query}%`)
+      .order("color")
+      .limit(10);
+    return ok([...new Set((data ?? []).map((p) => p.color as string))]);
   } catch (err) {
     return fromCaughtError(err, "suggest_colors_failed");
   }
@@ -66,9 +118,14 @@ export async function suggestColors(query: string): Promise<ApiResult<string[]>>
 
 export async function suggestTechSole(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && description.technical_details.sole_type match $q] | order(description.technical_details.sole_type asc) [0...10].description.technical_details.sole_type` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("description")
+      .limit(100);
+    const values = technicalValues(data ?? [], "sole_type").filter((v) =>
+      v.toLowerCase().includes(query.toLowerCase()),
+    );
+    return ok(values);
   } catch (err) {
     return fromCaughtError(err, "suggest_tech_sole_failed");
   }
@@ -76,9 +133,14 @@ export async function suggestTechSole(query: string): Promise<ApiResult<string[]
 
 export async function suggestTechUpper(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && description.technical_details.upper_material match $q] | order(description.technical_details.upper_material asc) [0...10].description.technical_details.upper_material` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("description")
+      .limit(100);
+    const values = technicalValues(data ?? [], "upper_material").filter((v) =>
+      v.toLowerCase().includes(query.toLowerCase()),
+    );
+    return ok(values);
   } catch (err) {
     return fromCaughtError(err, "suggest_tech_upper_failed");
   }
@@ -86,9 +148,14 @@ export async function suggestTechUpper(query: string): Promise<ApiResult<string[
 
 export async function suggestTechRange(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && description.technical_details.range match $q] | order(description.technical_details.range asc) [0...10].description.technical_details.range` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("description")
+      .limit(100);
+    const values = technicalValues(data ?? [], "range").filter((v) =>
+      v.toLowerCase().includes(query.toLowerCase()),
+    );
+    return ok(values);
   } catch (err) {
     return fromCaughtError(err, "suggest_tech_range_failed");
   }
@@ -96,9 +163,14 @@ export async function suggestTechRange(query: string): Promise<ApiResult<string[
 
 export async function suggestTechAdjustment(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && description.technical_details.adjustment match $q] | order(description.technical_details.adjustment asc) [0...10].description.technical_details.adjustment` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    return ok([...new Set(results as string[])]);
+    const { data } = await adminSupabase
+      .from("products")
+      .select("description")
+      .limit(100);
+    const values = technicalValues(data ?? [], "adjustment").filter((v) =>
+      v.toLowerCase().includes(query.toLowerCase()),
+    );
+    return ok(values);
   } catch (err) {
     return fromCaughtError(err, "suggest_tech_adjustment_failed");
   }
@@ -106,11 +178,12 @@ export async function suggestTechAdjustment(query: string): Promise<ApiResult<st
 
 export async function suggestProductIds(query: string): Promise<ApiResult<string[]>> {
   try {
-    const q = `*[_type == "product" && (id match $q || name match $q || model match $q)] | score(boost(id match $q, 3)) [0...15] {id, name}` as const;
-    const results = await adminClient.fetch(q, { q: `${query}*` });
-    const mapped = (results as { id: string; name: string }[]).map(
-      (p) => `${p.name} (${p.id})`
-    );
+    const { data } = await adminSupabase
+      .from("products")
+      .select("id, name")
+      .or(`id.ilike.%${query}%,name.ilike.%${query}%,model.ilike.%${query}%`)
+      .limit(15);
+    const mapped = (data ?? []).map((p) => `${p.name ?? p.id} (${p.id})`);
     return ok(mapped);
   } catch (err) {
     return fromCaughtError(err, "suggest_product_ids_failed");
@@ -133,12 +206,14 @@ export async function suggestMaterialIcons(query: string): Promise<ApiResult<str
 
 export async function suggestRoutes(query: string): Promise<ApiResult<string[]>> {
   try {
-    const navRoutes: string[] = await adminClient.fetch(
-      `*[_type == "navigation"][0].items[].children[].href`
-    );
-    const productRoutes: string[] = await adminClient.fetch(
-      `*[_type == "product" && defined(url_slug.current)] | order(url_slug.current asc) [0...20].url_slug.current`
-    );
+    const [productRes, navRes] = await Promise.all([
+      adminSupabase.from("products").select("slug").order("slug").limit(20),
+      adminSupabase.from("navigation").select("route").not("route", "is", null),
+    ]);
+    const productRoutes = (productRes.data ?? []).map((p) => p.slug);
+    const navRoutes = (navRes.data ?? [])
+      .map((n) => n.route as string)
+      .filter(Boolean);
     const all = [
       "/",
       ...productRoutes.map((s: string) => `/products/${s}`),

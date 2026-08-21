@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getAllProducts } from "@/lib/getProducts";
+import { searchProducts } from "@/lib/products/product-service";
+import { toPageProductSummary } from "@/lib/products/product-adapter";
 import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
 import SearchResults from "./SearchResults";
 
@@ -16,27 +17,16 @@ interface SearchPageProps {
 export default async function SearchPage({ searchParams }: SearchPageProps) {
     const { q } = await searchParams;
     const query = (q || "").trim();
-    const result = await getAllProducts();
 
-    if (result.error) throw new Error(result.error.message);
+    const result = query
+        ? await searchProducts(query, { page: 1, pageSize: 100 })
+        : { items: [], total: 0, page: 1, pageSize: 100, totalPages: 0 };
 
-    const allProducts = result.data;
+    const results = result.items.map(toPageProductSummary);
 
-    const results = query
-        ? allProducts.filter((p) => {
-              const search = query.toLowerCase();
-              return (
-                  p.model.toLowerCase().includes(search) ||
-                  p.brand.toLowerCase().includes(search) ||
-                  p.name?.toLowerCase().includes(search) ||
-                  p.category?.toLowerCase().includes(search) ||
-                  p.color.toLowerCase().includes(search) ||
-                  p.traction?.toLowerCase().includes(search)
-              );
-          })
-        : [];
-
-    const mainCategoryHref = await getMainCategoryHref();
-    const mainCategoryLabel = await getMainCategoryLabel();
+    const [mainCategoryHref, mainCategoryLabel] = await Promise.all([
+        getMainCategoryHref(),
+        getMainCategoryLabel(),
+    ]);
     return <SearchResults query={query} results={results} mainCategoryHref={mainCategoryHref} mainCategoryLabel={mainCategoryLabel} />;
 }

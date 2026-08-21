@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getHomepageConfig, getHomepageSections, getProductsForCarousel } from "@/lib/getHomepageJson";
+import { getHomepageConfig, getHomepageSections } from "@/lib/getHomepageJson";
+import { getProductsForCarouselSection } from "@/lib/products/homepage-sections";
 import { ProductCarouselSection } from "@/types/homepage";
 import HeroCarousel from "@/components/homepage/HeroCarousel";
 import HomepageRenderer from "@/components/homepage/HomepageRenderer";
@@ -32,8 +33,8 @@ export default async function HomePage() {
         sections.map(async (section) => {
             if (section.type === "product_carousel") {
                 const s = section as ProductCarouselSection;
-                const productsResult = await getProductsForCarousel(s);
-                return { section, products: productsResult.data ?? [] };
+                const products = await getProductsForCarouselSection(s);
+                return { section, products };
             }
             return { section };
         })

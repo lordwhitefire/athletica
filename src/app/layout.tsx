@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { PageTransition } from "@/components/PageTransition";
-import Header from "@/components/navigation/Header";
+import Header from "@/components/navigation/StorefrontHeader";
+import HideOnAdmin from "@/components/navigation/HideOnAdmin";
 import Footer from "@/components/ui/Footer";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import SitePreloader from "./site-preloader";
@@ -53,7 +54,9 @@ export default async function RootLayout({
                     <PageTransition>
                         <main id="main-content">{children}</main>
                     </PageTransition>
-                    <Footer siteLogoUrl={siteLogoUrl} />
+                    <HideOnAdmin>
+                        <Footer siteLogoUrl={siteLogoUrl} />
+                    </HideOnAdmin>
                     <ScrollToTop />
                 </Providers>
             </body>

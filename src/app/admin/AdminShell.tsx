@@ -9,10 +9,11 @@ const navItems = [
     { label: "Products", href: "/admin/products", icon: "inventory_2" },
     { label: "Batch Upload", href: "/admin/products/batch-upload", icon: "archive" },
     { label: "Brands", href: "/admin/brands", icon: "local_offer" },
+    { label: "Models", href: "/admin/models", icon: "account_tree" },
     { label: "Homepage", href: "/admin/homepage", icon: "home" },
     { label: "Navigation", href: "/admin/navigation", icon: "menu" },
     { label: "Amazon Links", href: "/admin/amazon-links", icon: "link" },
-    { label: "Settings", href: "/admin/settings", icon: "settings" },
+    { label: "Site Settings", href: "/admin/site-settings", icon: "settings" },
     { label: "Media", href: "/admin/media", icon: "photo_library" },
 ];
 
@@ -24,6 +25,20 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     const [loggingOut, setLoggingOut] = useState(false);
     const [headerHeight, setHeaderHeight] = useState(0);
     const headerObserver = useRef<ResizeObserver | null>(null);
+    const isOverview = pathname === "/admin/overview";
+    const isCatalog = pathname === "/admin/products";
+    const isImportCenter = pathname === "/admin/import-center";
+    const isCategories = pathname === "/admin/categories";
+    const isBrands = pathname === "/admin/brands";
+    const isModels = pathname === "/admin/models";
+    const isHomepage = pathname === "/admin/homepage";
+    const isMedia = pathname === "/admin/media";
+    const isAnalytics = pathname === "/admin/analytics" || pathname.startsWith("/admin/analytics/");
+    const isAffiliateSettings = pathname === "/admin/affiliate-settings";
+    const isSettings = pathname === "/admin/settings";
+    const isSystemHealth = pathname === "/admin/system-health";
+    const standalone =
+        isOverview || isCatalog || isImportCenter || isCategories || isBrands || isModels || isHomepage || isMedia || isAnalytics || isAffiliateSettings || isSettings || isSystemHealth;
 
     useEffect(() => {
         const header = document.querySelector<HTMLElement>("header");
@@ -70,6 +85,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     return (
         <div className="min-h-screen bg-neutral-950 text-white flex">
             {/* Sidebar */}
+            {!standalone && (
             <aside style={{ top: headerHeight || undefined }} className={`fixed bottom-0 left-0 z-50 w-64 bg-neutral-900 border-r border-neutral-800 transform transition-transform duration-200 lg:translate-x-0 lg:z-30 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex items-center justify-between p-4 border-b border-neutral-800">
                     <div className="bg-zinc-800 text-white w-fit px-2 py-1">
@@ -104,20 +120,23 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
                     </button>
                 </div>
             </aside>
+            )}
 
             {/* Overlay for mobile */}
-            {sidebarOpen && (
+            {!standalone && sidebarOpen && (
                 <div className="fixed inset-0 bg-black/50 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} aria-hidden="true" />
             )}
 
             {/* Main */}
-            <div className="flex-1 min-w-0 lg:ml-64">
+            <div className={`flex-1 min-w-0 ${standalone ? "" : "lg:ml-64"}`}>
+                {!standalone && (
                 <header className="sticky top-0 z-30 bg-neutral-950/80 backdrop-blur border-b border-neutral-800 px-4 py-3 flex items-center gap-3 lg:hidden">
                     <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-zinc-400 hover:text-white">
                         <span className="material-symbols-outlined">menu</span>
                     </button>
                     <span className="text-sm font-bold uppercase tracking-wider">Admin</span>
                 </header>
+                )}
 
                 <main className="p-4 md:p-8">
                     {children}

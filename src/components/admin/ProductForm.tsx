@@ -47,6 +47,8 @@ function assetRefs(imgs: unknown): string[] {
 }
 
 function assetUrl(assetId: string): string {
+    if (!assetId) return "";
+    if (assetId.startsWith("http")) return assetId;
     try {
         return urlFor({ _ref: assetId } as SanityImageSource).width(200).url();
     } catch {
@@ -109,6 +111,18 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
             return [];
         }
     });
+    const [sizesList, setSizesList] = useState<{ size: string; available: boolean }[]>(() => {
+        const detail = initial?.sizes_detail;
+        if (Array.isArray(detail) && detail.length > 0) {
+            return detail
+                .filter((s): s is { size: string } => Boolean(s) && typeof (s as { size?: unknown }).size === "string")
+                .map((s) => ({ size: String(s.size), available: (s as { available?: boolean }).available !== false }));
+        }
+        if (Array.isArray(initial?.sizes)) {
+            return (initial.sizes as unknown[]).map((s) => ({ size: String(s), available: true }));
+        }
+        return [];
+    });
 
     const methods = useForm({
         resolver: zodResolver(productFormSchema),
@@ -139,6 +153,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
             main_image_asset: assetRef(initial?.main_image) || "",
             thumbnail_asset: assetRef(initial?.thumbnail) || "",
             gallery_assets: assetRefs(initial?.image_gallery).join(","),
+            asin: val(initial, "asin"),
         },
     });
 
@@ -220,6 +235,12 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
         formData.set("main_image_asset", mainImageAsset || "");
         formData.set("thumbnail_asset", thumbnailAsset || "");
         formData.set("gallery_assets", galleryAssets.join(","));
+        formData.set("asin", data.asin || "");
+        formData.set("sizes", sizesList.map((s) => s.size.trim()).filter(Boolean).join(","));
+        formData.set(
+            "sizes_detail",
+            JSON.stringify(sizesList.filter((s) => s.size.trim()).map((s) => ({ size: s.size.trim(), available: s.available }))),
+        );
 
         try {
             let result;
@@ -442,6 +463,16 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                                 <option value="Female">Female</option>
                             </select>
                         </div>
+                        <div>
+                            <label className="block text-zinc-400 text-xs font-medium mb-1 uppercase tracking-wider flex items-center gap-2">
+                                Amazon ASIN
+                                <InfoTooltip text="10-character Amazon product identifier used for affiliate linking. Optional — an existing ASIN is kept if left empty." />
+                            </label>
+                            <Field error={errors.asin?.message}>
+                                <input type="text" {...register("asin")} maxLength={10}
+                                    className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors uppercase" />
+                            </Field>
+                        </div>
                     </div>
                     <div>
                         <Controller
@@ -609,6 +640,58 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
                             className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors flex items-center gap-1"
                         >
                             <span className="material-symbols-outlined text-sm">add</span> Add benefit
+                        </button>
+                    </div>
+                </div>
+
+                <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
+                    <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Sizes</h2>
+                    <div className="flex items-start gap-2">
+                        <p className="text-xs text-zinc-500 flex-1">Available sizes shown on the storefront</p>
+                        <InfoTooltip text="Add each available size. Uncheck 'available' to keep a size listed but marked out of stock." />
+                    </div>
+                    <div className="space-y-2">
+                        {sizesList.map((item, idx) => (
+                            <div key={idx} className="flex gap-2 items-center">
+                                <input
+                                    type="text"
+                                    value={item.size}
+                                    onChange={(e) => {
+                                        const updated = [...sizesList];
+                                        updated[idx] = { ...updated[idx], size: e.target.value };
+                                        setSizesList(updated);
+                                    }}
+                                    placeholder="e.g. 42 or M"
+                                    className="flex-1 px-3 py-2 bg-neutral-800 border border-neutral-700 text-white rounded text-sm focus:outline-none focus:border-primary transition-colors"
+                                />
+                                <label className="flex items-center gap-2 text-xs text-zinc-400 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        checked={item.available}
+                                        onChange={(e) => {
+                                            const updated = [...sizesList];
+                                            updated[idx] = { ...updated[idx], available: e.target.checked };
+                                            setSizesList(updated);
+                                        }}
+                                        className="accent-primary"
+                                    />
+                                    Available
+                                </label>
+                                <button
+                                    type="button"
+                                    onClick={() => setSizesList(sizesList.filter((_, i) => i !== idx))}
+                                    className="w-8 h-8 flex items-center justify-center rounded text-zinc-400 hover:text-red-400 hover:bg-neutral-800 transition-colors"
+                                >
+                                    <span className="material-symbols-outlined text-sm">close</span>
+                                </button>
+                            </div>
+                        ))}
+                        <button
+                            type="button"
+                            onClick={() => setSizesList([...sizesList, { size: "", available: true }])}
+                            className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors flex items-center gap-1"
+                        >
+                            <span className="material-symbols-outlined text-sm">add</span> Add size
                         </button>
                     </div>
                 </div>

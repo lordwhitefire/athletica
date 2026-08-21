@@ -4,7 +4,12 @@ dotenv.config({ path: '.env.local' });
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const ADMIN_EMAIL = process.env.ADMIN_TEST_EMAIL || 'admin@athletica.com';
-const ADMIN_PASSWORD = process.env.ADMIN_TEST_PASSWORD || '4603bb34-13ce55de';
+const ADMIN_PASSWORD = process.env.ADMIN_TEST_PASSWORD || '';
+
+if (!ADMIN_PASSWORD) {
+  console.error('❌ ADMIN_TEST_PASSWORD is not set in .env.local');
+  process.exit(1);
+}
 
 if (!supabaseUrl || !serviceKey) {
   console.error('❌ Missing NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in .env.local');

@@ -9,7 +9,7 @@ export const test = base.extend<Fixtures>({
     adminPage: async ({ page }, use) => {
         await page.goto("/admin/login");
         await page.getByRole("textbox", { name: /email/i }).fill(process.env.ADMIN_TEST_EMAIL ?? "admin@athletica.com");
-        await page.getByLabel(/password/i).fill(process.env.ADMIN_TEST_PASSWORD ?? "4603bb34-13ce55de");
+        await page.getByLabel(/password/i).fill(process.env.ADMIN_TEST_PASSWORD ?? "");
         await page.getByRole("button", { name: /sign in/i }).click();
 
         // Wait for redirect to admin dashboard (NOT /admin/login)

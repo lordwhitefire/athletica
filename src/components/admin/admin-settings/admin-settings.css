@@ -1,0 +1,767 @@
+/* =========================================================
+   ATHLETICA ADMIN — ADMIN SETTINGS PAGE (scoped under .admin-settings-page)
+   Port of athletica_admin_settings_pixel_accurate.md
+   ========================================================= */
+
+.admin-settings-page {
+    --as-lime: #c4ff22;
+    --as-lime-2: #b8f51d;
+    --as-orange: #ff5d19;
+    --as-bg: #080909;
+    --as-panel: #111212;
+    --as-line: #292b2b;
+    color: #f4f4f4;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    min-width: 0;
+    padding: 24px 43px 20px;
+    background:
+        radial-gradient(900px 500px at 62% 35%, rgba(42, 48, 43, 0.1), transparent 65%),
+        linear-gradient(180deg, #080909 0%, #090a0a 100%);
+}
+
+.admin-settings-inner {
+    width: 100%;
+    max-width: 1228px;
+    margin: 0 auto;
+}
+
+/* ---------- page head ---------- */
+
+.admin-settings-page .page-head {
+    min-height: 69px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-left: 2px solid var(--as-lime);
+    padding: 5px 0 0 34px;
+}
+
+.admin-settings-page .title-row {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.admin-settings-page .title-icon {
+    color: var(--as-lime);
+}
+
+.admin-settings-page .page-head h1 {
+    margin: 0;
+    color: #f4f4f4;
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 650;
+    letter-spacing: -0.7px;
+}
+
+.admin-settings-page .subtitle {
+    margin: 6px 0 0;
+    color: #d0d1d1;
+    font-size: 12px;
+}
+
+.admin-settings-page .owner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 4px 0 0;
+    cursor: pointer;
+}
+
+.admin-settings-page .owner-icon {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #282a2a;
+    border-radius: 50%;
+    background: #151717;
+    color: var(--as-lime);
+}
+
+.admin-settings-page .owner-copy {
+    line-height: 1.3;
+}
+
+.admin-settings-page .owner-top {
+    font-size: 10px;
+    color: #dedede;
+}
+
+.admin-settings-page .owner-bottom {
+    margin-top: 2px;
+    font-size: 10px;
+    color: #a1a2a2;
+}
+
+/* ---------- shell + tabs ---------- */
+
+.admin-settings-page .settings-shell {
+    margin-top: 15px;
+    border: 1px solid var(--as-line);
+    border-radius: 8px;
+    background: rgba(15, 16, 16, 0.86);
+    padding: 0 21px 20px;
+}
+
+.admin-settings-page .tabs {
+    height: 64px;
+    border-bottom: 1px solid #272929;
+    display: flex;
+    align-items: stretch;
+    gap: 27px;
+}
+
+.admin-settings-page .tab {
+    position: relative;
+    height: 64px;
+    padding: 0 15px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: 0;
+    background: none;
+    color: #9b9d9d;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.admin-settings-page .tab:first-child {
+    padding-left: 12px;
+}
+
+.admin-settings-page .tab.active {
+    color: var(--as-lime);
+    font-weight: 500;
+}
+
+.admin-settings-page .tab.active:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background: var(--as-lime);
+}
+
+.admin-settings-page .tab-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.admin-settings-page .soon {
+    color: #b7b8b8;
+    background: #292a2a;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 9px;
+}
+
+/* ---------- cards ---------- */
+
+.admin-settings-page .top-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 21px;
+    margin-top: 20px;
+}
+
+.admin-settings-page .top-grid[data-hidden="true"] {
+    display: none;
+}
+
+.admin-settings-page .card {
+    border: 1px solid #252727;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #141515 0%, #101111 100%);
+}
+
+.admin-settings-page .profile-card,
+.admin-settings-page .password-card {
+    min-height: 507px;
+    padding: 20px 25px;
+}
+
+.admin-settings-page .card-title {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.admin-settings-page .card-title-icon {
+    color: var(--as-lime);
+}
+
+/* ---------- profile card ---------- */
+
+.admin-settings-page .profile-body {
+    padding-top: 27px;
+}
+
+.admin-settings-page .profile-top {
+    display: grid;
+    grid-template-columns: 114px 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.admin-settings-page .avatar-wrap {
+    position: relative;
+    width: 114px;
+    height: 114px;
+}
+
+.admin-settings-page .big-avatar {
+    width: 107px;
+    height: 107px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--as-lime);
+    color: #070807;
+    font-size: 57px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.admin-settings-page .camera {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #252727;
+    border-radius: 50%;
+    background: #161717;
+    color: #eee;
+    cursor: pointer;
+}
+
+.admin-settings-page .info-line {
+    margin: 0 0 9px;
+}
+
+.admin-settings-page .info-label {
+    color: #969898;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.admin-settings-page .info-value {
+    color: #f1f1f1;
+    font-size: 13px;
+}
+
+.admin-settings-page .role-badge {
+    display: inline-flex;
+    padding: 4px 9px;
+    border: 1px solid #668800;
+    border-radius: 6px;
+    color: var(--as-lime);
+    font-size: 11px;
+    line-height: 1;
+}
+
+.admin-settings-page .profile-divider {
+    height: 1px;
+    background: #2a2c2c;
+    margin: 20px 0;
+}
+
+.admin-settings-page .field {
+    margin-bottom: 13px;
+}
+
+.admin-settings-page .field label {
+    display: block;
+    margin-bottom: 7px;
+    color: #dedfdf;
+    font-size: 11px;
+}
+
+.admin-settings-page .select-wrap {
+    position: relative;
+}
+
+.admin-settings-page .select-wrap:after {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.admin-settings-page select {
+    width: 100%;
+    height: 38px;
+    padding: 0 35px 0 11px;
+    border: 1px solid #2b2d2d;
+    border-radius: 6px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #0f1010;
+    color: #eee;
+    cursor: pointer;
+}
+
+.admin-settings-page .save-btn,
+.admin-settings-page .update-btn {
+    height: 38px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--as-lime);
+    color: #0b0c0b;
+    font-size: 12px;
+    font-weight: 650;
+    padding: 0 17px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.admin-settings-page .save-btn:hover:not(:disabled),
+.admin-settings-page .update-btn:hover {
+    background: #d0ff49;
+}
+
+.admin-settings-page .save-btn:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+/* ---------- password card ---------- */
+
+.admin-settings-page .password-card {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.admin-settings-page .password-head {
+    display: block;
+}
+
+.admin-settings-page .password-sub {
+    margin: 4px 0 17px 39px;
+    color: #999b9b;
+    font-size: 10px;
+}
+
+.admin-settings-page .password-field {
+    margin-bottom: 14px;
+}
+
+.admin-settings-page .password-field label {
+    display: block;
+    margin-bottom: 7px;
+    color: #dedfdf;
+    font-size: 11px;
+}
+
+.admin-settings-page .password-wrap {
+    position: relative;
+}
+
+.admin-settings-page .password-input {
+    width: 100%;
+    height: 38px;
+    padding: 0 40px 0 12px;
+    border: 1px solid #2b2d2d;
+    border-radius: 6px;
+    outline: none;
+    background: #0f1010;
+    color: #eee;
+    font-size: 12px;
+}
+
+.admin-settings-page .password-input::placeholder {
+    color: #696b6b;
+}
+
+.admin-settings-page .password-input:focus {
+    border-color: #719400;
+}
+
+.admin-settings-page .eye {
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    border: 0;
+    background: none;
+    padding: 2px;
+    color: #bfc0c0;
+    cursor: pointer;
+}
+
+.admin-settings-page .requirements {
+    margin-top: 13px;
+    color: #c7c8c8;
+    font-size: 11px;
+}
+
+.admin-settings-page .requirements-title {
+    margin-bottom: 7px;
+}
+
+.admin-settings-page .requirement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.admin-settings-page .check {
+    width: 14px;
+    height: 14px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #4b4f41;
+    border-radius: 50%;
+    color: #0b0c0b;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.admin-settings-page .check[data-met="true"] {
+    border-color: var(--as-lime);
+    background: var(--as-lime);
+}
+
+.admin-settings-page .update-btn {
+    margin-top: 12px;
+}
+
+/* ---------- security card ---------- */
+
+.admin-settings-page .security-card {
+    margin-top: 21px;
+    min-height: 212px;
+    padding: 18px 25px 20px;
+}
+
+.admin-settings-page .security-sub {
+    margin: 3px 0 0 30px;
+    color: #9a9c9c;
+    font-size: 10px;
+}
+
+.admin-settings-page .security-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.admin-settings-page .security-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 11px;
+    align-items: center;
+}
+
+.admin-settings-page .security-icon {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #181a1a;
+    color: var(--as-lime);
+}
+
+.admin-settings-page .security-name {
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.admin-settings-page .security-desc {
+    margin-top: 5px;
+    color: #9a9b9b;
+    font-size: 10px;
+}
+
+.admin-settings-page .security-status {
+    margin-top: 6px;
+    color: var(--as-orange);
+    font-size: 10px;
+}
+
+.admin-settings-page .security-status[data-tone="good"] {
+    color: var(--as-lime);
+}
+
+.admin-settings-page .outline-btn {
+    height: 35px;
+    padding: 0 13px;
+    border: 1px solid #303232;
+    border-radius: 5px;
+    background: #111212;
+    color: #dedfdf;
+    font-size: 10px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.admin-settings-page .outline-btn:hover {
+    border-color: #555;
+    background: #181919;
+}
+
+/* ---------- footer ---------- */
+
+.admin-settings-page footer {
+    height: 49px;
+    border-top: 1px solid #242626;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #777979;
+    font-size: 10px;
+}
+
+.admin-settings-page .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.admin-settings-page .footer-link {
+    border: 0;
+    background: none;
+    padding: 0;
+    color: var(--as-lime);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.admin-settings-page .footer-link:hover {
+    color: #d0ff49;
+}
+
+/* ---------- responsive ---------- */
+
+@media (min-width: 1680px) {
+    .admin-settings-page {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .admin-settings-inner {
+        max-width: 1390px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .admin-settings-page {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .admin-settings-inner {
+        max-width: 1530px;
+    }
+
+    .admin-settings-page .page-head {
+        min-height: 76px;
+    }
+
+    .admin-settings-page .page-head h1 {
+        font-size: 28px;
+    }
+
+    .admin-settings-page .settings-shell {
+        margin-top: 17px;
+    }
+
+    .admin-settings-page .profile-card,
+    .admin-settings-page .password-card {
+        min-height: 540px;
+    }
+
+    .admin-settings-page .security-card {
+        min-height: 220px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .admin-settings-inner {
+        max-width: 1700px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .admin-settings-page {
+        padding: 22px 24px;
+    }
+
+    .admin-settings-page .page-head {
+        padding-left: 24px;
+    }
+
+    .admin-settings-page .top-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-settings-page .profile-card,
+    .admin-settings-page .password-card {
+        min-height: auto;
+    }
+
+    .admin-settings-page .security-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .admin-settings-page {
+        padding: 18px 13px 15px;
+    }
+
+    .admin-settings-page .page-head {
+        min-height: 60px;
+        padding: 1px 0 0 15px;
+        align-items: center;
+    }
+
+    .admin-settings-page .page-head h1 {
+        font-size: 21px;
+    }
+
+    .admin-settings-page .title-icon {
+        width: 19px;
+        height: 19px;
+    }
+
+    .admin-settings-page .subtitle {
+        font-size: 10px;
+    }
+
+    .admin-settings-page .owner {
+        display: none;
+    }
+
+    .admin-settings-page .settings-shell {
+        margin-top: 12px;
+        padding: 0 10px 13px;
+    }
+
+    .admin-settings-page .tabs {
+        height: 53px;
+        gap: 4px;
+        overflow: hidden;
+    }
+
+    .admin-settings-page .tab {
+        height: 53px;
+        padding: 0 8px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .admin-settings-page .tab:first-child {
+        padding-left: 5px;
+    }
+
+    .admin-settings-page .soon {
+        font-size: 8px;
+        padding: 3px 6px;
+    }
+
+    .admin-settings-page .top-grid {
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    .admin-settings-page .profile-card,
+    .admin-settings-page .password-card {
+        padding: 17px 15px;
+    }
+
+    .admin-settings-page .profile-body {
+        padding-top: 21px;
+    }
+
+    .admin-settings-page .profile-top {
+        grid-template-columns: 88px 1fr;
+        gap: 15px;
+    }
+
+    .admin-settings-page .avatar-wrap {
+        width: 88px;
+        height: 88px;
+    }
+
+    .admin-settings-page .big-avatar {
+        width: 84px;
+        height: 84px;
+        font-size: 45px;
+    }
+
+    .admin-settings-page .camera {
+        width: 28px;
+        height: 28px;
+    }
+
+    .admin-settings-page .profile-divider {
+        margin: 16px 0;
+    }
+
+    .admin-settings-page .security-card {
+        margin-top: 12px;
+        padding: 17px 15px;
+    }
+
+    .admin-settings-page .security-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 23px;
+    }
+
+    .admin-settings-page footer {
+        height: auto;
+        padding: 14px 0;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .admin-settings-page .footer-links {
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 430px) {
+    .admin-settings-page .profile-top {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-settings-page .info-line {
+        margin-bottom: 8px;
+    }
+
+    .admin-settings-page .security-item {
+        grid-template-columns: 52px 1fr;
+    }
+
+    .admin-settings-page .security-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .admin-settings-page .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

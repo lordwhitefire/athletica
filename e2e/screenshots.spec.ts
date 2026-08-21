@@ -24,7 +24,7 @@ async function freezeCarousels(page: import("@playwright/test").Page) {
 }
 
 const ADMIN_EMAIL = process.env.ADMIN_TEST_EMAIL ?? "admin@athletica.com";
-const ADMIN_PASSWORD = process.env.ADMIN_TEST_PASSWORD ?? "4603bb34-13ce55de";
+const ADMIN_PASSWORD = process.env.ADMIN_TEST_PASSWORD ?? "";
 
 const SS_OPTS = { fullPage: true, timeout: 15000 };
 

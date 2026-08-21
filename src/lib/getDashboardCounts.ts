@@ -1,4 +1,4 @@
-import { adminClient } from "@/lib/admin-sanity";
+import { adminSupabase } from "@/lib/supabase/admin";
 import type { ApiResult } from "@/lib/api-types";
 import { ok, fromCaughtError } from "@/lib/api-types";
 
@@ -11,14 +11,22 @@ export interface DashboardCounts {
 
 export async function getDashboardCounts(): Promise<ApiResult<DashboardCounts>> {
     try {
-        const [productCount, brandCount, navCount, linkCount] = await Promise.all([
-            adminClient.fetch(`count(*[_type == "product"])`, {}, { signal: AbortSignal.timeout(20000) }),
-            adminClient.fetch(`count(*[_type == "brand"])`, {}, { signal: AbortSignal.timeout(20000) }),
-            adminClient.fetch(`count(*[_type == "navigation"])`, {}, { signal: AbortSignal.timeout(20000) }),
-            adminClient.fetch(`count(*[_type == "amazonLinks"])`, {}, { signal: AbortSignal.timeout(20000) }),
+        const [productRes, brandRes, navRes, linkRes] = await Promise.all([
+            adminSupabase.from("products").select("id", { count: "exact", head: true }),
+            adminSupabase.from("brands").select("id", { count: "exact", head: true }),
+            adminSupabase.from("navigation").select("id", { count: "exact", head: true }),
+            adminSupabase
+                .from("products")
+                .select("id", { count: "exact", head: true })
+                .not("asin", "is", null),
         ]);
 
-        return ok({ productCount, brandCount, navCount, linkCount });
+        return ok({
+            productCount: productRes.count ?? 0,
+            brandCount: brandRes.count ?? 0,
+            navCount: navRes.count ?? 0,
+            linkCount: linkRes.count ?? 0,
+        });
     } catch (err) {
         return fromCaughtError(err, "dashboard_counts_fetch_failed");
     }
