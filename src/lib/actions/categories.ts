@@ -70,15 +70,16 @@ export async function createCategory(
 ): Promise<ApiResult<{ id: string }>> {
     try {
         const cleanName = (name || "").trim();
+        const normalizedParentId = parentId || null;
         if (!cleanName) {
             return fail("validation_error", "category_name_required", "Category name is required.");
         }
 
-        if (parentId) {
+        if (normalizedParentId) {
             const { data: parent } = await adminSupabase
                 .from("categories")
                 .select("id")
-                .eq("id", parentId)
+                .eq("id", normalizedParentId)
                 .single();
             if (!parent) {
                 return fail("validation_error", "category_parent_not_found", "Parent category does not exist.");
@@ -89,8 +90,8 @@ export async function createCategory(
             .from("categories")
             .select("id")
             .or(
-                parentId
-                    ? `and(name.eq.${cleanName},parent_id.eq.${parentId})`
+                normalizedParentId
+                    ? `and(name.eq.${cleanName},parent_id.eq.${normalizedParentId})`
                     : `and(name.eq.${cleanName},parent_id.is.null)`,
             )
             .limit(1);
@@ -101,7 +102,7 @@ export async function createCategory(
         const slug = await uniqueSlug(cleanName);
         const { data, error } = await adminSupabase
             .from("categories")
-            .insert({ slug, name: cleanName, parent_id: parentId })
+            .insert({ slug, name: cleanName, parent_id: normalizedParentId })
             .select("id")
             .single();
         if (error) throw error;
@@ -121,6 +122,7 @@ export async function updateCategory(
 ): Promise<ApiResult<{ id: string }>> {
     try {
         const cleanName = (name || "").trim();
+        const normalizedParentId = parentId || null;
         if (!cleanName) {
             return fail("validation_error", "category_name_required", "Category name is required.");
         }
@@ -129,8 +131,8 @@ export async function updateCategory(
             .from("categories")
             .select("id")
             .or(
-                parentId
-                    ? `and(name.eq.${cleanName},parent_id.eq.${parentId})`
+                normalizedParentId
+                    ? `and(name.eq.${cleanName},parent_id.eq.${normalizedParentId})`
                     : `and(name.eq.${cleanName},parent_id.is.null)`,
             )
             .limit(1);
@@ -144,7 +146,7 @@ export async function updateCategory(
             .eq("id", id)
             .single();
 
-        const patch: Record<string, unknown> = { name: cleanName, parent_id: parentId };
+        const patch: Record<string, unknown> = { name: cleanName, parent_id: normalizedParentId };
         if (current?.slug !== slugify(cleanName)) {
             patch.slug = await uniqueSlug(cleanName, id);
         }
@@ -157,6 +159,21 @@ export async function updateCategory(
         return ok({ id });
     } catch (err) {
         return fromCaughtError(err, "category_update_failed");
+    }
+}
+
+export async function getCategoryProductCount(
+    id: string,
+): Promise<ApiResult<{ count: number }>> {
+    try {
+        const { count, error } = await adminSupabase
+            .from("products")
+            .select("id", { count: "exact", head: true })
+            .eq("category_id", id);
+        if (error) throw error;
+        return ok({ count: count ?? 0 });
+    } catch (err) {
+        return fromCaughtError(err, "category_count_failed");
     }
 }
 

@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
-import { useForm, FormProvider, Controller } from "react-hook-form";
+import { useForm, FormProvider, Controller, type FieldErrors } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { productFormSchema, type ProductFormData } from "@/lib/schemas/product";
 import { Form } from "@/components/ui/Form";
@@ -207,6 +207,15 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
         }
     }
 
+    function onInvalid(errors: FieldErrors<ProductFormData>) {
+        const first = Object.values(errors)[0];
+        const message =
+            first && typeof first === "object" && "message" in first && first.message
+                ? String(first.message)
+                : "Please fix the highlighted fields.";
+        alert(`Cannot save product: ${message}`);
+    }
+
     async function onSubmit(data: ProductFormData) {
         const formData = new FormData();
         formData.set("id", data.id || "");
@@ -270,7 +279,7 @@ export default function ProductForm({ action, initial, productId }: ProductFormP
 
     return (
         <FormProvider {...methods}>
-            <Form onSubmit={handleSubmit(onSubmit)} className="max-w-3xl space-y-6">
+            <Form onSubmit={handleSubmit(onSubmit, onInvalid)} className="max-w-3xl space-y-6">
                 <div className="bg-neutral-900 border border-neutral-800 rounded p-6 space-y-4">
                     <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-400">Images</h2>
                     <Controller

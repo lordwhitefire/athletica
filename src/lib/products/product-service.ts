@@ -509,6 +509,7 @@ export async function getProductBySlug(slug: string): Promise<ProductWithRelatio
     .from('products')
     .select('*')
     .eq('slug', slug)
+    .eq('status', 'published')
     .single();
 
   if (error || !product) return null;

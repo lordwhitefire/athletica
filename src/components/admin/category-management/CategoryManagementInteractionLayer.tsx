@@ -205,6 +205,8 @@ export default function CategoryManagementInteractionLayer() {
     const [navEditor, setNavEditor] = React.useState<NavEditorMode>({ mode: "closed" });
     const [surface, setSurface] = React.useState<SurfaceType>(null);
     const [deleteTarget, setDeleteTarget] = React.useState<DeleteTarget>(null);
+    const [deleteProductCount, setDeleteProductCount] = React.useState<number | null>(null);
+    const [deleteCountState, setDeleteCountState] = React.useState<"idle" | "loading" | "ready" | "error">("idle");
     const [moveSubTarget, setMoveSubTarget] = React.useState<{ categoryId: string; subcategoryId: string } | null>(null);
     const [unsaved, setUnsaved] = React.useState<UnsavedContext | null>(null);
     const [actionMenu, setActionMenu] = React.useState<ActionMenuState>(null);
@@ -226,6 +228,35 @@ export default function CategoryManagementInteractionLayer() {
         moveProductsTo: string;
     }>({ descendantStrategy: "move-descendants", moveDescendantsTo: "", moveProductsTo: "" });
     const [deleteNavState, setDeleteNavState] = React.useState<"move-children" | "delete-children">("move-children");
+
+    React.useEffect(() => {
+        if (!deleteTarget || (deleteTarget.type !== "category" && deleteTarget.type !== "subcategory")) {
+            setDeleteCountState("idle");
+            setDeleteProductCount(null);
+            return;
+        }
+        let cancelled = false;
+        setDeleteProductCount(null);
+        setDeleteCountState("loading");
+        import("@/lib/actions/categories")
+            .then(({ getCategoryProductCount }) => getCategoryProductCount(deleteTarget.id))
+            .then((res) => {
+                if (cancelled) return;
+                if (res.data) {
+                    setDeleteProductCount(res.data.count);
+                    setDeleteCountState("ready");
+                } else {
+                    setDeleteCountState("error");
+                }
+            })
+            .catch(() => {
+                if (!cancelled) setDeleteCountState("error");
+            });
+        return () => {
+            cancelled = true;
+        };
+    }, [deleteTarget]);
+
     const [navForm, setNavForm] = React.useState({
         label: "",
         destinationType: "Category" as "Category" | "Internal Page" | "External URL" | "Custom Link",
@@ -949,13 +980,14 @@ export default function CategoryManagementInteractionLayer() {
     }, [tree, categorySearch]);
 
     const deleteNode = deleteTarget?.type === "category" ? findCategory(tree, deleteTarget.id) : null;
-    const deleteProducts = deleteNode ? workspace[deleteNode.id]?.metrics.totalProducts ?? 0 : 0;
+    const deleteProducts = deleteNode ? deleteProductCount ?? 0 : 0;
     const deleteHasChildren = Boolean(deleteNode?.children?.length);
     const moveOptions = tree.filter((n) => n.id !== "all" && n.id !== deleteTarget?.id);
     const deleteMoveOptions = tree
         .flatMap((n) => (n.children ? [n, ...n.children] : [n]))
         .filter((n) => n.id !== "all" && n.id !== (deleteTarget?.type === "category" ? deleteTarget.id : ""));
-    const deleteProductsValid = deleteProducts === 0 || Boolean(deleteCategoryState.moveProductsTo);
+    const deleteProductsValid =
+        deleteCountState === "ready" && (deleteProducts === 0 || Boolean(deleteCategoryState.moveProductsTo));
     const deleteDescendantsValid = !deleteHasChildren || deleteCategoryState.descendantStrategy === "delete-descendants" || Boolean(deleteCategoryState.moveDescendantsTo);
     const deleteEnabled = deleteProductsValid && deleteDescendantsValid;
 
@@ -2253,9 +2285,13 @@ export default function CategoryManagementInteractionLayer() {
                             )}
                             {!deleteEnabled && (
                                 <p className="mt-3 text-[10px] text-[#e4612b]">
-                                    {deleteProducts > 0 && !deleteCategoryState.moveProductsTo
-                                        ? "Products must be moved to another category before deletion."
-                                        : "Choose where to move the descendants."}
+                                    {deleteCountState === "loading"
+                                        ? "Checking how many products reference this category…"
+                                        : deleteCountState === "error"
+                                          ? "Could not verify the product count. Deletion stays disabled until the count is confirmed."
+                                          : deleteProducts > 0 && !deleteCategoryState.moveProductsTo
+                                            ? "Products must be moved to another category before deletion."
+                                            : "Choose where to move the descendants."}
                                 </p>
                             )}
                             <div className="mt-5 flex items-center justify-between gap-2">

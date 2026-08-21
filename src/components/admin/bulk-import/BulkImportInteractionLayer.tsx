@@ -19,7 +19,7 @@ import {
 } from "./bulk-import.interactions";
 import { getImportValidationData, getCatalogProducts } from "@/lib/actions/products";
 import { batchCreateProducts } from "@/lib/actions/batch-upload";
-import type { BatchUploadCreateResult } from "@/lib/schemas/batch-upload";
+import type { BatchUploadCreateResult, BatchUploadParseResult } from "@/lib/schemas/batch-upload";
 
 const ACCEPTED_EXTENSIONS = ["csv", "xlsx", "json", "zip"];
 const MAX_FILE_SIZE = 50 * 1024 * 1024;
@@ -241,9 +241,16 @@ export default function BulkImportInteractionLayer({
     const [selectedImportId, setSelectedImportId] = React.useState<string | null>(null);
     const [progress, setProgress] = React.useState(0);
     const [importFailed, setImportFailed] = React.useState(false);
+    const [importError, setImportError] = React.useState<string | null>(null);
     const [importResult, setImportResult] = React.useState<BatchUploadCreateResult | null>(null);
     const fileInputRef = React.useRef<HTMLInputElement>(null);
     const importTimerRef = React.useRef<number | null>(null);
+
+    React.useEffect(() => {
+        return () => {
+            if (importTimerRef.current) window.clearInterval(importTimerRef.current);
+        };
+    }, []);
 
     const showToast = (type: NonNullable<Toast>["type"], message: string) =>
         setToast({ type, message });
@@ -408,54 +415,87 @@ export default function BulkImportInteractionLayer({
         }, 700);
     }
 
-    function finishImport() {
+    function finishImport(result: BatchUploadCreateResult) {
         setStatus("completed");
         setStep("import");
-        if (stats) {
-            const record: RecentImport = {
-                id: `imp-${Date.now()}`,
-                file: file?.name ?? "athletica_products_export.csv",
-                by: "Admin",
-                date: formatDateForImport(new Date()),
-                total: stats.totalRows,
-                valid: stats.validRows,
-                issues: stats.issueRows,
-                errors: stats.criticalErrors,
-                status: "Imported",
-                statusType: "green",
-            };
-            setImports((list) => [record, ...list]);
-            setImportsPage(1);
-            setSelectedImportId(record.id);
-        }
-        showToast("success", "Import completed successfully.");
+        const failed = result.failed;
+        const record: RecentImport = {
+            id: `imp-${Date.now()}`,
+            file: file?.name ?? "athletica_products_export.zip",
+            by: "Admin",
+            date: formatDateForImport(new Date()),
+            total: result.created + failed,
+            valid: result.created,
+            issues: failed,
+            errors: failed,
+            status: failed > 0 ? "Partial" : "Imported",
+            statusType: failed > 0 ? "blue" : "green",
+        };
+        setImports((list) => [record, ...list]);
+        setImportsPage(1);
+        setSelectedImportId(record.id);
+        showToast(
+            failed > 0 ? "warning" : "success",
+            failed > 0
+                ? `Import finished with ${failed} failed row${failed === 1 ? "" : "s"}.`
+                : "Import completed successfully.",
+        );
         refreshData();
     }
 
-    function runImport() {
+    async function runImport() {
         if (status === "importing") return;
+        if (!file) {
+            showToast("error", "Choose a file to import first.");
+            return;
+        }
         setStatus("importing");
         setImportFailed(false);
+        setImportError(null);
         setProgress(0);
-        const shouldFail = (file?.name ?? "").toLowerCase().includes("fail");
-        const failAt = 45 + Math.floor(Math.random() * 25);
         let current = 0;
         if (importTimerRef.current) window.clearInterval(importTimerRef.current);
         importTimerRef.current = window.setInterval(() => {
-            current = Math.min(100, current + 6 + Math.floor(Math.random() * 8));
+            current = Math.min(90, current + 4 + Math.floor(Math.random() * 6));
             setProgress(current);
-            if (shouldFail && current >= failAt) {
-                if (importTimerRef.current) window.clearInterval(importTimerRef.current);
-                window.setTimeout(() => {
-                    setStatus("failed");
-                    setImportFailed(true);
-                    setProgress(0);
-                }, 300);
-            } else if (current >= 100) {
-                if (importTimerRef.current) window.clearInterval(importTimerRef.current);
-                window.setTimeout(finishImport, 300);
+        }, 150);
+
+        const stopProgress = () => {
+            if (importTimerRef.current) window.clearInterval(importTimerRef.current);
+            importTimerRef.current = null;
+        };
+
+        try {
+            if (!(file.name ?? "").toLowerCase().endsWith(".zip")) {
+                throw new Error("Only .zip export files are supported by the import pipeline.");
             }
-        }, 120);
+            const formData = new FormData();
+            formData.set("file", file);
+            const parseRes = await fetch("/api/admin/batch-upload/parse", { method: "POST", body: formData });
+            const parseJson = (await parseRes.json()) as {
+                data: BatchUploadParseResult | null;
+                error: { message?: string } | null;
+            };
+            if (!parseRes.ok || !parseJson.data) {
+                throw new Error(parseJson.error?.message || "Failed to parse the uploaded file.");
+            }
+            const createResult = await batchCreateProducts(parseJson.data.productData);
+            if (!createResult.data) {
+                throw new Error(createResult.error.message || "Import failed while saving products.");
+            }
+            stopProgress();
+            setProgress(100);
+            setImportResult(createResult.data);
+            finishImport(createResult.data);
+        } catch (err) {
+            stopProgress();
+            setProgress(0);
+            const message = err instanceof Error ? err.message : "The import could not be completed.";
+            setImportError(message);
+            setImportFailed(true);
+            setStatus("failed");
+            showToast("error", message);
+        }
     }
 
     function markFixed(row: ImportErrorRow, key: string) {
@@ -1624,6 +1664,11 @@ export default function BulkImportInteractionLayer({
                             <p className="mt-1 text-[9px] text-[#777]">
                                 Your original file has not been modified.
                             </p>
+                            {importError && (
+                                <p className="mt-2 rounded-[6px] border border-[#4b1d19] bg-[#2a0d0b] p-2 text-[9px] text-[#ed5346]">
+                                    {importError}
+                                </p>
+                            )}
                             <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-end">
                                 <button
                                     type="button"

@@ -13,7 +13,7 @@ export const productFormSchema = z.object({
     brand_ref: z.string().min(1, "Brand is required."),
     traction: z.string().nullable().optional(),
     gender: z.string().min(1, "Gender is required."),
-    color: z.string().min(1, "Color is required."),
+    color: z.string(),
     price_current: z.string().regex(priceCurrentRegex, "Invalid price."),
     price_original: z.string().regex(priceOriginalRegex, "Invalid original price."),
     discount_percent: z.string().regex(discountPercentRegex, "Invalid discount."),

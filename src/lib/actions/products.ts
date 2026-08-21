@@ -386,6 +386,7 @@ async function buildProductRow(
         image_links: string[] | null;
         sizes: string[] | null;
         asin?: string | null;
+        status?: string | null;
     },
 ): Promise<{ row: Record<string, unknown>; id: string }> {
     const id = (raw.id as string) || slugify(raw.name || raw.model || "product");
@@ -439,8 +440,8 @@ async function buildProductRow(
             color: (raw.color as string) || "",
             sizes,
             attributes,
-            status: "published" as const,
-            asin: null,
+            status: existing?.status === "unpublished" ? ("unpublished" as const) : ("published" as const),
+            asin,
             category_id: categoryId,
             brand_id: brandId,
             leaf_model_id: leafModelId,
@@ -478,7 +479,7 @@ export async function updateProduct(id: string, formData: FormData): Promise<Api
 
         const { data: existing } = await adminSupabase
             .from("products")
-            .select("attributes, image_links, sizes, asin")
+            .select("attributes, image_links, sizes, asin, status")
             .eq("id", id)
             .single();
 
