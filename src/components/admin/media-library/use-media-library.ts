@@ -1,16 +1,16 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { getMediaAssets, deleteAsset, uploadImage } from "@/lib/actions/media";
 import {
-  buildDefaultAssets,
   PER_PAGE_OPTIONS,
   SORT_OPTIONS,
   STORAGE_KEY,
-  USED_PRODUCT_NAMES,
   formatBytes,
   slugifyProduct,
 } from "./media-library.data";
 import type {
+  MediaAsset,
   MediaLibraryState,
   MediaView,
   PendingFile,
@@ -18,6 +18,35 @@ import type {
   PopoverKey,
   PopoverOption,
 } from "./media-library.types";
+
+interface SanityMediaAsset {
+  _id?: string;
+  url?: string;
+  originalFilename?: string;
+  _createdAt?: string;
+  metadata?: { dimensions?: { width?: number; height?: number } | null } | null;
+}
+
+function toMediaAsset(raw: SanityMediaAsset): MediaAsset | null {
+  if (!raw._id || !raw.url) return null;
+  const filename = raw.originalFilename ?? raw._id;
+  const ext = (filename.split(".").pop() ?? "").toUpperCase();
+  const dims = raw.metadata?.dimensions;
+  return {
+    id: raw._id,
+    filename,
+    type: ["JPG", "PNG", "WEBP", "GIF", "AVIF"].includes(ext) ? ext : "JPG",
+    dims:
+      dims?.width && dims?.height
+        ? `${dims.width} × ${dims.height}`
+        : "—",
+    url: raw.url,
+    usageText: "Unused",
+    used: false,
+    sizeMb: 0,
+    addedAt: raw._createdAt ?? new Date().toISOString(),
+  };
+}
 
 function loadPersisted(): PersistedMediaState {
   const fallback: PersistedMediaState = {
@@ -66,13 +95,14 @@ const PROFILE_OPTIONS: PopoverOption[] = [
 ];
 
 export function useMediaLibrary() {
-  const persisted = useRef<PersistedMediaState | null>(null);
-  if (persisted.current === null) persisted.current = loadPersisted();
+  const [persisted] = useState<PersistedMediaState>(loadPersisted);
 
   const [state, setState] = useState<MediaLibraryState>(() => {
-    const p = persisted.current as PersistedMediaState;
+    const p = persisted as PersistedMediaState;
     return {
-      assets: buildDefaultAssets(),
+      assets: [],
+      loading: true,
+      loadError: null,
       query: "",
       type: "All Types",
       usage: "All Usage",
@@ -102,7 +132,9 @@ export function useMediaLibrary() {
   });
 
   const stateRef = useRef(state);
-  stateRef.current = state;
+  useEffect(() => {
+    stateRef.current = state;
+  }, [state]);
   const toastId = useRef(0);
   const searchTimer = useRef<number | null>(null);
   const dropzoneRef = useRef<HTMLDivElement | null>(null);
@@ -116,6 +148,28 @@ export function useMediaLibrary() {
       state.perPage,
     );
   }, [state.starred, state.view, state.sort, state.perPage]);
+
+  const reloadAssets = useCallback(async () => {
+    const result = await getMediaAssets();
+    if (result.error) {
+      setState((cur) => ({
+        ...cur,
+        loading: false,
+        loadError: result.error.message,
+      }));
+      return;
+    }
+    const assets = (result.data as SanityMediaAsset[])
+      .map(toMediaAsset)
+      .filter((a): a is MediaAsset => a !== null);
+    setState((cur) => ({ ...cur, assets, loading: false, loadError: null }));
+  }, []);
+
+  useEffect(() => {
+    void (async () => {
+      await reloadAssets();
+    })();
+  }, [reloadAssets]);
 
   const notify = useCallback((message: string, type: "success" | "error" = "success") => {
     const id = ++toastId.current;
@@ -266,8 +320,7 @@ export function useMediaLibrary() {
     notify(active ? "Filters applied" : "Filters cleared");
   }, [notify]);
 
-  const getFilteredImages = useCallback(() => {
-    const s = stateRef.current;
+  const getFilteredImages = useCallback((s: MediaLibraryState) => {
     let result = s.assets.map((asset, index) => ({ asset, index }));
 
     if (s.query) {
@@ -347,7 +400,7 @@ export function useMediaLibrary() {
     return result;
   }, []);
 
-  const filtered = useMemo(getFilteredImages, [getFilteredImages, state.assets, state.query, state.type, state.usage, state.folder, state.sort, state.filters, state.sizeFilter, state.dateFilter]);
+  const filtered = useMemo(() => getFilteredImages(state), [getFilteredImages, state]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / state.perPage));
   const page = Math.min(state.page, totalPages);
@@ -405,7 +458,7 @@ export function useMediaLibrary() {
   const selectAllFiltered = useCallback(() => {
     setState((cur) => {
       const selected = new Set(cur.selected);
-      getFilteredImages().forEach((x) => selected.add(x.index));
+      getFilteredImages(cur).forEach((x) => selected.add(x.index));
       return { ...cur, selected };
     });
   }, [getFilteredImages]);
@@ -452,9 +505,10 @@ export function useMediaLibrary() {
 
   const shiftActiveImage = useCallback(
     (direction: number) => {
-      const filteredList = getFilteredImages();
+      const cur = stateRef.current;
+      const filteredList = getFilteredImages(cur);
       const currentPosition = filteredList.findIndex(
-        (x) => x.index === stateRef.current.activeIndex,
+        (x) => x.index === cur.activeIndex,
       );
       if (currentPosition < 0) return;
       const nextPosition =
@@ -470,16 +524,15 @@ export function useMediaLibrary() {
     [getFilteredImages],
   );
 
-  const showUsages = useCallback((index: number) => {
-    const asset = stateRef.current.assets[index];
-    if (!asset) return;
-    const items = asset.used ? USED_PRODUCT_NAMES : [];
+  const showUsages = useCallback(() => {
+    // No reverse-usage index is available from storage yet.
     setState((cur) => ({
       ...cur,
       confirm: {
         kind: "usage",
         title: "Image usage",
-        items,
+        text: "Usage tracking across content is not available yet.",
+        items: [],
       },
       deleteIndex: null,
     }));
@@ -555,29 +608,39 @@ export function useMediaLibrary() {
       };
     });
 
-    notify(`${asset.filename} deleted`);
-  }, [notify]);
+    void deleteAsset(asset.id).then(async (result) => {
+      if (result.error) {
+        notify(`Failed to delete ${asset.filename}`, "error");
+        await reloadAssets();
+        return;
+      }
+      notify(`${asset.filename} deleted`);
+    });
+  }, [notify, reloadAssets]);
 
   const performBulkDelete = useCallback(() => {
     const indexes = [...stateRef.current.selected].sort((a, b) => b - a);
     if (!indexes.length) return;
 
+    const targets = indexes
+      .map((index) => stateRef.current.assets[index])
+      .filter((a): a is MediaAsset => Boolean(a));
+    const targetIds = new Set(targets.map((t) => t.id));
+
     setState((prev) => {
-      const assets = prev.assets.filter((_, i) => !indexes.includes(i));
+      const assets = prev.assets.filter((a) => !targetIds.has(a.id));
       const starred = new Set(prev.starred);
-      indexes.forEach((index) => {
-        const asset = prev.assets[index];
-        if (asset) starred.delete(asset.id);
-      });
+      targets.forEach((asset) => starred.delete(asset.id));
 
       let activeIndex = prev.activeIndex;
       if (activeIndex !== null) {
-        if (indexes.includes(activeIndex)) {
+        const removedBefore =
+          prev.assets.slice(0, activeIndex).filter((a) => targetIds.has(a.id)).length;
+        if (targetIds.has(prev.assets[activeIndex]?.id)) {
           activeIndex = assets.length
-            ? Math.min(activeIndex, assets.length - 1)
+            ? Math.max(0, Math.min(activeIndex - removedBefore, assets.length - 1))
             : null;
         } else {
-          const removedBefore = indexes.filter((i) => i < activeIndex).length;
           activeIndex = activeIndex - removedBefore;
         }
       }
@@ -594,8 +657,18 @@ export function useMediaLibrary() {
       };
     });
 
-    notify(`${indexes.length} images deleted`);
-  }, [notify]);
+    void Promise.allSettled(targets.map((asset) => deleteAsset(asset.id))).then(
+      async (results) => {
+        const failed = results.filter((r) => r.status === "rejected" || r.value.error);
+        if (failed.length) {
+          notify(`${failed.length} of ${targets.length} deletions failed`, "error");
+          await reloadAssets();
+          return;
+        }
+        notify(`${targets.length} image${targets.length === 1 ? "" : "s"} deleted`);
+      },
+    );
+  }, [notify, reloadAssets]);
 
   const openUpload = useCallback(() => {
     closePopover();
@@ -637,7 +710,7 @@ export function useMediaLibrary() {
       accepted.forEach((file) => {
         const key = `${file.name}:${file.size}`;
         if (!existing.has(key)) {
-          added.push({ name: file.name, size: file.size, url: URL.createObjectURL(file) });
+          added.push({ name: file.name, size: file.size, url: URL.createObjectURL(file), file });
           existing.add(key);
         }
       });
@@ -656,74 +729,98 @@ export function useMediaLibrary() {
     });
   }, []);
 
+  const uploadPending = useCallback(
+    async (
+      files: PendingFile[],
+    ): Promise<{ uploaded: MediaAsset[]; failed: string[] }> => {
+      const uploaded: MediaAsset[] = [];
+      const failed: string[] = [];
+      for (const file of files) {
+        const formData = new FormData();
+        formData.append("file", file.file, file.name);
+        const result = await uploadImage(formData);
+        if (result.error) {
+          failed.push(file.name);
+          continue;
+        }
+        uploaded.push({
+          id: result.data._id,
+          filename: result.data.originalFilename || file.name,
+          type: (file.name.split(".").pop() || "JPG").toUpperCase(),
+          dims: "—",
+          url: result.data.url,
+          usageText: "Unused",
+          used: false,
+          sizeMb: Math.max(0.1, file.size / 1048576),
+          addedAt: new Date().toISOString(),
+        });
+      }
+      return { uploaded, failed };
+    },
+    [],
+  );
+
   const performUpload = useCallback(() => {
     const cur = stateRef.current;
     if (!cur.pendingFiles.length) {
       notify("Choose at least one image", "error");
       return;
     }
-
     const count = cur.pendingFiles.length;
-    const newAssets = cur.pendingFiles.map((file, i) => ({
-      id: `asset-upload-${Date.now()}-${i}`,
-      filename: file.name,
-      type: (file.name.split(".").pop() || "JPG").toUpperCase(),
-      dims: "local preview",
-      url: file.url,
-      usageText: "Unused",
-      used: false,
-      sizeMb: Math.max(0.1, file.size / 1048576),
-      addedAt: new Date().toISOString(),
+    const pendingSnapshot = [...cur.pendingFiles];
+
+    setState((prev) => ({
+      ...prev,
+      uploadOpen: false,
+      pendingFiles: [],
+      replaceIndex: null,
     }));
+    notify(`Uploading ${count} image${count === 1 ? "" : "s"}…`);
 
-    setState((prev) => {
-      prev.pendingFiles.forEach((file) => URL.revokeObjectURL(file.url));
-      return {
-        ...prev,
-        assets: [...newAssets, ...prev.assets],
-        page: 1,
-        uploadOpen: false,
-        pendingFiles: [],
-        replaceIndex: null,
-      };
+    void uploadPending(pendingSnapshot).then(async ({ uploaded, failed }) => {
+      pendingSnapshot.forEach((file) => URL.revokeObjectURL(file.url));
+      if (uploaded.length) {
+        setState((prev) => ({
+          ...prev,
+          assets: [...uploaded, ...prev.assets],
+          page: 1,
+        }));
+      }
+      if (failed.length) {
+        notify(`${failed.length} upload${failed.length === 1 ? "" : "s"} failed: ${failed.join(", ")}`, "error");
+      } else {
+        notify(`${uploaded.length} image${uploaded.length === 1 ? "" : "s"} uploaded successfully`);
+      }
     });
-
-    notify(`${count} image${count === 1 ? "" : "s"} uploaded successfully`);
-  }, [notify]);
+  }, [notify, uploadPending]);
 
   const performReplace = useCallback(() => {
+    // Storage has no in-place replace; the file is uploaded as a new asset.
     const cur = stateRef.current;
-    const index = cur.replaceIndex;
-    if (index === undefined || index === null || !cur.pendingFiles.length) {
+    if (!cur.pendingFiles.length) {
       notify("Choose a replacement image", "error");
       return;
     }
-    const file = cur.pendingFiles[0];
+    const pendingSnapshot = [cur.pendingFiles[0]];
 
     setState((prev) => {
-      const target = prev.assets[index];
-      if (!target) return prev;
       prev.pendingFiles.forEach((f) => URL.revokeObjectURL(f.url));
-      const assets = [...prev.assets];
-      assets[index] = {
-        ...target,
-        filename: file.name,
-        type: (file.name.split(".").pop() || "JPG").toUpperCase(),
-        dims: "local preview",
-        url: file.url,
-        sizeMb: Math.max(0.1, file.size / 1048576),
-      };
-      return {
-        ...prev,
-        assets,
-        uploadOpen: false,
-        pendingFiles: [],
-        replaceIndex: null,
-      };
+      return { ...prev, uploadOpen: false, pendingFiles: [], replaceIndex: null };
     });
 
-    notify("Image replaced successfully");
-  }, [notify]);
+    void uploadPending(pendingSnapshot).then(({ uploaded, failed }) => {
+      if (failed.length || !uploaded.length) {
+        notify("Upload failed. Please try again.", "error");
+        return;
+      }
+      setState((prev) => ({
+        ...prev,
+        assets: [...uploaded, ...prev.assets],
+        page: 1,
+      }));
+      notify("Uploaded as a new image");
+    });
+  }, [notify, uploadPending]);
 
   const handleCardAction = useCallback(
     (action: string, index: number, target: HTMLElement | null) => {
@@ -808,7 +905,7 @@ export function useMediaLibrary() {
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
-      const target = event.target as Node | null;
+      const target = event.target as HTMLElement | null;
       const inPopover = target?.closest?.(".ml-popover");
       const anchor = target?.closest?.(".select, .sort, .per-page, .profile");
       if (!inPopover && !anchor) closePopover();

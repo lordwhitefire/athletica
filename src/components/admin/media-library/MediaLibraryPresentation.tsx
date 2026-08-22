@@ -8,7 +8,6 @@ import {
   STORAGE_USED_GB,
   TYPE_OPTIONS,
   USAGE_OPTIONS,
-  USED_PRODUCT_NAMES,
 } from "./media-library.data";
 import { useMediaLibraryModel } from "./MediaLibraryInteractionLayer";
 import type { MediaLibraryModel } from "./use-media-library";
@@ -38,7 +37,6 @@ export function MediaLibraryPresentation() {
     clearSelection,
     requestBulkDelete,
     goToPage,
-    slugifyProduct,
   } = model;
 
   const usagePct = (STORAGE_USED_GB / STORAGE_TOTAL_GB) * 100;
@@ -414,11 +412,11 @@ function DrawerContent({
   index,
   model,
 }: {
-  asset: { filename: string; type: string; dims: string; sizeMb: number; addedAt: string; usageText: string; used: boolean; url: string };
+  asset: { id: string; filename: string; type: string; dims: string; sizeMb: number; addedAt: string; usageText: string; used: boolean; url: string };
   index: number;
   model: MediaLibraryModel;
 }) {
-  const { state, closeDrawer, openLightbox, showUsages, requestDelete, openReplace, toggleStar, slugifyProduct } = model;
+  const { state, closeDrawer, openLightbox, requestDelete, openReplace, toggleStar } = model;
   const starred = state.starred.has(asset.id);
 
   return (
@@ -484,33 +482,10 @@ function DrawerContent({
 
         <div className="divider" />
 
-        <div className="used-title">
-          Used In <span>{asset.used ? USED_PRODUCT_NAMES.length : 0}</span>
+        <div className="used-title">Used In</div>
+        <div className="unused-note">
+          Usage tracking across products and content is not available yet.
         </div>
-
-        {asset.used ? (
-          <>
-            {USED_PRODUCT_NAMES.slice(0, 3).map((name) => (
-              <div className="product-use" key={name}>
-                <img src={asset.url} alt="" />
-                <div>
-                  <div className="product-name">{name}</div>
-                  <div className="product-url">{slugifyProduct(name)}</div>
-                </div>
-              </div>
-            ))}
-            <button
-              type="button"
-              className="show-all"
-              data-action="show-usages"
-              onClick={() => showUsages(index)}
-            >
-              Show all {USED_PRODUCT_NAMES.length} usages
-            </button>
-          </>
-        ) : (
-          <div className="unused-note">This image is currently unused.</div>
-        )}
       </div>
 
       <div className="drawer-actions">

@@ -157,8 +157,6 @@ export async function getModelNavTree(): Promise<ApiResult<ModelNavNode[]>> {
     return ok([...merged.values()]);
 }
 
-const TRACTION_CODES = ["FG", "AG", "MG", "SG", "TF", "IC", "HG"];
-
 function extractBrand(label: string): string {
     const multiWordBrands = ["New Balance"];
     for (const brand of multiWordBrands) {

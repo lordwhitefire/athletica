@@ -7,8 +7,7 @@ import HideOnAdmin from "@/components/navigation/HideOnAdmin";
 import Footer from "@/components/ui/Footer";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import SitePreloader from "./site-preloader";
-import { getNavigation } from "@/lib/getNavigation";
-import { getSiteLogoUrl } from "@/lib/sanity";
+import { getNavigation, getSiteLogoUrl } from "@/lib/content/content-service";
 
 export const metadata: Metadata = {
     title: {

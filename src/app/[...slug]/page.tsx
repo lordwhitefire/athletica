@@ -14,8 +14,8 @@ import {
 import type { ProductFilters } from "@/lib/products/types";
 import { resolveRoute } from "@/lib/resolveRoute";
 import { getAmazonLink } from "@/lib/getAmazonLinks";
-import { getNavigation, getMainCategoryHref, getBrandCategoryHref, getProductCategoryHref, getTractionCategoryHref } from "@/lib/getNavigation";
-import { urlFor } from "@/lib/sanity";
+import { getNavigation, getMainCategoryHref, getBrandCategoryHref, getProductCategoryHref, getTractionCategoryHref } from "@/lib/content/content-service";
+import { urlFor } from "@/lib/sanity-client";
 import type { SanityImageSource } from "@sanity/image-url";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -228,9 +228,13 @@ export default async function SlugPage({ params, searchParams }: SlugPageProps) 
 
     let featuredImage: string | null = null;
     if (resolved.featuredImage) {
-        try {
-            featuredImage = urlFor(resolved.featuredImage as SanityImageSource).width(1920).url();
-        } catch { featuredImage = null; }
+        if (typeof resolved.featuredImage === "string" && resolved.featuredImage.startsWith("http")) {
+            featuredImage = resolved.featuredImage;
+        } else {
+            try {
+                featuredImage = urlFor(resolved.featuredImage as SanityImageSource).width(1920).url();
+            } catch { featuredImage = null; }
+        }
     }
 
     return (

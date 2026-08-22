@@ -139,7 +139,10 @@ export function useHomepageManagement() {
 
   const setTopTab = useCallback((tab: TopTab) => {
     setState((cur) => ({ ...cur, topTab: tab }));
-    notify(`${tab === "sections" ? "Sections" : "Settings"} selected`);
+    notify(
+      `${tab === "sections" ? "Sections" : "Settings"} selected`,
+      `Showing the ${tab} tab.`,
+    );
   }, [notify]);
 
   const updateSectionField = useCallback(
@@ -438,7 +441,7 @@ export function useHomepageManagement() {
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
-      const target = event.target as Node | null;
+      const target = event.target as HTMLElement | null;
       if (!target?.closest?.(".ap-context-menu") && !target?.closest?.(".more-row")) {
         setState((cur) => (cur.contextMenu ? { ...cur, contextMenu: null } : cur));
       }

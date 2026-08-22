@@ -24,6 +24,7 @@ export interface PendingFile {
   name: string;
   size: number;
   url: string;
+  file: File;
 }
 
 export type PopoverKey = "type" | "usage" | "folder" | "sort" | "perPage" | "profile";
@@ -74,6 +75,8 @@ export interface PersistedMediaState {
 
 export interface MediaLibraryState {
   assets: MediaAsset[];
+  loading: boolean;
+  loadError: string | null;
   query: string;
   type: string;
   usage: string;
@@ -83,7 +86,7 @@ export interface MediaLibraryState {
   page: number;
   perPage: number;
   selected: Set<number>;
-  starred: Set<number>;
+  starred: Set<string>;
   activeIndex: number | null;
   mobileDetailOpen: boolean;
   filterOpen: boolean;

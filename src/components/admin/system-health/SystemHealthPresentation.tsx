@@ -12,8 +12,9 @@ import {
     type IssueKey,
 } from "./system-health-data";
 import "./system-health.css";
+import type { TabKey } from "./use-system-health";
 
-const TABS: { key: IssueKey | "all"; label: string }[] = [
+const TABS: { key: TabKey; label: string }[] = [
     { key: "all", label: "All Issues" },
     { key: "images", label: "Images" },
     { key: "asin", label: "ASIN" },

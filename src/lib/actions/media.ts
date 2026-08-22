@@ -22,7 +22,7 @@ export async function uploadImage(formData: FormData): Promise<ApiResult<{ _id: 
 
 export async function getMediaAssets(): Promise<ApiResult<unknown[]>> {
     try {
-        const assets = await adminClient.fetch(`*[_type == "sanity.imageAsset"] | order(_createdAt desc) { _id, url, originalFilename, metadata { dimensions } }`);
+        const assets = await adminClient.fetch(`*[_type == "sanity.imageAsset"] | order(_createdAt desc) { _id, url, originalFilename, _createdAt, metadata { dimensions } }`);
         return ok(assets as unknown[]);
     } catch (err) {
         return fromCaughtError(err, "media_assets_fetch_failed");

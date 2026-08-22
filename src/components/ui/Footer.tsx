@@ -1,29 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
-import * as fs from "fs";
-import * as path from "path";
-import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
+import {
+  getMainCategoryHref,
+  getMainCategoryLabel,
+  getSiteSettings,
+  type LinkColumn,
+  type SocialLink,
+} from "@/lib/content/content-service";
 
-interface SocialLink { label: string; url: string; icon: string }
 interface FooterLink { label: string; href: string }
-interface LinkColumn { title: string; links: FooterLink[] }
-interface FooterData {
-  brand_name?: string;
-  brand_description?: string;
-  social_links?: SocialLink[];
-  link_columns?: LinkColumn[];
-  copyright?: string;
-  bottom_tags?: string[];
-}
 
-async function getFooterData(): Promise<FooterData> {
-  try {
-    const jsonPath = path.join(process.cwd(), "data", "site-settings.json");
-    const raw = JSON.parse(await fs.promises.readFile(jsonPath, "utf-8"));
-    return raw?.footer || {};
-  } catch {
-    return {};
-  }
+async function getFooterData() {
+  const result = await getSiteSettings();
+  if (result.error || !result.data) return {};
+  return result.data.footer;
 }
 
 export default async function Footer({ siteLogoUrl }: { siteLogoUrl?: string | null }) {

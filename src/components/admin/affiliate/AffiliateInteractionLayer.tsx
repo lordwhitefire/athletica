@@ -142,7 +142,10 @@ export function AffiliateInteractionLayer({ children }: { children: React.ReactN
                                         model.modal.kind === "save"
                                             ? model.confirmSave
                                             : () => {
-                                                  window.open(model.modal?.url, "_blank", "noopener,noreferrer");
+                                                  const modal = model.modal;
+                                                  if (modal && modal.kind === "openLink") {
+                                                      window.open(modal.url, "_blank", "noopener,noreferrer");
+                                                  }
                                                   model.closeModal();
                                               }
                                     }
