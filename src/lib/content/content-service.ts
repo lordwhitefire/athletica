@@ -539,7 +539,7 @@ function settingsFromRow(row: SiteSettingsRow): SiteSettingsData {
       bottom_tags: parseJsonArray<string>(social.bottom_tags),
       copyright: typeof social.copyright === "string" ? social.copyright : undefined,
     },
-    site_logo: typeof logoRaw === "string" && logoRaw ? toContentImageUrl(logoRaw) : null,
+    site_logo: normalizeStoredImage(logoRaw),
   };
 }
 
