@@ -137,7 +137,15 @@ export function resolveRoute(slugArray: string[], products: Product[], navigatio
         return { type: "product", product: matchedProduct };
     }
 
-    const allL1Items = navigation.flatMap((group) => group.children ?? []);
+    const topLevelAsNavItems: NavItem[] = navigation.map((g) => ({
+        id: g.id,
+        level: 0,
+        label: g.label,
+        href: g.href,
+        slug: g.slug,
+        children: g.children,
+    }));
+    const allL1Items = [...topLevelAsNavItems, ...navigation.flatMap((group) => group.children ?? [])];
     const allNodes = flattenNavTree(allL1Items);
 
     const matchedNode = allNodes.find(

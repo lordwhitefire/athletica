@@ -71,7 +71,7 @@ export default function ImageGallery({
 
             {/* Thumbnails */}
             {allImages.length > 1 && (
-                <div className="flex gap-4 overflow-x-auto pb-2 hide-scrollbar">
+                <div className="flex gap-4 overflow-x-auto pb-2 no-scrollbar">
                     {allImages.map((image, index) => (
                         <button
                             key={index}
