@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { useDashboardInteraction } from "./interaction-store";
-import AddProductModal from "./surfaces/AddProductModal";
 import ProductDrawer from "./surfaces/ProductDrawer";
 import ProductsSurface from "./surfaces/ProductsSurface";
 import ActivitySurface from "./surfaces/ActivitySurface";
@@ -15,18 +14,17 @@ import Toast from "./surfaces/Toast";
 import type { DashboardOverview } from "@/lib/actions/get-dashboard-overview";
 
 export default function InteractionLayer({ data }: { data: DashboardOverview }) {
-    const { state, closePopover, closeDrawer, closeModal } = useDashboardInteraction();
+    const { state, closePopover, closeDrawer } = useDashboardInteraction();
 
     useEffect(() => {
         const onKey = (e: KeyboardEvent) => {
             if (e.key !== "Escape") return;
             if (state.popover) closePopover();
             else if (state.drawer) closeDrawer();
-            else if (state.modal) closeModal();
         };
         document.addEventListener("keydown", onKey);
         return () => document.removeEventListener("keydown", onKey);
-    }, [state.popover, state.drawer, state.modal, closePopover, closeDrawer, closeModal]);
+    }, [state.popover, state.drawer, closePopover, closeDrawer]);
 
     const quality = {
         missingImages: data.quality.missingImages,
@@ -38,10 +36,6 @@ export default function InteractionLayer({ data }: { data: DashboardOverview }) 
 
     return (
         <>
-            {state.modal === "add-product" && (
-                <AddProductModal brands={data.brands} categories={data.categories} />
-            )}
-
             {state.drawer?.type === "product" && (
                 <ProductDrawer
                     product={

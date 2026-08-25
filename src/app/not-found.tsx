@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/content/content-service";
 
 export default async function NotFound() {
     const mainHref = await getMainCategoryHref();

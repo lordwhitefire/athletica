@@ -120,6 +120,11 @@ export async function generateMetadata({ params }: SlugPageProps): Promise<Metad
 
 export default async function SlugPage({ params, searchParams }: SlugPageProps) {
     const [{ slug }, paramsRecord] = await Promise.all([params, searchParams]);
+
+    // WP5 retirement: /admin/* paths must never fall through to the
+    // storefront renderer — retired admin routes 404 cleanly instead.
+    if (slug[0] === "admin") notFound();
+
     const normalized = normalizeSlug(slug);
 
     const [product, navigationResult] = await Promise.all([
@@ -133,8 +138,13 @@ export default async function SlugPage({ params, searchParams }: SlugPageProps) 
     // --- Product detail ---------------------------------------------------
     if (product) {
         const legacyProduct = toPageProduct(product);
+        // FR3-B: the product's own saved ASIN is the source of truth; the
+        // legacy JSON map is only a fallback when no ASIN is stored.
+        const dbAsin = product.asin?.trim() ?? "";
         const amazonLinkResult = await getAmazonLink(product.id);
-        const amazonLink = amazonLinkResult.data ?? null;
+        const amazonLink = dbAsin
+            ? `https://www.amazon.de/dp/${dbAsin}`
+            : amazonLinkResult.data ?? null;
 
         const leafModel = product.leaf_model;
         const traction = (product.attributes as { traction?: string })?.traction ?? null;
@@ -168,11 +178,17 @@ export default async function SlugPage({ params, searchParams }: SlugPageProps) 
 
         const modelLineName = leafModel?.parent?.name ?? leafModel?.name ?? product.brand?.name ?? "";
 
+        // WP-F: breadcrumbs show REAL model ancestry from the tree
+        // (category → brand? → root model → … submodels → product model).
+        const ancestryChain = product.model_ancestry ?? [];
         const breadcrumbs = [
             { label: product.category?.name ?? "", href: mainCategoryHref },
             { label: product.brand?.name ?? "", href: brandCategoryHref ?? undefined },
-            { label: product.model ?? "" },
+            ...ancestryChain.map((m) => ({ label: m.name })),
         ];
+        if (ancestryChain.length === 0 && product.model) {
+            breadcrumbs.push({ label: product.model });
+        }
 
         return (
             <ProductPage

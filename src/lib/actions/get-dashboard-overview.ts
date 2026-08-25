@@ -94,6 +94,18 @@ export async function getDashboardOverview(): Promise<ApiResult<DashboardOvervie
                     .gte("created_at", monthStart.toISOString()),
             ]);
 
+        // FR4-B: failed reads must surface as an error, never as zeroed widgets.
+        for (const [name, res] of [
+            ["brands", brandRes],
+            ["navigation", navRes],
+            ["amazon_links", linkedRes],
+            ["products_this_month", monthRes],
+        ] as const) {
+            if (res.error) {
+                throw new Error(`dashboard_overview_${name}_failed: ${res.error.message}`);
+            }
+        }
+
         const rawProducts = productsResult.items;
 
         const modelGroups = new Map<string, number>();

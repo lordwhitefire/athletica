@@ -1,17 +1,12 @@
 "use client";
 
 import React from "react";
+import CategoryAttachSection from "@/components/admin/category-management/CategoryAttachSection";
 import { useSearchParams, useRouter } from "next/navigation";
 import {
-    INTERNAL_PAGES,
-    CATEGORY_TABS,
     deriveCategoryData,
     type CategoryNode,
-    type Subcategory,
-    type NavItem,
-    type MenuRecord,
     type CategoryWorkspaceData,
-    type CategoryTab,
     type CategoryStatus,
     type Toast,
     nextToastId,
@@ -20,68 +15,52 @@ import {
     findCategory,
     findCategoryParent,
     updateCategoryNode,
-    flattenNav,
-    findNavItem,
-    isNavDescendant,
-    insertNavItem,
-    updateNavItem,
-    deleteNavItem,
-    moveNavItemUpDown,
-    indentNavItem,
-    reorderNavItem,
-    menuRecordFromItems,
 } from "./category-management.interactions";
 
+import { ApiResult, ok, fail, fromCaughtError } from "@/lib/api-types";
+import { CategoryLink, CategoryLinkTargetType } from "@/types/category-links";
+
+export type CategoryTab = "details" | "seo" | "products" | "brands" | "models" | "submodels" | "productmodels";
+
+export const CATEGORY_TABS: { key: CategoryTab; label: string }[] = [
+    { key: "details", label: "Details" },
+    { key: "seo", label: "SEO" },
+    { key: "products", label: "Products" },
+    { key: "brands", label: "Brands" },
+    { key: "models", label: "Models" },
+    { key: "submodels", label: "Submodels" },
+    { key: "productmodels", label: "Product Models" },
+];
 type CategoryEditorMode =
     | { mode: "closed" }
     | { mode: "create-root" }
     | { mode: "create-child"; parentId: string }
     | { mode: "edit"; categoryId: string };
 
-type SubcategoryEditorMode =
-    | { mode: "closed" }
-    | { mode: "create"; categoryId: string }
-    | { mode: "edit"; categoryId: string; subcategoryId: string };
-
-type NavEditorMode =
-    | { mode: "closed" }
-    | { mode: "create"; parentId: string | null }
-    | { mode: "edit"; itemId: string };
-
-type SurfaceType = null | "delete-category" | "delete-nav" | "menu-manager" | "unsaved" | "move-subcategory";
+type SurfaceType = null | "delete-category" | "unsaved";
 
 type ActionMenuTarget =
     | { type: "category"; id: string }
-    | { type: "subcategory"; categoryId: string; id: string }
-    | { type: "nav"; id: string };
+    | { type: "subcategory"; categoryId: string; id: string };
 
 type ActionMenuState = { x: number; y: number; target: ActionMenuTarget } | null;
 
 type UnsavedContext =
     | { key: "tab"; tab: CategoryTab }
     | { key: "category"; id: string }
-    | { key: "menu"; menuId: string }
-    | { key: "close-editor" }
-    | { key: "close-nav-editor" }
-    | { key: "move-subcategory" };
+    | { key: "close-editor" };
 
 type PendingKey =
     | null
     | "saving-category"
     | "saving-subcategory"
     | "saving-details"
-    | "saving-seo"
-    | "saving-nav-item"
-    | "creating-menu"
-    | "renaming-menu";
+    | "saving-seo";
 
 type DeleteTarget =
     | { type: "category"; id: string }
     | { type: "subcategory"; categoryId: string; id: string }
-    | { type: "nav"; id: string }
     | null;
-
-const MAX_NAV_DEPTH = 2;
 
 const STATUS_COLORS: Record<CategoryStatus, string> = {
     active: "bg-[rgba(132,184,25,0.13)] text-[#b9e728]",
@@ -192,83 +171,92 @@ export default function CategoryManagementInteractionLayer() {
     const [filterDraft, setFilterDraft] = React.useState<"all" | "active" | "inactive">("all");
     const [filterOpen, setFilterOpen] = React.useState(false);
     const [filterRect, setFilterRect] = React.useState<{ x: number; y: number } | null>(null);
-    const [activeTab, setActiveTab] = React.useState<CategoryTab>("subcategories");
+    const [activeTab, setActiveTab] = React.useState<CategoryTab>("details");
     const [loadingCategory, setLoadingCategory] = React.useState(false);
     const [categoryError, setCategoryError] = React.useState<string | null>(null);
+    const [treeError, setTreeError] = React.useState<string | null>(null);
 
-    const [menuData, setMenuData] = React.useState<Record<string, MenuRecord>>({});
-    const [selectedMenuId, setSelectedMenuId] = React.useState("main-menu");
-    const [expandedNavIds, setExpandedNavIds] = React.useState<Set<string>>(() => new Set(["nav-football"]));
-
-    const [categoryEditor, setCategoryEditor] = React.useState<CategoryEditorMode>({ mode: "closed" });
-    const [subcategoryEditor, setSubcategoryEditor] = React.useState<SubcategoryEditorMode>({ mode: "closed" });
-    const [navEditor, setNavEditor] = React.useState<NavEditorMode>({ mode: "closed" });
+     const [categoryEditor, setCategoryEditor] = React.useState<CategoryEditorMode>({ mode: "closed" });
     const [surface, setSurface] = React.useState<SurfaceType>(null);
-    const [deleteTarget, setDeleteTarget] = React.useState<DeleteTarget>(null);
-    const [deleteProductCount, setDeleteProductCount] = React.useState<number | null>(null);
-    const [deleteCountState, setDeleteCountState] = React.useState<"idle" | "loading" | "ready" | "error">("idle");
-    const [moveSubTarget, setMoveSubTarget] = React.useState<{ categoryId: string; subcategoryId: string } | null>(null);
+     const [deleteTarget, setDeleteTarget] = React.useState<DeleteTarget>(null);
     const [unsaved, setUnsaved] = React.useState<UnsavedContext | null>(null);
     const [actionMenu, setActionMenu] = React.useState<ActionMenuState>(null);
     const [toasts, setToasts] = React.useState<Toast[]>([]);
     const [pending, setPending] = React.useState<PendingKey>(null);
-    const [dirty, setDirty] = React.useState<Set<string>>(new Set());
-
-    const [dragSubId, setDragSubId] = React.useState<string | null>(null);
-    const [dropSub, setDropSub] = React.useState<{ id: string; pos: "before" | "after" } | null>(null);
-    const [navDragId, setNavDragId] = React.useState<string | null>(null);
-    const [navDrop, setNavDrop] = React.useState<{ id: string; pos: "before" | "after" } | null>(null);
-
-    const [newMenuName, setNewMenuName] = React.useState("");
-    const [renamingMenuId, setRenamingMenuId] = React.useState<string | null>(null);
-    const [renameValue, setRenameValue] = React.useState("");
+     const [dirty, setDirty] = React.useState<Set<string>>(new Set());
+    const [deleteProductCount, setDeleteProductCount] = React.useState<number | null>(null);
+    const [deleteCountState, setDeleteCountState] = React.useState<"idle" | "loading" | "ready" | "error">("idle");
     const [deleteCategoryState, setDeleteCategoryState] = React.useState<{
         descendantStrategy: "move-descendants" | "delete-descendants";
         moveDescendantsTo: string;
         moveProductsTo: string;
     }>({ descendantStrategy: "move-descendants", moveDescendantsTo: "", moveProductsTo: "" });
-    const [deleteNavState, setDeleteNavState] = React.useState<"move-children" | "delete-children">("move-children");
 
-    React.useEffect(() => {
-        if (!deleteTarget || (deleteTarget.type !== "category" && deleteTarget.type !== "subcategory")) {
-            setDeleteCountState("idle");
-            setDeleteProductCount(null);
+     const [attachedEntities, setAttachedEntities] = React.useState<Record<CategoryLinkTargetType, CategoryLink[]>>({
+        brand: [],
+        model: [],
+        submodel: [],
+        product_model: [],
+    });
+
+     const [availableEntities, setAvailableEntities] = React.useState<Record<CategoryLinkTargetType, { id: string; name: string }[]>>({
+        brand: [],
+        model: [],
+        submodel: [],
+        product_model: [],
+    });
+
+    // --- FR3-D attach-sections data (via server actions) ---
+    const fetchAttachedEntities = React.useCallback(async (categoryId: string) => {
+        const result = await (await import("@/lib/actions/category-links")).getCategoryLinks(categoryId);
+        if (!result.data) {
+            showToast("error", result.error?.message ?? "Failed to load attachments");
             return;
         }
-        let cancelled = false;
-        setDeleteProductCount(null);
-        setDeleteCountState("loading");
-        import("@/lib/actions/categories")
-            .then(({ getCategoryProductCount }) => getCategoryProductCount(deleteTarget.id))
-            .then((res) => {
-                if (cancelled) return;
-                if (res.data) {
-                    setDeleteProductCount(res.data.count);
-                    setDeleteCountState("ready");
-                } else {
-                    setDeleteCountState("error");
-                }
-            })
-            .catch(() => {
-                if (!cancelled) setDeleteCountState("error");
-            });
-        return () => {
-            cancelled = true;
-        };
+        const grouped: Record<CategoryLinkTargetType, CategoryLink[]> = { brand: [], model: [], submodel: [], product_model: [] };
+        for (const link of result.data) {
+            grouped[link.entity_type as CategoryLinkTargetType]?.push(link);
+        }
+        setAttachedEntities(grouped);
+    }, []);
+
+    const fetchAvailableEntities = React.useCallback(async (targetType: CategoryLinkTargetType) => {
+        const result = await (await import("@/lib/actions/category-links")).getAttachOptions(targetType);
+        if (!result.data) {
+            showToast("error", result.error?.message ?? `Failed to load ${targetType} options`);
+            return;
+        }
+        setAvailableEntities((prev) => ({ ...prev, [targetType]: result.data ?? [] }));
+    }, []);
+
+    const handleAttach = async (targetType: CategoryLinkTargetType, targetId: string) => {
+        if (!selectedCategoryId || selectedCategoryId === "all") return;
+        const result = await (await import("@/lib/actions/category-links")).attachCategoryLink(selectedCategoryId, targetType, targetId);
+        if (!result.data) {
+            showToast("error", result.error?.message ?? "Failed to attach");
+            return;
+        }
+        showToast("success", "Attached");
+        await fetchAttachedEntities(selectedCategoryId);
+    };
+
+    const handleDetach = async (targetType: CategoryLinkTargetType, targetId: string) => {
+        if (!selectedCategoryId || selectedCategoryId === "all") return;
+        const result = await (await import("@/lib/actions/category-links")).detachCategoryLink(selectedCategoryId, targetType, targetId);
+        if (!result.data) {
+            showToast("error", result.error?.message ?? "Failed to detach");
+            return;
+        }
+        showToast("success", "Detached");
+        await fetchAttachedEntities(selectedCategoryId);
+    };
+    React.useEffect(() => {
+        if (!deleteTarget || deleteTarget.type !== "category") {
+            return;
+        }
+        // Simplified - no product count check needed
     }, [deleteTarget]);
 
-    const [navForm, setNavForm] = React.useState({
-        label: "",
-        destinationType: "Category" as "Category" | "Internal Page" | "External URL" | "Custom Link",
-        categoryId: "",
-        internalPage: "Homepage",
-        url: "",
-        openInNewTab: false,
-        parentId: null as string | null,
-        visibility: "visible" as "visible" | "hidden",
-    });
-    const [categorySearch, setCategorySearch] = React.useState("");
-    const [navFormError, setNavFormError] = React.useState<string | null>(null);
     const [detailsForm, setDetailsForm] = React.useState({ name: "", parentId: "", status: "active" as CategoryStatus, description: "" });
     const [seoForm, setSeoForm] = React.useState({ title: "", metaDescription: "", slug: "", canonicalUrl: "", intro: "" });
     const [seoError, setSeoError] = React.useState<string | null>(null);
@@ -276,7 +264,6 @@ export default function CategoryManagementInteractionLayer() {
     const [productsSearch, setProductsSearch] = React.useState("");
     const [productsStatus, setProductsStatus] = React.useState<"all" | "Active" | "Draft">("all");
     const [productsSort, setProductsSort] = React.useState<"name" | "price-asc" | "price-desc">("name");
-    const [focusRef, setFocusRef] = React.useState<HTMLButtonElement | null>(null);
 
     const showToast = React.useCallback((type: Toast["type"], message: string) => {
         const id = nextToastId();
@@ -289,7 +276,9 @@ export default function CategoryManagementInteractionLayer() {
         try {
             const { getCategoriesAdmin } = await import("@/lib/actions/categories");
             const result = await getCategoriesAdmin();
-            if (!result.data) return;
+            if (!result.data) {
+                throw new Error(result.error?.message ?? "Could not load categories.");
+            }
             const cats = result.data;
 
             const countByParent = new Map<string | null, typeof cats>();
@@ -311,14 +300,55 @@ export default function CategoryManagementInteractionLayer() {
                     .sort((a, b) => a.name.localeCompare(b.name));
 
             const children = build(null);
+
+            // Categories whose parent chain is broken (missing parent, import
+            // drift, cycles) never appear under any root — collect them into
+            // an explicit "Unsorted" group so they stay visible and fixable.
+            const reachable = new Set<string>();
+            const collect = (nodes: CategoryNode[]) => {
+                nodes.forEach((node) => {
+                    reachable.add(node.id);
+                    if (node.children) collect(node.children);
+                });
+            };
+            collect(children);
+            const orphans = cats.filter((c) => !reachable.has(c.id));
+            const orphanIds = new Set(orphans.map((o) => o.id));
+            const rootOrphanCats = orphans.filter((o) => !o.parent_id || !orphanIds.has(o.parent_id));
+            const orphanRoots: CategoryNode[] = rootOrphanCats
+                .map((c): CategoryNode => ({
+                    id: c.id,
+                    name: c.name,
+                    count: formatCount(c.productCount),
+                    status: "active",
+                    children: build(c.id),
+                }))
+                .sort((a, b) => a.name.localeCompare(b.name));
+
+            let topLevels = children;
+            if (orphanRoots.length > 0) {
+                topLevels = [
+                    ...children,
+                    {
+                        id: "unsorted",
+                        name: "Unsorted",
+                        count: formatCount(rootOrphanCats.reduce((sum, c) => sum + c.productCount, 0)),
+                        status: "active" as const,
+                        expanded: true,
+                        children: orphanRoots,
+                    },
+                ];
+            }
+
             const totalProducts = cats.reduce((sum, c) => sum + c.productCount, 0);
             const nextTree: CategoryNode[] = [
-                { id: "all", name: "All Categories", count: formatCount(totalProducts), status: "active", expanded: true, children },
+                { id: "all", name: "All Categories", count: formatCount(totalProducts), status: "active", expanded: true, children: topLevels },
             ];
             setTree(nextTree);
+            setTreeError(null);
             setSelectedCategoryId((current) => (findCategory(nextTree, current) ? current : "all"));
-        } catch {
-            setTree([]);
+        } catch (err) {
+            setTreeError(err instanceof Error ? err.message : "Could not load categories.");
         }
     }, []);
 
@@ -352,7 +382,7 @@ export default function CategoryManagementInteractionLayer() {
         const cat = searchParams.get("category");
         const tab = searchParams.get("tab");
         if (cat && findCategory(tree, cat)) setSelectedCategoryId(cat);
-        if (tab === "subcategories" || tab === "products" || tab === "details" || tab === "seo") setActiveTab(tab);
+        if (tab && CATEGORY_TABS.some(t => t.key === tab)) setActiveTab(tab as CategoryTab);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -370,11 +400,19 @@ export default function CategoryManagementInteractionLayer() {
         if (cat && cat !== selectedCategoryId && findCategory(tree, cat)) {
             setSelectedCategoryId(cat);
         }
-        if (tab === "subcategories" || tab === "products" || tab === "details" || tab === "seo") {
-            setActiveTab(tab);
+        if (tab && CATEGORY_TABS.some(t => t.key === tab) && tab !== activeTab) {
+            setActiveTab(tab as CategoryTab);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [searchParams]);
+    }, [searchParams, tree]);
+
+    // FR3-D: load attachments + attachable options for the selected category
+    React.useEffect(() => {
+        if (!selectedCategoryId || selectedCategoryId === "all") return;
+        fetchAttachedEntities(selectedCategoryId);
+        (["brand", "model", "submodel", "product_model"] as CategoryLinkTargetType[]).forEach((t) => fetchAvailableEntities(t));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [selectedCategoryId]);
 
     // ---- search debounce ----
     React.useEffect(() => {
@@ -390,20 +428,19 @@ export default function CategoryManagementInteractionLayer() {
             if (filterOpen) return setFilterOpen(false);
             if (surface) return;
             if (categoryEditor.mode !== "closed") return setCategoryEditor({ mode: "closed" });
-            if (subcategoryEditor.mode !== "closed") return setSubcategoryEditor({ mode: "closed" });
-            if (navEditor.mode !== "closed") return setNavEditor({ mode: "closed" });
+
         };
         document.addEventListener("keydown", onKey);
         return () => document.removeEventListener("keydown", onKey);
-    }, [actionMenu, filterOpen, surface, categoryEditor, subcategoryEditor, navEditor]);
+    }, [actionMenu, filterOpen, surface, categoryEditor]);
 
     React.useEffect(() => {
-        const open = surface !== null || categoryEditor.mode !== "closed" || subcategoryEditor.mode !== "closed" || navEditor.mode !== "closed";
+        const open = surface !== null || categoryEditor.mode !== "closed";
         document.body.style.overflow = open ? "hidden" : "";
         return () => {
             document.body.style.overflow = "";
         };
-    }, [surface, categoryEditor, subcategoryEditor, navEditor]);
+    }, [surface, categoryEditor]);
 
     React.useEffect(() => {
         const onBeforeUnload = (e: BeforeUnloadEvent) => {
@@ -489,7 +526,6 @@ export default function CategoryManagementInteractionLayer() {
             setLoadingCategory(false);
             setProductsPage(1);
             setProductsSearch("");
-            setActiveTab((tab) => (tab === "subcategories" ? "subcategories" : tab));
         }, 420);
     }
 
@@ -552,252 +588,6 @@ export default function CategoryManagementInteractionLayer() {
         } finally {
             setPending(null);
         }
-    }
-
-    // ---- subcategory CRUD ----
-    function handleSaveSubcategory(input: { name: string; status: CategoryStatus; description: string }) {
-        if (subcategoryEditor.mode === "closed") return;
-        const isCreate = subcategoryEditor.mode === "create";
-        const catId = subcategoryEditor.categoryId;
-        const subcategoryId = isCreate ? undefined : subcategoryEditor.subcategoryId;
-        setPending("saving-subcategory");
-        window.setTimeout(() => {
-            const data = workspace[catId];
-            if (!data) return;
-            if (isCreate) {
-                const nextSubs: Subcategory[] = [
-                    ...data.subcategories,
-                    {
-                        id: `sub-${Date.now()}`,
-                        name: input.name.trim(),
-                        products: 0,
-                        status: input.status,
-                        order: data.subcategories.length + 1,
-                    },
-                ];
-                setWorkspace((prev) => ({ ...prev, [catId]: { ...data, subcategories: nextSubs } }));
-                showToast("success", "Subcategory added");
-            } else {
-                const nextSubs = data.subcategories.map((sub) =>
-                    sub.id === subcategoryId
-                        ? { ...sub, name: input.name.trim(), status: input.status }
-                        : sub,
-                );
-                setWorkspace((prev) => ({ ...prev, [catId]: { ...data, subcategories: nextSubs } }));
-                showToast("success", "Subcategory updated");
-            }
-            setSubcategoryEditor({ mode: "closed" });
-            setPending(null);
-        }, 400);
-    }
-
-    function reorderSubcategories(nextIds: string[]) {
-        const data = workspace[selectedCategoryId];
-        if (!data) return;
-        const ordered = nextIds
-            .map((id) => data.subcategories.find((sub) => sub.id === id))
-            .filter((sub): sub is Subcategory => Boolean(sub))
-            .map((sub, index) => ({ ...sub, order: index + 1 }));
-        setWorkspace((prev) => ({ ...prev, [selectedCategoryId]: { ...data, subcategories: ordered } }));
-        showToast("success", "Subcategory order updated");
-    }
-
-    function moveSubcategory(subId: string, fromCategoryId: string, toCategoryId: string) {
-        const from = workspace[fromCategoryId];
-        const to = workspace[toCategoryId];
-        if (!from || !to) return;
-        const sub = from.subcategories.find((s) => s.id === subId);
-        if (!sub) return;
-        const nextFrom = from.subcategories
-            .filter((s) => s.id !== subId)
-            .map((s, index) => ({ ...s, order: index + 1 }));
-        const nextTo = [...to.subcategories, { ...sub, order: to.subcategories.length + 1 }];
-        setWorkspace((prev) => ({
-            ...prev,
-            [fromCategoryId]: { ...from, subcategories: nextFrom },
-            [toCategoryId]: { ...to, subcategories: nextTo },
-        }));
-        showToast("success", `${sub.name} moved to ${findCategory(tree, toCategoryId)?.name ?? toCategoryId}`);
-    }
-
-    // ---- navigation ----
-    const selectedMenu = menuData[selectedMenuId];
-    const navRows = React.useMemo(
-        () => (selectedMenu ? flattenNav(selectedMenu.items) : []),
-        [selectedMenu],
-    );
-
-    function toggleNavExpand(id: string) {
-        setExpandedNavIds((prev) => {
-            const next = new Set(prev);
-            if (next.has(id)) next.delete(id);
-            else next.add(id);
-            return next;
-        });
-    }
-
-    function saveNavItem() {
-        if (navEditor.mode === "closed") return;
-        const isCreate = navEditor.mode === "create";
-        const itemId = isCreate ? undefined : navEditor.itemId;
-        const parentId = isCreate ? navForm.parentId : null;
-        const label = navForm.label.trim();
-        if (!label) {
-            setNavFormError("Label is required.");
-            return;
-        }
-        if (navForm.destinationType === "External URL" || navForm.destinationType === "Custom Link") {
-            if (!navForm.url.trim()) {
-                setNavFormError("URL is required for this destination type.");
-                return;
-            }
-            if (!/^https?:\/\/|^\/|^mailto:/.test(navForm.url.trim())) {
-                setNavFormError("URL must start with http(s):// or /");
-                return;
-            }
-        }
-        if (navForm.destinationType === "Category" && !navForm.categoryId) {
-            setNavFormError("Search and select a category.");
-            return;
-        }
-        setPending("saving-nav-item");
-        window.setTimeout(() => {
-            const menu = menuData[selectedMenuId];
-            if (!menu) return;
-            if (isCreate) {
-                const item: NavItem = {
-                    id: `nav-${Date.now()}`,
-                    label,
-                    type: navForm.destinationType === "External URL" || navForm.destinationType === "Custom Link" ? "link" : navForm.destinationType === "Internal Page" ? "home" : "category",
-                    visible: navForm.visibility === "visible",
-                };
-                const nextItems = insertNavItem(menu.items, parentId, item);
-                setMenuData(menuRecordFromItems(menuData, selectedMenuId, nextItems));
-                showToast("success", "Navigation item added");
-            } else if (itemId) {
-                const existing = findNavItem(menu.items, itemId);
-                if (existing) {
-                    const patch: Partial<NavItem> = {
-                        label,
-                        visible: navForm.visibility === "visible",
-                    };
-                    if (navForm.destinationType === "Category") {
-                        patch.type = "category";
-                        patch.count = existing.count;
-                    } else if (navForm.destinationType === "Internal Page") {
-                        patch.type = "home";
-                        patch.count = undefined;
-                    } else {
-                        patch.type = "link";
-                        patch.count = undefined;
-                    }
-                    const nextItems = updateNavItem(menu.items, itemId, patch);
-                    setMenuData(menuRecordFromItems(menuData, selectedMenuId, nextItems));
-                    showToast("success", "Navigation updated");
-                }
-            }
-            setNavEditor({ mode: "closed" });
-            setNavFormError(null);
-            setPending(null);
-        }, 400);
-    }
-
-    function handleNavReorder(dragId: string, targetId: string, pos: "before" | "after") {
-        const menu = menuData[selectedMenuId];
-        if (!menu) return;
-        if (isNavDescendant(menu.items, dragId, targetId)) {
-            showToast("error", "An item cannot be moved inside its own child.");
-            return;
-        }
-        const nextItems = reorderNavItem(menu.items, dragId, targetId, pos);
-        setMenuData(menuRecordFromItems(menuData, selectedMenuId, nextItems));
-        showToast("success", "Navigation updated");
-    }
-
-    function handleNavAction(action: "up" | "down" | "indent" | "outdent" | "hide", itemId: string) {
-        const menu = menuData[selectedMenuId];
-        if (!menu) return;
-        let nextItems = menu.items;
-        if (action === "up" || action === "down") {
-            nextItems = moveNavItemUpDown(menu.items, itemId, action);
-        } else if (action === "indent" || action === "outdent") {
-            nextItems = indentNavItem(menu.items, itemId, action);
-        } else if (action === "hide") {
-            const item = findNavItem(menu.items, itemId);
-            if (item) nextItems = updateNavItem(menu.items, itemId, { visible: !item.visible });
-        }
-        setMenuData(menuRecordFromItems(menuData, selectedMenuId, nextItems));
-        showToast("success", action === "hide" ? "Navigation updated" : "Navigation order updated");
-    }
-
-    function confirmDeleteNav() {
-        if (!deleteTarget || deleteTarget.type !== "nav") return;
-        const menu = menuData[selectedMenuId];
-        if (!menu) return;
-        const nextItems = deleteNavItem(menu.items, deleteTarget.id, deleteNavState);
-        setMenuData(menuRecordFromItems(menuData, selectedMenuId, nextItems));
-        setSurface(null);
-        setDeleteTarget(null);
-        showToast("success", "Navigation item deleted");
-    }
-
-    // ---- menus ----
-    function handleCreateMenu() {
-        const name = newMenuName.trim();
-        if (!name) return;
-        setPending("creating-menu");
-        window.setTimeout(() => {
-            const id = `menu-${Date.now()}`;
-            setMenuData((prev) => ({
-                ...prev,
-                [id]: { id, name, lastUpdated: "Just now", items: [] },
-            }));
-            setNewMenuName("");
-            setPending(null);
-            showToast("success", "Menu created");
-        }, 400);
-    }
-
-    function handleRenameMenu(id: string) {
-        const name = renameValue.trim();
-        if (!name) return;
-        setPending("renaming-menu");
-        window.setTimeout(() => {
-            setMenuData((prev) => ({ ...prev, [id]: { ...prev[id], name } }));
-            setRenamingMenuId(null);
-            setPending(null);
-            showToast("success", "Menu renamed");
-        }, 400);
-    }
-
-    function handleDeleteMenu(id: string) {
-        if (id === "main-menu") {
-            showToast("error", "Main Menu is the default menu. Make another menu default before deleting it.");
-            return;
-        }
-        setMenuData((prev) => {
-            const next = { ...prev };
-            delete next[id];
-            return next;
-        });
-        if (selectedMenuId === id) setSelectedMenuId("main-menu");
-        showToast("success", "Menu deleted");
-    }
-
-    function handleDuplicateMenu(id: string) {
-        const menu = menuData[id];
-        if (!menu) return;
-        const copyId = `menu-${Date.now()}`;
-        setMenuData((prev) => ({
-            ...prev,
-            [copyId]: {
-                id: copyId,
-                name: `Copy of ${menu.name}`,
-                lastUpdated: "Just now",
-                items: menu.items.map((item) => ({ ...item })),
-            },
-        }));
-        showToast("success", "Menu duplicated");
     }
 
     // ---- details / seo save ----
@@ -878,15 +668,9 @@ export default function CategoryManagementInteractionLayer() {
             setActiveTab(ctx.tab);
         } else if (ctx.key === "category") {
             commitSelectCategory(ctx.id);
-        } else if (ctx.key === "menu") {
-            setSelectedMenuId(ctx.menuId);
-            setExpandedNavIds(new Set());
         } else if (ctx.key === "close-editor") {
             setCategoryEditor({ mode: "closed" });
-        } else if (ctx.key === "close-nav-editor") {
-            setNavEditor({ mode: "closed" });
-        } else if (ctx.key === "move-subcategory") {
-            setSurface("move-subcategory");
+        // move-subcategory removed
         }
     }
 
@@ -911,26 +695,6 @@ export default function CategoryManagementInteractionLayer() {
         } catch {
             showToast("error", "Unable to delete this category.");
         }
-    }
-
-    function confirmDeleteSubcategory() {
-        if (!deleteTarget || deleteTarget.type !== "subcategory") return;
-        const data = workspace[deleteTarget.categoryId];
-        if (!data) return;
-        const nextSubs = data.subcategories
-            .filter((sub) => sub.id !== deleteTarget.id)
-            .map((sub, index) => ({ ...sub, order: index + 1 }));
-        setWorkspace((prev) => ({ ...prev, [deleteTarget.categoryId]: { ...data, subcategories: nextSubs } }));
-        setSurface(null);
-        setDeleteTarget(null);
-        showToast("success", "Subcategory deleted");
-    }
-
-    function confirmDelete() {
-        if (!deleteTarget) return;
-        if (deleteTarget.type === "category") confirmDeleteCategory();
-        else if (deleteTarget.type === "subcategory") confirmDeleteSubcategory();
-        else if (deleteTarget.type === "nav") confirmDeleteNav();
     }
 
     // ---- products tab ----
@@ -959,44 +723,20 @@ export default function CategoryManagementInteractionLayer() {
         ? workspace[editorCategory.id]?.details
         : null;
 
-    const navEditorOpen = navEditor.mode !== "closed";
-    const navEditItem = navEditor.mode === "edit" && selectedMenu ? findNavItem(selectedMenu.items, navEditor.itemId) : null;
-    const navParentOptions = selectedMenu ? flattenNav(selectedMenu.items) : [];
-    const navParentCandidates = navEditItem
-        ? navParentOptions.filter((r) => r.item.id !== navEditItem.id && !isNavDescendant(selectedMenu.items, navEditItem.id, r.item.id))
-        : navParentOptions;
-
-    const categorySearchMatches = React.useMemo(() => {
-        const q = categorySearch.trim().toLowerCase();
-        const walk = (list: CategoryNode[]): CategoryNode[] =>
-            list.flatMap((node) => {
-                const self = !q || node.name.toLowerCase().includes(q);
-                const children = node.children ? walk(node.children) : [];
-                const out: CategoryNode[] = [];
-                if (self && node.id !== "all") out.push(node);
-                return [...out, ...children];
-            });
-        return walk(tree).slice(0, 8);
-    }, [tree, categorySearch]);
-
     const deleteNode = deleteTarget?.type === "category" ? findCategory(tree, deleteTarget.id) : null;
-    const deleteProducts = deleteNode ? deleteProductCount ?? 0 : 0;
     const deleteHasChildren = Boolean(deleteNode?.children?.length);
-    const moveOptions = tree.filter((n) => n.id !== "all" && n.id !== deleteTarget?.id);
     const deleteMoveOptions = tree
         .flatMap((n) => (n.children ? [n, ...n.children] : [n]))
         .filter((n) => n.id !== "all" && n.id !== (deleteTarget?.type === "category" ? deleteTarget.id : ""));
-    const deleteProductsValid =
-        deleteCountState === "ready" && (deleteProducts === 0 || Boolean(deleteCategoryState.moveProductsTo));
-    const deleteDescendantsValid = !deleteHasChildren || deleteCategoryState.descendantStrategy === "delete-descendants" || Boolean(deleteCategoryState.moveDescendantsTo);
-    const deleteEnabled = deleteProductsValid && deleteDescendantsValid;
-
-    const deleteNavNode = deleteTarget?.type === "nav" && selectedMenu ? findNavItem(selectedMenu.items, deleteTarget.id) : null;
-    const deleteNavHasChildren = Boolean(deleteNavNode?.children?.length);
+    const deleteProducts = deleteProductCount ?? 0;
+    const deleteEnabled =
+        deleteCountState === "ready" &&
+        (!deleteHasChildren ||
+            deleteCategoryState.descendantStrategy === "delete-descendants" ||
+            Boolean(deleteCategoryState.moveDescendantsTo)) &&
+        (deleteProducts === 0 || Boolean(deleteCategoryState.moveProductsTo));
 
     // ---- subcategory table row data ----
-    const subRows = selectedData.subcategories;
-
     const renderTreeRow = (node: CategoryNode, depth: number) => {
         const hasChildren = Boolean(node.children?.length);
         const expanded = hasChildren && (expandedIds.has(node.id) || debouncedQuery.trim().length > 0);
@@ -1094,8 +834,8 @@ export default function CategoryManagementInteractionLayer() {
                 </div>
             </div>
 
-            {/* ================= THREE-COLUMN LAYOUT ================= */}
-            <div className="grid gap-4 pt-4 min-[1180px]:grid-cols-[304px_minmax(0,1fr)_368px] min-[900px]:max-[1179px]:grid-cols-[minmax(260px,0.8fr)_minmax(0,1.7fr)] max-[899px]:grid-cols-1">
+            {/* ================= TWO-COLUMN LAYOUT ================= */}
+            <div className="grid gap-4 pt-4 min-[1180px]:grid-cols-[304px_minmax(0,1fr)] min-[900px]:max-[1179px]:grid-cols-[minmax(260px,0.8fr)_minmax(0,1.7fr)] max-[899px]:grid-cols-1">
                 {/* ---------- LEFT: CATEGORY TREE ---------- */}
                 <section className="flex min-h-[748px] flex-col overflow-hidden rounded-[8px] border border-[#1b1f22] bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.025),transparent_40%),#0d0f11] min-[1180px]:col-span-1 min-[900px]:max-[1179px]:col-span-1 max-[899px]:min-h-0">
                     <div className="flex h-[53px] items-center justify-between px-4">
@@ -1162,6 +902,22 @@ export default function CategoryManagementInteractionLayer() {
                     </div>
 
                     <div className="flex-1 overflow-y-auto px-2">
+                        {treeError && (
+                            <div
+                                className="mx-1 my-2 rounded-[6px] border border-[#5a2a1d] bg-[#241310] px-3 py-2"
+                                data-testid="categories-load-error"
+                                role="alert"
+                            >
+                                <p className="text-[10px] text-[#e4612b]">{treeError}</p>
+                                <button
+                                    type="button"
+                                    onClick={() => void loadCategories()}
+                                    className="mt-1.5 text-[10px] font-semibold text-[#b8e51f] underline hover:brightness-110"
+                                >
+                                    Retry
+                                </button>
+                            </div>
+                        )}
                         {treeRows.length === 0 ? (
                             <div className="px-4 py-8 text-center">
                                 <p className="text-[12px] font-semibold text-[#c9cdd1]">No categories found</p>
@@ -1273,12 +1029,7 @@ export default function CategoryManagementInteractionLayer() {
 
                                 <div className="flex h-[37px] items-end overflow-x-auto border-b border-[#1b1f22] [scrollbar-width:none]">
                                     {CATEGORY_TABS.map((tab) => {
-                                        const count =
-                                            tab.key === "subcategories"
-                                                ? selectedData.subcategories.length
-                                                : tab.key === "products"
-                                                  ? selectedData.metrics.totalProducts
-                                                  : null;
+                                        const count = tab.key === "products" ? selectedData.metrics.totalProducts : null;
                                         const label = `${tab.label}${count !== null ? ` (${formatCount(count)})` : ""}`;
                                         const isActive = activeTab === tab.key;
                                         return (
@@ -1307,148 +1058,6 @@ export default function CategoryManagementInteractionLayer() {
                                     })}
                                 </div>
 
-                                {activeTab === "subcategories" && (
-                                    <div>
-                                        <div className="flex h-[58px] items-center justify-end px-4">
-                                            <button
-                                                type="button"
-                                                data-existing-control="add-subcategory"
-                                                className={btnClass("primary")}
-                                                onClick={() => setSubcategoryEditor({ mode: "create", categoryId: selectedCategoryId })}
-                                            >
-                                                <span className="material-symbols-outlined text-[14px]">add</span>
-                                                Add Subcategory
-                                            </button>
-                                        </div>
-                                        {subRows.length === 0 ? (
-                                            <div className="px-4 pb-10 text-center">
-                                                <p className="text-[12px] font-semibold text-[#c9cdd1]">No subcategories yet</p>
-                                                <p className="mt-1 text-[10px] text-[#7c8289]">Create the first subcategory under this category.</p>
-                                                <button
-                                                    type="button"
-                                                    data-existing-control="add-subcategory"
-                                                    className={btnClass("primary")}
-                                                    onClick={() => setSubcategoryEditor({ mode: "create", categoryId: selectedCategoryId })}
-                                                >
-                                                    Add Subcategory
-                                                </button>
-                                            </div>
-                                        ) : (
-                                            <div className="overflow-x-auto">
-                                                <table className="w-full min-w-[520px] border-collapse">
-                                                    <thead>
-                                                        <tr>
-                                                            <th className="w-[24px] px-[14px] text-left text-[10px] font-semibold text-[#9ba1a7]">
-                                                                <span className="sr-only">Drag</span>
-                                                            </th>
-                                                            <th className="px-[14px] text-left text-[10px] font-semibold text-[#9ba1a7]">Name</th>
-                                                            <th className="px-[14px] text-right text-[10px] font-semibold text-[#9ba1a7]">Products</th>
-                                                            <th className="px-[14px] text-left text-[10px] font-semibold text-[#9ba1a7]">Status</th>
-                                                            <th className="order-column px-[14px] text-right text-[10px] font-semibold text-[#9ba1a7] max-[699px]:hidden">
-                                                                Order
-                                                            </th>
-                                                            <th className="px-[14px] text-right text-[10px] font-semibold text-[#9ba1a7]">Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        {subRows.map((sub) => (
-                                                            <tr
-                                                                key={sub.id}
-                                                                data-sub-row={sub.id}
-                                                                draggable
-                                                                onDragStart={() => setDragSubId(sub.id)}
-                                                                onDragOver={(e) => {
-                                                                    e.preventDefault();
-                                                                    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
-                                                                    setDropSub({
-                                                                        id: sub.id,
-                                                                        pos: e.clientY < rect.top + rect.height / 2 ? "before" : "after",
-                                                                    });
-                                                                }}
-                                                                onDrop={() => {
-                                                                    if (dragSubId && dragSubId !== sub.id) {
-                                                                        const ids = subRows.map((s) => s.id);
-                                                                        const from = ids.indexOf(dragSubId);
-                                                                        const to = ids.indexOf(sub.id);
-                                                                        const next = [...ids];
-                                                                        next.splice(from, 1);
-                                                                        next.splice(dropSub?.pos === "after" ? to : Math.max(0, to - 1), 0, dragSubId);
-                                                                        reorderSubcategories(next);
-                                                                    }
-                                                                    setDragSubId(null);
-                                                                    setDropSub(null);
-                                                                }}
-                                                                onDragEnd={() => {
-                                                                    setDragSubId(null);
-                                                                    setDropSub(null);
-                                                                }}
-                                                                className={`border-t border-[#202428] bg-[#0d0f11] transition-colors hover:bg-[#14161a] ${
-                                                                    dragSubId === sub.id ? "opacity-40" : ""
-                                                                }`}
-                                                                style={
-                                                                    dropSub?.id === sub.id
-                                                                        ? {
-                                                                              boxShadow:
-                                                                                  dropSub.pos === "before"
-                                                                                      ? "inset 0 2px 0 0 #b8e51f"
-                                                                                      : "inset 0 -2px 0 0 #b8e51f",
-                                                                          }
-                                                                        : undefined
-                                                                }
-                                                            >
-                                                                <td className="px-[14px] text-[#8a9096]">
-                                                                    <span className="material-symbols-outlined cursor-grab text-[14px]" title="Drag to reorder">
-                                                                        drag_indicator
-                                                                    </span>
-                                                                </td>
-                                                                <td className="px-[14px] text-[11px] font-semibold text-[#cfd3d6]">
-                                                                    <span className="flex items-center gap-[10px]">
-                                                                        <span className="material-symbols-outlined text-[14px] text-[#c99d18]">folder</span>
-                                                                        {sub.name}
-                                                                    </span>
-                                                                </td>
-                                                                <td className="px-[14px] text-right text-[11px] font-semibold text-[#d5d8da]">
-                                                                    {formatCount(sub.products)}
-                                                                </td>
-                                                                <td className="px-[14px]">{statusPill(sub.status)}</td>
-                                                                <td className="order-column px-[14px] text-right text-[11px] font-semibold text-[#d5d8da] max-[699px]:hidden">
-                                                                    {sub.order}
-                                                                </td>
-                                                                <td className="px-[14px]">
-                                                                    <div className="flex items-center justify-end gap-[7px]">
-                                                                        <button
-                                                                            type="button"
-                                                                            data-existing-control={`sub-edit-${sub.id}`}
-                                                                            aria-label={`Edit ${sub.name}`}
-                                                                            onClick={() => setSubcategoryEditor({ mode: "edit", categoryId: selectedCategoryId, subcategoryId: sub.id })}
-                                                                            className="grid h-[30px] w-[30px] place-items-center rounded-[6px] border border-[#222529] bg-[#101214] text-[#9ca2a8] hover:border-[#3a4147] hover:text-[#e5e7e8]"
-                                                                        >
-                                                                            <span className="material-symbols-outlined text-[13px]">edit</span>
-                                                                        </button>
-                                                                        <button
-                                                                            type="button"
-                                                                            data-existing-control={`sub-more-${sub.id}`}
-                                                                            aria-label={`More actions for ${sub.name}`}
-                                                                            onClick={(e) =>
-                                                                                openActionMenu(e, { type: "subcategory", categoryId: selectedCategoryId, id: sub.id })
-                                                                            }
-                                                                            className="grid h-[30px] w-[30px] place-items-center rounded-[6px] border border-[#222529] bg-[#101214] text-[#9ca2a8] hover:border-[#3a4147] hover:text-[#e5e7e8]"
-                                                                        >
-                                                                            <span className="material-symbols-outlined text-[13px]">more_horiz</span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        ))}
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        )}
-                                        <p className="px-4 pb-4 pt-3 text-[10px] text-[#7c8289]">
-                                            Showing 1 to {subRows.length} of {subRows.length} subcategories
-                                        </p>
-                                    </div>
-                                )}
 
                                 {activeTab === "products" && (
                                     <div>
@@ -1803,6 +1412,27 @@ export default function CategoryManagementInteractionLayer() {
                             </section>
 
                             {/* ---------- OVERVIEW ---------- */}
+                            {/* ---------- ATTACH SECTIONS ---------- */}
+                            {(() => {
+                                const TAB_TO_TARGET: Record<string, CategoryLinkTargetType> = {
+                                    brands: "brand",
+                                    models: "model",
+                                    submodels: "submodel",
+                                    productmodels: "product_model",
+                                };
+                                const attachTarget = TAB_TO_TARGET[activeTab];
+                                if (!attachTarget || selectedCategoryId === "all") return null;
+                                return (
+                                    <CategoryAttachSection
+                                        targetType={attachTarget}
+                                        onAttach={handleAttach}
+                                        onDetach={handleDetach}
+                                        attachedEntities={attachedEntities[attachTarget] ?? []}
+                                        availableEntities={availableEntities[attachTarget] ?? []}
+                                    />
+                                );
+                            })()}
+                            {/* ---------- END ATTACH SECTIONS ---------- */}
                             <section className="mt-2 min-h-[146px] rounded-[8px] border border-[#1b1f22] bg-[#0d0f11] p-4">
                                 <h3 className="mb-[14px] text-[14px] font-semibold text-[#e5e7e8]">Category Overview</h3>
                                 {loadingCategory ? (
@@ -1857,183 +1487,9 @@ export default function CategoryManagementInteractionLayer() {
                     )}
                 </div>
 
-                {/* ---------- RIGHT: NAVIGATION BUILDER ---------- */}
-                <section className="min-h-[737px] rounded-[8px] border border-[#1b1f22] bg-[#0d0f11] p-4 min-[1180px]:col-span-1 min-[900px]:max-[1179px]:col-span-2 max-[899px]:col-span-1">
-                    <div className="flex items-center justify-between">
-                        <h2 className="text-[14px] font-semibold text-[#e5e7e8]">Navigation Builder</h2>
-                    </div>
+                {/* ---------- RIGHT: nav builder removed — single source of truth lives at /admin/navigation ---------- */}
 
-                    <div className="mt-4">
-                        <p className="mb-1.5 text-[10px] font-semibold text-[#8e9398]">Select Menu</p>
-                        <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-[10px]">
-                            <select
-                                data-existing-control="nav-menu-select"
-                                value={selectedMenuId}
-                                onChange={(e) => {
-                                    const menuId = e.target.value;
-                                    if (menuId === selectedMenuId) return;
-                                    if (dirty.has("nav")) {
-                                        setUnsaved({ key: "menu", menuId });
-                                        setSurface("unsaved");
-                                        return;
-                                    }
-                                    setSelectedMenuId(menuId);
-                                    setExpandedNavIds(new Set());
-                                }}
-                                className="h-[33px] rounded-[6px] border border-[#25292d] bg-[#0a0c0d] px-2 text-[11px] text-[#d5d8db] outline-none"
-                            >
-                                {Object.values(menuData).map((menu) => (
-                                    <option key={menu.id} value={menu.id}>
-                                        {menu.name}
-                                    </option>
-                                ))}
-                            </select>
-                            <button
-                                type="button"
-                                data-existing-control="manage-menus"
-                                onClick={() => {
-                                    setSurface("menu-manager");
-                                    setNewMenuName("");
-                                }}
-                                className="inline-flex h-[33px] items-center gap-1.5 rounded-[5px] border border-[#b8e51f]/40 px-3 text-[10px] font-semibold text-[#b8e51f] hover:bg-[rgba(184,229,31,0.08)]"
-                            >
-                                <span className="material-symbols-outlined text-[13px]">settings</span>
-                                Manage Menus
-                            </button>
-                        </div>
-                    </div>
 
-                    <p className="mt-5 text-[10px] text-[#7c8289]">Drag and drop to reorder menu items</p>
-
-                    <div className="mt-3 min-h-[300px]">
-                        {selectedMenu && navRows.length === 0 ? (
-                            <div className="py-10 text-center">
-                                <p className="text-[12px] font-semibold text-[#c9cdd1]">This menu has no items yet.</p>
-                                <button
-                                    type="button"
-                                    data-existing-control="add-menu-item"
-                                    onClick={() => setNavEditor({ mode: "create", parentId: null })}
-                                    className="mt-3 rounded-[5px] border border-[#a4cf1a] bg-gradient-to-b from-[#c8f12c] to-[#b5e51c] px-4 py-2 text-[11px] font-bold text-[#111507]"
-                                >
-                                    + Add Menu Item
-                                </button>
-                            </div>
-                        ) : (
-                            navRows.map(({ item, depth, parentId }) => {
-                                const hasChildren = Boolean(item.children?.length);
-                                const expanded = hasChildren && expandedNavIds.has(item.id);
-                                const leafIcon =
-                                    item.type === "home"
-                                        ? "home"
-                                        : item.type === "sale"
-                                          ? "sell"
-                                          : item.type === "link"
-                                            ? "link"
-                                            : "folder";
-                                const leafColor = item.type === "sale" ? "text-[#e4612b]" : item.type === "home" ? "text-[#5595df]" : "text-[#c99d18]";
-                                const isDragging = navDragId === item.id;
-                                return (
-                                    <div
-                                        key={item.id}
-                                        data-nav-row={item.id}
-                                        draggable={false}
-                                        className={`relative mb-[6px] flex min-h-[41px] items-center gap-[9px] rounded-[6px] border border-[#1d2124] bg-gradient-to-r from-[#121416] to-[#151719] pr-[10px] transition-colors hover:bg-[#181b1e] ${
-                                            item.visible ? "" : "opacity-50"
-                                        } ${isDragging ? "opacity-30" : ""}`}
-                                        style={{
-                                            marginLeft: depth * 20,
-                                            boxShadow:
-                                                navDrop?.id === item.id
-                                                    ? navDrop.pos === "before"
-                                                        ? "inset 0 2px 0 0 #b8e51f"
-                                                        : "inset 0 -2px 0 0 #b8e51f"
-                                                    : undefined,
-                                        }}
-                                        onClick={() => setNavEditor({ mode: "edit", itemId: item.id })}
-                                        onDragOver={(e) => {
-                                            e.preventDefault();
-                                            const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
-                                            setNavDrop({ id: item.id, pos: e.clientY < rect.top + rect.height / 2 ? "before" : "after" });
-                                        }}
-                                        onDrop={() => {
-                                            if (navDragId && navDragId !== item.id) {
-                                                handleNavReorder(navDragId, item.id, navDrop?.pos ?? "after");
-                                            }
-                                            setNavDragId(null);
-                                            setNavDrop(null);
-                                        }}
-                                    >
-                                        <span
-                                            draggable
-                                            onDragStart={(e) => {
-                                                setNavDragId(item.id);
-                                                e.dataTransfer.effectAllowed = "move";
-                                            }}
-                                            onDragEnd={() => {
-                                                setNavDragId(null);
-                                                setNavDrop(null);
-                                            }}
-                                            className="cursor-grab p-1 text-[#8a9096] hover:text-[#c9cdd1]"
-                                            title="Drag to reorder"
-                                        >
-                                            <span className="material-symbols-outlined text-[13px]">drag_indicator</span>
-                                        </span>
-                                        <span className={`material-symbols-outlined text-[15px] ${leafColor}`}>{leafIcon}</span>
-                                        <span className="min-w-0 flex-1 truncate text-[11px] font-medium text-[#cfd3d6]">{item.label}</span>
-                                        {item.count !== undefined && (
-                                            <span className="inline-flex h-[24px] min-w-[24px] items-center justify-center rounded-[7px] bg-[#24272a] px-[7px] text-[10px] font-bold text-[#c7cbce]">
-                                                {item.count}
-                                            </span>
-                                        )}
-                                        {hasChildren ? (
-                                            <button
-                                                type="button"
-                                                data-existing-control={`nav-toggle-${item.id}`}
-                                                aria-expanded={expanded}
-                                                aria-label={`${expanded ? "Collapse" : "Expand"} ${item.label}`}
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    toggleNavExpand(item.id);
-                                                }}
-                                                className="grid h-[20px] w-[20px] place-items-center text-[#7c8289] hover:text-[#e5e7e8]"
-                                            >
-                                                <span className={`material-symbols-outlined text-[13px] transition-transform ${expanded ? "rotate-90" : ""}`}>
-                                                    chevron_right
-                                                </span>
-                                            </button>
-                                        ) : (
-                                            <span className="material-symbols-outlined text-[13px] text-[#555b62]">chevron_right</span>
-                                        )}
-                                        {!item.visible && (
-                                            <span className="rounded-[4px] bg-[#1d1f22] px-1.5 py-0.5 text-[8px] font-semibold text-[#7c8289]">Hidden</span>
-                                        )}
-                                        <button
-                                            type="button"
-                                            data-existing-control={`nav-more-${item.id}`}
-                                            aria-label={`Actions for ${item.label}`}
-                                            onClick={(e) => openActionMenu(e, { type: "nav", id: item.id })}
-                                            className="grid h-[26px] w-[26px] place-items-center rounded-[5px] text-[#7c8289] hover:bg-[#1d2124] hover:text-[#e5e7e8]"
-                                        >
-                                            <span className="material-symbols-outlined text-[13px]">more_vert</span>
-                                        </button>
-                                        {parentId !== null && (
-                                            <span className="pointer-events-none absolute left-[-13px] top-1/2 h-px w-[13px] bg-[#24282c]" />
-                                        )}
-                                    </div>
-                                );
-                            })
-                        )}
-                    </div>
-
-                    <button
-                        type="button"
-                        data-existing-control="add-menu-item"
-                        onClick={() => setNavEditor({ mode: "create", parentId: null })}
-                        className="mt-3 h-[36px] w-full rounded-[5px] border border-[#a4cf1a] bg-gradient-to-b from-[#c8f12c] to-[#b5e51c] text-[11px] font-bold text-[#111507] hover:brightness-105"
-                    >
-                        + Add Menu Item
-                    </button>
-                </section>
             </div>
 
             {/* ---------- HELP STRIP ---------- */}
@@ -2058,7 +1514,7 @@ export default function CategoryManagementInteractionLayer() {
                 >
                     {actionMenu.target.type === "category" && (
                         <>
-                            <ActionMenuItem icon="add" label="Add Subcategory" onClick={() => { setSubcategoryEditor({ mode: "create", categoryId: actionMenu.target.id }); setActionMenu(null); }} />
+
                             <ActionMenuItem icon="inventory_2" label="View Products" onClick={() => { if (dirty.size > 0) { setUnsaved({ key: "tab", tab: "products" }); setSurface("unsaved"); } else setActiveTab("products"); setActionMenu(null); }} />
                             <ActionMenuItem icon="content_copy" label="Duplicate Category" onClick={async () => {
                                 const node = findCategory(tree, actionMenu.target.id);
@@ -2091,57 +1547,6 @@ export default function CategoryManagementInteractionLayer() {
                             <ActionMenuItem danger icon="delete" label="Delete Category" onClick={() => { setDeleteTarget({ type: "category", id: actionMenu.target.id }); setDeleteCategoryState({ descendantStrategy: "move-descendants", moveDescendantsTo: "", moveProductsTo: "" }); setSurface("delete-category"); setActionMenu(null); }} />
                         </>
                     )}
-                    {actionMenu.target.type === "subcategory" && (
-                        (() => {
-                            const target = actionMenu.target;
-                            const sub = subRows.find((s) => s.id === target.id);
-                            const subIndex = subRows.findIndex((s) => s.id === target.id);
-                            return (
-                                <>
-                                    <ActionMenuItem icon="visibility" label="View Category" onClick={() => { showToast("info", `Viewing ${sub?.name ?? "category"} products.`); setActionMenu(null); }} />
-                                    <ActionMenuItem icon="drive_file_move" label="Move" onClick={() => { setMoveSubTarget({ categoryId: target.categoryId, subcategoryId: target.id }); setSurface("move-subcategory"); setActionMenu(null); }} />
-                                    <ActionMenuItem icon="arrow_upward" label="Move up" disabled={subIndex <= 0} onClick={() => { if (subIndex > 0) reorderSubcategories([...subRows.map((s) => s.id)].map((id, i, arr) => (i === subIndex ? arr[subIndex - 1] : i === subIndex - 1 ? arr[subIndex] : id))); setActionMenu(null); }} />
-                                    <ActionMenuItem icon="arrow_downward" label="Move down" disabled={subIndex === -1 || subIndex >= subRows.length - 1} onClick={() => { if (subIndex < subRows.length - 1) reorderSubcategories([...subRows.map((s) => s.id)].map((id, i, arr) => (i === subIndex ? arr[subIndex + 1] : i === subIndex + 1 ? arr[subIndex] : id))); setActionMenu(null); }} />
-                                    <ActionMenuItem icon={sub?.status === "active" ? "pause_circle" : "play_circle"} label={sub?.status === "active" ? "Deactivate" : "Activate"} onClick={() => {
-                                        if (!sub) return;
-                                        const nextStatus: CategoryStatus = sub.status === "active" ? "inactive" : "active";
-                                        setWorkspace((prev) => ({
-                                            ...prev,
-                                            [target.categoryId]: {
-                                                ...prev[target.categoryId],
-                                                subcategories: prev[target.categoryId].subcategories.map((s) => (s.id === sub.id ? { ...s, status: nextStatus } : s)),
-                                            },
-                                        }));
-                                        showToast("success", nextStatus === "active" ? "Subcategory activated" : "Subcategory deactivated");
-                                        setActionMenu(null);
-                                    }} />
-                                    <div className="my-1 h-px bg-[#1b1f22]" />
-                                    <ActionMenuItem danger icon="delete" label="Delete" onClick={() => { setDeleteTarget({ type: "subcategory", categoryId: target.categoryId, id: target.id }); setSurface("delete-category"); setActionMenu(null); }} />
-                                </>
-                            );
-                        })()
-                    )}
-                    {actionMenu.target.type === "nav" && selectedMenu && (() => {
-                        const rows = navRows;
-                        const row = rows.find((r) => r.item.id === actionMenu.target.id);
-                        const index = rows.findIndex((r) => r.item.id === actionMenu.target.id);
-                        const siblingIndex = index >= 0 ? rows.slice(0, index).reverse().find((r) => r.depth === row?.depth) : undefined;
-                        const nextSibling = index >= 0 ? rows.slice(index + 1).find((r) => r.depth === row?.depth) : undefined;
-                        const prevRow = index > 0 ? rows[index - 1] : undefined;
-                        return (
-                            <>
-                                <ActionMenuItem icon="edit" label="Edit" onClick={() => { setNavEditor({ mode: "edit", itemId: actionMenu.target.id }); setActionMenu(null); }} />
-                                <ActionMenuItem icon="add" label="Add Child" onClick={() => { setNavEditor({ mode: "create", parentId: actionMenu.target.id }); setActionMenu(null); }} />
-                                <ActionMenuItem icon="arrow_upward" label="Move up" disabled={!siblingIndex} onClick={() => { handleNavAction("up", actionMenu.target.id); setActionMenu(null); }} />
-                                <ActionMenuItem icon="arrow_downward" label="Move down" disabled={!nextSibling} onClick={() => { handleNavAction("down", actionMenu.target.id); setActionMenu(null); }} />
-                                <ActionMenuItem icon="format_indent_decrease" label="Outdent" disabled={!row?.parentId} onClick={() => { handleNavAction("outdent", actionMenu.target.id); setActionMenu(null); }} />
-                                <ActionMenuItem icon="format_indent_increase" label="Indent" disabled={!prevRow || row?.depth !== prevRow.depth || (row?.depth ?? 0) >= MAX_NAV_DEPTH} onClick={() => { handleNavAction("indent", actionMenu.target.id); setActionMenu(null); }} />
-                                <ActionMenuItem icon={row?.item.visible ? "visibility_off" : "visibility"} label={row?.item.visible ? "Hide" : "Show"} onClick={() => { handleNavAction("hide", actionMenu.target.id); setActionMenu(null); }} />
-                                <div className="my-1 h-px bg-[#1b1f22]" />
-                                <ActionMenuItem danger icon="delete" label="Delete" onClick={() => { setDeleteTarget({ type: "nav", id: actionMenu.target.id }); setDeleteNavState("move-children"); setSurface("delete-nav"); setActionMenu(null); }} />
-                            </>
-                        );
-                    })()}
                 </div>
             )}
 
@@ -2190,36 +1595,9 @@ export default function CategoryManagementInteractionLayer() {
                 />
             )}
 
-            {/* ================= SUBCATEGORY EDITOR DIALOG ================= */}
-            {subcategoryEditor.mode !== "closed" && (
-                <SubcategoryEditorDialog
-                    mode={subcategoryEditor}
-                    data={subcategoryEditor.mode === "edit" ? workspace[subcategoryEditor.categoryId].subcategories.find((s) => s.id === subcategoryEditor.subcategoryId) ?? null : null}
-                    parentName={selectedData.details.name}
-                    pending={pending === "saving-subcategory"}
-                    onCancel={() => setSubcategoryEditor({ mode: "closed" })}
-                    onSave={(input) => handleSaveSubcategory(input)}
-                />
-            )}
 
             {/* ================= DELETE DIALOGS ================= */}
             {surface === "delete-category" && deleteTarget && (
-                deleteTarget.type === "subcategory" ? (
-                    <ModalSurface onClose={() => setSurface(null)} labelledBy="delete-sub-title">
-                        <div className="p-5">
-                            <h3 id="delete-sub-title" className="text-[15px] font-semibold text-[#ededed]">
-                                Delete “{subRows.find((s) => s.id === deleteTarget.id)?.name}”?
-                            </h3>
-                            <p className="mt-2 text-[11px] text-[#9ba0a6]">
-                                This subcategory will be removed from {selectedData.details.name}. Products stay in the parent category.
-                            </p>
-                            <div className="mt-5 flex justify-end gap-2">
-                                <button type="button" className={btnClass("outline")} onClick={() => setSurface(null)}>Cancel</button>
-                                <button type="button" className={btnClass("danger")} onClick={confirmDeleteSubcategory}>Delete Subcategory</button>
-                            </div>
-                        </div>
-                    </ModalSurface>
-                ) : (
                     <ModalSurface onClose={() => setSurface(null)} labelledBy="delete-cat-title">
                         <div className="p-5">
                             <h3 id="delete-cat-title" className="text-[15px] font-semibold text-[#ededed]">
@@ -2307,175 +1685,7 @@ export default function CategoryManagementInteractionLayer() {
                             </div>
                         </div>
                     </ModalSurface>
-                )
             )}
-
-            {/* ================= DELETE NAV DIALOG ================= */}
-            {surface === "delete-nav" && deleteTarget && deleteNavNode && (
-                <ModalSurface onClose={() => setSurface(null)} labelledBy="delete-nav-title">
-                    <div className="p-5">
-                        <h3 id="delete-nav-title" className="text-[15px] font-semibold text-[#ededed]">
-                            Delete “{deleteNavNode.label}”?
-                        </h3>
-                        {deleteNavHasChildren ? (
-                            <>
-                                <p className="mt-2 text-[11px] text-[#9ba0a6]">
-                                    This item contains {deleteNavNode.children?.length} child items.
-                                </p>
-                                <div className="mt-3 space-y-2">
-                                    <label className="flex items-center gap-2 text-[11px] text-[#cfd3d6]">
-                                        <input
-                                            type="radio"
-                                            checked={deleteNavState === "move-children"}
-                                            onChange={() => setDeleteNavState("move-children")}
-                                            className="accent-[#b8e51f]"
-                                        />
-                                        Move children to this item's parent
-                                    </label>
-                                    <label className="flex items-center gap-2 text-[11px] text-[#cfd3d6]">
-                                        <input
-                                            type="radio"
-                                            checked={deleteNavState === "delete-children"}
-                                            onChange={() => setDeleteNavState("delete-children")}
-                                            className="accent-[#b8e51f]"
-                                        />
-                                        Delete this item and its children
-                                    </label>
-                                </div>
-                            </>
-                        ) : (
-                            <p className="mt-2 text-[11px] text-[#9ba0a6]">This menu item will be removed from the selected menu.</p>
-                        )}
-                        <div className="mt-5 flex justify-end gap-2">
-                            <button type="button" className={btnClass("outline")} onClick={() => setSurface(null)}>Cancel</button>
-                            <button type="button" className={btnClass("danger")} onClick={confirmDeleteNav}>
-                                Delete Item
-                            </button>
-                        </div>
-                    </div>
-                </ModalSurface>
-            )}
-
-            {/* ================= MOVE SUBCATEGORY DIALOG ================= */}
-            {surface === "move-subcategory" && moveSubTarget && (
-                <ModalSurface onClose={() => setSurface(null)} labelledBy="move-sub-title">
-                    <MoveSubcategoryDialog
-                        target={moveSubTarget}
-                        tree={tree}
-                        currentName={selectedData.details.name}
-                        onCancel={() => setSurface(null)}
-                        onMove={(toCategoryId) => {
-                            moveSubcategory(moveSubTarget.subcategoryId, moveSubTarget.categoryId, toCategoryId);
-                            setSurface(null);
-                            setMoveSubTarget(null);
-                        }}
-                    />
-                </ModalSurface>
-            )}
-
-            {/* ================= MENU MANAGER DIALOG ================= */}
-            {surface === "menu-manager" && (
-                <ModalSurface onClose={() => setSurface(null)} labelledBy="menu-manager-title" wide>
-                    <div className="p-5">
-                        <div className="flex items-center justify-between">
-                            <h3 id="menu-manager-title" className="text-[15px] font-semibold text-[#ededed]">Manage Menus</h3>
-                            <button type="button" aria-label="Close" onClick={() => setSurface(null)} className="grid h-[30px] w-[30px] place-items-center rounded-[6px] text-[#9ca2a8] hover:bg-[#171a1d]">
-                                <span className="material-symbols-outlined text-[15px]">close</span>
-                            </button>
-                        </div>
-                        <div className="mt-4 flex gap-2">
-                            <input
-                                data-existing-control="create-menu-input"
-                                className={inputClass}
-                                placeholder="New menu name"
-                                value={newMenuName}
-                                onChange={(e) => setNewMenuName(e.target.value)}
-                                onKeyDown={(e) => {
-                                    if (e.key === "Enter") handleCreateMenu();
-                                }}
-                            />
-                            <button type="button" data-existing-control="create-menu-btn" className={btnClass("primary")} disabled={!newMenuName.trim() || pending === "creating-menu"} onClick={handleCreateMenu}>
-                                {pending === "creating-menu" ? "Creating…" : "+ Create Menu"}
-                            </button>
-                        </div>
-                        {Object.keys(menuData).length === 0 ? (
-                            <div className="py-10 text-center">
-                                <p className="text-[12px] font-semibold text-[#c9cdd1]">No menus available.</p>
-                                <button type="button" className={btnClass("primary")} onClick={handleCreateMenu}>Create Menu</button>
-                            </div>
-                        ) : (
-                            <table className="mt-4 w-full border-collapse">
-                                <thead>
-                                    <tr>
-                                        <th className="px-3 py-2 text-left text-[10px] font-semibold text-[#9ba1a7]">Menu name</th>
-                                        <th className="px-3 py-2 text-right text-[10px] font-semibold text-[#9ba1a7]">Item count</th>
-                                        <th className="px-3 py-2 text-left text-[10px] font-semibold text-[#9ba1a7]">Last updated</th>
-                                        <th className="px-3 py-2 text-right text-[10px] font-semibold text-[#9ba1a7]">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {Object.values(menuData).map((menu) => (
-                                        <tr key={menu.id} data-menu-row={menu.id} className="border-t border-[#202428] hover:bg-[#121416]">
-                                            <td className="px-3 py-2.5">
-                                                <button
-                                                    type="button"
-                                                    className="text-left text-[11px] font-semibold text-[#cfd3d6] hover:text-[#b8e51f]"
-                                                    onClick={() => {
-                                                        setSurface(null);
-                                                        if (dirty.has("nav")) {
-                                                            setUnsaved({ key: "menu", menuId: menu.id });
-                                                            setSurface("unsaved");
-                                                            return;
-                                                        }
-                                                        setSelectedMenuId(menu.id);
-                                                        setExpandedNavIds(new Set());
-                                                    }}
-                                                >
-                                                    {menu.name}
-                                                    {menu.id === "main-menu" && <span className="ml-2 rounded-[4px] bg-[rgba(184,229,31,0.13)] px-1.5 py-0.5 text-[8px] font-bold text-[#b9e728]">Default</span>}
-                                                </button>
-                                            </td>
-                                            <td className="px-3 py-2.5 text-right text-[11px] font-semibold text-[#d5d8da]">{menu.items.length}</td>
-                                            <td className="px-3 py-2.5 text-[10px] text-[#7c8289]">{menu.lastUpdated}</td>
-                                            <td className="px-3 py-2.5">
-                                                <div className="flex items-center justify-end gap-1.5">
-                                                    {renamingMenuId === menu.id ? (
-                                                        <>
-                                                            <input
-                                                                className="h-[30px] w-40 rounded-[5px] border border-[#25292d] bg-[#0a0c0d] px-2 text-[10px] text-[#e5e7e8] outline-none"
-                                                                value={renameValue}
-                                                                onChange={(e) => setRenameValue(e.target.value)}
-                                                                onKeyDown={(e) => {
-                                                                    if (e.key === "Enter") handleRenameMenu(menu.id);
-                                                                }}
-                                                            />
-                                                            <button type="button" className={btnClass("primary")} onClick={() => handleRenameMenu(menu.id)}>Save</button>
-                                                            <button type="button" className={btnClass("ghost")} onClick={() => setRenamingMenuId(null)}>Cancel</button>
-                                                        </>
-                                                    ) : (
-                                                        <>
-                                                            <button type="button" data-existing-control={`menu-rename-${menu.id}`} aria-label={`Rename ${menu.name}`} onClick={() => { setRenamingMenuId(menu.id); setRenameValue(menu.name); }} className="grid h-[28px] w-[28px] place-items-center rounded-[5px] border border-[#222529] bg-[#101214] text-[#9ca2a8] hover:border-[#3a4147]">
-                                                                <span className="material-symbols-outlined text-[12px]">edit</span>
-                                                            </button>
-                                                            <button type="button" data-existing-control={`menu-duplicate-${menu.id}`} aria-label={`Duplicate ${menu.name}`} onClick={() => handleDuplicateMenu(menu.id)} className="grid h-[28px] w-[28px] place-items-center rounded-[5px] border border-[#222529] bg-[#101214] text-[#9ca2a8] hover:border-[#3a4147]">
-                                                                <span className="material-symbols-outlined text-[12px]">content_copy</span>
-                                                            </button>
-                                                            <button type="button" data-existing-control={`menu-delete-${menu.id}`} aria-label={`Delete ${menu.name}`} onClick={() => handleDeleteMenu(menu.id)} className="grid h-[28px] w-[28px] place-items-center rounded-[5px] border border-[#222529] bg-[#101214] text-[#e4612b] hover:border-[#5a2a1d]">
-                                                                <span className="material-symbols-outlined text-[12px]">delete</span>
-                                                            </button>
-                                                        </>
-                                                    )}
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        )}
-                    </div>
-                </ModalSurface>
-            )}
-
             {/* ================= UNSAVED CHANGES DIALOG ================= */}
             {surface === "unsaved" && unsaved && (
                 <ModalSurface onClose={() => setSurface(null)} labelledBy="unsaved-title">
@@ -2500,117 +1710,6 @@ export default function CategoryManagementInteractionLayer() {
                 </ModalSurface>
             )}
 
-            {/* ================= NAV ITEM EDITOR DIALOG ================= */}
-            {navEditorOpen && selectedMenu && (
-                <ModalSurface onClose={() => setNavEditor({ mode: "closed" })} labelledBy="nav-editor-title" wide>
-                    <div className="p-5">
-                        <div className="flex items-center justify-between">
-                            <h3 id="nav-editor-title" className="text-[15px] font-semibold text-[#ededed]">
-                                {navEditor.mode === "edit" ? "Edit Menu Item" : "Add Menu Item"}
-                            </h3>
-                            <button type="button" aria-label="Close" onClick={() => setNavEditor({ mode: "closed" })} className="grid h-[30px] w-[30px] place-items-center rounded-[6px] text-[#9ca2a8] hover:bg-[#171a1d]">
-                                <span className="material-symbols-outlined text-[15px]">close</span>
-                            </button>
-                        </div>
-                        <div className="mt-4 grid gap-4 md:grid-cols-2">
-                            <Field label="Label" required>
-                                <input className={inputClass} value={navForm.label} onChange={(e) => { setNavForm((f) => ({ ...f, label: e.target.value })); setDirtyKey("nav", true); }} />
-                            </Field>
-                            <Field label="Destination Type">
-                                <select className={inputClass} value={navForm.destinationType} onChange={(e) => { setNavForm((f) => ({ ...f, destinationType: e.target.value as typeof navForm.destinationType })); setDirtyKey("nav", true); }}>
-                                    <option>Category</option>
-                                    <option>Internal Page</option>
-                                    <option>External URL</option>
-                                    <option>Custom Link</option>
-                                </select>
-                            </Field>
-                            {navForm.destinationType === "Category" && (
-                                <div className="md:col-span-2">
-                                    <Field label="Search categories">
-                                        <input className={inputClass} value={categorySearch} onChange={(e) => setCategorySearch(e.target.value)} placeholder="Type to search…" />
-                                    </Field>
-                                    {categorySearchMatches.length > 0 && (
-                                        <div className="mt-1 max-h-[140px] overflow-y-auto rounded-[6px] border border-[#1b1f22] bg-[#0a0c0d]">
-                                            {categorySearchMatches.map((node) => (
-                                                <button
-                                                    key={node.id}
-                                                    type="button"
-                                                    onClick={() => {
-                                                        setNavForm((f) => ({ ...f, categoryId: node.id, label: f.label || node.name }));
-                                                        setCategorySearch("");
-                                                        setDirtyKey("nav", true);
-                                                    }}
-                                                    className="flex w-full items-center gap-2 px-3 py-2 text-left text-[11px] text-[#cfd3d6] hover:bg-[#171a1d]"
-                                                >
-                                                    <span className="material-symbols-outlined text-[13px] text-[#c99d18]">folder</span>
-                                                    {node.name}
-                                                </button>
-                                            ))}
-                                        </div>
-                                    )}
-                                    <p className="mt-2 rounded-[5px] border border-[#25292d] bg-[#101214] px-3 py-2 text-[10px] text-[#9ba0a6]">
-                                        {navForm.categoryId
-                                            ? `Selected: ${findCategory(tree, navForm.categoryId)?.name ?? navForm.categoryId}`
-                                            : "No category selected"}
-                                    </p>
-                                </div>
-                            )}
-                            {navForm.destinationType === "Internal Page" && (
-                                <Field label="Select Page">
-                                    <select className={inputClass} value={navForm.internalPage} onChange={(e) => { setNavForm((f) => ({ ...f, internalPage: e.target.value })); setDirtyKey("nav", true); }}>
-                                        {INTERNAL_PAGES.map((page) => (
-                                            <option key={page}>{page}</option>
-                                        ))}
-                                    </select>
-                                </Field>
-                            )}
-                            {(navForm.destinationType === "External URL" || navForm.destinationType === "Custom Link") && (
-                                <>
-                                    <Field label="URL" required>
-                                        <input className={inputClass} value={navForm.url} onChange={(e) => { setNavForm((f) => ({ ...f, url: e.target.value })); setDirtyKey("nav", true); }} placeholder="https://…" />
-                                    </Field>
-                                    <label className="flex items-center gap-2 self-end pb-2 text-[11px] text-[#cfd3d6]">
-                                        <input type="checkbox" checked={navForm.openInNewTab} onChange={(e) => { setNavForm((f) => ({ ...f, openInNewTab: e.target.checked })); setDirtyKey("nav", true); }} className="accent-[#b8e51f]" />
-                                        Open in new tab
-                                    </label>
-                                </>
-                            )}
-                            <Field label="Parent Item">
-                                <select className={inputClass} value={navForm.parentId ?? ""} onChange={(e) => { setNavForm((f) => ({ ...f, parentId: e.target.value || null })); setDirtyKey("nav", true); }}>
-                                    <option value="">None (root)</option>
-                                    {navParentCandidates.map(({ item }) => (
-                                        <option key={item.id} value={item.id}>{item.label}</option>
-                                    ))}
-                                </select>
-                            </Field>
-                            <Field label="Visibility">
-                                <div className="flex h-[36px] overflow-hidden rounded-[6px] border border-[#25292d]">
-                                    {(["visible", "hidden"] as const).map((v) => (
-                                        <button
-                                            key={v}
-                                            type="button"
-                                            onClick={() => { setNavForm((f) => ({ ...f, visibility: v })); setDirtyKey("nav", true); }}
-                                            className={`flex-1 text-[10px] font-semibold capitalize transition-colors ${
-                                                navForm.visibility === v ? "bg-[#b8e51f] text-[#151a06]" : "bg-[#0a0c0d] text-[#9ba0a6] hover:text-[#e5e7e8]"
-                                            }`}
-                                        >
-                                            {v}
-                                        </button>
-                                    ))}
-                                </div>
-                            </Field>
-                        </div>
-                        {navFormError && <p className="mt-3 text-[10px] text-[#e4612b]">{navFormError}</p>}
-                        <div className="mt-5 flex justify-end gap-2">
-                            <button type="button" className={btnClass("outline")} onClick={() => setNavEditor({ mode: "closed" })}>Cancel</button>
-                            <button type="button" data-existing-control="nav-save" className={btnClass("primary")} disabled={pending === "saving-nav-item"} onClick={saveNavItem}>
-                                {pending === "saving-nav-item" ? "Saving…" : navEditor.mode === "edit" ? "Save Changes" : "Add Menu Item"}
-                            </button>
-                        </div>
-                    </div>
-                </ModalSurface>
-            )}
-
             {/* ================= TOASTS ================= */}
             <div className="fixed bottom-4 right-4 z-[90] flex w-[320px] flex-col gap-2">
                 {toasts.map((toast) => (
@@ -2626,15 +1725,12 @@ export default function CategoryManagementInteractionLayer() {
                     filter,
                     searchQuery: debouncedQuery,
                     expandedIds: [...expandedIds],
-                    selectedMenuId,
                     surface,
                     editor: categoryEditor.mode,
-                    subeditor: subcategoryEditor.mode,
-                    navEditor: navEditor.mode,
+            
                     dirty: [...dirty],
                     pending,
                     treeCount: treeRows.length,
-                    navRows: navRows.length,
                 })}
             </pre>
         </div>
@@ -2814,101 +1910,7 @@ function CategoryEditorDialog({
     );
 }
 
-function SubcategoryEditorDialog({
-    mode,
-    data,
-    parentName,
-    pending,
-    onCancel,
-    onSave,
-}: {
-    mode: SubcategoryEditorMode;
-    data: Subcategory | null;
-    parentName: string;
-    pending: boolean;
-    onCancel: () => void;
-    onSave: (input: { name: string; status: CategoryStatus; description: string }) => void;
-}) {
-    const isEdit = mode.mode === "edit";
-    const [form, setForm] = React.useState({
-        name: data?.name ?? "",
-        status: data?.status ?? ("active" as CategoryStatus),
-        description: "",
-    });
-    return (
-        <ModalSurface onClose={onCancel} labelledBy={isEdit ? "edit-sub-title" : "create-sub-title"}>
-            <div className="p-5">
-                <h3 id={isEdit ? "edit-sub-title" : "create-sub-title"} className="text-[15px] font-semibold text-[#ededed]">
-                    {isEdit ? "Edit Subcategory" : "Add Subcategory"}
-                </h3>
-                <p className="mt-1 text-[10px] text-[#7c8289]">Parent: {parentName}</p>
-                <div className="mt-4 grid gap-4 md:grid-cols-2">
-                    <Field label="Name" required>
-                        <input className={inputClass} value={form.name} onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))} />
-                    </Field>
-                    <Field label="Status">
-                        <select className={inputClass} value={form.status} onChange={(e) => setForm((f) => ({ ...f, status: e.target.value as CategoryStatus }))}>
-                            <option value="active">Active</option>
-                            <option value="inactive">Inactive</option>
-                        </select>
-                    </Field>
-                    <Field label="Description">
-                        <textarea className={textareaClass} rows={2} value={form.description} onChange={(e) => setForm((f) => ({ ...f, description: e.target.value }))} />
-                    </Field>
-                </div>
-                <div className="mt-5 flex justify-end gap-2">
-                    <button type="button" className={btnClass("outline")} onClick={onCancel}>Cancel</button>
-                    <button
-                        type="button"
-                        data-existing-control="subcategory-save"
-                        className={btnClass("primary")}
-                        disabled={pending || !form.name.trim()}
-                        onClick={() => onSave(form)}
-                    >
-                        {pending ? "Saving…" : isEdit ? "Save Changes" : "Add Subcategory"}
-                    </button>
-                </div>
-            </div>
-        </ModalSurface>
-    );
-}
 
-function MoveSubcategoryDialog({
-    target,
-    tree,
-    currentName,
-    onCancel,
-    onMove,
-}: {
-    target: { categoryId: string; subcategoryId: string };
-    tree: CategoryNode[];
-    currentName: string;
-    onCancel: () => void;
-    onMove: (toCategoryId: string) => void;
-}) {
-    const [to, setTo] = React.useState("");
-    const options = tree
-        .flatMap((n) => (n.children ? [n, ...n.children] : [n]))
-        .filter((n) => n.id !== "all" && n.id !== target.categoryId);
-    return (
-        <div className="p-5">
-            <h3 id="move-sub-title" className="text-[15px] font-semibold text-[#ededed]">Move Subcategory</h3>
-            <p className="mt-2 text-[11px] text-[#9ba0a6]">Move from “{currentName}” to:</p>
-            <select data-existing-control="move-sub-target" className={`${inputClass} mt-3`} value={to} onChange={(e) => setTo(e.target.value)}>
-                <option value="">Select category…</option>
-                {options.map((n) => (
-                    <option key={n.id} value={n.id}>{n.name}</option>
-                ))}
-            </select>
-            <div className="mt-5 flex justify-end gap-2">
-                <button type="button" className={btnClass("outline")} onClick={onCancel}>Cancel</button>
-                <button type="button" data-existing-control="move-sub-confirm" className={btnClass("primary")} disabled={!to} onClick={() => onMove(to)}>
-                    Move Subcategory
-                </button>
-            </div>
-        </div>
-    );
-}
 
 function ToastItem({ toast, onDismiss }: { toast: Toast; onDismiss: () => void }) {
     React.useEffect(() => {

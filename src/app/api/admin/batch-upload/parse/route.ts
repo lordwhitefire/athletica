@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import AdmZip from "adm-zip";
 import Papa from "papaparse";
+import ExcelJS from "exceljs";
 import { adminClient } from "@/lib/admin-sanity";
 import { logger } from "@/lib/logger";
 import { slugify, generateId } from "@/lib/rebuild-nav-urls";
@@ -41,6 +42,53 @@ interface CsvRow {
 function isImageFile(name: string): boolean {
     const lower = name.toLowerCase();
     return ALLOWED_EXTENSIONS.some((ext) => lower.endsWith(ext));
+}
+
+function cellToString(value: unknown): string {
+    if (value === null || value === undefined) return "";
+    if (typeof value === "string") return value;
+    if (typeof value === "number") return Number.isFinite(value) ? String(value) : "";
+    if (typeof value === "boolean") return value ? "true" : "false";
+    if (value instanceof Date) return value.toISOString();
+    if (typeof value === "object") {
+        const obj = value as Record<string, unknown>;
+        if (Array.isArray(obj.richText)) {
+            return (obj.richText as { text?: string }[]).map((t) => t.text ?? "").join("");
+        }
+        if ("result" in obj) return cellToString(obj.result);
+        if (typeof obj.text === "string") return obj.text;
+        if (typeof obj.hyperlink === "string") return obj.hyperlink;
+        if (typeof obj.error === "string") return "";
+    }
+    return "";
+}
+
+// XLSX: first worksheet only; row 1 maps to the same column names as CSV.
+async function xlsxToRows(buffer: Buffer): Promise<CsvRow[]> {
+    const workbook = new ExcelJS.Workbook();
+    await workbook.xlsx.load(buffer as unknown as ExcelJS.Buffer);
+    const sheet = workbook.worksheets[0];
+    if (!sheet || sheet.rowCount < 1) return [];
+    const headerRow = sheet.getRow(1);
+    const headers: string[] = [];
+    headerRow.eachCell({ includeEmpty: true }, (cell, colNumber) => {
+        headers[colNumber] = String(cellToString(cell.value)).trim();
+    });
+    const rows: CsvRow[] = [];
+    for (let r = 2; r <= sheet.rowCount; r++) {
+        const excelRow = sheet.getRow(r);
+        const record: Record<string, string> = {};
+        let hasValue = false;
+        for (let c = 1; c < headers.length; c++) {
+            const key = headers[c];
+            if (!key) continue;
+            const raw = cellToString(excelRow.getCell(c).value);
+            if (raw !== "") hasValue = true;
+            record[key] = raw.trim();
+        }
+        if (hasValue) rows.push(record as CsvRow);
+    }
+    return rows;
 }
 
 function parseJsonArray(raw: string | undefined | null): string[] {
@@ -106,33 +154,53 @@ export async function POST(req: NextRequest) {
         const formData = await req.formData();
         const file = formData.get("file") as File | null;
         if (!file) {
-            return NextResponse.json({ data: null, error: { type: "validation_error", code: "no_file", message: "No ZIP file provided." } }, { status: 400 });
+            return NextResponse.json({ data: null, error: { type: "validation_error", code: "no_file", message: "No file provided." } }, { status: 400 });
         }
-        if (!file.name.toLowerCase().endsWith(".zip")) {
-            return NextResponse.json({ data: null, error: { type: "validation_error", code: "invalid_format", message: "Only .zip files are accepted." } }, { status: 400 });
+        const fileName = file.name.toLowerCase();
+        const isZip = fileName.endsWith(".zip");
+        const isCsv = fileName.endsWith(".csv");
+        const isXlsx = fileName.endsWith(".xlsx");
+        if (!isZip && !isCsv && !isXlsx) {
+            return NextResponse.json({ data: null, error: { type: "validation_error", code: "invalid_format", message: "Only .zip, .csv, or .xlsx files are accepted." } }, { status: 400 });
         }
         if (file.size > MAX_ZIP_SIZE) {
-            return NextResponse.json({ data: null, error: { type: "validation_error", code: "file_too_large", message: "ZIP file must be under 50MB." } }, { status: 400 });
+            return NextResponse.json({ data: null, error: { type: "validation_error", code: "file_too_large", message: "File must be under 50MB." } }, { status: 400 });
         }
         const buffer = Buffer.from(await file.arrayBuffer());
-        const zip = new AdmZip(buffer);
-        const entries = zip.getEntries();
-        if (entries.length === 0) {
-            return NextResponse.json({ data: null, error: { type: "validation_error", code: "empty_zip", message: "ZIP file is empty." } }, { status: 400 });
-        }
-        const csvEntry = entries.find(
-            (e) => !e.isDirectory && e.entryName.toLowerCase().endsWith(".csv")
-        );
-        if (!csvEntry) {
-            return NextResponse.json({ data: null, error: { type: "validation_error", code: "no_csv", message: "No CSV file found in the ZIP archive." } }, { status: 400 });
-        }
-        const csvContent = csvEntry.getData().toString("utf-8");
-        const parsed = Papa.parse<CsvRow>(csvContent, { header: true, skipEmptyLines: true });
-        if (parsed.data.length === 0) {
-            return NextResponse.json({ data: null, error: { type: "validation_error", code: "empty_csv", message: "CSV file is empty or has no data rows." } }, { status: 400 });
+
+        let parsed: Papa.ParseResult<CsvRow>;
+        let imageEntries: ReturnType<AdmZip["getEntries"]> = [];
+
+        if (isZip) {
+            const zip = new AdmZip(buffer);
+            const entries = zip.getEntries();
+            if (entries.length === 0) {
+                return NextResponse.json({ data: null, error: { type: "validation_error", code: "empty_zip", message: "ZIP file is empty." } }, { status: 400 });
+            }
+            const csvEntry = entries.find(
+                (e) => !e.isDirectory && e.entryName.toLowerCase().endsWith(".csv")
+            );
+            if (!csvEntry) {
+                return NextResponse.json({ data: null, error: { type: "validation_error", code: "no_csv", message: "No CSV file found in the ZIP archive." } }, { status: 400 });
+            }
+            parsed = Papa.parse<CsvRow>(csvEntry.getData().toString("utf-8"), { header: true, skipEmptyLines: true });
+            imageEntries = entries.filter((e) => !e.isDirectory && isImageFile(e.entryName));
+        } else if (isCsv) {
+            parsed = Papa.parse<CsvRow>(buffer.toString("utf-8"), { header: true, skipEmptyLines: true });
+        } else {
+            let xlsxRows: CsvRow[];
+            try {
+                xlsxRows = await xlsxToRows(buffer);
+            } catch {
+                logger.error("XLSX parse failed for batch upload");
+                return NextResponse.json({ data: null, error: { type: "validation_error", code: "invalid_format", message: "The XLSX file could not be read. Make sure it is a valid Excel workbook." } }, { status: 400 });
+            }
+            parsed = { data: xlsxRows } as unknown as Papa.ParseResult<CsvRow>;
         }
 
-        const imageEntries = entries.filter((e) => !e.isDirectory && isImageFile(e.entryName));
+        if (parsed.data.length === 0) {
+            return NextResponse.json({ data: null, error: { type: "validation_error", code: "empty_csv", message: "File is empty or has no data rows." } }, { status: 400 });
+        }
         const imageNameToRef = new Map<string, string>();
         const imageUploadResults: { filename: string; status: "uploaded" | "failed"; sanityRef?: string }[] = [];
 
@@ -281,6 +349,6 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ data: result, error: null }, { status: 200 });
     } catch (err) {
         logger.error(err, "Batch upload parse failed");
-        return NextResponse.json({ data: null, error: { type: "api_error", code: "parse_failed", message: "Failed to process the ZIP file. Please check the file and try again." } }, { status: 500 });
+        return NextResponse.json({ data: null, error: { type: "api_error", code: "parse_failed", message: "Failed to process the file. Please check the file and try again." } }, { status: 500 });
     }
 }

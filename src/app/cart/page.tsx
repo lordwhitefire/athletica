@@ -1,5 +1,5 @@
 import CartPage from "@/components/cart/CartPage";
-import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/content/content-service";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

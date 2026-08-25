@@ -111,6 +111,7 @@ function toCatalogProduct(p: ProductSummary): CatalogProduct {
             Boolean(p.image_links && p.image_links.length > 0),
             Boolean(p.category),
         ),
+        leafModelId: p.leaf_model?.id ?? null,
     };
 }
 
@@ -275,6 +276,7 @@ export async function getProductByIdAdmin(id: string): Promise<ApiResult<unknown
             sizes: Array.isArray(product.sizes) ? product.sizes : [],
             sizes_detail: Array.isArray(attributes.sizes_detail) ? attributes.sizes_detail : [],
             asin: product.asin ?? "",
+            status: product.status === "unpublished" ? "unpublished" : "published",
             main_image: images[0] ? { asset: { _type: "reference", _ref: images[0] } } : undefined,
             thumbnail: images[1]
                 ? { asset: { _type: "reference", _ref: images[1] } }
@@ -414,6 +416,11 @@ async function buildProductRow(
     const rawAsin = ((raw.asin as string) || "").trim().toUpperCase();
     const asin = /^[A-Z0-9]{10}$/.test(rawAsin) ? rawAsin : existing?.asin ?? null;
 
+    const formStatus =
+        raw.status === "unpublished" || raw.status === "published"
+            ? (raw.status as "published" | "unpublished")
+            : null;
+
     const attributes = {
         ...existingAttributes,
         price: {
@@ -440,7 +447,9 @@ async function buildProductRow(
             color: (raw.color as string) || "",
             sizes,
             attributes,
-            status: existing?.status === "unpublished" ? ("unpublished" as const) : ("published" as const),
+            status:
+                formStatus ??
+                (existing?.status === "unpublished" ? ("unpublished" as const) : ("published" as const)),
             asin,
             category_id: categoryId,
             brand_id: brandId,
@@ -868,9 +877,13 @@ export async function getImportValidationData(): Promise<ApiResult<ImportValidat
 
         const byName = new Map<string, number>();
         const bySku = new Map<string, number>();
+        const byLeafModel = new Map<string, number>();
         for (const item of all) {
             byName.set(item.name, (byName.get(item.name) ?? 0) + 1);
             bySku.set(item.sku, (bySku.get(item.sku) ?? 0) + 1);
+            if (item.leafModelId) {
+                byLeafModel.set(item.leafModelId, (byLeafModel.get(item.leafModelId) ?? 0) + 1);
+            }
         }
 
         const issueDefs: { key: string; label: string; critical: boolean; test: (item: CatalogProduct) => boolean; value: (item: CatalogProduct) => string; problem: string }[] = [
@@ -913,6 +926,22 @@ export async function getImportValidationData(): Promise<ApiResult<ImportValidat
                 test: (item) => (byName.get(item.name) ?? 0) > 1 || (bySku.get(item.sku) ?? 0) > 1,
                 value: (item) => item.sku,
                 problem: "Products with the same name or SKU already exist.",
+            },
+            {
+                key: "missingProductModel",
+                label: "Missing Product Model",
+                critical: false,
+                test: (item) => !item.leafModelId,
+                value: () => "—",
+                problem: "Every product must reference exactly one product model in the hierarchy.",
+            },
+            {
+                key: "multiProductNodes",
+                label: "Nodes With Multiple Products",
+                critical: true,
+                test: (item) => Boolean(item.leafModelId && (byLeafModel.get(item.leafModelId) ?? 0) > 1),
+                value: () => "—",
+                problem: "A model node holds more than one direct product — this should be impossible and is a restructure anomaly.",
             },
         ];
 

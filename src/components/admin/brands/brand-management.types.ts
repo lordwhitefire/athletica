@@ -84,6 +84,8 @@ export type BrandFormValues = {
 
 export type BrandManagementState = {
   brands: Brand[];
+  /** FR3-C: set when loading fails — surfaced with a Retry control. */
+  loadError: string | null;
   filters: BrandFilters;
   page: number;
   rowsPerPage: number;

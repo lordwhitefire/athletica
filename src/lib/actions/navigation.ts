@@ -26,34 +26,53 @@ function normalizeRoute(href: string | undefined): string | null {
     return value;
 }
 
-function collectPayloadIds(items: NavInputRow[], into: Set<string>): void {
-    for (const item of items) {
-        if (item._key) into.add(item._key);
-        if (item.children?.length) collectPayloadIds(item.children, into);
-    }
+interface NavUpsertRow {
+    id: string;
+    parent_id: string | null;
+    label: string;
+    route: string | null;
+    order: number;
 }
 
-async function persistNavTree(
+function collectNavRows(
     items: NavInputRow[],
     parentId: string | null,
-    orderStart: number,
-): Promise<{ nextOrder: number }> {
-    let order = orderStart;
+    startOrder: number,
+    into: NavUpsertRow[],
+): number {
+    let order = startOrder;
     for (const item of items) {
         const id = item._key || generateId();
-        const route = normalizeRoute(item.href);
-        const { error } = await adminSupabase.from("navigation").upsert(
-            { id, parent_id: parentId || null, label: item.label, route, order },
-            { onConflict: "id" },
-        );
-        if (error) throw error;
+        into.push({
+            id,
+            parent_id: parentId,
+            label: item.label,
+            route: normalizeRoute(item.href),
+            order,
+        });
         order += 1;
         if (item.children?.length) {
-            const result = await persistNavTree(item.children, id, order);
-            order = result.nextOrder;
+            order = collectNavRows(item.children, id, order, into);
         }
     }
-    return { nextOrder: order };
+    return order;
+}
+
+async function persistNavTree(items: NavInputRow[]): Promise<void> {
+    // Walk the tree once to assign stable parent/order values, then upsert in
+    // batches so saving a large tree costs a handful of round-trips instead of
+    // one request per row.
+    const rows: NavUpsertRow[] = [];
+    collectNavRows(items, null, 0, rows);
+
+    const batchSize = 200;
+    for (let i = 0; i < rows.length; i += batchSize) {
+        const batch = rows.slice(i, i + batchSize);
+        const { error } = await adminSupabase
+            .from("navigation")
+            .upsert(batch, { onConflict: "id" });
+        if (error) throw error;
+    }
 }
 
 interface EditorNavItem {
@@ -65,10 +84,13 @@ interface EditorNavItem {
 
 export async function getNavigationDoc(): Promise<ApiResult<Record<string, unknown>>> {
     try {
-        const { data, error } = await adminSupabase
-            .from("navigation")
-            .select("*")
-            .order("order", { ascending: true });
+        const [{ data, error }, fpResult] = await Promise.all([
+            adminSupabase
+                .from("navigation")
+                .select("*")
+                .order("order", { ascending: true }),
+            adminSupabase.rpc("navigation_content_fingerprint"),
+        ]);
         if (error) throw error;
         const rows = data ?? [];
         const childrenOf = new Map<string | null, typeof rows>();
@@ -83,57 +105,62 @@ export async function getNavigationDoc(): Promise<ApiResult<Record<string, unkno
             href: row.route ?? "",
             children: (childrenOf.get(row.id) ?? []).map(toEditorItem),
         });
-        return ok({ _id: "navigation", items: (childrenOf.get(null) ?? []).map(toEditorItem) });
+        return ok({
+            _id: "navigation",
+            items: (childrenOf.get(null) ?? []).map(toEditorItem),
+            // Stale-editor metadata for the guarded publisher: the loaded id
+            // set catches structural drift, the fingerprint catches content
+            // drift (renames/reorders keep ids — tester blocker B4).
+            _meta: {
+                loaded_row_ids: rows.map((r) => r.id).sort(),
+                loaded_fingerprint:
+                    typeof fpResult.data === "string" ? fpResult.data : "",
+            },
+        });
     } catch (err) {
         return fromCaughtError(err, "navigation_doc_fetch_failed");
     }
 }
 
-export async function saveNavigation(items: Record<string, unknown>[]): Promise<ApiResult<{ saved: true }>> {
+export async function saveNavigation(
+    items: Record<string, unknown>[],
+    loadedRowIds: string[] = [],
+    allowWipe = false,
+    loadedFingerprint = "",
+): Promise<ApiResult<{ saved: true }>> {
     try {
         const parsed = validateOrFail(navigationSchema, items);
         if ("error" in parsed) return parsed.error;
 
         const payload = parsed.data as unknown as NavInputRow[];
 
-        // Remove rows the editor no longer contains before upserting, so a
-        // dropped subtree cannot leave orphans behind.
-        const keepIds = new Set<string>();
-        collectPayloadIds(payload, keepIds);
-        const existingIds: string[] = [];
-        let from = 0;
-        const pageSize = 1000;
-        while (true) {
-            const { data: chunk, error: fetchError } = await adminSupabase
-                .from("navigation")
-                .select("id")
-                .range(from, from + pageSize - 1);
-            if (fetchError) throw fetchError;
-            if (!chunk || chunk.length === 0) break;
-            existingIds.push(...chunk.map((r: { id: string }) => r.id));
-            if (chunk.length < pageSize) break;
-            from += pageSize;
-        }
-        const staleIds = existingIds.filter((id) => !keepIds.has(id));
-        if (staleIds.length > 0) {
-            // Delete deepest first so self-FK constraints never block removal.
-            const depth = new Map<string, number>();
-            const resolveDepth = (items: NavInputRow[], level: number) => {
-                for (const item of items) {
-                    if (item._key) depth.set(item._key, level);
-                    if (item.children?.length) resolveDepth(item.children, level + 1);
-                }
-            };
-            resolveDepth(payload, 0);
-            const sortedStale = [...staleIds].sort((a, b) => (depth.get(b) ?? -1) - (depth.get(a) ?? -1));
-            const { error: deleteError } = await adminSupabase
-                .from("navigation")
-                .delete()
-                .in("id", sortedStale);
-            if (deleteError) throw deleteError;
-        }
+        // Flatten parent-first (pre-order), so the FK self-reference is satisfied
+        // by insertion order inside the single atomic statement.
+        const rows: NavUpsertRow[] = [];
+        collectNavRows(payload, null, 0, rows);
 
-        await persistNavTree(payload, null, 0);
+        // Atomic, guarded replace (WP-R2-B): one RPC = one transaction with
+        // stale-editor and total-wipe guards enforced server-side.
+        const { data: rpcResult, error } = await adminSupabase.rpc(
+            "replace_navigation_tree",
+            {
+                p_rows: rows,
+                p_loaded_ids: loadedRowIds,
+                p_allow_wipe: allowWipe,
+                p_loaded_fingerprint: loadedFingerprint,
+            },
+        );
+        if (error) throw error;
+        const verdict = rpcResult as { ok?: boolean; code?: string; message?: string };
+        if (!verdict?.ok) {
+            if (verdict?.code === "stale_editor") {
+                return fail("validation_error", "stale_editor", verdict.message ?? "The tree changed since you loaded it. Reload and try again.");
+            }
+            if (verdict?.code === "total_wipe") {
+                return fail("validation_error", "total_wipe", verdict.message ?? "Refusing to delete the entire navigation menu.");
+            }
+            return fail("validation_error", "navigation_replace_rejected", verdict?.message ?? "Save rejected.");
+        }
 
         revalidateTag("content", "max");
         revalidatePath("/", "layout");

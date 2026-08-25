@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/content/content-service";
 import CheckoutForm from "./CheckoutForm";
 
 export const metadata: Metadata = {

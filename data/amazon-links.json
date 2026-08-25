@@ -2,11 +2,16 @@
   "0": {
     "_id": "amazonLinks",
     "_type": "amazonLinks",
-    "links": []
+    "links": [
+      {
+        "productId": "4wBNJN",
+        "url": "https://www.amazon.de/dp/B0CBENCH01"
+      }
+    ]
   },
   "_metadata": {
     "dataType": "amazon-links",
-    "lastUpdated": "2026-07-28T22:00:49.424Z",
+    "lastUpdated": "2026-08-23T07:40:52.000Z",
     "buildId": "sanity-sync",
     "version": "1.0.0"
   }

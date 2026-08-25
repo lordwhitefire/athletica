@@ -102,6 +102,7 @@ export function BrandManagementPresentation() {
     toggleFilterPanel,
     toggleSelection,
     selectAllVisible,
+    loadBrands,
   } = model;
 
   const donut = useMemo(() => buildDonut(state.brands), [state.brands]);
@@ -370,6 +371,22 @@ export function BrandManagementPresentation() {
                   </tr>
                 </thead>
                 <tbody>
+                  {state.loadError && (
+                    <tr>
+                      <td colSpan={8} data-testid="brands-load-error" role="alert">
+                        <div className="mx-1 my-2 rounded-[6px] border border-[#5a2a1d] bg-[#241310] px-3 py-2">
+                          <p className="text-[10px] text-[#e4612b]">{state.loadError}</p>
+                          <button
+                            type="button"
+                            onClick={() => void loadBrands()}
+                            className="mt-1.5 text-[10px] font-semibold text-[#b8e51f] underline hover:brightness-110"
+                          >
+                            Retry
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  )}
                   {visibleBrands.map((brand) => (
                     <tr key={brand.id}>
                       <td>
@@ -423,7 +440,7 @@ export function BrandManagementPresentation() {
                     </tr>
                   ))}
 
-                  {visibleBrands.length === 0 && (
+                  {visibleBrands.length === 0 && !state.loadError && (
                     <tr>
                       <td colSpan={8}>
                         <div className="brand-empty-state">

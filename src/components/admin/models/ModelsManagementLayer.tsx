@@ -1,21 +1,26 @@
 "use client";
 
 import React from "react";
-import type { AdminModelGroup, AdminModelNode } from "@/lib/actions/models";
+import type { AdminModelCategoryGroup, AdminModelNode } from "@/lib/actions/models";
+
+type FormOptions = { categories: { id: string; name: string }[]; brands: { id: string; name: string }[] };
 
 type ModalState =
     | { mode: "closed" }
     | { mode: "create-root" }
-    | { mode: "create-child"; parentId: string; parentName: string }
+    | { mode: "create-child"; parentId: string; parentName: string; parentBrandId: string | null }
     | { mode: "edit"; modelId: string };
 
 export default function ModelsManagementLayer() {
-    const [groups, setGroups] = React.useState<AdminModelGroup[]>([]);
+    const [groups, setGroups] = React.useState<AdminModelCategoryGroup[]>([]);
+    const [formOptions, setFormOptions] = React.useState<FormOptions>({ categories: [], brands: [] });
     const [loading, setLoading] = React.useState(true);
     const [error, setError] = React.useState<string | null>(null);
     const [expanded, setExpanded] = React.useState<Set<string>>(new Set());
     const [modal, setModal] = React.useState<ModalState>({ mode: "closed" });
     const [formName, setFormName] = React.useState("");
+    const [formCategoryId, setFormCategoryId] = React.useState("");
+    const [formBrandId, setFormBrandId] = React.useState("");
     const [formParentId, setFormParentId] = React.useState("");
     const [formError, setFormError] = React.useState<string | null>(null);
     const [saving, setSaving] = React.useState(false);
@@ -32,18 +37,26 @@ export default function ModelsManagementLayer() {
         setLoading(true);
         setError(null);
         try {
-            const { getModelsAdmin } = await import("@/lib/actions/models");
-            const result = await getModelsAdmin();
+            const [{ getModelsAdmin }, { getModelFormOptions }] = await Promise.all([
+                import("@/lib/actions/models"),
+                import("@/lib/actions/models"),
+            ]);
+            const [result, optionsResult] = await Promise.all([getModelsAdmin(), getModelFormOptions()]);
             if (result.error) {
                 setError(result.error.message);
                 return;
+            }
+            if (!optionsResult.error && optionsResult.data) {
+                setFormOptions(optionsResult.data);
             }
             setGroups(result.data ?? []);
             setExpanded((prev) => {
                 const next = new Set(prev);
                 for (const group of result.data ?? []) {
-                    for (const root of group.models) {
-                        if (root.hasChildren) next.add(root.id);
+                    for (const brand of group.brands) {
+                        for (const root of brand.models) {
+                            if (root.hasChildren) next.add(root.id);
+                        }
                     }
                 }
                 return next;
@@ -92,12 +105,17 @@ export default function ModelsManagementLayer() {
     }, []);
 
     const allModels = React.useMemo(
-        () => groups.flatMap((g) => flatten(g.models)),
+        () => groups.flatMap((g) => g.brands.flatMap((b) => flatten(b.models))),
         [groups, flatten],
     );
 
     const openCreateChild = (node: AdminModelNode) => {
-        setModal({ mode: "create-child", parentId: node.id, parentName: node.name });
+        setModal({
+            mode: "create-child",
+            parentId: node.id,
+            parentName: node.name,
+            parentBrandId: node.brandId,
+        });
         setFormName("");
         setFormError(null);
     };
@@ -112,10 +130,9 @@ export default function ModelsManagementLayer() {
     const parentOptionsFor = (node: AdminModelNode) =>
         allModels.filter(
             (m) =>
-                m.brandId === node.brandId &&
                 m.id !== node.id &&
-                m.level < 2 &&
-                !isDescendant(m, node.id),
+                !isDescendant(m, node.id) &&
+                (m.brandId === node.brandId || m.brandId === null || node.brandId === null),
         );
 
     function isDescendant(ancestor: AdminModelNode, id: string): boolean {
@@ -139,20 +156,14 @@ export default function ModelsManagementLayer() {
             const { createModel, updateModel } = await import("@/lib/actions/models");
             let result;
             if (modal.mode === "create-root") {
-                if (!formParentId) {
-                    setFormError("A brand is required.");
+                if (!formCategoryId) {
+                    setFormError("A category is required — every root model is anchored to a category.");
                     setSaving(false);
                     return;
                 }
-                result = await createModel(name, formParentId, null);
+                result = await createModel(name, formCategoryId, formBrandId || null, null);
             } else if (modal.mode === "create-child") {
-                const parent = allModels.find((m) => m.id === modal.parentId);
-                if (!parent) {
-                    setFormError("Parent model no longer exists.");
-                    setSaving(false);
-                    return;
-                }
-                result = await createModel(name, parent.brandId, parent.id);
+                result = await createModel(name, "", modal.parentBrandId, modal.parentId);
             } else if (modal.mode === "edit") {
                 result = await updateModel(modal.modelId, name, formParentId || null);
             } else {
@@ -202,10 +213,10 @@ export default function ModelsManagementLayer() {
         modal.mode === "edit" ? allModels.find((m) => m.id === modal.modelId) : null;
     const editParentOptions = editNode ? parentOptionsFor(editNode) : [];
 
-    function indentLabel(node: AdminModelNode) {
+    function typeLabel(node: AdminModelNode) {
+        if (node.nodeType === "product") return "Product model";
         if (node.level === 0) return "Root model";
-        if (node.level === 1) return "Sub model";
-        return "Leaf model";
+        return "Submodel";
     }
 
     function renderNode(node: AdminModelNode, depth: number) {
@@ -215,6 +226,7 @@ export default function ModelsManagementLayer() {
                 <tr
                     className="border-b border-neutral-800/60 hover:bg-neutral-900/50"
                     data-level={node.level}
+                    data-node-type={node.nodeType}
                 >
                     <td className="py-2.5 pr-2" style={{ paddingLeft: `${depth * 24 + 12}px` }}>
                         <div className="flex items-center gap-2">
@@ -240,30 +252,36 @@ export default function ModelsManagementLayer() {
                         </div>
                     </td>
                     <td className="py-2.5 px-2 text-xs text-zinc-500 whitespace-nowrap">
-                        <span className="inline-flex items-center rounded px-2 py-0.5 bg-neutral-800 text-zinc-300">
-                            {indentLabel(node)}
+                        <span
+                            className={`inline-flex items-center rounded px-2 py-0.5 ${
+                                node.nodeType === "product"
+                                    ? "bg-[#b8e51f]/15 text-[#c9f45a]"
+                                    : "bg-neutral-800 text-zinc-300"
+                            }`}
+                        >
+                            {typeLabel(node)}
                         </span>
                     </td>
                     <td className="py-2.5 px-2 text-xs text-zinc-400 whitespace-nowrap">{node.slug}</td>
                     <td className="py-2.5 px-2 text-xs text-zinc-400 whitespace-nowrap">
-                        {node.hasChildren ? (
-                            <span className="text-zinc-500">—</span>
+                        {node.nodeType === "product" ? (
+                            <span className="text-[#b8ff18] font-bold">{node.directProductCount}</span>
+                        ) : node.subtreeProductCount > 0 ? (
+                            <span className="text-zinc-300">{node.subtreeProductCount} below</span>
                         ) : (
-                            <span className="text-[#b8ff18] font-bold">{node.productCount}</span>
+                            <span className="text-zinc-600">0</span>
                         )}
                     </td>
                     <td className="py-2.5 px-2">
                         <div className="flex items-center gap-1 justify-end">
-                            {node.level < 2 && (
-                                <button
-                                    type="button"
-                                    onClick={() => openCreateChild(node)}
-                                    className="px-2 py-1 rounded text-[11px] text-zinc-400 hover:text-white hover:bg-neutral-800"
-                                >
-                                    <span className="material-symbols-outlined text-[14px] align-middle">add</span>
-                                    <span className="ml-1 align-middle">Sub</span>
-                                </button>
-                            )}
+                            <button
+                                type="button"
+                                onClick={() => openCreateChild(node)}
+                                className="px-2 py-1 rounded text-[11px] text-zinc-400 hover:text-white hover:bg-neutral-800"
+                            >
+                                <span className="material-symbols-outlined text-[14px] align-middle">add</span>
+                                <span className="ml-1 align-middle">Sub</span>
+                            </button>
                             <button
                                 type="button"
                                 onClick={() => openEdit(node)}
@@ -294,7 +312,7 @@ export default function ModelsManagementLayer() {
                 <div>
                     <h1 className="text-2xl font-black uppercase tracking-tight">Models</h1>
                     <p className="text-sm text-zinc-500 mt-1">
-                        Manage the model hierarchy — brand → root → sub → leaf. Leaf models carry the product counts.
+                        Category → brand → root model → submodels → product models. Product models carry exactly one product.
                     </p>
                 </div>
                 <button
@@ -302,7 +320,8 @@ export default function ModelsManagementLayer() {
                     onClick={() => {
                         setModal({ mode: "create-root" });
                         setFormName("");
-                        setFormParentId("");
+                        setFormCategoryId("");
+                        setFormBrandId("");
                         setFormError(null);
                     }}
                     className="bg-primary hover:brightness-75 text-on-primary font-bold px-4 py-2 rounded transition-colors text-sm"
@@ -332,7 +351,15 @@ export default function ModelsManagementLayer() {
                 </div>
             ) : error ? (
                 <div className="p-6 border border-red-800 rounded-lg bg-red-950/40 text-red-200 text-sm">
-                    {error}
+                    <p>{error}</p>
+                    <button
+                        type="button"
+                        onClick={() => void load()}
+                        data-testid="models-retry"
+                        className="mt-2 text-xs font-semibold text-[#b8e51f] underline hover:brightness-110"
+                    >
+                        Retry
+                    </button>
                 </div>
             ) : groups.length === 0 ? (
                 <div className="p-6 border border-neutral-800 rounded-lg bg-neutral-900/50 text-zinc-400 text-sm">
@@ -341,32 +368,43 @@ export default function ModelsManagementLayer() {
             ) : (
                 <div className="space-y-6">
                     {groups.map((group) => (
-                        <div key={group.brandId}>
+                        <div key={group.categoryId || "unanchored"}>
                             <div className="flex items-center gap-2 mb-2">
-                                <span className="material-symbols-outlined text-[18px] text-zinc-500">local_offer</span>
+                                <span className="material-symbols-outlined text-[18px] text-zinc-500">category</span>
                                 <h2 className="text-sm font-bold text-zinc-300 uppercase tracking-wider">
-                                    {group.brandName}
+                                    {group.categoryName}
                                 </h2>
                                 <span className="text-[11px] text-zinc-600">
-                                    {group.models.length} root{group.models.length === 1 ? "" : "s"}
+                                    {group.brands.reduce((n, b) => n + b.models.length, 0)} root
+                                    {group.brands.reduce((n, b) => n + b.models.length, 0) === 1 ? "" : "s"}
                                 </span>
                             </div>
-                            <div className="border border-neutral-800 rounded-lg overflow-x-auto bg-neutral-950/40">
-                                <table className="w-full text-left min-w-[640px]">
-                                    <thead>
-                                        <tr className="text-[10px] uppercase tracking-wider text-zinc-600 border-b border-neutral-800">
-                                            <th className="py-2.5 px-3 font-semibold">Model</th>
-                                            <th className="py-2.5 px-2 font-semibold">Level</th>
-                                            <th className="py-2.5 px-2 font-semibold">Slug</th>
-                                            <th className="py-2.5 px-2 font-semibold">Products</th>
-                                            <th className="py-2.5 px-2 font-semibold text-right">Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {group.models.map((root) => renderNode(root, 0))}
-                                    </tbody>
-                                </table>
-                            </div>
+                            {group.brands.map((brand) => (
+                                <div key={brand.brandId ?? "__none__"} className="mb-3">
+                                    <div className="flex items-center gap-2 mb-1.5 pl-1">
+                                        <span className="material-symbols-outlined text-[14px] text-zinc-600">local_offer</span>
+                                        <span className="text-[11px] font-semibold uppercase tracking-wider text-zinc-500">
+                                            {brand.brandName}
+                                        </span>
+                                    </div>
+                                    <div className="border border-neutral-800 rounded-lg overflow-x-auto bg-neutral-950/40">
+                                        <table className="w-full text-left min-w-[640px]">
+                                            <thead>
+                                                <tr className="text-[10px] uppercase tracking-wider text-zinc-600 border-b border-neutral-800">
+                                                    <th className="py-2.5 px-3 font-semibold">Model</th>
+                                                    <th className="py-2.5 px-2 font-semibold">Type</th>
+                                                    <th className="py-2.5 px-2 font-semibold">Slug</th>
+                                                    <th className="py-2.5 px-2 font-semibold">Products</th>
+                                                    <th className="py-2.5 px-2 font-semibold text-right">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {brand.models.map((root) => renderNode(root, 0))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     ))}
                 </div>
@@ -385,11 +423,15 @@ export default function ModelsManagementLayer() {
                             {modal.mode === "create-root"
                                 ? "New Root Model"
                                 : modal.mode === "create-child"
-                                    ? `New Sub Model under ${modal.parentName}`
+                                    ? `New Submodel under ${modal.parentName}`
                                     : "Edit Model"}
                         </h2>
                         <p className="text-xs text-zinc-500 mt-0.5 mb-4">
-                            {modal.mode === "create-child" ? "Child is created at level 2 (leaf)." : "Max depth is 2 (root → sub → leaf)."}
+                            {modal.mode === "create-root"
+                                ? "Root models anchor directly to a category. Brand is optional."
+                                : modal.mode === "create-child"
+                                    ? "Submodels can nest at any depth."
+                                    : "Rename or reparent. Depth is unlimited."}
                         </p>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <label className="block">
@@ -404,19 +446,34 @@ export default function ModelsManagementLayer() {
                             </label>
 
                             {modal.mode === "create-root" && (
-                                <label className="block">
-                                    <span className="mb-1.5 block text-[10px] font-semibold text-[#8e9398]">Brand</span>
-                                    <select
-                                        value={formParentId}
-                                        onChange={(e) => setFormParentId(e.target.value)}
-                                        className="h-[36px] w-full rounded-[6px] border border-[#25292d] bg-[#0a0c0d] px-3 text-[12px] text-[#e5e7e8] outline-none focus:border-[#b8e51f]/60"
-                                    >
-                                        <option value="">Select a brand</option>
-                                        {groups.map((g) => (
-                                            <option key={g.brandId} value={g.brandId}>{g.brandName}</option>
-                                        ))}
-                                    </select>
-                                </label>
+                                <>
+                                    <label className="block">
+                                        <span className="mb-1.5 block text-[10px] font-semibold text-[#8e9398]">Category (required)</span>
+                                        <select
+                                            value={formCategoryId}
+                                            onChange={(e) => setFormCategoryId(e.target.value)}
+                                            className="h-[36px] w-full rounded-[6px] border border-[#25292d] bg-[#0a0c0d] px-3 text-[12px] text-[#e5e7e8] outline-none focus:border-[#b8e51f]/60"
+                                        >
+                                            <option value="">Select a category</option>
+                                            {formOptions.categories.map((c) => (
+                                                <option key={c.id} value={c.id}>{c.name}</option>
+                                            ))}
+                                        </select>
+                                    </label>
+                                    <label className="block">
+                                        <span className="mb-1.5 block text-[10px] font-semibold text-[#8e9398]">Brand (optional)</span>
+                                        <select
+                                            value={formBrandId}
+                                            onChange={(e) => setFormBrandId(e.target.value)}
+                                            className="h-[36px] w-full rounded-[6px] border border-[#25292d] bg-[#0a0c0d] px-3 text-[12px] text-[#e5e7e8] outline-none focus:border-[#b8e51f]/60"
+                                        >
+                                            <option value="">No brand</option>
+                                            {formOptions.brands.map((b) => (
+                                                <option key={b.id} value={b.id}>{b.name}</option>
+                                            ))}
+                                        </select>
+                                    </label>
+                                </>
                             )}
 
                             {modal.mode === "edit" && editNode && (
@@ -430,7 +487,7 @@ export default function ModelsManagementLayer() {
                                         <option value="">(Root level)</option>
                                         {editParentOptions.map((m) => (
                                             <option key={m.id} value={m.id}>
-                                                {"— ".repeat(m.level)}{m.name} ({indentLabel(m)})
+                                                {"— ".repeat(m.level)}{m.name} ({typeLabel(m)})
                                             </option>
                                         ))}
                                     </select>

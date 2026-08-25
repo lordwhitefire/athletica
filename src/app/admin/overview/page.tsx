@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { getDashboardOverview, type DashboardOverview } from "@/lib/actions/get-dashboard-overview";
 import { InteractionProvider, useDashboardInteraction } from "@/components/admin/dashboard-v2/interaction-store";
 import SpecSidebar from "@/components/admin/dashboard-v2/SpecSidebar";
@@ -22,7 +23,8 @@ function pctOf(n: number, total: number): string {
 const fmt = (d: Date) => d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 
 function Topbar() {
-    const { state, openPopover, closePopover, openModal, openMobileSidebar } = useDashboardInteraction();
+    const { state, openPopover, closePopover, openMobileSidebar } = useDashboardInteraction();
+    const router = useRouter();
     return (
         <header className="sticky top-0 z-40 bg-neutral-950/80 backdrop-blur border-b border-neutral-800 px-4 md:px-6 py-3 flex items-center justify-between gap-3">
             <div className="flex items-center gap-3 min-w-0">
@@ -66,7 +68,7 @@ function Topbar() {
 
                 <button
                     type="button"
-                    onClick={() => openModal("add-product")}
+                    onClick={() => router.push("/admin/products/new")}
                     className="flex items-center gap-1.5 bg-[#b7f52a] text-black rounded px-3 py-2 text-xs font-bold hover:brightness-110 transition-all"
                 >
                     <span className="material-symbols-outlined text-[14px]">add</span>
@@ -117,9 +119,11 @@ function OverviewBody({ data }: { data: DashboardOverview }) {
 function OverviewContent() {
     const [data, setData] = useState<DashboardOverview | null>(null);
     const [error, setError] = useState<string | null>(null);
+    const [reloadKey, setReloadKey] = useState(0);
 
     useEffect(() => {
         let cancelled = false;
+        setError(null);
         getDashboardOverview().then((res) => {
             if (cancelled) return;
             if (res.error) {
@@ -127,17 +131,29 @@ function OverviewContent() {
             } else {
                 setData(res.data);
             }
+        }).catch(() => {
+            // FR4-B: network-level action failure must show the error state,
+            // never an eternal skeleton.
+            if (!cancelled) setError("Could not reach the server. Check your connection and retry.");
         });
         return () => {
             cancelled = true;
         };
-    }, []);
+    }, [reloadKey]);
 
     if (error) {
         return (
             <div className="p-6 text-center">
                 <p className="text-sm text-red-400 mb-2">Failed to load dashboard.</p>
-                <p className="text-xs text-zinc-500">{error}</p>
+                <p className="text-xs text-zinc-500 mb-3">{error}</p>
+                <button
+                    type="button"
+                    data-testid="overview-retry"
+                    onClick={() => setReloadKey((k) => k + 1)}
+                    className="text-xs font-semibold text-[#b8e51f] underline hover:brightness-110"
+                >
+                    Retry
+                </button>
             </div>
         );
     }

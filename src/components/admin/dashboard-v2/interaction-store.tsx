@@ -10,7 +10,6 @@ import {
 } from "react";
 
 export type PopoverType = "date" | "chart-range";
-export type ModalType = "add-product";
 export type DrawerType =
     | "product"
     | "products"
@@ -34,25 +33,14 @@ export interface ToastPayload {
     message?: string;
 }
 
-export interface ProductDraft {
-    name: string;
-    asin: string;
-    category: string;
-    brand: string;
-    status: "active" | "unpublished";
-}
-
 interface InteractionState {
     route: string;
     sidebar: { mobileOpen: boolean; collapsed: boolean };
     popover: PopoverType | null;
-    modal: ModalType | null;
     drawer: DrawerPayload | null;
     toast: ToastPayload | null;
     chart: { range: "Daily" | "Weekly" | "Monthly" };
     dateRange: { start: Date; end: Date };
-    productDraft: ProductDraft;
-    busy: boolean;
 }
 
 function lastNDays(n: number): Date[] {
@@ -86,13 +74,10 @@ const initialState: InteractionState = {
     route: "dashboard",
     sidebar: { mobileOpen: false, collapsed: false },
     popover: null,
-    modal: null,
     drawer: null,
     toast: null,
     chart: { range: "Daily" },
     dateRange: { start: thisWeekStart, end: thisWeekEnd },
-    productDraft: { name: "", asin: "", category: "", brand: "", status: "active" },
-    busy: false,
 };
 
 type Action =
@@ -104,20 +89,15 @@ type Action =
     | { type: "CLOSE_POPOVER" }
     | { type: "SET_CHART_RANGE"; range: "Daily" | "Weekly" | "Monthly" }
     | { type: "SET_DATE_RANGE"; start: Date; end: Date }
-    | { type: "OPEN_MODAL"; modal: ModalType }
-    | { type: "CLOSE_MODAL" }
     | { type: "OPEN_DRAWER"; drawer: DrawerPayload }
     | { type: "CLOSE_DRAWER" }
-    | { type: "SET_PRODUCT_DRAFT"; patch: Partial<ProductDraft> }
-    | { type: "RESET_PRODUCT_DRAFT" }
-    | { type: "SET_BUSY"; busy: boolean }
     | { type: "SHOW_TOAST"; toast: ToastPayload }
     | { type: "CLEAR_TOAST" };
 
 function reducer(state: InteractionState, action: Action): InteractionState {
     switch (action.type) {
         case "NAVIGATE":
-            return { ...state, route: action.route, sidebar: { ...state.sidebar, mobileOpen: false }, popover: null, modal: null, drawer: null };
+            return { ...state, route: action.route, sidebar: { ...state.sidebar, mobileOpen: false }, popover: null, drawer: null };
         case "TOGGLE_SIDEBAR":
             return { ...state, sidebar: { ...state.sidebar, collapsed: !state.sidebar.collapsed } };
         case "OPEN_MOBILE_SIDEBAR":
@@ -125,27 +105,17 @@ function reducer(state: InteractionState, action: Action): InteractionState {
         case "CLOSE_MOBILE_SIDEBAR":
             return { ...state, sidebar: { ...state.sidebar, mobileOpen: false } };
         case "OPEN_POPOVER":
-            return { ...state, popover: action.popover, modal: null, drawer: null };
+            return { ...state, popover: action.popover, drawer: null };
         case "CLOSE_POPOVER":
             return { ...state, popover: null };
         case "SET_CHART_RANGE":
             return { ...state, chart: { range: action.range } };
         case "SET_DATE_RANGE":
             return { ...state, dateRange: { start: action.start, end: action.end } };
-        case "OPEN_MODAL":
-            return { ...state, modal: action.modal, popover: null, drawer: null };
-        case "CLOSE_MODAL":
-            return { ...state, modal: null };
         case "OPEN_DRAWER":
-            return { ...state, drawer: action.drawer, modal: null, popover: null };
+            return { ...state, drawer: action.drawer, popover: null };
         case "CLOSE_DRAWER":
             return { ...state, drawer: null };
-        case "SET_PRODUCT_DRAFT":
-            return { ...state, productDraft: { ...state.productDraft, ...action.patch } };
-        case "RESET_PRODUCT_DRAFT":
-            return { ...state, productDraft: initialState.productDraft };
-        case "SET_BUSY":
-            return { ...state, busy: action.busy };
         case "SHOW_TOAST":
             return { ...state, toast: action.toast };
         case "CLEAR_TOAST":
@@ -165,13 +135,8 @@ interface InteractionContextValue {
     closePopover: () => void;
     setChartRange: (range: "Daily" | "Weekly" | "Monthly") => void;
     setDateRange: (start: Date, end: Date) => void;
-    openModal: (modal: ModalType) => void;
-    closeModal: () => void;
     openDrawer: (drawer: DrawerPayload) => void;
     closeDrawer: () => void;
-    setDraft: (patch: Partial<ProductDraft>) => void;
-    resetDraft: () => void;
-    setBusy: (busy: boolean) => void;
     showToast: (toast: ToastPayload) => void;
     clearToast: () => void;
 }
@@ -195,13 +160,8 @@ export function InteractionProvider({ children }: { children: ReactNode }) {
         (start: Date, end: Date) => dispatch({ type: "SET_DATE_RANGE", start, end }),
         []
     );
-    const openModal = useCallback((modal: ModalType) => dispatch({ type: "OPEN_MODAL", modal }), []);
-    const closeModal = useCallback(() => dispatch({ type: "CLOSE_MODAL" }), []);
     const openDrawer = useCallback((drawer: DrawerPayload) => dispatch({ type: "OPEN_DRAWER", drawer }), []);
     const closeDrawer = useCallback(() => dispatch({ type: "CLOSE_DRAWER" }), []);
-    const setDraft = useCallback((patch: Partial<ProductDraft>) => dispatch({ type: "SET_PRODUCT_DRAFT", patch }), []);
-    const resetDraft = useCallback(() => dispatch({ type: "RESET_PRODUCT_DRAFT" }), []);
-    const setBusy = useCallback((busy: boolean) => dispatch({ type: "SET_BUSY", busy }), []);
     const showToast = useCallback((toast: ToastPayload) => dispatch({ type: "SHOW_TOAST", toast }), []);
     const clearToast = useCallback(() => dispatch({ type: "CLEAR_TOAST" }), []);
 
@@ -216,13 +176,8 @@ export function InteractionProvider({ children }: { children: ReactNode }) {
             closePopover,
             setChartRange,
             setDateRange,
-            openModal,
-            closeModal,
             openDrawer,
             closeDrawer,
-            setDraft,
-            resetDraft,
-            setBusy,
             showToast,
             clearToast,
         }),
@@ -236,13 +191,8 @@ export function InteractionProvider({ children }: { children: ReactNode }) {
             closePopover,
             setChartRange,
             setDateRange,
-            openModal,
-            closeModal,
             openDrawer,
             closeDrawer,
-            setDraft,
-            resetDraft,
-            setBusy,
             showToast,
             clearToast,
         ]

@@ -9,7 +9,6 @@ import "@/components/admin/product-catalog/product-catalog-interactions.css";
 import {
     getCatalogProducts,
     getCatalogFacets,
-    createCatalogProduct,
     updateCatalogProduct,
     deleteProduct,
     bulkSetProductStatus,
@@ -130,20 +129,27 @@ function ProductsBody() {
     const [error, setError] = useState<string | null>(null);
 
     const loadInitial = useCallback(async () => {
-        const [facetsResult, productsResult] = await Promise.all([
-            getCatalogFacets(),
-            getCatalogProducts({}),
-        ]);
-        if (facetsResult.error) {
-            setError(facetsResult.error.message);
-            return;
+        setError(null);
+        try {
+            const [facetsResult, productsResult] = await Promise.all([
+                getCatalogFacets(),
+                getCatalogProducts({}),
+            ]);
+            if (facetsResult.error) {
+                setError(facetsResult.error.message);
+                return;
+            }
+            if (productsResult.error) {
+                setError(productsResult.error.message);
+                return;
+            }
+            setFacets(facetsResult.data);
+            setProducts(productsResult.data.items);
+        } catch {
+            // FR4-B: a network-level action failure must never leave the
+            // loading skeleton up forever.
+            setError("Could not reach the server. Check your connection and retry.");
         }
-        if (productsResult.error) {
-            setError(productsResult.error.message);
-            return;
-        }
-        setFacets(facetsResult.data);
-        setProducts(productsResult.data.items);
     }, []);
 
     useEffect(() => {
@@ -172,7 +178,15 @@ function ProductsBody() {
         return (
             <div className="p-6 text-center">
                 <p className="text-sm text-red-400 mb-2">Failed to load product catalog.</p>
-                <p className="text-xs text-zinc-500">{error}</p>
+                <p className="text-xs text-zinc-500 mb-3">{error}</p>
+                <button
+                    type="button"
+                    data-testid="products-retry"
+                    onClick={() => void loadInitial()}
+                    className="text-xs font-semibold text-[#b8e51f] underline hover:brightness-110"
+                >
+                    Retry
+                </button>
             </div>
         );
     }
@@ -216,11 +230,6 @@ function ProductsBody() {
                                 : (filters.missingData as "asin" | "image" | "category" | "none"),
                         sort: filters.sort,
                     });
-                }}
-                onCreateProduct={async (payload) => {
-                    const result = await createCatalogProduct(payload);
-                    throwOnError(result);
-                    await refresh();
                 }}
                 onUpdateProduct={async (id, payload) => {
                     const result = await updateCatalogProduct(id, payload);

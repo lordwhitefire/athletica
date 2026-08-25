@@ -45,6 +45,12 @@ export async function getCategoriesAdmin(): Promise<ApiResult<AdminCategory[]>> 
             adminSupabase.from("categories").select("id, slug, name, parent_id").order("name"),
             adminSupabase.from("products").select("category_id"),
         ]);
+        if (categoryRes.error) {
+            return fail("api_error", "admin_categories_fetch_failed", categoryRes.error.message);
+        }
+        if (productRes.error) {
+            return fail("api_error", "admin_category_counts_failed", productRes.error.message);
+        }
         const countByCategory = new Map<string, number>();
         for (const p of productRes.data ?? []) {
             if (!p.category_id) continue;

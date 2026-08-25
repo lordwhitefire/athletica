@@ -1,18 +1,20 @@
-import { getProductByIdAdmin } from "@/lib/actions/products";
-import ProductForm from "@/components/admin/ProductForm";
-import { notFound } from "next/navigation";
+"use client";
 
-export default async function EditProductPage({ params }: { params: Promise<{ id: string }> }) {
-    const { id } = await params;
-    const productResult = await getProductByIdAdmin(id);
-    const product = productResult.data as Record<string, unknown> | undefined;
+import { use } from "react";
+import { InteractionProvider } from "@/components/admin/dashboard-v2/interaction-store";
+import SpecSidebar from "@/components/admin/dashboard-v2/SpecSidebar";
+import MobileTopbar from "@/components/admin/dashboard-v2/MobileTopbar";
+import ProductFullEditor from "@/components/admin/dashboard-v2/ProductFullEditor";
 
-    if (!product) notFound();
-
+export default function EditProductPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = use(params);
     return (
-        <div>
-            <h1 className="text-2xl font-black uppercase tracking-tight mb-6">Edit Product</h1>
-            <ProductForm productId={id} initial={product} />
-        </div>
+        <InteractionProvider>
+            <SpecSidebar />
+            <MobileTopbar />
+            <div className="min-h-screen ml-0 max-[1100px]:min-[761px]:ml-16 min-[1101px]:ml-64 max-[760px]:pt-14">
+                <ProductFullEditor mode="edit" productId={id} />
+            </div>
+        </InteractionProvider>
     );
 }

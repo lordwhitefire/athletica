@@ -1,5 +1,5 @@
 import { getSiteSettingsDoc, saveSiteSettings } from "@/lib/actions/siteSettings";
-import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/getNavigation";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/content/content-service";
 import SiteSettingsForm from "./SiteSettingsForm";
 
 export const dynamic = "force-dynamic";

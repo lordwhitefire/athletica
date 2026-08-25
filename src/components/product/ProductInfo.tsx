@@ -95,6 +95,14 @@ export default function ProductInfo({ product, amazonLink }: ProductInfoProps) {
                     </>
                 )}
             </div>
+            {product.price.member_price > 0 && product.price.member_price < product.price.current && (
+                <div className="flex items-baseline gap-2 text-secondary">
+                    <span className="text-[10px] font-bold uppercase tracking-widest">Member price</span>
+                    <span data-testid="product-member-price" className="text-lg font-black font-headline">
+                        {product.price.currency} {product.price.member_price}
+                    </span>
+                </div>
+            )}
 
             {/* Color variants */}
             {(product.color_variants?.length ?? 0) > 0 && (

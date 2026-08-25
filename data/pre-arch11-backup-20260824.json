@@ -1,0 +1,4810 @@
+{
+  "exported_at": "2026-08-24T20:27:13.238Z",
+  "purpose": "pre-ARCH-11 hierarchy migration backup",
+  "tables": {
+    "models": {
+      "row_count": 21,
+      "rows": [
+        {
+          "id": "f9c018d3-4383-449e-aa62-8bd41670ca8e",
+          "slug": "league-ft-fg",
+          "name": "League-FT-(FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "League-FT-(FG sub-model",
+          "created_at": "2026-08-19T18:43:02.833537+00:00",
+          "updated_at": "2026-08-19T18:43:02.833537+00:00"
+        },
+        {
+          "id": "a26cffb2-f025-4696-993f-451b294c8692",
+          "slug": "mg-beckham",
+          "name": "MG)-Beckham",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "f9c018d3-4383-449e-aa62-8bd41670ca8e",
+          "level": 2,
+          "description": "MG)-Beckham leaf model",
+          "created_at": "2026-08-19T18:43:04.947672+00:00",
+          "updated_at": "2026-08-19T18:43:04.947672+00:00"
+        },
+        {
+          "id": "4ce639b7-deb4-4264-a7d4-c4c52f446510",
+          "slug": "mg",
+          "name": "MG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "f9c018d3-4383-449e-aa62-8bd41670ca8e",
+          "level": 2,
+          "description": "MG leaf model",
+          "created_at": "2026-08-19T18:43:05.238068+00:00",
+          "updated_at": "2026-08-19T18:43:05.238068+00:00"
+        },
+        {
+          "id": "189f4422-2233-4b71-b189-0654889ffa0c",
+          "slug": "mercurial-vapour-17",
+          "name": "Mercurial Vapour 17",
+          "brand_id": "ef3069ae-60d9-477f-b59c-57d2d7662088",
+          "parent_id": null,
+          "level": 0,
+          "description": "Mercurial Vapour 17 root model",
+          "created_at": "2026-08-19T18:43:00.092864+00:00",
+          "updated_at": "2026-08-19T18:44:05.162504+00:00"
+        },
+        {
+          "id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "slug": "predator",
+          "name": "Predator",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": null,
+          "level": 0,
+          "description": "Predator root model",
+          "created_at": "2026-08-19T18:43:00.832666+00:00",
+          "updated_at": "2026-08-19T18:44:05.844176+00:00"
+        },
+        {
+          "id": "d928d183-d063-482f-8405-250d2c5229e2",
+          "slug": "x",
+          "name": "X",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": null,
+          "level": 0,
+          "description": "X root model",
+          "created_at": "2026-08-19T18:43:01.070475+00:00",
+          "updated_at": "2026-08-19T18:44:06.059247+00:00"
+        },
+        {
+          "id": "d8d0d0f2-65ce-478f-a2e5-a5017eb3d68f",
+          "slug": "elite-fg",
+          "name": "Elite-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Elite-FG sub-model",
+          "created_at": "2026-08-19T18:43:01.300643+00:00",
+          "updated_at": "2026-08-19T18:44:06.25234+00:00"
+        },
+        {
+          "id": "7ec69b7f-ad07-4291-b529-c0b78d748cda",
+          "slug": "elite-ft-fg-beckham",
+          "name": "Elite-FT-FG-Beckham",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Elite-FT-FG-Beckham sub-model",
+          "created_at": "2026-08-19T18:43:01.590303+00:00",
+          "updated_at": "2026-08-19T18:44:06.508405+00:00"
+        },
+        {
+          "id": "33fa6022-6fdb-43f8-ae92-36f9ada41390",
+          "slug": "elite-ft-fg",
+          "name": "Elite-FT-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Elite-FT-FG sub-model",
+          "created_at": "2026-08-19T18:43:01.849515+00:00",
+          "updated_at": "2026-08-19T18:44:06.866841+00:00"
+        },
+        {
+          "id": "9ecd9f2d-910b-4fcd-853b-a2c2cd472654",
+          "slug": "elite-ll-ag",
+          "name": "Elite-LL-AG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Elite-LL-AG sub-model",
+          "created_at": "2026-08-19T18:43:02.102421+00:00",
+          "updated_at": "2026-08-19T18:44:07.087913+00:00"
+        },
+        {
+          "id": "b91fe9e0-0b9d-4481-9970-dc09ebc0bb90",
+          "slug": "elite-ll-fg",
+          "name": "Elite-LL-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Elite-LL-FG sub-model",
+          "created_at": "2026-08-19T18:43:02.325543+00:00",
+          "updated_at": "2026-08-19T18:44:07.362667+00:00"
+        },
+        {
+          "id": "d95cb375-cb39-4824-b5a0-09c6b1d9645e",
+          "slug": "league-fg",
+          "name": "League-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "League-FG sub-model",
+          "created_at": "2026-08-19T18:43:02.582537+00:00",
+          "updated_at": "2026-08-19T18:44:07.563047+00:00"
+        },
+        {
+          "id": "c157d322-8c12-4cde-8049-704cb8a46e53",
+          "slug": "league-ft-fg-mg-beckham",
+          "name": "League-FT-(FG/MG)-Beckham",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "League-FT-(FG/MG)-Beckham sub-model",
+          "created_at": "2026-08-19T18:44:07.88829+00:00",
+          "updated_at": "2026-08-19T18:44:07.88829+00:00"
+        },
+        {
+          "id": "230250b7-b5f4-487c-ac28-5340f805270d",
+          "slug": "league-ft-fg-mg",
+          "name": "League-FT-(FG/MG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "League-FT-(FG/MG sub-model",
+          "created_at": "2026-08-19T18:44:08.172664+00:00",
+          "updated_at": "2026-08-19T18:44:08.172664+00:00"
+        },
+        {
+          "id": "f50d61d9-2a3a-462e-b686-4c3d5c89cc54",
+          "slug": "league-ll-fg",
+          "name": "League-LL-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "League-LL-FG sub-model",
+          "created_at": "2026-08-19T18:43:03.165305+00:00",
+          "updated_at": "2026-08-19T18:44:08.467208+00:00"
+        },
+        {
+          "id": "abcd0984-0c63-47a0-8691-2ce6797e3e6a",
+          "slug": "league-mg",
+          "name": "League-MG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "League-MG sub-model",
+          "created_at": "2026-08-19T18:43:03.448195+00:00",
+          "updated_at": "2026-08-19T18:44:08.780465+00:00"
+        },
+        {
+          "id": "5034254c-91aa-4fae-a158-f9917164eaa8",
+          "slug": "pro-fg",
+          "name": "Pro-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Pro-FG sub-model",
+          "created_at": "2026-08-19T18:43:03.733922+00:00",
+          "updated_at": "2026-08-19T18:44:09.068487+00:00"
+        },
+        {
+          "id": "39117f0f-5383-40b6-b783-8d66b2418b54",
+          "slug": "pro-ft-ag",
+          "name": "Pro-FT-AG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Pro-FT-AG sub-model",
+          "created_at": "2026-08-19T18:43:03.99859+00:00",
+          "updated_at": "2026-08-19T18:44:09.262634+00:00"
+        },
+        {
+          "id": "19895812-4972-4929-89aa-b6f0c21465c1",
+          "slug": "crazyfast-1-fg",
+          "name": "Crazyfast.1-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "d928d183-d063-482f-8405-250d2c5229e2",
+          "level": 1,
+          "description": "Crazyfast.1-FG sub-model",
+          "created_at": "2026-08-19T18:43:04.246132+00:00",
+          "updated_at": "2026-08-19T18:44:09.453341+00:00"
+        },
+        {
+          "id": "41426f4b-e0e8-4c91-ba40-18051c5a08d0",
+          "slug": "speedportal-3-ll-fg",
+          "name": "Speedportal.3-LL-FG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "d928d183-d063-482f-8405-250d2c5229e2",
+          "level": 1,
+          "description": "Speedportal.3-LL-FG sub-model",
+          "created_at": "2026-08-19T18:43:04.465373+00:00",
+          "updated_at": "2026-08-19T18:44:09.687152+00:00"
+        },
+        {
+          "id": "1c6a0e72-dcdb-4345-aca9-05d4e4f73cf1",
+          "slug": "elite-ag",
+          "name": "Elite-AG",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "parent_id": "849cf064-aaa1-4481-91c0-58624f47f1a5",
+          "level": 1,
+          "description": "Elite-AG sub-model",
+          "created_at": "2026-08-19T18:43:04.734933+00:00",
+          "updated_at": "2026-08-19T18:44:09.997729+00:00"
+        }
+      ]
+    },
+    "products": {
+      "row_count": 33,
+      "rows": [
+        {
+          "slug": "test-product-1",
+          "name": "Test Product",
+          "model": "Test Model",
+          "description": null,
+          "price": 129.99,
+          "gender": "Men",
+          "color": "Black",
+          "sizes": [
+            "8",
+            "9",
+            "10"
+          ],
+          "attributes": {
+            "sole": "FG",
+            "material": "synthetic"
+          },
+          "status": "unpublished",
+          "asin": "B0TEST1234",
+          "category_id": "f494585a-e52e-4e19-9efb-03f5ad4ab5c5",
+          "brand_id": "9e810e95-a87c-4a10-a8d8-137b62fb7ae0",
+          "image_links": [
+            "https://cdn.sanity.io/images/test/img1.jpg"
+          ],
+          "created_at": "2026-08-19T17:00:14.641024+00:00",
+          "updated_at": "2026-08-24T17:22:06.690978+00:00",
+          "id": "83c9f770-f0da-481c-9810-bb82b86e1678",
+          "leaf_model_id": null
+        },
+        {
+          "slug": "bench1-430706",
+          "name": "Bench One Vapor 430706",
+          "model": "Predator/League-FT-(FG/MG",
+          "description": "{\"subtitle\":\"Bench Subtitle Elite\",\"tagline\":\"Speed Beyond Measure\",\"intro\":\"Bench intro paragraph about explosive acceleration.\",\"collection\":\"Mercurial Series\",\"key_benefits\":[\"Bench benefit number one\",\"Bench benefit number two\"],\"technical_details\":{\"range\":\"Elite Series\",\"sole_type\":\"Blade Studs\",\"upper_material\":\"Knit\",\"adjustment\":\"Lacing System\"}}",
+          "price": 189.99,
+          "gender": "Male",
+          "color": "Volt Green",
+          "sizes": [
+            "42",
+            "43",
+            "44"
+          ],
+          "attributes": {
+            "price": {
+              "current": 189.99,
+              "currency": "EUR",
+              "original": 249.99,
+              "member_price": 159.99,
+              "discount_percent": 24
+            },
+            "traction": "FG Firm Ground",
+            "sizes_detail": [
+              {
+                "size": "42",
+                "available": true
+              },
+              {
+                "size": "43",
+                "available": false
+              },
+              {
+                "size": "44",
+                "available": true
+              }
+            ]
+          },
+          "status": "published",
+          "asin": "B0CBENCH01",
+          "category_id": "f494585a-e52e-4e19-9efb-03f5ad4ab5c5",
+          "brand_id": "9e810e95-a87c-4a10-a8d8-137b62fb7ae0",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/72b8552edabb9840f3217c981285cb3453e818c8-1x1.png"
+          ],
+          "created_at": "2026-08-22T20:33:08.56044+00:00",
+          "updated_at": "2026-08-22T20:33:08.56044+00:00",
+          "id": "V4qZOE",
+          "leaf_model_id": "4ce639b7-deb4-4264-a7d4-c4c52f446510"
+        },
+        {
+          "slug": "adidas-predator-elite-ft-fg-white-light-green",
+          "name": "Predator/Elite-FT-FG",
+          "model": "Predator/Elite-FT-FG",
+          "description": "{\"collection\":\"Radiant Blaze Pack\",\"intro\":\"The adidas Predator Elite FT FG deliver professional-level control with advanced technologies for dominating shots, passes, and ball manipulation on firm ground surfaces.\",\"key_benefits\":[\"Total precision: Advanced strike zone with raised texture for improved accuracy on shots and passes.\",\"Optimized stability: Ergonomic fit and structured plate for confident movement at high speeds.\",\"Superior ball contact: HybridTouch 2.0 synthetic upper molds to the foot for responsive touch.\",\"Enhanced traction: ControlFrame 2.0 sole plate optimized for firm natural and modern artificial grass.\",\"Pro-level fit: Fold-over tongue and lacing system for secure, customized lockdown.\"],\"subtitle\":\"Football boots with tongue adidas FG for firm natural grass or latest-generation artificial - white and light green\",\"tagline\":\"Total control and precision for elite performance\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Elite / Professional - maximum performance with premium materials and technologies\",\"sole_type\":\"FG (Firm Ground) - for dry natural grass and latest-generation artificial turf\",\"upper_material\":\"HybridTouch 2.0 synthetic\"}}",
+          "price": 167.99,
+          "gender": "Men",
+          "color": "White and Light Green",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 167.99,
+              "currency": "€",
+              "original": 280,
+              "member_price": 0,
+              "discount_percent": 40
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/bc15197ddc3f2b1047dab1dfe186f1b94ef109c2-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/50b528407002f03a06205a42247f3eae4e70af5c-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/989be85432bbb0ef8a6b3347759b1de1c10deac3-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:17.468146+00:00",
+          "updated_at": "2026-08-24T11:03:58.256948+00:00",
+          "id": "JI1092",
+          "leaf_model_id": "33fa6022-6fdb-43f8-ae92-36f9ada41390"
+        },
+        {
+          "slug": "adidas-predator-elite-ft-fg-orange",
+          "name": "Predator/Elite-FT-FG",
+          "model": "Predator/Elite-FT-FG",
+          "description": "{\"collection\":\"Coral Blaze Pack – 2025 season\",\"intro\":\"The adidas Predator Elite FT FG deliver professional-grade precision, grip, and shooting power with a striking Coral Blaze Pack design. Built for players who demand maximum ball mastery and goal threat on firm surfaces.\",\"key_benefits\":[\"Superior ball control: Control Zone textured zones and Strikeskin rubber fins for enhanced grip, swerve, and accuracy.\",\"Optimized fit: Fold-over tongue (lengüeta) provides secure lockdown and clean striking surface.\",\"Premium traction: Controlframe 2.0 outsole engineered for explosive acceleration and stability on firm ground.\",\"Power and precision: HybridTouch upper balances softness, responsiveness, and durability for elite performance.\"],\"subtitle\":\"Football boots with fold-over tongue adidas FG for natural grass or latest-generation artificial turf - orange\",\"tagline\":\"Elite-level control and power in vibrant orange\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Elite / top-tier professional\",\"sole_type\":\"FG (Firm Ground) – molded studs for natural grass and high-quality artificial turf\",\"upper_material\":\"HybridTouch synthetic with grippy texture and Strikeskin fins\"}}",
+          "price": 167.99,
+          "gender": "Unisex",
+          "color": "Orange",
+          "sizes": [
+            "38 EU",
+            "39 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 167.99,
+              "currency": "€",
+              "original": 0,
+              "member_price": 0,
+              "discount_percent": 0
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "38 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "39 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "40 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "48 EU",
+                "stock": 1,
+                "available": true
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/1ea90f55de9279800edca99f2df2c4ecc4aa658d-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/69ff9c40740203e1db02a07db4db4596b78c2e3e-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/00d4fa8d0df948c6f24db2e5c75bb93484e69a6d-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:17.189294+00:00",
+          "updated_at": "2026-08-24T11:03:50.98663+00:00",
+          "id": "JI1093",
+          "leaf_model_id": "33fa6022-6fdb-43f8-ae92-36f9ada41390"
+        },
+        {
+          "slug": "adidas-predator-elite-ft-fg-white",
+          "name": "Predator/Elite-FT-FG",
+          "model": "Predator/Elite-FT-FG",
+          "description": "{\"collection\":\"Road to Glory\",\"intro\":\"Dominate every play with lethal precision. The adidas Predator Elite FT FG are designed to deliver control, fit, and power with every touch. Their professional design elevates your performance on top-level pitches.\",\"key_benefits\":[\"Perfect contact: HybridTouch upper with Strikeskin rubber fins for enhanced grip and ball control.\",\"Iconic fold-over tongue: Provides a clean striking surface and secure fit.\",\"Stability and reactivity: Controlframe 2.0 full-length plate for explosive movement and firm footing.\",\"Adaptive comfort: PRIMEKNIT collar wraps the ankle for support without restriction.\"],\"subtitle\":\"Football boots with tongue adidas FG for firm natural or latest-generation artificial grass - white\",\"tagline\":\"Lethal precision and total control for elite players\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Professional / Elite level\",\"sole_type\":\"FG (Firm Ground) - optimized for natural grass and dry latest-gen artificial surfaces\",\"upper_material\":\"HybridTouch synthetic with PRIMEKNIT elements\"}}",
+          "price": 167.99,
+          "gender": "Men",
+          "color": "White",
+          "sizes": [
+            "37 1/3 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 167.99,
+              "currency": "€",
+              "original": 280,
+              "member_price": 275.99,
+              "discount_percent": 40
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "JH6421"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1076"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6447"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6443"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3877"
+              },
+              {
+                "color": "Black",
+                "product_id": "ID3874"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/8d456f5b7effae25adb424765c7827fd16a9bae5-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/920c2ae09051efcd964ba1dd632012223d69d5db-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/f28be6b9930bf05ee6e2e58395b5ab77beac4d72-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:17.786736+00:00",
+          "updated_at": "2026-08-19T18:44:11.630594+00:00",
+          "id": "JI1095",
+          "leaf_model_id": "33fa6022-6fdb-43f8-ae92-36f9ada41390"
+        },
+        {
+          "slug": "bench1-430954",
+          "name": "Bench One Vapor 430954",
+          "model": "Predator/League-FT-(FG/MG",
+          "description": "{\"subtitle\":\"Bench Subtitle EDITED\",\"tagline\":\"Speed Beyond Measure\",\"intro\":\"Bench EDITED intro about controlled precision and lockdown.\",\"collection\":\"Mercurial Series\",\"key_benefits\":[],\"technical_details\":{\"range\":\"Elite Series\",\"sole_type\":\"Blade Studs\",\"upper_material\":\"Knit\",\"adjustment\":\"Lacing System\"}}",
+          "price": 189.99,
+          "gender": "Male",
+          "color": "Volt Green",
+          "sizes": [
+            "42",
+            "43",
+            "44"
+          ],
+          "attributes": {
+            "price": {
+              "current": 189.99,
+              "currency": "EUR",
+              "original": 249.99,
+              "member_price": 159.99,
+              "discount_percent": 24
+            },
+            "traction": "FG Firm Ground",
+            "sizes_detail": [
+              {
+                "size": "42",
+                "available": true
+              },
+              {
+                "size": "43",
+                "available": true
+              },
+              {
+                "size": "44",
+                "available": false
+              }
+            ]
+          },
+          "status": "published",
+          "asin": "B0CBENCH01",
+          "category_id": "f494585a-e52e-4e19-9efb-03f5ad4ab5c5",
+          "brand_id": "9e810e95-a87c-4a10-a8d8-137b62fb7ae0",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/72b8552edabb9840f3217c981285cb3453e818c8-1x1.png"
+          ],
+          "created_at": "2026-08-22T20:36:55.562557+00:00",
+          "updated_at": "2026-08-22T20:57:08.919261+00:00",
+          "id": "mkbAA9",
+          "leaf_model_id": "4ce639b7-deb4-4264-a7d4-c4c52f446510"
+        },
+        {
+          "slug": "adidas-predator-elite-ll-fg-white",
+          "name": "Predator/Elite-LL-FG",
+          "model": "Predator/Elite-LL-FG",
+          "description": "{\"collection\":\"Day Spark Pack\",\"intro\":\"The adidas Predator Elite LL FG deliver unmatched accuracy and power with a clean, laceless striking surface and advanced grip technologies.\",\"key_benefits\":[\"Clean striking zone: Laceless construction for consistent, powerful shots.\",\"Superior ball grip: High Definition Grip (HDG) rubber elements on the upper for enhanced control in all conditions.\",\"Adaptive fit: HybridTouch 2.0 upper molds to the foot with PRIMEKNIT collar for lockdown comfort.\",\"Explosive traction: Controlframe 2.0 outsole with conical studs for stability, rotation, and quick direction changes on firm ground.\"],\"subtitle\":\"Laceless football boots adidas FG for firm natural grass - white\",\"tagline\":\"Precision shooting and maximum control – laceless elite performance\",\"technical_details\":{\"adjustment\":\"Laceless\",\"range\":\"Elite / Professional\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"HybridTouch 2.0 (Primeknit + PU coating, 20% recycled content)\"}}",
+          "price": 134.99,
+          "gender": "Unisex",
+          "color": "White",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 134.99,
+              "currency": "€",
+              "original": 270,
+              "member_price": 0,
+              "discount_percent": 50
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 5,
+                "available": true
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 1,
+                "available": true
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "Orange",
+                "product_id": "JH8875"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1076"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1075"
+              },
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "JH6421"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF8862"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF8867"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1078"
+              },
+              {
+                "color": "White and Pink",
+                "product_id": "IF8864"
+              },
+              {
+                "color": "Blue and Pink",
+                "product_id": "IH0108"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/b53bd97b72b1f318625b7d072c5f7f6f822c2e57-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/14f02d956246a4eeb03ea403719487c96e749cb5-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/90f0f171010582dbcfb61186bfe25440f02e71ec-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:18.814124+00:00",
+          "updated_at": "2026-08-19T18:44:12.588491+00:00",
+          "id": "IF6448",
+          "leaf_model_id": "b91fe9e0-0b9d-4481-9970-dc09ebc0bb90"
+        },
+        {
+          "slug": "bench1-460957",
+          "name": "Bench One Vapor 460957",
+          "model": "Predator/League-FT-(FG/MG",
+          "description": "{\"subtitle\":\"Bench Subtitle EDITED\",\"tagline\":\"Speed Beyond Measure\",\"intro\":\"Bench EDITED intro about controlled precision and lockdown.\",\"collection\":\"Mercurial Series\",\"key_benefits\":[],\"technical_details\":{\"range\":\"Elite Series\",\"sole_type\":\"Blade Studs\",\"upper_material\":\"Knit\",\"adjustment\":\"Lacing System\"}}",
+          "price": 189.99,
+          "gender": "Male",
+          "color": "Volt Green",
+          "sizes": [
+            "42",
+            "43",
+            "44"
+          ],
+          "attributes": {
+            "price": {
+              "current": 189.99,
+              "currency": "EUR",
+              "original": 249.99,
+              "member_price": 159.99,
+              "discount_percent": 24
+            },
+            "traction": "FG Firm Ground",
+            "sizes_detail": [
+              {
+                "size": "42",
+                "available": true
+              },
+              {
+                "size": "43",
+                "available": true
+              },
+              {
+                "size": "44",
+                "available": false
+              }
+            ]
+          },
+          "status": "published",
+          "asin": "B0CBENCH01",
+          "category_id": "f494585a-e52e-4e19-9efb-03f5ad4ab5c5",
+          "brand_id": "9e810e95-a87c-4a10-a8d8-137b62fb7ae0",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/72b8552edabb9840f3217c981285cb3453e818c8-1x1.png"
+          ],
+          "created_at": "2026-08-23T04:57:02.211173+00:00",
+          "updated_at": "2026-08-23T05:02:23.404349+00:00",
+          "id": "iUqFh3",
+          "leaf_model_id": "4ce639b7-deb4-4264-a7d4-c4c52f446510"
+        },
+        {
+          "slug": "adidas-predator-league-ft-fg-mg-red",
+          "name": "Predator/League-FT-(FG/MG)",
+          "model": "Predator/League-FT-(FG/MG)",
+          "description": "{\"collection\":\"Pure Victory Pack\",\"intro\":\"The adidas Predator League FT FG/MG deliver control and striking power with a fold-over tongue design, ideal for players who want accuracy in shots and passes on firm natural grass and modern artificial turf.\",\"key_benefits\":[\"Enhanced striking zone: textured Hybridfeel upper boosts ball grip and shot accuracy.\",\"Secure fit: fold-over tongue with strap covers laces for clean contact and lockdown.\",\"Versatile traction: FG/MG outsole provides excellent grip on firm ground and multi-ground surfaces.\",\"Comfort and durability: lightweight synthetic build for all-day performance.\"],\"subtitle\":\"Football boots with tongue adidas FG/MG for firm ground and multi-ground - red\",\"tagline\":\"Precision and power on firm and mixed surfaces\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"League / mid-range\",\"sole_type\":\"FG/MG (Firm Ground / Multi-Ground)\",\"upper_material\":\"Hybridfeel synthetic\"}}",
+          "price": 51.99,
+          "gender": "Unisex",
+          "color": "Red",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 51.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 0,
+              "discount_percent": 48.01
+            },
+            "traction": "FG/MG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "40 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "48 EU",
+                "stock": 1,
+                "available": true
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White and Green",
+                "product_id": "JI1111"
+              },
+              {
+                "color": "Black",
+                "product_id": "JR7900"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6333"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6383"
+              },
+              {
+                "color": "White",
+                "product_id": "ID1320"
+              },
+              {
+                "color": "Red and Orange",
+                "product_id": "JI1167"
+              },
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "JH6471"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/634699e8e05e01a179c31a13ab89abe753f04253-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/fbe196dfd1f2d2b08de36a6623b205c2ea521b63-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/5e6b50b60ae05eb9850d89bbf016826e01898370-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:20.221431+00:00",
+          "updated_at": "2026-08-19T18:44:13.807555+00:00",
+          "id": "ID1319",
+          "leaf_model_id": "230250b7-b5f4-487c-ac28-5340f805270d"
+        },
+        {
+          "slug": "adidas-predator-league-ft-fg-mg-white-light-green",
+          "name": "Predator/League-FT-(FG/MG)",
+          "model": "Predator/League-FT-(FG/MG)",
+          "description": "{\"collection\":\"RADIANT BLAZE\",\"intro\":\"The adidas Predator League FT FG/MG are the ideal choice for players seeking versatility and precision on firm ground and modern artificial turf. Featuring a fold-over tongue structure and dynamic design, these boots offer a secure fit and precise strikes in every play.\",\"key_benefits\":[\"Versatility across surfaces: Sole optimized for firm natural grass and next-generation artificial turf\",\"Enhanced striking power: Textured strike zones boost shot force and accuracy\",\"Comfortable and secure fit: Flexible synthetic upper with lace-up system for distraction-free performance\",\"Bold on-pitch presence: Striking white/light green colorway from the Radiant Blaze Pack\"],\"subtitle\":\"Football boots with fold-over tongue adidas FG/MG for firm natural grass and artificial turf - white and light green\",\"tagline\":\"Total control on every playing surface\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Mid-range / League level – excellent balance of performance, durability, and value for regular training and matches\",\"sole_type\":\"FG/MG (Firm Ground / Multi-Ground) – Controlplate outsole with nylon/rubber studs\",\"upper_material\":\"Hybridfeel synthetic with 3D texture\"}}",
+          "price": 59.99,
+          "gender": "Men",
+          "color": "White and Light Green",
+          "sizes": [],
+          "attributes": {
+            "price": {
+              "current": 59.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 98.99,
+              "discount_percent": 40
+            },
+            "traction": "FG/MG",
+            "sizes_detail": [],
+            "color_variants": [
+              {
+                "color": "Black",
+                "product_id": "JI1110"
+              },
+              {
+                "color": "Blue",
+                "product_id": "JI1112"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1113"
+              },
+              {
+                "color": "Red",
+                "product_id": "JI1114"
+              },
+              {
+                "color": "Silver",
+                "product_id": "JI1117"
+              },
+              {
+                "color": "Yellow",
+                "product_id": "JI1118"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1140"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/b93976355923ab0f186224730a3789d583f193f7-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/d52efa2e663396f5ba6ba3dd01e0c042f3f5d1f2-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/4b1ca975e3ba3253106de1568b79dd91ac48b0ba-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:20.538566+00:00",
+          "updated_at": "2026-08-19T18:44:14.001761+00:00",
+          "id": "JI1111",
+          "leaf_model_id": "230250b7-b5f4-487c-ac28-5340f805270d"
+        },
+        {
+          "slug": "bench1-466969",
+          "name": "Bench One Vapor 466969",
+          "model": "Predator/League-FT-(FG/MG",
+          "description": "{\"subtitle\":\"Bench Subtitle EDITED\",\"tagline\":\"Speed Beyond Measure\",\"intro\":\"Bench EDITED intro about controlled precision and lockdown.\",\"collection\":\"Mercurial Series\",\"key_benefits\":[],\"technical_details\":{\"range\":\"Elite Series\",\"sole_type\":\"Blade Studs\",\"upper_material\":\"Knit\",\"adjustment\":\"Lacing System\"}}",
+          "price": 189.99,
+          "gender": "Male",
+          "color": "Volt Green",
+          "sizes": [
+            "42",
+            "43",
+            "44"
+          ],
+          "attributes": {
+            "price": {
+              "current": 189.99,
+              "currency": "EUR",
+              "original": 249.99,
+              "member_price": 159.99,
+              "discount_percent": 24
+            },
+            "traction": "FG Firm Ground",
+            "sizes_detail": [
+              {
+                "size": "42",
+                "available": true
+              },
+              {
+                "size": "43",
+                "available": true
+              },
+              {
+                "size": "44",
+                "available": false
+              }
+            ]
+          },
+          "status": "published",
+          "asin": "B0CBENCH01",
+          "category_id": "f494585a-e52e-4e19-9efb-03f5ad4ab5c5",
+          "brand_id": "9e810e95-a87c-4a10-a8d8-137b62fb7ae0",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/07bbd593ea60103871360e11f175ef163389b8d6-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/6d5d64b2cd45beb76ed1b373256c09d7f7d98397-1x1.png",
+            "https://cdn.sanity.io/images/cuiis46d/production/72b8552edabb9840f3217c981285cb3453e818c8-1x1.png"
+          ],
+          "created_at": "2026-08-23T06:37:15.660839+00:00",
+          "updated_at": "2026-08-23T07:41:34.974987+00:00",
+          "id": "4wBNJN",
+          "leaf_model_id": "4ce639b7-deb4-4264-a7d4-c4c52f446510"
+        },
+        {
+          "slug": "adidas-predator-league-ft-fg-mg-beckham-pink",
+          "name": "Predator/League-FT-(FG/MG)-Beckham",
+          "model": "Predator/League-FT-(FG/MG)-Beckham",
+          "description": "{\"collection\":\"adidas de Beckham\",\"intro\":\"The adidas Predator League FT FG/MG Beckham feature a fold-over tongue and grippy design elements, paying homage to David Beckham's iconic style while delivering modern control on firm and multi-ground surfaces.\",\"key_benefits\":[\"Enhanced ball manipulation: all-over 3D texture and Strikescale fins for better grip and spin.\",\"Comfortable fit: Hybridfeel upper adapts to the foot with a fold-over tongue for secure lockdown.\",\"Versatile traction: FG/MG sole works on firm natural grass and modern artificial surfaces.\",\"Iconic look: Inspired by David Beckham for a standout, classic aesthetic.\"],\"subtitle\":\"Football boots with tongue adidas FG/MG for artificial grass - pink\",\"tagline\":\"Beckham-inspired control and precision\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"League / mid-range\",\"sole_type\":\"FG/MG (Firm Ground / Multi-Ground)\",\"upper_material\":\"Hybridfeel (textured synthetic)\"}}",
+          "price": 69.99,
+          "gender": "Men",
+          "color": "Pink",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 69.99,
+              "currency": "€",
+              "original": 110,
+              "member_price": 0,
+              "discount_percent": 36.37
+            },
+            "traction": "FG/MG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White",
+                "product_id": "ID1320"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1110"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1140"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1112"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6333"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6383"
+              },
+              {
+                "color": "Yellow",
+                "product_id": "JH6471"
+              },
+              {
+                "color": "White and Red",
+                "product_id": "JR7902"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/00b13750209caac0363a046a541ceef270770c5e-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/81daef9b3897452d498cfc540a554c0d3f85acf0-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/ef806ca9eae7f60f20834c24157f8c7fd07b5615-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:19.332665+00:00",
+          "updated_at": "2026-08-19T18:44:13.00584+00:00",
+          "id": "JI1113",
+          "leaf_model_id": "c157d322-8c12-4cde-8049-704cb8a46e53"
+        },
+        {
+          "slug": "adidas-predator-pro-fg-blue",
+          "name": "Predator/Pro-FG",
+          "model": "Predator/Pro-FG",
+          "description": "{\"collection\":\"Advancement Pack 2024\",\"intro\":\"The adidas Predator Pro FG feature a flexible HybridTouch 2.0 upper with Strikeskin rubber elements for enhanced grip, power, and pinpoint accuracy on firm ground surfaces.\",\"key_benefits\":[\"Superior ball control: Strikeskin rubber fins and High Definition Grip technology deliver exceptional grip and shot power.\",\"Comfortable, adaptive fit: HybridTouch 2.0 synthetic upper with PRIMEKNIT collar for lockdown and flexibility.\",\"Reactive stability: Controlplate 2.0 soleplate provides explosive agility and quick turns on firm natural grass.\",\"Sustainable materials: 50% recycled content in the upper.\"],\"subtitle\":\"Football boots adidas FG for firm natural or latest-generation artificial grass - blue\",\"tagline\":\"Precision power and control for finishers\",\"technical_details\":{\"adjustment\":\"Lace-up\",\"range\":\"Pro / Advanced range\",\"sole_type\":\"FG (Firm Ground) – conical and bladed studs for dry natural grass and firm artificial surfaces\",\"upper_material\":\"HybridTouch 2.0 (synthetic with PRIMEKNIT collar)\"}}",
+          "price": 72.99,
+          "gender": "Men",
+          "color": "Blue",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 72.99,
+              "currency": "€",
+              "original": 150,
+              "member_price": 145.99,
+              "discount_percent": 51.34
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White",
+                "product_id": "ID3855"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1197"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3856"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6370"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JS4075"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1186"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1195"
+              },
+              {
+                "color": "Black",
+                "product_id": "KI6297"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/18863c027048f2c700fe2e69f05c712731640105-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/6a3b69d4fee73347c590a84944e06015ff702c5e-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/b696961f49caf708346719dbe640d6631f00bc39-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:22.428212+00:00",
+          "updated_at": "2026-08-19T18:44:15.245816+00:00",
+          "id": "IF6330",
+          "leaf_model_id": "5034254c-91aa-4fae-a158-f9917164eaa8"
+        },
+        {
+          "slug": "adidas-predator-pro-fg-silver",
+          "name": "Predator/Pro-FG",
+          "model": "Predator/Pro-FG",
+          "description": "{\"collection\":\"Vivid Horizon Pack\",\"intro\":\"The adidas Predator Pro FG feature an advanced HybridTouch 2.0 upper for silky smooth ball control, exceptional fit, and reduced weight. Ideal for players who demand accuracy in shots, passes, and dribbling on natural firm grass.\",\"key_benefits\":[\"Superior control: Strikeskin rubber fins and textured zones for deadly finishing and spin.\",\"Comfortable, lightweight fit: Flexible synthetic suede and foil upper with improved lockdown.\",\"Firm ground traction: Optimized FG plate for stability and acceleration on natural grass.\",\"Pro pedigree: Worn by stars like Jude Bellingham – celebrates 30 years of Predator legacy.\"],\"subtitle\":\"Football boots adidas FG for firm natural grass - silver\",\"tagline\":\"Pro-level control and precision on firm ground\",\"technical_details\":{\"adjustment\":\"Lace-up\",\"range\":\"Pro / Advanced Range\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"HybridTouch 2.0 synthetic suede with foil\"}}",
+          "price": 72.99,
+          "gender": "Unisex",
+          "color": "Silver",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 72.99,
+              "currency": "€",
+              "original": 150,
+              "member_price": 145.99,
+              "discount_percent": 51.34
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White",
+                "product_id": "IF6329"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6371"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JS4075"
+              },
+              {
+                "color": "White",
+                "product_id": "ID3855"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1197"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6370"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1186"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1195"
+              },
+              {
+                "color": "White",
+                "product_id": "JR0440"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3856"
+              },
+              {
+                "color": "White",
+                "product_id": "ID3826"
+              },
+              {
+                "color": "Red",
+                "product_id": "JR0441"
+              },
+              {
+                "color": "White",
+                "product_id": "ID3857"
+              },
+              {
+                "color": "Black",
+                "product_id": "JS4072"
+              },
+              {
+                "color": "Red",
+                "product_id": "JR0443"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3825"
+              },
+              {
+                "color": "White",
+                "product_id": "JR4770"
+              },
+              {
+                "color": "Black and Red",
+                "product_id": "IG7777"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/75206f9b829dcf5cf08d603f708ad06926175ad8-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/7d4ca03873dde9b4b7c764c2e9d2f05307fd4963-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/13f7f4a55853ee1f3a1351c4bd9703f9f9cf04bf-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:22.691868+00:00",
+          "updated_at": "2026-08-19T18:44:15.50322+00:00",
+          "id": "IF6327",
+          "leaf_model_id": "5034254c-91aa-4fae-a158-f9917164eaa8"
+        },
+        {
+          "slug": "adidas-predator-league-ft-fg-mg-orange",
+          "name": "Predator/League-FT-(FG/MG)",
+          "model": "Predator/League-FT-(FG/MG)",
+          "description": "{\"collection\":\"Coral Blaze Pack\",\"intro\":\"The adidas Predator League FT FG/MG deliver mid-range Predator performance with a fold-over tongue, grippy strike elements, and hybrid sole for reliable traction on firm natural grass and modern artificial surfaces.\",\"key_benefits\":[\"Enhanced ball manipulation: all-over 3D texture and Strikescale fins for grip and control on shots/passes.\",\"Comfortable secure fit: fold-over tongue reduces pressure and provides a clean striking area.\",\"Versatile traction: Controlplate FG/MG outsole optimized for firm ground and multi-ground surfaces.\",\"Mid-tier value: League-level features inspired by pro models at an accessible price point.\"],\"subtitle\":\"Football boots with fold-over tongue adidas FG/MG for firm ground and multi-ground - orange\",\"tagline\":\"Precision control and power on firm & mixed surfaces\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"League / Mid-range\",\"sole_type\":\"FG/MG (Firm Ground / Multi-Ground hybrid)\",\"upper_material\":\"Hybridfeel synthetic with 3D texture\"}}",
+          "price": 59.99,
+          "gender": "Unisex",
+          "color": "Orange",
+          "sizes": [
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 59.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 0,
+              "discount_percent": 40
+            },
+            "traction": "FG/MG",
+            "sizes_detail": [
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 1,
+                "available": true
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White and Green",
+                "product_id": "JI1111"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1169"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1110"
+              },
+              {
+                "color": "Red and Orange",
+                "product_id": "JI1167"
+              },
+              {
+                "color": "White",
+                "product_id": "ID1320"
+              },
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "JH6471"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6383"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/f31e0a0b463484c049afbf3bbdfab98a8c6f8b46-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/88bad35663d1ec4c85ac5f87dfcbc2a0f53b0729-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/946fcf16f02237f9dcee228998ebb4f41efb7285-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:19.932965+00:00",
+          "updated_at": "2026-08-19T18:44:13.52004+00:00",
+          "id": "JI1112",
+          "leaf_model_id": "230250b7-b5f4-487c-ac28-5340f805270d"
+        },
+        {
+          "slug": "adidas-x-crazyfast-1-fg-white-fluorescent-yellow",
+          "name": "X/Crazyfast.1-FG",
+          "model": "X/Crazyfast.1-FG",
+          "description": "{\"collection\":\"Crazyrush Pack 2023\",\"intro\":\"The adidas X Crazyfast.1 FG are high-performance speed boots designed for explosive players, featuring a lightweight Primeknit upper for perfect fit and Aeroplate outsole for maximum reactivity on firm ground.\",\"key_benefits\":[\"Lightning speed: Aeroplate carbon fiber plate delivers explosive acceleration and dynamic movements.\",\"Superior ball touch: Soft microfibre lining and textured upper for exceptional grip and control.\",\"Perfect fit: Primeknit upper provides anatomical, breathable comfort with supportive Aerocage elements.\",\"Optimized traction: Arrow-shaped FG studs excel on natural and firm artificial grass.\"],\"subtitle\":\"Football boots adidas FG for firm/natural grass - white and fluorescent yellow\",\"tagline\":\"Engineered for crazy-fast speed and acceleration\",\"technical_details\":{\"adjustment\":\"Lace-up\",\"range\":\"Elite / top tier\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"Primeknit\"}}",
+          "price": 121.99,
+          "gender": "Men",
+          "color": "White and Fluorescent Yellow",
+          "sizes": [
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 121.99,
+              "currency": "€",
+              "original": 260,
+              "member_price": 0,
+              "discount_percent": 53
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 1,
+                "available": true
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/d315066456ffb362de06a4b48008eb38a2638fb1-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/71d4610c1226357a2ed3ab43d403939efa2d7412-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/4e0752e6b14ddcd5fb1c30be2c6d009bac12a2d9-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:23.331539+00:00",
+          "updated_at": "2026-08-19T18:44:16.091364+00:00",
+          "id": "HQ4516",
+          "leaf_model_id": "19895812-4972-4929-89aa-b6f0c21465c1"
+        },
+        {
+          "slug": "adidas-predator-elite-ll-fg-white-light-green",
+          "name": "Predator/Elite-LL-FG",
+          "model": "Predator/Elite-LL-FG",
+          "description": "{\"collection\":\"RADIANT BLAZE\",\"intro\":\"The adidas Predator Elite LL FG are crafted for players who control the game with pinpoint accuracy. The laceless design and high-definition 3D texture deliver consistent, clean ball contact on every touch.\",\"key_benefits\":[\"Lace-free strike zone: Completely uniform surface for maximum precision in shots and passes.\",\"Optimized FG traction: Stability, acceleration, and secure grip on dry natural grass and modern artificial surfaces.\",\"Premium fit and feel: Ultra-light, enveloping construction with strategic flexibility and support.\",\"Elite performance: Inspired by and worn by top professional players worldwide.\"],\"subtitle\":\"Laceless football boots adidas FG for firm natural grass - white and light green\",\"tagline\":\"Surgical precision, zero distractions\",\"technical_details\":{\"adjustment\":\"Laceless\",\"range\":\"Professional / Elite range – maximum performance with premium materials and technologies\",\"sole_type\":\"FG (firm ground – dry natural grass and latest-generation artificial turf)\",\"upper_material\":\"Synthetic (HybridTouch / Fibertouch)\"}}",
+          "price": 161.99,
+          "gender": "Unisex",
+          "color": "White and Light Green",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 161.99,
+              "currency": "€",
+              "original": 270,
+              "member_price": 0,
+              "discount_percent": 40
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/88a6a5ef1fd078f2e066e1b0a731a69ae4842e4b-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/b31997002377f64d5525071916f60e3c6817e5ee-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/09cd6d4adfdae3b670db60ad485ab666b5d08bfd-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:18.55943+00:00",
+          "updated_at": "2026-08-19T18:44:12.31008+00:00",
+          "id": "JI1075",
+          "leaf_model_id": "b91fe9e0-0b9d-4481-9970-dc09ebc0bb90"
+        },
+        {
+          "slug": "adidas-predator-league-ll-fg-blue",
+          "name": "Predator/League-LL-FG",
+          "model": "Predator/League-LL-FG",
+          "description": "{\"collection\":\"Advancement Pack\",\"intro\":\"The adidas Predator League LL FG are laceless boots designed for sharpshooters, featuring a Hybridfeel upper with 3D texture and Strikescale elements for enhanced grip and shooting accuracy on firm ground.\",\"key_benefits\":[\"Laceless construction with ankle support for secure, distraction-free fit\",\"Hybridfeel upper with all-over 3D texture and grippy Strikescale fins for improved ball control and shooting precision\",\"Controlplate 2.0 firm ground outsole for stability, reactivity, and optimized traction on natural and firm artificial surfaces\",\"Made with breathable materials including recycled content for comfort\"],\"subtitle\":\"Lace-less football boots with ankle support adidas FG for natural or latest-generation artificial grass - blue\",\"tagline\":\"Precision shooting and control for decisive moments\",\"technical_details\":{\"adjustment\":\"Laceless with ankle collar/support\",\"range\":\"League / mid-range\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"Hybridfeel (synthetic with 3D texture and Strikescale elements)\"}}",
+          "price": 48.99,
+          "gender": "Men",
+          "color": "Blue",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 48.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 0,
+              "discount_percent": 51
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White and Green",
+                "product_id": "JI1111"
+              },
+              {
+                "color": "Black",
+                "product_id": "JR7900"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1169"
+              },
+              {
+                "color": "Black",
+                "product_id": "JS2996"
+              },
+              {
+                "color": "White",
+                "product_id": "JS0424"
+              },
+              {
+                "color": "White and Red",
+                "product_id": "JR7902"
+              },
+              {
+                "color": "Gray",
+                "product_id": "KI6294"
+              },
+              {
+                "color": "Red and Orange",
+                "product_id": "JI1167"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1112"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1118"
+              },
+              {
+                "color": "White",
+                "product_id": "ID1330"
+              },
+              {
+                "color": "Black",
+                "product_id": "IF6347"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3745"
+              },
+              {
+                "color": "Yellow",
+                "product_id": "JH6471"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6383"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/22f1fe0d0b1187294bb12b3035f8adfa2de4c853-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/7d2ba908995dbfd2a7100ed3c093f6eb2b6eeca7-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/11a7ee46bc72fabeb7c2a6e959394736e495fe34-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:21.171003+00:00",
+          "updated_at": "2026-08-24T18:03:59.893105+00:00",
+          "id": "IF6333",
+          "leaf_model_id": "f50d61d9-2a3a-462e-b686-4c3d5c89cc54"
+        },
+        {
+          "slug": "adidas-predator-elite-ft-fg-beckham-pink",
+          "name": "Predator/Elite-FT-FG-Beckham",
+          "model": "Predator/Elite-FT-FG-Beckham",
+          "description": "{\"collection\":\"Beckham Collection\",\"intro\":\"The adidas Predator Elite FT FG Beckham feature a premium synthetic upper with HybridTouch 2.0 for flexibility and support, designed for players who dominate the ball.\",\"key_benefits\":[\"Perfect fit and superior comfort with fold-over tongue construction\",\"Enhanced ball control via Strikeskin rubber fins and ControlFrame 2.0 outsole\",\"Iconic Beckham-inspired design for standout style and precision\",\"Optimized traction on firm natural or modern artificial grass\"],\"subtitle\":\"Football boots with fold-over tongue adidas FG Beckham - pink\",\"tagline\":\"Maximum control inspired by David Beckham\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Elite / Professional grade\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"HybridTouch 2.0 synthetic\"}}",
+          "price": 209.99,
+          "gender": "Men",
+          "color": "Pink",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 209.99,
+              "currency": "€",
+              "original": 290,
+              "member_price": 0,
+              "discount_percent": 27.59
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White",
+                "product_id": "IG4009"
+              },
+              {
+                "color": "White",
+                "product_id": "IF6448"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1076"
+              },
+              {
+                "color": "Yellow",
+                "product_id": "JH6421"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF8862"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF8867"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3882"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1075"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/9af527ca1d1ac5b6af7c41ea22bcb12c6496dcb2-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/b85e57500c61136211f46efa70c9d995b3939930-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/670e65b451104d34fdedfea10a162e0438d120f6-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:16.638955+00:00",
+          "updated_at": "2026-08-24T10:47:21.463304+00:00",
+          "id": "JI1094",
+          "leaf_model_id": "7ec69b7f-ad07-4291-b529-c0b78d748cda"
+        },
+        {
+          "slug": "adidas-predator-league-ll-fg-silver",
+          "name": "Predator/League-LL-FG",
+          "model": "Predator/League-LL-FG",
+          "description": "{\"collection\":\"Vivid Horizon Pack 2024\",\"intro\":\"The adidas Predator League LL FG feature a laceless design with Hybridfeel technology for enhanced ball grip and control, ideal for players focused on powerful, accurate shots.\",\"key_benefits\":[\"Superior ball contact: Hybridfeel with 3D texture and Strikescale fins for improved grip and shooting precision.\",\"Stable support: ControlPlate 2.0 outsole provides firmness in the plant foot during strikes and multidirectional traction.\",\"Comfortable fit: Soft synthetic leather combined with breathable mesh upper (50% recycled materials).\",\"Laceless convenience: Sock-like entry with no laces for a clean, distraction-free strike zone.\"],\"subtitle\":\"Laceless football boots adidas FG for firm ground or latest-generation artificial turf - silver\",\"tagline\":\"Precision shooting without laces\",\"technical_details\":{\"adjustment\":\"Laceless / collar entry\",\"range\":\"League / mid-range\",\"sole_type\":\"FG (firm ground)\",\"upper_material\":\"Soft synthetic leather and breathable mesh (50% recycled)\"}}",
+          "price": 48.99,
+          "gender": "Unisex",
+          "color": "Silver",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 48.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 0,
+              "discount_percent": 51
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/ca06b8a30ca1df81f3f2e927b53e71e0357c1c3c-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/08ea3ab7c785191b6fefb3c2e9706cc8830cee20-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/4d7fad42db998ab17c684c7f97f93639e2ba3d4a-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:21.470613+00:00",
+          "updated_at": "2026-08-24T18:03:52.767915+00:00",
+          "id": "IF6331",
+          "leaf_model_id": "f50d61d9-2a3a-462e-b686-4c3d5c89cc54"
+        },
+        {
+          "slug": "adidas-predator-pro-ft-ag-black",
+          "name": "Predator/Pro-FT-AG",
+          "model": "Predator/Pro-FT-AG",
+          "description": "{\"collection\":\"IMMORTAL DNA BLACK PACK\",\"intro\":\"The Predator Pro FT AG combine an optimized sole for AG with flexible materials that improve stability and response.\",\"key_benefits\":[\"Effortless control: reinforced zones for greater precision.\",\"Natural fit: tongue that adapts pressure to the foot.\",\"Stability on AG: sole designed for firmness without rigidity.\"],\"subtitle\":\"Football boots with tongue adidas AG for artificial grass - black\",\"tagline\":\"Pro performance, absolute control\",\"technical_details\":{\"adjustment\":\"With tongue.\",\"range\":\"Advanced Range - high quality with optimized technologies, great performance and better durability.\",\"sole_type\":\"AG (artificial grass).\",\"upper_material\":\"Adaptable synthetic.\"}}",
+          "price": 157.99,
+          "gender": "Unisex",
+          "color": "Black",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 157.99,
+              "currency": "€",
+              "original": 160,
+              "member_price": 157.99,
+              "discount_percent": 1.25
+            },
+            "traction": "AG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "40 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "48 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White",
+                "product_id": "IF6329"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6371"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JS4075"
+              },
+              {
+                "color": "White",
+                "product_id": "ID3855"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1197"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6370"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1186"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1195"
+              },
+              {
+                "color": "White",
+                "product_id": "JR0440"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3856"
+              },
+              {
+                "color": "White",
+                "product_id": "ID3826"
+              },
+              {
+                "color": "Red",
+                "product_id": "JR0441"
+              },
+              {
+                "color": "White",
+                "product_id": "ID3857"
+              },
+              {
+                "color": "Black",
+                "product_id": "JS4072"
+              },
+              {
+                "color": "Red",
+                "product_id": "JR0443"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3825"
+              },
+              {
+                "color": "White",
+                "product_id": "JR4770"
+              },
+              {
+                "color": "Black and Red",
+                "product_id": "IG7777"
+              },
+              {
+                "color": "White",
+                "product_id": "JR3322"
+              },
+              {
+                "color": "Yellow",
+                "product_id": "JH6467"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1196"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6330"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/2a9b8aa7a358712b08b1f6092b27ddd05e8c4c1a-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/b0b1035fd73bafddd308d348d1f892d3f215efc5-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/6711565ba01b24a1b6eff3e29427ddf4ab70369f-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:23.002299+00:00",
+          "updated_at": "2026-08-19T18:44:15.754504+00:00",
+          "id": "KI6297",
+          "leaf_model_id": "39117f0f-5383-40b6-b783-8d66b2418b54"
+        },
+        {
+          "slug": "adidas-predator-elite-fg-black",
+          "name": "Predator/Elite-FG",
+          "model": "Predator/Elite-FG",
+          "description": "{\"collection\":\"ELECTRIC STEALTH\",\"intro\":\"The adidas Predator Elite FG deliver elite-level control and power with a laceless design, featuring advanced texturing for unmatched precision in every touch and strike.\",\"key_benefits\":[\"Laceless comfort: Anatomical fit with a clean striking surface for maximum ball contact.\",\"Professional traction: FG outsole optimized for firm natural and modern artificial grass.\",\"Precision control: Control Zone textured areas enhance grip and accuracy on the ball.\",\"Elite stability: Wrapping design that locks the foot in place during dynamic movements.\",\"Imposing aesthetics: All-black finish with sharp Predator detailing.\"],\"subtitle\":\"Football boots adidas FG for natural or latest-generation artificial grass - black\",\"tagline\":\"Precision and stability without laces on wet pitches\",\"technical_details\":{\"adjustment\":\"Laceless\",\"range\":\"Elite / top-tier\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"HybridTouch synthetic (updated suede and foil material)\"}}",
+          "price": 155.99,
+          "gender": "Men",
+          "color": "Black",
+          "sizes": [],
+          "attributes": {
+            "price": {
+              "current": 155.99,
+              "currency": "€",
+              "original": 260,
+              "member_price": 0,
+              "discount_percent": 40
+            },
+            "traction": "FG",
+            "sizes_detail": [],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/aae323a9face074d810e61c762f8f6edb2efac9a-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/3c70bab6ad9311ba03e198937593e43b1392ae48-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/4f97efa2535c99b39df25fd6c6f506b26fe956cf-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:16.359872+00:00",
+          "updated_at": "2026-08-24T10:49:13.285726+00:00",
+          "id": "JI1085",
+          "leaf_model_id": "d8d0d0f2-65ce-478f-a2e5-a5017eb3d68f"
+        },
+        {
+          "slug": "adidas-predator-elite-ll-ag-orange",
+          "name": "Predator/Elite-LL-AG",
+          "model": "Predator/Elite-LL-AG",
+          "description": "{\"collection\":\"Coral Blaze\",\"intro\":\"The adidas Predator Elite LL AG combine laceless innovation and striking style so your game stays cleaner, faster, and more technical on artificial surfaces.\",\"key_benefits\":[\"Laceless fit: Direct ball contact for cleaner strikes and better feel.\",\"Elite construction: Professional-level design used by top players.\",\"AG traction: Optimized for modern artificial turf fields.\",\"Iconic Predator aesthetics: Bold, modern look with enhanced Strikeskin elements.\"],\"subtitle\":\"Laceless football boots adidas AG for artificial grass - orange\",\"tagline\":\"Elite control and speed without laces\",\"technical_details\":{\"adjustment\":\"Laceless (LL - Laceless)\",\"range\":\"Elite / Professional range\",\"sole_type\":\"AG (artificial grass)\",\"upper_material\":\"HybridTouch synthetic\"}}",
+          "price": 161.99,
+          "gender": "Unisex",
+          "color": "Orange",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 161.99,
+              "currency": "€",
+              "original": 270,
+              "member_price": 0,
+              "discount_percent": 40
+            },
+            "traction": "AG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/ed27c5474d338f47bc0e4708e61effbbb4f95e37-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/86f658772b7735d5f07528d4a5db72bf0076fd2e-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/356869c6cfeaadcffbefdd4f09b896d235988e6e-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:18.015573+00:00",
+          "updated_at": "2026-08-19T18:44:11.822982+00:00",
+          "id": "JH8875",
+          "leaf_model_id": "9ecd9f2d-910b-4fcd-853b-a2c2cd472654"
+        },
+        {
+          "slug": "adidas-predator-elite-ll-fg-orange",
+          "name": "Predator/Elite-LL-FG",
+          "model": "Predator/Elite-LL-FG",
+          "description": "{\"collection\":\"CORAL BLAZE\",\"intro\":\"The adidas Predator Elite LL FG deliver elite-level performance with a laceless design for direct, clean ball contact on firm ground surfaces.\",\"key_benefits\":[\"Laceless construction: Direct contact with the ball for maximum precision in shooting and passing.\",\"Elite technologies: Premium materials and pro-level features used by top players.\",\"Optimized FG traction: Controlframe Pro outsole designed for quick movements and stability on dry natural grass or firm artificial turf.\",\"Striking aesthetics: Modern, eye-catching Predator design in vibrant orange.\"],\"subtitle\":\"Laceless football boots adidas FG for firm natural or latest-generation artificial grass - orange\",\"tagline\":\"Control without distractions\",\"technical_details\":{\"adjustment\":\"Laceless\",\"range\":\"Professional / Elite level\",\"sole_type\":\"FG (Firm Ground) for dry natural grass or firm artificial surfaces\",\"upper_material\":\"Synthetic (Hybridtouch with Strikeskin rubber elements)\"}}",
+          "price": 161.99,
+          "gender": "Unisex",
+          "color": "Orange",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 161.99,
+              "currency": "€",
+              "original": 270,
+              "member_price": 0,
+              "discount_percent": 40
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/6d08a98c215a0edcca2012d1b263633c74f78b5f-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/6cd4da5cea9ec026626ba6ce6d94fdb27a88f225-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/bc0c63262515edd3434eb25f80292aa656b28671-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:18.298114+00:00",
+          "updated_at": "2026-08-19T18:44:12.043189+00:00",
+          "id": "JI1076",
+          "leaf_model_id": "b91fe9e0-0b9d-4481-9970-dc09ebc0bb90"
+        },
+        {
+          "slug": "adidas-predator-league-fg-white",
+          "name": "Predator/League-FG",
+          "model": "Predator/League-FG",
+          "description": "{\"collection\":\"Day Spark Pack\",\"intro\":\"The adidas Predator League FG feature a Hybridfeel upper with 3D texture and StrikeScale fins for enhanced shooting accuracy and ball grip on firm ground surfaces.\",\"key_benefits\":[\"Improved shooting precision: grippy StrikeScale elements and textured zones for better contact.\",\"Comfortable and secure fit: flexible synthetic upper with lace closure.\",\"Versatile FG sole: optimized for natural grass and firm artificial surfaces.\",\"Value positioning: mid-tier boot inspired by elite Predator technology.\"],\"subtitle\":\"Football boots adidas FG for natural or artificial grass - white\",\"tagline\":\"Precision and control at league level\",\"technical_details\":{\"adjustment\":\"Lace-up\",\"range\":\"League / Mid-range\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"Hybridfeel synthetic\"}}",
+          "price": 43.99,
+          "gender": "Unisex",
+          "color": "White",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 43.99,
+              "currency": "€",
+              "original": 90,
+              "member_price": 87.99,
+              "discount_percent": 51.12222222222222
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White and Green",
+                "product_id": "JI1111"
+              },
+              {
+                "color": "Black",
+                "product_id": "JR7900"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1169"
+              },
+              {
+                "color": "Black",
+                "product_id": "JS2996"
+              },
+              {
+                "color": "Blue",
+                "product_id": "JP7209"
+              },
+              {
+                "color": "White",
+                "product_id": "JS0424"
+              },
+              {
+                "color": "White and Red",
+                "product_id": "JR7902"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6331"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1167"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/161df08f6a693787af5a7e39ce2b7eb3c1d32b62-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/bce031939ddc3fdb655600f245b446a22dc7d3fc-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/72bdf77ecfd48d850d8255a74d6e28e78695e6e8-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:19.037247+00:00",
+          "updated_at": "2026-08-19T18:44:12.817212+00:00",
+          "id": "IF6346",
+          "leaf_model_id": "d95cb375-cb39-4824-b5a0-09c6b1d9645e"
+        },
+        {
+          "slug": "adidas-predator-club-fg-mg-red",
+          "name": "Nike Mercurial Vapor 17 Elite AG-Pro ",
+          "model": "Mercurial Vapour 17",
+          "description": "{\"collection\":\"BREAKOUT PACK (WC26)\",\"intro\":\"The Nike Mercurial Vapor 17 Elite AG-Pro football boots are designed for electrifying players seeking maximum speed, acceleration, and agility on artificial turf. Their ultralight construction minimizes weight to facilitate explosive movements and unstoppable changes of pace. \",\"key_benefits\":[],\"subtitle\":\"Nike AG-PRO football boots for artificial grass - pink, white\",\"tagline\":\"\",\"technical_details\":{\"adjustment\":\"Lace-up\",\"range\":\"Mercurial Vapour AG \",\"sole_type\":\"AG (artificial grass)\",\"upper_material\":\"Soft synthetic leather\"}}",
+          "price": 26.99,
+          "gender": "Unisex",
+          "color": "White and Pink",
+          "sizes": [
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 26.99,
+              "currency": "USD",
+              "original": 60,
+              "member_price": 58.99,
+              "discount_percent": 55
+            },
+            "traction": "AG",
+            "sizes_detail": [
+              {
+                "size": "36 2/3 EU",
+                "stock": 11,
+                "available": true
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 4,
+                "available": true
+              },
+              {
+                "size": "38 EU",
+                "stock": 6,
+                "available": true
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 9,
+                "available": true
+              },
+              {
+                "size": "40 EU",
+                "stock": 19,
+                "available": true
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 11,
+                "available": true
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 10,
+                "available": true
+              },
+              {
+                "size": "42 EU",
+                "stock": 10,
+                "available": true
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 3,
+                "available": true
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 12,
+                "available": true
+              },
+              {
+                "size": "44 EU",
+                "stock": 10,
+                "available": true
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 6,
+                "available": true
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 8,
+                "available": true
+              },
+              {
+                "size": "46 EU",
+                "stock": 6,
+                "available": true
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 3,
+                "available": true
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 2,
+                "available": true
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "Black",
+                "product_id": "JR3330"
+              },
+              {
+                "color": "Black",
+                "product_id": "JH8848"
+              },
+              {
+                "color": "White",
+                "product_id": "ID1323"
+              },
+              {
+                "color": "White",
+                "product_id": "JP6524"
+              },
+              {
+                "color": "White and Light Green",
+                "product_id": "JH8847"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JH8846"
+              },
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "ID1324"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6341"
+              },
+              {
+                "color": "White",
+                "product_id": "IF6342"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6344"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "ef3069ae-60d9-477f-b59c-57d2d7662088",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/236b4cd98187c3b2ee7c17f0732d61f4b9a4a867-1500x1500.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:16.062369+00:00",
+          "updated_at": "2026-08-19T18:44:10.318518+00:00",
+          "id": "ID1326",
+          "leaf_model_id": "189f4422-2233-4b71-b189-0654889ffa0c"
+        },
+        {
+          "slug": "adidas-predator-league-ft-fg-mg-white",
+          "name": "Predator/League-FT-(FG/MG)",
+          "model": "Predator/League-FT-(FG/MG)",
+          "description": "{\"collection\":\"Road to Glory\",\"intro\":\"The adidas Predator League FT FG/MG deliver classic fit, enhanced precision, and dominant touch on natural and artificial surfaces. Crafted for players who want to dominate from midfield.\",\"key_benefits\":[\"Superior ball control: Hybridfeel upper with all-over 3D texture and Strikescale fins for grip during strikes and passes.\",\"Precision shooting: Fold-over tongue design for clean ball contact.\",\"Stability and durability: Controlplate sole provides rigid support and traction on mixed surfaces.\",\"Versatile performance: Optimized for firm natural grass and modern artificial turf.\"],\"subtitle\":\"Football boots with fold-over tongue adidas FG/MG for firm ground and multi-ground - white\",\"tagline\":\"Total control in every play\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Mid-range / League level\",\"sole_type\":\"FG/MG (Firm Ground / Multi-Ground) molded studs\",\"upper_material\":\"Hybridfeel synthetic with 3D texture\"}}",
+          "price": 59.99,
+          "gender": "Unisex",
+          "color": "White",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 59.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 93.99,
+              "discount_percent": 40
+            },
+            "traction": "FG/MG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "Black",
+                "product_id": "JI1110"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1111"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1112"
+              },
+              {
+                "color": "Pink",
+                "product_id": "JI1113"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1140"
+              },
+              {
+                "color": "Black",
+                "product_id": "JR7900"
+              },
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "JH6471"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6333"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/9553050c4fe77c9956f3fa7579c1d312b54c4efd-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/ca644239a8ca36a97cbb40384ca681a4b875b596-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/b0808dc7a7aa34a3cfef44b7074f85ca38bb94cc-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:20.892833+00:00",
+          "updated_at": "2026-08-19T18:44:14.251299+00:00",
+          "id": "JI1114",
+          "leaf_model_id": "230250b7-b5f4-487c-ac28-5340f805270d"
+        },
+        {
+          "slug": "adidas-predator-elite-ft-fg-black",
+          "name": "Predator/Elite-FT-FG",
+          "model": "Predator/Elite-FT-FG",
+          "description": "{\"collection\":\"Electric Stealth Pack\",\"intro\":\"The adidas Predator Elite FT FG feature a fold-over tongue design and advanced textured upper for maximum ball control and powerful strikes. Part of the Electric Stealth Pack, these premium boots deliver pro-grade performance on natural and high-quality artificial surfaces.\",\"key_benefits\":[\"Superior contact: HybridTouch upper with rubber Strikeskin fins for perfect ball grip and clean striking surface.\",\"Precision power: Control Zone textured areas enhance accuracy on passes, shots, and first touch.\",\"Responsive stability: Controlframe 2.0 outsole optimized for firm ground traction and explosive movement.\",\"Premium fit: Fold-over tongue provides secure, comfortable lockdown without pressure points.\"],\"subtitle\":\"Football boots with tongue adidas FG for natural grass or latest-generation artificial turf - black\",\"tagline\":\"Elite-level control and precision on firm ground\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Elite / top tier\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"HybridTouch synthetic\"}}",
+          "price": 167.99,
+          "gender": "Unisex",
+          "color": "Black",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 167.99,
+              "currency": "€",
+              "original": 280,
+              "member_price": 253.99,
+              "discount_percent": 40
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White",
+                "product_id": "ID3873"
+              },
+              {
+                "color": "White and Green",
+                "product_id": "JI1075"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6447"
+              },
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "JH6455"
+              },
+              {
+                "color": "Orange",
+                "product_id": "JI1076"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6443"
+              },
+              {
+                "color": "Red",
+                "product_id": "ID3877"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/d5dc1843de3ece4a810c489af44f0e50207a5a80-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/c52f1ab730f9743786270b1e62ee54ff9f621a0a-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/b4ef195cf5a935402621e6ace62b4488d8b5cbf3-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:16.894033+00:00",
+          "updated_at": "2026-08-19T18:44:10.974192+00:00",
+          "id": "JI1096",
+          "leaf_model_id": "33fa6022-6fdb-43f8-ae92-36f9ada41390"
+        },
+        {
+          "slug": "adidas-predator-league-ft-fg-mg-black",
+          "name": "Predator/League-FT-(FG/MG)",
+          "model": "Predator/League-FT-(FG/MG)",
+          "description": "{\"collection\":\"Electric Stealth Pack\",\"intro\":\"The adidas Predator League FT FG/MG feature a fold-over tongue and Hybridfeel upper with 3D texture for superior ball manipulation, grip, and comfort in the mid-range Predator line.\",\"key_benefits\":[\"Enhanced shooting & control: All-over 3D texture + grippy Strikescale fins for better ball contact and accuracy.\",\"Versatile traction: Controlplate outsole optimized for firm ground and multi-ground (natural & artificial turf).\",\"Comfortable fit: Fold-over tongue reduces pressure and improves lockdown; flexible synthetic upper for natural feel.\",\"Mid-tier performance: Brings pro-level Predator features to regular players at accessible price.\"],\"subtitle\":\"Football boots with studs adidas FG/MG - black\",\"tagline\":\"Precision control and power on firm & multi-ground surfaces\",\"technical_details\":{\"adjustment\":\"Lace-up with fold-over tongue\",\"range\":\"Mid-range / League level\",\"sole_type\":\"FG/MG (Firm Ground / Multi-Ground)\",\"upper_material\":\"Hybridfeel synthetic\"}}",
+          "price": 59.99,
+          "gender": "Unisex",
+          "color": "Black",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "43 1/3 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "42 EU",
+            "44 EU",
+            "46 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 59.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 0,
+              "discount_percent": 40
+            },
+            "traction": "FG/MG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 9,
+                "available": true
+              },
+              {
+                "size": "40 EU",
+                "stock": 12,
+                "available": true
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 8,
+                "available": true
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 12,
+                "available": true
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 12,
+                "available": true
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 5,
+                "available": true
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 4,
+                "available": true
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "48 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White and Green",
+                "product_id": "JI1111"
+              },
+              {
+                "color": "Black",
+                "product_id": "JR7900"
+              },
+              {
+                "color": "White and Green (laceless)",
+                "product_id": "JI1169"
+              },
+              {
+                "color": "Black (laceless)",
+                "product_id": "JS2996"
+              },
+              {
+                "color": "Black (laceless)",
+                "product_id": "JI1166"
+              },
+              {
+                "color": "Blue",
+                "product_id": "JP7209"
+              },
+              {
+                "color": "White (Bellingham)",
+                "product_id": "JS0424"
+              },
+              {
+                "color": "Silver (laceless)",
+                "product_id": "IF6331"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/6904a0ee5f50c8207fc3a22568b2cec1187f3924-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/92b60d21ece95de1266066a7f9ebf30dd2847f01-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/345f3b4d61964de45e0c047f36acdb9d1fd05748-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:19.646904+00:00",
+          "updated_at": "2026-08-19T18:44:13.329819+00:00",
+          "id": "JI1110",
+          "leaf_model_id": "230250b7-b5f4-487c-ac28-5340f805270d"
+        },
+        {
+          "slug": "adidas-x-speedportal-3-ll-fg-light-blue",
+          "name": "X/Speedportal.3-LL-FG",
+          "model": "X/Speedportal.3-LL-FG",
+          "description": "{\"collection\":\"Al Rihla Pack\",\"intro\":\"The adidas X Speedportal.3 LL FG are laceless speed boots from the iconic Al Rihla collection (2022 FIFA World Cup Qatar), featuring a snug textile fit and optimized traction for explosive acceleration on firm ground.\",\"key_benefits\":[\"Laceless secure fit: elastic textile upper hugs the foot for a sock-like feel and clean striking area.\",\"Superior traction: FG soleplate with carbon-fiber imitation and arrow-shaped studs for grip on natural and long-pile artificial grass.\",\"Enhanced ball control: texturized finish on the upper improves grip and precision during fast play.\",\"Lightweight speed design: built for wingers and forwards who prioritize acceleration and quick changes of direction.\"],\"subtitle\":\"Laceless football boots adidas FG for firm natural grass or latest-generation artificial turf - light blue multicolor\",\"tagline\":\"Speed and clean striking surface in the Al Rihla World Cup pack\",\"technical_details\":{\"adjustment\":\"Laceless\",\"range\":\"Entry / League level (third tier in the X Speedportal line)\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"Textile with elastic textile\"}}",
+          "price": 39.99,
+          "gender": "Unisex",
+          "color": "Light Blue Multicolor",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "38 2/3 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU",
+            "48 2/3 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 39.99,
+              "currency": "€",
+              "original": 90,
+              "member_price": 0,
+              "discount_percent": 55.57
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 2/3 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": []
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/6f5c49b4bdf97daf33aec8b9b522a4e6650cc698-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/e9e4e1b846335acff11138aa0787baafe9b2a774-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/c64e7aee1d19beaf2c72604147c29eaa98f38308-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:23.611015+00:00",
+          "updated_at": "2026-08-24T18:01:28.080861+00:00",
+          "id": "GW8470",
+          "leaf_model_id": "41426f4b-e0e8-4c91-ba40-18051c5a08d0"
+        },
+        {
+          "slug": "adidas-predator-league-mg-white-light-green",
+          "name": "Predator/League-MG",
+          "model": "Predator/League-MG",
+          "description": "{\"collection\":\"Radiant Blaze Pack\",\"intro\":\"The adidas Predator League MG offer multisurface adaptability with precision control features, ideal for players who demand accuracy and stability across dry natural grass and modern artificial turf.\",\"key_benefits\":[\"Multisurface traction: MG sole optimized for dry natural grass and latest-generation artificial turf.\",\"Enhanced precision: StrikeZone textured upper improves ball contact, shots, and directional control.\",\"Comfortable fit: Flexible synthetic upper with lace closure for secure, balanced performance.\",\"Inspired by pros: Designed with influence from elite midfielders like Jude Bellingham and Pedri.\"],\"subtitle\":\"Football boots adidas MG for natural or artificial grass - white and light green\",\"tagline\":\"Control and versatility on mixed surfaces\",\"technical_details\":{\"adjustment\":\"Lace-up\",\"range\":\"Mid-range / League level\",\"sole_type\":\"MG (Multi-Ground)\",\"upper_material\":\"Flexible synthetic\"}}",
+          "price": 56.99,
+          "gender": "Unisex",
+          "color": "White and Light Green",
+          "sizes": [
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 56.99,
+              "currency": "€",
+              "original": 95,
+              "member_price": 93.99,
+              "discount_percent": 40
+            },
+            "traction": "MG",
+            "sizes_detail": [
+              {
+                "size": "39 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "Black",
+                "product_id": "JI1110"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6333"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6383"
+              },
+              {
+                "color": "White",
+                "product_id": "ID1320"
+              },
+              {
+                "color": "Red and Orange",
+                "product_id": "JI1167"
+              },
+              {
+                "color": "Fluorescent Yellow",
+                "product_id": "JH6471"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/962cdd883a232d41000d1de6d328504b251582b7-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/02593e335a5ab179d8070cf76744fe4033ceccdb-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/56943e41593604f2340cf4f228ba0c0b878b5842-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:22.085347+00:00",
+          "updated_at": "2026-08-19T18:44:15.009891+00:00",
+          "id": "JI1140",
+          "leaf_model_id": "abcd0984-0c63-47a0-8691-2ce6797e3e6a"
+        },
+        {
+          "slug": "adidas-predator-elite-ft-ag",
+          "name": "adidas Predator Elite FT AG",
+          "model": "(Predator/Elite-AG)",
+          "description": "{\"collection\":\"Road To Glory Pack (WC26)\",\"intro\":\"adidas Predator Elite FT AG — Control the Turf\\r\\n\\r\\nBuilt for artificial surfaces, the Predator Elite FT AG gives you the precision, stability, and grip to own every touch. \\r\\nCarrying the legacy of the Predator line, it pairs elite tech with a lightweight, aggressive build. Lock in, stay stable, and take over when the game is on the line.\",\"key_benefits\":[],\"subtitle\":\"Road To Glory Pack \",\"tagline\":\"adidas AG football boots with tongue for artificial grass - Pink\",\"technical_details\":{\"adjustment\":\"Lace-up with tongue\",\"range\":\"Predator/Elite FT AG\",\"sole_type\":\"AG (artificial grass)\",\"upper_material\":\"Soft synthetic leather with 20% recycled materials\"}}",
+          "price": 29.98,
+          "gender": "Unisex",
+          "color": "Pink",
+          "sizes": [
+            "36 EU",
+            "36 1/3",
+            "37 1/3",
+            "38 EU",
+            "38 2/3",
+            "39 1/3",
+            "40 EU",
+            "40 2/3",
+            "41 1/3",
+            "42 EU",
+            "42 2/3",
+            "43 1/3",
+            "44 EU",
+            "44 2/3",
+            "45 1/3",
+            "46 EU",
+            "46 2/3",
+            "47 1/3",
+            "48 EU",
+            "48 2/3"
+          ],
+          "attributes": {
+            "price": {
+              "current": 29.98,
+              "currency": "EUR",
+              "original": 29.98,
+              "member_price": 29.98,
+              "discount_percent": 0
+            }
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/b92aa5f9876ebbae50e65b40df38ef60a04d6091-1500x1500.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:23.850063+00:00",
+          "updated_at": "2026-08-20T09:30:33.816615+00:00",
+          "id": "ID1323",
+          "leaf_model_id": "1c6a0e72-dcdb-4345-aca9-05d4e4f73cf1"
+        },
+        {
+          "slug": "adidas-predator-league-ll-fg-white-solar-pink",
+          "name": "Predator/League-LL-FG",
+          "model": "Predator/League-LL-FG",
+          "description": "{\"collection\":\"Reemergence Pack 2024\",\"intro\":\"The adidas Predator League LL FG deliver laceless convenience with ankle support (tobillera) and High Definition Texture for superior ball grip and control on firm ground surfaces.\",\"key_benefits\":[\"Laceless fit with integrated ankle support for secure lockdown and sock-like feel.\",\"High Definition Texture upper improves ball contact, spin, and accuracy on shots/passes.\",\"Breathable synthetic upper (50% recycled materials) for comfort and sustainability.\",\"FG soleplate provides stability, reactivity, and easy rotation on natural and firm artificial grass.\"],\"subtitle\":\"Laceless football boots with ankle support adidas FG for firm natural or latest-generation artificial grass - white and pink\",\"tagline\":\"Precision control, laceless comfort\",\"technical_details\":{\"adjustment\":\"Laceless with ankle support\",\"range\":\"Mid-range / League level\",\"sole_type\":\"FG (Firm Ground)\",\"upper_material\":\"Synthetic leather + breathable mesh (50% recycled)\"}}",
+          "price": 49.99,
+          "gender": "Unisex",
+          "color": "White and Pink",
+          "sizes": [
+            "36 EU",
+            "36 2/3 EU",
+            "37 1/3 EU",
+            "38 EU",
+            "39 1/3 EU",
+            "40 EU",
+            "40 2/3 EU",
+            "41 1/3 EU",
+            "42 EU",
+            "42 2/3 EU",
+            "43 1/3 EU",
+            "44 EU",
+            "44 2/3 EU",
+            "45 1/3 EU",
+            "46 EU",
+            "46 2/3 EU",
+            "47 1/3 EU",
+            "48 EU"
+          ],
+          "attributes": {
+            "price": {
+              "current": 49.99,
+              "currency": "€",
+              "original": 100,
+              "member_price": 0,
+              "discount_percent": 50
+            },
+            "traction": "FG",
+            "sizes_detail": [
+              {
+                "size": "36 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "36 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "37 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "38 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "39 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "40 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "40 2/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "41 1/3 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "42 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "43 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "44 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "44 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "45 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "46 EU",
+                "stock": 1,
+                "available": true
+              },
+              {
+                "size": "46 2/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "47 1/3 EU",
+                "stock": 0,
+                "available": false
+              },
+              {
+                "size": "48 EU",
+                "stock": 0,
+                "available": false
+              }
+            ],
+            "color_variants": [
+              {
+                "color": "White and Green",
+                "product_id": "JI1111"
+              },
+              {
+                "color": "Black",
+                "product_id": "JI1110"
+              },
+              {
+                "color": "White",
+                "product_id": "ID1320"
+              },
+              {
+                "color": "White and Red",
+                "product_id": "JS2997"
+              },
+              {
+                "color": "Silver",
+                "product_id": "IF6383"
+              },
+              {
+                "color": "Orange and Red",
+                "product_id": "JI1167"
+              },
+              {
+                "color": "Blue",
+                "product_id": "IF6333"
+              }
+            ]
+          },
+          "status": "published",
+          "asin": null,
+          "category_id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "brand_id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "image_links": [
+            "https://cdn.sanity.io/images/cuiis46d/production/cf087b6a204c8a1dbaa24f86b09564ec7782b9c6-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/3d754033f2a43c3d6a529230c094644b0dc68b0c-768x768.jpg",
+            "https://cdn.sanity.io/images/cuiis46d/production/eeb1137960776ac859cf5b87dc88d800371d3487-768x768.jpg"
+          ],
+          "created_at": "2026-08-19T17:47:21.786977+00:00",
+          "updated_at": "2026-08-24T17:56:23.724912+00:00",
+          "id": "IF1465",
+          "leaf_model_id": "f50d61d9-2a3a-462e-b686-4c3d5c89cc54"
+        }
+      ]
+    },
+    "brands": {
+      "row_count": 5,
+      "rows": [
+        {
+          "id": "9e810e95-a87c-4a10-a8d8-137b62fb7ae0",
+          "slug": "test-brand",
+          "name": "Test Brand",
+          "logo_link": "https://cdn.sanity.io/images/test/logo.png",
+          "created_at": "2026-08-19T17:00:14.350876+00:00",
+          "updated_at": "2026-08-19T17:00:14.350876+00:00"
+        },
+        {
+          "id": "3109f201-5d5b-4951-acaa-18c4e83910c0",
+          "slug": "new-balance",
+          "name": "New Balance",
+          "logo_link": "https://cdn.sanity.io/images/cuiis46d/production/3ac08538dd05f3092c87615d2b29ec8445e39513-3264x3264.jpg",
+          "created_at": "2026-08-19T17:34:55.084029+00:00",
+          "updated_at": "2026-08-19T17:55:58.993858+00:00"
+        },
+        {
+          "id": "195ce349-36e3-4dd2-ae42-db678d8cf85c",
+          "slug": "puma",
+          "name": "Puma",
+          "logo_link": "https://cdn.sanity.io/images/cuiis46d/production/f17fb2829c28c8233dff0d21bcc8f2d901cc0572-1080x1080.jpg",
+          "created_at": "2026-08-19T17:34:56.048495+00:00",
+          "updated_at": "2026-08-19T17:56:00.122096+00:00"
+        },
+        {
+          "id": "53811966-363a-4de1-a938-53c4a18f08e7",
+          "slug": "adidas",
+          "name": "adidas",
+          "logo_link": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+          "created_at": "2026-08-19T17:34:56.255365+00:00",
+          "updated_at": "2026-08-19T17:56:00.4313+00:00"
+        },
+        {
+          "id": "ef3069ae-60d9-477f-b59c-57d2d7662088",
+          "slug": "nike",
+          "name": "nike",
+          "logo_link": "https://cdn.sanity.io/images/cuiis46d/production/18f4cfd60e5d9caf3d64b6f2aa01e5212427124d-1080x1080.jpg",
+          "created_at": "2026-08-19T17:34:56.508321+00:00",
+          "updated_at": "2026-08-19T17:56:00.709154+00:00"
+        }
+      ]
+    },
+    "categories": {
+      "row_count": 2,
+      "rows": [
+        {
+          "id": "f494585a-e52e-4e19-9efb-03f5ad4ab5c5",
+          "slug": "test-football-boots",
+          "name": "Test Football Boots",
+          "parent_id": null,
+          "created_at": "2026-08-19T17:00:14.004834+00:00",
+          "updated_at": "2026-08-19T17:00:14.004834+00:00"
+        },
+        {
+          "id": "6349cb77-5945-4134-8c0b-0d04aa41137a",
+          "slug": "boots",
+          "name": "Boots",
+          "parent_id": null,
+          "created_at": "2026-08-19T17:34:56.75555+00:00",
+          "updated_at": "2026-08-19T17:56:00.938632+00:00"
+        }
+      ]
+    },
+    "category_links": {
+      "row_count": 0,
+      "rows": []
+    }
+  }
+}

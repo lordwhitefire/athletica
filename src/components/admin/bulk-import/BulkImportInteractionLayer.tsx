@@ -21,7 +21,7 @@ import { getImportValidationData, getCatalogProducts } from "@/lib/actions/produ
 import { batchCreateProducts } from "@/lib/actions/batch-upload";
 import type { BatchUploadCreateResult, BatchUploadParseResult } from "@/lib/schemas/batch-upload";
 
-const ACCEPTED_EXTENSIONS = ["csv", "xlsx", "json", "zip"];
+const ACCEPTED_EXTENSIONS = ["csv", "xlsx", "zip"];
 const MAX_FILE_SIZE = 50 * 1024 * 1024;
 const STEPS: { key: ImportStep; number: string; title: string; subtitle: string }[] = [
     { key: "upload", number: "1", title: "Upload File", subtitle: "Choose your file" },
@@ -245,6 +245,10 @@ export default function BulkImportInteractionLayer({
     const [importResult, setImportResult] = React.useState<BatchUploadCreateResult | null>(null);
     const fileInputRef = React.useRef<HTMLInputElement>(null);
     const importTimerRef = React.useRef<number | null>(null);
+    // FR3-F: synchronous double-click guard — React state updates are async,
+    // so two rapid clicks could both pass a state-only check. A ref flips
+    // immediately within the first invocation.
+    const importInFlightRef = React.useRef(false);
 
     React.useEffect(() => {
         return () => {
@@ -331,8 +335,8 @@ export default function BulkImportInteractionLayer({
         if (!next) return;
         const ext = next.name.split(".").pop()?.toLowerCase() ?? "";
         if (!ACCEPTED_EXTENSIONS.includes(ext)) {
-            setFileError("Unsupported file type. Please upload a CSV, XLSX, JSON, or ZIP file.");
-            showToast("error", "Unsupported file type. Please upload a CSV, XLSX, JSON, or ZIP file.");
+            setFileError("Unsupported file type. Please upload a CSV, XLSX, or ZIP file.");
+            showToast("error", "Unsupported file type. Please upload a CSV, XLSX, or ZIP file.");
             return;
         }
         if (next.size > MAX_FILE_SIZE) {
@@ -444,11 +448,20 @@ export default function BulkImportInteractionLayer({
     }
 
     async function runImport() {
-        if (status === "importing") return;
+        if (importInFlightRef.current || status === "importing") return;
         if (!file) {
             showToast("error", "Choose a file to import first.");
             return;
         }
+        importInFlightRef.current = true;
+        try {
+            await runImportInner(file);
+        } finally {
+            importInFlightRef.current = false;
+        }
+    }
+
+    async function runImportInner(file: File) {
         setStatus("importing");
         setImportFailed(false);
         setImportError(null);
@@ -466,8 +479,8 @@ export default function BulkImportInteractionLayer({
         };
 
         try {
-            if (!(file.name ?? "").toLowerCase().endsWith(".zip")) {
-                throw new Error("Only .zip export files are supported by the import pipeline.");
+            if (/\.(zip|csv|xlsx)$/i.test(file.name ?? "") === false) {
+                throw new Error("Only .zip, .csv, or .xlsx files are supported by the import pipeline.");
             }
             const formData = new FormData();
             formData.set("file", file);
@@ -1003,7 +1016,7 @@ export default function BulkImportInteractionLayer({
                                     <input
                                         ref={fileInputRef}
                                         type="file"
-                                        accept=".csv,.xlsx,.json,.zip"
+                                        accept=".csv,.xlsx,.zip"
                                         className="hidden"
                                         onChange={(e) => acceptFile(e.target.files?.[0] ?? null)}
                                     />
@@ -1056,7 +1069,7 @@ export default function BulkImportInteractionLayer({
                                         </span>
                                         <div className="min-w-0 flex-1">
                                             <div className="text-[10px] font-medium text-[#777]">No file selected</div>
-                                            <div className="mt-1 text-[9px] text-[#555]">Upload a CSV, XLSX, JSON or ZIP file to begin</div>
+                                            <div className="mt-1 text-[9px] text-[#555]">Upload a CSV, XLSX or ZIP file to begin. XLSX reads the first sheet; column names must match the CSV headers.</div>
                                         </div>
                                     </div>
                                 )}

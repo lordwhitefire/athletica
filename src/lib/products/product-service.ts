@@ -597,15 +597,31 @@ export const getCachedModelAncestry = unstable_cache(
 );
 
 export async function getColorVariants(leafModelId: string): Promise<ProductSummary[]> {
-  const { data, error } = await adminSupabase
+  // Doctrine: color variants are products whose product models share the SAME
+  // PARENT (sibling product models under one branch), never products on the
+  // same node — each product model holds exactly one product.
+  const { data: model } = await adminSupabase
+    .from('models')
+    .select('id, parent_id')
+    .eq('id', leafModelId)
+    .single();
+
+  const parentId = model?.parent_id;
+  if (!parentId) return [];
+
+  const leafIds = await getLeafModelIdsUnderSubModel(parentId);
+  if (leafIds.length === 0) return [];
+
+  const { data: products, error } = await adminSupabase
     .from('products')
     .select('*')
-    .eq('leaf_model_id', leafModelId)
+    .in('leaf_model_id', leafIds)
     .eq('status', 'published');
 
-  if (error || !data || data.length === 0) return [];
+  if (error || !products || products.length === 0) return [];
 
-  return enrichProductsWithRelations(data);
+  const enriched = await enrichProductsWithRelations(products);
+  return enriched.filter((p) => p.leaf_model?.id !== leafModelId);
 }
 
 export const getCachedColorVariants = unstable_cache(

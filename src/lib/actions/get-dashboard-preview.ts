@@ -48,6 +48,19 @@ export async function getDashboardPreview(): Promise<ApiResult<DashboardPreview>
             .from("products")
             .select("id", { count: "exact", head: true });
 
+        // FR4-B: failed reads must surface as an error, never as zeroed widgets.
+        for (const [name, res] of [
+            ["products", productRes],
+            ["brands", brandsRes],
+            ["navigation", navRes],
+            ["amazon_links", linkRes],
+            ["homepage", homepageRes],
+        ] as const) {
+            if (res.error) {
+                throw new Error(`dashboard_preview_${name}_failed: ${res.error.message}`);
+            }
+        }
+
         return ok({
             products: {
                 count: productCount ?? 0,

@@ -80,6 +80,7 @@ export function useBrandManagement() {
 
   const [state, setState] = useState<BrandManagementState>({
     brands: [],
+    loadError: null,
     filters: DEFAULT_FILTERS,
     page: 1,
     rowsPerPage: DEFAULT_ROWS_PER_PAGE,
@@ -95,31 +96,51 @@ export function useBrandManagement() {
     deleteTarget: null,
   });
 
-  const loadBrands = useCallback(async () => {
-    try {
-      const { getAllBrandsAdmin } = await import("@/lib/actions/brands");
-      const result = await getAllBrandsAdmin();
-      if (!result.data) return;
-      const brands: Brand[] = (result.data as Array<Record<string, unknown>>).map((b) => {
-        const logo = b.logo as { asset?: { _ref?: string } } | null;
-        return {
-          id: String(b._id ?? ""),
-          name: String(b.name ?? ""),
-          tagline: "",
-          logo: logo?.asset?._ref ?? "",
-          products: Number(b.product_count ?? 0),
-          amazonClicks: 0,
-          ctr: 0,
-          status: "active",
-          addedAt: String(b.created_at ?? new Date().toISOString()).slice(0, 10),
-          website: "",
-          slug: String(b.slug ?? ""),
-        };
-      });
-      setState((current) => ({ ...current, brands }));
-    } catch {
-      setState((current) => ({ ...current, brands: [] }));
+  const loadBrands = useCallback(async (): Promise<boolean> => {
+    // FR3-C: never bail silently — a transient failure must surface as a
+    // visible, retryable error instead of an empty list that only a hard
+    // refresh could fix. One automatic retry absorbs navigation blips.
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const { getAllBrandsAdmin } = await import("@/lib/actions/brands");
+        const result = await getAllBrandsAdmin();
+        if (!result.data) {
+          if (attempt === 0) continue;
+          setState((current) => ({
+            ...current,
+            loadError: result.error?.message ?? "Could not load brands.",
+          }));
+          return false;
+        }
+        const brands: Brand[] = (result.data as Array<Record<string, unknown>>).map((b) => {
+          const logo = b.logo as { asset?: { _ref?: string } } | null;
+          return {
+            id: String(b._id ?? ""),
+            name: String(b.name ?? ""),
+            tagline: "",
+            logo: logo?.asset?._ref ?? "",
+            products: Number(b.product_count ?? 0),
+            amazonClicks: 0,
+            ctr: 0,
+            status: "active",
+            addedAt: String(b.created_at ?? new Date().toISOString()).slice(0, 10),
+            website: "",
+            slug: String(b.slug ?? ""),
+          };
+        });
+        setState((current) => ({ ...current, brands, loadError: null }));
+        return true;
+      } catch (err) {
+        if (attempt === 0) continue;
+        setState((current) => ({
+          ...current,
+          brands: [],
+          loadError: err instanceof Error ? err.message : "Could not load brands.",
+        }));
+        return false;
+      }
     }
+    return false;
   }, []);
 
   useEffect(() => {
@@ -731,5 +752,7 @@ export function useBrandManagement() {
     cancelDelete,
     confirmDelete,
     exportBrands,
+
+    loadBrands,
   };
 }

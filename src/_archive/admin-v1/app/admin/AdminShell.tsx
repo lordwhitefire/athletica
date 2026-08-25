@@ -7,13 +7,10 @@ import { useAuth } from "@/context/AuthContext";
 const navItems = [
     { label: "Dashboard", href: "/admin", icon: "grid_view" },
     { label: "Products", href: "/admin/products", icon: "inventory_2" },
-    { label: "Batch Upload", href: "/admin/products/batch-upload", icon: "archive" },
     { label: "Brands", href: "/admin/brands", icon: "local_offer" },
     { label: "Models", href: "/admin/models", icon: "account_tree" },
     { label: "Homepage", href: "/admin/homepage", icon: "home" },
     { label: "Navigation", href: "/admin/navigation", icon: "menu" },
-    { label: "Amazon Links", href: "/admin/amazon-links", icon: "link" },
-    { label: "Site Settings", href: "/admin/site-settings", icon: "settings" },
     { label: "Media", href: "/admin/media", icon: "photo_library" },
 ];
 
@@ -37,8 +34,11 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     const isAffiliateSettings = pathname === "/admin/affiliate-settings";
     const isSettings = pathname === "/admin/settings";
     const isSystemHealth = pathname === "/admin/system-health";
+    const isNewProductPage = pathname === "/admin/products/new";
+    const isEditProductPage = /^\/admin\/products\/[^/]+\/edit$/.test(pathname);
+    const isNavigation = pathname === "/admin/navigation";
     const standalone =
-        isOverview || isCatalog || isImportCenter || isCategories || isBrands || isModels || isHomepage || isMedia || isAnalytics || isAffiliateSettings || isSettings || isSystemHealth;
+        isOverview || isCatalog || isImportCenter || isCategories || isBrands || isModels || isHomepage || isMedia || isAnalytics || isAffiliateSettings || isSettings || isSystemHealth || isNewProductPage || isEditProductPage || isNavigation;
 
     useEffect(() => {
         const header = document.querySelector<HTMLElement>("header");

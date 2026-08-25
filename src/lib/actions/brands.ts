@@ -67,6 +67,14 @@ export async function getAllBrandsAdmin(): Promise<ApiResult<unknown[]>> {
         .order("name", { ascending: true }),
       adminSupabase.from("products").select("brand_id"),
     ]);
+    // FR4-B: a failed query must never masquerade as an empty catalog —
+    // surface the error so the page renders its error panel with Retry.
+    if (brandRes.error) {
+      return fail("api_error", "admin_brands_fetch_failed", brandRes.error.message);
+    }
+    if (productsRes.error) {
+      return fail("api_error", "admin_brand_counts_failed", productsRes.error.message);
+    }
     const countByBrand = new Map<string, number>();
     for (const p of productsRes.data ?? []) {
       if (!p.brand_id) continue;

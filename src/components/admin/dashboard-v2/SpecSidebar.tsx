@@ -98,6 +98,10 @@ export default function SpecSidebar() {
             router.push("/admin/homepage");
             return;
         }
+        if (item.route === "navigation") {
+            router.push("/admin/navigation");
+            return;
+        }
         if (item.route === "media") {
             router.push("/admin/media");
             return;
@@ -137,6 +141,7 @@ export default function SpecSidebar() {
         (item.route === "brands" && pathname === "/admin/brands") ||
         (item.route === "models" && pathname === "/admin/models") ||
         (item.route === "homepage" && pathname === "/admin/homepage") ||
+        (item.route === "navigation" && pathname.startsWith("/admin/navigation")) ||
         (item.route === "media" && pathname === "/admin/media") ||
         (item.route === "analytics" && pathname === "/admin/analytics/overview") ||
         (item.route === "analyticsProducts" && pathname === "/admin/analytics/products") ||

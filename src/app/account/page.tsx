@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getMainCategoryHref } from "@/lib/getNavigation";
+import { getMainCategoryHref } from "@/lib/content/content-service";
 import AccountPage from "./AccountPage";
 
 export const metadata: Metadata = {

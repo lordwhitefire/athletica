@@ -173,7 +173,13 @@ function docFromRows(rows: HomepageSectionsRow[]): Record<string, unknown> {
 export async function getHomepageDoc(): Promise<ApiResult<Record<string, unknown>>> {
     try {
         const rows = await fetchRows();
-        return ok(docFromRows(rows));
+        const doc = docFromRows(rows);
+        // Stale-editor metadata: the publisher sends this id set back on save so
+        // replace_homepage_sections can reject publishes from stale tabs.
+        return ok({
+            ...doc,
+            _meta: { loaded_row_ids: rows.map((r) => r.id).sort() },
+        });
     } catch (err) {
         return fromCaughtError(err, "homepage_doc_fetch_failed");
     }
@@ -630,51 +636,48 @@ export async function uploadSnapshotImage(dataUrl: string): Promise<ApiResult<{ 
     }
 }
 
-export async function saveHomepage(data: {
-    hero_carousel: Record<string, unknown>;
-    sections: Record<string, unknown>[];
-}): Promise<ApiResult<{ saved: true }>> {
+export async function saveHomepage(
+    data: {
+        hero_carousel: Record<string, unknown>;
+        sections: Record<string, unknown>[];
+    },
+    loadedRowIds: string[] = [],
+    allowWipe = false,
+): Promise<ApiResult<{ saved: true }>> {
     try {
         const banners = (data.hero_carousel.banners as Record<string, unknown>[] | undefined) ?? [];
         const sections = data.sections ?? [];
 
-        const survivingIds = [
-            ...banners.map((b) => b._key || b.id),
-            ...sections.map((s) => s._key || s.id),
-        ].filter((id): id is string => typeof id === "string" && uuidRegex.test(id));
-
-        if (survivingIds.length > 0) {
-            const { error: deleteError } = await adminSupabase
-                .from("homepage_sections")
-                .delete()
-                .not("id", "in", `(${survivingIds.join(",")})`);
-            if (deleteError) throw deleteError;
-        } else {
-            const { error: deleteError } = await adminSupabase
-                .from("homepage_sections")
-                .delete()
-                .neq("id", "00000000-0000-0000-0000-000000000000");
-            if (deleteError) throw deleteError;
-        }
-
         const heroInserts = banners.map((banner, i) => {
             const payload = banner as BannerPayload;
-            const insert = heroInsertFromBanner({ ...payload, _key: payload._key ?? payload.id }, i);
-            return insert;
+            return heroInsertFromBanner({ ...payload, _key: payload._key ?? payload.id }, i);
         });
-        const sectionInserts = sections.map((section, i) => sectionToRowValues(section, banners.length + i));
+        const sectionInserts = sections.map((section, i) =>
+            sectionToRowValues(section, banners.length + i),
+        );
+        const rows = [...heroInserts, ...sectionInserts];
 
-        if (heroInserts.length > 0) {
-            const { error } = await adminSupabase
-                .from("homepage_sections")
-                .upsert(heroInserts, { onConflict: "id" });
-            if (error) throw error;
-        }
-        if (sectionInserts.length > 0) {
-            const { error } = await adminSupabase
-                .from("homepage_sections")
-                .upsert(sectionInserts, { onConflict: "id" });
-            if (error) throw error;
+        // Atomic, guarded replace (WP-R2-B): single RPC = one transaction.
+        // The function enforces the stale-editor and total-wipe guards itself;
+        // any insert error rolls back the whole operation.
+        const { data: rpcResult, error } = await adminSupabase.rpc(
+            "replace_homepage_sections",
+            {
+                p_rows: rows,
+                p_loaded_ids: loadedRowIds,
+                p_allow_wipe: allowWipe,
+            },
+        );
+        if (error) throw error;
+        const verdict = rpcResult as { ok?: boolean; code?: string; message?: string };
+        if (!verdict?.ok) {
+            if (verdict?.code === "stale_editor") {
+                return fail("validation_error", "stale_editor", verdict.message ?? "Content changed since you loaded it. Reload and try again.");
+            }
+            if (verdict?.code === "total_wipe") {
+                return fail("validation_error", "total_wipe", verdict.message ?? "Refusing to delete all homepage content.");
+            }
+            return fail("validation_error", "homepage_replace_rejected", verdict?.message ?? "Save rejected.");
         }
 
         revalidateContent();

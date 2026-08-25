@@ -1,0 +1,3012 @@
+{
+  "exported_at": "2026-08-24T02:49:44.332Z",
+  "row_count": 334,
+  "rows": [
+    {
+      "id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "parent_id": null,
+      "label": "Adultos",
+      "route": "/en/adultos",
+      "order": 0,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Boots",
+      "route": "/boots",
+      "order": 1,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d785fc72-418e-4c46-ab87-38d967175729",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Adidas",
+      "route": "/boots/adidas",
+      "order": 2,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3954aa94-8f44-44d4-bfb7-7a5f12986bd7",
+      "parent_id": "d785fc72-418e-4c46-ab87-38d967175729",
+      "label": "Predator",
+      "route": "/boots/adidas/predator",
+      "order": 3,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "742b0182-3b4e-40cf-ab9b-009948623065",
+      "parent_id": "d785fc72-418e-4c46-ab87-38d967175729",
+      "label": "X",
+      "route": "/boots/adidas/x",
+      "order": 4,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "02ee9c2e-6cd9-4b6b-abb9-dad3b122d381",
+      "parent_id": "d785fc72-418e-4c46-ab87-38d967175729",
+      "label": "F50",
+      "route": "/boots/adidas/f50",
+      "order": 5,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "eb2b1242-e46b-4274-bcfc-41bdff41e506",
+      "parent_id": "d785fc72-418e-4c46-ab87-38d967175729",
+      "label": "COPA",
+      "route": "/boots/adidas/copa",
+      "order": 6,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "188621c6-4b87-413a-b050-1dabcade441b",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Puma",
+      "route": "/boots/puma",
+      "order": 7,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "90aa9ce7-5388-48d9-812b-3260b4f80c91",
+      "parent_id": "188621c6-4b87-413a-b050-1dabcade441b",
+      "label": "Future",
+      "route": "/boots/puma/future",
+      "order": 8,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e9c2bd2d-cc0a-48d3-b34f-7e33dd99d734",
+      "parent_id": "188621c6-4b87-413a-b050-1dabcade441b",
+      "label": "Ultra",
+      "route": "/boots/puma/ultra",
+      "order": 9,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8f182b9c-943d-41da-85a8-ce647aaee58a",
+      "parent_id": "188621c6-4b87-413a-b050-1dabcade441b",
+      "label": "King",
+      "route": "/boots/puma/king",
+      "order": 10,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c9957b0d-0e59-47d0-9133-a4b5b64bc84b",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "New Balance",
+      "route": "/boots/new-balance",
+      "order": 11,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4600cd24-c840-44ba-a7b3-84ea57a362ae",
+      "parent_id": "c9957b0d-0e59-47d0-9133-a4b5b64bc84b",
+      "label": "442",
+      "route": "/boots/new-balance/442",
+      "order": 12,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8520ec8c-1a22-4f65-81ae-6b8f85223147",
+      "parent_id": "c9957b0d-0e59-47d0-9133-a4b5b64bc84b",
+      "label": "Furon",
+      "route": "/boots/new-balance/furon",
+      "order": 13,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "dbba0c2f-ae63-4f15-a764-f52a1db6cf12",
+      "parent_id": "c9957b0d-0e59-47d0-9133-a4b5b64bc84b",
+      "label": "Tekela",
+      "route": "/boots/new-balance/tekela",
+      "order": 14,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "1e4ee2af-4862-4b4e-9aba-eee47d9c876d",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Mizuno",
+      "route": "/boots/mizuno",
+      "order": 15,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "cb7841e2-ada6-42a4-966f-add7e81d1610",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Joma",
+      "route": "/boots/joma",
+      "order": 16,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "776d0766-6cac-4c3c-b705-d87c7e320f48",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Kelme",
+      "route": "/boots/kelme",
+      "order": 17,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "94c06c67-bf30-4ea0-8d88-de785c128d07",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Nike",
+      "route": "/boots/nike",
+      "order": 18,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "61c2f3cc-4749-4a02-8bd8-9e6850f38cf1",
+      "parent_id": "94c06c67-bf30-4ea0-8d88-de785c128d07",
+      "label": "Mercurial",
+      "route": "/boots/nike/mercurial",
+      "order": 19,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "146e87d1-11fc-4683-b2c2-7d50c5f566c8",
+      "parent_id": "61c2f3cc-4749-4a02-8bd8-9e6850f38cf1",
+      "label": "Superfly",
+      "route": "/boots/nike/mercurial/superfly",
+      "order": 20,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "fd2d8fe7-29e8-4190-9b3b-a4481ef65808",
+      "parent_id": "61c2f3cc-4749-4a02-8bd8-9e6850f38cf1",
+      "label": "Vapor",
+      "route": "/boots/nike/mercurial/vapor",
+      "order": 21,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "421e0b2a-cadd-4ef3-ab14-bcc3e092282e",
+      "parent_id": "94c06c67-bf30-4ea0-8d88-de785c128d07",
+      "label": "Phantom",
+      "route": "/boots/nike/phantom",
+      "order": 22,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "cf3838bd-66a9-4145-8d78-4f510016f77a",
+      "parent_id": "421e0b2a-cadd-4ef3-ab14-bcc3e092282e",
+      "label": "GT",
+      "route": "/boots/nike/phantom/gt",
+      "order": 23,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "bced247b-d7f2-4db8-89a5-5450fa8e373b",
+      "parent_id": "421e0b2a-cadd-4ef3-ab14-bcc3e092282e",
+      "label": "GT DF",
+      "route": "/boots/nike/phantom/gt-df",
+      "order": 24,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "05e41780-024d-4185-8ce5-b7abca3d17b6",
+      "parent_id": "421e0b2a-cadd-4ef3-ab14-bcc3e092282e",
+      "label": "GX",
+      "route": "/boots/nike/phantom/gx",
+      "order": 25,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c6eb7d80-0a92-4392-b9ca-73f4b0d02e84",
+      "parent_id": "421e0b2a-cadd-4ef3-ab14-bcc3e092282e",
+      "label": "Luna",
+      "route": "/boots/nike/phantom/luna",
+      "order": 26,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "03b283ea-0007-4d88-9d61-efab092416a3",
+      "parent_id": "94c06c67-bf30-4ea0-8d88-de785c128d07",
+      "label": "Tiempo",
+      "route": "/boots/nike/tiempo",
+      "order": 27,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ddd6627c-7c6f-48be-a82c-488c8b111710",
+      "parent_id": "03b283ea-0007-4d88-9d61-efab092416a3",
+      "label": "Legend",
+      "route": "/boots/nike/tiempo/legend",
+      "order": 28,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "05c1102c-c364-4acb-8b11-ad7337db4e4e",
+      "parent_id": "94c06c67-bf30-4ea0-8d88-de785c128d07",
+      "label": "Premier III",
+      "route": "/boots/nike/premier-iii",
+      "order": 29,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "449b53b6-b2cc-421b-acec-ba7a9bec3593",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Lotto",
+      "route": "/boots/lotto",
+      "order": 30,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c4b67d80-5aa6-47b6-aade-ee8dab3cdff3",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Munich",
+      "route": "/boots/munich",
+      "order": 31,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "708d71c9-8393-4a57-902d-16e4b929696d",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Diadora",
+      "route": "/boots/diadora",
+      "order": 32,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Classic",
+      "route": "/boots/classic",
+      "order": 33,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "28d8757d-cf89-4b6c-9726-d98f2e767edd",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Adidas",
+      "route": "/boots/classic/adidas",
+      "order": 34,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "bc8a67b3-b30e-4306-b000-29e63b24089b",
+      "parent_id": "28d8757d-cf89-4b6c-9726-d98f2e767edd",
+      "label": "Copa Mundial",
+      "route": "/boots/classic/adidas/copa-mundial",
+      "order": 35,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e22329fa-63d2-4f61-b94c-d0957ab82872",
+      "parent_id": "28d8757d-cf89-4b6c-9726-d98f2e767edd",
+      "label": "Kaiser",
+      "route": "/boots/classic/adidas/kaiser",
+      "order": 36,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "45edda8c-3af7-4df7-bdc0-921d1021cbbd",
+      "parent_id": "28d8757d-cf89-4b6c-9726-d98f2e767edd",
+      "label": "World Cup",
+      "route": "/boots/classic/adidas/world-cup",
+      "order": 37,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "da726aaf-c4b7-432f-a315-385c7a4739bc",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Diadora Brasil",
+      "route": "/boots/classic/diadora-brasil",
+      "order": 38,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3af790de-d77a-4452-820d-8059c888fea9",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Joma Águila",
+      "route": "/boots/classic/joma-guila",
+      "order": 39,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e2cedae9-2d46-40c7-80fe-dbfe68584b4c",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Lotto Stadio",
+      "route": "/boots/classic/lotto-stadio",
+      "order": 40,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "77a15d89-cd40-48f2-b5f0-94c655a652f8",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Mizuno Morelia",
+      "route": "/boots/classic/mizuno-morelia",
+      "order": 41,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3c8a81e3-6447-4442-9308-49008219bb90",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Munich Mundial",
+      "route": "/boots/classic/munich-mundial",
+      "order": 42,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "eb7b70a6-3e0d-47c4-a47d-4ce140e01614",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Nike Premier",
+      "route": "/boots/classic/nike-premier",
+      "order": 43,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d0c98748-1452-4514-a763-dbda2d355631",
+      "parent_id": "0d4e43d8-8fa2-4ec1-baa1-ea9ce0978d43",
+      "label": "Puma King",
+      "route": "/boots/classic/puma-king",
+      "order": 44,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "fe6e2b41-7fcd-4102-85ae-4eb4c6de5142",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Players",
+      "route": "/boots/players",
+      "order": 45,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "67fc219c-5dfe-4a99-b81d-02ba499e9753",
+      "parent_id": "fe6e2b41-7fcd-4102-85ae-4eb4c6de5142",
+      "label": "CR7",
+      "route": "/boots/players/cr7",
+      "order": 46,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "401dd87e-f07c-49b6-aa28-0eec7e606cbe",
+      "parent_id": "fe6e2b41-7fcd-4102-85ae-4eb4c6de5142",
+      "label": "Messi",
+      "route": "/boots/players/messi",
+      "order": 47,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "bf40e314-b9b9-4aa4-a82e-4783c4371741",
+      "parent_id": "fe6e2b41-7fcd-4102-85ae-4eb4c6de5142",
+      "label": "Bellingham",
+      "route": "/boots/players/bellingham",
+      "order": 48,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f2af3163-60e2-433c-8f49-0208ae45825e",
+      "parent_id": "fe6e2b41-7fcd-4102-85ae-4eb4c6de5142",
+      "label": "Neymar",
+      "route": "/boots/players/neymar",
+      "order": 49,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "b289b31f-7bfe-4291-b809-6d99c114fcba",
+      "parent_id": "fe6e2b41-7fcd-4102-85ae-4eb4c6de5142",
+      "label": "Lamine Yamal",
+      "route": "/boots/players/lamine-yamal",
+      "order": 50,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e9f1a72e-3ccc-4b9d-ba6f-d77649165716",
+      "parent_id": "28e855d7-d90e-43d8-82b1-4afe6bafe59d",
+      "label": "Black",
+      "route": "/boots/black",
+      "order": 51,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Multi-Stud Boots",
+      "route": "/multi-stud-boots",
+      "order": 52,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f0dadeb2-ff66-461f-89fd-c0d169c88a43",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "Adidas",
+      "route": "/multi-stud-boots/adidas",
+      "order": 53,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8b81f55a-0c6b-4626-bb6d-68abfbda4b09",
+      "parent_id": "f0dadeb2-ff66-461f-89fd-c0d169c88a43",
+      "label": "Predator Turf",
+      "route": "/multi-stud-boots/adidas/predator-turf",
+      "order": 54,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8372f485-24d2-447c-8c3d-ce8a2a85055d",
+      "parent_id": "f0dadeb2-ff66-461f-89fd-c0d169c88a43",
+      "label": "F50 Turf",
+      "route": "/multi-stud-boots/adidas/f50-turf",
+      "order": 55,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "53e38687-1f8f-4b32-9468-f803df668d65",
+      "parent_id": "f0dadeb2-ff66-461f-89fd-c0d169c88a43",
+      "label": "X Turf",
+      "route": "/multi-stud-boots/adidas/x-turf",
+      "order": 56,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a17478e4-6d62-4c5d-a9d9-b8040407a946",
+      "parent_id": "f0dadeb2-ff66-461f-89fd-c0d169c88a43",
+      "label": "COPA Turf",
+      "route": "/multi-stud-boots/adidas/copa-turf",
+      "order": 57,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c9b6e2ac-8f29-4b5c-a4db-e67ad0cd6ab2",
+      "parent_id": "f0dadeb2-ff66-461f-89fd-c0d169c88a43",
+      "label": "Mundial Team Turf",
+      "route": "/multi-stud-boots/adidas/mundial-team-turf",
+      "order": 58,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "046f31b1-3175-4f7e-8ea8-609bb18ac4ab",
+      "parent_id": "f0dadeb2-ff66-461f-89fd-c0d169c88a43",
+      "label": "Kaiser Multi-Stud",
+      "route": "/multi-stud-boots/adidas/kaiser-multi-stud",
+      "order": 59,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e02c3b2e-20a4-4e1d-a70c-6eaf21f88e75",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "New Balance",
+      "route": "/multi-stud-boots/new-balance",
+      "order": 60,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "512c74ad-d5a3-4fef-982f-601621fa7845",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "Nike",
+      "route": "/multi-stud-boots/nike",
+      "order": 61,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "36890c53-82d0-4033-bb5b-e4c6315405c9",
+      "parent_id": "512c74ad-d5a3-4fef-982f-601621fa7845",
+      "label": "Mercurial Multi-Stud",
+      "route": "/multi-stud-boots/nike/mercurial-multi-stud",
+      "order": 62,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "36ee3c41-b7af-4cf6-a708-b89075db1a8e",
+      "parent_id": "512c74ad-d5a3-4fef-982f-601621fa7845",
+      "label": "Phantom Multi-Stud",
+      "route": "/multi-stud-boots/nike/phantom-multi-stud",
+      "order": 63,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a3f5e183-13b2-4f3f-82a6-be221ae34e66",
+      "parent_id": "512c74ad-d5a3-4fef-982f-601621fa7845",
+      "label": "Tiempo Multi-Stud",
+      "route": "/multi-stud-boots/nike/tiempo-multi-stud",
+      "order": 64,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ff11fbc7-ed0f-4ca3-87bc-a064e61659a0",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "Munich",
+      "route": "/multi-stud-boots/munich",
+      "order": 65,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e3b15408-4028-45d6-bfca-f5b5ecba0a1d",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "Joma",
+      "route": "/multi-stud-boots/joma",
+      "order": 66,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0afc5a29-94e9-42b2-8c3a-c4c58d2054e9",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "Puma",
+      "route": "/multi-stud-boots/puma",
+      "order": 67,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c3aece96-9747-4a66-b452-f4ffab61fdcd",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "Players",
+      "route": "/multi-stud-boots/players",
+      "order": 68,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "cbcea40a-79e7-46d8-9ba5-5644a40ff084",
+      "parent_id": "c3aece96-9747-4a66-b452-f4ffab61fdcd",
+      "label": "Neymar",
+      "route": "/multi-stud-boots/players/neymar",
+      "order": 69,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a96e6e1c-9b54-43d5-9fce-265895bf9d44",
+      "parent_id": "3d3a6de1-9a55-45c7-8142-d278aa555c87",
+      "label": "Latest Collections",
+      "route": "/multi-stud-boots/latest-collections",
+      "order": 70,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Indoor Shoes",
+      "route": "/indoor-shoes",
+      "order": 71,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "df8549e7-8a57-4ad0-8d16-6e329655bd32",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Nike",
+      "route": "/indoor-shoes/nike",
+      "order": 72,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6c100b45-a4e1-4092-8152-6f3f92f211ae",
+      "parent_id": "df8549e7-8a57-4ad0-8d16-6e329655bd32",
+      "label": "Mercurial Indoor",
+      "route": "/indoor-shoes/nike/mercurial-indoor",
+      "order": 73,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "91844daa-f70a-48c6-a066-edaf9d2e7966",
+      "parent_id": "df8549e7-8a57-4ad0-8d16-6e329655bd32",
+      "label": "Phantom Indoor",
+      "route": "/indoor-shoes/nike/phantom-indoor",
+      "order": 74,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "60c4e7dc-9243-4476-80b8-a0e5cc16c65c",
+      "parent_id": "91844daa-f70a-48c6-a066-edaf9d2e7966",
+      "label": "GT Indoor",
+      "route": "/indoor-shoes/nike/phantom-indoor/gt-indoor",
+      "order": 75,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2a2ec0a1-0bb0-401f-acde-7fc76d6010d6",
+      "parent_id": "df8549e7-8a57-4ad0-8d16-6e329655bd32",
+      "label": "Gato",
+      "route": "/indoor-shoes/nike/gato",
+      "order": 76,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "874a9cb2-1d9e-40d1-9e66-cdfae7a77ca1",
+      "parent_id": "2a2ec0a1-0bb0-401f-acde-7fc76d6010d6",
+      "label": "Gato",
+      "route": "/indoor-shoes/nike/gato/gato",
+      "order": 77,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "07f23743-0944-480a-9a10-272fd42f4d3d",
+      "parent_id": "df8549e7-8a57-4ad0-8d16-6e329655bd32",
+      "label": "Tiempo Indoor",
+      "route": "/indoor-shoes/nike/tiempo-indoor",
+      "order": 78,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ee0dd8f2-d7cc-44fa-916d-a7e4215df35b",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Mizuno Futsal",
+      "route": "/indoor-shoes/mizuno-futsal",
+      "order": 79,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "df3deaf4-d381-4df3-bc25-91033cd3ceee",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "New Balance",
+      "route": "/indoor-shoes/new-balance",
+      "order": 80,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "880b33e0-868c-4cd0-8aea-204165766376",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Adidas",
+      "route": "/indoor-shoes/adidas",
+      "order": 81,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "parent_id": "880b33e0-868c-4cd0-8aea-204165766376",
+      "label": "Adidas",
+      "route": "/indoor-shoes/adidas/adidas",
+      "order": 82,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "20cf0332-3c4b-40ef-949c-e0bac77221c9",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "Predator Indoor",
+      "route": "/indoor-shoes/adidas/adidas/predator-indoor",
+      "order": 83,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6058caf3-0491-48d9-a707-c13620f46b53",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "X Futsal",
+      "route": "/indoor-shoes/adidas/adidas/x-futsal",
+      "order": 84,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a85fcaf7-0770-4d9a-93d9-546c494e4e24",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "COPA Futsal",
+      "route": "/indoor-shoes/adidas/adidas/copa-futsal",
+      "order": 85,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "94640e15-21ad-484a-ba51-0cd53097d741",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "F50 Indoor",
+      "route": "/indoor-shoes/adidas/adidas/f50-indoor",
+      "order": 86,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7cac56ca-a267-4186-9376-d46e53b689de",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "Top Sala",
+      "route": "/indoor-shoes/adidas/adidas/top-sala",
+      "order": 87,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "467dc50e-e0cd-427d-998a-434800591213",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "Samba Indoor",
+      "route": "/indoor-shoes/adidas/adidas/samba-indoor",
+      "order": 88,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "cb9ae958-ce91-45dc-9b96-8d59f139f589",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "Mundial Goal",
+      "route": "/indoor-shoes/adidas/adidas/mundial-goal",
+      "order": 89,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "717d28d5-5afe-4a60-904b-f20636053d58",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "Kaiser 5 Goal",
+      "route": "/indoor-shoes/adidas/adidas/kaiser-5-goal",
+      "order": 90,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f484e49b-df74-47a2-959e-8b8185984294",
+      "parent_id": "fdbafe5e-3d1a-41f1-9edf-6af1789e844c",
+      "label": "Messi",
+      "route": "/indoor-shoes/adidas/messi",
+      "order": 91,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "647afe41-546d-4857-aeef-73f2d784ee04",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Lotto",
+      "route": "/indoor-shoes/lotto",
+      "order": 92,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "29db3250-4178-4a17-a664-1b3f130de9c7",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Puma",
+      "route": "/indoor-shoes/puma",
+      "order": 93,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e0c3267b-d8fc-46c3-bf3c-9d88b8ce6b31",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Munich",
+      "route": "/indoor-shoes/munich",
+      "order": 94,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6257d0f8-d3ee-4970-bf10-e8902e7e7816",
+      "parent_id": "e0c3267b-d8fc-46c3-bf3c-9d88b8ce6b31",
+      "label": "Continental",
+      "route": "/indoor-shoes/munich/continental",
+      "order": 95,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f0336794-f051-402b-a7e6-5649f280f3ff",
+      "parent_id": "e0c3267b-d8fc-46c3-bf3c-9d88b8ce6b31",
+      "label": "Gresca",
+      "route": "/indoor-shoes/munich/gresca",
+      "order": 96,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "251e90b7-6193-4807-950f-a32dbe1956f8",
+      "parent_id": "e0c3267b-d8fc-46c3-bf3c-9d88b8ce6b31",
+      "label": "G3",
+      "route": "/indoor-shoes/munich/g3",
+      "order": 97,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5629e0c1-8547-4c28-bb74-b8012dee93eb",
+      "parent_id": "e0c3267b-d8fc-46c3-bf3c-9d88b8ce6b31",
+      "label": "Tiga",
+      "route": "/indoor-shoes/munich/tiga",
+      "order": 98,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "54d9e44f-cf93-483c-a66e-ae6918222379",
+      "parent_id": "e0c3267b-d8fc-46c3-bf3c-9d88b8ce6b31",
+      "label": "Prisma",
+      "route": "/indoor-shoes/munich/prisma",
+      "order": 99,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "13ad2966-524d-4e9d-827e-2759de825639",
+      "parent_id": "e0c3267b-d8fc-46c3-bf3c-9d88b8ce6b31",
+      "label": "One",
+      "route": "/indoor-shoes/munich/one",
+      "order": 100,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5779551d-29ab-4414-9465-c4c8ab8c6809",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Joma",
+      "route": "/indoor-shoes/joma",
+      "order": 101,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "88bcbf2d-25c3-4829-a402-ef0a6bb04302",
+      "parent_id": "5779551d-29ab-4414-9465-c4c8ab8c6809",
+      "label": "Dribling",
+      "route": "/indoor-shoes/joma/dribling",
+      "order": 102,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "166cfbe1-eb49-4bdf-9721-6e9b1b0e6d11",
+      "parent_id": "5779551d-29ab-4414-9465-c4c8ab8c6809",
+      "label": "Liga 5",
+      "route": "/indoor-shoes/joma/liga-5",
+      "order": 103,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "afec2a99-560a-4809-8e16-7112f1dd3966",
+      "parent_id": "5779551d-29ab-4414-9465-c4c8ab8c6809",
+      "label": "Top Flex",
+      "route": "/indoor-shoes/joma/top-flex",
+      "order": 104,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "41fa78dd-5979-47a1-8c7c-78f71d6a8b20",
+      "parent_id": "5779551d-29ab-4414-9465-c4c8ab8c6809",
+      "label": "Mundial",
+      "route": "/indoor-shoes/joma/mundial",
+      "order": 105,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "de3114a7-e774-4f16-a261-bba66210b89e",
+      "parent_id": "5779551d-29ab-4414-9465-c4c8ab8c6809",
+      "label": "Táctico",
+      "route": "/indoor-shoes/joma/tctico",
+      "order": 106,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d81509f6-3658-4a9f-b91a-be1bd34a35dc",
+      "parent_id": "5779551d-29ab-4414-9465-c4c8ab8c6809",
+      "label": "FS Reactive",
+      "route": "/indoor-shoes/joma/fs-reactive",
+      "order": 107,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "95a79c42-b5c9-4429-bd9e-dca8ff78212c",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Kelme Futsal",
+      "route": "/indoor-shoes/kelme-futsal",
+      "order": 108,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8b68bde2-6669-43b7-a7a2-0ddf0e347ff4",
+      "parent_id": "95a79c42-b5c9-4429-bd9e-dca8ff78212c",
+      "label": "Precision",
+      "route": "/indoor-shoes/kelme-futsal/precision",
+      "order": 109,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "1144222a-e931-4df1-aba3-4bdbd2b05392",
+      "parent_id": "95a79c42-b5c9-4429-bd9e-dca8ff78212c",
+      "label": "Indoor Copa",
+      "route": "/indoor-shoes/kelme-futsal/indoor-copa",
+      "order": 110,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5bf09d4c-64b4-4300-aa09-b753836d4977",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "New",
+      "route": "/indoor-shoes/new",
+      "order": 111,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a6141ac4-5440-4397-8273-a5af644fecfb",
+      "parent_id": "e9fcab97-3fb2-4517-ad7a-7c0011a7fdce",
+      "label": "Players",
+      "route": "/indoor-shoes/players",
+      "order": 112,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a85d7bf6-b05f-48b1-b244-89875e408c9f",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Shin Guards",
+      "route": "/shin-guards",
+      "order": 113,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "99645ba6-25ed-4ef8-b4ce-9f4317dd4335",
+      "parent_id": "a85d7bf6-b05f-48b1-b244-89875e408c9f",
+      "label": "Adidas",
+      "route": "/shin-guards/adidas",
+      "order": 114,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5fe9975f-bff1-42df-8033-06cecdc291e6",
+      "parent_id": "99645ba6-25ed-4ef8-b4ce-9f4317dd4335",
+      "label": "X",
+      "route": "/shin-guards/adidas/x",
+      "order": 115,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e7b6265a-aa30-47ea-9db2-8f5645c52505",
+      "parent_id": "99645ba6-25ed-4ef8-b4ce-9f4317dd4335",
+      "label": "Predator",
+      "route": "/shin-guards/adidas/predator",
+      "order": 116,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c74839f2-ed62-43b6-aca3-86d0d8d0fb42",
+      "parent_id": "a85d7bf6-b05f-48b1-b244-89875e408c9f",
+      "label": "G-Form",
+      "route": "/shin-guards/g-form",
+      "order": 117,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f5534232-615e-4dd0-992a-cd6cf972ccbe",
+      "parent_id": "a85d7bf6-b05f-48b1-b244-89875e408c9f",
+      "label": "New Balance",
+      "route": "/shin-guards/new-balance",
+      "order": 118,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f00f130b-7635-4129-8c85-444c79cea32a",
+      "parent_id": "a85d7bf6-b05f-48b1-b244-89875e408c9f",
+      "label": "Nike",
+      "route": "/shin-guards/nike",
+      "order": 119,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "07acd73a-e704-429f-aac7-1032349ed631",
+      "parent_id": "f00f130b-7635-4129-8c85-444c79cea32a",
+      "label": "Mercurial",
+      "route": "/shin-guards/nike/mercurial",
+      "order": 120,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6a9c68df-62ef-4c3d-87a7-b2109c74edb1",
+      "parent_id": "f00f130b-7635-4129-8c85-444c79cea32a",
+      "label": "Protegga",
+      "route": "/shin-guards/nike/protegga",
+      "order": 121,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c36ee6aa-c888-43b8-81a7-c12fc15c307d",
+      "parent_id": "f00f130b-7635-4129-8c85-444c79cea32a",
+      "label": "Charge",
+      "route": "/shin-guards/nike/charge",
+      "order": 122,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "617fb2fe-d0d0-4450-8beb-fd2bae402d0c",
+      "parent_id": "a85d7bf6-b05f-48b1-b244-89875e408c9f",
+      "label": "Puma",
+      "route": "/shin-guards/puma",
+      "order": 123,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c09bc1b5-e566-4680-8f92-1eefe6c76862",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Balls",
+      "route": "/balls",
+      "order": 124,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "parent_id": "c09bc1b5-e566-4680-8f92-1eefe6c76862",
+      "label": "Official Match",
+      "route": "/balls/official-match",
+      "order": 125,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a135c9cd-9a0e-48ce-82fc-a5c88e9d1a79",
+      "parent_id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "label": "Women's",
+      "route": "/balls/official-match/womens",
+      "order": 126,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f1a6bb54-8f48-481c-89b3-314f7f340a3f",
+      "parent_id": "a135c9cd-9a0e-48ce-82fc-a5c88e9d1a79",
+      "label": "La Liga Ball",
+      "route": "/balls/official-match/womens/la-liga-ball",
+      "order": 127,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4245e8b6-21d7-47f3-b5be-470bd3bdc6f0",
+      "parent_id": "a135c9cd-9a0e-48ce-82fc-a5c88e9d1a79",
+      "label": "Competitions Ball",
+      "route": "/balls/official-match/womens/competitions-ball",
+      "order": 128,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ecf74edc-8869-4c63-a18b-df21cf94e7d9",
+      "parent_id": "a135c9cd-9a0e-48ce-82fc-a5c88e9d1a79",
+      "label": "Champions League Ball",
+      "route": "/balls/official-match/womens/champions-league-ball",
+      "order": 129,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "39a43ff8-fd2c-4718-a946-ee25fe2ad1e9",
+      "parent_id": "a135c9cd-9a0e-48ce-82fc-a5c88e9d1a79",
+      "label": "Euro 2025 Ball",
+      "route": "/balls/official-match/womens/euro-2025-ball",
+      "order": 130,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "9837a8c5-e12a-4fd6-88b3-a47dd3e74923",
+      "parent_id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "label": "2025 Club World Cup Ball",
+      "route": "/balls/official-match/2025-club-world-cup-ball",
+      "order": 131,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8c6b55fb-214d-486f-9336-3af0891f9dd6",
+      "parent_id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "label": "2026 World Cup Ball",
+      "route": "/balls/official-match/2026-world-cup-ball",
+      "order": 132,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "830f96ff-d14d-4262-9f9d-430d1e2f85bf",
+      "parent_id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "label": "La Liga Ball",
+      "route": "/balls/official-match/la-liga-ball",
+      "order": 133,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a67f4f9f-f82a-444e-bd01-52fc1ce1cf19",
+      "parent_id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "label": "Champions League Ball",
+      "route": "/balls/official-match/champions-league-ball",
+      "order": 134,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "28add6de-4cfc-4ad1-ac02-1cdec72d089d",
+      "parent_id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "label": "Premier League Ball",
+      "route": "/balls/official-match/premier-league-ball",
+      "order": 135,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "b5260e2e-09ce-4e49-ac63-a8fe82d5077d",
+      "parent_id": "c612a369-8303-4714-9db2-f79583d3c8f7",
+      "label": "Italian League Ball",
+      "route": "/balls/official-match/italian-league-ball",
+      "order": 136,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "943259de-d28a-45b4-a8d1-a5edeb6674db",
+      "parent_id": "c09bc1b5-e566-4680-8f92-1eefe6c76862",
+      "label": "Team Soccer",
+      "route": "/balls/team-soccer",
+      "order": 137,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Socks",
+      "route": "/socks",
+      "order": 138,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Color",
+      "route": "/socks/color",
+      "order": 139,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "47140cd6-d0d5-41bc-993e-ff275f7df77e",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Yellow",
+      "route": "/socks/color/yellow",
+      "order": 140,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7afd1006-794d-4174-a0bf-1fa53ce47ba2",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Blue",
+      "route": "/socks/color/blue",
+      "order": 141,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "52cd45c1-4ef1-400b-8c03-2985c3f4598d",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "White",
+      "route": "/socks/color/white",
+      "order": 142,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "cd45b6e9-3141-4d78-816a-5b6e1a4c4978",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Light Blue",
+      "route": "/socks/color/light-blue",
+      "order": 143,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6fa69684-79ad-4a37-b715-d82b92f9f226",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Purple",
+      "route": "/socks/color/purple",
+      "order": 144,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "13836a74-5734-4071-8f72-f852a06bf0a0",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Orange",
+      "route": "/socks/color/orange",
+      "order": 145,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6efb0df9-5724-46a5-99b5-2eaff9a78a93",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Black",
+      "route": "/socks/color/black",
+      "order": 146,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0267e3d7-5d80-4fee-9d09-b3f2e65bec41",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Red",
+      "route": "/socks/color/red",
+      "order": 147,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "358d4fbd-f362-4bfb-b4ff-1419b790a9ef",
+      "parent_id": "d24d3634-efdf-493b-abb2-9171c65dcda2",
+      "label": "Green",
+      "route": "/socks/color/green",
+      "order": 148,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d088f155-7c10-4b2b-a0f0-2f59c6bd0a33",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Soccer Socks",
+      "route": "/socks/soccer-socks",
+      "order": 149,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3f4f23c4-3f01-47f0-8f91-8947b69d2e08",
+      "parent_id": "d088f155-7c10-4b2b-a0f0-2f59c6bd0a33",
+      "label": "Adidas",
+      "route": "/socks/soccer-socks/adidas",
+      "order": 150,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0b0f20a7-33f7-4cbd-beb4-0f173e5c2f7e",
+      "parent_id": "d088f155-7c10-4b2b-a0f0-2f59c6bd0a33",
+      "label": "Nike",
+      "route": "/socks/soccer-socks/nike",
+      "order": 151,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "9e07e681-aebb-4dac-835f-e6c9d11d3e10",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Anklets",
+      "route": "/socks/anklets",
+      "order": 152,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0b369e6c-0f1b-4341-95c3-962169c39d93",
+      "parent_id": "9e07e681-aebb-4dac-835f-e6c9d11d3e10",
+      "label": "Adidas",
+      "route": "/socks/anklets/adidas",
+      "order": 153,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5521f4d2-8c62-4d03-9205-3a6f0243258f",
+      "parent_id": "9e07e681-aebb-4dac-835f-e6c9d11d3e10",
+      "label": "Nike",
+      "route": "/socks/anklets/nike",
+      "order": 154,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "388c8903-fd67-43e7-bcd7-37952ef17155",
+      "parent_id": "9e07e681-aebb-4dac-835f-e6c9d11d3e10",
+      "label": "Trusox",
+      "route": "/socks/anklets/trusox",
+      "order": 155,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "fe69b5c0-e6e8-46f2-83ca-d010d61452c1",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Non-Slip",
+      "route": "/socks/non-slip",
+      "order": 156,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "acc68d45-3d58-4b55-9289-7a64b803d7f4",
+      "parent_id": "fe69b5c0-e6e8-46f2-83ca-d010d61452c1",
+      "label": "Non-Slip",
+      "route": "/socks/non-slip/non-slip",
+      "order": 157,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6960a8c9-6aa4-425b-be06-4fcb0e5ae376",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Cut",
+      "route": "/socks/cut",
+      "order": 158,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "273c9f64-e028-4c06-b7cb-90a2cb244fbe",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Team",
+      "route": "/socks/team",
+      "order": 159,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "bdde2495-7140-40f8-832d-a68d8431f3ac",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Goalkeeper",
+      "route": "/socks/goalkeeper",
+      "order": 160,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c0ab75f9-413c-4b88-8488-282a4ae78b31",
+      "parent_id": "d79d226f-7720-4953-9470-cf07ef62fde9",
+      "label": "Compression and Sleeves",
+      "route": "/socks/compression-and-sleeves",
+      "order": 161,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Jerseys",
+      "route": "/jerseys",
+      "order": 162,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Brand",
+      "route": "/jerseys/brand",
+      "order": 163,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2b378b2a-9f6c-455d-a377-9744a800ac20",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "Adidas",
+      "route": "/jerseys/brand/adidas",
+      "order": 164,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a35c838c-2f4c-4c7d-afa1-c7901cc4279b",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "Errea",
+      "route": "/jerseys/brand/errea",
+      "order": 165,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6adf9c56-c266-4d6e-b2de-d54bd94e63a2",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "Joma",
+      "route": "/jerseys/brand/joma",
+      "order": 166,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "72ebc49a-cff1-4104-b51c-e98d0e9edd49",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "Kelme",
+      "route": "/jerseys/brand/kelme",
+      "order": 167,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5f948404-698b-4e11-aa47-57c1f8749e18",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "Macron",
+      "route": "/jerseys/brand/macron",
+      "order": 168,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d0a2b974-d2b4-4f90-9a12-ec0fe9fe2274",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "New Balance",
+      "route": "/jerseys/brand/new-balance",
+      "order": 169,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e8ba8f16-8238-4b40-915c-80f77d353fdc",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "Nike",
+      "route": "/jerseys/brand/nike",
+      "order": 170,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d8f3b023-4542-49b2-ac28-cd0a4fb37727",
+      "parent_id": "0c8d900d-bcf9-4381-bdd3-ebb19b8ac1a8",
+      "label": "Puma",
+      "route": "/jerseys/brand/puma",
+      "order": 171,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "cc774fd8-d656-4909-94b1-28220fe652d3",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Team Soccer",
+      "route": "/jerseys/team-soccer",
+      "order": 172,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7cd44fd3-f124-4bb0-9aeb-bc74d03c98fd",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Goalkeeper",
+      "route": "/jerseys/goalkeeper",
+      "order": 173,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "61ff0f7f-4520-499e-b348-89124584cb68",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Referee",
+      "route": "/jerseys/referee",
+      "order": 174,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "LaLiga",
+      "route": "/jerseys/laliga",
+      "order": 175,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "1063d652-eab1-4125-8e80-ca9238b9e4fb",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Real",
+      "route": "/jerseys/laliga/real",
+      "order": 176,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c8687486-2293-42a0-b8ae-18296b7752a6",
+      "parent_id": "1063d652-eab1-4125-8e80-ca9238b9e4fb",
+      "label": "Betis Jersey",
+      "route": "/jerseys/laliga/real/betis-jersey",
+      "order": 177,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4c787a20-7c19-4c15-9feb-ca023f62bd6e",
+      "parent_id": "1063d652-eab1-4125-8e80-ca9238b9e4fb",
+      "label": "Madrid Jersey",
+      "route": "/jerseys/laliga/real/madrid-jersey",
+      "order": 178,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "516256d2-cfe2-4c0c-b264-7cda5f41b7e5",
+      "parent_id": "1063d652-eab1-4125-8e80-ca9238b9e4fb",
+      "label": "Sociedad Jersey",
+      "route": "/jerseys/laliga/real/sociedad-jersey",
+      "order": 179,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c616d556-5e3e-49d7-a0e9-3f1cc97e19ea",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Athletic Bilbao Jersey",
+      "route": "/jerseys/laliga/athletic-bilbao-jersey",
+      "order": 180,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "840af944-0c9f-49aa-8ba3-e682ac24451b",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Atlético de Madrid Jersey",
+      "route": "/jerseys/laliga/atltico-de-madrid-jersey",
+      "order": 181,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "bf931161-3ea9-437b-830c-eb67de444bbe",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Barcelona Jersey",
+      "route": "/jerseys/laliga/barcelona-jersey",
+      "order": 182,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2f830963-6b94-47ef-8fda-6a7ccd206016",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Espanyol Jersey",
+      "route": "/jerseys/laliga/espanyol-jersey",
+      "order": 183,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "1afbd89b-6e24-4fe2-ba68-477d3a0417b1",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Getafe Jersey",
+      "route": "/jerseys/laliga/getafe-jersey",
+      "order": 184,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c5877bf4-aba5-418e-b91a-2893392a2c5d",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Girona Jersey",
+      "route": "/jerseys/laliga/girona-jersey",
+      "order": 185,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3ced3a3b-652d-466f-8974-7a028ea28551",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Sevilla Jersey",
+      "route": "/jerseys/laliga/sevilla-jersey",
+      "order": 186,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "94a90e3b-db15-4bf1-9fd7-f1ad085ef113",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Valencia Jersey",
+      "route": "/jerseys/laliga/valencia-jersey",
+      "order": 187,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "bc5d5942-f60d-46ea-b275-2cc3681fc7eb",
+      "parent_id": "8778f77c-5339-4fcb-82b7-8628ca3da3f5",
+      "label": "Villarreal Jersey",
+      "route": "/jerseys/laliga/villarreal-jersey",
+      "order": 188,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "85914cc2-194d-406d-95a3-0c90917116e5",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Premier League",
+      "route": "/jerseys/premier-league",
+      "order": 189,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5a4bec5f-71ab-4674-84cb-6b1a6f0de3cf",
+      "parent_id": "85914cc2-194d-406d-95a3-0c90917116e5",
+      "label": "Manchester",
+      "route": "/jerseys/premier-league/manchester",
+      "order": 190,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "9a0c5e42-2352-49b9-9059-b63c36831fd0",
+      "parent_id": "5a4bec5f-71ab-4674-84cb-6b1a6f0de3cf",
+      "label": "City Jersey",
+      "route": "/jerseys/premier-league/manchester/city-jersey",
+      "order": 191,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "95631f8b-f2cf-491f-8109-af7440cb3175",
+      "parent_id": "5a4bec5f-71ab-4674-84cb-6b1a6f0de3cf",
+      "label": "United Jersey",
+      "route": "/jerseys/premier-league/manchester/united-jersey",
+      "order": 192,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8a8d2bc3-9559-402b-b241-a3e48b4855e4",
+      "parent_id": "85914cc2-194d-406d-95a3-0c90917116e5",
+      "label": "Arsenal Jersey",
+      "route": "/jerseys/premier-league/arsenal-jersey",
+      "order": 193,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5518cb29-327b-4cb9-922c-7e33deaec1c7",
+      "parent_id": "85914cc2-194d-406d-95a3-0c90917116e5",
+      "label": "Chelsea Jersey",
+      "route": "/jerseys/premier-league/chelsea-jersey",
+      "order": 194,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4651fd4f-07a2-4d22-86e6-5c980d82b5e2",
+      "parent_id": "85914cc2-194d-406d-95a3-0c90917116e5",
+      "label": "Liverpool Jersey",
+      "route": "/jerseys/premier-league/liverpool-jersey",
+      "order": 195,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "cf0febd1-16b0-4249-aaf9-7fa63f37f310",
+      "parent_id": "85914cc2-194d-406d-95a3-0c90917116e5",
+      "label": "Tottenham Jersey",
+      "route": "/jerseys/premier-league/tottenham-jersey",
+      "order": 196,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "80100cfe-96c7-4feb-9b74-99b8fbb47299",
+      "parent_id": "85914cc2-194d-406d-95a3-0c90917116e5",
+      "label": "Newcastle Jersey",
+      "route": "/jerseys/premier-league/newcastle-jersey",
+      "order": 197,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0d03668a-6343-4f42-a1e6-e795ea25d82f",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Serie A",
+      "route": "/jerseys/serie-a",
+      "order": 198,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "78dc44db-555d-4a01-b25f-1ddf53c245e5",
+      "parent_id": "0d03668a-6343-4f42-a1e6-e795ea25d82f",
+      "label": "Inter Milan Jersey",
+      "route": "/jerseys/serie-a/inter-milan-jersey",
+      "order": 199,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "1f5252a7-2132-4c2b-9302-abe76fe26771",
+      "parent_id": "0d03668a-6343-4f42-a1e6-e795ea25d82f",
+      "label": "Juventus Jersey",
+      "route": "/jerseys/serie-a/juventus-jersey",
+      "order": 200,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "fbcb460f-797b-445d-81ee-4988f2c3df37",
+      "parent_id": "0d03668a-6343-4f42-a1e6-e795ea25d82f",
+      "label": "Roma Jersey",
+      "route": "/jerseys/serie-a/roma-jersey",
+      "order": 201,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3862fc15-781f-4f00-ab95-1b6d4f7f1a10",
+      "parent_id": "0d03668a-6343-4f42-a1e6-e795ea25d82f",
+      "label": "AC Milan Jersey",
+      "route": "/jerseys/serie-a/ac-milan-jersey",
+      "order": 202,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ae62c9b1-22c2-4a80-a464-be83380b1ec4",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "MLS",
+      "route": "/jerseys/mls",
+      "order": 203,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2cec65d1-e625-4650-a5eb-cfc3ab85b85c",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Bundesliga",
+      "route": "/jerseys/bundesliga",
+      "order": 204,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "61bfcb87-a90c-4fb7-8a71-ce51cae8d503",
+      "parent_id": "2cec65d1-e625-4650-a5eb-cfc3ab85b85c",
+      "label": "Bayern Munich Jersey",
+      "route": "/jerseys/bundesliga/bayern-munich-jersey",
+      "order": 205,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ec838592-1114-4c0f-a8eb-32fc2f654d9c",
+      "parent_id": "2cec65d1-e625-4650-a5eb-cfc3ab85b85c",
+      "label": "Borussia Dortmund Jersey",
+      "route": "/jerseys/bundesliga/borussia-dortmund-jersey",
+      "order": 206,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "85ca71b6-0756-48e9-a447-4a85a18f6106",
+      "parent_id": "2cec65d1-e625-4650-a5eb-cfc3ab85b85c",
+      "label": "Bayer Leverkusen Jersey",
+      "route": "/jerseys/bundesliga/bayer-leverkusen-jersey",
+      "order": 207,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d30abe68-c8ea-4fe8-90de-c78546050ea5",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Ligue 1",
+      "route": "/jerseys/ligue-1",
+      "order": 208,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5f3ba8bf-4d9b-4c4f-9365-c3ec42f61e3e",
+      "parent_id": "d30abe68-c8ea-4fe8-90de-c78546050ea5",
+      "label": "PSG Jersey",
+      "route": "/jerseys/ligue-1/psg-jersey",
+      "order": 209,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "53e16089-e5d5-49ea-b101-a996fdf2e8ec",
+      "parent_id": "d30abe68-c8ea-4fe8-90de-c78546050ea5",
+      "label": "Marseille Jersey",
+      "route": "/jerseys/ligue-1/marseille-jersey",
+      "order": 210,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4977d4a4-f6fe-4530-ba0c-1d889c3d9d78",
+      "parent_id": "d30abe68-c8ea-4fe8-90de-c78546050ea5",
+      "label": "Lyon Jersey",
+      "route": "/jerseys/ligue-1/lyon-jersey",
+      "order": 211,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4e4f0bc5-5e24-41bd-9388-a514fa2a4af8",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Eredivisie",
+      "route": "/jerseys/eredivisie",
+      "order": 212,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d3bea033-804c-4d76-8a31-db00900d6812",
+      "parent_id": "4e4f0bc5-5e24-41bd-9388-a514fa2a4af8",
+      "label": "ADO Den Haag Jersey",
+      "route": "/jerseys/eredivisie/ado-den-haag-jersey",
+      "order": 213,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d9d04159-5733-400c-80c9-05f14af72fd4",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Primeira Liga",
+      "route": "/jerseys/primeira-liga",
+      "order": 214,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "492840ba-3014-49c9-9a80-0549aeae9cd0",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "International Club",
+      "route": "/jerseys/international-club",
+      "order": 215,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7a34e4f4-c43d-4fbc-866e-a1edf0b7fe6e",
+      "parent_id": "492840ba-3014-49c9-9a80-0549aeae9cd0",
+      "label": "Boca Juniors Jersey",
+      "route": "/jerseys/international-club/boca-juniors-jersey",
+      "order": 216,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d9fd00c3-d5c4-41c2-8bf5-a064b8b44441",
+      "parent_id": "492840ba-3014-49c9-9a80-0549aeae9cd0",
+      "label": "Inter Miami CF Jersey",
+      "route": "/jerseys/international-club/inter-miami-cf-jersey",
+      "order": 217,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c31666a9-8f9e-46b9-b7dc-a4cbe63ceeef",
+      "parent_id": "492840ba-3014-49c9-9a80-0549aeae9cd0",
+      "label": "Kaizer Chiefs Jersey",
+      "route": "/jerseys/international-club/kaizer-chiefs-jersey",
+      "order": 218,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "caadb68d-329e-4503-8bd0-0908f5b0ffb3",
+      "parent_id": "492840ba-3014-49c9-9a80-0549aeae9cd0",
+      "label": "Pumas UNAM Jersey",
+      "route": "/jerseys/international-club/pumas-unam-jersey",
+      "order": 219,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c40765e4-b347-47f3-a246-a531da140169",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "National Team",
+      "route": "/jerseys/national-team",
+      "order": 220,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "19cc6c83-ed47-4aae-971a-d40a290da336",
+      "parent_id": "c40765e4-b347-47f3-a246-a531da140169",
+      "label": "Germany Jersey",
+      "route": "/jerseys/national-team/germany-jersey",
+      "order": 221,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "53791541-b94d-47aa-92f9-bd26248d2781",
+      "parent_id": "c40765e4-b347-47f3-a246-a531da140169",
+      "label": "Argentina Jersey",
+      "route": "/jerseys/national-team/argentina-jersey",
+      "order": 222,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0cc0d9d6-9ba1-48d4-a309-488be92f0934",
+      "parent_id": "c40765e4-b347-47f3-a246-a531da140169",
+      "label": "Brazil Jersey",
+      "route": "/jerseys/national-team/brazil-jersey",
+      "order": 223,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7ec21f46-9b26-4185-a404-6e7380e76fa0",
+      "parent_id": "c40765e4-b347-47f3-a246-a531da140169",
+      "label": "Colombia Jersey",
+      "route": "/jerseys/national-team/colombia-jersey",
+      "order": 224,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "04196118-80a4-4c4a-8b35-db6c54ca4134",
+      "parent_id": "c40765e4-b347-47f3-a246-a531da140169",
+      "label": "Spain National Team Jersey",
+      "route": "/jerseys/national-team/spain-national-team-jersey",
+      "order": 225,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "328ef2f1-4623-4b98-b153-b7e9f55461e6",
+      "parent_id": "c40765e4-b347-47f3-a246-a531da140169",
+      "label": "Italy Jersey",
+      "route": "/jerseys/national-team/italy-jersey",
+      "order": 226,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "parent_id": "e800f428-0ee8-4eba-a7d0-871423e31be9",
+      "label": "Official Soccer",
+      "route": "/jerseys/official-soccer",
+      "order": 227,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "63760a1c-0c3a-43d5-9f17-258f5d539429",
+      "parent_id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "label": "Home Jersey",
+      "route": "/jerseys/official-soccer/home-jersey",
+      "order": 228,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3edb4374-da29-4d26-b2f7-d35d05668cce",
+      "parent_id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "label": "Away Jersey",
+      "route": "/jerseys/official-soccer/away-jersey",
+      "order": 229,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "fcd91dc0-1cd3-4c87-8e5a-ff7f378c0692",
+      "parent_id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "label": "Third Jersey",
+      "route": "/jerseys/official-soccer/third-jersey",
+      "order": 230,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6cf54eec-0c97-477e-81f0-cd7da837f953",
+      "parent_id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "label": "Goalkeeper Jersey",
+      "route": "/jerseys/official-soccer/goalkeeper-jersey",
+      "order": 231,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4b17d0b4-db1e-4824-affb-47599aee5f37",
+      "parent_id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "label": "Training Jersey",
+      "route": "/jerseys/official-soccer/training-jersey",
+      "order": 232,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ca4159a2-5863-4882-848a-3171b9f47f75",
+      "parent_id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "label": "Pre-Match Jersey",
+      "route": "/jerseys/official-soccer/pre-match-jersey",
+      "order": 233,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4f372040-45c3-408a-b1be-6696ebc0562a",
+      "parent_id": "59da23ef-12a3-47da-9755-38ebb2dea9e0",
+      "label": "Walkout Jersey",
+      "route": "/jerseys/official-soccer/walkout-jersey",
+      "order": 234,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Kits",
+      "route": "/kits",
+      "order": 235,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6d905620-5bd9-4919-a9b1-fc8dfbadcfab",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Team Soccer",
+      "route": "/kits/team-soccer",
+      "order": 236,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "b44682d1-dc53-44e9-90b1-3958acfc5a22",
+      "parent_id": "6d905620-5bd9-4919-a9b1-fc8dfbadcfab",
+      "label": "Adidas Team",
+      "route": "/kits/team-soccer/adidas-team",
+      "order": 237,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "8ac7dcff-66e0-46bc-b3c1-99cde2238d39",
+      "parent_id": "6d905620-5bd9-4919-a9b1-fc8dfbadcfab",
+      "label": "Nike Team",
+      "route": "/kits/team-soccer/nike-team",
+      "order": 238,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "66a659db-caa9-4aec-bebb-6ca9906830be",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Goalkeeper",
+      "route": "/kits/goalkeeper",
+      "order": 239,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "264f4564-f06e-44c6-a50a-0d81a965ae5f",
+      "parent_id": "66a659db-caa9-4aec-bebb-6ca9906830be",
+      "label": "Adidas Goalkeeper",
+      "route": "/kits/goalkeeper/adidas-goalkeeper",
+      "order": 240,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a9abc9a4-38d4-4474-9620-dfa77b8c2340",
+      "parent_id": "66a659db-caa9-4aec-bebb-6ca9906830be",
+      "label": "Joma Goalkeeper",
+      "route": "/kits/goalkeeper/joma-goalkeeper",
+      "order": 241,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7e69d65c-0334-463f-bd3c-5ed017c55d57",
+      "parent_id": "66a659db-caa9-4aec-bebb-6ca9906830be",
+      "label": "Rinat Goalkeeper",
+      "route": "/kits/goalkeeper/rinat-goalkeeper",
+      "order": 242,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "80a416fb-d1e7-4229-ba1f-12f049d20c80",
+      "parent_id": "66a659db-caa9-4aec-bebb-6ca9906830be",
+      "label": "Uhlsport Goalkeeper",
+      "route": "/kits/goalkeeper/uhlsport-goalkeeper",
+      "order": 243,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "094b3858-94d2-4fcf-a0cd-aab0309671f4",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Referee",
+      "route": "/kits/referee",
+      "order": 244,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "LaLiga",
+      "route": "/kits/laliga",
+      "order": 245,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0a221d2d-f77c-400c-81c8-2aad01c46542",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Real",
+      "route": "/kits/laliga/real",
+      "order": 246,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0f89882a-f424-44d1-bc56-e5795f510371",
+      "parent_id": "0a221d2d-f77c-400c-81c8-2aad01c46542",
+      "label": "Betis Kit",
+      "route": "/kits/laliga/real/betis-kit",
+      "order": 247,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "52fdaa55-cf41-4f1b-b38a-cfd3ce7cfeb2",
+      "parent_id": "0a221d2d-f77c-400c-81c8-2aad01c46542",
+      "label": "Madrid Kit",
+      "route": "/kits/laliga/real/madrid-kit",
+      "order": 248,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "b563cc6e-a3bb-44d2-9f53-9736647cee1d",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Athletic Bilbao Kit",
+      "route": "/kits/laliga/athletic-bilbao-kit",
+      "order": 249,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2f313fbf-6954-4b94-bff2-f86295f4b181",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Atlético de Madrid Kit",
+      "route": "/kits/laliga/atltico-de-madrid-kit",
+      "order": 250,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c23d4d3d-fdc0-46ac-aba6-3c420565dce3",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Barcelona Kit",
+      "route": "/kits/laliga/barcelona-kit",
+      "order": 251,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "07acf88f-3694-4eb5-8168-740eb728668a",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Espanyol Kit",
+      "route": "/kits/laliga/espanyol-kit",
+      "order": 252,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5d63858d-3ddd-4aaf-a7f3-672db5f57a8d",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Getafe Kit",
+      "route": "/kits/laliga/getafe-kit",
+      "order": 253,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2d219cda-b28a-447c-8def-5605c1a2a171",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Sevilla Kit",
+      "route": "/kits/laliga/sevilla-kit",
+      "order": 254,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d10e60d5-5036-4d27-8f07-11eafaad4549",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Valencia Kit",
+      "route": "/kits/laliga/valencia-kit",
+      "order": 255,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "601c226e-03b4-4476-ae4b-ff484cfbc2cb",
+      "parent_id": "2824c8e9-0e5b-43a6-bdb3-0cb05a3ac792",
+      "label": "Villarreal Kit",
+      "route": "/kits/laliga/villarreal-kit",
+      "order": 256,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f764709f-6119-4f32-816a-4ad31a787a8a",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Premier League",
+      "route": "/kits/premier-league",
+      "order": 257,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e626b242-a1bc-41d7-b56a-6e0c529ef31f",
+      "parent_id": "f764709f-6119-4f32-816a-4ad31a787a8a",
+      "label": "Manchester",
+      "route": "/kits/premier-league/manchester",
+      "order": 258,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3a3a45ab-d4f1-41b0-acf4-21aa3653a37c",
+      "parent_id": "e626b242-a1bc-41d7-b56a-6e0c529ef31f",
+      "label": "City Kit",
+      "route": "/kits/premier-league/manchester/city-kit",
+      "order": 259,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "73ccdfa4-e277-423f-ada4-00334950d09a",
+      "parent_id": "e626b242-a1bc-41d7-b56a-6e0c529ef31f",
+      "label": "United Kit",
+      "route": "/kits/premier-league/manchester/united-kit",
+      "order": 260,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "b4eb205e-e98b-4f0c-bf8d-dd51aae0c821",
+      "parent_id": "f764709f-6119-4f32-816a-4ad31a787a8a",
+      "label": "Arsenal Kit",
+      "route": "/kits/premier-league/arsenal-kit",
+      "order": 261,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "27954285-9242-4393-90db-dd26f7a0f81f",
+      "parent_id": "f764709f-6119-4f32-816a-4ad31a787a8a",
+      "label": "Chelsea Kit",
+      "route": "/kits/premier-league/chelsea-kit",
+      "order": 262,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ebf670d0-7b96-4cdb-9809-5440d5cd1a88",
+      "parent_id": "f764709f-6119-4f32-816a-4ad31a787a8a",
+      "label": "Liverpool Kit",
+      "route": "/kits/premier-league/liverpool-kit",
+      "order": 263,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "2fedd382-2f60-40d1-b481-3e5d4aeedeef",
+      "parent_id": "f764709f-6119-4f32-816a-4ad31a787a8a",
+      "label": "Tottenham Kit",
+      "route": "/kits/premier-league/tottenham-kit",
+      "order": 264,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "1a78ffbf-dbcd-4eab-825a-e34f286a2048",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Ligue 1",
+      "route": "/kits/ligue-1",
+      "order": 265,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c5392529-e2e2-4918-a993-408b5eaeebc8",
+      "parent_id": "1a78ffbf-dbcd-4eab-825a-e34f286a2048",
+      "label": "PSG Kit",
+      "route": "/kits/ligue-1/psg-kit",
+      "order": 266,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "969084af-f452-44f9-ac3c-748f448c345a",
+      "parent_id": "1a78ffbf-dbcd-4eab-825a-e34f286a2048",
+      "label": "Marseille Kit",
+      "route": "/kits/ligue-1/marseille-kit",
+      "order": 267,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5b41064f-b135-4adc-8fd3-298add8a1e6d",
+      "parent_id": "1a78ffbf-dbcd-4eab-825a-e34f286a2048",
+      "label": "Lyon Kit",
+      "route": "/kits/ligue-1/lyon-kit",
+      "order": 268,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "43d33dc8-a5d9-41b9-8525-a1c7933fdfe9",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Serie A",
+      "route": "/kits/serie-a",
+      "order": 269,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5b956875-e0e2-4458-8019-15a396dab84c",
+      "parent_id": "43d33dc8-a5d9-41b9-8525-a1c7933fdfe9",
+      "label": "Inter Milan Kit",
+      "route": "/kits/serie-a/inter-milan-kit",
+      "order": 270,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "32f4c5cf-10bd-47fb-96a4-5d5ffe97a1d6",
+      "parent_id": "43d33dc8-a5d9-41b9-8525-a1c7933fdfe9",
+      "label": "Juventus Kit",
+      "route": "/kits/serie-a/juventus-kit",
+      "order": 271,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e9efcd1c-49b3-4e5e-957b-aa9a4996c78b",
+      "parent_id": "43d33dc8-a5d9-41b9-8525-a1c7933fdfe9",
+      "label": "Roma Kit",
+      "route": "/kits/serie-a/roma-kit",
+      "order": 272,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "bc8a33b2-571d-405a-b4f9-1841dfc3f37d",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Bundesliga",
+      "route": "/kits/bundesliga",
+      "order": 273,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5b4ad02f-67eb-4be6-838b-9e3592b3a0d9",
+      "parent_id": "bc8a33b2-571d-405a-b4f9-1841dfc3f37d",
+      "label": "Bayern Munich Kit",
+      "route": "/kits/bundesliga/bayern-munich-kit",
+      "order": 274,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4d91b476-b91e-4505-8372-1ca21633a542",
+      "parent_id": "bc8a33b2-571d-405a-b4f9-1841dfc3f37d",
+      "label": "Borussia Dortmund Kit",
+      "route": "/kits/bundesliga/borussia-dortmund-kit",
+      "order": 275,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ee656dbb-1244-4bf6-bca9-c627d76eed2e",
+      "parent_id": "bc8a33b2-571d-405a-b4f9-1841dfc3f37d",
+      "label": "Bayer Leverkusen Kit",
+      "route": "/kits/bundesliga/bayer-leverkusen-kit",
+      "order": 276,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "National Team",
+      "route": "/kits/national-team",
+      "order": 277,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e3b15b7d-a39b-428a-89f7-d3536ff1905c",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "Germany Kit",
+      "route": "/kits/national-team/germany-kit",
+      "order": 278,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d0cacfb6-203b-4bef-b74d-6c5ac02de8cd",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "Belgium Kit",
+      "route": "/kits/national-team/belgium-kit",
+      "order": 279,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "98d0ad96-c0f7-477c-8e46-76251590eacf",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "Brazil Kit",
+      "route": "/kits/national-team/brazil-kit",
+      "order": 280,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "064c0a79-81db-470a-878d-affb286810e1",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "Colombia Kit",
+      "route": "/kits/national-team/colombia-kit",
+      "order": 281,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "b3f792ef-9174-4bac-bc29-e861d2774ab9",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "Spain Kit",
+      "route": "/kits/national-team/spain-kit",
+      "order": 282,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "30803f82-d4d4-4974-bdfd-b50b4b75b88c",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "France Kit",
+      "route": "/kits/national-team/france-kit",
+      "order": 283,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "eec9543f-312f-4021-ac47-5e341f53d573",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "England Kit",
+      "route": "/kits/national-team/england-kit",
+      "order": 284,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "9a0014b2-f952-4e3b-879e-8f3781797d1f",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "Italy Kit",
+      "route": "/kits/national-team/italy-kit",
+      "order": 285,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "afcdcf1d-1c3a-4868-ae8d-92d7fcf87c45",
+      "parent_id": "85c31db9-02c1-453d-8b40-7c4dcd5ad9f9",
+      "label": "Portugal Kit",
+      "route": "/kits/national-team/portugal-kit",
+      "order": 286,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "927209a8-e8a8-49f3-a43a-40250c2a31ed",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Women's National Team",
+      "route": "/kits/womens-national-team",
+      "order": 287,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "6ba09c55-4d7a-474d-9f4f-3edf370ca5bf",
+      "parent_id": "23351620-b8e3-4e5c-9495-2cf229dd77bb",
+      "label": "Official Soccer",
+      "route": "/kits/official-soccer",
+      "order": 288,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "eb4a4baa-722e-45dc-9d88-0c50f2098709",
+      "parent_id": "6ba09c55-4d7a-474d-9f4f-3edf370ca5bf",
+      "label": "Home Kit",
+      "route": "/kits/official-soccer/home-kit",
+      "order": 289,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "5be954f1-c015-4eb6-8d93-1ffee1085d3c",
+      "parent_id": "6ba09c55-4d7a-474d-9f4f-3edf370ca5bf",
+      "label": "Away Kit",
+      "route": "/kits/official-soccer/away-kit",
+      "order": 290,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "32a8cdb8-f811-4c66-8b84-4e3a818db3a2",
+      "parent_id": "6ba09c55-4d7a-474d-9f4f-3edf370ca5bf",
+      "label": "Third Kit",
+      "route": "/kits/official-soccer/third-kit",
+      "order": 291,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f58617da-2178-43b7-a77b-a82c12636a9b",
+      "parent_id": "6ba09c55-4d7a-474d-9f4f-3edf370ca5bf",
+      "label": "Goalkeeper Kit",
+      "route": "/kits/official-soccer/goalkeeper-kit",
+      "order": 292,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Apparel",
+      "route": "/apparel",
+      "order": 293,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e1cd636c-c842-4444-8a47-7652e78cf0cc",
+      "parent_id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "label": "Adidas",
+      "route": "/apparel/adidas",
+      "order": 294,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d421b2ad-ce6f-481a-9a3b-028b2e0e5fbb",
+      "parent_id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "label": "Nike",
+      "route": "/apparel/nike",
+      "order": 295,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e9d3606d-1b4d-4077-9d97-f115101a9081",
+      "parent_id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "label": "Puma",
+      "route": "/apparel/puma",
+      "order": 296,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f5c5dcac-5123-4a1d-9d4e-f87261d550bd",
+      "parent_id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "label": "Soccer Training Apparel",
+      "route": "/apparel/soccer-training-apparel",
+      "order": 297,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ac3de65c-f951-4846-84f3-3a05def8fb85",
+      "parent_id": "f5c5dcac-5123-4a1d-9d4e-f87261d550bd",
+      "label": "Jerseys",
+      "route": "/apparel/soccer-training-apparel/jerseys",
+      "order": 298,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ede1f67c-89ff-4eab-897f-30b6fb7430c5",
+      "parent_id": "ac3de65c-f951-4846-84f3-3a05def8fb85",
+      "label": "Tops",
+      "route": "/apparel/soccer-training-apparel/jerseys/tops",
+      "order": 299,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "47209766-2b8a-40ae-b5d8-db9ebbcac8be",
+      "parent_id": "f5c5dcac-5123-4a1d-9d4e-f87261d550bd",
+      "label": "Pants",
+      "route": "/apparel/soccer-training-apparel/pants",
+      "order": 300,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "3aa6abe1-9252-400e-ab42-5981e6290459",
+      "parent_id": "47209766-2b8a-40ae-b5d8-db9ebbcac8be",
+      "label": "Shorts",
+      "route": "/apparel/soccer-training-apparel/pants/shorts",
+      "order": 301,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "927caee3-7daa-4fac-8e2a-13166e6c7952",
+      "parent_id": "47209766-2b8a-40ae-b5d8-db9ebbcac8be",
+      "label": "Long Training Pants",
+      "route": "/apparel/soccer-training-apparel/pants/long-training-pants",
+      "order": 302,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "da24ea35-a999-4441-8b9a-82422f9e5d8c",
+      "parent_id": "f5c5dcac-5123-4a1d-9d4e-f87261d550bd",
+      "label": "Jackets",
+      "route": "/apparel/soccer-training-apparel/jackets",
+      "order": 303,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "0c9edd7e-4f4e-4cf8-ac31-53012e101b97",
+      "parent_id": "f5c5dcac-5123-4a1d-9d4e-f87261d550bd",
+      "label": "Hoodies",
+      "route": "/apparel/soccer-training-apparel/hoodies",
+      "order": 304,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "55aba0a9-dfc0-4e44-9d11-3751d6aa0be4",
+      "parent_id": "f5c5dcac-5123-4a1d-9d4e-f87261d550bd",
+      "label": "Tracksuits",
+      "route": "/apparel/soccer-training-apparel/tracksuits",
+      "order": 305,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7cc20187-1215-4b42-9680-b92c5a01b4aa",
+      "parent_id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "label": "Team",
+      "route": "/apparel/team",
+      "order": 306,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "7651a60b-e5c9-4ed0-99a3-f55ab4207c3d",
+      "parent_id": "7cc20187-1215-4b42-9680-b92c5a01b4aa",
+      "label": "Jerseys",
+      "route": "/apparel/team/jerseys",
+      "order": 307,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d5b95f53-11fb-479d-88c2-b86d76244279",
+      "parent_id": "7cc20187-1215-4b42-9680-b92c5a01b4aa",
+      "label": "Pants",
+      "route": "/apparel/team/pants",
+      "order": 308,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "c7a1cd0d-af32-4049-ad2f-e20f7cca8566",
+      "parent_id": "d5b95f53-11fb-479d-88c2-b86d76244279",
+      "label": "Shorts",
+      "route": "/apparel/team/pants/shorts",
+      "order": 309,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e1a15ef1-7f63-488c-a74d-e9dabc5f87d6",
+      "parent_id": "d5b95f53-11fb-479d-88c2-b86d76244279",
+      "label": "Team Long Training Pants",
+      "route": "/apparel/team/pants/team-long-training-pants",
+      "order": 310,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f8188c4b-67af-4ac5-a0b2-f8d81cb3ad61",
+      "parent_id": "7cc20187-1215-4b42-9680-b92c5a01b4aa",
+      "label": "Hoodies",
+      "route": "/apparel/team/hoodies",
+      "order": 311,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "ac24b277-3548-4e48-af6c-12ee7201a194",
+      "parent_id": "7cc20187-1215-4b42-9680-b92c5a01b4aa",
+      "label": "Tracksuits",
+      "route": "/apparel/team/tracksuits",
+      "order": 312,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "98d65ad3-d84a-45cc-abb5-44578dbc1a91",
+      "parent_id": "7cc20187-1215-4b42-9680-b92c5a01b4aa",
+      "label": "Jackets",
+      "route": "/apparel/team/jackets",
+      "order": 313,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "b709241f-ab8e-400e-99c8-c7aa8ac2d113",
+      "parent_id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "label": "Gloves",
+      "route": "/apparel/gloves",
+      "order": 314,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "26d2c624-7f1d-4763-8c46-01b4ecdeee03",
+      "parent_id": "7fe7c4fe-dc82-4bd3-b9ed-d739df2d332a",
+      "label": "Beanies and Hats",
+      "route": "/apparel/beanies-and-hats",
+      "order": 315,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "parent_id": "d1cd85f3-b9ec-4457-b5f7-ad75252ae95c",
+      "label": "Clothing",
+      "route": "/clothing",
+      "order": 316,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "92749dab-3487-4538-867a-01fb1de66209",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Soy",
+      "route": "/clothing/soy",
+      "order": 317,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "9e774152-181e-43c8-9f53-2a0c5c46d04d",
+      "parent_id": "92749dab-3487-4538-867a-01fb1de66209",
+      "label": "Futbolmaniaco",
+      "route": "/clothing/soy/futbolmaniaco",
+      "order": 318,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "de281a22-b138-4317-ad0c-84d39aab6c9b",
+      "parent_id": "9e774152-181e-43c8-9f53-2a0c5c46d04d",
+      "label": "Culé",
+      "route": "/clothing/soy/futbolmaniaco/cul",
+      "order": 319,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "db7479f4-0fd3-467d-9283-2cf146b21aa4",
+      "parent_id": "9e774152-181e-43c8-9f53-2a0c5c46d04d",
+      "label": "PSG",
+      "route": "/clothing/soy/futbolmaniaco/psg",
+      "order": 320,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "d884f4cd-1ed7-4d09-aa55-b5f944d8c335",
+      "parent_id": "9e774152-181e-43c8-9f53-2a0c5c46d04d",
+      "label": "Colchonero",
+      "route": "/clothing/soy/futbolmaniaco/colchonero",
+      "order": 321,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "4ff63fa2-7d46-4d7c-ac2c-c4da6f79f253",
+      "parent_id": "9e774152-181e-43c8-9f53-2a0c5c46d04d",
+      "label": "Madridista",
+      "route": "/clothing/soy/futbolmaniaco/madridista",
+      "order": 322,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "79b81303-6cdd-4e9a-99de-7414fe6f6f77",
+      "parent_id": "92749dab-3487-4538-867a-01fb1de66209",
+      "label": "Futbolmaniaca",
+      "route": "/clothing/soy/futbolmaniaca",
+      "order": 323,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "336f69c0-7a48-4975-a70d-5f5c2fc36a94",
+      "parent_id": "79b81303-6cdd-4e9a-99de-7414fe6f6f77",
+      "label": "Culé",
+      "route": "/clothing/soy/futbolmaniaca/cul",
+      "order": 324,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "f41b253a-a56d-4bd2-82fc-bd4773d00e68",
+      "parent_id": "79b81303-6cdd-4e9a-99de-7414fe6f6f77",
+      "label": "Colchonera",
+      "route": "/clothing/soy/futbolmaniaca/colchonera",
+      "order": 325,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "658d9b1d-bf94-45bb-88fe-cca359fd3145",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Adidas",
+      "route": "/clothing/adidas",
+      "order": 326,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a965c1e7-780e-4ab1-9b7c-2c2ed69625f5",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Joma",
+      "route": "/clothing/joma",
+      "order": 327,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "53deb330-e36d-454b-b2c6-82a5404fc186",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Kelme",
+      "route": "/clothing/kelme",
+      "order": 328,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "169166bd-7afe-45c8-9850-cfdfe8ca42c1",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Macron",
+      "route": "/clothing/macron",
+      "order": 329,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "a346eced-77e0-4622-83c2-afea56bc3513",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "New Balance",
+      "route": "/clothing/new-balance",
+      "order": 330,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "e977545c-e836-4cd3-befd-70e7a333757b",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Nike",
+      "route": "/clothing/nike",
+      "order": 331,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "139d5578-214a-4514-8969-3b5cc66dd2ec",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Puma",
+      "route": "/clothing/puma",
+      "order": 332,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    },
+    {
+      "id": "19b3acac-bcbd-40ec-84e2-dbcffd6137c7",
+      "parent_id": "46b13030-3052-496f-92c9-47cb026281d2",
+      "label": "Goalkeeper",
+      "route": "/clothing/goalkeeper",
+      "order": 333,
+      "created_at": "2026-08-23T14:51:06.210368+00:00",
+      "updated_at": "2026-08-23T14:51:06.210368+00:00"
+    }
+  ]
+}

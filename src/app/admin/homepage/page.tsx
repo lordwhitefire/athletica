@@ -3,8 +3,7 @@
 import { Suspense } from "react";
 import { InteractionProvider, useDashboardInteraction } from "@/components/admin/dashboard-v2/interaction-store";
 import SpecSidebar from "@/components/admin/dashboard-v2/SpecSidebar";
-import { HomepageManagementInteractionLayer } from "@/components/admin/homepage-management/HomepageManagementInteractionLayer";
-import { HomepageManagementPresentation } from "@/components/admin/homepage-management/HomepageManagementPresentation";
+import HomepageManager from "@/components/admin/dashboard-v2/HomepageManager";
 
 function MobileTopbar() {
     const { openMobileSidebar } = useDashboardInteraction();
@@ -35,9 +34,7 @@ function HomepageBody() {
                 </div>
             }
         >
-            <HomepageManagementInteractionLayer>
-                <HomepageManagementPresentation />
-            </HomepageManagementInteractionLayer>
+            <HomepageManager />
         </Suspense>
     );
 }

@@ -104,7 +104,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                             </span>
 
                             {/* Member price */}
-                            {product.price.discount_percent > 0 && (
+                            {product.price.member_price > 0 && (
                                 <div className="flex flex-col items-end text-secondary leading-none gap-0.5">
                                     <span className="text-[10px]">
                                         member {product.price.currency}

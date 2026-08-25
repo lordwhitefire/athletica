@@ -1,23 +1,26 @@
-"use client";
+import { getSiteSettingsDoc } from "@/lib/actions/siteSettings";
+import { getMainCategoryHref, getMainCategoryLabel } from "@/lib/content/content-service";
+import SettingsClient from "./SettingsClient";
 
-import { useAuth } from "@/context/AuthContext";
-import AdminSettingsPage from "@/components/admin/admin-settings/AdminSettingsPage";
+export const dynamic = "force-dynamic";
 
-export default function AdminSettingsRoute() {
-    const { auth } = useAuth();
-    const user = auth.user;
-    const role = user?.role === "admin" ? "Owner" : user?.role ? user.role.charAt(0).toUpperCase() + user.role.slice(1) : "Owner";
-    const memberSince = user?.createdAt
-        ? new Date(user.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
-        : "May 13, 2025";
+export default async function AdminSettingsRoute() {
+    // Site-settings capability merged in from the retired /admin/site-settings
+    // page (WP5 archive-after-parity): the same editor now lives inside the
+    // dashboard-v2 shell under /admin/settings.
+    const [siteSettings, mainCategoryHref, mainCategoryLabel] = await Promise.all([
+        getSiteSettingsDoc(),
+        getMainCategoryHref(),
+        getMainCategoryLabel(),
+    ]);
 
     return (
-        <AdminSettingsPage
-            profile={{
-                name: user?.name || "Admin",
-                email: user?.email || "admin@athletica.com",
-                role,
-                memberSince,
+        <SettingsClient
+            siteSettings={{
+                doc: siteSettings.data,
+                mainCategoryHref,
+                mainCategoryLabel,
+                loadError: siteSettings.error?.message ?? null,
             }}
         />
     );

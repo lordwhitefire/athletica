@@ -19,6 +19,7 @@ export type CatalogProduct = {
   clicks: number;
   addedAt: string;
   missingData: MissingData;
+  leafModelId?: string | null;
 };
 
 export type CatalogFilters = {

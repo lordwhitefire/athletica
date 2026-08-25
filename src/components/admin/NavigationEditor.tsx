@@ -32,6 +32,12 @@ export default function NavigationEditor({ doc }: Props) {
     }, [errorMessage]);
 
     const items = (doc?.items as Record<string, unknown>[]) || [];
+    const meta = (doc?._meta as { loaded_row_ids?: unknown; loaded_fingerprint?: unknown } | undefined) ?? {};
+    const loadedRowIds = Array.isArray(meta.loaded_row_ids)
+        ? (meta.loaded_row_ids as string[])
+        : [];
+    const loadedFingerprint =
+        typeof meta.loaded_fingerprint === "string" ? meta.loaded_fingerprint : "";
     const [navItems, setNavItems] = useState<Record<string, unknown>[]>(items);
     const [saving, setSaving] = useState(false);
 
@@ -39,14 +45,16 @@ export default function NavigationEditor({ doc }: Props) {
         setErrorMessage(null);
         setSaving(true);
         try {
-            const result = await saveNavigation(navItems);
+            const result = await saveNavigation(navItems, loadedRowIds, false, loadedFingerprint);
             if (result.error) {
                 setErrorMessage(result.error.message);
                 return;
             }
             markClean();
             setLastSaved(Date.now());
-            router.refresh();
+            // Keep the form locked until the router refresh remounts it with
+            // fresh server data, otherwise late edits get wiped by the remount.
+            await router.refresh();
         } catch (err) {
             logger.error(err, "NavigationEditor error");
             setErrorMessage("Failed to save");
@@ -112,10 +120,7 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
 }) {
     const [expanded, setExpanded] = useState(true);
     const children = (item.children as Record<string, unknown>[]) || [];
-    const customLinks = (item.customLinks as Record<string, unknown>[]) || [];
-    const sizeLinks = (item.sizeLinks as Record<string, unknown>[]) || [];
-    const bottomLinks = (item.bottomLinks as Record<string, unknown>[]) || [];
-    const hasChildren = children.length > 0 || customLinks.length > 0 || sizeLinks.length > 0 || bottomLinks.length > 0;
+    const hasChildren = children.length > 0;
 
     function updateField(field: string, value: string) {
         const updated = [...items];
@@ -144,35 +149,6 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
         setItems(updated);
     }
 
-    function addLinkTo(arrName: "customLinks" | "sizeLinks" | "bottomLinks") {
-        const newLink: Record<string, unknown> = { label: "", href: "/", description: "" };
-        const updated = [...items];
-        const target = { ...updated[index] };
-        target[arrName] = [...(target[arrName] as Record<string, unknown>[] || []), newLink];
-        updated[index] = target;
-        setItems(updated);
-    }
-
-    function updateLink(arrName: "customLinks" | "sizeLinks" | "bottomLinks", linkIndex: number, field: string, value: string) {
-        const updated = [...items];
-        const target = { ...updated[index] };
-        const arr = [...(target[arrName] as Record<string, unknown>[] || [])];
-        arr[linkIndex] = { ...arr[linkIndex], [field]: value };
-        target[arrName] = arr;
-        updated[index] = target;
-        setItems(updated);
-    }
-
-    function removeLink(arrName: "customLinks" | "sizeLinks" | "bottomLinks", linkIndex: number) {
-        const updated = [...items];
-        const target = { ...updated[index] };
-        const arr = [...(target[arrName] as Record<string, unknown>[] || [])];
-        arr.splice(linkIndex, 1);
-        target[arrName] = arr;
-        updated[index] = target;
-        setItems(updated);
-    }
-
     const indentStyle = { marginLeft: `${Math.min(depth * 24, 60)}px` };
 
     return (
@@ -187,9 +163,6 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                     className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary" />
                 <AutoSuggest value={item.href as string || ""} onChange={(v) => updateField("href", v)}
                     fetchSuggestions={suggestRoutes} label="Href" hideLabel className="flex-1 min-w-0 basis-[100px]" placeholder="/path" />
-                <input value={item.description as string || ""} onChange={(e) => updateField("description", e.target.value)}
-                    placeholder="Description (optional)"
-                    className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-xs focus:outline-none focus:border-primary hidden md:block" />
                 <button onClick={remove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-none">
                     <span className="material-symbols-outlined text-[14px]">close</span>
                 </button>
@@ -209,69 +182,8 @@ function NavTreeItem({ item, index, items, setItems, depth = 0 }: {
                     <button onClick={addChild} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5">
                         <span className="material-symbols-outlined text-[12px]">add</span> Add Sub-Item
                     </button>
-
-                    {/* Custom Links */}
-                    {customLinks.length > 0 && (
-                        <div className="mt-2 pt-2 border-t border-neutral-700">
-                            <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-medium">Custom Links</span>
-                            {customLinks.map((link, li) => (
-                                <LinkRow key={li} link={link} onChange={(f, v) => updateLink("customLinks", li, f, v)} onRemove={() => removeLink("customLinks", li)} />
-                            ))}
-                        </div>
-                    )}
-                    <button onClick={() => addLinkTo("customLinks")} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5 mt-1">
-                        <span className="material-symbols-outlined text-[12px]">add</span> Add Custom Link
-                    </button>
-
-                    {/* Size Links */}
-                    {sizeLinks.length > 0 && (
-                        <div className="mt-2 pt-2 border-t border-neutral-700">
-                            <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-medium">Size Links</span>
-                            {sizeLinks.map((link, li) => (
-                                <LinkRow key={li} link={link} onChange={(f, v) => updateLink("sizeLinks", li, f, v)} onRemove={() => removeLink("sizeLinks", li)} />
-                            ))}
-                        </div>
-                    )}
-                    <button onClick={() => addLinkTo("sizeLinks")} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5 mt-1">
-                        <span className="material-symbols-outlined text-[12px]">add</span> Add Size Link
-                    </button>
-
-                    {/* Bottom Links */}
-                    {bottomLinks.length > 0 && (
-                        <div className="mt-2 pt-2 border-t border-neutral-700">
-                            <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-medium">Bottom Links</span>
-                            {bottomLinks.map((link, li) => (
-                                <LinkRow key={li} link={link} onChange={(f, v) => updateLink("bottomLinks", li, f, v)} onRemove={() => removeLink("bottomLinks", li)} />
-                            ))}
-                        </div>
-                    )}
-                    <button onClick={() => addLinkTo("bottomLinks")} className="text-[10px] text-primary hover:text-primary font-medium flex items-center gap-0.5 mt-1">
-                        <span className="material-symbols-outlined text-[12px]">add</span> Add Bottom Link
-                    </button>
                 </div>
             )}
-        </div>
-    );
-}
-
-function LinkRow({ link, onChange, onRemove }: {
-    link: Record<string, unknown>;
-    onChange: (field: string, value: string) => void;
-    onRemove: () => void;
-}) {
-    return (
-        <div className="flex flex-wrap items-center gap-2 mt-1">
-            <input value={link.label as string || ""} onChange={(e) => onChange("label", e.target.value)}
-                placeholder="Label"
-                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-primary" />
-            <AutoSuggest value={link.href as string || ""} onChange={(v) => onChange("href", v)}
-                fetchSuggestions={suggestRoutes} label="Href" hideLabel className="flex-1 min-w-0 basis-[100px]" placeholder="/path" />
-            <input value={link.description as string || ""} onChange={(e) => onChange("description", e.target.value)}
-                placeholder="Description"
-                className="flex-1 min-w-0 basis-[100px] px-2 py-1 bg-neutral-800 border border-neutral-700 text-white rounded text-[11px] focus:outline-none focus:border-primary hidden md:block" />
-            <button onClick={onRemove} className="text-zinc-500 hover:text-red-500 p-0.5 flex-none">
-                <span className="material-symbols-outlined text-[12px]">close</span>
-            </button>
         </div>
     );
 }

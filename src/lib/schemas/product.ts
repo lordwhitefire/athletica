@@ -35,6 +35,7 @@ export const productFormSchema = z.object({
         .string()
         .regex(/^$|^[A-Z0-9]{10}$/i, "ASIN must be 10 letters/digits.")
         .default(""),
+    status: z.enum(["published", "unpublished"]).optional(),
     id: z.string().optional(),
 });
 

@@ -4,6 +4,7 @@ import { InteractionProvider, useDashboardInteraction } from "@/components/admin
 import SpecSidebar from "@/components/admin/dashboard-v2/SpecSidebar";
 import { AdminSettingsInteractionLayer } from "./AdminSettingsInteractionLayer";
 import { AdminSettingsPresentation } from "./AdminSettingsPresentation";
+import SiteSettingsForm from "./SiteSettingsForm";
 import type { AdminProfile } from "./use-admin-settings";
 
 function MobileTopbar() {
@@ -24,7 +25,13 @@ function MobileTopbar() {
     );
 }
 
-export default function AdminSettingsPage({ profile }: { profile: AdminProfile }) {
+export default function AdminSettingsPage({
+    profile,
+    siteSettings,
+}: {
+    profile: AdminProfile;
+    siteSettings?: { doc: Record<string, unknown> | null; mainCategoryHref: string; mainCategoryLabel: string };
+}) {
     return (
         <InteractionProvider>
             <SpecSidebar />
@@ -33,6 +40,15 @@ export default function AdminSettingsPage({ profile }: { profile: AdminProfile }
                 <AdminSettingsInteractionLayer profile={profile}>
                     <AdminSettingsPresentation />
                 </AdminSettingsInteractionLayer>
+                {siteSettings && (
+                    <section className="px-6 pb-16 max-w-3xl mt-8">
+                        <SiteSettingsForm
+                            doc={siteSettings.doc}
+                            mainCategoryHref={siteSettings.mainCategoryHref}
+                            mainCategoryLabel={siteSettings.mainCategoryLabel}
+                        />
+                    </section>
+                )}
             </div>
         </InteractionProvider>
     );

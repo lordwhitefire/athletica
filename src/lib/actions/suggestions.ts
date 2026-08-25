@@ -210,6 +210,8 @@ export async function suggestRoutes(query: string): Promise<ApiResult<string[]>>
       adminSupabase.from("products").select("slug").order("slug").limit(20),
       adminSupabase.from("navigation").select("route").not("route", "is", null),
     ]);
+    if (productRes.error) throw productRes.error;
+    if (navRes.error) throw navRes.error;
     const productRoutes = (productRes.data ?? []).map((p) => p.slug);
     const navRoutes = (navRes.data ?? [])
       .map((n) => n.route as string)

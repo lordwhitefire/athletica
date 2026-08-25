@@ -1,25 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { urlFor } from "@/lib/sanity-client";
-import type { SanityImageSource } from "@sanity/image-url";
+import { useRouter } from "next/navigation";
 import {
   CatalogProduct,
   INITIAL_CATALOG_STATE,
   ProductCatalogState,
-  ProductStatus,
   catalogReducer,
   filterProducts,
   formatCurrency,
 } from "./product-catalog.interactions";
-
-function assetThumbUrl(assetId: string): string {
-  try {
-    return urlFor({ _ref: assetId } as SanityImageSource).width(200).url();
-  } catch {
-    return "";
-  }
-}
 
 type Props = {
   products: CatalogProduct[];
@@ -30,7 +20,6 @@ type Props = {
   kpis?: React.ReactNode;
   onSearch?: (query: string) => void;
   onFilter?: (filters: ProductCatalogState["filters"]) => void;
-  onCreateProduct?: (payload: Record<string, unknown>) => Promise<void>;
   onUpdateProduct?: (
     id: string,
     payload: Record<string, unknown>,
@@ -112,240 +101,6 @@ function SurfaceShell({
         {children}
       </section>
     </div>
-  );
-}
-
-function ProductEditorSurface({
-  mode,
-  product,
-  categories,
-  brands,
-  onClose,
-  onSubmit,
-}: {
-  mode: "create" | "edit";
-  product?: CatalogProduct;
-  categories: string[];
-  brands: string[];
-  onClose: () => void;
-  onSubmit: (payload: Record<string, unknown>) => Promise<void>;
-}) {
-  const [name, setName] = React.useState(product?.name ?? "");
-  const [sku, setSku] = React.useState(product?.sku ?? "");
-  const [price, setPrice] = React.useState(String(product?.price ?? ""));
-  const [brand, setBrand] = React.useState(product?.brand ?? "");
-  const [category, setCategory] = React.useState(product?.category ?? "");
-  const [asin, setAsin] = React.useState(product?.asin ?? "");
-  const [model, setModel] = React.useState("");
-  const [images, setImages] = React.useState<string[]>([]);
-  const [uploadingImage, setUploadingImage] = React.useState(false);
-  const imageFileRef = React.useRef<HTMLInputElement>(null);
-  const [status, setStatus] = React.useState<ProductStatus>(
-    product?.status ?? "unpublished",
-  );
-  const [saving, setSaving] = React.useState(false);
-  const [submitError, setSubmitError] = React.useState<string | null>(null);
-
-  async function handleImageUpload(event: React.ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0];
-    if (!file) return;
-    setUploadingImage(true);
-    try {
-      const fd = new FormData();
-      fd.append("file", file);
-      const res = await fetch("/api/admin/media/upload", { method: "POST", body: fd });
-      const json = await res.json();
-      if (!res.ok || json.error) {
-        throw new Error(json.error?.message || "Upload failed");
-      }
-      setImages((prev) => [...prev, json.data._id]);
-    } catch (err) {
-      setSubmitError(err instanceof Error ? err.message : "Upload failed");
-    } finally {
-      setUploadingImage(false);
-      if (imageFileRef.current) imageFileRef.current.value = "";
-    }
-  }
-
-  const submit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    setSaving(true);
-    setSubmitError(null);
-
-    try {
-      await onSubmit({
-        name,
-        sku,
-        price: Number(price),
-        brand,
-        category,
-        asin: asin || null,
-        model,
-        images,
-        status,
-      });
-    } catch (err) {
-      setSubmitError(err instanceof Error ? err.message : "Save failed. Please try again.");
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  return (
-    <SurfaceShell
-      onClose={onClose}
-      labelledBy="product-editor-title"
-    >
-      <form onSubmit={submit} data-product-editor>
-        <header>
-          <p>{mode === "create" ? "Catalog" : "Product"}</p>
-          <h2 id="product-editor-title">
-            {mode === "create" ? "Add Product" : "Edit Product"}
-          </h2>
-        </header>
-
-        <label>
-          Product name
-          <input value={name} onChange={(e) => setName(e.target.value)} required />
-        </label>
-
-        <label>
-          SKU
-          <input
-            value={sku}
-            onChange={(e) => setSku(e.target.value)}
-            placeholder="Auto-generated from name when empty"
-          />
-        </label>
-
-        <label>
-          Model
-          <input
-            value={model}
-            onChange={(e) => setModel(e.target.value)}
-            placeholder="e.g. Football Boots/FG/Mercurial Vapor"
-          />
-        </label>
-
-        <div>
-          <span>Images</span>
-          <div className="flex items-center justify-between gap-2">
-            <span className="text-xs opacity-60">
-              {images.length === 0 ? "No images yet." : `${images.length} image(s) added.`}
-            </span>
-            <label
-              className={`cursor-pointer text-xs px-2 py-1 rounded border border-current ${uploadingImage ? "opacity-50 pointer-events-none" : ""}`}
-            >
-              {uploadingImage ? "Uploading…" : "Add Image"}
-              <input
-                ref={imageFileRef}
-                type="file"
-                accept="image/*"
-                onChange={handleImageUpload}
-                className="hidden"
-              />
-            </label>
-          </div>
-          {images.length > 0 && (
-            <div className="mt-2 grid grid-cols-4 gap-2">
-              {images.map((assetId, i) => (
-                <div
-                  key={`${assetId}-${i}`}
-                  className="relative aspect-square overflow-hidden rounded bg-black/30"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={assetThumbUrl(assetId)} alt="" className="h-full w-full object-cover" />
-                  <button
-                    type="button"
-                    onClick={() => setImages((prev) => prev.filter((_, j) => j !== i))}
-                    className="absolute right-1 top-1 flex h-5 w-5 items-center justify-center rounded bg-red-600 text-[10px] text-white"
-                  >
-                    ×
-                  </button>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        <label>
-          Price
-          <input
-            type="number"
-            min="0"
-            step="0.01"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-            required
-          />
-        </label>
-
-        <label>
-          Brand
-          <select value={brand} onChange={(e) => setBrand(e.target.value)} required>
-            <option value="">Select brand</option>
-            {brands.map((item) => (
-              <option value={item} key={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        <label>
-          Category
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            required
-          >
-            <option value="">Select category</option>
-            {categories.map((item) => (
-              <option value={item} key={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        <label>
-          Amazon ASIN
-          <input
-            value={asin}
-            onChange={(e) => setAsin(e.target.value)}
-            placeholder="Optional"
-          />
-        </label>
-
-        <label>
-          Status
-          <select
-            value={status}
-            onChange={(e) =>
-              setStatus(e.target.value as ProductStatus)
-            }
-          >
-            <option value="published">Published</option>
-            <option value="unpublished">Unpublished</option>
-          </select>
-        </label>
-
-        {submitError && (
-          <p role="alert" className="rounded border border-red-900 bg-red-950/40 px-3 py-2 text-xs text-red-300">
-            {submitError}
-          </p>
-        )}
-
-        <footer>
-          <button type="button" onClick={onClose}>
-            Cancel
-          </button>
-          <button type="submit" disabled={saving}>
-            {saving ? "Saving…" : mode === "create" ? "Add Product" : "Save Changes"}
-          </button>
-        </footer>
-      </form>
-    </SurfaceShell>
   );
 }
 
@@ -636,12 +391,12 @@ export default function ProductCatalogInteractionLayer({
   kpis,
   onSearch,
   onFilter,
-  onCreateProduct,
   onUpdateProduct,
   onDeleteProduct,
   onBulkAction,
   onExport,
 }: Props) {
+  const router = useRouter();
   const [state, dispatch] = React.useReducer(
     catalogReducer,
     INITIAL_CATALOG_STATE,
@@ -817,12 +572,7 @@ export default function ProductCatalogInteractionLayer({
               type="button"
               className="btn btn-primary"
               data-existing-control="add-product"
-              onClick={() =>
-                dispatch({
-                  type: "OPEN_DIALOG",
-                  dialog: "add-product",
-                })
-              }
+              onClick={() => router.push("/admin/products/new")}
             >
               <span className="material-symbols-outlined btn-icon">add</span>
               Add Product
@@ -1216,11 +966,7 @@ export default function ProductCatalogInteractionLayer({
                           title="Edit"
                           aria-label={`Edit ${product.name}`}
                           onClick={() =>
-                            dispatch({
-                              type: "OPEN_DIALOG",
-                              dialog: "edit-product",
-                              product,
-                            })
+                            router.push(`/admin/products/${product.id}/edit`)
                           }
                         >
                           <span className="material-symbols-outlined">edit</span>
@@ -1251,11 +997,7 @@ export default function ProductCatalogInteractionLayer({
                             <button
                               role="menuitem"
                               onClick={() =>
-                                dispatch({
-                                  type: "OPEN_DIALOG",
-                                  dialog: "edit-product",
-                                  product,
-                                })
+                                router.push(`/admin/products/${product.id}/edit`)
                               }
                             >
                               Edit Product
@@ -1415,47 +1157,6 @@ export default function ProductCatalogInteractionLayer({
       {/* ============================================================
           INTERACTION SURFACES
           ============================================================ */}
-
-      {state.openDialog === "add-product" && (
-        <ProductEditorSurface
-          mode="create"
-          categories={categories}
-          brands={brands}
-          onClose={() => dispatch({ type: "CLOSE_DIALOG" })}
-          onSubmit={async (payload) => {
-            await onCreateProduct?.(payload);
-            dispatch({
-              type: "SET_TOAST",
-              toast: {
-                message: "Product created",
-                tone: "success",
-              },
-            });
-            dispatch({ type: "CLOSE_DIALOG" });
-          }}
-        />
-      )}
-
-      {state.openDialog === "edit-product" && state.editingProduct && (
-        <ProductEditorSurface
-          mode="edit"
-          product={state.editingProduct}
-          categories={categories}
-          brands={brands}
-          onClose={() => dispatch({ type: "CLOSE_DIALOG" })}
-          onSubmit={async (payload) => {
-            await onUpdateProduct?.(state.editingProduct!.id, payload);
-            dispatch({
-              type: "SET_TOAST",
-              toast: {
-                message: "Product saved",
-                tone: "success",
-              },
-            });
-            dispatch({ type: "CLOSE_DIALOG" });
-          }}
-        />
-      )}
 
       {state.openDialog === "delete-product" &&
         state.editingProduct && (

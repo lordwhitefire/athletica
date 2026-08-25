@@ -89,6 +89,23 @@ function rowErrorMessage(err: unknown): string {
     return err instanceof Error ? err.message : "Unknown error";
 }
 
+// FR3-F idempotency: a rapid double-click re-invokes the action with the
+// exact same validated rows. Memoizing the result per batch fingerprint makes
+// the replay a no-op — zero duplicate inserts, same response. Bounded to the
+// last 50 imports so the map cannot grow unbounded in a long-lived process.
+const importMemo = new Map<string, ApiResult<BatchUploadCreateResult>>();
+const IMPORT_MEMO_MAX = 50;
+
+function stableValue(v: unknown): unknown {
+    if (Array.isArray(v)) return v.map(stableValue);
+    if (v && typeof v === "object") {
+        return Object.keys(v as object)
+            .sort()
+            .map((k) => [k, stableValue((v as Record<string, unknown>)[k])]);
+    }
+    return v;
+}
+
 export async function batchCreateProducts(
     rows: BatchProcessedRow[]
 ): Promise<ApiResult<BatchUploadCreateResult>> {
@@ -96,6 +113,16 @@ export async function batchCreateProducts(
         const parsed = batchProcessedRowSchema.array().safeParse(rows);
         if (!parsed.success) {
             return fail("validation_error", "invalid_rows", "One or more rows failed validation before import.");
+        }
+
+        const fingerprint = JSON.stringify(stableValue(parsed.data));
+        const cached = importMemo.get(fingerprint);
+        if (cached) {
+            return ok({ ...cached.data!, results: cached.data!.results.map((r) => ({ ...r })) });
+        }
+        if (importMemo.size >= IMPORT_MEMO_MAX) {
+            const oldest = importMemo.keys().next().value;
+            if (oldest !== undefined) importMemo.delete(oldest);
         }
 
         const results: BatchUploadCreateResult["results"] = [];
@@ -162,6 +189,9 @@ export async function batchCreateProducts(
                 results.push({ index: i, id: productId, success: false, error: rowErrorMessage(err) });
             }
         }
+
+        const result: BatchUploadCreateResult = { created, failed, results };
+        importMemo.set(fingerprint, ok(result));
 
         revalidateTag("products", "max");
         revalidatePath("/admin/products");
