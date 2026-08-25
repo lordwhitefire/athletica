@@ -157,11 +157,11 @@ function btnClass(variant: "outline" | "primary" | "ghost" | "danger") {
     }
 }
 
-export default function CategoryManagementInteractionLayer() {
+export default function CategoryManagementInteractionLayer({ initialTree }: { initialTree: CategoryNode[] }) {
     const searchParams = useSearchParams();
     const router = useRouter();
 
-    const [tree, setTree] = React.useState<CategoryNode[]>([]);
+    const [tree, setTree] = React.useState<CategoryNode[]>(initialTree);
     const [workspace, setWorkspace] = React.useState<Record<string, CategoryWorkspaceData>>({});
     const [selectedCategoryId, setSelectedCategoryId] = React.useState("all");
     const [expandedIds, setExpandedIds] = React.useState<Set<string>>(() => new Set(["all"]));
@@ -351,10 +351,6 @@ export default function CategoryManagementInteractionLayer() {
             setTreeError(err instanceof Error ? err.message : "Could not load categories.");
         }
     }, []);
-
-    React.useEffect(() => {
-        loadCategories();
-    }, [loadCategories]);
 
     const selectedNode = findCategory(tree, selectedCategoryId);
     const selectedData: CategoryWorkspaceData = selectedNode

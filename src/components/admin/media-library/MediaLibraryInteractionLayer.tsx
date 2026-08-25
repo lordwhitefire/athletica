@@ -27,10 +27,12 @@ export function useMediaLibraryModel() {
 
 export function MediaLibraryInteractionLayer({
   children,
+  initialAssets,
 }: {
   children: ReactNode;
+  initialAssets: import("./media-library.types").MediaAsset[];
 }) {
-  const model = useMediaLibrary();
+  const model = useMediaLibrary(initialAssets);
 
   return (
     <MediaLibraryContext.Provider value={{ model }}>

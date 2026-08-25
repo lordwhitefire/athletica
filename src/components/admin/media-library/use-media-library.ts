@@ -94,14 +94,14 @@ const PROFILE_OPTIONS: PopoverOption[] = [
   { value: "logout", label: "Sign out", dividerBefore: true },
 ];
 
-export function useMediaLibrary() {
+export function useMediaLibrary(initialAssets: MediaAsset[]) {
   const [persisted] = useState<PersistedMediaState>(loadPersisted);
 
   const [state, setState] = useState<MediaLibraryState>(() => {
     const p = persisted as PersistedMediaState;
     return {
-      assets: [],
-      loading: true,
+      assets: initialAssets,
+      loading: false,
       loadError: null,
       query: "",
       type: "All Types",
@@ -164,12 +164,6 @@ export function useMediaLibrary() {
       .filter((a): a is MediaAsset => a !== null);
     setState((cur) => ({ ...cur, assets, loading: false, loadError: null }));
   }, []);
-
-  useEffect(() => {
-    void (async () => {
-      await reloadAssets();
-    })();
-  }, [reloadAssets]);
 
   const notify = useCallback((message: string, type: "success" | "error" = "success") => {
     const id = ++toastId.current;

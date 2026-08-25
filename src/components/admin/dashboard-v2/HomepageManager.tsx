@@ -847,19 +847,34 @@ function ProductCarouselEditor({
 // Main manager
 // ---------------------------------------------------------------------------
 
-export default function HomepageManager() {
-    const [loading, setLoading] = React.useState(true);
+export default function HomepageManager({ initialDoc, initialTractions }: { initialDoc: Record<string, unknown>; initialTractions: string[] }) {
+    const [loading, setLoading] = React.useState(false);
     const [loadError, setLoadError] = React.useState<string | null>(null);
-    const [banners, setBanners] = React.useState<BannerDraft[]>([]);
-    const [sections, setSections] = React.useState<SectionDraft[]>([]);
-    const [tractions, setTractions] = React.useState<string[]>([]);
+
+    const parseInitialDoc = (doc: Record<string, unknown>) => {
+      const hero = (doc.hero_carousel ?? {}) as Record<string, unknown>;
+      const bannersRaw = Array.isArray(hero.banners) ? hero.banners : [];
+      const sectionsRaw = Array.isArray(doc.sections) ? doc.sections : [];
+      const meta = (doc._meta ?? {}) as { loaded_row_ids?: unknown };
+      return {
+        banners: bannersRaw.map((b) => parseBanner((b ?? {}) as Record<string, unknown>)),
+        sections: sectionsRaw.map((s) => parseSection((s ?? {}) as Record<string, unknown>)),
+        loadedRowIds: Array.isArray(meta.loaded_row_ids) ? (meta.loaded_row_ids as string[]) : [],
+      };
+    };
+
+    const initial = parseInitialDoc(initialDoc);
+
+    const [banners, setBanners] = React.useState<BannerDraft[]>(initial.banners);
+    const [sections, setSections] = React.useState<SectionDraft[]>(initial.sections);
+    const [tractions, setTractions] = React.useState<string[]>(initialTractions);
     const [dirty, setDirty] = React.useState(false);
     const [confirming, setConfirming] = React.useState(false);
     const [saving, setSaving] = React.useState(false);
     const [saveError, setSaveError] = React.useState<string | null>(null);
     const [savedAt, setSavedAt] = React.useState<string | null>(null);
     const [addingSection, setAddingSection] = React.useState(false);
-    const [loadedRowIds, setLoadedRowIds] = React.useState<string[]>([]);
+    const [loadedRowIds, setLoadedRowIds] = React.useState<string[]>(initial.loadedRowIds);
     const [previews, setPreviews] = React.useState<
         Record<string, { loading: boolean; error: string | null; items: PreviewItem[] }>
     >({});
@@ -876,15 +891,10 @@ export default function HomepageManager() {
                 throw new Error(docResult.error?.message ?? "Failed to load homepage.");
             }
             const doc = docResult.data as Record<string, unknown>;
-            const hero = (doc.hero_carousel ?? {}) as Record<string, unknown>;
-            const bannersRaw = Array.isArray(hero.banners) ? hero.banners : [];
-            const sectionsRaw = Array.isArray(doc.sections) ? doc.sections : [];
-            setBanners(bannersRaw.map((b) => parseBanner((b ?? {}) as Record<string, unknown>)));
-            setSections(sectionsRaw.map((s) => parseSection((s ?? {}) as Record<string, unknown>)));
-            const meta = (doc._meta ?? {}) as { loaded_row_ids?: unknown };
-            setLoadedRowIds(
-                Array.isArray(meta.loaded_row_ids) ? (meta.loaded_row_ids as string[]) : [],
-            );
+            const parsed = parseInitialDoc(doc);
+            setBanners(parsed.banners);
+            setSections(parsed.sections);
+            setLoadedRowIds(parsed.loadedRowIds);
             if (tractionResult.data) setTractions(tractionResult.data);
             setDirty(false);
         } catch (err) {
@@ -893,10 +903,6 @@ export default function HomepageManager() {
             setLoading(false);
         }
     }, []);
-
-    useEffect(() => {
-        void load();
-    }, [load]);
 
     function touch() {
         setDirty(true);

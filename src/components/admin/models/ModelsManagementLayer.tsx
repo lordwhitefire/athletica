@@ -11,10 +11,10 @@ type ModalState =
     | { mode: "create-child"; parentId: string; parentName: string; parentBrandId: string | null }
     | { mode: "edit"; modelId: string };
 
-export default function ModelsManagementLayer() {
-    const [groups, setGroups] = React.useState<AdminModelCategoryGroup[]>([]);
-    const [formOptions, setFormOptions] = React.useState<FormOptions>({ categories: [], brands: [] });
-    const [loading, setLoading] = React.useState(true);
+export default function ModelsManagementLayer({ initialGroups, initialFormOptions }: { initialGroups: AdminModelCategoryGroup[]; initialFormOptions: FormOptions }) {
+    const [groups, setGroups] = React.useState<AdminModelCategoryGroup[]>(initialGroups);
+    const [formOptions, setFormOptions] = React.useState<FormOptions>(initialFormOptions);
+    const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState<string | null>(null);
     const [expanded, setExpanded] = React.useState<Set<string>>(new Set());
     const [modal, setModal] = React.useState<ModalState>({ mode: "closed" });
@@ -67,10 +67,6 @@ export default function ModelsManagementLayer() {
             setLoading(false);
         }
     }, []);
-
-    React.useEffect(() => {
-        load();
-    }, [load]);
 
     React.useEffect(() => {
         const onKey = (e: KeyboardEvent) => {

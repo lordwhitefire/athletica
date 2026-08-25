@@ -73,13 +73,13 @@ function matchesProductFilter(
   }
 }
 
-export function useBrandManagement() {
+export function useBrandManagement(initialBrands: Brand[]) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const hydrated = useRef(false);
 
   const [state, setState] = useState<BrandManagementState>({
-    brands: [],
+    brands: initialBrands,
     loadError: null,
     filters: DEFAULT_FILTERS,
     page: 1,
@@ -142,10 +142,6 @@ export function useBrandManagement() {
     }
     return false;
   }, []);
-
-  useEffect(() => {
-    loadBrands();
-  }, [loadBrands]);
 
   useEffect(() => {
     const q = searchParams.get("search");

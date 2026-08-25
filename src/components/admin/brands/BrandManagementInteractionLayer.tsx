@@ -39,8 +39,11 @@ export function useBrandManagementModel() {
   return ctx;
 }
 
-export function BrandManagementInteractionLayer({ children }: { children: ReactNode }) {
-  const model = useBrandManagement();
+export function BrandManagementInteractionLayer({
+  children,
+  initialBrands,
+}: { children: ReactNode; initialBrands: Brand[] }) {
+  const model = useBrandManagement(initialBrands);
   const [topExpanded, setTopExpanded] = useState(false);
   const [recentExpanded, setRecentExpanded] = useState(false);
   const toggleTopExpanded = useCallback(() => setTopExpanded((value) => !value), []);
