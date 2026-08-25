@@ -196,7 +196,6 @@ export async function batchCreateProducts(
         revalidateTag("products", "max");
         revalidatePath("/admin/products");
         revalidatePath("/admin/products/batch-upload");
-        revalidatePath("/admin/import-center");
 
         return ok({ created, failed, results });
     } catch (err) {

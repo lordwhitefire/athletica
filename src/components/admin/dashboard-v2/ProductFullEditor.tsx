@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import Papa from "papaparse";
 import AutoSuggest from "@/components/admin/AutoSuggest";
 import ImageSelector from "@/components/admin/ImageSelector";
 import InfoTooltip from "@/components/ui/InfoTooltip";
@@ -332,6 +333,102 @@ export default function ProductFullEditor({
         setGalleryAssets((prev) => prev.filter((_, i) => i !== index));
     }
 
+    // ---- CSV autofill ----
+    const csvFileRef = useRef<HTMLInputElement>(null);
+    const [csvError, setCsvError] = useState<string | null>(null);
+
+    function handleCsvAutofill(e: React.ChangeEvent<HTMLInputElement>) {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        setCsvError(null);
+
+        Papa.parse(file, {
+            header: true,
+            skipEmptyLines: true,
+            complete(results) {
+                const row = results.data[0] as Record<string, string> | undefined;
+                if (!row) {
+                    setCsvError("CSV file is empty or has no data rows.");
+                    return;
+                }
+
+                // Brand: look up by name
+                if (row.brand) {
+                    const match = brandOptions.find(
+                        (b) => b.name.toLowerCase() === row.brand!.toLowerCase()
+                    );
+                    if (match) setBrandRef(match._id);
+                }
+
+                // Simple string fields
+                if (row.name) setName(row.name);
+                if (row.category) setCategoryName(row.category);
+                if (row.traction) setTraction(row.traction);
+                if (row.gender) setGender(row.gender);
+                if (row.color) setColor(row.color);
+                if (row.description_subtitle) setDescSubtitle(row.description_subtitle);
+                if (row.description_tagline) setDescTagline(row.description_tagline);
+                if (row.description_intro) setDescIntro(row.description_intro);
+                if (row.description_collection) setDescCollection(row.description_collection);
+
+                // Pricing
+                if (row.price_current) setPriceCurrent(row.price_current);
+                if (row.price_original) setPriceOriginal(row.price_original);
+                if (row.price_discount_percent) setDiscountPercent(row.price_discount_percent);
+                if (row.price_member_price) setMemberPrice(row.price_member_price);
+                if (row.price_currency) setCurrency(row.price_currency);
+
+                // Tech details
+                if (row.technical_range) setTechRange(row.technical_range);
+                if (row.technical_sole_type) setTechSole(row.technical_sole_type);
+                if (row.technical_upper_material) setTechUpper(row.technical_upper_material);
+                if (row.technical_adjustment) setTechAdjustment(row.technical_adjustment);
+
+                // Key benefits (JSON array string)
+                if (row.description_key_benefits) {
+                    try {
+                        const parsed = JSON.parse(row.description_key_benefits);
+                        if (Array.isArray(parsed)) setKeyBenefits(parsed.filter((b: unknown) => typeof b === "string"));
+                    } catch { /* ignore malformed */ }
+                }
+
+                // Sizes (JSON array string)
+                if (row.sizes) {
+                    try {
+                        const parsed = JSON.parse(row.sizes);
+                        if (Array.isArray(parsed)) {
+                            setSizesList(
+                                parsed
+                                    .filter((s: unknown) => s && typeof s === "object" && typeof (s as { size?: unknown }).size === "string")
+                                    .map((s: { size: string; available?: boolean }) => ({
+                                        size: s.size,
+                                        available: s.available !== false,
+                                    }))
+                            );
+                        }
+                    } catch { /* ignore malformed */ }
+                }
+
+                // Auto-generate slug from model + name
+                if (row.model || row.name) {
+                    const slug = [row.model, row.name]
+                        .filter(Boolean)
+                        .join("-")
+                        .toLowerCase()
+                        .replace(/[^a-z0-9]+/g, "-")
+                        .replace(/^-|-$/g, "");
+                    setUrlSlug(slug);
+                }
+            },
+            error() {
+                setCsvError("Failed to parse CSV file.");
+            },
+        });
+
+        // Reset input so the same file can be re-selected
+        if (csvFileRef.current) csvFileRef.current.value = "";
+    }
+
     // ---- submit ----
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
@@ -443,11 +540,17 @@ export default function ProductFullEditor({
                     <h1 className="text-xl font-bold text-white">{isNew ? "Add Product" : "Edit Product"}</h1>
                     {!isNew && <p className="mt-0.5 text-xs text-zinc-500">{name || productKey}</p>}
                 </div>
-                {status === "published" ? (
-                    <span className="inline-flex h-6 items-center rounded-full bg-[rgba(132,184,25,0.15)] px-3 text-[11px] font-bold text-[#b9e728]">Published</span>
-                ) : (
-                    <span className="inline-flex h-6 items-center rounded-full bg-neutral-800 px-3 text-[11px] font-bold text-zinc-400">Unpublished</span>
-                )}
+                <div className="flex items-center gap-3">
+                    <label className="inline-flex h-9 cursor-pointer items-center gap-2 rounded-md border border-neutral-700 bg-neutral-800 px-4 text-[11px] font-semibold text-zinc-300 transition hover:bg-neutral-700">
+                        <span className="material-symbols-outlined text-sm">upload_file</span> Autofill from CSV
+                        <input ref={csvFileRef} type="file" accept=".csv" onChange={handleCsvAutofill} className="hidden" />
+                    </label>
+                    {status === "published" ? (
+                        <span className="inline-flex h-6 items-center rounded-full bg-[rgba(132,184,25,0.15)] px-3 text-[11px] font-bold text-[#b9e728]">Published</span>
+                    ) : (
+                        <span className="inline-flex h-6 items-center rounded-full bg-neutral-800 px-3 text-[11px] font-bold text-zinc-400">Unpublished</span>
+                    )}
+                </div>
             </header>
 
             {/* IMAGES */}
@@ -760,6 +863,12 @@ export default function ProductFullEditor({
                     </select>
                 </Field>
             </section>
+
+            {csvError && (
+                <p role="alert" className="rounded-md border border-amber-800 bg-amber-950/40 px-4 py-3 text-sm text-amber-300">
+                    {csvError}
+                </p>
+            )}
 
             {submitError && (
                 <p role="alert" className="rounded-md border border-red-900 bg-red-950/40 px-4 py-3 text-sm text-red-300">
