@@ -1,0 +1,684 @@
+:root {
+  --pixel-black: #000000;
+  --pixel-lemon: #d1fd40;
+  --pixel-white: #ffffff;
+  --pixel-muted: #a5a5a5;
+  --pixel-line: #303030;
+  --pixel-panel: #070707;
+  --pixel-max: 1440px;
+}
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+.pixel-product-page,
+.pixel-product-page *,
+.pixel-product-page *::before,
+.pixel-product-page *::after {
+  box-sizing: border-box;
+}
+
+.pixel-product-page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--pixel-black);
+  color: var(--pixel-white);
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+.pixel-product-page button {
+  font: inherit;
+}
+
+.pixel-product-page img {
+  display: block;
+  max-width: 100%;
+}
+
+.pixel-product-page button {
+  cursor: pointer;
+}
+
+/* =========================================================
+   HEADER
+   Reference:
+   - very small centered logo
+   - thin lemon rule
+   - no nav
+   ========================================================= */
+
+.pixel-product-header {
+  width: 100%;
+  background: var(--pixel-black);
+}
+
+.pixel-product-header__inner {
+  width: min(calc(100% - 104px), var(--pixel-max));
+  height: 72px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--pixel-lemon);
+}
+
+.pixel-logo {
+  color: var(--pixel-lemon);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  transform: translateX(0.12em);
+}
+
+/* =========================================================
+   GLOBAL 1440PX COMPOSITION
+   ========================================================= */
+
+.pixel-product-shell {
+  width: min(calc(100% - 104px), var(--pixel-max));
+  margin-inline: auto;
+}
+
+/*
+  IMPORTANT:
+  This is the only desktop width boundary.
+
+  Never replace 1440px with 1560px, 1680px, 1920px, etc.
+  At wider viewports the entire composition remains centered.
+*/
+
+@media (min-width: 1440px) {
+  .pixel-product-shell,
+  .pixel-product-header__inner {
+    width: 1440px;
+    max-width: 1440px;
+  }
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.pixel-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(390px, 1fr);
+  gap: 34px;
+  padding: 40px 0 36px;
+  border-bottom: 1px solid var(--pixel-lemon);
+}
+
+.pixel-gallery {
+  min-width: 0;
+}
+
+.pixel-main-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #111111;
+}
+
+.pixel-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pixel-image-counter {
+  display: none;
+}
+
+.pixel-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.pixel-thumbnail {
+  width: 100%;
+  aspect-ratio: 1.18 / 1;
+  padding: 0;
+  border: 1px solid transparent;
+  background: #111111;
+  overflow: hidden;
+}
+
+.pixel-thumbnail.is-active {
+  border-color: var(--pixel-lemon);
+}
+
+.pixel-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pixel-product-summary {
+  min-width: 0;
+  padding: 19px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pixel-brand,
+.pixel-section-label,
+.pixel-bottom-label {
+  color: var(--pixel-lemon);
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}
+
+.pixel-brand {
+  font-size: 13px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.pixel-product-summary h1 {
+  max-width: 100%;
+  margin: 0;
+  color: var(--pixel-white);
+  font-size: clamp(42px, 4.8vw, 70px);
+  line-height: 0.91;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.pixel-tagline {
+  color: var(--pixel-lemon);
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.pixel-subtitle {
+  max-width: 590px;
+  margin: 18px 0 0;
+  color: var(--pixel-white);
+  font-size: 14px;
+  line-height: 1.48;
+}
+
+.pixel-price {
+  margin-top: 24px;
+  color: var(--pixel-lemon);
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.pixel-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--pixel-white);
+  font-size: 12px;
+}
+
+.pixel-meta i {
+  color: var(--pixel-lemon);
+  font-style: normal;
+}
+
+.pixel-cta-rule {
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  background: var(--pixel-lemon);
+}
+
+.pixel-shop-button {
+  width: 100%;
+  min-height: 57px;
+  margin-top: 24px;
+  padding: 0 20px;
+  border: 0;
+  background: var(--pixel-lemon);
+  color: var(--pixel-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+}
+
+.pixel-shop-button:hover {
+  filter: brightness(1.05);
+}
+
+.pixel-shop-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.pixel-arrow {
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  transform: translateY(-52%);
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.pixel-retailer-note {
+  margin: 16px 0 0;
+  color: var(--pixel-muted);
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   STORY + BENEFITS
+   ========================================================= */
+
+.pixel-story-benefits {
+  display: grid;
+  grid-template-columns: 0.98fr 1.12fr;
+  gap: 46px;
+  padding: 31px 0 28px;
+  border-bottom: 1px solid var(--pixel-lemon);
+}
+
+.pixel-section-label {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.pixel-story h2 {
+  margin: 17px 0 13px;
+  color: var(--pixel-white);
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.pixel-story p {
+  max-width: 500px;
+  margin: 0;
+  color: var(--pixel-white);
+  font-size: 13px;
+  line-height: 1.56;
+}
+
+.pixel-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.pixel-benefit-card {
+  min-height: 124px;
+  border: 1px solid #4a4a4a;
+  background: var(--pixel-black);
+  padding: 15px 13px;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.pixel-benefit-icon {
+  width: 29px;
+  height: 29px;
+  color: var(--pixel-lemon);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.pixel-benefit-icon svg {
+  width: 29px;
+  height: 29px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pixel-benefit-card h3 {
+  margin: 1px 0 9px;
+  color: var(--pixel-white);
+  font-size: 10px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.pixel-benefit-card p {
+  margin: 0;
+  color: #bcbcbc;
+  font-size: 10px;
+  line-height: 1.42;
+}
+
+/* =========================================================
+   TECHNICAL DETAILS + PRODUCT GALLERY
+   ========================================================= */
+
+.pixel-details-gallery {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 42px;
+  padding: 20px 0 29px;
+  border-bottom: 1px solid var(--pixel-lemon);
+}
+
+.pixel-spec-list {
+  margin-top: 14px;
+  border-top: 1px solid #353535;
+}
+
+.pixel-spec-row {
+  min-height: 32px;
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid #353535;
+}
+
+.pixel-spec-row span {
+  color: var(--pixel-white);
+  font-size: 9px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.pixel-spec-row strong {
+  color: var(--pixel-white);
+  font-size: 9px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.pixel-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.pixel-gallery-item {
+  width: 100%;
+  aspect-ratio: 1 / 0.96;
+  padding: 0;
+  border: 1px solid #353535;
+  background: #111111;
+  overflow: hidden;
+}
+
+.pixel-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pixel-gallery-item:hover {
+  border-color: var(--pixel-lemon);
+}
+
+/* =========================================================
+   BOTTOM INFORMATION STRIP
+   ========================================================= */
+
+.pixel-bottom-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding: 24px 0 28px;
+  border-bottom: 1px solid var(--pixel-lemon);
+}
+
+.pixel-bottom-item {
+  display: grid;
+  grid-template-columns: 43px minmax(0, 1fr);
+  gap: 13px;
+  align-items: start;
+}
+
+.pixel-bottom-icon {
+  width: 35px;
+  height: 35px;
+  color: var(--pixel-lemon);
+}
+
+.pixel-bottom-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pixel-bottom-label {
+  font-size: 12px;
+  line-height: 1.15;
+  margin-bottom: 13px;
+}
+
+.pixel-bottom-item p {
+  margin: 0 0 5px;
+  color: var(--pixel-white);
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   STATES (loading / error surface)
+   ========================================================= */
+
+.pixel-image-unavailable {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+  color: var(--pixel-muted);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .pixel-product-shell,
+  .pixel-product-header__inner {
+    width: min(calc(100% - 48px), 1440px);
+  }
+
+  .pixel-hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .pixel-product-summary {
+    padding-top: 0;
+  }
+
+  .pixel-product-summary h1 {
+    max-width: 850px;
+    font-size: clamp(48px, 8vw, 72px);
+  }
+
+  .pixel-story-benefits,
+  .pixel-details-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .pixel-story p {
+    max-width: 850px;
+  }
+}
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .pixel-product-header__inner {
+    width: calc(100% - 32px);
+    height: 62px;
+  }
+
+  .pixel-product-shell {
+    width: calc(100% - 32px);
+  }
+
+  .pixel-logo {
+    font-size: 15px;
+    letter-spacing: 0.2em;
+  }
+
+  .pixel-hero {
+    padding-top: 22px;
+    padding-bottom: 28px;
+    gap: 25px;
+  }
+
+  .pixel-main-image {
+    aspect-ratio: 1 / 0.86;
+  }
+
+  .pixel-thumbnails {
+    gap: 6px;
+    margin-top: 7px;
+  }
+
+  .pixel-product-summary h1 {
+    font-size: clamp(40px, 13vw, 58px);
+    line-height: 0.91;
+  }
+
+  .pixel-brand {
+    margin-bottom: 13px;
+  }
+
+  .pixel-tagline {
+    margin-top: 17px;
+    font-size: 14px;
+  }
+
+  .pixel-subtitle {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .pixel-price {
+    margin-top: 21px;
+    font-size: 29px;
+  }
+
+  .pixel-shop-button {
+    min-height: 54px;
+  }
+
+  .pixel-story-benefits {
+    gap: 30px;
+    padding-top: 28px;
+  }
+
+  .pixel-benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pixel-benefit-card {
+    min-height: 105px;
+  }
+
+  .pixel-details-gallery {
+    gap: 31px;
+    padding-top: 22px;
+  }
+
+  .pixel-spec-row {
+    min-height: 39px;
+  }
+
+  .pixel-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pixel-gallery-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .pixel-bottom-strip {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-bottom: 34px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+  .pixel-product-shell,
+  .pixel-product-header__inner {
+    width: calc(100% - 24px);
+  }
+
+  .pixel-product-summary h1 {
+    font-size: 39px;
+  }
+
+  .pixel-benefit-card {
+    grid-template-columns: 31px minmax(0, 1fr);
+    padding: 13px 10px;
+  }
+
+  .pixel-benefit-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .pixel-benefit-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* =========================================================
+   WIDE DESKTOP — DO NOT EXPAND THE COMPOSITION
+   ========================================================= */
+
+/*
+  Deliberately no 1680px / 1920px / 2560px width rules.
+
+  The shell is already capped at 1440px.
+  Larger screens receive additional black breathing room only.
+*/
+
+@media (min-width: 1441px) {
+  .pixel-product-shell,
+  .pixel-product-header__inner {
+    width: 1440px;
+    max-width: 1440px;
+  }
+}
