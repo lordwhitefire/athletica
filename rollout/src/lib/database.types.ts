@@ -38,6 +38,7 @@ export interface Database {
           updated_at?: string;
         };
         Update: Partial<Database['rollout']['Tables']['products']['Insert']>;
+        Relationships: [];
       };
       analytics: {
         Row: {
@@ -53,6 +54,15 @@ export interface Database {
           created_at?: string;
         };
         Update: Partial<Database['rollout']['Tables']['analytics']['Insert']>;
+        Relationships: [
+          {
+            foreignKeyName: 'rollout_analytics_product_id_fkey',
+            columns: ['product_id'],
+            isOneToOne: false,
+            referencedRelation: 'products',
+            referencedColumns: ['id'],
+          }
+        ];
       };
     };
     Views: Record<string, never>;
