@@ -126,6 +126,13 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
       const data = await response.json();
       window.open(data.url, '_blank', 'noopener,noreferrer');
       setShopState('opened');
+
+      // Record click (fire and forget) — only when the affiliate URL was derived and opened
+      fetch('/api/analytics', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ productId: product.id, eventType: 'click' }),
+      }).catch(console.error);
     } catch {
       setShopState('error');
     }
