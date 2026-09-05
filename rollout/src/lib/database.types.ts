@@ -1,5 +1,5 @@
 // Manually written types for the Rollout schema — no CLI used.
-// Last updated: 2026-09-03
+// Last updated: 2026-09-05
 
 export interface Database {
   rollout: {
@@ -30,6 +30,7 @@ export interface Database {
           images: string[];
           meta: Record<string, string>;          // JSONB
           tags: string[];
+          box_contents: string[];                // JSONB array (ROLL-06 D3)
           created_at: string;
           updated_at: string;
         };
@@ -72,8 +73,11 @@ export interface Database {
 }
 
 // JSONB array sub-types (for key_benefits / technical_details)
+// ROLL-06 D4: benefit icons are standardized. SVG rendering untouched.
+export type BenefitIcon = 'boot' | 'bolt' | 'target' | 'speed';
+
 export interface ProductBenefit {
-  icon: string;
+  icon: BenefitIcon;
   title: string;
   text: string;
 }

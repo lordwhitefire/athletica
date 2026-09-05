@@ -1,0 +1,628 @@
+/* =========================================================
+   ADMIN — PRODUCT DATABASE
+   Pixel tokens: black background, lemon accent, white text only.
+   1440px max. Admin styling reuses the rollout visual contract.
+   ========================================================= */
+
+:root {
+  --admin-black: #000000;
+  --admin-lemon: #d1fd40;
+  --admin-ink: #ffffff;
+  --admin-muted: #a7a7a7;
+  --admin-line: #262626;
+  --admin-max: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.admin-page {
+  min-height: 100vh;
+  background: var(--admin-black);
+  color: var(--admin-ink);
+}
+
+.admin-shell {
+  max-width: var(--admin-max);
+  margin: 0 auto;
+  padding: 40px 32px 80px;
+}
+
+/* ---- Header ---- */
+
+.admin-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--admin-line);
+}
+
+.admin-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--admin-muted);
+}
+
+.admin-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.admin-btn {
+  appearance: none;
+  border: 1px solid var(--admin-lemon);
+  background: transparent;
+  color: var(--admin-ink);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+.admin-btn:hover {
+  background: var(--admin-lemon);
+  color: var(--admin-black);
+}
+
+.admin-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.admin-btn--primary {
+  margin-left: auto;
+  background: var(--admin-lemon);
+  color: var(--admin-black);
+  font-weight: 600;
+}
+
+.admin-btn--primary:hover {
+  background: var(--admin-ink);
+  border-color: var(--admin-ink);
+}
+
+/* ---- Toolbar ---- */
+
+.admin-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.admin-search {
+  flex: 0 1 320px;
+  background: transparent;
+  border: 1px solid var(--admin-line);
+  color: var(--admin-ink);
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.admin-search::placeholder {
+  color: var(--admin-muted);
+}
+
+.admin-search:focus {
+  outline: none;
+  border-color: var(--admin-lemon);
+}
+
+.admin-filter {
+  display: inline-flex;
+  border: 1px solid var(--admin-line);
+}
+
+.admin-pill {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--admin-line);
+  color: var(--admin-muted);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.admin-pill:last-child {
+  border-right: 0;
+}
+
+.admin-pill:hover {
+  color: var(--admin-ink);
+}
+
+.admin-pill.is-active {
+  background: var(--admin-lemon);
+  color: var(--admin-black);
+  font-weight: 600;
+}
+
+.admin-sort select {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--admin-line);
+  color: var(--admin-ink);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 10px 34px 10px 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23a7a7a7' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  cursor: pointer;
+}
+
+.admin-sort select:focus {
+  outline: none;
+  border-color: var(--admin-lemon);
+}
+
+.admin-count {
+  margin-left: auto;
+  color: var(--admin-muted);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---- Table ---- */
+
+.admin-table-wrap {
+  border: 1px solid var(--admin-line);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--admin-muted);
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--admin-line);
+}
+
+.admin-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--admin-line);
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.admin-table tbody tr:hover {
+  background: #0a0a0a;
+}
+
+.admin-product-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border: 1px solid var(--admin-line);
+}
+
+.admin-product-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-product-name {
+  color: var(--admin-ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.admin-product-name:hover {
+  color: var(--admin-lemon);
+}
+
+.admin-product-color {
+  color: var(--admin-muted);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.admin-id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--admin-muted);
+}
+
+.admin-status {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid var(--admin-line);
+}
+
+.admin-status--published {
+  color: var(--admin-lemon);
+  border-color: var(--admin-lemon);
+}
+
+.admin-status--unpublished {
+  color: var(--admin-muted);
+}
+
+.admin-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.admin-tag {
+  font-size: 11px;
+  color: var(--admin-muted);
+  border: 1px solid var(--admin-line);
+  padding: 3px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-action {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--admin-ink);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.admin-action:hover {
+  color: var(--admin-lemon);
+}
+
+.admin-action:disabled {
+  color: var(--admin-muted);
+  cursor: wait;
+}
+
+.admin-action--danger:hover {
+  color: #ff6b6b;
+}
+
+.admin-action--link {
+  color: var(--admin-lemon);
+}
+
+/* ---- Pagination ---- */
+
+.admin-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid var(--admin-line);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-pagination__info {
+  font-size: 12px;
+  color: var(--admin-muted);
+  letter-spacing: 0.06em;
+}
+
+.admin-pagination__controls {
+  display: flex;
+  gap: 10px;
+}
+
+/* ---- States (loading / error / empty) ---- */
+
+.admin-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 80px 24px;
+  text-align: center;
+  border: 1px solid var(--admin-line);
+}
+
+.admin-state__title {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.admin-state__text {
+  margin: 0;
+  color: var(--admin-muted);
+  font-size: 14px;
+}
+
+.admin-skeleton {
+  border: 1px solid var(--admin-line);
+}
+
+.admin-skeleton__row {
+  height: 72px;
+  border-bottom: 1px solid var(--admin-line);
+  background: linear-gradient(90deg, #0a0a0a 25%, #141414 50%, #0a0a0a 75%);
+  background-size: 200% 100%;
+  animation: admin-shimmer 1.4s infinite;
+}
+
+.admin-skeleton__row:last-child {
+  border-bottom: 0;
+}
+
+@keyframes admin-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* ---- Toasts ---- */
+
+.toast-viewport {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  max-width: 360px;
+}
+
+.toast {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  background: #0d0d0d;
+  border: 1px solid var(--admin-line);
+  color: var(--admin-ink);
+  padding: 14px 16px;
+}
+
+.toast--success {
+  border-color: var(--admin-lemon);
+}
+
+.toast--error {
+  border-color: #ff6b6b;
+}
+
+.toast--info {
+  border-color: var(--admin-muted);
+}
+
+.toast__body strong {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.toast__body p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--admin-muted);
+}
+
+.toast button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--admin-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.toast button:hover {
+  color: var(--admin-ink);
+}
+
+/* ---- Confirm dialog ---- */
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+  padding: 24px;
+}
+
+.confirm-dialog {
+  width: 100%;
+  max-width: 460px;
+  background: #0d0d0d;
+  border: 1px solid var(--admin-lemon);
+  color: var(--admin-ink);
+  padding: 28px;
+  outline: none;
+}
+
+.confirm-dialog h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.confirm-dialog__description {
+  margin: 0 0 24px;
+  color: var(--admin-muted);
+  font-size: 14px;
+}
+
+.confirm-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.confirm-dialog__actions button {
+  appearance: none;
+  border: 1px solid var(--admin-line);
+  background: transparent;
+  color: var(--admin-ink);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.confirm-dialog__actions button:hover:not(:disabled) {
+  border-color: var(--admin-lemon);
+  color: var(--admin-lemon);
+}
+
+.confirm-dialog__actions .confirm-dialog__confirm {
+  background: var(--admin-lemon);
+  color: var(--admin-black);
+  border-color: var(--admin-lemon);
+  font-weight: 600;
+}
+
+.confirm-dialog__actions .confirm-dialog__confirm:hover:not(:disabled) {
+  background: var(--admin-ink);
+  border-color: var(--admin-ink);
+  color: var(--admin-black);
+}
+
+.confirm-dialog__actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ---- Utilities ---- */
+
+.admin-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =========================================================
+   PHONE — stack everything, rows become cards
+   ========================================================= */
+
+@media (max-width: 720px) {
+  .admin-shell {
+    padding: 24px 16px 64px;
+  }
+
+  .admin-header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .admin-title {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .admin-btn--primary {
+    margin-left: 0;
+  }
+
+  .admin-toolbar {
+    gap: 12px;
+  }
+
+  .admin-search {
+    flex: 1 1 100%;
+  }
+
+  .admin-filter {
+    order: 3;
+  }
+
+  .admin-sort {
+    order: 2;
+  }
+
+  .admin-count {
+    order: 4;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Rows become cards: hide table furniture, render blocks */
+  .admin-table thead {
+    display: none;
+  }
+
+  .admin-table,
+  .admin-table tbody,
+  .admin-table tr,
+  .admin-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .admin-table tr {
+    padding: 16px;
+    border-bottom: 1px solid var(--admin-line);
+  }
+
+  .admin-table td {
+    border: 0;
+    padding: 8px 0;
+  }
+
+  .admin-actions {
+    padding-top: 8px;
+  }
+
+  .admin-pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

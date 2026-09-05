@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { ProductRow } from '@/lib/database.types';
+import { mockBoxContents, FALLBACK_BOX_IMAGE } from '@/lib/placeholder';
 import './rollout1-pixel-match.css';
 
 type BenefitIconType = 'boot' | 'bolt' | 'target' | 'speed';
@@ -160,6 +161,14 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
 
   const keyBenefits = product.key_benefits ?? [];
 
+  // ROLL-06 D3: real box contents when present; mock + Unsplash fallback while
+  // empty (temporary until ROLL-07 admin editor enters real content).
+  const boxContents =
+    product.box_contents && product.box_contents.length > 0
+      ? product.box_contents
+      : mockBoxContents(product.name);
+  const boxImageOnly = !(product.box_contents && product.box_contents.length > 0);
+
   return (
     <main className="pixel-product-page">
       <header className="pixel-product-header">
@@ -312,7 +321,14 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
             </div>
             <div>
               <div className="pixel-bottom-label">WHAT&apos;S INSIDE THE BOX</div>
-              <p>{product.name}</p>
+              <ul className="pixel-box-list">
+                {boxContents.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              {boxImageOnly && (
+                <img className="pixel-box-image" src={FALLBACK_BOX_IMAGE} alt="What is inside the box" />
+              )}
             </div>
           </div>
 
