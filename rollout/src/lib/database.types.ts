@@ -31,6 +31,8 @@ export interface Database {
           meta: Record<string, string>;          // JSONB
           tags: string[];
           box_contents: string[];                // JSONB array (ROLL-06 D3)
+          sizes: string[];                       // TEXT[] (ROLL-07 D6)
+          sizes_detail: string | null;           // (ROLL-07 D6)
           created_at: string;
           updated_at: string;
         };

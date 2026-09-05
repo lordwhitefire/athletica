@@ -6,6 +6,7 @@ import type { ProductRow } from '@/lib/database.types';
 import { useToasts, ToastViewport } from '@/lib/ui/toast';
 import { ConfirmDialog } from '@/lib/ui/confirm-dialog';
 import { FALLBACK_PRODUCT_IMAGE } from '@/lib/placeholder';
+import ProductEditor from './product-editor';
 import './admin.css';
 
 const PAGE_SIZE = 8;
@@ -44,6 +45,7 @@ export default function AdminProductsPage() {
   const [deleteTarget, setDeleteTarget] = useState<ProductRow | null>(null);
   const [busy, setBusy] = useState<{ id: string; action: 'status' | 'delete' } | null>(null);
   const [reloadKey, setReloadKey] = useState(0);
+  const [editorOpen, setEditorOpen] = useState(false);
 
   // Debounce search input
   useEffect(() => {
@@ -144,7 +146,7 @@ export default function AdminProductsPage() {
         <header className="admin-header">
           <div className="admin-eyebrow">ROLLOUT 1</div>
           <h1 className="admin-title">Products</h1>
-          <button type="button" className="admin-btn admin-btn--primary" onClick={() => push('info', 'Editor coming in ROLL-07')}>
+          <button type="button" className="admin-btn admin-btn--primary" onClick={() => setEditorOpen(true)}>
             + Add Product
           </button>
         </header>
@@ -240,7 +242,7 @@ export default function AdminProductsPage() {
           ) : showCatalogEmpty ? (
             <div className="admin-state">
               <h2 className="admin-state__title">No products yet.</h2>
-              <button type="button" className="admin-btn admin-btn--primary" onClick={() => push('info', 'Editor coming in ROLL-07')}>
+              <button type="button" className="admin-btn admin-btn--primary" onClick={() => setEditorOpen(true)}>
                 + ADD PRODUCT
               </button>
             </div>
@@ -356,6 +358,18 @@ export default function AdminProductsPage() {
           )}
         </main>
       </div>
+
+      {editorOpen && (
+        <ProductEditor
+          mode="create"
+          onClose={() => setEditorOpen(false)}
+          onSaved={() => {
+            setEditorOpen(false);
+            push('success', 'Product created');
+            setReloadKey((k) => k + 1);
+          }}
+        />
+      )}
 
       <ConfirmDialog
         open={deleteTarget !== null}

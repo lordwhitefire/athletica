@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import {
   getProductsAdmin,
+  createProductAdmin,
   publishProductAdmin,
   unpublishProductAdmin,
   deleteProductAdmin,
 } from '@/lib/products/product-service';
+import type { Database } from '@/lib/database.types';
+
+type ProductInsert = Database['rollout']['Tables']['products']['Insert'];
 
 export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
@@ -25,6 +29,29 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(result);
   } catch {
     return NextResponse.json({ error: 'Unable to load products' }, { status: 500 });
+  }
+}
+
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => null);
+
+  if (!body || typeof body !== 'object') {
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 });
+  }
+
+  const payload = body as Partial<ProductInsert>;
+  if (typeof payload.name !== 'string' || payload.name.trim() === '') {
+    return NextResponse.json({ error: 'Name is required' }, { status: 400 });
+  }
+  if (typeof payload.price !== 'number' || payload.price <= 0) {
+    return NextResponse.json({ error: 'Price must be greater than 0' }, { status: 400 });
+  }
+
+  try {
+    const item = await createProductAdmin(payload as ProductInsert);
+    return NextResponse.json({ item }, { status: 201 });
+  } catch {
+    return NextResponse.json({ error: 'Unable to create product' }, { status: 500 });
   }
 }
 
