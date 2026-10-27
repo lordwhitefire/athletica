@@ -1,5 +1,7 @@
 // Manually written types for the Rollout schema — no CLI used.
-// Last updated: 2026-09-05
+// Last updated: 2026-10-27
+
+export type AnalyticsSource = 'instagram' | 'whatsapp';
 
 export interface Database {
   rollout: {
@@ -49,12 +51,16 @@ export interface Database {
           product_id: string;
           event_type: 'view' | 'click';
           created_at: string;
+          source: AnalyticsSource | null;
+          visitor_hash: string | null;
         };
         Insert: {
           id?: string;
           product_id: string;
           event_type: 'view' | 'click';
           created_at?: string;
+          source?: AnalyticsSource | null;
+          visitor_hash?: string | null;
         };
         Update: Partial<Database['rollout']['Tables']['analytics']['Insert']>;
         Relationships: [
