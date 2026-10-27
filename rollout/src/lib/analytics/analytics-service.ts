@@ -1,25 +1,43 @@
 import { createAdminClient, createPublicClient } from '@/lib/supabase/server';
-import type { Database } from '@/lib/database.types';
+import type { Database, AnalyticsSource } from '@/lib/database.types';
 
 type AnalyticsRow = Database['rollout']['Tables']['analytics']['Row'];
 type AnalyticsInsert = Database['rollout']['Tables']['analytics']['Insert'];
 
 // --- Public operations (anon key, respects RLS) ---
 
-export async function recordView(productId: string): Promise<void> {
+export async function recordView(
+  productId: string,
+  source: AnalyticsSource | null = null,
+  visitorHash: string | null = null
+): Promise<void> {
   const supabase = createPublicClient();
   const { error } = await supabase
     .from('analytics')
-    .insert({ product_id: productId, event_type: 'view' });
+    .insert({
+      product_id: productId,
+      event_type: 'view',
+      source,
+      visitor_hash: visitorHash,
+    });
 
   if (error) throw error;
 }
 
-export async function recordClick(productId: string): Promise<void> {
+export async function recordClick(
+  productId: string,
+  source: AnalyticsSource | null = null,
+  visitorHash: string | null = null
+): Promise<void> {
   const supabase = createPublicClient();
   const { error } = await supabase
     .from('analytics')
-    .insert({ product_id: productId, event_type: 'click' });
+    .insert({
+      product_id: productId,
+      event_type: 'click',
+      source,
+      visitor_hash: visitorHash,
+    });
 
   if (error) throw error;
 }
