@@ -1,16 +1,15 @@
 'use client';
 
+import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { ProductRow } from '@/lib/database.types';
-import { mockBoxContents, FALLBACK_BOX_IMAGE } from '@/lib/placeholder';
+import type { ProductRow, AnalyticsSource } from '@/lib/database.types';
 import './rollout1-pixel-match.css';
 
 type BenefitIconType = 'boot' | 'bolt' | 'target' | 'speed';
 
-type ShopState = 'idle' | 'loading' | 'opened' | 'error';
-
 interface ProductDetailsClientProps {
   product: ProductRow;
+  source?: AnalyticsSource | null;
 }
 
 function normalizeIcon(icon: string): BenefitIconType {
@@ -57,11 +56,9 @@ function BenefitIcon({ type }: { type: BenefitIconType }) {
   );
 }
 
-export default function ProductDetailsClient({ product }: ProductDetailsClientProps) {
+export default function ProductDetailsClient({ product, source }: ProductDetailsClientProps) {
   const images = product.images && product.images.length > 0 ? product.images : (product.main_image ? [product.main_image] : []);
 
-  const [activeImage, setActiveImage] = useState(0);
-  const [shopState, setShopState] = useState<ShopState>('idle');
   const [activeIndex, setActiveIndex] = useState(0);
   const thumbnailsRef = useRef<HTMLButtonElement[]>([]);
 
@@ -107,46 +104,8 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
   }, [move, images.length]);
 
   useEffect(() => {
-    setActiveImage(safeIndex);
-  }, [safeIndex]);
-
-  useEffect(() => {
     thumbnailsRef.current[safeIndex]?.focus();
   }, [safeIndex]);
-
-  const handleShop = async () => {
-    if (shopState === 'loading') return;
-
-    setShopState('loading');
-    try {
-      const response = await fetch(`/api/affiliate?productId=${encodeURIComponent(product.id)}`);
-      if (!response.ok) {
-        const data = await response.json().catch(() => ({}));
-        throw new Error(data.error || 'Failed to open shop link');
-      }
-      const data = await response.json();
-      window.open(data.url, '_blank', 'noopener,noreferrer');
-      setShopState('opened');
-
-      // Record click (fire and forget) — only when the affiliate URL was derived and opened
-      fetch('/api/analytics', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ productId: product.id, eventType: 'click' }),
-      }).catch(console.error);
-    } catch {
-      setShopState('error');
-    }
-  };
-
-  const shopLabel =
-    shopState === 'loading'
-      ? 'OPENING...'
-      : shopState === 'opened'
-        ? 'OPENED'
-        : shopState === 'error'
-          ? 'TRY AGAIN'
-          : 'SHOP PRODUCT';
 
   const technicalDetails =
     product.technical_details && product.technical_details.length > 0
@@ -161,13 +120,7 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
 
   const keyBenefits = product.key_benefits ?? [];
 
-  // ROLL-06 D3: real box contents when present; mock + Unsplash fallback while
-  // empty (temporary until ROLL-07 admin editor enters real content).
-  const boxContents =
-    product.box_contents && product.box_contents.length > 0
-      ? product.box_contents
-      : mockBoxContents(product.name);
-  const boxImageOnly = !(product.box_contents && product.box_contents.length > 0);
+  const boxContents = product.box_contents && product.box_contents.length > 0 ? product.box_contents : [];
 
   return (
     <main className="pixel-product-page">
@@ -182,7 +135,13 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
           <div className="pixel-gallery">
             {selected ? (
               <div className="pixel-main-image">
-                <img src={selected} alt={product.name} />
+                <Image
+                  src={selected}
+                  alt={product.name}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
                 <div className="pixel-image-counter">{safeIndex + 1} / {images.length}</div>
               </div>
             ) : (
@@ -202,7 +161,12 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
                     onClick={() => setActiveIndex(index)}
                     aria-label={`View image ${index + 1}`}
                   >
-                    <img src={image} alt="" />
+                    <Image
+                      src={image}
+                      alt={`View image ${index + 1} of ${product.name}`}
+                      fill
+                      sizes="50vw"
+                    />
                   </button>
                 ))}
               </div>
@@ -220,10 +184,6 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
 
             {product.subtitle && <p className="pixel-subtitle">{product.subtitle}</p>}
 
-            {typeof product.price === 'number' && (
-              <div className="pixel-price">${product.price.toFixed(2)}</div>
-            )}
-
             {(product.gender || product.color) && (
               <div className="pixel-meta">
                 {product.gender && <span>{product.gender}</span>}
@@ -234,15 +194,15 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
 
             <div className="pixel-cta-rule" />
 
-            <button className="pixel-shop-button" type="button" onClick={handleShop} disabled={shopState === 'loading'}>
-              <span>{shopLabel}</span>
+            <button className="pixel-shop-button" type="button" disabled>
+              <span>Link coming soon</span>
               <span className="pixel-arrow" aria-hidden="true">
                 ↗
               </span>
             </button>
 
-            <p className="pixel-retailer-note">
-              Availability and final pricing may vary at the retailer.
+            <p className="pixel-disclosure">
+              As an Amazon Associate, I earn from qualifying purchases.
             </p>
           </div>
         </section>
@@ -302,7 +262,12 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
                     key={image + index}
                     onClick={() => setActiveIndex(index + 1)}
                   >
-                    <img src={image} alt={`${product.name} view ${index + 2}`} />
+                    <Image
+                      src={image}
+                      alt={`${product.name} view ${index + 2}`}
+                      fill
+                      sizes="50vw"
+                    />
                   </button>
                 ))}
               </div>
@@ -310,41 +275,16 @@ export default function ProductDetailsClient({ product }: ProductDetailsClientPr
           )}
         </section>
 
-        <section className="pixel-bottom-strip">
-          <div className="pixel-bottom-item">
-            <div className="pixel-bottom-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40">
-                <path d="M4 13 20 4l16 9-16 9L4 13Z" />
-                <path d="M4 13v17l16 8 16-8V13M20 22v16" />
-                <path d="m28 9-5 3 6 4 5-3" />
-              </svg>
-            </div>
-            <div>
-              <div className="pixel-bottom-label">WHAT&apos;S INSIDE THE BOX</div>
-              <ul className="pixel-box-list">
-                {boxContents.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              {boxImageOnly && (
-                <img className="pixel-box-image" src={FALLBACK_BOX_IMAGE} alt="What is inside the box" />
-              )}
-            </div>
-          </div>
-
-          <div className="pixel-bottom-item">
-            <div className="pixel-bottom-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40">
-                <circle cx="20" cy="20" r="15" />
-                <path d="M5 20h30M20 5c5 5 7 10 7 15s-2 10-7 15M20 5c-5 5-7 10-7 15s2 10 7 15M8 11h24M8 29h24" />
-              </svg>
-            </div>
-            <div>
-              <div className="pixel-bottom-label">COLLECTION</div>
-              <p>{product.collection || product.name}</p>
-            </div>
-          </div>
-        </section>
+        {boxContents.length > 0 && (
+          <section className="pixel-box-section">
+            <div className="pixel-section-label">WHAT'S INSIDE THE BOX</div>
+            <ul className="pixel-box-list">
+              {boxContents.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+        )}
       </article>
     </main>
   );
