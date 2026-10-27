@@ -7,10 +7,14 @@ const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
 
 // Admin client (bypasses RLS) — for admin operations
 export function createAdminClient() {
-  return createClient<Database>(supabaseUrl, supabaseServiceKey);
+  return createClient<Database, 'rollout'>(supabaseUrl, supabaseServiceKey, {
+    db: { schema: 'rollout' },
+  });
 }
 
 // Public client (respects RLS) — for customer reads
 export function createPublicClient() {
-  return createClient<Database>(supabaseUrl, supabaseAnonKey);
+  return createClient<Database, 'rollout'>(supabaseUrl, supabaseAnonKey, {
+    db: { schema: 'rollout' },
+  });
 }
