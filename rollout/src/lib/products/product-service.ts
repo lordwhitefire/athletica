@@ -125,6 +125,19 @@ export async function getProductBySlug(slug: string): Promise<ProductRow | null>
   return data;
 }
 
+export async function getProductById(id: string): Promise<ProductRow | null> {
+  const supabase = createPublicClient();
+  const { data, error } = await supabase
+    .from('products')
+    .select('*')
+    .eq('id', id)
+    .eq('status', 'published')
+    .single();
+
+  if (error) return null;
+  return data;
+}
+
 export async function getPublishedProducts(options?: {
   page?: number;
   pageSize?: number;
