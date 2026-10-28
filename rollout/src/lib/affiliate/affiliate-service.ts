@@ -1,10 +1,9 @@
 import { createAdminClient } from '@/lib/supabase/server';
 
-// Affiliate configuration (stored in code for Rollout 1)
-// In production, this could move to a config table or env vars
+// Affiliate configuration from environment variables
 const AFFILIATE_CONFIG = {
-  tag: 'athletica-20',
-  marketplace: 'amazon.com',
+  tag: process.env.AMAZON_TAG,
+  marketplace: process.env.AMAZON_MARKETPLACE,
   locale: 'en_US',
 };
 
@@ -21,6 +20,10 @@ export interface AffiliateUrlResult {
 }
 
 export async function getAffiliateUrl(productId: string): Promise<AffiliateUrlResult> {
+  if (!AFFILIATE_CONFIG.tag || !AFFILIATE_CONFIG.marketplace) {
+    return { url: null, error: 'Affiliate not configured' };
+  }
+
   const supabase = createAdminClient();
 
   // Get the product's ASIN
@@ -49,6 +52,10 @@ export async function getAffiliateUrl(productId: string): Promise<AffiliateUrlRe
 }
 
 export async function getAffiliateUrlByAsin(asin: string): Promise<AffiliateUrlResult> {
+  if (!AFFILIATE_CONFIG.tag || !AFFILIATE_CONFIG.marketplace) {
+    return { url: null, error: 'Affiliate not configured' };
+  }
+
   if (!asin) {
     return { url: null, error: 'No ASIN provided' };
   }
