@@ -3,7 +3,7 @@ import { recordView, recordClick } from '@/lib/analytics/analytics-service';
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
-  const { productId, eventType } = body;
+  const { productId, eventType, source, visitorHash } = body;
 
   if (!productId || !eventType) {
     return NextResponse.json({ error: 'Missing productId or eventType' }, { status: 400 });
@@ -15,9 +15,9 @@ export async function POST(request: NextRequest) {
 
   try {
     if (eventType === 'view') {
-      await recordView(productId);
+      await recordView(productId, source ?? null, visitorHash ?? null);
     } else {
-      await recordClick(productId);
+      await recordClick(productId, source ?? null, visitorHash ?? null);
     }
     return NextResponse.json({ success: true });
   } catch {
