@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { ProductRow, AnalyticsSource } from '@/lib/database.types';
 import './rollout1-pixel-match.css';
@@ -10,6 +11,7 @@ type BenefitIconType = 'boot' | 'bolt' | 'target' | 'speed';
 interface ProductDetailsClientProps {
   product: ProductRow;
   source?: AnalyticsSource | null;
+  ctaEnabled?: boolean;
 }
 
 function normalizeIcon(icon: string): BenefitIconType {
@@ -56,7 +58,8 @@ function BenefitIcon({ type }: { type: BenefitIconType }) {
   );
 }
 
-export default function ProductDetailsClient({ product, source }: ProductDetailsClientProps) {
+export default function ProductDetailsClient({ product, source, ctaEnabled }: ProductDetailsClientProps) {
+  const router = useRouter();
   const images = product.images && product.images.length > 0 ? product.images : (product.main_image ? [product.main_image] : []);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -194,8 +197,17 @@ export default function ProductDetailsClient({ product, source }: ProductDetails
 
             <div className="pixel-cta-rule" />
 
-            <button className="pixel-shop-button" type="button" disabled>
-              <span>Link coming soon</span>
+            <button
+              className="pixel-shop-button"
+              type="button"
+              disabled={!ctaEnabled}
+              onClick={
+                ctaEnabled
+                  ? () => router.push(`/go/${product.id}?source=${encodeURIComponent(source ?? '')}`)
+                  : undefined
+              }
+            >
+              <span>{ctaEnabled ? 'SHOP PRODUCT' : 'Link coming soon'}</span>
               <span className="pixel-arrow" aria-hidden="true">
                 ↗
               </span>
