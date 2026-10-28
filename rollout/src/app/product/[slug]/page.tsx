@@ -41,6 +41,10 @@ export default async function ProductPage({ params, searchParams }: PageProps) {
   const search = await searchParams;
   const source = normalizeSource(search.get('source'));
 
+  const ctaEnabled = Boolean(
+    product.asin && process.env.AMAZON_TAG && process.env.AMAZON_MARKETPLACE
+  );
+
   const headersList = await headers();
   const ip = getClientIp(headersList);
   const userAgent = headersList.get('user-agent') ?? '';
@@ -61,5 +65,5 @@ export default async function ProductPage({ params, searchParams }: PageProps) {
     }
   }
 
-  return <ProductDetailsClient product={product} source={source} />;
+  return <ProductDetailsClient product={product} source={source} ctaEnabled={ctaEnabled} />;
 }
