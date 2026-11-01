@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { requireAdmin } from '@/lib/auth/admin';
 import {
   getProductsAdmin,
   createProductAdmin,
@@ -10,7 +11,14 @@ import type { Database } from '@/lib/database.types';
 
 type ProductInsert = Database['rollout']['Tables']['products']['Insert'];
 
+async function adminGate(): Promise<NextResponse | null> {
+  const admin = await requireAdmin();
+  return admin.response;
+}
+
 export async function GET(request: NextRequest) {
+  const gate = await adminGate();
+  if (gate) return gate;
   const params = request.nextUrl.searchParams;
   const status = params.get('status') ?? 'all';
   const search = params.get('search') ?? '';
@@ -33,6 +41,8 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
+  const gate = await adminGate();
+  if (gate) return gate;
   const body = await request.json().catch(() => null);
 
   if (!body || typeof body !== 'object') {
@@ -56,6 +66,8 @@ export async function POST(request: NextRequest) {
 }
 
 export async function PATCH(request: NextRequest) {
+  const gate = await adminGate();
+  if (gate) return gate;
   const body = await request.json().catch(() => null);
   const id: unknown = body?.id;
   const status: unknown = body?.status;
@@ -73,6 +85,8 @@ export async function PATCH(request: NextRequest) {
 }
 
 export async function DELETE(request: NextRequest) {
+  const gate = await adminGate();
+  if (gate) return gate;
   const id = request.nextUrl.searchParams.get('id');
 
   if (!id) {

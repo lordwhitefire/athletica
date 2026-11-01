@@ -1,10 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { requireAdmin } from '@/lib/auth/admin';
 import { adminClient } from '@/lib/admin-sanity';
 
 const ALLOWED_MIME_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/avif'];
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
+async function adminGate(): Promise<NextResponse | null> {
+  const admin = await requireAdmin();
+  return admin.response;
+}
+
 export async function POST(req: NextRequest) {
+  const gate = await adminGate();
+  if (gate) return gate;
   try {
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
