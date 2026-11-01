@@ -1,42 +1,55 @@
 # Working procedure — the browser check (ROLL-13)
 
 **What this is:** the project's established way of checking the built app **in a real browser**, written
-down once so it is never re-derived. Refer to **this file**, not to the old task's plan.
+down once so it is never re-derived. Refer to **this file**, not to an old task's plan.
 **Status:** standing procedure, applies to every layer.
 **Authority for rules:** the layer's model/spec, **never** the browser. This procedure checks **surfaces** only.
-**Underlying method:** `~/.agents/skills/runtime-divergence/` (SKILL.md + `scripts/{browser,run,model,compare,extract,normalize}.mjs`).
+**Underlying method:** `~/.agents/skills/runtime-parity/` (SKILL.md, `references/`, `scripts/`) — two
+Runtime Maps, never two live sites; a **production build**, never a dev server; a mismatch is **FAIL** and
+to be fixed, then the check runs again. **Browser procedure:** `~/.agents/skills/browser-attach/` — the one
+attach-only discipline, restated nowhere else.
 
 ---
 
 ## 1. The discipline — non-negotiable
 
-- **Attach, never launch.** Attach to the **one persistent, visible** Chrome already listening on
-  **CDP `:9222`** (`connectOverCDP("http://127.0.0.1:9222")`). If nothing is there, **stop with a clear
-  message** — do **not** start one.
-- **Never headless. Never a second instance. Never a swarm.**
-- **Confirm the Chrome is ours before navigating** — its User-Agent must contain no `Headless`.
-- **≤10 chromium guard** — count real browser processes (`google-chrome|chromium`, excluding `--type=`)
-  before and after; the count must not go up. The owner's own browser (e.g. a snap chromium) is not ours and
-  is never touched.
-- **Detach on exit** (`finally`) — the window and its tabs stay open for the next run and for the human to
-  watch and click.
+Carried in full by `~/.agents/skills/browser-attach/SKILL.md`. This project adds nothing to it, and takes
+nothing away:
+
+- **Attach, never launch.** One visible automation Chrome already listens on **CDP `:9222`**. If nothing is
+  there, **stop with a clear message** — do **not** start one.
+- **Never headless. Never a second instance. Never a swarm** (≤10).
+- **Confirm the Chrome is ours before navigating** — UA has no `Headless`, and the process carries the
+  automation profile.
+- **Detach on exit** (`finally`); the window and its tabs stay open for the next run and for the human.
 - **No screenshots.** The owner checks the look by hand.
-- **Interact like a user, don't just look.** Drive states through actions (click, navigate, resize). Extract
+- **Interact like a user, don't just look.** Drive states through actions (click, navigate, resize). Capture
   everything at each state — no passive "looking," no shortlist.
 
 ## 2. Servers and ports
 
-- **Build:** the rollout dev server on **`:3011`** — `BUILD_URL`. Only one server is used.
-- **Port `3000` is never used** — not for dev, not for leak-check, not for any probe.
+- **Build:** the app's **production build** is served on **`:3011`** — `BUILD_URL`. Only one server is used.
+  - `next build`, then `next start -p 3011` in `rollout/` (or the project's production server).
+  - **`next dev` is never checked.** It injects its own runtime and recompiles while the source stands still;
+    it is not the artifact.
+- **Retired ports are not used and not named** — not for dev, not for leak-check, not for any probe.
 - **Runtime confirmation (required):** nothing is done until the browser loads and verifies. Before any check,
-  confirm the server is up on `:3011` (`curl -s http://127.0.0.1:3011/` returns HTML). The owner starts the
-  server with `next dev -p 3011` in `rollout/`; the builder does not start it autonomously.
+  confirm the server answers on `:3011` (`curl -s http://127.0.0.1:3011/` returns HTML) and that what is
+  serving is the built output. The owner starts the server; the builder does not start one autonomously.
 
-## 3. Checklist (required before any runtime check)
+## 3. The jobs
+
+From `runtime-parity`: **gate** (`--site URL --maps runtime-maps/`) re-checks the site against its confirmed
+maps; **claim** (`--claim claim.json`) checks one written expectation and waits for the owner's confirmation;
+**compare** (`--ref URL --build URL`) needs two real sites. This project normally runs **gate** and **claim**.
+Each ends **PASS / FAIL / NOT RUN**, NOT RUN never a pass. A FAIL is fixed and the check runs again; a PASS is
+not a map until the owner confirms.
+
+## 4. Checklist (required before any runtime check)
 
 Write a **checklist file** (`developer-workspace/ROLL-13/checklist.json`) listing the states/actions to drive,
 so the runtime check is directed and repeatable — not random checking of everything on the page. Each state
-reloads the page from scratch, applies its actions, then extracts.
+reloads the page from scratch, applies its actions, then captures.
 
 Example checklist:
 
@@ -58,18 +71,20 @@ The checklist drives **interaction**, not just observation:
 - `click` — click a button/link by role and name
 - `resize` — change viewport width/height
 
-## 4. The harness
+## 5. The harness
 
 - Lives under `developer-workspace/scripts/ROLL-12/` (reusing the ROLL-12 harness patterns).
 - `_lib.mjs` attaches to Chrome on CDP `:9222`, creates **one tab**, reuses it.
 - **Do not use any tab that this harness did not open.** Create your own tab, reuse it, close nothing that
   the human opened.
-- `node _lib.mjs` is the smoke check: attach → prove it is ours → create one tab → navigate to `:3011` → print
-  the tab → confirm no Chrome was launched → detach on exit (tab stays open for the human).
+- `node _lib.mjs` is the smoke check: attach → prove it is ours → create one tab → navigate to the build →
+  print the tab → confirm no Chrome was launched → detach on exit (tab stays open for the human).
+- The parity CLI owns its own tab handling — call it as a tool, do not wrap its browser steps in a second
+  attach.
 
-## 5. Extraction (full, at each state)
+## 6. Capture (full, at each state)
 
-For each state in the checklist, extract **everything** from the runtime:
+For each state in the checklist, capture **everything** from the runtime:
 
 - Page title, URL, readyState, userAgent
 - Full DOM tree (all elements with tag, class, id, text, href, src, role, aria-label)
@@ -79,24 +94,40 @@ For each state in the checklist, extract **everything** from the runtime:
 - Console errors captured during the state
 - Accessibility tree
 
-This is full extraction — not selective retrieval. The checklist defines *which states to drive*, not *what to look for*.
+This is full capture — not selective retrieval. The checklist defines *which states to drive*, not *what to look
+for*. Every state is captured **twice, 1100 ms apart**; values that move between the reads are excluded and
+listed as **not checked**, and a shape change between the reads stops the capture as NOT RUN.
 
-## 6. What it produces
+## 7. What it produces
 
-- Per-state artefacts under `scripts/ROLL-12/runs/<state>/` — `surface-probe.txt`, `surface-probe.json`.
+- Per-state artefacts under `scripts/ROLL-12/runs/<state>/` — `surface-probe.txt`, `surface-probe.json`, and the
+  check's `report.txt`.
 - A report at `developer-workspace/reports/ROLL-13-browser-check.md` that states:
   - each state in the checklist and whether it loaded;
-  - **what was verified at runtime** (404 works, no price, CTA disabled, next/image with fill+alt, disclosure visible, etc.);
-  - **what was NOT checked** (interactive behaviour beyond what was driven; anything outside the layer's surface);
+  - **what was verified at runtime** (404 works, no price, CTA disabled, next/image with fill+alt, disclosure
+    visible, etc.) — with the fact named, not "it looked right";
+  - **what was NOT checked** (interactive behaviour beyond what was driven; anything outside the layer's
+    surface) — listed, never omitted;
   - the guard result (chromium before → after) and that no Chrome was launched;
   - no screenshots taken.
+- **Working maps** under `developer-workspace/parity/<project>/runs/<id>/`; a confirmed map is promoted to the
+  project's `runtime-maps/` with the confirmation date in its header.
 
-## 7. Quick checklist for a run
+## 8. When a surface legitimately differs
 
-- [ ] Automation Chrome visible and listening on `:9222`; attach-only; UA has no `Headless`.
-- [ ] Build on `:3011`; port `3000` untouched; server confirmed up before checking.
+Where the current requirement **changes** a surface on purpose, the requirement is written into the model/spec
+**first**, and the standard is re-captured against it. The browser never logs a difference as "expected" —
+there is no intended/unintended split in the report; a difference is a defect until the spec moves.
+
+---
+
+## 9. Quick checklist for a run
+
+- [ ] Automation Chrome visible and listening on `:9222`; attach-only; ours-check passed.
+- [ ] Build is the **production build** on `:3011` (`next build` + `next start`), confirmed answering; no
+  `next dev`.
 - [ ] Checklist file written (`developer-workspace/ROLL-13/checklist.json`).
 - [ ] `node _lib.mjs` smoke check: attach, ours, one tab created by this harness, no launch, detach.
-- [ ] Drive each state in the checklist; extract everything; compare like-for-like.
+- [ ] Drive each state in the checklist; capture everything, twice per state; compare like-for-like.
 - [ ] Artefacts under `scripts/ROLL-12/runs/<state>/`; report written.
 - [ ] No screenshots. Detach on exit (tab stays open).

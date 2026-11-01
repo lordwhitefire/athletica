@@ -146,6 +146,7 @@
 }
 
 .pixel-thumbnail {
+  position: relative;
   width: 100%;
   aspect-ratio: 1.18 / 1;
   padding: 0;
@@ -419,6 +420,7 @@
 }
 
 .pixel-gallery-item {
+  position: relative;
   width: 100%;
   aspect-ratio: 1 / 0.96;
   padding: 0;

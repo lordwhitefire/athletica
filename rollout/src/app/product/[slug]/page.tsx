@@ -10,7 +10,7 @@ import { headers } from 'next/headers';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<URLSearchParams>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params }: PageProps) {
@@ -38,8 +38,11 @@ export default async function ProductPage({ params, searchParams }: PageProps) {
     notFound();
   }
 
-  const search = await searchParams;
-  const source = normalizeSource(search.get('source'));
+  const searchParamsResolved = await searchParams;
+  const rawSource = searchParamsResolved.source;
+  const source = normalizeSource(
+    Array.isArray(rawSource) ? rawSource[0] : rawSource
+  );
 
   const ctaEnabled = Boolean(
     product.asin && process.env.AMAZON_TAG && process.env.AMAZON_MARKETPLACE
