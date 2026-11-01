@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { validateDoorKey } from '@/lib/auth/door-key-validate';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: 'Sign in',
   description: 'Admin sign-in',

@@ -51,8 +51,9 @@ export async function GET(
 
   // Deposit the cookie and send the admin to sign-in. The cookie alone grants
   // nothing; it only lets the sign-in page load. Email + password + role still
-  // decide who gets in.
+  // decide who gets in. Secure flag follows the request protocol.
+  const secure = request.url.startsWith('https://');
   const response = NextResponse.redirect(new URL('/admin/login', request.url));
-  setDoorKeyCookie(response.headers, token);
+  setDoorKeyCookie(response.headers, token, secure);
   return response;
 }

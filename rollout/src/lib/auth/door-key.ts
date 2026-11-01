@@ -12,10 +12,17 @@ export function hashToken(token: string): string {
 /** Attach the door key as a Set-Cookie header on a redirect response. */
 export function setDoorKeyCookie(
   headers: { set: (name: string, value: string) => void },
-  token: string
+  token: string,
+  secure: boolean
 ): void {
-  headers.set(
-    'Set-Cookie',
-    `${DOOR_KEY_COOKIE_NAME}=${token}; Path=${DOOR_KEY_PATH}; HttpOnly; Secure; SameSite=Lax; Max-Age=${DOOR_KEY_MAX_AGE}`
-  );
+  const parts = [
+    `${DOOR_KEY_COOKIE_NAME}=${token}`,
+    `Path=${DOOR_KEY_PATH}`,
+    'HttpOnly',
+    secure ? 'Secure' : '',
+    'SameSite=Lax',
+    `Max-Age=${DOOR_KEY_MAX_AGE}`,
+  ].filter(Boolean);
+
+  headers.set('Set-Cookie', parts.join('; '));
 }

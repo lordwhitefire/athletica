@@ -33,7 +33,7 @@ export async function validateDoorKey(): Promise<{ ok: boolean }> {
     eq: (col: string, val: string | number | null) => AnyChain;
     is: (col: string, val: null) => AnyChain;
     gt: (col: string, val: string) => AnyChain;
-    maybeSingle: () => Promise<{ data: any[] | null; error: unknown }>;
+    maybeSingle: () => Promise<{ data: any | null; error: unknown }>;
     update: (vals: Record<string, unknown>) => AnyUpdateChain;
   };
 
@@ -41,21 +41,18 @@ export async function validateDoorKey(): Promise<{ ok: boolean }> {
     eq: (col: string, val: string | number) => Promise<{ error: unknown }>;
   };
 
-  const { data: rows, error: findError } = await supabase
+  const { data: key, error: findError } = await supabase
     .from('admin_access_keys')
     .select('id, user_id, expires_at, used_at, revoked_at, kind')
     .eq('token_hash', tokenHash)
     .eq('kind', 'door')
-    .is('used_at', null)
     .is('revoked_at', null)
     .gt('expires_at', new Date().toISOString())
     .maybeSingle();
 
-  if (findError || !rows?.[0]) {
+  if (findError || !key) {
     return { ok: false };
   }
-
-  const key = rows[0];
 
   // Sliding renewal: push expiry to now() + 30 days on each valid visit.
   const newExpiry = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
