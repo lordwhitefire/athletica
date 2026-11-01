@@ -1,4 +1,4 @@
-import { createRouteClient } from '@/lib/supabase/route-client';
+import { createRouteClient, getCookieStore } from '@/lib/supabase/route-client';
 import { NextResponse } from 'next/server';
 
 export interface AdminResult {
@@ -9,7 +9,8 @@ export interface AdminResult {
 // Returns the current user only when they are signed in AND marked admin.
 // Any error or missing role → not an admin (fail closed).
 export async function getAdminUser(): Promise<AdminResult> {
-  const supabase = createRouteClient();
+  const cookieStore = await getCookieStore();
+  const supabase = createRouteClient(cookieStore);
   const { data: { user }, error } = await supabase.auth.getUser();
 
   if (error || !user) {
