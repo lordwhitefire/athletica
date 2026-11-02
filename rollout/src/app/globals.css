@@ -24,7 +24,7 @@ body {
   margin: 0;
   background: var(--athletica-black);
   color: #f7f7f7;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 button,
@@ -53,7 +53,8 @@ button {
   position: relative;
   z-index: 2;
   min-height: 100svh;
-  width: 106%;
+  width: 100%;
+  min-width: 0;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
   background: #111;
@@ -253,8 +254,9 @@ button {
 
 .auth-content {
   width: min(100%, 465px);
-  margin-left: -2.5vw;
-  transform: translateY(2px);
+  min-width: 0;
+  margin-inline: auto;
+  transform: none;
 }
 
 .auth-heading-rule {
@@ -266,6 +268,8 @@ button {
 
 /* Form inputs */
 .auth-input-wrap {
+  width: 100%;
+  min-width: 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -347,6 +351,7 @@ button {
 
 .sign-in-button,
 .signup-submit {
+  width: 100%;
   display: flex;
   min-height: 66px;
   align-items: center;
@@ -446,14 +451,19 @@ button {
   border: 0;
 }
 
+/* Form — vertical layout container at base level */
+.auth-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+}
+
 /* Mobile */
 @media (max-width: 900px) {
   .auth-page {
     grid-template-columns: 0.82fr 1.18fr;
-  }
-
-  .auth-visual {
-    width: 112%;
   }
 
   .auth-panel {
@@ -462,15 +472,12 @@ button {
   }
 
   .auth-content {
-    margin-left: -1vw;
+    margin-inline: auto;
+    transform: none;
   }
 
   .auth-description {
     margin-bottom: 38px;
-  }
-
-  .auth-form {
-    gap: 20px;
   }
 
   .auth-input-wrap {
@@ -523,7 +530,7 @@ button {
   .auth-content {
     width: 100%;
     max-width: 465px;
-    margin: 0;
+    margin-inline: auto;
     transform: none;
   }
 
