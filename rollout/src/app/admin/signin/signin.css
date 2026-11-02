@@ -1,0 +1,645 @@
+/* ==========================================================================
+   Athletica standalone sign-in — refined dark edition
+   ========================================================================== */
+
+.ath-signin-page {
+  /* Layout caps */
+  --ath-shell-max: 1600px;
+  --ath-form-max: 460px;
+
+  /* Tokens — all dark/grey values are pure neutral (equal RGB), no cool cast */
+  --ath-lime: #c8f53c;
+  --ath-lime-soft: #b4dc36;
+  --ath-lime-ink: #0a0a0a;
+
+  --ath-visual-bg: #111111;
+  --ath-form-bg: #09090a;
+
+  --ath-input-bg: #111112;
+  --ath-input-bg-hover: #18181a;
+  --ath-border: #2b2b2b;
+  --ath-border-hover: #3a3a3a;
+
+  --ath-text: #f5f5f5;
+  --ath-muted: #8a8a8a;
+  --ath-faint: #5e5e5e;
+
+  /* Control sizing — tighter for a refined feel */
+  --ath-control-h: 52px;
+  --ath-social-h: 48px;
+  --ath-radius: 10px;
+
+  min-height: 100svh;
+  background: #09090a;
+  color: var(--ath-text);
+  font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Scoped resets (zero specificity) */
+:where(.ath-signin-page) *,
+:where(.ath-signin-page) *::before,
+:where(.ath-signin-page) *::after {
+  box-sizing: border-box;
+}
+:where(.ath-signin-page) :is(h1, p) {
+  margin: 0;
+}
+:where(.ath-signin-page) :is(button, input) {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+:where(.ath-signin-page) button {
+  cursor: pointer;
+}
+
+.ath-signin-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Shell: 50 / 50 split, capped, centered
+   -------------------------------------------------------------------------- */
+.ath-signin-shell {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(100%, var(--ath-shell-max));
+  min-height: 100svh;
+  margin-inline: auto;
+  /* Shell bg matches the form panel so any cut-away area from the visual
+     panel's clip-path fills with form-panel colour — no black sliver. */
+  background: var(--ath-form-bg);
+}
+
+/* --------------------------------------------------------------------------
+   Left visual panel — photo + dark gradient fallback + grain + vignette
+   -------------------------------------------------------------------------- */
+.ath-signin-visual {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+  padding: clamp(28px, 4vw, 56px) clamp(28px, 4vw, 72px);
+  /* Dark gradient fallback shows through if the photo is slow / fails */
+  background-color: var(--ath-visual-bg);
+  background-image:
+    radial-gradient(
+      640px 480px at 25% 30%,
+      rgb(255 255 255 / 0.05),
+      transparent 70%
+    ),
+    radial-gradient(
+      420px 320px at 80% 75%,
+      rgb(200 245 60 / 0.06),
+      transparent 70%
+    ),
+    linear-gradient(160deg, #181818 0%, #0c0c0c 55%, #070707 100%);
+  /* Steeper diagonal that matches the reference design — about a 17% cut.
+     No gap appears because the shell behind the cut is the same #09090a
+     as the form panel, so the cut-away area reads as form-panel colour. */
+  clip-path: polygon(0 0, 100% 0, 83% 100%, 0 100%);
+}
+
+/* The campaign photo — sits below the grain + vignette overlays */
+.ath-signin-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  /* Strong desaturation so the photo reads as a neutral backdrop and any
+     residual color cast (e.g. blue from the pitch) doesn't bleed through */
+  filter: grayscale(0.85) contrast(1.08) brightness(0.62) saturate(0.4);
+}
+
+/* Fine grain / noise overlay for a premium matte feel, sits above the photo */
+.ath-signin-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/></svg>");
+  background-size: 240px 240px;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+}
+
+/* Vignette + bottom-fade so the campaign text stays readable on the photo */
+.ath-signin-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 90% at 50% 50%, transparent 50%, rgb(0 0 0 / 0.55) 100%),
+    linear-gradient(
+      180deg,
+      rgb(0 0 0 / 0.35) 0%,
+      rgb(0 0 0 / 0.05) 25%,
+      rgb(0 0 0 / 0.15) 55%,
+      rgb(0 0 0 / 0.78) 100%
+    );
+}
+
+/* Bring brand + campaign above the photo + overlays */
+.ath-signin-brand,
+.ath-signin-campaign {
+  position: relative;
+  z-index: 1;
+}
+
+.ath-signin-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+.ath-signin-brand-mark {
+  flex: none;
+  width: clamp(36px, 2.6vw, 46px);
+  height: auto;
+}
+.ath-signin-brand-name {
+  font-size: clamp(13px, 1vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+}
+
+.ath-signin-campaign {
+  padding-bottom: clamp(4px, 2vh, 16px);
+}
+.ath-signin-play,
+.ath-signin-bigger {
+  font-family: var(--font-montserrat), var(--font-inter), sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: clamp(48px, 5vw, 64px);
+  line-height: 0.94;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.ath-signin-play {
+  color: #fff;
+}
+.ath-signin-bigger {
+  color: var(--ath-lime);
+}
+.ath-signin-caption {
+  margin-top: 18px;
+  font-size: clamp(10px, 0.78vw, 12px);
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  line-height: 1.85;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.55);
+}
+.ath-signin-rule {
+  width: 44px;
+  height: 2px;
+  margin-top: 18px;
+  background: var(--ath-lime);
+}
+
+/* --------------------------------------------------------------------------
+   Right sign-in panel — slightly different shade for separation
+   -------------------------------------------------------------------------- */
+.ath-signin-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(32px, 6vh, 72px) clamp(28px, 5vw, 96px);
+  background: var(--ath-form-bg);
+}
+
+.ath-signin-content {
+  width: min(100%, var(--ath-form-max));
+  margin-inline: auto;
+}
+
+.ath-signin-heading-rule {
+  width: 34px;
+  height: 3px;
+  margin-bottom: 22px;
+  border-radius: 2px;
+  background: var(--ath-lime);
+}
+
+.ath-signin-heading {
+  font-size: clamp(28px, 2.4vw, 34px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.ath-signin-description {
+  max-width: 36ch;
+  margin-top: 12px;
+  font-size: clamp(13px, 1vw, 15px);
+  line-height: 1.6;
+  color: var(--ath-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Form
+   -------------------------------------------------------------------------- */
+.ath-signin-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.ath-signin-field {
+  position: relative;
+}
+
+.ath-signin-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  color: var(--ath-faint);
+  pointer-events: none;
+  transition: color 0.18s ease;
+}
+.ath-signin-field-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.ath-signin-field:focus-within .ath-signin-field-icon {
+  color: var(--ath-lime);
+}
+
+.ath-signin-page .ath-signin-input {
+  display: block;
+  width: 100%;
+  height: var(--ath-control-h);
+  padding: 0 48px;
+  background: var(--ath-input-bg);
+  border: 1px solid var(--ath-border);
+  border-radius: var(--ath-radius);
+  color: var(--ath-text);
+  font-size: 15px;
+  line-height: 1.2;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+.ath-signin-page .ath-signin-input::placeholder {
+  color: var(--ath-faint);
+  opacity: 1;
+}
+.ath-signin-page .ath-signin-input:hover {
+  border-color: var(--ath-border-hover);
+  background: var(--ath-input-bg-hover);
+}
+.ath-signin-page .ath-signin-input:focus-visible {
+  border-color: var(--ath-lime);
+  background: var(--ath-input-bg-hover);
+  box-shadow: 0 0 0 3px rgb(200 245 60 / 0.14);
+}
+
+.ath-signin-page .ath-signin-toggle {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  transform: translateY(-50%);
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  color: var(--ath-faint);
+  transition: color 0.18s ease, background 0.18s ease;
+}
+.ath-signin-page .ath-signin-toggle:hover {
+  color: var(--ath-text);
+  background: rgb(255 255 255 / 0.04);
+}
+.ath-signin-page .ath-signin-toggle:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 2px;
+}
+.ath-signin-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Remember me / Forgot password */
+.ath-signin-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  margin-top: 4px;
+  font-size: 13px;
+}
+.ath-signin-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--ath-muted);
+}
+.ath-signin-page .ath-signin-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--ath-border-hover);
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.ath-signin-page .ath-signin-checkbox::after {
+  content: "";
+  width: 5px;
+  height: 9px;
+  border: solid var(--ath-lime-ink);
+  border-width: 0 2px 2px 0;
+  transform: translateY(-1px) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.ath-signin-page .ath-signin-checkbox:hover {
+  border-color: var(--ath-faint);
+}
+.ath-signin-page .ath-signin-checkbox:checked {
+  background: var(--ath-lime);
+  border-color: var(--ath-lime);
+}
+.ath-signin-page .ath-signin-checkbox:checked::after {
+  opacity: 1;
+}
+.ath-signin-page .ath-signin-checkbox:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 2px;
+}
+
+.ath-signin-page .ath-signin-link {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ath-lime);
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.18s ease;
+}
+.ath-signin-page .ath-signin-link:hover {
+  color: var(--ath-lime-soft);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ath-signin-page .ath-signin-link:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Primary button */
+.ath-signin-page .ath-signin-submit {
+  width: 100%;
+  height: var(--ath-control-h);
+  margin-top: 6px;
+  border: 0;
+  border-radius: var(--ath-radius);
+  background: var(--ath-lime);
+  color: var(--ath-lime-ink);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: filter 0.18s ease, box-shadow 0.22s ease, transform 0.12s ease,
+    background 0.18s ease;
+}
+.ath-signin-page .ath-signin-submit:hover {
+  background: var(--ath-lime-soft);
+  box-shadow: 0 6px 22px rgb(200 245 60 / 0.22);
+}
+.ath-signin-page .ath-signin-submit:active {
+  transform: translateY(1px);
+}
+.ath-signin-page .ath-signin-submit:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.ath-signin-status {
+  font-size: 12px;
+  text-align: center;
+  color: var(--ath-lime);
+  margin-top: 2px;
+}
+.ath-signin-status:empty {
+  display: none;
+}
+
+/* Divider */
+.ath-signin-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 26px 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ath-faint);
+}
+.ath-signin-divider::before,
+.ath-signin-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--ath-border);
+}
+
+/* Social buttons */
+.ath-signin-socials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.ath-signin-page .ath-signin-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: var(--ath-social-h);
+  padding: 0 12px;
+  background: var(--ath-input-bg);
+  border: 1px solid var(--ath-border);
+  border-radius: var(--ath-radius);
+  color: var(--ath-text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.ath-signin-page .ath-signin-social:hover {
+  border-color: var(--ath-border-hover);
+  background: var(--ath-input-bg-hover);
+}
+.ath-signin-page .ath-signin-social:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 2px;
+}
+.ath-signin-social-icon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
+/* Sign-up prompt */
+.ath-signin-signup {
+  margin-top: 26px;
+  font-size: 13px;
+  text-align: center;
+  color: var(--ath-muted);
+}
+.ath-signin-signup button {
+  margin-left: 4px;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ath-lime);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.18s ease;
+}
+.ath-signin-signup button:hover {
+  color: var(--ath-lime-soft);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ath-signin-signup button:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Sign-in page sign-up link button */
+.ath-signin-signup-link {
+  color: var(--ath-lime);
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+.ath-signin-signup-link:hover {
+  color: var(--ath-lime-soft);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Tablet: keep two columns, tighten spacing
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .ath-signin-page {
+    --ath-control-h: 48px;
+    --ath-social-h: 46px;
+  }
+  .ath-signin-visual {
+    padding: 28px 32px 32px;
+  }
+  .ath-signin-heading-rule {
+    margin-bottom: 18px;
+  }
+  .ath-signin-form {
+    margin-top: 22px;
+    gap: 12px;
+  }
+  .ath-signin-divider {
+    margin: 22px 0;
+  }
+  .ath-signin-socials {
+    gap: 10px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile: stacked, visual on top, no diagonal
+   -------------------------------------------------------------------------- */
+@media (max-width: 720px) {
+  .ath-signin-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ath-signin-visual {
+    height: clamp(220px, 56vw, 300px);
+    padding: 22px 24px;
+    clip-path: none;
+    filter: none;
+  }
+  .ath-signin-play,
+  .ath-signin-bigger {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+  .ath-signin-caption {
+    margin-top: 12px;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+  }
+  .ath-signin-rule {
+    width: 36px;
+    margin-top: 12px;
+  }
+  .ath-signin-panel {
+    align-items: flex-start;
+    padding: 32px 24px 48px;
+  }
+  .ath-signin-heading {
+    font-size: clamp(26px, 8vw, 32px);
+  }
+  .ath-signin-description {
+    font-size: 14px;
+  }
+}
+
+/* Very narrow: stack the social buttons */
+@media (max-width: 420px) {
+  .ath-signin-socials {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ath-signin-page * {
+    transition: none !important;
+  }
+}
