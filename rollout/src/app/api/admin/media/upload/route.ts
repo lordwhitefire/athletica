@@ -1,17 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { requireAdmin } from '@/lib/auth/admin';
+import { getCookieStore, createRouteClient } from '@/lib/supabase/route-client';
 import { adminClient } from '@/lib/admin-sanity';
 
 const ALLOWED_MIME_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/avif'];
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
-async function adminGate(): Promise<NextResponse | null> {
-  const admin = await requireAdmin();
+async function adminGate(supabase: any): Promise<NextResponse | null> {
+  const admin = await requireAdmin(supabase);
   return admin.response;
 }
 
 export async function POST(req: NextRequest) {
-  const gate = await adminGate();
+  const cookieStore = await getCookieStore();
+  const supabase = createRouteClient(cookieStore);
+  const gate = await adminGate(supabase);
   if (gate) return gate;
   try {
     const formData = await req.formData();

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { requireAdmin } from '@/lib/auth/admin';
+import { getCookieStore, createRouteClient } from '@/lib/supabase/route-client';
 import {
   getProductsAdmin,
   createProductAdmin,
@@ -11,13 +12,15 @@ import type { Database } from '@/lib/database.types';
 
 type ProductInsert = Database['rollout']['Tables']['products']['Insert'];
 
-async function adminGate(): Promise<NextResponse | null> {
-  const admin = await requireAdmin();
+async function adminGate(supabase: any): Promise<NextResponse | null> {
+  const admin = await requireAdmin(supabase);
   return admin.response;
 }
 
 export async function GET(request: NextRequest) {
-  const gate = await adminGate();
+  const cookieStore = await getCookieStore();
+  const supabase = createRouteClient(cookieStore);
+  const gate = await adminGate(supabase);
   if (gate) return gate;
   const params = request.nextUrl.searchParams;
   const status = params.get('status') ?? 'all';
@@ -27,13 +30,16 @@ export async function GET(request: NextRequest) {
   const pageSize = Number.parseInt(params.get('pageSize') ?? '8', 10);
 
   try {
-    const result = await getProductsAdmin({
-      status: status as 'all' | 'published' | 'unpublished',
-      search,
-      sort: sort as 'newest' | 'oldest' | 'name_asc' | 'name_desc' | 'price_asc' | 'price_desc',
-      page,
-      pageSize,
-    });
+    const result = await getProductsAdmin(
+      {
+        status: status as 'all' | 'published' | 'unpublished',
+        search,
+        sort: sort as 'newest' | 'oldest' | 'name_asc' | 'name_desc' | 'price_asc' | 'price_desc',
+        page,
+        pageSize,
+      },
+      supabase,
+    );
     return NextResponse.json(result);
   } catch {
     return NextResponse.json({ error: 'Unable to load products' }, { status: 500 });
@@ -41,7 +47,9 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  const gate = await adminGate();
+  const cookieStore = await getCookieStore();
+  const supabase = createRouteClient(cookieStore);
+  const gate = await adminGate(supabase);
   if (gate) return gate;
   const body = await request.json().catch(() => null);
 
@@ -58,7 +66,7 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const item = await createProductAdmin(payload as ProductInsert);
+    const item = await createProductAdmin(payload as ProductInsert, supabase);
     return NextResponse.json({ item }, { status: 201 });
   } catch {
     return NextResponse.json({ error: 'Unable to create product' }, { status: 500 });
@@ -66,7 +74,9 @@ export async function POST(request: NextRequest) {
 }
 
 export async function PATCH(request: NextRequest) {
-  const gate = await adminGate();
+  const cookieStore = await getCookieStore();
+  const supabase = createRouteClient(cookieStore);
+  const gate = await adminGate(supabase);
   if (gate) return gate;
   const body = await request.json().catch(() => null);
   const id: unknown = body?.id;
@@ -77,7 +87,10 @@ export async function PATCH(request: NextRequest) {
   }
 
   try {
-    const item = status === 'published' ? await publishProductAdmin(id) : await unpublishProductAdmin(id);
+    const item =
+      status === 'published'
+        ? await publishProductAdmin(id, supabase)
+        : await unpublishProductAdmin(id, supabase);
     return NextResponse.json({ item });
   } catch {
     return NextResponse.json({ error: 'Unable to update status' }, { status: 500 });
@@ -85,7 +98,9 @@ export async function PATCH(request: NextRequest) {
 }
 
 export async function DELETE(request: NextRequest) {
-  const gate = await adminGate();
+  const cookieStore = await getCookieStore();
+  const supabase = createRouteClient(cookieStore);
+  const gate = await adminGate(supabase);
   if (gate) return gate;
   const id = request.nextUrl.searchParams.get('id');
 
@@ -94,7 +109,7 @@ export async function DELETE(request: NextRequest) {
   }
 
   try {
-    await deleteProductAdmin(id);
+    await deleteProductAdmin(id, supabase);
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: 'Unable to delete product' }, { status: 500 });

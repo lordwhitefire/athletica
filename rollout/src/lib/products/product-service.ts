@@ -1,23 +1,31 @@
 import { createAdminClient, createPublicClient } from '@/lib/supabase/server';
+import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Database } from '@/lib/database.types';
 
 type ProductRow = Database['rollout']['Tables']['products']['Row'];
 type ProductInsert = Database['rollout']['Tables']['products']['Insert'];
 type ProductUpdate = Database['rollout']['Tables']['products']['Update'];
 
-// --- Admin operations (service_role, bypasses RLS) ---
+// A user-scoped Supabase client — RLS applies. Passed in from API route handlers
+// that have already verified the caller is an admin.
+type UserClient = SupabaseClient<Database, 'rollout'>;
 
-export async function getProductsAdmin(options?: {
-  status?: 'published' | 'unpublished' | 'all';
-  search?: string;
-  sort?: 'newest' | 'oldest' | 'name_asc' | 'name_desc' | 'price_asc' | 'price_desc';
-  page?: number;
-  pageSize?: number;
-}): Promise<{ items: ProductRow[]; total: number }> {
-  const supabase = createAdminClient();
+// --- Admin operations (user-scoped, RLS enforced) ---
+
+export async function getProductsAdmin(
+  options?: {
+    status?: 'published' | 'unpublished' | 'all';
+    search?: string;
+    sort?: 'newest' | 'oldest' | 'name_asc' | 'name_desc' | 'price_asc' | 'price_desc';
+    page?: number;
+    pageSize?: number;
+  },
+  supabase?: UserClient,
+): Promise<{ items: ProductRow[]; total: number }> {
+  const sb = supabase ?? createAdminClient();
   const { status, search, sort = 'newest', page = 1, pageSize = 20 } = options ?? {};
 
-  let query = supabase
+  let query = sb
     .from('products')
     .select('*', { count: 'exact' });
 
@@ -55,9 +63,12 @@ export async function getProductsAdmin(options?: {
   return { items: data ?? [], total: count ?? 0 };
 }
 
-export async function getProductByIdAdmin(id: string): Promise<ProductRow | null> {
-  const supabase = createAdminClient();
-  const { data, error } = await supabase
+export async function getProductByIdAdmin(
+  id: string,
+  supabase?: UserClient,
+): Promise<ProductRow | null> {
+  const sb = supabase ?? createAdminClient();
+  const { data, error } = await sb
     .from('products')
     .select('*')
     .eq('id', id)
@@ -67,9 +78,12 @@ export async function getProductByIdAdmin(id: string): Promise<ProductRow | null
   return data;
 }
 
-export async function createProductAdmin(product: ProductInsert): Promise<ProductRow> {
-  const supabase = createAdminClient();
-  const { data, error } = await supabase
+export async function createProductAdmin(
+  product: ProductInsert,
+  supabase?: UserClient,
+): Promise<ProductRow> {
+  const sb = supabase ?? createAdminClient();
+  const { data, error } = await sb
     .from('products')
     .insert(product)
     .select()
@@ -79,9 +93,13 @@ export async function createProductAdmin(product: ProductInsert): Promise<Produc
   return data;
 }
 
-export async function updateProductAdmin(id: string, updates: ProductUpdate): Promise<ProductRow> {
-  const supabase = createAdminClient();
-  const { data, error } = await supabase
+export async function updateProductAdmin(
+  id: string,
+  updates: ProductUpdate,
+  supabase?: UserClient,
+): Promise<ProductRow> {
+  const sb = supabase ?? createAdminClient();
+  const { data, error } = await sb
     .from('products')
     .update(updates)
     .eq('id', id)
@@ -92,9 +110,12 @@ export async function updateProductAdmin(id: string, updates: ProductUpdate): Pr
   return data;
 }
 
-export async function deleteProductAdmin(id: string): Promise<void> {
-  const supabase = createAdminClient();
-  const { error } = await supabase
+export async function deleteProductAdmin(
+  id: string,
+  supabase?: UserClient,
+): Promise<void> {
+  const sb = supabase ?? createAdminClient();
+  const { error } = await sb
     .from('products')
     .delete()
     .eq('id', id);
@@ -102,12 +123,18 @@ export async function deleteProductAdmin(id: string): Promise<void> {
   if (error) throw error;
 }
 
-export async function publishProductAdmin(id: string): Promise<ProductRow> {
-  return updateProductAdmin(id, { status: 'published' });
+export async function publishProductAdmin(
+  id: string,
+  supabase?: UserClient,
+): Promise<ProductRow> {
+  return updateProductAdmin(id, { status: 'published' }, supabase);
 }
 
-export async function unpublishProductAdmin(id: string): Promise<ProductRow> {
-  return updateProductAdmin(id, { status: 'unpublished' });
+export async function unpublishProductAdmin(
+  id: string,
+  supabase?: UserClient,
+): Promise<ProductRow> {
+  return updateProductAdmin(id, { status: 'unpublished' }, supabase);
 }
 
 // --- Public operations (anon key, respects RLS) ---

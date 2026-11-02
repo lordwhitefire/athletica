@@ -1,14 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { requireAdmin } from '@/lib/auth/admin';
+import { getCookieStore, createRouteClient } from '@/lib/supabase/route-client';
 import { adminClient } from '@/lib/admin-sanity';
 
-async function adminGate(): Promise<NextResponse | null> {
-  const admin = await requireAdmin();
+async function adminGate(supabase: any): Promise<NextResponse | null> {
+  const admin = await requireAdmin(supabase);
   return admin.response;
 }
 
 export async function GET(_req: NextRequest) {
-  const gate = await adminGate();
+  const cookieStore = await getCookieStore();
+  const supabase = createRouteClient(cookieStore);
+  const gate = await adminGate(supabase);
   if (gate) return gate;
   try {
     const assets = await adminClient.fetch(

@@ -1,30 +1,87 @@
 -- RLS Policies for Rollout schema
--- Run this in the Supabase SQL Editor
+-- Run this in the Supabase SQL Editor.
+-- Enables Row Level Security and adds policies so only admin accounts can
+-- access admin data. The service_role key bypasses RLS and is used only by
+-- the owner's issue script.
 
--- 1. Products: anon can read published products
+-- ============================================================
+-- 1. Enable RLS on all tables
+-- ============================================================
+
+ALTER TABLE rollout.products ENABLE ROW LEVEL SECURITY;
+ALTER TABLE rollout.analytics ENABLE ROW LEVEL SECURITY;
+ALTER TABLE rollout.admin_access_keys ENABLE ROW LEVEL SECURITY;
+
+-- ============================================================
+-- 2. Products: anon can read published products (existing)
+-- ============================================================
+
 CREATE POLICY "anon_can_read_published_products"
   ON rollout.products
   FOR SELECT
   TO anon
   USING (status = 'published');
 
--- 2. Products: service_role can do everything
+-- ============================================================
+-- 3. Products: service_role can do everything (existing)
+-- ============================================================
+
 CREATE POLICY "admin_full_access_products"
   ON rollout.products
   FOR ALL
   TO service_role
   USING (true);
 
--- 3. Analytics: anon can insert view/click events
+-- ============================================================
+-- 4. Products: authenticated admins can manage products (NEW)
+--    RLS checks app_metadata.role = 'admin' from the user's JWT.
+-- ============================================================
+
+CREATE POLICY "admin_can_manage_products"
+  ON rollout.products
+  FOR ALL
+  TO authenticated
+  USING (auth.jwt() -> 'app_metadata' ->> 'role' = 'admin')
+  WITH CHECK (auth.jwt() -> 'app_metadata' ->> 'role' = 'admin');
+
+-- ============================================================
+-- 5. Analytics: anon can insert view/click events (existing)
+-- ============================================================
+
 CREATE POLICY "anon_can_insert_analytics"
   ON rollout.analytics
   FOR INSERT
   TO anon
   WITH CHECK (true);
 
--- 4. Analytics: service_role can read analytics
+-- ============================================================
+-- 6. Analytics: service_role can read (existing)
+-- ============================================================
+
 CREATE POLICY "admin_can_read_analytics"
   ON rollout.analytics
   FOR SELECT
+  TO service_role
+  USING (true);
+
+-- ============================================================
+-- 7. Analytics: authenticated admins can read (NEW)
+-- ============================================================
+
+CREATE POLICY "admin_can_read_analytics_auth"
+  ON rollout.analytics
+  FOR SELECT
+  TO authenticated
+  USING (auth.jwt() -> 'app_metadata' ->> 'role' = 'admin');
+
+-- ============================================================
+-- 8. Admin access keys: service_role only (NEW)
+--    No policy for anon or authenticated — they read nothing.
+--    RLS is enabled above, so without a matching policy, access is denied.
+-- ============================================================
+
+CREATE POLICY "service_role_full_access_admin_access_keys"
+  ON rollout.admin_access_keys
+  FOR ALL
   TO service_role
   USING (true);
