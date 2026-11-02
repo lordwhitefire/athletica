@@ -6,9 +6,9 @@ import {
   EyeOffIcon,
   LockIcon,
   MailIcon,
-} from "./signin-preview-icons";
+} from "./signin-icons";
 
-export function SigninPreviewForm() {
+export function SigninForm() {
   const emailId = useId();
   const passwordId = useId();
   const [showPassword, setShowPassword] = useState(false);

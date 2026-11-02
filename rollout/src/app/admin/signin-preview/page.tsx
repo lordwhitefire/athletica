@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter, Montserrat } from "next/font/google";
-import { SigninPreviewForm } from "./signin-preview-form";
-import { AthleticaMark, GitHubIcon, GoogleIcon } from "./signin-preview-icons";
-import "./signin-preview.css";
+import { SigninForm } from "./signin-form";
+import {
+  AthleticaMark,
+  GitHubIcon,
+  GoogleIcon,
+} from "./signin-icons";
+import "./signin.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,12 +24,15 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Sign in preview | Athletica",
+  title: "Sign in | Athletica",
+  description: "Sign in to Athletica — premium football gear for real fans.",
   robots: { index: false, follow: false },
 };
 
+// Swap for any Unsplash photo. A plain  is used on purpose so no
+// next.config.ts image setup is needed for this preview.
 const HERO_IMAGE =
-  "https://unsplash.com/photos/m5pz9D6MfUk/download?force=true&w=1600";
+  "https://images.unsplash.com/photo-1551958219-acbc608c6377?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80";
 
 export default function SignInPreviewPage() {
   return (
@@ -76,7 +83,7 @@ export default function SignInPreviewPage() {
               Sign in to access your account and continue your football journey.
             </p>
 
-            <SigninPreviewForm />
+            <SigninForm />
 
             <div className="ath-signin-divider">
               <span>or continue with</span>
@@ -94,8 +101,10 @@ export default function SignInPreviewPage() {
             </div>
 
             <p className="ath-signin-signup">
-              Don’t have an account?{" "}
-              <Link href="/admin/signup">Sign Up</Link>
+              Don&apos;t have an account?{" "}
+              <button type="button" className="ath-signup-btn">
+                Sign Up
+              </button>
             </p>
           </div>
         </section>
