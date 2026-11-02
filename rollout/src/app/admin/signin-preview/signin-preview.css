@@ -1,510 +1,549 @@
+/* ==========================================================================
+   Athletica standalone sign-in preview
+   ========================================================================== */
+
 .ath-signin-page {
+  /* Easy-to-adjust design limits */
+  --ath-shell-max: 1600px;
+  --ath-form-max: 520px;
+
+  /* Tokens */
   --ath-lime: #d1fd40;
+  --ath-lime-ink: #0b1002;
   --ath-black: #050505;
   --ath-text: #f7f7f7;
   --ath-muted: #bdbdc2;
   --ath-border: #55555a;
+
+  /* Control sizing. Lower these if the form feels too large. */
+  --ath-control-h: 56px;
+  --ath-social-h: 52px;
+  --ath-radius: 12px;
+
   min-height: 100svh;
   background: #000;
   color: var(--ath-text);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-* {
+/* Scoped resets (zero specificity) */
+:where(.ath-signin-page) *,
+:where(.ath-signin-page) *::before,
+:where(.ath-signin-page) *::after {
   box-sizing: border-box;
 }
-
-.ath-signin-shell {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  width: min(100%, 1600px);
-  min-height: 100svh;
-  margin-inline: auto;
-  background: var(--ath-black);
-}
-
-/* LEFT: visual panel */
-.ath-signin-visual {
-  position: relative;
-  z-index: 2;
-  min-height: 100svh;
-  width: 100%;
-  min-width: 0;
-  overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
-  background: #111;
-}
-
-.ath-signin-photo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 49% center;
-  filter: grayscale(100%) contrast(1.08) brightness(0.78);
-}
-
-.ath-signin-visual::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, transparent 27%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.91) 0%, rgba(0, 0, 0, 0.15) 43%, transparent 72%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.13), transparent 65%);
-  pointer-events: none;
-}
-
-.ath-signin-brand {
-  position: absolute;
-  z-index: 2;
-  top: clamp(34px, 7.4vh, 88px);
-  left: clamp(30px, 8.4vw, 104px);
-  display: flex;
-  align-items: center;
-  gap: 19px;
-}
-
-.ath-signin-brand-mark {
-  width: 62px;
-  height: 38px;
-  flex: none;
-}
-
-.ath-signin-brand-name {
-  color: #f7f7f7;
-  font-size: clamp(20px, 2.35vw, 30px);
-  font-weight: 700;
-  letter-spacing: 0.13em;
-  line-height: 1;
-}
-
-.ath-signin-campaign {
-  position: absolute;
-  z-index: 2;
-  left: clamp(30px, 4.8vw, 62px);
-  bottom: clamp(38px, 5.5vh, 70px);
-}
-
-.ath-signin-play,
-.ath-signin-bigger {
+:where(.ath-signin-page) :is(h1, p) {
   margin: 0;
-  font-size: clamp(48px, 6vw, 76px);
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: -0.055em;
-  line-height: 0.98;
 }
-
-.ath-signin-play {
-  color: #fff;
-}
-
-.ath-signin-bigger {
-  color: var(--ath-lime);
-}
-
-.ath-signin-caption {
-  margin: 18px 0 0;
-  color: #fff;
-  font-size: clamp(10px, 1.18vw, 15px);
-  font-weight: 800;
-  letter-spacing: 0.31em;
-  line-height: 1.55;
-}
-
-.ath-signin-rule {
-  width: 92px;
-  height: 2px;
-  margin-top: 24px;
-  background: var(--ath-lime);
-}
-
-/* RIGHT: sign-in panel */
-.ath-signin-panel {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100svh;
-  padding: 70px 7.2vw 70px 2.5vw;
-  background: var(--ath-black);
-}
-
-.ath-signin-content {
-  width: min(100%, 520px);
-  min-width: 0;
-  margin-inline: auto;
-  transform: none;
-}
-
-.ath-signin-heading-rule {
-  width: 90px;
-  height: 4px;
-  margin-bottom: 30px;
-  background: var(--ath-lime);
-}
-
-.ath-signin-heading {
+:where(.ath-signin-page) :is(button, input) {
+  font: inherit;
+  color: inherit;
   margin: 0;
-  color: #f7f7f7;
-  font-size: clamp(42px, 3.2vw, 58px);
-  font-weight: 750;
-  letter-spacing: -0.045em;
-  line-height: 1.08;
+}
+:where(.ath-signin-page) button {
+  cursor: pointer;
 }
 
-.ath-signin-description {
-  max-width: 440px;
-  margin: 23px 0 56px;
-  color: var(--ath-muted);
-  font-size: clamp(18px, 1.95vw, 22px);
-  line-height: 1.5;
-}
-
-/* Form */
-.ath-signin-form {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 20px;
-  width: 100%;
-}
-
-.ath-signin-field {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 68px;
-  border: 1px solid var(--ath-border);
-  border-radius: 15px;
-  background: rgba(8, 8, 8, 0.35);
-  transition: border-color 160ms ease, box-shadow 160ms ease;
-}
-
-.ath-signin-field:focus-within {
-  border-color: var(--ath-lime);
-  box-shadow: 0 0 0 3px rgba(209, 253, 64, 0.1);
-}
-
-.ath-signin-field-icon {
-  display: grid;
-  width: 76px;
-  flex: none;
-  place-items: center;
-  color: #f5f5f5;
-}
-
-.ath-signin-input {
-  width: 100%;
-  height: 100%;
-  min-width: 0;
-  padding: 0 18px 0 0;
-  border: 0;
-  outline: 0;
-  color: #f5f5f5;
-  background: transparent;
-  font-size: 18px;
-}
-
-.ath-signin-input::placeholder {
-  color: #85858b;
-  opacity: 1;
-}
-
-.ath-signin-options {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin-top: 1px;
-  color: #d4d4d6;
-  font-size: 16px;
-}
-
-.ath-signin-submit {
-  width: 100%;
-  display: flex;
-  min-height: 66px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  border: 0;
-  border-radius: 15px;
-  color: #050505;
-  background: var(--ath-lime);
-  font-size: 22px;
-  font-weight: 750;
-  transition: filter 160ms ease, transform 160ms ease;
-}
-
-.ath-signin-submit:hover:not(:disabled) {
-  filter: brightness(1.06);
-  transform: translateY(-1px);
-}
-
-.ath-signin-submit:active:not(:disabled) {
-  transform: translateY(0);
-}
-
-.ath-signin-submit:disabled {
-  cursor: wait;
-  opacity: 0.75;
-}
-
-/* Divider */
-.ath-signin-divider {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin: 43px 0 31px;
-  color: #f1f1f1;
-  font-size: 17px;
-  white-space: nowrap;
-}
-
-.ath-signin-divider::before,
-.ath-signin-divider::after {
-  content: "";
-  height: 1px;
-  flex: 1;
-  background: #8b8b8b;
-}
-
-/* Social buttons */
-.ath-signin-socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 21px;
-}
-
-.ath-signin-social {
-  display: flex;
-  min-height: 64px;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  border: 1px solid #898989;
-  border-radius: 15px;
-  color: #f5f5f5;
-  background: transparent;
-  font-size: 17px;
-  font-weight: 600;
-  transition: border-color 160ms ease, background 160ms ease;
-}
-
-.ath-signin-social:hover {
-  border-color: var(--ath-lime);
-  background: rgba(255, 255, 255, 0.045);
-}
-
-/* Sign-up prompt */
-.ath-signin-signup {
-  margin: 47px 0 0;
-  color: #d0d0d2;
-  font-size: 17px;
-  text-align: center;
-}
-
-.ath-signin-signup a {
-  color: var(--ath-lime);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.ath-signin-signup a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-/* Visually hidden labels */
 .ath-signin-sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
+  padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
 
-/* Responsive: tablet */
-@media (max-width: 900px) {
-  .ath-signin-shell {
-    grid-template-columns: 0.82fr 1.18fr;
-  }
-
-  .ath-signin-visual {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .ath-signin-panel {
-    padding-right: 6vw;
-    padding-left: 0;
-  }
-
-  .ath-signin-content {
-    width: min(100%, 520px);
-    margin-inline: auto;
-  }
+/* --------------------------------------------------------------------------
+   Shell: centered, capped, never wider than --ath-shell-max
+   -------------------------------------------------------------------------- */
+.ath-signin-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: min(100%, var(--ath-shell-max));
+  min-height: 100svh;
+  margin-inline: auto;
+  background: var(--ath-black);
 }
 
-/* Responsive: mobile */
-@media (max-width: 650px) {
+/* --------------------------------------------------------------------------
+   Left visual panel
+   -------------------------------------------------------------------------- */
+.ath-signin-visual {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+  padding: clamp(28px, 4vw, 64px) clamp(28px, 5vw, 88px);
+  /* Fallback stadium-light gradient behind the photo */
+  background-color: #111;
+  background-image:
+    radial-gradient(520px 280px at 20% 12%, rgb(255 255 255 / 0.16), transparent 70%),
+    radial-gradient(420px 220px at 75% 30%, rgb(255 255 255 / 0.08), transparent 70%),
+    linear-gradient(160deg, #1d1f1a 0%, #0c0d0b 60%, #060606 100%);
+  /* Diagonal edge made with clip-path. The panel stays inside its column. */
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+}
+
+.ath-signin-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  filter: grayscale(1) contrast(1.12) brightness(0.82);
+}
+
+/* Dark fade so the campaign text stays readable */
+.ath-signin-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / 0.55) 0%, transparent 28%, rgb(0 0 0 / 0.15) 55%, rgb(0 0 0 / 0.92) 100%),
+    linear-gradient(90deg, rgb(0 0 0 / 0.25), transparent 40%);
+  pointer-events: none;
+}
+
+.ath-signin-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+}
+.ath-signin-brand-mark {
+  flex: none;
+  width: clamp(44px, 3.6vw, 58px);
+  height: auto;
+}
+.ath-signin-brand-name {
+  font-size: clamp(19px, 1.8vw, 28px);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+}
+
+.ath-signin-campaign {
+  padding-bottom: clamp(4px, 2vh, 24px);
+}
+.ath-signin-play,
+.ath-signin-bigger {
+  font-family: var(--font-montserrat), var(--font-inter), sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: clamp(52px, 5.6vw, 92px);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.ath-signin-play {
+  color: #fff;
+}
+.ath-signin-bigger {
+  color: var(--ath-lime);
+}
+.ath-signin-caption {
+  margin-top: 24px;
+  font-size: clamp(12px, 0.95vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  line-height: 1.85;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.9);
+}
+.ath-signin-rule {
+  width: 80px;
+  height: 2px;
+  margin-top: 24px;
+  background: var(--ath-lime);
+}
+
+/* --------------------------------------------------------------------------
+   Right sign-in panel
+   -------------------------------------------------------------------------- */
+.ath-signin-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(32px, 6vh, 72px) clamp(24px, 4vw, 72px);
+  background: var(--ath-black);
+}
+
+.ath-signin-content {
+  width: min(100%, var(--ath-form-max));
+  margin-inline: auto;
+}
+
+.ath-signin-heading-rule {
+  width: 64px;
+  height: 4px;
+  margin-bottom: 28px;
+  border-radius: 2px;
+  background: var(--ath-lime);
+}
+
+.ath-signin-heading {
+  font-size: clamp(42px, 3.2vw, 58px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.ath-signin-description {
+  max-width: 32ch;
+  margin-top: 16px;
+  font-size: clamp(17px, 1.3vw, 20px);
+  line-height: 1.55;
+  color: var(--ath-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Form
+   -------------------------------------------------------------------------- */
+.ath-signin-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 36px;
+}
+
+.ath-signin-field {
+  position: relative;
+}
+
+.ath-signin-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  transform: translateY(-50%);
+  color: var(--ath-text);
+  opacity: 0.85;
+  pointer-events: none;
+}
+.ath-signin-field-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ath-signin-page .ath-signin-input {
+  display: block;
+  width: 100%;
+  height: var(--ath-control-h);
+  padding: 0 56px;
+  background: rgb(255 255 255 / 0.02);
+  border: 1px solid var(--ath-border);
+  border-radius: var(--ath-radius);
+  color: var(--ath-text);
+  font-size: 17px;
+  line-height: 1.2;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+.ath-signin-page .ath-signin-input::placeholder {
+  color: #8a8a90;
+  opacity: 1;
+}
+.ath-signin-page .ath-signin-input:hover {
+  border-color: #77777d;
+}
+.ath-signin-page .ath-signin-input:focus-visible {
+  border-color: var(--ath-lime);
+  background: rgb(255 255 255 / 0.04);
+  box-shadow: 0 0 0 3px rgb(209 253 64 / 0.18);
+}
+
+.ath-signin-page .ath-signin-toggle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transform: translateY(-50%);
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  color: var(--ath-text);
+  opacity: 0.85;
+}
+.ath-signin-page .ath-signin-toggle:hover {
+  opacity: 1;
+}
+.ath-signin-page .ath-signin-toggle:focus-visible {
+  outline: 2px solid var(--ath-lime);
+}
+.ath-signin-toggle svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Remember me / Forgot password */
+.ath-signin-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  font-size: 16px;
+}
+.ath-signin-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.ath-signin-page .ath-signin-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #8a8a90;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+.ath-signin-page .ath-signin-checkbox::after {
+  content: "";
+  width: 6px;
+  height: 11px;
+  border: solid var(--ath-lime-ink);
+  border-width: 0 2.5px 2.5px 0;
+  transform: translateY(-1px) rotate(45deg);
+  opacity: 0;
+}
+.ath-signin-page .ath-signin-checkbox:checked {
+  background: var(--ath-lime);
+  border-color: var(--ath-lime);
+}
+.ath-signin-page .ath-signin-checkbox:checked::after {
+  opacity: 1;
+}
+.ath-signin-page .ath-signin-checkbox:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 2px;
+}
+
+.ath-signin-page .ath-signin-link {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ath-lime);
+  font-size: 16px;
+  font-weight: 500;
+}
+.ath-signin-page .ath-signin-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ath-signin-page .ath-signin-link:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Primary button */
+.ath-signin-page .ath-signin-submit {
+  width: 100%;
+  height: var(--ath-control-h);
+  border: 0;
+  border-radius: var(--ath-radius);
+  background: var(--ath-lime);
+  color: var(--ath-lime-ink);
+  font-size: 20px;
+  font-weight: 700;
+  transition: filter 0.15s, box-shadow 0.2s, transform 0.12s;
+}
+.ath-signin-page .ath-signin-submit:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 8px 28px rgb(209 253 64 / 0.22);
+}
+.ath-signin-page .ath-signin-submit:active {
+  transform: translateY(1px);
+}
+.ath-signin-page .ath-signin-submit:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.ath-signin-status {
+  font-size: 14px;
+  text-align: center;
+  color: var(--ath-lime);
+}
+.ath-signin-status:empty {
+  display: none;
+}
+
+/* Divider */
+.ath-signin-divider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 32px 0;
+  font-size: 16px;
+  color: var(--ath-text);
+}
+.ath-signin-divider::before,
+.ath-signin-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--ath-border);
+}
+
+/* Social buttons */
+.ath-signin-socials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ath-signin-page .ath-signin-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: var(--ath-social-h);
+  padding: 0 12px;
+  background: transparent;
+  border: 1px solid var(--ath-border);
+  border-radius: var(--ath-radius);
+  color: var(--ath-text);
+  font-size: 17px;
+  font-weight: 500;
+  transition: border-color 0.15s, background 0.15s;
+}
+.ath-signin-page .ath-signin-social:hover {
+  border-color: #77777d;
+  background: rgb(255 255 255 / 0.04);
+}
+.ath-signin-page .ath-signin-social:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 2px;
+}
+.ath-signin-social-icon {
+  flex: none;
+  width: 22px;
+  height: 22px;
+}
+
+/* Sign-up prompt */
+.ath-signin-signup {
+  margin-top: 32px;
+  font-size: 17px;
+  text-align: center;
+  color: var(--ath-muted);
+}
+.ath-signin-signup a {
+  margin-left: 4px;
+  color: var(--ath-lime);
+  font-weight: 600;
+  text-decoration: none;
+}
+.ath-signin-signup a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ath-signin-signup a:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Tablet: still two columns, tighter spacing
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
   .ath-signin-page {
-    display: flex;
-    min-height: 100svh;
-    flex-direction: column;
-    overflow: visible;
+    --ath-control-h: 52px;
+    --ath-social-h: 48px;
   }
-
-  .ath-signin-shell {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: auto;
-  }
-
   .ath-signin-visual {
-    width: 100%;
-    min-width: 0;
-    min-height: 300px;
-    height: 34svh;
-    max-height: 390px;
-    flex: none;
-    clip-path: none;
+    padding: 28px 28px 36px;
   }
-
-  .ath-signin-photo {
-    object-position: center 34%;
-  }
-
-  .ath-signin-brand {
-    top: 25px;
-    left: 25px;
-    gap: 12px;
-  }
-
-  .ath-signin-brand-mark {
-    width: 43px;
-    height: 28px;
-  }
-
-  .ath-signin-brand-name {
-    font-size: 19px;
-  }
-
-  .ath-signin-campaign {
-    left: 26px;
-    bottom: 22px;
-  }
-
-  .ath-signin-play,
-  .ath-signin-bigger {
-    font-size: 43px;
-  }
-
-  .ath-signin-caption {
-    margin-top: 9px;
-    font-size: 9px;
-    letter-spacing: 0.22em;
-  }
-
-  .ath-signin-rule {
-    width: 65px;
-    margin-top: 12px;
-  }
-
-  .ath-signin-panel {
-    min-height: auto;
-    justify-content: center;
-    padding: 48px 25px 55px;
-  }
-
-  .ath-signin-content {
-    width: 100%;
-    max-width: 465px;
-    margin-inline: auto;
-  }
-
   .ath-signin-heading-rule {
-    width: 66px;
-    height: 3px;
     margin-bottom: 22px;
   }
-
-  .ath-signin-heading {
-    font-size: clamp(38px, 10vw, 48px);
-  }
-
-  .ath-signin-description {
-    margin: 15px 0 30px;
-    font-size: 17px;
-  }
-
   .ath-signin-form {
-    gap: 17px;
+    margin-top: 28px;
+    gap: 16px;
   }
-
-  .ath-signin-field {
-    height: 60px;
-    border-radius: 12px;
-  }
-
-  .ath-signin-field-icon {
-    width: 60px;
-  }
-
-  .ath-signin-input {
-    font-size: 16px;
-  }
-
-  .ath-signin-options {
-    font-size: 14px;
-  }
-
-  .ath-signin-submit {
-    min-height: 59px;
-    margin-top: 10px;
-    border-radius: 12px;
-    font-size: 19px;
-  }
-
   .ath-signin-divider {
-    gap: 15px;
-    margin: 32px 0 22px;
-    font-size: 14px;
+    margin: 26px 0;
   }
-
   .ath-signin-socials {
     gap: 12px;
   }
-
-  .ath-signin-social {
-    min-height: 56px;
-    gap: 9px;
-    border-radius: 12px;
-    font-size: 14px;
+  .ath-signin-submit {
+    font-size: 18px;
   }
+}
 
-  .ath-signin-signup {
-    margin-top: 31px;
-    font-size: 14px;
+/* --------------------------------------------------------------------------
+   Mobile: stacked, photo panel on top, no diagonal
+   -------------------------------------------------------------------------- */
+@media (max-width: 650px) {
+  .ath-signin-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ath-signin-visual {
+    height: clamp(280px, 80vw, 360px);
+    padding: 22px 24px;
+    clip-path: none;
+  }
+  .ath-signin-play,
+  .ath-signin-bigger {
+    font-size: clamp(40px, 12vw, 56px);
+  }
+  .ath-signin-caption {
+    margin-top: 14px;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+  }
+  .ath-signin-rule {
+    width: 56px;
+    margin-top: 14px;
+  }
+  .ath-signin-panel {
+    align-items: flex-start;
+    padding: 36px 24px 56px;
+  }
+  .ath-signin-heading {
+    font-size: clamp(34px, 9vw, 42px);
+  }
+  .ath-signin-description {
+    font-size: 16px;
+  }
+}
+
+/* Very narrow: stack the social buttons */
+@media (max-width: 420px) {
+  .ath-signin-socials {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+  .ath-signin-page * {
+    transition: none !important;
   }
 }
