@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter, Montserrat } from "next/font/google";
+import { notFound } from "next/navigation";
 import { SigninForm } from "./signin-form";
+import { validateDoorKey } from "@/lib/auth/door-key-validate";
 import {
   AthleticaMark,
   GitHubIcon,
@@ -32,7 +34,12 @@ export const metadata: Metadata = {
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1551958219-acbc608c6377?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80";
 
-export default function SignInPreviewPage() {
+export default async function SignInPreviewPage() {
+  const valid = await validateDoorKey();
+  if (!valid.ok) {
+    notFound();
+  }
+
   return (
     <main
       className={`ath-signin-page ${inter.variable} ${montserrat.variable}`}
