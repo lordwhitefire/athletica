@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter, Montserrat } from "next/font/google";
-import { SigninForm } from "./signin-form";
-import {
-  AthleticaMark,
-  GitHubIcon,
-  GoogleIcon,
-} from "./signin-icons";
+import { AuthShell } from "./auth-view";
 import "./signin.css";
 
 const inter = Inter({
@@ -39,76 +34,7 @@ export default function SignInPreviewPage() {
     <main
       className={`ath-signin-page ${inter.variable} ${montserrat.variable}`}
     >
-      <div className="ath-signin-shell">
-        <section
-          className="ath-signin-visual"
-          aria-label="Athletica football campaign"
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="ath-signin-photo"
-            src={HERO_IMAGE}
-            alt="Football campaign visual"
-          />
-
-          <div className="ath-signin-brand">
-            <AthleticaMark className="ath-signin-brand-mark" />
-            <span className="ath-signin-brand-name">ATHLETICA</span>
-          </div>
-
-          <div className="ath-signin-campaign">
-            <p className="ath-signin-play">PLAY</p>
-            <p className="ath-signin-bigger">BIGGER</p>
-            <p className="ath-signin-caption">
-              PREMIUM FOOTBALL GEAR.
-              <br />
-              FOR REAL FANS.
-            </p>
-            <div className="ath-signin-rule" />
-          </div>
-        </section>
-
-        <section
-          className="ath-signin-panel"
-          aria-labelledby="ath-signin-title"
-        >
-          <div className="ath-signin-content">
-            <div className="ath-signin-heading-rule" />
-
-            <h1 className="ath-signin-heading" id="ath-signin-title">
-              Welcome Back
-            </h1>
-
-            <p className="ath-signin-description">
-              Sign in to access your account and continue your football journey.
-            </p>
-
-            <SigninForm />
-
-            <div className="ath-signin-divider">
-              <span>or continue with</span>
-            </div>
-
-            <div className="ath-signin-socials">
-              <button className="ath-signin-social" type="button">
-                <GoogleIcon className="ath-signin-social-icon" />
-                Google
-              </button>
-              <button className="ath-signin-social" type="button">
-                <GitHubIcon className="ath-signin-social-icon" />
-                GitHub
-              </button>
-            </div>
-
-            <p className="ath-signin-signup">
-              Don&apos;t have an account?{" "}
-              <button type="button" className="ath-signup-btn">
-                Sign Up
-              </button>
-            </p>
-          </div>
-        </section>
-      </div>
+      <AuthShell heroImage={HERO_IMAGE} />
     </main>
   );
 }

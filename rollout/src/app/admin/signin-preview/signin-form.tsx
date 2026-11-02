@@ -73,7 +73,13 @@ export function SigninForm() {
           />
           <span>Remember me</span>
         </label>
-        <button className="ath-signin-link" type="button">
+        <button
+          className="ath-signin-link"
+          type="button"
+          onClick={() =>
+            setNotice("Preview only. Password reset isn’t connected on this page.")
+          }
+        >
           Forgot password?
         </button>
       </div>
