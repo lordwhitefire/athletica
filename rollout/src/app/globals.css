@@ -120,6 +120,59 @@ button {
   line-height: 1.4;
 }
 
+/* Sign-in campaign text */
+.campaign-play,
+.campaign-bigger {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 76px);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.campaign-play {
+  color: #fff;
+}
+
+.campaign-bigger {
+  color: var(--athletica-lime);
+}
+
+.campaign-caption {
+  margin: 18px 0 0;
+  color: #fff;
+  font-size: clamp(10px, 1.18vw, 15px);
+  font-weight: 800;
+  letter-spacing: 0.31em;
+  line-height: 1.55;
+}
+
+.campaign-rule {
+  width: 92px;
+  height: 2px;
+  margin-top: 24px;
+  background: var(--athletica-lime);
+}
+
+/* Typography */
+.auth-title {
+  margin: 0;
+  color: #f7f7f7;
+  font-size: clamp(42px, 4.8vw, 58px);
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.auth-description {
+  max-width: 440px;
+  margin: 23px 0 56px;
+  color: #c5c5c9;
+  font-size: clamp(17px, 1.95vw, 23px);
+  line-height: 1.42;
+}
+
 .signup-benefits {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
