@@ -549,24 +549,6 @@
   border-radius: 4px;
 }
 
-/* Sign-in page sign-up link button */
-.ath-signin-signup-link {
-  color: var(--ath-lime);
-  font-weight: 600;
-  text-decoration: none;
-  background: none;
-  border: 0;
-  padding: 0;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-}
-.ath-signin-signup-link:hover {
-  color: var(--ath-lime-soft);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 /* --------------------------------------------------------------------------
    Tablet: keep two columns, tighten spacing
    -------------------------------------------------------------------------- */
@@ -641,5 +623,222 @@
 @media (prefers-reduced-motion: reduce) {
   .ath-signin-page * {
     transition: none !important;
+  }
+}
+
+/* ==========================================================================
+   Sign-up view additions
+   ========================================================================== */
+
+/* Left panel — signup campaign content replaces the signin "PLAY BIGGER"
+   block. Uses the same position/z-index so it sits above the photo +
+   overlays. */
+.ath-signup-campaign {
+  position: relative;
+  z-index: 1;
+  padding-bottom: clamp(4px, 2vh, 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ath-signup-headline {
+  font-size: clamp(28px, 2.8vw, 40px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.ath-signup-headline-accent {
+  color: var(--ath-lime);
+}
+
+.ath-signup-subhead {
+  font-size: clamp(13px, 1vw, 15px);
+  line-height: 1.55;
+  color: rgb(255 255 255 / 0.6);
+  max-width: 38ch;
+}
+
+/* Feature row — three icon+label items separated by vertical dividers */
+.ath-signup-features {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 10px;
+  padding-top: 18px;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+.ath-signup-feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0 14px;
+}
+.ath-signup-feature:first-child {
+  padding-left: 0;
+}
+.ath-signup-feature:last-child {
+  padding-right: 0;
+}
+.ath-signup-feature + .ath-signup-feature {
+  border-left: 1px solid rgb(255 255 255 / 0.08);
+}
+.ath-signup-feature-icon {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  color: var(--ath-lime);
+}
+.ath-signup-feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.ath-signup-feature-label {
+  font-size: clamp(10px, 0.78vw, 12px);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.75);
+  line-height: 1.3;
+}
+
+/* CSS-drawn lime diagonal stripes at the bottom-left of the visual panel.
+   Draws 4 bold diagonal lime stripes at -45deg, sitting just below the
+   feature row. */
+.ath-signup-stripes {
+  position: absolute;
+  bottom: clamp(28px, 4vw, 56px);
+  left: clamp(28px, 4vw, 72px);
+  width: 180px;
+  height: 14px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--ath-lime) 0,
+    var(--ath-lime) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Sign-up form (right panel)
+   -------------------------------------------------------------------------- */
+.ath-signup-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+/* Terms checkbox row — different from the signin "Remember me / Forgot"
+   row. Full-width label with checkbox + inline links. */
+.ath-signup-terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ath-muted);
+  cursor: pointer;
+}
+.ath-signup-terms .ath-signin-checkbox {
+  flex: none;
+  margin-top: 2px;
+}
+.ath-signup-terms span {
+  flex: 1;
+}
+.ath-signup-terms-link {
+  display: inline;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ath-lime);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ath-signup-terms-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Stacked full-width social buttons — different from the signin's
+   side-by-side grid. Each button is full-width, stacked vertically. */
+.ath-signup-socials {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.ath-signin-page .ath-signup-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: var(--ath-social-h);
+  padding: 0 12px;
+  background: var(--ath-input-bg);
+  border: 1px solid var(--ath-border);
+  border-radius: var(--ath-radius);
+  color: var(--ath-text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.ath-signin-page .ath-signup-social:hover {
+  border-color: var(--ath-border-hover);
+  background: var(--ath-input-bg-hover);
+}
+.ath-signin-page .ath-signup-social:focus-visible {
+  outline: 2px solid var(--ath-lime);
+  outline-offset: 2px;
+}
+
+/* Sign-up specific responsive tweaks */
+@media (max-width: 900px) {
+  .ath-signup-campaign {
+    gap: 10px;
+  }
+  .ath-signup-form {
+    margin-top: 20px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .ath-signup-headline {
+    font-size: clamp(24px, 7vw, 30px);
+  }
+  .ath-signup-subhead {
+    font-size: 13px;
+  }
+  /* On mobile, the feature row gets cramped — shrink the labels and tighten */
+  .ath-signup-features {
+    gap: 0;
+    margin-top: 8px;
+    padding-top: 14px;
+  }
+  .ath-signup-feature {
+    padding: 0 8px;
+    gap: 6px;
+  }
+  .ath-signup-feature-label {
+    font-size: 9px;
+    letter-spacing: 0.04em;
+  }
+  .ath-signup-stripes {
+    bottom: 22px;
+    left: 24px;
+    width: 120px;
+    height: 10px;
   }
 }
