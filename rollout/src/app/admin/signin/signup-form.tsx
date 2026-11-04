@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useId, useState, type FormEvent } from "react";
 import {
   EyeIcon,
@@ -11,7 +12,7 @@ import {
   GitHubIcon,
 } from "./signin-icons";
 
-export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void }) {
+export function SignupForm({ inviteCode }: { inviteCode?: string }) {
   const nameId = useId();
   const emailId = useId();
   const passwordId = useId();
@@ -27,6 +28,14 @@ export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void 
     e.preventDefault();
     setNotice("");
 
+    // Lock #1: the invite code. Without one, no account can be created —
+    // not guarded by the button, guarded by the server. Belt and braces:
+    // the form refuses locally too, so the message is immediate.
+    if (!inviteCode) {
+      setNotice("Sign-up requires an invitation link. Ask the admin for one.");
+      return;
+    }
+
     const formData = new FormData(e.currentTarget);
     const name = formData.get("name") as string;
     const email = formData.get("email") as string;
@@ -40,7 +49,7 @@ export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void 
     }
 
     if (password !== confirmPassword) {
-      setNotice("Passwords do not match.");
+      setNotice("Your passwords do not match. Please check them and try again.");
       return;
     }
 
@@ -55,7 +64,7 @@ export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void 
       const res = await fetch("/api/admin/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password, name }),
+        body: JSON.stringify({ email, password, name, code: inviteCode }),
       });
 
       if (!res.ok) {
@@ -66,9 +75,10 @@ export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void 
         return;
       }
 
-      setNotice("Account created. You can now sign in.");
-      setSubmitting(false);
-      setTimeout(() => onSwitchToSignin(), 1500);
+      setNotice("Account created. Signing you in…");
+      setTimeout(() => {
+        window.location.href = "/admin/signin";
+      }, 1200);
     } catch {
       setNotice("Something went wrong. Please try again.");
     } finally {
@@ -126,6 +136,7 @@ export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void 
           name="password"
           placeholder="Password"
           autoComplete="new-password"
+          minLength={8}
         />
         <button
           className="ath-signin-toggle"
@@ -152,6 +163,7 @@ export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void 
           name="confirmPassword"
           placeholder="Confirm password"
           autoComplete="new-password"
+          minLength={8}
         />
         <button
           className="ath-signin-toggle"
@@ -208,9 +220,9 @@ export function SignupForm({ onSwitchToSignin }: { onSwitchToSignin: () => void 
 
       <p className="ath-signin-signup">
         Already have an account?{" "}
-        <button type="button" onClick={onSwitchToSignin}>
+        <Link href="/admin/signin" className="ath-signin-signup-link">
           Sign In
-        </button>
+        </Link>
       </p>
     </form>
   );

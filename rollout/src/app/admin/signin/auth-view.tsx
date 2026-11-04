@@ -1,6 +1,4 @@
-"use client";
-
-import { useState } from "react";
+import Link from "next/link";
 import {
   AthleticaMark,
   BoltIcon,
@@ -16,13 +14,13 @@ type View = "signin" | "signup";
 
 export function AuthShell({
   heroImage,
-  initialView = "signin",
+  view = "signin",
+  signupCode,
 }: {
   heroImage: string;
-  initialView?: View;
+  view?: View;
+  signupCode?: string;
 }) {
-  const [view, setView] = useState<View>(initialView);
-
   return (
     <div className="ath-signin-shell">
       {/* Left visual panel — same photo, same diagonal, same treatment.
@@ -124,13 +122,13 @@ export function AuthShell({
               </div>
               <p className="ath-signin-signup">
                 Don&apos;t have an account?{" "}
-                <button type="button" onClick={() => setView("signup")}>
+                <Link href="/admin/signup" className="ath-signin-signup-link">
                   Sign Up
-                </button>
+                </Link>
               </p>
             </>
           ) : (
-            <SignupForm onSwitchToSignin={() => setView("signin")} />
+            <SignupForm inviteCode={signupCode} />
           )}
         </div>
       </section>

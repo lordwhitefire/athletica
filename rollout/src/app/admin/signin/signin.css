@@ -526,7 +526,9 @@
   text-align: center;
   color: var(--ath-muted);
 }
-.ath-signin-signup button {
+.ath-signin-signup button,
+.ath-signin-signup a,
+.ath-signin-signup-link {
   margin-left: 4px;
   padding: 0;
   background: none;
@@ -538,12 +540,16 @@
   cursor: pointer;
   transition: color 0.18s ease;
 }
-.ath-signin-signup button:hover {
+.ath-signin-signup button:hover,
+.ath-signin-signup a:hover,
+.ath-signin-signup-link:hover {
   color: var(--ath-lime-soft);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-.ath-signin-signup button:focus-visible {
+.ath-signin-signup button:focus-visible,
+.ath-signin-signup a:focus-visible,
+.ath-signin-signup-link:focus-visible {
   outline: 2px solid var(--ath-lime);
   outline-offset: 3px;
   border-radius: 4px;

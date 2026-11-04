@@ -104,7 +104,7 @@ export async function POST(request: NextRequest) {
 
   // Deposit the door-key cookie and redirect to sign-in.
   const secure = request.url.startsWith('https://');
-  const response = NextResponse.redirect(new URL('/admin/login', request.url));
+  const response = NextResponse.redirect(new URL('/admin/signin', request.url));
   setDoorKeyCookie(response.headers, doorToken, secure);
   return response;
 }

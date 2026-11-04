@@ -22,20 +22,11 @@ export async function POST(request: NextRequest) {
     }
   );
 
-  const { error } = await supabase.auth.signOut();
+  await supabase.auth.signOut();
 
-  const response = NextResponse.redirect(new URL('/admin/login', request.url));
-
-  // Clear the door-key cookie too, so the sign-in page won't load without a new link.
-  response.headers.set(
-    'Set-Cookie',
-    'admin_door_key=; Path=/admin; HttpOnly; SameSite=Lax; Max-Age=0'
-  );
-
-  if (error) {
-    // Sign-out errors shouldn't block the redirect — the cookie is cleared regardless.
-    return response;
-  }
-
-  return response;
+  // Signing out ends the Supabase session only. The door-key cookie stays:
+  // it is what lets this browser see the sign-in page again (30 days,
+  // sliding). Per the design it is revoked by the owner or by expiry —
+  // not by signing out — so the admin can sign in and out freely.
+  return NextResponse.redirect(new URL('/admin/signin', request.url));
 }
