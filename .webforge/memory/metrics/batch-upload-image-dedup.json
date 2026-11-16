@@ -1,0 +1,49 @@
+{
+  "metrics": {
+    "taskId": "batch-upload-image-dedup",
+    "agentName": "lead-basin",
+    "taskDescription": "Fix batch upload image duplication (parse/route.ts dedup check) + orphan cleanup utility (sanity-image-utils.ts) + cleanup API endpoint (cleanup/route.ts)",
+    "taskType": "non-visual",
+    "timestamp": "2026-07-16T19:37:33.997Z",
+    "filesChanged": 3,
+    "linesAdded": 511,
+    "linesRemoved": 0,
+    "maxFileSize": 286,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 10,
+    "specChecksPassed": 10,
+    "specCitations": 15,
+    "visualMatchScore": 0,
+    "screenshotComparison": false,
+    "pixelDifferences": null,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 1,
+    "delegationBudgetMax": 6,
+    "subordinatesSpawned": 0,
+    "testsRun": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasComparison": false,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 75,
+    "grade": "C",
+    "canSignOff": false,
+    "blockers": [
+      "Visual task without screenshot comparison"
+    ],
+    "warnings": [
+      "Visual match score: 0% (should be ≥80%)"
+    ]
+  }
+}

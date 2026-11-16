@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "taskId": "task-mega-menu-ux-001",
+    "agentName": "probe",
+    "taskDescription": "Research mega menu UX patterns for Athletica - comprehensive analysis of 7 e-commerce sites (Nike, Adidas, Decathlon, Foot Locker, JD Sports, ASOS, Zalando) with deep hierarchy best practices, mobile strategy, and Athletica-specific wireframe recommendations for 5-level category hierarchy",
+    "taskType": "non-visual",
+    "timestamp": "2026-07-19T08:01:24.606Z",
+    "filesChanged": 6,
+    "linesAdded": 1186,
+    "linesRemoved": 0,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 10,
+    "specChecksPassed": 10,
+    "specCitations": 85,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 4,
+    "delegationBudgetMax": 4,
+    "subordinatesSpawned": 0,
+    "testsRun": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 100,
+    "grade": "A",
+    "canSignOff": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

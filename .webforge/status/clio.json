@@ -1,0 +1,10 @@
+{
+  "agent": "clio",
+  "event": "work_started",
+  "task_id": "task-2026-07-14-001",
+  "timestamp": "2026-07-14T13:54:17.865Z",
+  "details": "Spawning Annotator to fix incorrect clone path in WebForge README (Option B points to ~/.config/opencode instead of ~/.config-webforge/opencode)",
+  "reported_to": null,
+  "notes": null,
+  "project": "/home/lordwhitefire/current-project/athletica"
+}

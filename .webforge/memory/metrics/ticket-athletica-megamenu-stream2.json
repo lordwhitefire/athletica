@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "taskId": "ticket-athletica-megamenu-stream2",
+    "agentName": "probe-wren",
+    "taskDescription": "Mega Menu UX Gap Analysis — Stream 2: Real Site Examples Synthesis. Produced 2 files with Part A (7 sites x pattern details), Part B (current vs. industry comparison table), Part C (applicability analysis: directly applicable / adaptable / rejected patterns).",
+    "taskType": "non-visual",
+    "timestamp": "2026-07-19T10:56:48.779Z",
+    "filesChanged": 2,
+    "linesAdded": 371,
+    "linesRemoved": 0,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 3,
+    "specChecksPassed": 3,
+    "specCitations": 62,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 0,
+    "delegationBudgetMax": 0,
+    "subordinatesSpawned": 0,
+    "testsRun": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 100,
+    "grade": "A",
+    "canSignOff": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "taskId": "task-mega-menu-ux-3level-001",
+    "agentName": "probe",
+    "taskDescription": "Mega Menu UX Gap Analysis — coordinated 4 leads producing 11 files covering: current implementation analysis, real site examples, recommended desktop+mobile design, and implementation roadmap.",
+    "taskType": "non-visual",
+    "timestamp": "2026-07-19T11:00:02.871Z",
+    "filesChanged": 11,
+    "linesAdded": 2111,
+    "linesRemoved": 0,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 213,
+    "specChecksPassed": 213,
+    "specCitations": 213,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 4,
+    "delegationBudgetMax": 4,
+    "subordinatesSpawned": 0,
+    "testsRun": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 100,
+    "grade": "A",
+    "canSignOff": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

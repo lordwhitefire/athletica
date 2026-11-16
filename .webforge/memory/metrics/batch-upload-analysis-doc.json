@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "taskId": "batch-upload-analysis-doc",
+    "agentName": "odin",
+    "taskDescription": "Created comprehensive research document analyzing Athletica batch upload image duplication issue",
+    "taskType": "non-visual",
+    "timestamp": "2026-07-16T18:58:43.158Z",
+    "filesChanged": 1,
+    "linesAdded": 293,
+    "linesRemoved": 0,
+    "maxFileSize": 293,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 0,
+    "specChecksPassed": 0,
+    "specCitations": 0,
+    "visualMatchScore": null,
+    "screenshotComparison": false,
+    "pixelDifferences": null,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 1,
+    "delegationBudgetMax": 4,
+    "subordinatesSpawned": 0,
+    "testsRun": 1,
+    "testsPassed": 1,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasComparison": true,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 100,
+    "grade": "A",
+    "canSignOff": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

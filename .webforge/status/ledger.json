@@ -1,0 +1,10 @@
+{
+  "agent": "ledger",
+  "event": "work_started",
+  "task_id": "update-state-md",
+  "timestamp": "2026-07-16T10:25:14.424Z",
+  "details": "Updating STATE.md: changing line 5 date and inserting new Sanity workflow entry after line 16.",
+  "reported_to": null,
+  "notes": null,
+  "project": "/home/lordwhitefire/current-project/athletica"
+}

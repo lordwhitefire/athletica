@@ -1,0 +1,544 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+================================================================
+File Summary
+================================================================
+
+Purpose:
+--------
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+File Format:
+------------
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  a. A separator line (================)
+  b. The file path (File: path/to/file)
+  c. Another separator line
+  d. The full contents of the file
+  e. A blank line
+
+Usage Guidelines:
+-----------------
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+Notes:
+------
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+
+
+================================================================
+Directory Structure
+================================================================
+PLAN-rollout-mvp-v2-six-layers.md
+PLAN-rollout-mvp.md
+ROLLOUT-MVP-SIX-LAYERS.md
+
+================================================================
+Files
+================================================================
+
+================
+File: PLAN-rollout-mvp-v2-six-layers.md
+================
+# Plan — Rollout MVP in Six Layers
+
+**Date:** 2026-10-24
+**Status:** Draft v2 — awaiting the owner's answers to the scoping questions, then the owner's go
+
+## What the owner asked for
+
+A plan for the `rollout` app as the MVP, organized by six layers — UI, data model, business logic, functionality, user UX, system model — starting from the first users: people who click one of two backlinks and see a product.
+
+## What I will produce
+
+One plan document in `product-management/` with:
+
+- the first-user journey: backlink → product page → Amazon;
+- one section per layer: what exists now, what is missing, what the MVP needs, and what is explicitly out;
+- the CIRCLES recommendation: the customer, the need that wins, the trade-off, and one testable success metric;
+- assumptions and open research items.
+
+## Method
+
+CIRCLES makes the product calls. The six layers are the structure of the plan. The steps run in order and are not merged.
+
+## Inputs
+
+- The owner's answers to the scoping questions: the two backlinks, VX, launch constraint, product supply, Amazon account, success metric, admin operation, deployment.
+- `athletica/rollout/` — the app as it exists now, read-only.
+- `athletica/openspec/changes/roll-arch/` — the two-app plan and its tasks.
+- `athletica/openspec/changes/athletica-architecture/` — the target architecture.
+
+## Boundaries
+
+- No code, configuration, deployment, or tickets.
+- Write only inside `product-management/`.
+- The recommendation is advice. The decision remains the owner's.
+
+## Sequence
+
+1. Comprehend — establish the goal, constraints, and context.
+2. Identify — settle the first users and the stakeholder.
+3. Report — name the underlying need behind the stated want.
+4. Cut — choose the need that wins and state what is given up.
+5. List — produce genuinely different MVP options.
+6. Evaluate — weigh them against what matters now.
+7. Summarize — one recommendation, one metric, and the reasoning.
+
+## Stop point
+
+The work ends when the plan and recommendation are handed back. Nothing is built, shipped, or changed by me.
+
+================
+File: PLAN-rollout-mvp.md
+================
+# Plan — Rollout as the MVP
+
+**Date:** 2026-10-24
+**Status:** Awaiting the owner's go
+
+## What the owner asked for
+
+A recommendation on the `rollout` app as the MVP: what it must include to launch fast, what it must not include, and how to tell whether it worked.
+
+## What I will produce
+
+One recommendation in `product-management/` covering:
+
+- who the MVP is for;
+- the underlying need it serves;
+- the MVP scope — what is in and what is out;
+- the options considered and what the chosen one gives up;
+- one testable success metric;
+- the reasoning and sources, including what in the repo supports each claim.
+
+## Method
+
+The question is worked through my seven-step method, CIRCLES, using the skill that holds each step. The steps run in order; none is skipped or merged.
+
+## Inputs
+
+- `athletica/rollout/` — the app as it exists now, read-only.
+- `athletica/openspec/changes/roll-arch/` — the two-app plan and its tasks.
+- `athletica/openspec/changes/athletica-architecture/` — the target architecture.
+- The owner's answers to what the repo cannot answer: who the first users are, what "fast" means in practice, and where those first users will come from.
+
+## Boundaries
+
+- I do not write code, change configuration, deploy, or create tickets.
+- I write only inside `product-management/`.
+- The recommendation is advice. The decision remains the owner's.
+
+## Sequence
+
+1. Comprehend — establish the goal, constraints, and context.
+2. Identify — settle the customer and the stakeholder.
+3. Report — name the underlying need behind the stated want.
+4. Cut — choose the need that wins and state what is given up.
+5. List — produce genuinely different MVP options.
+6. Evaluate — weigh them against what matters now.
+7. Summarize — one recommendation, one metric, and the reasoning.
+
+## Stop point
+
+The work ends when the recommendation is handed back. Nothing is built, shipped, or changed by me.
+
+================
+File: ROLLOUT-MVP-SIX-LAYERS.md
+================
+# Rollout MVP — Six-Layer Plan
+
+**Date:** 2026-10-24
+**Status:** Draft for the owner's review. No product changes made.
+**Scope:** `athletica/rollout/` as the public MVP. `athletica/frontend/` is the mature/development app and is out of scope.
+
+---
+
+## The one loop
+
+```
+Backlink 1 ─┐
+            ├─→ /product/:slug → SHOP PRODUCT → Amazon
+Backlink 2 ─┘
+```
+
+The MVP exists to make that loop work and to measure it. Every layer below is judged against that loop.
+
+**Working assumption:** the two backlinks point directly at a product page. If they point at the domain root, the root is currently the default Next.js starter page — a launch blocker. This is the first question to settle.
+
+---
+
+## What already exists (verified in the repo)
+
+- `rollout/` — a separate Next.js 16 app, intended as the public/production app.
+- `/product/[slug]` — the customer product page: black/lemon visual system, 1440px cap, image gallery with keyboard controls, editorial sections, CTA states, not-found state.
+- `/admin/products` — product database: search, status filter, sort, pagination (8/page), add/edit, publish/unpublish, delete with confirmation.
+- `/admin/products/[id]/edit` — the product editor page.
+- Product service — admin CRUD plus public `getProductBySlug` (published only).
+- Analytics service — records views/clicks and computes KPIs, top products, chart data.
+- Affiliate service — derives an Amazon URL from a product ASIN at click time.
+- API routes — `/api/admin/products`, `/api/admin/products/[id]`, `/api/affiliate`, `/api/analytics`.
+- Supabase `rollout` schema — `products` and `analytics` tables, plus schema-update SQL and RLS policy SQL.
+- UI primitives — toast, confirmation dialog, action-state helper.
+
+**Not present:** admin authentication, analytics page UI, a real homepage, per-product metadata/OG tags, tests, monitoring, deployment config.
+
+---
+
+## Layer 1 — UI
+
+### Current state
+
+- The customer product page is the strongest part of the app. It already matches most of the written visual spec: black `#000000`, lemon `#d1fd40`, white text only, no white surfaces, centered ATHLETICA header, no navigation or footer, hard 1440px cap.
+- The admin product list and editor are complete enough to operate: add, edit, publish, unpublish, delete, search, filter, sort, paginate.
+- The app root (`/`) is still the `create-next-app` starter screen.
+- The root layout metadata is still:
+  - title: `Create Next App`
+  - description: `Generated by create next app`
+- The product page does not generate its own metadata.
+- There is no `/admin/analytics` page.
+- There is no login screen.
+
+### What the MVP needs
+
+1. **A public product page that looks finished.** The current page is close; it needs a real-data pass, not a redesign.
+2. **A root that does not embarrass the brand.** Either redirect `/` to a chosen product, or build a minimal index. It must not show the Next.js starter.
+3. **Per-product metadata.** Each product page needs its own title, description, and Open Graph image. The two backlinks are shared links; the preview card is the first UI the user sees.
+4. **A basic analytics page** for the owner: views, clicks, CTR, per-product.
+5. **A login screen** for the admin.
+6. **Real content everywhere.** Remove the mock box contents and the Unsplash fallbacks, or mark them clearly as placeholders and replace them before launch.
+
+### Gaps and risks
+
+- **Link previews are wrong.** With the default metadata, a backlink preview will say "Create Next App." This directly reduces clicks before the user ever reaches the page.
+- **Currency is hardcoded to `$`.** If the audience is Nigeria/UK/EU, the price display is wrong.
+- **Mock box contents and fallback images** are fabricated data on a page that is supposed to sell a real product.
+- **Images use plain `<img>`**, not `next/image`; no width/height contract, so layout shift and slow mobile loads are likely.
+- **No analytics UI**, so the owner cannot see the result of the two-backlink test.
+- **No login UI**, and the admin is currently open.
+
+### Decisions needed
+
+- Do the two backlinks point to a product page or to the root?
+- If someone lands on `/`, what should they see?
+- Is the black/lemon look final, or still a draft?
+- What currency and price format should be displayed?
+- What trust copy is required: affiliate disclosure, "price may vary," returns/availability?
+
+---
+
+## Layer 2 — Data model
+
+### Current state
+
+`rollout.products` is a self-contained table (no foreign keys to the mature hierarchy):
+
+- identity: `id`, `slug`, `name`, `status` (`published` / `unpublished`), `gender`, `color`, `asin`, `sku`
+- description: `collection`, `tagline`, `subtitle`, `intro`, `key_benefits` (JSONB), `technical_details` (JSONB)
+- attributes: `adjustment`, `range`, `sole_type`, `upper_material`, `traction`, `price`
+- images: `main_image`, `images[]`
+- SEO: `meta` (JSONB), `tags[]`
+- additions in the schema-update file: `box_contents` (JSONB), `sizes[]`, `sizes_detail`
+- timestamps: `created_at`, `updated_at`
+
+`rollout.analytics`:
+
+- `id` (UUID), `product_id` (FK to products, cascade delete), `event_type` (`view` / `click`), `created_at`
+
+RLS policy SQL exists: anon can read published products and insert analytics events; service role has full access. The design notes that exposing the `rollout` schema and running grants are manual Supabase dashboard steps.
+
+### What the MVP needs
+
+- A product record complete enough to render the page without placeholders: name, slug, images, price, ASIN, description, benefits, specs, box contents.
+- A published/unpublished flag that the public query respects.
+- Analytics events with product, event type, timestamp — **and the backlink source**.
+- A currency field if the price is not in USD.
+
+### Gaps and risks
+
+- **No backlink attribution.** The current analytics table cannot answer "which of my two backlinks produced this click?" If both backlinks point to the same product, the data is indistinguishable. Add a `source` value (e.g. `?src=backlink-a`) to the analytics event, or store a `backlink` label per event.
+- **No visitor/session identity.** Every page load is a view; reloads and bots inflate the count. Fine for a rough CTR, but the owner should know the number is not unique people.
+- **No currency.** `price` is a bare decimal; the UI assumes `$`.
+- **Schema updates may not be applied.** `box_contents`, `sizes`, and `sizes_detail` exist in the TypeScript types and the update SQL, but the base schema file does not include them. Confirm the live `rollout` schema has them.
+- **Hard delete.** Deleting a product removes it and its analytics via cascade. There is no undo. The confirmation dialog protects the UI, but the data is gone.
+- **Images are URLs.** There is no upload path; the editor accepts URLs. That is acceptable for the MVP, but the URLs must be stable and owned by the owner, not Unsplash hotlinks.
+
+### Decisions needed
+
+- Do we track which backlink sent the visitor? (Recommended: yes — it is the whole point of running two.)
+- Is the launch currency USD? If not, add `currency`.
+- How many products are live on day one?
+- Where do product images live: Sanity, Supabase Storage, or external URLs?
+- Are sizes/colors a display field or a purchasable variant? (For an Amazon affiliate page, display only is enough.)
+
+---
+
+## Layer 3 — Business logic
+
+### Current state
+
+- **Product lifecycle:** admin creates/edits a product; `status` switches between `unpublished` and `published`; the public query only returns published products.
+- **Affiliate link:** derived at click time from the product's ASIN plus a hardcoded config (`tag: 'athletica-20'`, marketplace `amazon.com`). The generated URL is not stored. If there is no ASIN, the service returns an error.
+- **Analytics:** a view is recorded when the product page renders; a click is recorded after the affiliate URL is fetched and `window.open` is called. CTR = clicks / views.
+- **Validation:** name required; price must be greater than 0; slug required in the editor; ASIN optional and preserved on unrelated saves.
+- **Admin API:** uses the Supabase service-role key. **There is no authentication check.**
+
+### What the MVP needs
+
+- Only published products are publicly readable.
+- A product without an ASIN must not present a dead CTA; it should say the destination is unavailable.
+- Every view and click is recorded with the product and the backlink source.
+- Admin actions require a logged-in owner.
+- Create/update validation is enforced on the server, not just the form.
+
+### Gaps and risks
+
+- **No admin authentication — launch blocker.** Anyone who finds `/admin/products` or calls `/api/admin/products` can read, create, edit, publish, or delete products using the service-role key. On a public domain this is an open door.
+- **Pop-up blocker risk — conversion killer.** The CTA does `await fetch(...)` and then `window.open(...)`. Mobile browsers, especially in-app browsers, often block a window opened after an async gap. The click may be recorded while Amazon never opens.
+- **Click can be counted without a successful handoff.** The click event is sent after `window.open` is called, not after the new tab actually loads. A blocked pop-up still produces a click event.
+- **View counting is raw.** The server component records a view on every render; no bot filter, no dedupe.
+- **Affiliate tag is a hardcoded guess.** Confirm `athletica-20` is the live Amazon Associates tag. If it is wrong, every click earns nothing.
+- **No server-side slug uniqueness handling.** The editor validates, but the database constraint is the real guard; a duplicate slug should surface a clear error, not a generic failure.
+- **No CSRF/auth story for admin mutations.** Once auth is added, mutations need protection too.
+
+### Decisions needed
+
+- How does the owner log in: shared password, Supabase Auth, or Vercel protection?
+- What exactly counts as a view: raw page load, unique session, or unique visitor?
+- What should the CTA do when a product has no ASIN?
+- Is `athletica-20` the live affiliate tag, and is `amazon.com` the right marketplace?
+- Do we record the backlink source on both views and clicks?
+
+---
+
+## Layer 4 — Functionality
+
+### Current state
+
+Working:
+
+- Open a published product by slug.
+- View the editorial product page.
+- Request an affiliate URL and open Amazon.
+- Record views and clicks.
+- Admin: search/filter/sort/paginate products; add/edit; publish/unpublish; delete with confirmation.
+
+Missing:
+
+- `/admin/analytics` page.
+- Admin authentication.
+- A real root page.
+- Per-product metadata.
+- Real box contents / image fallbacks removed.
+- Any test or smoke check.
+
+### What the MVP must do
+
+1. A person clicks one of the two backlinks and lands on a product page.
+2. The page shows the right product, images, price, story, and CTA.
+3. The CTA opens Amazon reliably and records a click.
+4. The owner logs in, adds or edits a product, and publishes it.
+5. The owner sees views, clicks, CTR overall and per product, for 7/30/90 days.
+6. If a product is missing or unpublished, the visitor sees a clear "no longer available" page.
+7. The root path does something intentional.
+
+### Explicitly out of scope
+
+Accounts, cart, checkout, payments, search, categories, brands, models, blog, reviews, stock management, multi-product browsing, traffic-source analytics, funnels, advanced attribution.
+
+### Decisions needed
+
+- Is the analytics page required at launch, or can the owner use SQL for the first week?
+- Does the admin need image upload, or is URL paste enough for launch?
+- Is the root a redirect or a minimal landing page?
+
+---
+
+## Layer 5 — UX
+
+### The first-user journey, step by step
+
+1. **Before the click:** the user sees a link in one of two places. The link preview (title, description, image) is part of the UX. Right now it would say "Create Next App."
+2. **The click:** the user arrives on a phone, probably inside a social app's in-app browser.
+3. **First screen:** they need to know what the product is, see it, see the price, and see the action — without scrolling.
+4. **The decision:** they scroll through the story, benefits, and specs. The page must feel credible, not like a dropshipping template.
+5. **The action:** they tap SHOP PRODUCT. Amazon must open. If it does not, the page has failed.
+6. **After:** they buy on Amazon or leave. The owner sees the click.
+
+### What the MVP needs
+
+- A link preview that matches the product.
+- A fast first screen on mobile data.
+- A CTA that opens reliably, with a clear fallback if it cannot.
+- Honest states: loading, product not found, no ASIN, broken image, slow network.
+- Trust signals: affiliate disclosure, "price and availability may vary," a real brand surface.
+- No fake urgency, no fabricated box contents, no stock claims.
+
+### Gaps and risks
+
+- **The link preview is the biggest UX gap.** A wrong preview loses the click before the page loads.
+- **Pop-up blocking** can make the CTA look broken.
+- **Fake content** (mock box contents, Unsplash fallback) undermines trust on a page asking for a purchase.
+- **No mobile performance check.** The page uses plain `<img>` and external images.
+- **No operator feedback loop.** Without the analytics page, the owner cannot see whether the UX works.
+
+### Decisions needed
+
+- Who exactly is the clicker, and what do the two backlinks promise?
+- What is the one action: Amazon click only, or also share/save?
+- What is the CTA wording: `SHOP PRODUCT`, `CHECK PRICE ON AMAZON`, or something else?
+- Is an affiliate disclosure required for the audience/region?
+- What does the visitor see if the product is unavailable — a dead end or a route back?
+
+---
+
+## Layer 6 — System model
+
+### Current state
+
+- Two Next.js apps in one repository: `rollout/` (public) and `frontend/` (development).
+- One Supabase project with two schemas: `rollout` and the mature `public`.
+- Deployment plan: two Vercel projects on one repo; `rollout` is the public domain, `frontend` is private/dev.
+- Environment variables: Supabase URL, anon key, service-role key, `NEXT_PUBLIC_SYSTEM_TYPE`, `SANITY_WRITE_TOKEN`.
+- RLS policies exist as SQL; schema exposure and grants are manual.
+- No auth, no monitoring, no tests, no CI in `rollout/`.
+- No `vercel.json`; default Next.js build assumed.
+
+### What the MVP needs
+
+- One public Vercel project for `rollout`, with the correct root directory and environment variables.
+- Supabase `rollout` schema exposed to the Data API, grants applied, RLS enabled and policies active.
+- Admin auth on both the UI routes and the API routes.
+- Service-role key kept server-only; never shipped to the browser.
+- Basic error visibility: at minimum Vercel logs; Sentry if it can be added cheaply.
+- A smoke test for the loop: product page loads, CTA returns a URL, unauthenticated admin request is rejected.
+- A rollback plan: redeploy the previous Vercel build; database changes are additive.
+
+### Gaps and risks
+
+- **Unauthenticated admin is the critical system risk.** It is not a hardening nicety; it is a launch blocker.
+- **No monitoring.** If the affiliate route or Supabase query breaks, the owner finds out from silence.
+- **No tests.** A small service change can break the only revenue path.
+- **Manual Supabase setup steps** (expose schema, grants, RLS) are easy to forget and hard to verify. They need a checklist.
+- **Legacy env vars** (`NEXT_PUBLIC_SYSTEM_TYPE`, `SANITY_WRITE_TOKEN`) may confuse deployment; confirm whether they are still used.
+- **Two apps, one database project.** Isolation is by schema, not by project; a query mistake could reach the mature schema. The rollout services are scoped correctly today, but the boundary should be stated.
+
+### Decisions needed
+
+- What is the public domain?
+- Which admin auth approach?
+- What monitoring is acceptable for launch?
+- Who deploys, and what is the rollback trigger?
+- Is the Supabase `rollout` schema already exposed with grants and RLS applied?
+
+---
+
+## The recommendation (CIRCLES)
+
+### Comprehend
+
+The goal is to launch the smallest public version that tests one thing: whether people arriving from two backlinks will click through to Amazon. The constraints are a solo operator, an existing partially built app, no payment/checkout, and a short runway.
+
+### Identify
+
+The customer is a cold clicker arriving from one of two backlinks. The stakeholder is the owner/operator, who needs to add products and see results without a developer.
+
+### Report
+
+The underlying need is not "see a product page." It is: **"Help me decide quickly whether this product is worth buying, and get me to Amazon without friction."** The page must answer what it is, what it costs, why it is good, and where to buy it — in seconds.
+
+### Cut
+
+The need that wins is **a credible product page that converts a click into an Amazon click, with measurement**. What is given up: browsing, discovery, accounts, cart, search, categories, and advanced analytics.
+
+### List
+
+- **A. Complete the current rollout app.** Keep the product page, admin, and services; add auth, the analytics page, per-product metadata, real data, and a reliable CTA. This is the core bet.
+- **B. Cut the admin.** Seed products directly in Supabase, keep only the product page. This is the quickest build, but the owner cannot add or publish products without a developer.
+- **C. Add a landing page or catalog.** Let the two backlinks point to a list, then product pages. This is the longer-horizon option and delays the launch.
+
+### Evaluate
+
+- **A** is the only option that fits the solo-operator reality and reuses what is already built. Its drawbacks — auth, metadata, CTA reliability, analytics UI — are all small, known pieces of work.
+- **B** is fastest to build but operationally fragile; it fails the moment the owner wants to add a product.
+- **C** is better for discovery but adds scope and assumes the backlinks need a landing page. If they point directly to products, it is unnecessary delay.
+
+### Summarize
+
+**Recommendation: A — finish the current rollout app and launch it.** The launch gate is: admin auth, correct per-product metadata, real product data (no mock content), a CTA that opens Amazon reliably, and the analytics page so the two-backlink test can be read.
+
+**One metric:** Amazon click-through rate — clicks ÷ product page views — split by backlink source. A secondary read: clicks per backlink visit, if the backlink source is captured.
+
+**Trade-off named:** no homepage, no discovery, no browsing. The two backlinks must point directly at product pages. If they cannot, option C becomes necessary.
+
+**This is a recommendation, not a decision.** The call is yours.
+
+---
+
+## Questions I need answered
+
+Answer what you can; "don't know yet" is a valid answer and becomes a research item.
+
+**The loop**
+
+1. What exactly are the two backlinks? Where do they live, and what do they point at?
+2. Do they point to the same product, two different products, or the domain root?
+3. What do the links promise the user? (A specific boot, a deal, a collection, a recommendation?)
+4. What device and app are the clickers on — mostly phone, mostly Instagram/WhatsApp?
+5. Does the clicker know Athletica, or are they completely cold?
+
+**Launch**
+
+6. What does "fast" mean — a date, a number of days, or before an event?
+7. How many products are live on day one?
+8. Is the Amazon Associates account and tag (`athletica-20`) live, and is `amazon.com` the right marketplace?
+9. What is the public domain?
+10. Who operates the admin — only you, or someone else too?
+
+**Scope**
+
+11. Is the analytics page required at launch, or can you read the numbers from SQL for the first week?
+12. Is the root path allowed to redirect to a product, or does it need a real landing page?
+13. Is image upload required, or is pasting image URLs enough for launch?
+14. What is explicitly out: accounts, cart, checkout, search, categories, blog?
+
+**Data and measurement**
+
+15. Do you want to know which of the two backlinks produced each click? (If yes, we add a `source` field.)
+16. What counts as a view: every page load, a unique session, or a unique person?
+17. What currency should prices display in?
+18. Where do product images live — Sanity, Supabase Storage, or external URLs?
+
+**Risk**
+
+19. What admin login approach do you want: shared password, Supabase Auth, or Vercel protection?
+20. What should happen when a product has no ASIN or the Amazon link fails?
+21. Is there any monitoring or error alerting you already use, or should we add the minimum?
+
+---
+
+*Prepared as a recommendation. No code, configuration, deployment, or product change was made.*
+
+
+
+
+
+================================================================
+End of Codebase
+================================================================

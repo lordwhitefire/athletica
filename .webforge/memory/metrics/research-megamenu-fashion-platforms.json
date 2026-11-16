@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "taskId": "research-megamenu-fashion-platforms",
+    "agentName": "probe-beacon",
+    "taskDescription": "Research ASOS.com and Zalando.com mega menu UX patterns for Athletica (football boots e-commerce). Documented levels, columns, images, hover/click behavior, deep category handling, distinctive patterns, mobile approach, and brand navigation for both sites. Included comparative summary with 6 key takeaways for the 5-level hierarchy.",
+    "taskType": "non-visual",
+    "timestamp": "2026-07-19T07:49:59.091Z",
+    "filesChanged": 1,
+    "linesAdded": 172,
+    "linesRemoved": 0,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 8,
+    "specChecksPassed": 8,
+    "specCitations": 25,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 0,
+    "delegationBudgetMax": 0,
+    "subordinatesSpawned": 0,
+    "testsRun": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 100,
+    "grade": "A",
+    "canSignOff": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

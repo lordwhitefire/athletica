@@ -1,0 +1,21 @@
+{
+  "output": {
+    "filePath": "repomix-openspec-output.txt",
+    "style": "plain",
+    "parsableStyle": false,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "removeComments": false,
+    "includeEmptyDirectories": false,
+    "showLineNumbers": false
+  },
+  "include": ["openspec/**"],
+  "ignore": {
+    "useGitignore": false,
+    "useDefaultPatterns": true,
+    "customPatterns": []
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}

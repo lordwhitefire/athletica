@@ -1,0 +1,61 @@
+This file is a merged representation of a subset of the codebase, containing specifically included files and files not matching ignore patterns, combined into a single document by Repomix.
+
+================================================================
+File Summary
+================================================================
+
+Purpose:
+--------
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+File Format:
+------------
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  a. A separator line (================)
+  b. The file path (File: path/to/file)
+  c. Another separator line
+  d. The full contents of the file
+  e. A blank line
+
+Usage Guidelines:
+-----------------
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+Notes:
+------
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Only files matching these patterns are included: frontend/**, studio-athletica/**, openspec/**
+- Files matching these patterns are excluded: frontend/data/**, frontend/public/**, frontend/coverage/**, frontend/playwright-report/**, frontend/test-results/**, frontend/screenshots/**, frontend/.next/**, frontend/out/**, frontend/build/**, frontend/.vercel/**, frontend/.webforge/**, frontend/athletica-audit.md, frontend/athletica-patches/**, frontend/plan/**, frontend/prompts/**, frontend/issues/**, frontend/memory/**, frontend/docs/**, frontend/extract_nav.py, studio-athletica/dist/**, studio-athletica/.sanity/**, studio-athletica/logs/**, **/node_modules/**, **/.git/**, **/.env*, **/.DS_Store, **/*.pem, **/*.tsbuildinfo, **/next-env.d.ts, **/*.log, **/.admin-credentials, **/*.md, **/.gitignore, **/.gitkeep, **/.env.example, **/e2e/**, frontend/scripts/**, studio-athletica/scripts/**, studio-athletica/copy-sanity-data.mjs, studio-athletica/fix-gallery-keys.mjs, studio-athletica/generate-images.mjs, studio-athletica/sanity-diff.mjs, studio-athletica/seed-admin.mjs, studio-athletica/seed.mjs, studio-athletica/sync-to-sanity.mjs, studio-athletica/upload-homepage-images.mjs, studio-athletica/upload-images.mjs, frontend/src/backup-data/**, frontend/playwright.config.ts, frontend/vitest.config.ts, **/*.test.ts, **/*.test.tsx, **/*.spec.ts, **/*.spec.tsx, frontend/src/test-utils/**, frontend/src/lib/mocks/**, **
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+
+
+================================================================
+Directory Structure
+================================================================
+
+
+================================================================
+Files
+================================================================
+
+
+
+
+
+================================================================
+End of Codebase
+================================================================

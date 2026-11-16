@@ -1,0 +1,72 @@
+- **[2026-07-16T12:38:00.523Z]** memory-choices reported metrics for task-doc-workflow-001-retry: Score 75/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T12:38:51.948Z]** lead-archive reported metrics for task-doc-workflow-001-retry: Score 65/100 (D). ❌ BLOCKED — Missing verification proof items: COMPARISON; Visual task without screenshot comparison
+- **[2026-07-16T14:30:30.658Z]** athena reported metrics for investigation-doc-workflow: Score 65/100 (D). ❌ BLOCKED — Missing verification proof items: COMPARISON; Visual task without screenshot comparison
+- **[2026-07-16T18:57:34.891Z]** odin-sage reported metrics for batch-upload-analysis-doc: Score 55/100 (F). ❌ BLOCKED — Missing verification proof items: TEST RESULTS; Visual task without screenshot comparison
+- **[2026-07-16T18:57:43.522Z]** odin-sage reported metrics for batch-upload-analysis-doc: Score 55/100 (F). ❌ BLOCKED — Missing verification proof items: TEST RESULTS; Visual task without screenshot comparison
+- **[2026-07-16T18:57:59.733Z]** odin-sage reported metrics for batch-upload-analysis-doc: Score 85/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T18:58:43.158Z]** odin reported metrics for batch-upload-analysis-doc: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-16T18:59:26.839Z]** athena reported metrics for investigate-batch-upload-duplication: Score 85/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T18:59:33.650Z]** athena reported metrics for investigate-batch-upload-duplication: Score 75/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:10:21.406Z]** jr-bronze reported metrics for B2: Score 98/100 (A). ✅ Can sign off
+- **[2026-07-16T19:10:43.334Z]** jr-copper reported metrics for B1: Score 75/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:30:35.846Z]** jr-silver reported metrics for ticket-fix-image-dedup-parse-route: Score 73/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:30:55.666Z]** jr-silver reported metrics for ticket-fix-image-dedup-parse-route: Score 83/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:34:06.850Z]** sr-iron reported metrics for ticket-A-B1-B2: Score 98/100 (A). ✅ Can sign off
+- **[2026-07-16T19:37:12.104Z]** lead-basin reported metrics for batch-upload-image-dedup: Score 75/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:37:33.997Z]** lead-basin reported metrics for batch-upload-image-dedup: Score 75/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:39:45.534Z]** titan reported metrics for task-batch-upload-fix: Score 85/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:39:57.402Z]** titan reported metrics for task-batch-upload-fix: Score 85/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:40:07.856Z]** titan reported metrics for task-batch-upload-fix: Score 85/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:42:19.343Z]** hephaestus reported metrics for task-batch-upload-fix: Score 75/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:42:29.607Z]** hephaestus reported metrics for task-batch-upload-fix: Score 85/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:42:38.729Z]** hephaestus reported metrics for task-batch-upload-fix: Score 85/100 (B). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:42:54.861Z]** hephaestus reported metrics for task-batch-upload-fix: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-16T19:55:56.621Z]** lead-veritas reported metrics for review-batch-upload-fix: Score 65/100 (D). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T19:59:52.164Z]** lead-aegis reported metrics for review-batch-upload-fix-security: Score 20/100 (F). ❌ BLOCKED — Missing verification proof items: SOURCE CITATIONS; Visual task without screenshot comparison
+- **[2026-07-16T20:00:03.243Z]** lead-aegis reported metrics for review-batch-upload-fix-security: Score 45/100 (F). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-16T20:00:12.625Z]** lead-aegis reported metrics for review-batch-upload-fix-security: Score 75/100 (C). ❌ BLOCKED — Visual task without screenshot comparison
+- **[2026-07-17T04:34:32.342Z]** sr-stone reported metrics for bugfix-proxy-ts-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-17T04:34:54.811Z]** lead-terra reported metrics for bugfix-proxy-ts-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-17T04:35:07.982Z]** titan reported metrics for task-proxy-fix-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-17T04:42:20.619Z]** minos reported metrics for task-review-proxy-fix-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-17T20:36:25.640Z]** hephaestus reported metrics for fix-proxy-login-bypass-and-single-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T02:42:03.401Z]** minos reported metrics for task-review-final-auth-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T02:42:49.055Z]** quill reported metrics for plan.md-auth-update: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T02:44:06.614Z]** lead-scribe reported metrics for task-auth-investigation-update: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T02:44:18.738Z]** memory-choices reported metrics for ticket-auth-dd-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T02:44:41.610Z]** lead-archive reported metrics for ticket-auth-dd-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T02:45:08.997Z]** thoth reported metrics for task-doc-auth-fix-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T14:46:30.145Z]** probe-sable reported metrics for task-research-pdp-sections-001-sable: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T14:54:31.381Z]** probe-orion reported metrics for task-research-pdp-sections-001-orion: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T14:55:06.092Z]** probe reported metrics for task-research-pdp-sections-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T14:55:50.697Z]** athena reported metrics for task-research-pdp-sections-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:47:24.013Z]** probe-orion reported metrics for research-magento-taxonomy: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:48:11.499Z]** probe-beacon reported metrics for task-research-nav-taxonomy-2026-07-18: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:48:32.815Z]** probe-wren reported metrics for research-shopify-taxonomy: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:51:15.483Z]** probe-sable reported metrics for task-research-nav-taxonomy-2026-07-18: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:52:02.080Z]** probe reported metrics for task-research-nav-taxonomy-2026-07-18: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:56:07.303Z]** odin-sage reported metrics for research-shopify-taxonomy-2026-07-18: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:58:46.457Z]** odin-cliff reported metrics for related-products-research: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T15:58:58.062Z]** odin-reed reported metrics for research-magento-taxonomy-data-model: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T16:01:16.285Z]** odin-birch reported metrics for taxonomy-research-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T16:02:37.657Z]** odin reported metrics for taxonomy-research-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-18T16:03:37.686Z]** athena reported metrics for task-research-nav-taxonomy-2026-07-18: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:27:25.333Z]** odin-birch reported metrics for task-2026-07-19-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:27:29.828Z]** odin-sage reported metrics for analyze-navigation-schemas: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:28:01.420Z]** probe-beacon reported metrics for athletica-ux-improvements: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:28:32.766Z]** probe reported metrics for ux-analysis-nav-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:29:25.111Z]** odin reported metrics for nav-comparison-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:49:59.091Z]** probe-beacon reported metrics for research-megamenu-fashion-platforms: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:50:04.821Z]** probe-orion reported metrics for task-mega-menu-ux-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:50:12.284Z]** probe-wren reported metrics for task-mega-menu-ux-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T07:54:31.533Z]** probe-sable reported metrics for task-mega-menu-ux-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T08:00:42.199Z]** probe-orion reported metrics for task-mega-menu-ux-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T08:01:24.606Z]** probe reported metrics for task-mega-menu-ux-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T08:36:26.519Z]** probe-orion reported metrics for task-mega-menu-gap-analysis: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T08:36:41.351Z]** probe-sable reported metrics for task-mega-menu-ux-004: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T08:37:09.369Z]** probe-beacon reported metrics for stream-3-mega-menu-ux-gap-analysis: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T10:56:07.597Z]** probe-orion reported metrics for task-mega-menu-ux-stream1: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T10:56:48.779Z]** probe-wren reported metrics for ticket-athletica-megamenu-stream2: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T10:56:51.986Z]** probe-beacon reported metrics for stream-3-mega-menu-ux-gap-analysis: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T10:59:04.133Z]** probe-sable reported metrics for task-mega-menu-ux-3level-001: Score 100/100 (A). ✅ Can sign off
+- **[2026-07-19T11:00:02.871Z]** probe reported metrics for task-mega-menu-ux-3level-001: Score 100/100 (A). ✅ Can sign off

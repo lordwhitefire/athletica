@@ -1,0 +1,4 @@
+- **[2026-07-17T01:47:01.583Z]** quill edited /home/lordwhitefire/current-project/athletica/.webforge/plan.md (138 lines)
+- **[2026-07-17T01:47:36.229Z]** quill edited /home/lordwhitefire/current-project/athletica/.webforge/plan.md (132 lines)
+- **[2026-07-18T02:42:37.510Z]** quill edited /home/lordwhitefire/current-project/athletica/.webforge/plan.md (144 lines)
+- **[2026-07-18T02:42:52.119Z]** memory-choices edited /home/lordwhitefire/current-project/athletica/.webforge/memory/decisions/auth-middleware-fix.md (230 lines)

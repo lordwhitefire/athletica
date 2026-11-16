@@ -1,0 +1,3 @@
+- **[2026-07-18T02:42:59.489Z]** memory-choices ran: `ls -la /home/lordwhitefire/current-project/athletica/athletica/frontend/package.json 2>/dev/null && `
+- **[2026-07-18T02:44:05.113Z]** memory-choices ran: `cd /home/lordwhitefire/current-project/athletica/athletica/frontend && bun run lint 2>&1 || echo "LI`
+- **[2026-07-18T02:44:11.696Z]** memory-choices ran: `wc -l /home/lordwhitefire/current-project/athletica/.webforge/memory/decisions/auth-middleware-fix.m`

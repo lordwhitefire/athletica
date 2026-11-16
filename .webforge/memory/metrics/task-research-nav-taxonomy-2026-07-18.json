@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "taskId": "task-research-nav-taxonomy-2026-07-18",
+    "agentName": "athena",
+    "taskDescription": "Research e-commerce navigation hierarchy, cascading dropdowns, and related products across 7 platforms (Shopify, Magento, BigCommerce, CommerceTools, WooCommerce, Sanity CMS) for Athletica football boots store",
+    "taskType": "non-visual",
+    "timestamp": "2026-07-18T16:03:37.686Z",
+    "filesChanged": 0,
+    "linesAdded": 0,
+    "linesRemoved": 0,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 6,
+    "specChecksPassed": 6,
+    "specCitations": 145,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 2,
+    "delegationBudgetMax": 4,
+    "subordinatesSpawned": 0,
+    "testsRun": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 100,
+    "grade": "A",
+    "canSignOff": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

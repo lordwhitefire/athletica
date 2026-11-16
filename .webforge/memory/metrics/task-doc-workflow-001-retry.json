@@ -1,0 +1,47 @@
+{
+  "metrics": {
+    "taskId": "task-doc-workflow-001-retry",
+    "agentName": "lead-archive",
+    "taskDescription": "Created design decision document for Sanity JSON Update workflow fix, documenting 4 changes: concurrency group, fetch-depth:0, step reorder, failure notification",
+    "timestamp": "2026-07-16T12:38:51.948Z",
+    "filesChanged": 1,
+    "linesAdded": 101,
+    "linesRemoved": 0,
+    "maxFileSize": 101,
+    "lintErrors": 0,
+    "lintWarnings": 0,
+    "typeErrors": 0,
+    "specChecksTotal": 4,
+    "specChecksPassed": 4,
+    "specCitations": 16,
+    "visualMatchScore": "None",
+    "screenshotComparison": false,
+    "pixelDifferences": null,
+    "inferenceViolations": 0,
+    "guardrailsBlocks": 0,
+    "sourceCitationRate": 100,
+    "delegationBudgetUsed": 1,
+    "delegationBudgetMax": 6,
+    "subordinatesSpawned": 0,
+    "testsRun": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "verificationProof": {
+      "hasWhatBuilt": true,
+      "hasSourceCitations": true,
+      "hasComparison": false,
+      "hasTestResults": true,
+      "hasMetrics": true
+    }
+  },
+  "score": {
+    "totalScore": 65,
+    "grade": "D",
+    "canSignOff": false,
+    "blockers": [
+      "Missing verification proof items: COMPARISON",
+      "Visual task without screenshot comparison"
+    ],
+    "warnings": []
+  }
+}
