@@ -1,0 +1,1713 @@
+diff --git a/blueprint/01-build-layers.md b/blueprint/01-build-layers.md
+new file mode 100755
+index 0000000..1023f9c
+--- /dev/null
++++ b/blueprint/01-build-layers.md
+@@ -0,0 +1,183 @@
++# 01 — Build Layers
++
++**Blueprint:** Athletica (FULL MARKETPLACE)
++**Mode:** Plan
++**Study order:** UI → Data → Business logic → Functionality
++**Build order (confirmed 2026-11-08):** Functionality → Business logic → Data → UI
++
++The UX Thread runs through every layer. Each layer ends with its UX Thread question, answered.
++
++---
++
++## Layer 1 — UI
++
++### Decided
++
++- **Storefront:** `/` = homepage (3-up hero grid + carousel + footer). `/shop` = catalog grid (search + filter + sort + pagination). `/product/[slug]` = detail. `/go/[id]` = affiliate redirect. *(RE-07 §2.1)*
++- **Product detail layout:** 4/6 image + 2/6 buy-box desktop; stacked mobile. Gallery in `<Suspense>`, aspect-square skeleton, cap 5 images, max-h-550px. Buy-box: title + (price pill omitted publicly) → variant selector → description → reviews summary → SHOP PRODUCT CTA last. *(RE-07 §2.2–2.3; locked)*
++- **CTA states:** active (ASIN + tag + live) → SHOP PRODUCT → `/go/[id]` → Amazon; inactive (missing ASIN/tag, dead-link, out-of-stock) → greyed, disabled, "Link coming soon" or "Out of stock", no click. *(locked)*
++- **Visual system:** black/lemon, Tailwind v4, `admin.css` dark. Price as pill (admin only). *(Study BLUEPRINT.md)*
++- **Variant selector:** URL search params as state (`?size=M&color=blue`). Unavailable options visible-but-disabled (strike-through + "Out of Stock"). `router.replace {scroll:false}` on change. Single-variant products → no selector. *(RE-07 §2.4)*
++- **Admin UI:** `/admin/products` (+ variants, bulk), `/admin/categories`, `/admin/collections`, `/admin/media`, `/admin/analytics` (live), `/admin/affiliates`, `/admin/payouts`, `/admin/settings`, `/admin/signin` + `/admin/signup`. *(Study BLUEPRINT.md; RE-04)*
++- **Affiliate UI:** `/affiliate/signup` (multi-step), `/affiliate/verify-email`, `/affiliate/dashboard`, `/affiliate/trackers`, `/affiliate/balance`, `/affiliate/payouts`. *(RE-02)*
++- **Reuse:** toast, confirm-dialog, action-state helper. *(Study BLUEPRINT.md)*
++
++### Build (in UI order)
++
++1. Storefront layout + homepage (ThreeItemGrid + Carousel + Footer). *(RE-07 §2.1)*
++2. Product detail page with gallery, variant selector, reviews, JSON-LD, generateMetadata. *(RE-07 §2.2)*
++3. Catalog grid with search + filter + sort + pagination (URL params as state). *(RE-07 §2.4)*
++4. Greyed CTA component. *(locked)*
++5. Admin workspace shell + all admin pages. *(RE-04)*
++6. Affiliate dashboard shell + all affiliate pages. *(RE-02)*
++7. 404 states (root, missing, unpublished). *(locked)*
++8. i18n locale switch. *(RE-03 §2.1)*
++
++### UX Thread (UI)
++
++*For every screen, what does it look like when empty, loading, failed, successful?*
++- Storefront: loading = skeleton tiles; failed = error + retry; empty = "No products yet."
++- Product page: loading = gallery + buy-box skeleton; failed = plain 404; success = full story + active/greyed CTA.
++- Admin list: empty = "No products" + add; loading = skeleton rows; failed = error toast.
++- Analytics: empty = "No data yet" (no fake zeros); loading = skeleton; live = SSE updates.
++- Affiliate balance: empty = "No clicks yet"; live = balance updates.
++
++### Areas that live here
++
++03 (Decided) · 04 (Decided) · 09 (Decided) · 10 (Decided) · 12 (Decided) · 23 (Decided) · 79 (Decided).
++
++---
++
++## Layer 2 — Data
++
++### Decided
++
++**Entities (all modeled from day one):**
++
++- `rollout.products` — id TEXT PK, slug UNIQUE, name, status (`draft/active/archived/proposed/rejected`), gender, color, asin, sku, main_image (Sanity URL), images[], collection, tagline, subtitle, intro, key_benefits JSONB, technical_details, meta JSONB, tags[], box_contents, sizes[], sizes_detail, deleted_at, available_on, discontinue_on, timestamps. *(Study BLUEPRINT.md; RE-04 §2.1–2.5)*
++- `rollout.product_variants` — id UUID, product_id, sku UNIQUE, price (integer cents, nullable), attributes JSONB, status, deleted_at. Multi-variant from day one. *(RE-04 §2.1)*
++- `rollout.categories` + `rollout.product_categories` (M2M) + `rollout.collections` + `rollout.product_collections` (M2M). *(RE-04 §2.1)*
++- `rollout.analytics` — id UUID, product_id, event_type (`view`/`click`), source, visitor_hash BIGINT, tracker_id (nullable), created_at. Partitioned by month. *(RE-01 §2.2; RE-06 §2.1)*
++- `rollout.admin_access_keys` — id UUID, kind (`invite`/`door`), user_id, token_hash UNIQUE, browser_label, issued_at, expires_at, used_at, revoked_at. *(RE-05 §2.4)*
++- `marketplaces` — slug, locale_number, domain, associates_url, country_code (22 rows). *(RE-03 §2.1)*
++- `amazon_product_cache` — product_id (composite `{ASIN}_{locale}|{lang}|{currency}`), asin, locale, modified_time, expiration_time (TTL), title, price (integer cents), price_formatted, currency, rating, review_count, review_samples JSONB, is_prime, is_adult, error, availability, delivery_free_shipping, delivery_fba. *(RE-03 §2.4)*
++- `affiliate.accounts` — id UUID, email, password_hash, commission_default, full_name, address, country, payout_method, payout_instructions, notify_balance, status (`pending/active/suspended/closed`), timestamps. *(RE-02 Raider §2.1)*
++- `affiliate.trackers` — id (varchar, public tracking code), label, account_id, timestamps. *(RE-02 Raider §2.1)*
++- `affiliate.campaigns` — id UUID, commission_type (`percentage`/`fixed`), reward, recurring (bool), recurring_limit (nullable, NULL=lifetime), minimum_payout, payout_term, timestamps. *(RE-02 Weferral §2.1–2.4)*
++- `affiliate.campaign_trackers` (M2M) — campaign_id, tracker_id. *(RE-02 Weferral §2.1)*
++- `affiliate.balance` — id UUID, account_id, tracker_id, campaign_id, amount, currency, released (bool), trace (nullable), created_at. Append-only. UNIQUE(`account_id`, `trace`). *(RE-02 Raider §2.1–2.3)*
++- `affiliate.payouts` — id UUID, account_id, number (per-account sequential), amount, currency, status (`requested/scheduled/paid/rejected`), scheduled_for, created_at, updated_at. *(RE-02 Raider §2.5; RE-02 Weferral §2.5)*
++- `audit_log` — id UUID, actor_id, action, entity_type, entity_id, metadata JSONB, created_at. *(RE-04 §2.2 lifecycle events)*
++
++**Rules:**
++
++- Amazon URL **never stored** — derived at click time. *(RE-03 §2.2)*
++- `price` stored as integer cents; **never displayed** publicly. *(locked; RE-03 §2.4)*
++- Visitor hash: `SipHash64(salt, ua + ip + domain + root_domain)` — BIGINT. *(RE-06 §2.1)*
++- Salt rotation: every 90s; current + previous; 48h retention; in-memory cache. *(RE-06 §2.2)*
++- Soft-delete via `deleted_at`; default scope excludes. *(RE-04 §2.5)*
++- Tags scoped per-schema. *(RE-04 §2.5)*
++- UTC for all timestamps. *(RE-03 §2.1)*
++- RLS on every table: admin tables role-based (`JWT.role='admin'`); affiliate tables ownership-based (`auth.uid()=account_id`). `FORCE ROW LEVEL SECURITY` + `(select auth.jwt())` / `(select auth.uid())` wrappers everywhere. *(RE-05 §2.3; RE-05 NextBase §2.2–2.3)*
++
++### Build (in Data order)
++
++1. Migrations: `product_variants`, `categories`, `collections`, M2M junctions. *(RE-04 §2.1)*
++2. Migration: `analytics` gains `source`, `visitor_hash`, `tracker_id`; partition by month. *(RE-06; RE-01)*
++3. Migration: `products` gains `deleted_at`, `available_on`, `discontinue_on`, `status` enum. *(RE-04 §2.2–2.5)*
++4. Seed `marketplaces` (22 rows). *(RE-03 §2.1)*
++5. Create `amazon_product_cache`. *(RE-03 §2.4)*
++6. Create `affiliate.*` schema (accounts, trackers, campaigns, campaign_trackers, balance, payouts). *(RE-02)*
++7. Create `audit_log`. *(RE-04 §2.2)*
++8. RLS rewritten: `FORCE` + `(select ...)` wrappers; ownership-based for affiliate tables. *(RE-05 NextBase §2.2–2.3)*
++
++### UX Thread (Data)
++
++*No data yet, or slow?*
++- No products: storefront empty state. No clicks: "No clicks yet." Dead Amazon cache: greyed CTA. Stale dashboard: skeleton + "loading."
++
++### Areas that live here
++
++49 (Decided — single tenant, schema isolation + ownership RLS for affiliate) · 52 (Decided) · 59 (Decided — soft delete) · 62 (Decided — UTC). Gap D1–D9 (all Decided — see `05-gap-questions.md`).
++
++---
++
++## Layer 3 — Business logic
++
++### Decided (rules as "when X, then Y")
++
++- **When** a visitor opens `/product/[slug]`, **then** returned only if `status='active' AND deleted_at IS NULL AND available_on <= now`. *(RE-04 §2.3)*
++- **When** a visitor clicks SHOP PRODUCT, **then** `/go/[id]` resolves the visitor's marketplace (geo-routed), derives `https://{domain}/dp/{ASIN}?tag={tag}`, returns 302. URL never stored. *(RE-03 §2.2)*
++- **When** the ASIN/tag missing OR dead-link OR out-of-stock, **then** CTA greyed; no click recorded. *(locked; RE-03 §2.7)*
++- **When** a click is recorded, **then**: 6-layer bot check on click path → identity hash (SipHash64) → dedup (1h) → EU redaction → `waitUntil` write. *(RE-01 Dub; RE-06)*
++- **When** an admin hits `/admin/*`, **then** three locks (door-key → JWT role via `getClaims()`) → fail-silent 404. *(RE-05; RE-05 NextBase)*
++- **When** an affiliate hits `/affiliate/*`, **then** ownership-based RLS (`auth.uid() = account_id`) → redirect to login if no session. *(RE-05 NextBase §2.2)*
++- **When** a product is discontinued, **then** `discontinue()` bypasses validation, sets `discontinue_on`, `status='archived'`. *(RE-04 §2.4)*
++- **When** a bulk status update runs, **then** `require_ids!` + skip proposed/rejected + count skipped. *(RE-04 §2.6)*
++- **When** a CSV import runs, **then** two-phase (mapping → processing), per-row status, grouped COUNT, no delete mid-processing. *(RE-04 §2.8)*
++- **When** an affiliate conversion postback arrives, **then**: bearer token verified → commission = amount × campaign.reward (or fixed) → FX-normalized → balance INSERT (`released=false`) → UNIQUE(`account_id`,`trace`) dedup. *(RE-02 Raider §2.2–2.3)*
++- **When** an affiliate requests a payout, **then**: config_failure / amount_neutral / amount_failure / request_success; flow wrapped in ONE transaction (balance.released=true + payout INSERT). *(RE-02 Raider §2.5; RE-02 Weferral §2.3)*
++- **When** a payout transitions, **then**: `requested → scheduled → paid` or `→ rejected`; `scheduled_for` set on approval. *(RE-02 Weferral §2.5)*
++- **When** a counter increments, **then** SQL `x = x + 1` (never read-then-write). *(RE-02 Raider §2.4)*
++- **When** the dead-link job runs, **then** three signals (PAAPI availability, HEAD probe, redirect-time 4xx) → mark dead → CTA greys out. *(RE-03 §2.7)*
++- **When** geo-routing, **then** IP → country (6-header chain) → marketplace → URL with that marketplace's tag. Fallback to default marketplace if no tag. *(RE-03 §2.1, §2.6; RE-06 §2.5)*
++
++**Limits:** PAAPI 1 TPS / 86400/day. Rate limit per-endpoint (Upstash, fail-open 1s). Click dedup 1h. Payout_term delays eligibility.
++
++**Where each rule lives (one place):** Amazon URL → `affiliate-service.ts`. Publish gate → `product-service.ts`. Three locks → `auth/admin.ts` + middleware. Commission → `affiliate/commission-service.ts`. Payout → `affiliate/payout-service.ts` (transactional). Geo → `lib/geo/marketplace-resolver.ts`. Dead-link → `cron/dead-link-probe.ts`.
++
++### Build (in Business logic order)
++
++1. Publish gate. 2. Amazon URL derivation (config-driven, per-marketplace). 3. Click pipeline (bot, hash, dedup, EU, waitUntil). 4. Three locks + getClaims + middleware. 5. Affiliate auth (ownership RLS). 6. discontinue + status workflows. 7. Bulk ops module. 8. Two-phase import. 9. Commission calc + postback. 10. Payout (transactional, state machine). 11. Geo-routing. 12. Dead-link job.
++
++### UX Thread (Business logic)
++
++*When a rule says no, how does the user find out why?*
++- Missing ASIN/tag → greyed CTA + "Link coming soon." Dead link → "Out of stock." Unauthorized admin → plain 404. Affiliate below payout minimum → "Balance below $X minimum." Payout missing details → "Complete payout details first."
++
++### Areas that live here
++
++36 (Skip — Amazon) · 38 (Skip — Amazon) · 39 (Decided — affiliate commissions) · 40 (Skip — Amazon) · 54 (Decided — recurring) · 60 (Decided — affiliate-admin payout review).
++
++---
++
++## Layer 4 — Functionality
++
++### Decided build order (6 phases)
++
++| Phase | Ships |
++|---|---|
++| 1 Foundation | Product page, redirect + click pipeline, analytics pipeline. |
++| 2 Storefront | Homepage, catalog browse + search, product detail with reviews. |
++| 3 Admin workspace | Auth, product CRUD + variants + bulk import, media library, live analytics. |
++| 4 Affiliate program | Signup + onboarding, trackers, balance, payouts. |
++| 5 Amazon integration | Geo-routing, PAAPI cache, availability, dead-link detection, reviews. |
++| 6 Hardening | i18n, real-time analytics, Sentry, legal, handoff. |
++
++Per Feature Cards 1–15 in `product-management/03-feature-cards.md`.
++
++### Functions (full)
++
++- Storefront: homepage, catalog browse, search, filter, sort, pagination, product detail, variant selection, reviews, SHOP PRODUCT CTA → Amazon (geo-routed).
++- Redirect + click: `/go/[id]` → 302 to Amazon; click recorded; bot-filtered; deduped; EU-redacted; attributed to tracker.
++- Analytics pipeline: views + clicks, visitor hash, salt rotation, drop-reason telemetry.
++- Admin: three-locks auth, product CRUD + variants + categories + collections, bulk status/archive, two-phase CSV import, media library, live analytics dashboard, affiliate review, payout review (approve/reject/schedule), settings.
++- Affiliate: signup + email verify + admin approval, trackers, balance (live), payout request + history.
++- Amazon: 22-marketplace geo-routing, PAAPI cache (TTL + error + availability), dead-link detection (3 signals), reviews via PAAPI.
++- i18n: 22 locale UI strings. Legal: disclosure, privacy, terms, cookie, affiliate agreement.
++
++### Out of scope (structural)
++
++Cart, checkout, payment, inventory, shipping, order management (Amazon owns). Mobile-app surfaces (no mobile app). PWA. Outgoing webhooks.
++
++### UX Thread (Functionality)
++
++*Steps per feature, where lost?*
++- Visitor loop: 1 step (tap → Amazon). Fixed: `/go/[id]` redirect, not `window.open`.
++- Affiliate signup: 3 steps (profile → payout details → terms). Progress indicator.
++- Payout request: 2 steps (amount → confirm). Validation feedback inline.
++- CSV import: 2 phases (map → process). Per-row status surfaces bad rows without partial writes.
++
++### Areas that live here
++
++07 (Decided) · 34 (Skip — Amazon) · 35 (Decided — full catalog) · 37 (Skip — Amazon) · 41 (Decided — Sanity) · 42 (Decided — PAAPI reviews) · 44 (Decided — admins + affiliates) · 46 (Decided — live dashboard) · 47 (Decided — SSE) · 48 (Decided — email) · 50 (Decided — media library) · 51 (Decided — public + admin search) · 53 (Decided — import/export) · 55 (Decided) · 56 (Decided — full workspace) · 67 (Skip — no mobile) · 68 (Skip — no mobile) · 71 (Skip — no mobile).
+diff --git a/blueprint/02-engine.md b/blueprint/02-engine.md
+new file mode 100755
+index 0000000..2e86413
+--- /dev/null
++++ b/blueprint/02-engine.md
+@@ -0,0 +1,79 @@
++# 02 — Engine (10 Parts)
++
++**Blueprint:** Athletica (FULL MARKETPLACE)
++**Mode:** Plan
++
++The Engine sits under the Build Layers. UX Thread for the whole Engine: *when something goes wrong or is slow, what does the user see?* — plain 404 for missing/unpublished/auth-failure; greyed CTA for dead/incomplete Amazon links; Sentry captures errors silently; the redirect never fails on a stats-write outage; dashboards degrade from SSE to polling on flaky connections.
++
++---
++
++## 1. Architecture
++
++- **Big parts:** Next.js 16.3.4 App Router (Vercel) — storefront + admin + affiliate dashboards + route handlers; Supabase (Postgres + Auth + RLS); Sanity CMS (images); Upstash Redis (rate limit + dedup + cache + salt); Sentry (errors); Amazon (PAAPI + Associates redirect, 22 marketplaces); email (SMTP/Resend).
++- **Stack (02, Decided):** Next.js 16.3.4, React 19.2.8, Tailwind v4, Supabase JS, `@supabase/ssr`, Sanity client, `@upstash/ratelimit`, `ua-parser-js`, `@sentry/nextjs`, PAAPI client, `next-intl` (i18n), `zod` (validation).
++- **Frontend organisation (05, Decided):** App Router. Server Components for data (storefront, product, admin/affiliate lists). Client components for interactivity (gallery, carousel, CTA, editors, live dashboards). Route handlers for `/api/*`. `src/proxy.ts` fast-path gate. Layered action-client: `actionClient → authActionClient → adminActionClient / affiliateActionClient`.
++- **Platforms (65, Decided):** Web only. Phone + PC. No mobile app.
++- **Landing page vs app shell (78, Decided):** Storefront homepage at `/`; admin shell `/admin/*`; affiliate shell `/affiliate/*`. Separate layouts.
++
++## 2. Integration
++
++- **Outside services (80, Decided):** Supabase, Sanity, Amazon (PAAPI + Associates, 22 marketplaces), Upstash Redis, Sentry, Vercel (edge + cron), email (SMTP/Resend), MaxMind GeoIP2 (offline geo).
++- **Own API (57, Decided):** REST `/api/admin/*`, `/api/affiliate/*`, `/api/analytics`, `/api/affiliate/postback` (S2S bearer token), `/api/affiliate/dashboard`, `/go/[id]` (redirect). Server Components for initial data.
++- **Outgoing webhooks (61, Skip):** None. PAAPI polled via cron.
++- **For each service:** account + keys + test mode before build. Supabase project (configured). Sanity project `cuiis46d` (configured). Upstash (in deps). Sentry (add DSN). Amazon Associates tags (per-marketplace, owner supplies) + PAAPI keys. Email (configure SMTP/Resend).
++
++## 3. Communication between parts
++
++- **C1 (Decided):** Direct calls (Server Component → service → Supabase). Click pipeline via `waitUntil`. PAAPI via scheduled fetch. Live dashboards via SSE (degrade to short-polling). No message queue.
++- **Background jobs (58, Decided):** `waitUntil` for click recording. Vercel cron jobs: salt rotation (90s), dead-link HEAD probe (daily), PAAPI refresh (TTL-based), payout-term eligibility check (daily). SSE for live dashboards.
++- **C2 (Decided):** Click writes best-effort (`Promise.allSettled`). Redirect survives stats outage. Dedup cache absorbs replays. SSE reconnects on drop.
++- **C3 (Decided):** Identity-hash dedup (1h). Postback UNIQUE(`account_id`,`trace`). Idempotent SSE (event IDs).
++
++## 4. Runtime environment (R1–R5)
++
++- **R1 (Decided):** Server: Vercel (Node.js, Next.js 16.3.4). Browser: client components. SSE on route handlers (Vercel Pro for long-lived).
++- **R2 (Decided):** Node 20+, Next.js 16.3.4, React 19.2.8, Postgres 15, `@supabase/ssr`, `@upstash/ratelimit`, `ua-parser-js`, `@sentry/nextjs`, PAAPI client, `next-intl`, `zod`.
++- **R3 (Decided):** Vercel default (10s serverless, 60s Pro). Click write < 50ms or backgrounded. PAAPI 1 TPS / 86400/day. SSE long-lived (Pro).
++- **R4 (Decided):** Slow mobile (Nigeria), in-app browsers, power cuts. Mobile LCP target. SSE degrades to polling on flaky connections.
++- **R5 (Decided):** Dev (local), Preview (Vercel preview), Production (`*.vercel.app` or custom domain). Same Supabase project, schema-isolated (`rollout` + `affiliate`).
++
++## 5. Deployment
++
++- **Deployment (18, Decided):** One public Vercel project. Preview per PR. Rollback = redeploy. Add `vercel.json` with cron definitions (salt rotation, dead-link probe, PAAPI refresh, payout-term check).
++- **App store (66, Skip):** No mobile app.
++- **App updates (70, Skip):** No mobile app.
++
++## 6. Configuration
++
++- **Configuration (14, Decided):** `.env.local`/Vercel: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server), `SANITY_WRITE_TOKEN` (server), `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN`, `SENTRY_DSN`, `AMAZON_ASSOCIATES_TAGS` (JSON, per-marketplace, when supplied), `PAAPI_ACCESS_KEY` + `PAAPI_SECRET_KEY`, `EMAIL_*` (SMTP/Resend). Remove legacy `NEXT_PUBLIC_SYSTEM_TYPE`. Leak plan: rotate Supabase service key + Sanity token; revoke door-keys/invites on compromise.
++
++## 7. Security
++
++- **Auth (43, Decided):** Admins: three locks (invite → door-key → JWT role, `getClaims()`, fail-silent 404). Affiliates: email/password + email verify + admin approval (JWT, ownership-scoped). Layered action-client. Ownership RLS for affiliate tables; role-based for admin tables.
++- **Cookies/sessions (28, Decided):** Door-key (HttpOnly, SameSite=Lax, Path=/admin, 30d, Secure). Admin JWT. Affiliate JWT. No visitor cookies. Visitor identity hashed server-side.
++- **Rate limiting (63, Decided):** Upstash sliding window, per-endpoint policies, fail-open 1s. Explicit `redirect` policy. Click dedup (1h). Signin + signup + postback rate limits. Bot filter on click path.
++- **Security (77, Decided):** HTTPS. SHA-256 tokens. Service-role isolated. RLS + `FORCE` + `(select auth.jwt())` / `(select auth.uid())` wrappers. EU IP redaction. `rel="nofollow noopener"` on Amazon CTA. `SECURITY DEFINER` for affiliate membership. `zod` validation.
++
++## 8. Reliability
++
++- **Error handling (13, Decided):** Neutral auth errors. Plain 404. Sentry (server + client). Error-tolerant click writes. Transactional payout flow (no partial state). Branded not-found.
++- **Monitoring (19, Decided):** Sentry (server + client, email, PII off). Uptime ping on key URLs. Drop-reason telemetry (grouped count). Payout-pipeline stuck-request alerts. PAAPI error-rate alert.
++- **Offline/PWA (27, Skip):** No PWA. Dashboards degrade to polling.
++- **Backup (31, Decided):** Supabase daily + PITR (Pro). Sanity CDN (versioned). Git. Rollback = redeploy.
++- **Offline mobile (69, Skip):** No mobile app.
++
++## 9. Scalability
++
++- **Scalability (76, Decided):** Single Supabase Pro. `analytics` partitioned by month. Upstash for hot dedup/cache. Vercel edge + Sanity CDN. Upgrade path: Supabase read replicas + ClickHouse at >5M clicks/month. Affiliate ledger scales with Postgres (append-only, indexed).
++
++## 10. Resource management
++
++- **Performance (08, Decided):** Mobile LCP. `next/image` with Sanity domains. `getClaims()` not `getUser()`. `waitUntil` for click writes. Upstash cache for hot link + product records. `<Suspense>` for gallery/carousel. SSE over polling (fewer requests).
++- **Code splitting (30, Decided):** Auto-splitting. Admin + affiliate dashboards lazy-loaded. Gallery/carousel in `<Suspense>`. Charts dynamic-imported.
++- **Mobile perf (72, Skip):** No mobile app. Covered by 08.
++
++---
++
++## Engine summary
++
++19 Decided, 6 Skip (all mobile-app or no-webhook surfaces). No Engine gap is left Pending.
+diff --git a/blueprint/03-project-ring.md b/blueprint/03-project-ring.md
+new file mode 100755
+index 0000000..8284afa
+--- /dev/null
++++ b/blueprint/03-project-ring.md
+@@ -0,0 +1,109 @@
++# 03 — Project Ring
++
++**Blueprint:** Athletica (FULL MARKETPLACE)
++**Mode:** Plan
++
++The work around the product: version control, client talk, legal, docs, handoff, progress. 12 areas. Rules: do 01 and 75 before Build Layers; keep 73/74 running; the Ring never changes the product.
++
++---
++
++## Start of the project
++
++### 01 — Project setup (Decided)
++
++- **Name:** Athletica. **Owner/client:** lordwhitefire (Victor). **Domain:** `*.vercel.app` → custom domain.
++- **Hosting:** Vercel (one public project). **Environments:** dev / preview / production. Same Supabase project, schema-isolated (`rollout` + `affiliate`).
++- **Audience:** football gear buyers (storefront) + affiliates (dashboard) + admin (the client).
++- **Currency:** per-marketplace (USD default, GBP, EUR, etc.).
++- **Deadline:** per owner, phased (6 phases, each with a phase gate).
++
++### 75 — Constraint identification (Decided)
++
++- **Budget:** solo owner + affiliates; Vercel/Supabase Pro tiers when traffic justifies.
++- **Hosting limits:** Vercel (10s serverless free, 60s Pro), Supabase (free → Pro), Upstash (free tier), Sentry (free tier).
++- **Amazon limits:** PAAPI 1 TPS / 86400 requests/day. Associates tag is per-marketplace (one tag per store).
++- **Nigerian context:** slow mobile data, in-app browsers, power cuts. Phone-first is the audience, not a preference.
++- **Email deliverability:** affiliate verification + payout notifications must reach inboxes (configure SPF/DKIM).
++- **Client's devices:** phone + PC (verify both).
++
++### 32 — Client communication (Decided)
++
++- Owner approves designs + says go/no-go.
++- **Phase gates:** owner reviews at end of each of the 6 phases before the next begins.
++- Progress via `developer-workspace/PROGRESS.md`.
++- Questions the repo can't answer (Amazon tags per marketplace, affiliate program terms) go to the owner.
++
++---
++
++## While building
++
++### 15 — Version control (Decided)
++
++- Git at root. Protected `main`. Feature branches per phase/task. Conventional commits.
++- `.gitignore` tracks all except secrets (`.env*` except `.env.example`) + build output + `reverse-engineering-workspace/samples/`.
++
++### 16 — Development workflow (Decided)
++
++- `tsconfig.json` strict. ESLint + Prettier. Pre-commit checks. Code review before merge.
++- Read `rollout/AGENTS.md` (Next.js 16 breaking changes) before writing code.
++- `zod` for runtime validation on all API inputs.
++
++### 17 — Testing (Decided — smoke + critical-path per phase)
++
++- **Owner ruling: no full test suite.** *(Study BLUEPRINT.md, Project Ring)*
++- Smoke test before each phase launch:
++  - Phase 1: product page loads; CTA returns URL; unauthenticated admin → 404.
++  - Phase 3: product CRUD; bulk import; media upload.
++  - Phase 4: affiliate signup; payout state machine; ownership RLS (affiliate can't see other affiliates' data).
++  - Phase 5: dead-link detection marks a product; geo-routing resolves.
++- Critical-path manual check on real phone (in-app browser) + real PC each phase.
++- If the owner later wants tests, the critical-path set is named above.
++
++### 22 — Naming conventions (Decided)
++
++- Files: `kebab-case.ts/.tsx`. Components: `PascalCase`. Functions/vars: `camelCase`. Tables/columns: `snake_case`. Constants: `UPPER_SNAKE`. Routes: `kebab-case`.
++
++### 21 — Documentation (Decided)
++
++- `rollout/README.md` (real setup/run/deploy). `.env.example` (kept current). Changelog per release.
++- API docs (route handler comments + `api/` note).
++- **Admin guide** (one-pager: sign in, products, bulk import, media, analytics, payouts, affiliates).
++- **Affiliate guide** (signup, trackers, balance, payout request).
++- This blueprint. The architect handoff (produced by the architect agent from this blueprint).
++
++### 73 — Progress tracking (Decided)
++
++- `developer-workspace/PROGRESS.md` (kept current). Per-phase checklists. Per-task ROLL folders in `developer-workspace/` + `openspec/tasks/`.
++
++### 74 — Session recovery (Decided)
++
++- After interruption: reload rule files first (`BLUEPRINT.md`, this blueprint, `repomix-*-agent.txt`).
++- Log after each meaningful action: what done, what next, what decided.
++
++---
++
++## End of the project
++
++### 20 — Legal and compliance (Decided)
++
++- **Amazon Associates disclosure:** "I earn from qualifying purchases" on every product page.
++- **Privacy policy:** analytics hashing (IP+UA), Sentry (PII off), affiliate data, admin email.
++- **Cookie notice:** admin/affiliate session cookies; no visitor cookies.
++- **GDPR:** EU IP redaction (implemented); affiliate data deletion on request; right to export.
++- **Terms of service:** storefront + affiliate agreement (commission terms, payout terms, reversals).
++- **Affiliate payout tax docs:** per jurisdiction (e.g. 1099 for US affiliates, where applicable).
++- **Age limits:** `is_adult` flag from PAAPI; no special UI in v1 (Amazon gates the purchase).
++
++### 33 — Handoff and maintenance (Decided)
++
++- **Who maintains:** owner + next developer.
++- **Credentials handoff:** Supabase (project URL, service key), Sanity (project ID, write token), Upstash (Redis URL + token), Sentry (DSN), Vercel (project access), Amazon Associates (per-marketplace tags + PAAPI keys), email (SMTP/Resend credentials).
++- **Client training:** admin guide + affiliate guide (one-pager each).
++- **Support period:** per owner.
++- **Architect handoff** produced by the architect agent from this blueprint (layer-by-layer file map).
++
++---
++
++## Project Ring summary
++
++All 12 areas Decided. Nothing Pending. The Ring governs how the product is built, documented, and handed off — across all 6 phases.
+diff --git a/blueprint/04-checklist.md b/blueprint/04-checklist.md
+new file mode 100755
+index 0000000..b2145a0
+--- /dev/null
++++ b/blueprint/04-checklist.md
+@@ -0,0 +1,207 @@
++# 04 — The 80-Area Checklist (FULL MARKETPLACE)
++
++**Blueprint:** Athletica
++**Mode:** Plan — every area is **Decided**, **Skip**, or **Pending**.
++
++The 80 areas from `web-development-areas.md`. Each has one Home. Full rationale + citation: `product-management/02-area-decisions-evidence.md`.
++
++**Counts:** Decided 66 · Skip 14 · Pending 0. **Total 80.** Plus 17 gap questions (all Decided).
++
++The 14 Skips are structural to the business model (affiliate marketplace, not retailer; web-only) — not MVP shortcuts. Everything the RE engagements studied is in scope and built.
++
++---
++
++## By Home
++
++### UI (7)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 03 | Design system | Decided | Black/lemon, Tailwind v4; price pill (admin only). |
++| 04 | Brand and identity | Decided | Athletica across all surfaces. |
++| 09 | Responsive and cross-device | Decided | Phone-first storefront; PC + admin. |
++| 10 | Cross-browser compatibility | Decided | In-app browsers + evergreen. |
++| 12 | Assets and media | Decided | Sanity media library; Supabase stores URL only. |
++| 23 | Animation and interactions | Decided | Carousel, gallery, toast/confirm; no pop-up CTA. |
++| 79 | Design tokens and theming | Decided | Tailwind v4 tokens; admin.css dark. |
++
++### UX Thread (8)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 06 | Routing and navigation | Decided | `/` homepage, `/shop` catalog, `/product/[slug]`, `/go/[id]`, `/admin/*`, `/affiliate/*`. |
++| 11 | Accessibility | Decided | Contrast/focus/alt/keyboard; axe check before launch. |
++| 24 | Notifications and feedback | Decided | Toast + confirm + action-state; honest states everywhere. |
++| 25 | Forms and validation | Decided | Admin editor + affiliate signup/payout + CSV mapping. |
++| 26 | Internationalization | Decided | 22 marketplace locales; URL param switch; English base. |
++| 29 | Redirect and URL management | Decided | `/go/[id]`→302; branded not-found; `X-Robots-Tag: noindex`. |
++| 45 | Onboarding flow | Decided | Affiliate multi-step signup + admin invite. |
++| 64 | Multi-step flows and wizards | Decided | Affiliate signup, payout request, CSV import wizard. |
++
++### Data (4)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 49 | Multi-tenancy | Decided | Single platform; ownership RLS for affiliate's own tables. |
++| 52 | Audit logs and activity history | Decided | analytics + admin action log + payout transitions + append-only balance. |
++| 59 | Soft delete vs hard delete | Decided | Soft via `deleted_at`; balance rows append-only. |
++| 62 | Timezone and localization | Decided | UTC storage; per-marketplace locale config. |
++
++### Business logic (6)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 36 | Inventory management | Skip | Amazon holds inventory. |
++| 38 | Shipping and delivery | Skip | Amazon ships. |
++| 39 | Discount and promotions | Decided | Full affiliate commissions/payouts (per-campaign, recurring, FX, reversals). |
++| 40 | Order management | Skip | Amazon is the order system. |
++| 54 | Subscription and feature gating | Decided | Affiliate recurring commission (toggle + nullable limit). |
++| 60 | Collaboration features | Decided | Affiliate↔admin payout review workflow. |
++
++### Functionality (18)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 07 | SEO and discoverability | Decided | `generateMetadata` + JSON-LD + sitemap + robots on all public pages. |
++| 34 | Payment integration | Skip | Amazon handles payment. |
++| 35 | Product catalog | Decided | Full catalog: products + variants + categories + collections + browse + search. |
++| 37 | Cart and checkout | Skip | No cart; CTA → Amazon. |
++| 41 | CMS integration | Decided | Sanity full media library. |
++| 42 | Reviews and testimonials | Decided | Amazon reviews via PAAPI on product pages. |
++| 44 | User management | Decided | Admins (three-locks) + affiliates (self-serve + approval). |
++| 46 | Dashboard and data visualization | Decided | Live admin analytics + affiliate dashboard. |
++| 47 | Real-time features | Decided | SSE for live dashboards. |
++| 48 | Notification system | Decided | Email (affiliate events, Sentry, invites) + in-app toast. |
++| 50 | File management | Decided | Full media library (upload, browse, delete). |
++| 51 | Search and filtering | Decided | Public storefront search + admin search. |
++| 53 | Import and export | Decided | Two-phase CSV import + analytics/ledger/payout CSV export. |
++| 55 | Settings and configuration | Decided | Affiliate tags (per-marketplace), Sentry, rate-limit, salt, PAAPI, affiliate program settings. |
++| 56 | Admin panel | Decided | Full workspace (products, categories, media, analytics, affiliates, payouts, settings). |
++| 67 | Push notifications (mobile) | Skip | No mobile app. |
++| 68 | Device features | Skip | No mobile app. |
++| 71 | Deep linking | Skip | No mobile app; `/go/[id]` is web redirect. |
++
++### Engine (25)
++
++#### Architecture (4)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 02 | Stack decisions | Decided | Next.js 16.3.4 + Supabase + Sanity + Upstash + Sentry + ua-parser-js + PAAPI client. |
++| 05 | Frontend architecture | Decided | App Router; Server Components for data; layered action-client. |
++| 65 | Platform targets | Decided | Web only (phone + PC). |
++| 78 | Landing page vs app shell | Decided | Storefront homepage at `/`; admin + affiliate shells separate. |
++
++#### Integration (3)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 57 | API design | Decided | REST `/api/*` + S2S postback + affiliate dashboard API. |
++| 61 | Webhooks (outgoing) | Skip | None; PAAPI polled. |
++| 80 | Third party integrations | Decided | Supabase, Sanity, Amazon (22 marketplaces), Upstash, Sentry, Vercel, email. |
++
++#### Communication between parts (1)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 58 | Background jobs and queues | Decided | `waitUntil` for clicks; Vercel cron for salt/dead-link/PAAPI/payout-term; SSE for live. |
++
++#### Runtime environment (0 areas — uses R1–R5, see `05-gap-questions.md`)
++
++#### Deployment (3)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 18 | Deployment and DevOps | Decided | One Vercel project; preview per PR; `vercel.json` with cron. |
++| 66 | App store and distribution | Skip | No mobile app. |
++| 70 | App updates | Skip | No mobile app; web = redeploy. |
++
++#### Configuration (1)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 14 | Environment and configuration | Decided | `.env.local`/Vercel; per-marketplace tags; PAAPI keys; leak plan. |
++
++#### Security (4)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 28 | Cookie and session management | Decided | Door-key (admin) + JWT (admin + affiliate); no visitor cookies. |
++| 43 | Authentication and authorization | Decided | Three locks (admin) + email/password+approval (affiliate); ownership RLS for affiliate. |
++| 63 | Rate limiting and abuse prevention | Decided | Upstash per-endpoint policies; explicit redirect; dedup; signin + signup + postback limits. |
++| 77 | Security | Decided | HTTPS; SHA-256 tokens; RLS+FORCE+`(select…)`; EU redaction; `rel="nofollow noopener"`. |
++
++#### Reliability (5)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 13 | Error handling | Decided | Neutral auth errors; plain 404; Sentry; error-tolerant click writes; transactional payouts. |
++| 19 | Monitoring and observability | Decided | Sentry + uptime ping + drop-reason telemetry + payout-pipeline + PAAPI error-rate alerts. |
++| 27 | Offline and PWA | Skip | No PWA; dashboards degrade to polling. |
++| 31 | Backup and recovery | Decided | Supabase daily + PITR (Pro); Sanity CDN; git; redeploy rollback. |
++| 69 | Offline mode (mobile) | Skip | No mobile app. |
++
++#### Scalability (1)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 76 | Scalability planning | Decided | Single Supabase Pro; monthly partitions; Upstash cache; replicas/ClickHouse at >5M clicks/month. |
++
++#### Resource management (3)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 08 | Performance | Decided | Mobile LCP; `next/image`; `getClaims()`; `waitUntil`; Upstash cache; SSE over polling. |
++| 30 | Code splitting and bundle size | Decided | Auto-splitting; admin/affiliate lazy; `<Suspense>`; charts dynamic-imported. |
++| 72 | Performance (mobile specific) | Skip | No mobile app; covered by 08. |
++
++### Project Ring (12)
++
++| # | Area | Decision | One-line rationale |
++|---|---|---|---|
++| 01 | Project setup | Decided | Athletica; Vercel; dev/preview/prod; per-marketplace currency. |
++| 15 | Version control | Decided | Git; protected `main`; conventional commits. |
++| 16 | Development workflow | Decided | TS strict; ESLint/Prettier; pre-commit; review; read `AGENTS.md`. |
++| 17 | Testing | Decided | Smoke + critical-path per phase (owner ruling: no full suite). |
++| 20 | Legal and compliance | Decided | Amazon disclosure; privacy; cookie; GDPR; terms; affiliate agreement; payout tax docs. |
++| 21 | Documentation | Decided | README; `.env.example`; changelog; API docs; admin guide; affiliate guide; blueprint; handoff. |
++| 22 | Naming conventions | Decided | kebab files; PascalCase components; camelCase fns; snake_case tables. |
++| 32 | Client communication | Decided | Owner approves; phase gates; progress via `PROGRESS.md`. |
++| 33 | Handoff and maintenance | Decided | Credentials handoff; admin + affiliate guides; support per owner. |
++| 73 | Progress tracking | Decided | `PROGRESS.md` + per-phase + per-task ROLL folders. |
++| 74 | Session recovery | Decided | Reload rule files first; log after each action. |
++| 75 | Constraint identification | Decided | Solo owner + affiliates; Vercel/Supabase Pro; PAAPI limits; Nigerian context; email deliverability. |
++
++---
++
++## Count check
++
++| Home | Decided | Skip | Pending | Total |
++|---|---|---|---|---|
++| UI | 7 | 0 | 0 | 7 |
++| UX Thread | 8 | 0 | 0 | 8 |
++| Data | 4 | 0 | 0 | 4 |
++| Business logic | 2 | 4 | 0 | 6 |
++| Functionality | 13 | 5 | 0 | 18 |
++| Engine | 19 | 6 | 0 | 25 |
++| Project Ring | 12 | 0 | 0 | 12 |
++| **Total** | **66** | **14** | **0** | **80** |
++
++Wait — that totals 65 Decided. Let me recount: 7+8+4+2+13+19+12 = 65. Hmm. Let me recheck Functionality: Decided = 07,35,41,42,44,46,47,48,50,51,53,55,56 = 13. Skip = 34,37,67,68,71 = 5. Total 18 ✓. Business logic: Decided = 39,54,60 = 3 (not 2). Skip = 36,38,40 = 3. Total 6 ✓. So Business logic Decided = 3, not 2.
++
++Recount: UI 7 + UX Thread 8 + Data 4 + Business logic 3 + Functionality 13 + Engine 19 + Project Ring 12 = 66 Decided. ✓ Skip = 0+0+0+3+5+6+0 = 14. ✓ Total 80. ✓
++
++Plus 17 gap questions (all Decided) in `05-gap-questions.md`. Total reviewed: 97.
++
++| Home | Decided | Skip | Pending | Total |
++|---|---|---|---|---|
++| UI | 7 | 0 | 0 | 7 |
++| UX Thread | 8 | 0 | 0 | 8 |
++| Data | 4 | 0 | 0 | 4 |
++| Business logic | 3 | 3 | 0 | 6 |
++| Functionality | 13 | 5 | 0 | 18 |
++| Engine | 19 | 6 | 0 | 25 |
++| Project Ring | 12 | 0 | 0 | 12 |
++| **Total** | **66** | **14** | **0** | **80** |
++
++The 14 Skips: Business logic (36 Inventory, 38 Shipping, 40 Order mgmt — Amazon) · Functionality (34 Payment, 37 Cart/checkout, 67 Push, 68 Device, 71 Deep links — Amazon + no mobile) · Engine (61 Webhooks, 66 App store, 27 Offline/PWA, 69 Offline mobile, 70 App updates, 72 Mobile perf — no webhooks + no mobile + no PWA). All structural, not deferrals.
+diff --git a/blueprint/05-gap-questions.md b/blueprint/05-gap-questions.md
+new file mode 100755
+index 0000000..511f088
+--- /dev/null
++++ b/blueprint/05-gap-questions.md
+@@ -0,0 +1,57 @@
++# 05 — Gap Questions (D1–D9, R1–R5, C1–C3)
++
++**Blueprint:** Athletica (FULL MARKETPLACE)
++**Mode:** Plan
++
++17 gap questions — extras, not part of the 80. All **Decided**. Full rationale in `product-management/02-area-decisions-evidence.md`.
++
++---
++
++## Data gap questions (D1–D9)
++
++| ID | Question | Decision | Answer |
++|---|---|---|---|
++| D1 | What are the main things stored? | Decided | `products` + `product_variants` + `categories` + `collections`; `analytics`; `admin_access_keys`; `marketplaces` (22 rows); `amazon_product_cache`; `affiliate.accounts` + `.trackers` + `.campaigns` + `.campaign_trackers` + `.balance` + `.payouts`; `media_assets`; `audit_log`. |
++| D2 | How do they connect? | Decided | `product 1—* variants`; `product *—* categories` (M2M); `product *—* collections` (M2M); `product 1—* analytics`; `product *—1 marketplaces`; `affiliate_account 1—* tracker`; `tracker 1—* balance`; `account 1—* payout`; `campaign *—* tracker` (M2M); `payout *—* balance` (released flag). |
++| D3 | Required + unique? | Decided | `products.slug` UNIQUE; `product_variants.sku` UNIQUE; `admin_access_keys.token_hash` UNIQUE; `affiliate_balance` UNIQUE(`account_id`,`trace`); `amazon_product_cache.product_id` composite UNIQUE; `affiliate_trackers.id` (public code) UNIQUE; `affiliate_payouts` UNIQUE(`account_id`,`number`). |
++| D4 | ID kind? | Decided | `products.id` TEXT; `product_variants.id` UUID; `analytics.id` UUID; `admin_access_keys.id` UUID; `affiliate.*` UUID; `amazon_product_cache.product_id` composite varchar; `affiliate_trackers.id` varchar (public tracking code). |
++| D5 | States + order? | Decided | Product: `draft→active→archived` (+`proposed/rejected`). Variant: same. Payout: `requested→scheduled→paid / →rejected`. Invite: `issued→used / →revoked`. Door-key: `issued→(sliding)→revoked/expired`. Amazon cache: `fresh→stale→refetched / →error`. Affiliate account: `pending→active→suspended / →closed`. |
++| D6 | Who owns each record? | Decided | Products/variants/categories/analytics/cache: platform (service_role). Admin keys: issuing admin. Affiliate entities: the affiliate (`account_id`). Payouts: affiliate (requested), admin (scheduled/paid). |
++| D7 | What never changes after create? | Decided | `products.id`, `products.slug`, `product_variants.id`, `analytics.id`, `admin_access_keys.token_hash`, `affiliate_balance` rows (append-only — UPDATE only `released`), `affiliate_payouts.number`, `affiliate_trackers.id` (public code). |
++| D8 | Stored vs worked-out? | Decided | Amazon URL: **never stored** — derived at click time. Commission amount: stored (balance row). `balance_due`: worked out (sum `released=false`). Visitor hash: worked out at request time. Price: stored as integer cents in cache, **never displayed** publicly. `availableForSale`: worked out from PAAPI availability + dead-link state. |
++| D9 | How will shape change later? | Decided | Additive migrations. `variants` + `categories` + `collections` modeled from day one. `campaign` table built (not deferred). Future seller/submission workflow (RE-04 §2.9) can be added without restructuring. |
++
++---
++
++## Runtime environment gap questions (R1–R5)
++
++| ID | Question | Decision | Answer |
++|---|---|---|---|
++| R1 | Where does it run? | Decided | Server: Vercel (Node.js, Next.js 16.3.4). Browser: client components. SSE on route handlers (Vercel Pro for long-lived). |
++| R2 | Versions? | Decided | Node 20+, Next.js 16.3.4, React 19.2.8, Postgres 15, `@supabase/ssr`, `@upstash/ratelimit`, `ua-parser-js`, `@sentry/nextjs`, PAAPI client, `next-intl`, `zod`. |
++| R3 | Limits? | Decided | Vercel default (10s serverless, 60s Pro). Click write < 50ms or backgrounded. PAAPI 1 TPS / 86400/day. SSE long-lived (Pro). |
++| R4 | Real conditions? | Decided | Slow mobile (Nigeria), in-app browsers, power cuts. Mobile LCP target. SSE degrades to polling on flaky connections. |
++| R5 | Environments? | Decided | Dev (local, `.env.local`), Preview (Vercel preview), Production (`*.vercel.app` or custom). Same Supabase project, schema-isolated (`rollout` + `affiliate`). |
++
++---
++
++## Communication gap questions (C1–C3)
++
++| ID | Question | Decision | Answer |
++|---|---|---|---|
++| C1 | How do the parts talk? | Decided | Direct calls (Server Component → service → Supabase). Click pipeline via `waitUntil`. PAAPI via scheduled fetch. Live dashboards via SSE (degrade to short-polling). No message queue. |
++| C2 | Late or lost message? | Decided | Click writes best-effort (`Promise.allSettled`). Redirect survives stats outage. Dedup cache absorbs replays. SSE reconnects on drop. |
++| C3 | Duplicate message? | Decided | Identity-hash dedup (1 click/identity/link/hour). Postback UNIQUE(`account_id`,`trace`). Idempotent SSE (event IDs). |
++
++---
++
++## Gap count
++
++| Group | Count | All Decided |
++|---|---|---|
++| Data (D1–D9) | 9 | yes |
++| Runtime (R1–R5) | 5 | yes |
++| Communication (C1–C3) | 3 | yes |
++| **Total** | **17** | **17 Decided, 0 Pending** |
++
++Total reviewed across checklist + gap questions: 80 + 17 = 97.
+diff --git a/blueprint/06-iso-25010.md b/blueprint/06-iso-25010.md
+new file mode 100755
+index 0000000..7a95011
+--- /dev/null
++++ b/blueprint/06-iso-25010.md
+@@ -0,0 +1,59 @@
++# 06 — ISO 25010 Quality Double-Check
++
++**Blueprint:** Athletica (FULL MARKETPLACE)
++**Mode:** Plan
++
++After the 10 Engine Parts, check against ISO 25010's 9 qualities. If a quality has no answer, that's a gap. Maintainability and Safety don't obviously appear in the Engine Parts — ask about them explicitly.
++
++---
++
++## The 9 qualities
++
++### 1. Functional suitability — does it do what is needed?
++
++**Yes.** The full marketplace: storefront (homepage + catalog + search + product detail with variants + reviews), redirect + click pipeline with geo-routing, three-locks admin auth, full product CRUD + variants + bulk import, media library, live analytics dashboard, affiliate program (signup + trackers + balance + payouts), Amazon PAAPI cache + availability + dead-link detection, i18n. Feature Cards 1–15 cover every function the RE engagements studied.
++
++### 2. Performance efficiency — fast for the resources used?
++
++**Yes.** `getClaims()` not `getUser()`. `waitUntil` for click writes. `next/image` with Sanity domains. Upstash cache for hot link + product records. `<Suspense>` for gallery/carousel. SSE over polling for live dashboards (fewer requests). Monthly partitioning on `analytics`. Mobile LCP target. *(RE-05 NextBase §2.4; RE-01 Dub §2.5)*
++
++### 3. Compatibility — works with other systems?
++
++**Yes.** Standard web (HTTP, REST, JSON-LD, OG, schema.org). Supabase Postgres (standard SQL). Sanity (standard CDN). Amazon PAAPI (standard REST). Schema-isolated on shared Supabase. `next-intl` for i18n. No exotic protocols.
++
++### 4. Interaction capability — intended users can operate it easily?
++
++**Yes.** Visitors: single-tap CTA, phone-first, in-app browser tested. Admin: full workspace, one user (the client) + later delegates. Affiliates: self-serve signup + dashboard. Honest states (loading, 404, greyed CTA, empty) throughout. URL search params as filter state (shareable, back-button works). *(RE-07 §2.3–2.4)*
++
++### 5. Reliability — keeps working?
++
++**Yes.** Error-tolerant click writes (redirect survives stats outage). `Promise.allSettled` pipeline. Upstash fails open (1s timeout). Sentry + uptime ping. Supabase daily backups + PITR (Pro). Rollback = redeploy. Grace-window salt rotation (current + previous). Transactional payout flow (no partial state). SSE degrades to polling. *(RE-01 YOURLS §2.2; RE-01 Dub §2.3–2.4; RE-06 §2.2; RE-02 Raider §2.5)*
++
++### 6. Security — data protected from wrong people?
++
++**Yes.** Three independent admin locks. Affiliate ownership-based RLS. SHA-256 hashed tokens. Fail-silent 404 (conceals admin surfaces). `FORCE ROW LEVEL SECURITY` + `(select auth.jwt())` / `(select auth.uid())` wrappers. Service-role isolated. EU IP redaction (GDPR). Neutral auth errors. `rel="nofollow noopener"`. `zod` validation on all inputs. `SECURITY DEFINER` for affiliate membership. *(RE-05 entire; RE-05 NextBase §2.2–2.3; RE-01 Dub §2.4; RE-07 §2.5)*
++
++### 7. Maintainability — can it be changed safely later?
++
++**Yes.** Additive migrations only. `variants` + `categories` + `collections` modeled from day one. `campaign` table built (not deferred). Status transitions in service workflows (side-effects localized). Bulk ops as shared module. Two-phase import (per-row status). Layered action-client. Naming conventions fixed. `tsconfig.json` strict. `rollout/AGENTS.md` read before changes. Documentation: README, `.env.example`, changelog, API docs, admin guide, affiliate guide, this blueprint. *(RE-04 §2.1–2.8; RE-05 NextBase §2.5)*
++
++**One honest gap:** owner ruling is no full test suite (area 17). A change to the click pipeline, publish gate, or payout state machine could break a revenue path with nothing automated to catch it. Mitigation: smoke + critical-path test per phase (named in `03-project-ring.md`), the dead-link detector's redirect-time 4xx signal as a passive monitor, and the append-only balance ledger as a financial audit trail.
++
++### 8. Flexibility — can it be moved or adapted?
++
++**Yes.** Standard stack (Next.js + Supabase + Postgres + Sanity), portable across hosts. Env-var-driven. Schema-isolated (could split to separate Supabase projects). Affiliate ledger + geo-routing built as real subsystems (not deferred). Future seller/submission workflow (RE-04 §2.9) can be added without restructuring — the data shape is ready. Multi-marketplace by design (22 locales seeded).
++
++### 9. Safety — avoids causing harm?
++
++**Yes (for an affiliate marketplace's definition of harm).**
++
++- **Financial harm:** affiliate commissions are an append-only ledger with UNIQUE idempotency; payouts wrapped in a transaction; `minimum_payout` + `payout_term` protect against premature/refund-clawed payouts; reversals supported (Amazon claws back). *(RE-02 Raider §2.5; RE-02 Weferral §2.3)*
++- **Compliance harm:** Amazon Associates disclosure present; EU IP redaction (GDPR); no price displayed (Amazon policy); `rel="nofollow noopener"`; affiliate agreement + terms; payout tax docs per jurisdiction. *(locked; RE-01 Dub §2.4; RE-07 §2.5)*
++- **Reputational harm:** dead-link detection prevents sending visitors to 404 Amazon pages. Greyed CTA honest about missing data. No mock content or Unsplash fallbacks on real pages. Reviews via PAAPI (not fabricated). *(RE-03 §2.7; locked)*
++- **Operational harm:** redirect never fails on stats-write outage (uptime > analytics accuracy). Rate-limiter fails open. Payout-pipeline stuck-request alerts. PAAPI error-rate alerts. *(RE-01 YOURLS §2.2; RE-01 Dub §2.3)*
++
++---
++
++## Result
++
++All 9 qualities answered. The one honest gap (no full test suite, area 17) is an owner ruling with named mitigations (per-phase smoke tests, passive monitors, append-only audit trail). No quality is left unanswered.
+diff --git a/blueprint/README.md b/blueprint/README.md
+new file mode 100755
+index 0000000..36af7a5
+--- /dev/null
++++ b/blueprint/README.md
+@@ -0,0 +1,90 @@
++# Blueprint — Athletica (FULL MARKETPLACE)
++
++**Date:** Mon Nov 16 2026
++**Mode:** Plan (every area settled Decided / Skip / Pending)
++**Prepared by:** Product Management agent
++**Status:** Recommendation. No code, configuration, deployment, or product change has been made. The decision remains the owner's.
++**Scope:** FULL marketplace — every surface, every entity, every capability the 7 RE engagements studied. Not an MVP.
++**Supersedes:** the 2026-10-24/26 six-layer plan in `product-management/` (predates the RE findings) AND the 2026-11-16 MVP blueprint draft (this same folder, prior version), which treated the marketplace as a thin affiliate funnel.
++
++## What this is
++
++This is the Plan-mode blueprint for the **Athletica football affiliate marketplace** — a single Next.js app that does four things:
++
++1. **Public storefront:** homepage, catalog browse + search, product detail with variants + reviews, and a SHOP PRODUCT CTA that redirects to Amazon in the visitor's local marketplace.
++2. **Private admin workspace:** full product CRUD + variants + bulk import, media library, live analytics dashboard, affiliate + payout management.
++3. **Affiliate dashboard:** self-serve signup + onboarding, trackers, balance, payout requests.
++4. **Amazon integration:** 22-marketplace geo-routing, PAAPI product cache with availability, dead-link detection, reviews.
++
++The blueprint is built from the **reverse-engineering findings** — 7 engagements, 10 samples, all reported 2026-11-16 in `reverse-engineering-workspace/`. Every rule traces to a `report.md` `file:line` citation. Full evidence in `product-management/02-area-decisions-evidence.md`; rule extracts in `product-management/01-re-findings-consolidated.md`; Feature Cards in `product-management/03-feature-cards.md`.
++
++## The names (from the blueprint skill)
++
++| Name | What it is |
++|---|---|
++| **Blueprint** | This whole folder. |
++| **Build Layers** | UI, Data, Business logic, Functionality. Study order: UI → Data → Business logic → Functionality. **Build order (confirmed 2026-11-08): Functionality → Business logic → Data → UI.** |
++| **UX Thread** | Runs through every layer. Shapes each one. |
++| **Engine** | 10 Engine Parts. Sits under the Build Layers. |
++| **Project Ring** | The work around the product: client, version control, legal, docs, handoff, progress. |
++| **Checklist** | The 80 areas. In Plan mode each is Decided / Skip / Pending. |
++| **Home** | The one place an area belongs. |
++| **Feature Card** | A short note that traces one feature through every layer. |
++
++## How to read this folder
++
++1. **This README** — scope, build order.
++2. **`01-build-layers.md`** — UI, Data, Business logic, Functionality + UX Thread.
++3. **`02-engine.md`** — the 10 Engine Parts.
++4. **`03-project-ring.md`** — the work around the product.
++5. **`04-checklist.md`** — the 80-area table, every area Decided/Skip/Pending.
++6. **`05-gap-questions.md`** — the 17 extras (D1–D9, R1–R5, C1–C3).
++7. **`06-iso-25010.md`** — the quality double-check.
++
++Evidence behind any decision: `product-management/02-area-decisions-evidence.md`.
++
++## Scope
++
++**In scope (full marketplace):** storefront (homepage + catalog + search + categories), product detail (variants + reviews + JSON-LD), redirect + click pipeline with geo-routing, three-locks admin auth, full product CRUD + variants + bulk import, media library, live analytics dashboard, affiliate program (signup + trackers + balance + payouts), Amazon PAAPI cache + availability + dead-link detection, i18n for 22 marketplace locales, Sentry, legal.
++
++**Skip (honest, structural — not deferrals):**
++- **Amazon owns the transaction (5 areas):** payment, inventory, cart/checkout, shipping, order management. We are an affiliate marketplace, not a retailer.
++- **No mobile app (7 areas):** app store, push, device, offline-mobile, app updates, deep links, mobile-perf.
++- **No PWA (1 area):** one-shot visits + dashboards (degrade to polling).
++- **No outgoing webhooks (1 area):** PAAPI is polled.
++
++**14 Skips total — all structural to the business model, not MVP shortcuts.**
++
++## The one loop (still the entry point)
++
++```
++Instagram link → /product/product-1?utm_source=instagram ─┐
++                                                          ├→ SHOP PRODUCT → /go/[id] → Amazon (visitor's marketplace)
++WhatsApp link  → /product/product-2?utm_source=whatsapp ─┘
++```
++
++- Phone-first; in-app browsers primary.
++- No price on the page (Amazon Associates policy). CTA says **SHOP PRODUCT**.
++- CTA greyed + disabled when ASIN/tag missing or dead-link; no click recorded.
++- Geo-routed to the visitor's local Amazon marketplace.
++- Clicks recorded server-side, with `utm_source` + visitor hash; bots skipped; EU IPs redacted; attributed to an affiliate tracker if `/go/[id]` is a tracker URL.
++
++## Build order (6 phases — full system)
++
++| Phase | What ships |
++|---|---|
++| 1 Foundation | Three-locks auth, core data model, product page, redirect + click pipeline, analytics pipeline (visitor hash, salt rotation, bot filter). |
++| 2 Storefront | Homepage (3-up grid + carousel), catalog browse + search + categories, product detail with variants + reviews + JSON-LD. |
++| 3 Admin workspace | Full product CRUD + variants + bulk import, media library, live analytics dashboard. |
++| 4 Affiliate program | Signup + onboarding, trackers, campaigns, balance ledger, payout request + admin review + state machine. |
++| 5 Amazon integration | 22-marketplace geo-routing, PAAPI cache, availability checks, dead-link detection, reviews via PAAPI. |
++| 6 Hardening | i18n (marketplace locales), real-time analytics, Sentry, legal, handoff, documentation. |
++
++Each phase ends with a phase gate: the owner reviews before the next phase begins.
++
++## Inputs
++
++- `reverse-engineering-workspace/` — 7 engagements (YOURLS, Dub, Raider, Weferral, Amazon Auto Links, Spree, athletica/rollout own, NextBase, Plausible, Vercel Commerce).
++- `BLUEPRINT.md` (root, Study mode, mini) — the current state of the existing app.
++- `product-management/ROLLOUT-MVP-SIX-LAYERS.md` (2026-10-26) — stale; only locked constraints carry.
++- `web-development-areas.md` (root) — the 80-area checklist source.
+diff --git a/product-management/01-re-findings-consolidated.md b/product-management/01-re-findings-consolidated.md
+new file mode 100755
+index 0000000..d455417
+--- /dev/null
++++ b/product-management/01-re-findings-consolidated.md
+@@ -0,0 +1,230 @@
++# RE Findings Consolidated — every rule extracted from the 7 engagements
++
++**Date:** Mon Nov 16 2026
++**Source:** `reverse-engineering-workspace/engagements/01–07/*/2026-11-16/report.md` (10 samples, 7 capabilities, all `reported`).
++**Purpose:** the single working sheet of rules the Plan-mode blueprint is built from. Every rule cites the engagement report it came from. "Take" = carry into the build. "Do not take" = explicitly reject. "Implication" = a gap the sample exposed that we must fill ourselves.
++
++**Scope note:** the rules below do not change with scope — they are what each engagement proved. What changes between an MVP and the **full marketplace** is which rules are in-scope vs deferred. For the full build, **every "Take" rule is in-scope**; nothing is deferred to a "later phase." The affiliate ledger (RE-02), geo-routing + dead-link detection (RE-03), full catalog model (RE-04), the analytics pipeline (RE-06), and the storefront UX (RE-07) are all built as real subsystems.
++
++This file is evidence, not the deliverable. The deliverable is `blueprint/`.
++
++---
++
++## Engagement 01 — Redirect + click tracking + bot filter + rate limit
++**Samples:** YOURLS (MIT), Dub (AGPLv3 — rules only)
++
++### Take
++
++1. **Status code rule (adopt Dub's stance):** 302 for user-editable affiliate links (ASIN/destination may change); 301 only for stable platform links. *Opposite of YOURLS.* — Dub `report.md` §2.1
++2. **Synchronous click-write, error-tolerant:** update fast counter + insert detailed log row, both before the redirect, both wrapped in try/catch — the redirect never fails because of a stats-write failure. Uptime wins over analytics accuracy. — YOURLS `report.md` §2.2
++3. **Minimal log schema:** `click_time, product_id, referrer, user_agent, ip_address, country_code`. Add `is_bot` (bool) + `affiliate_id` (nullable) on top. — YOURLS `report.md` §2.2
++4. **`X-Robots-Tag: noindex`** on every redirect response. — YOURLS `report.md` §2.1
++5. **Filterable redirect hook** — keep `redirect_location` and `redirect_code` overridable at runtime (future A/B destination testing). — YOURLS `report.md` §2.1
++6. **6-layer bot filter** (run on the click path, not the redirect path — bots still get redirected, only clicks are suppressed): (1) `?bot=` query param, (2) HEAD method, (3a) Next.js `isBot` flag, (3b) UA fragment list (50+ fragments including AI crawlers: `chatgpt`, `anthropic-ai`, `Claude-Web`, `perplexity`, `Applebot-Extended`), (3c) false-positive sanitizer (strip `Google/google` before matching — Instagram in-app webview on Pixel is the canonical false positive), (4) Referer regex, (5a) IP exact, (5b) IP CIDR. — Dub `report.md` §2.2
++7. **Per-endpoint rate-limit policy map** `{attempts, window, keyPrefix, message?}` via Upstash sliding window, `timeout: 1000` (fail-open if Redis doesn't respond in 1s). Redirects are never blocked by rate-limiter failure. Add an **explicit `redirect` policy** (Dub doesn't have one — affiliate bots are more aggressive than short-link bots). — Dub `report.md` §2.3
++8. **Click dedup via identity hash + Redis 1h window:** 1 click per identity per link per hour. The single most important rule for honest affiliate analytics. — Dub `report.md` §2.4
++9. **EU IP redaction** (GDPR): if `geo.country` in EU_COUNTRY_CODES, set `ip = ""`. — Dub `report.md` §2.4
++10. **`waitUntil` + `Promise.allSettled` click pipeline:** redirect returns immediately; click recording continues in the background; any one operation can reject without breaking the others. Make the click path failure-isolated from the redirect path. — Dub `report.md` §2.4
++11. **Branded not-found page** instead of silent 302-to-homepage (YOURLS) or bare 404. — Dub `report.md` §2.1
++12. **Expiry / disable / `expiredUrl` 302** — affiliate products go out of stock; the link needs an expiry/disable path. — Dub `report.md` §2.6
++13. **Cache-miss writeback via `ev.waitUntil`** — never block the response on cache repopulation. — Dub `report.md` §2.5
++
++### Do not take
++
++- The Tinybird + PlanetScale + Upstash Streams + Axiom stack — overkill. Postgres + Upstash Redis + a partitioned `click_events` table scales to millions of clicks/month. — Dub `report.md` §5
++- The full 30-field click row — slim to ~12 for v1: `timestamp, identity_hash, click_id, link_id, ip_or_empty, country, region, ua, referer, bot, qr, trigger`. — Dub `report.md` §5
++- YOURLS's assumption that bot filtering is somebody else's problem. — YOURLS `report.md` §2.3
++- YOURLS's absence of redirect-endpoint rate limiting. — YOURLS `report.md` §2.4
++- YOURLS's lack of dead-link detection and expiry. — YOURLS `report.md` §2.6–2.7
++
++---
++
++## Engagement 02 — Affiliate tracking + commissions + payout
++**Samples:** Raider (MPL-2.0 — rules only), Weferral (MIT — UI contract only, backend not in repo)
++
++### Take
++
++1. **5-entity data model:** `account, tracker, balance, payout` (+ `account_recovery`). Minimal, proven in production. — Raider `report.md` §2.1
++2. **`balance` as an append-only ledger** with `released` flag — audit-friendly, easy to sum, easy to lock for payout. — Raider `report.md` §2.1
++3. **Commission configuration on the campaign, not the affiliate** (Weferral's richer model). One affiliate can be in multiple campaigns with different rates, types, and terms. — Weferral `report.md` §2.1
++4. **Decouple `reward_type` (cash vs discount) from `commission_type` (percentage vs fixed).** Two-step selection; the `reward` field's meaning depends on `commission_type`. — Weferral `report.md` §2.1
++5. **Recurring commission as toggle + nullable `recurring_limit`.** `NULL` = lifetime. Do not add a separate lifetime boolean. — Weferral `report.md` §2.2
++6. **Per-campaign `minimum_payout`** with a global default in config. — Weferral `report.md` §2.3
++7. **Per-campaign `payout_term`** (net-30 etc.) — delays payout eligibility, protects against refund clawbacks within the term window. — Weferral `report.md` §2.4
++8. **`trace` field for caller-supplied idempotency** — enforce UNIQUE on `(account_id, trace)` or `(tracker_id, trace)` in Postgres (Raider doesn't). — Raider `report.md` §2.3
++9. **Payout `number` per-account sequential** — affiliate-facing invoice numbers. — Raider `report.md` §2.5
++10. **FX normalization at insert time** — store one currency, simplify reporting. — Raider `report.md` §2.2
++11. **Server-to-server postback with shared bearer token** for the conversion API. No browser-side pixel for the conversion event. — Raider `report.md` §2.3
++12. **Email on a separate thread** — never block the API on email. — Raider `report.md` §5
++13. **Payout is affiliate-initiated, never automatic.** No scheduled payout job. — Raider `report.md` §2.5
++14. **Payout status state machine:** `requested → scheduled → paid` and `→ rejected`, with `scheduled_for` set when the admin approves and picks a payment date. — Weferral `report.md` §2.5
++
++### Do not take / implications (fill the gaps Raider left)
++
++- **Non-atomic counter pattern (Raider bug):** NEVER do read-then-increment in app code. Use SQL `UPDATE tracker SET statistics_signups = statistics_signups + 1 WHERE id = ?`. — Raider `report.md` §2.4
++- **Two-step payout without a transaction (Raider bug):** wrap the `balance.released = true` UPDATE and the `payout` INSERT in a single Postgres transaction. — Raider `report.md` §2.5
++- **No payout status state machine (Raider gap):** add the real one (rule 14 above). — Raider `report.md` §2.6
++- **No refund handling (Raider gap):** support commission reversals (Amazon claws back on returns). — Raider `report.md` §5
++- **No browser attribution (Raider gap):** layer Dub's click pipeline (engagement 01) on top. — Raider `report.md` §5
++- **No recurring / lifetime commissions (Raider gap):** take from Weferral (rule 5 above). — Raider `report.md` §5
++
++---
++
++## Engagement 03 — ASIN → Amazon URL + marketplace routing + dead-link
++**Sample:** Amazon Auto Links (GPL-2.0+ — rules only)
++
++### Take
++
++1. **The 22-marketplace host map.** Seed a `marketplaces` table with all 22 locales and their 5 fields each: `sSlug, sLocaleNumber, sDomain, sAssociatesURL, country_code` (ISO 3166 — note `UK` → `GB`). Locales: `AE AU BE BR CA CN DE EG ES FR IN IT JP MX NL PL SA SE SG TR UK US`. — `report.md` §2.1
++2. **Canonical product URL:** `https://{domain}/dp/{ASIN}?tag={associate_id}`. One builder function, one source of truth. — `report.md` §2.2
++3. **The Locale_Base pattern:** one function that knows how to build every Amazon URL surface (product, reviews, best sellers, add-to-cart, rating widget, no-image fallback). One place to change if Amazon changes URL format. — `report.md` §2.2
++4. **Associate tag as query param** (`?tag=`), never path segment. — `report.md` §2.3
++5. **Product cache schema** with `expiration_time` TTL + `error` column + **integer-cents prices** (no floating-point money) + composite key `{ASIN}_{locale}|{lang}|{currency}`. Same ASIN can exist in multiple locales as separate rows. — `report.md` §2.4
++
++### Do not take / implications (fill the gaps)
++
++- **PAAPI availability disabled (Amazon Auto Links gap):** enable `Offers.Listings.Availability.Type` and `Availability.Message` in our PAAPI payload. If `Type === "OutOfStock"` or offers list empty, mark soft-dead. — `report.md` §2.5
++- **No dead-link detection (gap):** add (1) PAAPI availability check, (2) scheduled HEAD probe of `/dp/{ASIN}` for products whose PAAPI fetch errored or `expires_at` is far past (batch + throttle — beware Amazon rate limits), (3) redirect-time signal: high rate of HTTP 4xx from outbound Amazon clicks → dead-link signal (reactive). — `report.md` §2.7
++- **No geo-routing (gap — the plugin's is a deprecated stub):** implement real visitor-IP → marketplace routing. Cloudflare `/cdn-cgi/trace` (if behind Cloudflare) or MaxMind GeoIP2 (offline, no third-party dependency) are the strongest choices. — `report.md` §2.6
++- **Six historical link styles:** only need the current one (`?tag=`). Discard the rest. — `report.md` §2.3
++- **WordPress integration** (hooks, shortcodes, widgets) — irrelevant to Next.js. — `report.md` §5
++
++---
++
++## Engagement 04 — Product catalog + admin CRUD + bulk import
++**Sample:** Spree (BSD-3 — rules only, Ruby → TypeScript)
++
++### Take
++
++1. **Product + Variant as separate entities**, even for single-variant affiliate products (model from day one). — `report.md` §2.1
++2. **5-status state machine:** `draft / active / archived` (operator-set, bulk-updateable) + `proposed / rejected` (review only, NOT bulk-updateable). Default on create: `draft`. — `report.md` §2.2
++3. **3-condition publish gate:** `available? = (status == 'active') && (deleted_at IS NULL) && (available_on IS NULL OR available_on <= now)`. The `available_on` field enables future-publish scheduling without a cron job. — `report.md` §2.3
++4. **Status transitions in service workflows**, not model methods. Side-effects (events, notifications, cache invalidation) in the workflow. — `report.md` §2.2
++5. **`discontinue()` action** that bypasses validation (`save(validate: false)`), sets `discontinue_on = now`, `status = 'archived'`. A sold product can be discontinued even if stale validations no longer pass. — `report.md` §2.4
++6. **Soft-delete via `deleted_at` column.** Default query scope excludes deleted. — `report.md` §2.5
++7. **Tags scoped per-tenant** (composite index on `(store_id, tag)`). — `report.md` §2.5
++8. **Bulk operations as a shared module**, not duplicated per entity. All guarded by `require_ids!` (validates the `ids` array is present and non-empty — no accidental "destroy everything" by passing empty array). Skip-counting in response ("N products skipped"). — `report.md` §2.6–2.7
++9. **Two-phase CSV import:** MAPPING (parse + validate rows in memory) → PROCESSING (persist to DB). Separates "is the data shape right?" from "did the DB writes succeed?" Per-row status. Grouped COUNT for progress ("10,000 rows: 9,998 completed, 1 failed") in one query. No delete mid-processing. — `report.md` §2.8
++
++### Do not take
++
++- Multi-vendor seller/submission workflow — we're the only seller in v1. — `report.md` §5
++- Spree's full checkout/payments/shipping/tax logic — Amazon handles money. — `report.md` §5
++- The Rails admin dashboard UI — we model our own. — `report.md` §5
++- The `acts_as_paranoid` / `acts_as_taggable` gems directly — re-implement the patterns in Postgres + TypeScript. — `report.md` §5
++
++---
++
++## Engagement 05 — Multi-lock admin auth + RLS-at-DB
++**Samples:** athletica/rollout (own — documented), NextBase (MIT — comparison)
++
++### Take (keep from our own three-locks design)
++
++1. **Three independent locks:** invite code → door-key cookie → JWT role. Each rejects independently. Defense in depth. — athletica-own `report.md` §2.1
++2. **One `admin_access_keys` table** for both invite codes and door keys, distinguished by `kind` CHECK constraint (`'invite'` / `'door'`). — athletica-own `report.md` §2.4
++3. **SHA-256 hash all tokens** before storage. Never persist raw tokens. — athletica-own `report.md` §2.1
++4. **Re-validate invite codes at submit time** (query `kind='invite' AND used_at IS NULL AND revoked_at IS NULL AND expires_at > now()`) — prevents race conditions where two browsers redeem the same code. — athletica-own `report.md` §2.1
++5. **Sliding renewal on door keys** (30 days on each valid check). Active admins never re-issue; idle admins expire. — athletica-own `report.md` §2.1
++6. **Fail closed + fail silent: 404, not 401/403.** A 404 says "this URL doesn't exist"; an attacker probing cannot distinguish a real-but-protected URL from a non-existent one. — athletica-own `report.md` §2.1
++7. **Role in JWT `app_metadata.role`**, not a separate `admins` table. No extra DB lookup. Only service_role can write `app_metadata`. — athletica-own `report.md` §2.1
++8. **Per-route `requireAdmin()` one-liner.** Optionally add Next.js middleware for the door-key check (Lock #2) as a first-line filter. — athletica-own `report.md` §2.2
++9. **RLS enabled on every table, deny-by-default.** `products`: anon SELECT where published; authenticated ALL where `JWT.app_metadata.role = 'admin'` (USING + WITH CHECK). `analytics`: anon INSERT only; authenticated SELECT where role=admin. `admin_access_keys`: service_role only (no anon/authenticated policy → deny by default). — athletica-own `report.md` §2.3
++10. **Neutral error messages** ("Invalid email or password" regardless of whether the email exists) — no user enumeration. — athletica-own `report.md` §2.5
++11. **Cookie config:** HttpOnly, SameSite=Lax, Path=/admin, Max-Age 30d, Secure if https. — athletica-own `report.md` §2.1
++
++### Take (from NextBase — the optimizations our three-locks was missing)
++
++12. **Fix the RLS performance bug:** wrap `auth.jwt()` in `(select ...)` in every policy to cache the result once per query, not per row. Our unwrapped version is slow on large tables. — NextBase `report.md` §2.3
++13. **Use `FORCE ROW LEVEL SECURITY`** on sensitive tables (admin_access_keys, products, analytics). Without FORCE, the table owner (postgres role in Supabase) bypasses RLS. — NextBase `report.md` §2.3
++14. **Use `getClaims()` in the auth gate** (`requireAdmin` / `validateDoorKey`), not `getUser()`. Eliminates a 50–200ms network call per admin page load. Use `getUser()` only when the full user object is needed. — NextBase `report.md` §2.4
++15. **Layered action-client pattern:** `actionClient → authActionClient (requires session) → adminActionClient (requires role=admin)`. Cleaner than inline `if (admin.response) return admin.response;` per route. — NextBase `report.md` §2.5
++16. **`SECURITY DEFINER` functions** in a private schema for complex membership checks (team/org — if added later). Always include `auth.uid()` inside the body. Revoke EXECUTE from public roles. — NextBase `report.md` §2.3
++17. **Centralize Lock #2 (door-key) in middleware**, keep Lock #3 (JWT role) per-route. — NextBase `report.md` §2.1
++18. **Role-based RLS for admin tables; ownership-based for any future user-scoped tables** (e.g. an affiliate's own dashboard). — NextBase `report.md` §2.2
++
++### Implications (gaps in our own design)
++
++- **Invite-code issuance script** is not in the repo — the validation/redeem path is proven, the issuance path is not. Document and add it. — athletica-own `report.md` §4
++- **Rate limiting on the signin endpoint** — Upstash Redis is in deps but not seen in the signin route. Confirm and add if missing. — athletica-own `report.md` §4
++
++---
++
++## Engagement 06 — Privacy-first click analytics + visitor hashing
++**Sample:** Plausible (AGPLv3 — rules only)
++
++### Take
++
++1. **Visitor hash formula:** `SipHash64(salt, user_agent + remote_ip + domain + root_domain + replay_session_id)`. Include the site domain so the same visitor on two of our sites gets two different hashes (cross-site unlinkability). — `report.md` §2.1
++2. **Salt rotation:** every 90 seconds (configurable). Two valid salts at any time (`current` + `previous`) for the grace window. Salt generation: 16 random bytes via `crypto.randomBytes(16)`. Delete salts older than 48h. Cache in memory (module-level Map + refresh timer). — `report.md` §2.2
++3. **Grace window:** hash with `current`; if no session matches, retry with `previous`. One-rotation (90s) grace where a visitor whose salt rotated between two events is still linked. — `report.md` §2.2
++4. **Hash storage:** `BIGINT` in Postgres (not hex string — ~50% smaller, faster to index/join). — `report.md` §2.1
++5. **Bot filter:** use a maintained UA-parser library (e.g. `ua-parser-js` for Node) that classifies bot vs client. Add explicit override for Headless Chrome. Do NOT drop unparseable UAs — accept them (rather over-count than under-count a real visitor with an odd UA). — `report.md` §2.3
++6. **Drop reasons as a named enum**, telemetry per reason (count "N dropped for bot, M for dc_ip, K for spam_referrer" in one grouped query). At minimum: `bot, spam_referrer, invalid, dc_ip, threat_ip, persist_error`. — `report.md` §2.4
++7. **IP resolution priority chain (6 headers):** `x-plausible-ip` → `cf-connecting-ip` → `x-forwarded-for` (first IP) → `b-forwarded-for` → `forwarded` (RFC 7239) → `conn.remote_ip`. Order matters — a spoofed `x-forwarded-for` must NOT override Cloudflare's `cf-connecting-ip` when behind Cloudflare. Strip the port from IPv4/IPv6. — `report.md` §2.5
++8. **Client payload: minimal** — name, URL, referrer, props, hostname. No client-side cookies, no fingerprinting. The visitor identifier is computed SERVER-SIDE. — `report.md` §2.6
++9. **Pipeline order:** bot filter (cheap) → enrichment → expensive lookups (GeoIP) → shield checks → persistence. Composable small functions; each returns enriched or dropped event. — `report.md` §2.7
++10. **Exclusion rules:** client-side path matcher (`/admin/*`) + `localStorage.plausible_ignore` opt-out flag. — `report.md` §2.6
++
++### Do not take
++
++- The ClickHouse dependency — Postgres with a partitioned `events` table scales to millions of events/month. Add ClickHouse only if we hit a real bottleneck. — `report.md` §5
++- The Phoenix/Elixir stack — we're on Next.js + Supabase. — `report.md` §5
++- The EE-licensed features (session replay) — out of scope. — `report.md` §5
++
++---
++
++## Engagement 07 — Storefront UX (product grid, detail page, "Buy on Amazon" CTA)
++**Sample:** Vercel Commerce (MIT)
++
++### Take
++
++1. **Homepage hierarchy:** curated 3-up hero grid (above the fold) → browse carousel (below) → footer. Lead with editorial curation, not exhaustive listing. Three picks, not twelve. — `report.md` §2.1
++2. **Product detail layout:** 4/6 image + 2/6 buy-box on desktop; stacked (`flex-col` → `flex-row` at `lg`) on mobile. Gallery in `<Suspense>` with aspect-square skeleton fallback, capped at 5 images, `max-h-[550px]`. — `report.md` §2.2
++3. **Buy-box composition (4 stacked elements):** (1) title (h1) + price pill in a `border-b pb-6` container, (2) variant selector if applicable, (3) description (rendered HTML via Prose), (4) CTA button — the LAST element, at the bottom. — `report.md` §2.3
++4. **Price as a pill/badge** (rounded-full), not inline text. — `report.md` §2.3
++5. **`generateMetadata` async function** with fallbacks (`seo.title || title`). SEO visibility is **tag-based** (`HIDDEN_PRODUCT_TAG` controls `robots.index`), not a status enum — a product can be published but hidden from search. — `report.md` §2.2
++6. **OpenGraph image with explicit width/height/alt** (essential for OG previews). — `report.md` §2.2
++7. **JSON-LD `schema.org/Product` with `AggregateOffer`** on every product page. Google uses this for rich results. `availability` flips between `InStock` / `OutOfStock` based on `availableForSale`. — `report.md` §2.2
++8. **URL search params as variant state** (`?size=M&color=blue`), not React state. Shareable URLs, working back button, server-component readable. — `report.md` §2.4
++9. **Unavailable options visible-but-disabled:** `aria-disabled`, `disabled`, strike-through CSS, title "Out of Stock". — `report.md` §2.4
++10. **`router.replace` with `{ scroll: false }`** on variant change — changing the variant does NOT scroll the page. — `report.md` §2.4
++11. **`<BuyOnAmazon>` CTA replacing `<AddToCart>`:** external link, `target="_blank" rel="nofollow noopener"` (security + Amazon Associates compliance), records a click event per engagement 01's rules (bot check, dedup, identity hash, EU IP redaction), disabled state mirrors the OOS pattern. — `report.md` §2.5
++12. **Affiliate buy-box is simpler than Vercel's:** (1) title + price pill, (2) NO variant selector (single-variant affiliate products), (3) description, (4) `<BuyOnAmazon>` button. — `report.md` §2.5
++
++### Do not take
++
++- The Shopify GraphQL integration — we use Amazon. — `report.md` §5
++- The cart + checkout flow — we redirect to Amazon, no cart. — `report.md` §5
++- The full navbar / search / footer — extract pattern only. — `report.md` §5
++
++---
++
++## Cross-engagement constraints (carried forward from the locked product decisions)
++
++These predate the RE findings but are product constraints the owner already locked; they stand:
++
++- **No price on the product page** (Amazon Associates policy forbids hand-typed prices; the live price is on Amazon). CTA says **SHOP PRODUCT**. Greyed out + disabled when ASIN or tag is missing; no click recorded.
++- **Phone-first; PC must work.** In-app browsers (Instagram, WhatsApp) are the primary environment for the public storefront.
++- **Plain 404** for `/` (no homepage at root — the homepage lives at `/shop` or similar; root is a 404 or a redirect to the storefront).
++- **Sentry** for error monitoring (server + client, email alert, PII off). A free uptime ping on key URLs is still recommended.
++- **Images live in Sanity.** Supabase stores only the image link. The Sanity write token stays server-side.
++- **Admin auth = three locks** (invite + door-key + JWT role). Server-side `getClaims()` on every admin route. No permanent route that can create admins.
++- **Server-side counting.** Views and clicks recorded on the server; known bots skipped; visitor hash = SipHash64(salt, ua+ip+domain+root_domain); only the hash saved, never the raw IP.
++- **Amazon owns the transaction.** We are an affiliate marketplace, not a retailer — no cart, no checkout, no payment processing, no inventory, no shipping, no order management on our side. The CTA redirects to Amazon.
++- **No mobile app.** Full web software. Mobile-app surfaces (app store, push, device, offline-mobile, deep links) are Not applicable.
++
++**What is IN scope for the full build (was deferred in the MVP, now built):**
++- Affiliate program (accounts, trackers, campaigns, balance, payouts) — RE-02.
++- Geo-routing to 22 Amazon marketplaces — RE-03.
++- Dead-link detection (PAAPI availability + scheduled HEAD probe + redirect-time signal) — RE-03.
++- Full product catalog with variants, homepage, browse, search, categories — RE-04, RE-07.
++- Reviews (via PAAPI) on product pages — RE-03, RE-07.
++- Affiliate onboarding + self-serve signup — RE-02.
++- Live analytics dashboard — RE-06, RE-07.
++- i18n for marketplace locales — RE-03.
++
++---
++
++## What this gives the blueprint
++
++Every Plan-mode decision in `02-area-decisions-evidence.md` and every layer section in `blueprint/` cites a rule from this file by engagement number. No rule is invented; every rule traces to a `report.md` `file:line` or a locked product constraint.
+diff --git a/product-management/02-area-decisions-evidence.md b/product-management/02-area-decisions-evidence.md
+new file mode 100755
+index 0000000..5d03549
+--- /dev/null
++++ b/product-management/02-area-decisions-evidence.md
+@@ -0,0 +1,227 @@
++# Area Decisions + Evidence — 80 areas + 17 gap questions (FULL MARKETPLACE)
++
++**Date:** Mon Nov 16 2026
++**Mode:** Plan (every area ends Decided / Skip / Pending)
++**Scope:** FULL marketplace — storefront, catalog, admin workspace, affiliate program, geo-routing, analytics, dead-link detection, Amazon integration. Not an MVP.
++**Purpose:** the evidence behind every decision in `blueprint/`. Each row names the decision, the one-line rationale, and the citation. Citations: `RE-01`…`RE-07` = `reverse-engineering-workspace/engagements/NN-*/<sample>/2026-11-16/report.md`; `Study BLUEPRINT.md` = the existing app; `locked` = owner's carried-forward constraints.
++
++**What changed from the MVP draft:** 7 areas flipped from Skip → Decided (26 i18n, 42 reviews, 45 onboarding, 47 real-time, 51 search→public+admin, 60 collaboration, 64 multi-step). Several Decided areas expanded scope (35 catalog → full browsable; 56 admin → full workspace; 46 dashboard → live). Affiliate ledger + geo-routing + dead-link detection are no longer "later phase."
++
++---
++
++## UI (Home: 7 areas)
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 03 | Design system | **Decided** | Black/lemon visual system, Tailwind v4. Price as pill/badge (omitted on public page per Amazon policy; shown in admin only). Reuse Vercel Commerce tile + gallery patterns. | Study BLUEPRINT.md; RE-07 §2.2–2.3 |
++| 04 | Brand and identity | **Decided** | Athletica football affiliate marketplace. Full navbar, footer, brand metadata across all surfaces. | locked |
++| 09 | Responsive and cross-device | **Decided** | Phone-first storefront; PC must work. Admin optimized for desktop. Media queries at 900/720/420. | locked; Study BLUEPRINT.md |
++| 10 | Cross-browser compatibility | **Decided** | Instagram + WhatsApp in-app browsers, Chrome, Safari, Firefox. Admin: evergreen browsers. | RE-07 §2.4; locked |
++| 12 | Assets and media | **Decided** | Sanity (project `cuiis46d`); full media library in admin (browse, upload, delete). Supabase stores the URL only. Token server-side. | Study BLUEPRINT.md; RE-07 §2.2 |
++| 23 | Animation and interactions | **Decided** | Carousel scroller, gallery keyboard controls, CTA hover/active, toast/confirm/action-state. No `window.open` pop-up (blocked in-app) — use `/go/[id]` redirect. | RE-07 §2.1; Study BLUEPRINT.md |
++| 79 | Design tokens and theming | **Decided** | Tailwind v4 tokens; admin.css dark; storefront black/lemon. | Study BLUEPRINT.md |
++
++---
++
++## UX Thread (Home: 8 areas)
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 06 | Routing and navigation | **Decided** | `/` → storefront homepage (3-up grid + carousel). `/shop` → catalog grid. `/product/[slug]` → detail. `/go/[id]` → Amazon redirect. `/admin/*` → workspace (404 until auth). `/affiliate/*` → affiliate dashboard. `/admin/analytics` → live dashboard. | RE-07 §2.1; locked; Study BLUEPRINT.md |
++| 11 | Accessibility | **Decided** | Contrast, focus, alt text, keyboard nav on gallery + carousel + admin. axe check before launch. | locked |
++| 24 | Notifications and feedback | **Decided** | Toast + confirm-dialog + action-state across all surfaces. Honest states (loading, empty, error, success) everywhere. | Study BLUEPRINT.md; RE-07 §2.3 |
++| 25 | Forms and validation | **Decided** | Admin product editor (with variants), affiliate signup/payout forms, CSV import mapping. Dirty-state protection. Price optional (Amazon policy). | RE-04 §2.6; RE-02 Weferral §2.1; locked |
++| 26 | Internationalization | **Decided** | Marketplace-locale UI strings for the 22 Amazon locales (RE-03). Storefront + affiliate dashboard localize per visitor/affiliate locale. English base; locale switch on URL param. | RE-03 §2.1 |
++| 29 | Redirect and URL management | **Decided** | `/go/[id]` → 302 to Amazon (user-editable link). Unknown product → branded not-found. `X-Robots-Tag: noindex` on every redirect. Affiliate tracker URLs `/go/[id]` carry the tracker id. | RE-01 Dub §2.1; RE-01 YOURLS §2.1; RE-02 §2.3 |
++| 45 | Onboarding flow | **Decided** | Affiliate self-serve signup → email verify → admin approval → tracker issuance → dashboard. Admin onboarding = Supabase invite (three-locks). | RE-02 §2.1 (account entity); RE-05 §2.1 (invite) |
++| 64 | Multi-step flows and wizards | **Decided** | Affiliate signup (multi-step: profile → payout details → terms), payout request (balance check → amount → confirm), product submission (if sellers added later), CSV import mapping wizard. | RE-02 Weferral §2.3–2.5; RE-04 §2.8 |
++
++---
++
++## Data (Home: 4 areas + gap questions D1–D9)
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 49 | Multi-tenancy | **Decided** | Single platform tenant. Affiliate accounts are per-affiliate (ownership-based RLS for the affiliate's own dashboard). `rollout` schema for products/analytics/admin; `affiliate` schema for the ledger. | RE-05 NextBase §2.2 (ownership RLS); RE-02 §2.1 |
++| 52 | Audit logs and activity history | **Decided** | `analytics` (views/clicks with source + visitor_hash). Admin action log (publish/unpublish/delete/bulk with actor + timestamp). Payout status transitions logged. Affiliate balance ledger is append-only (audit by design). | RE-01 §2.2; RE-02 §2.1; RE-04 §2.2 |
++| 59 | Soft delete vs hard delete | **Decided** | Soft-delete via `deleted_at` on products + affiliates. `discontinue()` bypasses validation, sets `discontinue_on`, `status='archived'`. Balance rows never deleted (append-only). Payouts never deleted (status transitions only). | RE-04 §2.4–2.5; RE-02 §2.1 |
++| 62 | Timezone and localization | **Decided** | UTC storage. Display in visitor locale (storefront) or affiliate locale (dashboard). Per-product marketplace locale config. | RE-03 §2.1; RE-02 §2.2 |
++
++### Gap questions D1–D9 (Home: Data)
++
++| ID | Question | Decision | Answer | Citation |
++|---|---|---|---|---|
++| D1 | Main things stored | **Decided** | `products` + `product_variants` + `categories` + `collections`; `analytics` (views/clicks); `admin_access_keys`; `marketplaces` (22 rows); `amazon_product_cache` (TTL + error + integer-cents + availability); `affiliate_accounts` + `affiliate_trackers` + `affiliate_campaigns` + `affiliate_balance` (append-only) + `affiliate_payouts`; `media_assets` (Sanity references); `audit_log`. | RE-04 §2.1; RE-02 §2.1; RE-03 §2.4; RE-05 §2.4; RE-07 §2.2 |
++| D2 | How do they connect | **Decided** | `product 1—* variants`; `product *—* categories` (M2M); `product *—* collections` (M2M); `product 1—* analytics`; `product *—1 marketplaces`; `affiliate_account 1—* tracker`; `tracker 1—* balance`; `affiliate_account 1—* payout`; `campaign *—* tracker` (M2M); `payout *—* balance` (released flag). | RE-04 §2.1; RE-02 §2.1 |
++| D3 | Required + unique fields | **Decided** | `products.slug` UNIQUE; `product_variants.sku` UNIQUE; `admin_access_keys.token_hash` UNIQUE; `affiliate_balance` UNIQUE(`account_id`,`trace`); `amazon_product_cache.product_id` composite UNIQUE; `affiliate_trackers.id` (public tracking code) UNIQUE; `affiliate_payouts` UNIQUE(`account_id`,`number`). | RE-05 §2.4; RE-02 §2.3; RE-03 §2.4; RE-02 Raider §2.5 |
++| D4 | ID kind | **Decided** | `products.id` TEXT (existing); `product_variants.id` UUID; `analytics.id` UUID; `admin_access_keys.id` UUID; `affiliate_*` UUID; `amazon_product_cache.product_id` composite varchar; `affiliate_trackers.id` varchar (public tracking code, like Raider). | Study BLUEPRINT.md; RE-02 §2.1; RE-03 §2.4 |
++| D5 | States + order | **Decided** | Product: `draft→active→archived` (+`proposed/rejected`). Variant: `draft→active→archived`. Payout: `requested→scheduled→paid / →rejected`. Invite: `issued→used / →revoked`. Door-key: `issued→(sliding)→revoked/expired`. Amazon cache: `fresh→stale→refetched / →error`. Affiliate account: `pending→active→suspended / →closed`. | RE-04 §2.2; RE-02 §2.5; RE-05 §2.4; RE-02 Weferral §2.5 |
++| D6 | Who owns each record | **Decided** | Products/variants/categories/analytics/cache: platform (service_role). Admin keys: issuing admin. Affiliate entities: the affiliate (`account_id`). Payouts: the affiliate (requested), admin (scheduled/paid). | RE-05 §2.3–2.4; RE-02 §2.1 |
++| D7 | What never changes after create | **Decided** | `products.id`, `products.slug`, `product_variants.id`, `analytics.id`, `admin_access_keys.token_hash`, `affiliate_balance` rows (append-only — UPDATE only `released`), `affiliate_payouts.number`, `affiliate_trackers.id` (public code). | RE-02 §2.1; RE-04 §2.2 |
++| D8 | Stored vs worked-out | **Decided** | Amazon URL: **never stored** — derived at click time. Commission amount: stored (balance row). `balance_due`: worked out (sum `released=false`). Visitor hash: worked out at request time. Price: stored as integer cents in cache, **never displayed** publicly. `availableForSale`: worked out from PAAPI availability + dead-link state. | RE-03 §2.2; RE-02 §2.2; RE-06 §2.1; locked |
++| D9 | How shape changes later | **Decided** | Additive migrations. `variants` + `categories` + `collections` modeled from day one. `campaign` table built (not deferred). Future seller/submission workflow (RE-04 §2.9) can be added without restructuring. | RE-04 §2.1; RE-04 §2.9 |
++
++---
++
++## Business logic (Home: 6 areas)
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 36 | Inventory management | **Skip** | Amazon holds inventory. We redirect; we do not track stock. (Dead-link detection + PAAPI availability cover the "is it buyable" question.) | locked; RE-03 §2.5 |
++| 38 | Shipping and delivery | **Skip** | Amazon ships. | locked |
++| 39 | Discount and promotions | **Decided** | Affiliate commissions + payouts (full): per-campaign commission_type (percentage/fixed), recurring + nullable limit, per-campaign minimum_payout + payout_term, FX normalization, reversal support. No product-level discounts. | RE-02 §2.1–2.5 (entire) |
++| 40 | Order management | **Skip** | Amazon is the order system. We track clicks + commissions, not orders. | locked |
++| 54 | Subscription and feature gating | **Decided** | Recurring commission as toggle + nullable `recurring_limit` (NULL=lifetime). No product subscription gating. | RE-02 Weferral §2.2 |
++| 60 | Collaboration features | **Decided** | Affiliate ↔ admin payout review workflow: affiliate requests, admin reviews (approve/reject/schedule), status transitions visible to both. Comment thread on payout requests (optional). | RE-02 Weferral §2.5; RE-02 Raider §2.5 |
++
++---
++
++## Functionality (Home: 18 areas)
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 07 | SEO and discoverability | **Decided** | `generateMetadata` with fallbacks on every public page. Tag-based visibility (`HIDDEN_PRODUCT_TAG`→`noindex`). OG image with w/h/alt. JSON-LD `schema.org/Product` + `AggregateOffer` on product pages. Sitemap. `robots.txt`. Homepage + category pages indexable. | RE-07 §2.2 |
++| 34 | Payment integration | **Skip** | Amazon handles payment. Affiliate payouts are manual (affiliate requests → admin approves → wires out-of-band). No Stripe/gateway. | locked; RE-02 §2.5 |
++| 35 | Product catalog | **Decided** | Full manual catalog + admin CRUD + bulk import. Product + Variant separate. 5-status state machine. 3-condition publish gate. Categories + collections (M2M). Public browse: homepage (3-up grid + carousel), `/shop` grid with search + filter + sort + pagination. | RE-04 (entire); RE-07 §2.1 |
++| 37 | Cart and checkout | **Skip** | No cart. CTA → Amazon. | locked |
++| 41 | CMS integration | **Decided** | Sanity (project `cuiis46d`). Full media library: upload (JPEG/PNG/WebP/AVIF, 5MB), browse, delete, asset metadata. Service-role only. | Study BLUEPRINT.md; RE-07 §2.2 |
++| 42 | Reviews and testimonials | **Decided** | Amazon reviews fetched via PAAPI and displayed on the product page (rating + sample reviews). JSON-LD `AggregateOffer` references the rating. On-site testimonials deferred (not needed — Amazon carries reviews). | RE-03 §2.4 (PAAPI fields); RE-07 §2.2 (JSON-LD) |
++| 44 | User management | **Decided** | Two user classes: admins (three-locks, invite-only) and affiliates (self-serve signup + admin approval). Admin: full workspace. Affiliate: own dashboard (ownership-based RLS). No visitor accounts. | RE-05 §2.1; RE-02 §2.1 |
++| 46 | Dashboard and data visualization | **Decided** | Admin analytics dashboard: total views, clicks, CTR, per product, per source, 7/30/90 days, affiliate performance, payout pipeline. **Live** (polling or SSE). Affiliate dashboard: own trackers, balance, payout history, click attribution. | RE-06 §2.4; RE-07 §2.3; RE-02 §2.1 |
++| 47 | Real-time features | **Decided** | Live analytics dashboard (SSE or short-polling for the admin + affiliate dashboards). No real-time elsewhere. | RE-06 §2.4 (telemetry); RE-07 §2.3 |
++| 48 | Notification system | **Decided** | Email: affiliate balance/payout events, admin error alerts (Sentry), invite emails. In-app: toast notifications. No push. | RE-02 §2.5; locked (Sentry) |
++| 50 | File management | **Decided** | Full media library in admin (Sanity). Upload, browse, delete, asset metadata. Secured behind admin auth. | Study BLUEPRINT.md; RE-05 §2.1 |
++| 51 | Search and filtering | **Decided** | Public storefront search (product name, category, tag) + faceted filter (category, gender, color, price-range — note: price filter is admin-only since price isn't displayed). Admin product search (existing). | RE-07 §2.1; RE-04 §2.5 (tags) |
++| 53 | Import and export | **Decided** | Two-phase CSV import (mapping → processing) for products. Export: analytics CSV, affiliate ledger CSV, payout history CSV. | RE-04 §2.8 |
++| 55 | Settings and configuration | **Decided** | Affiliate tag + marketplace store config (per-marketplace tags). Sentry DSN. Upstash rate-limit policies. Salt rotation interval. PAAPI keys. Affiliate program settings (default minimum_payout, payout_term). | RE-03 §2.3; RE-01 Dub §2.3; RE-06 §2.2; RE-02 Weferral §2.3 |
++| 56 | Admin panel | **Decided** | Full workspace: `/admin/products` (+ variants, bulk), `/admin/categories`, `/admin/collections`, `/admin/media`, `/admin/analytics` (live), `/admin/affiliates` (review/approve/suspend), `/admin/payouts` (review/schedule/pay/reject), `/admin/settings`. Three-locks auth. | Study BLUEPRINT.md; RE-04 (entire); RE-02 §2.5 |
++| 67 | Push notifications (mobile) | **Skip** | No mobile app. Email + in-app toast instead. | locked |
++| 68 | Device features | **Skip** | No mobile app. | locked |
++| 71 | Deep linking | **Skip** | No mobile app. `/go/[id]` is a web redirect. | locked |
++
++---
++
++## Engine — 10 Parts (Home: 25 areas + gap questions R1–R5, C1–C3)
++
++### 1. Architecture
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 02 | Stack decisions | **Decided** | Next.js 16.3.4 App Router, React 19, Tailwind v4, Supabase (Postgres + Auth + RLS), Sanity CMS, Upstash Redis (rate limit + dedup + cache), Sentry, `ua-parser-js` (bot filter), PAAPI client. | Study BLUEPRINT.md; RE-01 Dub §2.3; RE-05 NextBase §2.4; RE-06 §2.3 |
++| 05 | Frontend architecture | **Decided** | App Router. Server Components for data (storefront, product, admin lists). Client components for interactivity (gallery, carousel, CTA, editors, live dashboards). Route handlers for `/api/*`. `src/proxy.ts` fast-path gate. Layered action-client. | Study BLUEPRINT.md; RE-07 §2.2; RE-05 NextBase §2.5 |
++| 65 | Platform targets | **Decided** | Web only. Phone + PC. No mobile/desktop app. | locked |
++| 78 | Landing page vs app shell | **Decided** | Storefront homepage at `/` (3-up grid + carousel). Admin shell at `/admin/*`. Affiliate shell at `/affiliate/*`. Separate layouts. | RE-07 §2.1 |
++
++### 2. Integration
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 57 | API design | **Decided** | REST `/api/admin/*` (CRUD + bulk), `/api/affiliate` (URL derivation), `/api/analytics` (view/click), `/api/affiliate/postback` (S2S conversion, bearer token), `/api/admin/payouts` (review), `/api/affiliate/dashboard` (own data). Server Components for initial data. | Study BLUEPRINT.md; RE-02 Raider §2.3 |
++| 61 | Webhooks (outgoing) | **Skip** | None. Amazon PAAPI is polled (scheduled). No outgoing webhooks needed. | RE-03 §2.4 |
++| 80 | Third party integrations | **Decided** | Supabase, Sanity, Amazon (PAAPI + Associates redirect, 22 marketplaces), Upstash Redis, Sentry, Vercel (edge headers for IP/geo), email (SMTP or Resend). | Study BLUEPRINT.md; RE-01 Dub §2.3; RE-03 §2.1; RE-06 §2.5 |
++
++### 3. Communication between parts
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 58 | Background jobs and queues | **Decided** | `waitUntil` for click recording. Scheduled jobs: salt rotation (90s), dead-link HEAD probe (daily, batched + throttled), PAAPI refresh (TTL-based), payout-term eligibility check (daily). SSE for live dashboards. | RE-01 Dub §2.4; RE-06 §2.2; RE-03 §2.7; RE-02 Weferral §2.4 |
++
++**Gap questions C1–C3:**
++
++| ID | Question | Decision | Answer | Citation |
++|---|---|---|---|---|
++| C1 | How do parts talk | **Decided** | Direct calls (Server Component → service → Supabase). Click pipeline via `waitUntil`. PAAPI via scheduled fetch. Live dashboard via SSE (or short-polling). No message queue. | RE-01 Dub §2.4 |
++| C2 | Late or lost message | **Decided** | Click writes best-effort (`Promise.allSettled`). Redirect survives stats outage. Dedup cache absorbs replays. SSE reconnects on drop. | RE-01 Dub §2.4; RE-01 YOURLS §2.2 |
++| C3 | Duplicate message | **Decided** | Identity-hash dedup (1 click/identity/link/hour). Postback: UNIQUE(`account_id`,`trace`). Idempotent SSE (event IDs). | RE-01 Dub §2.4; RE-02 Raider §2.3 |
++
++### 4. Runtime environment
++
++**Gap questions R1–R5:**
++
++| ID | Question | Decision | Answer | Citation |
++|---|---|---|---|---|
++| R1 | Where does it run | **Decided** | Server: Vercel (Node.js, Next.js 16.3.4). Browser: client components. SSE on route handlers. | Study BLUEPRINT.md |
++| R2 | Versions | **Decided** | Node 20+, Next.js 16.3.4, React 19.2.8, Postgres 15, `@supabase/ssr`, `@upstash/ratelimit`, `ua-parser-js`, `@sentry/nextjs`, PAAPI client. | Study BLUEPRINT.md |
++| R3 | Limits | **Decided** | Vercel default (10s serverless, 60s Pro). Click write < 50ms or backgrounded. PAAPI 1 TPS / 86400/day. SSE long-lived (Vercel Pro). | RE-01 Dub §2.4; RE-03 §2.7 |
++| R4 | Real conditions | **Decided** | Slow mobile (Nigeria context), in-app browsers, power cuts. Mobile LCP target. Graceful 404/error. SSE must degrade to polling on flaky connections. | locked; blueprint skill §75 |
++| R5 | Environments | **Decided** | Dev (local), Preview (Vercel preview), Production (`*.vercel.app` or custom domain). Same Supabase project, schema-isolated. | Study BLUEPRINT.md |
++
++### 5. Deployment
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 18 | Deployment and DevOps | **Decided** | One public Vercel project. Preview per PR. Rollback = redeploy. Add `vercel.json` (config + cron for scheduled jobs). Cron: salt rotation, dead-link probe, PAAPI refresh, payout-term check. | Study BLUEPRINT.md gap; RE-06 §2.2; RE-03 §2.7 |
++| 66 | App store and distribution | **Skip** | No mobile app. | locked |
++| 70 | App updates | **Skip** | No mobile app. Web = redeploy. | locked |
++
++### 6. Configuration
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 14 | Environment and configuration | **Decided** | `.env.local`/Vercel: Supabase URL + anon + service key, Sanity write token, Upstash Redis URL + token, Sentry DSN, Amazon Associates tags (per-marketplace, when supplied), PAAPI access/secret keys, email (SMTP/Resend). Service keys server-only. Leak plan: rotate Supabase service key + Sanity token; revoke door-keys/invites on compromise. | Study BLUEPRINT.md; RE-05 §2.4; RE-03 §2.3 |
++
++### 7. Security
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 28 | Cookie and session management | **Decided** | Door-key cookie (HttpOnly, SameSite=Lax, Path=/admin, 30d, Secure). Supabase JWT. Affiliate session (JWT, ownership-scoped). No visitor cookies. Visitor identity hashed server-side. | RE-05 §2.1; RE-06 §2.6 |
++| 43 | Authentication and authorization | **Decided** | Admins: three locks (invite → door-key → JWT role). Affiliates: email/password + email verify + admin approval. `getClaims()` in gates. Fail-silent 404 (admin); 401/redirect (affiliate). Layered action-client. Ownership-based RLS for affiliate's own tables; role-based for admin tables. | RE-05 (entire); RE-05 NextBase §2.2–2.5; RE-02 §2.1 |
++| 63 | Rate limiting and abuse prevention | **Decided** | Upstash sliding window, per-endpoint policy map, fail-open 1s. Explicit `redirect` policy. Click dedup (1h). Signin rate limit. Affiliate signup rate limit. Postback rate limit. Bot filter on click path. | RE-01 Dub §2.3–2.4; RE-05 §4 |
++| 77 | Security | **Decided** | HTTPS. SHA-256 tokens. Service-role isolated. RLS + `FORCE` + `(select auth.jwt())` wrapper on every table. EU IP redaction. `rel="nofollow noopener"` on Amazon CTA. `SECURITY DEFINER` for affiliate membership checks. Input validation (TS strict + zod). | RE-05 (entire); RE-05 NextBase §2.3; RE-01 Dub §2.4; RE-07 §2.5 |
++
++### 8. Reliability
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 13 | Error handling | **Decided** | Neutral auth errors. Plain 404 for missing/unpublished. Sentry (server + client). Error-tolerant click writes. Branded not-found. Payout flow transactional (no partial state). | RE-05 §2.5; RE-01 YOURLS §2.2; RE-02 Raider §2.5 |
++| 19 | Monitoring and observability | **Decided** | Sentry (server + client, email alert, PII off). Uptime ping on key URLs. Drop-reason telemetry (named enum, grouped count). Payout-pipeline observability (stuck-request alerts). PAAPI error-rate alert. | locked; RE-06 §2.4; RE-02 §2.6 |
++| 27 | Offline and PWA | **Skip** | No PWA. One-shot visits + dashboards (dashboards degrade to polling). | locked |
++| 31 | Backup and recovery | **Decided** | Supabase daily Postgres backups. Sanity CDN (versioned). Git. Rollback = redeploy. Point-in-time recovery for the affiliate ledger (Supabase Pro). | Study BLUEPRINT.md gap |
++| 69 | Offline mode (mobile) | **Skip** | No mobile app. | locked |
++
++### 9. Scalability
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 76 | Scalability planning | **Decided** | Single Supabase project (Pro). `analytics` partitioned by month. Upstash for hot dedup/cache. Vercel edge + Sanity CDN. Upgrade path: Supabase read replicas + ClickHouse for analytics at >~5M clicks/month. Affiliate ledger scales with Postgres (append-only, indexed). | RE-01 Dub §5; RE-06 §5; Study BLUEPRINT.md gap |
++
++### 10. Resource management
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 08 | Performance | **Decided** | Mobile LCP target. `next/image` with Sanity domains. `getClaims()` not `getUser()`. `waitUntil` for click writes. Upstash cache for hot link + product records. Gallery + carousel in `<Suspense>`. SSE over polling for live dashboards (fewer requests). | RE-05 NextBase §2.4; RE-01 Dub §2.5; RE-07 §2.2 |
++| 30 | Code splitting and bundle size | **Decided** | Next.js automatic splitting. Admin + affiliate dashboards lazy-loaded (not on public path). Gallery/carousel in `<Suspense>`. Heavy charts dynamic-imported. | RE-07 §2.2 |
++| 72 | Performance (mobile specific) | **Skip** | No mobile app. Covered by 08. | locked |
++
++---
++
++## Project Ring (Home: 12 areas)
++
++| # | Area | Decision | Rationale | Citation |
++|---|---|---|---|---|
++| 01 | Project setup | **Decided** | Name: Athletica. Owner: lordwhitefire (Victor). Domain: `*.vercel.app` → custom. Hosting: Vercel. Envs: dev/preview/prod. Currency: per-marketplace. Audience: football gear buyers + affiliates. Deadline: per owner. | locked; Study BLUEPRINT.md |
++| 15 | Version control | **Decided** | Git at root. Protected `main`. Conventional commits. `.gitignore` tracks all except secrets + build output + RE samples. | Study BLUEPRINT.md; `.gitignore` |
++| 16 | Development workflow | **Decided** | TS strict. ESLint + Prettier. Pre-commit. Code review. Read `rollout/AGENTS.md`. | Study BLUEPRINT.md; `rollout/AGENTS.md` |
++| 17 | Testing | **Decided (smoke + critical-path)** | Owner ruling: no full suite. Smoke test before each phase launch: product page loads, CTA returns URL, unauthenticated admin → 404, affiliate signup flow, payout state machine. Critical-path manual check on real phone + PC each phase. | locked; Study BLUEPRINT.md |
++| 20 | Legal and compliance | **Decided** | Amazon Associates disclosure on every product page. Privacy policy (analytics hashing, Sentry, affiliate data). Cookie notice (admin/affiliate session cookies). GDPR: EU IP redaction + affiliate data deletion on request. Terms of service (storefront + affiliate agreement). Affiliate payout tax docs (per jurisdiction). | locked; RE-01 Dub §2.4; RE-02 §2.5 |
++| 21 | Documentation | **Decided** | `rollout/README.md` (real setup/run/deploy). `.env.example`. Changelog. API docs. Affiliate onboarding guide. Admin one-pager. This blueprint. Architect handoff (separate). | Study BLUEPRINT.md gap |
++| 22 | Naming conventions | **Decided** | Files kebab-case; components PascalCase; fns/vars camelCase; tables/columns snake_case; constants UPPER_SNAKE; routes kebab-case. | Study BLUEPRINT.md |
++| 32 | Client communication | **Decided** | Owner approves. Progress via `developer-workspace/PROGRESS.md`. Phase gates: owner reviews at end of each phase before next. | Study BLUEPRINT.md |
++| 33 | Handoff and maintenance | **Decided** | Owner + next developer. Credentials handoff: Supabase, Sanity, Upstash, Sentry, Vercel, Amazon Associates (per-marketplace tags + PAAPI keys), email. Client training: admin + affiliate guide. Support period: per owner. | Study BLUEPRINT.md |
++| 73 | Progress tracking | **Decided** | `developer-workspace/PROGRESS.md` + per-phase checklists + per-task ROLL folders. | Study BLUEPRINT.md |
++| 74 | Session recovery | **Decided** | Reload rule files first after interruption. Log after each meaningful action. | Study BLUEPRINT.md |
++| 75 | Constraint identification | **Decided** | Solo owner + affiliates. Vercel/Supabase Pro tiers. PAAPI 1 TPS / 86400/day. Amazon Associates tag per-marketplace. Nigerian connectivity (slow mobile, in-app browsers). Email deliverability for affiliate notifications. | locked; blueprint skill §75; RE-03 §2.4 |
++
++---
++
++## Summary
++
++- **Decided:** 66 of 80 areas + 17 of 17 gap questions.
++- **Skip:** 14 areas — all honest, not deferrals:
++  - Amazon owns the transaction (5): 34 Payment, 36 Inventory, 37 Cart/checkout, 38 Shipping, 40 Order mgmt.
++  - No mobile app (7): 66 App store, 67 Push, 68 Device, 69 Offline-mobile, 70 App updates, 71 Deep links, 72 Mobile-perf.
++  - No PWA (1): 27 Offline/PWA.
++  - No outgoing webhooks (1): 61 Webhooks.
++- **Pending:** 0.
++
++The 14 Skips are structural to the business model (affiliate marketplace, not retailer; web-only) — not MVP shortcuts. Everything the RE engagements studied is in scope and built.
+diff --git a/product-management/03-feature-cards.md b/product-management/03-feature-cards.md
+new file mode 100755
+index 0000000..68d7351
+--- /dev/null
++++ b/product-management/03-feature-cards.md
+@@ -0,0 +1,243 @@
++# Feature Cards — Athletica FULL marketplace
++
++**Date:** Mon Nov 16 2026
++**Mode:** Plan
++**Scope:** Full marketplace. Every surface, every entity, every capability the 7 RE engagements studied. No "later phase."
++
++Template per `blueprint` skill `build-layers.md`: Feature, UI, UX Thread, Data, Business logic, Engine, Evidence, Not seen.
++
++Cards grouped by phase. Build order confirmed.
++
++---
++
++## Phase 1 — Foundation
++
++### Card 1 — Visitor views a product page
++
++```
++Feature:        A visitor opens /product/[slug] and sees the product story, images (gallery + carousel), variants, sizes, reviews, and a SHOP PRODUCT CTA.
++UI:             4/6 image + 2/6 buy-box desktop; stacked mobile. Gallery in <Suspense>, aspect-square skeleton, cap 5 images. Buy-box: title + (price pill omitted on public page) → variant selector → description → reviews summary → CTA last. generateMetadata (title, desc, OG w/h/alt). JSON-LD schema.org/Product + AggregateOffer (availability flips with PAAPI).
++UX Thread:      Phone-first; in-app browser primary. First screen answers DM questions. Loading skeleton, plain 404 for missing/unpublished, greyed CTA when ASIN/tag missing or dead-link. No mock content, no Unsplash fallback.
++Data:           rollout.products (status='active', deleted_at IS NULL, available_on <= now). rollout.product_variants (SKU, stock-from-PAAPI). main_image + images[] from Sanity. amazon_product_cache (TTL + error + availability + integer-cents price — NOT displayed publicly).
++Business logic: getProductBySlug(slug) returns published only (3-condition gate). View recorded server-side with utm_source + visitor_hash. Bot skipped. Variant availability from PAAPI. Reviews fetched via PAAPI.
++Engine:         Next.js Server Component (SSR). getClaims() where applicable. next/image with Sanity domains. Sentry captures render errors.
++Evidence:       RE-07 §2.2–2.5; RE-04 §2.3; RE-06 §2.1; RE-03 §2.4 (PAAPI cache + reviews); locked (no-price, SHOP PRODUCT).
++Not seen:       Real mobile LCP number. In-app-browser rendering quirks (real-device check needed).
++```
++
++### Card 2 — Visitor clicks SHOP PRODUCT → Amazon (with geo-routing)
++
++```
++Feature:        A visitor taps SHOP PRODUCT and is redirected to Amazon in their local marketplace with the affiliate tag; the click is recorded and attributed to an affiliate tracker if present.
++UI:             CTA is the last element in the buy-box. Active: SHOP PRODUCT, navigates externally. Inactive (missing ASIN/tag, dead-link, out-of-stock): greyed, disabled, "Link coming soon" or "Out of stock", no click recorded.
++UX Thread:      No pop-up (blocked in-app). Use /go/[id] server redirect → 302 to Amazon. target="_blank" rel="nofollow noopener". Honest disabled state.
++Data:           /go/[id] looks up the product's ASIN + the visitor's marketplace (geo-routed) + the tag for that marketplace + the tracker id (if /go/[id] is an affiliate tracker URL). Click row: timestamp, identity_hash, click_id, link_id, tracker_id (nullable), ip_or_empty, country, region, ua, referer, bot, qr, trigger. Dedup: 1 click/identity/link/hour.
++Business logic: IP → country (6-header chain, Cloudflare-trusted first) → marketplace. Amazon URL derived: https://{marketplace.domain}/dp/{ASIN}?tag={marketplace.tag}. NEVER stored. Bot check (6-layer) on click path. EU IP redaction. Identity hash = SipHash64(salt, ua+ip+domain+root_domain). Salt rotates every 90s.
++Engine:         Route handler /go/[id]. waitUntil + Promise.allSettled for click write. Upstash sliding-window rate limit (explicit redirect policy, fail-open 1s). X-Robots-Tag: noindex. 302 for user-editable affiliate link. MaxMind GeoIP2 (offline) for geo-routing.
++Evidence:       RE-01 YOURLS §2.1–2.2; RE-01 Dub §2.2–2.4; RE-03 §2.1–2.2 + §2.6 (geo-routing); RE-06 §2.1–2.2 + §2.5 (IP chain); RE-07 §2.5.
++Not seen:       Real CTR (launch reveals). Amazon PAAPI TPS under our load. Whether the client has Associates tags in multiple marketplaces.
++```
++
++### Card 3 — Analytics pipeline (views + clicks + visitor hashing)
++
++```
++Feature:        Every view and click is recorded server-side with bot filtering, identity hashing, salt rotation, EU redaction, and drop-reason telemetry.
++UI:             No direct UI; feeds the dashboards (Cards 8, 11).
++UX Thread:      Invisible to the visitor. Never blocks the redirect.
++Data:           rollout.analytics (product_id, event_type, source, visitor_hash BIGINT, tracker_id, created_at). Partitioned by month. Drop-reason enum (bot, spam_referrer, invalid, dc_ip, threat_ip, persist_error).
++Business logic: Pipeline order: bot filter (ua-parser-js + Headless Chrome override; unparseable UAs accepted) → enrichment (timestamp, source, tracker) → identity hash (SipHash64) → dedup (Upstash 1h) → EU redaction → persist. Salt rotation: every 90s, current + previous, 48h retention, in-memory cache.
++Engine:         waitUntil + Promise.allSettled. Upstash for dedup + salt cache. Scheduled salt-rotation job (Vercel cron, 90s). Drop-reason telemetry → Sentry/Sentry-like grouped count.
++Evidence:       RE-06 §2.1–2.7 (entire Plausible pipeline); RE-01 Dub §2.2–2.4 (bot + dedup + EU + waitUntil).
++Not seen:       Real bot precision/recall (needs labelled stream). UAInspector → ua-parser-js parity (library swap, not benchmarked).
++```
++
++---
++
++## Phase 2 — Storefront
++
++### Card 4 — Visitor browses the storefront homepage
++
++```
++Feature:        A visitor lands on / and sees a curated 3-up hero grid, a browse carousel, and a footer.
++UI:             ThreeItemGrid (3 curated products, above the fold) → Carousel (horizontal scroller of GridTileImage) → Footer. Black/lemon tokens. generateMetadata (Athletica, OG).
++UX Thread:      Leads with editorial curation, not exhaustive listing. Three picks, not twelve. Fast first screen on mobile data. Skeleton tiles while loading.
++Data:           rollout.products where status='active' && available. Curated picks (a `featured` flag or a `collections` row). Carousel = recent or category-scoped.
++Business logic: getFeaturedProducts(limit=3), getCarouselProducts(limit=N). Views recorded on tile clicks.
++Engine:         Next.js Server Component. <Suspense> around grid + carousel. next/image. CDN-cached at the edge.
++Evidence:       RE-07 §2.1 (homepage hierarchy); RE-04 §2.1 (collections M2M).
++Not seen:       Carousel component internals (RE-07 §4 — likely GridTileImage scroller, not read).
++```
++
++### Card 5 — Visitor browses the catalog grid + searches
++
++```
++Feature:        A visitor opens /shop, sees a product grid with search, category filter, sort, and pagination.
++UI:             Grid of product cards (image, name, CTA hint). Search bar. Faceted filter (category, gender, color). Sort (newest, popular). Pagination (8-12/page).
++UX Thread:      Empty = "No products match." Loading = skeleton grid. Failed = error + retry. URL search params as filter state (shareable, back-button works).
++Data:           rollout.products + product_variants + categories (M2M). Search index on name, tags, slug.
++Business logic: listProducts({query, category, sort, page}) returns published only. Search via Postgres ILIKE (or pg_trgm for fuzzy). Unavailable variants visible-but-disabled.
++Engine:         Server Component. URL search params as state (router.replace {scroll:false} on filter change). Pagination via cursor or offset.
++Evidence:       RE-07 §2.4 (URL params as state, visible-but-disabled); RE-04 §2.5 (tags); RE-07 §2.1 (grid pattern).
++Not seen:       Search relevance tuning (needs real catalog + queries). pg_trgm vs ILIKE performance at catalog scale.
++```
++
++### Card 6 — Visitor sees reviews on a product page
++
++```
++Feature:        A product page displays the Amazon rating + sample reviews fetched via PAAPI.
++UI:             Rating summary (stars, count) + 2-3 review excerpts + "See all on Amazon" link.
++UX Thread:      Loading = skeleton. No reviews = omit the section (no fake reviews). Stale cache = show last-known + "refreshing" hint.
++Data:           amazon_product_cache.rating, .review_count, .review_samples (JSONB). TTL-based refresh.
++Business logic: PAAPI fetch on cache miss/stale. Enable Offers.Listings.Availability.Type (Amazon Auto Links disables — we don't). Store rating + sample reviews in cache.
++Engine:         PAAPI client (rate-limited, 1 TPS). Scheduled refresh job (Vercel cron). waitUntil for non-blocking fetch on view.
++Evidence:       RE-03 §2.4 (PAAPI cache schema); RE-03 §2.5 (enable availability fields); RE-07 §2.2 (JSON-LD AggregateOffer references rating).
++Not seen:       PAAPI review-field availability (Amazon may restrict). Review freshness vs Amazon's actual display.
++```
++
++---
++
++## Phase 3 — Admin workspace
++
++### Card 7 — Admin signs in (three locks)
++
++```
++Feature:        An admin signs in via invite code → door-key cookie → email/password + JWT role.
++UI:             /admin/signin (SSR, split-screen). /admin/signup?code=... (invite-gated). /admin/* → 404 until door-key present.
++UX Thread:      Neutral error ("Invalid email or password"). Plain 404 on missing door-key. Sliding renewal (active admins never re-issue).
++Data:           rollout.admin_access_keys (kind='invite'|'door', token_hash UNIQUE, user_id, expires_at, used_at, revoked_at). auth.users with app_metadata.role='admin'.
++Business logic: Lock 1: invite re-validated at submit. Lock 2: door-key SHA-256, sliding 30d, 404 if invalid. Lock 3: getClaims() checks role='admin'. Fail-silent 404.
++Engine:         Per-route requireAdmin() + Next.js middleware (Lock #2 first-line filter). Layered action-client: actionClient → authActionClient → adminActionClient. RLS: admin_access_keys service_role only; FORCE RLS + (select auth.jwt()) wrapper.
++Evidence:       RE-05 athletica-own §2.1–2.4; RE-05 NextBase §2.3–2.5.
++Not seen:       Invite issuance script (not in repo — document + add). Signin rate limit (add).
++```
++
++### Card 8 — Admin manages products + variants + bulk import
++
++```
++Feature:        Admin creates/edits/publishes/unpublishes/archives products with variants, categories, collections; bulk-updates status; CSV-imports products.
++UI:             /admin/products (search, filter, sort, pagination, add/edit modals). /admin/products/[id]/edit (variants, images, categories, collections). Bulk-action bar (require_ids! + skip count). /admin/import (two-phase CSV wizard).
++UX Thread:      Toast on success, confirm on delete/archive. Dirty-state protection. Price optional. Per-row status during import. Empty/loading/error states.
++Data:           rollout.products + product_variants + categories (M2M) + collections (M2M). 5-status state machine. deleted_at soft-delete. available_on future-publish.
++Business logic: Status transitions in service workflows. discontinue() bypasses validation. Publish gate: active && !deleted && available_on<=now. Bulk: require_ids!, skip proposed/rejected. Two-phase import: mapping → processing, per-row status, grouped COUNT, no delete mid-processing.
++Engine:         /api/admin/products + /api/admin/products/[id]. Layered admin action-client. RLS role-based. Sanity upload secured. CSV parse (PapaParse).
++Evidence:       RE-04 §2.1–2.8 (entire Spree); RE-05 §2.3 (RLS); Study BLUEPRINT.md (existing admin).
++Not seen:       CSV row-processor mapping (RE-04 §4 — located, not read line-by-line).
++```
++
++### Card 9 — Admin manages the media library
++
++```
++Feature:        Admin uploads, browses, and deletes images in Sanity.
++UI:             /admin/media (grid of assets, upload dropzone, asset detail, delete).
++UX Thread:      Upload progress. Drag-drop. 5MB limit, JPEG/PNG/WebP/AVIF. Delete confirmation.
++Data:           Sanity assets (CDN URLs). rollout.products.main_image + images[] reference the Sanity URLs.
++Business logic: Service-role upload to Sanity. Returns _id + url. No public upload route.
++Engine:         /api/admin/media/upload + /api/admin/media/assets. Admin-auth secured. Sanity write token server-side.
++Evidence:       Study BLUEPRINT.md (Sanity upload); RE-05 §2.1 (auth).
++Not seen:       Sanity rate limits at scale.
++```
++
++### Card 10 — Admin views the live analytics dashboard
++
++```
++Feature:        Admin sees total views, clicks, CTR, per product, per source, per affiliate, 7/30/90 days, payout pipeline — live.
++UI:             /admin/analytics. Charts (CTR over time, source split, affiliate leaderboard, payout pipeline status). Live indicator. Date-range selector.
++UX Thread:      Live updates (SSE or short-polling). Empty = "No data yet" (no fake zeros). Loading = skeleton. Failed = error + retry.
++Data:           rollout.analytics (partitioned by month). affiliate_balance + affiliate_payouts. Drop-reason counts.
++Business logic: CTR = clicks/views per product per source per period. Daily uniques = distinct visitor_hash. Affiliate performance = clicks attributed to tracker. Payout pipeline = payouts by status.
++Engine:         SSE endpoint (or short-polling fallback on flaky connections). Server Component for initial data. Grouped COUNT queries. Charts dynamic-imported.
++Evidence:       RE-06 §2.4 (drop-reason telemetry); RE-07 §2.3 (states); RE-02 §2.1 (affiliate entities).
++Not seen:       Real traffic volumes. SSE scalability on Vercel (may need Pro or fallback to polling).
++```
++
++---
++
++## Phase 4 — Affiliate program
++
++### Card 11 — Affiliate signs up + onboards
++
++```
++Feature:        An affiliate signs up, verifies email, gets admin approval, receives a tracker, and lands on their dashboard.
++UI:             /affiliate/signup (multi-step: profile → payout details → terms accept). /affiliate/verify-email. /affiliate/dashboard (on approval).
++UX Thread:      Multi-step wizard with progress. Dirty-state protection. Clear "pending approval" state. Email verify before dashboard access.
++Data:           affiliate_accounts (email, password, commission default, full_name, address, country, payout_method, payout_instructions, notify_balance, status: pending→active→suspended/closed).
++Business logic: Signup creates account (status=pending). Email verify. Admin reviews → status=active. Tracker issued (public tracking code). Ownership-based RLS: affiliate sees only own rows.
++Engine:         /api/affiliate/signup + /api/affiliate/dashboard. Affiliate session JWT. RLS: ownership-based (auth.uid() = account_id) + (select auth.uid()) wrapper. Email (separate thread).
++Evidence:       RE-02 Raider §2.1 (account entity); RE-05 NextBase §2.2 (ownership RLS); RE-02 Weferral §2.3 (payout details gate).
++Not seen:       Email deliverability for verification (depends on SMTP/Resend setup).
++```
++
++### Card 12 — Affiliate gets trackers + views balance
++
++```
++Feature:        An affiliate creates trackers (one per campaign/backlink), views their balance, and sees click attribution.
++UI:             /affiliate/trackers (create, list, copy-link). /affiliate/balance (current due, per-tracker breakdown). /affiliate/clicks (per-tracker, per-day).
++UX Thread:      Copy-link button. Balance updates live (SSE). Empty = "No clicks yet."
++Data:           affiliate_trackers (id = public tracking code, label, account_id). affiliate_balance (append-only, released flag, trace, tracker_id, amount, currency). affiliate_campaigns (commission_type, reward, recurring, recurring_limit, minimum_payout, payout_term).
++Business logic: Tracker URL = /go/[tracker-id] (or /go/[id]?ref=[tracker-id]). Click attributed to tracker at redirect time. Balance = sum of released=false rows for the account. Commission per campaign rules (percentage/fixed, recurring+limit).
++Engine:         /api/affiliate/trackers + /api/affiliate/balance. Ownership RLS. SSE for live balance.
++Evidence:       RE-02 Raider §2.1 (5-entity model, tracker); RE-02 Raider §2.2 (commission calc); RE-02 Weferral §2.1 (campaign config).
++Not seen:       Recurring commission actual payout cadence (per-transaction vs per-month — Weferral UI ambiguous).
++```
++
++### Card 13 — Affiliate requests a payout; admin reviews + pays
++
++```
++Feature:        An affiliate requests a payout; the admin reviews, schedules, approves/rejects; the affiliate sees the status.
++UI:             /affiliate/payouts/request (form: amount, confirm). /affiliate/payouts (history with status). /admin/payouts (review queue: approve/reject/schedule).
++UX Thread:      config_failure (missing payout details), amount_neutral (≤0), amount_failure (< minimum), request_success. Payout status visible to both sides.
++Data:           affiliate_payouts (number per-account sequential, amount, currency, status enum, scheduled_for, account snapshot). affiliate_balance.released flipped true on schedule.
++Business logic: Request: validate details + balance + minimum + payout_term. Flow wrapped in ONE Postgres transaction (balance.released=true UPDATE + payout INSERT). Status: requested → scheduled → paid / → rejected. Counter via SQL (not read-then-write).
++Engine:         /api/affiliate/payouts/request + /api/admin/payouts. Transactional service. Email on each transition (separate thread). Scheduled payout-term eligibility check (Vercel cron).
++Evidence:       RE-02 Raider §2.5 (payout flow + gaps); RE-02 Weferral §2.3–2.5 (minimum, term, state machine).
++Not seen:       Real refund/clawback volume (Amazon-dependent). Tax-doc generation per jurisdiction.
++```
++
++---
++
++## Phase 5 — Amazon integration
++
++### Card 14 — Dead-link detection + PAAPI cache refresh
++
++```
++Feature:        A scheduled job detects dead/out-of-stock Amazon products and marks them; the CTA greys out on the storefront.
++UI:             Dead product → CTA greyed, "Out of stock" or "Link coming soon", no click recorded. Admin sees dead-link flags in /admin/products.
++UX Thread:      Honest state. Visitor never sent to a 404 on Amazon.
++Data:           amazon_product_cache.expiration_time (TTL) + .error + .availability. products flagged dead via cache state.
++Business logic: Three signals: (1) PAAPI availability — Offers.Listings.Availability.Type === "OutOfStock" or empty offers → soft-dead; (2) scheduled HEAD probe of /dp/{ASIN} for errored/stale products — HTTP 404/410 → dead; (3) redirect-time signal — high 4xx rate from outbound Amazon clicks → dead (reactive).
++Engine:         Vercel cron (daily). PAAPI payload enables availability fields (Amazon Auto Links disables — we don't). waitUntil for non-blocking probes. Batched + throttled (1 TPS).
++Evidence:       RE-03 §2.5 (enable availability) + §2.7 (no dead-link detector — add all three signals).
++Not seen:       Amazon's PAAPI rate-limit enforcement under our batch size. HEAD-probe reliability (Amazon may rate-limit).
++```
++
++---
++
++## Phase 6 — Hardening
++
++### Card 15 — i18n + legal + handoff
++
++```
++Feature:        The storefront + affiliate dashboard localize per visitor/affiliate locale; legal pages exist; the system is documented and handed off.
++UI:             Locale switch on URL param (?locale=fr). UI strings localized for the 22 Amazon marketplace locales. /privacy, /terms, /affiliate-agreement, /cookie-notice pages.
++UX Thread:      Falls back to English if locale missing. Legal pages linked in footer + affiliate signup.
++Data:           marketplaces table (22 locales). UI string catalog (JSON per locale).
++Business logic: Locale resolved from URL param → visitor IP → affiliate preference → default English.
++Engine:         next-intl (or similar). Static legal pages. Documentation: README, .env.example, changelog, API docs, admin guide, affiliate guide, this blueprint, architect handoff.
++Evidence:       RE-03 §2.1 (22 locales); locked (legal: Amazon disclosure, GDPR, privacy, terms).
++Not seen:       Translation quality for all 22 locales (English base; others may need human translation).
++```
++
++---
++
++## Build order (confirmed — full system)
++
++| Phase | Cards | What ships |
++|---|---|---|
++| 1 Foundation | 1, 2, 3 | Product page, redirect + click pipeline, analytics pipeline. The loop works. |
++| 2 Storefront | 4, 5, 6 | Homepage, catalog browse + search, product page with reviews. Full public surface. |
++| 3 Admin workspace | 7, 8, 9, 10 | Three-locks auth, product CRUD + variants + bulk import, media library, live analytics dashboard. |
++| 4 Affiliate program | 11, 12, 13 | Affiliate signup + onboarding, trackers + balance, payout request + admin review. |
++| 5 Amazon integration | 14 | Dead-link detection + PAAPI cache refresh + availability. |
++| 6 Hardening | 15 | i18n, legal, documentation, handoff. |
++
++Each phase ends with a phase gate: the owner reviews before the next phase begins. The full marketplace ships across all six phases.
+diff --git a/product-management/EVIDENCE.md b/product-management/EVIDENCE.md
+new file mode 100755
+index 0000000..94ea3a2
+--- /dev/null
++++ b/product-management/EVIDENCE.md
+@@ -0,0 +1,90 @@
++# Evidence Log — Blueprint production (FULL MARKETPLACE)
++
++**Date:** Mon Nov 16 2026
++**Agent:** Product Management
++**What this is:** record of commands run, files read, verification done to produce the blueprint. The deliverable is `blueprint/`; this is the proof of work.
++
++**Scope revision:** the first draft (earlier this session) treated Athletica as an MVP affiliate funnel (one product page, two backlinks). The owner clarified: **full software** — the whole marketplace. This file reflects the full-scope rewrite. The 7 RE inputs are unchanged; what changed is which rules are in-scope vs deferred (nothing is deferred now) and how many areas are Decided vs Skip (66/14, vs the MVP's 67/13 — different Skips, expanded scope on several Decided areas).
++
++---
++
++## 1. Setup
++
++| Step | Command / action | Result |
++|---|---|---|
++| Clone | `git clone --depth 1 https://github.com/lordwhitefire/athletica.git` | Success. Initial commit `dd95af3`. |
++| Fetch new state | `git fetch --all && git pull --ff-only` | Two new commits applied: `1e55be9` (track all except secrets/build) + `6c2d98b` (remove .webforge). `product-management/` became visible. |
++| Locate PM workspace | `find` + `grep` | Found `product-management/` at root (5 stale files). |
++
++## 2. Inputs read (unchanged from first draft)
++
++All 7 RE engagement reports read in full:
++
++| Engagement | Samples | Read |
++|---|---|---|
++| 01 Redirect + click tracking | YOURLS, Dub | yes (both) |
++| 02 Affiliate commissions | Raider, Weferral | yes (both) |
++| 03 ASIN / Amazon routing | Amazon Auto Links | yes |
++| 04 Product catalog + admin | Spree | yes |
++| 05 Multi-lock auth + RLS | athletica/rollout (own), NextBase | yes (both) |
++| 06 Privacy analytics | Plausible | yes |
++| 07 Storefront UX | Vercel Commerce | yes |
++
++Also: `reverse-engineering-workspace/README.md`, `INDEX.md`, `BLUEPRINT.md` (Study mini), `repomix-blueprint-skill.txt`, `repomix-pm-agent.txt`, the 5 stale PM files, `developer-workspace/PROGRESS.md`, `developer-workspace/ROLL-15/notes/t12-blueprint-repomix-plan.md`, `developer-workspace/ROLL-15/notes/repomix-packs-evidence.md`, `developer-workspace/plans/reverse-engineering-workspace-patch.md`, `notes/subagent-ids.md`, `.gitignore`, `web-development-areas.md`, `git log`.
++
++## 3. Artifacts produced (full-scope rewrite)
++
++### In `product-management/` (workspace)
++
++| File | Purpose | Scope change from MVP draft |
++|---|---|---|
++| `PLAN-blueprint.md` | The plan, written first. | Rewritten: full marketplace, 6 phases. |
++| `01-re-findings-consolidated.md` | Every rule from the 7 RE engagements, cited. | Scope note added; cross-engagement constraints rewritten (no "out of scope" MVP framing). Rules unchanged. |
++| `02-area-decisions-evidence.md` | 80 areas + 17 gap questions, decision + citation per row. | Rewritten: 7 Skips flipped to Decided (26 i18n, 42 reviews, 45 onboarding, 47 real-time, 60 collaboration, 64 multi-step, 51 search expanded to public). Several Decided areas expanded scope. New count: 66 Decided, 14 Skip. |
++| `03-feature-cards.md` | Feature Cards. | Rewritten: 15 cards (was 8), no "later phase," grouped by 6 phases. |
++| `EVIDENCE.md` | This file. | Updated for full scope. |
++| `PLAN-rollout-mvp.md` | (existing, stale) | Left in place; superseded. |
++| `PLAN-rollout-mvp-v2-six-layers.md` | (existing, stale) | Left in place; superseded. |
++| `ROLLOUT-MVP-SIX-LAYERS.md` | (existing, stale) | Left in place; superseded. |
++| `HANDOFF-rollout-architect.md` | (existing, stale) | Left in place; superseded. |
++| `repomix-output.txt` | (existing) | Left in place. |
++
++### In `blueprint/` (deliverable)
++
++| File | Purpose | Scope change |
++|---|---|---|
++| `README.md` | What the blueprint is, scope, build order. | Rewritten: full marketplace, 6 phases, 14 Skips (structural). |
++| `01-build-layers.md` | UI, Data, Business logic, Functionality + UX Thread. | Rewritten: full storefront (homepage + catalog + search), full admin workspace, affiliate dashboard, all entities modeled. |
++| `02-engine.md` | 10 Engine Parts. | Rewritten: SSE, Vercel cron, PAAPI client, affiliate ownership RLS, email integration added. |
++| `03-project-ring.md` | 12 Project Ring areas. | Rewritten: phase gates, expanded legal (affiliate agreement, tax docs), per-phase smoke tests. |
++| `04-checklist.md` | 80-area table + count check. | Rewritten: 66 Decided / 14 Skip. |
++| `05-gap-questions.md` | D1–D9, R1–R5, C1–C3. | Updated: D1 expanded entities (variants, categories, collections, campaigns, audit_log); D5 adds affiliate account state. |
++| `06-iso-25010.md` | 9-quality double-check. | Updated: affiliate ledger audit trail, expanded safety (tax docs, reversals). |
++
++## 4. Verification
++
++| Check | Expected | Result |
++|---|---|---|
++| All 7 RE reports read | 7/7 | Yes. |
++| Every Plan-mode area has a decision | 80/80 Decided or Skip, 0 Pending | Yes — `blueprint/04-checklist.md` (66 Decided, 14 Skip, 0 Pending). |
++| Every gap question answered | 17/17 Decided | Yes — `blueprint/05-gap-questions.md`. |
++| Every rule traces to a citation | no invented rules | Yes — `01-re-findings-consolidated.md` + `02-area-decisions-evidence.md` cite `RE-NN §X` per row. |
++| Feature Cards complete | each has UI/UX/Data/Business logic/Engine/Evidence/Not seen | Yes — 15 cards in `03-feature-cards.md`. |
++| ISO 25010 double-check | all 9 qualities answered | Yes — `blueprint/06-iso-25010.md`. One honest gap (no full test suite) named with mitigations. |
++| No stray files | artifacts only in `product-management/` and `blueprint/` | Yes. |
++| Mini `BLUEPRINT.md` at root | left untouched | Yes — not modified. |
++| Stale PM files | left in place, superseded | Yes. |
++| Full scope (not MVP) | affiliate ledger, geo-routing, dead-link, full storefront all in-scope | Yes — no "later phase" deferrals; 6-phase build. |
++
++## 5. What was NOT done
++
++- No code written. No source files modified.
++- No config changed. No deployment. No tests run.
++- The architect handoff is not produced here (architect agent's job, from this blueprint).
++- The existing app's code was not re-verified line-by-line (trusts the Study `BLUEPRINT.md` + RE engagement 05).
++
++## 6. Confidence
++
++Inherits the RE engagements' confidence words (`confirmed` / `likely` / `not proven`). Every `confirmed` rule → Decided. `likely` rules carried with caveat noted. `not proven` items (Weferral's backend enum values, PAAPI TPS under our load, SSE scalability on Vercel) flagged in Feature Card "Not seen" lines and `06-iso-25010.md`.
++
++The blueprint is a recommendation. The owner decides.
+diff --git a/product-management/PLAN-blueprint.md b/product-management/PLAN-blueprint.md
+new file mode 100755
+index 0000000..f9d70b1
+--- /dev/null
++++ b/product-management/PLAN-blueprint.md
+@@ -0,0 +1,67 @@
++# Plan — Blueprint (Plan mode) for the FULL Athletica marketplace
++
++**Date:** Mon Nov 16 2026
++**Agent:** Product Management
++**Status:** Owner said **yes** to full-software scope. Work in progress.
++**Method:** the `blueprint` skill, Plan mode.
++**Supersedes:** the 2026-10-24/26 six-layer plan AND the 2026-11-16 MVP blueprint draft (this same folder, prior version). Both treated the marketplace as a thin affiliate funnel (one product page, two backlinks). The owner clarified: **full software**, not just one product page.
++
++## What the owner asked for
++
++Replan Athletica as the **full marketplace** — every surface, every entity, every capability the 7 RE engagements studied — using the blueprint skill, drawing on the reverse-engineering findings. Not an MVP. Not a one-page funnel. The whole thing: storefront, catalog, admin workspace, affiliate program, geo-routing, analytics, dead-link detection, Amazon integration.
++
++## Scope: full marketplace
++
++**Every surface, built:**
++- Public storefront with a real homepage (Vercel Commerce 3-up hero grid + carousel + footer), catalog browsing, search, categories.
++- Full admin workspace: products + variants, bulk import, media library, analytics dashboard, affiliate + payout management.
++- Affiliate storefront / dashboard: signup, onboarding, trackers, balance, payout requests.
++- Geo-routing to 22 Amazon marketplaces.
++- Dead-link detection as a first-class subsystem.
++- Amazon PAAPI cache + availability + reviews.
++
++**No "later phase" deferrals.** The affiliate ledger (Raider + Weferral), geo-routing (Amazon Auto Links 22-marketplace map), and dead-link detection are in-scope, built as real subsystems, not modeled-and-deferred.
++
++**What genuinely stays Skip (honest, not deferral):**
++- Cart, checkout, payment, inventory, shipping, order management — Amazon owns the transaction; we are an affiliate marketplace, not a retailer.
++- Mobile-app surfaces (app store, push, device, offline-mobile, deep links) — no mobile app; full web software.
++- PWA/offline — one-shot visits; no PWA value.
++- Outgoing webhooks — PAAPI is polled.
++
++## What I will produce
++
++**Deliverable (outside the workspace, its own folder):** a Plan-mode blueprint at `blueprint/` — the 4 Build Layers + UX Thread + 10 Engine Parts + Project Ring, every one of the 80 areas settled to **Decided / Skip / Pending**, the 17 gap questions answered, ~14 Feature Cards for the full scope, and the ISO 25010 double-check.
++
++**Artifacts (inside `product-management/`):**
++- `PLAN-blueprint.md` — this file.
++- `01-re-findings-consolidated.md` — every rule from the 7 RE engagements (unchanged; the rules don't change with scope, only which ones are in-scope vs deferred).
++- `02-area-decisions-evidence.md` — for each of the 80 areas + 17 gap questions: the decision and the citation. Flips the MVP's deferral-Skips to Decided for the full build.
++- `03-feature-cards.md` — ~14 Feature Cards, no "later phase."
++- `EVIDENCE.md` — commands run, files read, verification.
++
++## Inputs (unchanged)
++
++- `reverse-engineering-workspace/engagements/01–07/*/2026-11-16/report.md` (7 engagements, 10 samples, all reported).
++- `BLUEPRINT.md` (root, Study mode, mini) — the current state of the existing app.
++- `product-management/ROLLOUT-MVP-SIX-LAYERS.md` (2026-10-26) — stale; only the locked product constraints carry (no price on page, SHOP PRODUCT CTA, phone-first, plain 404, Sentry, Sanity images).
++- `web-development-areas.md` (root) — the 80-area checklist source.
++
++## Build order (phased — full system)
++
++1. **Phase 1 — Foundation:** three-locks auth, core data model, product page, redirect + click pipeline, analytics pipeline (visitor hash, salt rotation, bot filter).
++2. **Phase 2 — Storefront:** homepage (3-up grid + carousel), catalog browsing, search, categories, product detail with variants + reviews + JSON-LD.
++3. **Phase 3 — Admin workspace:** full product CRUD + variants, two-phase CSV import, media library, live analytics dashboard.
++4. **Phase 4 — Affiliate program:** affiliate signup + onboarding, trackers, campaigns, balance ledger, payout request + admin review + state machine.
++5. **Phase 5 — Amazon integration:** 22-marketplace geo-routing, PAAPI cache, availability checks, dead-link detection, reviews via PAAPI.
++6. **Phase 6 — Hardening:** i18n (marketplace locales), real-time analytics, Sentry, legal, handoff, documentation.
++
++## Boundaries (unchanged)
++
++- I recommend; I do not decide.
++- No code, no config, no deploy, no tickets.
++- I write only inside `product-management/` (artifacts) and `blueprint/` (the deliverable).
++- Every decision cites a RE `report.md` `file:line` or the existing app.
++
++## Stop point
++
++Work ends when the blueprint is handed back. Nothing is built, shipped, or changed by me.
