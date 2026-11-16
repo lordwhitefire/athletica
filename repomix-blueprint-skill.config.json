@@ -1,0 +1,23 @@
+{
+  "output": {
+    "filePath": "repomix-blueprint-skill.txt",
+    "style": "plain",
+    "parsableStyle": false,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "removeComments": false,
+    "includeEmptyDirectories": false,
+    "showLineNumbers": false
+  },
+  "include": [
+    "/home/lordwhitefire/.agents/skills/blueprint/**"
+  ],
+  "ignore": {
+    "useGitignore": false,
+    "useDefaultPatterns": true,
+    "customPatterns": []
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}
