@@ -1,0 +1,30 @@
+{
+  "output": {
+    "filePath": "repomix-pm-agent.txt",
+    "style": "plain",
+    "parsableStyle": false,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "removeComments": false,
+    "includeEmptyDirectories": false,
+    "showLineNumbers": false
+  },
+  "include": [
+    "/home/lordwhitefire/.config/opencode/agent/product-management-agent.md",
+    "/home/lordwhitefire/.config/opencode/skills/product-management-comprehend/**",
+    "/home/lordwhitefire/.config/opencode/skills/product-management-identify/**",
+    "/home/lordwhitefire/.config/opencode/skills/product-management-report/**",
+    "/home/lordwhitefire/.config/opencode/skills/product-management-cut/**",
+    "/home/lordwhitefire/.config/opencode/skills/product-management-list/**",
+    "/home/lordwhitefire/.config/opencode/skills/product-management-evaluate/**",
+    "/home/lordwhitefire/.config/opencode/skills/product-management-summarize/**"
+  ],
+  "ignore": {
+    "useGitignore": false,
+    "useDefaultPatterns": true,
+    "customPatterns": []
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}

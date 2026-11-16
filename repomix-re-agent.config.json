@@ -1,0 +1,28 @@
+{
+  "output": {
+    "filePath": "repomix-re-agent.txt",
+    "style": "plain",
+    "parsableStyle": false,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "removeComments": false,
+    "includeEmptyDirectories": false,
+    "showLineNumbers": false
+  },
+  "include": [
+    "/home/lordwhitefire/.config/opencode/agent/reverse-engineering-agent.md",
+    "/home/lordwhitefire/.config/opencode/skills/re-triage/**",
+    "/home/lordwhitefire/.config/opencode/skills/re-static-analysis/**",
+    "/home/lordwhitefire/.config/opencode/skills/re-dynamic-lab/**",
+    "/home/lordwhitefire/.config/opencode/skills/re-reporting/**",
+    "/home/lordwhitefire/.config/opencode/skills/re-external-references/**"
+  ],
+  "ignore": {
+    "useGitignore": false,
+    "useDefaultPatterns": true,
+    "customPatterns": []
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}

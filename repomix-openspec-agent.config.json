@@ -1,0 +1,29 @@
+{
+  "output": {
+    "filePath": "repomix-openspec-agent.txt",
+    "style": "plain",
+    "parsableStyle": false,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "removeComments": false,
+    "includeEmptyDirectories": false,
+    "showLineNumbers": false
+  },
+  "include": [
+    "/home/lordwhitefire/.config/opencode/agent/openspec-architect.md",
+    "/home/lordwhitefire/.config/opencode/skills/openspec-propose/**",
+    "/home/lordwhitefire/.config/opencode/skills/openspec-apply-change/**",
+    "/home/lordwhitefire/.config/opencode/skills/openspec-update-change/**",
+    "/home/lordwhitefire/.config/opencode/skills/openspec-sync-specs/**",
+    "/home/lordwhitefire/.config/opencode/skills/openspec-archive-change/**",
+    "/home/lordwhitefire/.config/opencode/skills/openspec-explore/**"
+  ],
+  "ignore": {
+    "useGitignore": false,
+    "useDefaultPatterns": true,
+    "customPatterns": []
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}
