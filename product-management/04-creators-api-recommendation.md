@@ -23,7 +23,7 @@
 
 **Assumptions I had to make (not answers):**
 1. A1 — Athletica launches **before** reaching 10 sales in 30 days. (Unknown; the owner can say.)
-2. A2 — The owner has, or will create, an Associates account whose tag works for the target marketplace.
+2. A2 — The owner (the admin) has, or will create, an Associates account whose tag works for the target marketplace. The Amazon tag and the Creators API credentials belong to the admin; affiliate-program partners hold no Amazon tag and are tracked only by tracker ID (blueprint D6).
 3. A3 — Reviews and ratings are retrievable through the API's `customerReviews` resource. goark lists it (`resources.go:69-72`); nobody ran it. `not proven`.
 
 ## I — Identify

@@ -20,7 +20,7 @@ The Engine sits under the Build Layers. UX Thread for the whole Engine: *when so
 - **Outside services (80, Decided):** Supabase, Sanity, Amazon (Creators API optional + Associates, 22 marketplaces), Upstash Redis, Sentry, Vercel (edge + cron), email (SMTP/Resend), MaxMind GeoIP2 (offline geo).
 - **Own API (57, Decided):** REST `/api/admin/*`, `/api/affiliate/*`, `/api/analytics`, `/api/affiliate/postback` (S2S bearer token), `/api/affiliate/dashboard`, `/go/[id]` (redirect). Server Components for initial data.
 - **Outgoing webhooks (61, Skip):** None. Creators API (when enabled) polled via cron.
-- **For each service:** account + keys + test mode before build. Supabase project (configured). Sanity project `cuiis46d` (configured). Upstash (in deps). Sentry (add DSN). Amazon Associates tags (per-marketplace, owner supplies) + Creators API credential ID + secret (only once the owner is eligible). Email (configure SMTP/Resend).
+- **For each service:** account + keys + test mode before build. Supabase project (configured). Sanity project `cuiis46d` (configured). Upstash (in deps). Sentry (add DSN). Amazon Associates tags (the admin's own, per-marketplace; owner supplies) + Creators API credential ID + secret (only once the owner is eligible). Email (configure SMTP/Resend).
 
 ## 3. Communication between parts
 
@@ -45,7 +45,7 @@ The Engine sits under the Build Layers. UX Thread for the whole Engine: *when so
 
 ## 6. Configuration
 
-- **Configuration (14, Decided):** `.env.local`/Vercel: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server), `SANITY_WRITE_TOKEN` (server), `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN`, `SENTRY_DSN`, `AMAZON_ASSOCIATES_TAGS` (JSON, per-marketplace, when supplied), `CREATORS_API_CREDENTIAL_ID` + `CREATORS_API_CREDENTIAL_SECRET` + `CREATORS_API_CREDENTIAL_VERSION` (3.1/3.2/3.3; optional until eligible), `EMAIL_*` (SMTP/Resend). Remove legacy `NEXT_PUBLIC_SYSTEM_TYPE`. Leak plan: rotate Supabase service key + Sanity token; revoke door-keys/invites on compromise.
+- **Configuration (14, Decided):** `.env.local`/Vercel: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (server), `SANITY_WRITE_TOKEN` (server), `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN`, `SENTRY_DSN`, `AMAZON_ASSOCIATES_TAGS` (JSON, the admin's tags, per-marketplace, when supplied), `CREATORS_API_CREDENTIAL_ID` + `CREATORS_API_CREDENTIAL_SECRET` + `CREATORS_API_CREDENTIAL_VERSION` (3.1/3.2/3.3; optional until eligible), `EMAIL_*` (SMTP/Resend). Remove legacy `NEXT_PUBLIC_SYSTEM_TYPE`. Leak plan: rotate Supabase service key + Sanity token; revoke door-keys/invites on compromise.
 
 ## 7. Security
 

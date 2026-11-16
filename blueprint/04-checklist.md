@@ -75,7 +75,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 | 50 | File management | Decided | Full media library (upload, browse, delete). |
 | 51 | Search and filtering | Decided | Public storefront search + admin search. |
 | 53 | Import and export | Decided | Two-phase CSV import + analytics/ledger/payout CSV export. |
-| 55 | Settings and configuration | Decided | Affiliate tags (per-marketplace), Sentry, rate-limit, salt, Creators API (optional), affiliate program settings. |
+| 55 | Settings and configuration | Decided | Amazon Associates tags (the admin's, per-marketplace), Sentry, rate-limit, salt, Creators API (optional), affiliate program settings. |
 | 56 | Admin panel | Decided | Full workspace (products, categories, media, analytics, affiliates, payouts, settings). |
 | 67 | Push notifications (mobile) | Skip | No mobile app. |
 | 68 | Device features | Skip | No mobile app. |
@@ -120,7 +120,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 
 | # | Area | Decision | One-line rationale |
 |---|---|---|---|
-| 14 | Environment and configuration | Decided | `.env.local`/Vercel; per-marketplace tags; Creators API credentials (optional until eligible); leak plan. |
+| 14 | Environment and configuration | Decided | `.env.local`/Vercel; the admin's Associates tags (per-marketplace); Creators API credentials (optional until eligible); leak plan. |
 
 #### Security (4)
 

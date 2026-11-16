@@ -102,3 +102,5 @@ The blueprint is a recommendation. The owner decides.
 **Not found:** AzTracker (four searches). Recorded as blocked in the engagement registry.
 
 **Blueprint files changed:** `blueprint/README.md`, `01`–`06`. Every PAAPI mention was replaced; `grep -i 'paapi\|pa-api' blueprint/*.md` returns nothing. Older PM files `01`–`03` still say PAAPI and are kept as the record at the time; section 8 of `04` lists what supersedes them.
+
+**Correction, same day:** the Amazon Associates tag and Creators API credentials belong to the admin, not to affiliate-program partners. "Affiliate tags" in the settings row was renamed, and D6 now says so. Files: `blueprint/02`–`05`, `product-management/04`.
