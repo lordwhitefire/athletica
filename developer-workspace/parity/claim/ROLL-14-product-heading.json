@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:3011/product/bench1-430706?source=instagram",
+  "scope": "body",
+  "cover": "rollout product page — the product heading",
+  "human": "the product page shows the product's name as its heading",
+  "action": "none",
+  "expectation": "text h1 Bench One Vapor 430706",
+  "writtenAt": "2026-10-30T13:06:58.000Z",
+  "checkedAt": "2026-10-30T13:07:06.815Z",
+  "result": "FAIL",
+  "evidence": "text: expected \"Bench One Vapor 430706\", got \"BENCH ONE VAPOR 430706\"",
+  "expectationHash": "f1f77e47357a",
+  "ownerReply": null,
+  "confirmedAt": null
+}

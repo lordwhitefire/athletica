@@ -1,0 +1,211 @@
+EVIDENCE 1 — redirect entry point: yourls-go.php lines 1-28
+Source: samples/YOURLS/yourls-go.php
+Proves: keyword resolution flow; 302 fallback (NOT 404) for unknown keyword
+-------------------------------------------------------------------------
+     1	<?php
+     2	define( 'YOURLS_GO', true );
+     3	require_once( dirname( __FILE__ ) . '/includes/load-yourls.php' );
+     4	
+     5	// Variables should be defined in yourls-loader.php
+     6	if( !isset( $keyword ) ) {
+     7	    yourls_do_action( 'redirect_no_keyword' );
+     8	    yourls_redirect( YOURLS_SITE, 301 );
+     9	}
+    10	
+    11	$keyword = yourls_sanitize_keyword($keyword);
+    12	
+    13	// if we have a page, display and exit
+    14	if( yourls_is_page($keyword) ) {
+    15	    yourls_page( $keyword );
+    16	    return;
+    17	}
+    18	
+    19	// if we can get a long URL from the DB, redirect
+    20	if( $url = yourls_get_keyword_longurl( $keyword ) ) {
+    21	    yourls_redirect_shorturl($url, $keyword);
+    22	    return;
+    23	}
+    24	
+    25	// Either reserved keyword, or no such keyword
+    26	yourls_do_action( 'redirect_keyword_not_found', $keyword );
+    27	yourls_redirect( YOURLS_SITE, 302 ); // no 404 to tell browser this might change, and also to not pollute logs
+    28	exit();
+
+EVIDENCE 2 — redirect + click recording: includes/functions.php lines 322-368
+Source: samples/YOURLS/includes/functions.php
+Proves: yourls_redirect() issues header() + status; yourls_redirect_shorturl()
+        calls yourls_update_clicks() + yourls_log_redirect() BEFORE the redirect
+-------------------------------------------------------------------------
+   322	function yourls_redirect( $location, $code = 301 ) {
+   323	    yourls_do_action( 'pre_redirect', $location, $code );
+   324	    $location = yourls_apply_filter( 'redirect_location', $location, $code );
+   325	    $code     = yourls_apply_filter( 'redirect_code', $code, $location );
+   326	
+   327	    // Redirect, either properly if possible, or via Javascript otherwise
+   328	    if( !headers_sent() ) {
+   329	        yourls_status_header( $code );
+   330	        header( "Location: $location" );
+   331	        return 1;
+   332	    }
+   333	
+   334	    // Headers sent : redirect with JS if not in CLI
+   335	    if( php_sapi_name() !== 'cli') {
+   336	        yourls_redirect_javascript( $location );
+   337	        return 2;
+   338	    }
+   339	
+   340	    // We're in CLI
+   341	    return 3;
+   342	}
+   343	
+   344	/**
+   345	 * Redirect to an existing short URL
+   346	 *
+   347	 * Redirect client to an existing short URL (no check performed) and execute misc tasks: update
+   348	 * clicks for short URL, update logs, and send an X-Robots-Tag header to control indexing of a page.
+   349	 *
+   350	 * @since  1.7.3
+   351	 * @param  string $url
+   352	 * @param  string $keyword
+   353	 * @return void
+   354	 */
+   355	function yourls_redirect_shorturl($url, $keyword) {
+   356	    yourls_do_action( 'redirect_shorturl', $url, $keyword );
+   357	
+   358	    // Attempt to update click count in main table
+   359	    yourls_update_clicks( $keyword );
+   360	
+   361	    // Update detailed log for stats
+   362	    yourls_log_redirect( $keyword );
+   363	
+   364	    // Send an X-Robots-Tag header
+   365	    yourls_robots_tag_header();
+   366	
+   367	    yourls_redirect( $url, 301 );
+   368	}
+
+EVIDENCE 3 — click log writer: includes/functions.php lines 577-622
+Source: samples/YOURLS/includes/functions.php
+Proves: log row inserts click_time, shorturl, referrer, user_agent, ip_address,
+        country_code; NO bot filter before insert; swallows DB errors silently
+-------------------------------------------------------------------------
+   577	function yourls_log_redirect( $keyword ) {
+   578	    // Allow plugins to short-circuit the whole function
+   579	    $pre = yourls_apply_filter( 'shunt_log_redirect', yourls_shunt_default(), $keyword );
+   580	    if ( yourls_shunt_default() !== $pre ) {
+   581	        return $pre;
+   582	    }
+   583	
+   584	    if (!yourls_do_log_redirect()) {
+   585	        return true;
+   586	    }
+   587	
+   588	    $table = YOURLS_DB_TABLE_LOG;
+   589	    $ip = yourls_get_IP();
+   590	    $binds = [
+   591	        'now' => date( 'Y-m-d H:i:s' ),
+   592	        'keyword'  => yourls_sanitize_keyword($keyword),
+   593	        'referrer' => substr( yourls_get_referrer(), 0, 200 ),
+   594	        'ua'       => substr(yourls_get_user_agent(), 0, 255),
+   595	        'ip'       => $ip,
+   596	        'location' => yourls_geo_ip_to_countrycode($ip),
+   597	    ];
+   598	
+   599	    // Action to allow plugins to log the redirect in their own way. See #3990
+   600	    yourls_do_action( 'log_redirect', $binds );
+   601	
+   602	    // Try and log. An error probably means a concurrency problem : just skip the logging
+   603	    try {
+   604	        $result = yourls_get_db('write-log_redirect')->fetchAffected("INSERT INTO `$table` (click_time, shorturl, referrer, user_agent, ip_address, country_code) VALUES (:now, :keyword, :referrer, :ua, :ip, :location)", $binds );
+   605	    } catch (Exception $e) {
+   606	        $result = 0;
+   607	    }
+   608	
+   609	    return $result;
+   610	}
+   611	
+   612	/**
+   613	 * Check if we want to log redirects (for stats)
+   614	 *
+   615	 * Logs redirects unless YOURLS_NOSTATS is defined and true. Filterable.
+   616	 *
+   617	 * @return bool
+   618	 */
+   619	function yourls_do_log_redirect() {
+   620	    $do_log = ( !defined( 'YOURLS_NOSTATS' ) || YOURLS_NOSTATS != true );
+   621	    return (bool)yourls_apply_filter( 'do_log_redirect', $do_log );
+   622	}
+
+EVIDENCE 4 — flood check is on URL CREATION, NOT redirect:
+             includes/functions.php lines 741-784
+Source: samples/YOURLS/includes/functions.php
+Proves: yourls_check_IP_flood() message is 'Too many URLs ADDED too fast' — it
+        gates shorturl creation, not the /go redirect. No equivalent on redirect.
+-------------------------------------------------------------------------
+   741	function yourls_check_IP_flood(string $ip = '' ): mixed {
+   742	
+   743	    // Allow plugins to short-circuit the whole function
+   744	    $pre = yourls_apply_filter( 'shunt_check_IP_flood', yourls_shunt_default(), $ip );
+   745	    if ( yourls_shunt_default() !== $pre ) {
+   746	        return $pre;
+   747	    }
+   748	
+   749	    yourls_do_action( 'pre_check_ip_flood', $ip ); // at this point $ip can be '', check it if your plugin hooks in here
+   750	
+   751	    // Raise white flag if installing or if no flood delay defined
+   752	    $flood_delay = yourls_get_flood_delay();
+   753	    if( $flood_delay <= 0 || yourls_is_installing() )
+   754	        return true;
+   755	
+   756	    // Don't throttle logged in users
+   757	    if( yourls_is_private() ) {
+   758	         if( yourls_is_valid_user() === true )
+   759	            return true;
+   760	    }
+   761	
+   762	    // Don't throttle whitelist IPs
+   763	    if( in_array( $ip, yourls_get_flood_ip_whitelist() ) ) {
+   764	        return true;
+   765	    }
+   766	
+   767	    $ip = ( $ip ? yourls_sanitize_ip( $ip ) : yourls_get_IP() );
+   768	
+   769	    yourls_do_action( 'check_ip_flood', $ip );
+   770	
+   771	    $table = YOURLS_DB_TABLE_URL;
+   772	    $lasttime = yourls_get_db('read-check_ip_flood')->fetchValue( "SELECT `timestamp` FROM $table WHERE `ip` = :ip ORDER BY `timestamp` DESC LIMIT 1", [ 'ip' => $ip ] );
+   773	    if( $lasttime ) {
+   774	        $now = date( 'U' );
+   775	        $then = date( 'U', strtotime( $lasttime ) );
+   776	        if( ( $now - $then ) <= $flood_delay ) {
+   777	            // Flood!
+   778	            yourls_do_action( 'ip_flood', $ip, $now - $then );
+   779	            yourls_die( yourls__( 'Too many URLs added too fast. Slow down please.' ), yourls__( 'Too Many Requests' ), 429 );
+   780	        }
+   781	    }
+   782	
+   783	    return true;
+   784	}
+
+EVIDENCE 5 — log table schema: includes/functions-install.php lines 240-251
+Source: samples/YOURLS/includes/functions-install.php
+Proves: log table has NO bot/crawler flag, NO is_human column — every request logged
+-------------------------------------------------------------------------
+   240	    $create_tables[YOURLS_DB_TABLE_LOG] =
+   241	        'CREATE TABLE IF NOT EXISTS `'.YOURLS_DB_TABLE_LOG.'` ('.
+   242	        '`click_id` int(11) NOT NULL auto_increment,'.
+   243	        '`click_time` datetime NOT NULL,'.
+   244	        '`shorturl` varchar(100) BINARY NOT NULL,'.
+   245	        '`referrer` varchar(200) NOT NULL,'.
+   246	        '`user_agent` varchar(255) NOT NULL,'.
+   247	        '`ip_address` varchar(41) NOT NULL,'.
+   248	        '`country_code` char(2) NOT NULL,'.
+   249	        'PRIMARY KEY  (`click_id`),'.
+   250	        'KEY `shorturl` (`shorturl`)'.
+   251	        ') AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;';
+
+EVIDENCE 6 — no built-in bot list anywhere in source
+Command: rg -c -i 'googlebot|bingbot|crawler|spider' includes/ admin/ user/ (excluding vendor)
+Result: (no matches)
+Proves: YOURLS relies entirely on plugins for bot filtering; core has none
+-------------------------------------------------------------------------

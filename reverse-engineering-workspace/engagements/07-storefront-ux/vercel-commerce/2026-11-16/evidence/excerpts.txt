@@ -1,0 +1,445 @@
+EVIDENCE 0 - provenance + licence
+Commit: f7521d57d29f0eb3d23c1399cf9bb299d61fcd21 (2026-10-19)
+Licence: MIT (Copyright 2025 Vercel, Inc.)
+Note: repo is being ARCHIVED per the README, but UX patterns are still current.
+Stack: Next.js 15.6 canary + React 19 + Tailwind 4 + Shopify GraphQL
+The MIT License (MIT)
+
+Copyright (c) 2025 Vercel, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+EVIDENCE 1 - homepage layout: ThreeItemGrid + Carousel + Footer
+Source: app/page.tsx (full, 21 lines)
+Proves: homepage is 3 sections - hero grid (3 items), carousel, footer.
+  Rule: the storefront opens with a 3-item hero grid (curated picks), then
+  a carousel (browsing), then footer. The hierarchy is: curated > browse > meta.
+-------------------------------------------------------------------------
+     1	import { Carousel } from "components/carousel";
+     2	import { ThreeItemGrid } from "components/grid/three-items";
+     3	import Footer from "components/layout/footer";
+     4	
+     5	export const metadata = {
+     6	  description:
+     7	    "High-performance ecommerce store built with Next.js, Vercel, and Shopify.",
+     8	  openGraph: {
+     9	    type: "website",
+    10	  },
+    11	};
+    12	
+    13	export default function HomePage() {
+    14	  return (
+    15	    <>
+    16	      <ThreeItemGrid />
+    17	      <Carousel />
+    18	      <Footer />
+    19	    </>
+    20	  );
+    21	}
+
+EVIDENCE 2 - product detail page: JSON-LD Product schema + SEO metadata
+Source: app/product/[handle]/page.tsx:1-100
+Proves: TWO rules on the product page:
+  1) SEO metadata: title from product.seo.title || product.title; description
+     from product.seo.description || product.description; robots index/follow
+     controlled by HIDDEN_PRODUCT_TAG (tag-based visibility, not status field).
+     openGraph image from product.featuredImage.
+  2) JSON-LD structured data: schema.org/Product with name, description, image,
+     and AggregateOffer (availability: InStock/OutOfStock, priceRange). This is
+     what Google uses for rich search results.
+  Rule: every product page emits BOTH Next.js metadata AND a JSON-LD script.
+  Rule: SEO visibility is tag-based (HIDDEN_PRODUCT_TAG), not a status enum.
+-------------------------------------------------------------------------
+     1	import { GridTileImage } from "components/grid/tile";
+     2	import Footer from "components/layout/footer";
+     3	import { Gallery } from "components/product/gallery";
+     4	import { ProductDescription } from "components/product/product-description";
+     5	import { HIDDEN_PRODUCT_TAG } from "lib/constants";
+     6	import { getProduct, getProductRecommendations } from "lib/shopify";
+     7	import type { Image } from "lib/shopify/types";
+     8	import type { Metadata } from "next";
+     9	import Link from "next/link";
+    10	import { notFound } from "next/navigation";
+    11	import { Suspense } from "react";
+    12	
+    13	export async function generateMetadata(props: {
+    14	  params: Promise<{ handle: string }>;
+    15	}): Promise<Metadata> {
+    16	  const params = await props.params;
+    17	  const product = await getProduct(params.handle);
+    18	
+    19	  if (!product) return notFound();
+    20	
+    21	  const { url, width, height, altText: alt } = product.featuredImage || {};
+    22	  const indexable = !product.tags.includes(HIDDEN_PRODUCT_TAG);
+    23	
+    24	  return {
+    25	    title: product.seo.title || product.title,
+    26	    description: product.seo.description || product.description,
+    27	    robots: {
+    28	      index: indexable,
+    29	      follow: indexable,
+    30	      googleBot: {
+    31	        index: indexable,
+    32	        follow: indexable,
+    33	      },
+    34	    },
+    35	    openGraph: url
+    36	      ? {
+    37	          images: [
+    38	            {
+    39	              url,
+    40	              width,
+    41	              height,
+    42	              alt,
+    43	            },
+    44	          ],
+    45	        }
+    46	      : null,
+    47	  };
+    48	}
+    49	
+    50	export default async function ProductPage(props: {
+    51	  params: Promise<{ handle: string }>;
+    52	}) {
+    53	  const params = await props.params;
+    54	  const product = await getProduct(params.handle);
+    55	
+    56	  if (!product) return notFound();
+    57	
+    58	  const productJsonLd = {
+    59	    "@context": "https://schema.org",
+    60	    "@type": "Product",
+    61	    name: product.title,
+    62	    description: product.description,
+    63	    image: product.featuredImage.url,
+    64	    offers: {
+    65	      "@type": "AggregateOffer",
+    66	      availability: product.availableForSale
+    67	        ? "https://schema.org/InStock"
+    68	        : "https://schema.org/OutOfStock",
+    69	      priceCurrency: product.priceRange.minVariantPrice.currencyCode,
+    70	      highPrice: product.priceRange.maxVariantPrice.amount,
+    71	      lowPrice: product.priceRange.minVariantPrice.amount,
+    72	    },
+    73	  };
+    74	
+    75	  return (
+    76	    <>
+    77	      <script
+    78	        type="application/ld+json"
+    79	        dangerouslySetInnerHTML={{
+    80	          __html: JSON.stringify(productJsonLd),
+    81	        }}
+    82	      />
+    83	      <div className="mx-auto max-w-(--breakpoint-2xl) px-4">
+    84	        <div className="flex flex-col rounded-lg border border-neutral-200 bg-white p-8 md:p-12 lg:flex-row lg:gap-8 dark:border-neutral-800 dark:bg-black">
+    85	          <div className="h-full w-full basis-full lg:basis-4/6">
+    86	            <Suspense
+    87	              fallback={
+    88	                <div className="relative aspect-square h-full max-h-[550px] w-full overflow-hidden" />
+    89	              }
+    90	            >
+    91	              <Gallery
+    92	                images={product.images.slice(0, 5).map((image: Image) => ({
+    93	                  src: image.url,
+    94	                  altText: image.altText,
+    95	                }))}
+    96	              />
+    97	            </Suspense>
+    98	          </div>
+    99	
+   100	          <div className="basis-full lg:basis-2/6">
+
+EVIDENCE 3 - product detail layout: Gallery (left, 4/6) + Description (right, 2/6)
+Source: app/product/[handle]/page.tsx:95-149
+Proves: the product detail split: image gallery takes 4/6 width on desktop,
+  description takes 2/6. On mobile, stacked (flex-col). Gallery wrapped in
+  Suspense with a skeleton fallback (aspect-square, max-h 550px).
+  Rule: the buy-box (price + variant selector + description + add-to-cart)
+  lives in the right 2/6 column. Image-first layout.
+-------------------------------------------------------------------------
+    95	                }))}
+    96	              />
+    97	            </Suspense>
+    98	          </div>
+    99	
+   100	          <div className="basis-full lg:basis-2/6">
+   101	            <Suspense fallback={null}>
+   102	              <ProductDescription product={product} />
+   103	            </Suspense>
+   104	          </div>
+   105	        </div>
+   106	        <RelatedProducts id={product.id} />
+   107	      </div>
+   108	      <Footer />
+   109	    </>
+   110	  );
+   111	}
+   112	
+   113	async function RelatedProducts({ id }: { id: string }) {
+   114	  const relatedProducts = await getProductRecommendations(id);
+   115	
+   116	  if (!relatedProducts.length) return null;
+   117	
+   118	  return (
+   119	    <div className="py-8">
+   120	      <h2 className="mb-4 text-2xl font-bold">Related Products</h2>
+   121	      <ul className="flex w-full gap-4 overflow-x-auto pt-1">
+   122	        {relatedProducts.map((product) => (
+   123	          <li
+   124	            key={product.handle}
+   125	            className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
+   126	          >
+   127	            <Link
+   128	              className="relative h-full w-full"
+   129	              href={`/product/${product.handle}`}
+   130	              prefetch={true}
+   131	            >
+   132	              <GridTileImage
+   133	                alt={product.title}
+   134	                label={{
+   135	                  title: product.title,
+   136	                  amount: product.priceRange.maxVariantPrice.amount,
+   137	                  currencyCode: product.priceRange.maxVariantPrice.currencyCode,
+   138	                }}
+   139	                src={product.featuredImage?.url}
+   140	                fill
+   141	                sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
+   142	              />
+   143	            </Link>
+   144	          </li>
+   145	        ))}
+   146	      </ul>
+   147	    </div>
+   148	  );
+   149	}
+
+EVIDENCE 4 - product-description.tsx: the buy-box composition
+Source: components/product/product-description.tsx (full, 29 lines)
+Proves: the buy-box is 4 stacked elements:
+  1) Title (h1, text-5xl) + price pill (rounded-full bg-blue-600)
+  2) VariantSelector (size/color options)
+  3) Description HTML (rendered via Prose)
+  4) AddToCart button
+  Rule: price is a PILL (badge), not inline text. Variants are BETWEEN price
+  and description. Add-to-cart is the LAST element (above the fold on desktop).
+-------------------------------------------------------------------------
+     1	import { AddToCart } from "components/cart/add-to-cart";
+     2	import Price from "components/price";
+     3	import Prose from "components/prose";
+     4	import { Product } from "lib/shopify/types";
+     5	import { VariantSelector } from "./variant-selector";
+     6	
+     7	export function ProductDescription({ product }: { product: Product }) {
+     8	  return (
+     9	    <>
+    10	      <div className="mb-6 flex flex-col border-b pb-6 dark:border-neutral-700">
+    11	        <h1 className="mb-2 text-5xl font-medium">{product.title}</h1>
+    12	        <div className="mr-auto w-auto rounded-full bg-blue-600 p-2 text-sm text-white">
+    13	          <Price
+    14	            amount={product.priceRange.maxVariantPrice.amount}
+    15	            currencyCode={product.priceRange.maxVariantPrice.currencyCode}
+    16	          />
+    17	        </div>
+    18	      </div>
+    19	      <VariantSelector options={product.options} variants={product.variants} />
+    20	      {product.descriptionHtml ? (
+    21	        <Prose
+    22	          className="mb-6 text-sm leading-tight dark:text-white/[60%]"
+    23	          html={product.descriptionHtml}
+    24	        />
+    25	      ) : null}
+    26	      <AddToCart product={product} />
+    27	    </>
+    28	  );
+    29	}
+
+EVIDENCE 5 - variant-selector.tsx: URL-search-params state, availability-aware
+Source: components/product/variant-selector.tsx (full, 106 lines)
+Proves: the variant selector:
+  1) Uses URL search params (?size=M&color=blue) as state, NOT React state.
+     This makes the selected variant SHAREABLE (copy the URL).
+  2) Computes a 'combinations' map from all variants upfront. For each option
+     value, checks if any matching variant is availableForSale.
+  3) Unavailable options get aria-disabled + disabled + a strike-through CSS
+     pseudo-element (the before:-rotate-45 line). Title shows 'Out of Stock'.
+  4) Returns null if there are no options or only one option with one value
+     (simple products don't show a selector).
+  Rule: variant state belongs in the URL, not in React state. Unavailable
+  variants are visible-but-disabled (not hidden) so the user sees what's OOS.
+-------------------------------------------------------------------------
+     1	"use client";
+     2	
+     3	import clsx from "clsx";
+     4	import { ProductOption, ProductVariant } from "lib/shopify/types";
+     5	import { useRouter, useSearchParams } from "next/navigation";
+     6	
+     7	type Combination = {
+     8	  id: string;
+     9	  availableForSale: boolean;
+    10	  [key: string]: string | boolean;
+    11	};
+    12	
+    13	export function VariantSelector({
+    14	  options,
+    15	  variants,
+    16	}: {
+    17	  options: ProductOption[];
+    18	  variants: ProductVariant[];
+    19	}) {
+    20	  const router = useRouter();
+    21	  const searchParams = useSearchParams();
+    22	  const hasNoOptionsOrJustOneOption =
+    23	    !options.length ||
+    24	    (options.length === 1 && options[0]?.values.length === 1);
+    25	
+    26	  if (hasNoOptionsOrJustOneOption) {
+    27	    return null;
+    28	  }
+    29	
+    30	  const combinations: Combination[] = variants.map((variant) => ({
+    31	    id: variant.id,
+    32	    availableForSale: variant.availableForSale,
+    33	    ...variant.selectedOptions.reduce(
+    34	      (accumulator, option) => ({
+    35	        ...accumulator,
+    36	        [option.name.toLowerCase()]: option.value,
+    37	      }),
+    38	      {},
+    39	    ),
+    40	  }));
+    41	
+    42	  const updateOption = (name: string, value: string) => {
+    43	    const params = new URLSearchParams(searchParams.toString());
+    44	    params.set(name, value);
+    45	    router.replace(`?${params.toString()}`, { scroll: false });
+    46	  };
+    47	
+    48	  return options.map((option) => (
+    49	    <form key={option.id}>
+    50	      <dl className="mb-8">
+    51	        <dt className="mb-4 text-sm uppercase tracking-wide">{option.name}</dt>
+    52	        <dd className="flex flex-wrap gap-3">
+    53	          {option.values.map((value) => {
+    54	            const optionNameLowerCase = option.name.toLowerCase();
+    55	
+    56	            // Base option params on current searchParams so we can preserve any other param state.
+    57	            const optionParams: Record<string, string> = {};
+    58	            searchParams.forEach((v, k) => (optionParams[k] = v));
+    59	            optionParams[optionNameLowerCase] = value;
+    60	
+    61	            // Filter out invalid options and check if the option combination is available for sale.
+    62	            const filtered = Object.entries(optionParams).filter(
+    63	              ([key, value]) =>
+    64	                options.find(
+    65	                  (option) =>
+    66	                    option.name.toLowerCase() === key &&
+    67	                    option.values.includes(value),
+    68	                ),
+    69	            );
+    70	            const isAvailableForSale = combinations.find((combination) =>
+    71	              filtered.every(
+    72	                ([key, value]) =>
+    73	                  combination[key] === value && combination.availableForSale,
+    74	              ),
+    75	            );
+    76	
+    77	            // The option is active if it's in the selected options.
+    78	            const isActive = searchParams.get(optionNameLowerCase) === value;
+    79	
+    80	            return (
+    81	              <button
+    82	                formAction={() => updateOption(optionNameLowerCase, value)}
+    83	                key={value}
+    84	                aria-disabled={!isAvailableForSale}
+    85	                disabled={!isAvailableForSale}
+    86	                title={`${option.name} ${value}${!isAvailableForSale ? " (Out of Stock)" : ""}`}
+    87	                className={clsx(
+    88	                  "flex min-w-[48px] items-center justify-center rounded-full border bg-neutral-100 px-2 py-1 text-sm dark:border-neutral-800 dark:bg-neutral-900",
+    89	                  {
+    90	                    "cursor-default ring-2 ring-blue-600": isActive,
+    91	                    "ring-1 ring-transparent transition duration-300 ease-in-out hover:ring-blue-600":
+    92	                      !isActive && isAvailableForSale,
+    93	                    "relative z-10 cursor-not-allowed overflow-hidden bg-neutral-100 text-neutral-500 ring-1 ring-neutral-300 before:absolute before:inset-x-0 before:-z-10 before:h-px before:-rotate-45 before:bg-neutral-300 before:transition-transform dark:bg-neutral-900 dark:text-neutral-400 dark:ring-neutral-700 dark:before:bg-neutral-700":
+    94	                      !isAvailableForSale,
+    95	                  },
+    96	                )}
+    97	              >
+    98	                {value}
+    99	              </button>
+   100	            );
+   101	          })}
+   102	        </dd>
+   103	      </dl>
+   104	    </form>
+   105	  ));
+   106	}
+
+EVIDENCE 6 - Shopify product type (the data shape the UI consumes)
+Source: lib/shopify/types.ts + lib/shopify/fragments/product.ts
+Proves: the Product type has:
+  - id, handle, title, description, descriptionHtml
+  - availableForSale (bool), totalInventory
+  - priceRange { minVariantPrice, maxVariantPrice } (each {amount, currencyCode})
+  - featuredImage { url, width, height, altText }
+  - images[] (gallery)
+  - options[] (variant dimensions like Color, Size)
+  - variants[] (each with selectedOptions + availableForSale + price)
+  - tags[] (string array; HIDDEN_PRODUCT_TAG is one of them)
+  - seo { title, description }
+  Rule: the product type the UI expects maps cleanly to our affiliate product
+  model - we have ASIN, title, price, image, marketplace. The 'variants' and
+  'availableForSale' fields are more relevant to a real cart; for an affiliate
+  funnel we only need: title, price, image, ASIN, destination URL, availability.
+-------------------------------------------------------------------------
+     1	import imageFragment from "./image";
+     2	import seoFragment from "./seo";
+     3	
+     4	const productFragment = /* GraphQL */ `
+     5	  fragment product on Product {
+     6	    id
+     7	    handle
+     8	    availableForSale
+     9	    title
+    10	    description
+    11	    descriptionHtml
+    12	    options {
+    13	      id
+    14	      name
+    15	      values
+    16	    }
+    17	    priceRange {
+    18	      maxVariantPrice {
+    19	        amount
+    20	        currencyCode
+    21	      }
+    22	      minVariantPrice {
+    23	        amount
+    24	        currencyCode
+    25	      }
+    26	    }
+    27	    variants(first: 250) {
+    28	      edges {
+    29	        node {
+    30	          id
+    31	          title
+    32	          availableForSale
+    33	          selectedOptions {
+    34	            name
+    35	            value
+    36	          }
+    37	          price {
+    38	            amount
+    39	            currencyCode
+    40	          }
+    41	        }
+    42	      }
+    43	    }
+    44	    featuredImage {
+    45	      ...image
+    46	    }
+    47	    images(first: 20) {
+    48	      edges {
+    49	        node {
+    50	          ...image

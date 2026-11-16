@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:3011/product/bench1-430706?source=instagram",
+  "scope": "body",
+  "cover": "rollout product page — the shop button gate",
+  "human": "with Amazon config unset, the shop button is disabled and reads 'Link coming soon'",
+  "action": "none",
+  "expectation": "text .pixel-shop-button>span:first-child Link coming soon",
+  "writtenAt": "2026-10-30T13:06:58.000Z",
+  "checkedAt": "2026-10-30T13:07:38.659Z",
+  "result": "PASS",
+  "evidence": "text = \"Link coming soon\"",
+  "expectationHash": "b15133e88dcb",
+  "ownerReply": null,
+  "confirmedAt": null
+}

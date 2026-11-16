@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:3011/product/bench1-430706?source=instagram",
+  "scope": "body",
+  "cover": "rollout product page — the product heading (uppercase)",
+  "human": "the product heading renders uppercase, as the original design does",
+  "action": "none",
+  "expectation": "text h1 BENCH ONE VAPOR 430706",
+  "writtenAt": "2026-10-30T13:24:50.000Z",
+  "checkedAt": "2026-10-30T13:24:56.571Z",
+  "result": "PASS",
+  "evidence": "text = \"BENCH ONE VAPOR 430706\"",
+  "expectationHash": "51c3d11f2c07",
+  "ownerReply": null,
+  "confirmedAt": null
+}

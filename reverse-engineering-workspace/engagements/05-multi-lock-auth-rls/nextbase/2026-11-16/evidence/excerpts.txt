@@ -1,0 +1,459 @@
+EVIDENCE 0 — provenance + licence
+Commit: 00ad2da857b84322ff359db098cbf1cb4f4b7282 (2026-10-02)
+Licence: MIT (Copyright 2023 Bhargav Ponnapalli)
+Note: MIT — most permissive. Direct adaptation permitted.
+MIT License
+
+Copyright (c) 2023 Bhargav Ponnapalli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+EVIDENCE 1 — middleware.ts: the SINGLE-LOCK model
+Source: apps/web/src/supabase-clients/middleware.ts (full, 59 lines)
+Proves: ONE check — supabase.auth.getUser(). If no user, redirect to /login.
+        No door-key, no invite code, no role check, no fail-silent (redirects).
+        Protected pages listed as a const array, matched via path-to-regexp.
+        Rule: NextBase uses a SINGLE lock (Supabase session) centralized in
+        middleware. athletica/rollout uses THREE locks (invite + door-key +
+        JWT role) per-route. The trade-off: NextBase is simpler but reveals
+        admin URLs (302 to /login confirms the URL exists); athletica/rollout
+        returns 404 (URL appears not to exist).
+-------------------------------------------------------------------------
+     1	import { createServerClient } from '@supabase/ssr';
+     2	import { NextResponse, type NextRequest } from 'next/server';
+     3	import { match } from 'path-to-regexp';
+     4	
+     5	export async function updateSession(request: NextRequest) {
+     6	  let supabaseResponse = NextResponse.next({
+     7	    request,
+     8	  });
+     9	
+    10	  const supabase = createServerClient(
+    11	    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    12	    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    13	    {
+    14	      cookies: {
+    15	        getAll() {
+    16	          return request.cookies.getAll();
+    17	        },
+    18	        setAll(cookiesToSet) {
+    19	          cookiesToSet.forEach(({ name, value }) =>
+    20	            request.cookies.set(name, value)
+    21	          );
+    22	          supabaseResponse = NextResponse.next({
+    23	            request,
+    24	          });
+    25	          cookiesToSet.forEach(({ name, value, options }) =>
+    26	            supabaseResponse.cookies.set(name, value, options)
+    27	          );
+    28	        },
+    29	      },
+    30	    }
+    31	  );
+    32	
+    33	  // IMPORTANT: Avoid adding logic between createServerClient and
+    34	  // supabase.auth.getUser(). Extra work here can make session refresh bugs hard
+    35	  // to diagnose.
+    36	
+    37	  const protectedPages = [
+    38	    '/dashboard',
+    39	    '/private-item',
+    40	    '/private-items',
+    41	    '/items',
+    42	    '/item',
+    43	  ] as const;
+    44	
+    45	  const {
+    46	    data: { user },
+    47	  } = await supabase.auth.getUser();
+    48	
+    49	  if (
+    50	    !user &&
+    51	    protectedPages.some((page) => match(page)(request.nextUrl.pathname))
+    52	  ) {
+    53	    const url = request.nextUrl.clone();
+    54	    url.pathname = '/login';
+    55	    return NextResponse.redirect(url);
+    56	  }
+    57	
+    58	  return supabaseResponse;
+    59	}
+
+EVIDENCE 2 — private_items migration: the canonical NextBase RLS pattern
+Source: apps/database/supabase/migrations/20230208104718_private_items.sql (full)
+Proves: 4 policies on private_items — SELECT for everyone (USING TRUE),
+        INSERT requires auth.uid() IS NOT NULL, UPDATE requires ownership
+        (auth.uid() = id). NO role-based check — any authenticated user can
+        insert; only owners can update their own rows.
+        Rule: NextBase's RLS is USER-OWNERSHIP-based, not ROLE-based. There
+        is no 'admin' role in the SQL — admin logic is in the action client.
+-------------------------------------------------------------------------
+     1	CREATE TABLE IF NOT EXISTS public.private_items (
+     2	  created_at timestamp WITH time zone NOT NULL DEFAULT NOW(),
+     3	  id uuid NOT NULL DEFAULT extensions.uuid_generate_v4(),
+     4	  name character varying NOT NULL,
+     5	  description character varying NOT NULL
+     6	);
+     7	
+     8	-- 1. Enable RLS
+     9	ALTER TABLE public.private_items ENABLE ROW LEVEL SECURITY;
+    10	
+    11	-- 2. Create Policy for SELECT
+    12	CREATE POLICY select_all_policy ON public.private_items FOR
+    13	SELECT USING (TRUE);
+    14	
+    15	-- 3. Create Policy for INSERT
+    16	CREATE POLICY insert_auth_policy ON public.private_items FOR
+    17	INSERT WITH CHECK (auth.uid() IS NOT NULL);
+    18	
+    19	-- 4. Create Policy for UPDATE
+    20	CREATE POLICY update_auth_policy ON public.private_items FOR
+    21	UPDATE USING (auth.uid() = id);
+
+EVIDENCE 3 — RLS performance: wrap auth.uid() in (select ...) for caching
+Source: .agents/skills/supabase-postgres-best-practices/references/security-rls-performance.md
+Proves: the CORRECT pattern is  — the
+        (select ...) wrapper makes Postgres cache the result once per query,
+        not call it per row. 100x+ faster on large tables. The INCORRECT
+        pattern  calls the function N times.
+        Rule: ALWAYS wrap auth.uid() / auth.jwt() in (select ...) in RLS
+        policies. athletica/rollout's policies use  WITHOUT the wrapper — a performance bug to fix.
+-------------------------------------------------------------------------
+     1	---
+     2	title: Optimize RLS Policies for Performance
+     3	impact: HIGH
+     4	impactDescription: 5-10x faster RLS queries with proper patterns
+     5	tags: rls, performance, security, optimization
+     6	---
+     7	
+     8	## Optimize RLS Policies for Performance
+     9	
+    10	Poorly written RLS policies can cause severe performance issues. Use subqueries and indexes strategically.
+    11	
+    12	**Incorrect (function called for every row):**
+    13	
+    14	```sql
+    15	create policy orders_policy on orders
+    16	  using (auth.uid() = user_id);  -- auth.uid() called per row!
+    17	
+    18	-- With 1M rows, auth.uid() is called 1M times
+    19	```
+    20	
+    21	**Correct (wrap functions in SELECT):**
+    22	
+    23	```sql
+    24	create policy orders_policy on orders
+    25	  using ((select auth.uid()) = user_id);  -- Called once, cached
+    26	
+    27	-- 100x+ faster on large tables
+    28	```
+    29	
+    30	Use security definer functions for complex checks:
+    31	
+    32	`SECURITY DEFINER` functions run with the creator's privileges and bypass RLS on any tables they touch — which is what makes them useful for internal lookups, but also what makes them dangerous if misused. Always include an explicit `auth.uid()` check inside the function body, keep them in a non-exposed schema, and revoke `EXECUTE` from any role that shouldn't call them directly.
+    33	
+    34	```sql
+    35	-- Create helper function in a private schema
+    36	create or replace function private.is_team_member(team_id bigint)
+    37	returns boolean
+    38	language sql
+    39	security definer
+    40	set search_path = ''
+    41	as $$
+    42	  select exists (
+    43	    select 1 from public.team_members
+    44	    -- always check the calling user's identity inside the function
+    45	    where team_id = $1 and user_id = (select auth.uid())
+    46	  );
+    47	$$;
+    48	
+    49	-- Revoke direct execution from public roles
+    50	revoke execute on function private.is_team_member(bigint) from PUBLIC, anon, authenticated, service_role;
+    51	
+    52	-- Use in policy (indexed lookup, not per-row check)
+    53	create policy team_orders_policy on orders
+    54	  using ((select private.is_team_member(team_id)));
+    55	```
+    56	
+    57	Always add indexes on columns used in RLS policies:
+    58	
+    59	```sql
+    60	create index orders_user_id_idx on orders (user_id);
+    61	```
+    62	
+    63	Reference: [RLS Performance](https://supabase.com/docs/guides/database/postgres/row-level-security#rls-performance-recommendations)
+
+EVIDENCE 4 — RLS basics: FORCE ROW LEVEL SECURITY for table owners
+Source: .agents/skills/supabase-postgres-best-practices/references/security-rls-basics.md
+Proves:  — forces RLS even for
+        table owners. Without FORCE, the table owner bypasses RLS. In
+        Supabase, the postgres role is the owner — FORCE ensures even admin
+        queries respect RLS unless explicitly using service_role.
+        Rule: use FORCE ROW LEVEL SECURITY on sensitive tables.
+-------------------------------------------------------------------------
+     1	---
+     2	title: Enable Row Level Security for Multi-Tenant Data
+     3	impact: CRITICAL
+     4	impactDescription: Database-enforced tenant isolation, prevent data leaks
+     5	tags: rls, row-level-security, multi-tenant, security
+     6	---
+     7	
+     8	## Enable Row Level Security for Multi-Tenant Data
+     9	
+    10	Row Level Security (RLS) enforces data access at the database level, ensuring users only see their own data.
+    11	
+    12	**Incorrect (application-level filtering only):**
+    13	
+    14	```sql
+    15	-- Relying only on application to filter
+    16	select * from orders where user_id = $current_user_id;
+    17	
+    18	-- Bug or bypass means all data is exposed!
+    19	select * from orders;  -- Returns ALL orders
+    20	```
+    21	
+    22	**Correct (database-enforced RLS):**
+    23	
+    24	```sql
+    25	-- Enable RLS on the table
+    26	alter table orders enable row level security;
+    27	
+    28	-- Create policy for users to see only their orders
+    29	create policy orders_user_policy on orders
+    30	  for all
+    31	  using (user_id = current_setting('app.current_user_id')::bigint);
+    32	
+    33	-- Force RLS even for table owners
+    34	alter table orders force row level security;
+    35	
+    36	-- Set user context and query
+    37	set app.current_user_id = '123';
+    38	select * from orders;  -- Only returns orders for user 123
+    39	```
+    40	
+    41	Policy for authenticated role:
+    42	
+    43	```sql
+    44	create policy orders_user_policy on orders
+    45	  for all
+    46	  to authenticated
+    47	  using (user_id = auth.uid());
+    48	```
+    49	
+    50	Reference: [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security)
+
+EVIDENCE 5 — getClaims() vs getUser() (the performance optimization)
+Source: docs/SUPABASE_GETCLAIMS_AUTHENTICATION.md
+Proves: getClaims() extracts JWT claims locally (no network call, ~0ms);
+        getUser() re-validates with the server (~50-200ms). Security is
+        preserved because RLS still enforces authorization at the DB.
+        Rule: use getClaims() for quick auth checks (middleware, page gates);
+        use getUser() only when you need the full user object.
+        athletica/rollout uses getUser() everywhere — a performance opportunity.
+-------------------------------------------------------------------------
+     1	# Supabase getClaims() Authentication Guide
+     2	
+     3	This guide explains how to use Supabase's `getClaims()` method for authentication instead of `getUser()`, saving network round trips while maintaining security.
+     4	
+     5	## Table of Contents
+     6	
+     7	- [Overview](#overview)
+     8	- [getClaims() vs getUser()](#getclaims-vs-getuser)
+     9	- [Implementation Patterns](#implementation-patterns)
+    10	- [Protecting Pages and Routes](#protecting-pages-and-routes)
+    11	- [Server Actions with Authentication](#server-actions-with-authentication)
+    12	- [Database-Level Security (RLS)](#database-level-security-rls)
+    13	- [Best Practices](#best-practices)
+    14	- [Examples from This Codebase](#examples-from-this-codebase)
+    15	
+    16	---
+    17	
+    18	## Overview
+    19	
+    20	Supabase's `getClaims()` method extracts JWT claims directly from the session token without making a network request to verify with the Supabase server. This provides a significant performance improvement for authentication checks while maintaining security through Row Level Security (RLS) policies.
+    21	
+    22	**Key Benefits:**
+    23	
+    24	- **No network round trip** - Claims are extracted from the JWT locally
+    25	- **Faster response times** - Eliminates server verification latency
+    26	- **Secure** - JWT signature is still verified, RLS enforces authorization
+    27	- **Lightweight** - Returns only essential claims (sub, role, exp, etc.)
+    28	
+    29	---
+    30	
+    31	## getClaims() vs getUser()
+    32	
+    33	### Comparison Table
+    34	
+    35	| Feature | `getClaims()` | `getUser()` |
+    36	|---------|---------------|-------------|
+    37	| **Network Call** | No | Yes (verifies with server) |
+    38	| **Speed** | Fast (~0ms) | Slower (~50-200ms) |
+    39	| **Data Returned** | JWT claims only | Full User object |
+    40	| **Server Verification** | No (trusts JWT) | Yes (re-validates token) |
+    41	| **Use Case** | Quick auth checks | Full user data needed |
+    42	| **Security** | JWT + RLS | JWT + Server verification + RLS |
+    43	
+    44	### What getClaims() Returns
+    45	
+    46	```typescript
+    47	{
+    48	  sub: "user-uuid-here",           // User ID
+    49	  email: "user@example.com",       // User email
+    50	  role: "authenticated",           // User role
+    51	  aud: "authenticated",            // Audience
+    52	  exp: 1234567890,                 // Expiration timestamp
+    53	  iat: 1234567890,                 // Issued at timestamp
+    54	  // ... other standard JWT claims
+    55	}
+    56	```
+    57	
+    58	### What getUser() Returns
+    59	
+    60	```typescript
+    61	{
+    62	  user: {
+    63	    id: "user-uuid-here",
+    64	    email: "user@example.com",
+    65	    email_confirmed_at: "2024-01-01T00:00:00Z",
+    66	    phone: null,
+    67	    confirmed_at: "2024-01-01T00:00:00Z",
+    68	    created_at: "2024-01-01T00:00:00Z",
+    69	    updated_at: "2024-01-01T00:00:00Z",
+    70	    user_metadata: { ... },
+    71	    app_metadata: { ... },
+    72	    // ... full user profile
+    73	  }
+    74	}
+    75	```
+    76	
+    77	---
+    78	
+    79	## Implementation Patterns
+    80	
+
+EVIDENCE 6 — safe-action-middleware: layered auth + role checks
+Source: .agents/skills/safe-action-middleware/auth-patterns.md
+Proves: the action-client pattern layers auth: actionClient → authActionClient
+        (requires session) → adminActionClient (requires role=admin) →
+        orgActionClient (requires org membership). Each layer adds a check.
+        Rule: compose auth checks as middleware layers, not inline conditionals.
+        athletica/rollout uses inline  — could
+        adopt the layered client pattern for cleaner route handlers.
+-------------------------------------------------------------------------
+     1	# Authentication & Authorization Middleware
+     2	
+     3	> **Note:** Action files require a `"use server"` directive — omitted from examples below for brevity.
+     4	
+     5	> **Tip:** Use `.use()` for auth checks that don't need input (session lookup, API key). Use `.useValidated()` for authorization checks that depend on validated input (resource ownership, org membership).
+     6	
+     7	## Session Lookup
+     8	
+     9	```ts
+    10	import { createSafeActionClient } from "next-safe-action";
+    11	import { getSession } from "@/lib/auth";
+    12	
+    13	const actionClient = createSafeActionClient();
+    14	
+    15	// Require authenticated session
+    16	export const authActionClient = actionClient.use(async ({ next }) => {
+    17	  const session = await getSession();
+    18	
+    19	  if (!session?.user) {
+    20	    throw new Error("You must be logged in to perform this action.");
+    21	  }
+    22	
+    23	  return next({
+    24	    ctx: {
+    25	      userId: session.user.id,
+    26	      userEmail: session.user.email,
+    27	      userRole: session.user.role,
+    28	    },
+    29	  });
+    30	});
+    31	```
+    32	
+    33	## Role-Based Authorization
+    34	
+    35	Layer role checks on top of the auth middleware:
+    36	
+    37	```ts
+    38	// Admin-only actions
+    39	export const adminActionClient = authActionClient.use(async ({ next, ctx }) => {
+    40	  if (ctx.userRole !== "admin") {
+    41	    throw new Error("Admin access required.");
+    42	  }
+    43	  return next({ ctx });
+    44	});
+    45	
+    46	// Organization member actions
+    47	// useValidated() runs after input validation — parsedInput is typed, no manual re-parsing needed
+    48	export const orgActionClient = authActionClient
+    49	  .inputSchema(z.object({ orgId: z.string().uuid() }))
+    50	  .useValidated(async ({ next, ctx, parsedInput }) => {
+    51	    // parsedInput is typed: { orgId: string }
+    52	    const membership = await db.orgMember.find({
+    53	      userId: ctx.userId,
+    54	      orgId: parsedInput.orgId,
+    55	    });
+    56	
+    57	    if (!membership) {
+    58	      throw new Error("You are not a member of this organization.");
+    59	    }
+    60	
+    61	    return next({
+    62	      ctx: { orgRole: membership.role, orgId: parsedInput.orgId },
+    63	    });
+    64	  });
+    65	```
+    66	
+    67	## Resource Ownership
+    68	
+    69	Check that the user owns the resource they're modifying:
+    70	
+    71	```ts
+    72	export const updatePost = authActionClient
+    73	  .inputSchema(z.object({ postId: z.string().uuid(), title: z.string() }))
+    74	  .useValidated(async ({ next, ctx, parsedInput }) => {
+    75	    // parsedInput is typed: { postId: string; title: string }
+    76	    const post = await db.post.findById(parsedInput.postId);
+    77	
+    78	    if (!post) {
+    79	      throw new Error("Post not found");
+    80	    }
+    81	    if (post.authorId !== ctx.userId) {
+    82	      throw new Error("You can only edit your own posts");
+    83	    }
+    84	
+    85	    return next({ ctx: { post } }); // Pass the fetched post to avoid re-querying
+    86	  })
+    87	  .action(async ({ parsedInput, ctx }) => {
+    88	    // ctx.post is available — no need to query again
+    89	    await db.post.update(ctx.post.id, { title: parsedInput.title });
+    90	    return { success: true };
+    91	  });
+    92	```
+    93	
+    94	## API Key Authentication
+    95	
+    96	For actions called from external services:
+    97	
+    98	```ts
+    99	export const apiActionClient = actionClient.use(async ({ next }) => {
+   100	  const headersList = await headers();
+   101	  const apiKey = headersList.get("x-api-key");
+   102	
+   103	  if (!apiKey) {
+   104	    throw new Error("API key required");
+   105	  }
+   106	
+   107	  const keyRecord = await db.apiKey.findByKey(apiKey);
+   108	  if (!keyRecord || keyRecord.revoked) {
+   109	    throw new Error("Invalid API key");
+   110	  }
+   111	
+   112	  return next({
+   113	    ctx: { apiKeyId: keyRecord.id, permissions: keyRecord.permissions },
+   114	  });
+   115	});
+   116	```

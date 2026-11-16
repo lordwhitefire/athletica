@@ -1,0 +1,724 @@
+EVIDENCE 0 — provenance + licence
+Source: samples/dub/ (cloned)
+Commit: 6b463b4bdd9ed2fd9aa416f67b5b77d317b1471e (2026-10-26)
+Licence: AGPLv3 (open core); EE portions under separate commercial licence
+-------------------------------------------------------------------------
+Copyright (c) 2024-present Dub Technologies, Inc.
+
+Portions of this software – namely all files that reside under the following directories of this repository – are licensed under the license defined in "[ee/LICENSE.md](<https://github.com/dubinc/dub/tree/main/apps/web/app/(ee)/LICENSE.md>)".
+
+- [apps/web/app/(ee)](<https://github.com/dubinc/dub/tree/main/apps/web/app/(ee)>)
+- [apps/web/app/app.dub.co/(dashboard)/[slug]/(ee)](<https://github.com/dubinc/dub/tree/main/apps/web/app/app.dub.co/(dashboard)/%5Bslug%5D/(ee)>)
+
+All third-party components incorporated into the Dub Software are licensed under the original license provided by the owner of the applicable component.
+
+Content outside of the above mentioned directories or restrictions above is available under the "AGPLv3" license as defined below.
+
+---
+
+                    GNU AFFERO GENERAL PUBLIC LICENSE
+                       Version 3, 19 November 2007
+
+EVIDENCE 1 — edge redirect entry: apps/web/middleware.ts (full file, 74 lines)
+Source: samples/dub/apps/web/middleware.ts
+Proves: redirect runs as Next.js middleware at nodejs runtime; parses
+        domain+key; dispatches to LinkMiddleware for public link clicks.
+        Matcher excludes /api/, /_next/, /_proxy/, metadata files.
+-------------------------------------------------------------------------
+     1	import { logger } from "@/lib/axiom/server";
+     2	import { transformMiddlewareRequest } from "@axiomhq/nextjs";
+     3	import { API_HOSTNAMES, DEFAULT_REDIRECTS, isValidUrl } from "@dub/utils";
+     4	import { isAppHostname } from "@dub/utils/src/constants";
+     5	import { NextFetchEvent, NextRequest, NextResponse } from "next/server";
+     6	import { ApiMiddleware } from "./lib/middleware/api";
+     7	import { AppMiddleware } from "./lib/middleware/app";
+     8	import { CreateLinkMiddleware } from "./lib/middleware/create-link";
+     9	import { LinkMiddleware } from "./lib/middleware/link";
+    10	import { parse } from "./lib/middleware/utils/parse";
+    11	import { supportedWellKnownFiles } from "./lib/well-known";
+    12	
+    13	export const config = {
+    14	  runtime: "nodejs",
+    15	  matcher: [
+    16	    /*
+    17	     * Match all paths except for:
+    18	     * 1. /api/ routes
+    19	     * 2. /_next/ (Next.js internals)
+    20	     * 3. /_proxy/ (proxies for third-party services)
+    21	     * 4. Metadata files: favicon.ico, sitemap.xml, robots.txt, manifest.webmanifest
+    22	     */
+    23	    "/((?!api/|_next/|_proxy/|favicon.ico|sitemap.xml|robots.txt|manifest.webmanifest).*)",
+    24	  ],
+    25	};
+    26	
+    27	export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
+    28	  const { domain, path, key, fullKey } = parse(req);
+    29	
+    30	  // Axiom logging
+    31	  logger.info(...transformMiddlewareRequest(req));
+    32	  ev.waitUntil(logger.flush());
+    33	
+    34	  // for app.dub.co
+    35	  if (isAppHostname(domain)) {
+    36	    return AppMiddleware(req);
+    37	  }
+    38	
+    39	  // for api.dub.co
+    40	  if (API_HOSTNAMES.has(domain)) {
+    41	    return ApiMiddleware(req);
+    42	  }
+    43	
+    44	  // for public stats pages (e.g. d.to/stats/try -> rewrite to [/domain]/[key]/stats)
+    45	  if (path.startsWith("/stats/")) {
+    46	    return NextResponse.rewrite(
+    47	      new URL(
+    48	        `/${domain}/${encodeURIComponent(path.replace("/stats/", ""))}/stats`,
+    49	        req.url,
+    50	      ),
+    51	    );
+    52	  }
+    53	
+    54	  // for .well-known routes
+    55	  if (path.startsWith("/.well-known/")) {
+    56	    const file = path.split("/.well-known/").pop();
+    57	    if (file && supportedWellKnownFiles.includes(file)) {
+    58	      return NextResponse.rewrite(
+    59	        new URL(`/wellknown/${domain}/${file}`, req.url),
+    60	      );
+    61	    }
+    62	  }
+    63	
+    64	  // default redirects for dub.sh
+    65	  if (domain === "dub.sh" && DEFAULT_REDIRECTS[key]) {
+    66	    return NextResponse.redirect(DEFAULT_REDIRECTS[key]);
+    67	  }
+    68	
+    69	  if (isValidUrl(fullKey)) {
+    70	    return CreateLinkMiddleware(req);
+    71	  }
+    72	
+    73	  return LinkMiddleware(req, ev);
+    74	}
+
+EVIDENCE 2 — bot detector: apps/web/lib/middleware/utils/detect-bot.ts
+Source: samples/dub/apps/web/lib/middleware/utils/detect-bot.ts
+Proves: 6-layer bot detection — query param 'bot', HEAD method, UA list,
+        UA false-positive sanitization, referrer list, exact IP, CIDR ranges.
+-------------------------------------------------------------------------
+     1	import { ipAddress } from "@vercel/functions";
+     2	import { userAgent } from "next/server";
+     3	import { IP_BOTS, IP_RANGES_BOTS, REFERRER_BOTS, UA_BOTS } from "./bots-list";
+     4	import { isIpInRange } from "./is-ip-in-range";
+     5	
+     6	// UA fragments that look like a bot pattern but aren't – e.g. Instagram's
+     7	// in-app webview on Pixel devices appends "Google/google" in its device
+     8	// descriptor, which would otherwise trip the generic "google" entry in UA_BOTS
+     9	const UA_FALSE_POSITIVES = [/Google\/google\b/];
+    10	
+    11	export const detectBot = (req: Request) => {
+    12	  const searchParams = new URL(req.url).searchParams;
+    13	
+    14	  if (searchParams.get("bot")) {
+    15	    return true;
+    16	  }
+    17	
+    18	  // HEAD requests are generally from bots, real users will always use GET requests
+    19	  if (req.method === "HEAD") {
+    20	    return true;
+    21	  }
+    22	
+    23	  // Check ua
+    24	  const ua = userAgent(req);
+    25	
+    26	  if (ua) {
+    27	    const isKnownFalsePositive = UA_FALSE_POSITIVES.some((pattern) =>
+    28	      pattern.test(ua.ua),
+    29	    );
+    30	    const sanitizedUa = UA_FALSE_POSITIVES.reduce(
+    31	      (s, pattern) => s.replace(pattern, ""),
+    32	      ua.ua,
+    33	    );
+    34	    return (
+    35	      (!isKnownFalsePositive && ua.isBot) ||
+    36	      UA_BOTS.some((bot) => new RegExp(bot, "i").test(sanitizedUa))
+    37	    );
+    38	  }
+    39	
+    40	  // Check referer
+    41	  const referer = req.headers.get("referer");
+    42	  if (
+    43	    referer &&
+    44	    REFERRER_BOTS.some((bot) => new RegExp(bot, "i").test(referer))
+    45	  ) {
+    46	    return true;
+    47	  }
+    48	
+    49	  // Check ip
+    50	  let ip = ipAddress(req);
+    51	
+    52	  if (!ip) {
+    53	    return false;
+    54	  }
+    55	
+    56	  // Check exact IP matches
+    57	  if (IP_BOTS.includes(ip)) {
+    58	    return true;
+    59	  }
+    60	
+    61	  // Check CIDR ranges
+    62	  return IP_RANGES_BOTS.some((range) => isIpInRange(ip, range));
+    63	};
+
+EVIDENCE 3 — bot UA list head: apps/web/lib/middleware/utils/bots-list.ts
+Source: samples/dub/apps/web/lib/middleware/utils/bots-list.ts (608 lines total)
+Proves: comprehensive UA fragment list including AI crawlers (Claude-Web,
+        anthropic-ai, Applebot-Extended, perplexity, Omigili, GPTBot).
+-------------------------------------------------------------------------
+     1	export const UA_BOTS = [
+     2	  // generic bot UA name patterns
+     3	  "bot", // most bots
+     4	  "crawler", // most crawlers
+     5	  "spider", // most spiders
+     6	  "http", // HTTP clients and libraries (e.g., Apache-HttpClient, Go-http-client, etc.)
+     7	  "scraper", // most scrapers
+     8	  "fetch", // most fetch libraries
+     9	  "curl", // most curl libraries
+    10	  "wget", // most wget libraries
+    11	  "python", // most python libraries
+    12	  "node", // most node libraries – e.g. node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+    13	  "ruby", // most ruby libraries
+    14	
+    15	  "chatgpt", // ChatGPT
+    16	  "bluesky", // Bluesky crawler
+    17	  "facebookexternalhit", // Facebook crawler
+    18	  "meta-externalagent", // Meta external agent
+    19	  "meta-externalads", // Meta external ads
+    20	  "meta-externalfetcher", // Meta external fetcher
+    21	  "meta-webindexer", // Meta web indexer
+    22	  "thirdLandingPageFeInfra", // TikTok preloader (https://ads.tiktok.com/help/article/preloading-web-content)
+    23	  "WhatsApp", // WhatsApp crawler
+    24	  "google", // Google crawler
+    25	  "baidu", // Baidu crawler
+    26	  "bing", // Bing crawler
+    27	  "msn", // MSN crawler
+    28	  "duckduckbot", // DuckDuckGo crawler
+    29	  "teoma", // Teoma crawler
+    30	  "slurp", // Slurp crawler
+    31	  "yandex", // Yandex crawler
+    32	  "MetaInspector", // metatags.io
+    33	  "iframely", // https://iframely.com/docs/about (used by Notion, Linear)
+    34	  "HeadlessChrome", // headless chrome
+    35	
+    36	  // new
+    37	  "ia_archiver",
+    38	  "Sogou",
+    39	  "SkypeUriPreview",
+    40	  "vkShare",
+    41	  "Slackbot",
+    42	  "Tumblr",
+    43	  "FeedBurner",
+    44	  "upptime",
+    45	  "Hyperping",
+    46	  "cron-job",
+    47	  "InternetMeasurement",
+    48	  "HostTracker",
+    49	  "Expanse", // Expanse (Palo Alto Networks)
+    50	
+    51	  // AI bots
+    52	  "anthropic-ai", // Anthropic AI
+    53	  "Claude-Web", // Claude AI
+    54	  "Applebot-Extended", // Applebot Extended
+    55	  "perplexity", // Perplexity AI
+    56	  "Omigili", // Omigili
+    57	  "timpi", // Timpi.io
+    58	
+    59	  // bots detected by Vercel
+    60	  "ShortLinkTranslate",
+
+EVIDENCE 4 — rate limit core: apps/web/lib/upstash/ratelimit.ts
+Source: samples/dub/apps/web/lib/upstash/ratelimit.ts
+Proves: Upstash @upstash/ratelimit, slidingWindow limiter, 1000ms timeout,
+        default 10 req/10s, Redis-backed.
+-------------------------------------------------------------------------
+     1	import { Ratelimit } from "@upstash/ratelimit";
+     2	import { redis } from "./redis";
+     3	
+     4	// Create a new ratelimiter, that allows 10 requests per 10 seconds by default
+     5	export const ratelimit = (
+     6	  requests: number = 10,
+     7	  seconds:
+     8	    | `${number} ms`
+     9	    | `${number} s`
+    10	    | `${number} m`
+    11	    | `${number} h`
+    12	    | `${number} d` = "10 s",
+    13	) => {
+    14	  return new Ratelimit({
+    15	    redis: redis,
+    16	    limiter: Ratelimit.slidingWindow(requests, seconds),
+    17	    analytics: true,
+    18	    prefix: "dub",
+    19	    timeout: 1000,
+    20	  });
+    21	};
+
+EVIDENCE 5 — rate-limit policies: apps/web/lib/upstash/ratelimit-policies.ts
+Source: samples/dub/apps/web/lib/upstash/ratelimit-policies.ts (179 lines total)
+Proves: per-endpoint policy map with attempts/window/keyPrefix/message;
+        examples: login=5/1m, signupOtpSend=2/1m, workspaceFileUpload=20/1h.
+-------------------------------------------------------------------------
+     1	import { ratelimit } from "./ratelimit";
+     2	
+     3	type RatelimitWindow = Parameters<typeof ratelimit>[1] & string;
+     4	
+     5	export type RatelimitMessageContext = {
+     6	  retryAfter: string;
+     7	  attempts: number;
+     8	  window: string;
+     9	};
+    10	
+    11	export type RatelimitPolicy = {
+    12	  attempts: number;
+    13	  window: RatelimitWindow;
+    14	  keyPrefix: string;
+    15	  message?: string | ((ctx: RatelimitMessageContext) => string);
+    16	};
+    17	
+    18	export const RATELIMIT_POLICIES = {
+    19	  login: {
+    20	    attempts: 5,
+    21	    window: "1 m",
+    22	    keyPrefix: "rl:auth:login",
+    23	    message: "too-many-login-attempts", // exact error code matched by the sign-in page, must stay verbatim
+    24	  },
+    25	
+    26	  loginLinkSend: {
+    27	    attempts: 2,
+    28	    window: "1 m",
+    29	    keyPrefix: "rl:auth:login-link:send",
+    30	  },
+    31	
+    32	  signupOtpSend: {
+    33	    attempts: 2,
+    34	    window: "1 m",
+    35	    keyPrefix: "rl:auth:signup:otp:send",
+    36	  },
+    37	
+    38	  accountExistsCheck: {
+    39	    attempts: 8,
+    40	    window: "1 m",
+    41	    keyPrefix: "rl:auth:account-exists:check",
+    42	  },
+    43	
+    44	  passwordResetRequest: {
+    45	    attempts: 2,
+    46	    window: "1 m",
+    47	    keyPrefix: "rl:auth:password-reset:request",
+    48	  },
+    49	
+    50	  passwordReset: {
+    51	    attempts: 2,
+    52	    window: "1 m",
+    53	    keyPrefix: "rl:auth:password-reset:confirm",
+    54	  },
+    55	
+    56	  emailChangeRequest: {
+    57	    attempts: 3,
+    58	    window: "24 h",
+    59	    keyPrefix: "rl:auth:email-change",
+    60	  },
+    61	
+    62	  // Keyed on the target email so many accounts can't spam the same address
+    63	  emailChangeRequestTarget: {
+    64	    attempts: 3,
+    65	    window: "24 h",
+    66	    keyPrefix: "rl:auth:email-change:target",
+    67	  },
+    68	
+    69	  samlVerify: {
+    70	    attempts: 10,
+    71	    window: "1 m",
+    72	    keyPrefix: "rl:auth:saml-verify",
+    73	  },
+    74	
+    75	  // Keyed on workspace + user so one member cannot exhaust the workspace upload budget
+    76	  workspaceFileUpload: {
+    77	    attempts: 20,
+    78	    window: "1 h",
+    79	    keyPrefix: "rl:workspace:file:upload",
+    80	    message: "Too many file uploads. Please try again later.",
+
+EVIDENCE 6 — click dedup + async pipeline: apps/web/lib/tinybird/record-click.ts:1-130
+Source: samples/dub/apps/web/lib/tinybird/record-click.ts (231 lines total)
+Proves: click recording flow — skip on 'dub-no-track' header/param, bot
+        detection (skip deeplink), identity-hash dedup via Redis (1h window),
+        QR detection, geo from Vercel headers, EU IP redaction, click_data
+        object assembled.
+-------------------------------------------------------------------------
+     1	import {
+     2	  LOCALHOST_GEO_DATA,
+     3	  LOCALHOST_IP,
+     4	  capitalize,
+     5	  fetchWithRetry,
+     6	  getDomainWithoutWWW,
+     7	} from "@dub/utils";
+     8	import { EU_COUNTRY_CODES } from "@dub/utils/src/constants/countries";
+     9	import { geolocation, ipAddress, waitUntil } from "@vercel/functions";
+    10	import { userAgent } from "next/server";
+    11	import { recordClickCache } from "../api/links/record-click-cache";
+    12	import { detectBot } from "../middleware/utils/detect-bot";
+    13	import { detectQr } from "../middleware/utils/detect-qr";
+    14	import { getIdentityHash } from "../middleware/utils/get-identity-hash";
+    15	import { redis } from "../upstash";
+    16	import { publishLinkClickEvent } from "../upstash/redis-streams/link-click-events";
+    17	import { publishWorkspaceClickEvent } from "../upstash/redis-streams/workspace-click-events";
+    18	
+    19	/**
+    20	 * Recording clicks with geo, ua, referer and timestamp data
+    21	 **/
+    22	export async function recordClick({
+    23	  req,
+    24	  clickId,
+    25	  workspaceId,
+    26	  linkId,
+    27	  domain,
+    28	  key,
+    29	  url,
+    30	  skipRatelimit,
+    31	  timestamp,
+    32	  referrer,
+    33	  trigger = "link",
+    34	  shouldCacheClickId,
+    35	}: {
+    36	  req: Request;
+    37	  clickId?: string;
+    38	  linkId: string;
+    39	  workspaceId?: string;
+    40	  domain: string;
+    41	  key: string;
+    42	  url?: string;
+    43	  skipRatelimit?: boolean;
+    44	  timestamp?: string;
+    45	  referrer?: string;
+    46	  trigger?: string;
+    47	  shouldCacheClickId?: boolean;
+    48	}) {
+    49	  if (!clickId) {
+    50	    return null;
+    51	  }
+    52	
+    53	  const searchParams = new URL(req.url).searchParams;
+    54	
+    55	  // only track the click when there is no `dub-no-track` header or query param
+    56	  if (req.headers.has("dub-no-track") || searchParams.has("dub-no-track")) {
+    57	    return null;
+    58	  }
+    59	
+    60	  const ua = userAgent(req);
+    61	
+    62	  // only do bot checks for non deep link requests (link clicks/qr code scans)
+    63	  if (trigger !== "deeplink") {
+    64	    const isBot = detectBot(req);
+    65	
+    66	    // don't record clicks from bots
+    67	    if (isBot) {
+    68	      console.log(`Click not recorded ❌ – Bot detected.`, {
+    69	        ua,
+    70	        isBot,
+    71	      });
+    72	      return null;
+    73	    }
+    74	  }
+    75	
+    76	  const identityHash = await getIdentityHash(req);
+    77	
+    78	  // by default, we deduplicate clicks for a domain + key pair from the same IP address – only record 1 click per hour
+    79	  // we only need to do these if skipRatelimit is not true (we skip it in /api/track/:path endpoints)
+    80	  if (!skipRatelimit) {
+    81	    try {
+    82	      // here, we check if the clickId is cached in Redis within the last hour
+    83	      const cachedClickId = await recordClickCache.get({
+    84	        domain,
+    85	        key,
+    86	        identityHash,
+    87	      });
+    88	      if (cachedClickId) {
+    89	        return null;
+    90	      }
+    91	    } catch (error) {
+    92	      console.error(`[recordClickCache error]: ${error}`);
+    93	      // if redis fails, return null so we don't overwhelm TB/MySQL
+    94	      return null;
+    95	    }
+    96	  }
+    97	
+    98	  const isQr = detectQr(req);
+    99	  if (isQr) {
+   100	    trigger = "qr";
+   101	  }
+   102	
+   103	  // get continent, region & geolocation data
+   104	  // interesting, geolocation().region is Vercel's edge region – NOT the actual region
+   105	  // so we use the x-vercel-ip-country-region to get the actual region
+   106	  const { continent, region } =
+   107	    process.env.VERCEL === "1"
+   108	      ? {
+   109	          continent: req.headers.get("x-vercel-ip-continent"),
+   110	          region: req.headers.get("x-vercel-ip-country-region"),
+   111	        }
+   112	      : LOCALHOST_GEO_DATA;
+   113	
+   114	  const geo =
+   115	    process.env.VERCEL === "1" ? geolocation(req) : LOCALHOST_GEO_DATA;
+   116	
+   117	  const ip = process.env.VERCEL === "1" ? ipAddress(req) : LOCALHOST_IP;
+   118	  const isEuCountry = geo.country && EU_COUNTRY_CODES.includes(geo.country);
+   119	
+   120	  const referer = referrer || req.headers.get("referer");
+   121	
+   122	  const clickData = {
+   123	    timestamp: timestamp || new Date(Date.now()).toISOString(),
+   124	    identity_hash: identityHash,
+   125	    click_id: clickId,
+   126	    workspace_id: workspaceId || "",
+   127	    link_id: linkId,
+   128	    domain,
+   129	    key,
+   130	    url: url || "",
+
+EVIDENCE 7 — click async fan-out: apps/web/lib/tinybird/record-click.ts:175-231
+Source: samples/dub/apps/web/lib/tinybird/record-click.ts
+Proves: click written via waitUntil() — 4 parallel async operations:
+        1) Tinybird POST /v0/events (analytics store, wait=true)
+        2) recordClickCache.set (Redis dedup, 1h TTL)
+        3) publishLinkClickEvent (Redis stream for link stats)
+        4) publishWorkspaceClickEvent (Redis stream for workspace rollup)
+        Promise.allSettled — partial failures logged but not thrown.
+-------------------------------------------------------------------------
+   175	            body: JSON.stringify(clickData),
+   176	          },
+   177	        ).then((res) => res.json()),
+   178	
+   179	        // cache the recorded click for the corresponding IP address in Redis for 1 hour
+   180	        recordClickCache.set({
+   181	          domain,
+   182	          key,
+   183	          identityHash,
+   184	          clickId,
+   185	        }),
+   186	
+   187	        publishLinkClickEvent({
+   188	          linkId,
+   189	          timestamp: clickData.timestamp,
+   190	          ...(workspaceId && url && { workspaceId }),
+   191	        }),
+   192	
+   193	        // Publish the click event
+   194	        publishWorkspaceClickEvent(clickData),
+   195	      ]);
+   196	
+   197	      // Find the rejected promises and log them
+   198	      if (response.some((result) => result.status === "rejected")) {
+   199	        const errors = response
+   200	          .map((result, index) => {
+   201	            if (result.status === "rejected") {
+   202	              const operations = [
+   203	                "Tinybird click event ingestion",
+   204	                "recordClickCache set",
+   205	                "Click stats stream publish",
+   206	                "Workspace click event publish",
+   207	              ];
+   208	              return {
+   209	                operation: operations[index] || `Operation ${index}`,
+   210	                error: result.reason,
+   211	                errorString: JSON.stringify(result.reason, null, 2),
+   212	              };
+   213	            }
+   214	            return null;
+   215	          })
+   216	          .filter((err): err is NonNullable<typeof err> => err !== null);
+   217	
+   218	        console.error("[Record click] - Rejected promises:", {
+   219	          totalErrors: errors.length,
+   220	          errors: errors.map((err) => ({
+   221	            operation: err.operation,
+   222	            error: err.error,
+   223	            errorString: err.errorString,
+   224	          })),
+   225	        });
+   226	      }
+   227	    })(),
+   228	  );
+   229	
+   230	  return clickData;
+   231	}
+
+EVIDENCE 8 — LinkMiddleware redirect decisions: apps/web/lib/middleware/link.ts
+Source: samples/dub/apps/web/lib/middleware/link.ts (619 lines total)
+Proves: status code rule — key==='_root' gets 301, every other key gets 302.
+        Unsupported keys (e.g. .php) → 302 to root with dub-no-track header.
+        DisabledAt / expiresAt / expiredUrl / password / geo-targeting /
+        A/B test variants all checked before redirect. Redis failover =>
+        skip click tracking (do not block redirect).
+-------------------------------------------------------------------------
+    42	export async function LinkMiddleware(req: NextRequest, ev: NextFetchEvent) {
+    43	  let { domain, fullKey: originalKey, fullPath, searchParamsObj } = parse(req);
+    44	
+    45	  if (!domain) {
+    46	    return NextResponse.next();
+    47	  }
+    48	
+    49	  // encode the key to ascii
+    50	  // links on Dub are case insensitive by default
+    51	  let key = punyEncode(originalKey);
+    52	
+    53	  if (!isCaseSensitiveDomain(domain)) {
+    54	    key = key.toLowerCase();
+    55	  }
+    56	
+    57	  const inspectMode = key.endsWith("+");
+    58	  // if inspect mode is enabled, remove the trailing `+` from the key
+    59	  if (inspectMode) {
+    60	    key = key.slice(0, -1);
+    61	  }
+    62	
+    63	  // if key is empty string, set to _root (root domain link)
+    64	  if (key === "") {
+    65	    key = "_root";
+    66	  }
+    67	
+    68	  const STATIC_PAGES_CACHE_HEADERS = {
+    69	    "Vercel-CDN-Cache-Control": "public, s-maxage=86400",
+    70	    "Vercel-Cache-Tag": linkCache._createStaticPagesCacheKeys({
+    71	      domain,
+    72	      key: originalKey || "_root",
+    73	    }),
+    74	  };
+    75	
+    76	  // we don't support .php links (too much bot traffic)
+    77	  // hence we redirect to the root domain and add `dub-no-track` header to avoid tracking bot traffic
+    78	  if (isUnsupportedKey(key)) {
+    79	    return NextResponse.redirect(new URL("/?dub-no-track=1", req.url), {
+    80	      headers: {
+    81	        ...DUB_HEADERS,
+    82	        "X-Robots-Tag": "googlebot: noindex",
+    83	      },
+    84	      status: 302,
+    85	    });
+    86	  }
+    87	
+    88	  let { cachedLink, redisFailOver } = await linkCache.get({ domain, key });
+    89	
+    90	  // skip click tracking during Redis failover to avoid timeouts
+    91	  const recordClick = redisFailOver
+    92	    ? async () => {
+    93	        console.log("Redis failover detected, skipping click tracking...");
+    94	        return;
+    95	      }
+    96	    : recordClickJob;
+    97	
+    98	  if (!cachedLink) {
+    99	    let linkData = await getLinkViaEdge({
+   100	      domain,
+   101	      key,
+   102	    });
+   103	
+   104	    if (!linkData) {
+   105	      if (domain === "buff.ly") {
+   106	        return await crawlBitly(req, ev);
+   107	      }
+   108	
+   109	      return NextResponse.rewrite(new URL(`/${domain}/notfound`, req.url), {
+   110	        headers: {
+   111	          ...DUB_HEADERS,
+   112	          ...STATIC_PAGES_CACHE_HEADERS,
+   113	        },
+   114	      });
+   115	    }
+   116	
+   117	    // format link to fit the RedisLinkProps interface
+   118	    cachedLink = formatRedisLink(linkData as any);
+   119	
+   120	    ev.waitUntil(linkCache.set(linkData as any, { skipRevalidateTag: true }));
+   121	  }
+   122	
+   123	  const {
+   124	    id: linkId,
+   125	    password,
+   126	    trackConversion,
+   127	    geo: geoTargeting,
+   128	    proxy,
+   129	    rewrite,
+   130	    expiresAt,
+
+   240	  // handle disabled links
+   241	  if (disabledAt) {
+   242	    return NextResponse.rewrite(new URL(`/${domain}/disabled`, req.url), {
+   243	      headers: {
+   244	        ...DUB_HEADERS,
+   245	        ...STATIC_PAGES_CACHE_HEADERS,
+   246	        "X-Robots-Tag": "googlebot: noindex",
+   247	      },
+   248	    });
+   249	  }
+   250	
+   251	  // if the link has expired
+   252	  if (expiresAt && new Date(expiresAt) < new Date()) {
+   253	    if (expiredUrl) {
+   254	      return NextResponse.redirect(expiredUrl, {
+   255	        headers: {
+   256	          ...DUB_HEADERS,
+   257	          ...(!shouldIndex && { "X-Robots-Tag": "googlebot: noindex" }),
+   258	        },
+   259	        status: 302,
+   260	      });
+   261	    } else {
+   262	      return NextResponse.rewrite(new URL(`/${domain}/expired`, req.url), {
+   263	        headers: {
+   264	          ...DUB_HEADERS,
+   265	          ...STATIC_PAGES_CACHE_HEADERS,
+   266	          ...(!shouldIndex && { "X-Robots-Tag": "googlebot: noindex" }),
+   267	        },
+   268	      });
+   269	    }
+   270	  }
+   271	
+   272	  // for Google click tracker domains (dub.sh, dub.link):
+   273	  // if there is a redirection url set, then use it instead of the target
+   274	  if (isGoogleClickTrackerDomain(domain)) {
+   275	    const redirectionUrl = searchParamsObj[REDIRECTION_QUERY_PARAM];
+   276	
+   277	    // if a valid redirection url is present, return it immediately
+   278	    if (
+   279	      redirectionUrl &&
+   280	      isValidUrl(redirectionUrl) &&
+   281	      redirectionUrl.startsWith("https://")
+   282	    ) {
+   283	      ev.waitUntil(
+   284	        recordClick({
+   285	          req,
+   286	          clickId,
+   287	          workspaceId,
+   288	          linkId,
+   289	          domain,
+   290	          key,
+   291	          url: redirectionUrl,
+   292	          shouldCacheClickId,
+   293	        }),
+   294	      );
+   295	
+   296	      return createResponseWithCookies(
+   297	        NextResponse.redirect(redirectionUrl, {
+   298	          headers: {
+   299	            ...DUB_HEADERS,
+   300	            ...(!shouldIndex && { "X-Robots-Tag": "googlebot: noindex" }),
+   301	          },
+   302	          status: key === "_root" ? 301 : 302,
+   303	        }),
+   304	        cookieData,
+   305	      );
+   306	    }
+   307	  }
+   308	
+   309	  // for root domain links, if there's no destination URL, rewrite to placeholder page
+   310	  if (!url) {

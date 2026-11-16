@@ -1,0 +1,514 @@
+EVIDENCE 0 — provenance + licence
+Commit: 1fb1fb89b36377a073d123b44575972b683d36b6 (2024-10-02)
+Licence: GPL v2 or later (plugin header: const LICENSE = 'GPL v2 or later')
+Note: WordPress plugin. GPL-2.0 is strong copyleft — extract rules only,
+      no verbatim code transplant (would force our whole app GPL-2.0).
+License:            GPLv2 or later
+License URI:        http://www.gnu.org/licenses/gpl-2.0.html
+
+EVIDENCE 1 — 22 marketplace locales (concrete classes)
+Source: samples/amazon-auto-links/include/core/_common/utility/locale/
+Proves: every Amazon marketplace is a concrete subclass with sSlug + sDomain +
+        sLocaleNumber + sAssociatesURL. Locale_Base is the abstract.
+AE
+AU
+BE
+BR
+CA
+CN
+DE
+EG
+ES
+FR
+IN
+IT
+JP
+MX
+NL
+PL
+SA
+SE
+SG
+TR
+UK
+US
+
+EVIDENCE 2 — Locale_US concrete (marketplace host map)
+Source: samples/amazon-auto-links/include/core/_common/utility/locale/AmazonAutoLinks_Locale_US.php
+Proves: each marketplace defines sSlug='US', sLocaleNumber='01',
+        sDomain='www.amazon.com', sAssociatesURL='https://affiliate-program.amazon.com/'
+        Rule: marketplace = (slug, locale_number, domain, associates_url, country_code).
+-------------------------------------------------------------------------
+     1	<?php
+     2	/**
+     3	 * Auto Amazon Links
+     4	 *
+     5	 * https://en.michaeluno.jp/amazon-auto-links/
+     6	 * Copyright (c) 2013-2022 Michael Uno
+     7	 *
+     8	 */
+     9	
+    10	/**
+    11	 * The U.S. locale class.
+    12	 *
+    13	 * @since       4.3.4
+    14	 */
+    15	class AmazonAutoLinks_Locale_US extends AmazonAutoLinks_Locale_NorthAmerica {
+    16	
+    17	    /**
+    18	     * The locale code.
+    19	     * @var string
+    20	     */
+    21	    public $sSlug = 'US';
+    22	
+    23	    /**
+    24	     * Two digits locale number.
+    25	     * @var string
+    26	     */
+    27	    public $sLocaleNumber = '01';
+    28	
+    29	    /**
+    30	     * @var string
+    31	     */
+    32	    public $sDomain = 'www.amazon.com';
+    33	
+    34	    /**
+    35	     * @var string
+    36	     */
+    37	    public $sAssociatesURL = 'https://affiliate-program.amazon.com/';
+    38	
+    39	    /**
+    40	     * @var string
+    41	     */
+    42	    public $sFlagImg = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAWCAYAAAChWZ5EAAABSklEQVRIS2PMFlaJ3SwbPO8dqwgLAwgwM4Ephr//IDQRfCYONobqI7kQ9cSDl///M6QyyhmU/37LKAixnEzAyM7KUHummBzdLxl5TLv////zl2HnvBQGRkYGhpiGC2CDFtcbEM1nZmNhODXXgiQHTJm3FKwe7oBd84EOAApEQx2wpAHoACL5zKxAB8wj1wEWvf////zNICZvQrLPYV5m5WZn2HYqkqQQWHv/CTQE0BxAis9hNrIBHbCVbAeMpoHRNDCaBtDSAEmZGaqYonKAz2Hy/38/fjFIyBkzMPxnYGBiYwaXgH9//yWaz87LwbB+byBJbocXRE0T5/5nZ2djSI0OJckAShXD64IBd0AnCyjgGRiCFWUo9RRJ+uFRMOAOGPAoGHAHAKPgBTDyxEmKQOopfsbYwczgC2yKzQGaKUY9c4ky6RmwUZoBAO2BIfPVOVScAAAAAElFTkSuQmCC';
+    43	
+    44	    /**
+    45	     * @return string The country name.
+    46	     * @since  4.5.0
+    47	     */
+    48	    public function getName() {
+    49	        return __( 'United States', 'amazon-auto-links' );
+    50	    }
+
+EVIDENCE 3 — Locale_UK concrete (different domain)
+Source: samples/amazon-auto-links/include/core/_common/utility/locale/AmazonAutoLinks_Locale_UK.php
+Proves: UK marketplace: sSlug='UK', sDomain='www.amazon.co.uk',
+        sAssociatesURL='https://affiliate-program.amazon.co.uk'.
+        Same shape as US — every locale follows the same contract.
+-------------------------------------------------------------------------
+     1	<?php
+     2	/**
+     3	 * Auto Amazon Links
+     4	 *
+     5	 * https://en.michaeluno.jp/amazon-auto-links/
+     6	 * Copyright (c) 2013-2022 Michael Uno
+     7	 *
+     8	 */
+     9	
+    10	/**
+    11	 * The UK locale class.
+    12	 *
+    13	 * @since       4.3.4
+    14	 */
+    15	class AmazonAutoLinks_Locale_UK extends AmazonAutoLinks_Locale_EuropeanUnion {
+    16	
+    17	    /**
+    18	     * The locale code.
+    19	     * @var string
+    20	     */
+    21	    public $sSlug = 'UK';
+    22	
+    23	    /**
+    24	     * Two digits locale number.
+    25	     * @var string
+    26	     */
+    27	    public $sLocaleNumber = '02';
+    28	
+    29	    /**
+    30	     * @var string e.g. www.amazon.com
+    31	     */
+    32	    public $sDomain = 'www.amazon.co.uk';
+    33	
+    34	    /**
+    35	     * @var string
+    36	     */
+    37	    public $sAssociatesURL = 'https://affiliate-program.amazon.co.uk';
+    38	
+    39	    /**
+    40	     * @var string
+
+EVIDENCE 4 — Locale_Base URL construction rules (the ASIN → URL brain)
+Source: samples/amazon-auto-links/include/core/_common/utility/locale/_abstract/AmazonAutoLinks_Locale_Base.php:120-210
+Proves: the URL patterns for every Amazon surface:
+        - Product detail:  https://{domain}/dp/{ASIN}                    (NOT /gp/product/ — /dp/ is current)
+        - Customer review: https://{domain}/product-reviews/{ASIN}?tag={id}&language={lang}
+        - Best sellers:    https://{domain}/gp/bestsellers/{path}
+        - Add to cart:      https://{domain}/gp/aws/cart/add.html
+        - Rating widget:    https://{domain}/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&asin={ASIN}
+        - Associates URL:   per-locale sAssociatesURL field (e.g. affiliate-program.amazon.com)
+        - No-image:         https://images-na.ssl-images-amazon.com/images/G/{localeNumber}/x-site/icons/no-img-sm.gif
+        Rule: ONE class knows how to build every Amazon URL for its marketplace.
+-------------------------------------------------------------------------
+   120	    /**
+   121	     * @param  string   $sPath  The URL path preceded by the store URL.
+   122	     * @return string   The top store URL without a trailing slash. e.g. https://amazon.com
+   123	     * @since  4.3.4
+   124	     */
+   125	    public function getMarketPlaceURL( $sPath='' ) {
+   126	        $sPath = $sPath
+   127	            ? '/' . ltrim( $sPath, '/' )
+   128	            : '';
+   129	        return 'https://' . untrailingslashit( $this->getDomain() ) . $sPath;
+   130	    }
+   131	
+   132	    /**
+   133	     * @return string   e.g. www.amazon.com
+   134	     * @since  4.3.4
+   135	     */
+   136	    public function getDomain() {
+   137	        return $this->sDomain;
+   138	    }
+   139	
+   140	    /**
+   141	     * @param  string $sASIN
+   142	     * @return string Format: https://{host}/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&asin='{asin}
+   143	     * @since  4.3.4
+   144	     */
+   145	    public function getProductRatingWidgetURL( $sASIN ) {
+   146	        return $this->getMarketPlaceURL(
+   147	            '/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&asin=' . $sASIN
+   148	        );
+   149	    }
+   150	
+   151	    /**
+   152	     * @param  string $sASIN
+   153	     * @param  string $sAssociateID
+   154	     * @param  string $sLanguage
+   155	     * @return string
+   156	     * @since  4.3.4
+   157	     */
+   158	    public function getCustomerReviewURL( $sASIN, $sAssociateID='', $sLanguage='' ) {
+   159	        $_aArguments = array(
+   160	            'language' => $sLanguage,
+   161	            'tag'      => $sAssociateID,
+   162	        );
+   163	        $_aArguments = array_filter( $_aArguments );
+   164	        $_sURL       = $this->getMarketPlaceURL( '/product-reviews/' . $sASIN );
+   165	        return empty( $_aArguments )
+   166	            ? $_sURL
+   167	            : add_query_arg( $_aArguments, $_sURL );
+   168	    }
+   169	
+   170	    /**
+   171	     * @param  string $sPath
+   172	     * @return string
+   173	     * @since  4.3.4
+   174	     * @since  4.3.5  Added the `$sPath` parameter.
+   175	     */
+   176	    public function getBestSellersURL( $sPath='' ) {
+   177	        return $this->getMarketPlaceURL() . '/gp/bestsellers/' . ltrim( $sPath, '/' );
+   178	    }
+   179	
+   180	    /**
+   181	     * @param  string $sPath
+   182	     * @return string
+   183	     * @since  4.3.4
+   184	     * @since  4.3.5  Added the `$sPath` parameter.
+   185	     */
+   186	    public function getAssociatesURL( $sPath='' ) {
+   187	        return $sPath
+   188	            ? untrailingslashit( $this->sAssociatesURL ) . '/' . $sPath
+   189	            : $this->sAssociatesURL;
+   190	    }
+   191	
+   192	    /**
+   193	     * @return string
+   194	     * @since  4.3.4
+   195	     */
+   196	    public function getBlackCurtainURL() {
+   197	        return $this->sBlackCurtainURL;
+   198	    }
+   199	
+   200	    /**
+   201	     * @return string
+   202	     * @since  4.3.4
+   203	     */
+   204	    public function getNoImageURL() {
+   205	        if ( false !== filter_var( $this->sNoImageURL, FILTER_VALIDATE_URL ) ) {
+   206	            return $this->sNoImageURL;
+   207	        }
+   208	        $_sPath   = "images/G/{$this->sLocaleNumber}/x-site/icons/no-img-sm.gif";
+   209	        return is_ssl()
+   210	            ? "https://images-na.ssl-images-amazon.com/{$_sPath}"
+
+EVIDENCE 5 — associate_id injection + the 6 URL link styles
+Source: samples/amazon-auto-links/include/core/component/button/event/filter/AmazonAutoLinks_Button_Event_Filter_Output.php:80-110
+        + samples/amazon-auto-links/include/core/component/unit/event/filter/AmazonAutoLinks_Event_Filter_ProductLinks.php:50-86
+Proves: product URL is built as getMarketPlaceURL('/dp/' + ASIN), then passed
+        through the 'aal_filter_product_link' filter where associate_id, language,
+        currency, and link_style (1-6) are applied. Six link styles exist as
+        AmazonAutoLinks_Output_Format_LinksStyle_1 through _6 — these correspond
+        to historical Amazon URL formats (?tag=, /ref=nosim, ?linkCode=, etc.).
+        Rule: the associate tag is injected as ?tag={associate_id} on the URL.
+-------------------------------------------------------------------------
+    80	                    $_sProductURL = $this->___getProductURL( $aArguments );
+    81	                    return $this->___getLinkButton(
+    82	                        $aArguments[ 'id' ],
+    83	                        $_sProductURL,
+    84	                        $aArguments[ 'label' ]
+    85	                    );
+    86	            }
+    87	        }
+    88	            /**
+    89	             * @param  array  $aArguments
+    90	             * @return string
+    91	             */
+    92	            private function ___getProductURL( array $aArguments ) {
+    93	                $_sLocale    = $aArguments[ 'country' ];
+    94	                $_sASIN      = $aArguments[ 'asin' ];
+    95	                $_aASINs     = $this->getStringIntoArray( $_sASIN, ',' ); // format it as it can be comma delimited
+    96	                $sASIN       = reset( $_aASINs );
+    97	                $_oLocale    = new AmazonAutoLinks_Locale( $_sLocale );
+    98	                $_sURL       = $_oLocale->getMarketPlaceURL( '/dp/' . $sASIN );
+    99	                $_oOption    = AmazonAutoLinks_Option::getInstance();
+   100	                $_aDefaults  = $this->getAsArray( $_oOption->get( 'unit_default' ) );
+   101	                return apply_filters(
+   102	                    'aal_filter_product_link',
+   103	                    $_sURL,
+   104	                    $_sURL,
+   105	                    $sASIN,
+   106	                    array_filter( $aArguments ) + $_aDefaults,
+   107	                    $this->getElement( $_aDefaults, array( 'language' ), '' ),
+   108	                    $this->getElement( $_aDefaults, array( 'preferred_currency' ), '' )
+   109	                );
+   110	            }
+
+EVIDENCE 6 — product schema has expiration_time + error column (TTL-based refresh)
+Source: samples/amazon-auto-links/include/core/_common/utility/database/AmazonAutoLinks_DatabaseTable_aal_products.php:30-120
+Proves: aal_products table stores: asin, locale, modified_time, expiration_time,
+        title, price, currency, rating, is_prime, is_adult, error (string), etc.
+        KEY RULE: expiration_time column = products auto-expire and must be
+        re-fetched from PAAPI. The 'error' column records fetch failures.
+        This is the closest thing to a 'dead-link' detector: a product with
+        expiration_time < now() is stale and is re-queried; a product whose PAAPI
+        fetch returned an error gets the error string stored.
+-------------------------------------------------------------------------
+    30	     * @remark      accessed from outside to construct a row array to insert data into the table.
+    31	     */
+    32	    static public $aStructure_Row = array(
+    33	        'object_id'                     => null,   // (integer)
+    34	        'product_id'                    => null,   // (string) 4.3.0 XXXXXXXXXX_XX|XXX|xx-XX
+    35	        'asin'                          => null,   // (string) XXXXXXXXXX
+    36	        'asin_locale'                   => null,   // @deprecated 4.3.0 (string) XXXXXXXXXX_XX
+    37	        'locale'                        => null,   // (string) XX      e.g. US
+    38	        'modified_time'                 => null,   // (string) dddd-dd-dd dd:dd:dd
+    39	        'expiration_time'               => null,   // (string) dddd-dd-dd dd:dd:dd
+    40	        'title'                         => null,   // (string) The product name.
+    41	        'links'                         => null,   // (string)
+    42	        'rating'                        => null,   // (integer)    e.g. 45
+    43	        'rating_image_url'              => null,   // (string)  // @todo deprecate it
+    44	        'rating_html'                   => null,   // (string)  // @todo deprecate it
+    45	        'price'                         => null,   // (integer)    Listed price. e.g. 46.56
+    46	        'price_formatted'               => null,   // (string)
+    47	        'currency'                      => null,   // (string)  e.g. USD
+    48	        'sales_rank'                    => null,   // (integer)
+    49	        'lowest_new_price'              => null,   // (integer)
+    50	        'lowest_new_price_formatted'    => null,   // (string)
+    51	        'lowest_used_price'             => null,   // (integer)
+    52	        'lowest_used_price_formatted'   => null,   // (string)
+    53	        'discounted_price'              => null,
+    54	        'discounted_price_formatted'    => null,
+    55	        'count_new'                     => null,   // (integer)
+    56	        'count_used'                    => null,   // (integer)
+    57	        'description'                   => null,   // (string) product details
+    58	        'images'                        => null,   // (string) serialized array containing product lists
+    59	        'similar_products'              => null,   // (string) serialized array containing product lists
+    60	        'editorial_reviews'             => null,   // (string) serialized array containing editorial review text.
+    61	        'customer_review_url'           => null,   // (string)  // @todo deprecate it
+    62	        'customer_review_charset'       => null,   // (string)
+    63	        'customer_reviews'              => null,   // (string) serialized array containing user reviews.
+    64	        'number_of_reviews'             => null,   // (integer) number of customer reviews.
+    65	        'features'                      => null,   // (string) 3.8.0
+    66	        'categories'                    => null,   // (string) 3.8.0
+    67	        'is_prime'                      => null,   // (boolean) 3.9.0
+    68	        'is_adult'                      => null,   // (boolean) 3.9.0
+    69	        'language'                      => null,   // (string) 3.9.0 displaying language,  e.g. de_DE
+    70	        'preferred_currency'            => null,   // (string) 3.9.0
+    71	        'error'                         => null,   // (string) 3.9.0
+    72	        'delivery_free_shipping'        => null,   // (boolean) 3.10.0
+    73	        'delivery_fba'                  => null,   // (boolean) 3.10.0
+    74	    );
+    75	
+    76	    /**
+    77	     *
+    78	     * @return      string
+    79	     * @since       3
+    80	     */
+    81	    public function getCreationQuery() {
+    82	        // asin_locale varchar(13) UNIQUE NOT NULL,
+    83	        // asin_locale varchar(13) NOT NULL,
+    84	        return "CREATE TABLE " . $this->aArguments[ 'table_name' ] . " (
+    85	            object_id bigint(20) unsigned NOT NULL auto_increment,
+    86	            product_id varchar(128) UNIQUE,            
+    87	            asin varchar(10),
+    88	            asin_locale varchar(13) NOT NULL,
+    89	            locale varchar(4),            
+    90	            language varchar(10),            
+    91	            modified_time datetime NOT NULL default '0000-00-00 00:00:00',
+    92	            expiration_time datetime NOT NULL default '0000-00-00 00:00:00',
+    93	            title text,
+    94	            links text,
+    95	            rating tinyint unsigned,
+    96	            rating_image_url text,
+    97	            rating_html blob,
+    98	            preferred_currency varchar(10),
+    99	            currency varchar(10),
+   100	            sales_rank bigint(20),
+   101	            price bigint(20) unsigned,
+   102	            price_formatted tinytext,
+   103	            lowest_new_price bigint(20) unsigned,
+   104	            lowest_new_price_formatted tinytext,
+   105	            lowest_used_price bigint(20) unsigned,
+   106	            lowest_used_price_formatted tinytext,
+   107	            discounted_price bigint(20) unsigned,
+   108	            discounted_price_formatted tinytext,
+   109	            count_new bigint(20) unsigned,
+   110	            count_used bigint(20) unsigned,
+   111	            description mediumtext,
+   112	            images mediumtext,
+   113	            similar_products mediumtext,
+   114	            editorial_reviews mediumblob,
+   115	            customer_review_url text,
+   116	            customer_review_charset varchar(20),
+   117	            customer_reviews mediumblob,
+   118	            number_of_reviews bigint(20) unsigned,
+   119	            categories text,
+   120	            features text,
+
+EVIDENCE 7 — PAAPI5.0 availability fields are COMMENTED OUT of the default payload
+Source: samples/amazon-auto-links/include/core/_common/utility/interpreter/paapi/AmazonAutoLinks_PAAPI50___Payload.php:42-67
+Proves: the lines that would request Offers.Listings.Availability.* are commented
+        out — the plugin does NOT fetch availability from PAAPI by default.
+        Rule: dead/out-of-stock detection via PAAPI is NOT a default behavior.
+        It must be explicitly enabled by uncommenting those payload lines.
+-------------------------------------------------------------------------
+    30	        'Images.Variants.Large',
+    31	        'ItemInfo.ByLineInfo',
+    32	        'ItemInfo.ContentInfo',
+    33	        'ItemInfo.ContentRating',
+    34	        'ItemInfo.Classifications',
+    35	        'ItemInfo.ExternalIds',
+    36	        'ItemInfo.Features',
+    37	        'ItemInfo.ManufactureInfo',
+    38	        'ItemInfo.ProductInfo',
+    39	        'ItemInfo.TechnicalInfo',
+    40	        'ItemInfo.Title',
+    41	        'ItemInfo.TradeInInfo',
+    42	//                    'Offers.Listings.Availability.MaxOrderQuantity',
+    43	//                    'Offers.Listings.Availability.Message',
+    44	//                    'Offers.Listings.Availability.MinOrderQuantity',
+    45	//                    'Offers.Listings.Availability.Type',
+    46	//                    'Offers.Listings.Condition',
+    47	//                    'Offers.Listings.Condition.SubCondition',
+    48	        'Offers.Listings.DeliveryInfo.IsAmazonFulfilled',
+    49	        'Offers.Listings.DeliveryInfo.IsFreeShippingEligible',
+    50	        'Offers.Listings.DeliveryInfo.IsPrimeEligible',
+    51	//                    'Offers.Listings.DeliveryInfo.ShippingCharges',
+    52	//                    'Offers.Listings.IsBuyBoxWinner',
+    53	//                    'Offers.Listings.LoyaltyPoints.Points',
+    54	//                    'Offers.Listings.MerchantInfo',
+    55	            'Offers.Listings.Price',
+    56	//                    'Offers.Listings.ProgramEligibility.IsPrimeExclusive',
+    57	//                    'Offers.Listings.ProgramEligibility.IsPrimePantry',
+    58	//                    'Offers.Listings.Promotions',
+    59	            'Offers.Listings.SavingBasis',
+    60	//                    'Offers.Summaries.HighestPrice',
+    61	            'Offers.Summaries.LowestPrice',
+    62	//                    'Offers.Summaries.OfferCount',
+    63	//                    'ParentASIN',
+    64	//                    'RentalOffers.Listings.Availability.MaxOrderQuantity',
+    65	//                    'RentalOffers.Listings.Availability.Message',
+    66	//                    'RentalOffers.Listings.Availability.MinOrderQuantity',
+    67	//                    'RentalOffers.Listings.Availability.Type',
+    68	//                    'RentalOffers.Listings.BasePrice',
+    69	//                    'RentalOffers.Listings.Condition',
+    70	//                    'RentalOffers.Listings.Condition.SubCondition',
+
+EVIDENCE 8 — GeolocationResolver is DEPRECATED and returns empty array (stub)
+Source: samples/amazon-auto-links/include/core/component/geotargeting/event/ajax/AmazonAutoLinks_Geotargeting_EventAjax_GeolocationResolver.php
+Proves: the geo-routing component exists as scaffolding but _getResponse() returns
+        array() — the actual implementation was abandoned. The comment block lists
+        8 third-party IP-geolocation APIs (Cloudflare /trace, db-ip, ipapi, etc.)
+        but none are wired up. Rule: geo-routing by visitor country is NOT
+        implemented in this plugin. Marketplaces are picked per-UNIT (admin
+        chooses), not per-visitor.
+-------------------------------------------------------------------------
+    40	     * @param  array $aPost     POST data. Unused at the moment.
+    41	     */
+    42	    protected function _getResponse( array $aPost ) {
+    43	
+    44	        $_oOption = AmazonAutoLinks_Option::getInstance();
+    45	        $_oUtil   = new AmazonAutoLinks_Geotargeting_Utility;
+    46	        $_sIP     = $_oUtil->getClientIPAddress();
+    47	        if ( $_oUtil->isLocalhost( $_sIP ) && $_oOption->get( 'geotargeting', 'resolve_localhost' ) ) {
+    48	            $_sIP = $this->___getExternalIPAddress();
+    49	        }
+    50	
+    51	        return array();
+    52	
+    53	        // @see
+    54	        /**
+    55	         * API Providers
+    56	         * @see https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript
+    57	         */
+    58	        // https://api.bigdatacloud.net/data/ip-geolocation?key=' + apiKey,
+    59	        // 10,000 requests per month
+    60	        // Requires registration to get your API key
+    61	
+    62	        // https://www.cloudflare.com/cdn-cgi/trace
+    63	        // Returns plain text
+    64	        // Returns only IPv6 address if you have that
+    65	
+    66	        // https://api.db-ip.com/v2/free/self
+    67	        // 1000 per day
+    68	        // Requires non-null Origin request header
+    69	
+    70	        // https://json.geoiplookup.io
+    71	        // 10,000 requests per hour
+    72	        // Free plan only for non-commercial use
+    73	        // Returns only IPv6 address if you have that
+    74	
+    75	        // http://www.geoplugin.net/json.gp
+    76	        // 120 requests per minute
+    77	        // No SSL (https) with the free plan
+    78	
+    79	        // https://api.hackertarget.com/geoip/?q=[redacted]
+    80	        // 100 requests per day
+    81	        // Requires IP address parameter
+    82	        // Returns plain text
+    83	
+    84	        // https://ipapi.co/json/
+    85	        // 1,000 requests per day
+    86	        // Requires SSL (https)
+    87	        // Requires non-null Origin request header
+    88	        // Returns only IPv6 address if you have that
+    89	
+    90	        // http://ip-api.com/json
+
+EVIDENCE 9 — the 'availability' text string is just the FTC disclosure disclaimer
+Source: samples/amazon-auto-links/include/core/component/unit/_common/output/formatter/item/AmazonAutoLinks_UnitOutput__ItemFormatter.php:175
+Proves: the literal text 'availability' appears only in the mandatory Amazon
+        Associates FTC disclosure ('prices and availability are accurate as of...').
+        It is a compliance string, NOT a runtime check.
+-------------------------------------------------------------------------
+   170	             * @since  3.2.0
+   171	             * @since  3.5.0  Moved from `AmazonAutoLinks_UnitOutput_Base_ElementFormat`.
+   172	             * @return string
+   173	             */
+   174	            private function ___getDisclaimerTooltip() {
+   175	                $_sText   = __( "Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on [relevant Amazon Site(s), as applicable] at the time of purchase will apply to the purchase of this product.", 'amazon-auto-links' );
+   176	                $_sURL    = apply_filters( 'aal_filter_unit_output_disclaimer_link_url', '' );
+   177	                $_sHref   = $_sURL ? "href='" . esc_url( $_sURL ) . "'" : '';
+   178	                $_sTarget = $_sURL ? " target='_blank'" : '';
+   179	                return "<a {$_sHref}{$_sTarget} class='amazon-disclaimer-tooltip'>"
+   180	                        . __( 'More info', 'amazon-auto-links' )

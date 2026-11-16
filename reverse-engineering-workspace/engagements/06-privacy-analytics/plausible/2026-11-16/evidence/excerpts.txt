@@ -1,0 +1,486 @@
+EVIDENCE 0 - provenance + licence
+Commit: aa48a053e7387acde2d2d58aba358e54031250fd (2026-11-16)
+Licence: AGPLv3 (same as Dub - extract rules only, no verbatim code)
+                    GNU AFFERO GENERAL PUBLIC LICENSE
+                       Version 3, 19 November 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+EVIDENCE 1 - the visitor hash formula (generate_user_id)
+Source: lib/plausible/ingestion/event.ex:566-595
+Proves: user_id = SipHash(salt, user_agent + remote_ip + domain + root_domain + replay_session_id)
+  - salt: the rotating salt (current or previous)
+  - user_agent: full UA string
+  - remote_ip: the visitor IP (after remote_ip.ex header resolution)
+  - domain: the site domain being tracked
+  - root_domain: the registrable domain (via PublicSuffix), not the hostname
+  - replay_session_id: optional session-replay ID (EE only)
+Rule: the visitor hash is NOT a pure fingerprint - it includes the SITE DOMAIN,
+  so the same visitor on two different Plausible-tracked sites gets two different
+  hashes. This is cross-site privacy: sites cannot collude to de-anonymize.
+-------------------------------------------------------------------------
+   566	  defp generate_user_id(request, domain, hostname, salt) do
+   567	    cond do
+   568	      is_nil(salt) ->
+   569	        nil
+   570	
+   571	      is_nil(domain) ->
+   572	        nil
+   573	
+   574	      true ->
+   575	        user_agent = request.user_agent || ""
+   576	        root_domain = get_root_domain(hostname)
+   577	
+   578	        replay_session_id =
+   579	          on_ee do
+   580	            to_string(request.replay_session_id)
+   581	          else
+   582	            ""
+   583	          end
+   584	
+   585	        SipHash.hash!(
+   586	          salt,
+   587	          user_agent <> request.remote_ip <> domain <> root_domain <> replay_session_id
+   588	        )
+   589	    end
+   590	  end
+   591	
+   592	  defp get_root_domain("(none)"), do: "(none)"
+   593	
+   594	  defp get_root_domain(hostname) do
+   595	    case :inet.parse_ipv4_address(String.to_charlist(hostname)) do
+
+EVIDENCE 2 - the salt rotation (the privacy innovation)
+Source: lib/plausible/session/salts.ex (full, 96 lines)
+Proves: salts rotate every 90 seconds (configurable). The GenServer keeps
+  two salts: current and previous. Old salts are deleted after 48 hours.
+  On each event, put_salts fetches both; put_user_id hashes with current;
+  register_session tries previous_user_id (with previous salt) for grace
+  period - if a visitor's salt rotated between events, the previous hash
+  still matches for one rotation window.
+Rule: salt rotation makes visitor hashes UNLINKABLE across time. An attacker
+  who captures today's hashes cannot link them to next week's. This is the
+  strongest privacy guarantee short of not storing any identifier.
+-------------------------------------------------------------------------
+     1	defmodule Plausible.Session.Salts do
+     2	  @moduledoc """
+     3	  Genserver caching salts and managing their rotation.
+     4	  """
+     5	
+     6	  use GenServer
+     7	  use Plausible.Repo
+     8	
+     9	  def start_link(opts) do
+    10	    GenServer.start_link(__MODULE__, opts, name: opts[:name] || __MODULE__)
+    11	  end
+    12	
+    13	  @impl true
+    14	  def init(opts) do
+    15	    name = opts[:name] || __MODULE__
+    16	    now = opts[:now] || DateTime.utc_now()
+    17	    clean_old_salts(now)
+    18	
+    19	    ^name =
+    20	      :ets.new(name, [
+    21	        :named_table,
+    22	        :set,
+    23	        :protected,
+    24	        {:read_concurrency, true}
+    25	      ])
+    26	
+    27	    refresh(name, now)
+    28	
+    29	    {:ok, name}
+    30	  end
+    31	
+    32	  def refresh(name, now) do
+    33	    salts = Repo.all(from s in "salts", select: s.salt, order_by: [desc: s.id], limit: 2)
+    34	
+    35	    state =
+    36	      case salts do
+    37	        [current, prev] ->
+    38	          %{previous: prev, current: current}
+    39	
+    40	        [current] ->
+    41	          %{previous: nil, current: current}
+    42	
+    43	        [] ->
+    44	          new = generate_and_persist_new_salt(now)
+    45	          %{previous: nil, current: new}
+    46	      end
+    47	
+    48	    true = :ets.insert(name, {:state, state})
+    49	    interval = Application.get_env(:plausible, __MODULE__)[:interval] || :timer.seconds(90)
+    50	    Process.send_after(self(), {:refresh, now}, interval)
+    51	    :ok
+    52	  end
+    53	
+    54	  def rotate(name \\ __MODULE__, now \\ DateTime.utc_now()) do
+    55	    GenServer.call(name, {:rotate, now})
+    56	  end
+    57	
+    58	  def fetch(name \\ __MODULE__) do
+    59	    [state: state] = :ets.lookup(name, :state)
+    60	    state
+    61	  end
+    62	
+    63	  @impl true
+    64	  def handle_call({:rotate, now}, _from, name) do
+    65	    current = fetch(name).current
+    66	    clean_old_salts(now)
+    67	
+    68	    state =
+    69	      %{
+    70	        current: generate_and_persist_new_salt(now),
+    71	        previous: current
+    72	      }
+    73	
+    74	    true = :ets.insert(name, {:state, state})
+    75	    {:reply, :ok, name}
+    76	  end
+    77	
+    78	  @impl true
+    79	  def handle_info({:refresh, now}, name) do
+    80	    refresh(name, now)
+    81	    {:noreply, name}
+    82	  end
+    83	
+    84	  defp generate_and_persist_new_salt(now) do
+    85	    salt = :crypto.strong_rand_bytes(16)
+    86	    Repo.insert_all("salts", [%{salt: salt, inserted_at: now}])
+    87	    salt
+    88	  end
+    89	
+    90	  defp clean_old_salts(now) do
+    91	    h48_ago =
+    92	      DateTime.shift(now, hour: -48)
+    93	
+    94	    Repo.delete_all(from s in "salts", where: s.inserted_at < ^h48_ago)
+    95	  end
+    96	end
+
+EVIDENCE 3 - bot detection via UAInspector
+Source: lib/plausible/ingestion/event.ex:255-285
+Proves: bot filter uses UAInspector library (a maintained UA parser).
+  Two drop cases:
+  1) UAInspector.Result.Bot struct - any UA classified as a bot
+  2) UAInspector.Result.Client with name='Headless Chrome' - explicitly drops
+     headless Chrome even though UAInspector classifies it as a client.
+Rule: rely on a maintained UA-database library for bot classification, NOT a
+  hand-maintained string list. But ADD explicit overrides for known-evasive
+  patterns (headless Chrome) the library misses.
+-------------------------------------------------------------------------
+   255	  defp drop_shield_rule_page(%__MODULE__{} = event, _context) do
+   256	    if Plausible.Shields.page_blocked?(event.domain, event.request.pathname) do
+   257	      drop(event, :site_page_blocklist)
+   258	    else
+   259	      event
+   260	    end
+   261	  end
+   262	
+   263	  defp put_user_agent(%__MODULE__{} = event, _context) do
+   264	    case parse_user_agent(event.request) do
+   265	      {:ok, %UAInspector.Result{client: %UAInspector.Result.Client{name: "Headless Chrome"}}} ->
+   266	        drop(event, :bot)
+   267	
+   268	      {:ok, %UAInspector.Result.Bot{}} ->
+   269	        drop(event, :bot)
+   270	
+   271	      {:ok, %UAInspector.Result{} = user_agent} ->
+   272	        update_session_attrs(event, %{
+   273	          operating_system: os_name(user_agent),
+   274	          operating_system_version: os_version(user_agent),
+   275	          browser: browser_name(user_agent),
+   276	          browser_version: browser_version(user_agent),
+   277	          screen_size: screen_size(user_agent)
+   278	        })
+   279	
+   280	      _any ->
+   281	        event
+   282	    end
+   283	  end
+   284	
+   285	  defp put_basic_info(%__MODULE__{} = event, _context) do
+
+EVIDENCE 4 - the drop_reason enum (15 reasons)
+Source: lib/plausible/ingestion/event.ex:24-40
+Proves: an event can be dropped for 15 distinct reasons, each logged:
+  :bot, :spam_referrer, GateKeeper.policy, :invalid, :dc_ip (datacenter IP),
+  :threat_ip, :site_ip_blocklist, :site_country_blocklist, :site_page_blocklist,
+  :site_hostname_allowlist, :verification_agent, :lock_timeout,
+  :no_session_for_engagement, :persist_timeout, :persist_error, :persist_decode_error
+Rule: every drop reason is a named atom, not a string. The pipeline is
+  observable - you can count drops by reason in telemetry.
+-------------------------------------------------------------------------
+    24	  @type drop_reason() ::
+    25	          :bot
+    26	          | :spam_referrer
+    27	          | GateKeeper.policy()
+    28	          | :invalid
+    29	          | :dc_ip
+    30	          | :threat_ip
+    31	          | :site_ip_blocklist
+    32	          | :site_country_blocklist
+    33	          | :site_page_blocklist
+    34	          | :site_hostname_allowlist
+    35	          | :verification_agent
+    36	          | :lock_timeout
+    37	          | :no_session_for_engagement
+    38	          | :persist_timeout
+    39	          | :persist_error
+    40	          | :persist_decode_error
+
+EVIDENCE 5 - remote_ip.ex: the IP resolution priority chain
+Source: lib/plausible_web/remote_ip.ex (full, 59 lines)
+Proves: IP resolution checks headers in priority order:
+  1) x-plausible-ip (Plausible's own header, for proxy setups)
+  2) cf-connecting-ip (Cloudflare)
+  3) x-forwarded-for (generic proxy)
+  4) b-forwarded-for (Bunny CDN)
+  5) forwarded (RFC 7239 standard)
+  6) conn.remote_ip (fallback to socket IP)
+Rule: handle ALL the CDN/proxy headers, not just x-forwarded-for. The order
+  matters - a spoofed x-forwarded-for should not override Cloudflare's
+  cf-connecting-ip when behind Cloudflare.
+-------------------------------------------------------------------------
+     1	defmodule PlausibleWeb.RemoteIP do
+     2	  @moduledoc """
+     3	  Implements the strategy of retrieving client's remote IP
+     4	  """
+     5	
+     6	  def get(conn) do
+     7	    x_plausible_ip = List.first(Plug.Conn.get_req_header(conn, "x-plausible-ip")) || ""
+     8	    cf_connecting_ip = List.first(Plug.Conn.get_req_header(conn, "cf-connecting-ip")) || ""
+     9	    x_forwarded_for = List.first(Plug.Conn.get_req_header(conn, "x-forwarded-for")) || ""
+    10	    b_forwarded_for = List.first(Plug.Conn.get_req_header(conn, "b-forwarded-for")) || ""
+    11	    forwarded = List.first(Plug.Conn.get_req_header(conn, "forwarded")) || ""
+    12	
+    13	    cond do
+    14	      byte_size(x_plausible_ip) > 0 ->
+    15	        clean_ip(x_plausible_ip)
+    16	
+    17	      byte_size(cf_connecting_ip) > 0 ->
+    18	        clean_ip(cf_connecting_ip)
+    19	
+    20	      byte_size(b_forwarded_for) > 0 ->
+    21	        parse_forwarded_for(b_forwarded_for)
+    22	
+    23	      byte_size(x_forwarded_for) > 0 ->
+    24	        parse_forwarded_for(x_forwarded_for)
+    25	
+    26	      byte_size(forwarded) > 0 ->
+    27	        Regex.named_captures(~r/for=(?<for>[^;,]+).*$/, forwarded)
+    28	        |> Map.get("for")
+    29	        # IPv6 addresses are enclosed in quote marks and square brackets: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded
+    30	        |> String.trim("\"")
+    31	        |> clean_ip()
+    32	
+    33	      true ->
+    34	        to_string(:inet_parse.ntoa(conn.remote_ip))
+    35	    end
+    36	  end
+    37	
+    38	  # Removes port from both IPv4 and IPv6 addresses. From https://regexr.com/3hpvt
+    39	  # Removes surrounding [] of an IPv6 address
+    40	  @port_regex ~r/((\.\d+)|(\]))(?<port>:[0-9]+)$/
+    41	  defp clean_ip(ip_and_port) do
+    42	    ip =
+    43	      case Regex.named_captures(@port_regex, ip_and_port) do
+    44	        %{"port" => port} -> String.trim_trailing(ip_and_port, port)
+    45	        _ -> ip_and_port
+    46	      end
+    47	
+    48	    ip
+    49	    |> String.trim_leading("[")
+    50	    |> String.trim_trailing("]")
+    51	  end
+    52	
+    53	  defp parse_forwarded_for(header) do
+    54	    String.split(header, ",")
+    55	    |> Enum.map(&String.trim/1)
+    56	    |> List.first()
+    57	    |> clean_ip()
+    58	  end
+    59	end
+
+EVIDENCE 6 - put_user_id + register_session (the dual-salt grace window)
+Source: lib/plausible/ingestion/event.ex:396-440
+Proves: put_user_id generates the hash with salts.current. register_session
+  ALSO generates previous_user_id with salts.previous. The persistor tries
+  the current first; if no session matches, tries previous. This gives a
+  one-rotation (90s) grace window where a visitor whose salt rotated
+  between events is still linked to the same session.
+Rule: when rotating a hash salt, keep the previous salt valid for one
+  rotation period to avoid splitting sessions on rotation boundaries.
+-------------------------------------------------------------------------
+   396	  defp put_salts(%__MODULE__{} = event, _context) do
+   397	    %{event | salts: Plausible.Session.Salts.fetch()}
+   398	  end
+   399	
+   400	  defp put_user_id(%__MODULE__{} = event, _context) do
+   401	    update_event_attrs(event, %{
+   402	      user_id:
+   403	        generate_user_id(
+   404	          event.request,
+   405	          event.domain,
+   406	          event.clickhouse_event_attrs.hostname,
+   407	          event.salts.current
+   408	        )
+   409	    })
+   410	  end
+   411	
+   412	  defp validate_clickhouse_event(%__MODULE__{} = event, _context) do
+   413	    clickhouse_event =
+   414	      event
+   415	      |> Map.fetch!(:clickhouse_event_attrs)
+   416	      |> ClickhouseEventV2.new()
+   417	
+   418	    case Ecto.Changeset.apply_action(clickhouse_event, nil) do
+   419	      {:ok, valid_clickhouse_event} ->
+   420	        %{event | clickhouse_event: valid_clickhouse_event}
+   421	
+   422	      {:error, changeset} ->
+   423	        drop(event, :invalid, changeset: changeset)
+   424	    end
+   425	  end
+   426	
+   427	  defp register_session(%__MODULE__{} = event, context) do
+   428	    persistor_opts = Keyword.get(context, :persistor_opts, [])
+   429	
+   430	    previous_user_id =
+   431	      generate_user_id(
+   432	        event.request,
+   433	        event.domain,
+   434	        event.clickhouse_event.hostname,
+   435	        event.salts.previous
+   436	      )
+   437	
+   438	    case Plausible.Ingestion.Persistor.persist_event(event, previous_user_id, persistor_opts) do
+   439	      {:ok, event} ->
+   440	        emit_telemetry_buffered(event)
+
+EVIDENCE 7 - clickhouse_session_v2.ex: user_id is UInt64 (the hash fits)
+Source: lib/plausible/clickhouse_session_v2.ex:39
+Proves: field :user_id, Ch, type: 'UInt64' - the SipHash output (64-bit)
+  is stored as a UInt64, not as a string. This is ~50% smaller and faster
+  to index/join than a hex string.
+Rule: store visitor hashes as integers (UInt64) in the analytics store,
+  not as hex strings. Same for Postgres - use BIGINT.
+-------------------------------------------------------------------------
+    35	  @primary_key false
+    36	  schema "sessions_v2" do
+    37	    field :hostname, :string
+    38	    field :site_id, Ch, type: "UInt64"
+    39	    field :user_id, Ch, type: "UInt64"
+    40	    field :session_id, Ch, type: "UInt64"
+    41	
+    42	    field :start, :naive_datetime
+    43	    field :duration, Ch, type: "UInt32"
+    44	    field :is_bounce, BoolUInt8
+    45	    field :entry_page, :string
+    46	    field :exit_page, :string
+    47	    field :exit_page_hostname, :string
+    48	    field :pageviews, Ch, type: "Int32"
+    49	    field :events, Ch, type: "Int32"
+    50	    field :sign, Ch, type: "Int8"
+    51	
+    52	    field :"entry_meta.key", {:array, :string}
+    53	    field :"entry_meta.value", {:array, :string}
+    54	
+    55	    field :utm_medium, :string
+
+EVIDENCE 8 - the tracker event payload (track.js)
+Source: tracker/src/track.js (176 lines, head)
+Proves: the client-side payload sent to /api/event is intentionally minimal:
+  payload.n = event name (e.g. 'pageview')
+  payload.u = URL
+  payload.r = referrer (document.referrer)
+  payload.p = custom props
+  payload.h = hostname
+NO cookies, NO fingerprinting, NO localStorage on the client. The visitor
+  hash is computed SERVER-SIDE from IP + UA + domain. The client sends only
+  what the server cannot know (URL, referrer).
+Rule: privacy-first analytics = client sends minimal data, server computes
+  the identifier from request properties. No client-side cookies.
+-------------------------------------------------------------------------
+     1	import { sendRequest } from './networking'
+     2	import {
+     3	  prePageviewTrack,
+     4	  postPageviewTrack,
+     5	  onPageviewIgnored
+     6	} from './engagement'
+     7	import { config, scriptEl } from './config'
+     8	
+     9	export function track(eventName, options) {
+    10	  if (COMPILE_PLAUSIBLE_NPM && !config.isInitialized) {
+    11	    throw new Error(
+    12	      'plausible.track() can only be called after plausible.init()'
+    13	    )
+    14	  }
+    15	
+    16	  var isPageview = eventName === 'pageview'
+    17	
+    18	  if (isPageview) {
+    19	    prePageviewTrack()
+    20	  }
+    21	
+    22	  if (!(COMPILE_LOCAL && (!COMPILE_CONFIG || config.captureOnLocalhost))) {
+    23	    if (
+    24	      /^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(
+    25	        location.hostname
+    26	      ) ||
+    27	      location.protocol === 'file:'
+    28	    ) {
+    29	      return onIgnoredEvent(eventName, options, 'localhost')
+    30	    }
+    31	    if (
+    32	      (window._phantom ||
+    33	        window.__nightmare ||
+    34	        window.navigator.webdriver ||
+    35	        window.Cypress) &&
+    36	      !window.__plausible
+    37	    ) {
+    38	      return onIgnoredEvent(eventName, options)
+    39	    }
+    40	  }
+    41	  try {
+    42	    if (window.localStorage.plausible_ignore === 'true') {
+    43	      return onIgnoredEvent(eventName, options, 'localStorage flag')
+    44	    }
+    45	  } catch (_error) {
+    46	    // ignore error
+    47	  }
+    48	
+    49	  if (COMPILE_EXCLUSIONS) {
+    50	    var dataIncludeAttr = scriptEl && scriptEl.getAttribute('data-include')
+    51	    var dataExcludeAttr = scriptEl && scriptEl.getAttribute('data-exclude')
+    52	
+    53	    function pathMatches(wildcardPath) {
+    54	      var actualPath = location.pathname
+    55	
+    56	      if (COMPILE_HASH && (!COMPILE_CONFIG || config.hashBasedRouting)) {
+    57	        actualPath += location.hash
+    58	      }
+    59	
+    60	      return actualPath.match(
+    61	        new RegExp(
+    62	          '^' +
+    63	            wildcardPath
+    64	              .trim()
+    65	              .replace(/\*\*/g, '.*')
+    66	              // eslint-disable-next-line no-useless-escape
+    67	              .replace(/([^\.])\*/g, '$1[^\\s\/]*') +
+    68	            // eslint-disable-next-line no-useless-escape
+    69	            '\/?$'
+    70	        )
+    71	      )
+    72	    }
+    73	
+    74	    if (isPageview) {
+    75	      var isIncluded =
+    76	        !dataIncludeAttr ||
+    77	        (dataIncludeAttr && dataIncludeAttr.split(',').some(pathMatches))
+    78	      var isExcluded =
+    79	        dataExcludeAttr && dataExcludeAttr.split(',').some(pathMatches)
+    80	

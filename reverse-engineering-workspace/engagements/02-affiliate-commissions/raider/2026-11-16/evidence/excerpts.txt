@@ -1,0 +1,482 @@
+EVIDENCE 0 — provenance + licence
+Commit: 56fe2e5023d5761abca22d3733cb46f7bfb457b2 (2026-10-09)
+Licence: MPL-2.0 (file-level copyleft; pattern re-implementation OK)
+Mozilla Public License Version 2.0
+==================================
+
+1. Definitions
+--------------
+
+EVIDENCE 1 — data model: src/storage/models.rs (full, 74 lines)
+Proves: 5 entities — Account, Balance, Payout, Tracker, AccountRecoveryUpdate
+        Account.commission is a BigDecimal (percentage stored as decimal)
+        Balance has: amount, currency, released (bool), trace, account_id, tracker_id
+        Payout has: number (sequential per account), amount, currency, status, account, invoice_url
+        Tracker has: id (varchar, the tracking code), label, statistics_signups
+-------------------------------------------------------------------------
+     1	// Raider
+     2	//
+     3	// Affiliates dashboard
+     4	// Copyright: 2018, Valerian Saliou <[email redacted]>
+     5	// License: Mozilla Public License v2.0 (MPL v2.0)
+     6	
+     7	use bigdecimal::BigDecimal;
+     8	use chrono::naive::NaiveDateTime;
+     9	
+    10	use super::schemas::{account, balance, payout, tracker};
+    11	
+    12	#[derive(Identifiable, Queryable, Associations, Debug)]
+    13	#[table_name = "account"]
+    14	pub struct Account {
+    15	    pub id: i32,
+    16	    pub email: String,
+    17	    pub password: Vec<u8>,
+    18	    pub recovery: Option<Vec<u8>>,
+    19	    pub commission: BigDecimal,
+    20	    pub full_name: Option<String>,
+    21	    pub address: Option<String>,
+    22	    pub country: Option<String>,
+    23	    pub payout_method: Option<String>,
+    24	    pub payout_instructions: Option<String>,
+    25	    pub notify_balance: bool,
+    26	    pub created_at: NaiveDateTime,
+    27	    pub updated_at: NaiveDateTime,
+    28	}
+    29	
+    30	#[derive(Identifiable, Queryable, Associations, Debug)]
+    31	#[table_name = "balance"]
+    32	pub struct Balance {
+    33	    pub id: i32,
+    34	    pub amount: BigDecimal,
+    35	    pub currency: String,
+    36	    pub released: bool,
+    37	    pub trace: Option<String>,
+    38	    pub account_id: i32,
+    39	    pub tracker_id: Option<String>,
+    40	    pub created_at: NaiveDateTime,
+    41	    pub updated_at: NaiveDateTime,
+    42	}
+    43	
+    44	#[derive(Identifiable, Queryable, Associations, Debug)]
+    45	#[table_name = "payout"]
+    46	pub struct Payout {
+    47	    pub id: i32,
+    48	    pub number: i32,
+    49	    pub amount: BigDecimal,
+    50	    pub currency: String,
+    51	    pub status: String,
+    52	    pub account: Option<String>,
+    53	    pub invoice_url: Option<String>,
+    54	    pub account_id: i32,
+    55	    pub created_at: NaiveDateTime,
+    56	    pub updated_at: NaiveDateTime,
+    57	}
+    58	
+    59	#[derive(Identifiable, Queryable, Associations, Debug)]
+    60	#[table_name = "tracker"]
+    61	pub struct Tracker {
+    62	    pub id: String,
+    63	    pub label: String,
+    64	    pub statistics_signups: i32,
+    65	    pub account_id: i32,
+    66	    pub created_at: NaiveDateTime,
+    67	    pub updated_at: NaiveDateTime,
+    68	}
+    69	
+    70	#[derive(AsChangeset)]
+    71	#[table_name = "account"]
+    72	pub struct AccountRecoveryUpdate {
+    73	    pub recovery: Vec<u8>,
+    74	}
+
+EVIDENCE 2 — table schemas + FK joins: src/storage/schemas.rs (full, 70 lines)
+Proves: joinable!() declarations — balance.account_id -> account.id,
+        balance.tracker_id -> tracker.id, payout.account_id -> account.id,
+        tracker.account_id -> account.id. One account has many trackers
+        (one affiliate can have many tracking codes).
+-------------------------------------------------------------------------
+     1	// Raider
+     2	//
+     3	// Affiliates dashboard
+     4	// Copyright: 2018, Valerian Saliou <[email redacted]>
+     5	// License: Mozilla Public License v2.0 (MPL v2.0)
+     6	
+     7	table! {
+     8	    account (id) {
+     9	        id -> Integer,
+    10	        email -> Varchar,
+    11	        password -> Binary,
+    12	        recovery -> Nullable<Binary>,
+    13	        commission -> Numeric,
+    14	        full_name -> Nullable<Varchar>,
+    15	        address -> Nullable<Varchar>,
+    16	        country -> Nullable<Varchar>,
+    17	        payout_method -> Nullable<Varchar>,
+    18	        payout_instructions -> Nullable<Text>,
+    19	        notify_balance -> Bool,
+    20	        created_at -> Timestamp,
+    21	        updated_at -> Timestamp,
+    22	    }
+    23	}
+    24	
+    25	table! {
+    26	    balance (id) {
+    27	        id -> Integer,
+    28	        amount -> Numeric,
+    29	        currency -> VarChar,
+    30	        released -> Bool,
+    31	        trace -> Nullable<Text>,
+    32	        account_id -> Integer,
+    33	        tracker_id -> Nullable<VarChar>,
+    34	        created_at -> Timestamp,
+    35	        updated_at -> Timestamp,
+    36	    }
+    37	}
+    38	
+    39	table! {
+    40	    payout (id) {
+    41	        id -> Integer,
+    42	        number -> Integer,
+    43	        amount -> Numeric,
+    44	        currency -> VarChar,
+    45	        status -> VarChar,
+    46	        account -> Nullable<VarChar>,
+    47	        invoice_url -> Nullable<VarChar>,
+    48	        account_id -> Integer,
+    49	        created_at -> Timestamp,
+    50	        updated_at -> Timestamp,
+    51	    }
+    52	}
+    53	
+    54	table! {
+    55	    tracker (id) {
+    56	        id -> VarChar,
+    57	        label -> VarChar,
+    58	        statistics_signups -> Integer,
+    59	        account_id -> Integer,
+    60	        created_at -> Timestamp,
+    61	        updated_at -> Timestamp,
+    62	    }
+    63	}
+    64	
+    65	joinable!(balance -> account(account_id));
+    66	joinable!(balance -> tracker(tracker_id));
+    67	joinable!(payout -> account(account_id));
+    68	joinable!(tracker -> account(account_id));
+    69	
+    70	allow_tables_to_appear_in_same_query!(account, tracker);
+
+EVIDENCE 3 — commission calculation: src/track/payment.rs:42-124
+Proves: handle_payment() flow:
+        1) Normalize real amount to payout currency via exchange_normalize()
+        2) Reject if amount < 0 (InvalidAmount); skip if amount == 0 (Ok(None))
+        3) Resolve tracker+account via inner_join on tracking_id
+        4) commission_amount = amount * account.commission (percentage stored on the ACCOUNT)
+        5) If commission_amount > 0, INSERT into balance (released=false)
+        6) Return tuple for optional email notification
+        Errors: InvalidAmount, BadCurrency, NotFound
+-------------------------------------------------------------------------
+    42	pub fn handle_payment(
+    43	    db: &DbConn,
+    44	    tracking_id: &str,
+    45	    amount_real: f32,
+    46	    currency: &str,
+    47	    trace: &Option<String>,
+    48	) -> Result<Option<(bool, String, String, f32, String)>, HandlePaymentError> {
+    49	    log::debug!(
+    50	        "payment track handle: {} of real amount: {} {}",
+    51	        tracking_id,
+    52	        currency,
+    53	        amount_real
+    54	    );
+    55	
+    56	    // Normalize amount
+    57	    if let Ok(amount) = exchange_normalize(amount_real, currency) {
+    58	        log::debug!(
+    59	            "normalized real amount: {} {} to: {} {}",
+    60	            currency,
+    61	            amount_real,
+    62	            &APP_CONF.payout.currency,
+    63	            amount
+    64	        );
+    65	
+    66	        // Validate amount
+    67	        if amount < 0.00 {
+    68	            return Err(HandlePaymentError::InvalidAmount);
+    69	        }
+    70	
+    71	        // Ignore zero amount
+    72	        if amount == 0.00 {
+    73	            return Ok(None);
+    74	        }
+    75	
+    76	        // Resolve user for tracking code
+    77	        let track_result = tracker
+    78	            .filter(tracker_id.eq(tracking_id))
+    79	            .inner_join(account)
+    80	            .first::<(Tracker, Account)>(&**db);
+    81	
+    82	        if let Ok(track_inner) = track_result {
+    83	            // Apply user commission percentage to amount
+    84	            let commission_amount = amount * track_inner.1.commission.to_f32().unwrap_or(0.0);
+    85	
+    86	            if commission_amount > 0.0 {
+    87	                let now_date = Utc::now().naive_utc();
+    88	
+    89	                let insert_result = diesel::insert_into(balance)
+    90	                    .values((
+    91	                        &balance_amount.eq(BigDecimal::from(commission_amount)),
+    92	                        &balance_currency.eq(&APP_CONF.payout.currency),
+    93	                        &balance_trace.eq(trace),
+    94	                        &balance_account_id.eq(&track_inner.1.id),
+    95	                        &balance_tracker_id.eq(&track_inner.0.id),
+    96	                        &balance_created_at.eq(&now_date),
+    97	                        &balance_updated_at.eq(&now_date),
+    98	                    ))
+    99	                    .execute(&**db);
+   100	
+   101	                if insert_result.is_ok() == true {
+   102	                    return Ok(Some((
+   103	                        track_inner.1.notify_balance,
+   104	                        track_inner.1.email.to_owned(),
+   105	                        track_inner.0.id.to_owned(),
+   106	                        commission_amount,
+   107	                        APP_CONF.payout.currency.to_owned(),
+   108	                    )));
+   109	                }
+   110	            }
+   111	        }
+   112	
+   113	        log::warn!(
+   114	            "payment track: {} could not be stored to balance for amount: {} {}",
+   115	            tracking_id,
+   116	            currency,
+   117	            amount
+   118	        );
+   119	
+   120	        Err(HandlePaymentError::NotFound)
+   121	    } else {
+   122	        Err(HandlePaymentError::BadCurrency)
+   123	    }
+   124	}
+
+EVIDENCE 4 — payout request handler: src/responder/routes.rs:740-829
+Proves: payout state machine + result codes:
+        - config_failure: missing full_name/address/country/payout_method/payout_instructions
+        - amount_neutral: balance_due <= 0
+        - amount_failure: balance_due < APP_CONF.payout.amount_minimum
+        - request_success: marks all unreleased balance rows as released=true,
+          creates payout row with number = max(existing numbers)+1, sends emails
+        - request_failure: DB insert failed
+        NOTE: payout.status is NULL/empty on creation; the actual payout
+        status transitions are NOT enforced in code — handled manually by admin
+        (utilities.rs:127 says 'Review the pending payout in the database and
+        accept or refuse it').
+-------------------------------------------------------------------------
+   740	#[post("/dashboard/payouts/form/request")]
+   741	pub fn post_dashboard_payouts_form_request(
+   742	    auth: AuthGuard,
+   743	    db: DbConn,
+   744	) -> Result<Redirect, Status> {
+   745	    let account_result = account.filter(account_id.eq(auth.0)).first::<Account>(&*db);
+   746	
+   747	    if let Ok(account_inner) = account_result {
+   748	        let result_code = {
+   749	            // Check if user has all payout details properly configured
+   750	            if account_inner.full_name.unwrap_or_default().is_empty()
+   751	                || account_inner.address.unwrap_or_default().is_empty()
+   752	                || account_inner.country.unwrap_or_default().is_empty()
+   753	                || account_inner.payout_method.unwrap_or_default().is_empty()
+   754	                || account_inner
+   755	                    .payout_instructions
+   756	                    .unwrap_or_default()
+   757	                    .is_empty()
+   758	            {
+   759	                "config_failure"
+   760	            } else {
+   761	                // Check if there is money due
+   762	                let balance_due = get_balance(&db, auth.0, Some(false));
+   763	
+   764	                if balance_due > 0.0 {
+   765	                    if balance_due >= APP_CONF.payout.amount_minimum {
+   766	                        let now_date = Utc::now().naive_utc();
+   767	
+   768	                        // Bump all balance contents to mark them as requested
+   769	                        let update_result = diesel::update(
+   770	                            balance
+   771	                                .filter(balance_account_id.eq(auth.0))
+   772	                                .filter(balance_released.eq(false)),
+   773	                        )
+   774	                        .set((balance_released.eq(true), balance_updated_at.eq(&now_date)))
+   775	                        .execute(&*db);
+   776	
+   777	                        // Acquire latest payout number
+   778	                        let maximum_result = payout
+   779	                            .filter(payout_account_id.eq(auth.0))
+   780	                            .select(max(payout_number))
+   781	                            .first::<Option<i32>>(&*db)
+   782	                            .map(|value| if value.is_none() { Some(0) } else { value });
+   783	
+   784	                        match (update_result, maximum_result) {
+   785	                            (Ok(_), Ok(Some(maximum_number))) => {
+   786	                                // Create payout
+   787	                                let insert_result = diesel::insert_into(payout)
+   788	                                    .values((
+   789	                                        &payout_amount.eq(BigDecimal::from(balance_due)),
+   790	                                        &payout_number.eq(maximum_number + 1),
+   791	                                        &payout_currency.eq(&APP_CONF.payout.currency),
+   792	                                        &payout_account_id.eq(auth.0),
+   793	                                        &payout_created_at.eq(&now_date),
+   794	                                        &payout_updated_at.eq(&now_date),
+   795	                                    ))
+   796	                                    .execute(&*db);
+   797	
+   798	                                if insert_result.is_ok() == true {
+   799	                                    send_payout_emails(
+   800	                                        auth.0,
+   801	                                        &account_inner.email,
+   802	                                        balance_due,
+   803	                                        &APP_CONF.payout.currency,
+   804	                                    );
+   805	
+   806	                                    "request_success"
+   807	                                } else {
+   808	                                    "request_failure"
+   809	                                }
+   810	                            }
+   811	                            _ => "request_failure",
+   812	                        }
+   813	                    } else {
+   814	                        "amount_failure"
+   815	                    }
+   816	                } else {
+   817	                    "amount_neutral"
+   818	                }
+   819	            }
+   820	        };
+   821	
+   822	        Ok(Redirect::to(format!(
+   823	            "/dashboard/payouts/?result={}",
+   824	            result_code
+   825	        )))
+   826	    } else {
+   827	        Err(Status::PreconditionFailed)
+   828	    }
+   829	}
+
+EVIDENCE 5 — payment postback endpoint: src/responder/routes.rs:960-1004
+Proves: POST /track/payment/<tracking_id> with JSON {amount, currency, trace}
+        Auth via TrackGuard (single shared token, APP_CONF.server.track_token)
+        Errors map: InvalidAmount->400, BadCurrency->412, NotFound->404
+        Optional email notification dispatched on a separate thread
+-------------------------------------------------------------------------
+   960	#[post(
+   961	    "/track/payment/<tracking_id>",
+   962	    data = "<data>",
+   963	    format = "application/json"
+   964	)]
+   965	pub fn post_track_payment(
+   966	    _auth: TrackGuard,
+   967	    db: DbConn,
+   968	    tracking_id: String,
+   969	    data: Json<TrackPaymentData>,
+   970	) -> Result<(), Status> {
+   971	    match track_handle_payment(
+   972	        &db,
+   973	        &tracking_id,
+   974	        data.amount,
+   975	        &data.currency.to_uppercase(),
+   976	        &data.trace,
+   977	    ) {
+   978	        Ok(results) => {
+   979	            if let Some((
+   980	                should_notify,
+   981	                email,
+   982	                source_tracker_id,
+   983	                commission_amount,
+   984	                commission_currency,
+   985	            )) = results
+   986	            {
+   987	                // Notify user about received commission
+   988	                if should_notify == true {
+   989	                    track_run_notify_payment(
+   990	                        email,
+   991	                        source_tracker_id,
+   992	                        commission_amount,
+   993	                        commission_currency,
+   994	                    );
+   995	                }
+   996	            }
+   997	
+   998	            Ok(())
+   999	        }
+  1000	        Err(TrackHandlePaymentError::InvalidAmount) => Err(Status::BadRequest),
+  1001	        Err(TrackHandlePaymentError::BadCurrency) => Err(Status::PreconditionFailed),
+  1002	        Err(TrackHandlePaymentError::NotFound) => Err(Status::NotFound),
+  1003	    }
+  1004	}
+
+EVIDENCE 6 — signup tracking endpoint + attribution model:
+              src/responder/routes.rs:1006-1012 + track_guard.rs
+Proves: POST /track/signup/<tracking_id> — increments statistics_signups on
+        the tracker (non-atomic per inline comment: 'not 100% safe').
+        TrackGuard is a single shared bearer token — server-to-server only.
+        NO browser cookie attribution, NO first-party tracking pixel.
+        Attribution is by TRACKING_ID passed in the URL path — your backend
+        must remember which tracker a visitor clicked (cookie on YOUR domain)
+        and replay it to Raider on payment.
+-------------------------------------------------------------------------
+  1006	#[post("/track/signup/<tracking_id>")]
+  1007	pub fn post_track_signup(_auth: TrackGuard, db: DbConn, tracking_id: String) -> Result<(), Status> {
+  1008	    match track_handle_signup(&db, &tracking_id) {
+  1009	        Ok(_) => Ok(()),
+  1010	        Err(TrackHandleSignupError::NotFound) => Err(Status::NotFound),
+  1011	    }
+  1012	}
+     1	// Raider
+     2	//
+     3	// Affiliates dashboard
+     4	// Copyright: 2018, Valerian Saliou <[email redacted]>
+     5	// License: Mozilla Public License v2.0 (MPL v2.0)
+     6	
+     7	use base64;
+     8	use rocket::http::Status;
+     9	use rocket::request::{self, FromRequest, Request};
+    10	use rocket::Outcome;
+    11	use APP_CONF;
+    12	
+    13	gen_auth_guard!(TrackGuard, APP_CONF.server.track_token);
+
+EVIDENCE 7 — non-atomic signup counter (acknowledged bug):
+              src/track/payment.rs:134-152
+Proves: handle_signup() reads statistics_signups, increments in Rust, writes back.
+        Comment admits: 'this increment is not atomic; thus it is not 100% safe.'
+        Rule: AVOID THIS PATTERN — use SQL-level UPDATE ... SET x = x + 1.
+-------------------------------------------------------------------------
+   126	pub fn handle_signup(db: &DbConn, tracking_id: &str) -> Result<(), HandleSignupError> {
+   127	    log::debug!("signup track handle: {}", tracking_id);
+   128	
+   129	    // Resolve tracking code
+   130	    let tracker_result = tracker
+   131	        .filter(tracker_id.eq(tracking_id))
+   132	        .first::<Tracker>(&**db);
+   133	
+   134	    if let Ok(tracker_inner) = tracker_result {
+   135	        // Notice: this increment is not atomic; thus it is not 100% safe. We do this for \
+   136	        //   simplicity as Diesel doesnt seem to provide a way to do an increment in the query.
+   137	        let update_result = diesel::update(tracker.filter(tracker_id.eq(tracking_id)))
+   138	            .set((
+   139	                tracker_statistics_signups.eq(tracker_inner.statistics_signups + 1),
+   140	                tracker_updated_at.eq(Utc::now().naive_utc()),
+   141	            ))
+   142	            .execute(&**db);
+   143	
+   144	        if update_result.is_ok() == true {
+   145	            return Ok(());
+   146	        }
+   147	    }
+   148	
+   149	    log::warn!("signup track: {} could not be stored", tracking_id);
+   150	
+   151	    Err(HandleSignupError::NotFound)
+   152	}

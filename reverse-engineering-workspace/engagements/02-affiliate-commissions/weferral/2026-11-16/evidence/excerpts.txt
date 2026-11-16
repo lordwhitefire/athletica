@@ -1,0 +1,243 @@
+EVIDENCE 0 — provenance + licence
+Commit: cfaf9a093b31912970a17d4169ba57706212d9d6 (2024-06-28)
+Licence: MIT (Copyright 2019 Tomasz O.) — most permissive of the three
+Note: Weferral is FRONTEND-ONLY (React+webpack dashboard). The commission
+      calculation logic lives in a backend API NOT in this repo — the UI
+      fetches ${port}/api/v1/commissions/. We can only RE the UI contract.
+MIT License
+
+Copyright (c) 2019 Tomasz O.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+EVIDENCE 1 — package.json confirms this is the dashboard only
+Source: samples/weferral/package.json
+Proves: name='weferral-dashboard'; only webpack scripts (start:dev, build:dev,
+        build:prod); no server, no DB driver, no migrations in deps.
+        The backend is a separate (unavailable) repo.
+-------------------------------------------------------------------------
+     1	{
+     2	  "name": "weferral-dashboard",
+     3	  "version": "0.1.0",
+     4	  "description": "Weferral provides all the tools needed to start, manage, and grow your affiliate program",
+     5	  "main": "index.js",
+     6	  "scripts": {
+     7	    "test": "echo \"Error: no test specified\" && exit 1",
+     8	    "start": "npm run start:dev",
+     9	    "build:dev": "node ./build/cli-tools.js --clear dist --create dist && webpack --config ./build/webpack.config.client.dev.js",
+    10	    "build:prod": "node ./build/cli-tools.js --clear dist --create dist && webpack --config ./build/webpack.config.client.prod.js",
+    11	    "start:dev": "node ./build/cli-tools.js --clear dist --create dist && webpack-dev-server --config ./build/webpack.config.client.dev.js",
+    12	    "start:prod": "node ./build/cli-tools.js --clear dist --create dist && webpack-dev-server --config ./build/webpack.config.client.prod.js"
+    13	  },
+    14	  "author": "Ezeh Uche",
+    15	  "license": "ISC",
+
+EVIDENCE 2 — CreateCampaign state: campaign-level commission fields
+Source: samples/weferral/app/routes/Forms/CreateCampaign/CreateCampaign.js
+Proves: campaign carries BOTH reward_type AND commission_type (decoupled).
+        Fields on the campaign object:
+          reward_type: 'cash_reward' | 'discount_coupon'
+          commission_type: (selected when reward_type === 'cash_reward')
+          reward: the percentage OR fixed amount (depending on commission_type)
+          recurring: bool (enable recurring commission)
+          recurring_limit: int (max # transactions rewarded, e.g. 12 = 12 months)
+          minimum_cash_payout: number (threshold below which no payout)
+          payout_term: (net terms, e.g. net-30)
+        This is RICHER than Raider's single account.commission BigDecimal.
+-------------------------------------------------------------------------
+    42	        this.state = {
+    43	            data: {},
+    44	            loading: true,
+    45	            recurring: false,
+    46	            rewardType: '',
+    47	            comType: '',
+    48	            reward: '',
+    49	            id: id,
+    50	            currentStep: _.first(sequence)
+    51	        }
+    52	        this.handleSubmit = this.handleSubmit.bind(this);
+    53	        this.handleChange = this.handleChange.bind(this);
+    54	        this.fetchData = this.fetchData.bind(this);
+    55	    }
+    56	
+    57	    async componentDidMount(){
+    58	        if(await isAdmin() === false){
+    59	            return this.props.history.push("/login");
+    60	            //return browserHistory.push("/");
+    61	        }
+    62	        this.fetchData();
+    63	    }
+    64	
+    65	    fetchData(){
+    66	        let self = this;
+    67	        if(this.state.id !== null){
+    68	            Fetcher(`${port}/api/v1/campaign/${this.state.id }`).then((res) => {
+    69	                self.setState({data: res.data, loading: false});
+    70	            }, (error) => {
+    71	                console.log(error);
+    72	            });
+    73	        }else{
+    74	            self.setState({loading: false});
+    75	        }
+    76	        
+    77	    }
+    78	
+    79	    handleSubmit(e) {
+    80	        //e.preventDefault();
+    81	
+    82	        const payload = {
+    83	            name: this.state.name,
+    84	            original_url: this.state.original_url,
+    85	            reward_type: this.state.reward_type,
+    86	            commission_type: this.state.commission_type,
+    87	            reward: this.state.reward,
+    88	            private_campaign: this.state.private_campaign,
+    89	            auto_approval: this.state.auto_approval,
+    90	            minimum_cash_payout: this.state.minimum_cash_payout,
+    91	            cookie_life: this.state.cookie_life,
+    92	            payout_term: this.state.payout_term,
+    93	            recurring_limit: this.state.recurring_limit,
+    94	            trial_period_days: this.state.trial_period_days
+    95	        }
+
+EVIDENCE 3 — reward_type + commission_type are first-class columns
+Source: samples/weferral/app/routes/Pages/Campaign/campaign-fields.js
+Proves: both fields appear as separate sortable columns in the campaign list.
+        Suggests the backend stores them as distinct enum/varchar columns.
+-------------------------------------------------------------------------
+   275	                )
+   276	            }
+   277	        }, {
+   278	            dataField: 'reward_type',
+   279	            text: 'Reward Type',
+   280	            sort: true,
+   281	            sortCaret
+   282	        }, {
+   283	            dataField: 'commission_type',
+   284	            text: 'Commission Type',
+   285	            sort: true,
+   286	            sortCaret
+   287	        }, {
+   288	            dataField: 'created_at',
+   289	            text: 'Date Created',
+   290	            formatter: (cell) =>
+   291	                moment(cell).format('DD/MM/YYYY'),
+   292	            sort: true,
+   293	            sortCaret
+   294	        }];
+   295	    }
+
+EVIDENCE 4 — recurring commission UI: toggle + limit explanation
+Source: samples/weferral/app/routes/Forms/CreateCampaign/CreateCampaign.js:323-348
+Proves: 'Enable recurring commission' checkbox; when on, reveals recurring_limit
+        input with helper text: 'Maximum number of transactions to be rewarded.
+        for eg. if you want to give only 12 months commission, set the value to 12'
+        RULE: recurring is bounded by a limit (no infinite lifetime from the UI —
+        though 'lifetime' could be a very high limit). The README mentions
+        'lifetime' but the UI implements it as recurring_limit.
+-------------------------------------------------------------------------
+   323	                                                                    />
+   324	                                                                    <CustomInput
+   325	                                                                        type="checkbox"
+   326	                                                                        onChange={this.handleChange}
+   327	                                                                        id="enable_recurring"
+   328	                                                                        name="enable_recurring"
+   329	                                                                        label="Enable recurring commission"
+   330	                                                                        className="mb-3"
+   331	                                                                    />
+   332	                                                                </FormGroup>
+   333	                                                                {this.state.recurring && <FormGroup>
+   334	                                                                    <Label for="recurring_limit">
+   335	                                                                        Recurring Limit
+   336	                                                                </Label>
+   337	                                                                    <Input
+   338	                                                                        type="text"
+   339	                                                                        onChange={this.handleChange}
+   340	                                                                        defaultValue={data.recurring_limit || ''}
+   341	                                                                        name="recurring_limit"
+   342	                                                                        id="recurring_limit"
+   343	                                                                        placeholder="Recurring Limit"
+   344	                                                                    />
+   345	                                                                    <p>Maximum number of transactions to be rewarded. for eg. if you want 
+   346	                                                                        to give only 12 months commission, set the value to <strong>12</strong>
+   347	                                                                    </p>
+   348	                                                                </FormGroup>}
+
+EVIDENCE 5 — minimum_cash_payout + payout_term on the campaign
+Source: samples/weferral/app/routes/Forms/CreateCampaign/CreateCampaign.js:363-390
+Proves: minimum_cash_payout = 'pay your referrals only if their balance is over
+        this value' (per-campaign threshold, not global like Raider).
+        payout_term = net payment terms.
+-------------------------------------------------------------------------
+   363	                                                                    </p>
+   364	                                                                </FormGroup>}
+   365	                                                                <FormGroup>
+   366	                                                                    <Label for="minimum_cash_payout">
+   367	                                                                        Minimum Cash Payout
+   368	                                                                </Label>
+   369	                                                                    <Input
+   370	                                                                        type="text" onChange={this.handleChange}
+   371	                                                                        defaultValue={data.minimum_cash_payout || ''}
+   372	                                                                        name="minimum_cash_payout" id="minimum_cash_payout"
+   373	                                                                        placeholder="Minimum Cash Payout"
+   374	                                                                        mask={ dolarsMask } tag={ MaskedInput }
+   375	                                                                    />
+   376	                                                                    <p>In case of cash rewards, pay your referrals only if their balance is over this value</p>
+   377	                                                                </FormGroup>
+   378	                                                                <FormGroup>
+   379	                                                                    <Label for="payout_term">
+   380	                                                                        Payout Term(Days)
+   381	                                                                </Label>
+   382	                                                                    <CustomInput
+   383	                                                                        type="select"
+   384	                                                                        onChange={this.handleChange}
+   385	                                                                        name="payout_term"
+   386	                                                                        id="payout_term"
+   387	                                                                    >
+   388	                                                                        <option value="">Select Payout Term</option>
+   389	                                                                        <option value="NET15">Pay on 15th of the month the previous month earning</option>
+   390	                                                                        <option value="NET20">Pay on 20th of the month the previous month earning</option>
+
+EVIDENCE 6 — affiliate-facing payout page has 'dateScheduledFor' + 'status'
+Source: samples/weferral/app/routes/Pages/ParticipantPayout/ParticipantPayout.js:77-82
+Proves: payout rows carry 'status' (visible in affiliate dashboard, sortable) and
+        a 'dateScheduledFor' field — implies the backend DOES have a payout status
+        state machine (unlike Raider, where status was varchar and never set in code).
+        Exact status enum values are not visible from the UI — would need the backend.
+-------------------------------------------------------------------------
+    60	    fetchData() {
+    61	        let self = this;
+    62	        let id = Cookie.get('pid');
+    63	        Fetcher(`${port}/api/v1/participant/payouts/${id}`).then(function(response){
+    64	            if(!response.error){
+    65	                console.log(response);
+    66	                self.setState({rows: response, loading: false});
+    67	                console.log(self.state.rows);
+    68	                self.generateRow();
+    69	                //console.log(self.state.campaigns);
+    70	            }
+    71	        });
+    72	    }
+    73	
+    74	    generateRow(){
+    75	        let self = this;
+    76	
+    77	        const rewards = self.state.rows.map(function (row){
+    78	            //alert(DateFormat(camps.created_at));
+    79	            return {
+    80	                id: row.id,
+    81	                campaign_name: row.references.campaigns[0].name,
+    82	                status: row.dateScheduledFor,
+    83	                amount_due: row.assignedCredit,
+    84	                amount_paid: row.redeemedCredit,
+    85	                commission_type: row.references.campaigns[0].commission_type,
+    86	                created_at: DateFormat(row.created_at)
+    87	            }
+    88	        });
+    89	        //alert(JSON.stringify(campaigns));
+    90	        self.setState({generatedrows: rewards});
+    91	    }
+    92	
+    93	    handleSelect(row, isSelected) {
+    94	        if (isSelected) {
+    95	            this.setState({ selected: [...this.state.selected, row.id] })

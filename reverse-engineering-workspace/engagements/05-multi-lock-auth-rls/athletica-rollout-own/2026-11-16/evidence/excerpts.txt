@@ -1,0 +1,566 @@
+EVIDENCE 0 — provenance (own code, no clone)
+Source: /home/lordwhitefire/current-project/athletica/rollout/ (in-repo, our own code)
+Note: This is OUR codebase. Mode = own-software RE. No licence gate needed.
+Stack: Next.js 16 + Supabase (auth + Postgres + RLS) + Upstash Redis
+  "name": "rollout",
+  "version": "0.1.0",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.115.0",
+    "@upstash/ratelimit": "^2.2.0",
+
+EVIDENCE 1 — the three-locks design (signin page gate, comment-confirmed)
+Source: src/app/admin/signin/page.tsx
+Proves: Lock #2 (door-key cookie) is checked on the server BEFORE the signin
+        page is sent. No cookie / wrong / expired / revoked → notFound() (404).
+        The cookie does NOT authenticate anyone — it only lets the page load.
+        This is the FIRST lock a visitor hits: an unguessable URL still 404s
+        without the door-key cookie.
+-------------------------------------------------------------------------
+    36	  // authenticate anyone — it only lets this page load.
+    37	  const valid = await validateDoorKey();
+    38	  if (!valid.ok) {
+    39	    notFound();
+    40	  }
+    41	
+    42	  return (
+    43	    <main
+    44	      className={`ath-signin-page ${inter.variable} ${montserrat.variable}`}
+    45	    >
+    46	      <AuthShell heroImage={HERO_IMAGE} view="signin" />
+    47	    </main>
+    48	  );
+    49	}
+
+EVIDENCE 2 — admin/products/layout.tsx (the SSR third-lock gate)
+Source: src/app/admin/products/layout.tsx
+Proves: every admin page calls requireAdmin() before rendering. If the user
+        is not signed-in-as-admin, notFound() (404). The third lock is the
+        Supabase JWT with app_metadata.role === 'admin'.
+-------------------------------------------------------------------------
+     1	import Link from 'next/link';
+     2	import { requireAdmin } from '@/lib/auth/admin';
+     3	import { notFound } from 'next/navigation';
+     4	
+     5	export default async function AdminProductsLayout({
+     6	  children,
+     7	}: {
+     8	  children: React.ReactNode;
+     9	}) {
+    10	  const admin = await requireAdmin();
+    11	  if (admin.response) {
+    12	    notFound();
+    13	  }
+    14	
+    15	  return (
+    16	    <div className="admin-products-layout">
+    17	      <header className="admin-header">
+    18	        <Link href="/admin/products" className="admin-brand">
+    19	          Athletica Admin
+    20	        </Link>
+
+EVIDENCE 3 — admin.ts: requireAdmin + getAdminUser (the JWT role check)
+Source: src/lib/auth/admin.ts (full, 43 lines)
+Proves: the third lock reads user.app_metadata.role from the Supabase JWT.
+        role !== 'admin' → fail CLOSED (returns 404 NextResponse, not 401/403,
+        to avoid revealing the existence of admin endpoints).
+        Rule: fail closed, fail silent (404 not 401).
+-------------------------------------------------------------------------
+     1	import { createRouteClient, getCookieStore } from '@/lib/supabase/route-client';
+     2	import { NextResponse } from 'next/server';
+     3	import type { SupabaseClient } from '@supabase/supabase-js';
+     4	import type { Database } from '@/lib/database.types';
+     5	
+     6	type UserClient = SupabaseClient<Database, 'rollout'>;
+     7	
+     8	export interface AdminResult {
+     9	  user: { id: string; email: string | null } | null;
+    10	  response: NextResponse | null;
+    11	}
+    12	
+    13	// Returns the current user only when they are signed in AND marked admin.
+    14	// Any error or missing role → not an admin (fail closed).
+    15	// If a client is passed in, reuses it; otherwise creates one from cookies.
+    16	export async function getAdminUser(supabase?: UserClient): Promise<AdminResult> {
+    17	  const sb = supabase ?? createRouteClient(await getCookieStore());
+    18	  const { data: { user }, error } = await sb.auth.getUser();
+    19	
+    20	  if (error || !user) {
+    21	    return {
+    22	      user: null,
+    23	      response: NextResponse.json({ error: 'Not found' }, { status: 404 }),
+    24	    };
+    25	  }
+    26	
+    27	  const role = (user.app_metadata as { role?: string } | undefined)?.role;
+    28	  if (role !== 'admin') {
+    29	    return {
+    30	      user: null,
+    31	      response: NextResponse.json({ error: 'Not found' }, { status: 404 }),
+    32	    };
+    33	  }
+    34	
+    35	  return { user: { id: user.id, email: user.email ?? null }, response: null };
+    36	}
+    37	
+    38	// Route-handler form: returns { user, response: null } when authorised,
+    39	// or { user: null, response: <404> } when not.
+    40	// Caller: `const admin = await requireAdmin(supabase); if (admin.response) return admin.response;`
+    41	export async function requireAdmin(supabase?: UserClient): Promise<AdminResult> {
+    42	  return getAdminUser(supabase);
+    43	}
+
+EVIDENCE 4 — door-key-validate.ts: the sliding session (Lock #2)
+Source: src/lib/auth/door-key-validate.ts (full, 69 lines)
+Proves: validateDoorKey() reads the cookie, SHA-256 hashes it, queries
+        admin_access_keys WHERE token_hash = ? AND kind = 'door' AND
+        revoked_at IS NULL AND expires_at > now(). If found, slides the
+        expiry forward 30 days (sliding renewal). If not found → ok: false.
+        Rule: a door key is a long-lived bearer token whose hash is in the DB.
+        Sliding renewal = active admins never have to re-issue; idle admins
+        expire after 30 days of no use.
+-------------------------------------------------------------------------
+     1	import { createHash } from 'node:crypto';
+     2	import { createAdminClient } from '@/lib/supabase/server';
+     3	import { cookies } from 'next/headers';
+     4	
+     5	import { DOOR_KEY_COOKIE_NAME } from '@/lib/auth/door-key';
+     6	
+     7	/**
+     8	 * Validate the door-key cookie on the current request.
+     9	 *
+    10	 * Returns { ok: true } when a live, unused, unrevoked door key matches the
+    11	 * cookie, and slides its expiry forward by 30 days (sliding renewal).
+    12	 *
+    13	 * Returns { ok: false } when the cookie is missing, wrong, used, revoked, or
+    14	 * expired — the caller must return 404.
+    15	 */
+    16	export async function validateDoorKey(): Promise<{ ok: boolean }> {
+    17	  const cookieStore = await cookies();
+    18	  const token = cookieStore.get(DOOR_KEY_COOKIE_NAME)?.value;
+    19	
+    20	  if (!token) {
+    21	    return { ok: false };
+    22	  }
+    23	
+    24	  const tokenHash = createHash('sha256').update(token).digest('hex');
+    25	
+    26	  // admin_access_keys isn't in the generated DB types yet — cast through any.
+    27	  const supabase = createAdminClient() as unknown as {
+    28	    from: (table: string) => AnyChain;
+    29	  };
+    30	
+    31	  type AnyChain = {
+    32	    select: (cols: string) => AnyChain;
+    33	    eq: (col: string, val: string | number | null) => AnyChain;
+    34	    is: (col: string, val: null) => AnyChain;
+    35	    gt: (col: string, val: string) => AnyChain;
+    36	    maybeSingle: () => Promise<{ data: any | null; error: unknown }>;
+    37	    update: (vals: Record<string, unknown>) => AnyUpdateChain;
+    38	  };
+    39	
+    40	  type AnyUpdateChain = {
+    41	    eq: (col: string, val: string | number) => Promise<{ error: unknown }>;
+    42	  };
+    43	
+    44	  const { data: key, error: findError } = await supabase
+    45	    .from('admin_access_keys')
+    46	    .select('id, user_id, expires_at, used_at, revoked_at, kind')
+    47	    .eq('token_hash', tokenHash)
+    48	    .eq('kind', 'door')
+    49	    .is('revoked_at', null)
+    50	    .gt('expires_at', new Date().toISOString())
+    51	    .maybeSingle();
+    52	
+    53	  if (findError || !key) {
+    54	    return { ok: false };
+    55	  }
+    56	
+    57	  // Sliding renewal: push expiry to now() + 30 days on each valid visit.
+    58	  const newExpiry = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+    59	  const { error: updateError } = await supabase
+    60	    .from('admin_access_keys')
+    61	    .update({ expires_at: newExpiry })
+    62	    .eq('id', key.id);
+    63	
+    64	  if (updateError) {
+    65	    return { ok: false };
+    66	  }
+    67	
+    68	  return { ok: true };
+    69	}
+
+EVIDENCE 5 — door-key.ts: cookie config + token hashing
+Source: src/lib/auth/door-key.ts (full, 28 lines)
+Proves: cookie name 'admin_door_key', Path=/admin, HttpOnly, SameSite=Lax,
+        Max-Age 30 days. Secure flag conditional on https. Only SHA-256 hashes
+        are stored — never raw tokens.
+-------------------------------------------------------------------------
+     1	import { createHash } from 'node:crypto';
+     2	
+     3	export const DOOR_KEY_COOKIE_NAME = 'admin_door_key';
+     4	export const DOOR_KEY_PATH = '/admin';
+     5	export const DOOR_KEY_MAX_AGE = 30 * 24 * 60 * 60; // 30 days, in seconds
+     6	
+     7	/** SHA-256 hex of a raw token. Only hashes are ever stored. */
+     8	export function hashToken(token: string): string {
+     9	  return createHash('sha256').update(token).digest('hex');
+    10	}
+    11	
+    12	/** Attach the door key as a Set-Cookie header on a redirect response. */
+    13	export function setDoorKeyCookie(
+    14	  headers: { set: (name: string, value: string) => void },
+    15	  token: string,
+    16	  secure: boolean
+    17	): void {
+    18	  const parts = [
+    19	    `${DOOR_KEY_COOKIE_NAME}=${token}`,
+    20	    `Path=${DOOR_KEY_PATH}`,
+    21	    'HttpOnly',
+    22	    secure ? 'Secure' : '',
+    23	    'SameSite=Lax',
+    24	    `Max-Age=${DOOR_KEY_MAX_AGE}`,
+    25	  ].filter(Boolean);
+    26	
+    27	  headers.set('Set-Cookie', parts.join('; '));
+    28	}
+
+EVIDENCE 6 — signup route: invite-code redemption + door-key issuance
+Source: src/app/api/admin/auth/signup/route.ts (full, 110 lines)
+Proves: Lock #1 (invite code). The signup flow:
+        1) Hash the submitted invite code, look up admin_access_keys WHERE
+           kind = 'invite' AND used_at IS NULL AND revoked_at IS NULL AND
+           expires_at > now(). Re-validate at submit time (prevents races).
+        2) Create the user via supabase.auth.admin.createUser (service role).
+        3) Set app_metadata.role = 'admin' via updateUserById (service role).
+        4) Mark the invite code as used_at = now().
+        5) Issue a NEW door key: hash a fresh random token, INSERT into
+           admin_access_keys (kind='door', user_id, token_hash, expires_at).
+        6) Set the door-key cookie, redirect to /admin/signin.
+        Rule: invite codes are one-time, hashed, revocable, expiring.
+-------------------------------------------------------------------------
+     1	import { NextRequest, NextResponse } from 'next/server';
+     2	import { createAdminClient } from '@/lib/supabase/server';
+     3	import { createHash } from 'node:crypto';
+     4	import { setDoorKeyCookie, DOOR_KEY_COOKIE_NAME } from '@/lib/auth/door-key';
+     5	
+     6	type InviteRow = {
+     7	  id: string;
+     8	  user_id: string | null;
+     9	  expires_at: string;
+    10	  used_at: string | null;
+    11	  revoked_at: string | null;
+    12	};
+    13	
+    14	export async function POST(request: NextRequest) {
+    15	  const body = await request.json().catch(() => null);
+    16	  const email: string | undefined = body?.email;
+    17	  const password: string | undefined = body?.password;
+    18	  const code: string | undefined = body?.code;
+    19	
+    20	  if (!email || !password || !code) {
+    21	    return NextResponse.json({ error: 'Invalid request' }, { status: 400 });
+    22	  }
+    23	
+    24	  // Service-role client for admin operations (create user, set role, write keys).
+    25	  const supabase = createAdminClient();
+    26	  const from = (table: string) => supabase.from(table) as unknown as any;
+    27	
+    28	  type AnyChain = {
+    29	    select: (cols: string) => AnyChain;
+    30	    eq: (col: string, val: string | number | null) => AnyChain;
+    31	    is: (col: string, val: null) => AnyChain;
+    32	    gt: (col: string, val: string) => AnyChain;
+    33	    maybeSingle: () => Promise<{ data: InviteRow | null; error: unknown }>;
+    34	    update: (vals: Record<string, unknown>) => AnyUpdateChain;
+    35	    insert: (vals: Record<string, unknown>) => AnyUpdateChain;
+    36	  };
+    37	
+    38	  type AnyUpdateChain = {
+    39	    eq: (col: string, val: string | number) => Promise<{ error: unknown }>;
+    40	  };
+    41	
+    42	  // Re-validate the invite code at submit time — prevents race conditions.
+    43	  const tokenHash = createHash('sha256').update(code).digest('hex');
+    44	  const { data: invite, error: findError } = await from('admin_access_keys')
+    45	    .select('id, used_at, revoked_at, expires_at')
+    46	    .eq('token_hash', tokenHash)
+    47	    .eq('kind', 'invite')
+    48	    .is('used_at', null)
+    49	    .is('revoked_at', null)
+    50	    .gt('expires_at', new Date().toISOString())
+    51	    .maybeSingle();
+    52	
+    53	  if (findError || !invite) {
+    54	    return NextResponse.json(
+    55	      { error: 'Invalid or expired invitation code' },
+    56	      { status: 400 }
+    57	    );
+    58	  }
+    59	
+    60	  // Create the user via the Auth Admin API (service role).
+    61	  const { data: createdUser, error: createError } = await supabase.auth.admin.createUser({
+    62	    email,
+    63	    password,
+    64	    email_confirm: true,
+    65	  });
+    66	
+    67	  if (createError || !createdUser.user) {
+    68	    return NextResponse.json(
+    69	      { error: 'Unable to create account' },
+    70	      { status: 400 }
+    71	    );
+    72	  }
+    73	
+    74	  // Set app_metadata.role = 'admin' — only the service role can do this.
+    75	  const { error: metaError } = await supabase.auth.admin.updateUserById(
+    76	    createdUser.user.id,
+    77	    { app_metadata: { role: 'admin' } }
+    78	  );
+    79	
+    80	  if (metaError) {
+    81	    return NextResponse.json(
+    82	      { error: 'Unable to set admin role' },
+    83	      { status: 400 }
+    84	    );
+    85	  }
+    86	
+    87	  // Mark the invite code as used.
+    88	  await from('admin_access_keys')
+    89	    .update({ used_at: new Date().toISOString() })
+    90	    .eq('id', invite.id);
+    91	
+    92	  // Issue a door key for the new admin so they can reach the sign-in page.
+    93	  const doorToken = createHash('sha256').update(crypto.randomUUID() + Date.now().toString()).digest('hex');
+    94	  const doorTokenHash = createHash('sha256').update(doorToken).digest('hex');
+    95	  const doorExpiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+    96	
+    97	  await from('admin_access_keys').insert({
+    98	    kind: 'door',
+    99	    user_id: createdUser.user.id,
+   100	    token_hash: doorTokenHash,
+   101	    browser_label: email,
+   102	    expires_at: doorExpiresAt,
+   103	  });
+   104	
+   105	  // Deposit the door-key cookie and redirect to sign-in.
+   106	  const secure = request.url.startsWith('https://');
+   107	  const response = NextResponse.redirect(new URL('/admin/signin', request.url));
+   108	  setDoorKeyCookie(response.headers, doorToken, secure);
+   109	  return response;
+   110	}
+
+EVIDENCE 7 — admin_access_keys schema (the table that backs Locks #1 + #2)
+Source: supabase-rollout-admin-keys.sql
+Proves: id (uuid), kind ('invite' | 'door' CHECK constraint), user_id (FK to
+        auth.users ON DELETE CASCADE), token_hash (TEXT UNIQUE), browser_label,
+        issued_at, expires_at, used_at (nullable), revoked_at (nullable).
+        Two indexes: by user_id (lookup admin's keys), by token_hash (every
+        request lookup).
+        RLS: service_role has full access. NO policy for anon or authenticated
+        → both read nothing. Only the owner's issue script can write keys.
+-------------------------------------------------------------------------
+     1	-- ROLL-15 T3: admin access keys — one-time invite codes and door-key links
+     2	-- Run this in Supabase → SQL Editor.
+     3	-- Creates rollout.admin_access_keys and its RLS policies.
+     4	-- Only service_role may touch this table: no anon, no authenticated policy.
+     5	
+     6	CREATE TABLE IF NOT EXISTS rollout.admin_access_keys (
+     7	  id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+     8	  kind          TEXT NOT NULL CHECK (kind IN ('invite', 'door')),
+     9	  user_id       UUID REFERENCES auth.users(id) ON DELETE CASCADE,
+    10	  token_hash    TEXT NOT NULL UNIQUE,
+    11	  browser_label TEXT,
+    12	  issued_at     TIMESTAMPTZ NOT NULL DEFAULT now(),
+    13	  expires_at    TIMESTAMPTZ NOT NULL,
+    14	  used_at       TIMESTAMPTZ,
+    15	  revoked_at    TIMESTAMPTZ
+    16	);
+    17	
+    18	-- Look up a door key by its admin user.
+    19	CREATE INDEX IF NOT EXISTS idx_admin_access_keys_user_id
+    20	  ON rollout.admin_access_keys (user_id);
+    21	
+    22	-- Look up an invite/door key by its hash (token lookup on every request).
+    23	CREATE INDEX IF NOT EXISTS idx_admin_access_keys_token_hash
+    24	  ON rollout.admin_access_keys (token_hash);
+    25	
+    26	-- RLS: service_role may do everything (owner's issue script only).
+    27	-- No policy for anon: strangers read nothing.
+    28	-- No policy for authenticated: even logged-in non-admins read nothing.
+    29	-- If RLS is not already enabled on this table, the policies below have no effect;
+    30	-- enable it in Supabase → Database → Tables → admin_access_keys → RLS.
+    31	CREATE POLICY "service_role_full_access_admin_access_keys"
+    32	  ON rollout.admin_access_keys
+    33	  FOR ALL
+    34	  TO service_role
+    35	  USING (true);
+
+EVIDENCE 8 — RLS policies (the DB-level enforcement)
+Source: supabase-rollout-rls-policies.sql (94 lines)
+Proves: 8 policies across 3 tables:
+        products: anon SELECT where status='published'; service_role ALL;
+                  authenticated ALL where JWT app_metadata.role='admin' (USING + WITH CHECK)
+        analytics: anon INSERT (with check true); service_role SELECT;
+                   authenticated SELECT where JWT role='admin'
+        admin_access_keys: service_role ALL only — no anon/authenticated policy
+                          (RLS enabled + no policy = deny by default)
+        Rule: RLS is the LAST line of defense. Even if the app layer is
+        compromised, the DB still enforces: anon can only read published
+        products; only JWT-confirmed admins can write; only service_role
+        can touch admin_access_keys.
+-------------------------------------------------------------------------
+     1	-- RLS Policies for Rollout schema
+     2	-- Run this in the Supabase SQL Editor.
+     3	-- Enables Row Level Security and adds policies so only admin accounts can
+     4	-- access admin data. The service_role key bypasses RLS and is used only by
+     5	-- the owner's issue script.
+     6	
+     7	-- ============================================================
+     8	-- 1. Enable RLS on all tables
+     9	-- ============================================================
+    10	
+    11	ALTER TABLE rollout.products ENABLE ROW LEVEL SECURITY;
+    12	ALTER TABLE rollout.analytics ENABLE ROW LEVEL SECURITY;
+    13	ALTER TABLE rollout.admin_access_keys ENABLE ROW LEVEL SECURITY;
+    14	
+    15	-- ============================================================
+    16	-- 2. Products: anon can read published products
+    17	-- ============================================================
+    18	
+    19	DROP POLICY IF EXISTS "anon_can_read_published_products" ON rollout.products;
+    20	CREATE POLICY "anon_can_read_published_products"
+    21	  ON rollout.products
+    22	  FOR SELECT
+    23	  TO anon
+    24	  USING (status = 'published');
+    25	
+    26	-- ============================================================
+    27	-- 3. Products: service_role can do everything
+    28	-- ============================================================
+    29	
+    30	DROP POLICY IF EXISTS "admin_full_access_products" ON rollout.products;
+    31	CREATE POLICY "admin_full_access_products"
+    32	  ON rollout.products
+    33	  FOR ALL
+    34	  TO service_role
+    35	  USING (true);
+    36	
+    37	-- ============================================================
+    38	-- 4. Products: authenticated admins can manage products
+    39	--    RLS checks app_metadata.role = 'admin' from the user's JWT.
+    40	-- ============================================================
+    41	
+    42	DROP POLICY IF EXISTS "admin_can_manage_products" ON rollout.products;
+    43	CREATE POLICY "admin_can_manage_products"
+    44	  ON rollout.products
+    45	  FOR ALL
+    46	  TO authenticated
+    47	  USING (auth.jwt() -> 'app_metadata' ->> 'role' = 'admin')
+    48	  WITH CHECK (auth.jwt() -> 'app_metadata' ->> 'role' = 'admin');
+    49	
+    50	-- ============================================================
+    51	-- 5. Analytics: anon can insert view/click events
+    52	-- ============================================================
+    53	
+    54	DROP POLICY IF EXISTS "anon_can_insert_analytics" ON rollout.analytics;
+    55	CREATE POLICY "anon_can_insert_analytics"
+    56	  ON rollout.analytics
+    57	  FOR INSERT
+    58	  TO anon
+    59	  WITH CHECK (true);
+    60	
+    61	-- ============================================================
+    62	-- 6. Analytics: service_role can read
+    63	-- ============================================================
+    64	
+    65	DROP POLICY IF EXISTS "admin_can_read_analytics" ON rollout.analytics;
+    66	CREATE POLICY "admin_can_read_analytics"
+    67	  ON rollout.analytics
+    68	  FOR SELECT
+    69	  TO service_role
+    70	  USING (true);
+    71	
+    72	-- ============================================================
+    73	-- 7. Analytics: authenticated admins can read
+    74	-- ============================================================
+    75	
+    76	DROP POLICY IF EXISTS "admin_can_read_analytics_auth" ON rollout.analytics;
+    77	CREATE POLICY "admin_can_read_analytics_auth"
+    78	  ON rollout.analytics
+    79	  FOR SELECT
+    80	  TO authenticated
+    81	  USING (auth.jwt() -> 'app_metadata' ->> 'role' = 'admin');
+    82	
+    83	-- ============================================================
+    84	-- 8. Admin access keys: service_role only
+    85	--    No policy for anon or authenticated — they read nothing.
+    86	--    RLS is enabled above, so without a matching policy, access is denied.
+    87	-- ============================================================
+    88	
+    89	DROP POLICY IF EXISTS "service_role_full_access_admin_access_keys" ON rollout.admin_access_keys;
+    90	CREATE POLICY "service_role_full_access_admin_access_keys"
+    91	  ON rollout.admin_access_keys
+    92	  FOR ALL
+    93	  TO service_role
+    94	  USING (true);
+
+EVIDENCE 9 — API route gate pattern (the third lock on write endpoints)
+Source: src/app/api/admin/products/route.ts:1-50
+Proves: every API route calls adminGate(supabase) which calls requireAdmin.
+        If admin.response is set (the 404 NextResponse), return it immediately.
+        Pattern: 'const admin = await requireAdmin(supabase); if (admin.response)
+        return admin.response;' — one-liner per handler.
+-------------------------------------------------------------------------
+     1	import { NextRequest, NextResponse } from 'next/server';
+     2	import { requireAdmin } from '@/lib/auth/admin';
+     3	import { getCookieStore, createRouteClient } from '@/lib/supabase/route-client';
+     4	import {
+     5	  getProductsAdmin,
+     6	  createProductAdmin,
+     7	  publishProductAdmin,
+     8	  unpublishProductAdmin,
+     9	  deleteProductAdmin,
+    10	} from '@/lib/products/product-service';
+    11	import type { Database } from '@/lib/database.types';
+    12	
+    13	type ProductInsert = Database['rollout']['Tables']['products']['Insert'];
+    14	
+    15	async function adminGate(supabase: any): Promise<NextResponse | null> {
+    16	  const admin = await requireAdmin(supabase);
+    17	  return admin.response;
+    18	}
+    19	
+    20	export async function GET(request: NextRequest) {
+    21	  const cookieStore = await getCookieStore();
+    22	  const supabase = createRouteClient(cookieStore);
+    23	  const gate = await adminGate(supabase);
+    24	  if (gate) return gate;
+    25	  const params = request.nextUrl.searchParams;
+    26	  const status = params.get('status') ?? 'all';
+    27	  const search = params.get('search') ?? '';
+    28	  const sort = params.get('sort') ?? 'newest';
+    29	  const page = Number.parseInt(params.get('page') ?? '1', 10);
+    30	  const pageSize = Number.parseInt(params.get('pageSize') ?? '8', 10);
+    31	
+    32	  try {
+    33	    const result = await getProductsAdmin(
+    34	      {
+    35	        status: status as 'all' | 'published' | 'unpublished',
+    36	        search,
+    37	        sort: sort as 'newest' | 'oldest' | 'name_asc' | 'name_desc' | 'price_asc' | 'price_desc',
+    38	        page,
+    39	        pageSize,
+    40	      },
+    41	      supabase,
+    42	    );
+    43	    return NextResponse.json(result);
+    44	  } catch {
+    45	    return NextResponse.json({ error: 'Unable to load products' }, { status: 500 });
+    46	  }
+    47	}
+    48	
+    49	export async function POST(request: NextRequest) {
+    50	  const cookieStore = await getCookieStore();

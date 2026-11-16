@@ -1,0 +1,18 @@
+/*
+!/frontend/
+!/rollout/
+!/developer-workspace/
+!/data/
+!/notes/
+!/openspec/
+!/scripts/
+!/studio-athletica/
+!/supabase/
+!/reverse-engineering-workspace/
+
+# Reverse-engineering: keep the cloned source repos out (422 MB, each has its own .git)
+reverse-engineering-workspace/samples/
+
+# Secrets — never commit
+.env*
+!.env.example

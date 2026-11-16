@@ -1,0 +1,838 @@
+EVIDENCE 0 — provenance + licence
+Commit: 53d2936a5750d9a3b806b97a45c7712393b35622 (2026-11-16)
+Licence: BSD 3-Clause (most permissive in this engagement set)
+Note: BSD-3 has no copyleft. We could adapt code directly, but re-implement
+      rules in TypeScript for build consistency.
+BSD 3-Clause License
+
+Copyright (c) 2024-present, Vendo Sp. z o.o., Vendo Connect Inc.
+Copyright (c) 2015-2024, Spark Solutions Sp. z o.o.
+Copyright (c) 2007-2015, Spree Commerce Inc.
+
+EVIDENCE 1 — Product model + status state machine
+Source: samples/spree/spree/core/app/models/spree/product.rb:40-80
+Proves: STATUSES = %w[draft active archived] (operator-set, bulk-updateable)
+        REVIEW_STATUSES = %w[proposed rejected] (seller-submission workflow only)
+        ALL_STATUSES = STATUSES + REVIEW_STATUSES
+        Default status = :draft
+        publishes_events :activated, :approved, :archived, :back_in_stock,
+          :drafted, :out_of_stock, :proposed, :rejected
+        Rule: status is NOT a simple bool — products have a review lifecycle.
+-------------------------------------------------------------------------
+    40	    publishes_lifecycle_events
+    41	    publishes_events :activated, :approved, :archived, :back_in_stock, :drafted, :out_of_stock, :proposed, :rejected
+    42	
+    43	    MEMOIZED_METHODS = %w[total_on_hand default_variant_id tax_category default_variant variant_for_images
+    44	                          primary_category buy_box_variants resolved_delivery_profile
+    45	                          purchasable? in_stock? backorderable? digital?]
+    46	
+    47	    # Statuses an operator sets directly. `bulk_status_update` validates
+    48	    # against this, which is why the review statuses are not in it: reaching
+    49	    # `proposed` is a seller submitting and reaching `rejected` is an operator
+    50	    # deciding, and neither is a value to assign in bulk.
+    51	    STATUSES = %w[draft active archived].freeze
+    52	
+    53	    # Where a product sits in the marketplace review lifecycle. Only the
+    54	    # workflows (Products::Propose, ::Approve, ::Reject) move a product in or
+    55	    # out of these; see docs/plans/6.0-seller-product-submission.md.
+    56	    REVIEW_STATUSES = %w[proposed rejected].freeze
+    57	
+    58	    ALL_STATUSES = (STATUSES + REVIEW_STATUSES).freeze
+    59	
+    60	    TRANSLATABLE_FIELDS = %i[name description slug meta_description meta_title].freeze
+    61	    RICH_TEXT_TRANSLATABLE_FIELDS = %i[description].freeze
+    62	    translates(*TRANSLATABLE_FIELDS, column_fallback: Spree.mobility_column_fallback)
+    63	
+    64	    has_spree_rich_text :description
+    65	
+    66	    # Translated descriptions live on the Mobility translation table, so writes
+    67	    # through locale accessors or +upsert_translations+ never touch the base
+    68	    # record's +description+ attribute — the translation model needs its own
+    69	    # sanitization pass.
+    70	    self::Translation.class_eval do
+    71	      include Spree::SanitizableRichText
+    72	
+    73	      normalizes :name, :meta_title, with: ->(value) { value&.to_s&.squish&.presence }
+    74	      sanitizes_rich_text :description
+    75	    end
+    76	
+    77	    # we need to have this callback before any dependent: :destroy associations
+    78	    # https://github.com/rails/rails/issues/3458
+    79	    before_destroy :ensure_not_in_complete_orders
+    80	
+
+EVIDENCE 2 — available? gate (the publish rule)
+Source: samples/spree/spree/core/app/models/spree/product.rb:700-728
+Proves: a product is available? when:
+        1) status == 'active' (NOT 'draft', NOT 'archived', NOT 'proposed', NOT 'rejected')
+        2) NOT deleted (soft-delete via acts_as_paranoid)
+        3) available_on is nil OR available_on <= now (future-publish scheduling)
+        Rule: THREE conditions must hold for a product to be live in the catalog.
+-------------------------------------------------------------------------
+   700	    def available?
+   701	      active? && !deleted? && (available_on.nil? || available_on <= Time.current)
+   702	    end
+   703	
+   704	    # True when the product is currently offered as a pre-order: at least one
+   705	    # variant is sold before it is in stock (see {Variant#preorder?}).
+   706	    # Independent of publishing — a pre-order product is live in the catalog,
+   707	    # just flagged "buy now, ships later".
+   708	    # @return [Boolean]
+   709	    def preorder?
+   710	      default_variant.preorder? || variants.any?(&:preorder?)
+   711	    end
+   712	
+   713	    # The latest "ships by" date across the product's pre-order variants, so a
+   714	    # storefront can show a single "ships by" promise for the product. Nil when
+   715	    # the product is not a pre-order. Scans the same sellable set {#preorder?}
+   716	    # consults (the master only counts when it is the sole, purchasable
+   717	    # variant), reading preloaded associations to avoid an N+1.
+   718	    # @return [ActiveSupport::TimeWithZone, nil]
+   719	    def preorder_ships_at
+   720	      candidates = has_variants? ? variants : [default_variant]
+   721	      candidates.select(&:preorder?).filter_map(&:preorder_ships_at).max
+   722	    end
+   723	
+   724	    def discontinue!
+   725	      write_publication_date(:discontinue_on, Time.current)
+   726	      self.status = 'archived'
+   727	      save(validate: false)
+   728	    end
+
+EVIDENCE 3 — has_status + deprecated direct status mutators
+Source: samples/spree/spree/core/app/models/spree/product.rb:420-460
+Proves: status is owned by the model, but TRANSITIONS are owned by service
+        workflows (Spree.product_activate_workflow, product_archive_workflow,
+        product_draft_workflow). Direct methods like archive!, draft!, activate!
+        are deprecated in 6.3. Rule: status transitions belong in service objects,
+        not on the model. Side-effects (event publishing, notifications, cache
+        invalidation) belong in the workflow, not the model.
+-------------------------------------------------------------------------
+   420	    # (docs/plans/6.0-service-workflows.md). has_status generates the `draft`
+   421	    # and `archived` scopes and every predicate, but never redefines what the
+   422	    # model already owns: `Product.active` stays the currency-aware scope from
+   423	    # Spree::ProductScopes rather than a plain status lookup.
+   424	    include Spree::HasStatus
+   425	    has_status(*ALL_STATUSES, default: :draft)
+   426	
+   427	    # @deprecated Call Spree.product_activate_workflow — removed in 6.3.
+   428	    def activate!
+   429	      Spree::Deprecation.warn(
+   430	        'Spree::Product#activate! is deprecated and will be removed in Spree 6.3. Call Spree.product_activate_workflow instead.'
+   431	      )
+   432	      run_status_workflow(Spree.product_activate_workflow)
+   433	    end
+   434	
+   435	    # @deprecated Call Spree.product_archive_workflow — removed in 6.3.
+   436	    def archive!
+   437	      Spree::Deprecation.warn('Spree::Product#archive! is deprecated and will be removed in Spree 6.3. Call Spree.product_archive_workflow instead.')
+   438	      run_status_workflow(Spree.product_archive_workflow)
+   439	    end
+   440	
+   441	    # @deprecated Call Spree.product_draft_workflow — removed in 6.3.
+   442	    def draft!
+   443	      Spree::Deprecation.warn('Spree::Product#draft! is deprecated and will be removed in Spree 6.3. Call Spree.product_draft_workflow instead.')
+   444	      run_status_workflow(Spree.product_draft_workflow)
+   445	    end
+   446	
+   447	    def self.bulk_auto_match_collections(store, product_ids)
+   448	      return if store.collections.automatic.none?
+   449	
+   450	      products_to_auto_match_ids = store.products.not_deleted.not_archived.where(id: product_ids).ids
+   451	
+   452	      auto_match_collections_jobs = products_to_auto_match_ids.map do |product_id|
+   453	        Spree::Products::AutoMatchCollectionsJob.new(product_id).tap { |job| job.scheduled_at = 30.seconds.from_now }
+   454	      end
+   455	
+   456	      ActiveJob.perform_all_later(auto_match_collections_jobs)
+   457	    end
+   458	
+   459	    # The variant this product leads with: its price, its stock, and what the
+   460	    # add-to-cart button buys. On a product only the operator sells this is
+
+EVIDENCE 4 — discontinue! method (auto-archive on discontinue date)
+Source: samples/spree/spree/core/app/models/spree/product.rb:718-728
+Proves: discontinue! writes discontinue_on = now, then status = 'archived',
+        save(validate: false). Rule: a discontinued product is force-archived
+        without re-running validations.
+-------------------------------------------------------------------------
+   718	    # @return [ActiveSupport::TimeWithZone, nil]
+   719	    def preorder_ships_at
+   720	      candidates = has_variants? ? variants : [default_variant]
+   721	      candidates.select(&:preorder?).filter_map(&:preorder_ships_at).max
+   722	    end
+   723	
+   724	    def discontinue!
+   725	      write_publication_date(:discontinue_on, Time.current)
+   726	      self.status = 'archived'
+   727	      save(validate: false)
+   728	    end
+
+EVIDENCE 5 — soft-delete via acts_as_paranoid + acts_as_taggable
+Source: samples/spree/spree/core/app/models/spree/product.rb:20-25
+Proves: acts_as_paranoid = soft-delete (deleted_at column, default scope excludes)
+        acts_as_taggable_on :tags, :labels = tag system on the product
+        acts_as_taggable_tenant :store_id = tags are scoped per-store
+        Rule: never hard-delete products; tag them, scope tags per tenant.
+-------------------------------------------------------------------------
+    20	
+    21	    acts_as_paranoid
+    22	    acts_as_taggable_on :tags, :labels
+    23	    acts_as_taggable_tenant :store_id
+    24	    normalizes :name, with: ->(value) { value&.to_s&.squish&.presence }
+    25	
+
+EVIDENCE 6 — Product model associations (the full catalog graph)
+Source: samples/spree/spree/core/app/models/spree/product.rb:80-260
+Proves: Product has:
+        - variants (the purchasable units; SKU/price/stock live here, NOT on product)
+        - prices (through variants)
+        - categories (many-to-many via product_categories)
+        - collections (many-to-many via product_collections; manual collections only)
+        - catalogs (through catalog_products)
+        - media (images/videos, polymorphic viewable)
+        - digital_assets (downloads through variants)
+        - option_types / option_values (variant attributes like color/size)
+        - product_submissions (the seller-review workflow)
+        - belongs_to: seller, store, product_type, tax_category, delivery_profile
+        Rule: product is a CATALOG GROUPING. Every purchasable attribute (SKU,
+        price, stock, weight, dimensions) lives on variants. This is the master-variant
+        pattern, with the API v3 making it explicit (see deprecation note in controller).
+-------------------------------------------------------------------------
+    80	
+    81	    has_many :product_option_types, -> { order(:position) }, dependent: :destroy, inverse_of: :product
+    82	    has_many :option_types, through: :product_option_types
+    83	    has_many :product_categories, -> { order(created_at: :asc) }, class_name: 'Spree::ProductCategory',
+    84	                                                                  dependent: :destroy, inverse_of: :product
+    85	    has_many :categories, through: :product_categories, class_name: 'Spree::Category', source: :category,
+    86	                          dependent: :destroy
+    87	    has_many :taxonomies, through: :categories, deprecated: true
+    88	
+    89	    # @deprecated The classification_count column was renamed to categories_count in 6.0.
+    90	    alias_attribute :classification_count, :categories_count
+    91	
+    92	    # @deprecated Use #product_categories; removed in 6.3.
+    93	    # The live row in the review trail, or nil for a product nobody submitted.
+    94	    #
+    95	    # @return [Spree::ProductSubmission, nil]
+    96	    def latest_submission
+    97	      submissions.latest_first.first
+    98	    end
+    99	
+   100	    # Why the marketplace turned this listing down, for the seller to read.
+   101	    # Answers nil once the product moves on, so a stale note never shows
+   102	    # against a product that is no longer rejected.
+   103	    #
+   104	    # @return [String, nil]
+   105	    def rejection_reason
+   106	      return unless rejected?
+   107	
+   108	      latest_submission&.review_note
+   109	    end
+   110	
+   111	    # Whether this product is waiting on, or has had, a marketplace decision.
+   112	    #
+   113	    # @return [Boolean]
+   114	    def in_review?
+   115	      REVIEW_STATUSES.include?(status)
+   116	    end
+   117	
+   118	    def classifications
+   119	      Spree::Deprecation.warn('Spree::Product#classifications is deprecated and will be removed in Spree 6.3. Use #product_categories instead.')
+   120	      product_categories
+   121	    end
+   122	
+   123	    # @deprecated Use #categories / #category_ids; removed in 6.3.
+   124	    def taxons
+   125	      Spree::Deprecation.warn('Spree::Product#taxons is deprecated and will be removed in Spree 6.3. Use #categories instead.')
+   126	      categories
+   127	    end
+   128	
+   129	    def taxons=(value)
+   130	      Spree::Deprecation.warn('Spree::Product#taxons= is deprecated and will be removed in Spree 6.3. Use #categories= instead.')
+   131	      self.categories = value
+   132	    end
+   133	
+   134	    def taxon_ids
+   135	      Spree::Deprecation.warn('Spree::Product#taxon_ids is deprecated and will be removed in Spree 6.3. Use #category_ids instead.')
+   136	      category_ids
+   137	    end
+   138	
+   139	    def taxon_ids=(ids)
+   140	      Spree::Deprecation.warn('Spree::Product#taxon_ids= is deprecated and will be removed in Spree 6.3. Use #category_ids= instead.')
+   141	      self.category_ids = ids
+   142	    end
+   143	
+   144	    has_many :product_collections, class_name: 'Spree::ProductCollection', dependent: :destroy, inverse_of: :product
+   145	    has_many :collections, through: :product_collections, dependent: :destroy
+   146	    has_many :catalog_products, class_name: 'Spree::CatalogProduct', dependent: :destroy_async, inverse_of: :product
+   147	    has_many :catalogs, through: :catalog_products
+   148	
+   149	    # Dropped with the product so a deleted product stops excluding itself from
+   150	    # delivery methods. Destroyed inline rather than async — a product sits in
+   151	    # at most a handful of exclusion rules, and deferring it would leave the
+   152	    # rule reporting an id the API can no longer resolve.
+   153	    has_many :delivery_method_rule_products, class_name: 'Spree::DeliveryMethodRuleProduct',
+   154	             dependent: :destroy, inverse_of: :product
+   155	
+   156	    has_many :product_promotion_rules, class_name: 'Spree::ProductPromotionRule'
+   157	    has_many :promotion_rules, through: :product_promotion_rules, class_name: 'Spree::PromotionRule'
+   158	
+   159	    has_many :promotions, through: :promotion_rules, class_name: 'Spree::Promotion'
+   160	
+   161	    has_many :possible_promotions, -> { advertised.active }, through: :promotion_rules,
+   162	                                                             class_name: 'Spree::Promotion',
+   163	                                                             source: :promotion
+   164	
+   165	    belongs_to :tax_category, class_name: 'Spree::TaxCategory', optional: true
+   166	    belongs_to :product_type, class_name: 'Spree::ProductType', optional: true, counter_cache: :products_count
+   167	    # The seller this product belongs to on a marketplace. Nil is the
+   168	    # operator's own catalog — which is everything, on a store selling only
+   169	    # its own goods.
+   170	    belongs_to :seller, class_name: 'Spree::Seller', optional: true, inverse_of: :products
+   171	
+   172	    # How this product ships: origins, zones and methods all hang off the
+   173	    # profile. Required — a product without one could not be fulfilled at
+   174	    # all — and auto-assigned on create (type template, else the store's
+   175	    # default profile), so callers never have to think about it. The FK is
+   176	    # the renamed 5.x shipping_category_id, so migrated catalogs arrive
+   177	    # already assigned.
+   178	    belongs_to :delivery_profile, class_name: 'Spree::DeliveryProfile', inverse_of: :products
+   179	
+   180	    # Every one of the product's variants now resolves its profile through
+   181	    # +resolved_delivery_profile+, which memoizes — so a reassignment has to
+   182	    # drop the memo, or the whole fleet keeps shipping on the old profile
+   183	    # until the product is saved.
+   184	    %i[delivery_profile delivery_profile_id].each do |name|
+   185	      define_method(:"#{name}=") do |value|
+   186	        @resolved_delivery_profile = nil
+   187	        @digital = nil
+   188	        super(value)
+   189	      end
+   190	    end
+   191	
+   192	    # Guards every write path (including raw prefixed-id assignment) against
+   193	    # linking another store's profile.
+   194	    validate :delivery_profile_must_belong_to_store, if: :delivery_profile_id_changed?
+   195	    # Either side moving breaks the pair, and a product's store is not frozen
+   196	    # after create, so watching only the seller would let a move carry the old
+   197	    # store's seller along.
+   198	    validate :seller_must_belong_to_store, if: -> { seller_id_changed? || store_id_changed? }
+   199	
+   200	    # Every product has at least one variant. `default_variant` is the "face" of
+   201	    # the product (price display, default add-to-cart, property delegation).
+   202	    has_many :variants,
+   203	             -> { order(:position) },
+   204	             inverse_of: :product,
+   205	             class_name: 'Spree::Variant',
+   206	             dependent: :destroy
+   207	
+   208	    belongs_to :default_variant, class_name: 'Spree::Variant', optional: true, autosave: true
+   209	
+   210	    has_many :prices, through: :variants
+   211	
+   212	    has_many :stock_levels, through: :variants
+   213	
+   214	    has_many :line_items, through: :variants
+   215	    has_many :orders, through: :line_items
+   216	    has_many :completed_orders, -> { reorder(nil).distinct.complete }, through: :line_items, source: :order
+   217	
+   218	    has_many :media, -> { order(:position) }, as: :viewable, dependent: :destroy, class_name: 'Spree::Media'
+   219	
+   220	    # The review trail for a seller's listing. Append-only: the latest row is
+   221	    # the live one (docs/plans/6.0-seller-product-submission.md).
+   222	    has_many :submissions, class_name: 'Spree::ProductSubmission', dependent: :destroy, inverse_of: :product
+   223	
+   224	    has_many :variant_images, -> { order(:position) }, source: :images, through: :variants
+   225	
+   226	    belongs_to :primary_media, class_name: 'Spree::Media', optional: true, foreign_key: :primary_media_id
+   227	
+   228	    has_many :option_value_variants, class_name: 'Spree::OptionValueVariant', through: :variants
+   229	    has_many :option_values, class_name: 'Spree::OptionValue', through: :variants
+   230	
+   231	    has_many :digital_assets, through: :variants, class_name: 'Spree::DigitalAsset'
+   232	    has_many :digitals, through: :variants, class_name: 'Spree::DigitalAsset', source: :digital_assets, deprecated: true
+   233	
+   234	    after_initialize :assign_default_tax_category
+   235	    # The type's profile is a creation-time template: stamped here, never
+   236	    # synced afterwards — reassigning the type later leaves the product's
+   237	    # profile alone. Falls back to the store's default profile, keeping the
+   238	    # required association satisfiable without the caller naming one.
+   239	    before_validation :stamp_template_delivery_profile, on: :create
+   240	
+   241	    after_create :sync_associations_from_product_type
+   242	    after_update :sync_associations_from_product_type, if: :saved_change_to_product_type_id?
+   243	    after_create :ensure_default_variant
+   244	    after_create :set_default_variant
+   245	
+   246	    after_save :auto_promote_default_variant
+   247	
+   248	    after_commit :auto_match_collections, if: :eligible_for_collection_matching?
+   249	
+   250	    with_options length: { maximum: 255 }, allow_blank: true do
+   251	      validates :meta_keywords
+   252	      validates :meta_title
+   253	    end
+   254	    with_options presence: true do
+   255	      validates :name
+   256	    end
+   257	
+   258	    # Every persisted product must keep a default variant. It's assigned on
+   259	    # create by +set_default_variant+, so only enforce it on update.
+   260	    validates :default_variant, presence: true, on: :update
+
+EVIDENCE 7 — admin ProductsController: bulk operations supported
+Source: samples/spree/spree/api/app/controllers/spree/api/v3/admin/products_controller.rb:1-120
+Proves: bulk endpoints with require_ids! guard:
+        - bulk_status_update (validates against STATUSES, skips 'proposed' products)
+        - bulk_add_to_categories / bulk_remove_from_categories
+        - bulk_add_to_collections / bulk_remove_from_collections
+        - bulk_add_to_channels / bulk_remove_from_channels
+        - bulk_destroy
+        Product is a purely catalog grouping in API v3: every purchasable
+        attribute lives on variants (docs/plans/6.0-remove-master-variant.md)
+        Rule: bulk operations are first-class, with explicit id validation and
+        status-aware skip counting (skipped_in_review_count).
+-------------------------------------------------------------------------
+     1	module Spree
+     2	  module Api
+     3	    module V3
+     4	      module Admin
+     5	        class ProductsController < ResourceController
+     6	          include Spree::Api::V3::BulkOperations
+     7	          include Spree::Api::V3::Admin::ProductListing
+     8	
+     9	          scoped_resource :products
+    10	
+    11	          # Product is purely a catalog grouping in API v3: every purchasable
+    12	          # attribute lives on variants (docs/plans/6.0-remove-master-variant.md).
+    13	          request_params :product do |body|
+    14	            body.external_references
+    15	            body.attribute :name, :string, required: true, on: :create, example: 'Premium T-Shirt'
+    16	            body.attribute :description, :string,
+    17	              description: 'Rich text HTML. Reads come back as this (plain text) plus `description_html`.'
+    18	            body.attribute :slug, :string
+    19	            body.attribute :status, :string, choices: Spree::Product::STATUSES, open: true
+    20	            body.attribute :meta_title, :string
+    21	            body.attribute :meta_description, :string
+    22	            body.attribute :meta_keywords, :string
+    23	            body.attribute :tax_category_id, :id
+    24	            body.attribute :product_type_id, :id,
+    25	              nullable: true,
+    26	              description: 'The product type this product is created from (`pt_...`). Its option types and categories seed onto the product and its custom field definitions drive the product form. Editing the type later never rewrites existing products.'
+    27	            body.attribute :delivery_profile_id, :id,
+    28	              nullable: true,
+    29	              description: 'The delivery profile deciding how this product ships (`fp_...`); null falls back to the store default.'
+    30	            body.attribute :promotionable, :boolean
+    31	            body.attribute :tags, :array, of: :string, example: %w[eco sale]
+    32	            body.attribute :category_ids, :array, of: :id
+    33	            # Reachable with `write_products` rather than `write_collections`:
+    34	            # filing a product into its groupings is part of maintaining it.
+    35	            body.attribute :collection_ids, :array, of: :id,
+    36	              description: 'Manual collections this product belongs to. Automatic collections are kept as they are, since their rules decide membership.'
+    37	            body.attribute :metadata, :hash
+    38	            body.attribute :prices, :array, of: Spree::Api::V3::PriceRequestSchema,
+    39	              description: "Shorthand for a simple (no-options) product: per-currency prices that forward to the product's sole variant. For products with options, set prices per variant under `variants` instead. Don't pass both."
+    40	            body.attribute :custom_fields, :array, of: Spree::Api::V3::CustomFieldValueRequestSchema,
+    41	              description: 'Custom field values, each validated against its definition.'
+    42	            # `external_url` is left out on purpose: it makes the server fetch
+    43	            # a URL the caller chose, so it belongs to trusted importers.
+    44	            body.attribute :media, :array,
+    45	              as: 'ProductMediaParams',
+    46	              description: 'Media written with the product. Entries with `id` update an existing asset; entries with `signed_id` attach a fresh upload; an external video needs only its URL.' do |media_item|
+    47	              media_item.attribute :id, :id
+    48	              media_item.attribute :signed_id, :string, description: 'A `signed_id` from `files.upload()`.'
+    49	              media_item.attribute :source_media_id, :id, description: 'Copies an asset from the media library.'
+    50	              media_item.include_attributes Spree::Api::V3::MediaRequestSchema
+    51	              media_item.attribute :variant_ids, :array, of: :id,
+    52	                description: 'Replaces the variants this media is linked to. An empty list clears them.'
+    53	            end
+    54	            body.attribute :digital_assets, :array,
+    55	              as: 'ProductDigitalAssetParams',
+    56	              description: 'Downloadable files written with the product. Each entry carries a `signed_id` (an upload to private storage) or a `provider_type` (a provider-backed asset), and attaches to the default variant unless `variant_id` is given. An `id` updates that asset in place, so replaying the list does not duplicate it; removal uses the nested digital assets endpoint.' do |digital_asset|
+    57	              digital_asset.attribute :id, :id
+    58	              digital_asset.attribute :signed_id, :string
+    59	              digital_asset.attribute :variant_id, :id
+    60	              digital_asset.attribute :provider_type, :string,
+    61	                description: 'A provider shorthand from the digital asset providers endpoint.'
+    62	              digital_asset.attribute :provider_settings, :hash,
+    63	                description: "Values for the provider's settings schema, keyed by field name."
+    64	              digital_asset.attribute :authorized_clicks, :integer,
+    65	                nullable: true,
+    66	                description: "Null means the store's download settings apply."
+    67	              digital_asset.attribute :authorized_days, :integer,
+    68	                nullable: true,
+    69	                description: "Null means the store's download settings apply."
+    70	            end
+    71	            body.attribute :product_publications, :array, as: 'ProductPublicationParams' do |product_publication|
+    72	              product_publication.attribute :id, :id
+    73	              product_publication.attribute :channel_id, :id
+    74	              product_publication.attribute :published_at, :datetime, nullable: true
+    75	              product_publication.attribute :unpublished_at, :datetime, nullable: true
+    76	            end
+    77	            body.attribute :variants, :array,
+    78	              as: 'ProductVariantParams',
+    79	              description: 'Every purchasable attribute (sku, prices, stock, weight, dimensions) lives on variants. An entry without `options` upserts onto the default variant of a simple product; pass `id` to update an existing variant.' do |variant|
+    80	              variant.extends Spree::Api::V3::Admin::VariantRequestSchema
+    81	              variant.attribute :id, :id
+    82	            end
+    83	          end
+    84	
+    85	          before_action :require_ids!, only: [
+    86	            :bulk_status_update,
+    87	            :bulk_add_to_categories,
+    88	            :bulk_remove_from_categories,
+    89	            :bulk_add_to_collections,
+    90	            :bulk_remove_from_collections,
+    91	            :bulk_add_to_channels,
+    92	            :bulk_remove_from_channels,
+    93	            :bulk_destroy
+    94	          ]
+    95	
+    96	          request_params 'ProductRejectParams', action: :reject do |body|
+    97	            body.attribute :reason, :string,
+    98	              description: 'Why the submission was turned down. Sent back to the seller.'
+    99	          end
+   100	
+   101	          request_params 'ProductBulkStatusParams', action: :bulk_status_update do |body|
+   102	            body.attribute :ids, :array, of: :id, required: true, example: ['prod_UkLWZg9DAJ']
+   103	            body.attribute :status, :string,
+   104	              required: true,
+   105	              choices: Spree::Product::STATUSES,
+   106	              description: 'Products in review are skipped and counted in `skipped_in_review_count`.'
+   107	          end
+   108	
+   109	          {
+   110	            'ProductBulkCategoriesParams' => [:category_ids, %i[bulk_add_to_categories bulk_remove_from_categories]],
+   111	            'ProductBulkCollectionsParams' => [:collection_ids, %i[bulk_add_to_collections bulk_remove_from_collections]],
+   112	            'ProductBulkChannelsParams' => [:channel_ids, %i[bulk_add_to_channels bulk_remove_from_channels]]
+   113	          }.each do |name, (field, actions)|
+   114	            actions.each do |action|
+   115	              request_params(name, action: action) do |body|
+   116	                body.attribute :ids, :array, of: :id, required: true
+   117	                body.attribute field, :array, of: :id, required: true
+   118	              end
+   119	            end
+   120	          end
+
+EVIDENCE 8 — import state machine (bulk CSV/JSON import)
+Source: samples/spree/spree/core/app/models/spree/import.rb:55-220
+Proves: Import has_status :pending, :mapping, :completed_mapping, :processing,
+        :completed, :failed, default: :pending
+        Transitions: start_mapping! → complete_mapping! → start_processing! → complete!
+        Two-phase: MAPPING (parse + validate rows, build in-memory model) then
+        PROCESSING (persist). This separates 'is the data shape right?' from
+        'did the DB writes succeed?'.
+        Per-status row counts: rows_status_counts — grouped COUNT in one query.
+        Rule: bulk import is a stateful job with row-level status tracking.
+-------------------------------------------------------------------------
+    55	    # Ransack configuration
+    56	    #
+    57	    self.whitelisted_ransackable_attributes = %w[number type status seller_id]
+    58	    search_by :number
+    59	    # Lets an operator filter their list by who ran the job — the seller's
+    60	    # name, not an id they would have to look up first.
+    61	    self.whitelisted_ransackable_associations = %w[seller]
+    62	
+    63	    #
+    64	    # Scopes
+    65	    #
+    66	    # `for_store` comes from Spree::SingleStoreResource and now includes a
+    67	    # store's sellers' imports, which is what puts them in the operator's list.
+    68	    scope :for_seller, ->(seller) { where(seller_id: seller) }
+    69	    # The operator's own, as opposed to those their sellers ran.
+    70	    scope :first_party, -> { where(seller_id: nil) }
+    71	
+    72	    #
+    73	    # Attachments
+    74	    #
+    75	    has_one_attached :attachment, service: Spree.private_storage_service_name
+    76	    signed_id_attachments :attachment
+    77	
+    78	    #
+    79	    # Status
+    80	    #
+    81	    # No state machine — the pipeline's steps are the Spree::Imports workflows
+    82	    # (docs/plans/6.0-service-workflows.md), which is also what let the row
+    83	    # dispatch stop tiptoeing around a transition's transaction.
+    84	    include Spree::HasStatus
+    85	    has_status :pending, :mapping, :completed_mapping, :processing, :completed, :failed,
+    86	               default: :pending
+    87	
+    88	    #
+    89	    # Preferences
+    90	    #
+    91	    preference :delimiter, :string, default: ','
+    92	    exposes_preferences :delimiter
+    93	    # Run the pipeline in-process instead of enqueuing it. For rake tasks, seeds
+    94	    # and the console, where the caller needs the data to exist when the call
+    95	    # returns and there may be no worker attached. Never set it from a request:
+    96	    # a large CSV blocks for minutes.
+    97	    #
+    98	    # A preference, not a virtual attribute, so it survives the `Import.find`
+    99	    # each processing job does — otherwise every job would have to take (and
+   100	    # forward) an `inline:` argument.
+   101	    preference :inline, :boolean, default: false
+   102	    # Suppress the events the *rows* publish — a `product.created` per imported
+   103	    # product, plus `import_row.*`. The import's own `import.*` events still
+   104	    # fire: a handful per import is useful, thousands from a seeded catalog are
+   105	    # not.
+   106	    #
+   107	    # For seeding demo or sample data, where subscribers would otherwise deliver
+   108	    # webhooks and analytics for a catalog nobody actually created. A preference
+   109	    # rather than a virtual attribute because the processing jobs each reload
+   110	    # the record, so it has to outlive the enqueue. Independent of `inline`: a
+   111	    # background import can still be silent, and an inline one observed.
+   112	    preference :skip_events, :boolean, default: false
+   113	    # Absolute URL of the dashboard's imports view, captured at create and
+   114	    # validated against the store's allowed origins — the import-done email
+   115	    # links back to it. Blank for legacy-admin or app-created imports.
+   116	    preference :results_url, :string, default: nil
+   117	
+   118	    # Publicly downloadable example CSV for this import's type, or nil when the
+   119	    # type has no sample file. Resolved from the `type` column rather than the
+   120	    # instance's class, so it works on a record built as the base
+   121	    # `Spree::Import` with `type` assigned (which is how the admin's new-import
+   122	    # form builds it).
+   123	    #
+   124	    # @return [String, nil]
+   125	    def sample_csv_url
+   126	      self.class.available_types.find { |klass| klass.to_s == type.to_s }&.sample_csv_url
+   127	    end
+   128	
+   129	    # Header-only CSV for this import's schema — the blank counterpart to
+   130	    # `sample_csv_url`. One line, so callers can inline it (e.g. as a `data:`
+   131	    # URI) instead of round-tripping to the server for it.
+   132	    #
+   133	    # @return [String]
+   134	    def template_csv
+   135	      ::CSV.generate_line(schema_fields.map { |field| field[:name] })
+   136	    end
+   137	
+   138	    # Suggested filename for `template_csv`, e.g. "products_import_template.csv".
+   139	    #
+   140	    # @return [String]
+   141	    def template_csv_filename
+   142	      "#{self.class.api_type_for(type)}_import_template.csv"
+   143	    end
+   144	
+   145	    # Returns true if the import has more rows than the large import threshold.
+   146	    # Large imports skip per-row UI broadcasts and use bulk processing.
+   147	    # @return [Boolean]
+   148	    def large_import?
+   149	      rows_count >= Spree::Config[:large_import_threshold]
+   150	    end
+   151	
+   152	    # Returns the schema field name used to group rows for parallel processing.
+   153	    # Rows sharing the same value in this field are processed together in one job.
+   154	    # Returns nil for imports where rows are independent (default — batched in chunks).
+   155	    # @return [String, nil]
+   156	    def group_column
+   157	      nil
+   158	    end
+   159	
+   160	    # @deprecated Call the Spree::Imports workflows — removed in 6.3.
+   161	    def start_mapping!
+   162	      Spree::Deprecation.warn(
+   163	        'Spree::Import#start_mapping! is deprecated and will be removed in Spree 6.3. Call Spree.import_start_mapping_workflow instead.'
+   164	      )
+   165	      run_pipeline_workflow(Spree.import_start_mapping_workflow)
+   166	    end
+   167	
+   168	    # @deprecated Call Spree.import_complete_mapping_workflow — removed in 6.3.
+   169	    def complete_mapping!
+   170	      Spree::Deprecation.warn(
+   171	        'Spree::Import#complete_mapping! is deprecated and will be removed in Spree 6.3. Call Spree.import_complete_mapping_workflow instead.'
+   172	      )
+   173	      run_pipeline_workflow(Spree.import_complete_mapping_workflow)
+   174	    end
+   175	
+   176	    # @deprecated Call Spree.import_start_processing_workflow — removed in 6.3.
+   177	    def start_processing!
+   178	      Spree::Deprecation.warn(
+   179	        'Spree::Import#start_processing! is deprecated and will be removed in Spree 6.3. Call Spree.import_start_processing_workflow instead.'
+   180	      )
+   181	      run_pipeline_workflow(Spree.import_start_processing_workflow)
+   182	    end
+   183	
+   184	    # @deprecated Call Spree.import_complete_workflow — removed in 6.3.
+   185	    def complete!
+   186	      Spree::Deprecation.warn('Spree::Import#complete! is deprecated and will be removed in Spree 6.3. Call Spree.import_complete_workflow instead.')
+   187	      run_pipeline_workflow(Spree.import_complete_workflow)
+   188	    end
+   189	
+   190	    # @deprecated Set the status — removed in 6.3. Failure was never a step of
+   191	    #   its own; the controller records the parse error directly.
+   192	    def fail!
+   193	      Spree::Deprecation.warn('Spree::Import#fail! is deprecated and will be removed in Spree 6.3. Write the status instead.')
+   194	      update!(status: 'failed')
+   195	    end
+   196	
+   197	    # @deprecated Call Spree.import_retry_failed_rows_workflow — removed in 6.3.
+   198	    #   Returns false when there is nothing to retry, as the guarded event did.
+   199	    def retry_failed_rows
+   200	      Spree::Deprecation.warn(
+   201	        'Spree::Import#retry_failed_rows is deprecated and will be removed in Spree 6.3. Call Spree.import_retry_failed_rows_workflow instead.'
+   202	      )
+   203	      Spree.import_retry_failed_rows_workflow.call(import: self).success?
+   204	    end
+   205	
+   206	    # Returns true if the import is processing or completed mapping
+   207	    # @return [Boolean]
+   208	    def processing?
+   209	      ['processing', 'completed_mapping'].include?(status)
+   210	    end
+   211	
+   212	    # Returns true if the import is complete
+   213	    # @return [Boolean]
+   214	    def complete?
+   215	      status == 'completed'
+   216	    end
+   217	
+   218	    # Imports are deletable only while no processing jobs can be in flight —
+   219	    # ProcessJob/ProcessGroupJob re-load the record mid-run.
+   220	    # @return [Boolean]
+   221	    def can_be_deleted?
+   222	      %w[pending mapping completed failed].include?(status)
+   223	    end
+   224	
+   225	    # Per-status row counts for API status payloads, memoized so one request
+   226	    # issues a single grouped COUNT instead of one per status — and, on a
+   227	    # lazily preloaded list, one for every import of the list.
+   228	    # @return [Hash{String => Integer}]
+   229	    def rows_status_counts
+   230	      return @rows_status_counts if @rows_status_counts
+
+EVIDENCE 9 — product import is a subclass of Import
+Source: samples/spree/spree/core/app/models/spree/imports/products.rb (full, 14 lines)
+Proves: Spree::Imports::Products < Spree::Import. Defines row_processor_class
+        and group_column. Rule: each import type (customers, products,
+        price_list_prices, product_translations, purchase_orders) is a thin
+        subclass; the engine is shared.
+-------------------------------------------------------------------------
+     1	module Spree
+     2	  module Imports
+     3	    class Products < Spree::Import
+     4	      def row_processor_class
+     5	        Spree::Imports::RowProcessors::ProductVariant
+     6	      end
+     7	
+     8	      # Group by slug: product row + its variant rows must be processed together
+     9	      def group_column
+    10	        'slug'
+    11	      end
+    12	    end
+    13	  end
+    14	end
+
+EVIDENCE 10 — BulkOperations concern (the bulk pattern)
+Source: samples/spree/spree/api/app/controllers/concerns/spree/api/v3/bulk_operations.rb
+Proves: shared concern included by products_controller. Provides:
+        - require_ids! (validates ids array present)
+        - bulk_add_tags / bulk_remove_tags
+        - bulk_collection (the scoped ActiveRecord relation)
+        - bulk_tags_response (the JSON shape)
+        - decode_ids (handles encoded id formats)
+        Rule: bulk actions live in a shared concern, not duplicated per resource.
+-------------------------------------------------------------------------
+     1	module Spree
+     2	  module Api
+     3	    module V3
+     4	      # Provides the shared tag bulk actions, the `bulk_collection` relation,
+     5	      # and the `after_bulk_tags_change` hook controllers override (e.g. to
+     6	      # reindex search + match automatic taxons).
+     7	      module BulkOperations
+     8	        extend ActiveSupport::Concern
+     9	
+    10	        included do
+    11	          # Guards the concern's two actions; host controllers add their own
+    12	          # bulk actions to the filter with `before_action :require_ids!, only: [...]`.
+    13	          before_action :require_ids!, only: [:bulk_add_tags, :bulk_remove_tags]
+    14	        end
+    15	
+    16	        # POST /api/v3/admin/<resource>/bulk_add_tags
+    17	        # Body: { ids: [...], tags: ['summer', 'sale'] }
+    18	        def bulk_add_tags
+    19	          authorize! :update, model_class
+    20	
+    21	          Spree::Tags::BulkAdd.call(tag_names: Array(params[:tags]), records: bulk_collection)
+    22	          after_bulk_tags_change
+    23	
+    24	          render json: bulk_tags_response
+    25	        end
+    26	
+    27	        # POST /api/v3/admin/<resource>/bulk_remove_tags
+    28	        # Body: { ids: [...], tags: ['summer', 'sale'] }
+    29	        def bulk_remove_tags
+    30	          authorize! :update, model_class
+    31	
+    32	          Spree::Tags::BulkRemove.call(tag_names: Array(params[:tags]), records: bulk_collection)
+    33	          after_bulk_tags_change
+    34	
+    35	          render json: bulk_tags_response
+    36	        end
+    37	
+    38	        private
+    39	
+    40	        # 422s when the caller omits `ids` entirely. An explicit empty array
+    41	        # is allowed (= no-op, useful when a UI clears its selection between
+    42	        # render and submit); a missing key is treated as a client bug since
+    43	        # bulk endpoints would otherwise silently match no rows and the
+    44	        # caller couldn't tell the difference from a successful zero-match.
+    45	        def require_ids!
+    46	          return if params.key?(:ids)
+    47	
+    48	          render_error(
+    49	            code: 'missing_ids',
+    50	            message: 'ids is required (send an empty array to no-op).',
+    51	            status: :unprocessable_content
+    52	          )
+    53	        end
+    54	
+    55	        # Hook for controllers to perform additional work after bulk tag
+    56	        # mutations — e.g. enqueueing search reindex jobs, re-matching
+    57	        # automatic taxons.
+    58	        def after_bulk_tags_change
+    59	        end
+    60	
+    61	        # Slim ability-scoped relation targeted by the inbound `ids` param.
+    62	        # Cross-store IDs and IDs the current admin can't update are silently
+    63	        # dropped before any mutation runs. Mirrors the legacy concern's
+    64	        # `bulk_collection` — no eager loads, because bulk endpoints only need
+    65	        # `id` + `store_ids` per record.
+    66	        def bulk_collection
+    67	          @bulk_collection ||= begin
+    68	            product_ids = decode_ids(params[:ids])
+    69	            model_class.for_store(current_store).accessible_by(current_ability, :update)
+    70	              .where(id: product_ids)
+    71	          end
+    72	        end
+    73	
+    74	        # Default shape for bulk tag responses; controllers override
+    75	        # `bulk_record_count_key` to give the count its resource-named JSON key
+    76	        # (e.g. `product_count`, `order_count`). Mirrors how the legacy admin
+    77	        # concern delegates response shaping to the host controller.
+    78	        def bulk_tags_response
+    79	          {
+    80	            bulk_record_count_key => bulk_collection.size,
+    81	            tag_count: Array(params[:tags]).size
+    82	          }
+    83	        end
+    84	
+    85	        def bulk_record_count_key
+    86	          :record_count
+    87	        end
+    88	
+    89	        # Maps inbound IDs (a mix of prefixed `prod_…` strings and raw IDs) to
+    90	        # raw IDs. Anything that isn't a valid prefixed ID is passed through
+    91	        # verbatim, so legacy clients sending raw IDs keep working. Prefix
+    92	        # decoding is pure — no DB lookup needed.
+    93	        def decode_ids(ids)
+    94	          Array(ids).map do |id|
+    95	            Spree::PrefixedId.prefixed_id?(id) ? Spree::PrefixedId.decode_prefixed_id(id) : id
+    96	          end
+    97	        end
+    98	      end
+    99	    end
+   100	  end
+   101	end
