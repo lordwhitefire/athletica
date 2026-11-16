@@ -1,0 +1,44 @@
+EVIDENCE 0 — provenance
+Repo: github.com/SteveSimonson/amazon-flash-catalog   Commit: ab32076f120f0ce26917184ba582cb9a841f361b (2026-10-14)
+Licence: MIT (LICENSE). Static read only.
+
+EVIDENCE 1 — token  (src/fetch/creators.ts)
+ creators.ts:9-13   token endpoints for versions 3.1 / 3.2 / 3.3 (api.amazon.com / .co.uk / .co.jp  /auth/o2/token)
+ creators.ts:15-16  token cache is a module-level variable (per Worker isolate)
+ creators.ts:28     reuse while more than 60 s remain
+ creators.ts:30     credential version defaults to '3.1'
+ creators.ts:34-39  form body: grant_type, client_id, client_secret, scope = 'creatorsapi/default'
+ creators.ts:46,51  any failure -> returns null (no log, no error recorded)
+ creators.ts:52-55  expiry = now + (expires_in or 3600) s
+
+EVIDENCE 2 — request  (src/fetch/creators.ts)
+ creators.ts:70     partner tag falls back to a hard-coded default tag 'iu0e3-20'
+ creators.ts:71     marketplace from env, default 'www.amazon.com'
+ creators.ts:75     batches of 10 ASINs
+ creators.ts:78-85  POST https://creatorsapi.amazon/catalog/v1/getItems with Authorization Bearer,
+                    x-marketplace, and an 'x-partner-tag' HEADER
+ creators.ts:86-94  body = { itemIds, resources } only (no partnerTag, itemIdType or marketplace in body)
+ creators.ts:88-93  resources: images.primary.large, itemInfo.title, offersV2.listings.price, browseNodeInfo.websiteSalesRank
+ creators.ts:121    price taken from listings[0] only; availability not requested or read
+
+EVIDENCE 3 — failure handling  (src/fetch/creators.ts)
+ creators.ts:96-99  non-OK: 401 or 403 -> stop the whole run quietly; any other status -> skip batch, continue
+ creators.ts:131-133 exceptions swallowed. No retry, no 429/Retry-After handling, no delay between batches
+
+EVIDENCE 4 — pipeline  (src/fetch/pipeline.ts, filters.ts, index.ts, wrangler.jsonc)
+ pipeline.ts:76-91  discover (non-API) -> enrich via Creators (soft-fail) -> merge
+ pipeline.ts:104-105 filters then quality gate (this site's keyword is 'bamboo' — site-specific)
+ pipeline.ts:130-135 dedupe by upper-cased ASIN across categories
+ pipeline.ts:147-163 zero results -> keep previous catalog, record lastError, return ok
+ pipeline.ts:203-227 schedule presets manual / hourly / every_6h / daily / weekly
+ index.ts:553-563   Worker cron handler runs only sites whose schedule is due
+ wrangler.jsonc     cron "0 * * * *" (hourly tick)
+ filters.ts:42-47   drop titles under 8 chars and placeholder titles
+ filters.ts:71-86   rating / review / price floors; missing price fails a price filter
+
+EVIDENCE 5 — documented limits
+ README.md:166      "Creators API may return AssociateNotEligible ... enrichment is soft-fail (discovery still publishes)"
+
+EVIDENCE 6 — what is NOT there
+ no use of availability, customerReviews or variations resources in src/fetch/creators.ts
+ rating and reviewCount are merged (creators.ts:152-153) but never requested, so they come only from scraping

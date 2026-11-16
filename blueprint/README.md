@@ -14,7 +14,7 @@ This is the Plan-mode blueprint for the **Athletica football affiliate marketpla
 1. **Public storefront:** homepage, catalog browse + search, product detail with variants + reviews, and a SHOP PRODUCT CTA that redirects to Amazon in the visitor's local marketplace.
 2. **Private admin workspace:** full product CRUD + variants + bulk import, media library, live analytics dashboard, affiliate + payout management.
 3. **Affiliate dashboard:** self-serve signup + onboarding, trackers, balance, payout requests.
-4. **Amazon integration:** 22-marketplace geo-routing, PAAPI product cache with availability, dead-link detection, reviews.
+4. **Amazon integration:** 22-marketplace geo-routing, dead-link detection, owner-entered product data with optional Creators API enrichment (cache, availability, reviews).
 
 The blueprint is built from the **reverse-engineering findings** — 7 engagements, 10 samples, all reported 2026-11-16 in `reverse-engineering-workspace/`. Every rule traces to a `report.md` `file:line` citation. Full evidence in `product-management/02-area-decisions-evidence.md`; rule extracts in `product-management/01-re-findings-consolidated.md`; Feature Cards in `product-management/03-feature-cards.md`.
 
@@ -45,13 +45,13 @@ Evidence behind any decision: `product-management/02-area-decisions-evidence.md`
 
 ## Scope
 
-**In scope (full marketplace):** storefront (homepage + catalog + search + categories), product detail (variants + reviews + JSON-LD), redirect + click pipeline with geo-routing, three-locks admin auth, full product CRUD + variants + bulk import, media library, live analytics dashboard, affiliate program (signup + trackers + balance + payouts), Amazon PAAPI cache + availability + dead-link detection, i18n for 22 marketplace locales, Sentry, legal.
+**In scope (full marketplace):** storefront (homepage + catalog + search + categories), product detail (variants + reviews + JSON-LD), redirect + click pipeline with geo-routing, three-locks admin auth, full product CRUD + variants + bulk import, media library, live analytics dashboard, affiliate program (signup + trackers + balance + payouts), Amazon dead-link detection + optional Creators API enrichment (cache + availability), i18n for 22 marketplace locales, Sentry, legal.
 
 **Skip (honest, structural — not deferrals):**
 - **Amazon owns the transaction (5 areas):** payment, inventory, cart/checkout, shipping, order management. We are an affiliate marketplace, not a retailer.
 - **No mobile app (7 areas):** app store, push, device, offline-mobile, app updates, deep links, mobile-perf.
 - **No PWA (1 area):** one-shot visits + dashboards (degrade to polling).
-- **No outgoing webhooks (1 area):** PAAPI is polled.
+- **No outgoing webhooks (1 area):** the Creators API (when enabled) is polled.
 
 **14 Skips total — all structural to the business model, not MVP shortcuts.**
 
@@ -77,14 +77,22 @@ WhatsApp link  → /product/product-2?utm_source=whatsapp ─┘
 | 2 Storefront | Homepage (3-up grid + carousel), catalog browse + search + categories, product detail with variants + reviews + JSON-LD. |
 | 3 Admin workspace | Full product CRUD + variants + bulk import, media library, live analytics dashboard. |
 | 4 Affiliate program | Signup + onboarding, trackers, campaigns, balance ledger, payout request + admin review + state machine. |
-| 5 Amazon integration | 22-marketplace geo-routing, PAAPI cache, availability checks, dead-link detection, reviews via PAAPI. |
+| 5 Amazon integration | 22-marketplace geo-routing, dead-link detection, owner-entered product data, optional Creators API enrichment (cache, availability, reviews). |
 | 6 Hardening | i18n (marketplace locales), real-time analytics, Sentry, legal, handoff, documentation. |
 
 Each phase ends with a phase gate: the owner reviews before the next phase begins.
 
 ## Inputs
 
-- `reverse-engineering-workspace/` — 7 engagements (YOURLS, Dub, Raider, Weferral, Amazon Auto Links, Spree, athletica/rollout own, NextBase, Plausible, Vercel Commerce).
+- `reverse-engineering-workspace/` — 8 engagements (engagement 08: Amazon Creators API — goark/pa-api, amazon-flash-catalog) (YOURLS, Dub, Raider, Weferral, Amazon Auto Links, Spree, athletica/rollout own, NextBase, Plausible, Vercel Commerce).
 - `BLUEPRINT.md` (root, Study mode, mini) — the current state of the existing app.
 - `product-management/ROLLOUT-MVP-SIX-LAYERS.md` (2026-10-26) — stale; only locked constraints carry.
 - `web-development-areas.md` (root) — the 80-area checklist source.
+
+## Revision — 2026-11-16 (Amazon Creators API)
+
+Amazon deprecated PA-API 5, which this blueprint had assumed. Product data is now owner-entered first,
+and the Creators API is an optional, soft-fail booster used only once the owner is eligible. Dead-link
+detection no longer depends on the API. One owner decision is open: see D8 in `05-gap-questions.md`.
+Reasoning and evidence: `product-management/04-creators-api-recommendation.md` and
+`reverse-engineering-workspace/engagements/08-amazon-creators-api/`.

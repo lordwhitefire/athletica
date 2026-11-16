@@ -65,5 +65,6 @@ Driven by what the affiliate marketplace needs, foundational first:
 | 05 | Multi-lock admin auth + RLS-at-DB | athletica/rollout (own), NextBase | reported |
 | 06 | Privacy-first click analytics + visitor hashing | Plausible (Umami — not studied) | reported |
 | 07 | Storefront UX — product grid, detail page, "Buy on Amazon" CTA | Vercel Commerce | reported |
+| 08 | Amazon Creators API client (replaces PA-API 5) | goark/pa-api, amazon-flash-catalog | reported (AzTracker blocked) |
 
 See `INDEX.md` for live status.

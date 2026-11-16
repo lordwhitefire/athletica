@@ -1,0 +1,42 @@
+EVIDENCE 0 — provenance
+Repo: github.com/goark/pa-api   Commit: 60cfe0145252ca17586e39f4d0d43d64a68d8057 (2026-05-12)
+Licence: Apache-2.0 (LICENSE). Static read only.
+
+EVIDENCE 1 — token flow  (auth.go)
+ auth.go:20-22   two scopes: "creatorsapi/default" (v2.x Cognito) and "creatorsapi::default" (v3.x Login with Amazon)
+ auth.go:24      grant type client_credentials
+ auth.go:27      30 s leeway before expiry
+ auth.go:68-83   Token(): mutex-guarded; returns cached token while now < expiresAt; otherwise refreshes
+ auth.go:103-110 v3: form has grant_type + scope only; v2: form also carries client_id + client_secret
+ auth.go:117-120 v3: credentials sent as HTTP Basic header (base64 id:secret)
+ auth.go:133-140 non-2xx from token endpoint -> ErrHTTPStatus, body clipped to 256 bytes in error context
+ auth.go:126     token response body read capped at 8 KB
+ auth.go:156-165 expires_in <= 0 -> default 3600; leeway halves if >= expires_in
+ auth.go:182-194 v3 header "Bearer <token>"; v2 header "Bearer <token>, Version <v>"
+
+EVIDENCE 2 — request shape  (client.go, server.go, operation.go)
+ client.go:16    marketplace sent in header "x-marketplace"
+ client.go:89-103 post(): token -> POST with Accept, Content-Type, x-marketplace, Authorization
+ server.go:18    single host "creatorsapi.amazon" for every marketplace
+ server.go:27-35 token endpoints per credential version (2.1-2.3 Cognito; 3.1-3.3 api.amazon.*)
+ operation.go:31-36 paths: /catalog/v1/getItems, searchItems, getVariations, getBrowseNodes
+ query/request.go:112 body key "partnerTag" (lowerCamelCase)
+
+EVIDENCE 3 — marketplaces  (marketplace.go)
+ marketplace.go:84-106  21 marketplace hostnames (www.amazon.com ... www.amazon.ae); Belgium is absent
+ marketplace.go:163-185 region group per marketplace -> credential version 3.1 / 3.2 / 3.3
+
+EVIDENCE 4 — resources  (query/resources.go, query/query.go)
+ resources.go:49-62  offersV2.listings.availability / condition / price / isBuyBoxWinner / merchantInfo ...
+ resources.go:69-72  customerReviews.count, customerReviews.starRating
+ resources.go:79-83  variationSummary.*
+ query.go:100-113    "Offers" now selects OffersV2; comment says V1 Offers retired 2026-01-31
+ query/getitems.go:27-29 Marketplace / Merchant / OfferCount still accepted by the builder
+ README.md:21        "Amazon retired PA-API v5 on 2026-05-15"
+ README.md (table)   Merchant, OfferCount, PartnerType, body Marketplace are silently ignored
+
+EVIDENCE 5 — what is NOT there
+ command: grep -rn -i -E 'retry|429|throttl|backoff|sleep' --include=*.go (non-test files)
+ result : no retry, backoff, throttle or 429 handling in library code (only unrelated word matches)
+ client_test.go:239-259 tests token-endpoint 401 and 500 handling only; no API-call 4xx/5xx or 429 test
+ go.mod:7  non-2xx handling for the API call itself lives in github.com/goark/fetch (not in sample)

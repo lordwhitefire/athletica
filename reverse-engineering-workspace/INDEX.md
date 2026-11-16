@@ -24,6 +24,9 @@ Live status of all reverse-engineering engagements. Updated as work proceeds.
 | 05 | Multi-lock admin auth + RLS-at-DB | NextBase | 2026-11-16 | reported | [report.md](engagements/05-multi-lock-auth-rls/nextbase/2026-11-16/report.md) |
 | 06 | Privacy-first click analytics + visitor hashing | Plausible | 2026-11-16 | reported | [report.md](engagements/06-privacy-analytics/plausible/2026-11-16/report.md) |
 | 07 | Storefront UX — product grid, detail page, "Buy on Amazon" CTA | Vercel Commerce | 2026-11-16 | reported | [report.md](engagements/07-storefront-ux/vercel-commerce/2026-11-16/report.md) |
+| 08 | Amazon Creators API client (auth, token cache, marketplace routing, enrichment, failure handling) | goark/pa-api | 2026-11-16 | reported | [report.md](engagements/08-amazon-creators-api/goark-pa-api/2026-11-16/report.md) |
+| 08 | Amazon Creators API client (auth, token cache, marketplace routing, enrichment, failure handling) | amazon-flash-catalog | 2026-11-16 | reported | [report.md](engagements/08-amazon-creators-api/amazon-flash-catalog/2026-11-16/report.md) |
+| 08 | Amazon Creators API client (auth, token cache, marketplace routing, enrichment, failure handling) | AzTracker | 2026-11-16 | blocked | [scope.md](engagements/08-amazon-creators-api/aztracker/2026-11-16/scope.md) — sample could not be located |
 
 ## Consolidated outputs (built after engagements complete)
 
@@ -45,6 +48,11 @@ All 7 engagements complete. 10 samples studied across 7 capabilities:
 | 05 | Multi-lock admin auth + RLS | athletica/rollout (own), NextBase | own, MIT |
 | 06 | Privacy-first click analytics + visitor hashing | Plausible | AGPLv3 |
 | 07 | Storefront UX | Vercel Commerce | MIT |
+| 08 | Amazon Creators API client | goark/pa-api, amazon-flash-catalog (AzTracker not found) | Apache-2.0, MIT |
+
+Engagement 08 was added after engagements 01–07 because Amazon's PA-API 5 (assumed by engagement 03 and
+the blueprint) is deprecated. Amazon's own documentation cross-check is in
+`engagements/08-amazon-creators-api/official-docs-crosscheck.md`.
 
 Every report cites `file:line` evidence in its `evidence/excerpts.txt`. The next
 step is to consolidate the rules into the master architecture + data model

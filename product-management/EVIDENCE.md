@@ -88,3 +88,17 @@ Also: `reverse-engineering-workspace/README.md`, `INDEX.md`, `BLUEPRINT.md` (Stu
 Inherits the RE engagements' confidence words (`confirmed` / `likely` / `not proven`). Every `confirmed` rule → Decided. `likely` rules carried with caveat noted. `not proven` items (Weferral's backend enum values, PAAPI TPS under our load, SSE scalability on Vercel) flagged in Feature Card "Not seen" lines and `06-iso-25010.md`.
 
 The blueprint is a recommendation. The owner decides.
+
+---
+
+## Creators API change — 2026-11-16
+
+**Plan:** `PLAN-creators-api.md`. **Recommendation:** `04-creators-api-recommendation.md`.
+
+**Read (static only):** goark/pa-api (`auth.go`, `client.go`, `server.go`, `marketplace.go`, `operation.go`, `errcode.go`, parts of `query/` and `client_test.go`) and amazon-flash-catalog (`src/fetch/creators.ts`, `pipeline.ts`, `filters.ts`, parts of `index.ts`, `types.ts`, `wrangler.jsonc`, `README.md`). Nothing was run or installed.
+
+**Web:** Amazon Creators API pages (deprecation, migration guide, introduction, using-curl, api-rates, error codes, best practices) read through a page-summary tool, so every figure from them is secondhand. Logged as D1–D9 in `reverse-engineering-workspace/engagements/08-amazon-creators-api/official-docs-crosscheck.md`.
+
+**Not found:** AzTracker (four searches). Recorded as blocked in the engagement registry.
+
+**Blueprint files changed:** `blueprint/README.md`, `01`–`06`. Every PAAPI mention was replaced; `grep -i 'paapi\|pa-api' blueprint/*.md` returns nothing. Older PM files `01`–`03` still say PAAPI and are kept as the record at the time; section 8 of `04` lists what supersedes them.

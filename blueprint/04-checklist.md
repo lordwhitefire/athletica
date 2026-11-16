@@ -67,7 +67,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 | 35 | Product catalog | Decided | Full catalog: products + variants + categories + collections + browse + search. |
 | 37 | Cart and checkout | Skip | No cart; CTA → Amazon. |
 | 41 | CMS integration | Decided | Sanity full media library. |
-| 42 | Reviews and testimonials | Decided | Amazon reviews via PAAPI on product pages. |
+| 42 | Reviews and testimonials | Decided | Amazon reviews via Creators API when enabled; section hidden when there is no data. |
 | 44 | User management | Decided | Admins (three-locks) + affiliates (self-serve + approval). |
 | 46 | Dashboard and data visualization | Decided | Live admin analytics + affiliate dashboard. |
 | 47 | Real-time features | Decided | SSE for live dashboards. |
@@ -75,7 +75,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 | 50 | File management | Decided | Full media library (upload, browse, delete). |
 | 51 | Search and filtering | Decided | Public storefront search + admin search. |
 | 53 | Import and export | Decided | Two-phase CSV import + analytics/ledger/payout CSV export. |
-| 55 | Settings and configuration | Decided | Affiliate tags (per-marketplace), Sentry, rate-limit, salt, PAAPI, affiliate program settings. |
+| 55 | Settings and configuration | Decided | Affiliate tags (per-marketplace), Sentry, rate-limit, salt, Creators API (optional), affiliate program settings. |
 | 56 | Admin panel | Decided | Full workspace (products, categories, media, analytics, affiliates, payouts, settings). |
 | 67 | Push notifications (mobile) | Skip | No mobile app. |
 | 68 | Device features | Skip | No mobile app. |
@@ -87,7 +87,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 
 | # | Area | Decision | One-line rationale |
 |---|---|---|---|
-| 02 | Stack decisions | Decided | Next.js 16.3.4 + Supabase + Sanity + Upstash + Sentry + ua-parser-js + PAAPI client. |
+| 02 | Stack decisions | Decided | Next.js 16.3.4 + Supabase + Sanity + Upstash + Sentry + ua-parser-js + Creators API client (optional). |
 | 05 | Frontend architecture | Decided | App Router; Server Components for data; layered action-client. |
 | 65 | Platform targets | Decided | Web only (phone + PC). |
 | 78 | Landing page vs app shell | Decided | Storefront homepage at `/`; admin + affiliate shells separate. |
@@ -97,14 +97,14 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 | # | Area | Decision | One-line rationale |
 |---|---|---|---|
 | 57 | API design | Decided | REST `/api/*` + S2S postback + affiliate dashboard API. |
-| 61 | Webhooks (outgoing) | Skip | None; PAAPI polled. |
+| 61 | Webhooks (outgoing) | Skip | None; Creators API (when enabled) polled. |
 | 80 | Third party integrations | Decided | Supabase, Sanity, Amazon (22 marketplaces), Upstash, Sentry, Vercel, email. |
 
 #### Communication between parts (1)
 
 | # | Area | Decision | One-line rationale |
 |---|---|---|---|
-| 58 | Background jobs and queues | Decided | `waitUntil` for clicks; Vercel cron for salt/dead-link/PAAPI/payout-term; SSE for live. |
+| 58 | Background jobs and queues | Decided | `waitUntil` for clicks; Vercel cron for salt/dead-link/Creators-API/payout-term; SSE for live. |
 
 #### Runtime environment (0 areas — uses R1–R5, see `05-gap-questions.md`)
 
@@ -120,7 +120,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 
 | # | Area | Decision | One-line rationale |
 |---|---|---|---|
-| 14 | Environment and configuration | Decided | `.env.local`/Vercel; per-marketplace tags; PAAPI keys; leak plan. |
+| 14 | Environment and configuration | Decided | `.env.local`/Vercel; per-marketplace tags; Creators API credentials (optional until eligible); leak plan. |
 
 #### Security (4)
 
@@ -136,7 +136,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 | # | Area | Decision | One-line rationale |
 |---|---|---|---|
 | 13 | Error handling | Decided | Neutral auth errors; plain 404; Sentry; error-tolerant click writes; transactional payouts. |
-| 19 | Monitoring and observability | Decided | Sentry + uptime ping + drop-reason telemetry + payout-pipeline + PAAPI error-rate alerts. |
+| 19 | Monitoring and observability | Decided | Sentry + uptime ping + drop-reason telemetry + payout-pipeline + Creators API error-rate alerts. |
 | 27 | Offline and PWA | Skip | No PWA; dashboards degrade to polling. |
 | 31 | Backup and recovery | Decided | Supabase daily + PITR (Pro); Sanity CDN; git; redeploy rollback. |
 | 69 | Offline mode (mobile) | Skip | No mobile app. |
@@ -170,7 +170,7 @@ The 14 Skips are structural to the business model (affiliate marketplace, not re
 | 33 | Handoff and maintenance | Decided | Credentials handoff; admin + affiliate guides; support per owner. |
 | 73 | Progress tracking | Decided | `PROGRESS.md` + per-phase + per-task ROLL folders. |
 | 74 | Session recovery | Decided | Reload rule files first; log after each action. |
-| 75 | Constraint identification | Decided | Solo owner + affiliates; Vercel/Supabase Pro; PAAPI limits; Nigerian context; email deliverability. |
+| 75 | Constraint identification | Decided | Solo owner + affiliates; Vercel/Supabase Pro; Creators API limits and eligibility; Nigerian context; email deliverability. |
 
 ---
 

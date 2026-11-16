@@ -119,10 +119,10 @@ The UX Thread runs through every layer. Each layer ends with its UX Thread quest
 - **When** an affiliate requests a payout, **then**: config_failure / amount_neutral / amount_failure / request_success; flow wrapped in ONE transaction (balance.released=true + payout INSERT). *(RE-02 Raider §2.5; RE-02 Weferral §2.3)*
 - **When** a payout transitions, **then**: `requested → scheduled → paid` or `→ rejected`; `scheduled_for` set on approval. *(RE-02 Weferral §2.5)*
 - **When** a counter increments, **then** SQL `x = x + 1` (never read-then-write). *(RE-02 Raider §2.4)*
-- **When** the dead-link job runs, **then** three signals (PAAPI availability, HEAD probe, redirect-time 4xx) → mark dead → CTA greys out. *(RE-03 §2.7)*
+- **When** the dead-link job runs, **then** two signals always on (HEAD probe, redirect-time 4xx), plus Creators API availability when enabled → mark dead → CTA greys out. *(RE-03 §2.7; RE-08; PM 04)*
 - **When** geo-routing, **then** IP → country (6-header chain) → marketplace → URL with that marketplace's tag. Fallback to default marketplace if no tag. *(RE-03 §2.1, §2.6; RE-06 §2.5)*
 
-**Limits:** PAAPI 1 TPS / 86400/day. Rate limit per-endpoint (Upstash, fail-open 1s). Click dedup 1h. Payout_term delays eligibility.
+**Limits:** Creators API (optional) starts at 1 TPS / 8,640 per day; needs 10 qualifying sales in 30 days; 429/5xx → exponential backoff. *(RE-08 official-docs D5–D7)* Rate limit per-endpoint (Upstash, fail-open 1s). Click dedup 1h. Payout_term delays eligibility.
 
 **Where each rule lives (one place):** Amazon URL → `affiliate-service.ts`. Publish gate → `product-service.ts`. Three locks → `auth/admin.ts` + middleware. Commission → `affiliate/commission-service.ts`. Payout → `affiliate/payout-service.ts` (transactional). Geo → `lib/geo/marketplace-resolver.ts`. Dead-link → `cron/dead-link-probe.ts`.
 
@@ -151,7 +151,7 @@ The UX Thread runs through every layer. Each layer ends with its UX Thread quest
 | 2 Storefront | Homepage, catalog browse + search, product detail with reviews. |
 | 3 Admin workspace | Auth, product CRUD + variants + bulk import, media library, live analytics. |
 | 4 Affiliate program | Signup + onboarding, trackers, balance, payouts. |
-| 5 Amazon integration | Geo-routing, PAAPI cache, availability, dead-link detection, reviews. |
+| 5 Amazon integration | Geo-routing, owner-entered product data, dead-link detection, optional Creators API enrichment (cache, availability, reviews). |
 | 6 Hardening | i18n, real-time analytics, Sentry, legal, handoff. |
 
 Per Feature Cards 1–15 in `product-management/03-feature-cards.md`.
@@ -163,7 +163,7 @@ Per Feature Cards 1–15 in `product-management/03-feature-cards.md`.
 - Analytics pipeline: views + clicks, visitor hash, salt rotation, drop-reason telemetry.
 - Admin: three-locks auth, product CRUD + variants + categories + collections, bulk status/archive, two-phase CSV import, media library, live analytics dashboard, affiliate review, payout review (approve/reject/schedule), settings.
 - Affiliate: signup + email verify + admin approval, trackers, balance (live), payout request + history.
-- Amazon: 22-marketplace geo-routing, PAAPI cache (TTL + error + availability), dead-link detection (3 signals), reviews via PAAPI.
+- Amazon: 22-marketplace geo-routing, owner-entered product data first, optional Creators API enrichment (cache: offers ≤ 1 hour, other fields ≤ 1 day; soft-fail), dead-link detection (2 always-on signals + API availability when enabled), reviews shown only when API data exists.
 - i18n: 22 locale UI strings. Legal: disclosure, privacy, terms, cookie, affiliate agreement.
 
 ### Out of scope (structural)
@@ -180,4 +180,4 @@ Cart, checkout, payment, inventory, shipping, order management (Amazon owns). Mo
 
 ### Areas that live here
 
-07 (Decided) · 34 (Skip — Amazon) · 35 (Decided — full catalog) · 37 (Skip — Amazon) · 41 (Decided — Sanity) · 42 (Decided — PAAPI reviews) · 44 (Decided — admins + affiliates) · 46 (Decided — live dashboard) · 47 (Decided — SSE) · 48 (Decided — email) · 50 (Decided — media library) · 51 (Decided — public + admin search) · 53 (Decided — import/export) · 55 (Decided) · 56 (Decided — full workspace) · 67 (Skip — no mobile) · 68 (Skip — no mobile) · 71 (Skip — no mobile).
+07 (Decided) · 34 (Skip — Amazon) · 35 (Decided — full catalog) · 37 (Skip — Amazon) · 41 (Decided — Sanity) · 42 (Decided — reviews when Creators API data exists) · 44 (Decided — admins + affiliates) · 46 (Decided — live dashboard) · 47 (Decided — SSE) · 48 (Decided — email) · 50 (Decided — media library) · 51 (Decided — public + admin search) · 53 (Decided — import/export) · 55 (Decided) · 56 (Decided — full workspace) · 67 (Skip — no mobile) · 68 (Skip — no mobile) · 71 (Skip — no mobile).

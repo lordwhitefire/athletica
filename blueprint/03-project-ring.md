@@ -21,7 +21,7 @@ The work around the product: version control, client talk, legal, docs, handoff,
 
 - **Budget:** solo owner + affiliates; Vercel/Supabase Pro tiers when traffic justifies.
 - **Hosting limits:** Vercel (10s serverless free, 60s Pro), Supabase (free → Pro), Upstash (free tier), Sentry (free tier).
-- **Amazon limits:** PAAPI 1 TPS / 86400 requests/day. Associates tag is per-marketplace (one tag per store).
+- **Amazon limits:** Creators API (optional): starts at 1 TPS / 8,640 requests/day; needs 10 qualifying sales in 30 days; access is lost after 30 days without qualifying sales. Associates tag is per-marketplace (one tag per store).
 - **Nigerian context:** slow mobile data, in-app browsers, power cuts. Phone-first is the audience, not a preference.
 - **Email deliverability:** affiliate verification + payout notifications must reach inboxes (configure SPF/DKIM).
 - **Client's devices:** phone + PC (verify both).
@@ -92,12 +92,12 @@ The work around the product: version control, client talk, legal, docs, handoff,
 - **GDPR:** EU IP redaction (implemented); affiliate data deletion on request; right to export.
 - **Terms of service:** storefront + affiliate agreement (commission terms, payout terms, reversals).
 - **Affiliate payout tax docs:** per jurisdiction (e.g. 1099 for US affiliates, where applicable).
-- **Age limits:** `is_adult` flag from PAAPI; no special UI in v1 (Amazon gates the purchase).
+- **Age limits:** `is_adult` flag from the Creators API when enabled, otherwise unset; no special UI in v1 (Amazon gates the purchase).
 
 ### 33 — Handoff and maintenance (Decided)
 
 - **Who maintains:** owner + next developer.
-- **Credentials handoff:** Supabase (project URL, service key), Sanity (project ID, write token), Upstash (Redis URL + token), Sentry (DSN), Vercel (project access), Amazon Associates (per-marketplace tags + PAAPI keys), email (SMTP/Resend credentials).
+- **Credentials handoff:** Supabase (project URL, service key), Sanity (project ID, write token), Upstash (Redis URL + token), Sentry (DSN), Vercel (project access), Amazon Associates (per-marketplace tags + Creators API credential ID/secret once eligible), email (SMTP/Resend credentials).
 - **Client training:** admin guide + affiliate guide (one-pager each).
 - **Support period:** per owner.
 - **Architect handoff** produced by the architect agent from this blueprint (layer-by-layer file map).
