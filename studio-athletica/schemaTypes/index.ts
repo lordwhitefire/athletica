@@ -1,0 +1,15 @@
+import product from './product'
+import colorVariant from './colorVariant'
+import productPrice from './price'
+import productSize from './size'
+import technicalDetails from './technicalDetails'
+import productDescription from './description'
+import homepage from './homepage'
+import navigation from './navigation'
+import navItem from './navItem'
+import navLink from './navLink'
+import amazonLinks from './amazonLinks'
+import brand from './brand'
+import siteSettings from './siteSettings'
+
+export const schemaTypes = [product, colorVariant, productPrice, productSize, technicalDetails, productDescription, homepage, navigation, navItem, navLink, amazonLinks, brand, siteSettings]
