@@ -1,0 +1,52 @@
+{
+  "products": {
+    "source": 28,
+    "target": 29,
+    "matched": false
+  },
+  "brands": {
+    "source": 4,
+    "target": 5,
+    "matched": false
+  },
+  "categories": {
+    "source": 0,
+    "target": 2,
+    "matched": true
+  },
+  "productBrandLinks": {
+    "total": 29,
+    "valid": 29,
+    "invalid": []
+  },
+  "productCategoryLinks": {
+    "total": 29,
+    "valid": 29,
+    "invalid": []
+  },
+  "imageLinks": {
+    "totalProducts": 29,
+    "withImages": 29,
+    "empty": []
+  },
+  "asinStatus": {
+    "total": 29,
+    "populated": 1,
+    "null": 28
+  },
+  "homepageSections": {
+    "source": 0,
+    "target": 35,
+    "matched": false
+  },
+  "navigation": {
+    "source": 0,
+    "target": 1293,
+    "matched": false
+  },
+  "siteSettings": {
+    "exists": true,
+    "brandNameCorrect": true
+  },
+  "errors": []
+}

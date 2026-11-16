@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "White and Light Green",
+  "color_variants": [],
+  "description": {
+    "collection": "RADIANT BLAZE",
+    "intro": "The adidas Predator Elite LL FG are crafted for players who control the game with pinpoint accuracy. The laceless design and high-definition 3D texture deliver consistent, clean ball contact on every touch.",
+    "key_benefits": [
+      "Lace-free strike zone: Completely uniform surface for maximum precision in shots and passes.",
+      "Optimized FG traction: Stability, acceleration, and secure grip on dry natural grass and modern artificial surfaces.",
+      "Premium fit and feel: Ultra-light, enveloping construction with strategic flexibility and support.",
+      "Elite performance: Inspired by and worn by top professional players worldwide."
+    ],
+    "subtitle": "Laceless football boots adidas FG for firm natural grass - white and light green",
+    "tagline": "Surgical precision, zero distractions",
+    "technical_details": {
+      "adjustment": "Laceless",
+      "range": "Professional / Elite range – maximum performance with premium materials and technologies",
+      "sole_type": "FG (firm ground – dry natural grass and latest-generation artificial turf)",
+      "upper_material": "Synthetic (HybridTouch / Fibertouch)"
+    }
+  },
+  "gender": "Unisex",
+  "id": "JI1075",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b31997002377f64d5525071916f60e3c6817e5ee-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/09cd6d4adfdae3b670db60ad485ab666b5d08bfd-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/88a6a5ef1fd078f2e066e1b0a731a69ae4842e4b-768x768.jpg",
+  "model": "Predator/Elite-LL-FG",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 161.99,
+    "discount_percent": 40,
+    "member_price": 0,
+    "original": 270
+  },
+  "sizes": [
+    {
+      "_key": "size-0",
+      "size": "39 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-1",
+      "size": "40 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-2",
+      "size": "40 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-3",
+      "size": "41 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-4",
+      "size": "42 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-5",
+      "size": "42 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-6",
+      "size": "43 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-7",
+      "size": "44 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-8",
+      "size": "44 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-9",
+      "size": "45 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-10",
+      "size": "46 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-11",
+      "size": "46 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-12",
+      "size": "47 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-13",
+      "size": "48 EU",
+      "available": false,
+      "stock": 0
+    }
+  ],
+  "thumbnail": null,
+  "traction": "FG",
+  "url_slug": "adidas-predator-elite-ll-fg-white-light-green",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.830Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

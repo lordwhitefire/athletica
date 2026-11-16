@@ -1,0 +1,97 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "White and Light Green",
+  "color_variants": [
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "JI1110",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-blue",
+      "color": "Blue",
+      "product_id": "JI1112",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-orange",
+      "color": "Orange",
+      "product_id": "JI1113",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red",
+      "color": "Red",
+      "product_id": "JI1114",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-silver",
+      "color": "Silver",
+      "product_id": "JI1117",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-yellow",
+      "color": "Yellow",
+      "product_id": "JI1118",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white-and-green",
+      "color": "White and Green",
+      "product_id": "JI1140",
+      "thumbnail": null
+    }
+  ],
+  "description": {
+    "collection": "RADIANT BLAZE",
+    "intro": "The adidas Predator League FT FG/MG are the ideal choice for players seeking versatility and precision on firm ground and modern artificial turf. Featuring a fold-over tongue structure and dynamic design, these boots offer a secure fit and precise strikes in every play.",
+    "key_benefits": [
+      "Versatility across surfaces: Sole optimized for firm natural grass and next-generation artificial turf",
+      "Enhanced striking power: Textured strike zones boost shot force and accuracy",
+      "Comfortable and secure fit: Flexible synthetic upper with lace-up system for distraction-free performance",
+      "Bold on-pitch presence: Striking white/light green colorway from the Radiant Blaze Pack"
+    ],
+    "subtitle": "Football boots with fold-over tongue adidas FG/MG for firm natural grass and artificial turf - white and light green",
+    "tagline": "Total control on every playing surface",
+    "technical_details": {
+      "adjustment": "Lace-up with fold-over tongue",
+      "range": "Mid-range / League level – excellent balance of performance, durability, and value for regular training and matches",
+      "sole_type": "FG/MG (Firm Ground / Multi-Ground) – Controlplate outsole with nylon/rubber studs",
+      "upper_material": "Hybridfeel synthetic with 3D texture"
+    }
+  },
+  "gender": "Men",
+  "id": "JI1111",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d52efa2e663396f5ba6ba3dd01e0c042f3f5d1f2-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4b1ca975e3ba3253106de1568b79dd91ac48b0ba-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b93976355923ab0f186224730a3789d583f193f7-768x768.jpg",
+  "model": "Predator/League-FT-(FG/MG)",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 59.99,
+    "discount_percent": 40,
+    "member_price": 98.99,
+    "original": 100
+  },
+  "sizes": [],
+  "thumbnail": null,
+  "traction": "FG/MG",
+  "url_slug": "adidas-predator-league-ft-fg-mg-white-light-green",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.841Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

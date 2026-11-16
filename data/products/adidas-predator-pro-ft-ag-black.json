@@ -1,0 +1,277 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "Black",
+  "color_variants": [
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "IF6329",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-blue",
+      "color": "Blue",
+      "product_id": "IF6371",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-orange",
+      "color": "Orange",
+      "product_id": "JS4075",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "ID3855",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "JI1197",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-silver",
+      "color": "Silver",
+      "product_id": "IF6370",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white-and-green",
+      "color": "White and Green",
+      "product_id": "JI1186",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white-and-green",
+      "color": "White and Green",
+      "product_id": "JI1195",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "JR0440",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red",
+      "color": "Red",
+      "product_id": "ID3856",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "ID3826",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red",
+      "color": "Red",
+      "product_id": "JR0441",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "ID3857",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "JS4072",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red",
+      "color": "Red",
+      "product_id": "JR0443",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red",
+      "color": "Red",
+      "product_id": "ID3825",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "JR4770",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black-and-red",
+      "color": "Black and Red",
+      "product_id": "IG7777",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "JR3322",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-yellow",
+      "color": "Yellow",
+      "product_id": "JH6467",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-orange",
+      "color": "Orange",
+      "product_id": "JI1196",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-blue",
+      "color": "Blue",
+      "product_id": "IF6330",
+      "thumbnail": null
+    }
+  ],
+  "description": {
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "intro": "The Predator Pro FT AG combine an optimized sole for AG with flexible materials that improve stability and response.",
+    "key_benefits": [
+      "Effortless control: reinforced zones for greater precision.",
+      "Natural fit: tongue that adapts pressure to the foot.",
+      "Stability on AG: sole designed for firmness without rigidity."
+    ],
+    "subtitle": "Football boots with tongue adidas AG for artificial grass - black",
+    "tagline": "Pro performance, absolute control",
+    "technical_details": {
+      "adjustment": "With tongue.",
+      "range": "Advanced Range - high quality with optimized technologies, great performance and better durability.",
+      "sole_type": "AG (artificial grass).",
+      "upper_material": "Adaptable synthetic."
+    }
+  },
+  "gender": "Unisex",
+  "id": "KI6297",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b0b1035fd73bafddd308d348d1f892d3f215efc5-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6711565ba01b24a1b6eff3e29427ddf4ab70369f-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2a9b8aa7a358712b08b1f6092b27ddd05e8c4c1a-768x768.jpg",
+  "model": "Predator/Pro-FT-AG",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 157.99,
+    "discount_percent": 1.25,
+    "member_price": 157.99,
+    "original": 160
+  },
+  "sizes": [
+    {
+      "_key": "size-0",
+      "size": "39 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-1",
+      "size": "40 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-2",
+      "size": "40 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-3",
+      "size": "41 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-4",
+      "size": "42 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-5",
+      "size": "42 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-6",
+      "size": "43 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-7",
+      "size": "44 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-8",
+      "size": "44 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-9",
+      "size": "45 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-10",
+      "size": "46 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-11",
+      "size": "46 2/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-12",
+      "size": "47 1/3 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-13",
+      "size": "48 EU",
+      "available": true,
+      "stock": 1
+    },
+    {
+      "_key": "size-14",
+      "size": "48 2/3 EU",
+      "available": false,
+      "stock": 0
+    }
+  ],
+  "thumbnail": null,
+  "traction": "AG",
+  "url_slug": "adidas-predator-pro-ft-ag-black",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.846Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

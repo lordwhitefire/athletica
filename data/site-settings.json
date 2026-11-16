@@ -1,0 +1,101 @@
+{
+  "_id": "siteSettings",
+  "_type": "siteSettings",
+  "footer": {
+    "bottom_tags": [
+      "Fast Global Shipping",
+      "Secure Payments",
+      "Elite Service"
+    ],
+    "brand_description": "Premium equipment for the professional athlete. Engineered for peak performance and unparalleled style.",
+    "brand_name": "Athletica",
+    "copyright": "Athletica Performance. Engineered for Excellence.",
+    "link_columns": [
+      {
+        "_key": "store",
+        "links": [
+          {
+            "_key": "fb",
+            "href": "/football-boots",
+            "label": "Football Boots"
+          },
+          {
+            "_key": "gk",
+            "href": "/goalkeeper-gloves",
+            "label": "Goalkeeper Gloves"
+          },
+          {
+            "_key": "op",
+            "href": "/other-products",
+            "label": "Other Products"
+          }
+        ],
+        "title": "Store"
+      },
+      {
+        "_key": "account",
+        "links": [
+          {
+            "_key": "ma",
+            "href": "/account",
+            "label": "My Account"
+          },
+          {
+            "_key": "os",
+            "href": "/orders",
+            "label": "Order Status"
+          },
+          {
+            "_key": "rt",
+            "href": "/returns",
+            "label": "Returns"
+          }
+        ],
+        "title": "Account"
+      },
+      {
+        "_key": "support",
+        "links": [
+          {
+            "_key": "pp",
+            "href": "/privacy-policy",
+            "label": "Privacy Policy"
+          },
+          {
+            "_key": "tos",
+            "href": "/terms",
+            "label": "Terms of Service"
+          },
+          {
+            "_key": "cs",
+            "href": "/cookies",
+            "label": "Cookie Settings"
+          }
+        ],
+        "title": "Support"
+      }
+    ],
+    "social_links": [
+      {
+        "_key": "web",
+        "icon": "public",
+        "label": "Website",
+        "url": "#"
+      },
+      {
+        "_key": "email",
+        "icon": "mail",
+        "label": "Email",
+        "url": "#"
+      }
+    ]
+  },
+  "logo": null,
+  "site_logo": "https://cdn.sanity.io/images/cuiis46d/production/1b8561a995be178a0a49652bc092e30e76932ce8-1080x1080.png",
+  "_metadata": {
+    "dataType": "site-settings",
+    "lastUpdated": "2026-07-02T03:44:21.737Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

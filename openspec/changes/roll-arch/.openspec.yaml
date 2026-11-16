@@ -1,0 +1,6 @@
+schema: spec-driven
+name: roll-arch
+description: |
+  Rollout 1 Architecture — two separate apps: `rollout/` is the Production app
+  (public showroom); `frontend/` is the Development app (full store + office,
+  not public). One Supabase project, two schemas.

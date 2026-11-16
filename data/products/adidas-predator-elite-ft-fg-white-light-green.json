@@ -1,0 +1,140 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "White and Light Green",
+  "color_variants": [],
+  "description": {
+    "collection": "Radiant Blaze Pack",
+    "intro": "The adidas Predator Elite FT FG deliver professional-level control with advanced technologies for dominating shots, passes, and ball manipulation on firm ground surfaces.",
+    "key_benefits": [
+      "Total precision: Advanced strike zone with raised texture for improved accuracy on shots and passes.",
+      "Optimized stability: Ergonomic fit and structured plate for confident movement at high speeds.",
+      "Superior ball contact: HybridTouch 2.0 synthetic upper molds to the foot for responsive touch.",
+      "Enhanced traction: ControlFrame 2.0 sole plate optimized for firm natural and modern artificial grass.",
+      "Pro-level fit: Fold-over tongue and lacing system for secure, customized lockdown."
+    ],
+    "subtitle": "Football boots with tongue adidas FG for firm natural grass or latest-generation artificial - white and light green",
+    "tagline": "Total control and precision for elite performance",
+    "technical_details": {
+      "adjustment": "Lace-up with fold-over tongue",
+      "range": "Elite / Professional - maximum performance with premium materials and technologies",
+      "sole_type": "FG (Firm Ground) - for dry natural grass and latest-generation artificial turf",
+      "upper_material": "HybridTouch 2.0 synthetic"
+    }
+  },
+  "gender": "Men",
+  "id": "JI1092",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/50b528407002f03a06205a42247f3eae4e70af5c-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/989be85432bbb0ef8a6b3347759b1de1c10deac3-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/bc15197ddc3f2b1047dab1dfe186f1b94ef109c2-768x768.jpg",
+  "model": "Predator/Elite-FT-FG",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 167.99,
+    "discount_percent": 40,
+    "member_price": 0,
+    "original": 280
+  },
+  "sizes": [
+    {
+      "_key": "size-0",
+      "size": "39 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-1",
+      "size": "40 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-2",
+      "size": "40 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-3",
+      "size": "41 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-4",
+      "size": "42 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-5",
+      "size": "42 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-6",
+      "size": "43 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-7",
+      "size": "44 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-8",
+      "size": "44 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-9",
+      "size": "45 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-10",
+      "size": "46 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-11",
+      "size": "46 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-12",
+      "size": "47 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-13",
+      "size": "48 EU",
+      "available": false,
+      "stock": 0
+    }
+  ],
+  "thumbnail": null,
+  "traction": "FG",
+  "url_slug": "adidas-predator-elite-ft-fg-white-light-green",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.833Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

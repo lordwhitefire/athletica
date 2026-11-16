@@ -1,0 +1,55 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "Black",
+  "color_variants": [],
+  "description": {
+    "collection": "ELECTRIC STEALTH",
+    "intro": "The adidas Predator Elite FG deliver elite-level control and power with a laceless design, featuring advanced texturing for unmatched precision in every touch and strike.",
+    "key_benefits": [
+      "Laceless comfort: Anatomical fit with a clean striking surface for maximum ball contact.",
+      "Professional traction: FG outsole optimized for firm natural and modern artificial grass.",
+      "Precision control: Control Zone textured areas enhance grip and accuracy on the ball.",
+      "Elite stability: Wrapping design that locks the foot in place during dynamic movements.",
+      "Imposing aesthetics: All-black finish with sharp Predator detailing."
+    ],
+    "subtitle": "Football boots adidas FG for natural or latest-generation artificial grass - black",
+    "tagline": "Precision and stability without laces on wet pitches",
+    "technical_details": {
+      "adjustment": "Laceless",
+      "range": "Elite / top-tier",
+      "sole_type": "FG (Firm Ground)",
+      "upper_material": "HybridTouch synthetic (updated suede and foil material)"
+    }
+  },
+  "gender": "Men",
+  "id": "JI1085",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3c70bab6ad9311ba03e198937593e43b1392ae48-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4f97efa2535c99b39df25fd6c6f506b26fe956cf-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/aae323a9face074d810e61c762f8f6edb2efac9a-768x768.jpg",
+  "model": "Predator/Elite-FG",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 155.99,
+    "discount_percent": 40,
+    "member_price": 0,
+    "original": 260
+  },
+  "sizes": [],
+  "thumbnail": null,
+  "traction": "FG",
+  "url_slug": "adidas-predator-elite-fg-black",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.831Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}

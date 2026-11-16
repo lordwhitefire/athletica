@@ -1,0 +1,266 @@
+{
+  "brand": {
+    "_id": "brand-adidas",
+    "logo": "https://cdn.sanity.io/images/cuiis46d/production/41f596e9b9fe421c35b3f96aaa78163c2e39e701-1080x1080.jpg",
+    "name": "adidas"
+  },
+  "category": "Boots",
+  "color": "Blue",
+  "color_variants": [
+    {
+      "_key": "cv-white-and-green",
+      "color": "White and Green",
+      "product_id": "JI1111",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "JR7900",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white-and-green",
+      "color": "White and Green",
+      "product_id": "JI1169",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "JS2996",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "JS0424",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white-and-red",
+      "color": "White and Red",
+      "product_id": "JR7902",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-gray",
+      "color": "Gray",
+      "product_id": "KI6294",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red-and-orange",
+      "color": "Red and Orange",
+      "product_id": "JI1167",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-orange",
+      "color": "Orange",
+      "product_id": "JI1112",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "JI1118",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-white",
+      "color": "White",
+      "product_id": "ID1330",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-black",
+      "color": "Black",
+      "product_id": "IF6347",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-red",
+      "color": "Red",
+      "product_id": "ID3745",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-yellow",
+      "color": "Yellow",
+      "product_id": "JH6471",
+      "thumbnail": null
+    },
+    {
+      "_key": "cv-silver",
+      "color": "Silver",
+      "product_id": "IF6383",
+      "thumbnail": null
+    }
+  ],
+  "description": {
+    "collection": "Advancement Pack",
+    "intro": "The adidas Predator League LL FG are laceless boots designed for sharpshooters, featuring a Hybridfeel upper with 3D texture and Strikescale elements for enhanced grip and shooting accuracy on firm ground.",
+    "key_benefits": [
+      "Laceless construction with ankle support for secure, distraction-free fit",
+      "Hybridfeel upper with all-over 3D texture and grippy Strikescale fins for improved ball control and shooting precision",
+      "Controlplate 2.0 firm ground outsole for stability, reactivity, and optimized traction on natural and firm artificial surfaces",
+      "Made with breathable materials including recycled content for comfort"
+    ],
+    "subtitle": "Lace-less football boots with ankle support adidas FG for natural or latest-generation artificial grass - blue",
+    "tagline": "Precision shooting and control for decisive moments",
+    "technical_details": {
+      "adjustment": "Laceless with ankle collar/support",
+      "range": "League / mid-range",
+      "sole_type": "FG (Firm Ground)",
+      "upper_material": "Hybridfeel (synthetic with 3D texture and Strikescale elements)"
+    }
+  },
+  "gender": "Men",
+  "id": "IF6333",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7d2ba908995dbfd2a7100ed3c093f6eb2b6eeca7-768x768.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/11a7ee46bc72fabeb7c2a6e959394736e495fe34-768x768.jpg"
+  ],
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/22f1fe0d0b1187294bb12b3035f8adfa2de4c853-768x768.jpg",
+  "model": "Predator/League-LL-FG",
+  "name": null,
+  "price": {
+    "currency": "€",
+    "current": 48.99,
+    "discount_percent": 51,
+    "member_price": 0,
+    "original": 100
+  },
+  "sizes": [
+    {
+      "_key": "size-0",
+      "size": "36 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-1",
+      "size": "36 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-2",
+      "size": "37 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-3",
+      "size": "38 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-4",
+      "size": "38 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-5",
+      "size": "39 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-6",
+      "size": "40 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-7",
+      "size": "40 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-8",
+      "size": "41 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-9",
+      "size": "42 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-10",
+      "size": "42 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-11",
+      "size": "43 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-12",
+      "size": "44 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-13",
+      "size": "44 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-14",
+      "size": "45 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-15",
+      "size": "46 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-16",
+      "size": "46 2/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-17",
+      "size": "47 1/3 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-18",
+      "size": "48 EU",
+      "available": false,
+      "stock": 0
+    },
+    {
+      "_key": "size-19",
+      "size": "48 2/3 EU",
+      "available": false,
+      "stock": 0
+    }
+  ],
+  "thumbnail": null,
+  "traction": "FG",
+  "url_slug": "adidas-predator-league-ll-fg-blue",
+  "_metadata": {
+    "dataType": "product",
+    "lastUpdated": "2026-07-02T03:44:20.822Z",
+    "buildId": "sanity-sync",
+    "version": "1.0.0"
+  }
+}
