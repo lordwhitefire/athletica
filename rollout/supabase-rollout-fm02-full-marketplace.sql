@@ -193,13 +193,16 @@ ALTER TABLE rollout.products
   ADD COLUMN IF NOT EXISTS default_marketplace TEXT DEFAULT 'US'
     REFERENCES rollout.marketplaces(slug);
 
+-- Drop the old 2-status CHECK constraint FIRST — the UPDATE below writes the new
+-- status values, which the old constraint rejects while it is still in place.
+ALTER TABLE rollout.products DROP CONSTRAINT IF EXISTS products_status_check;
+ALTER TABLE rollout.products DROP CONSTRAINT IF EXISTS rollout_products_status_check;
+
 -- Migrate the old 2-status to the new 5-status (published -> active, unpublished -> draft)
 UPDATE rollout.products SET status = 'active' WHERE status = 'published';
 UPDATE rollout.products SET status = 'draft'  WHERE status = 'unpublished';
 
--- Replace the status CHECK constraint
-ALTER TABLE rollout.products DROP CONSTRAINT IF EXISTS products_status_check;
-ALTER TABLE rollout.products DROP CONSTRAINT IF EXISTS rollout_products_status_check;
+-- Install the new 5-status CHECK constraint
 ALTER TABLE rollout.products
   ADD CONSTRAINT rollout_products_status_check
   CHECK (status IN ('draft', 'active', 'archived', 'proposed', 'rejected'));

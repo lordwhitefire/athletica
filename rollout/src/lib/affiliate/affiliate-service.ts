@@ -2,7 +2,7 @@ import { createAdminClient } from '@/lib/supabase/server';
 
 // Affiliate configuration from environment variables
 const AFFILIATE_CONFIG = {
-  tag: process.env.AMAZON_TAG,
+  tag: process.env.AMAZON_ASSOCIATES_TAG,
   marketplace: process.env.AMAZON_MARKETPLACE,
   locale: 'en_US',
 };
