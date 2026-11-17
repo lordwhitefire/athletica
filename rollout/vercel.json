@@ -1,0 +1,7 @@
+{
+  "crons": [
+    { "path": "/api/cron?job=salt-rotation", "schedule": "*/1 * * * *" },
+    { "path": "/api/cron?job=dead-link-probe", "schedule": "0 3 * * *" },
+    { "path": "/api/cron?job=payout-term-check", "schedule": "0 4 * * *" }
+  ]
+}

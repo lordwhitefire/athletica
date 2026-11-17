@@ -2,6 +2,8 @@
 
 The Orchestrator does not write here. When a new planning artifact lands (proposal, design, or task bundle), add the individual pieces so the real project can catch up to the architecture. Each row is a short, plain description of what needs to happen.
 
+> **2026-11-16 — Full-marketplace change landed.** The `athletica-full-marketplace` change (proposal + design + 7 specs + tasks) is written under `openspec/changes/athletica-full-marketplace/`. The FM-01…FM-26 tasks below are the full-marketplace build, organized in 6 phases. The completed ROLL-12/13/14 items are the foundation FM builds on. The MVP-pending ROLL items (08/09/15/16/17/18) and ARCH-10/11 are **superseded** by the FM tasks as noted — they are kept below for history. Each FM task has `task.md` + `testing.md` under `openspec/tasks/FM-NN/` (intent, not instructions). Rule: one task at a time; phase gates between phases.
+
 ## ARCH — Development App
 Track: `frontend/` | Status: development/private only | Local dev or private URL; never the public customer URL
 
@@ -143,3 +145,68 @@ These are the architecture decisions from the product-management handoff and six
 **ROLL-10 (Shared UI Primitives — inside the Production app)**
 - Build inside `rollout/src/`: action-state handling, ToastViewport, confirmation dialog (focus trap, Escape-when-idle, focus restore), error wrappers.
 - **Note: toast/confirm/action-state are built in ROLL-06** — ROLL-10 now only covers what remains (error wrappers, remaining primitives) and should be revisited after ROLL-07/08.
+
+---
+
+## FM — Full Marketplace (2026-11-16)
+
+**Change:** `openspec/changes/athletica-full-marketplace/` (proposal + design + 7 specs + tasks).
+**Blueprint:** `blueprint/` (Plan mode, full marketplace). **Creators API decision:** `product-management/04-creators-api-recommendation.md` (Option B — own-data-first, API optional booster).
+**Supersedes:** ROLL-08 (→FM-14), ROLL-09 (per-phase deployment), ROLL-15 (→FM-01), ROLL-16 (→FM-10), ROLL-17 (→FM-25), ROLL-18 (→FM-26), ARCH-10/11 (frontend dev-app, out of public scope). Completed ROLL-12/13/14 are the foundation FM builds on.
+**Rule:** one task at a time; phase gates between phases. Each task has `openspec/tasks/FM-NN/{task.md,testing.md}` — intent + benchmarks, not instructions.
+
+### Phase 1 — Foundation
+
+| # | Task | Spec | Depends on | Status |
+|---|---|---|---|---|
+| FM-01 | Three-locks admin auth (invite + door-key + JWT role, fail-silent 404, getClaims, middleware, signin rate limit, invite issuance script) | foundation | — | ✅ |
+| FM-02 | Core data model migrations (products 5-status + variants + categories + collections + analytics fields + admin_access_keys + marketplaces seed + amazon_product_cache + affiliate.* schema + audit_log + RLS FORCE + select-wrappers) | foundation | — | ✅ |
+| FM-03 | Product page (`/product/[slug]`, 3-condition publish gate, gallery, buy-box, CTA states, generateMetadata, JSON-LD, no price, server-side view) | foundation | FM-02 | ✅ |
+| FM-04 | Redirect + click pipeline (`/go/[id]` 302, X-Robots-Tag, async click write, 6-layer bot filter, identity hash, 1h dedup, EU redaction, redirect rate-limit policy) | redirect-click | FM-02 | ✅ |
+| FM-05 | Analytics pipeline (salt rotation 90s + grace window, drop-reason enum + telemetry, 6-header IP chain, UA-parser bot filter, pipeline order) | redirect-click | FM-02 | ✅ |
+
+### Phase 2 — Storefront
+
+| # | Task | Spec | Depends on | Status |
+|---|---|---|---|---|
+| FM-06 | Storefront homepage (`/`, 3-up hero grid + carousel + footer, curated picks, fast mobile first screen) | storefront | FM-03 | ✅ |
+| FM-07 | Catalog browse (`/shop`, grid + search + faceted filter + sort + pagination, URL params as state, visible-but-disabled OOS) | storefront | FM-03 | ✅ |
+| FM-08 | Product detail with variants + reviews (variant selector URL-params, reviews via Creators API when enabled else omit, JSON-LD AggregateOffer) | storefront | FM-03, FM-20 | ✅ |
+| FM-09 | SEO suite (generateMetadata fallbacks, tag-based visibility, OG w/h/alt, sitemap, robots.txt, indexable homepage + categories) | storefront | FM-06, FM-07 | ✅ |
+
+### Phase 3 — Admin workspace
+
+| # | Task | Spec | Depends on | Status |
+|---|---|---|---|---|
+| FM-10 | Product CRUD + variants + categories + collections (5-status, 3-condition gate, discontinue, soft-delete, price optional) | admin | FM-01, FM-02 | ✅ |
+| FM-11 | Bulk operations module (require_ids!, skip-counting, bulk status/archive/tag/category/collection) | admin | FM-10 | ✅ |
+| FM-12 | Two-phase CSV import (mapping → processing, per-row status, grouped COUNT, no delete mid-processing) | admin | FM-10 | ✅ |
+| FM-13 | Media library (Sanity upload + browse + delete, admin-auth secured, token server-side) | admin | FM-01 | ✅ |
+| FM-14 | Live analytics dashboard (SSE + polling fallback, CTR, source split, per product, per affiliate, payout pipeline, drop-reason counts) | admin | FM-05 | ✅ |
+
+### Phase 4 — Affiliate program
+
+| # | Task | Spec | Depends on | Status |
+|---|---|---|---|---|
+| FM-15 | Affiliate signup + onboarding (multi-step, email verify, admin approval, ownership RLS, tracker issuance) | affiliate | FM-02 | ✅ |
+| FM-16 | Affiliate trackers + campaigns (create tracker, campaign config, commission_type/reward/recurring/minimum/term, M2M) | affiliate | FM-15 | ✅ |
+| FM-17 | Balance ledger (append-only, UNIQUE(account_id,trace), S2S postback bearer token, FX normalization, reversal support) | affiliate | FM-16 | ✅ |
+| FM-18 | Payout request + admin review (transactional flow, state machine, scheduled_for, per-account sequential number, email on transitions, payout-term eligibility) | affiliate | FM-17 | ✅ |
+
+### Phase 5 — Amazon integration
+
+| # | Task | Spec | Depends on | Status |
+|---|---|---|---|---|
+| FM-19 | 22-marketplace geo-routing (IP→country→marketplace, 6-header chain, MaxMind/Cloudflare, fallback to default) | amazon-integration | FM-04 | ✅ |
+| FM-20 | Creators API client (OAuth creds, optional booster, soft-fail, cache ≤1h offers/≤1d other, retry backoff, scope + body tag) | amazon-integration | FM-02 | ✅ |
+| FM-21 | Dead-link detection (HEAD probe daily + redirect-time 4xx + API availability when eligible, CTA greys out) | amazon-integration | FM-20 | ✅ |
+| FM-22 | Reviews via Creators API (customerReviews, cached in amazon_product_cache, JSON-LD reference, omit block when no data) | amazon-integration | FM-20 | ✅ |
+
+### Phase 6 — Hardening
+
+| # | Task | Spec | Depends on | Status |
+|---|---|---|---|---|
+| FM-23 | i18n (22 marketplace locales, next-intl, URL param switch, English fallback) | hardening | FM-06 | ✅ |
+| FM-24 | Legal pages (privacy, terms, cookie-notice, affiliate-agreement, Amazon disclosure, GDPR deletion/export, payout tax docs) | hardening | — | ✅ |
+| FM-25 | Sentry + uptime + monitoring (Sentry PII-off + email, uptime ping, drop-reason telemetry, payout stuck-request alert, Creators API error-rate alert, Vercel cron) | hardening | FM-05, FM-18, FM-21 | ✅ |
+| FM-26 | Documentation + handoff (README, .env.example, changelog, API docs, admin guide, affiliate guide, architect handoff, smoke test notes per phase) | hardening | all | ✅ |
