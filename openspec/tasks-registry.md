@@ -155,6 +155,13 @@ These are the architecture decisions from the product-management handoff and six
 **Supersedes:** ROLL-08 (→FM-14), ROLL-09 (per-phase deployment), ROLL-15 (→FM-01), ROLL-16 (→FM-10), ROLL-17 (→FM-25), ROLL-18 (→FM-26), ARCH-10/11 (frontend dev-app, out of public scope). Completed ROLL-12/13/14 are the foundation FM builds on.
 **Rule:** one task at a time; phase gates between phases. Each task has `openspec/tasks/FM-NN/{task.md,testing.md}` — intent + benchmarks, not instructions.
 
+> **2026-11-17 — honest status reconciliation (audit 4.10).** Every FM task below is marked ✅ = **code written + statically verified**. None have been **runtime-verified** against a live Supabase (no live DB in the build sandbox). Specific deferrals:
+> - **FM-02 native analytics partitioning** — deferred (BRIN index instead; threshold >1M rows).
+> - **FM-01 door-key/invite/rate-limit + FM-18 payout RPC + FM-21 dead-link RPCs** — code written; the owner must apply the integration SQL (`supabase-rollout-fm02-rpcs.sql` + `supabase-rollout-nonui-fixes.sql`) + verify live.
+> - **FM-20 Creators API** — code written; soft-fails until the owner is eligible (10 sales/30d) + supplies credentials.
+> - **Non-UI defects fixed 2026-11-17** per the audit (`AGENT-NON-UI-REMEDIATION.md`): stale types, unwired rate limit, dual URL-derivation path, global-tag Creators API, dead-link false-positives, publish-gate leak, fake popular sort, category filter. See `openspec/NON-UI-REMEDIATION-REPORT.md`.
+> - **UI** (admin editor, affiliate dashboard, media library page, product-detail redesign) — NOT built; handled separately.
+
 ### Phase 1 — Foundation
 
 | # | Task | Spec | Depends on | Status |

@@ -18,6 +18,7 @@ import { recordView } from '@/lib/analytics/analytics-service';
 import { isBotRequest } from '@/lib/analytics/bot-filter';
 import { resolveVisitorHash } from '@/lib/analytics/visitor-hash';
 import { resolveIp } from '@/lib/analytics/ip-chain';
+import './rollout1-pixel-match.css';
 import ProductDetailsClient from './ProductDetailsClient';
 
 const HIDDEN_PRODUCT_TAG = 'hidden';

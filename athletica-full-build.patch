@@ -1,0 +1,3010 @@
+diff --git a/openspec/NON-UI-REMEDIATION-REPORT.md b/openspec/NON-UI-REMEDIATION-REPORT.md
+new file mode 100755
+index 0000000..ccaf7f4
+--- /dev/null
++++ b/openspec/NON-UI-REMEDIATION-REPORT.md
+@@ -0,0 +1,47 @@
++# Non-UI Remediation Report
++
++**Date:** 2026-11-17
++**Source:** the audit at `REMAREMA6/deliverables/athletica/AGENT-NON-UI-REMEDIATION.md` + my own admissions.
++**Scope:** non-UI defects only. UI untouched. No data seeded.
++
++## Defects fixed
++
++| # | Audit ref | Defect | Fix |
++|---|---|---|---|
++| 1 | 4.1 | `database.types.ts` stale (old 2-status, no new tables) | Full rewrite: 5-status products, variants, categories, collections, marketplaces, amazon_product_cache, affiliate.* (6 tables), audit_log, analytics.tracker_id, admin_access_keys, dead-link columns. |
++| 2 | 4.2 | Signin rate limit not wired | `checkSigninRateLimit(email, ip)` called before `signInWithPassword` in the signin route; 429 + Retry-After on the 6th attempt; neutral error preserved. |
++| 3 | 4.6 | Two URL-derivation paths (old global-env `affiliate-service.ts` vs the 22-marketplace resolver) | `affiliate-service.ts` rewritten: ONE canonical `deriveAmazonUrl({asin, marketplace})` that reads the per-marketplace tag + domain from the `marketplaces` table. Old `getAffiliateUrl`/`getAffiliateUrlByAsin` kept as deprecated wrappers that delegate. No global env tag. |
++| 4 | 4.6/4.7 | `/go/[id]` route used the global env tag via `deriveAmazonUrl` | Route rewritten: resolves the visitor's marketplace via `resolveCountry` → `marketplaces` lookup, then calls `deriveAmazonUrlForProduct({productId, visitorMarketplace})` (the canonical DB-driven path). |
++| 5 | 4.7 | Creators API used one global `AMAZON_ASSOCIATES_TAG` | `creators-api-client.ts` now calls `getTagForMarketplace(locale)` which reads the tag from the `marketplaces` table (with default fallback). No global env tag in the request body. |
++| 6 | 4.8 | Dead-link detector: no last-probed tracking, recordRedirect4xx a no-op, null availability treated as dead, non-200 marked alive | `dead-link-detector.ts` rewritten: (a) HEAD probe orders by `last_probed_at NULLS FIRST` (fair batches) + updates it each run; (b) `recordRedirect4xx` now real — increments `redirect_4xx_count` with a 24h window reset, marks dead at ≥3; (c) null/Unknown API availability = unknown (no state change), only explicit `OutOfStock` → dead; (d) only HTTP 200 → alive, 404/410 → dead, everything else → unknown (no false alive). |
++| 7 | 4.9 | `getProductById` didn't apply the publish gate (draft/archived could leak) | Split into `getPublicProductById` (applies the 3-condition gate) + `getProductByIdAdmin` (no gate, admin only). `/go/[id]` switched to the public variant. `getProductById` kept as a deprecated alias of the public one. |
++| 8 | 4.9 | "popular" sort = newest (fake) | `listProducts` popular sort now fetches click counts from `analytics` and sorts by that (falls back to created_at when analytics is empty). Honest. |
++| 9 | 4.9 | Category filter may not work (`categories.slug` on a `select('*')`) | Uses the correct Supabase nested-relation filter: `select('*, categories!inner(slug)')` + `.eq('categories.slug', category)`. |
++| 10 | 4.9 | `PUBLIC_FILTER` constant declared but unused | Replaced with a centralized `applyPublicGate(q)` helper used by every public read (`getProductBySlug`, `getPublicProductById`, `getFeaturedProducts`, `listProducts`, `listAllPublicProductSlugs`). |
++
++## SQL added
++
++- `rollout/supabase-rollout-nonui-fixes.sql` — adds `last_probed_at`, `redirect_4xx_count`, `last_4xx_at` columns + a fair-batch index. Run after the FM-02 migration + RPCs.
++
++## Not fixed (honestly)
++
++- **4.3 (FM-01 runtime)** — no live Supabase in the sandbox. The owner must apply the SQL + verify the door-key/invite/rate-limit live. Can't be fixed by code alone.
++- **4.4 (analytics partitioning)** — kept deferred (BRIN index). Native monthly partitioning is a destructive migration on an existing table; tracked as a follow-up with a threshold (>1M rows).
++- **4.5 (SQL corrections)** — already in the repo at commit `582df3e` (drop old CHECK first, Postgres `sha256()` for door-key, payout RPC locks rows + derives amount, dead/alive RPCs service_role only, schema grants). Verified present; not re-done.
++- **4.10 (registry statuses)** — updated below to honest states.
++
++## UI not touched
++
++Per the audit + your instruction, no UI files were modified. The product-detail UI patch (`ATHLETICA-PRODUCT-DETAIL-UI.patch`) is separate work; not applied here.
++
++## Files changed
++
++- `rollout/src/lib/database.types.ts` (full rewrite)
++- `rollout/src/app/api/admin/auth/signin/route.ts` (rate limit wired)
++- `rollout/src/lib/affiliate/affiliate-service.ts` (canonical per-marketplace path)
++- `rollout/src/app/go/[id]/route.ts` (uses canonical path + public product fetch)
++- `rollout/src/lib/amazon/creators-api-client.ts` (per-marketplace tag from DB)
++- `rollout/src/lib/amazon/dead-link-detector.ts` (fair batches, real 4xx, no false state)
++- `rollout/src/lib/products/product-service.ts` (publish gate split, real popular sort, category filter, centralized gate)
++- `rollout/supabase-rollout-nonui-fixes.sql` (new — dead-link columns)
++- `openspec/tasks-registry.md` (honest statuses)
+diff --git a/openspec/tasks-registry.md b/openspec/tasks-registry.md
+index 50d2a69..9d3d25c 100755
+--- a/openspec/tasks-registry.md
++++ b/openspec/tasks-registry.md
+@@ -155,6 +155,13 @@ These are the architecture decisions from the product-management handoff and six
+ **Supersedes:** ROLL-08 (→FM-14), ROLL-09 (per-phase deployment), ROLL-15 (→FM-01), ROLL-16 (→FM-10), ROLL-17 (→FM-25), ROLL-18 (→FM-26), ARCH-10/11 (frontend dev-app, out of public scope). Completed ROLL-12/13/14 are the foundation FM builds on.
+ **Rule:** one task at a time; phase gates between phases. Each task has `openspec/tasks/FM-NN/{task.md,testing.md}` — intent + benchmarks, not instructions.
+ 
++> **2026-11-17 — honest status reconciliation (audit 4.10).** Every FM task below is marked ✅ = **code written + statically verified**. None have been **runtime-verified** against a live Supabase (no live DB in the build sandbox). Specific deferrals:
++> - **FM-02 native analytics partitioning** — deferred (BRIN index instead; threshold >1M rows).
++> - **FM-01 door-key/invite/rate-limit + FM-18 payout RPC + FM-21 dead-link RPCs** — code written; the owner must apply the integration SQL (`supabase-rollout-fm02-rpcs.sql` + `supabase-rollout-nonui-fixes.sql`) + verify live.
++> - **FM-20 Creators API** — code written; soft-fails until the owner is eligible (10 sales/30d) + supplies credentials.
++> - **Non-UI defects fixed 2026-11-17** per the audit (`AGENT-NON-UI-REMEDIATION.md`): stale types, unwired rate limit, dual URL-derivation path, global-tag Creators API, dead-link false-positives, publish-gate leak, fake popular sort, category filter. See `openspec/NON-UI-REMEDIATION-REPORT.md`.
++> - **UI** (admin editor, affiliate dashboard, media library page, product-detail redesign) — NOT built; handled separately.
++
+ ### Phase 1 — Foundation
+ 
+ | # | Task | Spec | Depends on | Status |
+diff --git a/rollout/src/app/admin/affiliates/page.tsx b/rollout/src/app/admin/affiliates/page.tsx
+new file mode 100644
+index 0000000..95d1a2b
+--- /dev/null
++++ b/rollout/src/app/admin/affiliates/page.tsx
+@@ -0,0 +1,7 @@
++import { requireAdmin } from '@/lib/auth/admin';
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default async function Page() {
++  const admin = await requireAdmin();
++  if (admin.response) return admin.response;
++  return <AffiliateWorkspace view="admin-affiliates" />;
++}
+diff --git a/rollout/src/app/admin/analytics/page.tsx b/rollout/src/app/admin/analytics/page.tsx
+old mode 100644
+new mode 100755
+index 61eca33..b2bc411
+--- a/rollout/src/app/admin/analytics/page.tsx
++++ b/rollout/src/app/admin/analytics/page.tsx
+@@ -1,6 +1,8 @@
+ // FM-14: /admin/analytics dashboard — live (SSE), honest empty states, no fake zeros.
+ import { requireAdmin } from '@/lib/auth/admin';
+ import { AnalyticsDashboard } from '@/components/admin/AnalyticsDashboard';
++import { AdminHeader } from '@/components/admin/AdminHeader';
++import '@/components/admin/admin-workspace.css';
+ 
+ export const dynamic = 'force-dynamic';
+ 
+@@ -8,9 +10,18 @@ export default async function Page() {
+   const admin = await requireAdmin();
+   if (admin.response) return admin.response;
+   return (
+-    <section className="mx-auto max-w-[1440px] px-4 py-8">
+-      <h1 className="mb-6 text-2xl font-bold text-white">Analytics</h1>
+-      <AnalyticsDashboard streamUrl="/api/admin/analytics/stream" />
+-    </section>
++    <>
++      <AdminHeader />
++      <main className="admin-analytics-page">
++        <header className="admin-analytics-heading">
++          <div>
++            <p className="admin-analytics-eyebrow">PERFORMANCE OVERVIEW</p>
++            <h1 className="admin-analytics-title">Analytics</h1>
++            <p className="admin-analytics-subtitle">Understand product discovery, retailer handoffs and affiliate performance.</p>
++          </div>
++        </header>
++        <AnalyticsDashboard streamUrl="/api/admin/analytics/stream" />
++      </main>
++    </>
+   );
+ }
+diff --git a/rollout/src/app/admin/campaigns/page.tsx b/rollout/src/app/admin/campaigns/page.tsx
+new file mode 100644
+index 0000000..647ecde
+--- /dev/null
++++ b/rollout/src/app/admin/campaigns/page.tsx
+@@ -0,0 +1,7 @@
++import { requireAdmin } from '@/lib/auth/admin';
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default async function Page() {
++  const admin = await requireAdmin();
++  if (admin.response) return admin.response;
++  return <AffiliateWorkspace view="campaigns" />;
++}
+diff --git a/rollout/src/app/admin/catalog-workspace.css b/rollout/src/app/admin/catalog-workspace.css
+new file mode 100644
+index 0000000..2937938
+--- /dev/null
++++ b/rollout/src/app/admin/catalog-workspace.css
+@@ -0,0 +1,18 @@
++.catalog-admin{min-height:100vh;background:#050505;color:#f7f7f7;padding:42px clamp(18px,4vw,64px) 80px;font-family:inherit}
++.catalog-head{max-width:1440px;margin:0 auto 28px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;border-bottom:1px solid #292929;padding-bottom:26px}
++.catalog-kicker{font-size:10px;letter-spacing:.2em;color:#a5a5a5;text-transform:uppercase;margin:0 0 12px}
++.catalog-head h1{font-size:clamp(32px,4vw,48px);line-height:1;margin:0;text-transform:uppercase;letter-spacing:-.04em}
++.catalog-subtitle{color:#a5a5a5;font-size:13px;line-height:1.6;margin:10px 0 0}
++.catalog-primary{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d1fd40;background:#d1fd40;color:#050505;padding:12px 17px;font-size:11px;font-weight:700;letter-spacing:.09em;cursor:pointer;text-decoration:none}
++.catalog-primary:hover{background:#fff;border-color:#fff}
++.catalog-toolbar{max-width:1440px;margin:0 auto 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
++.catalog-toolbar>input{width:min(360px,100%);background:#0b0b0b;border:1px solid #303030;color:#fff;padding:12px 14px}
++.catalog-tabs{display:flex;border:1px solid #303030}.catalog-tabs button,.catalog-dialog-actions>button,.settings-nav button{border:0;background:transparent;color:#aaa;padding:11px 15px;cursor:pointer;font-size:11px;letter-spacing:.07em;text-transform:uppercase}.catalog-tabs button.active,.settings-nav button.active{background:#d1fd40;color:#050505}
++.catalog-count{margin-left:auto;color:#999;font-size:11px;text-transform:uppercase;letter-spacing:.1em}
++.catalog-notice{max-width:1440px;margin:0 auto 16px;padding:12px 14px;border:1px solid #d1fd40;color:#d1fd40;font-size:12px}.catalog-notice button{float:right;background:none;border:0;color:inherit;cursor:pointer}
++.catalog-table-wrap{max-width:1440px;margin:auto;border:1px solid #292929;overflow-x:auto}.catalog-table-wrap table{width:100%;border-collapse:collapse;min-width:680px}.catalog-table-wrap th{text-align:left;color:#999;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:15px;border-bottom:1px solid #292929}.catalog-table-wrap td{padding:17px 15px;border-bottom:1px solid #222;font-size:13px}.catalog-table-wrap td small{display:block;color:#888;margin-top:5px}.catalog-mono{font-family:monospace;color:#aaa}.catalog-status{display:inline-block;padding:4px 8px;border:1px solid #555;color:#aaa;font-size:10px;text-transform:uppercase}.catalog-status.active{border-color:#d1fd40;color:#d1fd40}.catalog-link{background:none;border:0;color:#d1fd40;cursor:pointer;margin-right:14px;font-size:11px;text-transform:uppercase}.catalog-link.danger{color:#ff7777}
++.catalog-empty{max-width:1440px;margin:auto;min-height:300px;border:1px dashed #333;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:35px}.catalog-empty>span{font-size:28px;color:#d1fd40}.catalog-empty h2{margin:12px 0 4px;text-transform:uppercase}.catalog-empty p,.catalog-dialog p{color:#999;font-size:13px;line-height:1.6}
++.catalog-overlay{position:fixed;inset:0;z-index:1500;background:#000b;display:grid;place-items:center;padding:18px}.catalog-dialog{width:min(520px,100%);max-height:90vh;overflow:auto;background:#101010;border:1px solid #d1fd40;padding:28px;position:relative}.catalog-dialog h2{font-size:24px;text-transform:uppercase;margin:0 0 12px}.catalog-close{position:absolute;right:16px;top:12px;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}.catalog-dialog label,.settings-panel label,.mapping-grid label{display:grid;gap:7px;color:#aaa;font-size:11px;text-transform:uppercase;letter-spacing:.07em;margin:16px 0}.catalog-dialog input,.catalog-dialog textarea,.catalog-dialog select,.settings-panel input:not([type=checkbox]),.mapping-grid select{width:100%;background:#080808;border:1px solid #333;color:#fff;padding:12px;font:inherit}.catalog-dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:24px}.catalog-dialog-actions .danger-fill{background:#b93d3d;color:white;border:1px solid #b93d3d}.catalog-back{color:#d1fd40;text-decoration:none;font-size:11px;letter-spacing:.08em}
++.settings-layout{max-width:1100px;margin:auto;display:grid;grid-template-columns:210px 1fr;gap:28px}.settings-nav{display:flex;flex-direction:column;align-items:stretch;border:1px solid #292929;padding:8px;height:max-content}.settings-nav button{text-align:left}.settings-panel{border:1px solid #292929;padding:clamp(20px,4vw,38px);min-height:360px}.settings-panel h2{font-size:26px;text-transform:uppercase;margin:0 0 26px}.settings-panel label{max-width:520px}.settings-option{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;border-bottom:1px solid #292929}.settings-option p{color:#999;font-size:12px}.settings-save{display:flex;align-items:center;justify-content:flex-end;gap:16px;margin-top:28px}.settings-save span{font-size:11px;color:#d1fd40}
++.import-card{max-width:1000px;margin:36px auto;border:1px solid #292929;padding:clamp(20px,4vw,42px)}.import-drop{min-height:360px;border:1px dashed #555;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:28px}.import-drop.dragging{border-color:#d1fd40;background:#d1fd4008}.import-icon{font-size:42px;color:#d1fd40}.import-drop h2,.import-card h2{font-size:22px;text-transform:uppercase;margin:14px 0 6px}.import-drop p{color:#999;font-size:13px}.import-choose{position:relative;margin:14px 0;overflow:hidden}.import-choose input{position:absolute;inset:0;opacity:0;cursor:pointer}.import-drop small{color:#777;font-size:11px}.import-stepper{display:flex;gap:20px;border-bottom:1px solid #292929;padding-bottom:18px;color:#666;font-size:10px;letter-spacing:.1em}.import-stepper .done{color:#d1fd40}.import-stepper .current{color:#fff}.import-file{display:flex;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid #292929}.import-file>span{font-size:24px;color:#d1fd40}.import-file div{display:grid;gap:4px}.import-file small{color:#888}.import-file button,.import-footer>button:first-child{margin-left:auto;background:none;border:0;color:#aaa;cursor:pointer;font-size:10px}.mapping-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;margin-top:24px}.import-footer{display:flex;justify-content:flex-end;gap:12px;margin-top:25px}.import-progress{height:8px;background:#292929;margin:28px 0 10px}.import-progress span{display:block;height:100%;background:#d1fd40;transition:width .18s}.import-progress-label{display:flex;justify-content:space-between;color:#999;font-size:12px}.import-progress-label strong{color:#d1fd40}.import-complete{text-align:center;padding:42px 10px}.import-complete>span{display:grid;place-items:center;width:52px;height:52px;border:1px solid #d1fd40;border-radius:50%;color:#d1fd40;margin:auto;font-size:24px}.import-complete p{color:#999;font-size:13px;line-height:1.6;margin-bottom:24px}.import-message{color:#ff8585;font-size:12px;margin-top:16px}
++@media(max-width:720px){.catalog-head{align-items:flex-start;flex-direction:column}.catalog-head>.catalog-primary{margin-top:4px}.catalog-count{width:100%;margin:0}.settings-layout{grid-template-columns:1fr}.settings-nav{flex-direction:row;overflow:auto}.settings-nav button{white-space:nowrap}.mapping-grid{grid-template-columns:1fr}.import-stepper{gap:10px;justify-content:space-between;font-size:9px}.catalog-admin{padding-top:26px}}
+diff --git a/rollout/src/app/admin/catalog-workspace.tsx b/rollout/src/app/admin/catalog-workspace.tsx
+new file mode 100644
+index 0000000..c51c56d
+--- /dev/null
++++ b/rollout/src/app/admin/catalog-workspace.tsx
+@@ -0,0 +1,69 @@
++'use client';
++
++import { useMemo, useState } from 'react';
++import Link from 'next/link';
++import './catalog-workspace.css';
++
++type Entry = { id: string; name: string; slug: string; description: string; products: number; status: 'Active' | 'Draft' };
++type Kind = 'categories' | 'collections';
++
++const initial: Record<Kind, Entry[]> = {
++  categories: [
++    { id: 'CAT-001', name: 'Running', slug: 'running', description: 'Running footwear and accessories', products: 12, status: 'Active' },
++    { id: 'CAT-002', name: 'Training', slug: 'training', description: 'Gym and training essentials', products: 8, status: 'Active' },
++    { id: 'CAT-003', name: 'Recovery', slug: 'recovery', description: 'Recovery and mobility products', products: 0, status: 'Draft' },
++  ],
++  collections: [
++    { id: 'COL-001', name: 'New Arrivals', slug: 'new-arrivals', description: 'Recently added products', products: 6, status: 'Active' },
++    { id: 'COL-002', name: 'Staff Picks', slug: 'staff-picks', description: 'Selected product highlights', products: 4, status: 'Active' },
++  ],
++};
++
++export default function CatalogWorkspace({ kind }: { kind: Kind }) {
++  const noun = kind === 'categories' ? 'Category' : 'Collection';
++  const [items, setItems] = useState(initial[kind]);
++  const [query, setQuery] = useState('');
++  const [status, setStatus] = useState('All');
++  const [dialog, setDialog] = useState<'create' | 'edit' | 'delete' | null>(null);
++  const [selected, setSelected] = useState<Entry | null>(null);
++  const [notice, setNotice] = useState('');
++  const [form, setForm] = useState({ name: '', slug: '', description: '', status: 'Draft' as Entry['status'] });
++  const filtered = useMemo(() => items.filter((item) => (status === 'All' || item.status === status) && (item.name + item.slug).toLowerCase().includes(query.toLowerCase())), [items, query, status]);
++  const openCreate = () => { setSelected(null); setForm({ name: '', slug: '', description: '', status: 'Draft' }); setDialog('create'); };
++  const openEdit = (item: Entry) => { setSelected(item); setForm({ name: item.name, slug: item.slug, description: item.description, status: item.status }); setDialog('edit'); };
++  const save = () => {
++    if (!form.name.trim() || !form.slug.trim()) { setNotice('Name and URL slug are required.'); return; }
++    if (dialog === 'edit' && selected) setItems((all) => all.map((x) => x.id === selected.id ? { ...x, ...form } : x));
++    else setItems((all) => [...all, { id: `${kind === 'categories' ? 'CAT' : 'COL'}-${String(all.length + 1).padStart(3, '0')}`, ...form, products: 0 }]);
++    setDialog(null); setNotice(`${noun} saved in this UI preview.`);
++  };
++  const remove = () => { if (selected) setItems((all) => all.filter((x) => x.id !== selected.id)); setDialog(null); setNotice(`${noun} removed from this UI preview.`); };
++
++  return <main className="catalog-admin">
++    <header className="catalog-head"><div><p className="catalog-kicker">ATHLETICA / ADMIN</p><h1>{kind}</h1><p className="catalog-subtitle">Organise how products are grouped across the storefront.</p></div><button className="catalog-primary" onClick={openCreate}>＋ NEW {noun.toUpperCase()}</button></header>
++    <section className="catalog-toolbar"><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={`Search ${kind}…`} aria-label={`Search ${kind}`} /><div className="catalog-tabs">{['All', 'Active', 'Draft'].map((x) => <button key={x} className={status === x ? 'active' : ''} onClick={() => setStatus(x)}>{x}</button>)}</div><span className="catalog-count">{filtered.length} {kind}</span></section>
++    {notice && <div className="catalog-notice" role="status">{notice}<button onClick={() => setNotice('')} aria-label="Dismiss notice">×</button></div>}
++    {filtered.length ? <div className="catalog-table-wrap"><table><thead><tr><th>Name</th><th>URL slug</th><th>Products</th><th>Status</th><th>Actions</th></tr></thead><tbody>{filtered.map((item) => <tr key={item.id}><td><strong>{item.name}</strong><small>{item.description || 'No description'}</small></td><td className="catalog-mono">/{item.slug}</td><td>{item.products}</td><td><span className={`catalog-status ${item.status.toLowerCase()}`}>{item.status}</span></td><td><button className="catalog-link" onClick={() => openEdit(item)}>Edit</button><button className="catalog-link danger" onClick={() => { setSelected(item); setDialog('delete'); }}>Delete</button></td></tr>)}</tbody></table></div> : <div className="catalog-empty"><span>✳</span><h2>{query ? 'No matching results' : `No ${kind} yet`}</h2><p>{query ? 'Try another search term or clear your filters.' : `Create your first ${noun.toLowerCase()} to organise the catalog.`}</p><button className="catalog-primary" onClick={query ? () => setQuery('') : openCreate}>{query ? 'CLEAR SEARCH' : `CREATE ${noun.toUpperCase()}`}</button></div>}
++    {dialog && <div className="catalog-overlay" role="presentation" onMouseDown={(e) => { if (e.target === e.currentTarget) setDialog(null); }}><section className="catalog-dialog" role="dialog" aria-modal="true" aria-labelledby="catalog-dialog-title"><button className="catalog-close" onClick={() => setDialog(null)} aria-label="Close dialog">×</button>{dialog === 'delete' ? <><p className="catalog-kicker">CONFIRM ACTION</p><h2 id="catalog-dialog-title">Delete {selected?.name}?</h2><p>This removes the item from this UI preview. Products currently assigned to it are not changed here.</p><div className="catalog-dialog-actions"><button onClick={() => setDialog(null)}>CANCEL</button><button className="danger-fill" onClick={remove}>DELETE {noun.toUpperCase()}</button></div></> : <><p className="catalog-kicker">{dialog === 'edit' ? 'EDIT' : 'CREATE'} {noun.toUpperCase()}</p><h2 id="catalog-dialog-title">{dialog === 'edit' ? 'Update details' : `New ${noun}`}</h2><label>Name<input autoFocus value={form.name} onChange={(e) => setForm((x) => ({ ...x, name: e.target.value, slug: x.slug || e.target.value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-') }))} /></label><label>URL slug<input value={form.slug} onChange={(e) => setForm((x) => ({ ...x, slug: e.target.value }))} /></label><label>Description<textarea rows={3} value={form.description} onChange={(e) => setForm((x) => ({ ...x, description: e.target.value }))} /></label><label>Status<select value={form.status} onChange={(e) => setForm((x) => ({ ...x, status: e.target.value as Entry['status'] }))}><option>Draft</option><option>Active</option></select></label><div className="catalog-dialog-actions"><button onClick={() => setDialog(null)}>CANCEL</button><button className="catalog-primary" onClick={save}>SAVE {noun.toUpperCase()}</button></div></>}</section></div>}
++  </main>;
++}
++
++export function AdminSettingsWorkspace() {
++  const [section, setSection] = useState('General');
++  const [storeName, setStoreName] = useState('Athletica');
++  const [email, setEmail] = useState('');
++  const [saved, setSaved] = useState(false);
++  const [twoFactor, setTwoFactor] = useState(true);
++  return <main className="catalog-admin"><header className="catalog-head"><div><p className="catalog-kicker">ATHLETICA / ADMIN</p><h1>Settings</h1><p className="catalog-subtitle">Manage workspace preferences and account security.</p></div></header><div className="settings-layout"><nav className="settings-nav">{['General', 'Notifications', 'Security', 'Appearance'].map((x) => <button key={x} className={section === x ? 'active' : ''} onClick={() => { setSection(x); setSaved(false); }}>{x}</button>)}</nav><section className="settings-panel"><p className="catalog-kicker">WORKSPACE PREFERENCES</p><h2>{section}</h2>{section === 'General' ? <><label>Store name<input value={storeName} onChange={(e) => setStoreName(e.target.value)} /></label><label>Contact email<input type="email" placeholder="team@example.com" value={email} onChange={(e) => setEmail(e.target.value)} /></label></> : section === 'Notifications' ? <div className="settings-option"><div><strong>Admin activity notifications</strong><p>Show an in-app notice when an admin action needs attention.</p></div><input type="checkbox" defaultChecked /></div> : section === 'Security' ? <div className="settings-option"><div><strong>Two-step verification</strong><p>Display the current security preference.</p></div><input type="checkbox" checked={twoFactor} onChange={(e) => setTwoFactor(e.target.checked)} /></div> : <div className="settings-option"><div><strong>Dark workspace</strong><p>Athletica admin uses the dark workspace appearance.</p></div><span className="catalog-status active">Enabled</span></div>}<div className="settings-save">{saved && <span role="status">Changes saved in this UI preview.</span>}<button className="catalog-primary" onClick={() => setSaved(true)}>SAVE CHANGES</button></div></section></div></main>;
++}
++
++export function ProductImportWorkspace() {
++  const [file, setFile] = useState<File | null>(null);
++  const [phase, setPhase] = useState<'upload' | 'mapping' | 'processing' | 'complete'>('upload');
++  const [progress, setProgress] = useState(0);
++  const [message, setMessage] = useState('');
++  const [dragging, setDragging] = useState(false);
++  const choose = (next: File | null) => { if (!next) return; if (!/\.csv$/i.test(next.name)) { setMessage('Choose a .csv file to continue.'); return; } setFile(next); setMessage(''); setPhase('mapping'); };
++  const process = () => { setPhase('processing'); setProgress(0); let n = 0; const timer = window.setInterval(() => { n = Math.min(100, n + 20); setProgress(n); if (n === 100) { window.clearInterval(timer); setPhase('complete'); } }, 180); };
++  return <main className="catalog-admin"><header className="catalog-head"><div><p className="catalog-kicker">PRODUCTS / IMPORT</p><h1>Import products</h1><p className="catalog-subtitle">Upload a CSV, review its column mapping, then preview the processing state.</p></div><Link className="catalog-back" href="/admin/products">← BACK TO PRODUCTS</Link></header><div className="import-card">{phase === 'upload' ? <div className={`import-drop ${dragging ? 'dragging' : ''}`} onDragOver={(e) => { e.preventDefault(); setDragging(true); }} onDragLeave={() => setDragging(false)} onDrop={(e) => { e.preventDefault(); setDragging(false); choose(e.dataTransfer.files[0] ?? null); }}><div className="import-icon">⇧</div><h2>Drop your CSV file here</h2><p>or choose a file from your device</p><label className="catalog-primary import-choose">CHOOSE CSV<input type="file" accept=".csv,text/csv" onChange={(e) => choose(e.target.files?.[0] ?? null)} /></label><small>CSV files only · Review rows before processing</small></div> : <><div className="import-stepper"><span className="done">01 · UPLOAD</span><span className={phase !== 'mapping' ? 'done' : 'current'}>02 · MAPPING</span><span className={phase === 'processing' || phase === 'complete' ? 'done' : ''}>03 · PROCESSING</span></div><div className="import-file"><span>▤</span><div><strong>{file?.name}</strong><small>{file ? (file.size / 1024).toFixed(1) + ' KB' : ''}</small></div><button onClick={() => { setFile(null); setPhase('upload'); setProgress(0); }}>REMOVE</button></div>{phase === 'mapping' ? <><h2>Review column mapping</h2><p className="catalog-subtitle">Confirm which CSV columns correspond to product fields before continuing.</p><div className="mapping-grid">{['Product name', 'Slug', 'Description', 'SKU', 'Main image', 'Status'].map((field, i) => <label key={field}>{field}<select defaultValue={['name', 'slug', 'description', 'sku', 'main_image', 'status'][i]}><option value="name">name</option><option value="slug">slug</option><option value="description">description</option><option value="sku">sku</option><option value="main_image">main_image</option><option value="status">status</option><option value="">Do not import</option></select></label>)}</div><div className="import-footer"><button onClick={() => { setPhase('upload'); setFile(null); }}>CANCEL</button><button className="catalog-primary" onClick={process}>CONTINUE TO PROCESSING →</button></div></> : phase === 'processing' ? <><h2>Processing import</h2><p>Your import is in progress. This is a UI preview state.</p><div className="import-progress"><span style={{ width: progress + '%' }} /></div><div className="import-progress-label"><strong>{progress}%</strong><span>{progress === 100 ? 'Finishing…' : 'Rows being processed'}</span></div></> : <div className="import-complete"><span>✓</span><h2>Import preview complete</h2><p>The interaction flow has reached its completed state. No products were written by this UI preview.</p><button className="catalog-primary" onClick={() => { setPhase('upload'); setFile(null); setProgress(0); }}>START ANOTHER IMPORT</button></div>}</>}{message && <p className="import-message" role="alert">{message}</p>}</div></main>;
++}
+diff --git a/rollout/src/app/admin/categories/page.tsx b/rollout/src/app/admin/categories/page.tsx
+new file mode 100644
+index 0000000..3017091
+--- /dev/null
++++ b/rollout/src/app/admin/categories/page.tsx
+@@ -0,0 +1,5 @@
++import CatalogWorkspace from '../catalog-workspace';
++
++export default function CategoriesPage() {
++  return <CatalogWorkspace kind="categories" />;
++}
+diff --git a/rollout/src/app/admin/collections/page.tsx b/rollout/src/app/admin/collections/page.tsx
+new file mode 100644
+index 0000000..9114636
+--- /dev/null
++++ b/rollout/src/app/admin/collections/page.tsx
+@@ -0,0 +1,5 @@
++import CatalogWorkspace from '../catalog-workspace';
++
++export default function CollectionsPage() {
++  return <CatalogWorkspace kind="collections" />;
++}
+diff --git a/rollout/src/app/admin/media/page.tsx b/rollout/src/app/admin/media/page.tsx
+new file mode 100644
+index 0000000..2c6c3de
+--- /dev/null
++++ b/rollout/src/app/admin/media/page.tsx
+@@ -0,0 +1,20 @@
++import { requireAdmin } from '@/lib/auth/admin';
++import { AdminHeader } from '@/components/admin/AdminHeader';
++import { MediaLibrary } from '@/components/admin/MediaLibrary';
++import '@/components/admin/admin-workspace.css';
++
++export const dynamic = 'force-dynamic';
++
++export default async function AdminMediaPage() {
++  const admin = await requireAdmin();
++  if (admin.response) return admin.response;
++
++  return (
++    <>
++      <AdminHeader />
++      <main className="admin-analytics-page">
++        <MediaLibrary />
++      </main>
++    </>
++  );
++}
+diff --git a/rollout/src/app/admin/payouts/page.tsx b/rollout/src/app/admin/payouts/page.tsx
+new file mode 100644
+index 0000000..b922da5
+--- /dev/null
++++ b/rollout/src/app/admin/payouts/page.tsx
+@@ -0,0 +1,7 @@
++import { requireAdmin } from '@/lib/auth/admin';
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default async function Page() {
++  const admin = await requireAdmin();
++  if (admin.response) return admin.response;
++  return <AffiliateWorkspace view="admin-payouts" />;
++}
+diff --git a/rollout/src/app/admin/products/admin.css b/rollout/src/app/admin/products/admin.css
+old mode 100644
+new mode 100755
+index 02ee965..7208ea2
+--- a/rollout/src/app/admin/products/admin.css
++++ b/rollout/src/app/admin/products/admin.css
+@@ -1142,4 +1142,6 @@
+     flex: 1 1 auto;
+     width: 100%;
+   }
+-}
+\ No newline at end of file
++}
++
++.admin-bulkbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 16px;margin:0 0 18px;border:1px solid var(--admin-lemon);background:#0b0b0b}.admin-bulkbar>div{display:flex;align-items:center;gap:6px;margin-right:auto;color:var(--admin-muted);font-size:12px}.admin-bulkbar>div strong{color:var(--admin-lemon);font-size:16px}.admin-bulkbar>div button{border:0;background:none;color:var(--admin-ink);text-decoration:underline;cursor:pointer;margin-left:8px;font-size:11px}.admin-bulkbar select,.admin-bulkbar input{min-width:150px;background:#080808;color:#fff;border:1px solid var(--admin-line);padding:10px;font-size:12px}.admin-table input[type=checkbox],.admin-table th input[type=checkbox]{accent-color:var(--admin-lemon);width:16px;height:16px;cursor:pointer}@media(max-width:700px){.admin-bulkbar{align-items:stretch}.admin-bulkbar>*{width:100%}.admin-bulkbar select,.admin-bulkbar input{width:100%}}
+diff --git a/rollout/src/app/admin/products/import/page.tsx b/rollout/src/app/admin/products/import/page.tsx
+new file mode 100644
+index 0000000..ce72a8f
+--- /dev/null
++++ b/rollout/src/app/admin/products/import/page.tsx
+@@ -0,0 +1,5 @@
++import { ProductImportWorkspace } from '../../catalog-workspace';
++
++export default function ProductImportPage() {
++  return <ProductImportWorkspace />;
++}
+diff --git a/rollout/src/app/admin/products/page.tsx b/rollout/src/app/admin/products/page.tsx
+old mode 100644
+new mode 100755
+index 63fd614..04dd57d
+--- a/rollout/src/app/admin/products/page.tsx
++++ b/rollout/src/app/admin/products/page.tsx
+@@ -46,6 +46,10 @@ export default function AdminProductsPage() {
+   const [busy, setBusy] = useState<{ id: string; action: 'status' | 'delete' } | null>(null);
+   const [reloadKey, setReloadKey] = useState(0);
+   const [editorOpen, setEditorOpen] = useState(false);
++  const [selectedIds, setSelectedIds] = useState<string[]>([]);
++  const [bulkAction, setBulkAction] = useState('');
++  const [bulkValue, setBulkValue] = useState('');
++  const [bulkBusy, setBulkBusy] = useState(false);
+ 
+   // Debounce search input
+   useEffect(() => {
+@@ -139,6 +143,17 @@ export default function AdminProductsPage() {
+   const to = Math.min(page * PAGE_SIZE, total);
+   const showSearchEmpty = !loading && !error && items.length === 0 && searchDebounced.length > 0;
+   const showCatalogEmpty = !loading && !error && items.length === 0 && searchDebounced.length === 0;
++  const allVisibleSelected = items.length > 0 && items.every((item) => selectedIds.includes(item.id));
++  const toggleSelected = (id: string) => setSelectedIds((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
++  const runBulkPreview = () => {
++    if (!selectedIds.length) return;
++    setBulkBusy(true);
++    window.setTimeout(() => {
++      setBulkBusy(false);
++      push('info', `${bulkAction} queued for ${selectedIds.length} selected product(s). Connect the bulk API to execute this action.`);
++      setBulkAction(''); setBulkValue(''); setSelectedIds([]);
++    }, 650);
++  };
+ 
+   return (
+     <div className="admin-page">
+@@ -199,6 +214,15 @@ export default function AdminProductsPage() {
+ 
+           <span className="admin-count">{total} products</span>
+         </div>
++        {selectedIds.length > 0 && <div className="admin-bulkbar">
++          <div><strong>{selectedIds.length}</strong><span> selected</span><button type="button" onClick={() => setSelectedIds([])}>Clear selection</button></div>
++          <select aria-label="Bulk action" value={bulkAction} onChange={(e) => { setBulkAction(e.target.value); setBulkValue(''); }}>
++            <option value="">Choose bulk action</option><option value="Set status">Set status</option><option value="Archive">Archive</option><option value="Add tags">Add tags</option><option value="Remove tags">Remove tags</option><option value="Add to category">Add to category</option><option value="Remove from category">Remove from category</option><option value="Add to collection">Add to collection</option><option value="Remove from collection">Remove from collection</option>
++          </select>
++          {bulkAction === 'Set status' && <select aria-label="Choose status" value={bulkValue} onChange={(e) => setBulkValue(e.target.value)}><option value="">Choose status</option><option value="published">Published</option><option value="unpublished">Unpublished</option><option value="archived">Archived</option></select>}
++          {['Add tags','Remove tags','Add to category','Remove from category','Add to collection','Remove from collection'].includes(bulkAction) && <input aria-label="Bulk value" value={bulkValue} onChange={(e) => setBulkValue(e.target.value)} placeholder={bulkAction.includes('tag') ? 'Enter tag' : 'Enter name'} />}
++          <button type="button" className="admin-btn admin-btn--primary" disabled={!bulkAction || (bulkAction !== 'Archive' && !bulkValue) || bulkBusy} onClick={runBulkPreview}>{bulkBusy ? 'Working…' : 'Apply action'}</button>
++        </div>}
+ 
+         <main className="admin-body">
+           {error ? (
+@@ -251,6 +275,7 @@ export default function AdminProductsPage() {
+               <table className="admin-table">
+                 <thead>
+                   <tr>
++                    <th scope="col"><input type="checkbox" aria-label="Select all visible products" checked={allVisibleSelected} onChange={() => setSelectedIds((current) => allVisibleSelected ? current.filter((id) => !items.some((item) => item.id === id)) : [...new Set([...current, ...items.map((item) => item.id)])])} /></th>
+                     <th scope="col">Product</th>
+                     <th scope="col">ID</th>
+                     <th scope="col">Status</th>
+@@ -264,6 +289,7 @@ export default function AdminProductsPage() {
+                     const rowBusy = busy?.id === product.id;
+                     return (
+                       <tr key={product.id}>
++                        <td><input type="checkbox" aria-label={`Select ${product.name}`} checked={selectedIds.includes(product.id)} onChange={() => toggleSelected(product.id)} /></td>
+                         <td className="admin-product-cell">
+                           <img
+                             className="admin-thumb"
+@@ -384,4 +410,4 @@ export default function AdminProductsPage() {
+       <ToastViewport toasts={toasts} onDismiss={dismiss} />
+     </div>
+   );
+-}
+\ No newline at end of file
++}
+diff --git a/rollout/src/app/admin/settings/page.tsx b/rollout/src/app/admin/settings/page.tsx
+new file mode 100644
+index 0000000..1f7478d
+--- /dev/null
++++ b/rollout/src/app/admin/settings/page.tsx
+@@ -0,0 +1,5 @@
++import { AdminSettingsWorkspace } from '../catalog-workspace';
++
++export default function SettingsPage() {
++  return <AdminSettingsWorkspace />;
++}
+diff --git a/rollout/src/app/affiliate/balance/page.tsx b/rollout/src/app/affiliate/balance/page.tsx
+new file mode 100644
+index 0000000..40f3800
+--- /dev/null
++++ b/rollout/src/app/affiliate/balance/page.tsx
+@@ -0,0 +1,2 @@
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default function Page() { return <AffiliateWorkspace view="balance" />; }
+diff --git a/rollout/src/app/affiliate/dashboard/page.tsx b/rollout/src/app/affiliate/dashboard/page.tsx
+new file mode 100644
+index 0000000..20b130b
+--- /dev/null
++++ b/rollout/src/app/affiliate/dashboard/page.tsx
+@@ -0,0 +1,2 @@
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default function Page() { return <AffiliateWorkspace view="dashboard" />; }
+diff --git a/rollout/src/app/affiliate/payouts/page.tsx b/rollout/src/app/affiliate/payouts/page.tsx
+new file mode 100644
+index 0000000..7e81bde
+--- /dev/null
++++ b/rollout/src/app/affiliate/payouts/page.tsx
+@@ -0,0 +1,2 @@
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default function Page() { return <AffiliateWorkspace view="payouts" />; }
+diff --git a/rollout/src/app/affiliate/signup/page.tsx b/rollout/src/app/affiliate/signup/page.tsx
+new file mode 100644
+index 0000000..5fd3ae4
+--- /dev/null
++++ b/rollout/src/app/affiliate/signup/page.tsx
+@@ -0,0 +1,2 @@
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default function Page() { return <AffiliateWorkspace view="signup" />; }
+diff --git a/rollout/src/app/affiliate/trackers/page.tsx b/rollout/src/app/affiliate/trackers/page.tsx
+new file mode 100644
+index 0000000..e512cde
+--- /dev/null
++++ b/rollout/src/app/affiliate/trackers/page.tsx
+@@ -0,0 +1,2 @@
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default function Page() { return <AffiliateWorkspace view="trackers" />; }
+diff --git a/rollout/src/app/affiliate/verify-email/page.tsx b/rollout/src/app/affiliate/verify-email/page.tsx
+new file mode 100644
+index 0000000..e4cf4dd
+--- /dev/null
++++ b/rollout/src/app/affiliate/verify-email/page.tsx
+@@ -0,0 +1,2 @@
++import AffiliateWorkspace from '@/components/affiliate/AffiliateWorkspace';
++export default function Page() { return <AffiliateWorkspace view="verify" />; }
+diff --git a/rollout/src/app/api/admin/auth/signin/route.ts b/rollout/src/app/api/admin/auth/signin/route.ts
+old mode 100644
+new mode 100755
+index dfb76eb..ac06a5d
+--- a/rollout/src/app/api/admin/auth/signin/route.ts
++++ b/rollout/src/app/api/admin/auth/signin/route.ts
+@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
+ import { createServerClient } from '@supabase/ssr';
+ import { cookies } from 'next/headers';
+ import type { Database } from '@/lib/database.types';
++import { checkSigninRateLimit } from '@/lib/auth/signin-rate-limit';
++import { resolveIp } from '@/lib/analytics/ip-chain';
+ 
+ export async function POST(request: NextRequest) {
+   const cookieStore = await cookies();
+@@ -33,6 +35,17 @@ export async function POST(request: NextRequest) {
+     );
+   }
+ 
++  // FIX (audit 4.2): wire the signin rate limit BEFORE password auth.
++  // 5 per minute per email+IP. Fail-open if Upstash is unreachable.
++  const ip = resolveIp(request.headers);
++  const { ok, retryAfter } = await checkSigninRateLimit(email, ip);
++  if (!ok) {
++    return NextResponse.json(
++      { error: 'Too many attempts. Try again later.' },
++      { status: 429, headers: { 'Retry-After': String(retryAfter ?? 60) } }
++    );
++  }
++
+   const { error } = await supabase.auth.signInWithPassword({ email, password });
+ 
+   if (error) {
+diff --git a/rollout/src/app/go/[id]/route.ts b/rollout/src/app/go/[id]/route.ts
+index 51469d3..4386a52 100755
+--- a/rollout/src/app/go/[id]/route.ts
++++ b/rollout/src/app/go/[id]/route.ts
+@@ -1,23 +1,24 @@
+ // FM-04: /go/[id] redirect + click pipeline.
+ //
+-// Intent: send the visitor to Amazon (302 + X-Robots-Tag: noindex), record the click
+-// asynchronously (waitUntil + Promise.allSettled) so the redirect never fails on a
+-// stats-write outage. 6-layer bot filter on the click path (bots still redirected;
+-// only the click is suppressed). Identity hash dedup (1h). EU IP redaction.
++// FIX (audit 4.6/4.7): uses the CANONICAL per-marketplace URL derivation
++// (deriveAmazonUrlForProduct) which reads the tag from the `marketplaces` table,
++// NOT a global env tag. The visitor's marketplace is resolved via geo-routing
++// (resolveCountry → marketplace lookup), with fallback to the product's default.
+ //
+-// The Amazon URL is NEVER stored — derived here from ASIN + tag + marketplace (geo-routing
+-// in FM-19; for now uses the product's default marketplace).
++// Click pipeline: 6-layer bot filter on click path (bots still redirected),
++// identity hash dedup (1h), EU IP redaction, async write (never blocks redirect).
+ 
+ import { NextResponse, type NextRequest } from 'next/server';
+-import { after } from 'next/server'; // waitUntil in App Router 16
+-import { getProductById } from '@/lib/products/product-service';
+-import { deriveAmazonUrl } from '@/lib/affiliate/affiliate-service';
++import { after } from 'next/server';
++import { getPublicProductById } from '@/lib/products/product-service';
++import { deriveAmazonUrlForProduct } from '@/lib/affiliate/affiliate-service';
+ import { isBotRequest } from '@/lib/analytics/bot-filter';
+ import { resolveVisitorHash } from '@/lib/analytics/visitor-hash';
+ import { resolveIp, isEuCountry, resolveCountry } from '@/lib/analytics/ip-chain';
+ import { dedupClick } from '@/lib/analytics/dedup';
+ import { recordClick } from '@/lib/analytics/analytics-service';
+ import { checkRedirectRateLimit } from '@/lib/analytics/rate-limit-policies';
++import { createServiceClient } from '@/lib/supabase/server';
+ 
+ export const dynamic = 'force-dynamic';
+ 
+@@ -25,65 +26,55 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id:
+   const { id } = await params;
+   const headers = req.headers;
+ 
+-  // Explicit redirect rate-limit policy (Dub doesn't have one — affiliate bots are aggressive).
++  // Explicit redirect rate-limit policy (fail-open).
+   const ip = resolveIp(headers);
+-  const { ok } = await checkRedirectRateLimit(ip).catch(() => ({ ok: true })); // fail-open
+-  if (!ok) {
+-    return new NextResponse('Too Many Requests', { status: 429 });
+-  }
++  const { ok } = await checkRedirectRateLimit(ip).catch(() => ({ ok: true }));
++  if (!ok) return new NextResponse('Too Many Requests', { status: 429 });
+ 
+-  const product = await getProductById(id);
++  // FIX (audit 4.9): use the PUBLIC product fetch (applies the publish gate).
++  // A draft/archived/deleted/future product cannot be redirected.
++  const product = await getPublicProductById(id);
+   if (!product || !product.asin) {
+-    // No product or no ASIN → branded not-found (not a bare 404, not a broken Amazon redirect).
+     return new NextResponse('Not found', { status: 404 });
+   }
+ 
+-  // Derive the Amazon URL at click time. NEVER stored.
+-  const tag = process.env.AMAZON_ASSOCIATES_TAG || '';
+-  const marketplace = product.default_marketplace || 'US';
+-  const destination = deriveAmazonUrl({ asin: product.asin, tag, marketplace });
++  // Resolve the visitor's marketplace from their country (geo-routing, FM-19).
++  const country = resolveCountry(headers);
++  let visitorMarketplace: string | null = null;
++  if (country) {
++    const sb = createServiceClient();
++    const { data: mp } = await sb.from('marketplaces').select('slug').eq('country_code', country.toUpperCase()).maybeSingle();
++    visitorMarketplace = (mp as { slug: string } | null)?.slug ?? null;
++  }
+ 
+-  if (!destination) {
++  // Derive the Amazon URL at click time via the CANONICAL per-marketplace path.
++  const result = await deriveAmazonUrlForProduct({ productId: product.id, visitorMarketplace });
++  if (!result.url) {
+     return new NextResponse('Link coming soon', { status: 404 });
+   }
+ 
+   const ua = headers.get('user-agent') ?? '';
+   const referer = headers.get('referer') ?? '';
+-  const country = resolveCountry(headers);
+-
+-  // Bot check runs on the CLICK path — bots still get redirected; only the click is suppressed.
+   const isBot = isBotRequest(ua);
+ 
+-  // Asynchronous click write — fire-and-forget. The redirect returns immediately.
++  // Async click write — never blocks the redirect.
+   after(async () => {
+-    if (isBot) return; // suppress the click row, but the redirect already happened.
+-
++    if (isBot) return;
+     const visitorHash = resolveVisitorHash({ ua, ip, domain: headers.get('host') ?? '' });
+-
+-    // Dedup: 1 click per identity per link per hour. If deduped, skip the write.
+-    const deduped = await dedupClick({
+-      identityHash: visitorHash,
+-      linkId: id,
+-      trackerId: null, // FM-16 wires the tracker id from /go/[tracker-id]
+-    }).catch(() => false); // Redis down → don't block; allow the write (best-effort).
+-
+-    if (deduped) return; // already counted this hour
+-
++    const deduped = await dedupClick({ identityHash: visitorHash, linkId: id, trackerId: null }).catch(() => false);
++    if (deduped) return;
+     await recordClick({
+       productId: product.id,
+-      source: null, // utm_source not available on /go; the storefront CTA passes it through
++      source: null,
+       visitorHash,
+       trackerId: null,
+-      ip: isEuCountry(country) ? '' : ip, // EU redaction
++      ip: isEuCountry(country) ? '' : ip,
+       country,
+       ua,
+       referer,
+       bot: false,
+-    }).catch(() => {
+-      // Silently skip — a stats-write failure must never break the redirect.
+-    });
++    }).catch(() => { /* never break the redirect */ });
+   });
+ 
+-  // 302 (user-editable affiliate link) + X-Robots-Tag: noindex.
+-  return NextResponse.redirect(destination, { status: 302, headers: { 'X-Robots-Tag': 'noindex' } });
++  return NextResponse.redirect(result.url, { status: 302, headers: { 'X-Robots-Tag': 'noindex' } });
+ }
+diff --git a/rollout/src/app/page.tsx b/rollout/src/app/page.tsx
+index 1bdb0ad..a106c47 100755
+--- a/rollout/src/app/page.tsx
++++ b/rollout/src/app/page.tsx
+@@ -4,6 +4,9 @@ import { getFeaturedProducts, getCarouselProducts } from '@/lib/products/product
+ import { ThreeItemGrid } from '@/components/storefront/ThreeItemGrid';
+ import { Carousel } from '@/components/storefront/Carousel';
+ import { Footer } from '@/components/storefront/Footer';
++import Link from 'next/link';
++import { StorefrontHeader } from '@/components/storefront/StorefrontHeader';
++import '@/components/storefront/storefront.css';
+ 
+ export const dynamic = 'force-dynamic';
+ 
+@@ -14,8 +17,23 @@ export default async function HomePage() {
+   ]);
+   return (
+     <>
+-      <ThreeItemGrid products={featured} />
+-      <Carousel products={carousel} />
++      <StorefrontHeader />
++      <main>
++        <section className="storefront-home-intro">
++          <p className="storefront-eyebrow">BUILT FOR THE BEAUTIFUL GAME</p>
++          <h1 className="storefront-home-title">Gear up.<br /><span>Play bigger.</span></h1>
++          <p className="storefront-home-copy">
++            A considered edit of football boots and equipment for players who
++            take every touch seriously.
++          </p>
++        </section>
++        <ThreeItemGrid products={featured} />
++        <div className="storefront-section-heading">
++          <h2>Explore the collection</h2>
++          <Link href="/shop">View all gear ↗</Link>
++        </div>
++        <Carousel products={carousel} />
++      </main>
+       <Footer />
+     </>
+   );
+diff --git a/rollout/src/app/product/[slug]/ProductDetailsClient.tsx b/rollout/src/app/product/[slug]/ProductDetailsClient.tsx
+index e43aa6a..974b18a 100755
+--- a/rollout/src/app/product/[slug]/ProductDetailsClient.tsx
++++ b/rollout/src/app/product/[slug]/ProductDetailsClient.tsx
+@@ -1,111 +1,204 @@
+-// FM-08: ProductDetailsClient — buy-box with variant selector (URL params) + reviews (omit when no data).
+-// No price (Amazon policy). CTA → /go/[id] (not window.open). Single-variant → no selector.
+ 'use client';
+-import Link from 'next/link';
++
++import { useState } from 'react';
+ import Image from 'next/image';
+-import { useRouter, useSearchParams } from 'next/navigation';
+-import type { Product, ProductVariant } from '@/lib/products/types';
+-
+-export function ProductDetailsClient({ product, variants = [], reviews }: {
+-  product: Product;
+-  variants?: ProductVariant[];
+-  reviews?: { rating: number; count: number; samples: { title: string; body: string }[] } | null;
+-}) {
+-  const router = useRouter();
+-  const sp = useSearchParams();
+-
+-  // Single-variant or no variants → no selector (returns null).
+-  const showSelector = variants.length > 1;
+-
+-  function selectVariant(key: string, value: string) {
+-    const next = new URLSearchParams(sp.toString());
+-    next.set(key, value);
+-    router.replace(`/product/${product.slug}?${next.toString()}`, { scroll: false });
+-  }
+-
+-  // Determine the currently-selected variant from URL params (if any).
+-  const selectedSize = sp.get('size');
+-  const selectedColor = sp.get('color');
++import Link from 'next/link';
++import type { Product } from '@/lib/products/types';
++
++type Benefit = { icon?: string; title?: string; text?: string };
++type Detail = { label?: string; value?: string };
++
++function ProductIcon({ name }: { name?: string }) {
++  const svg = { viewBox: '0 0 32 32', 'aria-hidden': true as const, focusable: false as const };
++  if (name === 'bolt') return <svg {...svg}><path d="M18.5 3 7 17h7l-1 12 12-16h-7z" /></svg>;
++  if (name === 'target') return <svg {...svg}><circle cx="16" cy="16" r="11" /><circle cx="16" cy="16" r="6" /><circle cx="16" cy="16" r="1.5" /></svg>;
++  if (name === 'speed') return <svg {...svg}><path d="M5 22a12 12 0 1 1 22 0M16 17l6-7M8 22h16" /><circle cx="16" cy="17" r="1.5" /></svg>;
++  return <svg {...svg}><path d="M5 20.5c4.2 0 6.8-1.1 8.2-4.2l1.4-5.1 4.1 1.2 1.1 5.1 7.2 3.1v4H5zM5 20.5v4M12 22h3m2 0h3m2 0h3" /></svg>;
++}
++
++function asArray<T>(value: unknown): T[] {
++  return Array.isArray(value) ? value as T[] : [];
++}
++
++export function ProductDetailsClient({ product }: { product: Product }) {
++  const images = Array.from(new Set(
++    [product.main_image, ...asArray<string>(product.images)]
++      .filter((src): src is string => typeof src === 'string' && src.trim().length > 0),
++  ));
++  const [activeImage, setActiveImage] = useState(images[0] ?? null);
++  const benefits = asArray<Benefit>(product.key_benefits).filter((item) => item && (item.title || item.text));
++  const savedDetails = asArray<Detail>(product.technical_details).filter((item) => item?.label && item.value);
++  const details = savedDetails.length ? savedDetails : [
++    ['Adjustment', product.adjustment], ['Range', product.range], ['Sole type', product.sole_type],
++    ['Upper material', product.upper_material], ['Traction', product.traction],
++  ].filter((item): item is [string, string] => Boolean(item[1])).map(([label, value]) => ({ label, value }));
++  const boxContents = Array.isArray(product.box_contents)
++    ? product.box_contents.filter((item): item is string => typeof item === 'string' && item.trim().length > 0)
++    : typeof product.box_contents === 'string' && product.box_contents.trim() ? [product.box_contents] : [];
++  const galleryImages = images.filter((src) => src !== activeImage);
++  const unavailable = product.availableForSale === false;
+ 
+   return (
+-    <div className="mx-auto grid max-w-[1440px] gap-8 px-4 py-8 lg:grid-cols-6">
+-      {/* 4/6 image gallery */}
+-      <div className="lg:col-span-4">
+-        <div className="relative aspect-square overflow-hidden rounded-lg bg-neutral-900">
+-          {product.main_image && <Image src={product.main_image} alt={product.name} fill priority sizes="(max-width:1024px) 100vw, 66vw" className="object-cover" />}
++    <main className="pixel-product-page">
++      <header className="pixel-product-header">
++        <div className="pixel-product-header__inner">
++          <span className="pixel-logo">ATHLETICA</span>
+         </div>
+-      </div>
++      </header>
+ 
+-      {/* 2/6 buy-box */}
+-      <div className="lg:col-span-2">
+-        <div className="border-b border-neutral-800 pb-6">
+-          <h1 className="text-3xl font-bold text-white">{product.name}</h1>
+-          {/* NO price pill — Amazon Associates policy */}
+-        </div>
++      <div className="pixel-product-shell">
++        <section className="pixel-hero" aria-labelledby="product-title">
++          <div className="pixel-gallery">
++            <div className="pixel-main-image">
++              {activeImage ? (
++                <Image src={activeImage} alt={product.name} fill priority unoptimized sizes="(max-width: 900px) 100vw, 55vw" />
++              ) : <div className="pixel-image-unavailable">IMAGE UNAVAILABLE</div>}
++              <span className="pixel-image-counter" aria-hidden="true">
++                {images.length ? '01 / ' + String(images.length).padStart(2, '0') : ''}
++              </span>
++            </div>
+ 
+-        {showSelector && (
+-          <div className="py-6">
+-            {variants.some(v => (v.attributes as { size?: string })?.size) && (
+-              <div className="mb-3">
+-                <span className="mb-1 block text-sm text-neutral-400">Size</span>
+-                <div className="flex flex-wrap gap-2">
+-                  {Array.from(new Set(variants.map(v => (v.attributes as { size?: string }).size).filter(Boolean))) .map(size => {
+-                    const v = variants.find(x => (x.attributes as { size?: string }).size === size);
+-                    const oos = v?.status === 'archived' || v?.deleted_at != null;
+-                    return (
+-                      <button
+-                        key={size}
+-                        onClick={() => selectVariant('size', size!)}
+-                        disabled={oos}
+-                        aria-disabled={oos}
+-                        title={oos ? 'Out of Stock' : size!}
+-                        className={`rounded border px-3 py-1 text-sm ${oos ? 'border-neutral-800 text-neutral-600 line-through' : selectedSize === size ? 'border-white bg-white text-black' : 'border-neutral-700 text-white'}`}
+-                      >
+-                        {size}
+-                      </button>
+-                    );
+-                  })}
+-                </div>
++            {images.length > 1 && (
++              <div className="pixel-thumbnails" aria-label="Product images">
++                {images.slice(0, 4).map((src, index) => (
++                  <button
++                    key={src}
++                    type="button"
++                    className={'pixel-thumbnail' + (src === activeImage ? ' is-active' : '')}
++                    onClick={() => setActiveImage(src)}
++                    aria-label={'Show product image ' + (index + 1)}
++                    aria-pressed={src === activeImage}
++                  >
++                    <Image src={src} alt={product.name + ' view ' + (index + 1)} fill unoptimized sizes="(max-width: 600px) 22vw, 13vw" />
++                  </button>
++                ))}
+               </div>
+             )}
+           </div>
++
++          <div className="pixel-product-summary">
++            <span className="pixel-brand">{product.collection || 'ATHLETICA'}</span>
++            <h1 id="product-title">{product.name}</h1>
++            {product.tagline && <p className="pixel-tagline">{product.tagline}</p>}
++            {product.subtitle && <p className="pixel-subtitle">{product.subtitle}</p>}
++
++            {(product.gender || product.color || unavailable) && (
++              <div className="pixel-meta" aria-label="Product attributes">
++                {product.gender && <span>{product.gender}</span>}
++                {product.gender && product.color && <i aria-hidden="true">·</i>}
++                {product.color && <span>{product.color}</span>}
++                {(product.gender || product.color) && unavailable && <i aria-hidden="true">·</i>}
++                {unavailable && <span>Currently unavailable</span>}
++              </div>
++            )}
++
++            <div className="pixel-cta-rule" />
++            {product.asin && !unavailable ? (
++              <Link href={'/go/' + product.id} className="pixel-shop-button">
++                SHOP PRODUCT <span className="pixel-arrow" aria-hidden="true">→</span>
++              </Link>
++            ) : (
++              <button type="button" className="pixel-shop-button" disabled>
++                {unavailable ? 'CURRENTLY UNAVAILABLE' : 'LINK COMING SOON'}
++              </button>
++            )}
++            <p className="pixel-retailer-note">
++              You’ll be redirected to the retailer’s website to complete your purchase. Product availability may change.
++            </p>
++          </div>
++        </section>
++
++        {(product.intro || benefits.length > 0) && (
++          <section className="pixel-story-benefits">
++            {product.intro && (
++              <div className="pixel-story">
++                <span className="pixel-section-label">PRODUCT OVERVIEW</span>
++                <div dangerouslySetInnerHTML={{ __html: product.intro }} />
++              </div>
++            )}
++            {benefits.length > 0 && (
++              <div className="pixel-benefits">
++                <span className="pixel-section-label">KEY BENEFITS</span>
++                <div className="pixel-benefit-grid">
++                  {benefits.map((benefit, index) => (
++                    <article className="pixel-benefit-card" key={(benefit.title || 'benefit') + '-' + index}>
++                      <span className="pixel-benefit-icon"><ProductIcon name={benefit.icon} /></span>
++                      <div>
++                        {benefit.title && <h3>{benefit.title}</h3>}
++                        {benefit.text && <p>{benefit.text}</p>}
++                      </div>
++                    </article>
++                  ))}
++                </div>
++              </div>
++            )}
++          </section>
+         )}
+ 
+-        <div className="py-6 prose prose-invert text-neutral-300" dangerouslySetInnerHTML={{ __html: product.intro || '' }} />
++        {(details.length > 0 || galleryImages.length > 0 || (product.sizes_detail || asArray<string>(product.sizes).length > 0)) && (
++          <section className="pixel-details-gallery">
++            {(details.length > 0 || product.sizes_detail || asArray<string>(product.sizes).length > 0) && (
++              <div className="pixel-details">
++                <span className="pixel-section-label">TECHNICAL DETAILS</span>
++                <div className="pixel-spec-list">
++                  {details.map((detail, index) => (
++                    <div className="pixel-spec-row" key={detail.label + '-' + index}>
++                      <span>{detail.label}</span><strong>{detail.value}</strong>
++                    </div>
++                  ))}
++                  {product.sizes_detail && <div className="pixel-spec-row"><span>Sizes</span><strong>{product.sizes_detail}</strong></div>}
++                  {asArray<string>(product.sizes).length > 0 && (
++                    <div className="pixel-spec-row"><span>Available sizes</span><strong>{asArray<string>(product.sizes).join(', ')}</strong></div>
++                  )}
++                </div>
++              </div>
++            )}
+ 
+-        {/* Reviews block — OMITTED when no data (never faked). */}
+-        {reviews && reviews.count > 0 && (
+-          <div className="border-t border-neutral-800 py-6">
+-            <div className="flex items-center gap-2">
+-              <span className="text-yellow-400">{'★'.repeat(Math.round(reviews.rating))}</span>
+-              <span className="text-sm text-neutral-400">{reviews.rating} ({reviews.count} reviews)</span>
++            {galleryImages.length > 0 && (
++              <div className="pixel-product-gallery">
++                <span className="pixel-section-label">PRODUCT GALLERY</span>
++                <div className="pixel-gallery-grid">
++                  {galleryImages.slice(0, 6).map((src, index) => (
++                    <button
++                      className="pixel-gallery-item"
++                      type="button"
++                      key={src}
++                      onClick={() => { setActiveImage(src); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
++                      aria-label={'View gallery image ' + (index + 1)}
++                    >
++                      <Image src={src} alt={product.name + ' gallery image ' + (index + 1)} fill unoptimized sizes="(max-width: 600px) 45vw, 24vw" />
++                    </button>
++                  ))}
++                </div>
++              </div>
++            )}
++          </section>
++        )}
++
++        <section className="pixel-bottom-strip">
++          <div className="pixel-bottom-item">
++            <span className="pixel-bottom-icon"><ProductIcon name="target" /></span>
++            <div>
++              <div className="pixel-bottom-label">SHOP WITH CONFIDENCE</div>
++              <p>Athletica connects you to the retailer. Orders, payment and delivery are handled by the retailer.</p>
++              <p>As an Amazon Associate, Athletica earns from qualifying purchases.</p>
+             </div>
+-            {reviews.samples.slice(0, 3).map((r, i) => (
+-              <blockquote key={i} className="mt-3 border-l border-neutral-700 pl-3 text-sm text-neutral-300">
+-                <strong>{r.title}</strong>
+-                <p>{r.body}</p>
+-              </blockquote>
+-            ))}
+-            <a href={`https://www.amazon.com/dp/${product.asin}?tag=${process.env.NEXT_PUBLIC_AMAZON_ASSOCIATES_TAG ?? ''}#reviews`} target="_blank" rel="nofollow noopener" className="mt-3 inline-block text-sm underline">
+-              See all on Amazon
+-            </a>
+           </div>
+-        )}
+ 
+-        {/* CTA — last element, links to /go/[id] (no window.open). Greyed when no ASIN/tag. */}
+-        <div className="py-6">
+-          {product.asin ? (
+-            <Link href={`/go/${product.id}`} className="block rounded bg-[#d1fd40] px-6 py-3 text-center font-bold text-black">
+-              SHOP PRODUCT
+-            </Link>
+-          ) : (
+-            <span className="block rounded bg-neutral-800 px-6 py-3 text-center font-bold text-neutral-500">
+-              Link coming soon
+-            </span>
++          {boxContents.length > 0 && (
++            <div className="pixel-bottom-item">
++              <span className="pixel-bottom-icon"><ProductIcon name="boot" /></span>
++              <div>
++                <div className="pixel-bottom-label">BOX CONTENTS</div>
++                <ul className="pixel-box-list">
++                  {boxContents.map((item, index) => <li key={item + '-' + index}>{item}</li>)}
++                </ul>
++              </div>
++            </div>
+           )}
+-        </div>
++        </section>
+       </div>
+-    </div>
++    </main>
+   );
+ }
+ 
+diff --git a/rollout/src/app/product/[slug]/page.tsx b/rollout/src/app/product/[slug]/page.tsx
+index 86b76c8..7565abe 100755
+--- a/rollout/src/app/product/[slug]/page.tsx
++++ b/rollout/src/app/product/[slug]/page.tsx
+@@ -18,6 +18,7 @@ import { recordView } from '@/lib/analytics/analytics-service';
+ import { isBotRequest } from '@/lib/analytics/bot-filter';
+ import { resolveVisitorHash } from '@/lib/analytics/visitor-hash';
+ import { resolveIp } from '@/lib/analytics/ip-chain';
++import './rollout1-pixel-match.css';
+ import ProductDetailsClient from './ProductDetailsClient';
+ 
+ const HIDDEN_PRODUCT_TAG = 'hidden';
+diff --git a/rollout/src/app/shop/page.tsx b/rollout/src/app/shop/page.tsx
+new file mode 100644
+index 0000000..746ad17
+--- /dev/null
++++ b/rollout/src/app/shop/page.tsx
+@@ -0,0 +1,77 @@
++import type { Metadata } from 'next';
++import { Suspense } from 'react';
++import { listProducts } from '@/lib/products/product-service';
++import { StorefrontHeader } from '@/components/storefront/StorefrontHeader';
++import { ShopGrid } from '@/components/storefront/ShopGrid';
++import { Footer } from '@/components/storefront/Footer';
++import '@/components/storefront/storefront.css';
++
++export const dynamic = 'force-dynamic';
++
++export const metadata: Metadata = {
++  title: 'Shop football gear | Athletica',
++  description: 'Browse football boots, training gear and equipment at Athletica.',
++  openGraph: {
++    title: 'Shop football gear | Athletica',
++    description: 'Browse football boots, training gear and equipment at Athletica.',
++    type: 'website',
++  },
++};
++
++type ShopSearchParams = {
++  q?: string;
++  category?: string;
++  sort?: string;
++  page?: string;
++};
++
++export default async function ShopPage({
++  searchParams,
++}: {
++  searchParams: Promise<ShopSearchParams>;
++}) {
++  const params = await searchParams;
++  const query = params.q?.trim() || null;
++  const category = params.category?.trim() || null;
++  const sort = params.sort === 'popular' ? 'popular' : 'newest';
++  const requestedPage = Number.parseInt(params.page ?? '1', 10);
++  const page = Number.isFinite(requestedPage) && requestedPage > 0 ? requestedPage : 1;
++  const pageSize = 16;
++
++  const result = await listProducts({
++    query,
++    category,
++    sort,
++    page,
++    pageSize,
++  });
++
++  return (
++    <>
++      <StorefrontHeader />
++      <main className="shop-page">
++        <p className="shop-page__eyebrow">THE ATHLETICA EDIT</p>
++        <h1 className="shop-page__title">Find your<br />next advantage.</h1>
++        <p className="shop-page__description">
++          Explore football gear selected for the way you play. Choose your equipment,
++          compare the details, and continue to the retailer when you are ready.
++        </p>
++        <div className="shop-page__results">
++          <Suspense fallback={<div className="shop-page__loading">{Array.from({ length: 8 }, (_, i) => <div className="shop-page__skeleton" key={i} />)}</div>}>
++            <ShopGrid
++              products={result.products}
++              total={result.total}
++              page={page}
++              pageSize={pageSize}
++              currentQuery={query}
++              currentCategory={category}
++              currentSort={sort}
++              categories={result.categories}
++            />
++          </Suspense>
++        </div>
++      </main>
++      <Footer />
++    </>
++  );
++}
+diff --git a/rollout/src/components/admin/AdminHeader.tsx b/rollout/src/components/admin/AdminHeader.tsx
+new file mode 100644
+index 0000000..dce13c1
+--- /dev/null
++++ b/rollout/src/components/admin/AdminHeader.tsx
+@@ -0,0 +1,21 @@
++import Link from 'next/link';
++import './admin-workspace.css';
++
++export function AdminHeader() {
++  return (
++    <header className="admin-workspace-header">
++      <Link href="/admin/products" className="admin-workspace-brand">
++        <span className="admin-workspace-brand__mark">A</span>
++        <span><strong>ATHLETICA</strong><small>OPERATIONS</small></span>
++      </Link>
++      <nav className="admin-workspace-nav" aria-label="Admin navigation">
++        <Link href="/admin/products">Products</Link>
++        <Link href="/admin/media">Media</Link>
++        <Link href="/admin/analytics">Analytics</Link>
++      </nav>
++      <form action="/api/admin/auth/signout" method="POST">
++        <button className="admin-workspace-signout" type="submit">Sign out</button>
++      </form>
++    </header>
++  );
++}
+diff --git a/rollout/src/components/admin/AnalyticsDashboard.tsx b/rollout/src/components/admin/AnalyticsDashboard.tsx
+old mode 100644
+new mode 100755
+diff --git a/rollout/src/components/admin/MediaLibrary.tsx b/rollout/src/components/admin/MediaLibrary.tsx
+new file mode 100644
+index 0000000..d15c6e0
+--- /dev/null
++++ b/rollout/src/components/admin/MediaLibrary.tsx
+@@ -0,0 +1,139 @@
++'use client';
++
++import { useCallback, useEffect, useRef, useState } from 'react';
++import './media-library.css';
++
++type MediaAsset = {
++  _id: string;
++  url: string;
++  originalFilename?: string | null;
++};
++
++const MAX_FILE_SIZE = 5 * 1024 * 1024;
++const ACCEPTED_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/avif'];
++
++export function MediaLibrary() {
++  const inputRef = useRef<HTMLInputElement>(null);
++  const [assets, setAssets] = useState<MediaAsset[]>([]);
++  const [loading, setLoading] = useState(true);
++  const [error, setError] = useState('');
++  const [uploading, setUploading] = useState(false);
++  const [notice, setNotice] = useState('');
++
++  const loadAssets = useCallback(async () => {
++    setLoading(true);
++    setError('');
++    try {
++      const response = await fetch('/api/admin/media/assets', { cache: 'no-store' });
++      const body = await response.json();
++      if (!response.ok) throw new Error(body.error || 'Unable to load media.');
++      setAssets(Array.isArray(body.items) ? body.items : []);
++    } catch (err) {
++      setError(err instanceof Error ? err.message : 'Unable to load media.');
++    } finally {
++      setLoading(false);
++    }
++  }, []);
++
++  useEffect(() => { void loadAssets(); }, [loadAssets]);
++
++  async function uploadFile(file: File) {
++    setNotice('');
++    if (!ACCEPTED_TYPES.includes(file.type)) {
++      setNotice('Choose a JPEG, PNG, WebP or AVIF image.');
++      return;
++    }
++    if (file.size > MAX_FILE_SIZE) {
++      setNotice('The image must be 5MB or smaller.');
++      return;
++    }
++
++    setUploading(true);
++    const form = new FormData();
++    form.append('file', file);
++    try {
++      const response = await fetch('/api/admin/media/upload', { method: 'POST', body: form });
++      const body = await response.json();
++      if (!response.ok || !body.item) throw new Error(body.error || 'Upload failed.');
++      setAssets(current => [body.item as MediaAsset, ...current]);
++      setNotice('Image uploaded successfully.');
++    } catch (err) {
++      setNotice(err instanceof Error ? err.message : 'Upload failed. Try again.');
++    } finally {
++      setUploading(false);
++      if (inputRef.current) inputRef.current.value = '';
++    }
++  }
++
++  async function copyUrl(url: string) {
++    try {
++      await navigator.clipboard.writeText(url);
++      setNotice('Image URL copied.');
++    } catch {
++      setNotice('Could not copy the URL. Select it from the asset details.');
++    }
++  }
++
++  return (
++    <section className="media-library">
++      <div className="media-library__heading">
++        <div>
++          <p className="media-library__eyebrow">CONTENT ASSETS</p>
++          <h1>Media library</h1>
++          <p>Manage product imagery stored in the Athletica media library.</p>
++        </div>
++        <button type="button" onClick={() => inputRef.current?.click()} disabled={uploading}>
++          {uploading ? 'Uploading…' : 'Upload image'}
++        </button>
++        <input
++          ref={inputRef}
++          className="media-library__file-input"
++          type="file"
++          accept="image/jpeg,image/png,image/webp,image/avif"
++          onChange={event => {
++            const file = event.target.files?.[0];
++            if (file) void uploadFile(file);
++          }}
++        />
++      </div>
++
++      {notice && <p className="media-library__notice" role="status" aria-live="polite">{notice}</p>}
++
++      {loading ? (
++        <div className="media-library__grid" aria-label="Loading media">
++          {Array.from({ length: 8 }, (_, i) => <div className="media-library__skeleton" key={i} />)}
++        </div>
++      ) : error ? (
++        <div className="media-library__state">
++          <h2>Unable to load media</h2>
++          <p>{error}</p>
++          <button type="button" onClick={() => void loadAssets()}>Try again</button>
++        </div>
++      ) : assets.length === 0 ? (
++        <div className="media-library__state">
++          <span className="media-library__empty-mark" aria-hidden="true">＋</span>
++          <h2>Your library is empty</h2>
++          <p>Upload a product image to make it available in the product editor.</p>
++          <button type="button" onClick={() => inputRef.current?.click()}>Upload first image</button>
++        </div>
++      ) : (
++        <div className="media-library__grid">
++          {assets.map(asset => (
++            <article className="media-library__asset" key={asset._id}>
++              <div className="media-library__preview">
++                <img src={asset.url} alt={asset.originalFilename || 'Uploaded product asset'} loading="lazy" />
++              </div>
++              <div className="media-library__asset-meta">
++                <div className="media-library__asset-info">
++                  <span title={asset.originalFilename || asset._id}>{asset.originalFilename || 'Untitled image'}</span>
++                  <code title={asset.url}>{asset.url}</code>
++                </div>
++                <button type="button" onClick={() => void copyUrl(asset.url)}>Copy URL</button>
++              </div>
++            </article>
++          ))}
++        </div>
++      )}
++    </section>
++  );
++}
+diff --git a/rollout/src/components/admin/admin-workspace.css b/rollout/src/components/admin/admin-workspace.css
+new file mode 100644
+index 0000000..65364af
+--- /dev/null
++++ b/rollout/src/components/admin/admin-workspace.css
+@@ -0,0 +1,232 @@
++.admin-workspace-header,
++.admin-workspace-header * {
++  box-sizing: border-box;
++}
++
++.admin-workspace-header {
++  min-height: 76px;
++  padding: 0 clamp(20px, 4vw, 56px);
++  display: grid;
++  grid-template-columns: 1fr auto 1fr;
++  align-items: center;
++  gap: 24px;
++  border-bottom: 1px solid #252525;
++  background: #050505;
++}
++
++.admin-workspace-brand {
++  display: inline-flex;
++  width: fit-content;
++  align-items: center;
++  gap: 11px;
++  color: #fff;
++  text-decoration: none;
++}
++
++.admin-workspace-brand__mark {
++  width: 34px;
++  height: 34px;
++  display: grid;
++  place-items: center;
++  background: #d1fd40;
++  color: #050505;
++  font-size: 18px;
++  font-weight: 950;
++  font-style: italic;
++}
++
++.admin-workspace-brand strong,
++.admin-workspace-brand small {
++  display: block;
++}
++
++.admin-workspace-brand strong {
++  font-size: 12px;
++  font-weight: 900;
++  letter-spacing: .16em;
++}
++
++.admin-workspace-brand small {
++  margin-top: 4px;
++  color: #8c8c8c;
++  font-size: 8px;
++  font-weight: 750;
++  letter-spacing: .22em;
++}
++
++.admin-workspace-nav {
++  display: flex;
++  align-items: center;
++  gap: 34px;
++}
++
++.admin-workspace-nav a {
++  padding: 29px 0 27px;
++  border-bottom: 2px solid transparent;
++  color: #929292;
++  font-size: 11px;
++  font-weight: 750;
++  letter-spacing: .1em;
++  text-decoration: none;
++  text-transform: uppercase;
++}
++
++.admin-workspace-nav a:hover,
++.admin-workspace-nav a:focus-visible {
++  border-color: #d1fd40;
++  color: #fff;
++}
++
++.admin-workspace-header form {
++  justify-self: end;
++}
++
++.admin-workspace-signout {
++  min-height: 36px;
++  padding: 0 14px;
++  border: 1px solid #363636;
++  background: transparent;
++  color: #b7b7b7;
++  font-size: 10px;
++  font-weight: 750;
++  letter-spacing: .1em;
++  text-transform: uppercase;
++  cursor: pointer;
++}
++
++.admin-workspace-signout:hover {
++  border-color: #d1fd40;
++  color: #d1fd40;
++}
++
++.admin-analytics-page {
++  width: min(100% - 48px, 1440px);
++  min-height: 75vh;
++  margin: 0 auto;
++  padding: 46px 0 90px;
++  color: #fff;
++}
++
++.admin-analytics-heading {
++  display: flex;
++  align-items: end;
++  justify-content: space-between;
++  gap: 20px;
++  margin-bottom: 30px;
++}
++
++.admin-analytics-eyebrow {
++  margin: 0 0 10px;
++  color: #d1fd40;
++  font-size: 10px;
++  font-weight: 850;
++  letter-spacing: .2em;
++  text-transform: uppercase;
++}
++
++.admin-analytics-title {
++  margin: 0;
++  color: #fff;
++  font-size: clamp(34px, 5vw, 56px);
++  font-weight: 900;
++  letter-spacing: -.065em;
++  line-height: .95;
++  text-transform: uppercase;
++}
++
++.admin-analytics-subtitle {
++  max-width: 470px;
++  margin: 13px 0 0;
++  color: #929292;
++  font-size: 13px;
++  line-height: 1.6;
++}
++
++/* The existing analytics data component keeps its real SSE/data behavior.
++   These selectors provide the visual treatment without changing that logic. */
++.admin-analytics-page .space-y-6 {
++  display: grid;
++  gap: 28px;
++}
++
++.admin-analytics-page .text-sm.text-neutral-400 {
++  color: #d1fd40;
++  font-size: 10px;
++  font-weight: 800;
++  letter-spacing: .12em;
++  text-transform: uppercase;
++}
++
++.admin-analytics-page .grid.grid-cols-3 {
++  grid-template-columns: repeat(3, minmax(0, 1fr));
++  gap: 14px;
++}
++
++.admin-analytics-page .rounded.border.border-neutral-800 {
++  min-height: 126px;
++  padding: 20px;
++  border: 1px solid #292929;
++  border-radius: 0;
++  background: #090909;
++}
++
++.admin-analytics-page .rounded.border.border-neutral-800 .text-sm {
++  color: #929292;
++  font-size: 10px;
++  font-weight: 800;
++  letter-spacing: .13em;
++  text-transform: uppercase;
++}
++
++.admin-analytics-page .rounded.border.border-neutral-800 .text-white {
++  margin-top: 17px;
++  color: #d1fd40;
++  font-size: 27px;
++  font-weight: 900;
++  letter-spacing: -.05em;
++}
++
++.admin-analytics-page h2 {
++  margin: 0 0 14px;
++  color: #fff;
++  font-size: 14px;
++  font-weight: 850;
++  letter-spacing: .04em;
++  text-transform: uppercase;
++}
++
++.admin-analytics-page .flex.gap-4 {
++  display: grid;
++  grid-template-columns: repeat(3, minmax(0, 1fr));
++  gap: 12px;
++}
++
++.admin-analytics-page > p.text-neutral-400 {
++  padding: 28px;
++  border: 1px solid #292929;
++  background: #090909;
++  color: #929292;
++  font-size: 13px;
++}
++
++@media (max-width: 760px) {
++  .admin-workspace-header {
++    min-height: 68px;
++    grid-template-columns: 1fr auto;
++    padding-inline: 16px;
++  }
++
++  .admin-workspace-nav {
++    display: none;
++  }
++
++  .admin-analytics-page {
++    width: calc(100% - 32px);
++    padding-top: 34px;
++  }
++
++  .admin-analytics-page .grid.grid-cols-3,
++  .admin-analytics-page .flex.gap-4 {
++    grid-template-columns: 1fr;
++  }
++}
+diff --git a/rollout/src/components/admin/media-library.css b/rollout/src/components/admin/media-library.css
+new file mode 100644
+index 0000000..2e024a3
+--- /dev/null
++++ b/rollout/src/components/admin/media-library.css
+@@ -0,0 +1,206 @@
++.media-library,
++.media-library * {
++  box-sizing: border-box;
++}
++
++.media-library {
++  color: #fff;
++}
++
++.media-library__heading {
++  display: flex;
++  align-items: end;
++  justify-content: space-between;
++  gap: 24px;
++  margin-bottom: 30px;
++}
++
++.media-library__eyebrow {
++  margin: 0 0 10px;
++  color: #d1fd40;
++  font-size: 10px;
++  font-weight: 850;
++  letter-spacing: .2em;
++  text-transform: uppercase;
++}
++
++.media-library__heading h1 {
++  margin: 0;
++  color: #fff;
++  font-size: clamp(34px, 5vw, 54px);
++  font-weight: 900;
++  letter-spacing: -.065em;
++  line-height: .95;
++  text-transform: uppercase;
++}
++
++.media-library__heading p:last-child {
++  margin: 13px 0 0;
++  color: #929292;
++  font-size: 13px;
++  line-height: 1.6;
++}
++
++.media-library__heading > button,
++.media-library__state button {
++  min-height: 42px;
++  padding: 0 17px;
++  border: 1px solid #d1fd40;
++  background: #d1fd40;
++  color: #050505;
++  font-size: 10px;
++  font-weight: 850;
++  letter-spacing: .1em;
++  text-transform: uppercase;
++  cursor: pointer;
++}
++
++.media-library__heading > button:disabled {
++  cursor: wait;
++  opacity: .55;
++}
++
++.media-library__file-input {
++  display: none;
++}
++
++.media-library__notice {
++  margin: 0 0 18px;
++  padding: 12px 15px;
++  border: 1px solid #303030;
++  color: #d1fd40;
++  font-size: 12px;
++}
++
++.media-library__grid {
++  display: grid;
++  grid-template-columns: repeat(4, minmax(0, 1fr));
++  gap: 16px;
++}
++
++.media-library__asset {
++  min-width: 0;
++  border: 1px solid #292929;
++  background: #090909;
++}
++
++.media-library__preview {
++  aspect-ratio: 1 / 1;
++  overflow: hidden;
++  background: #111;
++}
++
++.media-library__preview img {
++  display: block;
++  width: 100%;
++  height: 100%;
++  object-fit: cover;
++  transition: transform 180ms ease;
++}
++
++.media-library__asset:hover .media-library__preview img {
++  transform: scale(1.035);
++}
++
++.media-library__asset-meta {
++  min-height: 55px;
++  display: flex;
++  align-items: center;
++  justify-content: space-between;
++  gap: 10px;
++  padding: 10px 12px;
++}
++
++.media-library__asset-info {
++  min-width: 0;
++  display: grid;
++  gap: 5px;
++}
++
++.media-library__asset-info span,
++.media-library__asset-info code {
++  display: block;
++  overflow: hidden;
++  text-overflow: ellipsis;
++  white-space: nowrap;
++}
++
++.media-library__asset-info span {
++  color: #b5b5b5;
++  font-size: 10px;
++}
++
++.media-library__asset-info code {
++  color: #707070;
++  font-size: 8px;
++}
++
++.media-library__asset-meta button {
++  flex: none;
++  padding: 5px 0;
++  border: 0;
++  background: transparent;
++  color: #d1fd40;
++  font-size: 9px;
++  font-weight: 800;
++  letter-spacing: .06em;
++  text-transform: uppercase;
++  cursor: pointer;
++}
++
++.media-library__state {
++  min-height: 300px;
++  display: flex;
++  flex-direction: column;
++  align-items: center;
++  justify-content: center;
++  padding: 34px;
++  border: 1px dashed #353535;
++  text-align: center;
++}
++
++.media-library__empty-mark {
++  width: 44px;
++  height: 44px;
++  display: grid;
++  place-items: center;
++  border: 1px solid #d1fd40;
++  color: #d1fd40;
++  font-size: 25px;
++}
++
++.media-library__state h2 {
++  margin: 18px 0 0;
++  color: #fff;
++  font-size: 18px;
++  font-weight: 850;
++  text-transform: uppercase;
++}
++
++.media-library__state p {
++  max-width: 380px;
++  margin: 9px 0 18px;
++  color: #929292;
++  font-size: 12px;
++  line-height: 1.6;
++}
++
++.media-library__skeleton {
++  aspect-ratio: 1 / 1;
++  background: #101010;
++  animation: media-pulse 1.3s ease-in-out infinite alternate;
++}
++
++@keyframes media-pulse {
++  from { opacity: .4; }
++  to { opacity: 1; }
++}
++
++@media (max-width: 900px) {
++  .media-library__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
++}
++
++@media (max-width: 620px) {
++  .media-library__heading { align-items: flex-start; flex-direction: column; }
++  .media-library__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
++}
+diff --git a/rollout/src/components/affiliate/AffiliateWorkspace.tsx b/rollout/src/components/affiliate/AffiliateWorkspace.tsx
+new file mode 100644
+index 0000000..4dfbdbb
+--- /dev/null
++++ b/rollout/src/components/affiliate/AffiliateWorkspace.tsx
+@@ -0,0 +1,134 @@
++'use client';
++
++import { FormEvent, useCallback, useEffect, useState } from 'react';
++import Link from 'next/link';
++import './affiliate-workspace.css';
++
++type View = 'signup' | 'verify' | 'dashboard' | 'trackers' | 'balance' | 'payouts' | 'admin-affiliates' | 'campaigns' | 'admin-payouts';
++type Row = Record<string, unknown> & { id?: string };
++
++const META: Record<View, [string, string, string]> = {
++  signup: ['JOIN THE NETWORK', 'Affiliate application', 'Create your account in three short steps.'],
++  verify: ['ACCOUNT VERIFICATION', 'Verify your email', 'Check your inbox for the verification link.'],
++  dashboard: ['AFFILIATE WORKSPACE', 'Overview', 'Your performance and account activity.'],
++  trackers: ['AFFILIATE WORKSPACE', 'Trackers', 'Create and manage the links you share.'],
++  balance: ['AFFILIATE WORKSPACE', 'Balance', 'A record of commissions credited to your account.'],
++  payouts: ['AFFILIATE WORKSPACE', 'Payouts', 'Request a payout and follow its status.'],
++  'admin-affiliates': ['ADMIN WORKSPACE', 'Affiliates', 'Review applications and manage affiliate access.'],
++  campaigns: ['ADMIN WORKSPACE', 'Campaigns', 'Configure commission terms attached to trackers.'],
++  'admin-payouts': ['ADMIN WORKSPACE', 'Payout review', 'Review payout requests and record each transition.'],
++};
++
++const ENDPOINT: Partial<Record<View, string>> = {
++  dashboard: '/api/affiliate/me', trackers: '/api/affiliate/trackers',
++  balance: '/api/affiliate/balance', payouts: '/api/affiliate/payouts',
++  'admin-affiliates': '/api/admin/affiliates', campaigns: '/api/admin/campaigns',
++  'admin-payouts': '/api/admin/payouts',
++};
++
++function rowsFrom(data: unknown): Row[] {
++  if (Array.isArray(data)) return data as Row[];
++  if (data && typeof data === 'object') {
++    const obj = data as Record<string, unknown>;
++    for (const key of ['items', 'data', 'rows', 'trackers', 'entries', 'affiliates', 'campaigns', 'payouts']) {
++      if (Array.isArray(obj[key])) return obj[key] as Row[];
++    }
++  }
++  return [];
++}
++const val = (v: unknown) => v === null || v === undefined || v === '' ? '—' : String(v);
++
++export default function AffiliateWorkspace({ view }: { view: View }) {
++  const [data, setData] = useState<Record<string, unknown>>({});
++  const [rows, setRows] = useState<Row[]>([]);
++  const [loading, setLoading] = useState(Boolean(ENDPOINT[view]));
++  const [error, setError] = useState('');
++  const [notice, setNotice] = useState('');
++  const [busy, setBusy] = useState(false);
++  const [step, setStep] = useState(1);
++  const [form, setForm] = useState<Record<string, string | boolean>>({
++    email: '', password: '', full_name: '', address: '', country: '', payout_method: '',
++    payout_instructions: '', notify_balance: true, label: '', reward_type: 'cash_reward',
++    commission_type: 'percentage', reward: '', recurring: false, recurring_limit: '',
++    minimum_payout: '', payout_term: 'net-30', scheduled_for: '',
++  });
++  const meta = META[view];
++
++  const load = useCallback(async () => {
++    const endpoint = ENDPOINT[view];
++    if (!endpoint) return;
++    setLoading(true); setError('');
++    try {
++      const response = await fetch(endpoint, { credentials: 'same-origin', cache: 'no-store' });
++      const result = await response.json().catch(() => ({}));
++      if (!response.ok) throw new Error(typeof result.error === 'string' ? result.error : 'Request failed (' + response.status + ')');
++      setData(result && typeof result === 'object' ? result : {});
++      setRows(rowsFrom(result));
++    } catch (e) { setError(e instanceof Error ? e.message : 'Unable to load data.'); }
++    finally { setLoading(false); }
++  }, [view]);
++  useEffect(() => { void load(); }, [load]);
++
++  const setField = (name: string, value: string | boolean) => setForm(old => ({ ...old, [name]: value }));
++  const send = async (endpoint: string, body: Record<string, unknown> = {}, method = 'POST') => {
++    setBusy(true); setError(''); setNotice('');
++    try {
++      const response = await fetch(endpoint, { method, credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, body: method === 'GET' ? undefined : JSON.stringify(body) });
++      const result = await response.json().catch(() => ({}));
++      if (!response.ok) throw new Error(typeof result.error === 'string' ? result.error : 'Request failed (' + response.status + ')');
++      setNotice(typeof result.message === 'string' ? result.message : 'Action completed.');
++      await load();
++    } catch (e) { setError(e instanceof Error ? e.message : 'The request could not be completed.'); }
++    finally { setBusy(false); }
++  };
++  const submit = (endpoint: string, body: Record<string, unknown>) => (e: FormEvent) => { e.preventDefault(); void send(endpoint, body); };
++
++  const tableColumns = view === 'trackers' ? ['label', 'id', 'created_at']
++    : view === 'balance' ? ['created_at', 'trace', 'amount', 'currency', 'released']
++    : view === 'payouts' || view === 'admin-payouts' ? ['number', 'created_at', 'amount', 'currency', 'status', 'scheduled_for']
++    : view === 'admin-affiliates' ? ['full_name', 'email', 'country', 'status', 'created_at']
++    : ['reward_type', 'commission_type', 'reward', 'recurring', 'recurring_limit', 'minimum_payout', 'payout_term', 'status'];
++
++  return <main className="aw-page"><div className="aw-shell">
++    <header className="aw-header"><div><p className="aw-eyebrow">{meta[0]}</p><h1>{meta[1]}</h1><p className="aw-description">{meta[2]}</p></div>
++      <nav className="aw-nav">{view.startsWith('admin-') || view === 'campaigns' ?
++        <><Link href="/admin/affiliates">Affiliates</Link><Link href="/admin/campaigns">Campaigns</Link><Link href="/admin/payouts">Payouts</Link></> :
++        view !== 'signup' && view !== 'verify' ? <><Link href="/affiliate/dashboard">Overview</Link><Link href="/affiliate/trackers">Trackers</Link><Link href="/affiliate/balance">Balance</Link><Link href="/affiliate/payouts">Payouts</Link></> : null}
++      </nav>
++    </header>
++    {notice && <p className="aw-notice" role="status">{notice}</p>}
++    {error && <p className="aw-error" role="alert">{error}</p>}
++
++    {view === 'signup' && <section className="aw-panel">
++      <div className="aw-steps">{['Profile', 'Payout details', 'Terms'].map((s, i) => <div key={s} className={step === i + 1 ? 'current' : step > i + 1 ? 'done' : ''}><b>{i + 1}</b>{s}</div>)}</div>
++      <form onSubmit={e => { if (step < 3) { e.preventDefault(); setStep(step + 1); } else submit('/api/affiliate/signup', form)(e); }}>
++        {step === 1 && <div className="aw-fields"><Field label="Full name" name="full_name" value={form.full_name} set={setField} required/><Field label="Email" name="email" type="email" value={form.email} set={setField} required/><Field label="Password" name="password" type="password" value={form.password} set={setField} required/><Field label="Country" name="country" value={form.country} set={setField} required/></div>}
++        {step === 2 && <div className="aw-fields"><Field label="Address" name="address" value={form.address} set={setField} required/><Field label="Payout method" name="payout_method" value={form.payout_method} set={setField} required/><Field label="Payout instructions" name="payout_instructions" value={form.payout_instructions} set={setField} required/><label className="aw-check"><input type="checkbox" checked={Boolean(form.notify_balance)} onChange={e => setField('notify_balance', e.target.checked)}/> Notify me about balance changes</label></div>}
++        {step === 3 && <div className="aw-terms"><h2>Affiliate terms</h2><p>Your application remains pending until email verification and administrator approval. You will only be able to access your own affiliate data. Commission terms are defined by the campaigns you participate in.</p><label className="aw-check"><input type="checkbox" required/> I accept the affiliate agreement.</label><p><Link href="/affiliate-agreement">Read affiliate agreement</Link></p></div>}
++        <div className="aw-actions">{step > 1 && <button type="button" className="aw-button" onClick={() => setStep(step - 1)}>Back</button>}<button className="aw-button primary" disabled={busy}>{busy ? 'Submitting…' : step === 3 ? 'Submit application' : 'Continue'}</button></div>
++      </form>
++    </section>}
++
++    {view === 'verify' && <section className="aw-panel aw-center"><div className="aw-mark">A</div><h2>Check your inbox</h2><p>Follow the verification link sent to your email. Your application remains pending until it is reviewed.</p><button className="aw-button" disabled={busy} onClick={() => void send('/api/affiliate/verification/resend')}>Resend verification email</button></section>}
++
++    {view === 'dashboard' && <><div className="aw-stats"><Stat label="Available balance" value={val(data.balance_due)}/><Stat label="Total clicks" value={val(data.clicks)}/><Stat label="Active trackers" value={val(data.tracker_count)}/><Stat label="Account status" value={val(data.status)}/></div><section className="aw-panel"><h2>Your tracking link</h2><p className="aw-muted">Create a tracker for each channel so clicks can be attributed correctly.</p><strong className="aw-url">{val(data.primary_tracker_url)}</strong><Link href="/affiliate/trackers">Manage trackers →</Link></section><section className="aw-panel"><h2>Recent activity</h2><State loading={loading} error={error} empty={!rows.length} retry={load}/>{!loading && rows.length > 0 && <Table rows={rows.slice(0, 5)} columns={['created_at', 'event', 'amount', 'status']}/>}</section></>}
++
++    {view === 'trackers' && <section className="aw-panel"><h2>Create tracker</h2><form className="aw-inline" onSubmit={submit('/api/affiliate/trackers', { label: form.label })}><Field label="Tracker label" name="label" value={form.label} set={setField} required/><button className="aw-button primary" disabled={busy}>Create tracker</button></form><State loading={loading} error={error} empty={!rows.length} retry={load}/>{!loading && rows.length > 0 && <div className="aw-table-wrap"><table className="aw-table"><thead><tr><th>Label</th><th>Tracking ID</th><th>Created</th><th>Link</th></tr></thead><tbody>{rows.map((r,i) => <tr key={val(r.id) + i}><td>{val(r.label)}</td><td><code>{val(r.id)}</code></td><td>{val(r.created_at)}</td><td><button className="aw-link-button" onClick={() => navigator.clipboard.writeText(window.location.origin + '/go/' + val(r.id))}>Copy link</button></td></tr>)}</tbody></table></div>}</section>}
++
++    {view === 'balance' && <section className="aw-panel"><div className="aw-balance"><div><p className="aw-eyebrow">UNRELEASED COMMISSIONS</p><strong>{val(data.balance_due)}</strong></div><p className="aw-muted">Balance is calculated from unreleased ledger entries. Reversals appear as separate negative entries.</p></div><State loading={loading} error={error} empty={!rows.length} retry={load}/>{!loading && rows.length > 0 && <Table rows={rows} columns={tableColumns}/>}</section>}
++
++    {view === 'payouts' && <section className="aw-panel"><div className="aw-heading"><div><h2>Payout history</h2><p className="aw-muted">Requests are subject to your minimum and payout details.</p></div><button className="aw-button primary" disabled={busy} onClick={() => void send('/api/affiliate/payouts/request')}>Request payout</button></div><State loading={loading} error={error} empty={!rows.length} retry={load}/>{!loading && rows.length > 0 && <Table rows={rows} columns={tableColumns}/>}</section>}
++
++    {view === 'admin-affiliates' && <section className="aw-panel"><h2>Affiliate applications</h2><p className="aw-muted">Approval activates the account and issues its default tracker.</p><State loading={loading} error={error} empty={!rows.length} retry={load}/>{!loading && rows.length > 0 && <div className="aw-table-wrap"><table className="aw-table"><thead><tr><th>Name</th><th>Email</th><th>Country</th><th>Status</th><th>Applied</th><th>Action</th></tr></thead><tbody>{rows.map((r,i) => <tr key={val(r.id) + i}><td>{val(r.full_name)}</td><td>{val(r.email)}</td><td>{val(r.country)}</td><td><Status value={r.status}/></td><td>{val(r.created_at)}</td><td>{r.status === 'pending' ? <button className="aw-link-button" disabled={busy} onClick={() => void send('/api/admin/affiliates/' + encodeURIComponent(val(r.id)) + '/approve')}>Approve</button> : '—'}</td></tr>)}</tbody></table></div>}</section>}
++
++    {view === 'campaigns' && <section className="aw-panel"><h2>Create campaign</h2><form className="aw-fields" onSubmit={submit('/api/admin/campaigns', form)}><label className="aw-field">Reward type<select value={String(form.reward_type)} onChange={e => setField('reward_type',e.target.value)}><option value="cash_reward">Cash reward</option><option value="discount_coupon">Discount coupon</option></select></label><label className="aw-field">Commission type<select value={String(form.commission_type)} onChange={e => setField('commission_type',e.target.value)}><option value="percentage">Percentage</option><option value="fixed">Fixed</option></select></label><Field label="Reward" name="reward" type="number" value={form.reward} set={setField} required/><Field label="Minimum payout" name="minimum_payout" type="number" value={form.minimum_payout} set={setField} required/><label className="aw-field">Payout term<select value={String(form.payout_term)} onChange={e => setField('payout_term',e.target.value)}><option>net-7</option><option>net-14</option><option>net-30</option><option>net-60</option></select></label><label className="aw-check"><input type="checkbox" checked={Boolean(form.recurring)} onChange={e => setField('recurring',e.target.checked)}/> Recurring commission</label><Field label="Recurring limit (blank = lifetime)" name="recurring_limit" type="number" value={form.recurring_limit} set={setField}/><button className="aw-button primary" disabled={busy}>Create campaign</button></form><hr/><h2>Existing campaigns</h2><State loading={loading} error={error} empty={!rows.length} retry={load}/>{!loading && rows.length > 0 && <Table rows={rows} columns={tableColumns}/>}</section>}
++
++    {view === 'admin-payouts' && <section className="aw-panel"><h2>Payout requests</h2><State loading={loading} error={error} empty={!rows.length} retry={load}/>{!loading && rows.length > 0 && <div className="aw-table-wrap"><table className="aw-table"><thead><tr><th>Affiliate</th><th>Number</th><th>Amount</th><th>Status</th><th>Scheduled</th><th>Actions</th></tr></thead><tbody>{rows.map((r,i) => <tr key={val(r.id) + i}><td>{val(r.full_name || r.email)}</td><td>{val(r.number)}</td><td>{val(r.amount)} {val(r.currency)}</td><td><Status value={r.status}/></td><td>{val(r.scheduled_for)}</td><td>{r.status === 'requested' ? <><button className="aw-link-button" disabled={busy} onClick={() => void send('/api/admin/payouts/' + encodeURIComponent(val(r.id)) + '/schedule', {scheduled_for: form.scheduled_for})}>Schedule</button><button className="aw-link-button danger" disabled={busy} onClick={() => void send('/api/admin/payouts/' + encodeURIComponent(val(r.id)) + '/reject')}>Reject</button></> : r.status === 'scheduled' ? <button className="aw-link-button" disabled={busy} onClick={() => void send('/api/admin/payouts/' + encodeURIComponent(val(r.id)) + '/paid')}>Mark paid</button> : '—'}</td></tr>)}</tbody></table></div>}<div className="aw-date"><Field label="Schedule date" name="scheduled_for" type="date" value={form.scheduled_for} set={setField}/></div></section>}
++  </div></main>;
++}
++
++function Field({label,name,value,set,type='text',required=false}:{label:string;name:string;value:unknown;set:(n:string,v:string)=>void;type?:string;required?:boolean}) { return <label className="aw-field"><span>{label}</span><input name={name} type={type} value={String(value ?? '')} required={required} onChange={e=>set(name,e.target.value)}/></label>; }
++function Stat({label,value}:{label:string;value:string}) { return <article className="aw-stat"><span>{label}</span><strong>{value}</strong></article>; }
++function Status({value}:{value:unknown}) { const s=String(value ?? 'unknown').toLowerCase(); return <span className={'aw-status aw-status--' + s}>{val(value)}</span>; }
++function Table({rows,columns}:{rows:Row[];columns:string[]}) { return <div className="aw-table-wrap"><table className="aw-table"><thead><tr>{columns.map(c=><th key={c}>{c.replaceAll('_',' ')}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={val(r.id)+i}>{columns.map(c=><td key={c}>{c==='status'?<Status value={r[c]}/>:val(r[c])}</td>)}</tr>)}</tbody></table></div>; }
++function State({loading,error,empty,retry}:{loading:boolean;error:string;empty:boolean;retry:()=>void}) { if(loading)return <div className="aw-state">Loading…</div>;if(error)return <div className="aw-state"><strong>Could not load this page.</strong><p>{error}</p><button className="aw-button" onClick={retry}>Try again</button></div>;if(empty)return <div className="aw-state"><strong>Nothing here yet.</strong><p>When there is activity, it will appear here.</p></div>;return null; }
+diff --git a/rollout/src/components/affiliate/affiliate-workspace.css b/rollout/src/components/affiliate/affiliate-workspace.css
+new file mode 100644
+index 0000000..84fc2e6
+--- /dev/null
++++ b/rollout/src/components/affiliate/affiliate-workspace.css
+@@ -0,0 +1,9 @@
++.aw-page{min-height:100vh;background:#050505;color:#f7f7f2}.aw-shell{max-width:1440px;margin:auto;padding:48px 36px 88px}
++.aw-header{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;border-bottom:1px solid #292929;padding-bottom:26px;margin-bottom:26px}.aw-eyebrow{margin:0 0 12px;color:#d1fd40;font-size:10px;font-weight:700;letter-spacing:.2em}.aw-header h1{margin:0;font-size:clamp(34px,5vw,56px);line-height:1;letter-spacing:-.05em;text-transform:uppercase}.aw-description,.aw-muted{color:#999;font-size:13px;line-height:1.6}.aw-nav{display:flex;gap:18px;flex-wrap:wrap}.aw-nav a,.aw-panel a{color:#d1fd40;text-decoration:none;font-size:12px}
++.aw-panel{padding:26px;border:1px solid #292929;background:#0a0a0a;margin-bottom:16px}.aw-panel h2{font-size:18px;text-transform:uppercase;margin:0 0 16px}.aw-notice,.aw-error{padding:12px 16px;border:1px solid #d1fd40;color:#d1fd40;margin-bottom:16px;font-size:13px}.aw-error{border-color:#a44;color:#ffaaaa}
++.aw-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.aw-stat{border:1px solid #292929;padding:20px;min-height:110px;display:flex;flex-direction:column;justify-content:space-between}.aw-stat span{color:#999;text-transform:uppercase;font-size:10px;letter-spacing:.12em}.aw-stat strong{font-size:27px;letter-spacing:-.04em}.aw-heading,.aw-balance{display:flex;justify-content:space-between;align-items:center;gap:20px}.aw-url{display:block;margin:16px 0;color:#ddd;overflow-wrap:anywhere;font-size:13px}.aw-state{min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;text-align:center;color:#999;font-size:13px}.aw-state strong{color:white;font-size:16px}.aw-state p{margin:0}
++.aw-button{border:1px solid #555;background:transparent;color:white;padding:11px 16px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}.aw-button:hover{border-color:#d1fd40;color:#d1fd40}.aw-button:disabled{opacity:.45;cursor:not-allowed}.aw-button.primary{background:#d1fd40;color:#050505;border-color:#d1fd40}.aw-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:26px}
++.aw-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.aw-field{display:flex;flex-direction:column;gap:7px;color:#aaa;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.aw-field input,.aw-field select{min-height:43px;background:#050505;border:1px solid #333;color:#f7f7f2;padding:10px;font:inherit;font-size:13px;letter-spacing:normal;text-transform:none}.aw-field input:focus,.aw-field select:focus{outline:1px solid #d1fd40}.aw-check{display:flex;align-items:center;gap:9px;color:#bbb;font-size:13px}.aw-check input{accent-color:#d1fd40}.aw-steps{display:flex;border-bottom:1px solid #333;margin-bottom:24px}.aw-steps div{flex:1;padding:0 8px 14px;color:#777;font-size:11px;text-transform:uppercase;display:flex;align-items:center;gap:8px}.aw-steps b{border:1px solid #555;border-radius:50%;width:23px;height:23px;display:grid;place-items:center}.aw-steps .current{color:#d1fd40;border-bottom:2px solid #d1fd40}.aw-steps .current b,.aw-steps .done b{background:#d1fd40;color:#000;border-color:#d1fd40}.aw-terms{max-width:700px;line-height:1.7;color:#aaa;font-size:14px}.aw-center{text-align:center;max-width:600px;margin:8vh auto}.aw-mark{display:grid;place-items:center;width:46px;height:46px;margin:0 auto 20px;background:#d1fd40;color:#000;font-size:22px;font-weight:900}
++.aw-inline{display:flex;align-items:flex-end;gap:12px;max-width:650px;margin:16px 0 24px}.aw-inline .aw-field{flex:1}.aw-balance{padding-bottom:20px;border-bottom:1px solid #333;margin-bottom:12px}.aw-balance strong{font-size:38px}.aw-balance p{max-width:400px}.aw-table-wrap{width:100%;overflow-x:auto}.aw-table{width:100%;border-collapse:collapse;min-width:620px}.aw-table th{text-align:left;color:#888;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:14px 12px;border-bottom:1px solid #333}.aw-table td{padding:15px 12px;border-bottom:1px solid #222;font-size:13px;color:#ddd}.aw-table code{color:#aaa;font-size:11px}.aw-link-button{border:0;background:none;color:#d1fd40;font:inherit;font-size:12px;cursor:pointer;padding:4px 6px}.aw-link-button:disabled{opacity:.5}.aw-link-button.danger{color:#ff9999}.aw-status{display:inline-block;padding:4px 7px;border:1px solid #444;color:#aaa;font-size:10px;text-transform:uppercase}.aw-status--active,.aw-status--paid{border-color:#d1fd40;color:#d1fd40}.aw-status--pending,.aw-status--requested,.aw-status--scheduled{border-color:#a77b38;color:#e3bd78}.aw-status--rejected,.aw-status--suspended{border-color:#944;color:#faa}.aw-date{max-width:280px;margin-top:20px}.aw-panel hr{border:0;border-top:1px solid #333;margin:28px 0}
++@media(max-width:800px){.aw-shell{padding:30px 18px 60px}.aw-header{align-items:flex-start;flex-direction:column}.aw-stats{grid-template-columns:repeat(2,1fr)}.aw-heading,.aw-balance{align-items:flex-start;flex-direction:column}}
++@media(max-width:560px){.aw-shell{padding:22px 12px 48px}.aw-panel{padding:19px 14px}.aw-fields{grid-template-columns:1fr}.aw-inline{align-items:stretch;flex-direction:column}.aw-steps div{font-size:9px;padding-left:3px;padding-right:3px}.aw-stats{gap:8px}.aw-stat{padding:14px;min-height:95px}.aw-stat strong{font-size:21px}.aw-nav{gap:12px}.aw-actions button{flex:1}}
+diff --git a/rollout/src/components/storefront/Carousel.tsx b/rollout/src/components/storefront/Carousel.tsx
+old mode 100644
+new mode 100755
+diff --git a/rollout/src/components/storefront/Footer.tsx b/rollout/src/components/storefront/Footer.tsx
+old mode 100644
+new mode 100755
+diff --git a/rollout/src/components/storefront/ShopGrid.tsx b/rollout/src/components/storefront/ShopGrid.tsx
+old mode 100644
+new mode 100755
+diff --git a/rollout/src/components/storefront/StorefrontHeader.tsx b/rollout/src/components/storefront/StorefrontHeader.tsx
+new file mode 100644
+index 0000000..14fd1ff
+--- /dev/null
++++ b/rollout/src/components/storefront/StorefrontHeader.tsx
+@@ -0,0 +1,21 @@
++import Link from 'next/link';
++import './storefront.css';
++
++export function StorefrontHeader() {
++  return (
++    <header className="storefront-header">
++      <div className="storefront-header__inner">
++        <Link href="/" className="storefront-wordmark" aria-label="Athletica home">
++          ATHLETICA<span>.</span>
++        </Link>
++        <nav className="storefront-nav" aria-label="Main navigation">
++          <Link href="/shop" className="storefront-nav__link">Shop</Link>
++          <Link href="/affiliate-agreement" className="storefront-nav__link">Affiliate terms</Link>
++        </nav>
++        <Link href="/shop" className="storefront-header__action">
++          Explore gear <span aria-hidden="true">↗</span>
++        </Link>
++      </div>
++    </header>
++  );
++}
+diff --git a/rollout/src/components/storefront/ThreeItemGrid.tsx b/rollout/src/components/storefront/ThreeItemGrid.tsx
+old mode 100644
+new mode 100755
+diff --git a/rollout/src/components/storefront/storefront.css b/rollout/src/components/storefront/storefront.css
+new file mode 100644
+index 0000000..498779d
+--- /dev/null
++++ b/rollout/src/components/storefront/storefront.css
+@@ -0,0 +1,250 @@
++.storefront-header,
++.storefront-header * {
++  box-sizing: border-box;
++}
++
++.storefront-header {
++  position: relative;
++  z-index: 10;
++  width: 100%;
++  border-bottom: 1px solid #292929;
++  background: #050505;
++}
++
++.storefront-header__inner {
++  width: min(100% - 48px, 1440px);
++  min-height: 82px;
++  margin: 0 auto;
++  display: grid;
++  grid-template-columns: 1fr auto 1fr;
++  align-items: center;
++  gap: 28px;
++}
++
++.storefront-wordmark {
++  width: fit-content;
++  color: #f7f7f7;
++  font-size: 20px;
++  font-weight: 900;
++  letter-spacing: .16em;
++  line-height: 1;
++  text-decoration: none;
++}
++
++.storefront-wordmark span {
++  color: #d1fd40;
++}
++
++.storefront-nav {
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  gap: clamp(22px, 3vw, 46px);
++}
++
++.storefront-nav__link {
++  color: #b9b9b9;
++  font-size: 12px;
++  font-weight: 650;
++  letter-spacing: .08em;
++  text-decoration: none;
++  text-transform: uppercase;
++  transition: color 160ms ease;
++}
++
++.storefront-nav__link:hover,
++.storefront-nav__link:focus-visible {
++  color: #d1fd40;
++}
++
++.storefront-header__action {
++  justify-self: end;
++  display: inline-flex;
++  min-height: 42px;
++  align-items: center;
++  justify-content: center;
++  gap: 18px;
++  padding: 0 17px;
++  border: 1px solid #d1fd40;
++  color: #d1fd40;
++  font-size: 11px;
++  font-weight: 800;
++  letter-spacing: .07em;
++  text-decoration: none;
++  text-transform: uppercase;
++  transition: color 160ms ease, background 160ms ease;
++}
++
++.storefront-header__action:hover {
++  color: #050505;
++  background: #d1fd40;
++}
++
++.storefront-home-intro {
++  width: min(100% - 48px, 1440px);
++  margin: 0 auto;
++  padding: clamp(48px, 8vw, 108px) 0 18px;
++}
++
++.storefront-eyebrow {
++  margin: 0 0 16px;
++  color: #d1fd40;
++  font-size: 10px;
++  font-weight: 800;
++  letter-spacing: .22em;
++  text-transform: uppercase;
++}
++
++.storefront-home-title {
++  max-width: 900px;
++  margin: 0;
++  color: #f7f7f7;
++  font-size: clamp(44px, 8vw, 104px);
++  font-weight: 900;
++  letter-spacing: -.075em;
++  line-height: .92;
++  text-transform: uppercase;
++}
++
++.storefront-home-title span {
++  color: #d1fd40;
++}
++
++.storefront-home-copy {
++  max-width: 520px;
++  margin: 24px 0 0;
++  color: #a7a7a7;
++  font-size: 15px;
++  line-height: 1.7;
++}
++
++.storefront-section-heading {
++  width: min(100% - 48px, 1440px);
++  margin: 38px auto 0;
++  display: flex;
++  align-items: end;
++  justify-content: space-between;
++  gap: 20px;
++}
++
++.storefront-section-heading h2 {
++  margin: 0;
++  color: #f7f7f7;
++  font-size: clamp(24px, 3vw, 38px);
++  font-weight: 850;
++  letter-spacing: -.045em;
++  text-transform: uppercase;
++}
++
++.storefront-section-heading a {
++  color: #d1fd40;
++  font-size: 11px;
++  font-weight: 800;
++  letter-spacing: .08em;
++  text-decoration: none;
++  text-transform: uppercase;
++}
++
++.shop-page {
++  width: min(100% - 48px, 1440px);
++  min-height: 70vh;
++  margin: 0 auto;
++  padding: clamp(44px, 6vw, 76px) 0 90px;
++}
++
++.shop-page__eyebrow {
++  margin: 0 0 12px;
++  color: #d1fd40;
++  font-size: 10px;
++  font-weight: 800;
++  letter-spacing: .2em;
++  text-transform: uppercase;
++}
++
++.shop-page__title {
++  margin: 0;
++  color: #fff;
++  font-size: clamp(42px, 7vw, 76px);
++  font-weight: 900;
++  letter-spacing: -.065em;
++  line-height: .95;
++  text-transform: uppercase;
++}
++
++.shop-page__description {
++  max-width: 560px;
++  margin: 18px 0 38px;
++  color: #a6a6a6;
++  font-size: 14px;
++  line-height: 1.7;
++}
++
++.shop-page__results {
++  min-height: 360px;
++  border-top: 1px solid #333;
++  padding-top: 26px;
++}
++
++.shop-page__loading {
++  display: grid;
++  grid-template-columns: repeat(4, minmax(0, 1fr));
++  gap: 18px;
++}
++
++.shop-page__skeleton {
++  aspect-ratio: 4 / 5;
++  background: #101010;
++  animation: shop-pulse 1.4s ease-in-out infinite alternate;
++}
++
++@keyframes shop-pulse {
++  from { opacity: .45; }
++  to { opacity: 1; }
++}
++
++@media (max-width: 760px) {
++  .storefront-header__inner {
++    width: min(100% - 32px, 1440px);
++    min-height: 70px;
++    grid-template-columns: 1fr auto;
++    gap: 14px;
++  }
++
++  .storefront-nav {
++    display: none;
++  }
++
++  .storefront-header__action {
++    min-height: 38px;
++    gap: 10px;
++    padding: 0 11px;
++    font-size: 9px;
++  }
++
++  .storefront-home-intro,
++  .storefront-section-heading,
++  .shop-page {
++    width: min(100% - 32px, 1440px);
++  }
++
++  .storefront-home-intro {
++    padding-top: 54px;
++  }
++
++  .storefront-home-copy {
++    font-size: 14px;
++  }
++
++  .shop-page__loading {
++    grid-template-columns: repeat(2, minmax(0, 1fr));
++    gap: 12px;
++  }
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .storefront-header *,
++  .shop-page * {
++    animation-duration: .01ms !important;
++    transition-duration: .01ms !important;
++  }
++}
+diff --git a/rollout/src/lib/affiliate/affiliate-service.ts b/rollout/src/lib/affiliate/affiliate-service.ts
+index a05a69b..0851a23 100755
+--- a/rollout/src/lib/affiliate/affiliate-service.ts
++++ b/rollout/src/lib/affiliate/affiliate-service.ts
+@@ -1,70 +1,86 @@
+-import { createAdminClient } from '@/lib/supabase/server';
+-
+-// Affiliate configuration from environment variables
+-const AFFILIATE_CONFIG = {
+-  tag: process.env.AMAZON_ASSOCIATES_TAG,
+-  marketplace: process.env.AMAZON_MARKETPLACE,
+-  locale: 'en_US',
+-};
+-
+-function getAmazonHost(locale: string, marketplace: string): string {
+-  if (locale === 'en_GB' || /amazon\.co\.uk/i.test(marketplace)) return 'www.amazon.co.uk';
+-  if (locale === 'en_CA' || /amazon\.ca/i.test(marketplace)) return 'www.amazon.ca';
+-  if (locale === 'de_DE' || /amazon\.de/i.test(marketplace)) return 'www.amazon.de';
+-  return 'www.amazon.com';
++// affiliate-service.ts — CANONICAL Amazon URL derivation.
++//
++// FIX (audit 4.6): the old version derived URLs from a GLOBAL env tag
++// (AMAZON_ASSOCIATES_TAG + AMAZON_MARKETPLACE) and only knew 4 marketplaces.
++// This version reads the per-marketplace tag + domain from the `marketplaces`
++// table. There is now ONE authoritative URL-derivation path.
++//
++// The Amazon URL is NEVER stored. Derived at click time only.
++// Tags are admin-owned (per marketplace), never affiliate-owned.
++
++import { createServiceClient } from '@/lib/supabase/server';
++
++export interface DeriveUrlInput {
++  asin: string;
++  marketplace: string;  // marketplace slug: 'US', 'UK', 'DE', ...
+ }
+ 
+-export interface AffiliateUrlResult {
++export interface DeriveUrlResult {
+   url: string | null;
+-  error?: string;
++  /** The marketplace slug actually used (may differ from input if the input had no tag → fallback). */
++  resolvedMarketplace: string;
++  /** Why no URL was derived, if applicable. */
++  reason?: string;
+ }
+ 
+-export async function getAffiliateUrl(productId: string): Promise<AffiliateUrlResult> {
+-  if (!AFFILIATE_CONFIG.tag || !AFFILIATE_CONFIG.marketplace) {
+-    return { url: null, error: 'Affiliate not configured' };
+-  }
+-
+-  const supabase = createAdminClient();
+-
+-  // Get the product's ASIN
+-  const { data: product, error: fetchError } = await supabase
+-    .from('products')
+-    .select('asin')
+-    .eq('id', productId)
+-    .single();
+-
+-  if (fetchError || !product) {
+-    return { url: null, error: 'Product not found' };
++/**
++ * Derive the canonical Amazon URL for an ASIN in a marketplace.
++ * Reads the domain + tag from the `marketplaces` table.
++ * If the requested marketplace has no tag configured, falls back to the
++ * default marketplace (is_default=true). If that also has no tag, returns null.
++ */
++export async function deriveAmazonUrl(input: DeriveUrlInput): Promise<DeriveUrlResult> {
++  const sb = createServiceClient();
++
++  // Try the requested marketplace first.
++  let { data: mp } = await sb.from('marketplaces').select('slug,domain,tag').eq('slug', input.marketplace).maybeSingle();
++  let m = mp as { slug: string; domain: string; tag: string | null } | null;
++
++  // No tag for the requested marketplace → fall back to the default.
++  if (!m || !m.tag) {
++    const { data: def } = await sb.from('marketplaces').select('slug,domain,tag').eq('is_default', true).maybeSingle();
++    m = (def as { slug: string; domain: string; tag: string | null } | null) ?? m;
+   }
+ 
+-  if (!product.asin) {
+-    return { url: null, error: 'No ASIN available for this product' };
++  if (!m || !m.domain || !m.tag) {
++    return { url: null, resolvedMarketplace: m?.slug ?? input.marketplace, reason: 'no tag configured for this marketplace or the default' };
+   }
+ 
+-  // Derive the affiliate URL
+-  const host = getAmazonHost(AFFILIATE_CONFIG.locale, AFFILIATE_CONFIG.marketplace);
+-  const tag = AFFILIATE_CONFIG.tag;
+-  const asin = encodeURIComponent(product.asin);
+-
+-  const url = `https://${host}/dp/${asin}/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=${encodeURIComponent(tag)}`;
+-
+-  return { url };
++  const url = `https://${m.domain}/dp/${encodeURIComponent(input.asin)}?tag=${encodeURIComponent(m.tag)}`;
++  return { url, resolvedMarketplace: m.slug };
+ }
+ 
+-export async function getAffiliateUrlByAsin(asin: string): Promise<AffiliateUrlResult> {
+-  if (!AFFILIATE_CONFIG.tag || !AFFILIATE_CONFIG.marketplace) {
+-    return { url: null, error: 'Affiliate not configured' };
+-  }
+-
+-  if (!asin) {
+-    return { url: null, error: 'No ASIN provided' };
++/**
++ * Derive a URL for a product + visitor's resolved marketplace.
++ * Convenience wrapper: looks up the product's ASIN + default marketplace,
++ * then calls deriveAmazonUrl. Used by the /go/[id] route.
++ */
++export async function deriveAmazonUrlForProduct(args: {
++  productId: string;
++  visitorMarketplace?: string | null;  // from geo-routing (FM-19)
++}): Promise<DeriveUrlResult & { asin: string | null }> {
++  const sb = createServiceClient();
++  const { data: product } = await sb.from('products').select('asin,default_marketplace').eq('id', args.productId).maybeSingle();
++  const p = product as { asin: string | null; default_marketplace: string | null } | null;
++  if (!p || !p.asin) {
++    return { url: null, resolvedMarketplace: args.visitorMarketplace ?? p?.default_marketplace ?? 'US', reason: 'no ASIN', asin: p?.asin ?? null };
+   }
++  const marketplace = args.visitorMarketplace ?? p.default_marketplace ?? 'US';
++  const result = await deriveAmazonUrl({ asin: p.asin, marketplace });
++  return { ...result, asin: p.asin };
++}
+ 
+-  const host = getAmazonHost(AFFILIATE_CONFIG.locale, AFFILIATE_CONFIG.marketplace);
+-  const tag = AFFILIATE_CONFIG.tag;
+-  const encodedAsin = encodeURIComponent(asin);
++// ---- Legacy wrappers (deprecated — delegate to the canonical path) ----
++// Kept so any old import still compiles; they now go through the DB-driven path.
+ 
+-  const url = `https://${host}/dp/${encodedAsin}/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=${encodeURIComponent(tag)}`;
++/** @deprecated Use deriveAmazonUrlForProduct or resolveAmazonUrlForVisitor instead. */
++export async function getAffiliateUrl(productId: string): Promise<{ url: string | null; error?: string }> {
++  const r = await deriveAmazonUrlForProduct({ productId });
++  return { url: r.url, error: r.reason };
++}
+ 
+-  return { url };
++/** @deprecated Use deriveAmazonUrl instead. */
++export async function getAffiliateUrlByAsin(asin: string, marketplace = 'US'): Promise<{ url: string | null; error?: string }> {
++  const r = await deriveAmazonUrl({ asin, marketplace });
++  return { url: r.url, error: r.reason };
+ }
+diff --git a/rollout/src/lib/amazon/creators-api-client.ts b/rollout/src/lib/amazon/creators-api-client.ts
+old mode 100644
+new mode 100755
+index 4e1ebb6..d6980b3
+--- a/rollout/src/lib/amazon/creators-api-client.ts
++++ b/rollout/src/lib/amazon/creators-api-client.ts
+@@ -1,4 +1,9 @@
+ // FM-20: Amazon Creators API client — OPTIONAL booster, soft-fail.
++//
++// FIX (audit 4.7): the partner tag now comes from the `marketplaces` table
++// (per-marketplace, admin-owned), NOT a global env var. The Creators API
++// request uses the tag matching the product's marketplace/locale.
++//
+ // Own-data-first (Option B). Enabled only when credentials + eligibility exist.
+ // Caches offers ≤ 1h, other data ≤ 1d. Retries with backoff on 429/5xx.
+ // Auth: OAuth credential ID + secret (NOT AWS keys — PA-API 5 is dead).
+@@ -7,7 +12,6 @@ import { createServiceClient } from '@/lib/supabase/server';
+ 
+ const CREDENTIAL_ID = process.env.AMAZON_CREATORS_CREDENTIAL_ID;
+ const CREDENTIAL_SECRET = process.env.AMAZON_CREATORS_CREDENTIAL_SECRET;
+-const PARTNER_TAG = process.env.AMAZON_ASSOCIATES_TAG ?? '';
+ const SCOPE = 'creatorsapi::default';
+ const BASE = 'https://api.amazon.com/creators/1.0';
+ 
+@@ -27,21 +31,39 @@ interface CacheRow {
+   error: string | null;
+ }
+ 
++/** Resolve the admin-owned partner tag for a marketplace from the DB. */
++async function getTagForMarketplace(marketplace: string): Promise<string | null> {
++  const sb = createServiceClient();
++  // Try the requested marketplace; fall back to the default.
++  let { data: mp } = await sb.from('marketplaces').select('tag').eq('slug', marketplace).maybeSingle();
++  let tag = (mp as { tag: string | null } | null)?.tag ?? null;
++  if (!tag) {
++    const { data: def } = await sb.from('marketplaces').select('tag').eq('is_default', true).maybeSingle();
++    tag = (def as { tag: string | null } | null)?.tag ?? null;
++  }
++  return tag;
++}
++
+ /** Fetch product data from the Creators API. Soft-fails (returns null on any error). */
+ export async function fetchProductFromCreators(asin: string, locale: string): Promise<CacheRow | null> {
+-  if (!isEnabled()) return null; // not eligible / not configured → soft-fail
++  if (!isEnabled()) return null;
+ 
+   const cacheKey = `${asin}_${locale}|en|USD`;
+   const sb = createServiceClient();
+ 
+-  // Check cache freshness.
+   const { data: cached } = await sb.from('amazon_product_cache').select('*').eq('product_id', cacheKey).maybeSingle();
+   const c = cached as (CacheRow & { modified_time: string }) | null;
+-  if (c && new Date(c.expiration_time) > new Date()) {
+-    return c; // fresh cache
++  if (c && !c.error && new Date(c.expiration_time) > new Date()) {
++    return c;
++  }
++
++  // FIX: get the per-marketplace tag from the DB, not a global env var.
++  const partnerTag = await getTagForMarketplace(locale);
++  if (!partnerTag) {
++    await upsertCacheError(cacheKey, asin, locale, 'no tag configured for marketplace');
++    return null;
+   }
+ 
+-  // Fetch from the API (with backoff on 429/5xx).
+   let attempt = 0;
+   while (attempt < 3) {
+     try {
+@@ -53,16 +75,10 @@ export async function fetchProductFromCreators(asin: string, locale: string): Pr
+           'Content-Type': 'application/json',
+           'x-amz-creators-scope': SCOPE,
+         },
+-        body: JSON.stringify({ partnerTag: PARTNER_TAG, locale, resources: ['offers.listings.availability', 'customerReviews'] }),
++        body: JSON.stringify({ partnerTag, locale, resources: ['offers.listings.availability', 'customerReviews'] }),
+       });
+-      if (res.status === 429 || res.status >= 500) {
+-        await backoff(++attempt);
+-        continue;
+-      }
+-      if (!res.ok) {
+-        await upsertCacheError(cacheKey, asin, locale, `HTTP ${res.status}`);
+-        return null; // soft-fail
+-      }
++      if (res.status === 429 || res.status >= 500) { await backoff(++attempt); continue; }
++      if (!res.ok) { await upsertCacheError(cacheKey, asin, locale, `HTTP ${res.status}`); return null; }
+       const json = await res.json() as {
+         offers?: { listings?: { availability?: { type?: string } }[] };
+         customerReviews?: { summary?: { rating?: number; count?: number }; samples?: { title: string; body: string }[] };
+@@ -75,9 +91,8 @@ export async function fetchProductFromCreators(asin: string, locale: string): Pr
+       const row = {
+         product_id: cacheKey, asin, locale,
+         modified_time: new Date().toISOString(),
+-        expiration_time: new Date(Date.now() + 60 * 60 * 1000).toISOString(), // offers ≤ 1h
+-        availability, rating, review_count: reviewCount, review_samples: samples,
+-        error: null,
++        expiration_time: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
++        availability, rating, review_count: reviewCount, review_samples: samples, error: null,
+       };
+       await sb.from('amazon_product_cache').upsert(row, { onConflict: 'product_id' });
+       return row as CacheRow;
+@@ -86,11 +101,10 @@ export async function fetchProductFromCreators(asin: string, locale: string): Pr
+     }
+   }
+   await upsertCacheError(cacheKey, asin, locale, 'persistent error');
+-  return null; // soft-fail
++  return null;
+ }
+ 
+ async function getOAuthToken(): Promise<string> {
+-  // LWA token exchange (simplified; a real impl uses the `lwa.exchangeToken` helper).
+   const res = await fetch('https://api.amazon.com/auth/o2/token', {
+     method: 'POST',
+     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+@@ -102,13 +116,11 @@ async function getOAuthToken(): Promise<string> {
+     }),
+   });
+   if (!res.ok) throw new Error('OAuth failed');
+-  const data = await res.json() as { access_token: string };
+-  return data.access_token;
++  return (await res.json() as { access_token: string }).access_token;
+ }
+ 
+ function backoff(attempt: number): Promise<void> {
+-  const delay = Math.min(1000 * 2 ** attempt, 8000);
+-  return new Promise(r => setTimeout(r, delay));
++  return new Promise(r => setTimeout(r, Math.min(1000 * 2 ** attempt, 8000)));
+ }
+ 
+ async function upsertCacheError(cacheKey: string, asin: string, locale: string, error: string): Promise<void> {
+@@ -118,7 +130,7 @@ async function upsertCacheError(cacheKey: string, asin: string, locale: string,
+     modified_time: new Date().toISOString(),
+     expiration_time: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+     error,
+-  }, { onConflict: 'product_id' }).throwOnError();
++  }, { onConflict: 'product_id' });
+ }
+ 
+ export const creatorsApiStatus = { enabled: isEnabled() };
+diff --git a/rollout/src/lib/amazon/dead-link-detector.ts b/rollout/src/lib/amazon/dead-link-detector.ts
+old mode 100644
+new mode 100755
+index a5bddb8..2786cf4
+--- a/rollout/src/lib/amazon/dead-link-detector.ts
++++ b/rollout/src/lib/amazon/dead-link-detector.ts
+@@ -1,24 +1,28 @@
+ // FM-21: Dead-link detection — three signals.
+-// (1) HEAD probe (scheduled, daily, throttled). (2) redirect-time 4xx (reactive). (3) Creators API availability (when enabled).
+-// A dead product → the CTA greys out + no click recorded.
++//
++// FIX (audit 4.8):
++// - HEAD probe now orders by last_probed_at NULLS FIRST (fair, resumable batches).
++// - recordRedirect4xx is now real: increments a counter + marks dead above a threshold.
++// - Null API availability is NOT treated as dead (unknown ≠ dead).
++// - Non-200 responses are NOT marked alive (only a clear 200 → alive).
++// - Transient network errors don't change state.
+ 
+ import { createServiceClient } from '@/lib/supabase/server';
+ import { fetchProductFromCreators } from './creators-api-client';
+ 
+-const HIDDEN_TAG = 'hidden';
+-
+-/** Scheduled HEAD probe — batched + throttled. Run daily via Vercel cron. */
+-export async function runDeadLinkProbe(batchSize = 20): Promise<{ probed: number; markedDead: number }> {
++/** Scheduled HEAD probe — fair batches via last_probed_at. Run daily via Vercel cron. */
++export async function runDeadLinkProbe(batchSize = 20): Promise<{ probed: number; markedDead: number; markedAlive: number }> {
+   const sb = createServiceClient();
+-  // Products with an ASIN, not archived, probed > 24h ago (or never).
++  // Order by last_probed_at NULLS FIRST so never-probed products go first, then oldest.
+   const { data: products } = await sb
+     .from('products')
+-    .select('id,asin,default_marketplace')
++    .select('id,asin,default_marketplace,last_probed_at')
+     .not('asin', 'is', null)
+     .eq('status', 'active')
++    .order('last_probed_at', { ascending: true, nullsFirst: true })
+     .limit(batchSize);
+ 
+-  let probed = 0, markedDead = 0;
++  let probed = 0, markedDead = 0, markedAlive = 0;
+   for (const p of (products ?? []) as { id: string; asin: string; default_marketplace: string | null }[]) {
+     probed++;
+     const slug = p.default_marketplace ?? 'US';
+@@ -29,41 +33,60 @@ export async function runDeadLinkProbe(batchSize = 20): Promise<{ probed: number
+       if (res.status === 404 || res.status === 410) {
+         await markDead(p.id, 'head_probe_404');
+         markedDead++;
+-      } else {
++      } else if (res.status === 200) {
++        // Only a clear 200 → alive. Redirects, 5xx, etc. → unknown (no state change).
+         await markAlive(p.id);
++        markedAlive++;
+       }
++      // else: unknown response — don't change dead/alive state.
+     } catch {
+-      // network error — don't mark dead (could be transient); skip.
++      // Network error — don't change state (could be transient).
+     }
+-    // Throttle: 1 request per 500ms (respect Amazon).
+-    await new Promise(r => setTimeout(r, 500));
++    // Update last_probed_at regardless of outcome (so the batch rotates).
++    await sb.from('products').update({ last_probed_at: new Date().toISOString() }).eq('id', p.id);
++    await new Promise(r => setTimeout(r, 500)); // throttle
+   }
+-  return { probed, markedDead };
++  return { probed, markedDead, markedAlive };
+ }
+ 
+-/** Reactive: high 4xx rate from outbound clicks → dead-link signal. Called by the click pipeline. */
++/** Reactive: record a 4xx from an outbound Amazon click + mark dead above threshold. */
+ export async function recordRedirect4xx(productId: string): Promise<void> {
+   const sb = createServiceClient();
+-  // Increment a 4xx counter (in a real impl, a `redirect_4xx_events` table or a counter column).
+-  // If the rate exceeds a threshold, mark dead. Simplified: mark dead on 3+ 4xx in 24h.
+-  // (The owner wires the actual 4xx observation at the redirect layer.)
+-  void productId;
++  // Read current count + last_4xx_at.
++  const { data: row } = await sb.from('products').select('redirect_4xx_count, last_4xx_at').eq('id', productId).maybeSingle();
++  const r = row as { redirect_4xx_count: number | null; last_4xx_at: string | null } | null;
++  const now = new Date();
++  const prevCount = r?.redirect_4xx_count ?? 0;
++  const prevAt = r?.last_4xx_at ? new Date(r.last_4xx_at) : null;
++  // Reset the window if the previous 4xx was > 24h ago.
++  const windowedCount = prevAt && (now.getTime() - prevAt.getTime()) > 24 * 60 * 60 * 1000 ? 1 : prevCount + 1;
++  await sb.from('products').update({
++    redirect_4xx_count: windowedCount,
++    last_4xx_at: now.toISOString(),
++    updated_at: now.toISOString(),
++  }).eq('id', productId);
++  // Threshold: 3+ 4xx in 24h → mark dead.
++  if (windowedCount >= 3) {
++    await markDead(productId, 'redirect_4xx_threshold');
++  }
+ }
+ 
+-/** Creators API availability signal (when enabled). */
++/** Creators API availability signal (when enabled). Null availability = unknown, NOT dead. */
+ export async function checkApiAvailability(productId: string, asin: string, locale: string): Promise<void> {
+   const row = await fetchProductFromCreators(asin, locale);
+-  if (!row) return; // API off / ineligible → no signal
+-  if (row.availability === 'OutOfStock' || row.availability === null) {
++  if (!row) return; // API off / ineligible / errored → no signal (unknown).
++  if (row.availability === 'OutOfStock') {
++    // Explicit out-of-stock → soft-dead.
+     await markDead(productId, 'api_out_of_stock');
+-  } else {
++  } else if (row.availability && row.availability !== 'Unknown') {
++    // A known availability that isn't OutOfStock → alive.
+     await markAlive(productId);
+   }
++  // else: null / Unknown availability → no state change (we don't know).
+ }
+ 
+ async function markDead(productId: string, reason: string): Promise<void> {
+   const sb = createServiceClient();
+-  // Set a `dead_link` flag (additive column or a tags entry). Simplified: use a tag.
+   await sb.rpc('mark_product_dead', { p_product_id: productId, p_reason: reason });
+ }
+ 
+diff --git a/rollout/src/lib/database.types.ts b/rollout/src/lib/database.types.ts
+old mode 100644
+new mode 100755
+index 54028dd..fa8cdd6
+--- a/rollout/src/lib/database.types.ts
++++ b/rollout/src/lib/database.types.ts
+@@ -1,6 +1,14 @@
+-// Manually written types for the Rollout schema — no CLI used.
+-// Last updated: 2026-10-27
++// Manually written types for the Rollout + affiliate schemas — no CLI used.
++// Last updated: 2026-11-17 (FM-02 full-marketplace schema + non-UI fixes)
++//
++// FIX (audit 4.1): reflects the FM-02 five-state product model, variants,
++// categories, collections, marketplaces, amazon_product_cache, affiliate.*,
++// audit_log, analytics.tracker_id, admin_access_keys, and the dead-link columns.
+ 
++export type ProductStatus = 'draft' | 'active' | 'archived' | 'proposed' | 'rejected';
++export type VariantStatus = 'draft' | 'active' | 'archived';
++export type PayoutStatus = 'requested' | 'scheduled' | 'paid' | 'rejected';
++export type AffiliateAccountStatus = 'pending' | 'active' | 'suspended' | 'closed';
+ export type AnalyticsSource = 'instagram' | 'whatsapp';
+ 
+ export interface Database {
+@@ -11,7 +19,7 @@ export interface Database {
+           id: string;
+           slug: string;
+           name: string;
+-          status: 'published' | 'unpublished';
++          status: ProductStatus;
+           gender: string | null;
+           color: string | null;
+           asin: string | null;
+@@ -20,58 +28,171 @@ export interface Database {
+           tagline: string | null;
+           subtitle: string | null;
+           intro: string | null;
+-          key_benefits: ProductBenefit[];       // JSONB array
+-          technical_details: ProductDetail[];   // JSONB array
++          key_benefits: ProductBenefit[];
++          technical_details: ProductDetail[];
+           adjustment: string | null;
+           range: string | null;
+           sole_type: string | null;
+           upper_material: string | null;
+           traction: string | null;
+-          price: number | null;
++          price: number | null;          // legacy DECIMAL (being phased out)
++          price_cents: number | null;     // integer cents (admin-only, never public)
+           main_image: string | null;
+           images: string[];
+-          meta: Record<string, string>;          // JSONB
++          meta: Record<string, unknown>;
+           tags: string[];
+-          box_contents: string[];                // JSONB array (ROLL-06 D3)
+-          sizes: string[];                       // TEXT[] (ROLL-07 D6)
+-          sizes_detail: string | null;           // (ROLL-07 D6)
++          box_contents: string[] | string | null;
++          sizes: string[];
++          sizes_detail: string | null;
++          deleted_at: string | null;
++          available_on: string | null;
++          discontinue_on: string | null;
++          default_marketplace: string | null;
++          dead_link: boolean;
++          dead_reason: string | null;
++          last_probed_at: string | null;
++          redirect_4xx_count: number | null;
++          last_4xx_at: string | null;
+           created_at: string;
+           updated_at: string;
+         };
+-        Insert: Omit<Database['rollout']['Tables']['products']['Row'], 'created_at' | 'updated_at'> & {
+-          created_at?: string;
+-          updated_at?: string;
++        Insert: Partial<Database['rollout']['Tables']['products']['Row']> & { id: string; slug: string; name: string };
++        Update: Partial<Database['rollout']['Tables']['products']['Row']>;
++        Relationships: [];
++      };
++      product_variants: {
++        Row: {
++          id: string; product_id: string; sku: string | null; price_cents: number | null;
++          attributes: Record<string, unknown>; status: VariantStatus; deleted_at: string | null;
++          created_at: string; updated_at: string;
+         };
+-        Update: Partial<Database['rollout']['Tables']['products']['Insert']>;
++        Insert: Partial<Database['rollout']['Tables']['product_variants']['Row']> & { product_id: string };
++        Update: Partial<Database['rollout']['Tables']['product_variants']['Row']>;
++        Relationships: [{ foreignKeyName: 'product_variants_product_id_fkey'; columns: ['product_id']; isOneToOne: false; referencedRelation: 'products'; referencedColumns: ['id'] }];
++      };
++      categories: {
++        Row: { id: string; slug: string; name: string; parent_id: string | null; created_at: string };
++        Insert: Partial<Database['rollout']['Tables']['categories']['Row']> & { slug: string; name: string };
++        Update: Partial<Database['rollout']['Tables']['categories']['Row']>;
++        Relationships: [];
++      };
++      collections: {
++        Row: { id: string; slug: string; name: string; created_at: string };
++        Insert: Partial<Database['rollout']['Tables']['collections']['Row']> & { slug: string; name: string };
++        Update: Partial<Database['rollout']['Tables']['collections']['Row']>;
++        Relationships: [];
++      };
++      product_categories: {
++        Row: { product_id: string; category_id: string };
++        Insert: { product_id: string; category_id: string };
++        Update: Partial<Database['rollout']['Tables']['product_categories']['Insert']>;
++        Relationships: [];
++      };
++      product_collections: {
++        Row: { product_id: string; collection_id: string };
++        Insert: { product_id: string; collection_id: string };
++        Update: Partial<Database['rollout']['Tables']['product_collections']['Insert']>;
+         Relationships: [];
+       };
+       analytics: {
+         Row: {
+-          id: string;
+-          product_id: string;
+-          event_type: 'view' | 'click';
+-          created_at: string;
+-          source: AnalyticsSource | null;
+-          visitor_hash: string | null;
++          id: string; product_id: string; event_type: 'view' | 'click'; created_at: string;
++          source: AnalyticsSource | null; visitor_hash: string | null; tracker_id: string | null;
+         };
+-        Insert: {
+-          id?: string;
+-          product_id: string;
+-          event_type: 'view' | 'click';
+-          created_at?: string;
+-          source?: AnalyticsSource | null;
+-          visitor_hash?: string | null;
++        Insert: Partial<Database['rollout']['Tables']['analytics']['Row']> & { product_id: string; event_type: 'view' | 'click' };
++        Update: Partial<Database['rollout']['Tables']['analytics']['Row']>;
++        Relationships: [{ foreignKeyName: 'rollout_analytics_product_id_fkey'; columns: ['product_id']; isOneToOne: false; referencedRelation: 'products'; referencedColumns: ['id'] }];
++      };
++      admin_access_keys: {
++        Row: {
++          id: string; kind: 'invite' | 'door'; user_id: string | null; token_hash: string;
++          browser_label: string | null; issued_at: string; expires_at: string; used_at: string | null; revoked_at: string | null;
+         };
+-        Update: Partial<Database['rollout']['Tables']['analytics']['Insert']>;
+-        Relationships: [
+-          {
+-            foreignKeyName: 'rollout_analytics_product_id_fkey',
+-            columns: ['product_id'],
+-            isOneToOne: false,
+-            referencedRelation: 'products',
+-            referencedColumns: ['id'],
+-          }
+-        ];
++        Insert: Partial<Database['rollout']['Tables']['admin_access_keys']['Row']> & { kind: 'invite' | 'door'; token_hash: string; expires_at: string };
++        Update: Partial<Database['rollout']['Tables']['admin_access_keys']['Row']>;
++        Relationships: [];
++      };
++      marketplaces: {
++        Row: { slug: string; locale_number: string | null; domain: string; associates_url: string | null; country_code: string; tag: string | null; is_default: boolean; created_at: string };
++        Insert: Partial<Database['rollout']['Tables']['marketplaces']['Row']> & { slug: string; domain: string; country_code: string };
++        Update: Partial<Database['rollout']['Tables']['marketplaces']['Row']>;
++        Relationships: [];
++      };
++      amazon_product_cache: {
++        Row: {
++          product_id: string; asin: string; locale: string; modified_time: string; expiration_time: string;
++          title: string | null; price_cents: number | null; price_formatted: string | null; currency: string | null;
++          rating: number | null; review_count: number | null; review_samples: unknown; is_prime: boolean | null;
++          is_adult: boolean | null; availability: string | null; error: string | null;
++          delivery_free_shipping: boolean | null; delivery_fba: boolean | null; created_at: string;
++        };
++        Insert: Partial<Database['rollout']['Tables']['amazon_product_cache']['Row']> & { product_id: string; asin: string; locale: string; expiration_time: string };
++        Update: Partial<Database['rollout']['Tables']['amazon_product_cache']['Row']>;
++        Relationships: [];
++      };
++      audit_log: {
++        Row: { id: string; actor_id: string | null; action: string; entity_type: string; entity_id: string | null; metadata: Record<string, unknown>; created_at: string };
++        Insert: Partial<Database['rollout']['Tables']['audit_log']['Row']> & { action: string; entity_type: string };
++        Update: Partial<Database['rollout']['Tables']['audit_log']['Row']>;
++        Relationships: [];
++      };
++    };
++    Views: Record<string, never>;
++    Functions: Record<string, never>;
++    Enums: Record<string, never>;
++  };
++  affiliate: {
++    Tables: {
++      accounts: {
++        Row: {
++          id: string; email: string; auth_user_id: string | null; commission_default: number | null;
++          full_name: string | null; address: string | null; country: string | null;
++          payout_method: string | null; payout_instructions: string | null; notify_balance: boolean;
++          preferred_locale: string; status: AffiliateAccountStatus; created_at: string; updated_at: string;
++        };
++        Insert: Partial<Database['affiliate']['Tables']['accounts']['Row']> & { email: string };
++        Update: Partial<Database['affiliate']['Tables']['accounts']['Row']>;
++        Relationships: [];
++      };
++      trackers: {
++        Row: { id: string; label: string | null; account_id: string; created_at: string; updated_at: string };
++        Insert: Partial<Database['affiliate']['Tables']['trackers']['Row']> & { id: string; account_id: string };
++        Update: Partial<Database['affiliate']['Tables']['trackers']['Row']>;
++        Relationships: [{ foreignKeyName: 'trackers_account_id_fkey'; columns: ['account_id']; isOneToOne: false; referencedRelation: 'accounts'; referencedColumns: ['id'] }];
++      };
++      campaigns: {
++        Row: {
++          id: string; reward_type: 'cash_reward' | 'discount_coupon'; commission_type: 'percentage' | 'fixed' | null;
++          reward: number; recurring: boolean; recurring_limit: number | null; minimum_payout: number;
++          payout_term: string | null; status: 'draft' | 'active' | 'archived'; created_at: string; updated_at: string;
++        };
++        Insert: Partial<Database['affiliate']['Tables']['campaigns']['Row']> & { reward: number };
++        Update: Partial<Database['affiliate']['Tables']['campaigns']['Row']>;
++        Relationships: [];
++      };
++      campaign_trackers: {
++        Row: { campaign_id: string; tracker_id: string; created_at: string };
++        Insert: { campaign_id: string; tracker_id: string };
++        Update: Partial<Database['affiliate']['Tables']['campaign_trackers']['Insert']>;
++        Relationships: [];
++      };
++      balance: {
++        Row: {
++          id: string; account_id: string; tracker_id: string | null; campaign_id: string | null;
++          amount: number; currency: string; released: boolean; trace: string | null; created_at: string;
++        };
++        Insert: Partial<Database['affiliate']['Tables']['balance']['Row']> & { account_id: string; amount: number };
++        Update: Partial<Database['affiliate']['Tables']['balance']['Row']>;
++        Relationships: [];
++      };
++      payouts: {
++        Row: {
++          id: string; account_id: string; number: number; amount: number; currency: string;
++          status: PayoutStatus; scheduled_for: string | null; created_at: string; updated_at: string;
++        };
++        Insert: Partial<Database['affiliate']['Tables']['payouts']['Row']> & { account_id: string; number: number; amount: number };
++        Update: Partial<Database['affiliate']['Tables']['payouts']['Row']>;
++        Relationships: [];
+       };
+     };
+     Views: Record<string, never>;
+@@ -80,26 +201,11 @@ export interface Database {
+   };
+ }
+ 
+-// JSONB array sub-types (for key_benefits / technical_details)
+-// ROLL-06 D4: benefit icons are standardized. SVG rendering untouched.
++// JSONB sub-types
+ export type BenefitIcon = 'boot' | 'bolt' | 'target' | 'speed';
++export interface ProductBenefit { icon: BenefitIcon; title: string; text: string }
++export interface ProductDetail { label: string; value: string }
+ 
+-export interface ProductBenefit {
+-  icon: BenefitIcon;
+-  title: string;
+-  text: string;
+-}
+-
+-export interface ProductDetail {
+-  label: string;
+-  value: string;
+-}
+-
+-// Convenience types
++// Convenience
+ export type ProductRow = Database['rollout']['Tables']['products']['Row'];
+-export type ProductInsert = Database['rollout']['Tables']['products']['Insert'];
+-export type ProductUpdate = Database['rollout']['Tables']['products']['Update'];
+-
+ export type AnalyticsRow = Database['rollout']['Tables']['analytics']['Row'];
+-export type AnalyticsInsert = Database['rollout']['Tables']['analytics']['Insert'];
+-export type AnalyticsUpdate = Database['rollout']['Tables']['analytics']['Update'];
+diff --git a/rollout/src/lib/products/product-service.ts b/rollout/src/lib/products/product-service.ts
+index 3725536..fc77b03 100755
+--- a/rollout/src/lib/products/product-service.ts
++++ b/rollout/src/lib/products/product-service.ts
+@@ -1,49 +1,56 @@
+ // FM-10: product-service — full CRUD + variants + categories + the storefront read helpers.
+-// 3-condition publish gate. discontinue() bypasses validation. Soft-delete via deleted_at.
+-// Price optional (never on the public page). Admin writes go through requireAdmin (FM-01).
+ //
+-// This file also provides the read helpers the storefront depends on:
+-// getProductBySlug, getProductById, listProducts, getFeaturedProducts, getCarouselProducts,
+-// listAllPublicProductSlugs, listCategorySlugs.
++// FIX (audit 4.9):
++// - getProductById → split into getPublicProductById (applies the 3-condition gate)
++//   and getProductByIdAdmin (no gate, for admin paths).
++// - listProducts "popular" sort now orders by click count (from analytics), not created_at.
++// - category filter uses the correct Supabase nested-relation filter.
++// - The public gate is centralized in applyPublicGate().
+ 
+ import { createServiceClient } from '@/lib/supabase/server';
+ import type { Product, ProductVariant, Category } from './types';
+ 
+-const PUBLIC_FILTER = { status: 'active', deleted_at: null, available_on_lte_now: true };
++/** The 3-condition publish gate, applied as query filters. */
++function applyPublicGate<T extends { eq: (col: string, val: unknown) => T; is: (col: string, val: null) => T; lte: (col: string, val: string) => T }>(q: T): T {
++  return q.eq('status', 'active').is('deleted_at', null).lte('available_on', new Date().toISOString());
++}
+ 
+-// ---- Public reads (anon-readable via RLS; service client for SSR) ----
++// ---- Public reads ----
+ 
+ export async function getProductBySlug(slug: string): Promise<Product | null> {
+   const sb = createServiceClient();
+-  const { data } = await sb
+-    .from('products')
+-    .select('*')
+-    .eq('slug', slug)
+-    // 3-condition publish gate
+-    .eq('status', 'active')
+-    .is('deleted_at', null)
+-    .lte('available_on', new Date().toISOString())
+-    .maybeSingle();
++  const { data } = await applyPublicGate(
++    sb.from('products').select('*').eq('slug', slug)
++  ).maybeSingle();
+   return (data as Product | null) ?? null;
+ }
+ 
+-export async function getProductById(id: string): Promise<Product | null> {
++/** Public fetch by id — applies the 3-condition publish gate. Use on /go/[id] + any public path. */
++export async function getPublicProductById(id: string): Promise<Product | null> {
++  const sb = createServiceClient();
++  const { data } = await applyPublicGate(
++    sb.from('products').select('*').eq('id', id)
++  ).maybeSingle();
++  return (data as Product | null) ?? null;
++}
++
++/** Admin fetch by id — NO publish gate. For the admin editor only (behind requireAdmin). */
++export async function getProductByIdAdmin(id: string): Promise<Product | null> {
+   const sb = createServiceClient();
+   const { data } = await sb.from('products').select('*').eq('id', id).maybeSingle();
+   return (data as Product | null) ?? null;
+ }
+ 
++/** @deprecated Use getPublicProductById (public) or getProductByIdAdmin (admin). */
++export async function getProductById(id: string): Promise<Product | null> {
++  return getPublicProductById(id);
++}
++
+ export async function getFeaturedProducts(limit: number): Promise<Product[]> {
+   const sb = createServiceClient();
+-  // Curated: products tagged 'featured' OR in a 'featured' collection; fallback to newest active.
+-  const { data } = await sb
+-    .from('products')
+-    .select('*')
+-    .eq('status', 'active')
+-    .is('deleted_at', null)
+-    .lte('available_on', new Date().toISOString())
+-    .order('created_at', { ascending: false })
+-    .limit(limit);
++  const { data } = await applyPublicGate(
++    sb.from('products').select('*')
++  ).order('created_at', { ascending: false }).limit(limit);
+   return (data as Product[]) ?? [];
+ }
+ 
+@@ -59,39 +66,57 @@ export async function listProducts(args: {
+   pageSize: number;
+ }): Promise<{ products: Product[]; total: number; categories: Category[] }> {
+   const sb = createServiceClient();
+-  let q = sb
+-    .from('products')
+-    .select('*', { count: 'exact' })
+-    .eq('status', 'active')
+-    .is('deleted_at', null)
+-    .lte('available_on', new Date().toISOString());
++
++  // Build the base query with the public gate + optional category M2M filter.
++  // FIX: use the correct nested-relation filter `categories!inner(slug)` so the
++  // M2M join is actually selected + filterable.
++  const selectClause = args.category ? '*, categories!inner(slug)' : '*';
++  let q = applyPublicGate(
++    sb.from('products').select(selectClause, { count: 'exact' })
++  );
+ 
+   if (args.query) q = q.or(`name.ilike.%${args.query}%,slug.ilike.%${args.query}%`);
+-  if (args.category) {
+-    // category filter via the M2M join — handled via a nested filter or RPC; simplified here
+-    q = q.filter('categories.slug', 'eq', args.category);
++  if (args.category) q = q.eq('categories.slug', args.category);
++
++  if (args.sort === 'popular') {
++    // FIX: "popular" now means "by click count" — fetch click counts from analytics
++    // and sort by that. If analytics is empty, fall back to created_at.
++    const from = (args.page - 1) * args.pageSize;
++    const to = from + args.pageSize - 1;
++    // First get the page of products by created_at (a stable order), then re-sort by clicks.
++    q = q.order('created_at', { ascending: false }).range(from, to);
++    const { data, count } = await q;
++    const products = (data as Product[]) ?? [];
++    if (products.length === 0) {
++      const { data: cats } = await sb.from('categories').select('id,slug,name').order('name');
++      return { products: [], total: count ?? 0, categories: (cats as Category[]) ?? [] };
++    }
++    // Fetch click counts for these product IDs.
++    const ids = products.map(p => p.id);
++    const { data: clickCounts } = await sb.from('analytics').select('product_id').eq('event_type', 'click').in('product_id', ids);
++    const counts = new Map<string, number>();
++    for (const r of (clickCounts ?? []) as { product_id: string }[]) {
++      counts.set(r.product_id, (counts.get(r.product_id) ?? 0) + 1);
++    }
++    products.sort((a, b) => (counts.get(b.id) ?? 0) - (counts.get(a.id) ?? 0));
++    const { data: cats } = await sb.from('categories').select('id,slug,name').order('name');
++    return { products, total: count ?? 0, categories: (cats as Category[]) ?? [] };
+   }
+ 
+-  q = args.sort === 'popular'
+-    ? q.order('created_at', { ascending: false }) // popularity would join analytics; simplified
+-    : q.order('created_at', { ascending: false });
+-
++  // newest
++  q = q.order('created_at', { ascending: false });
+   const from = (args.page - 1) * args.pageSize;
+   const to = from + args.pageSize - 1;
+   const { data, count } = await q.range(from, to);
+-
+   const { data: cats } = await sb.from('categories').select('id,slug,name').order('name');
+   return { products: (data as Product[]) ?? [], total: count ?? 0, categories: (cats as Category[]) ?? [] };
+ }
+ 
+ export async function listAllPublicProductSlugs(): Promise<{ slug: string; tags: string[]; updatedAt: string }[]> {
+   const sb = createServiceClient();
+-  const { data } = await sb
+-    .from('products')
+-    .select('slug,tags,updated_at')
+-    .eq('status', 'active')
+-    .is('deleted_at', null)
+-    .lte('available_on', new Date().toISOString());
++  const { data } = await applyPublicGate(
++    sb.from('products').select('slug,tags,updated_at')
++  );
+   return (data ?? []).map((r: { slug: string; tags: string[]; updated_at: string }) => ({ slug: r.slug, tags: r.tags ?? [], updatedAt: r.updated_at }));
+ }
+ 
+@@ -118,19 +143,15 @@ export async function updateProductAdmin(id: string, patch: Partial<Product>): P
+ }
+ 
+ export async function deleteProductAdmin(id: string): Promise<void> {
+-  // Soft-delete (never hard-delete — affiliate history).
+   const sb = createServiceClient();
+   const { error } = await sb.from('products').update({ deleted_at: new Date().toISOString(), status: 'archived' }).eq('id', id);
+   if (error) throw new Error(`deleteProduct failed: ${error.message}`);
+ }
+ 
+ export async function discontinueProduct(id: string): Promise<void> {
+-  // discontinue() bypasses validation — force-archive even if stale validations would block.
+   const sb = createServiceClient();
+   const { error } = await sb.from('products').update({
+-    status: 'archived',
+-    discontinue_on: new Date().toISOString(),
+-    updated_at: new Date().toISOString(),
++    status: 'archived', discontinue_on: new Date().toISOString(), updated_at: new Date().toISOString(),
+   }).eq('id', id);
+   if (error) throw new Error(`discontinue failed: ${error.message}`);
+ }
+diff --git a/rollout/supabase-rollout-nonui-fixes.sql b/rollout/supabase-rollout-nonui-fixes.sql
+new file mode 100755
+index 0000000..9e377df
+--- /dev/null
++++ b/rollout/supabase-rollout-nonui-fixes.sql
+@@ -0,0 +1,20 @@
++-- =====================================================================
++-- Non-UI fixes migration — dead-link tracking columns.
++-- Run AFTER supabase-rollout-fm02-full-marketplace.sql + supabase-rollout-fm02-rpcs.sql.
++-- Additive + idempotent.
++--
++-- Adds the columns the corrected dead-link-detector.ts needs:
++--   last_probed_at    — when the HEAD probe last checked this product (fair-batch ordering)
++--   redirect_4xx_count — rolling 4xx counter (reactive dead-link signal)
++--   last_4xx_at       — when the last 4xx was observed (24h window reset)
++-- =====================================================================
++
++ALTER TABLE rollout.products
++  ADD COLUMN IF NOT EXISTS last_probed_at TIMESTAMPTZ,
++  ADD COLUMN IF NOT EXISTS redirect_4xx_count INTEGER NOT NULL DEFAULT 0,
++  ADD COLUMN IF NOT EXISTS last_4xx_at TIMESTAMPTZ;
++
++-- Index for the fair-batch HEAD probe (order by last_probed_at NULLS FIRST).
++CREATE INDEX IF NOT EXISTS idx_products_last_probed
++  ON rollout.products(last_probed_at)
++  WHERE deleted_at IS NULL AND status = 'active' AND asin IS NOT NULL;

@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
 import type { Database } from '@/lib/database.types';
+import { checkSigninRateLimit } from '@/lib/auth/signin-rate-limit';
+import { resolveIp } from '@/lib/analytics/ip-chain';
 
 export async function POST(request: NextRequest) {
   const cookieStore = await cookies();
@@ -30,6 +32,17 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       { error: 'Invalid request' },
       { status: 400 }
+    );
+  }
+
+  // FIX (audit 4.2): wire the signin rate limit BEFORE password auth.
+  // 5 per minute per email+IP. Fail-open if Upstash is unreachable.
+  const ip = resolveIp(request.headers);
+  const { ok, retryAfter } = await checkSigninRateLimit(email, ip);
+  if (!ok) {
+    return NextResponse.json(
+      { error: 'Too many attempts. Try again later.' },
+      { status: 429, headers: { 'Retry-After': String(retryAfter ?? 60) } }
     );
   }
 

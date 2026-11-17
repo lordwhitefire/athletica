@@ -4,6 +4,9 @@ import { getFeaturedProducts, getCarouselProducts } from '@/lib/products/product
 import { ThreeItemGrid } from '@/components/storefront/ThreeItemGrid';
 import { Carousel } from '@/components/storefront/Carousel';
 import { Footer } from '@/components/storefront/Footer';
+import Link from 'next/link';
+import { StorefrontHeader } from '@/components/storefront/StorefrontHeader';
+import '@/components/storefront/storefront.css';
 
 export const dynamic = 'force-dynamic';
 
@@ -14,8 +17,23 @@ export default async function HomePage() {
   ]);
   return (
     <>
-      <ThreeItemGrid products={featured} />
-      <Carousel products={carousel} />
+      <StorefrontHeader />
+      <main>
+        <section className="storefront-home-intro">
+          <p className="storefront-eyebrow">BUILT FOR THE BEAUTIFUL GAME</p>
+          <h1 className="storefront-home-title">Gear up.<br /><span>Play bigger.</span></h1>
+          <p className="storefront-home-copy">
+            A considered edit of football boots and equipment for players who
+            take every touch seriously.
+          </p>
+        </section>
+        <ThreeItemGrid products={featured} />
+        <div className="storefront-section-heading">
+          <h2>Explore the collection</h2>
+          <Link href="/shop">View all gear ↗</Link>
+        </div>
+        <Carousel products={carousel} />
+      </main>
       <Footer />
     </>
   );

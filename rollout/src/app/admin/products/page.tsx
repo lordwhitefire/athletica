@@ -46,6 +46,10 @@ export default function AdminProductsPage() {
   const [busy, setBusy] = useState<{ id: string; action: 'status' | 'delete' } | null>(null);
   const [reloadKey, setReloadKey] = useState(0);
   const [editorOpen, setEditorOpen] = useState(false);
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [bulkAction, setBulkAction] = useState('');
+  const [bulkValue, setBulkValue] = useState('');
+  const [bulkBusy, setBulkBusy] = useState(false);
 
   // Debounce search input
   useEffect(() => {
@@ -139,6 +143,17 @@ export default function AdminProductsPage() {
   const to = Math.min(page * PAGE_SIZE, total);
   const showSearchEmpty = !loading && !error && items.length === 0 && searchDebounced.length > 0;
   const showCatalogEmpty = !loading && !error && items.length === 0 && searchDebounced.length === 0;
+  const allVisibleSelected = items.length > 0 && items.every((item) => selectedIds.includes(item.id));
+  const toggleSelected = (id: string) => setSelectedIds((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
+  const runBulkPreview = () => {
+    if (!selectedIds.length) return;
+    setBulkBusy(true);
+    window.setTimeout(() => {
+      setBulkBusy(false);
+      push('info', `${bulkAction} queued for ${selectedIds.length} selected product(s). Connect the bulk API to execute this action.`);
+      setBulkAction(''); setBulkValue(''); setSelectedIds([]);
+    }, 650);
+  };
 
   return (
     <div className="admin-page">
@@ -199,6 +214,15 @@ export default function AdminProductsPage() {
 
           <span className="admin-count">{total} products</span>
         </div>
+        {selectedIds.length > 0 && <div className="admin-bulkbar">
+          <div><strong>{selectedIds.length}</strong><span> selected</span><button type="button" onClick={() => setSelectedIds([])}>Clear selection</button></div>
+          <select aria-label="Bulk action" value={bulkAction} onChange={(e) => { setBulkAction(e.target.value); setBulkValue(''); }}>
+            <option value="">Choose bulk action</option><option value="Set status">Set status</option><option value="Archive">Archive</option><option value="Add tags">Add tags</option><option value="Remove tags">Remove tags</option><option value="Add to category">Add to category</option><option value="Remove from category">Remove from category</option><option value="Add to collection">Add to collection</option><option value="Remove from collection">Remove from collection</option>
+          </select>
+          {bulkAction === 'Set status' && <select aria-label="Choose status" value={bulkValue} onChange={(e) => setBulkValue(e.target.value)}><option value="">Choose status</option><option value="published">Published</option><option value="unpublished">Unpublished</option><option value="archived">Archived</option></select>}
+          {['Add tags','Remove tags','Add to category','Remove from category','Add to collection','Remove from collection'].includes(bulkAction) && <input aria-label="Bulk value" value={bulkValue} onChange={(e) => setBulkValue(e.target.value)} placeholder={bulkAction.includes('tag') ? 'Enter tag' : 'Enter name'} />}
+          <button type="button" className="admin-btn admin-btn--primary" disabled={!bulkAction || (bulkAction !== 'Archive' && !bulkValue) || bulkBusy} onClick={runBulkPreview}>{bulkBusy ? 'Working…' : 'Apply action'}</button>
+        </div>}
 
         <main className="admin-body">
           {error ? (
@@ -251,6 +275,7 @@ export default function AdminProductsPage() {
               <table className="admin-table">
                 <thead>
                   <tr>
+                    <th scope="col"><input type="checkbox" aria-label="Select all visible products" checked={allVisibleSelected} onChange={() => setSelectedIds((current) => allVisibleSelected ? current.filter((id) => !items.some((item) => item.id === id)) : [...new Set([...current, ...items.map((item) => item.id)])])} /></th>
                     <th scope="col">Product</th>
                     <th scope="col">ID</th>
                     <th scope="col">Status</th>
@@ -264,6 +289,7 @@ export default function AdminProductsPage() {
                     const rowBusy = busy?.id === product.id;
                     return (
                       <tr key={product.id}>
+                        <td><input type="checkbox" aria-label={`Select ${product.name}`} checked={selectedIds.includes(product.id)} onChange={() => toggleSelected(product.id)} /></td>
                         <td className="admin-product-cell">
                           <img
                             className="admin-thumb"
