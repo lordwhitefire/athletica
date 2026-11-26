@@ -1,0 +1,109 @@
+{
+  "id": "084669-01-4",
+  "slug": "balon-puma-orbita-liga-f-25-26-talla-4-white",
+  "name": "Puma Orbita Liga F 25 26 talla 4",
+  "model": "Orbita Liga F 25 26 talla 4",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol Puma de la Liga Femenina 2025 2026 talla 4 - blanco",
+    "tagline": "Perform at your best in every game",
+    "intro": "This Puma soccer ball is designed to offer performance and precision in every play. With high quality materials and a professional design, it guarantees stable flight and great durability. Ideal for those looking to stand out in training and matches with style and power.",
+    "collection": "",
+    "key_benefits": [
+      "Vuelo uniforme: Estructura optimizada para trayectorias precisas.",
+      "Long lifespan: Resists wear and tear from frequent use.",
+      "Excelente control: Superficie texturizada para un mejor contacto con el pie.",
+      "Eye-catching design: Inspired by the official competition with vibrant colors.",
+      "Versatilidad de uso: Ideal para entrenar o competir en cualquier campo."
+    ],
+    "technical_details": {
+      "range": "Puma Orbita Liga F 25 26 talla 4",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2a62fbc8a867e7c28335caed8c04246ac1d886b8-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2a62fbc8a867e7c28335caed8c04246ac1d886b8-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ef2559bad50ee59a5bfec30c501b912030c56731-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d8b65f14cb425448259cf5a17d54d9a2fb71b903-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2a62fbc8a867e7c28335caed8c04246ac1d886b8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ef2559bad50ee59a5bfec30c501b912030c56731-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d8b65f14cb425448259cf5a17d54d9a2fb71b903-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2a62fbc8a867e7c28335caed8c04246ac1d886b8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2a62fbc8a867e7c28335caed8c04246ac1d886b8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ef2559bad50ee59a5bfec30c501b912030c56731-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ef2559bad50ee59a5bfec30c501b912030c56731-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d8b65f14cb425448259cf5a17d54d9a2fb71b903-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d8b65f14cb425448259cf5a17d54d9a2fb71b903-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084669-01-4",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Liga Femenina 2025 2026 talla 4 - blanco",
+    "tagline": "Rinde al máximo en cada partido",
+    "intro": "Este balón de fútbol Puma está diseñado para ofrecer rendimiento y precisión en cada jugada. Con materiales de alta calidad y un diseño profesional, garantiza vuelo estable y gran durabilidad. Ideal para quienes buscan destacar en entrenamientos y partidos con estilo y potencia.",
+    "collection": "",
+    "key_benefits": [
+      "Vuelo uniforme: Estructura optimizada para trayectorias precisas.",
+      "Larga vida útil: Resiste al desgaste del uso frecuente.",
+      "Excelente control: Superficie texturizada para un mejor contacto con el pie.",
+      "Diseño llamativo: Inspirado en la competición oficial con colores vibrantes.",
+      "Versatilidad de uso: Ideal para entrenar o competir en cualquier campo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084669-01-4"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita Liga F 25 26 talla 4",
+    "sole_type": ""
+  }
+}

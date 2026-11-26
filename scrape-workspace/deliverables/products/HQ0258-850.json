@@ -1,0 +1,86 @@
+{
+  "id": "HQ0258-850",
+  "slug": "nike-gk-match-jr-naranja-rojo",
+  "name": "Nike GK Match Jr",
+  "model": "GK Match Jr",
+  "brand": "Nike",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Naranja / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "GK Match Jr",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-de-portero-color-rojo-y-naranja-nike-gk-match-jr_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-de-portero-color-rojo-y-naranja-nike-gk-match-jr_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-portero-salmon-nike-gk-match-jr_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-de-arquero-nike-gk-match-jr-color-rojo-y-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-de-futbol-nike-gk-match-jr-salmon_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-de-portero-color-rojo-y-naranja-nike-gk-match-jr_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-portero-salmon-nike-gk-match-jr_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-de-arquero-nike-gk-match-jr-color-rojo-y-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0258-850_guantes-de-futbol-nike-gk-match-jr-salmon_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/hq0258-850",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/hq0258-850"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "GK",
+    "submodel": "",
+    "product_model": "GK Match Jr",
+    "sole_type": ""
+  }
+}

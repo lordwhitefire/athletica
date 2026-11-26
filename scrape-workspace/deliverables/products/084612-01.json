@@ -1,0 +1,109 @@
+{
+  "id": "084612-01",
+  "slug": "balon-puma-cumbre-libertadores-25-talla-mini-white",
+  "name": "Puma Cumbre Libertadores 25 talla mini",
+  "model": "Cumbre Libertadores 25 talla mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol Puma de la Copa Libertadores 2025 talla mini - blanco",
+    "tagline": "Guaranteed fun for any place",
+    "intro": "The Puma Cumbre Libertadores 25 Mini Size Ball stands out for its excellent relationship between durability and performance. Thanks to its machine-sewn design with a soft touch, it adapts to the needs of players looking for a reliable and resistant ball. Perfect for those who train constantly and want to improve their technique.",
+    "collection": "",
+    "key_benefits": [
+      "Optimized Construction: Machine-stitched design with soft feel for strength and stable shape.",
+      "Excellent touch: Soft material provides a good feeling of control.",
+      "Adapted to each age: Mini ball for technical and precision training.",
+      "Improved Durability: Designed for regular, long workouts.",
+      "Official design: Inspired by the 2025 Copa Libertadores ball."
+    ],
+    "technical_details": {
+      "range": "Puma Cumbre Libertadores 25 talla mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cb004e7bace459b1aca50a92d0adf6b1dc860b41-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/cb004e7bace459b1aca50a92d0adf6b1dc860b41-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f6c6d8089609f36497b45fe93906eb5bc53b2f3c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/df513010fe2bba9fcbc05597b94cde7530e2e740-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cb004e7bace459b1aca50a92d0adf6b1dc860b41-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f6c6d8089609f36497b45fe93906eb5bc53b2f3c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/df513010fe2bba9fcbc05597b94cde7530e2e740-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-cb004e7bace459b1aca50a92d0adf6b1dc860b41-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cb004e7bace459b1aca50a92d0adf6b1dc860b41-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f6c6d8089609f36497b45fe93906eb5bc53b2f3c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f6c6d8089609f36497b45fe93906eb5bc53b2f3c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-df513010fe2bba9fcbc05597b94cde7530e2e740-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/df513010fe2bba9fcbc05597b94cde7530e2e740-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084612-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Copa Libertadores 2025 talla mini - blanco",
+    "tagline": "Diversión asegurada para cualquier lugar",
+    "intro": "El Balón Puma Cumbre Libertadores 25 talla mini destaca por su excelente relación entre durabilidad y rendimiento. Gracias a su diseño cosido a máquina con tacto suave, se adapta a las necesidades de jugadores que buscan un balón confiable y resistente. Perfecto para quienes entrenan de forma constante y quieren mejorar su técnica.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción optimizada: Diseño cosido a máquina con tacto suave para mayor resistencia y forma estable.",
+      "Excelente tacto: Material suave que proporciona una buena sensación de control.",
+      "Adaptado a cada edad: Mini balón para entrenamiento técnico y precisión.",
+      "Durabilidad mejorada: Diseñado para entrenamientos regulares y prolongados.",
+      "Diseño oficial: Inspirado en el balón de la Copa Libertadores 2025."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084612-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Cumbre",
+    "submodel": "",
+    "product_model": "Cumbre Libertadores 25 talla mini",
+    "sole_type": ""
+  }
+}

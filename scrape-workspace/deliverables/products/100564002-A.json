@@ -1,0 +1,93 @@
+{
+  "id": "100564002-A",
+  "slug": "mallas-de-portero-uhlsport-bionik-frame-unpadded-black",
+  "name": "Mallas de Goalkeeper Uhlsport Bionik Frame Unpadded",
+  "model": "Mallas de Goalkeeper Uhlsport Bionik Frame Unpadded",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de portero Uhlsport Bionik Frame Unpadded",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3f5f4247ca8c26c72c6484353b4c9c46770daa68-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3f5f4247ca8c26c72c6484353b4c9c46770daa68-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/78a30d6b77fc4afebb5bfda0e324bfb1a273a0db-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c0eab4e5d344280688af07d34fb7625615525f9f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3f5f4247ca8c26c72c6484353b4c9c46770daa68-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/78a30d6b77fc4afebb5bfda0e324bfb1a273a0db-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c0eab4e5d344280688af07d34fb7625615525f9f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3f5f4247ca8c26c72c6484353b4c9c46770daa68-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3f5f4247ca8c26c72c6484353b4c9c46770daa68-1500x1500.jpg"
+    },
+    {
+      "_id": "image-78a30d6b77fc4afebb5bfda0e324bfb1a273a0db-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/78a30d6b77fc4afebb5bfda0e324bfb1a273a0db-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c0eab4e5d344280688af07d34fb7625615525f9f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c0eab4e5d344280688af07d34fb7625615525f9f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100564002-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100564002-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas de Goalkeeper Uhlsport Bionik Frame Unpadded",
+    "sole_type": ""
+  }
+}

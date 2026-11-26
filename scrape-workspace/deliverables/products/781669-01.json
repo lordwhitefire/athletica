@@ -1,0 +1,98 @@
+{
+  "id": "781669-01",
+  "slug": "sudadera-puma-borussia-dortmund-entrenamiento-yellow",
+  "name": "Puma Borussia Dortmund Training",
+  "model": "Borussia Dortmund entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento Puma del Borussia Dortmund 2025 2026 - amarilla",
+    "tagline": "Calor, estilo y actitud ganadora",
+    "intro": "La sudadera de entrenamiento Puma BVB te protege del frío sin sacrificar libertad de movimiento. Ideal para entrenar en climas frescos o para un look deportivo diario.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido térmico: Mantiene la temperatura corporal estable.",
+      "Diseño deportivo: Corte entallado y moderno.",
+      "Practicidad: Cremallera frontal y cuello alto para mayor cobertura.",
+      "Estilo de club: Logos oficiales del Borussia y Puma."
+    ],
+    "technical_details": {
+      "range": "Puma Borussia Dortmund entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781669-01_sudadera-color-amarillo-puma-borussia-dortmund-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781669-01_sudadera-color-amarillo-puma-borussia-dortmund-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781669-01_sudadera-amarilla-puma-borussia-dortmund-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781669-01_sudadera-puma-borussia-dortmund-entrenamiento-color-amarillo_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781669-01_sudadera-color-amarillo-puma-borussia-dortmund-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781669-01_sudadera-amarilla-puma-borussia-dortmund-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781669-01_sudadera-puma-borussia-dortmund-entrenamiento-color-amarillo_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/781669-01",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Puma del Borussia Dortmund 2025 2026 - amarilla",
+    "tagline": "Calor, estilo y actitud ganadora",
+    "intro": "La sudadera de entrenamiento Puma BVB te protege del frío sin sacrificar libertad de movimiento. Ideal para entrenar en climas frescos o para un look deportivo diario.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido térmico: Mantiene la temperatura corporal estable.",
+      "Diseño deportivo: Corte entallado y moderno.",
+      "Practicidad: Cremallera frontal y cuello alto para mayor cobertura.",
+      "Estilo de club: Logos oficiales del Borussia y Puma."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/781669-01"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Borussia",
+    "submodel": "",
+    "product_model": "Borussia Dortmund entrenamiento",
+    "sole_type": ""
+  }
+}

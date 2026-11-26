@@ -1,0 +1,105 @@
+{
+  "id": "085149-01-5",
+  "slug": "balon-puma-laliga-26-27-cup-t-5-stellar-hi-vis-yellow",
+  "name": "Puma LaLiga 26 27 Cup T.5 Stellar Hi-Vis",
+  "model": "LaLiga 26 27 Cup T.5 Stellar Hi-Vis",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Stellar Spanish League 2026 2027 High Visibility Soccer Ball in Size 5 - Yellow",
+    "tagline": "Train with LaLiga style and maximum visibility",
+    "intro": "The Puma LaLiga 26 27 Cup T.5 Stellar Hi-Vis ball is designed to offer excellent performance in training and amateur matches. Inspired by the official ball of the Spanish LaLiga, it combines resistance, good touch and great durability to withstand sessions of frequent use. Its abrasion-resistant construction and high-visibility design provide reliable and consistent behavior on every play, making it easy to track the ball during the game.",
+    "collection": "",
+    "key_benefits": [
+      "Official LaLiga design: Inspired by the ball of the Spanish competition.",
+      "Alta resistencia: Materiales preparados para entrenamientos regulares.",
+      "Stable flight: Construction designed to promote precise trajectories.",
+      "Gran durabilidad: Excelente resistencia al desgaste durante el uso frecuente.",
+      "High visibility: Its striking design makes it easy to locate and track the ball during the game."
+    ],
+    "technical_details": {
+      "range": "Puma LaLiga 26 27 Cup T.5 Stellar Hi-Vis",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/14dd0f5c7176717d9a895a3e652d40887915513f-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/14dd0f5c7176717d9a895a3e652d40887915513f-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3cb7455da05bf1d07725d03c7fbaa40f54269735-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6c19bb13e0fcfaa4f8cb7a258870b2b3e3082bd8-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/14dd0f5c7176717d9a895a3e652d40887915513f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3cb7455da05bf1d07725d03c7fbaa40f54269735-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6c19bb13e0fcfaa4f8cb7a258870b2b3e3082bd8-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-14dd0f5c7176717d9a895a3e652d40887915513f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/14dd0f5c7176717d9a895a3e652d40887915513f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3cb7455da05bf1d07725d03c7fbaa40f54269735-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3cb7455da05bf1d07725d03c7fbaa40f54269735-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6c19bb13e0fcfaa4f8cb7a258870b2b3e3082bd8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6c19bb13e0fcfaa4f8cb7a258870b2b3e3082bd8-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085149-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma Stellar de la Liga Española 2026 2027 de alta visibilidad en talla 5 - amarillo",
+    "tagline": "Entrena con el estilo de LaLiga y máxima visibilidad",
+    "intro": "El balón Puma LaLiga 26 27 Cup T.5 Stellar Hi-Vis está diseñado para ofrecer un excelente rendimiento en entrenamientos y partidos amateur. Inspirado en el balón oficial de LaLiga Española, combina resistencia, buen toque y una gran durabilidad para soportar sesiones de uso frecuente. Su construcción resistente a la abrasión y su diseño de alta visibilidad proporcionan un comportamiento fiable y consistente en cada jugada, facilitando el seguimiento del balón durante el juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial LaLiga: Inspirado en el balón de la competición española.",
+      "Alta resistencia: Materiales preparados para entrenamientos regulares.",
+      "Vuelo estable: Construcción diseñada para favorecer trayectorias precisas.",
+      "Gran durabilidad: Excelente resistencia al desgaste durante el uso frecuente.",
+      "Alta visibilidad: Su llamativo diseño facilita la localización y el seguimiento del balón durante el juego."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085149-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "LaLiga",
+    "submodel": "",
+    "product_model": "LaLiga 26 27 Cup T.5 Stellar Hi-Vis",
+    "sole_type": ""
+  }
+}

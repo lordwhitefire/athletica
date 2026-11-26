@@ -1,0 +1,88 @@
+{
+  "id": "657251-41",
+  "slug": "peto-puma-bib-blue",
+  "name": "Peto Puma BIB",
+  "model": "Peto Puma BIB",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Peto de entrenamiento de fútbol Puma - azul flúor",
+    "tagline": "Visibilidad y rendimiento en un solo peto",
+    "intro": "El Peto Puma BIB azul flúor facilita la organización del equipo sin comprometer el confort. Perfecto para entrenamientos dinámicos y estructurados.",
+    "collection": "",
+    "key_benefits": [
+      "Alta visibilidad: Ideal para dividir equipos rápidamente.",
+      "Poliéster técnico: Resistencia garantizada en entrenos frecuentes.",
+      "Sensación ligera: Se adapta sin molestias ni rozaduras.",
+      "Secado rápido: Perfecto para varios usos en un mismo día."
+    ],
+    "technical_details": {
+      "range": "Puma BIB",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/657251-41_peto-color-azul-puma-bib_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/657251-41_peto-color-azul-puma-bib_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/657251-41_peto-entrenamiento-azul-fluor-puma-bib_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/657251-41_peto-color-azul-puma-bib_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/657251-41_peto-entrenamiento-azul-fluor-puma-bib_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/657251-41",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Peto de entrenamiento de fútbol Puma - azul flúor",
+    "tagline": "Visibilidad y rendimiento en un solo peto",
+    "intro": "El Peto Puma BIB azul flúor facilita la organización del equipo sin comprometer el confort. Perfecto para entrenamientos dinámicos y estructurados.",
+    "collection": "",
+    "key_benefits": [
+      "Alta visibilidad: Ideal para dividir equipos rápidamente.",
+      "Poliéster técnico: Resistencia garantizada en entrenos frecuentes.",
+      "Sensación ligera: Se adapta sin molestias ni rozaduras.",
+      "Secado rápido: Perfecto para varios usos en un mismo día."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/657251-41"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Peto",
+    "submodel": "",
+    "product_model": "Peto Puma BIB",
+    "sole_type": ""
+  }
+}

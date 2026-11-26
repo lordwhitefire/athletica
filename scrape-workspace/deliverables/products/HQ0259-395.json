@@ -1,0 +1,82 @@
+{
+  "id": "HQ0259-395",
+  "slug": "nike-gk-vapor-dynamic-fit-blue",
+  "name": "Nike GK Vapor Dynamic Fit",
+  "model": "GK Vapor Dynamic Fit",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "GK Vapor Dynamic Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-de-portero-color-azul-nike-gk-vapor-dynamic-fit_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-de-portero-color-azul-nike-gk-vapor-dynamic-fit_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-portero-azul-claro-nike-gk-vapor-dynamic-fit_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-de-arquero-nike-gk-vapor-dynamic-fit-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-de-futbol-nike-gk-vapor-dynamic-fit-azul-claro_4_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-de-portero-color-azul-nike-gk-vapor-dynamic-fit_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-portero-azul-claro-nike-gk-vapor-dynamic-fit_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-de-arquero-nike-gk-vapor-dynamic-fit-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0259-395_guantes-de-futbol-nike-gk-vapor-dynamic-fit-azul-claro_4_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq0259-395",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq0259-395"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "GK",
+    "submodel": "Vapor Dynamic Fit",
+    "product_model": "GK Vapor Dynamic Fit",
+    "sole_type": ""
+  }
+}

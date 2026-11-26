@@ -1,0 +1,82 @@
+{
+  "id": "CV8107",
+  "slug": "medias-adidas-santos-18-marron",
+  "name": "adidas Santos 18",
+  "model": "Santos 18",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Santos 18",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CV8107_imagen-de-las-medias-de-futbol-entrenamiento-SANTOS-SOCK-18-marron_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CV8107_imagen-de-las-medias-de-futbol-entrenamiento-SANTOS-SOCK-18-marron_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CV8107_imagen-de-las-medias-de-futbol-entrenamiento-SANTOS-SOCK-18-marron_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CV8107_imagen-de-las-medias-de-futbol-entrenamiento-SANTOS-SOCK-18-marron_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CV8107_imagen-de-las-medias-de-futbol-entrenamiento-SANTOS-SOCK-18-marron_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/cv8107",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/cv8107"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Santos",
+    "submodel": "",
+    "product_model": "Santos 18",
+    "sole_type": ""
+  }
+}

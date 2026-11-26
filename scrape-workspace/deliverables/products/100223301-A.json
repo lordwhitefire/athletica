@@ -1,0 +1,119 @@
+{
+  "id": "100223301-A",
+  "slug": "short-uhlsport-performance-short-black",
+  "name": "Uhlsport Performance Short",
+  "model": "Performance Short",
+  "brand": "Uhlsport",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport goalkeeper shorts - black",
+    "tagline": "Comfort, Protection and Style in Every Stretch",
+    "intro": "Uhlsport goalkeeper shorts are designed to offer maximum protection, absolute comfort and freedom of movement. Perfect for those looking for performance and confidence under the sticks.",
+    "collection": "",
+    "key_benefits": [
+      "Strategic protection: Padded reinforcements in key areas.",
+      "Total freedom: Flexible fabric that accompanies every movement.",
+      "Technical design: Ideal for intense training and competitive matches.",
+      "Lasting comfort: Breathable and wear-resistant."
+    ],
+    "technical_details": {
+      "range": "Uhlsport Performance Short",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/90b79cc7e46754423cc1d96ab82044e99aeec6a6-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/90b79cc7e46754423cc1d96ab82044e99aeec6a6-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c8213b92f3f2651c540c213e4f64b5f256ff35b4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/db095650c97ddc87eb4ecc7b0551ca8ed232caf7-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/90b79cc7e46754423cc1d96ab82044e99aeec6a6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c8213b92f3f2651c540c213e4f64b5f256ff35b4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/db095650c97ddc87eb4ecc7b0551ca8ed232caf7-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-90b79cc7e46754423cc1d96ab82044e99aeec6a6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/90b79cc7e46754423cc1d96ab82044e99aeec6a6-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c8213b92f3f2651c540c213e4f64b5f256ff35b4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c8213b92f3f2651c540c213e4f64b5f256ff35b4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e149dc93f9a7a49cb86aaf47a711ab3a0e4d217c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-db095650c97ddc87eb4ecc7b0551ca8ed232caf7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/db095650c97ddc87eb4ecc7b0551ca8ed232caf7-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100223301-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de portero Uhlsport - negro",
+    "tagline": "Comodidad, Protección y Estilo en Cada Estirada",
+    "intro": "Los pantalones cortos de portero Uhlsport están diseñados para ofrecer máxima protección, comodidad absoluta y libertad de movimiento. Perfectos para quienes buscan rendimiento y confianza bajo palos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección estratégica: Refuerzos acolchados en zonas clave.",
+      "Libertad total: Tejido flexible que acompaña cada movimiento.",
+      "Diseño técnico: Ideal para entrenos intensos y partidos competitivos.",
+      "Confort duradero: Transpirable y resistente al desgaste."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100223301-a"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Performance",
+    "submodel": "",
+    "product_model": "Performance Short",
+    "sole_type": ""
+  }
+}

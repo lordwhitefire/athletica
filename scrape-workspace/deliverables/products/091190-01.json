@@ -1,0 +1,101 @@
+{
+  "id": "091190-01",
+  "slug": "zapatillero-puma-challenger-black",
+  "name": "Zapatillero Puma Challenger",
+  "model": "Zapatillero Puma Challenger",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma football boot holder - black",
+    "tagline": "Transporta tu calzado deportivo con total comodidad",
+    "intro": "The Puma Challenger shoe rack is the perfect accessory to keep your soccer boots protected and organized. Its compact and functional design makes it easy to transport your shoes, preventing the rest of your equipment from getting dirty.",
+    "collection": "",
+    "key_benefits": [
+      "Compact design: Ideal for transporting boots or sneakers comfortably.",
+      "Footwear protection: Keeps boots separate from the rest of the equipment.",
+      "Puma sporty style: Modern finish with oversized logo."
+    ],
+    "technical_details": {
+      "range": "Puma Challenger",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/43d47804f434bfa71c6558365f12473e5dca3322-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/43d47804f434bfa71c6558365f12473e5dca3322-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7c6f6bf8fb22515e26996520e5cd237acb4b2e7e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6f6ae27eb2803de7986cca43ee2b202fff548aca-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/43d47804f434bfa71c6558365f12473e5dca3322-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7c6f6bf8fb22515e26996520e5cd237acb4b2e7e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6f6ae27eb2803de7986cca43ee2b202fff548aca-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-43d47804f434bfa71c6558365f12473e5dca3322-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/43d47804f434bfa71c6558365f12473e5dca3322-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7c6f6bf8fb22515e26996520e5cd237acb4b2e7e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7c6f6bf8fb22515e26996520e5cd237acb4b2e7e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6f6ae27eb2803de7986cca43ee2b202fff548aca-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6f6ae27eb2803de7986cca43ee2b202fff548aca-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091190-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Porta botas de fútbol Puma - negro",
+    "tagline": "Transporta tu calzado deportivo con total comodidad",
+    "intro": "El zapatillero Puma Challenger es el accesorio perfecto para mantener tus botas de fútbol protegidas y organizadas. Su diseño compacto y funcional facilita el transporte del calzado evitando que el resto de tu equipamiento se ensucie.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño compacto: Ideal para transportar botas o zapatillas de forma cómoda.",
+      "Protección del calzado: Mantiene las botas separadas del resto del equipamiento.",
+      "Estilo deportivo Puma: Acabado moderno con logotipo de gran tamaño."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/091190-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Zapatillero",
+    "submodel": "",
+    "product_model": "Zapatillero Puma Challenger",
+    "sole_type": ""
+  }
+}

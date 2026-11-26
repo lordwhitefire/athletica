@@ -1,0 +1,90 @@
+{
+  "id": "JY1321",
+  "slug": "short-adidas-alemania-125-aniversario-black",
+  "name": "adidas Alemania 125 aniversario",
+  "model": "Alemania 125 aniversario",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Alemania 125 aniversario",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_pantalon-corto-color-negro-adidas-alemania-125-aniversario_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_pantalon-corto-color-negro-adidas-alemania-125-aniversario_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_short-negro-adidas-alemania-125-aniversario_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_pantalon-corto-adidas-alemania-125-aniversario-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_short-adidas-alemania-125-aniversario-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_pantalon-corto-color-negro-adidas-alemania-125-aniversario_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_short-negro-adidas-alemania-125-aniversario_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_pantalon-corto-adidas-alemania-125-aniversario-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1321_short-adidas-alemania-125-aniversario-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jy1321",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jy1321"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania 125 aniversario",
+    "sole_type": ""
+  }
+}

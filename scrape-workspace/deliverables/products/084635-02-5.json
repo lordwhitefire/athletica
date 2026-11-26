@@ -1,0 +1,109 @@
+{
+  "id": "084635-02-5",
+  "slug": "balon-puma-laliga-25-26-ms-t-5-orbita-yellow",
+  "name": "Puma LaLiga 25 26 MS T.5 Orbita",
+  "model": "LaLiga 25 26 MS T.5 Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Spanish League Soccer Ball 2025 2026 High Visibility Size 5 - Yellow",
+    "tagline": "The ideal ball for winter nights",
+    "intro": "With the official design of La Liga 25/26, this Puma ball in size 5 offers the perfect balance between professional aesthetics and performance. Its durable construction makes it the ideal choice for training and competitions.",
+    "collection": "",
+    "key_benefits": [
+      "Design: With vibrant colors to show off on cold winter nights.",
+      "Regulation competition size: Perfect for players ages 12 and up.",
+      "Materiales resistentes al desgaste: Pensado para soportar entrenamientos exigentes.",
+      "Good control and response: Heat-sealed panels and textured surface that promote precision.",
+      "Accessible professional look: Ideal for players who train with ambition."
+    ],
+    "technical_details": {
+      "range": "Puma LaLiga 25 26 MS T.5 Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/06e165e83ffb1e8159f7d289c9dd494f7f51037c-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/06e165e83ffb1e8159f7d289c9dd494f7f51037c-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4cec4131114f69af2b061d39bf1ee01d001cb87f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6f1ece397a01f3b7dabb34168b9829ac07dbb612-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/06e165e83ffb1e8159f7d289c9dd494f7f51037c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4cec4131114f69af2b061d39bf1ee01d001cb87f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6f1ece397a01f3b7dabb34168b9829ac07dbb612-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-06e165e83ffb1e8159f7d289c9dd494f7f51037c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/06e165e83ffb1e8159f7d289c9dd494f7f51037c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4cec4131114f69af2b061d39bf1ee01d001cb87f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4cec4131114f69af2b061d39bf1ee01d001cb87f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6f1ece397a01f3b7dabb34168b9829ac07dbb612-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6f1ece397a01f3b7dabb34168b9829ac07dbb612-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084635-02-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Liga Española 2025 2026 de alta visibilidad talla 5 - amarillo",
+    "tagline": "El balón ideal para las noches de invierno",
+    "intro": "Con el diseño oficial de La Liga 25/26, este balón Puma en talla 5 ofrece el equilibrio perfecto entre estética profesional y rendimiento. Su construcción duradera lo convierte en la elección ideal para entrenamientos y competiciones.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño: Con colores vibrantes para lucir en las noches frías de invierno.",
+      "Tamaño reglamentario de competición: Perfecto para jugadores a partir de 12 años.",
+      "Materiales resistentes al desgaste: Pensado para soportar entrenamientos exigentes.",
+      "Buen control y respuesta: Paneles termosellados y superficie texturizada que favorecen la precisión.",
+      "Look profesional accesible: Ideal para jugadores que entrenan con ambición."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084635-02-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "LaLiga",
+    "submodel": "",
+    "product_model": "LaLiga 25 26 MS T.5 Orbita",
+    "sole_type": ""
+  }
+}

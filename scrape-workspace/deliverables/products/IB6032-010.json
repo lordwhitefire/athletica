@@ -1,0 +1,90 @@
+{
+  "id": "IB6032-010",
+  "slug": "camiseta-nike-t90-black",
+  "name": "Nike T90",
+  "model": "T90",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike T90 Short Sleeve Cotton T-Shirt - Black",
+    "tagline": "Retro style for true fans",
+    "intro": "The Nike T90 T-shirt in black brings back the energy of the 2000s with the iconic Total 90 design. Perfect to complete your outfit with a nostalgic and modern touch.",
+    "collection": "",
+    "key_benefits": [
+      "Total 90 Inspiration: Design based on one of the golden eras of football.",
+      "Urban comfort: Soft cotton ideal for everyday use.",
+      "Versatility: Combine with jeans or joggers without losing style.",
+      "Timeless color: Black never fails for a modern sporty look."
+    ],
+    "technical_details": {
+      "range": "Nike T90",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB6032-010_camiseta-color-negro-nike-t90-2_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB6032-010_camiseta-color-negro-nike-t90-2_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB6032-010_camiseta-negra-nike-t90-2_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB6032-010_camiseta-nike-t90-2-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB6032-010_camiseta-color-negro-nike-t90-2_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB6032-010_camiseta-negra-nike-t90-2_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB6032-010_camiseta-nike-t90-2-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib6032-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta Nike T90 - negra",
+    "tagline": "Estilo retro para verdaderos fans",
+    "intro": "La Camiseta Nike T90 en color negro trae de vuelta la energía de los 2000 con el icónico diseño Total 90. Perfecta para completar tu outfit con un toque nostálgico y actual.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración Total 90: Diseño basado en una de las épocas doradas del fútbol.",
+      "Comodidad urbana: Algodón suave ideal para el día a día.",
+      "Versatilidad: Combina con jeans o joggers sin perder estilo.",
+      "Color atemporal: El negro nunca falla para un look deportivo moderno."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib6032-010"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "T90",
+    "submodel": "",
+    "product_model": "T90",
+    "sole_type": ""
+  }
+}

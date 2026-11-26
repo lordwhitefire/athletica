@@ -1,0 +1,92 @@
+{
+  "id": "HI3775",
+  "slug": "short-adidas-messi-nino-black",
+  "name": "adidas Messi Kids",
+  "model": "Messi niño",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Messi niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_bermuda-color-negro-adidas-messi-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_bermuda-color-negro-adidas-messi-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_pantalones-negro-adidas-messi-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_pantalones-cortos-adidas-messi-nino-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_bermuda-adidas-messi-nino-negro_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_pantalones-color-negro-adidas-messi-nino_5_logo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_bermuda-color-negro-adidas-messi-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_pantalones-negro-adidas-messi-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_pantalones-cortos-adidas-messi-nino-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_bermuda-adidas-messi-nino-negro_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/I/HI3775_pantalones-color-negro-adidas-messi-nino_5_logo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/hi3775",
+    "language": "es",
+    "category": "Ofertas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Ídolos"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/hi3775"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Messi",
+    "submodel": "Kids",
+    "product_model": "Messi niño",
+    "sole_type": ""
+  }
+}

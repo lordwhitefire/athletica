@@ -1,0 +1,84 @@
+{
+  "id": "JH1304-5",
+  "slug": "balon-adidas-mls-2025-training-talla-5-blanco-verde",
+  "name": "adidas MLS 2025 Training talla 5",
+  "model": "MLS 2025 Training talla 5",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Verde",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas MLS 2025 Training talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH1304-5_balon-de-futbol-color-blanco-y-verde-adidas-mls-2025-training-talla-5_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH1304-5_balon-de-futbol-color-blanco-y-verde-adidas-mls-2025-training-talla-5_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH1304-5_pelota-futbol-11-blanco--verde-adidas-mls-2025-training-talla-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH1304-5_pelota-futbol-adidas-mls-2025-training-talla-5-color-blanco-y-verde_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH1304-5_balon-de-futbol-color-blanco-y-verde-adidas-mls-2025-training-talla-5_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH1304-5_pelota-futbol-11-blanco--verde-adidas-mls-2025-training-talla-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH1304-5_pelota-futbol-adidas-mls-2025-training-talla-5-color-blanco-y-verde_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jh1304-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jh1304-5"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "MLS",
+    "submodel": "",
+    "product_model": "MLS 2025 Training talla 5",
+    "sole_type": ""
+  }
+}

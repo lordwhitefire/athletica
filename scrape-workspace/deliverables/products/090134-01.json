@@ -1,0 +1,101 @@
+{
+  "id": "090134-01",
+  "slug": "mochila-de-cuerdas-puma-borussia-dortmund-fan-yellow",
+  "name": "Backpack de cuerdas Puma Borussia Dortmund Fan",
+  "model": "Backpack de cuerdas Puma Borussia Dortmund Fan",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Borussia Dortmund Fan",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c34a64cc66b16ae55ecbe8f56aab168f987d344d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c34a64cc66b16ae55ecbe8f56aab168f987d344d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1fee32a0f63f80e558b4dd48ba048e5528de91db-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fe1119ac7464cfb17372e69a89ce804d33ce6292-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c34a64cc66b16ae55ecbe8f56aab168f987d344d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1fee32a0f63f80e558b4dd48ba048e5528de91db-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fe1119ac7464cfb17372e69a89ce804d33ce6292-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c34a64cc66b16ae55ecbe8f56aab168f987d344d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c34a64cc66b16ae55ecbe8f56aab168f987d344d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1fee32a0f63f80e558b4dd48ba048e5528de91db-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1fee32a0f63f80e558b4dd48ba048e5528de91db-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fe1119ac7464cfb17372e69a89ce804d33ce6292-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fe1119ac7464cfb17372e69a89ce804d33ce6292-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090134-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090134-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Borussia Dortmund Fan",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "JP4014",
+  "slug": "chandal-adidas-real-madrid-nino-entrenamiento-verde-gris",
+  "name": "Chándal adidas Real Madrid Kids Training",
+  "model": "Chándal adidas Real Madrid Kids Training",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Verde / Gris",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chándal infantil de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Pasión madridista en cada movimiento",
+    "intro": "El chándal adidas Real Madrid niño entrenamiento combina confort, estilo y funcionalidad para los jóvenes futbolistas más exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad superior: Tejido de punto suave y ligero para uso prolongado.",
+      "Regulación de la humedad: Tecnología AEROREADY que mantiene la piel seca.",
+      "Diseño completo: Incluye chaqueta con cremallera y pantalón a juego.",
+      "Identidad visible: Escudo del Real Madrid en pecho y pierna.",
+      "Inspiración profesional: Colores basados en la segunda equipación oficial del club."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid niño entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-color-verde-y-gris-adidas-real-madrid-nino-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-color-verde-y-gris-adidas-real-madrid-nino-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-verde-claro-adidas-real-madrid-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-adidas-real-madrid-nino-entrenamiento-color-verde-y-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-adidas-real-madrid-nino-entrenamiento-verde-claro_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-color-verde-y-gris-adidas-real-madrid-nino-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-verde-claro-adidas-real-madrid-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-adidas-real-madrid-nino-entrenamiento-color-verde-y-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4014_chandal-adidas-real-madrid-nino-entrenamiento-verde-claro_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jp4014",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chándal infantil de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Pasión madridista en cada movimiento",
+    "intro": "El chándal adidas Real Madrid niño entrenamiento combina confort, estilo y funcionalidad para los jóvenes futbolistas más exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad superior: Tejido de punto suave y ligero para uso prolongado.",
+      "Regulación de la humedad: Tecnología AEROREADY que mantiene la piel seca.",
+      "Diseño completo: Incluye chaqueta con cremallera y pantalón a juego.",
+      "Identidad visible: Escudo del Real Madrid en pecho y pierna.",
+      "Inspiración profesional: Colores basados en la segunda equipación oficial del club."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jp4014"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Chándal",
+    "submodel": "",
+    "product_model": "Chándal adidas Real Madrid Kids Training",
+    "sole_type": ""
+  }
+}

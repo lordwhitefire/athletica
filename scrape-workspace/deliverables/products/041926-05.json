@@ -1,0 +1,103 @@
+{
+  "id": "041926-05",
+  "slug": "puma-future-match-nc-gris-verde",
+  "name": "Puma Future Match NC",
+  "model": "Future Match NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Gris / Verde",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Future Match NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/da7d9c067315c29de81e9cb2ff79a866bd65e11c-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/da7d9c067315c29de81e9cb2ff79a866bd65e11c-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7905096b6c097f53ea77fe83162156d48ae49cdc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4ceb24ec6278f975d44f4cbad634c336bbef3def-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9bdbbb044a8a5c0982931eb4ccf4eb35f9080c9f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/da7d9c067315c29de81e9cb2ff79a866bd65e11c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7905096b6c097f53ea77fe83162156d48ae49cdc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4ceb24ec6278f975d44f4cbad634c336bbef3def-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9bdbbb044a8a5c0982931eb4ccf4eb35f9080c9f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-da7d9c067315c29de81e9cb2ff79a866bd65e11c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/da7d9c067315c29de81e9cb2ff79a866bd65e11c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7905096b6c097f53ea77fe83162156d48ae49cdc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7905096b6c097f53ea77fe83162156d48ae49cdc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4ceb24ec6278f975d44f4cbad634c336bbef3def-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4ceb24ec6278f975d44f4cbad634c336bbef3def-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9bdbbb044a8a5c0982931eb4ccf4eb35f9080c9f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9bdbbb044a8a5c0982931eb4ccf4eb35f9080c9f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/041926-05",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/041926-05"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Match NC",
+    "product_model": "Future Match NC",
+    "sole_type": ""
+  }
+}

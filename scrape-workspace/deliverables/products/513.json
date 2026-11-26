@@ -1,0 +1,75 @@
+{
+  "id": "513",
+  "slug": "munequera-ortopedica-mcdavid-black",
+  "name": "Muñequera ortopédica McDavid",
+  "model": "Muñequera ortopédica McDavid",
+  "brand": "Mc David",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "ortopédica McDavid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/513_imagen-de-la-mu_equera-Mcdavid-Compression-Wrist-Wrap-2018-2019-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/513_imagen-de-la-mu_equera-Mcdavid-Compression-Wrist-Wrap-2018-2019-negro_1_frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/513_imagen-de-la-mu_equera-Mcdavid-Compression-Wrist-Wrap-2018-2019-negro_1_frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/513",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/513"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'top'",
+    "root_model": "Muñequera",
+    "submodel": "",
+    "product_model": "Muñequera ortopédica McDavid",
+    "sole_type": ""
+  }
+}

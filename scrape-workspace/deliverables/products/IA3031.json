@@ -1,0 +1,80 @@
+{
+  "id": "IA3031",
+  "slug": "pack-cintas-de-pelo-adidas-3-unidades-negro-blanco",
+  "name": "Pack cintas de pelo adidas 3 unidades",
+  "model": "Pack cintas de pelo adidas 3 unidades",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Negro / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "cintas de pelo adidas 3 unidades",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA3031_cintas-para-el-pelo-color-negro-y-blanco-adidas-3-unidades_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA3031_cintas-para-el-pelo-color-negro-y-blanco-adidas-3-unidades_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA3031_cintas-de-pelo-negro--blanco-adidas-3-unidades_2_detalle-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA3031_cintas-cabello-adidas-3-unidades-color-negro-y-blanco_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA3031_cintas-para-el-pelo-color-negro-y-blanco-adidas-3-unidades_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA3031_cintas-de-pelo-negro--blanco-adidas-3-unidades_2_detalle-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA3031_cintas-cabello-adidas-3-unidades-color-negro-y-blanco_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ia3031",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ia3031"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'cinta'",
+    "root_model": "Pack",
+    "submodel": "",
+    "product_model": "Pack cintas de pelo adidas 3 unidades",
+    "sole_type": ""
+  }
+}

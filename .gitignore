@@ -17,3 +17,8 @@ reverse-engineering-workspace/samples/
 # Logs / OS
 *.log
 .DS_Store
+
+# Local Python env for translation
+scrape-workspace/venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,88 @@
+{
+  "id": "5116215-7702",
+  "slug": "pantalon-reusch-contest-2-advance-black",
+  "name": "Reusch Contest 2 Advance",
+  "model": "Contest 2 Advance",
+  "brand": "Reusch",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de portero con protecciones Reusch - negro",
+    "tagline": "Protección integral para los que se lanzan sin miedo",
+    "intro": "El pantalón Reusch Contest Advance te permite afrontar cada jugada con confianza. Su acolchado técnico y su corte ajustado te ofrecen seguridad sin comprometer tu movilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Protección donde importa: Refuerzos en caderas y rodillas para impactos.",
+      "Confort técnico: Tejido ligero que no entorpece tus movimientos.",
+      "Durabilidad garantizada: Materiales resistentes al desgaste.",
+      "Diseño funcional: Ideal para porteros en todas las categorías."
+    ],
+    "technical_details": {
+      "range": "Reusch Contest 2 Advance",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5116215-7702_pantalon-largo-color-negro-reusch-contest-2-advance_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5116215-7702_pantalon-largo-color-negro-reusch-contest-2-advance_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5116215-7702_pantalon-chandal-negro-reusch-contest-2-advance_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5116215-7702_pantalon-largo-color-negro-reusch-contest-2-advance_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5116215-7702_pantalon-chandal-negro-reusch-contest-2-advance_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/5116215-7702",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de portero con protecciones Reusch - negro",
+    "tagline": "Protección integral para los que se lanzan sin miedo",
+    "intro": "El pantalón Reusch Contest Advance te permite afrontar cada jugada con confianza. Su acolchado técnico y su corte ajustado te ofrecen seguridad sin comprometer tu movilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Protección donde importa: Refuerzos en caderas y rodillas para impactos.",
+      "Confort técnico: Tejido ligero que no entorpece tus movimientos.",
+      "Durabilidad garantizada: Materiales resistentes al desgaste.",
+      "Diseño funcional: Ideal para porteros en todas las categorías."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/5116215-7702"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Contest",
+    "submodel": "",
+    "product_model": "Contest 2 Advance",
+    "sole_type": ""
+  }
+}

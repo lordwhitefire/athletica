@@ -1,0 +1,92 @@
+{
+  "id": "HV9955-010",
+  "slug": "polo-nike-atletico-dri-fit-2-0-black",
+  "name": "Polo Nike Atlético Dri-Fit 2.0",
+  "model": "Polo Nike Atlético Dri-Fit 2.0",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Atlético de Madrid Nike polo - black",
+    "tagline": "Red and white elegance for every day",
+    "intro": "This Nike Atlético de Madrid polo accompanies you with a casual style that reflects the team's identity. Ideal for urban looks with a sporty touch.",
+    "collection": "",
+    "key_benefits": [
+      "Elegant design: Classic cut with the Atleti crest to represent your passion.",
+      "Lasting Comfort: Soft fabric with optimal breathability.",
+      "Versatility: Perfect for everyday or informal events."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético Dri-Fit 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9955-010_polo-color-negro-nike-atletico-dri-fit-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9955-010_polo-color-negro-nike-atletico-dri-fit-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9955-010_niqui-negro-nike-atletico-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9955-010_polo-nike-atletico-dri-fit-2-0-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9955-010_polo-color-negro-nike-atletico-dri-fit-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9955-010_niqui-negro-nike-atletico-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9955-010_polo-nike-atletico-dri-fit-2-0-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv9955-010",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Polo Nike del Atlético de Madrid - negro",
+    "tagline": "Elegancia rojiblanca para cada día",
+    "intro": "Este polo Nike del Atlético de Madrid te acompaña con un estilo casual que refleja la identidad del equipo. Ideal para looks urbanos con un toque deportivo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño elegante: Corte clásico con el escudo del Atleti para representar tu pasión.",
+      "Comodidad duradera: Tejido suave con transpirabilidad óptima.",
+      "Versatilidad: Perfecto para el día a día o eventos informales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv9955-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo Nike Atlético Dri-Fit 2.0",
+    "sole_type": ""
+  }
+}

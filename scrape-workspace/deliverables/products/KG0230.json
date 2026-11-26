@@ -1,0 +1,96 @@
+{
+  "id": "KG0230",
+  "slug": "camiseta-adidas-japon-eqt-white",
+  "name": "adidas Japón EQT",
+  "model": "Japón EQT",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Japón - blanca",
+    "tagline": "Un homenaje al legado del fútbol japonés",
+    "intro": "La camiseta adidas Japón EQT recupera la esencia de una de las líneas más icónicas de adidas combinando inspiración futbolera y estilo urbano. Su diseño en color blanco incorpora detalles clásicos de la federación japonesa y de la colección EQT, convirtiéndola en una prenda perfecta para quienes quieren mostrar su pasión por la selección de Japón dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT retro: Inspirado en la histórica colección Equipment de adidas.",
+      "Tejido de algodón: Suave, cómodo y agradable al tacto para el uso diario.",
+      "Corte holgado: Aporta libertad de movimiento y un estilo desenfadado.",
+      "Detalles oficiales de Japón: Incluye escudo federativo y logotipos adidas distintivos."
+    ],
+    "technical_details": {
+      "range": "adidas Japón EQT",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-color-blanco-adidas-japon-eqt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-color-blanco-adidas-japon-eqt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-blanca-adidas-japon-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-adidas-japon-eqt-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-adidas-japon-eqt-blanca_4_detalle-hombro-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-color-blanco-adidas-japon-eqt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-blanca-adidas-japon-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-adidas-japon-eqt-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0230_camiseta-adidas-japon-eqt-blanca_4_detalle-hombro-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg0230",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Japón - blanca",
+    "tagline": "Un homenaje al legado del fútbol japonés",
+    "intro": "La camiseta adidas Japón EQT recupera la esencia de una de las líneas más icónicas de adidas combinando inspiración futbolera y estilo urbano. Su diseño en color blanco incorpora detalles clásicos de la federación japonesa y de la colección EQT, convirtiéndola en una prenda perfecta para quienes quieren mostrar su pasión por la selección de Japón dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT retro: Inspirado en la histórica colección Equipment de adidas.",
+      "Tejido de algodón: Suave, cómodo y agradable al tacto para el uso diario.",
+      "Corte holgado: Aporta libertad de movimiento y un estilo desenfadado.",
+      "Detalles oficiales de Japón: Incluye escudo federativo y logotipos adidas distintivos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg0230"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Japón",
+    "submodel": "",
+    "product_model": "Japón EQT",
+    "sole_type": ""
+  }
+}

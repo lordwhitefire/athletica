@@ -1,0 +1,83 @@
+{
+  "id": "JF8345",
+  "slug": "rinonera-adidas-bayern-grey",
+  "name": "Riñonera adidas Bayern",
+  "model": "Riñonera adidas Bayern",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Bayern",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/F/JF8345_rinonera-color-gris-adidas-bayern_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/F/JF8345_rinonera-color-gris-adidas-bayern_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/F/JF8345_rinonera-color-gris-adidas-bayern_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jf8345",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jf8345"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'equipos'",
+    "root_model": "Riñonera",
+    "submodel": "",
+    "product_model": "Riñonera adidas Bayern",
+    "sole_type": ""
+  }
+}

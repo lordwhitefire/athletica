@@ -1,0 +1,96 @@
+{
+  "id": "KE5104",
+  "slug": "balon-adidas-arsenal-mini-red",
+  "name": "adidas Arsenal mini",
+  "model": "Arsenal mini",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol adidas del Arsenal en talla mini - rojo",
+    "tagline": "El mini balón perfecto para los fans del Arsenal",
+    "intro": "El balón mini adidas del Arsenal está diseñado para que los aficionados gunner disfruten del fútbol en cualquier lugar. Inspirado en el balón oficial del club, presenta un diseño llamativo en color rojo con detalles del Arsenal que aportan un estilo auténtico y reconocible.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Con escudo del club y detalles inspirados en la equipación oficial.",
+      "Núcleo de espuma: No necesita inflado y mantiene siempre su forma.",
+      "Tamaño mini: Perfecto para mejorar el control y la técnica.",
+      "Construcción ligera: Fácil de transportar y utilizar en cualquier momento."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_mini-balon-color-rojo-adidas-arsenal-mini_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_mini-balon-color-rojo-adidas-arsenal-mini_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_mini-pelota-roja-adidas-arsenal-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_balon-mini-adidas-arsenal-mini-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_mini-balon-adidas-arsenal-mini-roja_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_mini-balon-color-rojo-adidas-arsenal-mini_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_mini-pelota-roja-adidas-arsenal-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_balon-mini-adidas-arsenal-mini-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5104_mini-balon-adidas-arsenal-mini-roja_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ke5104",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol adidas del Arsenal en talla mini - rojo",
+    "tagline": "El mini balón perfecto para los fans del Arsenal",
+    "intro": "El balón mini adidas del Arsenal está diseñado para que los aficionados gunner disfruten del fútbol en cualquier lugar. Inspirado en el balón oficial del club, presenta un diseño llamativo en color rojo con detalles del Arsenal que aportan un estilo auténtico y reconocible.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Con escudo del club y detalles inspirados en la equipación oficial.",
+      "Núcleo de espuma: No necesita inflado y mantiene siempre su forma.",
+      "Tamaño mini: Perfecto para mejorar el control y la técnica.",
+      "Construcción ligera: Fácil de transportar y utilizar en cualquier momento."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ke5104"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Arsenal mini",
+    "submodel": "",
+    "product_model": "Arsenal mini",
+    "sole_type": ""
+  }
+}

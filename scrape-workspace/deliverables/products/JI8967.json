@@ -1,0 +1,104 @@
+{
+  "id": "JI8967",
+  "slug": "camiseta-adidas-sevilla-entrenamiento-red",
+  "name": "adidas Sevilla Training",
+  "model": "Sevilla entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sevilla 2025 2026 Adidas Short Sleeve Training Jersey - Red",
+    "tagline": "The classic that inspires every play",
+    "intro": "The adidas Sevilla training T-shirt combines comfort, breathability and the DNA of Sevilla FC. Finished in vibrant red with official details to show off your passion on and off the field. Ideal for training, competing or daily wear.",
+    "collection": "",
+    "key_benefits": [
+      "Performance you can feel: Light fabric that accompanies your movements at all times.",
+      "Stay fresh: Breathable panels to manage sweat in full action.",
+      "Official pride: Club emblem and branding to show off your colors with authenticity.",
+      "Total versatility: Perfect for matches, training or casual style."
+    ],
+    "technical_details": {
+      "range": "adidas Sevilla entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-color-rojo-adidas-sevilla-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-color-rojo-adidas-sevilla-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-roja-adidas-sevilla-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-adidas-sevilla-entrenamiento-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-adidas-sevilla-entrenamiento-roja_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-color-rojo-adidas-sevilla-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-roja-adidas-sevilla-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-adidas-sevilla-entrenamiento-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI8967_camiseta-adidas-sevilla-entrenamiento-roja_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ji8967",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas del Sevilla 2025 2026 - roja",
+    "tagline": "El clásico que inspira cada jugada",
+    "intro": "La Camiseta adidas Sevilla entrenamiento combina confort, transpirabilidad y el ADN del Sevilla FC. Acabado en rojo vibrante con detalles oficiales para lucir tu pasión dentro y fuera del campo. Ideal para entrenar, competir o llevarla a diario.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento que se siente: Tejido ligero que acompaña tus movimientos en todo momento.",
+      "Mantén la frescura: Paneles transpirables para gestionar el sudor en plena acción.",
+      "Orgullo oficial: Escudo y branding del club para lucir tus colores con autenticidad.",
+      "Versatilidad total: Perfecta para partido, entrenamiento o estilo casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ji8967"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Sevilla",
+    "submodel": "",
+    "product_model": "Sevilla entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "55904-577",
+  "slug": "kelme-elite-in-white",
+  "name": "Kelme Elite IN",
+  "model": "Elite IN",
+  "brand": "Kelme",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Elite IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_zapatillas-futbol-sala-color-blanco-kelme-elite-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_zapatillas-futbol-sala-color-blanco-kelme-elite-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_zapatillas-de-futbol-sala-blancas-kelme-elite-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_botas-futbol-sala-kelme-elite-in-color-blanco_3_sin-vista-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_bambas-futbol-sala-kelme-elite-in-blancas_4_sin-detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_tenis-futbol-sala-color-blanco-kelme-elite-in_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_zapatillas-futbol-sala-blancas-kelme-elite-in_6_detalle-suela.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_zapatillas-futbol-sala-color-blanco-kelme-elite-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_zapatillas-de-futbol-sala-blancas-kelme-elite-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_botas-futbol-sala-kelme-elite-in-color-blanco_3_sin-vista-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_bambas-futbol-sala-kelme-elite-in-blancas_4_sin-detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_tenis-futbol-sala-color-blanco-kelme-elite-in_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55904-577_zapatillas-futbol-sala-blancas-kelme-elite-in_6_detalle-suela.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/55904-577",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/55904-577"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "medium",
+    "rule": "source fallback 'zapatillas'",
+    "root_model": "Elite",
+    "submodel": "IN",
+    "product_model": "Elite IN",
+    "sole_type": ""
+  }
+}

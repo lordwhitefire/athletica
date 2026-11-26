@@ -1,0 +1,75 @@
+{
+  "id": "N0002545114OS",
+  "slug": "pack-6-cintas-de-pelo-nike-printed",
+  "name": "Pack 6 cintas de pelo Nike Printed",
+  "model": "Pack 6 cintas de pelo Nike Printed",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "6 cintas de pelo Nike Printed",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0002545114OS_cintas-para-el-pelo-nike-printed-6-unidades_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0002545114OS_cintas-para-el-pelo-nike-printed-6-unidades_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0002545114OS_cintas-para-el-pelo-nike-printed-6-unidades_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n0002545114os",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n0002545114os"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'cinta'",
+    "root_model": "Pack",
+    "submodel": "",
+    "product_model": "Pack 6 cintas de pelo Nike Printed",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "FQ2500-659",
+  "slug": "sudadera-nike-chelsea-mujer-entrenamiento-df-pink",
+  "name": "Nike Chelsea Women Training DF",
+  "model": "Chelsea mujer entrenamiento DF",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Chelsea mujer entrenamiento DF",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-color-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-color-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-nike-chelsea-mujer-entrenamiento-strike-dri-fit-color-rosa_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-nike-chelsea-mujer-entrenamiento-strike-dri-fit-rosa_4_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-color-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_5_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_6_detalle-acabado-mangas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-color-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-nike-chelsea-mujer-entrenamiento-strike-dri-fit-color-rosa_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-nike-chelsea-mujer-entrenamiento-strike-dri-fit-rosa_4_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-color-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_5_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ2500-659_camiseta-manga-larga-rosa-nike-chelsea-mujer-entrenamiento-strike-dri-fit_6_detalle-acabado-mangas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fq2500-659",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fq2500-659"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Chelsea Women",
+    "submodel": "",
+    "product_model": "Chelsea mujer entrenamiento DF",
+    "sole_type": ""
+  }
+}

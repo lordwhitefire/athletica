@@ -1,0 +1,78 @@
+{
+  "id": "704-BL",
+  "slug": "mallas-futbol-mcdavid-mujer-compression-black",
+  "name": "Mallas fútbol McDavid Women Compression",
+  "model": "Mallas fútbol McDavid Women Compression",
+  "brand": "Mc David",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "fútbol McDavid mujer Compression",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/704-BL_mallas-cortas-color-negro-mcdavid-mujer-compression_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/704-BL_mallas-cortas-color-negro-mcdavid-mujer-compression_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/704-BL_licras-cortas-negras-mcdavid-mujer-compression_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/704-BL_mallas-cortas-color-negro-mcdavid-mujer-compression_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/704-BL_licras-cortas-negras-mcdavid-mujer-compression_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/704-bl",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/704-bl"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas fútbol McDavid Women Compression",
+    "sole_type": ""
+  }
+}

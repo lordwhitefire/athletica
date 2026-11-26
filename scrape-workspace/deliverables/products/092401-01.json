@@ -1,0 +1,109 @@
+{
+  "id": "092401-01",
+  "slug": "bolsa-de-deporte-puma-train-all-day-black",
+  "name": "Bolsa de deporte Puma Train All Day",
+  "model": "Bolsa de deporte Puma Train All Day",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports bag (48 x 28 x 25 cm) - black",
+    "tagline": "Everything ready for each training",
+    "intro": "The Puma Train All Day sports bag is designed to accompany you from the gym to the soccer field. Its large main compartment, multiple pockets and water-resistant base allow you to transport your equipment in an organized and protected way throughout the day.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad de 35 litros: Espacio suficiente para ropa, calzado y accesorios deportivos.",
+      "Base impermeable: Protege el contenido frente a la humedad y el desgaste.",
+      "Multiple compartments: They make it easy to keep your equipment perfectly organized.",
+      "Correa acolchada ajustable: Mayor comodidad durante el transporte."
+    ],
+    "technical_details": {
+      "range": "de deporte Puma Train All Day",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ce60d485522da6bc555ffbe84c76f6191f0d6930-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ce60d485522da6bc555ffbe84c76f6191f0d6930-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c3543cf7469055650f8aa0eb28bcb7b786c60be6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5249e8a2b2db23482b9f00b2328e08e1c76b0522-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bfaaf149a3f44f6902d836734e98531353bc197a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ce60d485522da6bc555ffbe84c76f6191f0d6930-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c3543cf7469055650f8aa0eb28bcb7b786c60be6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5249e8a2b2db23482b9f00b2328e08e1c76b0522-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bfaaf149a3f44f6902d836734e98531353bc197a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ce60d485522da6bc555ffbe84c76f6191f0d6930-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ce60d485522da6bc555ffbe84c76f6191f0d6930-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c3543cf7469055650f8aa0eb28bcb7b786c60be6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c3543cf7469055650f8aa0eb28bcb7b786c60be6-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5249e8a2b2db23482b9f00b2328e08e1c76b0522-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5249e8a2b2db23482b9f00b2328e08e1c76b0522-1500x1500.jpg"
+    },
+    {
+      "_id": "image-bfaaf149a3f44f6902d836734e98531353bc197a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bfaaf149a3f44f6902d836734e98531353bc197a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092401-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Bolsa de deportes Puma (48 x 28 x 25 cm) - negra",
+    "tagline": "Todo listo para cada entrenamiento",
+    "intro": "La bolsa de deporte Puma Train All Day está diseñada para acompañarte desde el gimnasio hasta el campo de fútbol. Su amplio compartimento principal, múltiples bolsillos y base resistente al agua permiten transportar tu equipación de forma organizada y protegida durante todo el día.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad de 35 litros: Espacio suficiente para ropa, calzado y accesorios deportivos.",
+      "Base impermeable: Protege el contenido frente a la humedad y el desgaste.",
+      "Múltiples compartimentos: Facilitan mantener la equipación perfectamente organizada.",
+      "Correa acolchada ajustable: Mayor comodidad durante el transporte."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092401-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'bolsa'",
+    "root_model": "Bolsa",
+    "submodel": "",
+    "product_model": "Bolsa de deporte Puma Train All Day",
+    "sole_type": ""
+  }
+}

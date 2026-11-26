@@ -1,0 +1,96 @@
+{
+  "id": "KZ2480",
+  "slug": "polo-adidas-real-madrid-marron",
+  "name": "Polo adidas Real Madrid",
+  "model": "Polo adidas Real Madrid",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Polo deportivo de algodón adidas del Real Madrid - beige",
+    "tagline": "Elegancia y pasión por el Real Madrid",
+    "intro": "El polo adidas del Real Madrid combina un estilo deportivo y sofisticado con la identidad de uno de los clubes más importantes del mundo. Su diseño ofrece una imagen elegante y versátil, ideal para acompañarte tanto en tu día a día como en los momentos de apoyo al conjunto blanco.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón y poliéster: Combinación que aporta suavidad, comodidad y durabilidad.",
+      "Cuello tipo polo: Acabado elegante para un look deportivo y casual.",
+      "Escudo oficial del Real Madrid: Muestra tu pasión por el club con orgullo.",
+      "Corte clásico: Ajuste cómodo para el uso diario."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_polo-color-marron-adidas-real-madrid_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_polo-color-marron-adidas-real-madrid_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_niqui-beige-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_polo-adidas-real-madrid-color-marron_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_niqui-adidas-real-madrid-beige_4_detalle-espalda-y-hombro-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_polo-color-marron-adidas-real-madrid_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_niqui-beige-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_polo-adidas-real-madrid-color-marron_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2480_niqui-adidas-real-madrid-beige_4_detalle-espalda-y-hombro-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kz2480",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Polo deportivo de algodón adidas del Real Madrid - beige",
+    "tagline": "Elegancia y pasión por el Real Madrid",
+    "intro": "El polo adidas del Real Madrid combina un estilo deportivo y sofisticado con la identidad de uno de los clubes más importantes del mundo. Su diseño ofrece una imagen elegante y versátil, ideal para acompañarte tanto en tu día a día como en los momentos de apoyo al conjunto blanco.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón y poliéster: Combinación que aporta suavidad, comodidad y durabilidad.",
+      "Cuello tipo polo: Acabado elegante para un look deportivo y casual.",
+      "Escudo oficial del Real Madrid: Muestra tu pasión por el club con orgullo.",
+      "Corte clásico: Ajuste cómodo para el uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kz2480"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo adidas Real Madrid",
+    "sole_type": ""
+  }
+}

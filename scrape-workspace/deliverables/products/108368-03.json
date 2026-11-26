@@ -1,0 +1,123 @@
+{
+  "id": "108368-03",
+  "slug": "puma-future-8-match-mg-yellow",
+  "name": "Puma Future 8 Match MG",
+  "model": "Future 8 Match",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Future 8 Match",
+      "sole_type": "MG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "MG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/837425922369869af71c398ca16225c0ee085e69-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/837425922369869af71c398ca16225c0ee085e69-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/077920e89b269bc8518c4614697e91836d4e1498-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/74c33a83b38e4aa75f199ceda272c63340b89e23-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/045d6d37324e63822d3be69c96557368ac378091-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a537dc559915b95410929a0de7fe44dd5e334942-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ecfe4bfd28b70a8081e6958ba52044c7efd2e01d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b0f80af87cee9fef772f5b580d75f10813da97f9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b6f1534bda58d8915b8fe8ce5a16691ef01469ae-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/837425922369869af71c398ca16225c0ee085e69-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/077920e89b269bc8518c4614697e91836d4e1498-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/74c33a83b38e4aa75f199ceda272c63340b89e23-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/045d6d37324e63822d3be69c96557368ac378091-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a537dc559915b95410929a0de7fe44dd5e334942-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ecfe4bfd28b70a8081e6958ba52044c7efd2e01d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b0f80af87cee9fef772f5b580d75f10813da97f9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b6f1534bda58d8915b8fe8ce5a16691ef01469ae-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-837425922369869af71c398ca16225c0ee085e69-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/837425922369869af71c398ca16225c0ee085e69-1500x1500.jpg"
+    },
+    {
+      "_id": "image-077920e89b269bc8518c4614697e91836d4e1498-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/077920e89b269bc8518c4614697e91836d4e1498-1500x1500.jpg"
+    },
+    {
+      "_id": "image-74c33a83b38e4aa75f199ceda272c63340b89e23-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/74c33a83b38e4aa75f199ceda272c63340b89e23-1500x1500.jpg"
+    },
+    {
+      "_id": "image-045d6d37324e63822d3be69c96557368ac378091-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/045d6d37324e63822d3be69c96557368ac378091-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a537dc559915b95410929a0de7fe44dd5e334942-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a537dc559915b95410929a0de7fe44dd5e334942-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ecfe4bfd28b70a8081e6958ba52044c7efd2e01d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ecfe4bfd28b70a8081e6958ba52044c7efd2e01d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b0f80af87cee9fef772f5b580d75f10813da97f9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b0f80af87cee9fef772f5b580d75f10813da97f9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b6f1534bda58d8915b8fe8ce5a16691ef01469ae-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b6f1534bda58d8915b8fe8ce5a16691ef01469ae-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/108368-03",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/108368-03"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "8 Match",
+    "product_model": "Future 8 Match",
+    "sole_type": "MG"
+  }
+}

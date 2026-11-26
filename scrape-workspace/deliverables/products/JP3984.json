@@ -1,0 +1,102 @@
+{
+  "id": "JP3984",
+  "slug": "pantalon-adidas-real-madrid-mujer-entrenamiento-grey",
+  "name": "adidas Real Madrid Women Training",
+  "model": "Real Madrid mujer entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas women's long training pants - gray",
+    "tagline": "Female performance at the highest level",
+    "intro": "These long Real Madrid training pants for women combine functionality and style in a garment created to stand out. Its elastic fabric and slim fit give you total freedom in every movement.",
+    "collection": "",
+    "key_benefits": [
+      "Total freedom: Elastic fabric that adapts to your every movement.",
+      "Dry comfort: AEROREADY technology that keeps the skin free of moisture.",
+      "Feminine design: Slim fit designed for a feminine silhouette.",
+      "Real Madrid identity: Heat-transferred shield that expresses your passion for the team.",
+      "Versatile use: Perfect for both training and casual use."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid mujer entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-largo-color-gris-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-largo-color-gris-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-chandal-gris-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-chandal-adidas-real-madrid-mujer-entrenamiento-color-gris_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-largo-adidas-real-madrid-mujer-entrenamiento-gris_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-largo-color-gris-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-chandal-gris-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-chandal-adidas-real-madrid-mujer-entrenamiento-color-gris_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3984_pantalon-largo-adidas-real-madrid-mujer-entrenamiento-gris_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3984",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo para mujer de entrenamiento adidas del Real Madrid - gris",
+    "tagline": "Rendimiento femenino al más alto nivel",
+    "intro": "Este pantalón largo de entrenamiento del Real Madrid para mujer combina funcionalidad y estilo en una prenda creada para destacar. Su tejido elástico y su corte entallado te proporcionan libertad total en cada movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad total: Tejido elástico que se adapta a cada movimiento.",
+      "Confort seco: Tecnología AEROREADY que mantiene la piel libre de humedad.",
+      "Diseño femenino: Ajuste slim fit pensado para una silueta femenina.",
+      "Identidad madridista: Escudo termotransferido que expresa tu pasión por el equipo.",
+      "Uso versátil: Perfecto tanto para entrenamiento como para uso casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3984"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid mujer entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "030833-10",
+  "slug": "puma-ultra-light-ankle-yellow",
+  "name": "Puma Ultra Light Ankle",
+  "model": "Ultra Light Ankle",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Protective Ankle Pad - Fluor Yellow, Navy Blue",
+    "tagline": "Lightweight protection with additional coverage",
+    "intro": "The Puma Ultra Light Ankle football shin guards are designed for footballers looking to combine protection, comfort and freedom of movement. Its PP cover incorporates EVA padding and is complemented by a protective ankle strap to offer stable support and greater coverage during play.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight protection: Its construction helps protect the shin without adding excessive bulk to the equipment.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Additional coverage: The integrated ankle support provides additional protection in the ankle area.",
+      "Stable fit: Its design helps keep the protections correctly placed during the game.",
+      "Freedom of movement: Its light profile allows you to run and change direction naturally."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Ankle",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a30eb6f7cb6866ce78d15a604280f62bc82553e5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a30eb6f7cb6866ce78d15a604280f62bc82553e5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1cab0c8769844d4f2e7d6a1863c025020a3ac67e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/77e49fb76dbf1f5ac2023cd902a4fea35cfae94a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a30eb6f7cb6866ce78d15a604280f62bc82553e5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1cab0c8769844d4f2e7d6a1863c025020a3ac67e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/77e49fb76dbf1f5ac2023cd902a4fea35cfae94a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a30eb6f7cb6866ce78d15a604280f62bc82553e5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a30eb6f7cb6866ce78d15a604280f62bc82553e5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1cab0c8769844d4f2e7d6a1863c025020a3ac67e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1cab0c8769844d4f2e7d6a1863c025020a3ac67e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-77e49fb76dbf1f5ac2023cd902a4fea35cfae94a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/77e49fb76dbf1f5ac2023cd902a4fea35cfae94a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/030833-10",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Puma con tobillera protectora - amarillas flúor, azul marino",
+    "tagline": "Protección ligera con cobertura adicional",
+    "intro": "Las espinilleras de fútbol Puma Ultra Light Ankle están diseñadas para futbolistas que buscan combinar protección, comodidad y libertad de movimiento. Su cubierta de PP incorpora acolchado de EVA y se complementa con una tobillera protectora para ofrecer una sujeción estable y una mayor cobertura durante el juego.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su construcción ayuda a proteger la espinilla sin añadir un volumen excesivo al equipamiento.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Cobertura adicional: La tobillera integrada aporta protección complementaria en la zona del tobillo.",
+      "Ajuste estable: Su diseño ayuda a mantener las protecciones correctamente colocadas durante el juego.",
+      "Libertad de movimiento: Su perfil ligero permite correr y cambiar de dirección con naturalidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/030833-10"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Ankle",
+    "product_model": "Ultra Light Ankle",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "783200-01",
+  "slug": "camiseta-puma-austria-26-red",
+  "name": "Puma Austria 26",
+  "model": "Austria 26",
+  "brand": "Puma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación Puma de Austria 2026 - roja",
+    "tagline": "Austria 2026: Tradición con espíritu competitivo",
+    "intro": "Con un diseño sobrio y elegante, la camiseta de Austria 2026 destaca por su limpieza visual y rendimiento técnico. Ideal para quienes apoyan a la selección con orgullo y pasión en cada torneo internacional.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño nacional elegante: Colores tradicionales y detalles sutiles para una imagen poderosa.",
+      "Transpirabilidad superior: Tejido técnico que mantiene el cuerpo seco bajo presión.",
+      "Estilo moderno: Corte limpio, sin distracciones, para una imagen imponente."
+    ],
+    "technical_details": {
+      "range": "Puma Austria 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783200-01_camiseta-color-rojo-puma-austria-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783200-01_camiseta-color-rojo-puma-austria-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783200-01_camiseta-roja-puma-austria-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783200-01_camiseta-puma-austria-26-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783200-01_camiseta-color-rojo-puma-austria-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783200-01_camiseta-roja-puma-austria-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783200-01_camiseta-puma-austria-26-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/783200-01",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de la primera equipación Puma de Austria 2026 - roja",
+    "tagline": "Austria 2026: Tradición con espíritu competitivo",
+    "intro": "Con un diseño sobrio y elegante, la camiseta de Austria 2026 destaca por su limpieza visual y rendimiento técnico. Ideal para quienes apoyan a la selección con orgullo y pasión en cada torneo internacional.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño nacional elegante: Colores tradicionales y detalles sutiles para una imagen poderosa.",
+      "Transpirabilidad superior: Tejido técnico que mantiene el cuerpo seco bajo presión.",
+      "Estilo moderno: Corte limpio, sin distracciones, para una imagen imponente."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/783200-01"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Austria",
+    "submodel": "",
+    "product_model": "Austria 26",
+    "sole_type": ""
+  }
+}

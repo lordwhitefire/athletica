@@ -26,7 +26,7 @@ The admin workspace manages products, payouts, and affiliates. If it's reachable
 
 - Existing: `rollout/src/lib/auth/admin.ts` (`requireAdmin` / `getAdminUser` using `getUser()`), `rollout/src/lib/auth/door-key-validate.ts`, `rollout/src/app/admin/signin`, `rollout/src/app/admin/signup`, `rollout/src/proxy.ts`, the `admin_access_keys` table (kind='invite'|'door', token_hash UNIQUE, sliding expiry), the RLS policies (role-based, but **unwrapped `auth.jwt()`** — performance bug to fix).
 - The blueprint requires `getClaims()` not `getUser()` (saves 50–200ms/page). The blueprint requires `FORCE ROW LEVEL SECURITY` on the sensitive tables. The blueprint requires wrapping `auth.jwt()` in `(select ...)` in every policy.
-- Lock #2 (door-key) should be checked in Next.js middleware as a first-line filter; Lock #3 (JWT role) stays per-route.
+- Lock #2 (door-key) is checked in `src/proxy.ts` as a first-line filter; Lock #3 (JWT role) stays per-route. **Next 16 rejects a simultaneous `src/middleware.ts`** — do not add one; the proxy is the only gate file.
 - The invite-issuance script is referenced in SQL comments but not in the repo — it must be added (a Node script the owner runs locally to generate + insert an invite code).
 
 ## Boundaries (what NOT to touch)

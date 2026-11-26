@@ -1,0 +1,92 @@
+{
+  "id": "55211-948",
+  "slug": "kelme-precision-in-blue",
+  "name": "Kelme Precision IN",
+  "model": "Precision IN",
+  "brand": "Kelme",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol sala Kelme suela lisa IN - turquesa",
+    "tagline": "Control y precisión para dominar la pista",
+    "intro": "Las zapatillas de fútbol sala Kelme Precision IN están diseñadas para jugadores que buscan máximo control, estabilidad y durabilidad en cada jugada. Su construcción combina materiales resistentes y tecnologías específicas para rendir al más alto nivel en pista.",
+    "collection": "",
+    "key_benefits": [
+      "UltraGrip: Suela de goma que mejora la tracción y el agarre en superficies indoor.",
+      "Refuerzo frontal: Protección en la puntera para mayor durabilidad.",
+      "Lengüeta elástica: Ajuste seguro que mantiene el pie estable.",
+      "Estructura reforzada: Mayor soporte lateral para movimientos intensos.",
+      "Diseño Precision: Pensadas para un control óptimo del balón."
+    ],
+    "technical_details": {
+      "range": "Precision IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_zapatillas-futbol-sala-color-azul-kelme-precision-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_zapatillas-futbol-sala-color-azul-kelme-precision-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_zapatillas-de-futbol-sala-turquesa-kelme-precision-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_botas-futbol-sala-kelme-precision-in-color-azul_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_bambas-futbol-sala-kelme-precision-in-turquesa_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_tenis-futbol-sala-color-azul-kelme-precision-in_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_zapatillas-futbol-sala-color-azul-kelme-precision-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_zapatillas-de-futbol-sala-turquesa-kelme-precision-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_botas-futbol-sala-kelme-precision-in-color-azul_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_bambas-futbol-sala-kelme-precision-in-turquesa_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55211-948_tenis-futbol-sala-color-azul-kelme-precision-in_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/55211-948",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-18",
+    "subtitle": "Zapatillas de fútbol sala Kelme suela lisa IN - turquesa",
+    "tagline": "Control y precisión para dominar la pista",
+    "intro": "Las zapatillas de fútbol sala Kelme Precision IN están diseñadas para jugadores que buscan máximo control, estabilidad y durabilidad en cada jugada. Su construcción combina materiales resistentes y tecnologías específicas para rendir al más alto nivel en pista.",
+    "collection": "",
+    "key_benefits": [
+      "UltraGrip: Suela de goma que mejora la tracción y el agarre en superficies indoor.",
+      "Refuerzo frontal: Protección en la puntera para mayor durabilidad.",
+      "Lengüeta elástica: Ajuste seguro que mantiene el pie estable.",
+      "Estructura reforzada: Mayor soporte lateral para movimientos intensos.",
+      "Diseño Precision: Pensadas para un control óptimo del balón."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/55211-948"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "medium",
+    "rule": "source fallback 'zapatillas'",
+    "root_model": "Precision",
+    "submodel": "IN",
+    "product_model": "Precision IN",
+    "sole_type": ""
+  }
+}

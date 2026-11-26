@@ -1,0 +1,94 @@
+{
+  "id": "JZ9391",
+  "slug": "sudadera-adidas-italia-nino-entrenamiento-white",
+  "name": "adidas Italia Kids Training",
+  "model": "Italia niño entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera infantil de entrenamiento adidas de la selección italiana 2026 - blanca",
+    "tagline": "Pasión italiana desde pequeño",
+    "intro": "Diseño oficial de la selección italiana, adaptado al ritmo y energía de los más pequeños. Ideal para entrenamientos, partidos o simplemente para llevar con orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Italia 2026: Inspirado en la equipación de los grandes.",
+      "Tejido técnico transpirable: Mantiene la piel seca y fresca.",
+      "Ajuste adaptado a niños: Comodidad y libertad de movimiento."
+    ],
+    "technical_details": {
+      "range": "adidas Italia niño entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-color-blanco-adidas-italia-nino-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-color-blanco-adidas-italia-nino-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-blanca-adidas-italia-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-adidas-italia-nino-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-adidas-italia-nino-entrenamiento-blanca_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-color-blanco-adidas-italia-nino-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-blanca-adidas-italia-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-adidas-italia-nino-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9391_sudadera-adidas-italia-nino-entrenamiento-blanca_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jz9391",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera infantil de entrenamiento adidas de la selección italiana 2026 - blanca",
+    "tagline": "Pasión italiana desde pequeño",
+    "intro": "Diseño oficial de la selección italiana, adaptado al ritmo y energía de los más pequeños. Ideal para entrenamientos, partidos o simplemente para llevar con orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Italia 2026: Inspirado en la equipación de los grandes.",
+      "Tejido técnico transpirable: Mantiene la piel seca y fresca.",
+      "Ajuste adaptado a niños: Comodidad y libertad de movimiento."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jz9391"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Italia",
+    "submodel": "",
+    "product_model": "Italia niño entrenamiento",
+    "sole_type": ""
+  }
+}

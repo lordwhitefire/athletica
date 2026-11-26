@@ -1,0 +1,109 @@
+{
+  "id": "085009-01-5",
+  "slug": "balon-puma-nueva-zelanda-culture-t-5-black",
+  "name": "Puma Nueva Zelanda Culture T.5",
+  "model": "Nueva Zelanda Culture T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma New Zealand 2026 Soccer Ball in Size 5 - Black",
+    "tagline": "Juega con el orgullo de Nueva Zelanda",
+    "intro": "The Puma New Zealand Culture size 5 ball is designed to reflect your passion for football in every play. Inspired by the New Zealand national team, it combines resistance, control and an elegant design.",
+    "collection": "",
+    "key_benefits": [
+      "32-panel construction: Improves precision and ball control.",
+      "Machine sewn: Greater resistance and durability.",
+      "Stable flight: Ensures more precise trajectories.",
+      "Versatile use: Ideal for training and recreational play.",
+      "Official design: Inspired by the New Zealand team."
+    ],
+    "technical_details": {
+      "range": "Puma Nueva Zelanda Culture T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/189c39306538c112b1a5f2727ca158f3cd28a489-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/189c39306538c112b1a5f2727ca158f3cd28a489-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/88a452aeac6afbba8e16ef2e19e21a1ca8d2a517-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ff183c22d542f178308d75ef2d323dbf112e1184-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/189c39306538c112b1a5f2727ca158f3cd28a489-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/88a452aeac6afbba8e16ef2e19e21a1ca8d2a517-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ff183c22d542f178308d75ef2d323dbf112e1184-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-189c39306538c112b1a5f2727ca158f3cd28a489-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/189c39306538c112b1a5f2727ca158f3cd28a489-1500x1500.jpg"
+    },
+    {
+      "_id": "image-88a452aeac6afbba8e16ef2e19e21a1ca8d2a517-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/88a452aeac6afbba8e16ef2e19e21a1ca8d2a517-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ff183c22d542f178308d75ef2d323dbf112e1184-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ff183c22d542f178308d75ef2d323dbf112e1184-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085009-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la selección de Nueva Zelanda 2026 en talla 5 - negro",
+    "tagline": "Juega con el orgullo de Nueva Zelanda",
+    "intro": "El balón Puma Nueva Zelanda Culture talla 5 está diseñado para reflejar tu pasión por el fútbol en cada jugada. Inspirado en la selección neozelandesa, combina resistencia, control y un diseño elegante.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción de 32 paneles: Mejora la precisión y el control del balón.",
+      "Cosido a máquina: Mayor resistencia y durabilidad.",
+      "Vuelo estable: Garantiza trayectorias más precisas.",
+      "Uso versátil: Ideal para entrenamientos y juego recreativo.",
+      "Diseño oficial: Inspirado en la selección de Nueva Zelanda."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085009-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Nueva",
+    "submodel": "",
+    "product_model": "Nueva Zelanda Culture T.5",
+    "sole_type": ""
+  }
+}

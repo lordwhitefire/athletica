@@ -1,0 +1,97 @@
+{
+  "id": "085178-01-5",
+  "slug": "balon-puma-portugal-culture-t-5-red",
+  "name": "Puma Portugal Culture T.5",
+  "model": "Portugal Culture T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma football of the Portugal national team 2026 in size 5 - red",
+    "tagline": "Passion for Portugal",
+    "intro": "The Puma Portugal Culture Size 5 soccer ball has been designed for fans who want to train and play representing the Portuguese national team. Its striking design incorporates the coat of arms of Portugal, reflecting its identity. Thanks to its machine-stitched construction and durable materials, it offers great durability.",
+    "collection": "",
+    "key_benefits": [
+      "Official Portugal design: With the team's shield and characteristic colors.",
+      "Machine-stitched construction: Greater resistance for frequent use.",
+      "Size 5: Official measurement for training and recreational matches.",
+      "Versatile use: Ideal for hobbyists of all ages."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal Culture T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ad16c706b60c94cf2c6424b7638043ac7cffbda7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ad16c706b60c94cf2c6424b7638043ac7cffbda7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f6d6cee4742be0ff8060b735a3f23ffb96f92a27-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ad16c706b60c94cf2c6424b7638043ac7cffbda7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f6d6cee4742be0ff8060b735a3f23ffb96f92a27-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ad16c706b60c94cf2c6424b7638043ac7cffbda7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ad16c706b60c94cf2c6424b7638043ac7cffbda7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f6d6cee4742be0ff8060b735a3f23ffb96f92a27-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f6d6cee4742be0ff8060b735a3f23ffb96f92a27-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/085178-01-5",
+    "language": "es",
+    "category": "Balón de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Balón de fútbol Puma de la selección de Portugal 2026 en talla 5 - rojo",
+    "tagline": "Pasión por Portugal",
+    "intro": "El balón de fútbol Puma de Portugal Culture Talla 5 ha sido diseñado para los aficionados que quieren entrenar y jugar representando a la selección lusa. Su llamativo diseño incorpora el escudo de Portugal reflejando su identidad. Gracias a su construcción cosida a máquina y a sus materiales resistentes, ofrece una gran durabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Portugal: Con escudo de la selección y colores característicos.",
+      "Construcción cosida a máquina: Mayor resistencia para el uso frecuente.",
+      "Talla 5: Medida oficial para entrenamientos y partidos recreativos.",
+      "Uso versátil: Ideal para aficionados de todas las edades."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Balón de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/085178-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Portugal",
+    "submodel": "",
+    "product_model": "Portugal Culture T.5",
+    "sole_type": ""
+  }
+}

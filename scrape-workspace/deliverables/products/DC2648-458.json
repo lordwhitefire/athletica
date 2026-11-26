@@ -1,0 +1,90 @@
+{
+  "id": "DC2648-458",
+  "slug": "zapatillero-nike-academy-blue",
+  "name": "Zapatillero Nike Academy",
+  "model": "Zapatillero Nike Academy",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Porta botas de fútbol Nike Academy - azul",
+    "tagline": "Protección compacta para tu calzado",
+    "intro": "El Zapatillero Nike Academy es ideal para transportar tus botas o zapatillas de fútbol con orden, limpieza y estilo.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Diseño resistente: Base reforzada para una mayor durabilidad.",
+      "Apertura completa: Cremallera en forma de U para acceder con facilidad.",
+      "Práctico y compacto: Cabe perfectamente en tu mochila de deporte."
+    ],
+    "technical_details": {
+      "range": "Nike Academy",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_zapatillero-color-azul-nike-academy_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_zapatillero-color-azul-nike-academy_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_porta-botas-azul-nike-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_bolsa-calzado-nike-academy-color-azul_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_botero-nike-academy-azul_4_detalle-cierre.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_zapatillero-color-azul-nike-academy_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_porta-botas-azul-nike-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_bolsa-calzado-nike-academy-color-azul_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC2648-458_botero-nike-academy-azul_4_detalle-cierre.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dc2648-458",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Porta botas de fútbol Nike Academy - azul",
+    "tagline": "Protección compacta para tu calzado",
+    "intro": "El Zapatillero Nike Academy es ideal para transportar tus botas o zapatillas de fútbol con orden, limpieza y estilo.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Diseño resistente: Base reforzada para una mayor durabilidad.",
+      "Apertura completa: Cremallera en forma de U para acceder con facilidad.",
+      "Práctico y compacto: Cabe perfectamente en tu mochila de deporte."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dc2648-458"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Zapatillero",
+    "submodel": "",
+    "product_model": "Zapatillero Nike Academy",
+    "sole_type": ""
+  }
+}

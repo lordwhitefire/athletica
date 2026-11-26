@@ -1,0 +1,103 @@
+{
+  "id": "084989-03-5",
+  "slug": "balon-puma-marruecos-culture-t-5-rojo-verde",
+  "name": "Puma Marruecos Culture T.5",
+  "model": "Marruecos Culture T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Rojo / Verde",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma soccer ball for the Morocco national team 2026 in size 5 - green, red",
+    "tagline": "Representa a Marruecos en cada jugada",
+    "intro": "The Puma Morocco Culture size 5 ball is designed to take your passion for football to the next level. Inspired by the Moroccan selection, it combines durability, control and a design full of identity.",
+    "collection": "",
+    "key_benefits": [
+      "32-panel construction: Improves precision and ball control.",
+      "Machine sewn: Greater resistance and durability.",
+      "Stable flight: Ensures more precise trajectories.",
+      "Versatile use: Ideal for training and recreational play.",
+      "Official design: Inspired by the Moroccan national team."
+    ],
+    "technical_details": {
+      "range": "Puma Marruecos Culture T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d92f81caeaf77ce802963c38843fb3a454f83a4f-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d92f81caeaf77ce802963c38843fb3a454f83a4f-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4a5356e4b538fce7647b4e749f2050a7c19186ac-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d92f81caeaf77ce802963c38843fb3a454f83a4f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4a5356e4b538fce7647b4e749f2050a7c19186ac-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-d92f81caeaf77ce802963c38843fb3a454f83a4f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d92f81caeaf77ce802963c38843fb3a454f83a4f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4a5356e4b538fce7647b4e749f2050a7c19186ac-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4a5356e4b538fce7647b4e749f2050a7c19186ac-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084989-03-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la selección de Marruecos 2026 en talla 5 - verde, rojo",
+    "tagline": "Representa a Marruecos en cada jugada",
+    "intro": "El balón Puma Marruecos Culture talla 5 está diseñado para que lleves tu pasión por el fútbol al siguiente nivel. Inspirado en la selección marroquí, combina durabilidad, control y un diseño lleno de identidad.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción de 32 paneles: Mejora la precisión y el control del balón.",
+      "Cosido a máquina: Mayor resistencia y durabilidad.",
+      "Vuelo estable: Garantiza trayectorias más precisas.",
+      "Uso versátil: Ideal para entrenamientos y juego recreativo.",
+      "Diseño oficial: Inspirado en la selección de Marruecos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084989-03-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Marruecos",
+    "submodel": "",
+    "product_model": "Marruecos Culture T.5",
+    "sole_type": ""
+  }
+}

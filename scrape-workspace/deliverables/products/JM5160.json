@@ -1,0 +1,96 @@
+{
+  "id": "JM5160",
+  "slug": "chaqueta-adidas-inter-miami-og-blue",
+  "name": "adidas Inter Miami OG",
+  "model": "Inter Miami OG",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta adidas Originals del Inter de Miami - azul claro",
+    "tagline": "Eleva tu look con alma futbolera",
+    "intro": "Esta chaqueta adidas Originals fusiona moda urbana y ADN futbolístico. Ideal para vestir con orgullo dentro y fuera del estadio, ofrece comodidad, resistencia y un estilo que destaca en cualquier entorno.",
+    "collection": "",
+    "key_benefits": [
+      "Versatilidad urbana: Perfecta para combinar con cualquier look fuera del terreno de juego.",
+      "Protección ligera: Materiales resistentes ideales para cambios de temperatura.",
+      "Orgullo por tu club: Detalles exclusivos del Inter de Miami que refuerzan tu estilo futbolero.",
+      "Comodidad funcional: Cierre integral y bolsillos prácticos para el día a día."
+    ],
+    "technical_details": {
+      "range": "adidas Inter Miami OG",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-chandal-azul-claro-adidas-inter-miami-og_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-entretiempo-adidas-inter-miami-og-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-adidas-inter-miami-og-azul-claro_4_detalle-mano-derecha.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-chandal-azul-claro-adidas-inter-miami-og_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-entretiempo-adidas-inter-miami-og-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5160_chaqueta-adidas-inter-miami-og-azul-claro_4_detalle-mano-derecha.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm5160",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta adidas Originals del Inter de Miami - azul claro",
+    "tagline": "Eleva tu look con alma futbolera",
+    "intro": "Esta chaqueta adidas Originals fusiona moda urbana y ADN futbolístico. Ideal para vestir con orgullo dentro y fuera del estadio, ofrece comodidad, resistencia y un estilo que destaca en cualquier entorno.",
+    "collection": "",
+    "key_benefits": [
+      "Versatilidad urbana: Perfecta para combinar con cualquier look fuera del terreno de juego.",
+      "Protección ligera: Materiales resistentes ideales para cambios de temperatura.",
+      "Orgullo por tu club: Detalles exclusivos del Inter de Miami que refuerzan tu estilo futbolero.",
+      "Comodidad funcional: Cierre integral y bolsillos prácticos para el día a día."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm5160"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Inter Miami",
+    "submodel": "",
+    "product_model": "Inter Miami OG",
+    "sole_type": ""
+  }
+}

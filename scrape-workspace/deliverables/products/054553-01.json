@@ -1,0 +1,87 @@
+{
+  "id": "054553-01",
+  "slug": "toalla-puma-team-pequena-black",
+  "name": "Toalla Puma Team pequeña",
+  "model": "Toalla Puma Team pequeña",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Team pequeña",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/db61346a196630a5f753783b1111687cedcb3671-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/db61346a196630a5f753783b1111687cedcb3671-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ac4862ef92b892e67bac1f1d14c385d95199dc94-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/db61346a196630a5f753783b1111687cedcb3671-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ac4862ef92b892e67bac1f1d14c385d95199dc94-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-db61346a196630a5f753783b1111687cedcb3671-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/db61346a196630a5f753783b1111687cedcb3671-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ac4862ef92b892e67bac1f1d14c385d95199dc94-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ac4862ef92b892e67bac1f1d14c385d95199dc94-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/054553-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/054553-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'toalla'",
+    "root_model": "Toalla",
+    "submodel": "",
+    "product_model": "Toalla Puma Team pequeña",
+    "sole_type": ""
+  }
+}

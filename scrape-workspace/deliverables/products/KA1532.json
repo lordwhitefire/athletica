@@ -1,0 +1,102 @@
+{
+  "id": "KA1532",
+  "slug": "camiseta-adidas-colombia-originals-blue",
+  "name": "adidas Colombia Originals",
+  "model": "Colombia Originals",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Colombia - trullo",
+    "tagline": "Herencia colombiana con identidad Originals",
+    "intro": "La camiseta Colombia adidas Originals encarna el estilo inspirado en el fútbol, celebrando la rica tradición de la federación nacional con un diseño contemporáneo. Su combinación de historia y modernidad la convierte en una prenda imprescindible para quienes quieren llevar la pasión por Colombia más allá del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración futbolera: Diseño que rinde homenaje al legado de la selección colombiana.",
+      "Tejido de punto suave: Comodidad y ligereza para uso diario.",
+      "Corte entallado: Silueta moderna y favorecedora.",
+      "Cuello redondo: Ajuste clásico y versátil.",
+      "Logo Trefoil: Autenticidad adidas Originals."
+    ],
+    "technical_details": {
+      "range": "adidas Colombia Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-color-azul-adidas-colombia-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-color-azul-adidas-colombia-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-trullo-adidas-colombia-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-adidas-colombia-originals-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-adidas-colombia-originals-trullo_4_detalle-general.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-color-azul-adidas-colombia-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-trullo-adidas-colombia-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-adidas-colombia-originals-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1532_camiseta-adidas-colombia-originals-trullo_4_detalle-general.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka1532",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Colombia - trullo",
+    "tagline": "Herencia colombiana con identidad Originals",
+    "intro": "La camiseta Colombia adidas Originals encarna el estilo inspirado en el fútbol, celebrando la rica tradición de la federación nacional con un diseño contemporáneo. Su combinación de historia y modernidad la convierte en una prenda imprescindible para quienes quieren llevar la pasión por Colombia más allá del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración futbolera: Diseño que rinde homenaje al legado de la selección colombiana.",
+      "Tejido de punto suave: Comodidad y ligereza para uso diario.",
+      "Corte entallado: Silueta moderna y favorecedora.",
+      "Cuello redondo: Ajuste clásico y versátil.",
+      "Logo Trefoil: Autenticidad adidas Originals."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka1532"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Colombia",
+    "submodel": "",
+    "product_model": "Colombia Originals",
+    "sole_type": ""
+  }
+}

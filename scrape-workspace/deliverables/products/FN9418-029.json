@@ -1,0 +1,94 @@
+{
+  "id": "FN9418-029",
+  "slug": "pantalon-nike-atletico-entrenamiento-dri-fit-strike-grey",
+  "name": "Nike Atlético Training Dri-Fit Strike",
+  "model": "Atlético entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Atlético entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-largo-color-gris-nike-atletico-strike-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-largo-color-gris-nike-atletico-strike-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-chandal-gris-nike-atletico-strike-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-chandal-nike-atletico-strike-dri-fit-color-gris_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-largo-nike-atletico-strike-dri-fit-gris_4_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-chandal-color-gris-nike-atletico-strike-dri-fit_5_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-largo-gris-nike-atletico-entrenamiento-strike-dri-fit_6_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-largo-color-gris-nike-atletico-strike-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-chandal-gris-nike-atletico-strike-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-chandal-nike-atletico-strike-dri-fit-color-gris_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-largo-nike-atletico-strike-dri-fit-gris_4_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-chandal-color-gris-nike-atletico-strike-dri-fit_5_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN9418-029_pantalon-largo-gris-nike-atletico-entrenamiento-strike-dri-fit_6_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fn9418-029",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fn9418-029"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Atlético",
+    "submodel": "",
+    "product_model": "Atlético entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

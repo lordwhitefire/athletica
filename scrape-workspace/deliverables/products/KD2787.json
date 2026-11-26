@@ -1,0 +1,90 @@
+{
+  "id": "KD2787",
+  "slug": "botellin-adidas-performance-750-ml-blue",
+  "name": "Botellín adidas Performance 750 ml",
+  "model": "Botellín adidas Performance 750 ml",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Botellín de agua para entrenamiento adidas de 750 ml - cian",
+    "tagline": "Tu compañero diario de hidratación",
+    "intro": "Diseñado para quienes entrenan duro y se mantienen activos, el botellín adidas de 0,75 L combina resistencia, estilo y funcionalidad en cada sorbo. Su diseño ergonómico y estructura duradera lo convierten en una opción ideal para el gimnasio, el entrenamiento o tu día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño resistente: Estructura moldeada por inyección que garantiza durabilidad.",
+      "Apertura segura: Cierre de rosca hermético que evita derrames.",
+      "Estilo adidas: Logotipo frontal icónico y acabado deportivo."
+    ],
+    "technical_details": {
+      "range": "adidas Performance 750 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-color-azul-adidas-performance-750-ml_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-color-azul-adidas-performance-750-ml_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-cian-adidas-performance-750-ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-adidas-performance-750-ml-color-azul_3_detalle-boquilla.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-adidas-performance-750-ml-cian_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-color-azul-adidas-performance-750-ml_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-cian-adidas-performance-750-ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-adidas-performance-750-ml-color-azul_3_detalle-boquilla.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2787_botellin-agua-adidas-performance-750-ml-cian_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kd2787",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botellín de agua para entrenamiento adidas de 750 ml - cian",
+    "tagline": "Tu compañero diario de hidratación",
+    "intro": "Diseñado para quienes entrenan duro y se mantienen activos, el botellín adidas de 0,75 L combina resistencia, estilo y funcionalidad en cada sorbo. Su diseño ergonómico y estructura duradera lo convierten en una opción ideal para el gimnasio, el entrenamiento o tu día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño resistente: Estructura moldeada por inyección que garantiza durabilidad.",
+      "Apertura segura: Cierre de rosca hermético que evita derrames.",
+      "Estilo adidas: Logotipo frontal icónico y acabado deportivo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kd2787"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín adidas Performance 750 ml",
+    "sole_type": ""
+  }
+}

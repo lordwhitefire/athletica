@@ -1,0 +1,84 @@
+{
+  "id": "N1009191253OS",
+  "slug": "pack-2-cintas-de-pelo-nike-flex-marron-blanco",
+  "name": "Pack 2 cintas de pelo Nike Flex",
+  "model": "Pack 2 cintas de pelo Nike Flex",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pack de dos cintas de pelo elásticas Nike - marrón, blanco",
+    "tagline": "Control y estilo para tu entrenamiento",
+    "intro": "Estas cintas de pelo Nike Flex ofrecen un ajuste perfecto y comodidad duradera. Diseñadas para deportistas que necesitan mantener el foco y el cabello en su sitio.",
+    "collection": "",
+    "key_benefits": [
+      "Máximo confort: Material elástico que no oprime ni molesta.",
+      "Sujeción segura: Ayuda a mantener el cabello en su lugar.",
+      "Diseño deportivo: Ideal para entrenos, partidos o uso casual.",
+      "Pack práctico: Incluye dos unidades con diferentes combinaciones de color."
+    ],
+    "technical_details": {
+      "range": "2 cintas de pelo Nike Flex",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009191253OS_cintas-para-el-pelo-color-marron-y-blanco-nike-flex-2-unidades_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009191253OS_cintas-para-el-pelo-color-marron-y-blanco-nike-flex-2-unidades_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009191253OS_cintas-de-pelo-marron--blanco-nike-flex-2-unidades_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009191253OS_cintas-para-el-pelo-color-marron-y-blanco-nike-flex-2-unidades_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009191253OS_cintas-de-pelo-marron--blanco-nike-flex-2-unidades_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n1009191253os",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pack de dos cintas de pelo elásticas Nike - marrón, blanco",
+    "tagline": "Control y estilo para tu entrenamiento",
+    "intro": "Estas cintas de pelo Nike Flex ofrecen un ajuste perfecto y comodidad duradera. Diseñadas para deportistas que necesitan mantener el foco y el cabello en su sitio.",
+    "collection": "",
+    "key_benefits": [
+      "Máximo confort: Material elástico que no oprime ni molesta.",
+      "Sujeción segura: Ayuda a mantener el cabello en su lugar.",
+      "Diseño deportivo: Ideal para entrenos, partidos o uso casual.",
+      "Pack práctico: Incluye dos unidades con diferentes combinaciones de color."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n1009191253os"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Pack",
+    "submodel": "2 cintas de pelo Nike Flex",
+    "product_model": "Pack 2 cintas de pelo Nike Flex",
+    "sole_type": ""
+  }
+}

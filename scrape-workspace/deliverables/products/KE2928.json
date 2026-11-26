@@ -1,0 +1,102 @@
+{
+  "id": "KE2928",
+  "slug": "camiseta-adidas-alemania-originals-blue",
+  "name": "adidas Alemania Originals",
+  "model": "Alemania Originals",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Alemania - azul claro",
+    "tagline": "Tradición alemana con actitud Originals",
+    "intro": "La camiseta Alemania adidas Originals rinde homenaje a la cultura futbolera con un diseño inspirado en los colores de la segunda equipación. Una prenda que fusiona tradición y estilo moderno, convirtiéndola en una pieza imprescindible para los amantes del fútbol y la moda urbana.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Diseño basado en la equipación visitante de Alemania.",
+      "Tejido de punto sencillo: Suave y cómodo para uso diario.",
+      "Corte regular: Ajuste equilibrado que aporta libertad de movimiento.",
+      "Logo Trefoil: Sello Originals que añade autenticidad.",
+      "Estética atemporal: Perfecta para combinar con looks urbanos."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-color-azul-adidas-alemania-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-color-azul-adidas-alemania-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-azul-claro-adidas-alemania-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-adidas-alemania-originals-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-adidas-alemania-originals-azul-claro_4_detalle-autenticidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-color-azul-adidas-alemania-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-azul-claro-adidas-alemania-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-adidas-alemania-originals-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE2928_camiseta-adidas-alemania-originals-azul-claro_4_detalle-autenticidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ke2928",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Alemania - azul claro",
+    "tagline": "Tradición alemana con actitud Originals",
+    "intro": "La camiseta Alemania adidas Originals rinde homenaje a la cultura futbolera con un diseño inspirado en los colores de la segunda equipación. Una prenda que fusiona tradición y estilo moderno, convirtiéndola en una pieza imprescindible para los amantes del fútbol y la moda urbana.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Diseño basado en la equipación visitante de Alemania.",
+      "Tejido de punto sencillo: Suave y cómodo para uso diario.",
+      "Corte regular: Ajuste equilibrado que aporta libertad de movimiento.",
+      "Logo Trefoil: Sello Originals que añade autenticidad.",
+      "Estética atemporal: Perfecta para combinar con looks urbanos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ke2928"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania Originals",
+    "sole_type": ""
+  }
+}

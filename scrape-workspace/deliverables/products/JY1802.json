@@ -1,0 +1,100 @@
+{
+  "id": "JY1802",
+  "slug": "polo-adidas-sevilla-red",
+  "name": "Polo adidas Sevilla",
+  "model": "Polo adidas Sevilla",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sevilla adidas polo - red",
+    "tagline": "The classic that inspires every play",
+    "intro": "The adidas Sevilla Polo combines comfort, breathability and the DNA of Sevilla FC. Finished in vibrant red with official details to show off your passion on and off the field. Ideal for training, competing or daily wear.",
+    "collection": "",
+    "key_benefits": [
+      "Performance you can feel: Light fabric that accompanies your movements at all times.",
+      "Stay fresh: Breathable panels to manage sweat in full action.",
+      "Official pride: Club emblem and branding to show off your colors with authenticity.",
+      "Total versatility: Perfect for a casual style."
+    ],
+    "technical_details": {
+      "range": "adidas Sevilla",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_polo-color-rojo-adidas-sevilla_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_polo-color-rojo-adidas-sevilla_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_niqui-rojo-adidas-sevilla_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_polo-adidas-sevilla-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_niqui-adidas-sevilla-rojo_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_polo-color-rojo-adidas-sevilla_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_niqui-rojo-adidas-sevilla_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_polo-adidas-sevilla-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1802_niqui-adidas-sevilla-rojo_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jy1802",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Polo adidas del Sevilla - rojo",
+    "tagline": "El clásico que inspira cada jugada",
+    "intro": "El Polo adidas Sevilla combina confort, transpirabilidad y el ADN del Sevilla FC. Acabado en rojo vibrante con detalles oficiales para lucir tu pasión dentro y fuera del campo. Ideal para entrenar, competir o llevarla a diario.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento que se siente: Tejido ligero que acompaña tus movimientos en todo momento.",
+      "Mantén la frescura: Paneles transpirables para gestionar el sudor en plena acción.",
+      "Orgullo oficial: Escudo y branding del club para lucir tus colores con autenticidad.",
+      "Versatilidad total: Perfecto para un estilo casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jy1802"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo adidas Sevilla",
+    "sole_type": ""
+  }
+}

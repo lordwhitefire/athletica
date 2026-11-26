@@ -1,0 +1,86 @@
+{
+  "id": "IG8686",
+  "slug": "adidas-copa-pure-2-pro-mg-white",
+  "name": "adidas Copa Pure 2 Pro MG",
+  "model": "Copa Pure 2 Pro",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Copa Pure 2 Pro",
+      "sole_type": "MG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "MG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-para-cesped-artificial-color-blanco-adidas-copa-pure-2-pro-mg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-para-cesped-artificial-color-blanco-adidas-copa-pure-2-pro-mg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-cesped-artificial-blancas-adidas-copa-pure-2-pro-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-hierba-artificial-adidas-copa-pure-2-pro-mg-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_zapatillas-de-futbol-para-hierba-sintetica-adidas-copa-pure-2-pro-mg-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-con-tacos-color-blanco-adidas-copa-pure-2-pro-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-para-cesped-artificial-blancas-adidas-copa-pure-2-pro-mg_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-para-cesped-artificial-color-blanco-adidas-copa-pure-2-pro-mg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-cesped-artificial-blancas-adidas-copa-pure-2-pro-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-hierba-artificial-adidas-copa-pure-2-pro-mg-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_zapatillas-de-futbol-para-hierba-sintetica-adidas-copa-pure-2-pro-mg-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-con-tacos-color-blanco-adidas-copa-pure-2-pro-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/G/IG8686_botas-de-futbol-para-cesped-artificial-blancas-adidas-copa-pure-2-pro-mg_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ig8686",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ig8686"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Pure 2 Pro",
+    "product_model": "Copa Pure 2 Pro",
+    "sole_type": "MG"
+  }
+}

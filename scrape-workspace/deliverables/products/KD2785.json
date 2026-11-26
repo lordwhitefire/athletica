@@ -1,0 +1,90 @@
+{
+  "id": "KD2785",
+  "slug": "botellin-adidas-performance-500-ml-white",
+  "name": "Botellín adidas Performance 500 ml",
+  "model": "Botellín adidas Performance 500 ml",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Botellín de agua para entrenamiento adidas de 500 ml - blanco",
+    "tagline": "Diseñado para tu ritmo diario",
+    "intro": "Este botellín adidas de 500 ml combina funcionalidad y estilo deportivo con el logo adidas en primer plano. Su diseño ergonómico y resistente lo convierte en el aliado perfecto para tus rutinas de entrenamiento y tus desplazamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Hidratación práctica: Capacidad de 0,5 L ideal para entrenamientos o uso diario.",
+      "Diseño ergonómico: Fabricado en PE moldeado por inyección para una mayor resistencia.",
+      "Cierre seguro: Rosca con sellado fiable para evitar fugas."
+    ],
+    "technical_details": {
+      "range": "adidas Performance 500 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-color-blanco-adidas-performance-500-ml_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-color-blanco-adidas-performance-500-ml_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-blanco-adidas-performance-500-ml_2_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-adidas-performance-500-ml-color-blanco_3_detalle-boquilla.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-adidas-performance-500-ml-blanco_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-color-blanco-adidas-performance-500-ml_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-blanco-adidas-performance-500-ml_2_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-adidas-performance-500-ml-color-blanco_3_detalle-boquilla.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD2785_botellin-agua-adidas-performance-500-ml-blanco_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kd2785",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botellín de agua para entrenamiento adidas de 500 ml - blanco",
+    "tagline": "Diseñado para tu ritmo diario",
+    "intro": "Este botellín adidas de 500 ml combina funcionalidad y estilo deportivo con el logo adidas en primer plano. Su diseño ergonómico y resistente lo convierte en el aliado perfecto para tus rutinas de entrenamiento y tus desplazamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Hidratación práctica: Capacidad de 0,5 L ideal para entrenamientos o uso diario.",
+      "Diseño ergonómico: Fabricado en PE moldeado por inyección para una mayor resistencia.",
+      "Cierre seguro: Rosca con sellado fiable para evitar fugas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kd2785"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín adidas Performance 500 ml",
+    "sole_type": ""
+  }
+}

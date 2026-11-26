@@ -1,0 +1,84 @@
+{
+  "id": "050.5573",
+  "slug": "pantalon-3-4-ho-soccer-icon-black",
+  "name": "3/4 HO Soccer Icon",
+  "model": "3/4 HO Soccer Icon",
+  "brand": "Ho Soccer",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "3/4 HO Soccer Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f0aa571fc5ad1145f9e3c977b89359d9bd71890a-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f0aa571fc5ad1145f9e3c977b89359d9bd71890a-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f0aa571fc5ad1145f9e3c977b89359d9bd71890a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f0aa571fc5ad1145f9e3c977b89359d9bd71890a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f0aa571fc5ad1145f9e3c977b89359d9bd71890a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/050-5573",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/050-5573"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "3/4",
+    "submodel": "",
+    "product_model": "3/4 HO Soccer Icon",
+    "sole_type": ""
+  }
+}

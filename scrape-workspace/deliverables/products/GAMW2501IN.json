@@ -1,0 +1,94 @@
+{
+  "id": "GAMW2501IN",
+  "slug": "joma-gambeta-in-black",
+  "name": "Joma Gambeta IN",
+  "model": "Gambeta IN",
+  "brand": "Joma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol sala Joma suela lisa IN - negras",
+    "tagline": "Domina la pista con estilo y control",
+    "intro": "Las Joma Gambeta IN están diseñadas para ofrecerte movilidad y precisión. Su diseño ligero permite cambios de dirección rápidos y un gran rendimiento. El sistema de ajuste con cordones proporciona una sujeción segura durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Agilidad mejorada: Diseño ligero para movimientos rápidos y precisos.",
+      "Ajuste seguro: Sistema de cordones que mantiene el pie firme.",
+      "Ideal para pista: Suela lisa IN perfecta para fútbol sala.",
+      "Estilo deportivo: Diseño moderno para destacar dentro y fuera de la pista."
+    ],
+    "technical_details": {
+      "range": "Gambeta IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_zapatillas-futbol-sala-color-negro-joma-gambeta-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_zapatillas-futbol-sala-color-negro-joma-gambeta-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_zapatillas-de-futbol-sala-negras-joma-gambeta-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_botas-futbol-sala-joma-gambeta-in-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_bambas-futbol-sala-joma-gambeta-in-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_tenis-futbol-sala-color-negro-joma-gambeta-in_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_zapatillas-futbol-sala-color-negro-joma-gambeta-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_zapatillas-de-futbol-sala-negras-joma-gambeta-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_botas-futbol-sala-joma-gambeta-in-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_bambas-futbol-sala-joma-gambeta-in-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMW2501IN_tenis-futbol-sala-color-negro-joma-gambeta-in_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/gamw2501in",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Zapatillas de fútbol sala Joma suela lisa IN - negras",
+    "tagline": "Domina la pista con estilo y control",
+    "intro": "Las Joma Gambeta IN están diseñadas para ofrecerte movilidad y precisión. Su diseño ligero permite cambios de dirección rápidos y un gran rendimiento. El sistema de ajuste con cordones proporciona una sujeción segura durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Agilidad mejorada: Diseño ligero para movimientos rápidos y precisos.",
+      "Ajuste seguro: Sistema de cordones que mantiene el pie firme.",
+      "Ideal para pista: Suela lisa IN perfecta para fútbol sala.",
+      "Estilo deportivo: Diseño moderno para destacar dentro y fuera de la pista."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/gamw2501in"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Gambeta",
+    "submodel": "",
+    "product_model": "Gambeta IN",
+    "sole_type": ""
+  }
+}

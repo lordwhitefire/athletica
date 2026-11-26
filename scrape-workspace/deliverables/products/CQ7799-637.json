@@ -1,0 +1,82 @@
+{
+  "id": "CQ7799-637",
+  "slug": "nike-gk-match-red",
+  "name": "Nike GK Match",
+  "model": "GK Match",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "GK Match",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-de-portero-color-rojo-nike-gk-match_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-de-portero-color-rojo-nike-gk-match_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-portero-rojos--blancos-nike-gk-match_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-de-arquero-nike-gk-match-color-rojo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-de-futbol-nike-gk-match-rojos--blancos_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-de-portero-color-rojo-nike-gk-match_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-portero-rojos--blancos-nike-gk-match_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-de-arquero-nike-gk-match-color-rojo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7799-637_guantes-de-futbol-nike-gk-match-rojos--blancos_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/cq7799-637",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/cq7799-637"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "GK",
+    "submodel": "",
+    "product_model": "GK Match",
+    "sole_type": ""
+  }
+}

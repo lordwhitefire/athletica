@@ -1,0 +1,96 @@
+{
+  "id": "JZ5556",
+  "slug": "chaqueta-adidas-liverpool-vis-tech-black",
+  "name": "adidas Liverpool Vis Tech",
+  "model": "Liverpool Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Liverpool Adidas Track Jacket - Black",
+    "tagline": "Technology and style for the Reds",
+    "intro": "The Liverpool 25/26 Vis Tech jacket fuses sporty design and functionality. Inspired by the team's training clothing, it offers lightness, comfort and a modern look in black.",
+    "collection": "",
+    "key_benefits": [
+      "Modern style: Current design that combines with any equipment.",
+      "Technical comfort: Light fabric that ensures prolonged comfort.",
+      "Practicality: Full zipper and functional side pockets.",
+      "Network identity: Shield and official details of Liverpool FC."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-color-negro-adidas-liverpool-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-color-negro-adidas-liverpool-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-chandal-negra-adidas-liverpool-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-entretiempo-adidas-liverpool-vis-tech-color-negro_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-adidas-liverpool-vis-tech-negra_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-color-negro-adidas-liverpool-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-chandal-negra-adidas-liverpool-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-entretiempo-adidas-liverpool-vis-tech-color-negro_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5556_chaqueta-adidas-liverpool-vis-tech-negra_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz5556",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Liverpool - negra",
+    "tagline": "Tecnología y estilo para los Reds",
+    "intro": "La chaqueta Vis Tech del Liverpool 25/26 fusiona diseño deportivo y funcionalidad. Inspirada en la indumentaria de entrenamiento del equipo, ofrece ligereza, comodidad y un look moderno en color negro.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo moderno: Diseño actual que combina con cualquier equipación.",
+      "Confort técnico: Tejido ligero que asegura comodidad prolongada.",
+      "Practicidad: Cremallera completa y bolsillos laterales funcionales.",
+      "Identidad red: Escudo y detalles oficiales del Liverpool FC."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz5556"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Liverpool Vis",
+    "submodel": "",
+    "product_model": "Liverpool Vis Tech",
+    "sole_type": ""
+  }
+}

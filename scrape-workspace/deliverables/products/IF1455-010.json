@@ -1,0 +1,88 @@
+{
+  "id": "IF1455-010",
+  "slug": "sudadera-nike-dri-fit-strike-black",
+  "name": "Nike Dri-Fit Strike",
+  "model": "Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Soccer Training Sweatshirt - Black",
+    "tagline": "Designed for demanding training",
+    "intro": "This Strike sweatshirt is designed for footballers looking for freedom of movement and comfort during intense sessions.",
+    "collection": "",
+    "key_benefits": [
+      "Functional elasticity: Facilitates quick movements.",
+      "Sweat management: Helps keep the body dry.",
+      "Sporty fit: Tight feel without discomfort."
+    ],
+    "technical_details": {
+      "range": "Nike Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1455-010_sudadera-color-negro-nike-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1455-010_sudadera-color-negro-nike-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1455-010_sudadera-negra-nike-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1455-010_sudadera-nike-dri-fit-strike-color-negro_3_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1455-010_sudadera-color-negro-nike-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1455-010_sudadera-negra-nike-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1455-010_sudadera-nike-dri-fit-strike-color-negro_3_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/if1455-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera para entrenamiento de fútbol Nike - negra",
+    "tagline": "Diseñada para entrenamientos exigentes",
+    "intro": "Esta sudadera Strike está pensada para futbolistas que buscan libertad de movimiento y comodidad durante sesiones intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Elasticidad funcional: Facilita movimientos rÃ¡pidos.",
+      "Gestión del sudor: Ayuda a mantener el cuerpo seco.",
+      "Ajuste deportivo: Sensación ceñida sin molestias."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/if1455-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Dri-Fit",
+    "submodel": "",
+    "product_model": "Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

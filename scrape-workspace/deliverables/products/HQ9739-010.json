@@ -1,0 +1,96 @@
+{
+  "id": "HQ9739-010",
+  "slug": "chaqueta-nike-psg-t90-woven-black",
+  "name": "Nike PSG T90 Woven",
+  "model": "PSG T90 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de paseo Nike del PSG - negro",
+    "tagline": "La chaqueta parisina con esencia T90",
+    "intro": "La chaqueta Nike PSG T90 Woven combina diseño retro y funcionalidad moderna en color negro. Inspirada en la icónica línea Total 90, aporta estilo urbano y comodidad diaria. Su ajuste deportivo y su tejido ligero la convierten en una prenda imprescindible para los seguidores del PSG.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Detalles que evocan la colección Total 90.",
+      "Estilo urbano: Diseño negro versátil con escudo PSG.",
+      "Comodidad ligera: Tejido que permite usarla a diario.",
+      "Practicidad: Cremallera completa y bolsillos laterales."
+    ],
+    "technical_details": {
+      "range": "Nike PSG T90 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-color-negro-nike-psg-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-color-negro-nike-psg-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-chandal-negro-nike-psg-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-entretiempo-nike-psg-t90-color-negro_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-nike-psg-t90-woven-negro_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-color-negro-nike-psg-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-chandal-negro-nike-psg-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-entretiempo-nike-psg-t90-color-negro_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9739-010_chaqueta-nike-psg-t90-woven-negro_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq9739-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de paseo Nike del PSG - negro",
+    "tagline": "La chaqueta parisina con esencia T90",
+    "intro": "La chaqueta Nike PSG T90 Woven combina diseño retro y funcionalidad moderna en color negro. Inspirada en la icónica línea Total 90, aporta estilo urbano y comodidad diaria. Su ajuste deportivo y su tejido ligero la convierten en una prenda imprescindible para los seguidores del PSG.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Detalles que evocan la colección Total 90.",
+      "Estilo urbano: Diseño negro versátil con escudo PSG.",
+      "Comodidad ligera: Tejido que permite usarla a diario.",
+      "Practicidad: Cremallera completa y bolsillos laterales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq9739-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "PSG T90",
+    "submodel": "",
+    "product_model": "PSG T90 Woven",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "HM3419-010",
+  "slug": "pantalon-nike-chelsea-mujer-entrenamiento-dri-fit-strike-black",
+  "name": "Nike Chelsea Women Training Dri-Fit Strike",
+  "model": "Chelsea mujer entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo para mujer de entrenamiento Nike del Chelsea - negro",
+    "tagline": "Movilidad y sujeción equilibradas",
+    "intro": "El Pantalón largo para mujer de entrenamiento Nike del Chelsea une identidad Blue y tecnología Nike Dri-FIT para que entrenes y apoyes al equipo con orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad de zancada: Pernera cónica que no limita la movilidad.",
+      "Cintura estable: Cordón interior para un ajuste seguro.",
+      "Secado rápido: Listo para la siguiente sesión en minutos.",
+      "Orgullo del club: Detalles oficiales del Chelsea FC."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea mujer entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3419-010_pantalon-largo-color-negro-nike-chelsea-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3419-010_pantalon-largo-color-negro-nike-chelsea-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3419-010_pantalon-chandal-negro-nike-chelsea-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3419-010_pantalon-chandal-nike-chelsea-mujer-entrenamiento-dri-fit-strike-color-negro_3_detalle-cintura-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3419-010_pantalon-largo-color-negro-nike-chelsea-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3419-010_pantalon-chandal-negro-nike-chelsea-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3419-010_pantalon-chandal-nike-chelsea-mujer-entrenamiento-dri-fit-strike-color-negro_3_detalle-cintura-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3419-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo para mujer de entrenamiento Nike del Chelsea - negro",
+    "tagline": "Movilidad y sujeción equilibradas",
+    "intro": "El Pantalón largo para mujer de entrenamiento Nike del Chelsea une identidad Blue y tecnología Nike Dri-FIT para que entrenes y apoyes al equipo con orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad de zancada: Pernera cónica que no limita la movilidad.",
+      "Cintura estable: Cordón interior para un ajuste seguro.",
+      "Secado rápido: Listo para la siguiente sesión en minutos.",
+      "Orgullo del club: Detalles oficiales del Chelsea FC."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3419-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Chelsea Women",
+    "submodel": "",
+    "product_model": "Chelsea mujer entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

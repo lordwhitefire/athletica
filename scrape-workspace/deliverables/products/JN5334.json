@@ -1,0 +1,96 @@
+{
+  "id": "JN5334",
+  "slug": "adidas-copa-pro-negro-verde",
+  "name": "adidas Copa Pro",
+  "model": "Copa Pro",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Negro / Verde",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adidas Negative Cut Professional Goalkeeper Gloves - Black, Light Green",
+    "tagline": "Tradition that transforms into modern control",
+    "intro": "The adidas Copa Pro combines classic style with optimized technologies to deliver precision, fit and performance.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Sober style: Visual elegance with classic inspiration.",
+      "Technical control: Tight cut that enhances touch with the ball.",
+      "Optimized comfort: Construction that reduces fatigue in prolonged use.",
+      "Effective grip: High performance palm for variable conditions.",
+      "Consistent performance: Ideal for tactical and safe goalkeepers."
+    ],
+    "technical_details": {
+      "range": "Copa Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-de-portero-color-negro-y-verde-adidas-copa-pro_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-de-portero-color-negro-y-verde-adidas-copa-pro_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-portero-negros--verde-claro-adidas-copa-pro_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-de-arquero-adidas-copa-pro-color-negro-y-verde_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-de-futbol-adidas-copa-pro-negros--verde-claro_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-guardameta-color-negro-y-verde-adidas-copa-pro_5_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-de-portero-color-negro-y-verde-adidas-copa-pro_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-portero-negros--verde-claro-adidas-copa-pro_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-de-arquero-adidas-copa-pro-color-negro-y-verde_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-de-futbol-adidas-copa-pro-negros--verde-claro_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5334_guantes-guardameta-color-negro-y-verde-adidas-copa-pro_5_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn5334",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - negros, verde claro",
+    "tagline": "Tradición que se transforma en control moderno",
+    "intro": "Los adidas Copa Pro combinan un estilo clásico con tecnologías optimizadas para ofrecer precisión, ajuste y rendimiento.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Estilo sobrio: Elegancia visual con inspiración clásica.",
+      "Control técnico: Corte ajustado que potencia el toque con el balón.",
+      "Confort optimizado: Construcción que reduce la fatiga en uso prolongado.",
+      "Agarre eficaz: Palma de rendimiento alto para condiciones variables.",
+      "Rendimiento constante: Ideal para porteros tácticos y seguros."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn5334"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Pro",
+    "product_model": "Copa Pro",
+    "sole_type": ""
+  }
+}

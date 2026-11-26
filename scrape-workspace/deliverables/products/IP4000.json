@@ -1,0 +1,94 @@
+{
+  "id": "IP4000",
+  "slug": "adidas-tiro-league-negro-oro",
+  "name": "adidas Tiro League",
+  "model": "Tiro League",
+  "brand": "adidas",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Negro / Oro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujeción - negras",
+    "tagline": "Protección ligera, comodidad total",
+    "intro": "Domina el terreno de juego con estas espinilleras adidas Tiro League, diseñadas para ofrecer seguridad y ligereza en cada entrada. Su ajuste ergonómico se adapta perfectamente a tu pierna y la media incluida asegura una sujeción estable. La ventilación estratégica permite mantener la frescura incluso en los partidos más intensos.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Se adapta al contorno de la pierna para una protección eficaz y sin molestias.",
+      "Ligereza total: Permite movimientos rápidos sin añadir peso.",
+      "Media incluida: Mantiene la espinillera en su sitio en todo momento.",
+      "Diseño ventilado: Mejora la transpirabilidad y reduce el sudor.",
+      "Estilo adidas Tiro: Un look moderno inspirado en una de las gamas más reconocidas del fútbol."
+    ],
+    "technical_details": {
+      "range": "Tiro League",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_espinilleras-color-negro-y-oro-adidas-tiro-league_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_espinilleras-color-negro-y-oro-adidas-tiro-league_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_canilleras-negras-adidas-tiro-league_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_espinilleras-adidas-tiro-league-color-negro-y-oro_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_espinilleras-adidas-tiro-league-negras_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_espinilleras-color-negro-y-oro-adidas-tiro-league_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_canilleras-negras-adidas-tiro-league_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_espinilleras-adidas-tiro-league-color-negro-y-oro_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/P/IP4000_espinilleras-adidas-tiro-league-negras_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ip4000",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujeción - negras",
+    "tagline": "Protección ligera, comodidad total",
+    "intro": "Domina el terreno de juego con estas espinilleras adidas Tiro League, diseñadas para ofrecer seguridad y ligereza en cada entrada. Su ajuste ergonómico se adapta perfectamente a tu pierna y la media incluida asegura una sujeción estable. La ventilación estratégica permite mantener la frescura incluso en los partidos más intensos.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Se adapta al contorno de la pierna para una protección eficaz y sin molestias.",
+      "Ligereza total: Permite movimientos rápidos sin añadir peso.",
+      "Media incluida: Mantiene la espinillera en su sitio en todo momento.",
+      "Diseño ventilado: Mejora la transpirabilidad y reduce el sudor.",
+      "Estilo adidas Tiro: Un look moderno inspirado en una de las gamas más reconocidas del fútbol."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ip4000"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Tiro",
+    "submodel": "",
+    "product_model": "Tiro League",
+    "sole_type": ""
+  }
+}

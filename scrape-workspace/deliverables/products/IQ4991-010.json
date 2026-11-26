@@ -1,0 +1,96 @@
+{
+  "id": "IQ4991-010",
+  "slug": "camiseta-nike-barcelona-kobe-bryant-black",
+  "name": "Nike Barcelona Kobe Bryant",
+  "model": "Barcelona Kobe Bryant",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta Nike del FC Barcelona x Kobe Bryant - negra",
+    "tagline": "Estilo FCB x Mamba dentro y fuera del campo",
+    "intro": "La camiseta Nike Barcelona Kobe Bryant une el legado de Kobe Bryant con la identidad del FC Barcelona en una prenda casual diseñada para quienes viven el deporte con pasión. Su diseño incorpora un gráfico exclusivo de la colección Mamba, reflejando el carácter competitivo y la ambición que comparten dos referentes del deporte mundial.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón de alta calidad: Tacto suave y comodidad durante todo el día.",
+      "Corte amplio: Ajuste relajado que favorece la libertad de movimiento.",
+      "Estilo casual: Perfecta para combinar con cualquier look deportivo o urbano.",
+      "Diseño FC Barcelona: Estampado inspirado en el legado de Kobe Bryant y la identidad blaugrana."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Kobe Bryant",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-color-negro-nike-barcelona-kobe-bryant_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-color-negro-nike-barcelona-kobe-bryant_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-negra-nike-barcelona-kobe-bryant_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-nike-barcelona-kobe-bryant-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-nike-barcelona-kobe-bryant-negra_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-color-negro-nike-barcelona-kobe-bryant_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-negra-nike-barcelona-kobe-bryant_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-nike-barcelona-kobe-bryant-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ4991-010_camiseta-nike-barcelona-kobe-bryant-negra_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/iq4991-010",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta Nike del FC Barcelona x Kobe Bryant - negra",
+    "tagline": "Estilo FCB x Mamba dentro y fuera del campo",
+    "intro": "La camiseta Nike Barcelona Kobe Bryant une el legado de Kobe Bryant con la identidad del FC Barcelona en una prenda casual diseñada para quienes viven el deporte con pasión. Su diseño incorpora un gráfico exclusivo de la colección Mamba, reflejando el carácter competitivo y la ambición que comparten dos referentes del deporte mundial.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón de alta calidad: Tacto suave y comodidad durante todo el día.",
+      "Corte amplio: Ajuste relajado que favorece la libertad de movimiento.",
+      "Estilo casual: Perfecta para combinar con cualquier look deportivo o urbano.",
+      "Diseño FC Barcelona: Estampado inspirado en el legado de Kobe Bryant y la identidad blaugrana."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/iq4991-010"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Barcelona Kobe",
+    "submodel": "",
+    "product_model": "Barcelona Kobe Bryant",
+    "sole_type": ""
+  }
+}

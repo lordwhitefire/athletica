@@ -13,8 +13,8 @@ const PAGE_SIZE = 8;
 
 const STATUS_OPTIONS = [
   { value: 'all', label: 'All Statuses' },
-  { value: 'published', label: 'Published' },
-  { value: 'unpublished', label: 'Unpublished' },
+  { value: 'published', label: 'Active' },
+  { value: 'unpublished', label: 'Not active' },
 ] as const;
 
 const SORT_OPTIONS = [
@@ -91,7 +91,7 @@ export default function AdminProductsPage() {
 
   const toggleStatus = useCallback(
     async (product: ProductRow) => {
-      const nextStatus = product.status === 'published' ? 'unpublished' : 'published';
+      const nextStatus = product.status === 'active' ? 'unpublished' : 'published';
       setBusy({ id: product.id, action: 'status' });
       try {
         const res = await fetch('/api/admin/products', {
@@ -219,7 +219,7 @@ export default function AdminProductsPage() {
           <select aria-label="Bulk action" value={bulkAction} onChange={(e) => { setBulkAction(e.target.value); setBulkValue(''); }}>
             <option value="">Choose bulk action</option><option value="Set status">Set status</option><option value="Archive">Archive</option><option value="Add tags">Add tags</option><option value="Remove tags">Remove tags</option><option value="Add to category">Add to category</option><option value="Remove from category">Remove from category</option><option value="Add to collection">Add to collection</option><option value="Remove from collection">Remove from collection</option>
           </select>
-          {bulkAction === 'Set status' && <select aria-label="Choose status" value={bulkValue} onChange={(e) => setBulkValue(e.target.value)}><option value="">Choose status</option><option value="published">Published</option><option value="unpublished">Unpublished</option><option value="archived">Archived</option></select>}
+          {bulkAction === 'Set status' && <select aria-label="Choose status" value={bulkValue} onChange={(e) => setBulkValue(e.target.value)}><option value="">Choose status</option><option value="active">Active</option><option value="draft">Draft</option><option value="archived">Archived</option><option value="proposed">Proposed</option><option value="rejected">Rejected</option></select>}
           {['Add tags','Remove tags','Add to category','Remove from category','Add to collection','Remove from collection'].includes(bulkAction) && <input aria-label="Bulk value" value={bulkValue} onChange={(e) => setBulkValue(e.target.value)} placeholder={bulkAction.includes('tag') ? 'Enter tag' : 'Enter name'} />}
           <button type="button" className="admin-btn admin-btn--primary" disabled={!bulkAction || (bulkAction !== 'Archive' && !bulkValue) || bulkBusy} onClick={runBulkPreview}>{bulkBusy ? 'Working…' : 'Apply action'}</button>
         </div>}
@@ -334,10 +334,10 @@ export default function AdminProductsPage() {
                               onClick={() => toggleStatus(product)}
                             >
                               {rowBusy && busy?.action === 'status'
-                                ? product.status === 'published'
+                                ? product.status === 'active'
                                   ? 'Unpublishing...'
                                   : 'Publishing...'
-                                : product.status === 'published'
+                                : product.status === 'active'
                                   ? 'Unpublish'
                                   : 'Publish'}
                             </button>

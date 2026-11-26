@@ -1,0 +1,94 @@
+{
+  "id": "FN4859-010",
+  "slug": "gorra-nike-fc-barcelona-club-black",
+  "name": "Nike FC Barcelona Club",
+  "model": "FC Barcelona Club",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra Nike del FC Barcelona - negra",
+    "tagline": "Orgullo blaugrana en cada ocasión",
+    "intro": "La gorra Nike del FC Barcelona es el accesorio ideal para los culés. Con el escudo oficial estampado en el frontal y un diseño cómodo y versátil, te permite lucir tu pasión por el Barça dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blaugrana: Escudo oficial del FC Barcelona estampado en el frontal.",
+      "Diseño deportivo: Estilo moderno con visera curva que aporta un look actual.",
+      "Tejido cómodo: Algodón suave y transpirable para un uso prolongado.",
+      "Ajuste adaptable: Cierre trasero regulable que garantiza confort.",
+      "Ideal para diario: Perfecta para uso urbano, entrenamientos o animar al Barça en el estadio."
+    ],
+    "technical_details": {
+      "range": "Nike FC Barcelona Club",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-color-negro-nike-fc-barcelona-club_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-color-negro-nike-fc-barcelona-club_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-negra-nike-fc-barcelona-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-nike-fc-barcelona-club-color-negro_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-nike-fc-barcelona-club-negra_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-color-negro-nike-fc-barcelona-club_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-negra-nike-fc-barcelona-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-nike-fc-barcelona-club-color-negro_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-010_gorra-nike-fc-barcelona-club-negra_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fn4859-010",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra Nike del FC Barcelona - negra",
+    "tagline": "Orgullo blaugrana en cada ocasión",
+    "intro": "La gorra Nike del FC Barcelona es el accesorio ideal para los culés. Con el escudo oficial estampado en el frontal y un diseño cómodo y versátil, te permite lucir tu pasión por el Barça dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blaugrana: Escudo oficial del FC Barcelona estampado en el frontal.",
+      "Diseño deportivo: Estilo moderno con visera curva que aporta un look actual.",
+      "Tejido cómodo: Algodón suave y transpirable para un uso prolongado.",
+      "Ajuste adaptable: Cierre trasero regulable que garantiza confort.",
+      "Ideal para diario: Perfecta para uso urbano, entrenamientos o animar al Barça en el estadio."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fn4859-010"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "FC",
+    "submodel": "",
+    "product_model": "FC Barcelona Club",
+    "sole_type": ""
+  }
+}

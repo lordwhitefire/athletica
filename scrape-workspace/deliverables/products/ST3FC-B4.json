@@ -1,0 +1,86 @@
+{
+  "id": "ST3FC-B4",
+  "slug": "new-balance-tekela-v4-magique-fg-marron",
+  "name": "New Balance Tekela v4 Magique FG",
+  "model": "Tekela v4 Magique",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Balance Tekela v4 Magique",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-color-marron-new-balance-tekela-v4-magique-fg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-color-marron-new-balance-tekela-v4-magique-fg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-con-tacos-bronce-new-balance-tekela-v4-magique-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-futbol-new-balance-tekela-v4-magique-fg-color-marron_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-tacos-new-balance-tekela-v4-magique-fg-bronce_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_zapatillas-futbol-color-marron-new-balance-tekela-v4-magique-fg_5_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-con-tacos-new-balance-tekela-v4-magique-fg-color-marron_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-color-marron-new-balance-tekela-v4-magique-fg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-con-tacos-bronce-new-balance-tekela-v4-magique-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-futbol-new-balance-tekela-v4-magique-fg-color-marron_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-tacos-new-balance-tekela-v4-magique-fg-bronce_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_zapatillas-futbol-color-marron-new-balance-tekela-v4-magique-fg_5_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST3FC-B4_botas-de-futbol-con-tacos-new-balance-tekela-v4-magique-fg-color-marron_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/st3fc-b4",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/st3fc-b4"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Tekela",
+    "submodel": "v4 Magique",
+    "product_model": "Tekela v4 Magique",
+    "sole_type": "FG"
+  }
+}

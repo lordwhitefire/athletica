@@ -1,0 +1,104 @@
+{
+  "id": "KB6339",
+  "slug": "camiseta-adidas-real-madrid-entrenamiento-green",
+  "name": "adidas Real Madrid Training",
+  "model": "Real Madrid entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de entrenamiento adidas del Real Madrid 2026 2027 - verde",
+    "tagline": "Entrena como el Real Madrid",
+    "intro": "La camiseta de entrenamiento adidas del Real Madrid 2026/2027 está diseñada para ofrecer comodidad, ligereza y rendimiento en cada sesión. Inspirada en la ropa de entrenamiento que utiliza el club blanco, combina un diseño moderno con detalles oficiales para que puedas mostrar tu pasión por el equipo mientras mejoras tu juego.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool: Favorece la evacuación del sudor para mantener la piel fresca y seca.",
+      "Slim fit: Ajuste deportivo que acompaña los movimientos naturales.",
+      "Escudo del Real Madrid: Detalle oficial que refleja tu pasión por el club.",
+      "Tejido ligero: Ideal para entrenamientos intensos y uso deportivo."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-verde-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-adidas-real-madrid-entrenamiento-verde_4_detalle-hombro-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-verde-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6339_camiseta-adidas-real-madrid-entrenamiento-verde_4_detalle-hombro-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb6339",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de entrenamiento adidas del Real Madrid 2026 2027 - verde",
+    "tagline": "Entrena como el Real Madrid",
+    "intro": "La camiseta de entrenamiento adidas del Real Madrid 2026/2027 está diseñada para ofrecer comodidad, ligereza y rendimiento en cada sesión. Inspirada en la ropa de entrenamiento que utiliza el club blanco, combina un diseño moderno con detalles oficiales para que puedas mostrar tu pasión por el equipo mientras mejoras tu juego.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool: Favorece la evacuación del sudor para mantener la piel fresca y seca.",
+      "Slim fit: Ajuste deportivo que acompaña los movimientos naturales.",
+      "Escudo del Real Madrid: Detalle oficial que refleja tu pasión por el club.",
+      "Tejido ligero: Ideal para entrenamientos intensos y uso deportivo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb6339"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento",
+    "sole_type": ""
+  }
+}

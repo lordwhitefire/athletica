@@ -1,0 +1,94 @@
+{
+  "id": "HQ1514-438",
+  "slug": "chaqueta-nike-inter-woven-all-weather-fan-blue",
+  "name": "Nike Inter Woven All Weather Fan",
+  "model": "Inter Woven All Weather Fan",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal Nike del Inter de Milán 2025 2026 - azul marino",
+    "tagline": "Prepárate para cualquier clima con estilo nerazzurro",
+    "intro": "La chaqueta Nike del Inter de Milán combina protección total contra el viento y la lluvia con un diseño urbano fiel al club. Ideal para los días fríos o lluviosos, sin perder comodidad ni orgullo interista.",
+    "collection": "",
+    "key_benefits": [
+      "Protección climática: Tejido resistente al agua y al viento.",
+      "Diseño oficial: Con detalles auténticos del Inter de Milán.",
+      "Comodidad total: Interior suave y transpirable para uso diario.",
+      "Funcionalidad extra: Bolsillos prácticos y cremallera completa."
+    ],
+    "technical_details": {
+      "range": "Nike Inter Woven All Weather Fan",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1514-438_chaqueta-color-azul-nike-inter-woven-all-weather-fan_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1514-438_chaqueta-color-azul-nike-inter-woven-all-weather-fan_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1514-438_chaqueta-chandal-azul-marino-nike-inter-woven-all-weather-fan_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1514-438_chaqueta-entretiempo-nike-inter-woven-all-weather-fan-color-azul_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1514-438_chaqueta-color-azul-nike-inter-woven-all-weather-fan_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1514-438_chaqueta-chandal-azul-marino-nike-inter-woven-all-weather-fan_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1514-438_chaqueta-entretiempo-nike-inter-woven-all-weather-fan-color-azul_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq1514-438",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de chándal Nike del Inter de Milán 2025 2026 - azul marino",
+    "tagline": "Prepárate para cualquier clima con estilo nerazzurro",
+    "intro": "La chaqueta Nike del Inter de Milán combina protección total contra el viento y la lluvia con un diseño urbano fiel al club. Ideal para los días fríos o lluviosos, sin perder comodidad ni orgullo interista.",
+    "collection": "",
+    "key_benefits": [
+      "Protección climática: Tejido resistente al agua y al viento.",
+      "Diseño oficial: Con detalles auténticos del Inter de Milán.",
+      "Comodidad total: Interior suave y transpirable para uso diario.",
+      "Funcionalidad extra: Bolsillos prácticos y cremallera completa."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq1514-438"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Inter Woven",
+    "submodel": "",
+    "product_model": "Inter Woven All Weather Fan",
+    "sole_type": ""
+  }
+}

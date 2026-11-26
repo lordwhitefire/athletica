@@ -1,0 +1,84 @@
+{
+  "id": "FZ3190-400",
+  "slug": "chanclas-nike-offcourt-psg-blue",
+  "name": "Chanclas Nike OffCourt PSG",
+  "model": "Chanclas Nike OffCourt PSG",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike OffCourt PSG",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ3190-400_chanclas-color-azul-nike-offcourt-psg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ3190-400_chanclas-color-azul-nike-offcourt-psg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ3190-400_sandalias-ducha-azul-nike-offcourt-psg_2_superior-ambos-pies.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ3190-400_chancletas-nike-offcourt-psg-color-azul_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ3190-400_chanclas-color-azul-nike-offcourt-psg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ3190-400_sandalias-ducha-azul-nike-offcourt-psg_2_superior-ambos-pies.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ3190-400_chancletas-nike-offcourt-psg-color-azul_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fz3190-400",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fz3190-400"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'equipos'",
+    "root_model": "Chanclas",
+    "submodel": "",
+    "product_model": "Chanclas Nike OffCourt PSG",
+    "sole_type": ""
+  }
+}

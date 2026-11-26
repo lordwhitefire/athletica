@@ -1,0 +1,84 @@
+{
+  "id": "DV6162-498",
+  "slug": "chaqueta-nike-psg-mujer-dri-fit-himno-blue",
+  "name": "Nike PSG Women Dri-Fit himno",
+  "model": "PSG mujer Dri-Fit himno",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike PSG mujer Dri-Fit himno",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV6162-498_chaqueta-color-z-purpura-oscuro-nike-psg-mujer-dri-fit-himno_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV6162-498_chaqueta-color-z-purpura-oscuro-nike-psg-mujer-dri-fit-himno_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV6162-498_chaqueta-chandal-azul-marino-nike-psg-mujer-dri-fit-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV6162-498_chaqueta-entretiempo-nike-psg-mujer-dri-fit-himno-color-z-purpura-oscuro_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV6162-498_chaqueta-color-z-purpura-oscuro-nike-psg-mujer-dri-fit-himno_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV6162-498_chaqueta-chandal-azul-marino-nike-psg-mujer-dri-fit-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV6162-498_chaqueta-entretiempo-nike-psg-mujer-dri-fit-himno-color-z-purpura-oscuro_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dv6162-498",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dv6162-498"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "PSG Women",
+    "submodel": "",
+    "product_model": "PSG mujer Dri-Fit himno",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "BV6708-102",
+  "slug": "camiseta-nike-dri-fit-park-7-white",
+  "name": "Nike Dri-Fit Park 7",
+  "model": "Dri-Fit Park 7",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta de deporte Nike - blanca",
+    "tagline": "Comodidad y frescura para cada entrenamiento",
+    "intro": "La camiseta Nike Dri-Fit Park 7 está diseñada para ofrecer comodidad y libertad de movimiento durante la práctica deportiva. Su tejido ligero de poliéster reciclado ayuda a mantener una sensación agradable mientras entrenas, convirtiéndola en una prenda versátil para jugar al fútbol y otras actividades deportivas.",
+    "collection": "",
+    "key_benefits": [
+      "Mayor frescura: El tejido ayuda a gestionar la humedad para mantener una sensación más seca durante el ejercicio.",
+      "Comodidad deportiva: Su construcción ligera favorece una sensación agradable durante toda la actividad.",
+      "Libertad de movimiento: El diseño de manga corta permite moverse con naturalidad durante entrenamientos y partidos."
+    ],
+    "technical_details": {
+      "range": "Nike Dri-Fit Park 7",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-color-blanco-nike-dri-fit-park-7_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-color-blanco-nike-dri-fit-park-7_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-blanca-nike-dri-fit-park-7_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-nike-dri-fit-park-7-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-nike-dri-fit-park-7-blanca_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-color-blanco-nike-dri-fit-park-7_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-blanca-nike-dri-fit-park-7_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-nike-dri-fit-park-7-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6708-102_camiseta-nike-dri-fit-park-7-blanca_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/bv6708-102",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga corta de deporte Nike - blanca",
+    "tagline": "Comodidad y frescura para cada entrenamiento",
+    "intro": "La camiseta Nike Dri-Fit Park 7 está diseñada para ofrecer comodidad y libertad de movimiento durante la práctica deportiva. Su tejido ligero de poliéster reciclado ayuda a mantener una sensación agradable mientras entrenas, convirtiéndola en una prenda versátil para jugar al fútbol y otras actividades deportivas.",
+    "collection": "",
+    "key_benefits": [
+      "Mayor frescura: El tejido ayuda a gestionar la humedad para mantener una sensación más seca durante el ejercicio.",
+      "Comodidad deportiva: Su construcción ligera favorece una sensación agradable durante toda la actividad.",
+      "Libertad de movimiento: El diseño de manga corta permite moverse con naturalidad durante entrenamientos y partidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/bv6708-102"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Dri-Fit",
+    "submodel": "",
+    "product_model": "Dri-Fit Park 7",
+    "sole_type": ""
+  }
+}

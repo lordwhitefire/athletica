@@ -1,0 +1,76 @@
+{
+  "id": "4033",
+  "slug": "pizarra-magnetica-plegable-futsal-zastor-plegable-45x60-cm-white",
+  "name": "Pizarra magnética plegable futsal Zastor plegable 45x60 cm",
+  "model": "Pizarra magnética plegable futsal Zastor plegable 45x60 cm",
+  "brand": "Zastor",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "magnética plegable futsal Zastor plegable 45x60 cm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4033_imagen-de-la-pizarra-de-futbol-45x60cm-zastor-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4033_imagen-de-la-pizarra-de-futbol-45x60cm-zastor-blanco_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4033_imagen-de-la-pizarra-de-futbol-45x60cm-zastor-blanco_2_plegado.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4033_imagen-de-la-pizarra-de-futbol-45x60cm-zastor-blanco_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4033_imagen-de-la-pizarra-de-futbol-45x60cm-zastor-blanco_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4033_imagen-de-la-pizarra-de-futbol-45x60cm-zastor-blanco_2_plegado.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4033_imagen-de-la-pizarra-de-futbol-45x60cm-zastor-blanco_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4033",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4033"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "high",
+    "rule": "name contains 'futsal'",
+    "root_model": "Pizarra",
+    "submodel": "magnética plegable futsal Zastor plegable 45x60 cm",
+    "product_model": "Pizarra magnética plegable futsal Zastor plegable 45x60 cm",
+    "sole_type": ""
+  }
+}

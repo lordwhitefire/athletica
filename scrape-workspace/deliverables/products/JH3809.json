@@ -1,0 +1,86 @@
+{
+  "id": "JH3809",
+  "slug": "adidas-predator-match-fingersave-j-red",
+  "name": "adidas Predator Match FingerSave J",
+  "model": "Predator Match FingerSave J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Predator Match FingerSave J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-portero-futbol-con-proteccion-en-los-dedos-color-rojo-adidas-predator-match-fingersave-j_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-portero-futbol-con-proteccion-en-los-dedos-color-rojo-adidas-predator-match-fingersave-j_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-portero-con-proteccion-rojos-adidas-predator-match-fingersave-j_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-con-ferulas-adidas-predator-match-fingersave-j-color-rojo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-de-arquero-con-ferula-adidas-predator-match-fingersave-j-rojos_4_detalle-cierre-en-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-portero-futbol-con-proteccion-en-los-dedos-color-rojo-adidas-predator-match-fingersave-j_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-portero-con-proteccion-rojos-adidas-predator-match-fingersave-j_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-con-ferulas-adidas-predator-match-fingersave-j-color-rojo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/H/JH3809_guantes-de-arquero-con-ferula-adidas-predator-match-fingersave-j-rojos_4_detalle-cierre-en-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jh3809",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jh3809"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Match FingerSave J",
+    "product_model": "Predator Match FingerSave J",
+    "sole_type": ""
+  }
+}

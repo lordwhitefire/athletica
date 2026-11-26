@@ -1,0 +1,88 @@
+{
+  "id": "CQ7795-100",
+  "slug": "nike-gk-match-jr-white",
+  "name": "Nike GK Match Jr",
+  "model": "GK Match Jr",
+  "brand": "Nike",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "GK Match Jr",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-de-portero-color-blanco-nike-gk-match-jr_1_frontal-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-de-portero-color-blanco-nike-gk-match-jr_1_frontal-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-portero-blancos-nike-gk-match-jr_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-de-arquero-nike-gk-match-jr-color-blanco_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-de-futbol-nike-gk-match-jr-blancos_4_detalle-cierres.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-guardameta-color-blanco-nike-gk-match-jr_5_frontal-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-de-portero-color-blanco-nike-gk-match-jr_1_frontal-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-portero-blancos-nike-gk-match-jr_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-de-arquero-nike-gk-match-jr-color-blanco_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-de-futbol-nike-gk-match-jr-blancos_4_detalle-cierres.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/Q/CQ7795-100_guantes-guardameta-color-blanco-nike-gk-match-jr_5_frontal-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/cq7795-100",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/cq7795-100"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "GK",
+    "submodel": "",
+    "product_model": "GK Match Jr",
+    "sole_type": ""
+  }
+}

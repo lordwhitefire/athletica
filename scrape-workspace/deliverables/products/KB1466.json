@@ -1,0 +1,102 @@
+{
+  "id": "KB1466",
+  "slug": "camiseta-adidas-liverpool-entrenamiento-red",
+  "name": "adidas Liverpool Training",
+  "model": "Liverpool entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas del Liverpool 2025 2026 - roja",
+    "tagline": "Entrena con sangre Red",
+    "intro": "Esta camiseta de entrenamiento del Liverpool ofrece rendimiento profesional y comodidad de élite. Ideal para quienes sudan por su escudo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido técnico: Secado rápido, sensación de frescura constante.",
+      "Diseño de élite: Igual al que usan los jugadores Reds.",
+      "Libertad total: Corte entallado que no limita el movimiento."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-color-rojo-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-color-rojo-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-roja-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-adidas-liverpool-entrenamiento-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-adidas-liverpool-entrenamiento-roja_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-color-rojo-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-roja-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-adidas-liverpool-entrenamiento-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1466_camiseta-adidas-liverpool-entrenamiento-roja_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb1466",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas del Liverpool 2025 2026 - roja",
+    "tagline": "Entrena con sangre Red",
+    "intro": "Esta camiseta de entrenamiento del Liverpool ofrece rendimiento profesional y comodidad de élite. Ideal para quienes sudan por su escudo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido técnico: Secado rápido, sensación de frescura constante.",
+      "Diseño de élite: Igual al que usan los jugadores Reds.",
+      "Libertad total: Corte entallado que no limita el movimiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb1466"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Liverpool Training",
+    "submodel": "",
+    "product_model": "Liverpool entrenamiento",
+    "sole_type": ""
+  }
+}

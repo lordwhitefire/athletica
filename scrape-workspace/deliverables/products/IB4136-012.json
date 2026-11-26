@@ -1,0 +1,98 @@
+{
+  "id": "IB4136-012",
+  "slug": "camiseta-nike-chelsea-mujer-grey",
+  "name": "Nike Chelsea Women",
+  "model": "Chelsea mujer",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chelsea Women's Nike Short Sleeve Cotton T-Shirt - Gray",
+    "tagline": "Blue pride in female version",
+    "intro": "This Nike Chelsea t-shirt for women is designed to show off the club's identity with a comfortable and casual style, perfect for the fans' everyday life.",
+    "collection": "",
+    "key_benefits": [
+      "Natural comfort: Soft and skin-friendly cotton fabric.",
+      "Feminine fit: Cut designed to offer comfort and freedom of movement.",
+      "Club identity: Nike design with Chelsea FC essence."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea mujer",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-color-gris-nike-chelsea-mujer_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-color-gris-nike-chelsea-mujer_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-gris-nike-chelsea-mujer_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-nike-chelsea-mujer-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-nike-chelsea-mujer-gris_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-color-gris-nike-chelsea-mujer_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-gris-nike-chelsea-mujer_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-nike-chelsea-mujer-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4136-012_camiseta-nike-chelsea-mujer-gris_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib4136-012",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta para mujer de algodón de manga corta Nike del Chelsea - gris",
+    "tagline": "El orgullo Blue en versión femenina",
+    "intro": "Esta camiseta Nike del Chelsea para mujer está pensada para lucir la identidad del club con un estilo cómodo y casual, perfecta para el día a día de las aficionadas.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad natural: Tejido de algodón suave y agradable al tacto.",
+      "Ajuste femenino: Corte diseñado para ofrecer confort y libertad de movimiento.",
+      "Identidad del club: Diseño Nike con esencia Chelsea FC."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib4136-012"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Chelsea Women",
+    "submodel": "",
+    "product_model": "Chelsea mujer",
+    "sole_type": ""
+  }
+}

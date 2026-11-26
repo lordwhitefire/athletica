@@ -1,0 +1,94 @@
+{
+  "id": "JZ9225",
+  "slug": "mallas-adidas-nino-gk-padded-black",
+  "name": "Mallas adidas Kids GK Padded",
+  "model": "Mallas adidas Kids GK Padded",
+  "brand": "adidas",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mallas largas infantiles de portero acolchadas adidas - negras",
+    "tagline": "Seguridad y confianza para los más jóvenes",
+    "intro": "Con estas mallas acolchadas, los porteros más pequeños entrenan protegidos. Diseñadas con materiales cómodos y zonas de impacto reforzadas, son ideales para academias y formación.",
+    "collection": "",
+    "key_benefits": [
+      "Acolchado protector: Caderas y muslos reforzados",
+      "Elasticidad adaptada: Comodidad total en movimientos rápidos",
+      "Diseño juvenil: Ajuste perfecto sin molestias"
+    ],
+    "technical_details": {
+      "range": "adidas niño GK Padded",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_mallas-largas-color-negro-adidas-nino-gk-padded_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_mallas-largas-color-negro-adidas-nino-gk-padded_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_licras-negras-adidas-nino-gk-padded_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_leggins-adidas-nino-gk-padded-color-negro_3_detalle-lateral-y-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_mallas-largas-adidas-nino-gk-padded-negras_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_mallas-largas-color-negro-adidas-nino-gk-padded_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_licras-negras-adidas-nino-gk-padded_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_leggins-adidas-nino-gk-padded-color-negro_3_detalle-lateral-y-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9225_mallas-largas-adidas-nino-gk-padded-negras_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jz9225",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mallas largas infantiles de portero acolchadas adidas - negras",
+    "tagline": "Seguridad y confianza para los más jóvenes",
+    "intro": "Con estas mallas acolchadas, los porteros más pequeños entrenan protegidos. Diseñadas con materiales cómodos y zonas de impacto reforzadas, son ideales para academias y formación.",
+    "collection": "",
+    "key_benefits": [
+      "Acolchado protector: Caderas y muslos reforzados",
+      "Elasticidad adaptada: Comodidad total en movimientos rápidos",
+      "Diseño juvenil: Ajuste perfecto sin molestias"
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jz9225"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas adidas Kids GK Padded",
+    "sole_type": ""
+  }
+}

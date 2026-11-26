@@ -1,0 +1,88 @@
+{
+  "id": "SX5728-616-A",
+  "slug": "medias-nike-classic-2-cushion-pink",
+  "name": "Nike Classic 2 Cushion",
+  "model": "Classic 2 Cushion",
+  "brand": "Nike",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Classic 2 Cushion",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-616-A_medias-color-rosa-nike-classic-2-acolchados_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-616-A_medias-color-rosa-nike-classic-2-acolchados_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-616-A_medias-nike-classic-2-acolchados-color-rosa_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-616-A_medias-rosas-nike-classic-2-acolchados_2_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-616-A_medias-color-rosa-nike-classic-2-acolchados_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-616-A_medias-nike-classic-2-acolchados-color-rosa_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-616-A_medias-rosas-nike-classic-2-acolchados_2_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sx5728-616-a",
+    "language": "es",
+    "category": "Equipaciones de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sx5728-616-a"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Classic",
+    "submodel": "",
+    "product_model": "Classic 2 Cushion",
+    "sole_type": ""
+  }
+}

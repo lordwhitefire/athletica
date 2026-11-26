@@ -1,0 +1,109 @@
+{
+  "id": "042138-11",
+  "slug": "puma-future-pro-nc-marron",
+  "name": "Puma Future Pro NC",
+  "model": "Future Pro NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma goalkeeper gloves negative cut - beige",
+    "tagline": "Absolute control at every stop",
+    "intro": "The Puma Future Pro NC is designed for goalkeepers looking for a tight fit, reliable grip and maximum freedom of movement. Its negative cut offers more direct contact with the ball, while the Speed ​​Response palm provides security and confidence in each intervention.",
+    "collection": "ARRIVAL PACK",
+    "key_benefits": [
+      "High-performance grip: The 4mm Speed ​​Response palm offers an excellent balance of grip, cushioning and durability.",
+      "More precise control: Negative cut provides a snug fit for improved ball contact.",
+      "Freedom of movement: The knitted back allows natural mobility of the hand to react quickly.",
+      "Greater safety in clearances: Silicone inserts on the back improve control and power in punching."
+    ],
+    "technical_details": {
+      "range": "Future Pro NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/5aa499c87fa94de48e880edd042db4f8d6173c90-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5aa499c87fa94de48e880edd042db4f8d6173c90-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/56027005be0099a10cb5da16ad412ba316f831b2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e081f822f4b08b5779943a08f854f2b9fc336ae8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/be41b8bd420ef3aaeb647d6a0c9403303f1f5b8a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5aa499c87fa94de48e880edd042db4f8d6173c90-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/56027005be0099a10cb5da16ad412ba316f831b2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e081f822f4b08b5779943a08f854f2b9fc336ae8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/be41b8bd420ef3aaeb647d6a0c9403303f1f5b8a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-5aa499c87fa94de48e880edd042db4f8d6173c90-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5aa499c87fa94de48e880edd042db4f8d6173c90-1500x1500.jpg"
+    },
+    {
+      "_id": "image-56027005be0099a10cb5da16ad412ba316f831b2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/56027005be0099a10cb5da16ad412ba316f831b2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e081f822f4b08b5779943a08f854f2b9fc336ae8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e081f822f4b08b5779943a08f854f2b9fc336ae8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-be41b8bd420ef3aaeb647d6a0c9403303f1f5b8a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/be41b8bd420ef3aaeb647d6a0c9403303f1f5b8a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042138-11",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte negativo - beige",
+    "tagline": "Control absoluto en cada parada",
+    "intro": "Los Puma Future Pro NC están diseñados para porteros que buscan un ajuste ceñido, un agarre fiable y la máxima libertad de movimiento. Su corte negativo ofrece un contacto más directo con el balón, mientras que la palma Speed Response proporciona seguridad y confianza en cada intervención.",
+    "collection": "ARRIVAL PACK",
+    "key_benefits": [
+      "Agarre de alto rendimiento: La palma Speed Response de 4 mm ofrece un excelente equilibrio entre adherencia, amortiguación y durabilidad.",
+      "Control más preciso: El corte negativo proporciona un ajuste ceñido para mejorar el contacto con el balón.",
+      "Libertad de movimiento: El dorso de punto permite una movilidad natural de la mano para reaccionar con rapidez.",
+      "Mayor seguridad en los despejes: Las inserciones de silicona en el dorso mejoran el control y la potencia en los golpeos de puños."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042138-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro NC",
+    "product_model": "Future Pro NC",
+    "sole_type": ""
+  }
+}

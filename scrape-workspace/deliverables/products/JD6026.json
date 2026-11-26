@@ -1,0 +1,90 @@
+{
+  "id": "JD6026",
+  "slug": "adidas-tiro-league-orange",
+  "name": "adidas Tiro League",
+  "model": "Tiro League",
+  "brand": "adidas",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujeción - naranjas",
+    "tagline": "Protección ligera para jugar con confianza",
+    "intro": "Las espinilleras adidas Tiro League te ofrecen seguridad sin peso extra, permitiéndote moverte con libertad mientras proteges tus piernas. Incluyen medias de sujeción para mantenerlas firmes en su lugar.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Protección fiable: Placa dura resistente a impactos.",
+      "Comodidad interna: Revestimiento interior suave.",
+      "Fijación perfecta: Mallas de compresión incluidas.",
+      "Diseño deportivo: Inspiradas en la colección Tiro de adidas."
+    ],
+    "technical_details": {
+      "range": "Tiro League",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6026_espinilleras-color-blanco-y-naranja-adidas-tiro-league_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6026_espinilleras-color-blanco-y-naranja-adidas-tiro-league_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6026_canilleras-blancas--naranjas-adidas-tiro-league_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6026_espinilleras-adidas-tiro-league-color-blanco-y-naranja_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6026_espinilleras-color-blanco-y-naranja-adidas-tiro-league_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6026_canilleras-blancas--naranjas-adidas-tiro-league_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6026_espinilleras-adidas-tiro-league-color-blanco-y-naranja_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jd6026",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujeción - naranjas",
+    "tagline": "Protección ligera para jugar con confianza",
+    "intro": "Las espinilleras adidas Tiro League te ofrecen seguridad sin peso extra, permitiéndote moverte con libertad mientras proteges tus piernas. Incluyen medias de sujeción para mantenerlas firmes en su lugar.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Protección fiable: Placa dura resistente a impactos.",
+      "Comodidad interna: Revestimiento interior suave.",
+      "Fijación perfecta: Mallas de compresión incluidas.",
+      "Diseño deportivo: Inspiradas en la colección Tiro de adidas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jd6026"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Tiro",
+    "submodel": "",
+    "product_model": "Tiro League",
+    "sole_type": ""
+  }
+}

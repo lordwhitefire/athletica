@@ -1,0 +1,105 @@
+{
+  "id": "084722-01",
+  "slug": "balon-puma-premier-25-26-play-mini-lights-orbita-yellow",
+  "name": "Puma Premier 25 26 Play mini Lights Orbita",
+  "model": "Premier 25 26 Play mini Lights Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League 2025 2026 High Visibility Mini Soccer Ball - Yellow",
+    "tagline": "Master the game with Premier precision",
+    "intro": "Puma Premier 25 26 Play mini Lights Orbita ball represents the competitive spirit of the most demanding league in the world. Designed for superior performance from the first touch.",
+    "collection": "",
+    "key_benefits": [
+      "Official Premier League design: Yellow color that stands out on cold English nights.",
+      "Gran durabilidad: Estructura pensada para soportar sesiones intensas de juego, sin perder forma ni prestaciones.",
+      "Precise control: Textured surface that favors ball control in any type of play."
+    ],
+    "technical_details": {
+      "range": "Puma Premier 25 26 Play mini Lights Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/958a5b4723e5458070bb2813d40dfcc24a8a97d8-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/958a5b4723e5458070bb2813d40dfcc24a8a97d8-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/725bbf0c5495b0065ad9c7db0891dd737cafacf4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/725bf9d3b4182d1dd5552890e4f28b822e231877-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/958a5b4723e5458070bb2813d40dfcc24a8a97d8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/725bbf0c5495b0065ad9c7db0891dd737cafacf4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/725bf9d3b4182d1dd5552890e4f28b822e231877-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-958a5b4723e5458070bb2813d40dfcc24a8a97d8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/958a5b4723e5458070bb2813d40dfcc24a8a97d8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-725bbf0c5495b0065ad9c7db0891dd737cafacf4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/725bbf0c5495b0065ad9c7db0891dd737cafacf4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-725bf9d3b4182d1dd5552890e4f28b822e231877-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/725bf9d3b4182d1dd5552890e4f28b822e231877-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084722-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 de alta visibilidad mini - amarillo",
+    "tagline": "Domina el juego con precisión Premier",
+    "intro": "Balón Puma Premier 25 26 Play mini Lights Orbita representa el espíritu competitivo de la liga más exigente del mundo. Diseñado para un rendimiento superior desde el primer toque.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Premier League: Color amarillo que resalta en las frías noches inglesas.",
+      "Gran durabilidad: Estructura pensada para soportar sesiones intensas de juego, sin perder forma ni prestaciones.",
+      "Control preciso: Superficie texturizada que favorece el control del balón en cualquier tipo de jugada."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084722-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Premier 25",
+    "submodel": "",
+    "product_model": "Premier 25 26 Play mini Lights Orbita",
+    "sole_type": ""
+  }
+}

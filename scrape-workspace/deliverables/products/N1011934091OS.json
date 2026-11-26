@@ -1,0 +1,79 @@
+{
+  "id": "N1011934091OS",
+  "slug": "pack-coleteros-nike-flex-classic-8-unidades",
+  "name": "Pack coleteros Nike Flex Classic 8 unidades",
+  "model": "Pack coleteros Nike Flex Classic 8 unidades",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pack de ocho coleteros flexibles Nike - varios colores",
+    "tagline": "Comodidad y sujeción para tu día a día activo",
+    "intro": "Estos coleteros Nike Flex Classic ofrecen una sujeción firme pero cómoda, ideales para el entrenamiento o la rutina diaria. Estilo deportivo y practicidad en cada recogido.",
+    "collection": "",
+    "key_benefits": [
+      "Flexibilidad ideal: Se ajustan sin tirar ni romper el cabello.",
+      "Pack completo: 8 unidades en colores neutros que combinan con todo.",
+      "Diseño deportivo: Perfectos para looks activos y funcionales."
+    ],
+    "technical_details": {
+      "range": "coleteros Nike Flex Classic 8 unidades",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1011934091OS_coletero-nike-flex-classic-8-unidades_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1011934091OS_coletero-nike-flex-classic-8-unidades_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1011934091OS_coletero-nike-flex-classic-8-unidades_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n1011934091os",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pack de ocho coleteros flexibles Nike - varios colores",
+    "tagline": "Comodidad y sujeción para tu día a día activo",
+    "intro": "Estos coleteros Nike Flex Classic ofrecen una sujeción firme pero cómoda, ideales para el entrenamiento o la rutina diaria. Estilo deportivo y practicidad en cada recogido.",
+    "collection": "",
+    "key_benefits": [
+      "Flexibilidad ideal: Se ajustan sin tirar ni romper el cabello.",
+      "Pack completo: 8 unidades en colores neutros que combinan con todo.",
+      "Diseño deportivo: Perfectos para looks activos y funcionales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n1011934091os"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Pack",
+    "submodel": "coleteros Nike Flex Classic 8 unidades",
+    "product_model": "Pack coleteros Nike Flex Classic 8 unidades",
+    "sole_type": ""
+  }
+}

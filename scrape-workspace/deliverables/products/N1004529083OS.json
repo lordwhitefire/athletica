@@ -1,0 +1,78 @@
+{
+  "id": "N1004529083OS",
+  "slug": "pack-3-cintas-de-pelo-nike-elastic-2-0",
+  "name": "Pack 3 cintas de pelo Nike Elastic 2.0",
+  "model": "Pack 3 cintas de pelo Nike Elastic 2.0",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "3 cintas de pelo Nike Elastic 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1004529083OS_cintas-para-el-pelo-color-varios-colores-nike-elastic-2-0-3-unidades_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1004529083OS_cintas-para-el-pelo-color-varios-colores-nike-elastic-2-0-3-unidades_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1004529083OS_cintas-de-pelo-negro--blanco--rojo-nike-elastic-2-0-3-unidades_2_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1004529083OS_cintas-para-el-pelo-color-varios-colores-nike-elastic-2-0-3-unidades_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1004529083OS_cintas-de-pelo-negro--blanco--rojo-nike-elastic-2-0-3-unidades_2_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n1004529083os",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n1004529083os"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'cinta'",
+    "root_model": "Pack",
+    "submodel": "",
+    "product_model": "Pack 3 cintas de pelo Nike Elastic 2.0",
+    "sole_type": ""
+  }
+}

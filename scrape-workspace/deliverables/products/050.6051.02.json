@@ -1,0 +1,103 @@
+{
+  "id": "050.6051.02",
+  "slug": "rodilleras-ho-soccer-atomic-black",
+  "name": "Rodilleras HO Soccer Atomic",
+  "model": "Rodilleras HO Soccer Atomic",
+  "brand": "Ho Soccer",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pair of HO Soccer Padded Goalkeeper Knee Pads - Black",
+    "tagline": "Advanced protection for your knees",
+    "intro": "HO Soccer knee pads are designed to reduce the impact during intense training. Perfect for indoor soccer, they offer technical padding and long-lasting comfort.",
+    "collection": "",
+    "key_benefits": [
+      "High-impact padding: Protects against falls and crashes.",
+      "Wraparound design: Comfortable fit without shifting.",
+      "Technical lightness: Maintains agility without losing protection."
+    ],
+    "technical_details": {
+      "range": "HO Soccer Atomic",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/605d2cc895d5db3d69948b40fc09848844a9e8b3-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/605d2cc895d5db3d69948b40fc09848844a9e8b3-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fc2003b2f434b752499ae6cdf82f7275570f7b0e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/605d2cc895d5db3d69948b40fc09848844a9e8b3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fc2003b2f434b752499ae6cdf82f7275570f7b0e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-605d2cc895d5db3d69948b40fc09848844a9e8b3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/605d2cc895d5db3d69948b40fc09848844a9e8b3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fc2003b2f434b752499ae6cdf82f7275570f7b0e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fc2003b2f434b752499ae6cdf82f7275570f7b0e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/050-6051-02",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Par de rodilleras de portero acolchadas HO Soccer - negras",
+    "tagline": "Protección avanzada para tus rodillas",
+    "intro": "Las rodilleras HO Soccer están diseñadas para reducir el impacto en entrenos intensos. Perfectas para fútbol sala, ofrecen acolchado técnico y confort duradero.",
+    "collection": "",
+    "key_benefits": [
+      "Acolchado de alto impacto: Protege en caídas y bloqueos.",
+      "Diseño envolvente: Ajuste cómodo sin desplazamientos.",
+      "Ligereza técnica: Mantiene la agilidad sin perder protección."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/050-6051-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Rodilleras",
+    "submodel": "",
+    "product_model": "Rodilleras HO Soccer Atomic",
+    "sole_type": ""
+  }
+}

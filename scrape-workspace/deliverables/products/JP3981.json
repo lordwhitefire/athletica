@@ -1,0 +1,102 @@
+{
+  "id": "JP3981",
+  "slug": "sudadera-adidas-real-madrid-nino-entrenamiento-green",
+  "name": "adidas Real Madrid Kids Training",
+  "model": "Real Madrid niño entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Entrena como un campeón merengue",
+    "intro": "La sudadera adidas Real Madrid niño entrenamiento es ideal para afrontar los días fríos con confianza y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Calidez funcional: Diseñada para mantener el calor corporal sin perder movilidad.",
+      "Control de humedad: Tecnología AEROREADY que mantiene la piel seca.",
+      "Orgullo madridista: Escudo del Real Madrid termotransferido en el pecho.",
+      "Estilo moderno: Color verde claro con acabado técnico de alto rendimiento.",
+      "Diseño juvenil: Ajuste ideal para niños activos y apasionados del fútbol."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid niño entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-color-verde-adidas-real-madrid-nino-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-color-verde-adidas-real-madrid-nino-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-verde-claro-adidas-real-madrid-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-adidas-real-madrid-nino-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-adidas-real-madrid-nino-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-color-verde-adidas-real-madrid-nino-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-verde-claro-adidas-real-madrid-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-adidas-real-madrid-nino-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3981_sudadera-adidas-real-madrid-nino-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jp3981",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Entrena como un campeón merengue",
+    "intro": "La sudadera adidas Real Madrid niño entrenamiento es ideal para afrontar los días fríos con confianza y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Calidez funcional: Diseñada para mantener el calor corporal sin perder movilidad.",
+      "Control de humedad: Tecnología AEROREADY que mantiene la piel seca.",
+      "Orgullo madridista: Escudo del Real Madrid termotransferido en el pecho.",
+      "Estilo moderno: Color verde claro con acabado técnico de alto rendimiento.",
+      "Diseño juvenil: Ajuste ideal para niños activos y apasionados del fútbol."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jp3981"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid niño entrenamiento",
+    "sole_type": ""
+  }
+}

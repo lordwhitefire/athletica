@@ -1,0 +1,80 @@
+{
+  "id": "374823-04",
+  "slug": "chanclas-puma-divecat-v2-lite-white",
+  "name": "Chanclas Puma Divecat v2 Lite",
+  "model": "Chanclas Puma Divecat v2 Lite",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Divecat v2 Lite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/7/374823-04_chanclas-color-blanco-puma-divecat-v2-lite_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/7/374823-04_chanclas-color-blanco-puma-divecat-v2-lite_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/7/374823-04_sandalias-ducha-blancas-puma-divecat-v2-lite_2_superior-ambos-pies.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/7/374823-04_chancletas-puma-divecat-v2-lite-color-blanco_3_vista-superior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/7/374823-04_chanclas-color-blanco-puma-divecat-v2-lite_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/7/374823-04_sandalias-ducha-blancas-puma-divecat-v2-lite_2_superior-ambos-pies.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/7/374823-04_chancletas-puma-divecat-v2-lite-color-blanco_3_vista-superior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/374823-04",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/374823-04"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Chanclas",
+    "submodel": "",
+    "product_model": "Chanclas Puma Divecat v2 Lite",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "GP6780",
+  "slug": "sujetador-deportivo-adidas-ultimate-sin-relleno-black",
+  "name": "Sujetador deportivo adidas Ultimate sin relleno",
+  "model": "Sujetador deportivo adidas Ultimate sin relleno",
+  "brand": "adidas",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "deportivo adidas Ultimate sin relleno",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sujetador-color-negro-adidas-ultimate-sin-relleno_1_completa-pecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sujetador-color-negro-adidas-ultimate-sin-relleno_1_completa-pecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sostenes-negros-adidas-ultimate-sin-relleno_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sujetador-adidas-ultimate-sin-relleno-color-negro_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sostenes-adidas-ultimate-sin-relleno-negros_4_detalle-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sujetador-color-negro-adidas-ultimate-sin-relleno_1_completa-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sostenes-negros-adidas-ultimate-sin-relleno_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sujetador-adidas-ultimate-sin-relleno-color-negro_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/P/GP6780_sostenes-adidas-ultimate-sin-relleno-negros_4_detalle-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/gp6780",
+    "language": "es",
+    "category": "Ropa entrenamiento",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/gp6780"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Sujetador",
+    "submodel": "",
+    "product_model": "Sujetador deportivo adidas Ultimate sin relleno",
+    "sole_type": ""
+  }
+}

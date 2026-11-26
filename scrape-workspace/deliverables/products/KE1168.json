@@ -1,0 +1,100 @@
+{
+  "id": "KE1168",
+  "slug": "sudadera-adidas-real-madrid-entrenamiento-winterized-green",
+  "name": "adidas Real Madrid Training winterized",
+  "model": "Real Madrid entrenamiento winterized",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas del Real Madrid 2025 2026 - verde claro",
+    "tagline": "Entrena como el Real Madrid",
+    "intro": "La Sudadera adidas Real Madrid entrenamiento es ideal para pulir tu juego en climas fríos. Gracias a su tejido transpirable y térmico, mantiene el confort durante todo el esfuerzo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Escudo del Real Madrid y licencia adidas 2025/26.",
+      "Rendimiento óptimo: Tecnología tejido transpirable y aislamiento térmico que mejora la ventilación o el aislamiento.",
+      "Versatilidad: Ideal para entrenamiento o uso deportivo.",
+      "Comodidad asegurada: Tejido ligero con ajuste regular fit."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento winterized",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-verde-claro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-adidas-real-madrid-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-verde-claro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE1168_sudadera-adidas-real-madrid-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ke1168",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Real Madrid 2025 2026 - verde claro",
+    "tagline": "Entrena como el Real Madrid",
+    "intro": "La Sudadera adidas Real Madrid entrenamiento es ideal para pulir tu juego en climas fríos. Gracias a su tejido transpirable y térmico, mantiene el confort durante todo el esfuerzo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Escudo del Real Madrid y licencia adidas 2025/26.",
+      "Rendimiento óptimo: Tecnología tejido transpirable y aislamiento térmico que mejora la ventilación o el aislamiento.",
+      "Versatilidad: Ideal para entrenamiento o uso deportivo.",
+      "Comodidad asegurada: Tejido ligero con ajuste regular fit."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ke1168"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento winterized",
+    "sole_type": ""
+  }
+}

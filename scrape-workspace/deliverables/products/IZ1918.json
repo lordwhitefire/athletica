@@ -1,0 +1,94 @@
+{
+  "id": "IZ1918",
+  "slug": "bolsa-de-deporte-adidas-tiro-mediana-green",
+  "name": "Bolsa de deporte adidas Tiro mediana",
+  "model": "Bolsa de deporte adidas Tiro mediana",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Bolsa de deporte adidas Tiro (30,5 x 56,5 x 26,5 cm) - verde oliva",
+    "tagline": "Funcionalidad Tiro para tu día a día",
+    "intro": "La bolsa adidas Tiro reúne el look deportivo clásico de la línea con una construcción pensada para el uso diario. Un diseño práctico y resistente para entrenar, viajar o moverte por la ciudad con tu equipación organizada.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño versátil: Perfecta tanto para entrenamientos como para viajes.",
+      "Material resistente: Confeccionada en poliéster duradero que soporta el uso intensivo.",
+      "Capacidad óptima: Espacio para guardar ropa, calzado y accesorios deportivos.",
+      "Comodidad en transporte: Asas reforzadas y correa ajustable para llevarla fácilmente."
+    ],
+    "technical_details": {
+      "range": "de deporte adidas Tiro mediana",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-deporte-color-verde-adidas-tiro-mediana_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-deporte-color-verde-adidas-tiro-mediana_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-verde-oliva-adidas-tiro-mediana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-para-deporte-adidas-tiro-mediana-color-verde_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-deporte-adidas-tiro-mediana-verde-oliva_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-color-verde-adidas-tiro-mediana_5_detalle-enganche-asa.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-deporte-color-verde-adidas-tiro-mediana_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-verde-oliva-adidas-tiro-mediana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-para-deporte-adidas-tiro-mediana-color-verde_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-deporte-adidas-tiro-mediana-verde-oliva_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1918_bolsa-color-verde-adidas-tiro-mediana_5_detalle-enganche-asa.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/iz1918",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Bolsa de deporte adidas Tiro (30,5 x 56,5 x 26,5 cm) - verde oliva",
+    "tagline": "Funcionalidad Tiro para tu día a día",
+    "intro": "La bolsa adidas Tiro reúne el look deportivo clásico de la línea con una construcción pensada para el uso diario. Un diseño práctico y resistente para entrenar, viajar o moverte por la ciudad con tu equipación organizada.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño versátil: Perfecta tanto para entrenamientos como para viajes.",
+      "Material resistente: Confeccionada en poliéster duradero que soporta el uso intensivo.",
+      "Capacidad óptima: Espacio para guardar ropa, calzado y accesorios deportivos.",
+      "Comodidad en transporte: Asas reforzadas y correa ajustable para llevarla fácilmente."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/iz1918"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Bolsa",
+    "submodel": "",
+    "product_model": "Bolsa de deporte adidas Tiro mediana",
+    "sole_type": ""
+  }
+}

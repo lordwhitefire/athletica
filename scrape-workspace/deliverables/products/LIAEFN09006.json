@@ -1,0 +1,78 @@
+{
+  "id": "LIAEFN09006",
+  "slug": "cordones-infantiles-planos-y-finos-futbolmania-green",
+  "name": "Cordones infantiles planos y finos futbolmania",
+  "model": "Cordones infantiles planos y finos futbolmania",
+  "brand": "Futbolmania",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "infantiles planos y finos futbolmania",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIAEFN09006_cordon-fino-90mm-verde-futbolmania_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIAEFN09006_cordon-fino-90mm-verde-futbolmania_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIAEFN09006_cordon-fino-90mm-verde-futbolmania_2_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIAEFN09006_cordon-fino-90mm-verde-futbolmania_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIAEFN09006_cordon-fino-90mm-verde-futbolmania_2_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/liaefn09006",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/liaefn09006"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Cordones",
+    "submodel": "",
+    "product_model": "Cordones infantiles planos y finos futbolmania",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "HJ6263-492",
+  "slug": "polo-nike-inter-dri-fit-2-0-blue",
+  "name": "Polo Nike Inter Dri-Fit 2.0",
+  "model": "Polo Nike Inter Dri-Fit 2.0",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Polo Nike del Inter de Milán - azul marino",
+    "tagline": "Estilo Nerazzurri para cualquier ocasión",
+    "intro": "El polo Nike del Inter 2025/26 combina comodidad, transpirabilidad y orgullo por el club. Diseñado para adaptarse a tu ritmo, tanto dentro como fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial del Inter: Inspirado en los colores del club para un look representativo.",
+      "Comodidad total: Tejido suave con ajuste clásico para el uso diario.",
+      "Transpirabilidad activa: Tecnología Nike Dri-FIT que mantiene el cuerpo seco.",
+      "Estilo versátil: Ideal para el campo, la grada o la ciudad.",
+      "Acabado cuidado: Tapeta con dos botones y dobladillo trasero más largo para mayor cobertura."
+    ],
+    "technical_details": {
+      "range": "Nike Inter Dri-Fit 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6263-492_polo-color-azul-nike-inter-dri-fit-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6263-492_polo-color-azul-nike-inter-dri-fit-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6263-492_niqui-azul-marino-nike-inter-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6263-492_polo-nike-inter-dri-fit-2-0-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6263-492_polo-color-azul-nike-inter-dri-fit-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6263-492_niqui-azul-marino-nike-inter-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6263-492_polo-nike-inter-dri-fit-2-0-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6263-492",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Polo Nike del Inter de Milán - azul marino",
+    "tagline": "Estilo Nerazzurri para cualquier ocasión",
+    "intro": "El polo Nike del Inter 2025/26 combina comodidad, transpirabilidad y orgullo por el club. Diseñado para adaptarse a tu ritmo, tanto dentro como fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial del Inter: Inspirado en los colores del club para un look representativo.",
+      "Comodidad total: Tejido suave con ajuste clásico para el uso diario.",
+      "Transpirabilidad activa: Tecnología Nike Dri-FIT que mantiene el cuerpo seco.",
+      "Estilo versátil: Ideal para el campo, la grada o la ciudad.",
+      "Acabado cuidado: Tapeta con dos botones y dobladillo trasero más largo para mayor cobertura."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6263-492"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo Nike Inter Dri-Fit 2.0",
+    "sole_type": ""
+  }
+}

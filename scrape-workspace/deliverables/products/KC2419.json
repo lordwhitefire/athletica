@@ -1,0 +1,96 @@
+{
+  "id": "KC2419",
+  "slug": "sudadera-adidas-arsenal-nino-entrenamiento-black",
+  "name": "adidas Arsenal Kids Training",
+  "model": "Arsenal niño entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Arsenal 2026 2027 - negra",
+    "tagline": "Entrena como las futuras estrellas del Arsenal",
+    "intro": "La sudadera infantil de entrenamiento adidas del Arsenal 26 27 está diseñada para jóvenes futbolistas que quieren mejorar su juego mientras muestran su pasión por los Gunners. Su diseño oficial en color negro con detalles naranjas reproduce la estética utilizada por los jugadores durante las sesiones de entrenamiento, ofreciendo comodidad y estilo dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirada en la ropa de entrenamiento del club londinense.",
+      "FORMOTION: Facilita movimientos más naturales para entrenar con total libertad.",
+      "Media cremallera frontal: Permite regular la ventilación y facilita su colocación.",
+      "Corte ajustado: Proporciona una sensación cómoda y deportiva sin limitar los movimientos."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal niño entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-color-negro-adidas-arsenal-nino-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-color-negro-adidas-arsenal-nino-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-negra-adidas-arsenal-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-adidas-arsenal-nino-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-adidas-arsenal-nino-entrenamiento-negra_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-color-negro-adidas-arsenal-nino-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-negra-adidas-arsenal-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-adidas-arsenal-nino-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2419_sudadera-adidas-arsenal-nino-entrenamiento-negra_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kc2419",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Arsenal 2026 2027 - negra",
+    "tagline": "Entrena como las futuras estrellas del Arsenal",
+    "intro": "La sudadera infantil de entrenamiento adidas del Arsenal 26 27 está diseñada para jóvenes futbolistas que quieren mejorar su juego mientras muestran su pasión por los Gunners. Su diseño oficial en color negro con detalles naranjas reproduce la estética utilizada por los jugadores durante las sesiones de entrenamiento, ofreciendo comodidad y estilo dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirada en la ropa de entrenamiento del club londinense.",
+      "FORMOTION: Facilita movimientos más naturales para entrenar con total libertad.",
+      "Media cremallera frontal: Permite regular la ventilación y facilita su colocación.",
+      "Corte ajustado: Proporciona una sensación cómoda y deportiva sin limitar los movimientos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kc2419"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Arsenal Kids",
+    "submodel": "",
+    "product_model": "Arsenal niño entrenamiento",
+    "sole_type": ""
+  }
+}

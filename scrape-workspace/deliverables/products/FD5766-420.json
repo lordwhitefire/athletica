@@ -1,0 +1,82 @@
+{
+  "id": "FD5766-420",
+  "slug": "nike-gk-vapor-dynamic-fit-blue",
+  "name": "Nike Gk Vapor Dynamic Fit",
+  "model": "Gk Vapor Dynamic Fit",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Gk Vapor Dynamic Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-de-portero-color-azul-nike-gk-vapor-dynamic-fit_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-de-portero-color-azul-nike-gk-vapor-dynamic-fit_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-portero-azul-cian-nike-gk-vapor-dynamic-fit_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-de-arquero-nike-gk-vapor-dynamic-fit-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-de-futbol-nike-gk-vapor-dynamic-fit-azul-cian_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-de-portero-color-azul-nike-gk-vapor-dynamic-fit_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-portero-azul-cian-nike-gk-vapor-dynamic-fit_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-de-arquero-nike-gk-vapor-dynamic-fit-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/D/FD5766-420_guantes-de-futbol-nike-gk-vapor-dynamic-fit-azul-cian_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fd5766-420",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fd5766-420"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Gk",
+    "submodel": "Vapor Dynamic Fit",
+    "product_model": "Gk Vapor Dynamic Fit",
+    "sole_type": ""
+  }
+}

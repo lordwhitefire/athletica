@@ -1,0 +1,96 @@
+{
+  "id": "JM9428",
+  "slug": "sudadera-adidas-bayern-icon-green",
+  "name": "adidas Bayern Icon",
+  "model": "Bayern Icon",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Bayern Munich Adidas Cotton Sweatshirt - Olive Green",
+    "tagline": "A reinvented classic for Bayern Munich fans",
+    "intro": "The adidas Icon Bayern Munich sweatshirt brings the club's legacy into the present. Perfect for setting style on cold days or completing the Icon 25/26 set.",
+    "collection": "",
+    "key_benefits": [
+      "90s-inspired design: Retro cut with classic adidas logo.",
+      "Thermal comfort: Material that provides warmth without losing mobility.",
+      "Total versatility: Use it as a coat or walking garment.",
+      "Visual identity: Olive green color with orange details."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-color-verde-adidas-bayern-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-color-verde-adidas-bayern-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-verde-oliva-adidas-bayern-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-adidas-bayern-icon-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-adidas-bayern-icon-verde-oliva_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-color-verde-adidas-bayern-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-verde-oliva-adidas-bayern-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-adidas-bayern-icon-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9428_sudadera-adidas-bayern-icon-verde-oliva_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm9428",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de algodón adidas del Bayern de Múnich - verde oliva",
+    "tagline": "Un clásico reinventado para los fieles al Bayern de Múnich",
+    "intro": "La sudadera adidas Icon del Bayern de Múnich trae el legado del club al presente. Perfecta para marcar estilo en días fríos o completar el conjunto Icon 25/26.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño inspirado en los 90: Corte retro con logo clásico adidas.",
+      "Confort térmico: Material que abriga sin perder movilidad.",
+      "Versatilidad total: Úsala como abrigo o prenda de paseo.",
+      "Identidad visual: Color verde oliva con detalles en naranja."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm9428"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Bayern Icon",
+    "submodel": "",
+    "product_model": "Bayern Icon",
+    "sole_type": ""
+  }
+}

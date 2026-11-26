@@ -1,0 +1,97 @@
+{
+  "id": "030851-02",
+  "slug": "puma-king-sleeve-black",
+  "name": "Puma King Sleeve",
+  "model": "King Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - Black",
+    "tagline": "Protection and comfort for every game",
+    "intro": "The Puma King Sleeve soccer shin guards are designed for soccer players looking to combine protection, cushioning and stable support during the game. Its PP cover incorporates EVA padding to help absorb impacts and is complemented by elastic meshes that keep the protections correctly placed.",
+    "collection": "",
+    "key_benefits": [
+      "Resistant protection: Its cover is designed to help protect the shin against the impacts of the game.",
+      "Greater cushioning: Padding helps absorb shock and improve comfort.",
+      "Stable fit: Elastic tights help keep shin guards positioned correctly during play.",
+      "Comfort in movement: Its construction allows you to play with a comfortable feeling during training and matches."
+    ],
+    "technical_details": {
+      "range": "King Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a7c425e731605294eecfe33285b7c2aa2ca1062b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a7c425e731605294eecfe33285b7c2aa2ca1062b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7f4e55d6a0ae787ce5a7ed09a814680d23fb9148-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a7c425e731605294eecfe33285b7c2aa2ca1062b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7f4e55d6a0ae787ce5a7ed09a814680d23fb9148-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a7c425e731605294eecfe33285b7c2aa2ca1062b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a7c425e731605294eecfe33285b7c2aa2ca1062b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7f4e55d6a0ae787ce5a7ed09a814680d23fb9148-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7f4e55d6a0ae787ce5a7ed09a814680d23fb9148-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030851-02",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - negras",
+    "tagline": "Protección y comodidad para cada partido",
+    "intro": "Las espinilleras de fútbol Puma King Sleeve están diseñadas para futbolistas que buscan combinar protección, amortiguación y una sujeción estable durante el juego. Su cubierta de PP incorpora acolchado de EVA para ayudar a absorber los impactos y se complementa con mallas elásticas que mantienen las protecciones correctamente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección resistente: Su cubierta está diseñada para ayudar a proteger la espinilla frente a los impactos propios del juego.",
+      "Mayor amortiguación: El acolchado contribuye a absorber los golpes y mejorar la comodidad.",
+      "Ajuste estable: Las mallas elásticas ayudan a mantener las espinilleras correctamente colocadas durante el juego.",
+      "Comodidad en movimiento: Su construcción permite jugar con una sensación cómoda durante entrenamientos y partidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030851-02"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "King",
+    "submodel": "Sleeve",
+    "product_model": "King Sleeve",
+    "sole_type": ""
+  }
+}

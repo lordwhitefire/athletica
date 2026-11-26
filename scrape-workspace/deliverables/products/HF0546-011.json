@@ -1,0 +1,94 @@
+{
+  "id": "HF0546-011",
+  "slug": "guantes-nike-academy-therma-fit-black",
+  "name": "Nike Academy Therma-Fit",
+  "model": "Academy Therma-Fit",
+  "brand": "Nike",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de fútbol Nike Academy Therma-FIT - grises",
+    "tagline": "Ajuste cálido con control seguro",
+    "intro": "Los Nike Academy integran tecnología Therma-FIT para conservar el calor y un ajuste elástico que aporta sujeción. Pensados para mantener la comodidad y el agarre en días fríos.",
+    "collection": "",
+    "key_benefits": [
+      "Calidez constante: tecnología Therma-FIT que ayuda a conservar el calor corporal.",
+      "Confort envolvente: puños elásticos para un ajuste firme y cómodo.",
+      "Libertad de movimiento: materiales flexibles que no limitan el juego.",
+      "Preparados para el clima: pensados para sesiones a baja temperatura."
+    ],
+    "technical_details": {
+      "range": "Nike Academy Therma-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0546-011_guantes-termicos-color-negro-nike-academy-therma-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0546-011_guantes-termicos-color-negro-nike-academy-therma-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0546-011_guantes-frio-negros-nike-academy-therma-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0546-011_guantes-nike-academy-therma-fit-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0546-011_guantes-termicos-color-negro-nike-academy-therma-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0546-011_guantes-frio-negros-nike-academy-therma-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0546-011_guantes-nike-academy-therma-fit-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hf0546-011",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de fútbol Nike Academy Therma-FIT - grises",
+    "tagline": "Ajuste cálido con control seguro",
+    "intro": "Los Nike Academy integran tecnología Therma-FIT para conservar el calor y un ajuste elástico que aporta sujeción. Pensados para mantener la comodidad y el agarre en días fríos.",
+    "collection": "",
+    "key_benefits": [
+      "Calidez constante: tecnología Therma-FIT que ayuda a conservar el calor corporal.",
+      "Confort envolvente: puños elásticos para un ajuste firme y cómodo.",
+      "Libertad de movimiento: materiales flexibles que no limitan el juego.",
+      "Preparados para el clima: pensados para sesiones a baja temperatura."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hf0546-011"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "Academy",
+    "submodel": "",
+    "product_model": "Academy Therma-Fit",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "JZ8459",
+  "slug": "camiseta-sin-mangas-adidas-espana-entrenamiento-blue",
+  "name": "sin mangas adidas España Training",
+  "model": "sin mangas adidas España Training",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta sin mangas de entrenamiento adidas de la selección española 2026 - azul marino",
+    "tagline": "Entrena con libertad absoluta",
+    "intro": "La camiseta sin mangas de entrenamiento España 2026 es ideal para sesiones intensas y máxima transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con los colores y el escudo de la selección española.",
+      "Comodidad total: Tejidos suaves y transpirables para todo el día.",
+      "Tecnología integrada: Incorpora la tecnología CLIMACOOL.",
+      "Versatilidad: Perfecta para entrenar, salir o animar con estilo."
+    ],
+    "technical_details": {
+      "range": "sin mangas adidas España entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-azul-marino-adidas-espana-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-adidas-espana-entrenamiento-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-adidas-espana-entrenamiento-azul-marino_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-azul-marino-adidas-espana-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-adidas-espana-entrenamiento-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8459_camiseta-tirantes-adidas-espana-entrenamiento-azul-marino_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz8459",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta sin mangas de entrenamiento adidas de la selección española 2026 - azul marino",
+    "tagline": "Entrena con libertad absoluta",
+    "intro": "La camiseta sin mangas de entrenamiento España 2026 es ideal para sesiones intensas y máxima transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con los colores y el escudo de la selección española.",
+      "Comodidad total: Tejidos suaves y transpirables para todo el día.",
+      "Tecnología integrada: Incorpora la tecnología CLIMACOOL.",
+      "Versatilidad: Perfecta para entrenar, salir o animar con estilo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz8459"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin mangas adidas España Training",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "HV1180-010",
+  "slug": "camiseta-sin-mangas-nike-t90-dri-fit-black",
+  "name": "sin mangas Nike T90 Dri-Fit",
+  "model": "sin mangas Nike T90 Dri-Fit",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta sin mangas de entrenamiento Nike - negra",
+    "tagline": "Ligereza y frescura para entrenamientos intensos",
+    "intro": "La Nike T90 sin mangas Dri-Fit es perfecta para sesiones exigentes. Ofrece transpirabilidad, libertad de movimiento y diseño Total90 para maximizar el rendimiento en cada ejercicio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño sin mangas: Permite una movilidad total en brazos y hombros.",
+      "Tecnología Dri-FIT: Elimina el sudor y mantiene el cuerpo seco.",
+      "Estética Total90: Inspirada en una de las líneas más icónicas de Nike fútbol.",
+      "Confort atlético: Tejido suave, elástico y de rápido secado."
+    ],
+    "technical_details": {
+      "range": "sin mangas Nike T90 Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-010_camiseta-tirantes-color-negro-nike-pro-dri-fit-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-010_camiseta-tirantes-color-negro-nike-pro-dri-fit-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-010_camiseta-tirantes-negro-nike-pro-dri-fit-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-010_camiseta-tirantes-nike-pro-dri-fit-t90-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-010_camiseta-tirantes-color-negro-nike-pro-dri-fit-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-010_camiseta-tirantes-negro-nike-pro-dri-fit-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-010_camiseta-tirantes-nike-pro-dri-fit-t90-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv1180-010",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta sin mangas de entrenamiento Nike - negra",
+    "tagline": "Ligereza y frescura para entrenamientos intensos",
+    "intro": "La Nike T90 sin mangas Dri-Fit es perfecta para sesiones exigentes. Ofrece transpirabilidad, libertad de movimiento y diseño Total90 para maximizar el rendimiento en cada ejercicio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño sin mangas: Permite una movilidad total en brazos y hombros.",
+      "Tecnología Dri-FIT: Elimina el sudor y mantiene el cuerpo seco.",
+      "Estética Total90: Inspirada en una de las líneas más icónicas de Nike fútbol.",
+      "Confort atlético: Tejido suave, elástico y de rápido secado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv1180-010"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin mangas Nike T90 Dri-Fit",
+    "sole_type": ""
+  }
+}

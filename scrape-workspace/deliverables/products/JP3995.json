@@ -1,0 +1,102 @@
+{
+  "id": "JP3995",
+  "slug": "chaqueta-adidas-real-madrid-presentacion-grey",
+  "name": "adidas Real Madrid presentación",
+  "model": "Real Madrid presentación",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas presentation jacket - gray",
+    "tagline": "Presence and style in every appearance",
+    "intro": "With this Real Madrid presentation jacket, you will look like a professional on and off the field. The sleek design and official details let you represent your team with pride.",
+    "collection": "",
+    "key_benefits": [
+      "Official style: Design identical to that worn by Real Madrid players.",
+      "Total comfort: Lightweight, breathable fabric with a regular fit.",
+      "Real Madrid pride: Embroidered shield that stands out on the chest.",
+      "Professional inspiration: Colors based on the team's away kit.",
+      "Premium Versatility: Ideal for pre-game, travel or everyday use."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-chandal-gris-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-entretiempo-adidas-real-madrid-presentacion-color-gris_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-adidas-real-madrid-presentacion-gris_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-chandal-gris-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-entretiempo-adidas-real-madrid-presentacion-color-gris_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3995_chaqueta-adidas-real-madrid-presentacion-gris_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3995",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de presentación adidas del Real Madrid - gris",
+    "tagline": "Presencia y estilo en cada aparición",
+    "intro": "Con esta chaqueta de presentación del Real Madrid, lucirás como un profesional dentro y fuera del campo. El diseño elegante y los detalles oficiales te permiten representar a tu equipo con orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo oficial: Diseño idéntico al que visten los jugadores del Real Madrid.",
+      "Comodidad total: Tejido ligero y transpirable con ajuste regular.",
+      "Orgullo madridista: Escudo bordado que destaca sobre el pecho.",
+      "Inspiración profesional: Colores basados en la segunda equipación del equipo.",
+      "Versatilidad premium: Ideal para antes del partido, viajes o uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3995"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid presentación",
+    "sole_type": ""
+  }
+}

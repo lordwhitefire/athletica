@@ -1,0 +1,88 @@
+{
+  "id": "CODI109",
+  "slug": "codera-rinat-infantil-acolchada-black",
+  "name": "Codera Rinat Infantil Acolchada",
+  "model": "Codera Rinat Infantil Acolchada",
+  "brand": "Rinat",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Rinat Infantil Acolchada",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/O/CODI109_coderas-acolchadas-portero-futbol-sala-color-negro-rinat-infantil-acolchada_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/O/CODI109_coderas-acolchadas-portero-futbol-sala-color-negro-rinat-infantil-acolchada_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/O/CODI109_coderas-arquero-futsal-negras-performance-rinat-infantil-acolchada_2_comleta-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/O/CODI109_coderas-de-futbol-sala-rinat-infantil-acolchada-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/O/CODI109_coderas-acolchadas-portero-futbol-sala-color-negro-rinat-infantil-acolchada_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/O/CODI109_coderas-arquero-futsal-negras-performance-rinat-infantil-acolchada_2_comleta-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/O/CODI109_coderas-de-futbol-sala-rinat-infantil-acolchada-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/codi109",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/codi109"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Codera",
+    "submodel": "",
+    "product_model": "Codera Rinat Infantil Acolchada",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "026471-01",
+  "slug": "gorra-puma-milan-essentials-red",
+  "name": "Puma Milan Essentials",
+  "model": "Milan Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Milan Puma Walking Cap - Red",
+    "tagline": "Casual style with Rossonera identity",
+    "intro": "Show off your passion for Milan with this urban-style Puma cap. Perfect for daily use, it adds a modern touch to any look while showing your loyalty to the club.",
+    "collection": "",
+    "key_benefits": [
+      "All-day comfort: Lightweight, breathable fabric.",
+      "Curved visor: Protection against the sun with classic style.",
+      "Adjustable design: Back closure that adapts to your size.",
+      "Rossonero pride: Milan shield embroidered on the front."
+    ],
+    "technical_details": {
+      "range": "Puma Milan Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8da9b7628f64d5f8bc84654d6601f6538a24f11d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8da9b7628f64d5f8bc84654d6601f6538a24f11d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8661fa8274acef261ae4860d7e7870bfca058248-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44b615f1482d0fc74b5406087fdb8db56d03f3f0-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8da9b7628f64d5f8bc84654d6601f6538a24f11d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8661fa8274acef261ae4860d7e7870bfca058248-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44b615f1482d0fc74b5406087fdb8db56d03f3f0-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-8da9b7628f64d5f8bc84654d6601f6538a24f11d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8da9b7628f64d5f8bc84654d6601f6538a24f11d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8661fa8274acef261ae4860d7e7870bfca058248-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8661fa8274acef261ae4860d7e7870bfca058248-1500x1500.jpg"
+    },
+    {
+      "_id": "image-44b615f1482d0fc74b5406087fdb8db56d03f3f0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/44b615f1482d0fc74b5406087fdb8db56d03f3f0-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/026471-01",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma del Milan - roja",
+    "tagline": "Estilo casual con identidad rossonera",
+    "intro": "Luce tu pasión por el Milan con esta gorra Puma de estilo urbano. Perfecta para uso diario, aporta un toque moderno a cualquier look mientras demuestras tu fidelidad al club.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad todo el día: Tejido ligero y transpirable.",
+      "Visera curvada: Protección contra el sol con estilo clásico.",
+      "Diseño ajustable: Cierre trasero que se adapta a tu medida.",
+      "Orgullo rossonero: Escudo del Milan bordado al frente."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/026471-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Milan Essentials",
+    "submodel": "",
+    "product_model": "Milan Essentials",
+    "sole_type": ""
+  }
+}

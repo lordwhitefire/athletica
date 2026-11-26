@@ -1,0 +1,100 @@
+{
+  "id": "JP3116",
+  "slug": "camiseta-adidas-manchester-united-nino-entrenamiento-purple",
+  "name": "adidas Manchester United Kids Training",
+  "model": "Manchester United niño entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de entrenamiento adidas del Manchester United 2025 2026 - lila",
+    "tagline": "Entrenamiento con identidad desde pequeño",
+    "intro": "Esta camiseta infantil permite que los más jóvenes entrenen como sus ídolos del Manchester United. Con un diseño cómodo y transpirable, es ideal para que se muevan con libertad y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño auténtico: Versión mini de la camiseta de entrenamiento oficial.",
+      "Libertad de juego: Ajuste cómodo que acompaña cada movimiento.",
+      "Tejido transpirable: Tecnología AEROREADY que mantiene la frescura.",
+      "Pasión por el club: Escudo del Manchester United bien visible."
+    ],
+    "technical_details": {
+      "range": "adidas Manchester United niño entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-color-purpura-adidas-manchester-united-nino-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-color-purpura-adidas-manchester-united-nino-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-lila-adidas-manchester-united-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-adidas-manchester-united-nino-entrenamiento-color-purpura_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-adidas-manchester-united-nino-entrenamiento-lila_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-color-purpura-adidas-manchester-united-nino-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-lila-adidas-manchester-united-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-adidas-manchester-united-nino-entrenamiento-color-purpura_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3116_camiseta-adidas-manchester-united-nino-entrenamiento-lila_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jp3116",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de entrenamiento adidas del Manchester United 2025 2026 - lila",
+    "tagline": "Entrenamiento con identidad desde pequeño",
+    "intro": "Esta camiseta infantil permite que los más jóvenes entrenen como sus ídolos del Manchester United. Con un diseño cómodo y transpirable, es ideal para que se muevan con libertad y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño auténtico: Versión mini de la camiseta de entrenamiento oficial.",
+      "Libertad de juego: Ajuste cómodo que acompaña cada movimiento.",
+      "Tejido transpirable: Tecnología AEROREADY que mantiene la frescura.",
+      "Pasión por el club: Escudo del Manchester United bien visible."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jp3116"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Manchester United",
+    "submodel": "",
+    "product_model": "Manchester United niño entrenamiento",
+    "sole_type": ""
+  }
+}

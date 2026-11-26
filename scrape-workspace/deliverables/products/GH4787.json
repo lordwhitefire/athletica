@@ -1,0 +1,86 @@
+{
+  "id": "GH4787",
+  "slug": "sujetador-deportivo-adidas-don-t-rest-alphaskin-grey",
+  "name": "Sujetador deportivo adidas Don't Rest Alphaskin",
+  "model": "Sujetador deportivo adidas Don't Rest Alphaskin",
+  "brand": "adidas",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "deportivo adidas Don't Rest Alphaskin",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sujetador-color-gris-adidas-drst-alphaskin_1_completa-pecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sujetador-color-gris-adidas-drst-alphaskin_1_completa-pecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sostenes-gris-adidas-drst-alphaskin_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sujetador-adidas-drst-alphaskin-color-gris_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sostenes-adidas-drst-alphaskin-gris_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sujetador-color-gris-adidas-drst-alphaskin_1_completa-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sostenes-gris-adidas-drst-alphaskin_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sujetador-adidas-drst-alphaskin-color-gris_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH4787_sostenes-adidas-drst-alphaskin-gris_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/gh4787",
+    "language": "es",
+    "category": "Ropa entrenamiento",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/gh4787"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Sujetador",
+    "submodel": "",
+    "product_model": "Sujetador deportivo adidas Don't Rest Alphaskin",
+    "sole_type": ""
+  }
+}

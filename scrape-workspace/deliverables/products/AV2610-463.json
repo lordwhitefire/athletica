@@ -1,0 +1,92 @@
+{
+  "id": "AV2610-463",
+  "slug": "camiseta-interior-nike-mujer-park-first-layer-dri-fit-blue",
+  "name": "interior Nike Women Park First Layer Dri-fit",
+  "model": "interior Nike Women Park First Layer Dri-fit",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta interior compresiva manga larga Nike - azul",
+    "tagline": "Rinde con calor y libertad incluso en frío extremo",
+    "intro": "La camiseta interior Park First Layer de Nike está pensada para jugadoras que no bajan el ritmo en invierno. Gracias a su compresión inteligente y su tejido térmico, te mantiene seca y protegida sin limitar el movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Compresión adaptativa: Se ajusta al cuerpo para un mejor rendimiento muscular.",
+      "Aislamiento térmico: Conserva el calor corporal en condiciones frías.",
+      "Secado rápido: Tecnología que elimina el sudor de forma eficiente.",
+      "Elasticidad estratégica: Libertad total para moverte en el campo."
+    ],
+    "technical_details": {
+      "range": "interior Nike mujer Park First Layer Dri-fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-color-azul-nike-mujer-park-first-layer-df_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-color-azul-nike-mujer-park-first-layer-df_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-azul-nike-mujer-park-first-layer-df_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-nike-mujer-park-first-layer-df-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-nike-mujer-park-first-layer-df-azul_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-color-azul-nike-mujer-park-first-layer-df_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-azul-nike-mujer-park-first-layer-df_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-nike-mujer-park-first-layer-df-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-463_camiseta-manga-larga-nike-mujer-park-first-layer-df-azul_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/av2610-463",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta interior compresiva manga larga Nike - azul",
+    "tagline": "Rinde con calor y libertad incluso en frío extremo",
+    "intro": "La camiseta interior Park First Layer de Nike está pensada para jugadoras que no bajan el ritmo en invierno. Gracias a su compresión inteligente y su tejido térmico, te mantiene seca y protegida sin limitar el movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Compresión adaptativa: Se ajusta al cuerpo para un mejor rendimiento muscular.",
+      "Aislamiento térmico: Conserva el calor corporal en condiciones frías.",
+      "Secado rápido: Tecnología que elimina el sudor de forma eficiente.",
+      "Elasticidad estratégica: Libertad total para moverte en el campo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/av2610-463"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "interior",
+    "submodel": "",
+    "product_model": "interior Nike Women Park First Layer Dri-fit",
+    "sole_type": ""
+  }
+}

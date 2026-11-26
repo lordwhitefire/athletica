@@ -1,0 +1,90 @@
+{
+  "id": "DB4554-010",
+  "slug": "pantalon-nike-tottenham-mujer-dri-fit-black",
+  "name": "Nike Tottenham Women Dri-Fit",
+  "model": "Tottenham mujer Dri-Fit",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Tottenham mujer Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-color-negro-nike-tottenham-mujer-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-color-negro-nike-tottenham-mujer-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-chandal-negro-y-lila-nike-tottenham-mujer-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-chandal-nike-tottenham-mujer-dri-fit-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-nike-tottenham-mujer-dri-fit-negro-y-lila_4_detalle-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-nike-tottenham-mujer-dri-fit-negro-y-lila_5_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-nike-tottenham-mujer-dri-fit-negro-y-lila_6_detalle-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-color-negro-nike-tottenham-mujer-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-chandal-negro-y-lila-nike-tottenham-mujer-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-chandal-nike-tottenham-mujer-dri-fit-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-nike-tottenham-mujer-dri-fit-negro-y-lila_4_detalle-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-nike-tottenham-mujer-dri-fit-negro-y-lila_5_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/B/DB4554-010_pantalon-largo-nike-tottenham-mujer-dri-fit-negro-y-lila_6_detalle-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/db4554-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/db4554-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Tottenham",
+    "submodel": "",
+    "product_model": "Tottenham mujer Dri-Fit",
+    "sole_type": ""
+  }
+}

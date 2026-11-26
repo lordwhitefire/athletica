@@ -1,0 +1,111 @@
+{
+  "id": "100009.100-A",
+  "slug": "camiseta-manga-larga-joma-negro-black",
+  "name": "Long Sleeve Joma",
+  "model": "Long Sleeve Joma",
+  "brand": "Joma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Joma long sleeve goalkeeper shirt - black",
+    "tagline": "Confidence under sticks, total comfort",
+    "intro": "The Joma long-sleeved goalkeeper shirt offers freedom of movement and lightness, ideal for training or matches. Its sober black design ensures a professional aesthetic.",
+    "collection": "",
+    "key_benefits": [
+      "Total comfort: Light and breathable, ideal for long sessions.",
+      "Professional design: Sober and functional style in black.",
+      "Freedom of movement: Wide cut for maximum agility under clubs."
+    ],
+    "technical_details": {
+      "range": "manga larga Joma negro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d5de500511992ae8896f7098501525871dfea29e-800x800.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d5de500511992ae8896f7098501525871dfea29e-800x800.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ecbff16544f5d5a482ed8f1e9bf408dc1089fecd-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/219c858ea7990069af7ee9086bf08ff23630e7f5-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aeebc45432b24785ffa978b1e1ff896d1f58a62e-800x800.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d5de500511992ae8896f7098501525871dfea29e-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ecbff16544f5d5a482ed8f1e9bf408dc1089fecd-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/219c858ea7990069af7ee9086bf08ff23630e7f5-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aeebc45432b24785ffa978b1e1ff896d1f58a62e-800x800.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-d5de500511992ae8896f7098501525871dfea29e-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d5de500511992ae8896f7098501525871dfea29e-800x800.jpg"
+    },
+    {
+      "_id": "image-ecbff16544f5d5a482ed8f1e9bf408dc1089fecd-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ecbff16544f5d5a482ed8f1e9bf408dc1089fecd-800x800.jpg"
+    },
+    {
+      "_id": "image-219c858ea7990069af7ee9086bf08ff23630e7f5-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/219c858ea7990069af7ee9086bf08ff23630e7f5-800x800.jpg"
+    },
+    {
+      "_id": "image-aeebc45432b24785ffa978b1e1ff896d1f58a62e-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/aeebc45432b24785ffa978b1e1ff896d1f58a62e-800x800.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100009-100-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta portero Joma manga larga - negro",
+    "tagline": "Confianza bajo palos, comodidad total",
+    "intro": "La camiseta de portero Joma en manga larga ofrece libertad de movimiento y ligereza, ideal para entrenamientos o partidos. Su diseño sobrio en negro asegura una estética profesional.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad total: Ligera y transpirable, ideal para largas sesiones.",
+      "Diseño profesional: Estilo sobrio y funcional en color negro.",
+      "Libertad de movimiento: Corte amplio para máxima agilidad bajo palos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100009-100-a"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "manga",
+    "submodel": "",
+    "product_model": "Long Sleeve Joma",
+    "sole_type": ""
+  }
+}

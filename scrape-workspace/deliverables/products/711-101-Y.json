@@ -1,0 +1,90 @@
+{
+  "id": "711/101-Y",
+  "slug": "short-portero-acolchado-nino-joma-black",
+  "name": "Goalkeeper acolchado Kids Joma",
+  "model": "Goalkeeper acolchado Kids Joma",
+  "brand": "Joma",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "portero acolchado niño Joma",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-y_pantalon-corto-portero-joma-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-y_pantalon-corto-portero-joma-negro_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-y_pantalon-corto-portero-joma-negro_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-pantalon-corto-portero-joma-negro_4_detalle-cintura_1.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-pantalon-corto-portero-joma-negro_3_detalle_1.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-y_pantalon-corto-portero-joma-negro_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-y_pantalon-corto-portero-joma-negro_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-pantalon-corto-portero-joma-negro_4_detalle-cintura_1.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/1/711101-pantalon-corto-portero-joma-negro_3_detalle_1.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/711-101-y",
+    "language": "es",
+    "category": "Ofertas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/711-101-y"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Goalkeeper",
+    "submodel": "",
+    "product_model": "Goalkeeper acolchado Kids Joma",
+    "sole_type": ""
+  }
+}

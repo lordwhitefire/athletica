@@ -1,0 +1,96 @@
+{
+  "id": "KT0784",
+  "slug": "mochila-adidas-juventus-black",
+  "name": "Backpack adidas Juventus",
+  "model": "Backpack adidas Juventus",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deportes adidas de la Juventus (47 x 30 cm) - negra",
+    "tagline": "Lleva el orgullo de la Juventus a cualquier lugar",
+    "intro": "La mochila adidas de la Juventus combina comodidad, capacidad y diseño deportivo para acompañarte en el día a día, en los entrenamientos o en tus desplazamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Gran capacidad: Espacio amplio para llevar ropa, material deportivo y accesorios.",
+      "Diseño acolchado: Mayor comodidad durante el transporte diario.",
+      "Tejido resistente: Material preparado para soportar el uso frecuente.",
+      "Cierre con cremallera: Seguridad y acceso rápido a tus pertenencias.",
+      "Estilo oficial Juventus: Escudo y detalles adidas inspirados en el club italiano."
+    ],
+    "technical_details": {
+      "range": "adidas Juventus",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-color-negro-adidas-juventus_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-color-negro-adidas-juventus_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-negra-adidas-juventus_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-adidas-juventus-color-negro_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-adidas-juventus-negra_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-color-negro-adidas-juventus_5_detalle-asa.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-color-negro-adidas-juventus_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-negra-adidas-juventus_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-adidas-juventus-color-negro_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-adidas-juventus-negra_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/T/KT0784_mochila-color-negro-adidas-juventus_5_detalle-asa.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kt0784",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes adidas de la Juventus (47 x 30 cm) - negra",
+    "tagline": "Lleva el orgullo de la Juventus a cualquier lugar",
+    "intro": "La mochila adidas de la Juventus combina comodidad, capacidad y diseño deportivo para acompañarte en el día a día, en los entrenamientos o en tus desplazamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Gran capacidad: Espacio amplio para llevar ropa, material deportivo y accesorios.",
+      "Diseño acolchado: Mayor comodidad durante el transporte diario.",
+      "Tejido resistente: Material preparado para soportar el uso frecuente.",
+      "Cierre con cremallera: Seguridad y acceso rápido a tus pertenencias.",
+      "Estilo oficial Juventus: Escudo y detalles adidas inspirados en el club italiano."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kt0784"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack adidas Juventus",
+    "sole_type": ""
+  }
+}

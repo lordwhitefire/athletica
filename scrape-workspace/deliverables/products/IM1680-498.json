@@ -1,0 +1,96 @@
+{
+  "id": "IM1680-498",
+  "slug": "camiseta-nike-barcelona-premium-blue",
+  "name": "Nike Barcelona Premium",
+  "model": "Barcelona Premium",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Barcelona Nike Short Sleeve Cotton T-Shirt - Navy",
+    "tagline": "Blaugrana passion for everyday life",
+    "intro": "The Nike Barcelona Premium t-shirt is an essential garment for Barcelona fans who want to represent FC Barcelona with a simple, comfortable and timeless style. Made entirely of cotton, it offers a soft and pleasant feeling when in contact with the skin, perfect for daily use. Its minimalist design incorporates the name FC Barcelona on the chest, providing an elegant and discreet touch that reflects the club's identity.",
+    "collection": "",
+    "key_benefits": [
+      "Cotton: Natural softness and great comfort throughout the day.",
+      "FC Barcelona Design: Show your passion for the club with an elegant and discreet style.",
+      "Comfortable cut: Promotes freedom of movement and daily use.",
+      "Versatile style: Easy to combine with any casual outfit."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Premium",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-color-azul-nike-barcelona-premium_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-color-azul-nike-barcelona-premium_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-azul-marino-nike-barcelona-premium_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-nike-barcelona-premium-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-nike-barcelona-premium-azul-marino_4_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-color-azul-nike-barcelona-premium_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-azul-marino-nike-barcelona-premium_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-nike-barcelona-premium-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM1680-498_camiseta-nike-barcelona-premium-azul-marino_4_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im1680-498",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta Nike del Barcelona - azul marino",
+    "tagline": "Pasión blaugrana para el día a día",
+    "intro": "La camiseta Nike Barcelona Premium es una prenda imprescindible para los aficionados culés que desean representar al FC Barcelona con un estilo sencillo, cómodo y atemporal. Confeccionada íntegramente en algodón, ofrece una sensación suave y agradable al contacto con la piel, perfecta para el uso diario. Su diseño minimalista incorpora el nombre FC Barcelona en el pecho, aportando un toque elegante y discreto que refleja la identidad del club.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón: Suavidad natural y gran comodidad durante todo el día.",
+      "Diseño FC Barcelona: Muestra tu pasión por el club con un estilo elegante y discreto.",
+      "Corte cómodo: Favorece la libertad de movimiento y el uso diario.",
+      "Estilo versátil: Fácil de combinar con cualquier outfit casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im1680-498"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Barcelona Premium",
+    "submodel": "",
+    "product_model": "Barcelona Premium",
+    "sole_type": ""
+  }
+}

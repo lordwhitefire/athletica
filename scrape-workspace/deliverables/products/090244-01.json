@@ -1,0 +1,105 @@
+{
+  "id": "090244-01",
+  "slug": "neceser-puma-teamgoal-black",
+  "name": "Neceser Puma TeamGoal",
+  "model": "Neceser Puma TeamGoal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma TeamGoal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/87c5815577d5ab465a69203260af3b97efb154c2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/87c5815577d5ab465a69203260af3b97efb154c2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500.jpg"
+    },
+    {
+      "_id": "image-87c5815577d5ab465a69203260af3b97efb154c2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/87c5815577d5ab465a69203260af3b97efb154c2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500.jpg"
+    },
+    {
+      "_id": "image-69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/69c18a0aa6c8c38e7131b783b6ecba3ccf408534-1500x1500.jpg"
+    },
+    {
+      "_id": "image-66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/66768c579d1c0755a8d1819fa076572b34b9bd60-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090244-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090244-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Neceser",
+    "submodel": "",
+    "product_model": "Neceser Puma TeamGoal",
+    "sole_type": ""
+  }
+}

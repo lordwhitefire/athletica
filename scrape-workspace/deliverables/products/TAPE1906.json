@@ -1,0 +1,84 @@
+{
+  "id": "TAPE1906",
+  "slug": "tape-premier-sock-1-9cm-x-33m-blue",
+  "name": "Tape Premier Sock 1,9cm x 33m",
+  "model": "Tape Premier Sock 1,9cm x 33m",
+  "brand": "Premier Sock Tape",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Cinta elástica sujeta medias (1,9 cm x 33 m) - azul turquesa",
+    "tagline": "Sujeción flexible para mantener tus medias en su sitio",
+    "intro": "El Tape Premier Sock 1,9cm x 33m es una cinta elástica diseñada para fijar las medias durante entrenamientos y partidos. Fabricada en PVC blando y con una elevada capacidad de estiramiento, proporciona una sujeción adaptable que ayuda a mantener la equipación colocada sin restringir innecesariamente la pierna.",
+    "collection": "",
+    "key_benefits": [
+      "Medias bien sujetas: Ayuda a mantener las medias y la equipación en su posición durante los movimientos propios del juego.",
+      "Ajuste extra elástico: Su capacidad de estiramiento permite adaptar la tensión alrededor de la pierna para conseguir una fijación cómoda.",
+      "Libertad de movimiento: El PVC blando proporciona una sujeción flexible que evita una compresión excesiva durante la actividad.",
+      "Formato de larga duración: El rollo de 33 metros permite disponer de cinta para múltiples entrenamientos y partidos."
+    ],
+    "technical_details": {
+      "range": "Premier Sock 1,9cm x 33m",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPE1906_cinta-adhesiva-futbol-color-azul-premier-sock-tape-19-mm_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPE1906_cinta-adhesiva-futbol-color-azul-premier-sock-tape-19-mm_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPE1906_esparadrapo-azul-turquesa-premier-sock-tape-19-mm_2_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPE1906_cinta-adhesiva-futbol-color-azul-premier-sock-tape-19-mm_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPE1906_esparadrapo-azul-turquesa-premier-sock-tape-19-mm_2_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/tape1906",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Cinta elástica sujeta medias (1,9 cm x 33 m) - azul turquesa",
+    "tagline": "Sujeción flexible para mantener tus medias en su sitio",
+    "intro": "El Tape Premier Sock 1,9cm x 33m es una cinta elástica diseñada para fijar las medias durante entrenamientos y partidos. Fabricada en PVC blando y con una elevada capacidad de estiramiento, proporciona una sujeción adaptable que ayuda a mantener la equipación colocada sin restringir innecesariamente la pierna.",
+    "collection": "",
+    "key_benefits": [
+      "Medias bien sujetas: Ayuda a mantener las medias y la equipación en su posición durante los movimientos propios del juego.",
+      "Ajuste extra elástico: Su capacidad de estiramiento permite adaptar la tensión alrededor de la pierna para conseguir una fijación cómoda.",
+      "Libertad de movimiento: El PVC blando proporciona una sujeción flexible que evita una compresión excesiva durante la actividad.",
+      "Formato de larga duración: El rollo de 33 metros permite disponer de cinta para múltiples entrenamientos y partidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/tape1906"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'sock'",
+    "root_model": "Tape",
+    "submodel": "",
+    "product_model": "Tape Premier Sock 1,9cm x 33m",
+    "sole_type": ""
+  }
+}

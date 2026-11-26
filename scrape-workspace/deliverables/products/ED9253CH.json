@@ -1,0 +1,86 @@
+{
+  "id": "ED9253CH",
+  "slug": "chandal-adidas-condivo-20-presentacion-black",
+  "name": "Chándal adidas Condivo 20 Presentación",
+  "model": "Chándal adidas Condivo 20 Presentación",
+  "brand": "adidas",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Condivo 20 Presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-color-negro-adidas-condivo-20-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-color-negro-adidas-condivo-20-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-negro-adidas-condivo-20-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-adidas-condivo-20-presentacion-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-adidas-condivo-20-presentacion-negro_4_detalle-manga-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-color-negro-adidas-condivo-20-presentacion_5_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-negro-adidas-condivo-20-presentacion_6_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-color-negro-adidas-condivo-20-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-negro-adidas-condivo-20-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-adidas-condivo-20-presentacion-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-adidas-condivo-20-presentacion-negro_4_detalle-manga-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-color-negro-adidas-condivo-20-presentacion_5_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/D/ED9253CH_chandal-negro-adidas-condivo-20-presentacion_6_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ed9253ch",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ed9253ch"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Chándal",
+    "submodel": "",
+    "product_model": "Chándal adidas Condivo 20 Presentación",
+    "sole_type": ""
+  }
+}

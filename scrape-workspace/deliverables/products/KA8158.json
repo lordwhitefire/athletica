@@ -1,0 +1,100 @@
+{
+  "id": "KA8158",
+  "slug": "sudadera-adidas-espana-entrenamiento-pro-blue",
+  "name": "adidas España Training Pro",
+  "model": "España entrenamiento Pro",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas de la selección española 2026 - azul turquesa",
+    "tagline": "Capas técnicas para tu mejor versión",
+    "intro": "La sudadera de entrenamiento Pro te acompaña en cada sesión con comodidad y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Representa a la selección española con cada detalle.",
+      "Tejido técnico: Transpirable y cómodo durante toda la actividad.",
+      "Ajuste ergonómico: Favorece la movilidad y el confort en cada movimiento.",
+      "Tecnología aplicada: Cuenta con CLIMACOOL."
+    ],
+    "technical_details": {
+      "range": "adidas España entrenamiento Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-color-azul-adidas-espana-entrenamiento-pro_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-color-azul-adidas-espana-entrenamiento-pro_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-azul-turquesa-adidas-espana-entrenamiento-pro_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-adidas-espana-entrenamiento-pro-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-adidas-espana-entrenamiento-pro-azul-turquesa_4_detalle-acabado-mangas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-color-azul-adidas-espana-entrenamiento-pro_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-azul-turquesa-adidas-espana-entrenamiento-pro_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-adidas-espana-entrenamiento-pro-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8158_sudadera-adidas-espana-entrenamiento-pro-azul-turquesa_4_detalle-acabado-mangas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka8158",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas de la selección española 2026 - azul turquesa",
+    "tagline": "Capas técnicas para tu mejor versión",
+    "intro": "La sudadera de entrenamiento Pro te acompaña en cada sesión con comodidad y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Representa a la selección española con cada detalle.",
+      "Tejido técnico: Transpirable y cómodo durante toda la actividad.",
+      "Ajuste ergonómico: Favorece la movilidad y el confort en cada movimiento.",
+      "Tecnología aplicada: Cuenta con CLIMACOOL."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka8158"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España entrenamiento Pro",
+    "sole_type": ""
+  }
+}

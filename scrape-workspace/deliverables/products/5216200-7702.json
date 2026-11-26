@@ -1,0 +1,90 @@
+{
+  "id": "5216200-7702",
+  "slug": "pantalon-reusch-gk-entrenamiento-black",
+  "name": "Reusch GK Training",
+  "model": "GK entrenamiento",
+  "brand": "Reusch",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de portero con protecciones Reusch - negro",
+    "tagline": "Entrena seguro, entrena con estilo",
+    "intro": "Este pantalón Reusch es ideal para tus sesiones de entrenamiento. Ligero, cómodo y con protecciones clave que te acompañan en cada caída.",
+    "collection": "",
+    "key_benefits": [
+      "Protección donde importa: Refuerzos en caderas y rodillas para impactos.",
+      "Confort técnico: Tejido ligero que no entorpece tus movimientos.",
+      "Durabilidad garantizada: Materiales resistentes al desgaste.",
+      "Diseño funcional: Ideal para porteros en todas las categorías."
+    ],
+    "technical_details": {
+      "range": "Reusch GK entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/2/5216200-7702_pantalon-largo-color-negro-reusch-gk-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/2/5216200-7702_pantalon-largo-color-negro-reusch-gk-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/2/5216200-7702_pantalon-chandal-negro-reusch-gk-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/2/5216200-7702_pantalon-chandal-reusch-gk-entrenamiento-color-negro_3_vista-conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/2/5216200-7702_pantalon-largo-color-negro-reusch-gk-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/2/5216200-7702_pantalon-chandal-negro-reusch-gk-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/2/5216200-7702_pantalon-chandal-reusch-gk-entrenamiento-color-negro_3_vista-conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/5216200-7702",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de portero con protecciones Reusch - negro",
+    "tagline": "Entrena seguro, entrena con estilo",
+    "intro": "Este pantalón Reusch es ideal para tus sesiones de entrenamiento. Ligero, cómodo y con protecciones clave que te acompañan en cada caída.",
+    "collection": "",
+    "key_benefits": [
+      "Protección donde importa: Refuerzos en caderas y rodillas para impactos.",
+      "Confort técnico: Tejido ligero que no entorpece tus movimientos.",
+      "Durabilidad garantizada: Materiales resistentes al desgaste.",
+      "Diseño funcional: Ideal para porteros en todas las categorías."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/5216200-7702"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "GK",
+    "submodel": "",
+    "product_model": "GK entrenamiento",
+    "sole_type": ""
+  }
+}

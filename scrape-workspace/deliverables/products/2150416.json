@@ -1,0 +1,82 @@
+{
+  "id": "2150416",
+  "slug": "munich-mundial-white",
+  "name": "Munich Mundial",
+  "model": "Mundial",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mundial",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-color-blanco-munich-mundial_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-color-blanco-munich-mundial_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-aluminio-blancas-munich-mundial_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-futbol-tacos-aluminio-munich-mundial-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_zapatillas-futbol-color-blanco-munich-mundial_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-blancas-munich-mundial_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-aluminio-munich-mundial-color-blanco_7_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-color-blanco-munich-mundial_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-aluminio-blancas-munich-mundial_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-futbol-tacos-aluminio-munich-mundial-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_zapatillas-futbol-color-blanco-munich-mundial_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-blancas-munich-mundial_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150416_botas-de-futbol-aluminio-munich-mundial-color-blanco_7_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/2150416",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/2150416"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Mundial",
+    "submodel": "",
+    "product_model": "Mundial",
+    "sole_type": ""
+  }
+}

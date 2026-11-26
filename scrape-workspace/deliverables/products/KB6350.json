@@ -1,0 +1,100 @@
+{
+  "id": "KB6350",
+  "slug": "short-adidas-real-madrid-entrenamiento-green",
+  "name": "adidas Real Madrid Training",
+  "model": "Real Madrid entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento adidas del Real Madrid 2026 2027 - verde",
+    "tagline": "Entrena con el estilo del Real Madrid",
+    "intro": "El pantalón corto de entrenamiento adidas del Real Madrid 2026/2027 está diseñado para futbolistas que buscan comodidad, ligereza y rendimiento en cada sesión. Inspirado en la equipación de entrenamiento del club blanco, combina una estética moderna con detalles oficiales para demostrar tu pasión por el Real Madrid.",
+    "collection": "",
+    "key_benefits": [
+      "CLIMACOOL: Favorece la evacuación del sudor para mantener la frescura durante el entrenamiento.",
+      "Cintura con cordón: Permite un ajuste seguro y personalizado.",
+      "Corte regular: Ofrece comodidad y libertad de movimiento.",
+      "Escudo oficial del Real Madrid: Refleja el orgullo de pertenecer a uno de los clubes más grandes del mundo."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_pantalon-corto-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_pantalon-corto-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_short-verde-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_pantalon-corto-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_short-adidas-real-madrid-entrenamiento-verde_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_pantalon-corto-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_short-verde-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_pantalon-corto-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6350_short-adidas-real-madrid-entrenamiento-verde_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb6350",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas del Real Madrid 2026 2027 - verde",
+    "tagline": "Entrena con el estilo del Real Madrid",
+    "intro": "El pantalón corto de entrenamiento adidas del Real Madrid 2026/2027 está diseñado para futbolistas que buscan comodidad, ligereza y rendimiento en cada sesión. Inspirado en la equipación de entrenamiento del club blanco, combina una estética moderna con detalles oficiales para demostrar tu pasión por el Real Madrid.",
+    "collection": "",
+    "key_benefits": [
+      "CLIMACOOL: Favorece la evacuación del sudor para mantener la frescura durante el entrenamiento.",
+      "Cintura con cordón: Permite un ajuste seguro y personalizado.",
+      "Corte regular: Ofrece comodidad y libertad de movimiento.",
+      "Escudo oficial del Real Madrid: Refleja el orgullo de pertenecer a uno de los clubes más grandes del mundo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb6350"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento",
+    "sole_type": ""
+  }
+}

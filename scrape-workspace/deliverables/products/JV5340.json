@@ -1,0 +1,100 @@
+{
+  "id": "JV5340",
+  "slug": "pantalon-adidas-arsenal-nino-vis-tech-black",
+  "name": "adidas Arsenal Kids Vis Tech",
+  "model": "Arsenal niño Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo infantil adidas del Arsenal - negro",
+    "tagline": "El estilo gunner para los más pequeños",
+    "intro": "Este pantalón del Arsenal para niño combina tecnología avanzada y diseño moderno para los futuros cracks. Perfecto para entrenar, ir al cole o presumir de equipo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseñado para niños activos: Comodidad y libertad de movimiento todo el día.",
+      "Estilo Arsenal: Muestra el escudo con orgullo en cada paso.",
+      "Alta transpirabilidad: Ideal para sesiones de juego o deporte.",
+      "Ajuste funcional: Cintura elástica y perneras con cremallera."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal niño Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-largo-color-negro-adidas-arsenal-nino-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-largo-color-negro-adidas-arsenal-nino-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-chandal-negro-adidas-arsenal-nino-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-chandal-adidas-arsenal-nino-vis-tech-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-largo-adidas-arsenal-nino-vis-tech-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-largo-color-negro-adidas-arsenal-nino-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-chandal-negro-adidas-arsenal-nino-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-chandal-adidas-arsenal-nino-vis-tech-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5340_pantalon-largo-adidas-arsenal-nino-vis-tech-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jv5340",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo infantil adidas del Arsenal - negro",
+    "tagline": "El estilo gunner para los más pequeños",
+    "intro": "Este pantalón del Arsenal para niño combina tecnología avanzada y diseño moderno para los futuros cracks. Perfecto para entrenar, ir al cole o presumir de equipo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseñado para niños activos: Comodidad y libertad de movimiento todo el día.",
+      "Estilo Arsenal: Muestra el escudo con orgullo en cada paso.",
+      "Alta transpirabilidad: Ideal para sesiones de juego o deporte.",
+      "Ajuste funcional: Cintura elástica y perneras con cremallera."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jv5340"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Arsenal Kids",
+    "submodel": "",
+    "product_model": "Arsenal niño Vis Tech",
+    "sole_type": ""
+  }
+}

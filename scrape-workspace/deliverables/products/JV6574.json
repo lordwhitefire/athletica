@@ -1,0 +1,104 @@
+{
+  "id": "JV6574",
+  "slug": "camiseta-adidas-liverpool-entrenamiento-marron",
+  "name": "adidas Liverpool Training",
+  "model": "Liverpool entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Liverpool 2025 2026 Adidas Short Sleeve Training Top - Beige",
+    "tagline": "Alternative style with Red DNA",
+    "intro": "Liverpool's beige training shirt combines functionality and a bold aesthetic. Its unique color and technical fabric make it perfect to stand out while improving your performance.",
+    "collection": "",
+    "key_benefits": [
+      "Alternative design: Innovative color within the Red collection.",
+      "Technical fabric: Regulates humidity to train with total freshness.",
+      "Ergonomic cut: Designed for freedom of movement.",
+      "Urban-sports style: Also ideal for casual looks."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-color-marron-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-color-marron-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-beige-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-adidas-liverpool-entrenamiento-color-marron_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-adidas-liverpool-entrenamiento-beige_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-color-marron-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-beige-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-adidas-liverpool-entrenamiento-color-marron_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6574_camiseta-adidas-liverpool-entrenamiento-beige_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jv6574",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas del Liverpool 2025 2026 - beige",
+    "tagline": "Estilo alternativo con ADN Red",
+    "intro": "La camiseta beige de entrenamiento del Liverpool combina funcionalidad y una estética atrevida. Su color único y su tejido técnico la hacen perfecta para destacar mientras mejoras tu rendimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño alternativo: Color innovador dentro de la colección Red.",
+      "Tejido técnico: Regula la humedad para entrenar con total frescura.",
+      "Corte ergonómico: Pensado para libertad de movimiento.",
+      "Estilo urbano-deportivo: También ideal para looks casuales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jv6574"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Liverpool Training",
+    "submodel": "",
+    "product_model": "Liverpool entrenamiento",
+    "sole_type": ""
+  }
+}

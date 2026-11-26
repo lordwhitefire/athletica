@@ -1,0 +1,94 @@
+{
+  "id": "JZ9370",
+  "slug": "chaqueta-adidas-italia-presentacion-white",
+  "name": "adidas Italia presentación",
+  "model": "Italia presentación",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de presentación adidas de la selección italiana 2026 - blanca",
+    "tagline": "Tradición italiana en cada detalle",
+    "intro": "Inspirada en el orgullo nacional, esta prenda de la colección Italia 2026 combina diseño premium con comodidad técnica. Ideal para representar a los Azzurri dentro o fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Italia 2026: Muestra con orgullo los colores nacionales.",
+      "Comodidad garantizada: Materiales suaves y transpirables.",
+      "Versatilidad total: Apto para deporte y uso diario."
+    ],
+    "technical_details": {
+      "range": "adidas Italia presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-color-blanco-adidas-italia-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-color-blanco-adidas-italia-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-chandal-blanca-adidas-italia-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-entretiempo-adidas-italia-presentacion-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-adidas-italia-presentacion-blanca_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-color-blanco-adidas-italia-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-chandal-blanca-adidas-italia-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-entretiempo-adidas-italia-presentacion-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9370_chaqueta-adidas-italia-presentacion-blanca_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9370",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de presentación adidas de la selección italiana 2026 - blanca",
+    "tagline": "Tradición italiana en cada detalle",
+    "intro": "Inspirada en el orgullo nacional, esta prenda de la colección Italia 2026 combina diseño premium con comodidad técnica. Ideal para representar a los Azzurri dentro o fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Italia 2026: Muestra con orgullo los colores nacionales.",
+      "Comodidad garantizada: Materiales suaves y transpirables.",
+      "Versatilidad total: Apto para deporte y uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9370"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Italia",
+    "submodel": "",
+    "product_model": "Italia presentación",
+    "sole_type": ""
+  }
+}

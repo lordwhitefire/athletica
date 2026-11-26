@@ -1,0 +1,94 @@
+{
+  "id": "HQ3393-064",
+  "slug": "pantalon-nike-repel-t90-woven-grey",
+  "name": "Nike Repel T90 Woven",
+  "model": "Repel T90 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de chándal Nike - gris",
+    "tagline": "Funcionalidad y estilo se encuentran en la línea T90",
+    "intro": "El pantalón gris Nike T90 ofrece un look limpio y técnico para tus sesiones de entrenamiento o tus momentos de descanso. Su confección moderna permite moverse con fluidez en cualquier contexto.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad activa: Se adapta al cuerpo sin restringir.",
+      "Estilo actual: Combina fácilmente con chaquetas y camisetas técnicas.",
+      "Tejido funcional: Repele el agua y permite transpiración.",
+      "Diseño atlético: Corte moderno con toques clásicos T90."
+    ],
+    "technical_details": {
+      "range": "Nike Repel T90 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-064_pantalon-largo-color-gris-nike-repel-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-064_pantalon-largo-color-gris-nike-repel-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-064_pantalon-chandal-gris-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-064_pantalon-chandal-nike-repel-t90-color-gris_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-064_pantalon-largo-color-gris-nike-repel-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-064_pantalon-chandal-gris-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-064_pantalon-chandal-nike-repel-t90-color-gris_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq3393-064",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de chándal Nike - gris",
+    "tagline": "Funcionalidad y estilo se encuentran en la línea T90",
+    "intro": "El pantalón gris Nike T90 ofrece un look limpio y técnico para tus sesiones de entrenamiento o tus momentos de descanso. Su confección moderna permite moverse con fluidez en cualquier contexto.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad activa: Se adapta al cuerpo sin restringir.",
+      "Estilo actual: Combina fácilmente con chaquetas y camisetas técnicas.",
+      "Tejido funcional: Repele el agua y permite transpiración.",
+      "Diseño atlético: Corte moderno con toques clásicos T90."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq3393-064"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel T90 Woven",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "4100972",
+  "slug": "munich-continental-white",
+  "name": "Munich Continental",
+  "model": "Continental",
+  "brand": "Munich",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol sala de piel de canguro Munich suela lisa IN - blancas",
+    "tagline": "Inspired by the passion for futsal",
+    "intro": "La Munich Continental es un referente absoluto en el fútbol sala profesional. Utilizada por los mejores jugadores del mundo, esta zapatilla ofrece un equilibrio perfecto entre tradición, materiales de élite y rendimiento dentro de la pista.",
+    "collection": "",
+    "key_benefits": [
+      "Piel de canguro: Toque natural y control total del balón.",
+      "Diseño profesional: Usada por los jugadores top del fútbol sala internacional.",
+      "Estabilidad superior: Suela diseñada para movimientos rápidos y cambios de dirección precisos.",
+      "Estética clásica: Combina estilo retro con funcionalidades modernas."
+    ],
+    "technical_details": {
+      "range": "Continental",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_zapatillas-futbol-sala-color-blanco-munich-continental_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_zapatillas-futbol-sala-color-blanco-munich-continental_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_zapatillas-de-futbol-sala-blancas-munich-continental_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_botas-futbol-sala-munich-continental-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_bambas-futbol-sala-munich-continental-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_tenis-futbol-sala-color-blanco-munich-continental_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_zapatillas-futbol-sala-blancas-munich-continental_6_vista-conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_zapatillas-futbol-sala-color-blanco-munich-continental_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_zapatillas-de-futbol-sala-blancas-munich-continental_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_botas-futbol-sala-munich-continental-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_bambas-futbol-sala-munich-continental-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_tenis-futbol-sala-color-blanco-munich-continental_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100972_zapatillas-futbol-sala-blancas-munich-continental_6_vista-conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4100972",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-18",
+    "subtitle": "Zapatillas de fútbol sala de piel de canguro Munich suela lisa IN - blancas",
+    "tagline": "Inspiradas en la pasión por el fútbol sala",
+    "intro": "La Munich Continental es un referente absoluto en el fútbol sala profesional. Utilizada por los mejores jugadores del mundo, esta zapatilla ofrece un equilibrio perfecto entre tradición, materiales de élite y rendimiento dentro de la pista.",
+    "collection": "",
+    "key_benefits": [
+      "Piel de canguro: Toque natural y control total del balón.",
+      "Diseño profesional: Usada por los jugadores top del fútbol sala internacional.",
+      "Estabilidad superior: Suela diseñada para movimientos rápidos y cambios de dirección precisos.",
+      "Estética clásica: Combina estilo retro con funcionalidades modernas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4100972"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "medium",
+    "rule": "source fallback 'zapatillas'",
+    "root_model": "Continental",
+    "submodel": "",
+    "product_model": "Continental",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "4002",
+  "slug": "pizarra-entrenador-futbol-sala-zastor-play-34x23-cm-yellow",
+  "name": "Pizarra entrenador fútbol sala Zastor Play 34x23 cm",
+  "model": "Pizarra entrenador fútbol sala Zastor Play 34x23 cm",
+  "brand": "Zastor",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "entrenador fútbol sala Zastor Play 34x23 cm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4002_imagen-de-la-Pizarra-de-tacticas-reversible-FUTBOL-SALA-zastor-2019-blanco-amarillo_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4002_imagen-de-la-Pizarra-de-tacticas-reversible-FUTBOL-SALA-zastor-2019-blanco-amarillo_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4002_imagen-de-la-Pizarra-de-tacticas-reversible-FUTBOL-SALA-zastor-2019-blanco-amarillo_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4002_imagen-de-la-Pizarra-de-tacticas-reversible-FUTBOL-SALA-zastor-2019-blanco-amarillo_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4002_imagen-de-la-Pizarra-de-tacticas-reversible-FUTBOL-SALA-zastor-2019-blanco-amarillo_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4002",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4002"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "high",
+    "rule": "name contains 'sala'",
+    "root_model": "Pizarra",
+    "submodel": "entrenador fútbol sala Zastor Play 34x23 cm",
+    "product_model": "Pizarra entrenador fútbol sala Zastor Play 34x23 cm",
+    "sole_type": ""
+  }
+}

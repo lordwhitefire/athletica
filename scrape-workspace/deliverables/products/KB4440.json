@@ -1,0 +1,102 @@
+{
+  "id": "KB4440",
+  "slug": "camiseta-adidas-alemania-entrenamiento-white",
+  "name": "adidas Alemania Training",
+  "model": "Alemania entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas de la selección alemana 2026 - blanca",
+    "tagline": "Rinde como los campeones",
+    "intro": "Camiseta de entrenamiento ideal para entrenamientos intensos o rutinas diarias.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo oficial: Muestra tu apoyo con una réplica auténtica.",
+      "Confort total: Tejido ligero y transpirable para el día a día.",
+      "Versátil: Ideal para jugar, entrenar o animar desde las gradas."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-blanca-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-adidas-alemania-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-adidas-alemania-entrenamiento-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-blanca-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-adidas-alemania-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4440_camiseta-adidas-alemania-entrenamiento-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb4440",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas de la selección alemana 2026 - blanca",
+    "tagline": "Rinde como los campeones",
+    "intro": "Camiseta de entrenamiento ideal para entrenamientos intensos o rutinas diarias.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo oficial: Muestra tu apoyo con una réplica auténtica.",
+      "Confort total: Tejido ligero y transpirable para el día a día.",
+      "Versátil: Ideal para jugar, entrenar o animar desde las gradas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb4440"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania entrenamiento",
+    "sole_type": ""
+  }
+}

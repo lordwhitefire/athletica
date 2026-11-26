@@ -1,0 +1,84 @@
+{
+  "id": "8846R",
+  "slug": "mangas-compresivas-mcdavid-compression-black",
+  "name": "Mangas compresivas McDavid Compression",
+  "model": "Mangas compresivas McDavid Compression",
+  "brand": "Mc David",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "compresivas McDavid Compression",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/8/8846R_medias-compresion-color-negro-mcdavid-compression_1_general.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/8/8846R_medias-compresion-color-negro-mcdavid-compression_1_general.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/8/8846R_medias-compresion-negras-mcdavid-compression_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/8/8846R_medias-compresion-mcdavid-compression-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/8/8846R_medias-compresion-color-negro-mcdavid-compression_1_general.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/8/8846R_medias-compresion-negras-mcdavid-compression_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/8/8846R_medias-compresion-mcdavid-compression-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/8846r",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/8846r"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Mangas",
+    "submodel": "",
+    "product_model": "Mangas compresivas McDavid Compression",
+    "sole_type": ""
+  }
+}

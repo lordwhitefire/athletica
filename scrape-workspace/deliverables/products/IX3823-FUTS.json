@@ -1,0 +1,86 @@
+{
+  "id": "IX3823-FUTS",
+  "slug": "balon-adidas-tiro-club-sala-futs-white",
+  "name": "adidas Tiro Club Sala FUTS",
+  "model": "Tiro Club Sala FUTS",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Tiro Club Sala FUTS",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_balon-futbol-sala-color-blanco-adidas-tiro-club-sala_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_balon-futbol-sala-color-blanco-adidas-tiro-club-sala_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_balon-futbol-sala-color-blanco-adidas-tiro-club-sala-futs_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_balon-futsal-adidas-tiro-club-sala-futs-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_pelota-futbol-sala-blanco-adidas-tiro-club-sala-futs_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_balon-futbol-sala-color-blanco-adidas-tiro-club-sala_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_balon-futbol-sala-color-blanco-adidas-tiro-club-sala-futs_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_balon-futsal-adidas-tiro-club-sala-futs-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3823-FUTS_pelota-futbol-sala-blanco-adidas-tiro-club-sala-futs_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ix3823-futs",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ix3823-futs"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Tiro",
+    "submodel": "",
+    "product_model": "Tiro Club Sala FUTS",
+    "sole_type": ""
+  }
+}

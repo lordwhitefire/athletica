@@ -1,0 +1,79 @@
+{
+  "id": "HF0549-100",
+  "slug": "nike-mercurial-lite-signature-blanco-naranja",
+  "name": "Nike Mercurial Lite Signature",
+  "model": "Mercurial Lite Signature",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Naranja",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mercurial Lite Signature",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0549-100_espinilleras-color-blanco-y-naranja-nike-mercurial-lite-signature_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0549-100_espinilleras-color-blanco-y-naranja-nike-mercurial-lite-signature_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/F/HF0549-100_espinilleras-color-blanco-y-naranja-nike-mercurial-lite-signature_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/hf0549-100",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/hf0549-100"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite Signature",
+    "product_model": "Mercurial Lite Signature",
+    "sole_type": ""
+  }
+}

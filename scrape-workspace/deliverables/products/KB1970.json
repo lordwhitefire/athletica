@@ -1,0 +1,102 @@
+{
+  "id": "KB1970",
+  "slug": "camiseta-adidas-copenhague-26-27-white",
+  "name": "adidas Copenhague 26 27",
+  "model": "Copenhague 26 27",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación adidas del Copenhague 2026 2027 - blanca",
+    "tagline": "La tradición del Copenhague sobre el terreno de juego",
+    "intro": "La camiseta adidas Copenhague 26 27 rinde homenaje a la historia del FC Copenhague con un diseño elegante y renovado que incorpora un nuevo escudo con relieve. Su estética clásica refleja la identidad del club danés, combinando tradición y modernidad para acompañar a los aficionados en cada partido.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Favorece la evacuación del sudor para mantener la piel fresca y seca.",
+      "Diseño oficial FC Copenhague 26 27: Inspirado en la equipación del primer equipo.",
+      "Nuevo escudo con relieve: Aporta un acabado premium y una identidad renovada.",
+      "Tejido ligero: Ofrece comodidad y libertad de movimiento.",
+      "Estilo clásico: Perfecta para animar al club dentro y fuera del estadio."
+    ],
+    "technical_details": {
+      "range": "adidas Copenhague 26 27",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-color-blanco-adidas-copenhague-26-27_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-color-blanco-adidas-copenhague-26-27_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-blanca-adidas-copenhague-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-adidas-copenhague-26-27-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-adidas-copenhague-26-27-blanca_4_detalle-cuello.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-color-blanco-adidas-copenhague-26-27_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-blanca-adidas-copenhague-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-adidas-copenhague-26-27-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1970_camiseta-adidas-copenhague-26-27-blanca_4_detalle-cuello.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb1970",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la primera equipación adidas del Copenhague 2026 2027 - blanca",
+    "tagline": "La tradición del Copenhague sobre el terreno de juego",
+    "intro": "La camiseta adidas Copenhague 26 27 rinde homenaje a la historia del FC Copenhague con un diseño elegante y renovado que incorpora un nuevo escudo con relieve. Su estética clásica refleja la identidad del club danés, combinando tradición y modernidad para acompañar a los aficionados en cada partido.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Favorece la evacuación del sudor para mantener la piel fresca y seca.",
+      "Diseño oficial FC Copenhague 26 27: Inspirado en la equipación del primer equipo.",
+      "Nuevo escudo con relieve: Aporta un acabado premium y una identidad renovada.",
+      "Tejido ligero: Ofrece comodidad y libertad de movimiento.",
+      "Estilo clásico: Perfecta para animar al club dentro y fuera del estadio."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb1970"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Copenhague",
+    "submodel": "",
+    "product_model": "Copenhague 26 27",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "8600",
+  "slug": "plantilla-footgel-football-yellow",
+  "name": "Plantilla Footgel Football",
+  "model": "Plantilla Footgel Football",
+  "brand": "Footgel",
+  "category": "Accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Footgel Football",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/8600",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/6/8600_plantillas-color-amarillo-footgel-football_1_superior.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/6/8600_plantillas-amarilla-footgel-football_2_conjunto.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/6/8600_plantillas-footgel-football-color-amarillo_3_detalle.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/6/8600_plantillas-color-amarillo-footgel-football_1_superior.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level1",
+      "name": "Accesorios fútbol",
+      "href": "https://www.futbolmania.com/es/accesorios-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level2",
+      "name": "Calzado",
+      "href": "https://www.futbolmania.com/es/adulto/complementos/calzado"
+    },
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level3",
+      "name": "Plantillas",
+      "href": "https://www.futbolmania.com/es/plantillas-calzado-deportivo"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "SF2SIB8",
+  "slug": "new-balance-furon-v8-pro-sg-white",
+  "name": "New Balance Furon V8 Pro SG",
+  "model": "Furon V8 Pro",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Balance Furon V8 Pro",
+      "sole_type": "SG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "SG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-de-futbol-color-blanco-new-balance-furon-v8-pro-sg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-de-futbol-color-blanco-new-balance-furon-v8-pro-sg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-de-futbol-aluminio-blancas-new-balance-furon-v8-pro-sg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-futbol-tacos-aluminio-new-balance-furon-v8-pro-sg-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-de-futbol-con-tacos-de-aluminio-new-balance-furon-v8-pro-sg-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_zapatillas-futbol-color-blanco-new-balance-furon-v8-pro-sg_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-de-futbol-color-blanco-new-balance-furon-v8-pro-sg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-de-futbol-aluminio-blancas-new-balance-furon-v8-pro-sg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-futbol-tacos-aluminio-new-balance-furon-v8-pro-sg-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_botas-de-futbol-con-tacos-de-aluminio-new-balance-furon-v8-pro-sg-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF2SIB8_zapatillas-futbol-color-blanco-new-balance-furon-v8-pro-sg_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sf2sib8",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sf2sib8"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Furon",
+    "submodel": "V8 Pro",
+    "product_model": "Furon V8 Pro",
+    "sole_type": "SG"
+  }
+}

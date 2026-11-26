@@ -1,0 +1,109 @@
+{
+  "id": "084669-02-5",
+  "slug": "balon-puma-liga-f-25-26-replica-t-5-orbita-yellow",
+  "name": "Puma Liga F 25 26 Replica T.5 Orbita",
+  "model": "Liga F 25 26 Replica T.5 Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol Puma de la Primera División Femenina 2025 2026 de alta visibilidad talla 5 - amarillo",
+    "tagline": "Perform at your best in every winter match",
+    "intro": "This Puma soccer ball is designed to stand out in the dark on cold winter nights. With high quality materials and a professional design, it guarantees stable flight and great durability. Ideal for those looking to stand out in training and matches with style and power.",
+    "collection": "",
+    "key_benefits": [
+      "Vuelo uniforme: Estructura optimizada para trayectorias precisas.",
+      "Long lifespan: Resists wear and tear from frequent use.",
+      "Excelente control: Superficie texturizada para un mejor contacto con el pie.",
+      "Eye-catching design: Bright yellow that stands out in the dark.",
+      "Versatilidad de uso: Ideal para entrenar o competir en cualquier campo."
+    ],
+    "technical_details": {
+      "range": "Puma Liga F 25 26 Replica T.5 Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6c657f49084b67a03ce2d2ba8e4060cfae0a9f0b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/6c657f49084b67a03ce2d2ba8e4060cfae0a9f0b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e01417aabb06f9c37d8ae4f8a8f141745f29e36b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/80bbc440c2975d9975fed7de87b2f8d70ea78f23-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6c657f49084b67a03ce2d2ba8e4060cfae0a9f0b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e01417aabb06f9c37d8ae4f8a8f141745f29e36b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/80bbc440c2975d9975fed7de87b2f8d70ea78f23-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-6c657f49084b67a03ce2d2ba8e4060cfae0a9f0b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6c657f49084b67a03ce2d2ba8e4060cfae0a9f0b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e01417aabb06f9c37d8ae4f8a8f141745f29e36b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e01417aabb06f9c37d8ae4f8a8f141745f29e36b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-80bbc440c2975d9975fed7de87b2f8d70ea78f23-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/80bbc440c2975d9975fed7de87b2f8d70ea78f23-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084669-02-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Primera División Femenina 2025 2026 de alta visibilidad talla 5 - amarillo",
+    "tagline": "Rinde al máximo en cada partido de invierno",
+    "intro": "Este balón de fútbol Puma está diseñado para resaltar en la oscuridad en las noches frías de invierno. Con materiales de alta calidad y un diseño profesional, garantiza vuelo estable y gran durabilidad. Ideal para quienes buscan destacar en entrenamientos y partidos con estilo y potencia.",
+    "collection": "",
+    "key_benefits": [
+      "Vuelo uniforme: Estructura optimizada para trayectorias precisas.",
+      "Larga vida útil: Resiste al desgaste del uso frecuente.",
+      "Excelente control: Superficie texturizada para un mejor contacto con el pie.",
+      "Diseño llamativo: Amarillo chillón que resalta en la oscuridad.",
+      "Versatilidad de uso: Ideal para entrenar o competir en cualquier campo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084669-02-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Liga F",
+    "submodel": "",
+    "product_model": "Liga F 25 26 Replica T.5 Orbita",
+    "sole_type": ""
+  }
+}

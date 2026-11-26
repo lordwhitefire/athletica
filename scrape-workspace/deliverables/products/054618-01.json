@@ -1,0 +1,99 @@
+{
+  "id": "054618-01",
+  "slug": "toalla-puma-training-grande-black",
+  "name": "Toalla Puma Training grande",
+  "model": "Toalla Puma Training grande",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Training grande",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/5103bdd1210a74d4daaba22187ff0d330ae792ba-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5103bdd1210a74d4daaba22187ff0d330ae792ba-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d3388c3c957b20dd104155ebfdc5879a97cf407a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/73789e32f857e8610c24cc785ffcb2d342fe143b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cc0c465ab0d2f7b55207c8b88e559e9cb2d2192a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5103bdd1210a74d4daaba22187ff0d330ae792ba-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d3388c3c957b20dd104155ebfdc5879a97cf407a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/73789e32f857e8610c24cc785ffcb2d342fe143b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cc0c465ab0d2f7b55207c8b88e559e9cb2d2192a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-5103bdd1210a74d4daaba22187ff0d330ae792ba-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5103bdd1210a74d4daaba22187ff0d330ae792ba-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d3388c3c957b20dd104155ebfdc5879a97cf407a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d3388c3c957b20dd104155ebfdc5879a97cf407a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-73789e32f857e8610c24cc785ffcb2d342fe143b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/73789e32f857e8610c24cc785ffcb2d342fe143b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cc0c465ab0d2f7b55207c8b88e559e9cb2d2192a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cc0c465ab0d2f7b55207c8b88e559e9cb2d2192a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/054618-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/054618-01"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Toalla",
+    "submodel": "",
+    "product_model": "Toalla Puma Training grande",
+    "sole_type": ""
+  }
+}

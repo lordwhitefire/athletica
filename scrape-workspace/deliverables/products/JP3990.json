@@ -1,0 +1,102 @@
+{
+  "id": "JP3990",
+  "slug": "camiseta-adidas-real-madrid-nino-dna-green",
+  "name": "adidas Real Madrid Kids DNA",
+  "model": "Real Madrid niño DNA",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de algodón de manga corta adidas del Real Madrid - verde claro",
+    "tagline": "Pasión blanca para los más jóvenes",
+    "intro": "La camiseta adidas Real Madrid niño DNA es perfecta para los jóvenes aficionados que viven el fútbol con intensidad. Su tejido suave de algodón ofrece máxima comodidad en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad total: Tejido de punto suave que se adapta al día a día.",
+      "Orgullo madridista: Escudo del club bordado en el pecho.",
+      "Estilo versátil: Ideal para el colegio, el parque o el estadio.",
+      "Ajuste juvenil: Diseño pensado para acompañar el movimiento natural.",
+      "Inspiración futbolera: Parte de la colección oficial del club blanco."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid niño DNA",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-color-verde-adidas-real-madrid-nino-dna_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-color-verde-adidas-real-madrid-nino-dna_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-adidas-real-madrid-nino-dna-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-adidas-real-madrid-nino-dna-verde-claro_4_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-verde-claro-adidas-real-madrid-nino-dna_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-color-verde-adidas-real-madrid-nino-dna_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-adidas-real-madrid-nino-dna-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-adidas-real-madrid-nino-dna-verde-claro_4_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3990_camiseta-verde-claro-adidas-real-madrid-nino-dna_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jp3990",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de algodón de manga corta adidas del Real Madrid - verde claro",
+    "tagline": "Pasión blanca para los más jóvenes",
+    "intro": "La camiseta adidas Real Madrid niño DNA es perfecta para los jóvenes aficionados que viven el fútbol con intensidad. Su tejido suave de algodón ofrece máxima comodidad en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad total: Tejido de punto suave que se adapta al día a día.",
+      "Orgullo madridista: Escudo del club bordado en el pecho.",
+      "Estilo versátil: Ideal para el colegio, el parque o el estadio.",
+      "Ajuste juvenil: Diseño pensado para acompañar el movimiento natural.",
+      "Inspiración futbolera: Parte de la colección oficial del club blanco."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jp3990"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid niño DNA",
+    "sole_type": ""
+  }
+}

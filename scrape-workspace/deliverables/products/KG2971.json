@@ -1,0 +1,96 @@
+{
+  "id": "KG2971",
+  "slug": "chaqueta-adidas-real-madrid-originals-2-0-marron",
+  "name": "adidas Real Madrid Originals 2.0",
+  "model": "Real Madrid Originals 2.0",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - beige",
+    "tagline": "La historia del Real Madrid con el sello Originals",
+    "intro": "La chaqueta adidas Real Madrid Originals 2.0 recupera la esencia del fútbol clásico con un diseño inspirado en la segunda equipación del Real Madrid. Su estilo retro, materiales de calidad y acabados premium la convierten en una prenda ideal para lucir el orgullo madridista en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido interlock: Suave, resistente y cómodo para el uso diario.",
+      "Corte regular: Ajuste cómodo que favorece la libertad de movimiento.",
+      "Cierre completo con cuello alto: Mayor protección y estilo deportivo.",
+      "Diseño Originals: Inspirado en la historia del Real Madrid con detalles icónicos."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Originals 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-color-marron-adidas-real-madrid-originals-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-color-marron-adidas-real-madrid-originals-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-chandal-beige-adidas-real-madrid-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-entretiempo-adidas-real-madrid-originals-2-0-color-marron_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-adidas-real-madrid-originals-2-0-beige_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-color-marron-adidas-real-madrid-originals-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-chandal-beige-adidas-real-madrid-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-entretiempo-adidas-real-madrid-originals-2-0-color-marron_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2971_chaqueta-adidas-real-madrid-originals-2-0-beige_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2971",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - beige",
+    "tagline": "La historia del Real Madrid con el sello Originals",
+    "intro": "La chaqueta adidas Real Madrid Originals 2.0 recupera la esencia del fútbol clásico con un diseño inspirado en la segunda equipación del Real Madrid. Su estilo retro, materiales de calidad y acabados premium la convierten en una prenda ideal para lucir el orgullo madridista en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido interlock: Suave, resistente y cómodo para el uso diario.",
+      "Corte regular: Ajuste cómodo que favorece la libertad de movimiento.",
+      "Cierre completo con cuello alto: Mayor protección y estilo deportivo.",
+      "Diseño Originals: Inspirado en la historia del Real Madrid con detalles icónicos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2971"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Originals 2.0",
+    "sole_type": ""
+  }
+}

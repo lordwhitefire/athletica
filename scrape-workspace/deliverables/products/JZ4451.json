@@ -1,0 +1,96 @@
+{
+  "id": "JZ4451",
+  "slug": "botellin-adidas-liverpool-red",
+  "name": "Botellín adidas Liverpool",
+  "model": "Botellín adidas Liverpool",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Botellín de agua para entrenamiento adidas del Liverpool de 750 ml - rojo",
+    "tagline": "Hidratación con el sello del campeón",
+    "intro": "El botellín adidas del Liverpool combina funcionalidad y pasión por el fútbol. Con capacidad de 750 ml, es perfecto para mantenerte hidratado durante entrenamientos y partidos. Su diseño ligero y resistente lo convierte en el compañero ideal para cualquier actividad deportiva.",
+    "collection": "",
+    "key_benefits": [
+      "Hidratación rápida: Ideal para entrenar sin interrupciones.",
+      "Material resistente: Diseñado para uso diario intensivo.",
+      "Fácil de limpiar: Compatible con lavavajillas.",
+      "Boquilla retráctil: Higiénica, práctica y sin fugas.",
+      "Capacidad óptima: 750 ml para sesiones completas."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ4451_botellin-agua-color-rojo-adidas-liverpool_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ4451_botellin-agua-color-rojo-adidas-liverpool_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ4451_botellin-agua-adidas-liverpool-color-rojo_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ4451_botellin-agua-rojo-adidas-liverpool_2_detalle-boquilla.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ4451_botellin-agua-color-rojo-adidas-liverpool_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ4451_botellin-agua-adidas-liverpool-color-rojo_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ4451_botellin-agua-rojo-adidas-liverpool_2_detalle-boquilla.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jz4451",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botellín de agua para entrenamiento adidas del Liverpool de 750 ml - rojo",
+    "tagline": "Hidratación con el sello del campeón",
+    "intro": "El botellín adidas del Liverpool combina funcionalidad y pasión por el fútbol. Con capacidad de 750 ml, es perfecto para mantenerte hidratado durante entrenamientos y partidos. Su diseño ligero y resistente lo convierte en el compañero ideal para cualquier actividad deportiva.",
+    "collection": "",
+    "key_benefits": [
+      "Hidratación rápida: Ideal para entrenar sin interrupciones.",
+      "Material resistente: Diseñado para uso diario intensivo.",
+      "Fácil de limpiar: Compatible con lavavajillas.",
+      "Boquilla retráctil: Higiénica, práctica y sin fugas.",
+      "Capacidad óptima: 750 ml para sesiones completas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jz4451"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín adidas Liverpool",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "050.5564.02",
+  "slug": "short-ho-soccer-logo-black",
+  "name": "HO Soccer Logo",
+  "model": "Logo",
+  "brand": "Ho Soccer",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "HO Soccer Padded Goalkeeper Shorts - Black",
+    "tagline": "Comfort, Protection and Style in Every Stretch",
+    "intro": "Soccer goalkeeper shorts are designed to offer maximum protection, absolute comfort and freedom of movement. Perfect for those looking for performance and confidence under the sticks.",
+    "collection": "",
+    "key_benefits": [
+      "Strategic protection: Padded reinforcements in key areas.",
+      "Total freedom: Flexible fabric that accompanies every movement.",
+      "Technical design: Ideal for intense training and competitive matches.",
+      "Lasting comfort: Breathable and wear-resistant."
+    ],
+    "technical_details": {
+      "range": "HO Soccer Logo",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/36b8bda638aa216b115e7aa5537202e28bf67581-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/36b8bda638aa216b115e7aa5537202e28bf67581-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8900e8d2ea45b4c73477a20408b26dfc8560fb38-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2b7a7754d024c2c22093d31e80ff88cffac35d19-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/785b2390af6973c6f0fb43408b250d75413a916e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/36b8bda638aa216b115e7aa5537202e28bf67581-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8900e8d2ea45b4c73477a20408b26dfc8560fb38-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2b7a7754d024c2c22093d31e80ff88cffac35d19-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/785b2390af6973c6f0fb43408b250d75413a916e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-36b8bda638aa216b115e7aa5537202e28bf67581-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/36b8bda638aa216b115e7aa5537202e28bf67581-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8900e8d2ea45b4c73477a20408b26dfc8560fb38-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8900e8d2ea45b4c73477a20408b26dfc8560fb38-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2b7a7754d024c2c22093d31e80ff88cffac35d19-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2b7a7754d024c2c22093d31e80ff88cffac35d19-1500x1500.jpg"
+    },
+    {
+      "_id": "image-785b2390af6973c6f0fb43408b250d75413a916e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/785b2390af6973c6f0fb43408b250d75413a916e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/050-5564-02",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de portero acolchado HO Soccer - negro",
+    "tagline": "Comodidad, Protección y Estilo en Cada Estirada",
+    "intro": "Los pantalones cortos de portero Soccer están diseñados para ofrecer máxima protección, comodidad absoluta y libertad de movimiento. Perfectos para quienes buscan rendimiento y confianza bajo palos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección estratégica: Refuerzos acolchados en zonas clave.",
+      "Libertad total: Tejido flexible que acompaña cada movimiento.",
+      "Diseño técnico: Ideal para entrenos intensos y partidos competitivos.",
+      "Confort duradero: Transpirable y resistente al desgaste."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/050-5564-02"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Logo",
+    "submodel": "",
+    "product_model": "Logo",
+    "sole_type": ""
+  }
+}

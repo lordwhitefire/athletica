@@ -1,0 +1,92 @@
+{
+  "id": "030987-11",
+  "slug": "puma-ultra-flex-sleeve-white",
+  "name": "Puma Ultra Flex Sleeve",
+  "model": "Ultra Flex Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - White",
+    "tagline": "Flexible protection, secure fit",
+    "intro": "The Puma Ultra Flex Sleeve are designed to offer comfort and freedom of movement with a structure that adapts to the contour of the leg.",
+    "collection": "UNLIMITED PACK",
+    "key_benefits": [
+      "Total flexibility: Ergonomic design that adapts to the movement of the game.",
+      "Controlled compression: Stockings that stabilize and secure without excessive tightening.",
+      "Sports style: Modern image with visual impact graphics.",
+      "Functional protection: Resistant panels where more security is needed.",
+      "Natural feel: Play freely without feeling stiff."
+    ],
+    "technical_details": {
+      "range": "Ultra Flex Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4bc87ce52470faa83dc9a494b349284d017dc71c-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4bc87ce52470faa83dc9a494b349284d017dc71c-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4bc87ce52470faa83dc9a494b349284d017dc71c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-4bc87ce52470faa83dc9a494b349284d017dc71c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4bc87ce52470faa83dc9a494b349284d017dc71c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030987-11",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - blancas",
+    "tagline": "Protección flexible, ajuste seguro",
+    "intro": "Las Puma Ultra Flex Sleeve están pensadas para ofrecer comodidad y libertad de movimiento con una estructura que se adapta al contorno de la pierna.",
+    "collection": "UNLIMITED PACK",
+    "key_benefits": [
+      "Flexibilidad total: Diseño ergonómico que se adapta al movimiento del juego.",
+      "Compresión controlada: Medias que estabilizan y aseguran sin apretar en exceso.",
+      "Estilo deportivo: Imagen moderna con gráficos de impacto visual.",
+      "Protección funcional: Paneles resistentes donde se necesita más seguridad.",
+      "Sensación natural: Juega con libertad sin sentir rigidez."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030987-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Flex Sleeve",
+    "product_model": "Ultra Flex Sleeve",
+    "sole_type": ""
+  }
+}

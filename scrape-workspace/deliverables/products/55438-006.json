@@ -1,0 +1,90 @@
+{
+  "id": "55438-006",
+  "slug": "kelme-all-in-white",
+  "name": "Kelme All IN",
+  "model": "All IN",
+  "brand": "Kelme",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol sala Kelme suela lisa IN - blancas",
+    "tagline": "Libertad y agilidad en cada jugada",
+    "intro": "Las Kelme All IN están pensadas para jugadores que buscan movilidad, ligereza y estilo en pista. Un modelo moderno para rendir en el fútbol sala de hoy.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción ligera: Mayor agilidad en movimientos rápidos.",
+      "Estilo actual: Diseño llamativo y moderno.",
+      "Tracción efectiva: Suela con dibujo multidireccional para indoor.",
+      "Confort dinámico: Material flexible y ventilado."
+    ],
+    "technical_details": {
+      "range": "All IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_zapatillas-futbol-sala-color-blanco-kelme-all-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_zapatillas-futbol-sala-color-blanco-kelme-all-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_zapatillas-de-futbol-sala-blancas-kelme-all-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_botas-futbol-sala-kelme-all-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_bambas-futbol-sala-kelme-all-in-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_tenis-futbol-sala-color-blanco-kelme-all-in_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_zapatillas-futbol-sala-color-blanco-kelme-all-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_zapatillas-de-futbol-sala-blancas-kelme-all-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_botas-futbol-sala-kelme-all-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_bambas-futbol-sala-kelme-all-in-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55438-006_tenis-futbol-sala-color-blanco-kelme-all-in_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/55438-006",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-18",
+    "subtitle": "Zapatillas de fútbol sala Kelme suela lisa IN - blancas",
+    "tagline": "Libertad y agilidad en cada jugada",
+    "intro": "Las Kelme All IN están pensadas para jugadores que buscan movilidad, ligereza y estilo en pista. Un modelo moderno para rendir en el fútbol sala de hoy.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción ligera: Mayor agilidad en movimientos rápidos.",
+      "Estilo actual: Diseño llamativo y moderno.",
+      "Tracción efectiva: Suela con dibujo multidireccional para indoor.",
+      "Confort dinámico: Material flexible y ventilado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/55438-006"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "medium",
+    "rule": "source fallback 'zapatillas'",
+    "root_model": "All",
+    "submodel": "IN",
+    "product_model": "All IN",
+    "sole_type": ""
+  }
+}

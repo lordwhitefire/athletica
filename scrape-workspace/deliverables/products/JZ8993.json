@@ -1,0 +1,98 @@
+{
+  "id": "JZ8993",
+  "slug": "pantalon-adidas-real-madrid-presentacion-black",
+  "name": "adidas Real Madrid presentación",
+  "model": "Real Madrid presentación",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de presentación adidas del Real Madrid 2025 2026 - negro",
+    "tagline": "Presentación con identidad blanca",
+    "intro": "El pantalón oficial de presentación del Real Madrid combina ajuste deportivo y comodidad para el día a día. Perfecto para completar el conjunto del equipo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño profesional: Imagen idéntica a la del primer equipo.",
+      "Confort total: Tejido suave con cintura elástica.",
+      "Estilo funcional: Cremalleras en los bajos para más comodidad."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-largo-color-negro-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-largo-color-negro-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-chandal-negro-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-chandal-adidas-real-madrid-presentacion-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-largo-adidas-real-madrid-presentacion-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-largo-color-negro-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-chandal-negro-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-chandal-adidas-real-madrid-presentacion-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8993_pantalon-largo-adidas-real-madrid-presentacion-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz8993",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de presentación adidas del Real Madrid 2025 2026 - negro",
+    "tagline": "Presentación con identidad blanca",
+    "intro": "El pantalón oficial de presentación del Real Madrid combina ajuste deportivo y comodidad para el día a día. Perfecto para completar el conjunto del equipo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño profesional: Imagen idéntica a la del primer equipo.",
+      "Confort total: Tejido suave con cintura elástica.",
+      "Estilo funcional: Cremalleras en los bajos para más comodidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz8993"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid presentación",
+    "sole_type": ""
+  }
+}

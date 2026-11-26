@@ -1,0 +1,103 @@
+{
+  "id": "027078-02",
+  "slug": "gorra-puma-marruecos-trucker-cap-verde-blanco",
+  "name": "Puma Marruecos Trucker Cap",
+  "model": "Marruecos Trucker Cap",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Verde / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Morocco national team Puma walking cap - green, white",
+    "tagline": "Moroccan pride with urban style",
+    "intro": "The Puma de Morocco Trucker Cap is the perfect accessory for fans who want to represent the national team inside and outside the stadium. Its trucker-style design combines a modern aesthetic with a comfortable and breathable fit ideal for everyday use. The structured front with the official crest provides personality and football spirit, while the mesh back favors ventilation on the hottest days.",
+    "collection": "",
+    "key_benefits": [
+      "Official Morocco design: Show off the Moroccan team's shield with authentic style.",
+      "Trucker format: Mesh panels that improve ventilation and comfort.",
+      "Pre-curved visor: Greater sun protection and modern sports aesthetics.",
+      "Adjustable Closure: Customized and comfortable fit for everyday use."
+    ],
+    "technical_details": {
+      "range": "Puma Marruecos Trucker Cap",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/abf5a27c8b707349a641b17c7168c31e979c6840-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/abf5a27c8b707349a641b17c7168c31e979c6840-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f0851d5f502eeef67587a7625e1e5dbe7d377809-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ceb1cf38cf1e390d6950e0d6011c5a24a2d05a0e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/abf5a27c8b707349a641b17c7168c31e979c6840-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f0851d5f502eeef67587a7625e1e5dbe7d377809-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ceb1cf38cf1e390d6950e0d6011c5a24a2d05a0e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-abf5a27c8b707349a641b17c7168c31e979c6840-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/abf5a27c8b707349a641b17c7168c31e979c6840-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f0851d5f502eeef67587a7625e1e5dbe7d377809-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f0851d5f502eeef67587a7625e1e5dbe7d377809-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ceb1cf38cf1e390d6950e0d6011c5a24a2d05a0e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ceb1cf38cf1e390d6950e0d6011c5a24a2d05a0e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/027078-02",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma de la selección de Marruecos - verde, blanca",
+    "tagline": "Orgullo marroquí con estilo urbano",
+    "intro": "La gorra Puma de Marruecos Trucker Cap es el complemento perfecto para los aficionados que quieren representar a la selección dentro y fuera del estadio. Su diseño tipo camionero combina una estética moderna con un ajuste cómodo y transpirable ideal para el día a día. El frontal estructurado con el escudo oficial aporta personalidad y espíritu futbolero, mientras que la parte trasera de rejilla favorece la ventilación en los días más calurosos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Marruecos:Lluce el escudo de la selección marroquí con estilo auténtico.",
+      "Formato Trucker: Paneles de rejilla que mejoran la ventilación y la comodidad.",
+      "Visera precurvada: Mayor protección solar y estética deportiva moderna.",
+      "Cierre ajustable: Ajuste personalizado y cómodo para uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/027078-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Marruecos",
+    "submodel": "",
+    "product_model": "Marruecos Trucker Cap",
+    "sole_type": ""
+  }
+}

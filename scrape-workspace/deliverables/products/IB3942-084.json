@@ -1,0 +1,102 @@
+{
+  "id": "IB3942-084",
+  "slug": "camiseta-nike-barcelona-mujer-wordmark-grey",
+  "name": "Nike Barcelona Women WordMark",
+  "model": "Barcelona mujer WordMark",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "FC Barcelona Nike Women's Short Sleeve Cotton T-Shirt - Gray",
+    "tagline": "Femininity and football in a single t-shirt",
+    "intro": "The Nike WordMark FC Barcelona t-shirt for women combines comfort, clean design and Blaugrana spirit. Perfect for urban looks and match days.",
+    "collection": "",
+    "key_benefits": [
+      "Soft fabric: Comfortable cotton for daily use.",
+      "Feminine design: Adapted cut and casual style.",
+      "Distinctive graphic: Logo with club name in WordMark design.",
+      "Barça Style: Ideal for women who feel the shield."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona mujer WordMark",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-color-gris-nike-barcelona-mujer-wordmark_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-color-gris-nike-barcelona-mujer-wordmark_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-gris-nike-barcelona-mujer-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-nike-barcelona-mujer-wordmark-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-nike-barcelona-mujer-wordmark-gris_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-color-gris-nike-barcelona-mujer-wordmark_5_detalle-lateral.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-color-gris-nike-barcelona-mujer-wordmark_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-gris-nike-barcelona-mujer-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-nike-barcelona-mujer-wordmark-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-nike-barcelona-mujer-wordmark-gris_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3942-084_camiseta-color-gris-nike-barcelona-mujer-wordmark_5_detalle-lateral.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib3942-084",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta para mujer de algodón de manga corta Nike del FC Barcelona - gris",
+    "tagline": "Feminidad y fútbol en una sola camiseta",
+    "intro": "La camiseta Nike WordMark del FC Barcelona para mujer combina comodidad, diseño limpio y espíritu blaugrana. Perfecta para looks urbanos y días de partido.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido suave: Algodón cómodo para uso diario.",
+      "Diseño femenino: Corte adaptado y estilo casual.",
+      "Gráfico distintivo: Logo con nombre del club en diseño WordMark.",
+      "Estilo Barça: Ideal para mujeres que sienten el escudo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib3942-084"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Barcelona Women",
+    "submodel": "",
+    "product_model": "Barcelona mujer WordMark",
+    "sole_type": ""
+  }
+}

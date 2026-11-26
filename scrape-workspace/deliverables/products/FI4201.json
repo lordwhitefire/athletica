@@ -1,0 +1,86 @@
+{
+  "id": "FI4201",
+  "slug": "camiseta-portero-adidas-adipro-20-gk-nino-green",
+  "name": "Goalkeeper adidas Adipro 20 GK Kids",
+  "model": "Goalkeeper adidas Adipro 20 GK Kids",
+  "brand": "adidas",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "portero adidas Adipro 20 GK niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4201_imagen-de-la-camiseta-de-portero-de-futbol-adidas-adripro-20-2019-verde_3_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4201_imagen-de-la-camiseta-de-portero-de-futbol-adidas-adripro-20-2019-verde_3_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4201_imagen-de-la-camiseta-de-portero-de-futbol-adidas-adripro-20-2019-verde_4_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4201_imagen-de-la-camiseta-de-portero-de-futbol-adidas-adripro-20-2019-verde_3_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4201_imagen-de-la-camiseta-de-portero-de-futbol-adidas-adripro-20-2019-verde_4_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/fi4201",
+    "language": "es",
+    "category": "Ofertas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/fi4201"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Goalkeeper",
+    "submodel": "",
+    "product_model": "Goalkeeper adidas Adipro 20 GK Kids",
+    "sole_type": ""
+  }
+}

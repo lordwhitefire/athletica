@@ -1,0 +1,100 @@
+{
+  "id": "JX5738",
+  "slug": "botellin-adidas-arsenal-red",
+  "name": "Botellín adidas Arsenal",
+  "model": "Botellín adidas Arsenal",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Botellín de agua para entrenamiento adidas del Arsenal de 750 ml - rojo",
+    "tagline": "Hidratación al ritmo del Arsenal",
+    "intro": "Lleva tu pasión al entrenamiento con este botellín adidas del Arsenal. Con 750 ml de capacidad, es ligero, resistente y cómodo para el uso diario.",
+    "collection": "",
+    "key_benefits": [
+      "Hidratación sin interrupciones: Perfecto para beber rápidamente durante el ejercicio.",
+      "Diseño ligero y duradero: Material resistente que acompaña tu rutina diaria.",
+      "Fácil limpieza: Compatible con lavavajillas.",
+      "Boquilla retráctil: Práctica, higiénica y sin fugas.",
+      "Capacidad ideal de 750 ml: Lo justo para tu sesión de entrenamiento."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX5738_botellin-agua-color-rojo-adidas-arsenal_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX5738_botellin-agua-color-rojo-adidas-arsenal_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX5738_botellin-agua-adidas-arsenal-color-rojo_3_detalle-boquilla.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX5738_botellin-agua-rojo-adidas-arsenal_2_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX5738_botellin-agua-color-rojo-adidas-arsenal_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX5738_botellin-agua-adidas-arsenal-color-rojo_3_detalle-boquilla.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX5738_botellin-agua-rojo-adidas-arsenal_2_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jx5738",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botellín de agua para entrenamiento adidas del Arsenal de 750 ml - rojo",
+    "tagline": "Hidratación al ritmo del Arsenal",
+    "intro": "Lleva tu pasión al entrenamiento con este botellín adidas del Arsenal. Con 750 ml de capacidad, es ligero, resistente y cómodo para el uso diario.",
+    "collection": "",
+    "key_benefits": [
+      "Hidratación sin interrupciones: Perfecto para beber rápidamente durante el ejercicio.",
+      "Diseño ligero y duradero: Material resistente que acompaña tu rutina diaria.",
+      "Fácil limpieza: Compatible con lavavajillas.",
+      "Boquilla retráctil: Práctica, higiénica y sin fugas.",
+      "Capacidad ideal de 750 ml: Lo justo para tu sesión de entrenamiento."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jx5738"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'equipos'",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín adidas Arsenal",
+    "sole_type": ""
+  }
+}

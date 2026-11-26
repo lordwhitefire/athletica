@@ -1,0 +1,102 @@
+{
+  "id": "HV4923-492",
+  "slug": "camiseta-nike-tottenham-t90-wordmark-blue",
+  "name": "Nike Tottenham T90 WordMark",
+  "model": "Tottenham T90 WordMark",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Tottenham Nike Short Sleeve Cotton T-Shirt - Navy",
+    "tagline": "Minimalism Spur with Nike seal",
+    "intro": "The Nike Tottenham T90 WordMark t-shirt stands out for its simple design with classic typography. Ideal for fans looking for a relaxed look with club identity.",
+    "collection": "",
+    "key_benefits": [
+      "Clean design: Retro-inspired WordMark typography.",
+      "Basic comfort: Soft cotton ideal for everyday use.",
+      "Easy to combine: Urban or sporty look.",
+      "Modern style: Casual cut, perfect for summer.",
+      "Subtle passion: Perfect for supporting the club discreetly."
+    ],
+    "technical_details": {
+      "range": "Nike Tottenham T90 WordMark",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-color-azul-nike-tottenham-t90-wordmark_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-color-azul-nike-tottenham-t90-wordmark_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-azul-marino-nike-tottenham-t90-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-nike-tottenham-t90-wordmark-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-nike-tottenham-t90-wordmark-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-color-azul-nike-tottenham-t90-wordmark_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-azul-marino-nike-tottenham-t90-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-nike-tottenham-t90-wordmark-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV4923-492_camiseta-nike-tottenham-t90-wordmark-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv4923-492",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta Nike del Tottenham - azul marino",
+    "tagline": "Minimalismo Spur con sello Nike",
+    "intro": "La camiseta Nike Tottenham T90 WordMark destaca por su diseño sencillo con tipografía clásica. Ideal para los fans que buscan un look relajado y con identidad del club.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño limpio: Tipografía WordMark de inspiración retro.",
+      "Comodidad básica: Algodón suave ideal para uso diario.",
+      "Fácil de combinar: Look urbano o deportivo.",
+      "Estilo moderno: Corte casual, perfecto para verano.",
+      "Pasión sutil: Perfecta para apoyar al club con discreción."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv4923-492"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Tottenham",
+    "submodel": "",
+    "product_model": "Tottenham T90 WordMark",
+    "sole_type": ""
+  }
+}

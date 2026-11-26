@@ -1,0 +1,84 @@
+{
+  "id": "400094.100-A",
+  "slug": "coderas-de-portero-joma-protec-black",
+  "name": "Coderas de Goalkeeper Joma Protec",
+  "model": "Coderas de Goalkeeper Joma Protec",
+  "brand": "Joma",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de portero Joma Protec",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/400094100-codera-para-portero-negra-joma-frontal-800.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/400094100-codera-para-portero-negra-joma-frontal-800.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/400094100-codera-para-portero-negra-joma-interior-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/400094100-codera-para-portero-negra-joma-detalle-textura-800.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/400094100-codera-para-portero-negra-joma-frontal-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/400094100-codera-para-portero-negra-joma-interior-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/400094100-codera-para-portero-negra-joma-detalle-textura-800.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/400094-100-a",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/400094-100-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Coderas",
+    "submodel": "",
+    "product_model": "Coderas de Goalkeeper Joma Protec",
+    "sole_type": ""
+  }
+}

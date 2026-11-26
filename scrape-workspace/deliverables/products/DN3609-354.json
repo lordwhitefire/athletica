@@ -1,0 +1,90 @@
+{
+  "id": "DN3609-354",
+  "slug": "nike-mercurial-lite-superlock-blue",
+  "name": "Nike Mercurial Lite Superlock",
+  "model": "Mercurial Lite Superlock",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - verdes turquesa, moradas",
+    "tagline": "Protección ligera para jugar sin distracciones",
+    "intro": "Las espinilleras de fútbol Nike Mercurial Lite Superlock están diseñadas para futbolistas que buscan protección, comodidad y una sujeción estable durante el juego. Su cubierta de perfil bajo se combina con espuma perforada para amortiguar los impactos, mientras que las mallas ayudan a mantener las protecciones correctamente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su diseño de perfil bajo ayuda a proteger la espinilla sin añadir un volumen excesivo.",
+      "Mayor comodidad: La espuma moldeada favorece un ajuste cómodo y ayuda a amortiguar los impactos.",
+      "Sujeción estable: El sistema de ajuste ayuda a mantener las espinilleras en su sitio durante el juego.",
+      "Mayor transpirabilidad: La construcción perforada favorece la circulación del aire y la gestión de la humedad.",
+      "Libertad de movimiento: Su construcción ligera está pensada para acompañar movimientos rápidos y cambios de dirección."
+    ],
+    "technical_details": {
+      "range": "Mercurial Lite Superlock",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-354_espinilleras-color-azul-nike-mercurial-lite-superlock_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-354_espinilleras-color-azul-nike-mercurial-lite-superlock_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-354_canilleras-verdes-turquesa--moradas-nike-mercurial-lite-superlock_2_detalle-perfil-e-interior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-354_espinilleras-color-azul-nike-mercurial-lite-superlock_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-354_canilleras-verdes-turquesa--moradas-nike-mercurial-lite-superlock_2_detalle-perfil-e-interior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dn3609-354",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - verdes turquesa, moradas",
+    "tagline": "Protección ligera para jugar sin distracciones",
+    "intro": "Las espinilleras de fútbol Nike Mercurial Lite Superlock están diseñadas para futbolistas que buscan protección, comodidad y una sujeción estable durante el juego. Su cubierta de perfil bajo se combina con espuma perforada para amortiguar los impactos, mientras que las mallas ayudan a mantener las protecciones correctamente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su diseño de perfil bajo ayuda a proteger la espinilla sin añadir un volumen excesivo.",
+      "Mayor comodidad: La espuma moldeada favorece un ajuste cómodo y ayuda a amortiguar los impactos.",
+      "Sujeción estable: El sistema de ajuste ayuda a mantener las espinilleras en su sitio durante el juego.",
+      "Mayor transpirabilidad: La construcción perforada favorece la circulación del aire y la gestión de la humedad.",
+      "Libertad de movimiento: Su construcción ligera está pensada para acompañar movimientos rápidos y cambios de dirección."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dn3609-354"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite Superlock",
+    "product_model": "Mercurial Lite Superlock",
+    "sole_type": ""
+  }
+}

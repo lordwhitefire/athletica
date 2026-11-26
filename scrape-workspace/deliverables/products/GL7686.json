@@ -1,0 +1,86 @@
+{
+  "id": "GL7686",
+  "slug": "short-con-malla-adidas-pacer-3-stripes-2-en-1-mujer-black",
+  "name": "con malla adidas Pacer 3 Stripes 2 en 1 Women",
+  "model": "con malla adidas Pacer 3 Stripes 2 en 1 Women",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "con malla adidas Pacer 3 Stripes 2 en 1 mujer",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-color-negro-adidas-pacer-3-stripes-2-en-1_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-color-negro-adidas-pacer-3-stripes-2-en-1_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-negro-adidas-pacer-3-stripes-2-en-1_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-adidas-pacer-3-stripes-2-en-1-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-adidas-pacer-3-stripes-2-en-1-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-color-negro-adidas-pacer-3-stripes-2-en-1_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-negro-adidas-pacer-3-stripes-2-en-1_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-adidas-pacer-3-stripes-2-en-1-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/L/GL7686_pantalon-corto-con-malla-adidas-pacer-3-stripes-2-en-1-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/gl7686",
+    "language": "es",
+    "category": "Ropa entrenamiento",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/gl7686"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "con",
+    "submodel": "",
+    "product_model": "con malla adidas Pacer 3 Stripes 2 en 1 Women",
+    "sole_type": ""
+  }
+}

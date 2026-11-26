@@ -1,0 +1,100 @@
+{
+  "id": "JL7707",
+  "slug": "pantalon-adidas-olympique-lyon-entrenamiento-grey",
+  "name": "adidas Olympique Lyon Training",
+  "model": "Olympique Lyon entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Olympique Lyonnais adidas long training pants 2025 2026 - gray",
+    "tagline": "Train like the lions of Lyon",
+    "intro": "These Olympique de Lyon training pants are designed to offer performance and comfort in each session. A technical basic that accompanies players on and off the field.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: OL 25/26 training team pants.",
+      "Thermal comfort: Technical fabric to maintain temperature.",
+      "Freedom of movement: Tight and elastic cut.",
+      "Useful details: Ankle zippers and side pockets."
+    ],
+    "technical_details": {
+      "range": "adidas Olympique Lyon entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-largo-color-negro-adidas-olympique-lyon-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-largo-color-negro-adidas-olympique-lyon-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-chandal-negro-adidas-olympique-lyon-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-chandal-adidas-olympique-lyon-entrenamiento-color-negro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-largo-adidas-olympique-lyon-entrenamiento-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-largo-color-negro-adidas-olympique-lyon-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-chandal-negro-adidas-olympique-lyon-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-chandal-adidas-olympique-lyon-entrenamiento-color-negro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL7707_pantalon-largo-adidas-olympique-lyon-entrenamiento-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jl7707",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas del Olympique de Lyon 2025 2026 - gris",
+    "tagline": "Entrena como los leones de Lyon",
+    "intro": "Este pantalón de entrenamiento del Olympique de Lyon está diseñado para ofrecer rendimiento y confort en cada sesión. Un básico técnico que acompaña a los jugadores dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Pantalón del equipo de entrenamiento OL 25/26.",
+      "Comodidad térmica: Tejido técnico para mantener la temperatura.",
+      "Libertad de movimiento: Corte ajustado y elástico.",
+      "Detalles útiles: Cremalleras en los tobillos y bolsillos laterales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jl7707"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Olympique",
+    "submodel": "",
+    "product_model": "Olympique Lyon entrenamiento",
+    "sole_type": ""
+  }
+}

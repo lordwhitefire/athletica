@@ -1,0 +1,86 @@
+{
+  "id": "RINATCO-MDB-A",
+  "slug": "medias-rinat-de-portero-classic-white",
+  "name": "Rinat de Goalkeeper Classic",
+  "model": "de portero Classic",
+  "brand": "Rinat",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Rinat de portero Classic",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/r/i/rinatco-mdb-a_imagen-de-las-medias-de-portero-de-futbol-rinat-2018-blanco_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/rinatco-mdb-a",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/rinatco-mdb-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "de",
+    "submodel": "",
+    "product_model": "de portero Classic",
+    "sole_type": ""
+  }
+}

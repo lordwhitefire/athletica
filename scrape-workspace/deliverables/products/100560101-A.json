@@ -1,0 +1,99 @@
+{
+  "id": "100560101-A",
+  "slug": "mallas-de-portero-uhlsport-black",
+  "name": "Mallas de Goalkeeper Uhlsport",
+  "model": "Mallas de Goalkeeper Uhlsport",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de portero Uhlsport",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c4ec9c3a2562140057163ac75b53af151c63295f-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c4ec9c3a2562140057163ac75b53af151c63295f-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b48ee1d4eca129ff5a05bbbf62dc60ffffbe2cc1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4b559f4a8f925be46efe6167be776bf4a9a980f8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f7870a5aad960cc31b8c6ccb3740ceaa5e8a7fa6-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c4ec9c3a2562140057163ac75b53af151c63295f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b48ee1d4eca129ff5a05bbbf62dc60ffffbe2cc1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4b559f4a8f925be46efe6167be776bf4a9a980f8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f7870a5aad960cc31b8c6ccb3740ceaa5e8a7fa6-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c4ec9c3a2562140057163ac75b53af151c63295f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c4ec9c3a2562140057163ac75b53af151c63295f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b48ee1d4eca129ff5a05bbbf62dc60ffffbe2cc1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b48ee1d4eca129ff5a05bbbf62dc60ffffbe2cc1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4b559f4a8f925be46efe6167be776bf4a9a980f8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4b559f4a8f925be46efe6167be776bf4a9a980f8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f7870a5aad960cc31b8c6ccb3740ceaa5e8a7fa6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f7870a5aad960cc31b8c6ccb3740ceaa5e8a7fa6-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100560101-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100560101-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas de Goalkeeper Uhlsport",
+    "sole_type": ""
+  }
+}

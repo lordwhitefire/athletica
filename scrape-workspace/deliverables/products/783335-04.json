@@ -1,0 +1,98 @@
+{
+  "id": "783335-04",
+  "slug": "short-puma-marruecos-26-green",
+  "name": "Puma Marruecos 26",
+  "model": "Marruecos 26",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de la primera equipación Puma de la selección de Marruecos 2026 - verde",
+    "tagline": "Completa el look oficial de Marruecos",
+    "intro": "El short Puma de la primera equipación de Marruecos 2026 es la prenda perfecta para acompañar la camiseta oficial del combinado nacional. Diseñado para ofrecer comodidad y libertad de movimiento tanto en el campo como en el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Marruecos 2026: Parte del uniforme titular de la selección.",
+      "Tejido ligero: Favorece la movilidad y la comodidad durante el juego.",
+      "Transpirabilidad: Material que ayuda a evacuar el sudor.",
+      "Cintura elástica: Ajuste cómodo y seguro.",
+      "Uso versátil: Ideal para entrenamientos o uso casual."
+    ],
+    "technical_details": {
+      "range": "Puma Marruecos 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_pantalon-corto-color-verde-puma-marruecos-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_pantalon-corto-color-verde-puma-marruecos-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_pantalon-corto-puma-marruecos-26-color-verde_3_detalla-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_short-puma-marruecos-26-verde_4_detalle-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_short-verde-puma-marruecos-26_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_pantalon-corto-color-verde-puma-marruecos-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_pantalon-corto-puma-marruecos-26-color-verde_3_detalla-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_short-puma-marruecos-26-verde_4_detalle-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783335-04_short-verde-puma-marruecos-26_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/783335-04",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de la primera equipación Puma de la selección de Marruecos 2026 - verde",
+    "tagline": "Completa el look oficial de Marruecos",
+    "intro": "El short Puma de la primera equipación de Marruecos 2026 es la prenda perfecta para acompañar la camiseta oficial del combinado nacional. Diseñado para ofrecer comodidad y libertad de movimiento tanto en el campo como en el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Marruecos 2026: Parte del uniforme titular de la selección.",
+      "Tejido ligero: Favorece la movilidad y la comodidad durante el juego.",
+      "Transpirabilidad: Material que ayuda a evacuar el sudor.",
+      "Cintura elástica: Ajuste cómodo y seguro.",
+      "Uso versátil: Ideal para entrenamientos o uso casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/783335-04"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Marruecos",
+    "submodel": "",
+    "product_model": "Marruecos 26",
+    "sole_type": ""
+  }
+}

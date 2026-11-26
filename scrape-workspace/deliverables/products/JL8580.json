@@ -1,0 +1,98 @@
+{
+  "id": "JL8580",
+  "slug": "camiseta-adidas-mexico-26-green",
+  "name": "adidas México 26",
+  "model": "México 26",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mexico 2026 adidas home jersey - green",
+    "tagline": "Identity, history and warrior spirit",
+    "intro": "The Mexico 2026 shirt combines modern design with ancestral symbols. Its aesthetics reflect the cultural richness of one of the most passionate hobbies in the world.",
+    "collection": "",
+    "key_benefits": [
+      "Aztec inspiration: Design based on pre-Hispanic cultural elements.",
+      "Light comfort: Technical fabric that maintains freshness at all times.",
+      "Embroidered shield: With national pride and careful details."
+    ],
+    "technical_details": {
+      "range": "adidas México 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_1.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_1.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_2.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_3.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_4.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_1.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_2.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_3.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/j/l/jl8580_4.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jl8580",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la primera equipación adidas de la selección de México 2026 - verde",
+    "tagline": "Identidad, historia y espíritu guerrero",
+    "intro": "La camiseta de México 2026 combina diseño moderno con símbolos ancestrales. Su estética refleja la riqueza cultural de una de las aficiones más apasionadas del mundo.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración azteca: Diseño basado en elementos culturales prehispánicos.",
+      "Comodidad ligera: Tejido técnico que mantiene la frescura en todo momento.",
+      "Escudo bordado: Con orgullo nacional y detalles cuidados."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jl8580"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "México",
+    "submodel": "26",
+    "product_model": "México 26",
+    "sole_type": ""
+  }
+}

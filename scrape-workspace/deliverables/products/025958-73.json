@@ -1,0 +1,113 @@
+{
+  "id": "025958-73",
+  "slug": "gorra-puma-manchester-city-ftblarchive-blue",
+  "name": "Puma Manchester City FtblArchive",
+  "model": "Manchester City FtblArchive",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Walking Cap - Navy",
+    "tagline": "Retro style with citizen essence",
+    "intro": "The Puma Manchester City FtblArchive cap recovers a classic design inspired by the club's history. A piece that combines football heritage and urban fashion in an essential accessory.",
+    "collection": "",
+    "key_benefits": [
+      "Retro inspiration: Archive design that connects with the club's tradition.",
+      "Citizen pride: Official Manchester City crest on the front.",
+      "Distinctive details: Puma logo embroidered on the side.",
+      "Versatility: Ideal for both everyday wear and to complete a casual amateur look."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City FtblArchive",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9aa02e9deaf408b648b3c82990556a5013a93cf5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9aa02e9deaf408b648b3c82990556a5013a93cf5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ae23dbf536be2fc4419f7054c7fb66d0efbbef7b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/589df1d8050d8b897110617163c00e9314d8b0e0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9dbc94eb764f46ab0cc741a4d0fbdc76681bd2b5-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9aa02e9deaf408b648b3c82990556a5013a93cf5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ae23dbf536be2fc4419f7054c7fb66d0efbbef7b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/589df1d8050d8b897110617163c00e9314d8b0e0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9dbc94eb764f46ab0cc741a4d0fbdc76681bd2b5-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9aa02e9deaf408b648b3c82990556a5013a93cf5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9aa02e9deaf408b648b3c82990556a5013a93cf5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ae23dbf536be2fc4419f7054c7fb66d0efbbef7b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ae23dbf536be2fc4419f7054c7fb66d0efbbef7b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-589df1d8050d8b897110617163c00e9314d8b0e0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/589df1d8050d8b897110617163c00e9314d8b0e0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9dbc94eb764f46ab0cc741a4d0fbdc76681bd2b5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9dbc94eb764f46ab0cc741a4d0fbdc76681bd2b5-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/025958-73",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma del Manchester City - azul marino",
+    "tagline": "Estilo retro con esencia citizen",
+    "intro": "La gorra Puma Manchester City FtblArchive recupera un diseño clásico inspirado en la historia del club. Una pieza que une herencia futbolera y moda urbana en un accesorio imprescindible.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Diseño de archivo que conecta con la tradición del club.",
+      "Orgullo citizen: Escudo oficial del Manchester City en el frontal.",
+      "Detalles distintivos: Logotipo Puma bordado en el lateral.",
+      "Versatilidad: Ideal tanto para el día a día como para completar un look casual de aficionado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/025958-73"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City FtblArchive",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "JV5240",
+  "slug": "adidas-messi-match-j-silver",
+  "name": "adidas Messi Match J",
+  "model": "Messi Match J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Silver",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol infantiles adidas de Messi con tobillera protectora - plateadas",
+    "tagline": "Seguridad total inspirada en el mejor",
+    "intro": "Las adidas Messi Match J combinan protección avanzada y diseño exclusivo del astro argentino. Diseñadas para jugadores jóvenes, ofrecen comodidad y ajuste fiable con media elástica y refuerzos en zonas clave. Ideales para dominar el campo con confianza y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Placa protectora rígida: Mayor resistencia frente a impactos directos.",
+      "Inspiración Messi: Gráficos y estilo alineados con el legado del 10.",
+      "Ajuste con cierre frontal: Adaptación personalizada para un uso seguro.",
+      "Diseñadas para jóvenes: Ergonomía pensada para futbolistas en crecimiento.",
+      "Ligereza óptima: Permiten moverse libremente sin molestias."
+    ],
+    "technical_details": {
+      "range": "Messi Match J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5240_espinilleras-con-tobillera-color-plata-adidas-messi-match-j_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5240_espinilleras-con-tobillera-color-plata-adidas-messi-match-j_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5240_canilleras-con-tobillera-plateadas-adidas-messi-match-j_2_detalle-tobillera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5240_espinilleras-con-tobillera-adidas-messi-match-j-color-plata_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5240_espinilleras-con-tobillera-color-plata-adidas-messi-match-j_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5240_canilleras-con-tobillera-plateadas-adidas-messi-match-j_2_detalle-tobillera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5240_espinilleras-con-tobillera-adidas-messi-match-j-color-plata_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jv5240",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol infantiles adidas de Messi con tobillera protectora - plateadas",
+    "tagline": "Seguridad total inspirada en el mejor",
+    "intro": "Las adidas Messi Match J combinan protección avanzada y diseño exclusivo del astro argentino. Diseñadas para jugadores jóvenes, ofrecen comodidad y ajuste fiable con media elástica y refuerzos en zonas clave. Ideales para dominar el campo con confianza y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Placa protectora rígida: Mayor resistencia frente a impactos directos.",
+      "Inspiración Messi: Gráficos y estilo alineados con el legado del 10.",
+      "Ajuste con cierre frontal: Adaptación personalizada para un uso seguro.",
+      "Diseñadas para jóvenes: Ergonomía pensada para futbolistas en crecimiento.",
+      "Ligereza óptima: Permiten moverse libremente sin molestias."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Ídolos"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jv5240"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Messi",
+    "submodel": "Match J",
+    "product_model": "Messi Match J",
+    "sole_type": ""
+  }
+}

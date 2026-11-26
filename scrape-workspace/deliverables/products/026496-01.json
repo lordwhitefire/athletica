@@ -1,0 +1,105 @@
+{
+  "id": "026496-01",
+  "slug": "gorra-puma-manchester-city-essentials-blue",
+  "name": "Puma Manchester City Essentials",
+  "model": "Manchester City Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Walking Cap - Light Blue",
+    "tagline": "Urban style with citizen DNA",
+    "intro": "The Puma Manchester City cap combines a casual design with team pride. With its iconic light blue color and curved visor, it is ideal for everyday use or for cheering from the stands. Its adjustable structure guarantees a comfortable and personalized fit. Show off your passion with style at any time.",
+    "collection": "",
+    "key_benefits": [
+      "Cityzen identity: Manchester City crest embroidered on the front.",
+      "Versatile style: Classic design with curved visor ideal for any occasion.",
+      "Perfect fit: Adjustable back closure to adapt to your size.",
+      "Lasting Comfort: Lightweight, breathable fabric for everyday wear.",
+      "Emblematic colour: Distinctive light blue of the club to show your support with pride."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/1965562bcbe4c158968efb17ac6c4c5430be2452-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/1965562bcbe4c158968efb17ac6c4c5430be2452-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4f63a8158cfcd81bc7eee36797f6479300aac05e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fad1b0d4d36967545a24f09d8b961491584b684b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1965562bcbe4c158968efb17ac6c4c5430be2452-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4f63a8158cfcd81bc7eee36797f6479300aac05e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fad1b0d4d36967545a24f09d8b961491584b684b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-1965562bcbe4c158968efb17ac6c4c5430be2452-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1965562bcbe4c158968efb17ac6c4c5430be2452-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4f63a8158cfcd81bc7eee36797f6479300aac05e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4f63a8158cfcd81bc7eee36797f6479300aac05e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fad1b0d4d36967545a24f09d8b961491584b684b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fad1b0d4d36967545a24f09d8b961491584b684b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/026496-01",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma del Manchester City - azul claro",
+    "tagline": "Estilo urbano con ADN citizen",
+    "intro": "La gorra Puma del Manchester City combina un diseño casual con el orgullo por tu equipo. Con su color azul claro icónico y visera curva, es ideal para el día a día o para animar desde la grada. Su estructura ajustable garantiza un ajuste cómodo y personalizado. Luce tu pasión con estilo en cualquier momento.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad cityzen: Escudo del Manchester City bordado en el frontal.",
+      "Estilo versátil: Diseño clásico con visera curva ideal para cualquier ocasión.",
+      "Ajuste perfecto: Cierre trasero regulable para adaptarse a tu medida.",
+      "Comodidad duradera: Tejido ligero y transpirable para el uso diario.",
+      "Color emblemático: Azul claro distintivo del club para mostrar tu apoyo con orgullo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/026496-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City Essentials",
+    "sole_type": ""
+  }
+}

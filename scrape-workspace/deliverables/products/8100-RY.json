@@ -1,0 +1,80 @@
+{
+  "id": "8100-RY",
+  "slug": "mallas-mcdavid-compression-blue",
+  "name": "Mallas McDavid Compression",
+  "model": "Mallas McDavid Compression",
+  "brand": "Mc David",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "McDavid Compression",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/1/8100-RY_imagen-de-las-mallas-de-futbol-mcdavid-compression-2019-azul_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/1/8100-RY_imagen-de-las-mallas-de-futbol-mcdavid-compression-2019-azul_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/1/8100-RY_imagen-de-las-mallas-de-futbol-mcdavid-compression-2019-azul_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/1/8100-RY_imagen-de-las-mallas-de-futbol-mcdavid-compression-2019-azul_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/1/8100-RY_imagen-de-las-mallas-de-futbol-mcdavid-compression-2019-azul_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/1/8100-RY_imagen-de-las-mallas-de-futbol-mcdavid-compression-2019-azul_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/8/1/8100-RY_imagen-de-las-mallas-de-futbol-mcdavid-compression-2019-azul_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/8100-ry",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/8100-ry"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas McDavid Compression",
+    "sole_type": ""
+  }
+}

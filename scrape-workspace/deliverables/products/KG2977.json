@@ -1,0 +1,92 @@
+{
+  "id": "KG2977",
+  "slug": "chaqueta-adidas-real-madrid-eqt-purple",
+  "name": "adidas Real Madrid EQT",
+  "model": "Real Madrid EQT",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - púrpura",
+    "tagline": "El legado del Real Madrid con esencia EQT",
+    "intro": "La chaqueta adidas Real Madrid EQT recupera el espíritu de la mítica colección Equipment para rendir homenaje al conjunto blanco. Su diseño combina la cultura futbolística y el legado del Real Madrid con una estética retro de los años 90 que vuelve con fuerza. Gracias a su corte holgado y a su confección en tejido técnico ligero, ofrece comodidad, estilo y versatilidad para acompañarte tanto en los días de partido como en tu rutina diaria.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT icónico: Inspirado en la histórica colección adidas Equipment.",
+      "Tejido técnico ligero: Aporta comodidad y resistencia para el uso diario.",
+      "Cuello alto con cremallera completa: Mayor protección y estilo deportivo clásico.",
+      "Detalles oficiales del Real Madrid: El escudo del club y los detalles adidas refuerzan su identidad futbolística."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid EQT",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-color-purpura-adidas-madrid-eqt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-color-purpura-adidas-madrid-eqt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-chandal-purpura-adidas-madrid-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-entretiempo-adidas-madrid-eqt-color-purpura_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-adidas-madrid-eqt-purpura_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-color-purpura-adidas-madrid-eqt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-chandal-purpura-adidas-madrid-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-entretiempo-adidas-madrid-eqt-color-purpura_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2977_chaqueta-adidas-madrid-eqt-purpura_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2977",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - púrpura",
+    "tagline": "El legado del Real Madrid con esencia EQT",
+    "intro": "La chaqueta adidas Real Madrid EQT recupera el espíritu de la mítica colección Equipment para rendir homenaje al conjunto blanco. Su diseño combina la cultura futbolística y el legado del Real Madrid con una estética retro de los años 90 que vuelve con fuerza. Gracias a su corte holgado y a su confección en tejido técnico ligero, ofrece comodidad, estilo y versatilidad para acompañarte tanto en los días de partido como en tu rutina diaria.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT icónico: Inspirado en la histórica colección adidas Equipment.",
+      "Tejido técnico ligero: Aporta comodidad y resistencia para el uso diario.",
+      "Cuello alto con cremallera completa: Mayor protección y estilo deportivo clásico.",
+      "Detalles oficiales del Real Madrid: El escudo del club y los detalles adidas refuerzan su identidad futbolística."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2977"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid EQT",
+    "sole_type": ""
+  }
+}

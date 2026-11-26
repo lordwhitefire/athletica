@@ -1,0 +1,84 @@
+{
+  "id": "HN5611",
+  "slug": "adidas-tiro-pro-black",
+  "name": "adidas Tiro Pro",
+  "model": "Tiro Pro",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Tiro Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-de-portero-color-negro-adidas-tiro-pro_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-de-portero-color-negro-adidas-tiro-pro_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-portero-negros-adidas-tiro-pro_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-de-arquero-adidas-tiro-pro-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-de-futbol-adidas-tiro-pro-negros_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-guardameta-color-negro-adidas-tiro-pro_5_detalle-colocacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-de-portero-color-negro-adidas-tiro-pro_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-portero-negros-adidas-tiro-pro_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-de-arquero-adidas-tiro-pro-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-de-futbol-adidas-tiro-pro-negros_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/N/HN5611_guantes-guardameta-color-negro-adidas-tiro-pro_5_detalle-colocacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hn5611",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hn5611"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Tiro",
+    "submodel": "",
+    "product_model": "Tiro Pro",
+    "sole_type": ""
+  }
+}

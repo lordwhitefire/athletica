@@ -1,0 +1,91 @@
+{
+  "id": "074943-43",
+  "slug": "mochila-de-cuerdas-puma-phase-blue",
+  "name": "Backpack de cuerdas Puma Phase",
+  "model": "Backpack de cuerdas Puma Phase",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Phase",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/42999c41cc0a7f2b5ac978bde21ba9da88f8fa3b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/42999c41cc0a7f2b5ac978bde21ba9da88f8fa3b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bcbb132c120dfc9ca7f5d0c819fa20178a4047e7-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/42999c41cc0a7f2b5ac978bde21ba9da88f8fa3b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bcbb132c120dfc9ca7f5d0c819fa20178a4047e7-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-42999c41cc0a7f2b5ac978bde21ba9da88f8fa3b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/42999c41cc0a7f2b5ac978bde21ba9da88f8fa3b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-bcbb132c120dfc9ca7f5d0c819fa20178a4047e7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bcbb132c120dfc9ca7f5d0c819fa20178a4047e7-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/074943-43",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/074943-43"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Phase",
+    "sole_type": ""
+  }
+}

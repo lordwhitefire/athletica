@@ -1,0 +1,109 @@
+{
+  "id": "042122-11",
+  "slug": "puma-future-pro-hybrid-marron",
+  "name": "Puma Future Pro Hybrid",
+  "model": "Future Pro Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma goalkeeper gloves hybrid cut - beige",
+    "tagline": "Control and security under the sticks",
+    "intro": "The Puma Future Pro Hybrid are designed for goalkeepers looking for a perfect balance between grip, comfort and freedom of movement. Its hybrid cut maximizes contact surface with the ball, while the Duo Soft palm offers the confidence to perform in any condition.",
+    "collection": "ARRIVAL PACK",
+    "key_benefits": [
+      "Reliable grip in any weather: The Duo Soft palm provides an excellent balance between grip, cushioning and durability.",
+      "Greater contact surface: The hybrid cut combines the best of the Rollfinger and the Flat to improve ball control.",
+      "Freedom of movement: The knitted back favors the flexibility of the hand to react quickly in each intervention.",
+      "Secure fit: The elastic wrist strap ensures a firm, personalized fit throughout the match."
+    ],
+    "technical_details": {
+      "range": "Future Pro Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e7b7c0bd5b5820880f8cf033315e92f342cdb4e7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e7b7c0bd5b5820880f8cf033315e92f342cdb4e7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1362c098518aa54253355650645dfc58bc214e82-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/83798d188d7ad90169b6a9fcb01f15cfd4d9ee1d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cdd95760e1495007761c0933c1c2fc830d9d34ea-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e7b7c0bd5b5820880f8cf033315e92f342cdb4e7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1362c098518aa54253355650645dfc58bc214e82-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/83798d188d7ad90169b6a9fcb01f15cfd4d9ee1d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cdd95760e1495007761c0933c1c2fc830d9d34ea-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e7b7c0bd5b5820880f8cf033315e92f342cdb4e7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e7b7c0bd5b5820880f8cf033315e92f342cdb4e7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1362c098518aa54253355650645dfc58bc214e82-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1362c098518aa54253355650645dfc58bc214e82-1500x1500.jpg"
+    },
+    {
+      "_id": "image-83798d188d7ad90169b6a9fcb01f15cfd4d9ee1d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/83798d188d7ad90169b6a9fcb01f15cfd4d9ee1d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cdd95760e1495007761c0933c1c2fc830d9d34ea-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cdd95760e1495007761c0933c1c2fc830d9d34ea-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042122-11",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte híbrido - beige",
+    "tagline": "Control y seguridad bajo palos",
+    "intro": "Los Puma Future Pro Hybrid están diseñados para porteros que buscan un equilibrio perfecto entre agarre, comodidad y libertad de movimiento. Su corte híbrido maximiza la superficie de contacto con el balón, mientras que la palma Duo Soft ofrece la confianza necesaria para rendir en cualquier condición.",
+    "collection": "ARRIVAL PACK",
+    "key_benefits": [
+      "Agarre fiable en cualquier clima: La palma Duo Soft proporciona un excelente equilibrio entre adherencia, amortiguación y durabilidad.",
+      "Mayor superficie de contacto: El corte híbrido combina lo mejor del Rollfinger y el Flat para mejorar el control del balón.",
+      "Libertad de movimiento: El dorso de punto favorece la flexibilidad de la mano para reaccionar con rapidez en cada intervención.",
+      "Ajuste seguro: La correa elástica de muñeca garantiza una sujeción firme y personalizada durante todo el partido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042122-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro Hybrid",
+    "product_model": "Future Pro Hybrid",
+    "sole_type": ""
+  }
+}

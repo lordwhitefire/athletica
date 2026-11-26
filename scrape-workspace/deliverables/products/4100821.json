@@ -1,0 +1,88 @@
+{
+  "id": "4100821",
+  "slug": "munich-continental-white",
+  "name": "Munich Continental",
+  "model": "Continental",
+  "brand": "Munich",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Continental",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_imagen-de-las-zapatillas-de-futbol-sala-munich-continental-ic-blanco-azul_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_imagen-de-las-zapatillas-de-futbol-sala-munich-continental-ic-blanco-azul_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_zapatillas-de-futbol-sala-blancas--azules-munich-continental_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_botas-futbol-sala-munich-continental-color-blanco_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_bambas-futbol-sala-munich-continental-blancas--azules_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_tenis-futbol-sala-color-blanco-munich-continental_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_zapatillas-de-futbol-sala-munich-continental-color-blanco_7_pie-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_zapatillas-futbol-sala-color-blanco-munich-continental_1_pie-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_imagen-de-las-zapatillas-de-futbol-sala-munich-continental-ic-blanco-azul_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_zapatillas-de-futbol-sala-blancas--azules-munich-continental_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_botas-futbol-sala-munich-continental-color-blanco_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_bambas-futbol-sala-munich-continental-blancas--azules_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_tenis-futbol-sala-color-blanco-munich-continental_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_zapatillas-de-futbol-sala-munich-continental-color-blanco_7_pie-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4100821_zapatillas-futbol-sala-color-blanco-munich-continental_1_pie-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4100821",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4100821"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Continental",
+    "submodel": "",
+    "product_model": "Continental",
+    "sole_type": ""
+  }
+}

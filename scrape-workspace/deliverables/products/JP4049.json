@@ -1,0 +1,106 @@
+{
+  "id": "JP4049",
+  "slug": "camiseta-adidas-real-madrid-entrenamiento-grey",
+  "name": "adidas Real Madrid Training",
+  "model": "Real Madrid entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Short Sleeve Training Top - Gray",
+    "tagline": "Train like the professionals",
+    "intro": "The Real Madrid training shirt is designed to follow your rhythm in each session. Its technical and light fabric keeps the skin dry even in the most demanding moments.",
+    "collection": "",
+    "key_benefits": [
+      "Moisture control: AEROREADY technology that keeps skin dry.",
+      "Everyday comfort: Light and soft to the touch fabric.",
+      "White inspiration: Heat-transferred Real Madrid crest.",
+      "Total versatility: Ideal for training or dressing with a sporty style.",
+      "Commitment to the planet: Made with recycled materials."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-color-gris-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-color-gris-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-gris-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-adidas-real-madrid-entrenamiento-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-adidas-real-madrid-entrenamiento-gris_4_detalle-lateral.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-color-gris-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-gris-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-adidas-real-madrid-entrenamiento-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4049_camiseta-adidas-real-madrid-entrenamiento-gris_4_detalle-lateral.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp4049",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas del Real Madrid - gris",
+    "tagline": "Entrena como los profesionales",
+    "intro": "La camiseta de entrenamiento del Real Madrid está pensada para seguir tu ritmo en cada sesión. Su tejido técnico y ligero mantiene la piel seca incluso en los momentos más exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Control de la humedad: Tecnología AEROREADY que mantiene la piel seca.",
+      "Confort diario: Tejido ligero y suave al tacto.",
+      "Inspiración blanca: Escudo termotransferido del Real Madrid.",
+      "Versatilidad total: Ideal para entrenar o vestir con estilo deportivo.",
+      "Compromiso con el planeta: Fabricada con materiales reciclados."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp4049"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento",
+    "sole_type": ""
+  }
+}

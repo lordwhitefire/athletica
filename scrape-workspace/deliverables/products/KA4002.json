@@ -1,0 +1,98 @@
+{
+  "id": "KA4002",
+  "slug": "medias-sin-pie-adidas-espana-white",
+  "name": "sin pie adidas España",
+  "model": "sin pie adidas España",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Medias de fútbol sin pie adidas de la selección española 2026 - blancas",
+    "tagline": "Rinde al máximo con España",
+    "intro": "Las medias sin pie adidas España 2026 están diseñadas para ofrecer rendimiento, sujeción y comodidad en cada partido.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño sin pie: Permite combinar con tus calcetines técnicos favoritos.",
+      "Ajuste seguro: Se mantienen en su sitio durante todo el partido.",
+      "Tejido elástico: Proporciona comodidad y libertad de movimiento.",
+      "Material resistente: Preparadas para uso intensivo.",
+      "Diseño oficial: Inspiradas en la selección española."
+    ],
+    "technical_details": {
+      "range": "sin pie adidas España",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_calcetines-media-cana-color-blanco-adidas-espana_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_calcetines-media-cana-color-blanco-adidas-espana_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_calcetines-largos-blancos-adidas-espana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_calcetines-cana-alta-adidas-espana-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_medias-cortadas-adidas-espana-blancos_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_calcetines-media-cana-color-blanco-adidas-espana_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_calcetines-largos-blancos-adidas-espana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_calcetines-cana-alta-adidas-espana-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA4002_medias-cortadas-adidas-espana-blancos_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka4002",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Medias de fútbol sin pie adidas de la selección española 2026 - blancas",
+    "tagline": "Rinde al máximo con España",
+    "intro": "Las medias sin pie adidas España 2026 están diseñadas para ofrecer rendimiento, sujeción y comodidad en cada partido.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño sin pie: Permite combinar con tus calcetines técnicos favoritos.",
+      "Ajuste seguro: Se mantienen en su sitio durante todo el partido.",
+      "Tejido elástico: Proporciona comodidad y libertad de movimiento.",
+      "Material resistente: Preparadas para uso intensivo.",
+      "Diseño oficial: Inspiradas en la selección española."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka4002"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin pie adidas España",
+    "sole_type": ""
+  }
+}

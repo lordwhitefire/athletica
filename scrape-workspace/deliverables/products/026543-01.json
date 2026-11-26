@@ -1,0 +1,109 @@
+{
+  "id": "026543-01",
+  "slug": "gorro-puma-girona-black",
+  "name": "Gorro Puma Girona",
+  "model": "Gorro Puma Girona",
+  "brand": "Puma",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Girona FC Puma Winter Beanie - Black",
+    "tagline": "Red and white passion for winter",
+    "intro": "This Puma Girona FC hat protects you from the cold with club pride. Brand logo and club shield embroidered in burgundy.",
+    "collection": "",
+    "key_benefits": [
+      "Essential coat: Warm fabric for cold weather.",
+      "Official design: Embroidered Girona shield for true fans.",
+      "Estilo urbano: Ideal para animar o vestir casual."
+    ],
+    "technical_details": {
+      "range": "Puma Girona",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2966dc3d0a87faae1503d2362043def91e969cdd-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2966dc3d0a87faae1503d2362043def91e969cdd-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/71b6df0a190189b1c155213eb9a1d6d21b625b7f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8cd671d93bba08db43865d7afbc465efaaac389e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2966dc3d0a87faae1503d2362043def91e969cdd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/71b6df0a190189b1c155213eb9a1d6d21b625b7f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8cd671d93bba08db43865d7afbc465efaaac389e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2966dc3d0a87faae1503d2362043def91e969cdd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2966dc3d0a87faae1503d2362043def91e969cdd-1500x1500.jpg"
+    },
+    {
+      "_id": "image-71b6df0a190189b1c155213eb9a1d6d21b625b7f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/71b6df0a190189b1c155213eb9a1d6d21b625b7f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8cd671d93bba08db43865d7afbc465efaaac389e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8cd671d93bba08db43865d7afbc465efaaac389e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/026543-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Gorro de invierno Puma del Girona FC - negro",
+    "tagline": "Pasión rojiblanca para el invierno",
+    "intro": "Este gorro Puma del Girona FC te protege del frío con orgullo de club. Logo de marca y escudo del club bordados en burdeos.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo esencial: Tejido cálido para climas fríos.",
+      "Diseño oficial: Escudo del Girona bordado para auténticos fans.",
+      "Estilo urbano: Ideal para animar o vestir casual."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/026543-01"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "high",
+    "rule": "name contains 'gorro'",
+    "root_model": "Gorro",
+    "submodel": "",
+    "product_model": "Gorro Puma Girona",
+    "sole_type": ""
+  }
+}

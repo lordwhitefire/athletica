@@ -1,0 +1,90 @@
+{
+  "id": "II3334-498",
+  "slug": "short-nike-barcelona-tech-fleece-blue",
+  "name": "Nike Barcelona Tech Fleece",
+  "model": "Barcelona Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "FC Barcelona Nike Tracksuit Shorts 2026 2027 - Navy Blue",
+    "tagline": "Barça's premium comfort for everyday life",
+    "intro": "The Nike FC Barcelona Tech Fleece shorts combine the modern design of the Nike Tech collection with a lightweight premium fabric that provides warmth without adding weight. Its soft touch, zippered pockets and comfortable fit make it the ideal garment to wear the Barça colors with style both on the go and in your free time.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Tech Fleece fabric: Light, warm and very comfortable for daily use.",
+      "Zippered pockets: Allow you to store your personal items safely.",
+      "Elastic waist with drawstring: Custom fit and greater comfort.",
+      "Official FC Barcelona crest: Premium finish that reflects your passion for the club."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II3334-498_pantalon-corto-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II3334-498_pantalon-corto-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II3334-498_short-azul-marino-nike-barcelona-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II3334-498_pantalon-corto-nike-barcelona-tech-fleece-color-azul_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II3334-498_pantalon-corto-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II3334-498_short-azul-marino-nike-barcelona-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II3334-498_pantalon-corto-nike-barcelona-tech-fleece-color-azul_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ii3334-498",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de chándal Nike del FC Barcelona 2026 2027 - azul marino",
+    "tagline": "La comodidad premium del Barça para el día a día",
+    "intro": "El short Nike FC Barcelona Tech Fleece combina el diseño moderno de la colección Nike Tech con un tejido premium ligero que aporta calidez sin añadir peso. Su tacto suave, los bolsillos con cremallera y el ajuste cómodo lo convierten en la prenda ideal para vestir los colores del Barça con estilo tanto en tus desplazamientos como en el tiempo libre.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido Nike Tech Fleece: Ligero, cálido y muy cómodo para el uso diario.",
+      "Bolsillos con cremallera: Permiten guardar tus objetos personales de forma segura.",
+      "Cintura elástica con cordón: Ajuste personalizado y mayor comodidad.",
+      "Escudo oficial del FC Barcelona: Acabado premium que refleja tu pasión por el club."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ii3334-498"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Barcelona Tech",
+    "submodel": "",
+    "product_model": "Barcelona Tech Fleece",
+    "sole_type": ""
+  }
+}

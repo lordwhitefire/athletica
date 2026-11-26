@@ -1,0 +1,98 @@
+{
+  "id": "JJ1811",
+  "slug": "short-adidas-arsenal-downtown-blue",
+  "name": "adidas Arsenal DownTown",
+  "model": "Arsenal DownTown",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Arsenal Adidas Walking Shorts - Navy",
+    "tagline": "Perform at your best in every session",
+    "intro": "Elevate your training with the adidas Arsenal DownTown Shorts. Designed for comfort and performance, it incorporates sweat-wicking technology and optimal fit. Ideal for those looking for style and functionality in every movement.",
+    "collection": "",
+    "key_benefits": [
+      "Superior Comfort: Soft, breathable fabric keeps skin dry.",
+      "Perfect fit: Elastic waist that adapts to the body.",
+      "Arsenal Style: Design with the club's colors and details.",
+      "Active performance: Total freedom of movement to train without limits.",
+      "Technical fabric: Incorporates AEROREADY technology for better ventilation."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal DownTown",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_pantalon-corto-color-azul-adidas-arsenal-dt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_pantalon-corto-color-azul-adidas-arsenal-dt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_short-azul-marino-adidas-arsenal-dt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_pantalon-corto-adidas-arsenal-dt-color-azul_3_detalle-lateral-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_short-adidas-arsenal-dt-azul-marino_4_detalle-lateral-y-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_pantalon-corto-color-azul-adidas-arsenal-dt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_short-azul-marino-adidas-arsenal-dt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_pantalon-corto-adidas-arsenal-dt-color-azul_3_detalle-lateral-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ1811_short-adidas-arsenal-dt-azul-marino_4_detalle-lateral-y-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jj1811",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de paseo adidas del Arsenal - azul marino",
+    "tagline": "Rinde al máximo en cada sesión",
+    "intro": "Eleva tu entrenamiento con el Short adidas Arsenal DownTown. Diseñado para ofrecer comodidad y rendimiento, incorpora tecnología de absorción de sudor y ajuste óptimo. Ideal para quienes buscan estilo y funcionalidad en cada movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad superior: Tejido suave y transpirable que mantiene la piel seca.",
+      "Ajuste perfecto: Cintura elástica que se adapta al cuerpo.",
+      "Estilo Arsenal: Diseño con los colores y detalles del club.",
+      "Rendimiento activo: Libertad de movimiento total para entrenar sin límites.",
+      "Tejido técnico: Incorpora tecnología AEROREADY para una mejor ventilación."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jj1811"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Arsenal DownTown",
+    "submodel": "",
+    "product_model": "Arsenal DownTown",
+    "sole_type": ""
+  }
+}

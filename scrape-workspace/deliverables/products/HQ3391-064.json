@@ -1,0 +1,94 @@
+{
+  "id": "HQ3391-064",
+  "slug": "chaqueta-nike-repel-t90-woven-grey",
+  "name": "Nike Repel T90 Woven",
+  "model": "Repel T90 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal Nike - gris",
+    "tagline": "Estética retro con funcionalidad moderna",
+    "intro": "La chaqueta gris Nike Repel T90 es la prenda ideal para completar tu conjunto de entrenamiento con un look limpio y técnico. Su color neutro permite combinarla con cualquier outfit deportivo o casual.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad térmica: Te protege del viento sin sobrecalentarte.",
+      "Ligereza premium: Tejido funcional que no limita movimientos.",
+      "Diseño adaptable: Capucha con cremallera y corte atlético.",
+      "Inspiración T90: Gráficos de la línea Nike fútbol 2000s."
+    ],
+    "technical_details": {
+      "range": "Nike Repel T90 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3391-064_chaqueta-color-gris-nike-repel-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3391-064_chaqueta-color-gris-nike-repel-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3391-064_chaqueta-chandal-gris-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3391-064_chaqueta-entretiempo-nike-repel-t90-color-gris_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3391-064_chaqueta-color-gris-nike-repel-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3391-064_chaqueta-chandal-gris-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3391-064_chaqueta-entretiempo-nike-repel-t90-color-gris_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq3391-064",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de chándal Nike - gris",
+    "tagline": "Estética retro con funcionalidad moderna",
+    "intro": "La chaqueta gris Nike Repel T90 es la prenda ideal para completar tu conjunto de entrenamiento con un look limpio y técnico. Su color neutro permite combinarla con cualquier outfit deportivo o casual.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad térmica: Te protege del viento sin sobrecalentarte.",
+      "Ligereza premium: Tejido funcional que no limita movimientos.",
+      "Diseño adaptable: Capucha con cremallera y corte atlético.",
+      "Inspiración T90: Gráficos de la línea Nike fútbol 2000s."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq3391-064"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel T90 Woven",
+    "sole_type": ""
+  }
+}

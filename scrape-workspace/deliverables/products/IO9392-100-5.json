@@ -1,0 +1,90 @@
+{
+  "id": "IO9392-100-5",
+  "slug": "balon-nike-academy-mbappe-t-5-white",
+  "name": "Nike Academy Mbappé T.5",
+  "model": "Academy Mbappé T.5",
+  "brand": "Nike",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol Nike de Kylian Mbappé en talla 5 - blanco",
+    "tagline": "El balón Nike Academy Mbappé talla 5",
+    "intro": "El balón Nike Academy Mbappé está diseñado para jugadores que buscan precisión y rendimiento en cada golpeo. Inspirado en el estilo explosivo de Kylian Mbappé, combina innovación y diseño moderno para destacar en cada jugada.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología OmniSculpt: Ranuras en bajo relieve que favorecen un vuelo más preciso del balón.",
+      "Construcción duradera: Materiales resistentes que soportan el uso continuo en entrenamientos.",
+      "Diseño inspirado en Mbappé: Estética moderna que refleja la velocidad y estilo del jugador.",
+      "Óptima visibilidad: Gráficos que facilitan el seguimiento del balón en el juego."
+    ],
+    "technical_details": {
+      "range": "Nike Academy Mbappé T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO9392-100-5_balon-de-futbol-color-blanco-nike-academy-mbappe_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO9392-100-5_balon-de-futbol-color-blanco-nike-academy-mbappe_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO9392-100-5_pelota-futbol-11-blanca-nike-academy-mbappe_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO9392-100-5_pelota-futbol-nike-academy-mbappe-color-blanco_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO9392-100-5_balon-de-futbol-color-blanco-nike-academy-mbappe_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO9392-100-5_pelota-futbol-11-blanca-nike-academy-mbappe_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO9392-100-5_pelota-futbol-nike-academy-mbappe-color-blanco_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/io9392-100-5",
+    "language": "es",
+    "category": "Balón de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Balón de fútbol Nike de Kylian Mbappé en talla 5 - blanco",
+    "tagline": "El balón Nike Academy Mbappé talla 5",
+    "intro": "El balón Nike Academy Mbappé está diseñado para jugadores que buscan precisión y rendimiento en cada golpeo. Inspirado en el estilo explosivo de Kylian Mbappé, combina innovación y diseño moderno para destacar en cada jugada.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología OmniSculpt: Ranuras en bajo relieve que favorecen un vuelo más preciso del balón.",
+      "Construcción duradera: Materiales resistentes que soportan el uso continuo en entrenamientos.",
+      "Diseño inspirado en Mbappé: Estética moderna que refleja la velocidad y estilo del jugador.",
+      "Óptima visibilidad: Gráficos que facilitan el seguimiento del balón en el juego."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Balón de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/io9392-100-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Academy",
+    "submodel": "",
+    "product_model": "Academy Mbappé T.5",
+    "sole_type": ""
+  }
+}

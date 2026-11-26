@@ -1,0 +1,103 @@
+{
+  "id": "050.6039",
+  "slug": "rodilleras-ho-soccer-indoor-pro-black",
+  "name": "Rodilleras HO Soccer Indoor Pro",
+  "model": "Rodilleras HO Soccer Indoor Pro",
+  "brand": "Ho Soccer",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "HO Soccer Indoor Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/7c0b754b74477ace5dd71e8fcdc7601c73f809fc-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/7c0b754b74477ace5dd71e8fcdc7601c73f809fc-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7658306b8bebb894583d68fc9737ea7b5c47d920-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/48c711dfc85d999a82234a228f53eac0278d6d03-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/af0a107ba57c4e3174aca8e737261204155efbbe-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7c0b754b74477ace5dd71e8fcdc7601c73f809fc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7658306b8bebb894583d68fc9737ea7b5c47d920-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/48c711dfc85d999a82234a228f53eac0278d6d03-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/af0a107ba57c4e3174aca8e737261204155efbbe-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-7c0b754b74477ace5dd71e8fcdc7601c73f809fc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7c0b754b74477ace5dd71e8fcdc7601c73f809fc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7658306b8bebb894583d68fc9737ea7b5c47d920-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7658306b8bebb894583d68fc9737ea7b5c47d920-1500x1500.jpg"
+    },
+    {
+      "_id": "image-48c711dfc85d999a82234a228f53eac0278d6d03-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/48c711dfc85d999a82234a228f53eac0278d6d03-1500x1500.jpg"
+    },
+    {
+      "_id": "image-af0a107ba57c4e3174aca8e737261204155efbbe-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/af0a107ba57c4e3174aca8e737261204155efbbe-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/050-6039",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/050-6039"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "high",
+    "rule": "name contains 'indoor'",
+    "root_model": "Rodilleras",
+    "submodel": "HO Soccer Indoor Pro",
+    "product_model": "Rodilleras HO Soccer Indoor Pro",
+    "sole_type": ""
+  }
+}

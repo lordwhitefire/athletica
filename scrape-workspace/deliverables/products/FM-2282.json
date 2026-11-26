@@ -1,0 +1,78 @@
+{
+  "id": "FM-2282",
+  "slug": "cordones-futbolmania-extrafinos-120-cm-pink",
+  "name": "Cordones futbolmania extrafinos 120 cm",
+  "model": "Cordones futbolmania extrafinos 120 cm",
+  "brand": "Futbolmania",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "futbolmania extrafinos 120 cm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/m/fm-2282_imagen-de-los-cordones-finos-de-futbol-futbolmania-2020-2021-21x20cm-rosa_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/m/fm-2282_imagen-de-los-cordones-finos-de-futbol-futbolmania-2020-2021-21x20cm-rosa_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/m/fm-2282_imagen-de-los-cordones-finos-de-futbol-futbolmania-2020-2021-21x20cm-rosa_2_detalle-pack.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/m/fm-2282_imagen-de-los-cordones-finos-de-futbol-futbolmania-2020-2021-21x20cm-rosa_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/m/fm-2282_imagen-de-los-cordones-finos-de-futbol-futbolmania-2020-2021-21x20cm-rosa_2_detalle-pack.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/fm-2282",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/fm-2282"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Cordones",
+    "submodel": "",
+    "product_model": "Cordones futbolmania extrafinos 120 cm",
+    "sole_type": ""
+  }
+}

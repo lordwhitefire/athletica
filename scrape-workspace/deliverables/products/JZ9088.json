@@ -1,0 +1,98 @@
+{
+  "id": "JZ9088",
+  "slug": "chaqueta-adidas-colombia-originals-blue",
+  "name": "adidas Colombia Originals",
+  "model": "Colombia Originals",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas de la selección de Colombia - azul marino",
+    "tagline": "Energía colombiana con esencia Originals",
+    "intro": "La chaqueta Colombia adidas Originals canaliza la historia de colores de la emblemática segunda equipación para aportar un estilo atrevido e inspirado en el fútbol a tus looks diarios. Fiel al diseño clásico de la ropa deportiva, combina la icónica estética Originals con la comodidad moderna, convirtiéndose en una pieza imprescindible para expresar tu pasión por la selección.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en la segunda equipación: Diseño que rinde homenaje al legado futbolístico de Colombia.",
+      "Tejido de punto interlock: Tacto suave y estructura resistente para uso diario.",
+      "Corte clásico: Silueta cómoda y versátil.",
+      "Cremallera completa: Funcionalidad y facilidad de uso.",
+      "Cuello alto: Estilo deportivo con mayor cobertura."
+    ],
+    "technical_details": {
+      "range": "adidas Colombia Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-color-azul-adidas-colombia-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-color-azul-adidas-colombia-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-chandal-azul-marino-adidas-colombia-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-entretiempo-adidas-colombia-originals-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-adidas-colombia-originals-azul-marino_4_detalle-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-color-azul-adidas-colombia-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-chandal-azul-marino-adidas-colombia-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-entretiempo-adidas-colombia-originals-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9088_chaqueta-adidas-colombia-originals-azul-marino_4_detalle-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9088",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas de la selección de Colombia - azul marino",
+    "tagline": "Energía colombiana con esencia Originals",
+    "intro": "La chaqueta Colombia adidas Originals canaliza la historia de colores de la emblemática segunda equipación para aportar un estilo atrevido e inspirado en el fútbol a tus looks diarios. Fiel al diseño clásico de la ropa deportiva, combina la icónica estética Originals con la comodidad moderna, convirtiéndose en una pieza imprescindible para expresar tu pasión por la selección.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en la segunda equipación: Diseño que rinde homenaje al legado futbolístico de Colombia.",
+      "Tejido de punto interlock: Tacto suave y estructura resistente para uso diario.",
+      "Corte clásico: Silueta cómoda y versátil.",
+      "Cremallera completa: Funcionalidad y facilidad de uso.",
+      "Cuello alto: Estilo deportivo con mayor cobertura."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9088"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Colombia",
+    "submodel": "",
+    "product_model": "Colombia Originals",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "042118-01",
+  "slug": "puma-future-pro-re-charge-hybrid-azul-rosa",
+  "name": "Puma Future Pro Re-Charge Hybrid",
+  "model": "Future Pro Re-Charge Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Azul / Rosa",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma hybrid cut goalkeeper gloves - pink, cyan blue",
+    "tagline": "Control and confidence at every stop",
+    "intro": "The Puma Future Pro Re-Charge Hybrid combines grip, comfort and fit to give you security from the first minute.",
+    "collection": "",
+    "key_benefits": [
+      "Long-lasting resistance: Designed for demanding training.",
+      "Reliable grip: Optimized surface for safe tackling.",
+      "Precise fit: Slim fit that improves control.",
+      "Comfort and ventilation: Breathable materials that reduce fatigue.",
+      "Classic style: Professional and clean design."
+    ],
+    "technical_details": {
+      "range": "Future Pro Re-Charge Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a5f2ba76ed0a21ad1177f266edebd07320b01f72-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a5f2ba76ed0a21ad1177f266edebd07320b01f72-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8ae0cefc0c6445ac008f1a47179126770976a8db-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b16e0afdf3e3bddae8146fa60920b23a1143f533-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e68ee5b6fd22bcc43dbd4ddf410474f4206e0d32-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a5f2ba76ed0a21ad1177f266edebd07320b01f72-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8ae0cefc0c6445ac008f1a47179126770976a8db-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b16e0afdf3e3bddae8146fa60920b23a1143f533-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e68ee5b6fd22bcc43dbd4ddf410474f4206e0d32-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a5f2ba76ed0a21ad1177f266edebd07320b01f72-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a5f2ba76ed0a21ad1177f266edebd07320b01f72-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8ae0cefc0c6445ac008f1a47179126770976a8db-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8ae0cefc0c6445ac008f1a47179126770976a8db-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b16e0afdf3e3bddae8146fa60920b23a1143f533-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b16e0afdf3e3bddae8146fa60920b23a1143f533-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e68ee5b6fd22bcc43dbd4ddf410474f4206e0d32-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e68ee5b6fd22bcc43dbd4ddf410474f4206e0d32-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042118-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte híbrido - rosas, azul cian",
+    "tagline": "Control y confianza en cada parada",
+    "intro": "Los Puma Future Pro Re-Charge Hybrid combinan agarre, comodidad y ajuste para darte seguridad desde el primer minuto.",
+    "collection": "",
+    "key_benefits": [
+      "Resistencia duradera: Pensados para entrenamientos exigentes.",
+      "Agarre fiable: Superficie optimizada para atajar con seguridad.",
+      "Encaje preciso: Corte ceñido que mejora el control.",
+      "Comodidad y ventilación: Materiales transpirables que reducen la fatiga.",
+      "Estilo clásico: Diseño profesional y limpio."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042118-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro Re-Charge Hybrid",
+    "product_model": "Future Pro Re-Charge Hybrid",
+    "sole_type": ""
+  }
+}

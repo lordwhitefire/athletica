@@ -1,0 +1,96 @@
+{
+  "id": "HJ7774-597",
+  "slug": "sudadera-nike-barcelona-entrenamiento-dri-fit-strike-purple",
+  "name": "Nike Barcelona Training Dri-Fit Strike",
+  "model": "Barcelona entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento Nike del FC Barcelona 2025 2026 - púrpura",
+    "tagline": "Entrena como los profesionales",
+    "intro": "Diseñada para el alto rendimiento, la sudadera Nike Strike FC Barcelona ofrece ligereza, transpirabilidad y libertad de movimiento. Ideal para sesiones intensas o para vestir con un look deportivo premium.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento avanzado: Tecnología Dri-FIT que expulsa el sudor y mantiene la piel seca.",
+      "Movimiento libre: Tejido elástico que se adapta a tus gestos más rápidos.",
+      "Diseño moderno: Corte ajustado y detalles oficiales del FC Barcelona."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7774-597_sudadera-color-purpura-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7774-597_sudadera-color-purpura-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7774-597_sudadera-purpura-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7774-597_sudadera-nike-barcelona-entrenamiento-dri-fit-strike-color-purpura_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7774-597_sudadera-color-purpura-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7774-597_sudadera-purpura-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7774-597_sudadera-nike-barcelona-entrenamiento-dri-fit-strike-color-purpura_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj7774-597",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Nike del FC Barcelona 2025 2026 - púrpura",
+    "tagline": "Entrena como los profesionales",
+    "intro": "Diseñada para el alto rendimiento, la sudadera Nike Strike FC Barcelona ofrece ligereza, transpirabilidad y libertad de movimiento. Ideal para sesiones intensas o para vestir con un look deportivo premium.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento avanzado: Tecnología Dri-FIT que expulsa el sudor y mantiene la piel seca.",
+      "Movimiento libre: Tejido elástico que se adapta a tus gestos más rápidos.",
+      "Diseño moderno: Corte ajustado y detalles oficiales del FC Barcelona."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj7774-597"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Barcelona Training",
+    "submodel": "",
+    "product_model": "Barcelona entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

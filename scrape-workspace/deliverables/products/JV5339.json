@@ -1,0 +1,96 @@
+{
+  "id": "JV5339",
+  "slug": "chaqueta-adidas-arsenal-vis-tech-blue",
+  "name": "adidas Arsenal Vis Tech",
+  "model": "Arsenal Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Track Jacket - Navy",
+    "tagline": "Designed for the fan's daily life",
+    "intro": "The adidas Arsenal Vis Tech Jacket combines urban aesthetics and functional details: zipper pockets, modern cut and repellent technical fabric for any climate.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Licensed product with the Arsenal crest.",
+      "Guaranteed comfort: Soft and breathable fabric for every use.",
+      "Standout aesthetics: Unique details and dark purple color that highlight the style.",
+      "Versatility: Perfect for walking, training or sports looks."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-color-azul-adidas-arsenal-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-color-azul-adidas-arsenal-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-chandal-azul-marino-adidas-arsenal-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-entretiempo-adidas-arsenal-vis-tech-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-adidas-arsenal-vis-tech-azul-marino_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-color-azul-adidas-arsenal-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-chandal-azul-marino-adidas-arsenal-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-entretiempo-adidas-arsenal-vis-tech-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5339_chaqueta-adidas-arsenal-vis-tech-azul-marino_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jv5339",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - azul marino",
+    "tagline": "Diseñada para el día a día del fan",
+    "intro": "La Chaqueta adidas Arsenal Vis Tech combina estética urbana y detalles funcionales: bolsillos con cremallera, corte moderno y tejido técnico repelente para cualquier clima.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Producto licenciado con el escudo del Arsenal.",
+      "Comodidad garantizada: Tejido suave y transpirable para cada uso.",
+      "Estética destacada: Detalles únicos y color purpura oscuro que resaltan el estilo.",
+      "Versatilidad: Perfecta para paseo, entrenamiento o looks deportivos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jv5339"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Arsenal Vis",
+    "submodel": "",
+    "product_model": "Arsenal Vis Tech",
+    "sole_type": ""
+  }
+}

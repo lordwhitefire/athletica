@@ -1,0 +1,103 @@
+{
+  "id": "053813-01",
+  "slug": "botellin-puma-training-core-750-ml-black",
+  "name": "Botellín Puma Training Core 750 ml",
+  "model": "Botellín Puma Training Core 750 ml",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma 750ml Training Water Bottle - Black",
+    "tagline": "Practical hydration for every workout",
+    "intro": "The Puma Training Core 750 ml bottle is designed to always have water at hand during training, matches and sports activities. Its 750 ml format combines a handy design with a screw cap and push-pull spout that makes it easy to drink quickly during breaks.",
+    "collection": "",
+    "key_benefits": [
+      "Hydration during training: Its format allows water to be available during sports sessions and matches.",
+      "Quick use: The push-pull spout makes it easy to drink directly from the bottle during breaks.",
+      "Comfortable handling: Its practical design allows it to be easily held and used while training.",
+      "Quantity control: The lateral measurement scale allows you to check the volume of liquid contained in the bottle."
+    ],
+    "technical_details": {
+      "range": "Puma Training Core 750 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c21963332b65f100842d291fc59e9ece985e9d77-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c21963332b65f100842d291fc59e9ece985e9d77-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2a23e3fd853e56c1907766f51d600f4e08c338e1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8125638e6ef4017b2e62349192bcbbf7a57ae2ea-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c21963332b65f100842d291fc59e9ece985e9d77-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2a23e3fd853e56c1907766f51d600f4e08c338e1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8125638e6ef4017b2e62349192bcbbf7a57ae2ea-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c21963332b65f100842d291fc59e9ece985e9d77-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c21963332b65f100842d291fc59e9ece985e9d77-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2a23e3fd853e56c1907766f51d600f4e08c338e1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2a23e3fd853e56c1907766f51d600f4e08c338e1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8125638e6ef4017b2e62349192bcbbf7a57ae2ea-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8125638e6ef4017b2e62349192bcbbf7a57ae2ea-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/053813-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botellín de agua para entrenamiento Puma de 750 ml - negro",
+    "tagline": "Hidratación práctica para cada entrenamiento",
+    "intro": "El botellín Puma Training Core 750 ml está diseñado para tener el agua siempre a mano durante entrenamientos, partidos y actividad deportiva. Su formato de 750 ml combina un diseño manejable con una tapa de rosca y boquilla push-pull que facilita beber rápidamente durante las pausas.",
+    "collection": "",
+    "key_benefits": [
+      "Hidratación durante el entrenamiento: Su formato permite disponer de agua durante sesiones deportivas y partidos.",
+      "Uso rápido: La boquilla push-pull facilita beber directamente del botellín durante las pausas.",
+      "Manejo cómodo: Su diseño práctico permite sujetarlo y utilizarlo fácilmente mientras entrenas.",
+      "Control de la cantidad: La escala de medición lateral permite consultar el volumen de líquido contenido en el botellín."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/053813-01"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín Puma Training Core 750 ml",
+    "sole_type": ""
+  }
+}

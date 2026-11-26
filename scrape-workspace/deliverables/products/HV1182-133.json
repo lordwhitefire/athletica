@@ -1,0 +1,90 @@
+{
+  "id": "HV1182-133",
+  "slug": "short-nike-t90-dri-fit-woven-marron",
+  "name": "Nike T90 Dri-Fit Woven",
+  "model": "T90 Dri-Fit Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Nike - beige",
+    "tagline": "Estilo retro para tus entrenamientos actuales",
+    "intro": "El short Nike T90 Dri-Fit beige combina una estética inspirada en el fútbol clásico con tecnología moderna. Perfecto para quienes valoran el rendimiento sin sacrificar el estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Look vintage: Tono beige ideal para destacar en la cancha o en la calle.",
+      "Comodidad total: Tejido ligero que se adapta al movimiento.",
+      "Evacuación del sudor: Mantente seco gracias al sistema Dri-FIT."
+    ],
+    "technical_details": {
+      "range": "Nike T90 Dri-Fit Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-133_pantalon-corto-color-marron-nike-t90-mujer-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-133_pantalon-corto-color-marron-nike-t90-mujer-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-133_short-beige-nike-t90-mujer-dri-fit_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-133_pantalon-corto-color-marron-nike-t90-mujer-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-133_short-beige-nike-t90-mujer-dri-fit_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv1182-133",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike - beige",
+    "tagline": "Estilo retro para tus entrenamientos actuales",
+    "intro": "El short Nike T90 Dri-Fit beige combina una estética inspirada en el fútbol clásico con tecnología moderna. Perfecto para quienes valoran el rendimiento sin sacrificar el estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Look vintage: Tono beige ideal para destacar en la cancha o en la calle.",
+      "Comodidad total: Tejido ligero que se adapta al movimiento.",
+      "Evacuación del sudor: Mantente seco gracias al sistema Dri-FIT."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv1182-133"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "T90",
+    "submodel": "",
+    "product_model": "T90 Dri-Fit Woven",
+    "sole_type": ""
+  }
+}

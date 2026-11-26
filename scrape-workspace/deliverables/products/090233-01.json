@@ -1,0 +1,111 @@
+{
+  "id": "090233-01",
+  "slug": "bolsa-de-deporte-puma-teamgoal-mediana-black",
+  "name": "Bolsa de deporte Puma TeamGoal mediana",
+  "model": "Bolsa de deporte Puma TeamGoal mediana",
+  "brand": "Puma",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports bag (60 x 29 x 31 cm) - black",
+    "tagline": "Tu aliada perfecta para cada jornada deportiva",
+    "intro": "The Puma TeamGoal medium sports bag accompanies you in every training or trip with comfort and style. Its structure designed for sports allows you to carry everything you need in a practical way.",
+    "collection": "",
+    "key_benefits": [
+      "Sporty design: Ideal for keeping your equipment organized.",
+      "Resistance and durability: Robust fabric for intensive use.",
+      "Carrying comfort: Ergonomic fit depending on the model.",
+      "Full functionality: Useful compartments and quick access.",
+      "Versatile color: Combines with any equipment or style."
+    ],
+    "technical_details": {
+      "range": "de deporte Puma TeamGoal mediana",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cd0fa232a0cb4ef036a62fe7275982bec5bfd37f-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/cd0fa232a0cb4ef036a62fe7275982bec5bfd37f-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/781434076ea2f8eee63ab8b008200b17a00a5ef4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/13062e2b10f507d5ad146f2d9d5a84b3f71ee6a1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/411d9a112c36036b64d8b620e0b0467feefd5b54-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cd0fa232a0cb4ef036a62fe7275982bec5bfd37f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/781434076ea2f8eee63ab8b008200b17a00a5ef4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/13062e2b10f507d5ad146f2d9d5a84b3f71ee6a1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/411d9a112c36036b64d8b620e0b0467feefd5b54-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-cd0fa232a0cb4ef036a62fe7275982bec5bfd37f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cd0fa232a0cb4ef036a62fe7275982bec5bfd37f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-781434076ea2f8eee63ab8b008200b17a00a5ef4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/781434076ea2f8eee63ab8b008200b17a00a5ef4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-13062e2b10f507d5ad146f2d9d5a84b3f71ee6a1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/13062e2b10f507d5ad146f2d9d5a84b3f71ee6a1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-411d9a112c36036b64d8b620e0b0467feefd5b54-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/411d9a112c36036b64d8b620e0b0467feefd5b54-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090233-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Bolsa de deportes Puma (60 x 29 x 31 cm) - negra",
+    "tagline": "Tu aliada perfecta para cada jornada deportiva",
+    "intro": "La Bolsa de deporte Puma TeamGoal mediana te acompaña en cada entrenamiento o desplazamiento con comodidad y estilo. Su estructura pensada para el deporte permite transportar todo lo que necesitas de forma práctica.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño deportivo: Ideal para llevar tu equipación organizada.",
+      "Resistencia y durabilidad: Tejido robusto para uso intensivo.",
+      "Comodidad de transporte: Ajuste ergonómico según el modelo.",
+      "Funcionalidad total: Compartimentos útiles y acceso rápido.",
+      "Color versátil: Combina con cualquier equipación o estilo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090233-01"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Bolsa",
+    "submodel": "",
+    "product_model": "Bolsa de deporte Puma TeamGoal mediana",
+    "sole_type": ""
+  }
+}

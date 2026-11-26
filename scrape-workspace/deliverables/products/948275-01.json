@@ -1,0 +1,104 @@
+{
+  "id": "948275-01",
+  "slug": "camiseta-puma-valencia-25-26-white",
+  "name": "Puma Valencia 25 26",
+  "model": "Valencia 25 26",
+  "brand": "Puma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación Puma del Valencia CF 2025 2026 - blanca",
+    "tagline": "La Senyera se lleva en la piel",
+    "intro": "La camiseta oficial del Valencia CF 25/26 combina tradición y tecnología para representar a Mestalla con orgullo. Su diseño limpio y tejido dryCELL te ofrece comodidad durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño tradicional: Blanco puro con detalles valencianistas",
+      "Rendimiento óptimo: Tecnología dryCELL para mantenerte seco",
+      "Orgullo local: Escudo del Valencia bordado con máxima calidad",
+      "Comodidad total: Tejido suave y ligero para todo el día"
+    ],
+    "technical_details": {
+      "range": "Puma Valencia 25 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-color-blanco-puma-valencia-25-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-color-blanco-puma-valencia-25-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-blanca-puma-valencia-25-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-puma-valencia-25-26-blanca_4_detalle-cuello-y-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-puma-valencia-25-26-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-color-blanco-puma-valencia-25-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-blanca-puma-valencia-25-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-puma-valencia-25-26-blanca_4_detalle-cuello-y-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/4/948275-01_camiseta-puma-valencia-25-26-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/948275-01",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de la primera equipación Puma del Valencia CF 2025 2026 - blanca",
+    "tagline": "La Senyera se lleva en la piel",
+    "intro": "La camiseta oficial del Valencia CF 25/26 combina tradición y tecnología para representar a Mestalla con orgullo. Su diseño limpio y tejido dryCELL te ofrece comodidad durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño tradicional: Blanco puro con detalles valencianistas",
+      "Rendimiento óptimo: Tecnología dryCELL para mantenerte seco",
+      "Orgullo local: Escudo del Valencia bordado con máxima calidad",
+      "Comodidad total: Tejido suave y ligero para todo el día"
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/948275-01"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Valencia",
+    "submodel": "",
+    "product_model": "Valencia 25 26",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "KG0221",
+  "slug": "camiseta-adidas-juventus-originals-2-0-black",
+  "name": "adidas Juventus Originals 2.0",
+  "model": "Juventus Originals 2.0",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas de la Juventus - negra",
+    "tagline": "La historia de la Juventus con el sello Originals",
+    "intro": "La camiseta adidas Juventus Originals 2.0 recupera la esencia de la Juventus con un diseño inspirado en la segunda equipación del club y el inconfundible estilo de adidas Originals. Con un aire retro y un tejido suave de algodón, es la prenda ideal para los aficionados que quieren llevar su pasión por la Vecchia Signora dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Suave y cómodo para el uso diario.",
+      "Corte entallado: Ofrece un ajuste moderno y favorecedor.",
+      "Estilo Originals: Diseño retro con el trébol de adidas y detalles exclusivos de la Juventus.",
+      "Gran versatilidad: Ideal para combinar con cualquier look casual."
+    ],
+    "technical_details": {
+      "range": "adidas Juventus Originals 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-color-negro-adidas-juventus-originals-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-color-negro-adidas-juventus-originals-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-negra-adidas-juventus-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-adidas-juventus-originals-2-0-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-adidas-juventus-originals-2-0-negra_4_detalle-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-color-negro-adidas-juventus-originals-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-negra-adidas-juventus-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-adidas-juventus-originals-2-0-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0221_camiseta-adidas-juventus-originals-2-0-negra_4_detalle-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg0221",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas de la Juventus - negra",
+    "tagline": "La historia de la Juventus con el sello Originals",
+    "intro": "La camiseta adidas Juventus Originals 2.0 recupera la esencia de la Juventus con un diseño inspirado en la segunda equipación del club y el inconfundible estilo de adidas Originals. Con un aire retro y un tejido suave de algodón, es la prenda ideal para los aficionados que quieren llevar su pasión por la Vecchia Signora dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Suave y cómodo para el uso diario.",
+      "Corte entallado: Ofrece un ajuste moderno y favorecedor.",
+      "Estilo Originals: Diseño retro con el trébol de adidas y detalles exclusivos de la Juventus.",
+      "Gran versatilidad: Ideal para combinar con cualquier look casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg0221"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Juventus Originals",
+    "submodel": "",
+    "product_model": "Juventus Originals 2.0",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "SE0047-001",
+  "slug": "cinta-sujeta-espinilleras-nike-black",
+  "name": "Cinta sujeta Shin Guards Nike",
+  "model": "Cinta sujeta Shin Guards Nike",
+  "brand": "Nike",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guard Stay de velcro Nike - negro",
+    "tagline": "Sujeción segura en cada entrada",
+    "intro": "Las cintas sujeta espinilleras Nike Guard Stay 2 ofrecen una sujeción firme y elástica para mantener tus espinilleras en su lugar durante todo el partido. Diseñadas para jugadores que no quieren distracciones en el terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Estabilidad total: Evita que las espinilleras se desplacen.",
+      "Fácil ajuste: Cierre de velcro para colocarlas rápidamente.",
+      "Comodidad elástica: Tejido flexible que se adapta a tu pierna.",
+      "Durabilidad Nike: Diseñadas para resistir durante toda la temporada.",
+      "Diseño funcional: Color negro visible para un toque moderno."
+    ],
+    "technical_details": {
+      "range": "sujeta espinilleras Nike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/E/SE0047-001_sujeta-espinilleras-color-negro-nike-guard-stay-2_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/E/SE0047-001_sujeta-espinilleras-color-negro-nike-guard-stay-2_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/E/SE0047-001_sujeta-espinilleras-negro-nike-guard-stay-2_2_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/E/SE0047-001_sujeta-espinilleras-color-negro-nike-guard-stay-2_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/E/SE0047-001_sujeta-espinilleras-negro-nike-guard-stay-2_2_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/se0047-001",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guard Stay de velcro Nike - negro",
+    "tagline": "Sujeción segura en cada entrada",
+    "intro": "Las cintas sujeta espinilleras Nike Guard Stay 2 ofrecen una sujeción firme y elástica para mantener tus espinilleras en su lugar durante todo el partido. Diseñadas para jugadores que no quieren distracciones en el terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Estabilidad total: Evita que las espinilleras se desplacen.",
+      "Fácil ajuste: Cierre de velcro para colocarlas rápidamente.",
+      "Comodidad elástica: Tejido flexible que se adapta a tu pierna.",
+      "Durabilidad Nike: Diseñadas para resistir durante toda la temporada.",
+      "Diseño funcional: Color negro visible para un toque moderno."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/se0047-001"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "high",
+    "rule": "name contains 'espinillera'",
+    "root_model": "Cinta",
+    "submodel": "",
+    "product_model": "Cinta sujeta Shin Guards Nike",
+    "sole_type": ""
+  }
+}

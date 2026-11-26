@@ -1,0 +1,105 @@
+{
+  "id": "101134401",
+  "slug": "uhlsport-soft-resist-hn-orange",
+  "name": "Uhlsport Soft Resist+ HN",
+  "model": "Soft Resist+ HN",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Soft Resist+ HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/60e082d50c91feaeeeda80fc2290fcf6e9c39fc7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/60e082d50c91feaeeeda80fc2290fcf6e9c39fc7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/03a2235182afa85925108da35acb591403d9f9aa-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/39a450c64ff95e73f083c2dd6279967d1fed43c4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/06781b6b4c455aea888489e0754e645c5536c602-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/873de45d74f88169d2e9d1249816100d9f4f3979-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/60e082d50c91feaeeeda80fc2290fcf6e9c39fc7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/03a2235182afa85925108da35acb591403d9f9aa-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/39a450c64ff95e73f083c2dd6279967d1fed43c4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/06781b6b4c455aea888489e0754e645c5536c602-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/873de45d74f88169d2e9d1249816100d9f4f3979-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-60e082d50c91feaeeeda80fc2290fcf6e9c39fc7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/60e082d50c91feaeeeda80fc2290fcf6e9c39fc7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-03a2235182afa85925108da35acb591403d9f9aa-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/03a2235182afa85925108da35acb591403d9f9aa-1500x1500.jpg"
+    },
+    {
+      "_id": "image-39a450c64ff95e73f083c2dd6279967d1fed43c4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/39a450c64ff95e73f083c2dd6279967d1fed43c4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-06781b6b4c455aea888489e0754e645c5536c602-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/06781b6b4c455aea888489e0754e645c5536c602-1500x1500.jpg"
+    },
+    {
+      "_id": "image-873de45d74f88169d2e9d1249816100d9f4f3979-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/873de45d74f88169d2e9d1249816100d9f4f3979-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101134401",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101134401"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Soft",
+    "submodel": "",
+    "product_model": "Soft Resist+ HN",
+    "sole_type": ""
+  }
+}

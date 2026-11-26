@@ -1,0 +1,86 @@
+{
+  "id": "FS9766",
+  "slug": "calcetines-media-cana-adidas-alphaskin-white",
+  "name": "media caña adidas Alphaskin",
+  "model": "media caña adidas Alphaskin",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "media caña adidas Alphaskin",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9766_imagen-de-los-calcetines-de-entrenamiento-futbol-adidas-alphaskin-crew-2020-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9766_imagen-de-los-calcetines-de-entrenamiento-futbol-adidas-alphaskin-crew-2020-blanco_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9766_imagen-de-los-calcetines-de-entrenamiento-futbol-adidas-alphaskin-crew-2020-blanco_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9766_imagen-de-los-calcetines-de-entrenamiento-futbol-adidas-alphaskin-crew-2020-blanco_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9766_imagen-de-los-calcetines-de-entrenamiento-futbol-adidas-alphaskin-crew-2020-blanco_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fs9766",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fs9766"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "media",
+    "submodel": "",
+    "product_model": "media caña adidas Alphaskin",
+    "sole_type": ""
+  }
+}

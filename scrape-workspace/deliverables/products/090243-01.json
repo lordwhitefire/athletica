@@ -1,0 +1,87 @@
+{
+  "id": "090243-01",
+  "slug": "zapatillero-puma-teamgoal-black",
+  "name": "Zapatillero Puma TeamGoal",
+  "model": "Zapatillero Puma TeamGoal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma TeamGoal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/003bd57336b893ad5ef409d8edeedebac513b7a2-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/003bd57336b893ad5ef409d8edeedebac513b7a2-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f359f82d8359db3dad6809bb28a268dda276df63-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/003bd57336b893ad5ef409d8edeedebac513b7a2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f359f82d8359db3dad6809bb28a268dda276df63-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-003bd57336b893ad5ef409d8edeedebac513b7a2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/003bd57336b893ad5ef409d8edeedebac513b7a2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f359f82d8359db3dad6809bb28a268dda276df63-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f359f82d8359db3dad6809bb28a268dda276df63-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090243-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090243-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Zapatillero",
+    "submodel": "",
+    "product_model": "Zapatillero Puma TeamGoal",
+    "sole_type": ""
+  }
+}

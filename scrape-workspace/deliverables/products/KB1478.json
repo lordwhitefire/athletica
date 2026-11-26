@@ -1,0 +1,98 @@
+{
+  "id": "KB1478",
+  "slug": "pantalon-adidas-liverpool-entrenamiento-nino-grey",
+  "name": "adidas Liverpool Training Kids",
+  "model": "Liverpool entrenamiento niño",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo infantil de entrenamiento adidas del Liverpool 2025 2026 - gris",
+    "tagline": "Comodidad y estilo para pequeños cracks",
+    "intro": "Este pantalón largo infantil del Liverpool combina movilidad, transpiración y el orgullo de pertenecer al equipo Red.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste juvenil: Slim fit que se adapta al ritmo del niño.",
+      "Frescura continua: Tecnología AEROREADY que absorbe el sudor.",
+      "Escudo visible: Detalle termotransferido oficial del club."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool entrenamiento niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-largo-color-gris-adidas-liverpool-entrenamiento-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-largo-color-gris-adidas-liverpool-entrenamiento-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-chandal-gris-adidas-liverpool-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-chandal-adidas-liverpool-entrenamiento-nino-color-gris_3_detalle-cintura-y-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-largo-adidas-liverpool-entrenamiento-nino-gris_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-largo-color-gris-adidas-liverpool-entrenamiento-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-chandal-gris-adidas-liverpool-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-chandal-adidas-liverpool-entrenamiento-nino-color-gris_3_detalle-cintura-y-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1478_pantalon-largo-adidas-liverpool-entrenamiento-nino-gris_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kb1478",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo infantil de entrenamiento adidas del Liverpool 2025 2026 - gris",
+    "tagline": "Comodidad y estilo para pequeños cracks",
+    "intro": "Este pantalón largo infantil del Liverpool combina movilidad, transpiración y el orgullo de pertenecer al equipo Red.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste juvenil: Slim fit que se adapta al ritmo del niño.",
+      "Frescura continua: Tecnología AEROREADY que absorbe el sudor.",
+      "Escudo visible: Detalle termotransferido oficial del club."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kb1478"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Liverpool Training",
+    "submodel": "",
+    "product_model": "Liverpool entrenamiento niño",
+    "sole_type": ""
+  }
+}

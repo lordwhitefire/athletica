@@ -1,0 +1,103 @@
+{
+  "id": "085243-01",
+  "slug": "balon-puma-manchester-city-essentials-mini-blue",
+  "name": "Puma Manchester City Essentials mini",
+  "model": "Manchester City Essentials mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Soccer Ball in Mini Size - Light Blue",
+    "tagline": "Mini design for big fans",
+    "intro": "The Puma Manchester City Essentials soccer ball is perfect for fans of the citizen club who want to enjoy soccer anywhere. Its mini size makes it ideal for improving control, playing recreational games or completing any soccer collection.",
+    "collection": "",
+    "key_benefits": [
+      "Mini size: Perfect for improving technique and ball control",
+      "Official Manchester City design: Colors and crest inspired by the English club",
+      "Heavy Duty Construction: Machine stitched panels for durability",
+      "Uso recreativo: Ideal para entrenamientos ligeros y ocio",
+      "Comfortable touch: Smooth surface for better hitting feeling"
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City Essentials mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/bf40a0f90bb6ce97377f755f88ad84f0f85bcefb-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/bf40a0f90bb6ce97377f755f88ad84f0f85bcefb-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0ecf7453af6d7b332ca422d63ec5da861956f989-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bf40a0f90bb6ce97377f755f88ad84f0f85bcefb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0ecf7453af6d7b332ca422d63ec5da861956f989-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-bf40a0f90bb6ce97377f755f88ad84f0f85bcefb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bf40a0f90bb6ce97377f755f88ad84f0f85bcefb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0ecf7453af6d7b332ca422d63ec5da861956f989-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0ecf7453af6d7b332ca422d63ec5da861956f989-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085243-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del manchester City en talla mini - azul claro",
+    "tagline": "Diseño mini para grandes aficionados",
+    "intro": "El balón de fútbol Puma del Manchester City Essentials es perfecto para los seguidores del club citizen que quieren disfrutar del fútbol en cualquier lugar. Su tamaño mini lo hace ideal para mejorar el control, realizar juegos recreativos o completar cualquier colección futbolera.",
+    "collection": "",
+    "key_benefits": [
+      "Tamaño mini: Perfecto para mejorar la técnica y el control del balón",
+      "Diseño oficial Manchester City: Colores y escudo inspirados en el club inglés",
+      "Construcción resistente: Paneles cosidos a máquina para mayor durabilidad",
+      "Uso recreativo: Ideal para entrenamientos ligeros y ocio",
+      "Toque cómodo: Superficie suave para una mejor sensación de golpeo"
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085243-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City Essentials mini",
+    "sole_type": ""
+  }
+}

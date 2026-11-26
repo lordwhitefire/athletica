@@ -1,0 +1,111 @@
+{
+  "id": "025611-77",
+  "slug": "gorra-puma-manchester-city-essentials-white",
+  "name": "Puma Manchester City Essentials",
+  "model": "Manchester City Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Walking Cap - White",
+    "tagline": "A basic citizen for every day",
+    "intro": "The Puma Manchester City Essentials cap combines simplicity and urban style. With its classic design, it is the perfect accessory to show your support for the English club on any occasion.",
+    "collection": "",
+    "key_benefits": [
+      "Essential design: Minimalist style that combines with any daily look.",
+      "Identidad citizen: Escudo oficial del Manchester City bordado en el frontal.",
+      "Distinctive details: Puma logo on the side that provides a sporty character.",
+      "Comfort: Lightweight, adaptable fit for extended wear."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e39b030c2cedd4a3231f5a2e68c05e3867e32dbd-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e39b030c2cedd4a3231f5a2e68c05e3867e32dbd-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5a8515b355e6a5c915c18e66ff5e7245672a5549-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/37dd00f9efac1dd75ce1a8a32d879aff240eec5b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e39b030c2cedd4a3231f5a2e68c05e3867e32dbd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5a8515b355e6a5c915c18e66ff5e7245672a5549-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/37dd00f9efac1dd75ce1a8a32d879aff240eec5b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e39b030c2cedd4a3231f5a2e68c05e3867e32dbd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e39b030c2cedd4a3231f5a2e68c05e3867e32dbd-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5a8515b355e6a5c915c18e66ff5e7245672a5549-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5a8515b355e6a5c915c18e66ff5e7245672a5549-1500x1500.jpg"
+    },
+    {
+      "_id": "image-37dd00f9efac1dd75ce1a8a32d879aff240eec5b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/37dd00f9efac1dd75ce1a8a32d879aff240eec5b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/025611-77",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Gorra de paseo Puma del Manchester City - blanca",
+    "tagline": "Un básico citizen para cada día",
+    "intro": "La gorra Puma Manchester City Essentials combina sencillez y estilo urbano. Con su diseño clásico, es el accesorio perfecto para mostrar tu apoyo al club inglés en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño esencial: Estilo minimalista que combina con cualquier look diario.",
+      "Identidad citizen: Escudo oficial del Manchester City bordado en el frontal.",
+      "Detalles distintivos: Logotipo Puma en el lateral que aporta carácter deportivo.",
+      "Comodidad: Ajuste ligero y adaptable para uso prolongado."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/025611-77"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City Essentials",
+    "sole_type": ""
+  }
+}

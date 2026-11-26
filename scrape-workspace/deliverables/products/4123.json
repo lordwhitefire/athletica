@@ -1,0 +1,86 @@
+{
+  "id": "4123",
+  "slug": "red-zastor-18-23-balones-white",
+  "name": "Red Zastor 18-23 Balls",
+  "model": "Red Zastor 18-23 Balls",
+  "brand": "Zastor",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Red para 18-23 balones Zastor - blanca",
+    "tagline": "Mayor capacidad, mismo control",
+    "intro": "La Red Zastor 18-23 balones te ofrece una solución eficaz para entrenamientos con múltiples unidades. Una aliada fiable para clubs y entrenadores exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Gran capacidad: Ideal para 18 a 23 balones",
+      "Material resistente: Tejido de nailon duradero",
+      "Diseño funcional: Acceso rápido y transporte fácil",
+      "Versatilidad: Perfecta para clubs, academias o escuelas"
+    ],
+    "technical_details": {
+      "range": "Zastor 18-23 balones",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4123_imagen-de-la-red-para-20-balones-zastor-2019-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4123_imagen-de-la-red-para-20-balones-zastor-2019-blanco_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4123_imagen-de-la-red-para-20-balones-zastor-2019-blanco_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4123_imagen-de-la-red-para-20-balones-zastor-2019-blanco_3_capacidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4123_imagen-de-la-red-para-20-balones-zastor-2019-blanco_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4123_imagen-de-la-red-para-20-balones-zastor-2019-blanco_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4123_imagen-de-la-red-para-20-balones-zastor-2019-blanco_3_capacidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4123",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Red para 18-23 balones Zastor - blanca",
+    "tagline": "Mayor capacidad, mismo control",
+    "intro": "La Red Zastor 18-23 balones te ofrece una solución eficaz para entrenamientos con múltiples unidades. Una aliada fiable para clubs y entrenadores exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Gran capacidad: Ideal para 18 a 23 balones",
+      "Material resistente: Tejido de nailon duradero",
+      "Diseño funcional: Acceso rápido y transporte fácil",
+      "Versatilidad: Perfecta para clubs, academias o escuelas"
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4123"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Red",
+    "submodel": "",
+    "product_model": "Red Zastor 18-23 Balls",
+    "sole_type": ""
+  }
+}

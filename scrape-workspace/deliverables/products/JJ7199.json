@@ -1,0 +1,90 @@
+{
+  "id": "JJ7199",
+  "slug": "accesorio-adidas-footwear-detergent-250ml-transparente",
+  "name": "adidas Footwear Detergent 250ML",
+  "model": "Footwear Detergent 250ML",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Transparente",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Detergente para botas de fútbol 250ML - transparente y con dosificador",
+    "tagline": "Detergente específico para calzado deportivo",
+    "intro": "Limpieza profunda que mantiene el color y los tejidos como nuevos.",
+    "collection": "",
+    "key_benefits": [
+      "Elimina manchas y olores difíciles: Fórmula desarrollada para uso en calzado de alto rendimiento.",
+      "Seguro para todos los materiales: Respeta pieles, sintéticos y tejidos técnicos.",
+      "10 lavados por envase: Rendimiento optimizado para uso frecuente.",
+      "Dosificador inteligente: Previene derrames y asegura una dosis precisa cada vez.",
+      "Botella reciclable: Envase sostenible que reduce el impacto ambiental."
+    ],
+    "technical_details": {
+      "range": "adidas Footwear Detergent 250ML",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7199_limpiador-botas-de-futbol-color-transparente-adidas-footwear-detergent-250ml_1_completa-trasera.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7199_limpiador-botas-de-futbol-color-transparente-adidas-footwear-detergent-250ml_1_completa-trasera.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7199_limpiador-zapatillas-de-futbol-transparente-adidas-footwear-detergent-250ml_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7199_limpiador-botas-de-futbol-color-transparente-adidas-footwear-detergent-250ml_1_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7199_limpiador-zapatillas-de-futbol-transparente-adidas-footwear-detergent-250ml_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jj7199",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Detergente para botas de fútbol 250ML - transparente y con dosificador",
+    "tagline": "Detergente específico para calzado deportivo",
+    "intro": "Limpieza profunda que mantiene el color y los tejidos como nuevos.",
+    "collection": "",
+    "key_benefits": [
+      "Elimina manchas y olores difíciles: Fórmula desarrollada para uso en calzado de alto rendimiento.",
+      "Seguro para todos los materiales: Respeta pieles, sintéticos y tejidos técnicos.",
+      "10 lavados por envase: Rendimiento optimizado para uso frecuente.",
+      "Dosificador inteligente: Previene derrames y asegura una dosis precisa cada vez.",
+      "Botella reciclable: Envase sostenible que reduce el impacto ambiental."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jj7199"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'accesorio'",
+    "root_model": "Footwear",
+    "submodel": "",
+    "product_model": "Footwear Detergent 250ML",
+    "sole_type": ""
+  }
+}

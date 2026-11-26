@@ -1,0 +1,102 @@
+{
+  "id": "JN5609",
+  "slug": "sudadera-adidas-bayern-entrenamiento-rojo-naranja",
+  "name": "adidas Bayern Training",
+  "model": "Bayern entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Rojo / Naranja",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Bayern Munich Adidas Training Sweatshirt - Red",
+    "tagline": "Designed to train like champions",
+    "intro": "The adidas Bayern Munich sweatshirt offers you the same level of performance that professionals demand. With a slim fit, technical fabric and cuffs with thumbholes, this garment is made so that nothing distracts you from the ball.",
+    "collection": "",
+    "key_benefits": [
+      "Professional performance: Same design that Bayern players use in their training.",
+      "Moisture control: AEROREADY technology that keeps skin dry.",
+      "Freedom of movement: Slim fit with thumbhole for increased coverage.",
+      "Comfortable design: Short zipper makes it easy to wear without compromising fit.",
+      "Sustainable commitment: Made partially with recycled materials."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-color-rojo-y-naranja-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-color-rojo-y-naranja-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-rojo-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-adidas-bayern-entrenamiento-color-rojo-y-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-adidas-bayern-entrenamiento-rojo_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-color-rojo-y-naranja-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-rojo-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-adidas-bayern-entrenamiento-color-rojo-y-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5609_sudadera-adidas-bayern-entrenamiento-rojo_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn5609",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Bayern de Múnich - roja",
+    "tagline": "Diseñada para entrenar como los campeones",
+    "intro": "La sudadera adidas del Bayern de Múnich te ofrece el mismo nivel de rendimiento que exigen los profesionales. Con un ajuste slim, tejido técnico y puños con aberturas para el pulgar, esta prenda está hecha para que nada te distraiga del balón.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento profesional: Mismo diseño que usan los jugadores del Bayern en sus entrenamientos.",
+      "Control de la humedad: Tecnología AEROREADY que mantiene la piel seca.",
+      "Libertad de movimiento: Corte entallado con abertura para el pulgar que aumenta la cobertura.",
+      "Diseño cómodo: Cremallera corta que facilita el uso sin comprometer el ajuste.",
+      "Compromiso sostenible: Fabricada parcialmente con materiales reciclados."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn5609"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Bayern Training",
+    "submodel": "",
+    "product_model": "Bayern entrenamiento",
+    "sole_type": ""
+  }
+}

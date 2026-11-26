@@ -1,0 +1,90 @@
+{
+  "id": "TRUT463",
+  "slug": "calcetines-antideslizantes-trusox-finos-blue",
+  "name": "antideslizantes Trusox finos",
+  "model": "antideslizantes Trusox finos",
+  "brand": "Trusox",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Calcetines Trusox de media caña finos con sistema antideslizante - azules",
+    "tagline": "Ligereza con agarre de élite",
+    "intro": "Los Trusox finos están diseñados para quienes buscan una experiencia ligera y máxima tracción. Su estructura fina permite mayor sensibilidad en la bota mientras mantiene la fricción interior característica de la marca.",
+    "collection": "",
+    "key_benefits": [
+      "Sensación minimalista: Diseño delgado que maximiza la sensibilidad.",
+      "Tecnología INEX: Evita el movimiento del pie dentro de la bota.",
+      "Media caña: Ajuste seguro sin presión excesiva.",
+      "Versatilidad: Ideales para climas cálidos o quienes prefieren ligereza."
+    ],
+    "technical_details": {
+      "range": "antideslizantes Trusox finos",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/t/r/trut463_calcetines-antideslizantes-trusox-acolchados-azules_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/t/r/trut463_calcetines-antideslizantes-trusox-acolchados-azules_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/t/r/trut463_calcetines-antideslizantes-trusox-acolchados-azules_2_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/t/r/trut463_calcetines-antideslizantes-trusox-acolchados-azules_3_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/t/r/trut463_calcetines-antideslizantes-trusox-acolchados-azules_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/t/r/trut463_calcetines-antideslizantes-trusox-acolchados-azules_2_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/t/r/trut463_calcetines-antideslizantes-trusox-acolchados-azules_3_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/trut463",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-19",
+    "subtitle": "Calcetines Trusox de media caña finos con sistema antideslizante - azules",
+    "tagline": "Ligereza con agarre de élite",
+    "intro": "Los Trusox finos están diseñados para quienes buscan una experiencia ligera y máxima tracción. Su estructura fina permite mayor sensibilidad en la bota mientras mantiene la fricción interior característica de la marca.",
+    "collection": "",
+    "key_benefits": [
+      "Sensación minimalista: Diseño delgado que maximiza la sensibilidad.",
+      "Tecnología INEX: Evita el movimiento del pie dentro de la bota.",
+      "Media caña: Ajuste seguro sin presión excesiva.",
+      "Versatilidad: Ideales para climas cálidos o quienes prefieren ligereza."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/trut463"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'calcetin'",
+    "root_model": "antideslizantes",
+    "submodel": "",
+    "product_model": "antideslizantes Trusox finos",
+    "sole_type": ""
+  }
+}

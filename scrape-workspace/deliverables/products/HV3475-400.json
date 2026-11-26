@@ -1,0 +1,96 @@
+{
+  "id": "HV3475-400",
+  "slug": "gorro-nike-barcelona-apex-bucket-blue",
+  "name": "Gorro Nike Barcelona Apex Bucket",
+  "model": "Gorro Nike Barcelona Apex Bucket",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "FC Barcelona Nike Winter Hat 2025 2026 - Blue",
+    "tagline": "Protection with blaugrana identity",
+    "intro": "Designed for winter, this Barça bucket hat combines warmth and urban style.",
+    "collection": "",
+    "key_benefits": [
+      "Thermal protection: Keeps you warm on cold days.",
+      "Modern style: Bucket design with an urban look.",
+      "Barça Identity: Nike logo and FC Barcelona shield."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Apex Bucket",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3475-400_gorro-color-azul-nike-barcelona-apex-bucket_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3475-400_gorro-color-azul-nike-barcelona-apex-bucket_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3475-400_gorro-azul-nike-barcelona-apex-bucket_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3475-400_gorro-nike-barcelona-apex-bucket-color-azul_3_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3475-400_gorro-color-azul-nike-barcelona-apex-bucket_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3475-400_gorro-azul-nike-barcelona-apex-bucket_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3475-400_gorro-nike-barcelona-apex-bucket-color-azul_3_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv3475-400",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorro de invierno Nike del FC Barcelona 2025 2026 - azul",
+    "tagline": "Protección con identidad blaugrana",
+    "intro": "Diseñado para el invierno, este gorro bucket del Barça combina calor y estilo urbano.",
+    "collection": "",
+    "key_benefits": [
+      "Protección térmica: Mantiene el calor en los días fríos.",
+      "Estilo moderno: Diseño tipo bucket con look urbano.",
+      "Identidad Barça: Logo Nike y escudo del FC Barcelona."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv3475-400"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Gorro",
+    "submodel": "Nike Barcelona Apex Bucket",
+    "product_model": "Gorro Nike Barcelona Apex Bucket",
+    "sole_type": ""
+  }
+}

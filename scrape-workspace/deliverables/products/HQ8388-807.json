@@ -1,0 +1,100 @@
+{
+  "id": "HQ8388-807",
+  "slug": "camiseta-nike-barcelona-t90-remix-orange",
+  "name": "Nike Barcelona T90 Remix",
+  "model": "Barcelona T90 Remix",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta Nike del FC Barcelona - melocotón",
+    "tagline": "Estilo retro con aire moderno",
+    "intro": "La camiseta T90 Remix del Barça rinde homenaje a los clásicos con algodón cómodo y gráfico vintage.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño T90: Inspirado en los años dorados del fútbol.",
+      "Tejido 100% algodón: Suavidad y confort en cada uso.",
+      "Gráfico retro: Impacto visual y estilo único.",
+      "Ajuste relajado: Ideal para el día a día de cualquier fan."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona T90 Remix",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-color-naranja-nike-barcelona-t90-remix_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-color-naranja-nike-barcelona-t90-remix_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-melocoton-nike-barcelona-t90-remix_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-nike-barcelona-t90-remix-color-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-nike-barcelona-t90-remix-melocoton_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-color-naranja-nike-barcelona-t90-remix_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-melocoton-nike-barcelona-t90-remix_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-nike-barcelona-t90-remix-color-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8388-807_camiseta-nike-barcelona-t90-remix-melocoton_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq8388-807",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta Nike del FC Barcelona - melocotón",
+    "tagline": "Estilo retro con aire moderno",
+    "intro": "La camiseta T90 Remix del Barça rinde homenaje a los clásicos con algodón cómodo y gráfico vintage.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño T90: Inspirado en los años dorados del fútbol.",
+      "Tejido 100% algodón: Suavidad y confort en cada uso.",
+      "Gráfico retro: Impacto visual y estilo único.",
+      "Ajuste relajado: Ideal para el día a día de cualquier fan."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq8388-807"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Barcelona",
+    "submodel": "T90 Remix",
+    "product_model": "Barcelona T90 Remix",
+    "sole_type": ""
+  }
+}

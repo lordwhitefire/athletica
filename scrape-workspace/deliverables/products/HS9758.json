@@ -1,0 +1,92 @@
+{
+  "id": "HS9758",
+  "slug": "mochila-adidas-tiro-black",
+  "name": "Backpack adidas Tiro",
+  "model": "Backpack adidas Tiro",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deporte adidas (48,5 x 33 x 18 cm) - negra",
+    "tagline": "Diseñada para tu día a día",
+    "intro": "La mochila adidas Tiro ofrece practicidad y estilo en un formato compacto, ideal para llevar todo lo que necesitas de forma organizada y cómoda.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad: Espacio suficiente para tus esenciales diarios y de entrenamiento.",
+      "Organización inteligente: Compartimento específico para botas y bolsillos laterales de malla.",
+      "Comodidad de transporte: Correas acolchadas y ajustables para mayor confort.",
+      "Resistencia adidas: Base revestida y tejido reciclado de alta durabilidad."
+    ],
+    "technical_details": {
+      "range": "adidas Tiro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-color-negro-adidas-tiro_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-color-negro-adidas-tiro_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-negra-adidas-tiro_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-adidas-tiro-color-negro_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-adidas-tiro-negra_4_detalle-bolsillo-exterior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-color-negro-adidas-tiro_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-negra-adidas-tiro_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-adidas-tiro-color-negro_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9758_mochila-adidas-tiro-negra_4_detalle-bolsillo-exterior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/hs9758",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte adidas (48,5 x 33 x 18 cm) - negra",
+    "tagline": "Diseñada para tu día a día",
+    "intro": "La mochila adidas Tiro ofrece practicidad y estilo en un formato compacto, ideal para llevar todo lo que necesitas de forma organizada y cómoda.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad: Espacio suficiente para tus esenciales diarios y de entrenamiento.",
+      "Organización inteligente: Compartimento específico para botas y bolsillos laterales de malla.",
+      "Comodidad de transporte: Correas acolchadas y ajustables para mayor confort.",
+      "Resistencia adidas: Base revestida y tejido reciclado de alta durabilidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/hs9758"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack adidas Tiro",
+    "sole_type": ""
+  }
+}

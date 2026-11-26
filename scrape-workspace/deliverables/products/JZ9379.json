@@ -1,0 +1,94 @@
+{
+  "id": "JZ9379",
+  "slug": "pantalon-adidas-italia-presentacion-green",
+  "name": "adidas Italia presentación",
+  "model": "Italia presentación",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de presentación adidas de la selección italiana 2026 - verde",
+    "tagline": "Estilo y función en clave Azzurra",
+    "intro": "Forma parte del equipo con este diseño inspirado en la Italia 2026. Máximo rendimiento, comodidad y estilo para cada sesión deportiva o momento de orgullo nacional.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración oficial: Diseño y escudo de la selección italiana.",
+      "Comodidad en movimiento: Ajuste técnico y tejido ligero.",
+      "Preparado para el deporte: Ideal para entrenar, calentar o viajar."
+    ],
+    "technical_details": {
+      "range": "adidas Italia presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-largo-color-verde-adidas-italia-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-largo-color-verde-adidas-italia-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-chandal-verde-adidas-italia-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-chandal-adidas-italia-presentacion-color-verde_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-largo-adidas-italia-presentacion-verde_4_detalle-b.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-largo-color-verde-adidas-italia-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-chandal-verde-adidas-italia-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-chandal-adidas-italia-presentacion-color-verde_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9379_pantalon-largo-adidas-italia-presentacion-verde_4_detalle-b.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9379",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de presentación adidas de la selección italiana 2026 - verde",
+    "tagline": "Estilo y función en clave Azzurra",
+    "intro": "Forma parte del equipo con este diseño inspirado en la Italia 2026. Máximo rendimiento, comodidad y estilo para cada sesión deportiva o momento de orgullo nacional.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración oficial: Diseño y escudo de la selección italiana.",
+      "Comodidad en movimiento: Ajuste técnico y tejido ligero.",
+      "Preparado para el deporte: Ideal para entrenar, calentar o viajar."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9379"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Italia",
+    "submodel": "",
+    "product_model": "Italia presentación",
+    "sole_type": ""
+  }
+}

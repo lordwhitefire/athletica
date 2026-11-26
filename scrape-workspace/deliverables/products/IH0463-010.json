@@ -1,0 +1,90 @@
+{
+  "id": "IH0463-010",
+  "slug": "short-nike-mujer-dri-fit-strike-black",
+  "name": "Nike Women Dri-Fit Strike",
+  "model": "mujer Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Women's Soccer Training Shorts - Black",
+    "tagline": "Dynamic training with a feminine fit",
+    "intro": "These Nike Strike shorts for women are designed to offer lightness and freedom of movement in demanding training sessions.",
+    "collection": "",
+    "key_benefits": [
+      "Sweat evacuation: Helps keep skin dry.",
+      "Total mobility: Cut designed for quick movements.",
+      "Intensive use: Ideal for frequent training."
+    ],
+    "technical_details": {
+      "range": "Nike mujer Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_pantalon-corto-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_pantalon-corto-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_short-negro-nike-mujer-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_pantalon-corto-nike-mujer-dri-fit-strike-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_short-nike-mujer-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_pantalon-corto-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_short-negro-nike-mujer-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_pantalon-corto-nike-mujer-dri-fit-strike-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0463-010_short-nike-mujer-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ih0463-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto para mujer de entrenamiento de fútbol Nike - negro",
+    "tagline": "Entrenamiento dinámico con ajuste femenino",
+    "intro": "Este short Nike Strike para mujer está diseñado para ofrecer ligereza y libertad de movimiento en sesiones de entrenamiento exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Evacuación del sudor: Ayuda a mantener la piel seca.",
+      "Movilidad total: Corte pensado para movimientos rápidos.",
+      "Uso intensivo: Ideal para entrenamientos frecuentes."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ih0463-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Women",
+    "submodel": "",
+    "product_model": "mujer Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

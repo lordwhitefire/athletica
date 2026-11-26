@@ -1,0 +1,97 @@
+{
+  "id": "084299-01-5",
+  "slug": "balon-puma-orbita-serie-a-2024-2025-hybrid-talla-5-white",
+  "name": "Puma Orbita Serie A 2024 2025 Hybrid talla 5",
+  "model": "Orbita Serie A 2024 2025 Hybrid talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Orbita Serie A 2024 2025 Hybrid talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/18c3975fab82abfcdf7ff914b4c730d7c58363b0-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/18c3975fab82abfcdf7ff914b4c730d7c58363b0-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8cf646db77bd722582ae8f42565a42a7b8594733-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/30a3a1b096c9390a38ce451e65ad95b135fdd3d9-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/18c3975fab82abfcdf7ff914b4c730d7c58363b0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8cf646db77bd722582ae8f42565a42a7b8594733-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/30a3a1b096c9390a38ce451e65ad95b135fdd3d9-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-18c3975fab82abfcdf7ff914b4c730d7c58363b0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/18c3975fab82abfcdf7ff914b4c730d7c58363b0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8cf646db77bd722582ae8f42565a42a7b8594733-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8cf646db77bd722582ae8f42565a42a7b8594733-1500x1500.jpg"
+    },
+    {
+      "_id": "image-30a3a1b096c9390a38ce451e65ad95b135fdd3d9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/30a3a1b096c9390a38ce451e65ad95b135fdd3d9-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084299-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084299-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita Serie A 2024 2025 Hybrid talla 5",
+    "sole_type": ""
+  }
+}

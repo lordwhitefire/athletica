@@ -1,0 +1,94 @@
+{
+  "id": "GH7252",
+  "slug": "guantes-termicos-adidas-tiro-black",
+  "name": "térmicos adidas Tiro",
+  "model": "térmicos adidas Tiro",
+  "brand": "adidas",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes térmicos para el invierno adidas - negros",
+    "tagline": "Calidez sencilla para tu día a día",
+    "intro": "Los guantes adidas Tiro están confeccionados en tejido cálido y elástico que mantiene las manos abrigadas durante todo el invierno. Un diseño versátil que se adapta a tu día a día, entrenamientos y actividades al aire libre.",
+    "collection": "",
+    "key_benefits": [
+      "Aislamiento térmico: protege las manos del frío sin añadir volumen.",
+      "Comodidad elástica: punto que se adapta para un ajuste agradable.",
+      "Versátiles: ideales para el día a día, entrenamientos y actividades al aire libre.",
+      "Agarre funcional: refuerzos discretos que aportan sujeción cuando la necesitas."
+    ],
+    "technical_details": {
+      "range": "térmicos adidas Tiro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH7252_guantes-termicos-color-negro-adidas-tiro_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH7252_guantes-termicos-color-negro-adidas-tiro_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH7252_guantes-frio-negros-adidas-tiro_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH7252_guantes-adidas-tiro-color-negro_3_detalle-logo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH7252_guantes-termicos-color-negro-adidas-tiro_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH7252_guantes-frio-negros-adidas-tiro_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/H/GH7252_guantes-adidas-tiro-color-negro_3_detalle-logo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/gh7252",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes térmicos para el invierno adidas - negros",
+    "tagline": "Calidez sencilla para tu día a día",
+    "intro": "Los guantes adidas Tiro están confeccionados en tejido cálido y elástico que mantiene las manos abrigadas durante todo el invierno. Un diseño versátil que se adapta a tu día a día, entrenamientos y actividades al aire libre.",
+    "collection": "",
+    "key_benefits": [
+      "Aislamiento térmico: protege las manos del frío sin añadir volumen.",
+      "Comodidad elástica: punto que se adapta para un ajuste agradable.",
+      "Versátiles: ideales para el día a día, entrenamientos y actividades al aire libre.",
+      "Agarre funcional: refuerzos discretos que aportan sujeción cuando la necesitas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/gh7252"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "térmicos",
+    "submodel": "",
+    "product_model": "térmicos adidas Tiro",
+    "sole_type": ""
+  }
+}

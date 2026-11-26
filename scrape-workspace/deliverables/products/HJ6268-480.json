@@ -1,0 +1,98 @@
+{
+  "id": "HJ6268-480",
+  "slug": "polo-nike-atletico-dri-fit-2-0-blue",
+  "name": "Polo Nike Atlético Dri-Fit 2.0",
+  "model": "Polo Nike Atlético Dri-Fit 2.0",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Polo Nike del Atlético de Madrid - azul",
+    "tagline": "Estilo rojiblanco en clave casual",
+    "intro": "El polo Nike Atlético Dri-Fit 2.0 fusiona elegancia urbana con funcionalidad deportiva. Confeccionado con tejido técnico y ajuste cómodo, es perfecto para animar al Atleti o vestir con orgullo fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño del club: Estética sobria con detalles oficiales del Atlético de Madrid.",
+      "Comodidad activa: Tejido suave y elástico que acompaña tus movimientos.",
+      "Tecnología Dri-FIT: Expulsa el sudor para mantenerte seco y fresco todo el día.",
+      "Corte funcional: Dobladillo trasero más largo para una cobertura superior.",
+      "Estilo versátil: Ideal para looks urbanos, de oficina o en la grada."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético Dri-Fit 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_polo-color-azul-nike-atletico-dri-fit-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_polo-color-azul-nike-atletico-dri-fit-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_niqui-azul-nike-atletico-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_polo-nike-atletico-dri-fit-2-0-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_niqui-nike-atletico-dri-fit-2-0-azul_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_polo-color-azul-nike-atletico-dri-fit-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_niqui-azul-nike-atletico-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_polo-nike-atletico-dri-fit-2-0-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6268-480_niqui-nike-atletico-dri-fit-2-0-azul_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6268-480",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Polo Nike del Atlético de Madrid - azul",
+    "tagline": "Estilo rojiblanco en clave casual",
+    "intro": "El polo Nike Atlético Dri-Fit 2.0 fusiona elegancia urbana con funcionalidad deportiva. Confeccionado con tejido técnico y ajuste cómodo, es perfecto para animar al Atleti o vestir con orgullo fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño del club: Estética sobria con detalles oficiales del Atlético de Madrid.",
+      "Comodidad activa: Tejido suave y elástico que acompaña tus movimientos.",
+      "Tecnología Dri-FIT: Expulsa el sudor para mantenerte seco y fresco todo el día.",
+      "Corte funcional: Dobladillo trasero más largo para una cobertura superior.",
+      "Estilo versátil: Ideal para looks urbanos, de oficina o en la grada."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6268-480"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo Nike Atlético Dri-Fit 2.0",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "HQ0304-458",
+  "slug": "nike-gk-vapor-grip3-blue",
+  "name": "Nike GK Vapor Grip3",
+  "model": "GK Vapor Grip3",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero profesionales Nike corte Grip 3 - azules",
+    "tagline": "Rendimiento de élite, ajuste perfecto",
+    "intro": "Domina la portería con los Nike Vapor Grip3. Su diseño profesional y su corte envolvente garantizan un control absoluto, mientras que su ajuste ergonómico potencia tu seguridad y confianza en cada intervención.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Grip3 profesional: Envoltura completa en dedos clave para mayor contacto.",
+      "Muñequera con cierre ajustado: Seguridad sin sacrificar movilidad.",
+      "Palma de alto agarre: Control total en cualquier condición.",
+      "Diseño anatómico: Máxima comodidad durante el partido."
+    ],
+    "technical_details": {
+      "range": "GK Vapor Grip3",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-de-portero-color-azul-nike-gk-vapor-grip3_1_completa-dorso-mano-izquierda.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-de-portero-color-azul-nike-gk-vapor-grip3_1_completa-dorso-mano-izquierda.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-portero-azules-nike-gk-vapor-grip3_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-de-arquero-nike-gk-vapor-grip3-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-de-futbol-nike-gk-vapor-grip3-azules_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-de-portero-color-azul-nike-gk-vapor-grip3_1_completa-dorso-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-portero-azules-nike-gk-vapor-grip3_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-de-arquero-nike-gk-vapor-grip3-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-458_guantes-de-futbol-nike-gk-vapor-grip3-azules_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq0304-458",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero profesionales Nike corte Grip 3 - azules",
+    "tagline": "Rendimiento de élite, ajuste perfecto",
+    "intro": "Domina la portería con los Nike Vapor Grip3. Su diseño profesional y su corte envolvente garantizan un control absoluto, mientras que su ajuste ergonómico potencia tu seguridad y confianza en cada intervención.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Grip3 profesional: Envoltura completa en dedos clave para mayor contacto.",
+      "Muñequera con cierre ajustado: Seguridad sin sacrificar movilidad.",
+      "Palma de alto agarre: Control total en cualquier condición.",
+      "Diseño anatómico: Máxima comodidad durante el partido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq0304-458"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "GK",
+    "submodel": "Vapor Grip3",
+    "product_model": "GK Vapor Grip3",
+    "sole_type": ""
+  }
+}

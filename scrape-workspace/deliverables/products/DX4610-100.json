@@ -1,0 +1,86 @@
+{
+  "id": "DX4610-100",
+  "slug": "nike-charge-nino-white",
+  "name": "Nike Charge Kids",
+  "model": "Charge niño",
+  "brand": "Nike",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Charge niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_espinilleras-con-tobillera-color-blanco-nike-charge-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_espinilleras-con-tobillera-color-blanco-nike-charge-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_canilleras-con-tobillera-blancas-nike-charge-nino_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_espinilleras-con-tobillera-nike-charge-nino-color-blanco_3_detalle-colocacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_canilleras-con-tobillera-nike-charge-nino-blancas_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_espinilleras-con-tobillera-color-blanco-nike-charge-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_canilleras-con-tobillera-blancas-nike-charge-nino_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_espinilleras-con-tobillera-nike-charge-nino-color-blanco_3_detalle-colocacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4610-100_canilleras-con-tobillera-nike-charge-nino-blancas_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dx4610-100",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dx4610-100"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Charge",
+    "submodel": "",
+    "product_model": "Charge niño",
+    "sole_type": ""
+  }
+}

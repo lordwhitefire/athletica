@@ -1,0 +1,105 @@
+{
+  "id": "084715-01-5",
+  "slug": "balon-puma-premier-25-26-cup-t-5-lights-orbita-yellow",
+  "name": "Puma Premier 25 26 Cup T.5 Lights Orbita",
+  "model": "Premier 25 26 Cup T.5 Lights Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League 2025 2026 High Visibility Soccer Ball Size 5 - Yellow",
+    "tagline": "The ball that sets the pace of the Premier",
+    "intro": "Puma Premier 25 26 Cup T.5 Lights Orbita ball combines high quality materials with the most iconic visual design of the 25/26 season.",
+    "collection": "",
+    "key_benefits": [
+      "Official Premier League design: Yellow color that stands out on cold English nights.",
+      "Gran durabilidad: Estructura pensada para soportar sesiones intensas de juego, sin perder forma ni prestaciones.",
+      "Precise control: Textured surface that favors ball control in any type of play."
+    ],
+    "technical_details": {
+      "range": "Puma Premier 25 26 Cup T.5 Lights Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3b8120abbf8aba9161929cd45ea0533365042375-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3b8120abbf8aba9161929cd45ea0533365042375-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e4cf55181bd6ad790cc379506361da75d3096916-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1ce9f25d4b3b1ed601c71b02b591cd4490fa03f7-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3b8120abbf8aba9161929cd45ea0533365042375-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e4cf55181bd6ad790cc379506361da75d3096916-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1ce9f25d4b3b1ed601c71b02b591cd4490fa03f7-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3b8120abbf8aba9161929cd45ea0533365042375-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3b8120abbf8aba9161929cd45ea0533365042375-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e4cf55181bd6ad790cc379506361da75d3096916-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e4cf55181bd6ad790cc379506361da75d3096916-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1ce9f25d4b3b1ed601c71b02b591cd4490fa03f7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1ce9f25d4b3b1ed601c71b02b591cd4490fa03f7-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084715-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 de alta visibilidad talla 5 - amarillo",
+    "tagline": "El balón que marca el ritmo de la Premier",
+    "intro": "Balón Puma Premier 25 26 Cup T.5 Lights Orbita combina materiales de alta calidad con el diseño visual más icónico de la temporada 25/26.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Premier League: Color amarillo que resalta en las frías noches inglesas.",
+      "Gran durabilidad: Estructura pensada para soportar sesiones intensas de juego, sin perder forma ni prestaciones.",
+      "Control preciso: Superficie texturizada que favorece el control del balón en cualquier tipo de jugada."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084715-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Premier 25",
+    "submodel": "",
+    "product_model": "Premier 25 26 Cup T.5 Lights Orbita",
+    "sole_type": ""
+  }
+}

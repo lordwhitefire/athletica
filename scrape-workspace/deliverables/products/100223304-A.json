@@ -1,0 +1,109 @@
+{
+  "id": "100223304-A",
+  "slug": "short-uhlsport-performance-short-red",
+  "name": "Uhlsport Performance Short",
+  "model": "Performance Short",
+  "brand": "Uhlsport",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport Performance Short",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/756f65b71300862606676b98cbd9f7cc7b060416-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/756f65b71300862606676b98cbd9f7cc7b060416-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bcccedc2618b8e0792c9ba2aa644c19becae39df-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c0577f34dd9e77264710f4f6c51c771be4fd6efc-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/756f65b71300862606676b98cbd9f7cc7b060416-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bcccedc2618b8e0792c9ba2aa644c19becae39df-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c0577f34dd9e77264710f4f6c51c771be4fd6efc-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-756f65b71300862606676b98cbd9f7cc7b060416-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/756f65b71300862606676b98cbd9f7cc7b060416-1500x1500.jpg"
+    },
+    {
+      "_id": "image-bcccedc2618b8e0792c9ba2aa644c19becae39df-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bcccedc2618b8e0792c9ba2aa644c19becae39df-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d310a8b1367e253d955f7928fbb94cbffd51ed3f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c0577f34dd9e77264710f4f6c51c771be4fd6efc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c0577f34dd9e77264710f4f6c51c771be4fd6efc-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100223304-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100223304-a"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Performance",
+    "submodel": "",
+    "product_model": "Performance Short",
+    "sole_type": ""
+  }
+}

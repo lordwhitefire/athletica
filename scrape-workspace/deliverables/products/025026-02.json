@@ -1,0 +1,113 @@
+{
+  "id": "025026-02",
+  "slug": "gorra-puma-manchester-city-bb-cap-blue",
+  "name": "Puma Manchester City BB Cap",
+  "model": "Manchester City BB Cap",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Baseball Cap - Light Blue",
+    "tagline": "Citizen pride in every detail",
+    "intro": "Show off the classic style of Manchester City with this Puma baseball cap. Designed for true fans, it combines everyday comfort and a timeless design that reflects the identity of the cityzen club.",
+    "collection": "",
+    "key_benefits": [
+      "Custom fit: Plastic back strap that allows you to adjust the cap to your size.",
+      "Club identity: Official Manchester City crest embroidered on the front to show your passion for the team.",
+      "Quality details: Embroidered Puma logo adds a premium finish to the design.",
+      "Versatility: Perfect for everyday use, both in the stadium and on the street."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City BB Cap",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/30fd0a9ecc32611af229ab1a8fa89156e4f8304e-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/30fd0a9ecc32611af229ab1a8fa89156e4f8304e-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/60a432b473c16f870e102a1402b4452b2038ea37-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0986f99759d7f5d2de97394c4c2730823cedf2e5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/087a83cc892c431ac165430a810fc8cd38ca6284-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/30fd0a9ecc32611af229ab1a8fa89156e4f8304e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/60a432b473c16f870e102a1402b4452b2038ea37-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0986f99759d7f5d2de97394c4c2730823cedf2e5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/087a83cc892c431ac165430a810fc8cd38ca6284-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-30fd0a9ecc32611af229ab1a8fa89156e4f8304e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/30fd0a9ecc32611af229ab1a8fa89156e4f8304e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-60a432b473c16f870e102a1402b4452b2038ea37-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/60a432b473c16f870e102a1402b4452b2038ea37-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0986f99759d7f5d2de97394c4c2730823cedf2e5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0986f99759d7f5d2de97394c4c2730823cedf2e5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-087a83cc892c431ac165430a810fc8cd38ca6284-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/087a83cc892c431ac165430a810fc8cd38ca6284-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/025026-02",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra estilo baseball Puma del Manchester City - azul celeste",
+    "tagline": "Orgullo citizen en cada detalle",
+    "intro": "Luce el estilo clásico del Manchester City con esta gorra Puma de corte baseball. Diseñada para los verdaderos aficionados, combina comodidad diaria y un diseño atemporal que refleja la identidad del club cityzen.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste personalizado: Tira trasera de plástico que permite regular la gorra a tu medida.",
+      "Identidad del club: Escudo oficial del Manchester City bordado en el frontal para mostrar tu pasión por el equipo.",
+      "Detalles de calidad: Logotipo Puma bordado que añade un acabado premium al diseño.",
+      "Versatilidad: Perfecta para el uso diario, tanto en el estadio como en la calle."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/025026-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City BB Cap",
+    "sole_type": ""
+  }
+}

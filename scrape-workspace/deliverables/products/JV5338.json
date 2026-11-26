@@ -1,0 +1,96 @@
+{
+  "id": "JV5338",
+  "slug": "pantalon-adidas-arsenal-vis-tech-black",
+  "name": "adidas Arsenal Vis Tech",
+  "model": "Arsenal Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Arsenal adidas long pants - black",
+    "tagline": "Designed to stand out before the kick-off",
+    "intro": "The adidas Arsenal Vis Tech pants are the perfect garment for those who live football with intensity. Its sleek black design and technical fit make it ideal for before and after the game.",
+    "collection": "",
+    "key_benefits": [
+      "Professional style: Inspired by the equipment of Arsenal players.",
+      "Technical comfort: Soft and breathable fabric that allows you to move without limits.",
+      "Versatile look: Perfect for dressing in the preview or for daily use.",
+      "Club details: Arsenal crest and integrated adidas logo."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-largo-color-negro-adidas-arsenal-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-largo-color-negro-adidas-arsenal-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-chandal-negro-adidas-arsenal-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-chandal-adidas-arsenal-vis-tech-color-negro_3_detalle-bolsillo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-largo-adidas-arsenal-vis-tech-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-largo-color-negro-adidas-arsenal-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-chandal-negro-adidas-arsenal-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-chandal-adidas-arsenal-vis-tech-color-negro_3_detalle-bolsillo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5338_pantalon-largo-adidas-arsenal-vis-tech-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jv5338",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Arsenal - negro",
+    "tagline": "Diseñado para destacar antes del pitido inicial",
+    "intro": "El pantalón adidas Arsenal Vis Tech es la prenda perfecta para los que viven el fútbol con intensidad. Su diseño elegante en negro y su ajuste técnico lo hacen ideal para antes y después del partido.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo profesional: Inspirado en el equipamiento de los jugadores del Arsenal.",
+      "Comodidad técnica: Tejido suave y transpirable que permite moverte sin límites.",
+      "Look versátil: Perfecto para vestir en la previa o para uso diario.",
+      "Detalles de club: Escudo del Arsenal y logo adidas integrados."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jv5338"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Arsenal Vis",
+    "submodel": "",
+    "product_model": "Arsenal Vis Tech",
+    "sole_type": ""
+  }
+}

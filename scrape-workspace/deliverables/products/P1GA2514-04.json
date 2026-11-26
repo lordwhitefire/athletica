@@ -1,0 +1,86 @@
+{
+  "id": "P1GA2514-04",
+  "slug": "mizuno-morelia-2-pro-ag-silver",
+  "name": "Mizuno Morelia 2 Pro AG",
+  "model": "Morelia 2 Pro",
+  "brand": "Mizuno",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Silver",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Morelia 2 Pro",
+      "sole_type": "AG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "AG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-para-cesped-artificial-color-plata-mizuno-morelia-2-pro-ag_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-para-cesped-artificial-color-plata-mizuno-morelia-2-pro-ag_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-cesped-artificial-plateadas-mizuno-morelia-2-pro-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-hierba-artificial-mizuno-morelia-2-pro-ag-color-plata_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_zapatillas-de-futbol-para-hierba-sintetica-mizuno-morelia-2-pro-ag-plateadas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-con-tacos-color-plata-mizuno-morelia-2-pro-ag_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-para-cesped-artificial-plateadas-mizuno-morelia-2-pro-ag_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-para-cesped-artificial-color-plata-mizuno-morelia-2-pro-ag_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-cesped-artificial-plateadas-mizuno-morelia-2-pro-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-hierba-artificial-mizuno-morelia-2-pro-ag-color-plata_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_zapatillas-de-futbol-para-hierba-sintetica-mizuno-morelia-2-pro-ag-plateadas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-con-tacos-color-plata-mizuno-morelia-2-pro-ag_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2514-04_botas-de-futbol-para-cesped-artificial-plateadas-mizuno-morelia-2-pro-ag_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/p1ga2514-04",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/p1ga2514-04"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Morelia",
+    "submodel": "2 Pro",
+    "product_model": "Morelia 2 Pro",
+    "sole_type": "AG"
+  }
+}

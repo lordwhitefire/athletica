@@ -1,0 +1,80 @@
+{
+  "id": "SP125501",
+  "slug": "g-form-pro-s-elite-2-black",
+  "name": "G-Form Pro-S Elite 2",
+  "model": "Pro-S Elite 2",
+  "brand": "G-Form",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Pro-S Elite 2",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP125501_espinilleras-color-negro-g-form-pro-s-elite-2_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP125501_espinilleras-color-negro-g-form-pro-s-elite-2_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP125501_canilleras-negras-g-form-pro-s-elite-2_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP125501_espinilleras-g-form-pro-s-elite-2-color-negro_3_detalle-proteccion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP125501_espinilleras-color-negro-g-form-pro-s-elite-2_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP125501_canilleras-negras-g-form-pro-s-elite-2_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP125501_espinilleras-g-form-pro-s-elite-2-color-negro_3_detalle-proteccion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sp125501",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sp125501"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Pro-S",
+    "submodel": "",
+    "product_model": "Pro-S Elite 2",
+    "sole_type": ""
+  }
+}

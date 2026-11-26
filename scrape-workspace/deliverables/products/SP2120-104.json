@@ -1,0 +1,78 @@
+{
+  "id": "SP2120-104",
+  "slug": "nike-mercurial-lite-white",
+  "name": "Nike Mercurial Lite",
+  "model": "Mercurial Lite",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mercurial Lite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP2120-104_imagen-de-las-espinilleras-de-futbol-con-media-Nike-Mercurial-Lite-2019-2020-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP2120-104_imagen-de-las-espinilleras-de-futbol-con-media-Nike-Mercurial-Lite-2019-2020-blanco_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP2120-104_imagen-de-las-espinilleras-de-futbol-con-media-Nike-Mercurial-Lite-2019-2020-blanco_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP2120-104_imagen-de-las-espinilleras-de-futbol-con-media-Nike-Mercurial-Lite-2019-2020-blanco_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP2120-104_imagen-de-las-espinilleras-de-futbol-con-media-Nike-Mercurial-Lite-2019-2020-blanco_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sp2120-104",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sp2120-104"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite",
+    "product_model": "Mercurial Lite",
+    "sole_type": ""
+  }
+}

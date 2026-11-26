@@ -1,0 +1,85 @@
+{
+  "id": "DN3608-830",
+  "slug": "nike-mercurial-flylite-superlock-orange",
+  "name": "Nike Mercurial Flylite Superlock",
+  "model": "Mercurial Flylite Superlock",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - naranjas",
+    "tagline": "Protección al nivel de los profesionales",
+    "intro": "Las espinilleras FlyLite más avanzadas de Nike. Con tecnología SuperLock integrada, se fijan firmemente gracias a la malla de compresión. Su diseño sin carcasa rígida mejora la movilidad.",
+    "collection": "MAX VOLTAGE PACK",
+    "key_benefits": [
+      "Máxima protección: Diseñadas para impactos de alta intensidad.",
+      "Ajuste seguro: Sistema de sujeción que evita desplazamientos.",
+      "Comodidad total: Materiales ligeros y transpirables.",
+      "Diseño Nike: Estilo que combina con tu equipación."
+    ],
+    "technical_details": {
+      "range": "Mercurial Flylite Superlock",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3608-830_espinilleras-color-naranja-nike-mercurial-flylite-superlock_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3608-830_espinilleras-color-naranja-nike-mercurial-flylite-superlock_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3608-830_espinilleras-color-naranja-nike-mercurial-flylite-superlock_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dn3608-830",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - naranjas",
+    "tagline": "Protección al nivel de los profesionales",
+    "intro": "Las espinilleras FlyLite más avanzadas de Nike. Con tecnología SuperLock integrada, se fijan firmemente gracias a la malla de compresión. Su diseño sin carcasa rígida mejora la movilidad.",
+    "collection": "MAX VOLTAGE PACK",
+    "key_benefits": [
+      "Máxima protección: Diseñadas para impactos de alta intensidad.",
+      "Ajuste seguro: Sistema de sujeción que evita desplazamientos.",
+      "Comodidad total: Materiales ligeros y transpirables.",
+      "Diseño Nike: Estilo que combina con tu equipación."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dn3608-830"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Flylite Superlock",
+    "product_model": "Mercurial Flylite Superlock",
+    "sole_type": ""
+  }
+}

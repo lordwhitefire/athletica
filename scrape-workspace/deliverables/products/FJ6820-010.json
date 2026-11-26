@@ -1,0 +1,80 @@
+{
+  "id": "FJ6820-010",
+  "slug": "mallas-nike-pro-nino-dri-fit-black",
+  "name": "Mallas Nike Pro Kids Dri-Fit",
+  "model": "Mallas Nike Pro Kids Dri-Fit",
+  "brand": "Nike",
+  "category": "Kits",
+  "category_slug": "kits",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Pro niño Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/J/FJ6820-010_mallas-cortas-color-negro-nike-pro-nino-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/J/FJ6820-010_mallas-cortas-color-negro-nike-pro-nino-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/J/FJ6820-010_licras-cortas-negras-nike-pro-nino-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/J/FJ6820-010_calentadores-nike-pro-nino-dri-fit-color-negro_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/J/FJ6820-010_mallas-cortas-color-negro-nike-pro-nino-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/J/FJ6820-010_licras-cortas-negras-nike-pro-nino-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/J/FJ6820-010_calentadores-nike-pro-nino-dri-fit-color-negro_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/fj6820-010",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/fj6820-010"
+  },
+  "classification": {
+    "category": "kits",
+    "confidence": "medium",
+    "rule": "source fallback 'equipaciones'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas Nike Pro Kids Dri-Fit",
+    "sole_type": ""
+  }
+}

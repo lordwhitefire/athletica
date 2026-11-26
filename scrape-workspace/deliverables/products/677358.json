@@ -1,0 +1,82 @@
+{
+  "id": "677358",
+  "slug": "adidas-kaiser-5-goal-black",
+  "name": "adidas Kaiser 5 Goal",
+  "model": "Kaiser 5 Goal",
+  "brand": "adidas",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Kaiser 5 Goal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-adidas-Kaiser-5-Goal-negro_1.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-adidas-Kaiser-5-Goal-negro_1.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_botas-adidas-Kaiser-5-Goal-negro_2.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-Kaiser-adidas-5-Goal-negro_3.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_botas-kaiser-adidas-5-goal-negro_4.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-adidas-kaiser-5-goal-negro_5.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-kaiser-adidas-goal-5-negro_6.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-adidas-Kaiser-5-Goal-negro_1.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_botas-adidas-Kaiser-5-Goal-negro_2.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-Kaiser-adidas-5-Goal-negro_3.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_botas-kaiser-adidas-5-goal-negro_4.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-adidas-kaiser-5-goal-negro_5.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/7/677358_bota-kaiser-adidas-goal-5-negro_6.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/677358",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/677358"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "medium",
+    "rule": "source fallback 'zapatillas'",
+    "root_model": "Kaiser",
+    "submodel": "5 Goal",
+    "product_model": "Kaiser 5 Goal",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "IX3877",
+  "slug": "adidas-predator-match-fingersave-orange",
+  "name": "adidas Predator Match Fingersave",
+  "model": "Predator Match Fingersave",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Predator Match Fingersave",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-portero-futbol-con-proteccion-en-los-dedos-color-naranja-adidas-predator-match-fingersave-_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-portero-futbol-con-proteccion-en-los-dedos-color-naranja-adidas-predator-match-fingersave-_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-portero-con-proteccion-salmon-adidas-predator-match-fingersave-_2_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-con-ferulas-adidas-predator-match-fingersave--color-naranja_3_detalle-agarre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-de-arquero-con-ferula-adidas-predator-match-fingersave--salmon_4_detalle-cierre-en-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-con-varilla-color-naranja-adidas-predator-match-fingersave-_5_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-portero-futbol-con-proteccion-en-los-dedos-color-naranja-adidas-predator-match-fingersave-_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-portero-con-proteccion-salmon-adidas-predator-match-fingersave-_2_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-con-ferulas-adidas-predator-match-fingersave--color-naranja_3_detalle-agarre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-de-arquero-con-ferula-adidas-predator-match-fingersave--salmon_4_detalle-cierre-en-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX3877_guantes-con-varilla-color-naranja-adidas-predator-match-fingersave-_5_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ix3877",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ix3877"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Match Fingersave",
+    "product_model": "Predator Match Fingersave",
+    "sole_type": ""
+  }
+}

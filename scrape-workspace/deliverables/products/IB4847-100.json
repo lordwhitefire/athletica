@@ -1,0 +1,96 @@
+{
+  "id": "IB4847-100",
+  "slug": "short-nike-francia-26-dri-fit-stadium-white",
+  "name": "Nike Francia 26 Dri-Fit Stadium",
+  "model": "Francia 26 Dri-Fit Stadium",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "France 2026 Nike Home Shorts - White",
+    "tagline": "French-style elegance and performance",
+    "intro": "The Nike France 2026 home shorts stand out for their clean white design, reflecting the elegance and tradition of French football. Shorts designed to offer maximum comfort and performance in every play.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT Technology: Helps wick away sweat to keep skin dry and comfortable.",
+      "Stadium Design: Inspired by the pants used by the players.",
+      "Light and breathable fabric: Promotes ventilation during the game.",
+      "Official design: Includes France shield for an authentic look."
+    ],
+    "technical_details": {
+      "range": "Nike Francia 26 Dri-Fit Stadium",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_pantalon-corto-color-blanco-nike-francia-26-dri-fit-stadium_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_pantalon-corto-color-blanco-nike-francia-26-dri-fit-stadium_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_short-blanco-nike-francia-26-dri-fit-stadium_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_pantalon-corto-nike-francia-26-dri-fit-stadium-color-blanco_3_detalle-lateral-y-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_short-nike-francia-26-dri-fit-stadium-blanco_4_detalle-uso.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_pantalon-corto-color-blanco-nike-francia-26-dri-fit-stadium_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_short-blanco-nike-francia-26-dri-fit-stadium_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_pantalon-corto-nike-francia-26-dri-fit-stadium-color-blanco_3_detalle-lateral-y-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4847-100_short-nike-francia-26-dri-fit-stadium-blanco_4_detalle-uso.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib4847-100",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de la primera equipación Nike de la selección de Francia 2026 - blanco",
+    "tagline": "Elegancia y rendimiento al estilo francés",
+    "intro": "El short Nike Francia 2026 de local destaca por su diseño limpio en blanco, reflejando la elegancia y tradición del fútbol francés. Un pantalón corto pensado para ofrecer máximo confort y rendimiento en cada jugada.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Nike Dri-FIT: Ayuda a evacuar el sudor para mantener la piel seca y cómoda.",
+      "Diseño Stadium: Inspirado en el pantalón que utilizan los jugadores.",
+      "Tejido ligero y transpirable: Favorece la ventilación durante el juego.",
+      "Diseño oficial: Incluye escudo de Francia para un look auténtico."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib4847-100"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Francia",
+    "submodel": "",
+    "product_model": "Francia 26 Dri-Fit Stadium",
+    "sole_type": ""
+  }
+}

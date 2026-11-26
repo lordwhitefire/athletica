@@ -1,0 +1,93 @@
+{
+  "id": "033200",
+  "slug": "adidas-kaiser-5-cup-black",
+  "name": "adidas Kaiser 5 Cup",
+  "model": "Kaiser 5 Cup",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Kaiser 5 Cup",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/78441b7298f14bbea5d969aa7b520a8da5bb86e7-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/78441b7298f14bbea5d969aa7b520a8da5bb86e7-1600x1600.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ddf010c82ca9c38a022d581e395f32c913d0fd7d-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/20588167b065b0c130544ec6a726bf3d03c90d9b-1600x1600.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/78441b7298f14bbea5d969aa7b520a8da5bb86e7-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ddf010c82ca9c38a022d581e395f32c913d0fd7d-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/20588167b065b0c130544ec6a726bf3d03c90d9b-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-78441b7298f14bbea5d969aa7b520a8da5bb86e7-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/78441b7298f14bbea5d969aa7b520a8da5bb86e7-1600x1600.jpg"
+    },
+    {
+      "_id": "image-ddf010c82ca9c38a022d581e395f32c913d0fd7d-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ddf010c82ca9c38a022d581e395f32c913d0fd7d-1600x1600.jpg"
+    },
+    {
+      "_id": "image-20588167b065b0c130544ec6a726bf3d03c90d9b-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/20588167b065b0c130544ec6a726bf3d03c90d9b-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/033200",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/033200"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Kaiser",
+    "submodel": "5 Cup",
+    "product_model": "Kaiser 5 Cup",
+    "sole_type": ""
+  }
+}

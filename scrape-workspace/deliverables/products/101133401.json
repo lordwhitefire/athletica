@@ -1,0 +1,109 @@
+{
+  "id": "101133401",
+  "slug": "uhlsport-prediction-supersoft-hn-blue",
+  "name": "Uhlsport Prediction Supersoft HN",
+  "model": "Prediction Supersoft HN",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Prediction Supersoft HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8df103c2caa3e10a0faae5703f72ea60fef6b0de-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8df103c2caa3e10a0faae5703f72ea60fef6b0de-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/94867d68e8556cf5b481e20a2f3f627e231aefcf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4b100a51c4ca7d19ca758cdfd062386fed270230-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/120d8a92ceb6baf6730274170b4495b3296f362a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5e4a19640c8fa70fb7b3dd8d7c13bd241aa11e73-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8df103c2caa3e10a0faae5703f72ea60fef6b0de-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/94867d68e8556cf5b481e20a2f3f627e231aefcf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4b100a51c4ca7d19ca758cdfd062386fed270230-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/120d8a92ceb6baf6730274170b4495b3296f362a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5e4a19640c8fa70fb7b3dd8d7c13bd241aa11e73-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-8df103c2caa3e10a0faae5703f72ea60fef6b0de-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8df103c2caa3e10a0faae5703f72ea60fef6b0de-1500x1500.jpg"
+    },
+    {
+      "_id": "image-94867d68e8556cf5b481e20a2f3f627e231aefcf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/94867d68e8556cf5b481e20a2f3f627e231aefcf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4b100a51c4ca7d19ca758cdfd062386fed270230-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4b100a51c4ca7d19ca758cdfd062386fed270230-1500x1500.jpg"
+    },
+    {
+      "_id": "image-120d8a92ceb6baf6730274170b4495b3296f362a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/120d8a92ceb6baf6730274170b4495b3296f362a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5e4a19640c8fa70fb7b3dd8d7c13bd241aa11e73-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5e4a19640c8fa70fb7b3dd8d7c13bd241aa11e73-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/101133401",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/101133401"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Prediction",
+    "submodel": "",
+    "product_model": "Prediction Supersoft HN",
+    "sole_type": ""
+  }
+}

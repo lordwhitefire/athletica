@@ -1,0 +1,94 @@
+{
+  "id": "FN4859-620",
+  "slug": "gorra-nike-barcelona-dri-fit-red",
+  "name": "Nike Barcelona Dri-Fit",
+  "model": "Barcelona Dri-Fit",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra Nike del FC Barcelona - roja",
+    "tagline": "Orgullo blaugrana en cada ocasión",
+    "intro": "La gorra Nike del FC Barcelona es el accesorio ideal para los culés. Con el escudo oficial estampado en el frontal y un diseño cómodo y versátil, te permite lucir tu pasión por el Barça dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blaugrana: Escudo oficial del FC Barcelona estampado en el frontal.",
+      "Diseño deportivo: Estilo moderno con visera curva que aporta un look actual.",
+      "Tejido cómodo: Algodón suave y transpirable para un uso prolongado.",
+      "Ajuste adaptable: Cierre trasero regulable que garantiza confort.",
+      "Ideal para diario: Perfecta para uso urbano, entrenamientos o animar al Barça en el estadio."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-color-rojo-nike-barcelona-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-color-rojo-nike-barcelona-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-roro-nike-barcelona-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-nike-barcelona-dri-fit-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-nike-barcelona-dri-fit-roro_4_detalle-cierre.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-color-rojo-nike-barcelona-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-roro-nike-barcelona-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-nike-barcelona-dri-fit-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/N/FN4859-620_gorra-nike-barcelona-dri-fit-roro_4_detalle-cierre.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fn4859-620",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra Nike del FC Barcelona - roja",
+    "tagline": "Orgullo blaugrana en cada ocasión",
+    "intro": "La gorra Nike del FC Barcelona es el accesorio ideal para los culés. Con el escudo oficial estampado en el frontal y un diseño cómodo y versátil, te permite lucir tu pasión por el Barça dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blaugrana: Escudo oficial del FC Barcelona estampado en el frontal.",
+      "Diseño deportivo: Estilo moderno con visera curva que aporta un look actual.",
+      "Tejido cómodo: Algodón suave y transpirable para un uso prolongado.",
+      "Ajuste adaptable: Cierre trasero regulable que garantiza confort.",
+      "Ideal para diario: Perfecta para uso urbano, entrenamientos o animar al Barça en el estadio."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fn4859-620"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Barcelona Dri-Fit",
+    "submodel": "",
+    "product_model": "Barcelona Dri-Fit",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "085239-01-5",
+  "slug": "balon-puma-girona-essentials-t-5-rojo-blanco",
+  "name": "Puma Girona Essentials T.5",
+  "model": "Girona Essentials T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Rojo / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma del Girona soccer ball in size 5 - red, white",
+    "tagline": "Passion in every shot",
+    "intro": "The Puma Girona Essentials Size 5 soccer ball has been designed for fans who want to train and play representing the Catalan club. Its striking design incorporates the official Girona shield, reflecting its identity. Thanks to its machine-stitched construction and durable materials, it offers great durability.",
+    "collection": "",
+    "key_benefits": [
+      "Official Girona FC design: With club crest and traditional colors.",
+      "Machine-stitched construction: Greater resistance for continued use.",
+      "Talla 5: Medida oficial para entrenamientos y partidos recreativos.",
+      "Great durability: Materials designed to withstand frequent use."
+    ],
+    "technical_details": {
+      "range": "Puma Girona Essentials T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/53c220e3a40b2a378520b290d1def6b6f9ddd865-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/53c220e3a40b2a378520b290d1def6b6f9ddd865-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/251fe14d89d70bf33d5cf72ca9489e4025d32a99-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/717f22a4716ad0abf6eb1942639f4d3d350f1925-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/53c220e3a40b2a378520b290d1def6b6f9ddd865-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/251fe14d89d70bf33d5cf72ca9489e4025d32a99-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/717f22a4716ad0abf6eb1942639f4d3d350f1925-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-53c220e3a40b2a378520b290d1def6b6f9ddd865-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/53c220e3a40b2a378520b290d1def6b6f9ddd865-1500x1500.jpg"
+    },
+    {
+      "_id": "image-251fe14d89d70bf33d5cf72ca9489e4025d32a99-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/251fe14d89d70bf33d5cf72ca9489e4025d32a99-1500x1500.jpg"
+    },
+    {
+      "_id": "image-717f22a4716ad0abf6eb1942639f4d3d350f1925-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/717f22a4716ad0abf6eb1942639f4d3d350f1925-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085239-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Girona en talla 5 - rojo, blanco",
+    "tagline": "Pasión en cada golpeo",
+    "intro": "El balón de fútbol Puma del Girona Essentials Talla 5 ha sido diseñado para los aficionados que quieren entrenar y jugar representando al club catalán. Su llamativo diseño incorpora el escudo oficial del Girona reflejando su identidad. Gracias a su construcción cosida a máquina y a sus materiales resistentes, ofrece una gran durabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Girona FC: Con escudo del club y colores tradicionales.",
+      "Construcción cosida a máquina: Mayor resistencia para el uso continuado.",
+      "Talla 5: Medida oficial para entrenamientos y partidos recreativos.",
+      "Gran durabilidad: Materiales diseñados para soportar un uso frecuente."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085239-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Girona",
+    "submodel": "",
+    "product_model": "Girona Essentials T.5",
+    "sole_type": ""
+  }
+}

@@ -12,7 +12,7 @@ These tasks are **plans/intent**, not instructions. Each `task.md` states what t
 
 | # | Task | Spec | Depends on | Status |
 |---|---|---|---|---|
-| FM-01 | Three-locks admin auth (invite + door-key + JWT role, fail-silent 404, getClaims, middleware, signin rate limit, invite issuance script) | foundation | — | ⬜ Pending |
+| FM-01 | Three-locks admin auth (invite + door-key + JWT role, fail-silent 404, getClaims, `proxy.ts` door-key check, signin rate limit, invite issuance script) | foundation | — | ⬜ Pending |
 | FM-02 | Core data model migrations (products 5-status + variants + categories + collections + analytics fields + admin_access_keys + marketplaces seed + amazon_product_cache + affiliate.* schema + audit_log + RLS with FORCE + select-wrappers) | foundation | — | ⬜ Pending |
 | FM-03 | Product page (`/product/[slug]`, 3-condition publish gate, gallery, buy-box, CTA states, generateMetadata, JSON-LD, no price, server-side view recording) | foundation | FM-02 | ⬜ Pending |
 | FM-04 | Redirect + click pipeline (`/go/[id]` 302, X-Robots-Tag, async click write, 6-layer bot filter, identity hash, 1h dedup, EU redaction, explicit redirect rate-limit policy) | redirect-click | FM-02 | ⬜ Pending |

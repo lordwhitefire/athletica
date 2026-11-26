@@ -1,0 +1,78 @@
+{
+  "id": "SX7667-010",
+  "slug": "calcetines-tobilleros-nike-everyday-cushion-3-pares-black",
+  "name": "tobilleros Nike Everyday Cushion 3 pares",
+  "model": "tobilleros Nike Everyday Cushion 3 pares",
+  "brand": "Nike",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "tobilleros Nike Everyday Cushion 3 pares",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7667-010_imagen-de-os-calcetines-pack-Nike-Everyday-Cushion-Ankle-2019-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7667-010_imagen-de-os-calcetines-pack-Nike-Everyday-Cushion-Ankle-2019-negro_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7667-010_imagen-de-os-calcetines-pack-Nike-Everyday-Cushion-Ankle-2019-negro_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7667-010_imagen-de-os-calcetines-pack-Nike-Everyday-Cushion-Ankle-2019-negro_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7667-010_imagen-de-os-calcetines-pack-Nike-Everyday-Cushion-Ankle-2019-negro_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sx7667-010",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sx7667-010"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'calcetin'",
+    "root_model": "tobilleros",
+    "submodel": "",
+    "product_model": "tobilleros Nike Everyday Cushion 3 pares",
+    "sole_type": ""
+  }
+}

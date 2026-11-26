@@ -1,0 +1,82 @@
+{
+  "id": "3010581",
+  "slug": "munich-g3-genius-black",
+  "name": "Munich G3 Genius",
+  "model": "G3 Genius",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "G3 Genius",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010581_imagen-de-las-botas-futbol-multitaco-munich-g3-genius-2020-negro_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/3010581",
+    "language": "es",
+    "category": "Botas multitaco",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas multitaco"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/3010581"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "G3",
+    "submodel": "Genius",
+    "product_model": "G3 Genius",
+    "sole_type": ""
+  }
+}

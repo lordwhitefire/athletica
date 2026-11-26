@@ -1,0 +1,98 @@
+{
+  "id": "782370-04",
+  "slug": "short-puma-milan-entrenamiento-black",
+  "name": "Puma Milan Training",
+  "model": "Milan entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Puma del AC Milan 2025 2026 - negro",
+    "tagline": "Corre con ligereza y orgullo rossonero",
+    "intro": "Máxima frescura y libertad en cada sprint. Este short de entrenamiento del Milan está diseñado para ofrecerte rendimiento sin restricciones.",
+    "collection": "",
+    "key_benefits": [
+      "Frescura garantizada: Material transpirable que expulsa el sudor.",
+      "Movilidad total: Diseño ligero que permite un rango completo de movimiento.",
+      "Estilo de club: Logo oficial y diseño inspirado en el AC Milan.",
+      "Uso versátil: Ideal tanto para entrenar como para vestir en días calurosos."
+    ],
+    "technical_details": {
+      "range": "Puma Milan entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782370-04_pantalon-corto-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782370-04_pantalon-corto-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782370-04_pantalon-corto-puma-milan-entrenamiento-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782370-04_short-negros-puma-milan-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782370-04_pantalon-corto-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782370-04_pantalon-corto-puma-milan-entrenamiento-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782370-04_short-negros-puma-milan-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/782370-04",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Puma del AC Milan 2025 2026 - negro",
+    "tagline": "Corre con ligereza y orgullo rossonero",
+    "intro": "Máxima frescura y libertad en cada sprint. Este short de entrenamiento del Milan está diseñado para ofrecerte rendimiento sin restricciones.",
+    "collection": "",
+    "key_benefits": [
+      "Frescura garantizada: Material transpirable que expulsa el sudor.",
+      "Movilidad total: Diseño ligero que permite un rango completo de movimiento.",
+      "Estilo de club: Logo oficial y diseño inspirado en el AC Milan.",
+      "Uso versátil: Ideal tanto para entrenar como para vestir en días calurosos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/782370-04"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Milan Training",
+    "submodel": "",
+    "product_model": "Milan entrenamiento",
+    "sole_type": ""
+  }
+}

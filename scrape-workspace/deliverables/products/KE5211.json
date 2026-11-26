@@ -1,0 +1,90 @@
+{
+  "id": "KE5211",
+  "slug": "adidas-f50-competition-blanco-morado",
+  "name": "adidas F50 Competition",
+  "model": "F50 Competition",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Morado",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujección - blancas, púrpura",
+    "tagline": "Protección ligera para jugadores explosivos",
+    "intro": "Las espinilleras adidas F50 Competition están diseñadas para futbolistas que juegan al máximo ritmo y necesitan una protección fiable sin renunciar a la libertad de movimiento. Inspiradas en la velocidad de la familia F50, incorporan un escudo flexible que se adapta a la anatomía de la pierna, junto con mangas de compresión que mantienen las espinilleras firmemente en su sitio.",
+    "collection": "CHAOS VS CONTROL",
+    "key_benefits": [
+      "Diseño Ergo-Flex: Protección flexible que acompaña los movimientos naturales de la pierna.",
+      "Engineered Foam Padding: Espuma técnica que absorbe y distribuye los impactos.",
+      "Mangas de compresión: Mantienen las espinilleras sujetas y minimizan desplazamientos.",
+      "Diseño ligero: Favorece la movilidad y la comodidad durante todo el partido."
+    ],
+    "technical_details": {
+      "range": "F50 Competition",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5211_espinilleras-color-blanco-y-purpura-adidas-f50-competition_1_completa-frontal-dorso-e-interior.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5211_espinilleras-color-blanco-y-purpura-adidas-f50-competition_1_completa-frontal-dorso-e-interior.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5211_canilleras-blancas--purpura-adidas-f50-competition_2_detalle-exterior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5211_espinilleras-adidas-f50-competition-color-blanco-y-purpura_3_detalle-interior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5211_espinilleras-color-blanco-y-purpura-adidas-f50-competition_1_completa-frontal-dorso-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5211_canilleras-blancas--purpura-adidas-f50-competition_2_detalle-exterior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5211_espinilleras-adidas-f50-competition-color-blanco-y-purpura_3_detalle-interior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ke5211",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujección - blancas, púrpura",
+    "tagline": "Protección ligera para jugadores explosivos",
+    "intro": "Las espinilleras adidas F50 Competition están diseñadas para futbolistas que juegan al máximo ritmo y necesitan una protección fiable sin renunciar a la libertad de movimiento. Inspiradas en la velocidad de la familia F50, incorporan un escudo flexible que se adapta a la anatomía de la pierna, junto con mangas de compresión que mantienen las espinilleras firmemente en su sitio.",
+    "collection": "CHAOS VS CONTROL",
+    "key_benefits": [
+      "Diseño Ergo-Flex: Protección flexible que acompaña los movimientos naturales de la pierna.",
+      "Engineered Foam Padding: Espuma técnica que absorbe y distribuye los impactos.",
+      "Mangas de compresión: Mantienen las espinilleras sujetas y minimizan desplazamientos.",
+      "Diseño ligero: Favorece la movilidad y la comodidad durante todo el partido."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ke5211"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "F50",
+    "submodel": "Competition",
+    "product_model": "F50 Competition",
+    "sole_type": ""
+  }
+}

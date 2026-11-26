@@ -1,0 +1,86 @@
+{
+  "id": "HL8678",
+  "slug": "sujetador-adidas-tlrd-alto-impacto-grey",
+  "name": "Sujetador adidas TLRD alto impacto",
+  "model": "Sujetador adidas TLRD alto impacto",
+  "brand": "adidas",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas TLRD alto impacto",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sujetador-color-gris-adidas-tlrd-alto-impacto_1_completa-pecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sujetador-color-gris-adidas-tlrd-alto-impacto_1_completa-pecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sostenes-gris-oscuro-adidas-tlrd-alto-impacto_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sujetador-adidas-tlrd-alto-impacto-color-gris_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sostenes-adidas-tlrd-alto-impacto-gris-oscuro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sujetador-color-gris-adidas-tlrd-alto-impacto_1_completa-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sostenes-gris-oscuro-adidas-tlrd-alto-impacto_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sujetador-adidas-tlrd-alto-impacto-color-gris_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/L/HL8678_sostenes-adidas-tlrd-alto-impacto-gris-oscuro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hl8678",
+    "language": "es",
+    "category": "Ropa entrenamiento",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hl8678"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Sujetador",
+    "submodel": "",
+    "product_model": "Sujetador adidas TLRD alto impacto",
+    "sole_type": ""
+  }
+}

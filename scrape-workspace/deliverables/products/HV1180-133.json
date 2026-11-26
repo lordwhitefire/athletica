@@ -1,0 +1,94 @@
+{
+  "id": "HV1180-133",
+  "slug": "camiseta-sin-mangas-nike-t90-dri-fit-white",
+  "name": "sin mangas Nike T90 Dri-Fit",
+  "model": "sin mangas Nike T90 Dri-Fit",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta sin mangas de entrenamiento Nike - blanca",
+    "tagline": "Libertad y frescura para entrenamientos intensos",
+    "intro": "La camiseta sin mangas Nike T90 Dri-Fit te ofrece una libertad total de movimiento gracias a su diseño sin mangas. Su tejido técnico transpirable mantiene tu piel seca incluso en las sesiones más exigentes. Ideal para entrenar con comodidad y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad total: Diseño sin mangas que permite mayor rango de movimiento.",
+      "Transpirabilidad activa: Tecnología Dri-FIT que expulsa el sudor.",
+      "Diseño deportivo: Corte ajustado que acompaña la silueta del cuerpo.",
+      "Tejido suave: Sensación cómoda durante todo el entrenamiento."
+    ],
+    "technical_details": {
+      "range": "sin mangas Nike T90 Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-133_camiseta-tirantes-color-marron-nike-pro-dri-fit-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-133_camiseta-tirantes-color-marron-nike-pro-dri-fit-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-133_camiseta-tirantes-beige-nike-pro-dri-fit-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-133_camiseta-tirantes-nike-pro-dri-fit-t90-color-marron_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-133_camiseta-tirantes-color-marron-nike-pro-dri-fit-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-133_camiseta-tirantes-beige-nike-pro-dri-fit-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1180-133_camiseta-tirantes-nike-pro-dri-fit-t90-color-marron_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv1180-133",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta sin mangas de entrenamiento Nike - blanca",
+    "tagline": "Libertad y frescura para entrenamientos intensos",
+    "intro": "La camiseta sin mangas Nike T90 Dri-Fit te ofrece una libertad total de movimiento gracias a su diseño sin mangas. Su tejido técnico transpirable mantiene tu piel seca incluso en las sesiones más exigentes. Ideal para entrenar con comodidad y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad total: Diseño sin mangas que permite mayor rango de movimiento.",
+      "Transpirabilidad activa: Tecnología Dri-FIT que expulsa el sudor.",
+      "Diseño deportivo: Corte ajustado que acompaña la silueta del cuerpo.",
+      "Tejido suave: Sensación cómoda durante todo el entrenamiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv1180-133"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin mangas Nike T90 Dri-Fit",
+    "sole_type": ""
+  }
+}

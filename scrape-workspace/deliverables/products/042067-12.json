@@ -1,0 +1,111 @@
+{
+  "id": "042067-12",
+  "slug": "puma-future-match-nc-orange",
+  "name": "Puma Future Match NC",
+  "model": "Future Match NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma negative cut goalkeeper gloves - orange",
+    "tagline": "Designed for goalkeepers who dominate their area",
+    "intro": "The Puma Future Match NC offers anatomical fit, advanced grip technology and a durable structure for the demands of the modern game.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Precise fit: Negative cut that adapts to the natural shape of the hand.",
+      "Lasting comfort: Technical materials that guarantee comfort throughout the session.",
+      "Shocking style: Hot Pursuit design that transmits power and personality."
+    ],
+    "technical_details": {
+      "range": "Future Match NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8fd7f20f7b56cc0b7570836f15badd295cc08ab5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8fd7f20f7b56cc0b7570836f15badd295cc08ab5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/79eaf9816a1b882e41ac1d79487c03331674994c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fedbc6dc3212e00fbf1dd6c9ff66d9aeea2b76a7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/203eebf08409ddc79e1001ec7eff4432675b96f3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8fd7f20f7b56cc0b7570836f15badd295cc08ab5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/79eaf9816a1b882e41ac1d79487c03331674994c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fedbc6dc3212e00fbf1dd6c9ff66d9aeea2b76a7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/203eebf08409ddc79e1001ec7eff4432675b96f3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-8fd7f20f7b56cc0b7570836f15badd295cc08ab5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8fd7f20f7b56cc0b7570836f15badd295cc08ab5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-79eaf9816a1b882e41ac1d79487c03331674994c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/79eaf9816a1b882e41ac1d79487c03331674994c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fedbc6dc3212e00fbf1dd6c9ff66d9aeea2b76a7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fedbc6dc3212e00fbf1dd6c9ff66d9aeea2b76a7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-203eebf08409ddc79e1001ec7eff4432675b96f3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/203eebf08409ddc79e1001ec7eff4432675b96f3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/042067-12",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Puma corte negativo - naranjas",
+    "tagline": "Diseñados para porteros que dominan su área",
+    "intro": "Los Puma Future Match NC ofrecen ajuste anatómico, tecnología de agarre avanzada y una estructura resistente para las exigencias del juego moderno.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Ajuste preciso: Corte Negativo que se adapta a la forma natural de la mano.",
+      "Comodidad duradera: Materiales técnicos que garantizan confort durante toda la sesión.",
+      "Estilo impactante: Diseño Hot Pursuit que transmite potencia y personalidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/042067-12"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Match NC",
+    "product_model": "Future Match NC",
+    "sole_type": ""
+  }
+}

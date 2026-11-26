@@ -1,0 +1,100 @@
+{
+  "id": "JP4027",
+  "slug": "sudadera-adidas-real-madrid-entrenamiento-ucl-white",
+  "name": "adidas Real Madrid Training UCL",
+  "model": "Real Madrid entrenamiento UCL",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas training sweatshirt for the Champions League 2025 2026 - white",
+    "tagline": "Technical warmth with the largest shield",
+    "intro": "The Real Madrid training sweatshirt is designed to maintain body temperature without compromising agility. Perfect for cold days and intense sessions.",
+    "collection": "",
+    "key_benefits": [
+      "Light insulation: Ideal for training with moderate temperatures.",
+      "Ergonomic fit: Athletic cut that accompanies every movement.",
+      "Visible passion: Official logos of the club and the Champions League.",
+      "Absolute comfort: Soft and elastic fabric."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento UCL",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-color-blanco-adidas-real-madrid-entrenamiento-ucl_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-color-blanco-adidas-real-madrid-entrenamiento-ucl_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-blanca-adidas-real-madrid-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-adidas-real-madrid-entrenamiento-ucl-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-adidas-real-madrid-entrenamiento-ucl-blanca_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-color-blanco-adidas-real-madrid-entrenamiento-ucl_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-blanca-adidas-real-madrid-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-adidas-real-madrid-entrenamiento-ucl-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4027_sudadera-adidas-real-madrid-entrenamiento-ucl-blanca_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp4027",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Real Madrid para la Champions League 2025 2026 - blanca",
+    "tagline": "Calidez técnica con el escudo más grande",
+    "intro": "La sudadera de entrenamiento del Real Madrid está pensada para mantener la temperatura corporal sin comprometer la agilidad. Perfecta para días fríos y sesiones intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Aislamiento ligero: Ideal para entrenamientos con temperatura moderada.",
+      "Ajuste ergonómico: Corte atlético que acompaña cada movimiento.",
+      "Pasión visible: Logos oficiales del club y de la Champions.",
+      "Comodidad absoluta: Tejido suave y elástico."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp4027"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento UCL",
+    "sole_type": ""
+  }
+}

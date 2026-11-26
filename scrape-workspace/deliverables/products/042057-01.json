@@ -1,0 +1,80 @@
+{
+  "id": "042057-01",
+  "slug": "puma-future-ultimate-volume-up-hybrid-blue",
+  "name": "Puma Future Ultimate Volume Up Hybrid",
+  "model": "Future Ultimate Volume Up Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Future Ultimate Volume Up Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/03e0b465e48c1d861f6213a0407ade0020814b43-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/03e0b465e48c1d861f6213a0407ade0020814b43-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/03e0b465e48c1d861f6213a0407ade0020814b43-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-03e0b465e48c1d861f6213a0407ade0020814b43-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/03e0b465e48c1d861f6213a0407ade0020814b43-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042057-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042057-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Ultimate Volume Up Hybrid",
+    "product_model": "Future Ultimate Volume Up Hybrid",
+    "sole_type": ""
+  }
+}

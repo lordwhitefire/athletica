@@ -1,0 +1,85 @@
+{
+  "id": "F35550",
+  "slug": "chanclas-adidas-adilette-aqua-black",
+  "name": "Chanclas adidas Adilette Aqua",
+  "model": "Chanclas adidas Adilette Aqua",
+  "brand": "adidas",
+  "category": "Accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Adilette Aqua",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/f35550",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/3/F35550_chanclas-color-negro-entero-adidas-adilette-aqua_1_pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/3/F35550_sandalias-ducha-negro-adidas-adilette-aqua_2_superior.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/3/F35550_chancletas-adidas-adilette-aqua-color-negro-entero_3_pie-izquierdo.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/3/F35550_chanclas-color-negro-entero-adidas-adilette-aqua_1_pie-derecho.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level1",
+      "name": "Accesorios fútbol",
+      "href": "https://www.futbolmania.com/es/accesorios-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level2",
+      "name": "Baño",
+      "href": "https://www.futbolmania.com/es/complementos-ducha"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level1",
+      "name": "Ofertas fútbol",
+      "href": "https://www.futbolmania.com/es/productos-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level2",
+      "name": "Complementos",
+      "href": "https://www.futbolmania.com/es/complementos-futbol-ofertas"
+    }
+  ]
+}

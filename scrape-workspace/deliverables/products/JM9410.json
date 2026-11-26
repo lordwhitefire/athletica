@@ -1,0 +1,98 @@
+{
+  "id": "JM9410",
+  "slug": "short-adidas-arsenal-us-blue",
+  "name": "adidas Arsenal US",
+  "model": "Arsenal US",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Arsenal Adidas Cotton Shorts - Navy",
+    "tagline": "Sporty design with classic inspiration",
+    "intro": "These adidas Arsenal shorts fuse football heritage with American baseball details. Its soft cotton and sporty cut offer maximum comfort for your daily life. Ideal for light training or moments of relaxation with gunner style.",
+    "collection": "",
+    "key_benefits": [
+      "Urban Aesthetic: Baseball inspiration with a modern approach.",
+      "Total comfort: Cotton fabric that guarantees softness.",
+      "Club identity: Details and colors of Arsenal FC.",
+      "Freedom of movement: Loose cut for everyday activities.",
+      "Versatile use: Perfect for training or enjoying free time."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal US",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_pantalon-corto-color-azul-adidas-arsenal-us_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_pantalon-corto-color-azul-adidas-arsenal-us_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_short-azul-marino-adidas-arsenal-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_pantalon-corto-adidas-arsenal-us-color-azul_3_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_short-adidas-arsenal-us-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_pantalon-corto-color-azul-adidas-arsenal-us_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_short-azul-marino-adidas-arsenal-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_pantalon-corto-adidas-arsenal-us-color-azul_3_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9410_short-adidas-arsenal-us-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm9410",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de algodón adidas del Arsenal - azul marino",
+    "tagline": "Diseño deportivo con inspiración clásica",
+    "intro": "Este short adidas del Arsenal fusiona el legado futbolístico con detalles del béisbol americano. Su algodón suave y el corte deportivo ofrecen máximo confort para tu día a día. Ideal para entrenamientos ligeros o momentos de relax con estilo gunner.",
+    "collection": "",
+    "key_benefits": [
+      "Estética urbana: Inspiración del béisbol con un enfoque moderno.",
+      "Comodidad total: Tejido de algodón que garantiza suavidad.",
+      "Identidad de club: Detalles y colores del Arsenal FC.",
+      "Libertad de movimiento: Corte suelto para actividades cotidianas.",
+      "Uso versátil: Perfecto para entrenar o disfrutar del tiempo libre."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm9410"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Arsenal US",
+    "submodel": "",
+    "product_model": "Arsenal US",
+    "sole_type": ""
+  }
+}

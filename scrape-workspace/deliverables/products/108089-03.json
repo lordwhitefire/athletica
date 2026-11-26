@@ -1,0 +1,123 @@
+{
+  "id": "108089-03",
+  "slug": "puma-ultra-5-ultimate-ag-green",
+  "name": "Puma Ultra 5 Ultimate AG",
+  "model": "Ultra 5 Ultimate",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra 5 Ultimate",
+      "sole_type": "AG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "AG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/efe630108b4f0484ec020f24b3fa70dbcd803f72-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b3e4b2e0401780ea96d3b219d8119ba9d97f0a34-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e3e58b2913325a335fe7624b2f850f8932d6f793-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/148f4d57587f0bb6160d90b0e3c4da55642f4f45-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a8969be813cebf665b0842f8fb5775c168ed5549-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/385167aa7305c4f91c3957d49c037266224e2fd9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/efe630108b4f0484ec020f24b3fa70dbcd803f72-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b3e4b2e0401780ea96d3b219d8119ba9d97f0a34-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e3e58b2913325a335fe7624b2f850f8932d6f793-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/148f4d57587f0bb6160d90b0e3c4da55642f4f45-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a8969be813cebf665b0842f8fb5775c168ed5549-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/385167aa7305c4f91c3957d49c037266224e2fd9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500.jpg"
+    },
+    {
+      "_id": "image-efe630108b4f0484ec020f24b3fa70dbcd803f72-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/efe630108b4f0484ec020f24b3fa70dbcd803f72-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b3e4b2e0401780ea96d3b219d8119ba9d97f0a34-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b3e4b2e0401780ea96d3b219d8119ba9d97f0a34-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e3e58b2913325a335fe7624b2f850f8932d6f793-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e3e58b2913325a335fe7624b2f850f8932d6f793-1500x1500.jpg"
+    },
+    {
+      "_id": "image-148f4d57587f0bb6160d90b0e3c4da55642f4f45-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/148f4d57587f0bb6160d90b0e3c4da55642f4f45-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a8969be813cebf665b0842f8fb5775c168ed5549-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a8969be813cebf665b0842f8fb5775c168ed5549-1500x1500.jpg"
+    },
+    {
+      "_id": "image-385167aa7305c4f91c3957d49c037266224e2fd9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/385167aa7305c4f91c3957d49c037266224e2fd9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ca3c42a15fdd099a121bca4bdc5caf72f2a85bde-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/108089-03",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/108089-03"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "5 Ultimate",
+    "product_model": "Ultra 5 Ultimate",
+    "sole_type": "AG"
+  }
+}

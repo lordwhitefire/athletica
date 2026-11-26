@@ -1,0 +1,99 @@
+{
+  "id": "SP2162-010",
+  "slug": "nike-guard-black",
+  "name": "Nike Guard",
+  "model": "Nike Guard",
+  "brand": "Nike",
+  "category": "Kids Shin Guards",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Guard",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/sp2162-010",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/p/sp2162-010_espinilleras-de-futbol-nike-j-guard-negro_1_frontal.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/p/sp2162-010_espinilleras-de-futbol-nike-j-guard-negro_2_trasera.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/p/sp2162-010_espinilleras-de-futbol-nike-j-guard-negro_3_detalle.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/p/sp2162-010_espinilleras-de-futbol-nike-j-guard-negro_1_frontal.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "kids",
+      "root": "Espinilleras",
+      "level": "level1",
+      "name": "Espinilleras",
+      "href": "https://www.futbolmania.com/es/kids/espinilleras-futbol"
+    },
+    {
+      "audience": "kids",
+      "root": "Espinilleras",
+      "level": "level3",
+      "name": "Básica",
+      "href": "https://www.futbolmania.com/es/kids/espinilleras-futbol-economicas"
+    },
+    {
+      "audience": "kids",
+      "root": "Espinilleras",
+      "level": "level3",
+      "name": "Con cintas",
+      "href": "https://www.futbolmania.com/es/kids/espinilleras-cintas"
+    },
+    {
+      "audience": "kids",
+      "root": "Espinilleras",
+      "level": "level3",
+      "name": "Nike",
+      "href": "https://www.futbolmania.com/es/kids/espinilleras-Nike"
+    },
+    {
+      "audience": "kids",
+      "root": "Marcas",
+      "level": "level1",
+      "name": "Marcas",
+      "href": "https://www.futbolmania.com/es/kids/marcas-futbol-infantil"
+    },
+    {
+      "audience": "kids",
+      "root": "Marcas",
+      "level": "level2",
+      "name": "Nike",
+      "href": "https://www.futbolmania.com/es/kids/Nike-football-infantil"
+    }
+  ]
+}

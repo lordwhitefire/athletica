@@ -1,0 +1,96 @@
+{
+  "id": "KA1688",
+  "slug": "sudadera-adidas-real-madrid-entrenamiento-nino-purple",
+  "name": "adidas Real Madrid Training Kids",
+  "model": "Real Madrid entrenamiento niño",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Calor blanco para jóvenes campeones",
+    "intro": "Esta sudadera infantil del Real Madrid mantiene el cuerpo abrigado mientras permite moverse con libertad. Perfecta para entrenar o vivir el día a día con estilo del Bernabéu.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo ligero: Tejido técnico que protege sin agobiar.",
+      "Diseño profesional: Estética oficial del equipo blanco.",
+      "Comodidad adaptada: Corte junior que acompaña cada movimiento."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1688_sudadera-color-gris-adidas-real-madrid-entrenamiento-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1688_sudadera-color-gris-adidas-real-madrid-entrenamiento-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1688_sudadera-gris-adidas-real-madrid-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1688_sudadera-adidas-real-madrid-entrenamiento-nino-color-gris_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1688_sudadera-color-gris-adidas-real-madrid-entrenamiento-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1688_sudadera-gris-adidas-real-madrid-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1688_sudadera-adidas-real-madrid-entrenamiento-nino-color-gris_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ka1688",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Calor blanco para jóvenes campeones",
+    "intro": "Esta sudadera infantil del Real Madrid mantiene el cuerpo abrigado mientras permite moverse con libertad. Perfecta para entrenar o vivir el día a día con estilo del Bernabéu.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo ligero: Tejido técnico que protege sin agobiar.",
+      "Diseño profesional: Estética oficial del equipo blanco.",
+      "Comodidad adaptada: Corte junior que acompaña cada movimiento."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ka1688"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento niño",
+    "sole_type": ""
+  }
+}

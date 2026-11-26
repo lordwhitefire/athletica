@@ -1,0 +1,128 @@
+{
+  "id": "IA1165",
+  "slug": "camiseta-adidas-techfit-black",
+  "name": "Camiseta adidas Techfit",
+  "model": "Camiseta adidas Techfit",
+  "brand": "adidas",
+  "category": "Clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Techfit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/ia1165",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA1165_camiseta-color-negro-adidas-techfit_1_completa-frontal.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA1165_camiseta-adidas-techfit-color-negro_3_detalle-cuello.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA1165_camiseta-adidas-techfit-negra_4_detalle-manga.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA1165_camiseta-negra-adidas-techfit_2_completa-trasera.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/A/IA1165_camiseta-color-negro-adidas-techfit_1_completa-frontal.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Ropa de fútbol",
+      "level": "level1",
+      "name": "Ropa de fútbol",
+      "href": "https://www.futbolmania.com/es/ropa-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Ropa de fútbol",
+      "level": "level2",
+      "name": "Ropa compresiva",
+      "href": "https://www.futbolmania.com/es/ropa-termica-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Ropa de fútbol",
+      "level": "level2",
+      "name": "Ropa de fútbol adidas",
+      "href": "https://www.futbolmania.com/es/adulto/equipaciones/adidas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ropa de fútbol",
+      "level": "level2",
+      "name": "Ropa fútbol",
+      "href": "https://www.futbolmania.com/es/adulto/equipaciones/ropa-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Ropa de fútbol",
+      "level": "level3",
+      "name": "Camisetas",
+      "href": "https://www.futbolmania.com/es/adulto/equipaciones/ropa-futbol/camisetas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ropa de fútbol",
+      "level": "level3",
+      "name": "Camisetas",
+      "href": "https://www.futbolmania.com/es/camiseta-compresiva-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Ropa de fútbol",
+      "level": "level4",
+      "name": "Manga corta",
+      "href": "https://www.futbolmania.com/es/camiseta-compresiva-manga-corta"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level1",
+      "name": "Ofertas fútbol",
+      "href": "https://www.futbolmania.com/es/productos-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level2",
+      "name": "Ropa fútbol",
+      "href": "https://www.futbolmania.com/es/ropa-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level3",
+      "name": "Camisetas",
+      "href": "https://www.futbolmania.com/es/camiseta-futbol-ofertas"
+    }
+  ]
+}

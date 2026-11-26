@@ -1,0 +1,91 @@
+{
+  "id": "079322-04",
+  "slug": "mochila-puma-individual-rise-yellow",
+  "name": "Backpack Puma individual Rise",
+  "model": "Backpack Puma individual Rise",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma individual Rise",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/acd33ba67872ecd57ceb33d156929648f35cdeaf-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/acd33ba67872ecd57ceb33d156929648f35cdeaf-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/096d3b6801c3e3e31061b5a64f7a7c66eb212552-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/acd33ba67872ecd57ceb33d156929648f35cdeaf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/096d3b6801c3e3e31061b5a64f7a7c66eb212552-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-acd33ba67872ecd57ceb33d156929648f35cdeaf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/acd33ba67872ecd57ceb33d156929648f35cdeaf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-096d3b6801c3e3e31061b5a64f7a7c66eb212552-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/096d3b6801c3e3e31061b5a64f7a7c66eb212552-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/079322-04",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/079322-04"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma individual Rise",
+    "sole_type": ""
+  }
+}

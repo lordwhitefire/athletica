@@ -1,0 +1,96 @@
+{
+  "id": "JN7285",
+  "slug": "balon-adidas-argentina-mini-white",
+  "name": "adidas Argentina mini",
+  "model": "Argentina mini",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol adidas de la selección argentina 2026 mini - blanco",
+    "tagline": "Estilo albiceleste en versión mini",
+    "intro": "Balón adidas Argentina mini celebra la pasión argentina con un diseño impactante, ideal para perfeccionar el toque y la precisión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño exclusivo Argentina: Gráficos llamativos inspirados en la identidad visual de la selección campeona del mundo.",
+      "Ideal para técnica individual: Su tamaño reducido lo hace perfecto para entrenar control, toques rápidos y dominio del balón.",
+      "Compacto y portátil: Llévalo contigo fácilmente a cualquier lugar para jugar en espacios reducidos o interiores.",
+      "Regalo perfecto: Una pieza de colección imprescindible para los fans de la albiceleste."
+    ],
+    "technical_details": {
+      "range": "adidas Argentina mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_mini-balon-color-blanco-adidas-argentina-talla-mini_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_mini-balon-color-blanco-adidas-argentina-talla-mini_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_mini-pelota-blanco-adidas-argentina-talla-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_balon-mini-adidas-argentina-talla-mini-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_mini-balon-adidas-argentina-talla-mini-blanco_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_mini-balon-color-blanco-adidas-argentina-talla-mini_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_mini-pelota-blanco-adidas-argentina-talla-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_balon-mini-adidas-argentina-talla-mini-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7285_mini-balon-adidas-argentina-talla-mini-blanco_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jn7285",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol adidas de la selección argentina 2026 mini - blanco",
+    "tagline": "Estilo albiceleste en versión mini",
+    "intro": "Balón adidas Argentina mini celebra la pasión argentina con un diseño impactante, ideal para perfeccionar el toque y la precisión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño exclusivo Argentina: Gráficos llamativos inspirados en la identidad visual de la selección campeona del mundo.",
+      "Ideal para técnica individual: Su tamaño reducido lo hace perfecto para entrenar control, toques rápidos y dominio del balón.",
+      "Compacto y portátil: Llévalo contigo fácilmente a cualquier lugar para jugar en espacios reducidos o interiores.",
+      "Regalo perfecto: Una pieza de colección imprescindible para los fans de la albiceleste."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jn7285"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Argentina",
+    "submodel": "",
+    "product_model": "Argentina mini",
+    "sole_type": ""
+  }
+}

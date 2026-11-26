@@ -1,0 +1,96 @@
+{
+  "id": "KB0622",
+  "slug": "chaqueta-adidas-espana-blue",
+  "name": "adidas España",
+  "model": "España",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de invierno adidas de la selección española 2026 - azul marino",
+    "tagline": "Protección elegante para La Roja",
+    "intro": "Chaqueta invierno España 2026, combina funcionalidad térmica con estilo oficial.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Parte de la colección de entrenamiento de la selección española.",
+      "Tejido técnico: Material transpirable y ligero para un uso intensivo.",
+      "Tecnología aplicada: Incluye CLIMACOOL.",
+      "Ajuste ergonómico: Favorece la libertad de movimiento y el confort."
+    ],
+    "technical_details": {
+      "range": "adidas España",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_chaqueta-invierno-color-azul-adidas-espana_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_chaqueta-invierno-color-azul-adidas-espana_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_abrigo-azul-marino-adidas-espana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_chaqueta-invierno-adidas-espana-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_chaqueton-adidas-espana-azul-marino_4_detalle-acabado-mangas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_chaqueta-invierno-color-azul-adidas-espana_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_abrigo-azul-marino-adidas-espana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_chaqueta-invierno-adidas-espana-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0622_chaqueton-adidas-espana-azul-marino_4_detalle-acabado-mangas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb0622",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de invierno adidas de la selección española 2026 - azul marino",
+    "tagline": "Protección elegante para La Roja",
+    "intro": "Chaqueta invierno España 2026, combina funcionalidad térmica con estilo oficial.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Parte de la colección de entrenamiento de la selección española.",
+      "Tejido técnico: Material transpirable y ligero para un uso intensivo.",
+      "Tecnología aplicada: Incluye CLIMACOOL.",
+      "Ajuste ergonómico: Favorece la libertad de movimiento y el confort."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb0622"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España",
+    "sole_type": ""
+  }
+}

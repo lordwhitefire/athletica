@@ -1,0 +1,86 @@
+{
+  "id": "IH8268",
+  "slug": "adidas-copa-gloro-ii-tf-blanco-rojo",
+  "name": "adidas Copa Gloro II TF",
+  "model": "Copa Gloro II",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blanco / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Copa Gloro II",
+      "sole_type": "TF",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "TF",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-multitaco-color-blanco-y-rojo-adidas-copa-gloro-ii-tf_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-multitaco-color-blanco-y-rojo-adidas-copa-gloro-ii-tf_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_multitaco-blancas--rojas-adidas-copa-gloro-ii-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_zapatillas-multitaco-adidas-copa-gloro-ii-tf-color-blanco-y-rojo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-turf-adidas-copa-gloro-ii-tf-blancas--rojas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-taco-turf-color-blanco-y-rojo-adidas-copa-gloro-ii-tf_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-multitaco-blancas-adidas-copa-gloro-ii-tf_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-multitaco-color-blanco-y-rojo-adidas-copa-gloro-ii-tf_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_multitaco-blancas--rojas-adidas-copa-gloro-ii-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_zapatillas-multitaco-adidas-copa-gloro-ii-tf-color-blanco-y-rojo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-turf-adidas-copa-gloro-ii-tf-blancas--rojas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-taco-turf-color-blanco-y-rojo-adidas-copa-gloro-ii-tf_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH8268_botas-multitaco-blancas-adidas-copa-gloro-ii-tf_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ih8268",
+    "language": "es",
+    "category": "Botas multitaco",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas multitaco"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ih8268"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Gloro II",
+    "product_model": "Copa Gloro II",
+    "sole_type": "TF"
+  }
+}

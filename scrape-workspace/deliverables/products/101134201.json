@@ -1,0 +1,105 @@
+{
+  "id": "101134201",
+  "slug": "uhlsport-super-resist-hn-orange",
+  "name": "Uhlsport Super Resist+ HN",
+  "model": "Super Resist+ HN",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Super Resist+ HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/eebbb7d70b10d086954d7f6cf361a0665efb1647-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/eebbb7d70b10d086954d7f6cf361a0665efb1647-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/53dca18afcdee394bfddb168b536a675ffcc0650-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4dcf8b41e3eba7cb85029622af110cb6889f8313-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/59f1851d2068e959f9f941f3dae98807aa2af145-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/268f6dbe8a59aeaae95125df04125a3fcd361409-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/eebbb7d70b10d086954d7f6cf361a0665efb1647-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/53dca18afcdee394bfddb168b536a675ffcc0650-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4dcf8b41e3eba7cb85029622af110cb6889f8313-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/59f1851d2068e959f9f941f3dae98807aa2af145-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/268f6dbe8a59aeaae95125df04125a3fcd361409-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-eebbb7d70b10d086954d7f6cf361a0665efb1647-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/eebbb7d70b10d086954d7f6cf361a0665efb1647-1500x1500.jpg"
+    },
+    {
+      "_id": "image-53dca18afcdee394bfddb168b536a675ffcc0650-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/53dca18afcdee394bfddb168b536a675ffcc0650-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4dcf8b41e3eba7cb85029622af110cb6889f8313-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4dcf8b41e3eba7cb85029622af110cb6889f8313-1500x1500.jpg"
+    },
+    {
+      "_id": "image-59f1851d2068e959f9f941f3dae98807aa2af145-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/59f1851d2068e959f9f941f3dae98807aa2af145-1500x1500.jpg"
+    },
+    {
+      "_id": "image-268f6dbe8a59aeaae95125df04125a3fcd361409-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/268f6dbe8a59aeaae95125df04125a3fcd361409-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101134201",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101134201"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Super",
+    "submodel": "",
+    "product_model": "Super Resist+ HN",
+    "sole_type": ""
+  }
+}

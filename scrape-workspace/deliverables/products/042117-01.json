@@ -1,0 +1,111 @@
+{
+  "id": "042117-01",
+  "slug": "puma-ultra-ultimate-re-charge-hybrid-azul-rosa",
+  "name": "Puma Ultra Ultimate Re-Charge Hybrid",
+  "model": "Ultra Ultimate Re-Charge Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Azul / Rosa",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma professional goalkeeper gloves hybrid cut - pink, cyan blue",
+    "tagline": "Control and confidence at every stop",
+    "intro": "The Puma Ultra Ultimate Re-Charge Hybrid combines grip, comfort and fit to give you security from the first minute.",
+    "collection": "",
+    "key_benefits": [
+      "Long-lasting resistance: Designed for demanding training.",
+      "Reliable grip: Optimized surface for safe tackling.",
+      "Precise fit: Slim fit that improves control.",
+      "Comfort and ventilation: Breathable materials that reduce fatigue.",
+      "Classic style: Professional and clean design."
+    ],
+    "technical_details": {
+      "range": "Ultra Ultimate Re-Charge Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/863e35c19a7a99ddb10ede69d473ea8da66688dc-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/863e35c19a7a99ddb10ede69d473ea8da66688dc-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/af60435735bb6f8e842b4e67d2b94b007429a4bb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b0b0f54708e57a74e28fee914ad33a92e635a1dc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/adfdfd540ca9a7c3c4623ef3b83c33f9b8b1951f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/863e35c19a7a99ddb10ede69d473ea8da66688dc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/af60435735bb6f8e842b4e67d2b94b007429a4bb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b0b0f54708e57a74e28fee914ad33a92e635a1dc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/adfdfd540ca9a7c3c4623ef3b83c33f9b8b1951f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-863e35c19a7a99ddb10ede69d473ea8da66688dc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/863e35c19a7a99ddb10ede69d473ea8da66688dc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-af60435735bb6f8e842b4e67d2b94b007429a4bb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/af60435735bb6f8e842b4e67d2b94b007429a4bb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b0b0f54708e57a74e28fee914ad33a92e635a1dc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b0b0f54708e57a74e28fee914ad33a92e635a1dc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-adfdfd540ca9a7c3c4623ef3b83c33f9b8b1951f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/adfdfd540ca9a7c3c4623ef3b83c33f9b8b1951f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042117-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero profesionales Puma corte híbrido - rosas, azul cian",
+    "tagline": "Control y confianza en cada parada",
+    "intro": "Los Puma Ultra Ultimate Re-Charge Hybrid combinan agarre, comodidad y ajuste para darte seguridad desde el primer minuto.",
+    "collection": "",
+    "key_benefits": [
+      "Resistencia duradera: Pensados para entrenamientos exigentes.",
+      "Agarre fiable: Superficie optimizada para atajar con seguridad.",
+      "Encaje preciso: Corte ceñido que mejora el control.",
+      "Comodidad y ventilación: Materiales transpirables que reducen la fatiga.",
+      "Estilo clásico: Diseño profesional y limpio."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042117-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Ultimate Re-Charge Hybrid",
+    "product_model": "Ultra Ultimate Re-Charge Hybrid",
+    "sole_type": ""
+  }
+}

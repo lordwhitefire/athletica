@@ -1,0 +1,109 @@
+{
+  "id": "041817-07",
+  "slug": "puma-ultra-grip-4-rc-black",
+  "name": "Puma Ultra Grip 4 RC",
+  "model": "Ultra Grip 4 RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Grip 4 RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/12e3b15cbd92bada3e2b172030b0f026cd7da3a7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/12e3b15cbd92bada3e2b172030b0f026cd7da3a7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a4a2957f2a3c90f082cbf0a0d77f3bbdea1df284-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f7d0eff7a4c3282c902aab4b91fff95ef7c4c907-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/019cceb152e22e09ad4f34a89f8d9b5d507f9ca4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5ddf654cc22e2b88dfc245d49dfbab2293962832-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/12e3b15cbd92bada3e2b172030b0f026cd7da3a7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a4a2957f2a3c90f082cbf0a0d77f3bbdea1df284-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f7d0eff7a4c3282c902aab4b91fff95ef7c4c907-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/019cceb152e22e09ad4f34a89f8d9b5d507f9ca4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5ddf654cc22e2b88dfc245d49dfbab2293962832-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-12e3b15cbd92bada3e2b172030b0f026cd7da3a7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/12e3b15cbd92bada3e2b172030b0f026cd7da3a7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a4a2957f2a3c90f082cbf0a0d77f3bbdea1df284-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a4a2957f2a3c90f082cbf0a0d77f3bbdea1df284-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f7d0eff7a4c3282c902aab4b91fff95ef7c4c907-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f7d0eff7a4c3282c902aab4b91fff95ef7c4c907-1500x1500.jpg"
+    },
+    {
+      "_id": "image-019cceb152e22e09ad4f34a89f8d9b5d507f9ca4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/019cceb152e22e09ad4f34a89f8d9b5d507f9ca4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5ddf654cc22e2b88dfc245d49dfbab2293962832-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5ddf654cc22e2b88dfc245d49dfbab2293962832-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/041817-07",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/041817-07"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Grip 4 RC",
+    "product_model": "Ultra Grip 4 RC",
+    "sole_type": ""
+  }
+}

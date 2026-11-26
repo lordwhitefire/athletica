@@ -1,0 +1,104 @@
+{
+  "id": "JM6832",
+  "slug": "adidas-tiro-training-rojo-blanco",
+  "name": "adidas Tiro Training",
+  "model": "adidas Tiro Training",
+  "brand": "adidas",
+  "category": "Shin Guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Rojo / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Tiro Training",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm6832",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM6832_espinilleras-color-rojo-y-blanco-adidas-tiro-training_1_completa-frontal.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM6832_espinilleras-color-rojo-y-blanco-adidas-tiro-training_1_completa-frontal.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level1",
+      "name": "Espinilleras fútbol",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level2",
+      "name": "Espinilleras adidas",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol-adidas"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level3",
+      "name": "Espinilleras gama media",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol-gama-media"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level3",
+      "name": "Espinilleras sin tobillera",
+      "href": "https://www.futbolmania.com/es/adulto/espinilleras/tipo/sin-tobillera"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level3",
+      "name": "Tiro",
+      "href": "https://www.futbolmania.com/es/espinilleras-tiro"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level1",
+      "name": "Ofertas fútbol",
+      "href": "https://www.futbolmania.com/es/productos-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level2",
+      "name": "Espinilleras",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol-ofertas"
+    }
+  ]
+}

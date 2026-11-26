@@ -1,0 +1,105 @@
+{
+  "id": "101133101",
+  "slug": "uhlsport-prediction-flex-hn-blue",
+  "name": "Uhlsport Prediction Flex HN",
+  "model": "Prediction Flex HN",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Prediction Flex HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e7a1ca3f2484824c8be1fdfe98d66caf85bf328b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e7a1ca3f2484824c8be1fdfe98d66caf85bf328b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d055aa8134beddd0daa19c3b8fb084ad138cbe93-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4903620dee4331b49bedfedf0fba8d20b3d91974-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cb3faacb44c1105acde8069d0e31dd8b5946ebe6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/25a03c2cb37d48760131bbc57601e96f777c41f8-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e7a1ca3f2484824c8be1fdfe98d66caf85bf328b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d055aa8134beddd0daa19c3b8fb084ad138cbe93-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4903620dee4331b49bedfedf0fba8d20b3d91974-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cb3faacb44c1105acde8069d0e31dd8b5946ebe6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/25a03c2cb37d48760131bbc57601e96f777c41f8-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e7a1ca3f2484824c8be1fdfe98d66caf85bf328b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e7a1ca3f2484824c8be1fdfe98d66caf85bf328b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d055aa8134beddd0daa19c3b8fb084ad138cbe93-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d055aa8134beddd0daa19c3b8fb084ad138cbe93-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4903620dee4331b49bedfedf0fba8d20b3d91974-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4903620dee4331b49bedfedf0fba8d20b3d91974-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cb3faacb44c1105acde8069d0e31dd8b5946ebe6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cb3faacb44c1105acde8069d0e31dd8b5946ebe6-1500x1500.jpg"
+    },
+    {
+      "_id": "image-25a03c2cb37d48760131bbc57601e96f777c41f8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/25a03c2cb37d48760131bbc57601e96f777c41f8-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101133101",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101133101"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Prediction",
+    "submodel": "",
+    "product_model": "Prediction Flex HN",
+    "sole_type": ""
+  }
+}

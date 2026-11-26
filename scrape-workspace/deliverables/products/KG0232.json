@@ -1,0 +1,92 @@
+{
+  "id": "KG0232",
+  "slug": "pantalon-adidas-japon-eqt-blue",
+  "name": "adidas Japón EQT",
+  "model": "Japón EQT",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo adidas de la selección de Japón - azul",
+    "tagline": "La esencia de la colección EQT en cada paso",
+    "intro": "El pantalón adidas Japón EQT combina el legado de una de las líneas más emblemáticas de adidas con la pasión por la selección japonesa. Su diseño retro inspirado en la colección Equipment incorpora paneles de color llamativos y detalles oficiales de la JFA, creando una prenda versátil para disfrutar del deporte y del estilo urbano con total comodidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT clásico: Inspirado en la histórica colección adidas Equipment.",
+      "Corte clásico: Proporciona comodidad y libertad de movimiento.",
+      "Cintura ajustable: Cordón interior para un ajuste personalizado.",
+      "Detalles oficiales de Japón: Escudo de la federación y acabados exclusivos."
+    ],
+    "technical_details": {
+      "range": "adidas Japón EQT",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-largo-color-azul-adidas-japon-eqt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-largo-color-azul-adidas-japon-eqt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-chandal-azul-adidas-japon-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-chandal-adidas-japon-eqt-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-largo-adidas-japon-eqt-azul_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-largo-color-azul-adidas-japon-eqt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-chandal-azul-adidas-japon-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-chandal-adidas-japon-eqt-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0232_pantalon-largo-adidas-japon-eqt-azul_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg0232",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas de la selección de Japón - azul",
+    "tagline": "La esencia de la colección EQT en cada paso",
+    "intro": "El pantalón adidas Japón EQT combina el legado de una de las líneas más emblemáticas de adidas con la pasión por la selección japonesa. Su diseño retro inspirado en la colección Equipment incorpora paneles de color llamativos y detalles oficiales de la JFA, creando una prenda versátil para disfrutar del deporte y del estilo urbano con total comodidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT clásico: Inspirado en la histórica colección adidas Equipment.",
+      "Corte clásico: Proporciona comodidad y libertad de movimiento.",
+      "Cintura ajustable: Cordón interior para un ajuste personalizado.",
+      "Detalles oficiales de Japón: Escudo de la federación y acabados exclusivos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg0232"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Japón",
+    "submodel": "",
+    "product_model": "Japón EQT",
+    "sole_type": ""
+  }
+}

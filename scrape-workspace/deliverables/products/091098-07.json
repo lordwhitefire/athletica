@@ -1,0 +1,95 @@
+{
+  "id": "091098-07",
+  "slug": "mochila-de-cuerdas-puma-milan-ftblenergy-black",
+  "name": "Backpack de cuerdas Puma Milan FtblEnergy",
+  "model": "Backpack de cuerdas Puma Milan FtblEnergy",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Milan FtblEnergy",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/063144865ec5c615754de0200c297b09a6b4aff3-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/063144865ec5c615754de0200c297b09a6b4aff3-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2f905a4a1e637f33da07c34de7196ceb8a31a961-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/063144865ec5c615754de0200c297b09a6b4aff3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2f905a4a1e637f33da07c34de7196ceb8a31a961-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-063144865ec5c615754de0200c297b09a6b4aff3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/063144865ec5c615754de0200c297b09a6b4aff3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2f905a4a1e637f33da07c34de7196ceb8a31a961-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2f905a4a1e637f33da07c34de7196ceb8a31a961-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091098-07",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/091098-07"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Milan FtblEnergy",
+    "sole_type": ""
+  }
+}

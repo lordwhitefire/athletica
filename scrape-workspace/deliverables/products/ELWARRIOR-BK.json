@@ -1,0 +1,94 @@
+{
+  "id": "ELWARRIOR-BK",
+  "slug": "elite-warrior-jr-black",
+  "name": "Elite WARRIOR Jr",
+  "model": "WARRIOR Jr",
+  "brand": "Elite",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero infantiles con protecciones Elite corte Flat - negros",
+    "tagline": "Elige el negro como tu armadura",
+    "intro": "Elite WARRIOR Jr en negro ofrece a los jóvenes porteros un diseño sobrio, combinado con un ajuste excelente y seguridad en cada intervención.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo elegante: Acabado totalmente en negro para una apariencia profesional.",
+      "Ajuste preciso: Corte negativo para máxima sensibilidad.",
+      "Durabilidad extrema: Materiales de alta gama y costuras reforzadas.",
+      "Refuerzo en dorso: Protección ideal para blocajes potentes.",
+      "Diseño sin concesiones: Pensado para porteros que priorizan el rendimiento."
+    ],
+    "technical_details": {
+      "range": "WARRIOR Jr",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-elite-sport-warrior_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-elite-sport-warrior_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-portero-con-proteccion-negros-elite-sport-warrior_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-con-ferulas-elite-sport-warrior-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-de-arquero-con-ferula-elite-sport-warrior-negros_4_detalle-cierre-en-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-elite-sport-warrior_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-portero-con-proteccion-negros-elite-sport-warrior_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-con-ferulas-elite-sport-warrior-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-BK_guantes-de-arquero-con-ferula-elite-sport-warrior-negros_4_detalle-cierre-en-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/elwarrior-bk",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero infantiles con protecciones Elite corte Flat - negros",
+    "tagline": "Elige el negro como tu armadura",
+    "intro": "Elite WARRIOR Jr en negro ofrece a los jóvenes porteros un diseño sobrio, combinado con un ajuste excelente y seguridad en cada intervención.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo elegante: Acabado totalmente en negro para una apariencia profesional.",
+      "Ajuste preciso: Corte negativo para máxima sensibilidad.",
+      "Durabilidad extrema: Materiales de alta gama y costuras reforzadas.",
+      "Refuerzo en dorso: Protección ideal para blocajes potentes.",
+      "Diseño sin concesiones: Pensado para porteros que priorizan el rendimiento."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/elwarrior-bk"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "WARRIOR",
+    "submodel": "",
+    "product_model": "WARRIOR Jr",
+    "sole_type": ""
+  }
+}

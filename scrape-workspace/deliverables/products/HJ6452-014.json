@@ -1,0 +1,96 @@
+{
+  "id": "HJ6452-014",
+  "slug": "pantalon-nike-tottenham-tech-fleece-grey",
+  "name": "Nike Tottenham Tech Fleece",
+  "model": "Tottenham Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del Tottenham - gris",
+    "tagline": "Rinde como un profesional con estilo único",
+    "intro": "La Pantalón Nike Tottenham Tech Fleece combina rendimiento técnico con identidad de club. Diseñada para quienes viven el fútbol al máximo, su tejido transpirable y ajuste cómodo la convierten en una pieza esencial para cualquier aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño moderno: Estilo urbano con detalles oficiales del Tottenham.",
+      "Comodidad superior: Tejido Tech Fleece suave, ligero y cálido al mismo tiempo.",
+      "Ajuste entallado: Corte slim que se adapta al cuerpo sin limitar el movimiento.",
+      "Versatilidad total: Ideal para uso diario, viajes o antes del partido.",
+      "Detalles funcionales: Cintura ajustable y bolsillos prácticos para mayor comodidad."
+    ],
+    "technical_details": {
+      "range": "Nike Tottenham Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6452-014_pantalon-largo-color-gris-nike-tottenham-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6452-014_pantalon-largo-color-gris-nike-tottenham-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6452-014_pantalon-chandal-gris-nike-tottenham-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6452-014_pantalon-chandal-nike-tottenham-tech-fleece-color-gris_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6452-014_pantalon-largo-color-gris-nike-tottenham-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6452-014_pantalon-chandal-gris-nike-tottenham-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6452-014_pantalon-chandal-nike-tottenham-tech-fleece-color-gris_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6452-014",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del Tottenham - gris",
+    "tagline": "Rinde como un profesional con estilo único",
+    "intro": "La Pantalón Nike Tottenham Tech Fleece combina rendimiento técnico con identidad de club. Diseñada para quienes viven el fútbol al máximo, su tejido transpirable y ajuste cómodo la convierten en una pieza esencial para cualquier aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño moderno: Estilo urbano con detalles oficiales del Tottenham.",
+      "Comodidad superior: Tejido Tech Fleece suave, ligero y cálido al mismo tiempo.",
+      "Ajuste entallado: Corte slim que se adapta al cuerpo sin limitar el movimiento.",
+      "Versatilidad total: Ideal para uso diario, viajes o antes del partido.",
+      "Detalles funcionales: Cintura ajustable y bolsillos prácticos para mayor comodidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6452-014"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Tottenham",
+    "submodel": "",
+    "product_model": "Tottenham Tech Fleece",
+    "sole_type": ""
+  }
+}

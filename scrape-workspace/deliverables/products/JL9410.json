@@ -1,0 +1,102 @@
+{
+  "id": "JL9410",
+  "slug": "short-adidas-olympique-lyon-entrenamiento-black",
+  "name": "adidas Olympique Lyon Training",
+  "model": "Olympique Lyon entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Olympique Lyonnais adidas training shorts 2025 2026 - white, red",
+    "tagline": "Lightness and agility in the French style",
+    "intro": "Train like a pro with the Olympique Lyonnais adidas shorts, designed to offer freedom of movement and optimal breathability. Ideal for intense sessions or sporty looks off the field.",
+    "collection": "",
+    "key_benefits": [
+      "Total comfort: Light fabric that adapts to the body.",
+      "Superior breathability: AEROREADY technology that repels sweat.",
+      "Official style: Design with the club's colors and shield.",
+      "Freedom of movement: Optimized cut for daily training.",
+      "Functional design: Ideal for sports or casual use."
+    ],
+    "technical_details": {
+      "range": "adidas Olympique Lyon entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_pantalon-corto-color-negro-adidas-olympique-lyon-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_pantalon-corto-color-negro-adidas-olympique-lyon-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_short-negro-adidas-olympique-lyon-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_pantalon-corto-adidas-olympique-lyon-entrenamiento-color-negro_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_short-adidas-olympique-lyon-entrenamiento-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_pantalon-corto-color-negro-adidas-olympique-lyon-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_short-negro-adidas-olympique-lyon-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_pantalon-corto-adidas-olympique-lyon-entrenamiento-color-negro_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL9410_short-adidas-olympique-lyon-entrenamiento-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jl9410",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas del Olympique de Lyon 2025 2026 - blanco, rojo",
+    "tagline": "Ligereza y agilidad al estilo francés",
+    "intro": "Entrena como un profesional con el short adidas del Olympique de Lyon, diseñado para ofrecer libertad de movimiento y transpirabilidad óptima. Ideal para sesiones intensas o looks deportivos fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad total: Tejido ligero que se adapta al cuerpo.",
+      "Transpirabilidad superior: Tecnología AEROREADY que repele el sudor.",
+      "Estilo oficial: Diseño con los colores y el escudo del club.",
+      "Libertad de movimiento: Corte optimizado para el entrenamiento diario.",
+      "Diseño funcional: Ideal para uso deportivo o casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jl9410"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Olympique",
+    "submodel": "",
+    "product_model": "Olympique Lyon entrenamiento",
+    "sole_type": ""
+  }
+}

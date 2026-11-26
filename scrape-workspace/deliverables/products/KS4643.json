@@ -1,0 +1,98 @@
+{
+  "id": "KS4643",
+  "slug": "chandal-adidas-real-madrid-green",
+  "name": "Chándal adidas Real Madrid",
+  "model": "Chándal adidas Real Madrid",
+  "brand": "adidas",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chándal adidas del Real Madrid - verde",
+    "tagline": "Entrena y anima al Real Madrid con estilo",
+    "intro": "El chándal adidas del Real Madrid combina comodidad, diseño deportivo y la identidad de uno de los clubes más prestigiosos del mundo. Con detalles oficiales del equipo y un estilo inspirado en la equipación de entrenamiento, es perfecto para mostrar tu pasión por el Real Madrid dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool: Ayuda a mantener la piel fresca y seca durante la actividad.",
+      "Diseño oficial Real Madrid: Escudo y detalles inspirados en el club blanco.",
+      "Tejido ligero: Favorece la comodidad durante todo el día.",
+      "Chaqueta con cremallera: Práctica y fácil de combinar con cualquier look deportivo."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-color-verde-adidas-real-madrid_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-color-verde-adidas-real-madrid_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-verde-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-adidas-real-madrid-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-adidas-real-madrid-verde_4_detalle-general-y-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-color-verde-adidas-real-madrid_5_general.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-color-verde-adidas-real-madrid_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-verde-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-adidas-real-madrid-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-adidas-real-madrid-verde_4_detalle-general-y-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/S/KS4643_chandal-color-verde-adidas-real-madrid_5_general.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ks4643",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chándal adidas del Real Madrid - verde",
+    "tagline": "Entrena y anima al Real Madrid con estilo",
+    "intro": "El chándal adidas del Real Madrid combina comodidad, diseño deportivo y la identidad de uno de los clubes más prestigiosos del mundo. Con detalles oficiales del equipo y un estilo inspirado en la equipación de entrenamiento, es perfecto para mostrar tu pasión por el Real Madrid dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool: Ayuda a mantener la piel fresca y seca durante la actividad.",
+      "Diseño oficial Real Madrid: Escudo y detalles inspirados en el club blanco.",
+      "Tejido ligero: Favorece la comodidad durante todo el día.",
+      "Chaqueta con cremallera: Práctica y fácil de combinar con cualquier look deportivo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ks4643"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Chándal",
+    "submodel": "",
+    "product_model": "Chándal adidas Real Madrid",
+    "sole_type": ""
+  }
+}

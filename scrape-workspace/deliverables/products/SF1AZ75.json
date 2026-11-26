@@ -1,0 +1,84 @@
+{
+  "id": "SF1AZ75",
+  "slug": "new-balance-furon-v7-pro-ag-orange",
+  "name": "New Balance Furon v7+ Pro AG",
+  "model": "Furon v7+ Pro",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Balance Furon v7+ Pro",
+      "sole_type": "AG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "AG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-para-cesped-artificial-color-naranja-new-balance-furon-v7--pro-ag_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-para-cesped-artificial-color-naranja-new-balance-furon-v7--pro-ag_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-cesped-artificial-naranja-new-balance-furon-v7--pro-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-hierba-artificial-new-balance-furon-v7--pro-ag-color-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_zapatillas-de-futbol-para-hierba-sintetica-new-balance-furon-v7--pro-ag-naranja_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-con-tacos-color-naranja-new-balance-furon-v7--pro-ag_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-para-cesped-artificial-color-naranja-new-balance-furon-v7--pro-ag_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-cesped-artificial-naranja-new-balance-furon-v7--pro-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-hierba-artificial-new-balance-furon-v7--pro-ag-color-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_zapatillas-de-futbol-para-hierba-sintetica-new-balance-furon-v7--pro-ag-naranja_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1AZ75_botas-de-futbol-con-tacos-color-naranja-new-balance-furon-v7--pro-ag_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sf1az75",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sf1az75"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Furon",
+    "submodel": "v7+ Pro",
+    "product_model": "Furon v7+ Pro",
+    "sole_type": "AG"
+  }
+}

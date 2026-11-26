@@ -1,0 +1,111 @@
+{
+  "id": "101.179595-D0953",
+  "slug": "diadora-brasil-og-gr-lt-white",
+  "name": "Diadora Brasil OG GR LT+",
+  "model": "Brasil OG GR LT+",
+  "brand": "Diadora",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Brasil OG GR LT+",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4414f433445cd4bae728f667cfb8b25951d0211f-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4414f433445cd4bae728f667cfb8b25951d0211f-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0142fdce02807ba5c958f145ea093979ee3da5c8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5ded86c1ed9ddcfb1ed5380f6dce085500d636d0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1326bf52f71f18a29479ec4e92fbcb8c905f0a31-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a7a6afa4dcc7e09cca6ab6e2748c704700d4b388-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/de1798ed65a74022d3db7eee0d84494f24452199-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4414f433445cd4bae728f667cfb8b25951d0211f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0142fdce02807ba5c958f145ea093979ee3da5c8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5ded86c1ed9ddcfb1ed5380f6dce085500d636d0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1326bf52f71f18a29479ec4e92fbcb8c905f0a31-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a7a6afa4dcc7e09cca6ab6e2748c704700d4b388-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/de1798ed65a74022d3db7eee0d84494f24452199-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-4414f433445cd4bae728f667cfb8b25951d0211f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4414f433445cd4bae728f667cfb8b25951d0211f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0142fdce02807ba5c958f145ea093979ee3da5c8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0142fdce02807ba5c958f145ea093979ee3da5c8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5ded86c1ed9ddcfb1ed5380f6dce085500d636d0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5ded86c1ed9ddcfb1ed5380f6dce085500d636d0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1326bf52f71f18a29479ec4e92fbcb8c905f0a31-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1326bf52f71f18a29479ec4e92fbcb8c905f0a31-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a7a6afa4dcc7e09cca6ab6e2748c704700d4b388-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a7a6afa4dcc7e09cca6ab6e2748c704700d4b388-1500x1500.jpg"
+    },
+    {
+      "_id": "image-de1798ed65a74022d3db7eee0d84494f24452199-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/de1798ed65a74022d3db7eee0d84494f24452199-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101-179595-d0953",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101-179595-d0953"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Brasil",
+    "submodel": "OG GR LT+",
+    "product_model": "Brasil OG GR LT+",
+    "sole_type": ""
+  }
+}

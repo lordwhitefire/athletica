@@ -1,0 +1,104 @@
+{
+  "id": "JN5623",
+  "slug": "camiseta-adidas-bayern-entrenamiento-ucl-green",
+  "name": "adidas Bayern Training UCL",
+  "model": "Bayern entrenamiento UCL",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Bayern Munich adidas training shirt for the Champions League 2025 2026 - olive green",
+    "tagline": "Train like a European champion",
+    "intro": "The adidas Bayern 25/26 training shirt for the Champions League is inspired by the continental greatness of the Bavarian club. With an elegant olive green, it combines lightness, freshness and a design designed for the highest demands in each session.",
+    "collection": "",
+    "key_benefits": [
+      "Exclusive style: Unique olive green color for European preparation.",
+      "Superior breathability: Technical fabric that evacuates sweat efficiently.",
+      "Total performance: Athletic cut that accompanies every movement.",
+      "Bavarian pride: Bayern crest and details to train with identity."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern entrenamiento UCL",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-color-verde-adidas-bayern-entrenamiento-ucl_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-color-verde-adidas-bayern-entrenamiento-ucl_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-verde-oliva-adidas-bayern-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-adidas-bayern-entrenamiento-ucl-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-adidas-bayern-entrenamiento-ucl-verde-oliva_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-color-verde-adidas-bayern-entrenamiento-ucl_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-verde-oliva-adidas-bayern-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-adidas-bayern-entrenamiento-ucl-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5623_camiseta-adidas-bayern-entrenamiento-ucl-verde-oliva_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn5623",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de entrenamiento adidas del Bayern de Múnich para la Champions League 2025 2026 - verde oliva",
+    "tagline": "Entrena como un campeón europeo",
+    "intro": "La camiseta adidas Bayern 25/26 de entrenamiento para la Champions League está inspirada en la grandeza continental del club bávaro. Con un elegante verde oliva, combina ligereza, frescura y un diseño pensado para la máxima exigencia en cada sesión.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo exclusivo: Color verde oliva único para la preparación europea.",
+      "Transpirabilidad superior: Tejido técnico que evacua el sudor de manera eficiente.",
+      "Rendimiento total: Corte atlético que acompaña cada movimiento.",
+      "Orgullo bávaro: Escudo y detalles del Bayern para entrenar con identidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn5623"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Bayern Training",
+    "submodel": "",
+    "product_model": "Bayern entrenamiento UCL",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "084551-02-5",
+  "slug": "balon-puma-borussia-dortmund-pre-match-talla-5-black",
+  "name": "Puma Borussia Dortmund Pre-Match talla 5",
+  "model": "Borussia Dortmund Pre-Match talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Borussia Dortmund Pre-Match talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ec0e03a7e3b8991d06d4eeab30adb8722e71a3a3-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ec0e03a7e3b8991d06d4eeab30adb8722e71a3a3-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/735b89852deed746b9e847dc10f3350329515b10-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a0ede1894c9badd0cd92810adb13fe26ec3fe0d5-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ec0e03a7e3b8991d06d4eeab30adb8722e71a3a3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/735b89852deed746b9e847dc10f3350329515b10-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a0ede1894c9badd0cd92810adb13fe26ec3fe0d5-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ec0e03a7e3b8991d06d4eeab30adb8722e71a3a3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ec0e03a7e3b8991d06d4eeab30adb8722e71a3a3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-735b89852deed746b9e847dc10f3350329515b10-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/735b89852deed746b9e847dc10f3350329515b10-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a0ede1894c9badd0cd92810adb13fe26ec3fe0d5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a0ede1894c9badd0cd92810adb13fe26ec3fe0d5-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084551-02-5",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084551-02-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Borussia",
+    "submodel": "",
+    "product_model": "Borussia Dortmund Pre-Match talla 5",
+    "sole_type": ""
+  }
+}

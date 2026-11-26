@@ -1,0 +1,96 @@
+{
+  "id": "IM4173-010",
+  "slug": "pantalon-nike-repel-i96-woven-black",
+  "name": "Nike Repel I96 Woven",
+  "model": "Repel I96 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike I96 long track pants - black",
+    "tagline": "Retro style ready for any weather",
+    "intro": "The Nike Repel I96 Woven pants recover the essence of 90s football with a design inspired by the iconic I96 collection. Its water-repellent finish helps keep you dry in wet conditions, while its loose fit provides comfort and freedom of movement.",
+    "collection": "",
+    "key_benefits": [
+      "Water repellent: Protects against light rain and humidity.",
+      "Nike I96 Inspiration: Retro design inspired by 90s football.",
+      "Loose cut: Greater comfort and freedom of movement.",
+      "Side zipper pockets: Allow you to store personal items safely.",
+      "Elastic waist with drawstring: Comfortable, personalized fit."
+    ],
+    "technical_details": {
+      "range": "Nike Repel I96 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4173-010_pantalon-largo-color-negro-nike-repel-i96-woven_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4173-010_pantalon-largo-color-negro-nike-repel-i96-woven_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4173-010_pantalon-chandal-negra-nike-repel-i96-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4173-010_pantalon-chandal-nike-repel-i96-woven-color-negro_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4173-010_pantalon-largo-color-negro-nike-repel-i96-woven_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4173-010_pantalon-chandal-negra-nike-repel-i96-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4173-010_pantalon-chandal-nike-repel-i96-woven-color-negro_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im4173-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de chándal Nike I96 - negro",
+    "tagline": "Estilo retro preparado para cualquier clima",
+    "intro": "El pantalón Nike Repel I96 Woven recupera la esencia del fútbol de los años 90 con un diseño inspirado en la icónica colección I96. Su acabado repelente al agua ayuda a mantenerte seco en condiciones de humedad, mientras que su corte holgado proporciona la comodidad y libertad de movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Repelente al agua: Protege frente a la lluvia ligera y la humedad.",
+      "Inspiración Nike I96: Diseño retro inspirado en el fútbol de los años 90.",
+      "Corte holgado: Mayor comodidad y libertad de movimiento.",
+      "Bolsillos laterales con cremallera: Permiten guardar objetos personales de forma segura.",
+      "Cintura elástica con cordón: Ajuste cómodo y personalizado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im4173-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel I96 Woven",
+    "sole_type": ""
+  }
+}

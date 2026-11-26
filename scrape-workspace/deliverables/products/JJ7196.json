@@ -1,0 +1,92 @@
+{
+  "id": "JJ7196",
+  "slug": "accesorio-adidas-footwear-cleaning-solution-200ml-white",
+  "name": "adidas Footwear Cleaning Solution 200ML",
+  "model": "Footwear Cleaning Solution 200ML",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Líquido limpiador para botas de fútbol 200ML - sin disolventes, con base agua",
+    "tagline": "Limpieza eficaz y segura para tus botas",
+    "intro": "Elimina la suciedad sin dañar los materiales ni sus propiedades repelentes.",
+    "collection": "",
+    "key_benefits": [
+      "Limpieza potente sin agresividad: Fórmula base agua no tóxica, ideal para uso frecuente.",
+      "Compatible con todos los materiales: Desde piel y sintético hasta mallas técnicas.",
+      "No elimina recubrimientos impermeables: Conserva las tecnologías protectoras de la bota.",
+      "Ecológico y eficiente: Necesita menos agua y está envasado en aluminio reciclado.",
+      "Diseñado para el deporte: Especialmente formulado para calzado de alto rendimiento."
+    ],
+    "technical_details": {
+      "range": "adidas Footwear Cleaning Solution 200ML",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7196_limpiador-botas-de-futbol-color-blanco-adidas-footwear-cleaning-solution-200ml_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7196_limpiador-botas-de-futbol-color-blanco-adidas-footwear-cleaning-solution-200ml_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7196_limpiador-zapatillas-de-futbol-blanco-adidas-footwear-cleaning-solution-200ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7196_limpiador-botas-de-futbol-adidas-footwear-cleaning-solution-200ml-color-blanco_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7196_limpiador-botas-de-futbol-color-blanco-adidas-footwear-cleaning-solution-200ml_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7196_limpiador-zapatillas-de-futbol-blanco-adidas-footwear-cleaning-solution-200ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7196_limpiador-botas-de-futbol-adidas-footwear-cleaning-solution-200ml-color-blanco_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jj7196",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Líquido limpiador para botas de fútbol 200ML - sin disolventes, con base agua",
+    "tagline": "Limpieza eficaz y segura para tus botas",
+    "intro": "Elimina la suciedad sin dañar los materiales ni sus propiedades repelentes.",
+    "collection": "",
+    "key_benefits": [
+      "Limpieza potente sin agresividad: Fórmula base agua no tóxica, ideal para uso frecuente.",
+      "Compatible con todos los materiales: Desde piel y sintético hasta mallas técnicas.",
+      "No elimina recubrimientos impermeables: Conserva las tecnologías protectoras de la bota.",
+      "Ecológico y eficiente: Necesita menos agua y está envasado en aluminio reciclado.",
+      "Diseñado para el deporte: Especialmente formulado para calzado de alto rendimiento."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jj7196"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'accesorio'",
+    "root_model": "Footwear",
+    "submodel": "",
+    "product_model": "Footwear Cleaning Solution 200ML",
+    "sole_type": ""
+  }
+}

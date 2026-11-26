@@ -1,0 +1,92 @@
+{
+  "id": "JD6025",
+  "slug": "adidas-tiro-league-negro-verde",
+  "name": "adidas Tiro League",
+  "model": "Tiro League",
+  "brand": "adidas",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Negro / Verde",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujeción - negras, verde claro",
+    "tagline": "Protección segura y sin distracciones",
+    "intro": "Las espinilleras adidas Tiro League combinan protección y comodidad para que te centres en el juego. Gracias a su diseño ergonómico y la media de compresión, se mantienen firmes durante todo el partido. Ideales para jugadores que buscan seguridad y rendimiento en cada entrada.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Placa rígida: Absorbe impactos directos para mayor seguridad.",
+      "Diseño anatómico: Se adapta cómodamente a la forma de la pierna.",
+      "Media de sujeción: Ajuste perfecto sin necesidad de correas.",
+      "Comodidad sin fricción: Interior suave que reduce irritaciones.",
+      "Estilo deportivo: Colores llamativos para destacar en el campo."
+    ],
+    "technical_details": {
+      "range": "Tiro League",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6025_espinilleras-color-negro-y-verde-adidas-tiro-league_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6025_espinilleras-color-negro-y-verde-adidas-tiro-league_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6025_canilleras-negras--verde-claro-adidas-tiro-league_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6025_espinilleras-adidas-tiro-league-color-negro-y-verde_3_detalle-colocacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6025_espinilleras-color-negro-y-verde-adidas-tiro-league_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6025_canilleras-negras--verde-claro-adidas-tiro-league_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6025_espinilleras-adidas-tiro-league-color-negro-y-verde_3_detalle-colocacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jd6025",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol adidas con mallas de sujeción - negras, verde claro",
+    "tagline": "Protección segura y sin distracciones",
+    "intro": "Las espinilleras adidas Tiro League combinan protección y comodidad para que te centres en el juego. Gracias a su diseño ergonómico y la media de compresión, se mantienen firmes durante todo el partido. Ideales para jugadores que buscan seguridad y rendimiento en cada entrada.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Placa rígida: Absorbe impactos directos para mayor seguridad.",
+      "Diseño anatómico: Se adapta cómodamente a la forma de la pierna.",
+      "Media de sujeción: Ajuste perfecto sin necesidad de correas.",
+      "Comodidad sin fricción: Interior suave que reduce irritaciones.",
+      "Estilo deportivo: Colores llamativos para destacar en el campo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jd6025"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Tiro",
+    "submodel": "",
+    "product_model": "Tiro League",
+    "sole_type": ""
+  }
+}

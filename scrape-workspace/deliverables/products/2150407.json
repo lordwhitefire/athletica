@@ -1,0 +1,78 @@
+{
+  "id": "2150407",
+  "slug": "munich-mundial-sg-black",
+  "name": "Munich Mundial SG",
+  "model": "Mundial",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mundial",
+      "sole_type": "SG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "SG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_botas-de-futbol-color-negro-munich-mundial-sg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_botas-de-futbol-color-negro-munich-mundial-sg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_botas-de-futbol-aluminio-negras-munich-mundial-sg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_zapatillas-futbol-color-negro-munich-mundial-sg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_botas-de-futbol-aluminio-munich-mundial-sg-color-negro_7_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_botas-de-futbol-color-negro-munich-mundial-sg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_botas-de-futbol-aluminio-negras-munich-mundial-sg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_zapatillas-futbol-color-negro-munich-mundial-sg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150407_botas-de-futbol-aluminio-munich-mundial-sg-color-negro_7_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/2150407",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/2150407"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Mundial",
+    "submodel": "",
+    "product_model": "Mundial",
+    "sole_type": "SG"
+  }
+}

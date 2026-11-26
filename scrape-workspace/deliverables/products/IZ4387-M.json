@@ -1,0 +1,98 @@
+{
+  "id": "IZ4387-M",
+  "slug": "gorra-adidas-arsenal-red",
+  "name": "adidas Arsenal",
+  "model": "Arsenal",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra adidas del Arsenal FC - roja",
+    "tagline": "Orgullo gunner en tu look diario",
+    "intro": "La gorra adidas Arsenal es el accesorio ideal para los aficionados del club londinense. Confeccionada en algodón y con el escudo bordado, combina comodidad y estilo para llevar siempre contigo la pasión por los Gunners.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad gunner: escudo oficial del Arsenal bordado en el frontal.",
+      "Confort natural: tejido 100% algodón que aporta suavidad y transpirabilidad.",
+      "Ajuste adaptable: correa trasera regulable para un ajuste cómodo.",
+      "Protección práctica: visera curva que protege frente al sol.",
+      "Estilo oficial: producto adidas con licencia del Arsenal FC."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-color-rojo-adidas-arsenal_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-color-rojo-adidas-arsenal_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-roja-adidas-arsenal_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-adidas-arsenal-color-rojo_3_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-adidas-arsenal-roja_4_detalle-cierre.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-color-rojo-adidas-arsenal_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-roja-adidas-arsenal_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-adidas-arsenal-color-rojo_3_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ4387-M_gorra-adidas-arsenal-roja_4_detalle-cierre.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/iz4387-m",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra adidas del Arsenal FC - roja",
+    "tagline": "Orgullo gunner en tu look diario",
+    "intro": "La gorra adidas Arsenal es el accesorio ideal para los aficionados del club londinense. Confeccionada en algodón y con el escudo bordado, combina comodidad y estilo para llevar siempre contigo la pasión por los Gunners.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad gunner: escudo oficial del Arsenal bordado en el frontal.",
+      "Confort natural: tejido 100% algodón que aporta suavidad y transpirabilidad.",
+      "Ajuste adaptable: correa trasera regulable para un ajuste cómodo.",
+      "Protección práctica: visera curva que protege frente al sol.",
+      "Estilo oficial: producto adidas con licencia del Arsenal FC."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/iz4387-m"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Arsenal",
+    "submodel": "",
+    "product_model": "Arsenal",
+    "sole_type": ""
+  }
+}

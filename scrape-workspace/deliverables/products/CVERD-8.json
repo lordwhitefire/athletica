@@ -1,0 +1,88 @@
+{
+  "id": "CVERD-8",
+  "slug": "coderas-acolchadas-181keepers-green",
+  "name": "Coderas acolchadas 181Keepers",
+  "model": "Coderas acolchadas 181Keepers",
+  "brand": "181Keepers",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Coderas portero de fútbol sala 181 Keepers - verdes",
+    "tagline": "Protección inteligente bajo presión",
+    "intro": "Las coderas 181Keepers han sido diseñadas para porteros que exigen movilidad y absorción de impacto. Su acolchado técnico protege el codo sin limitar tus reflejos, ideal para fútbol sala o entrenamiento intensivo.",
+    "collection": "",
+    "key_benefits": [
+      "Acolchado estratégico: Amortigua impactos en superficies duras.",
+      "Ajuste deportivo: Compresión suave sin deslizamientos.",
+      "Tejido elástico: Máxima libertad de movimiento al blocar o lanzarte.",
+      "Diseño ergonómico: No limita ni aprieta en los movimientos rápidos."
+    ],
+    "technical_details": {
+      "range": "acolchadas 181Keepers",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-acolchadas-portero-futbol-sala-color-verde-181keepers_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-acolchadas-portero-futbol-sala-color-verde-181keepers_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-arquero-futsal-verdes-181keepers_2_comleta-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-de-futbol-sala-181keepers-color-verde_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-de-portero-181keepers-verdes_4_apliacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-acolchadas-portero-futbol-sala-color-verde-181keepers_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-arquero-futsal-verdes-181keepers_2_comleta-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-de-futbol-sala-181keepers-color-verde_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/V/CVERD-8_coderas-de-portero-181keepers-verdes_4_apliacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/cverd-8",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Coderas portero de fútbol sala 181 Keepers - verdes",
+    "tagline": "Protección inteligente bajo presión",
+    "intro": "Las coderas 181Keepers han sido diseñadas para porteros que exigen movilidad y absorción de impacto. Su acolchado técnico protege el codo sin limitar tus reflejos, ideal para fútbol sala o entrenamiento intensivo.",
+    "collection": "",
+    "key_benefits": [
+      "Acolchado estratégico: Amortigua impactos en superficies duras.",
+      "Ajuste deportivo: Compresión suave sin deslizamientos.",
+      "Tejido elástico: Máxima libertad de movimiento al blocar o lanzarte.",
+      "Diseño ergonómico: No limita ni aprieta en los movimientos rápidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/cverd-8"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Coderas",
+    "submodel": "",
+    "product_model": "Coderas acolchadas 181Keepers",
+    "sole_type": ""
+  }
+}

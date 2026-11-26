@@ -1,0 +1,101 @@
+{
+  "id": "084545-07",
+  "slug": "balon-puma-milan-pre-match-talla-mini-black",
+  "name": "Puma Milan Pre-Match talla mini",
+  "model": "Milan Pre-Match talla mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Milan Pre-Match talla mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/67414fe9f8415625e7eda605f8d5e2e8a626d6c5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/67414fe9f8415625e7eda605f8d5e2e8a626d6c5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/909cbb7d7a49e3564bac7cfd5bd4139a845d5aa9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/708bc212b43448945cbb9fe2b73b857b62ac5953-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/67414fe9f8415625e7eda605f8d5e2e8a626d6c5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/909cbb7d7a49e3564bac7cfd5bd4139a845d5aa9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/708bc212b43448945cbb9fe2b73b857b62ac5953-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-67414fe9f8415625e7eda605f8d5e2e8a626d6c5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/67414fe9f8415625e7eda605f8d5e2e8a626d6c5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-909cbb7d7a49e3564bac7cfd5bd4139a845d5aa9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/909cbb7d7a49e3564bac7cfd5bd4139a845d5aa9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-708bc212b43448945cbb9fe2b73b857b62ac5953-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/708bc212b43448945cbb9fe2b73b857b62ac5953-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084545-07",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084545-07"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Milan Pre-Match",
+    "submodel": "",
+    "product_model": "Milan Pre-Match talla mini",
+    "sole_type": ""
+  }
+}

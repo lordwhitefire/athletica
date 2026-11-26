@@ -1,0 +1,107 @@
+{
+  "id": "015110A",
+  "slug": "adidas-copa-mundial-black",
+  "name": "adidas Copa Mundial",
+  "model": "Copa Mundial",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Copa Mundial",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/81eddd34a309d11550c0720bd84234280a8c0f31-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/81eddd34a309d11550c0720bd84234280a8c0f31-1600x1600.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2cee5619d692d01283f758db39a527b50588837f-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e82a97e7f2a420ad2e4667c2b594eaa2aa02ff9d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1b895a4f49efb90873a3d783101e70958c4b37ec-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2a2d6843923dd0cbf8ead73156560a6a006321a7-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7146d3d622776e884c4c95fb00cca5632b6d7904-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/81eddd34a309d11550c0720bd84234280a8c0f31-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2cee5619d692d01283f758db39a527b50588837f-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e82a97e7f2a420ad2e4667c2b594eaa2aa02ff9d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1b895a4f49efb90873a3d783101e70958c4b37ec-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2a2d6843923dd0cbf8ead73156560a6a006321a7-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7146d3d622776e884c4c95fb00cca5632b6d7904-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-81eddd34a309d11550c0720bd84234280a8c0f31-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/81eddd34a309d11550c0720bd84234280a8c0f31-1600x1600.jpg"
+    },
+    {
+      "_id": "image-2cee5619d692d01283f758db39a527b50588837f-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2cee5619d692d01283f758db39a527b50588837f-1600x1600.jpg"
+    },
+    {
+      "_id": "image-e82a97e7f2a420ad2e4667c2b594eaa2aa02ff9d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e82a97e7f2a420ad2e4667c2b594eaa2aa02ff9d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1b895a4f49efb90873a3d783101e70958c4b37ec-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1b895a4f49efb90873a3d783101e70958c4b37ec-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2a2d6843923dd0cbf8ead73156560a6a006321a7-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2a2d6843923dd0cbf8ead73156560a6a006321a7-1600x1600.jpg"
+    },
+    {
+      "_id": "image-7146d3d622776e884c4c95fb00cca5632b6d7904-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7146d3d622776e884c4c95fb00cca5632b6d7904-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/015110a",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/015110a"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Mundial",
+    "product_model": "Copa Mundial",
+    "sole_type": ""
+  }
+}

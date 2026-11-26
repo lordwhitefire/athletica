@@ -1,0 +1,84 @@
+{
+  "id": "KM00746-02",
+  "slug": "mallas-knap-man-mujer-compression-45-white",
+  "name": "Mallas Knap'man Women Compression 45%",
+  "model": "Mallas Knap'man Women Compression 45%",
+  "brand": "Knap'Man",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Knap'man mujer Compression 45%",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_mallas-cortas-color-blanco-knap-man-mujer-compression-45-_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_mallas-cortas-color-blanco-knap-man-mujer-compression-45-_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_licras-cortas-blanca-knap-man-mujer-compression-45-_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_calentadores-knap-man-mujer-compression-45--color-blanco_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_mallas-cortas-knap-man-mujer-compression-45--blanca_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_calentadores-color-blanco-knap-man-mujer-compression-45-_5_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_mallas-cortas-color-blanco-knap-man-mujer-compression-45-_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_licras-cortas-blanca-knap-man-mujer-compression-45-_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_calentadores-knap-man-mujer-compression-45--color-blanco_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_mallas-cortas-knap-man-mujer-compression-45--blanca_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00746-02_calentadores-color-blanco-knap-man-mujer-compression-45-_5_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/km00746-02",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/km00746-02"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas Knap'man Women Compression 45%",
+    "sole_type": ""
+  }
+}

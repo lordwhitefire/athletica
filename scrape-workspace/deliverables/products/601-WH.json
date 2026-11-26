@@ -1,0 +1,98 @@
+{
+  "id": "601-WH",
+  "slug": "rodilleras-futbol-sala-mcdavid-sport-white",
+  "name": "Rodilleras fútbol sala McDavid Sport",
+  "model": "Rodilleras fútbol sala McDavid Sport",
+  "brand": "Mc David",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Rodilleras portero fútbol sala McDavid - blancas",
+    "tagline": "Protección total para dominar el área",
+    "intro": "Las rodilleras McDavid Sport están diseñadas para ofrecer máxima seguridad y confort en cada acción bajo palos. Con un panel acolchado anatómico de una sola pieza, se adaptan perfectamente a la forma de la rodilla, garantizando libertad de movimiento y absorción de impactos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección superior: Panel curvo que reduce el impacto directo en la articulación.",
+      "Ajuste anatómico: Diseño ergonómico que se adapta a la rodilla sin desplazarse.",
+      "Comodidad prolongada: Compresión ligera que mejora la circulación y el soporte.",
+      "Diseño funcional: Se venden por pares para cubrir ambas rodillas.",
+      "Uso versátil: Ideales para fútbol sala y entrenamientos de portero exigentes."
+    ],
+    "technical_details": {
+      "range": "fútbol sala McDavid Sport",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_imagen-de-las-rodilleras-proteccion-futbol-mcdavid-Sport-knee-pads-2018-2019-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_imagen-de-las-rodilleras-proteccion-futbol-mcdavid-Sport-knee-pads-2018-2019-blanco_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_imagen-de-las-rodilleras-proteccion-futbol-mcdavid-Sport-knee-pads-2018-2019-blanco_2_modelo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_rodilleras-futsal-mcdavid-sport-color-blanco_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_rodilleras-portero-futbol-sala-mcdavid-sport-blancas_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_imagen-de-las-rodilleras-proteccion-futbol-mcdavid-Sport-knee-pads-2018-2019-blanco_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_imagen-de-las-rodilleras-proteccion-futbol-mcdavid-Sport-knee-pads-2018-2019-blanco_2_modelo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_rodilleras-futsal-mcdavid-sport-color-blanco_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/0/601-WH_rodilleras-portero-futbol-sala-mcdavid-sport-blancas_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/601-wh",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Rodilleras portero fútbol sala McDavid - blancas",
+    "tagline": "Protección total para dominar el área",
+    "intro": "Las rodilleras McDavid Sport están diseñadas para ofrecer máxima seguridad y confort en cada acción bajo palos. Con un panel acolchado anatómico de una sola pieza, se adaptan perfectamente a la forma de la rodilla, garantizando libertad de movimiento y absorción de impactos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección superior: Panel curvo que reduce el impacto directo en la articulación.",
+      "Ajuste anatómico: Diseño ergonómico que se adapta a la rodilla sin desplazarse.",
+      "Comodidad prolongada: Compresión ligera que mejora la circulación y el soporte.",
+      "Diseño funcional: Se venden por pares para cubrir ambas rodillas.",
+      "Uso versátil: Ideales para fútbol sala y entrenamientos de portero exigentes."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/601-wh"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "high",
+    "rule": "name contains 'sala'",
+    "root_model": "Rodilleras",
+    "submodel": "fútbol sala McDavid Sport",
+    "product_model": "Rodilleras fútbol sala McDavid Sport",
+    "sole_type": ""
+  }
+}

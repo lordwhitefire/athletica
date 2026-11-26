@@ -1,0 +1,92 @@
+{
+  "id": "IO4327-010",
+  "slug": "chaqueta-nike-barcelona-repel-i96-woven-black",
+  "name": "Nike Barcelona Repel I96 Woven",
+  "model": "Barcelona Repel I96 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal Nike del FC Barcelona x I96 - negra",
+    "tagline": "Estilo Barça inspirado en la icónica I96",
+    "intro": "La Chaqueta Nike Barcelona Repel I96 Woven rinde homenaje al FC Barcelona con un diseño inspirado en la emblemática estética futbolística de 1996. Esta chaqueta deportiva combina un corte cómodo con espacio adicional en las mangas y el cuerpo, facilitando el movimiento y permitiendo vestirla sobre otras capas. Su acabado repelente al agua ayuda a protegerte frente a la lluvia ligera, mientras que los puños y el dobladillo elásticos contribuyen a mantener la prenda correctamente colocada.",
+    "collection": "",
+    "key_benefits": [
+      "Protección frente a la lluvia: El acabado repelente al agua ayuda a mantenerte seco cuando cambia el tiempo.",
+      "Mayor libertad de movimiento: El espacio adicional en mangas y cuerpo proporciona comodidad y facilita vestir por capas.",
+      "Ajuste cómodo: Los puños y el dobladillo elásticos ayudan a mantener la chaqueta correctamente colocada.",
+      "Almacenamiento práctico: Los bolsillos laterales permiten guardar rápidamente el teléfono y otros objetos esenciales.",
+      "Inspiración futbolística: Diseño I96 que rinde homenaje al FC Barcelona y a la estética deportiva de 1996."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Repel I96 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO4327-010_chaqueta-color-negro-nike-barcelona-repel-i96-woven_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO4327-010_chaqueta-color-negro-nike-barcelona-repel-i96-woven_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO4327-010_chaqueta-chandal-negra-nike-barcelona-repel-i96-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO4327-010_chaqueta-entretiempo-nike-barcelona-repel-i96-woven-color-negro_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO4327-010_chaqueta-color-negro-nike-barcelona-repel-i96-woven_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO4327-010_chaqueta-chandal-negra-nike-barcelona-repel-i96-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/O/IO4327-010_chaqueta-entretiempo-nike-barcelona-repel-i96-woven-color-negro_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/io4327-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de chándal Nike del FC Barcelona x I96 - negra",
+    "tagline": "Estilo Barça inspirado en la icónica I96",
+    "intro": "La Chaqueta Nike Barcelona Repel I96 Woven rinde homenaje al FC Barcelona con un diseño inspirado en la emblemática estética futbolística de 1996. Esta chaqueta deportiva combina un corte cómodo con espacio adicional en las mangas y el cuerpo, facilitando el movimiento y permitiendo vestirla sobre otras capas. Su acabado repelente al agua ayuda a protegerte frente a la lluvia ligera, mientras que los puños y el dobladillo elásticos contribuyen a mantener la prenda correctamente colocada.",
+    "collection": "",
+    "key_benefits": [
+      "Protección frente a la lluvia: El acabado repelente al agua ayuda a mantenerte seco cuando cambia el tiempo.",
+      "Mayor libertad de movimiento: El espacio adicional en mangas y cuerpo proporciona comodidad y facilita vestir por capas.",
+      "Ajuste cómodo: Los puños y el dobladillo elásticos ayudan a mantener la chaqueta correctamente colocada.",
+      "Almacenamiento práctico: Los bolsillos laterales permiten guardar rápidamente el teléfono y otros objetos esenciales.",
+      "Inspiración futbolística: Diseño I96 que rinde homenaje al FC Barcelona y a la estética deportiva de 1996."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/io4327-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Barcelona Repel",
+    "submodel": "",
+    "product_model": "Barcelona Repel I96 Woven",
+    "sole_type": ""
+  }
+}

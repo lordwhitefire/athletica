@@ -1,0 +1,100 @@
+{
+  "id": "KG2574",
+  "slug": "camiseta-adidas-espana-eqt-blue",
+  "name": "adidas España EQT",
+  "model": "España EQT",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de España - azul marino",
+    "tagline": "La pasión de España con el inconfundible estilo EQT",
+    "intro": "La camiseta adidas España EQT recupera la esencia de la histórica colección Equipment para rendir homenaje a la selección española. Su diseño combina una estética retro inspirada en los años 90 con detalles oficiales de la federación, creando una prenda perfecta para quienes viven el fútbol con intensidad. Gracias a su confección en algodón suave y a su corte holgado, ofrece una comodidad excepcional dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT icónico: Inspirado en la legendaria colección adidas Equipment.",
+      "Algodón suave: Proporciona un tacto agradable y comodidad durante todo el día.",
+      "Corte holgado: Favorece la libertad de movimiento y un estilo urbano actual.",
+      "Detalles oficiales de España: Escudo de la selección y acabados exclusivos adidas Originals."
+    ],
+    "technical_details": {
+      "range": "adidas España EQT",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-color-azul-adidas-espana-eqt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-color-azul-adidas-espana-eqt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-azul-marino-adidas-espana-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-adidas-espana-eqt-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-adidas-espana-eqt-azul-marino_4_detalle-hombro-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-color-azul-adidas-espana-eqt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-azul-marino-adidas-espana-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-adidas-espana-eqt-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2574_camiseta-adidas-espana-eqt-azul-marino_4_detalle-hombro-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2574",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de España - azul marino",
+    "tagline": "La pasión de España con el inconfundible estilo EQT",
+    "intro": "La camiseta adidas España EQT recupera la esencia de la histórica colección Equipment para rendir homenaje a la selección española. Su diseño combina una estética retro inspirada en los años 90 con detalles oficiales de la federación, creando una prenda perfecta para quienes viven el fútbol con intensidad. Gracias a su confección en algodón suave y a su corte holgado, ofrece una comodidad excepcional dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT icónico: Inspirado en la legendaria colección adidas Equipment.",
+      "Algodón suave: Proporciona un tacto agradable y comodidad durante todo el día.",
+      "Corte holgado: Favorece la libertad de movimiento y un estilo urbano actual.",
+      "Detalles oficiales de España: Escudo de la selección y acabados exclusivos adidas Originals."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2574"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España EQT",
+    "sole_type": ""
+  }
+}

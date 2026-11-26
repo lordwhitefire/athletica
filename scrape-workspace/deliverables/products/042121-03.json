@@ -1,0 +1,111 @@
+{
+  "id": "042121-03",
+  "slug": "puma-future-ultimate-nc-black",
+  "name": "Puma Future Ultimate NC",
+  "model": "Future Ultimate NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma professional goalkeeper gloves negative cut - black",
+    "tagline": "Comfort and grip for every stop",
+    "intro": "The Puma Future Ultimate NC combines a perfect fit, specific technologies and high-performance materials to raise your level as a goalkeeper. Enjoy superior grip and total control on every play.",
+    "collection": "ECLIPSE PACK",
+    "key_benefits": [
+      "Negative fit: Snug fit that improves ball control.",
+      "Structured design: Reinforcement on the back that improves flexibility and clearance.",
+      "Touchscreen compatible: Ideal for modern coaches or goalkeepers.",
+      "Embossed back: Provides flexibility and improves power in clearances.",
+      "Thumb wrap: Larger contact surface for a firmer grip."
+    ],
+    "technical_details": {
+      "range": "Future Ultimate NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/5c15b6f1fa801999a6a45576681061630cf60d2f-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5c15b6f1fa801999a6a45576681061630cf60d2f-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e9b16acd4e97ef8fcdac8881c6f038109ce57c43-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e5eda9545cdb5cb32be2db742f5ddff61b222240-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d47359e3a7b3f075bf9798f389e54fbee131fccd-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5c15b6f1fa801999a6a45576681061630cf60d2f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e9b16acd4e97ef8fcdac8881c6f038109ce57c43-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e5eda9545cdb5cb32be2db742f5ddff61b222240-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d47359e3a7b3f075bf9798f389e54fbee131fccd-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-5c15b6f1fa801999a6a45576681061630cf60d2f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5c15b6f1fa801999a6a45576681061630cf60d2f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e9b16acd4e97ef8fcdac8881c6f038109ce57c43-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e9b16acd4e97ef8fcdac8881c6f038109ce57c43-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e5eda9545cdb5cb32be2db742f5ddff61b222240-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e5eda9545cdb5cb32be2db742f5ddff61b222240-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d47359e3a7b3f075bf9798f389e54fbee131fccd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d47359e3a7b3f075bf9798f389e54fbee131fccd-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042121-03",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero profesionales Puma corte negativo - negros",
+    "tagline": "Comodidad y agarre para cada parada",
+    "intro": "Los Puma Future Ultimate NC combinan un ajuste perfecto, tecnologías específicas y materiales de alto rendimiento para elevar tu nivel como portero. Disfruta de un agarre superior y control total en cada jugada.",
+    "collection": "ECLIPSE PACK",
+    "key_benefits": [
+      "Ajuste negativo: Ajuste ceñido que mejora el control del balón.",
+      "Diseño estructurado: Refuerzo en dorso que mejora flexibilidad y despeje.",
+      "Compatible con pantallas táctiles: Ideal para entrenadores o porteros modernos.",
+      "Dorso con relieve: Aporta flexibilidad y mejora la potencia en los despejes.",
+      "Envoltura en el pulgar: Mayor superficie de contacto para un agarre más firme."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042121-03"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Ultimate NC",
+    "product_model": "Future Ultimate NC",
+    "sole_type": ""
+  }
+}

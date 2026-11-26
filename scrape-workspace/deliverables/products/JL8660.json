@@ -1,0 +1,100 @@
+{
+  "id": "JL8660",
+  "slug": "camiseta-adidas-2a-peru-26-black",
+  "name": "adidas 2a Perú 26",
+  "model": "2a Perú 26",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Peru 2026 Adidas Away Shirt - Black",
+    "tagline": "Peru's second team shirt",
+    "intro": "Experience the energy of Peruvian culture every time you put on the Peru 2026 away shirt. Inspired by the vibrant colors of the chicha culture, this garment stands out for its striking details and trims that reflect the country's identity and creativity.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool Technology: Absorbs and disperses sweat to keep skin cool and dry during the game.",
+      "Double-knit fabric: Provides comfort, durability and a lightweight feel during play.",
+      "Slim fit: Offers a streamlined silhouette that promotes freedom of movement.",
+      "Official design of Peru: With the Peruvian federation shield that shows your pride for the team."
+    ],
+    "technical_details": {
+      "range": "adidas 2a Perú 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-color-negro-adidas-2a-peru-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-color-negro-adidas-2a-peru-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-negra-adidas-2a-peru-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-adidas-2a-peru-26-color-negro_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-adidas-2a-peru-26-negra_4_detalle-cuello.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-color-negro-adidas-2a-peru-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-negra-adidas-2a-peru-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-adidas-2a-peru-26-color-negro_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/L/JL8660_camiseta-adidas-2a-peru-26-negra_4_detalle-cuello.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jl8660",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la segunda equipación adidas de la selección de Perú 2026 - negra",
+    "tagline": "La camiseta de la segunda equipación de Perú",
+    "intro": "Experimenta la energía de la cultura peruana cada vez que te pongas la camiseta de la segunda equipación de Perú 2026. Inspirada en los colores vibrantes de la cultura chicha, esta prenda destaca por sus llamativos detalles y ribetes que reflejan la identidad y creatividad del país.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Absorbe y dispersa el sudor para mantener la piel fresca y seca durante el partido.",
+      "Tejido de doble punto: Proporciona comodidad, resistencia y una sensación ligera durante el juego.",
+      "Corte entallado: Ofrece una silueta aerodinámica que favorece la libertad de movimiento.",
+      "Diseño oficial de Perú: Con escudo de la federación peruana que muestra tu orgullo por la selección."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jl8660"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "2a",
+    "submodel": "",
+    "product_model": "2a Perú 26",
+    "sole_type": ""
+  }
+}

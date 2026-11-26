@@ -1,0 +1,96 @@
+{
+  "id": "DV5435-325",
+  "slug": "gorro-nike-sportswear-beanie-fisherman-green",
+  "name": "Gorro Nike Sportswear Beanie Fisherman",
+  "model": "Gorro Nike Sportswear Beanie Fisherman",
+  "brand": "Nike",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorro de invierno Nike Sportswear - verde oscuro",
+    "tagline": "Diseño técnico con inspiración deportiva",
+    "intro": "Incorpora la tecnología Dri-Fit que te mantiene fresco y seco durante la actividad deportiva.",
+    "collection": "",
+    "key_benefits": [
+      "Color distintivo: Tono verde que añade personalidad a tu look.",
+      "Diseño pescador: Corte clásico con vuelta doblada.",
+      "Tejido técnico: Dri-FIT que mantiene la cabeza seca.",
+      "Etiqueta Nike Sportswear: Sutil y auténtica."
+    ],
+    "technical_details": {
+      "range": "Nike Sportswear Beanie Fisherman",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-color-z-verde-oscuro-nike-sportswear-beanie-fisherman_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-color-z-verde-oscuro-nike-sportswear-beanie-fisherman_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-verde-oscuro-nike-sportswear-beanie-fisherman_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-nike-sportswear-beanie-fisherman-color-z-verde-oscuro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-nike-sportswear-beanie-fisherman-verde-oscuro_4_aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-color-z-verde-oscuro-nike-sportswear-beanie-fisherman_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-verde-oscuro-nike-sportswear-beanie-fisherman_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-nike-sportswear-beanie-fisherman-color-z-verde-oscuro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/V/DV5435-325_gorro-nike-sportswear-beanie-fisherman-verde-oscuro_4_aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dv5435-325",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorro de invierno Nike Sportswear - verde oscuro",
+    "tagline": "Diseño técnico con inspiración deportiva",
+    "intro": "Incorpora la tecnología Dri-Fit que te mantiene fresco y seco durante la actividad deportiva.",
+    "collection": "",
+    "key_benefits": [
+      "Color distintivo: Tono verde que añade personalidad a tu look.",
+      "Diseño pescador: Corte clásico con vuelta doblada.",
+      "Tejido técnico: Dri-FIT que mantiene la cabeza seca.",
+      "Etiqueta Nike Sportswear: Sutil y auténtica."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dv5435-325"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "high",
+    "rule": "name contains 'gorro'",
+    "root_model": "Gorro",
+    "submodel": "",
+    "product_model": "Gorro Nike Sportswear Beanie Fisherman",
+    "sole_type": ""
+  }
+}

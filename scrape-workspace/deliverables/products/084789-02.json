@@ -1,0 +1,113 @@
+{
+  "id": "084789-02",
+  "slug": "balon-puma-olympique-marsella-culture-talla-mini-blue",
+  "name": "Puma Olympique Marsella Culture talla mini",
+  "model": "Olympique Marsella Culture talla mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Olympique de Marseille Puma soccer ball in mini size - turquoise",
+    "tagline": "Your club in mini version",
+    "intro": "The Olympique de Marseille mini ball is perfect for improving your technique with style. Its compact size and authentic design make it ideal for club fans who want to train with passion and precision.",
+    "collection": "",
+    "key_benefits": [
+      "Marseille design: Official graphics in mini version.",
+      "Ideal for technique: Improve your control and precision in small spaces.",
+      "Easy to transport: Take it anywhere and train wherever you want.",
+      "Bright color: High visibility in fast games.",
+      "Perfecto para regalo: Una joya para cualquier fan del Olympique."
+    ],
+    "technical_details": {
+      "range": "Puma Olympique Marsella Culture talla mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/18f6a2d26249214022d578b8a92da91c86a76770-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/18f6a2d26249214022d578b8a92da91c86a76770-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c168f14b8c75e8b79e28f3f4c6694c0b7983279c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/45ee7b7c3c24a5e9038560d5bed649c4fd4235ac-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/18f6a2d26249214022d578b8a92da91c86a76770-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c168f14b8c75e8b79e28f3f4c6694c0b7983279c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/45ee7b7c3c24a5e9038560d5bed649c4fd4235ac-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-18f6a2d26249214022d578b8a92da91c86a76770-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/18f6a2d26249214022d578b8a92da91c86a76770-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c168f14b8c75e8b79e28f3f4c6694c0b7983279c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c168f14b8c75e8b79e28f3f4c6694c0b7983279c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-45ee7b7c3c24a5e9038560d5bed649c4fd4235ac-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/45ee7b7c3c24a5e9038560d5bed649c4fd4235ac-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084789-02",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Olympique de Marsella en talla mini - turquesa",
+    "tagline": "Tu club en versión mini",
+    "intro": "El balón mini del Olympique de Marsella es perfecto para mejorar tu técnica con estilo. Su tamaño compacto y diseño auténtico lo hacen ideal para fans del club que quieren entrenar con pasión y precisión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño del Marsella: Gráficos oficiales en versión mini.",
+      "Ideal para técnica: Mejora tu control y precisión en espacios reducidos.",
+      "Fácil de transportar: Llévalo a cualquier parte y entrena donde quieras.",
+      "Color brillante: Alta visibilidad en juegos rápidos.",
+      "Perfecto para regalo: Una joya para cualquier fan del Olympique."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084789-02"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Olympique",
+    "submodel": "",
+    "product_model": "Olympique Marsella Culture talla mini",
+    "sole_type": ""
+  }
+}

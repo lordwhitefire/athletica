@@ -1,0 +1,78 @@
+{
+  "id": "CAMAFLUO-8",
+  "slug": "coderas-acolchadas-181keepers-yellow",
+  "name": "Coderas acolchadas 181Keepers",
+  "model": "Coderas acolchadas 181Keepers",
+  "brand": "181Keepers",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "acolchadas 181Keepers",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-acolchadas-portero-futbol-sala-color-amarillo-181keepers_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-acolchadas-portero-futbol-sala-color-amarillo-181keepers_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-arquero-futsal-amarillas-fluor-181keepers_2_comleta-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-de-futbol-sala-181keepers-color-amarillo_3_vista-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-de-portero-181keepers-amarillas-fluor_4_aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-acolchadas-portero-futbol-sala-color-amarillo-181keepers_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-arquero-futsal-amarillas-fluor-181keepers_2_comleta-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-de-futbol-sala-181keepers-color-amarillo_3_vista-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CAMAFLUO-8_coderas-de-portero-181keepers-amarillas-fluor_4_aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/camafluo-8",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/camafluo-8"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Coderas",
+    "submodel": "",
+    "product_model": "Coderas acolchadas 181Keepers",
+    "sole_type": ""
+  }
+}

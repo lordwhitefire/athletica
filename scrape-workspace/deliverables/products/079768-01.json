@@ -1,0 +1,101 @@
+{
+  "id": "079768-01",
+  "slug": "mochila-de-cuerdas-puma-manchester-city-fan-blue",
+  "name": "Backpack de cuerdas Puma Manchester City Fan",
+  "model": "Backpack de cuerdas Puma Manchester City Fan",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Manchester City Fan",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8f03c013bf7acf4dfb2750227ab6dfdc0af260bc-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8f03c013bf7acf4dfb2750227ab6dfdc0af260bc-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2d253bd640cff3bed5733724343e88150a552ef7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fdc20df6d6de550f7d8353ae8a3850d46b71150c-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8f03c013bf7acf4dfb2750227ab6dfdc0af260bc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2d253bd640cff3bed5733724343e88150a552ef7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fdc20df6d6de550f7d8353ae8a3850d46b71150c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-8f03c013bf7acf4dfb2750227ab6dfdc0af260bc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8f03c013bf7acf4dfb2750227ab6dfdc0af260bc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2d253bd640cff3bed5733724343e88150a552ef7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2d253bd640cff3bed5733724343e88150a552ef7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fdc20df6d6de550f7d8353ae8a3850d46b71150c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fdc20df6d6de550f7d8353ae8a3850d46b71150c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/079768-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/079768-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Manchester City Fan",
+    "sole_type": ""
+  }
+}

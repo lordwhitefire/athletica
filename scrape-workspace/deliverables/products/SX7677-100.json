@@ -1,0 +1,88 @@
+{
+  "id": "SX7677-100",
+  "slug": "calcetines-tobilleros-nike-everyday-finos-3-pares-white",
+  "name": "tobilleros Nike Everyday finos 3 pares",
+  "model": "tobilleros Nike Everyday finos 3 pares",
+  "brand": "Nike",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pack de 3 calcetines tobilleros finos Nike - blancos",
+    "tagline": "Pureza y ligereza en cada paso",
+    "intro": "Estos calcetines tobilleros blancos Nike Everyday combinan comodidad y estilo limpio para que tus pies respiren con total libertad durante todo el día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño limpio: Color blanco clásico que combina con todo.",
+      "Transpiración activa: Tejido fino que permite la ventilación natural.",
+      "Suavidad total: Tacto agradable que no genera rozaduras.",
+      "Uso diario: Perfectos para deporte, paseo o descanso."
+    ],
+    "technical_details": {
+      "range": "tobilleros Nike Everyday finos 3 pares",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7677-100_imagen-de-los-calcetine-de-futbol-entrenamiento-Nike-Everyday-Lightweight-2021-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7677-100_imagen-de-los-calcetine-de-futbol-entrenamiento-Nike-Everyday-Lightweight-2021-blanco_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7677-100_imagen-de-los-calcetine-de-futbol-entrenamiento-Nike-Everyday-Lightweight-2021-blanco_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7677-100_imagen-de-los-calcetine-de-futbol-entrenamiento-Nike-Everyday-Lightweight-2021-blanco_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX7677-100_imagen-de-los-calcetine-de-futbol-entrenamiento-Nike-Everyday-Lightweight-2021-blanco_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sx7677-100",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pack de 3 calcetines tobilleros finos Nike - blancos",
+    "tagline": "Pureza y ligereza en cada paso",
+    "intro": "Estos calcetines tobilleros blancos Nike Everyday combinan comodidad y estilo limpio para que tus pies respiren con total libertad durante todo el día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño limpio: Color blanco clásico que combina con todo.",
+      "Transpiración activa: Tejido fino que permite la ventilación natural.",
+      "Suavidad total: Tacto agradable que no genera rozaduras.",
+      "Uso diario: Perfectos para deporte, paseo o descanso."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sx7677-100"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'calcetin'",
+    "root_model": "tobilleros",
+    "submodel": "",
+    "product_model": "tobilleros Nike Everyday finos 3 pares",
+    "sole_type": ""
+  }
+}

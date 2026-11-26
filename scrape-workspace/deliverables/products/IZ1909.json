@@ -1,0 +1,98 @@
+{
+  "id": "IZ1909",
+  "slug": "mochila-adidas-essentials-training-green",
+  "name": "Backpack adidas Essentials Training",
+  "model": "Backpack adidas Essentials Training",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deportes adidas (16 x 30 x 46 cm) - Unisex",
+    "tagline": "Preparada para cualquier plan",
+    "intro": "Una mochila que combina espacio y comodidad, perfecta para llevar tu equipo de entrenamiento y acompañarte en tu día a día sin complicaciones.",
+    "collection": "",
+    "key_benefits": [
+      "Uso versátil: Diseñada para adaptarse tanto a tus entrenamientos como a tu día a día.",
+      "Gran capacidad: Sus 27,5 litros permiten guardar todo lo que necesitas sin problemas.",
+      "Comodidad en movimiento: Correas acolchadas que hacen más ligero el transporte.",
+      "Organización sencilla: Compartimento principal amplio y bolsillos laterales de fácil acceso."
+    ],
+    "technical_details": {
+      "range": "adidas Essentials Training",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-color-verde-adidas-essentials-training_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-color-verde-adidas-essentials-training_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-verde-oliva-adidas-essentials-training_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-adidas-essentials-training-color-verde_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-adidas-essentials-training-verde-oliva_4_detalle-asas.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-color-verde-adidas-essentials-training_5_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-color-verde-adidas-essentials-training_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-verde-oliva-adidas-essentials-training_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-adidas-essentials-training-color-verde_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-adidas-essentials-training-verde-oliva_4_detalle-asas.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Z/IZ1909_mochila-color-verde-adidas-essentials-training_5_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/iz1909",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes adidas (16 x 30 x 46 cm) - Unisex",
+    "tagline": "Preparada para cualquier plan",
+    "intro": "Una mochila que combina espacio y comodidad, perfecta para llevar tu equipo de entrenamiento y acompañarte en tu día a día sin complicaciones.",
+    "collection": "",
+    "key_benefits": [
+      "Uso versátil: Diseñada para adaptarse tanto a tus entrenamientos como a tu día a día.",
+      "Gran capacidad: Sus 27,5 litros permiten guardar todo lo que necesitas sin problemas.",
+      "Comodidad en movimiento: Correas acolchadas que hacen más ligero el transporte.",
+      "Organización sencilla: Compartimento principal amplio y bolsillos laterales de fácil acceso."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/iz1909"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack adidas Essentials Training",
+    "sole_type": ""
+  }
+}

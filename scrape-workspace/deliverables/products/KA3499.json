@@ -1,0 +1,100 @@
+{
+  "id": "KA3499",
+  "slug": "chaqueta-adidas-espana-all-weather-blue",
+  "name": "adidas España All Weather",
+  "model": "España All Weather",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas de la selección española 2026 - azul marino",
+    "tagline": "Protección ante cualquier clima",
+    "intro": "La chaqueta All Weather de España 2026 mantiene el estilo y el confort incluso en los días lluviosos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con los colores y el escudo de la selección española.",
+      "Comodidad total: Tejidos suaves y transpirables para todo el día.",
+      "Tecnología integrada: Incorpora la tecnología CLIMACOOL.",
+      "Versatilidad: Perfecta para entrenar, salir o animar con estilo."
+    ],
+    "technical_details": {
+      "range": "adidas España All Weather",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-color-azul-adidas-espana-all-weather_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-color-azul-adidas-espana-all-weather_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-chandal-azul-marino-adidas-espana-all-weather_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-entretiempo-adidas-espana-all-weather-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-adidas-espana-all-weather-azul-marino_4_detalle-hombro-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-color-azul-adidas-espana-all-weather_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-chandal-azul-marino-adidas-espana-all-weather_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-entretiempo-adidas-espana-all-weather-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3499_chaqueta-adidas-espana-all-weather-azul-marino_4_detalle-hombro-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka3499",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas de la selección española 2026 - azul marino",
+    "tagline": "Protección ante cualquier clima",
+    "intro": "La chaqueta All Weather de España 2026 mantiene el estilo y el confort incluso en los días lluviosos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con los colores y el escudo de la selección española.",
+      "Comodidad total: Tejidos suaves y transpirables para todo el día.",
+      "Tecnología integrada: Incorpora la tecnología CLIMACOOL.",
+      "Versatilidad: Perfecta para entrenar, salir o animar con estilo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka3499"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España All Weather",
+    "sole_type": ""
+  }
+}

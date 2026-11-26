@@ -1,0 +1,93 @@
+{
+  "id": "042067-02",
+  "slug": "puma-future-match-nc-yellow",
+  "name": "Puma Future Match NC",
+  "model": "Future Match NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Future Match NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/1d222811a01b1e5aa0f3818962474b621dc781f3-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/1d222811a01b1e5aa0f3818962474b621dc781f3-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fb9a7d211ee01e8982a03d42380c374461f3c038-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0f1544c836ee16e59f88b3d3953a2682c93234c8-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1d222811a01b1e5aa0f3818962474b621dc781f3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fb9a7d211ee01e8982a03d42380c374461f3c038-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0f1544c836ee16e59f88b3d3953a2682c93234c8-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-1d222811a01b1e5aa0f3818962474b621dc781f3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1d222811a01b1e5aa0f3818962474b621dc781f3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fb9a7d211ee01e8982a03d42380c374461f3c038-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fb9a7d211ee01e8982a03d42380c374461f3c038-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0f1544c836ee16e59f88b3d3953a2682c93234c8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0f1544c836ee16e59f88b3d3953a2682c93234c8-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042067-02",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042067-02"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Match NC",
+    "product_model": "Future Match NC",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "HM3682-010",
+  "slug": "pantalon-nike-chelsea-tech-fleece-black",
+  "name": "Nike Chelsea Tech Fleece",
+  "model": "Chelsea Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del Chelsea FC - negro",
+    "tagline": "Comodidad técnica para fans blue",
+    "intro": "El pantalón Nike Tech Fleece del Chelsea FC ofrece abrigo ligero y ajuste moderno para entrenar suave o moverte por la ciudad. Inspirado en el equipamiento de presentación, combina un corte tapered con materiales de tacto premium que realzan el look del club.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste tapered: Pernera entallada que estiliza y acompaña el movimiento.",
+      "Confort suave: Tejido de felpa técnica agradable al contacto con la piel.",
+      "Seguridad práctica: Bolsillos con cierre para llevar lo esencial.",
+      "Identidad Chelsea: Detalles y escudo oficiales del club londinense."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3682-010_pantalon-largo-color-negro-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3682-010_pantalon-largo-color-negro-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3682-010_pantalon-chandal-negro-nike-chelsea-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3682-010_pantalon-chandal-nike-chelsea-tech-fleece-color-negro_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3682-010_pantalon-largo-color-negro-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3682-010_pantalon-chandal-negro-nike-chelsea-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3682-010_pantalon-chandal-nike-chelsea-tech-fleece-color-negro_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3682-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del Chelsea FC - negro",
+    "tagline": "Comodidad técnica para fans blue",
+    "intro": "El pantalón Nike Tech Fleece del Chelsea FC ofrece abrigo ligero y ajuste moderno para entrenar suave o moverte por la ciudad. Inspirado en el equipamiento de presentación, combina un corte tapered con materiales de tacto premium que realzan el look del club.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste tapered: Pernera entallada que estiliza y acompaña el movimiento.",
+      "Confort suave: Tejido de felpa técnica agradable al contacto con la piel.",
+      "Seguridad práctica: Bolsillos con cierre para llevar lo esencial.",
+      "Identidad Chelsea: Detalles y escudo oficiales del club londinense."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3682-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Chelsea Tech",
+    "submodel": "",
+    "product_model": "Chelsea Tech Fleece",
+    "sole_type": ""
+  }
+}

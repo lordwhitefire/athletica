@@ -1,0 +1,83 @@
+{
+  "id": "100120701",
+  "slug": "inflador-uhlsport-2-way-black",
+  "name": "Inflador Uhlsport 2 way",
+  "model": "Inflador Uhlsport 2 way",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport 2 way",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/7d94ceac4f5815c24a9faa3c288b72d70b1df57a-800x800.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/7d94ceac4f5815c24a9faa3c288b72d70b1df57a-800x800.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2df4b4c2275f0f505455bb1c88a26268376f61d9-800x800.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7d94ceac4f5815c24a9faa3c288b72d70b1df57a-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2df4b4c2275f0f505455bb1c88a26268376f61d9-800x800.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-7d94ceac4f5815c24a9faa3c288b72d70b1df57a-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7d94ceac4f5815c24a9faa3c288b72d70b1df57a-800x800.jpg"
+    },
+    {
+      "_id": "image-2df4b4c2275f0f505455bb1c88a26268376f61d9-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2df4b4c2275f0f505455bb1c88a26268376f61d9-800x800.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100120701",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100120701"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Inflador",
+    "submodel": "",
+    "product_model": "Inflador Uhlsport 2 way",
+    "sole_type": ""
+  }
+}

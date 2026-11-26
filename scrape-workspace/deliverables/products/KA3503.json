@@ -1,0 +1,100 @@
+{
+  "id": "KA3503",
+  "slug": "sudadera-adidas-espana-hoodie-blue",
+  "name": "adidas España Hoodie",
+  "model": "España Hoodie",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera con capucha adidas de la selección española 2026 - azul marino",
+    "tagline": "Comodidad con identidad nacional",
+    "intro": "La sudadera con capucha España 2026 combina abrigo, suavidad y orgullo por La Roja.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con los colores y el escudo de la selección española.",
+      "Comodidad total: Tejidos suaves y transpirables para todo el día.",
+      "Tecnología integrada: Incorpora la tecnología CLIMACOOL.",
+      "Versatilidad: Perfecta para entrenar, salir o animar con estilo."
+    ],
+    "technical_details": {
+      "range": "adidas España Hoodie",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-color-azul-adidas-espana-hoodie_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-color-azul-adidas-espana-hoodie_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-azul-marino-adidas-espana-hoodie_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-adidas-espana-hoodie-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-adidas-espana-hoodie-azul-marino_4_detalle-capucha-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-color-azul-adidas-espana-hoodie_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-azul-marino-adidas-espana-hoodie_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-adidas-espana-hoodie-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3503_sudadera-con-capucha-adidas-espana-hoodie-azul-marino_4_detalle-capucha-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka3503",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera con capucha adidas de la selección española 2026 - azul marino",
+    "tagline": "Comodidad con identidad nacional",
+    "intro": "La sudadera con capucha España 2026 combina abrigo, suavidad y orgullo por La Roja.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con los colores y el escudo de la selección española.",
+      "Comodidad total: Tejidos suaves y transpirables para todo el día.",
+      "Tecnología integrada: Incorpora la tecnología CLIMACOOL.",
+      "Versatilidad: Perfecta para entrenar, salir o animar con estilo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka3503"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España Hoodie",
+    "sole_type": ""
+  }
+}

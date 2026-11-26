@@ -1,0 +1,96 @@
+{
+  "id": "JN5342",
+  "slug": "adidas-copa-club-j-blanco-naranja",
+  "name": "adidas Copa Club J",
+  "model": "Copa Club J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Naranja",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - blancos, naranjas",
+    "tagline": "Agarre fiable para cada entrenamiento",
+    "intro": "Los adidas Copa Club J han sido diseñados para porteros que buscan comodidad, control y ajuste perfecto en cada intervención. Su estructura se adapta al juego moderno, permitiendo una respuesta rápida y segura.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Ajuste ergonómico: Diseñados para adaptarse a la mano con precisión.",
+      "Comodidad en todo momento: Materiales que permiten jugar sin distracciones.",
+      "Palma técnica: Látex sintético que mejora el agarre y la amortiguación.",
+      "Estilo adidas: Diseño moderno con identidad deportiva reconocible."
+    ],
+    "technical_details": {
+      "range": "Copa Club J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-de-portero-color-blanco-y-naranja-adidas-copa-club-j_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-de-portero-color-blanco-y-naranja-adidas-copa-club-j_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-portero-blancos--naranjas-adidas-copa-club-j_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-de-arquero-adidas-copa-club-j-color-blanco-y-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-de-futbol-adidas-copa-club-j-blancos--naranjas_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-de-portero-color-blanco-y-naranja-adidas-copa-club-j_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-portero-blancos--naranjas-adidas-copa-club-j_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-de-arquero-adidas-copa-club-j-color-blanco-y-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5342_guantes-de-futbol-adidas-copa-club-j-blancos--naranjas_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jn5342",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - blancos, naranjas",
+    "tagline": "Agarre fiable para cada entrenamiento",
+    "intro": "Los adidas Copa Club J han sido diseñados para porteros que buscan comodidad, control y ajuste perfecto en cada intervención. Su estructura se adapta al juego moderno, permitiendo una respuesta rápida y segura.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Ajuste ergonómico: Diseñados para adaptarse a la mano con precisión.",
+      "Comodidad en todo momento: Materiales que permiten jugar sin distracciones.",
+      "Palma técnica: Látex sintético que mejora el agarre y la amortiguación.",
+      "Estilo adidas: Diseño moderno con identidad deportiva reconocible."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jn5342"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Club J",
+    "product_model": "Copa Club J",
+    "sole_type": ""
+  }
+}

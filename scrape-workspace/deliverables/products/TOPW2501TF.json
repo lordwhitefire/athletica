@@ -1,0 +1,92 @@
+{
+  "id": "TOPW2501TF",
+  "slug": "joma-top-flex-tf-black",
+  "name": "Joma Top Flex TF",
+  "model": "Top Flex",
+  "brand": "Joma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol multitaco de piel Joma TF suela turf - negras",
+    "tagline": "",
+    "intro": "Las Joma Top Flex TF están diseñadas para jugar en superficies sintéticas con gran agarre y control. Su estructura flexible y el corte en piel natural garantizan una sensación superior del balón y movimientos precisos en turf.",
+    "collection": "",
+    "key_benefits": [
+      "Toque preciso: Corte de piel adaptable que mejora el control del balón.",
+      "Amortiguación eficaz: Mediasuela ligera que reduce impactos sin perder sensibilidad.",
+      "Tracción optimizada: Suela con diseño específico para una pisada estable y reactiva.",
+      "Refuerzo duradero: Puntera reforzada para mayor resistencia al desgaste.",
+      "Ventilación inteligente: Paneles transpirables que mejoran la circulación del aire."
+    ],
+    "technical_details": {
+      "range": "Top Flex",
+      "sole_type": "TF",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "TF",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_botas-multitaco-color-negro-joma-top-flex-tf_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_botas-multitaco-color-negro-joma-top-flex-tf_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_multitaco-negras-joma-top-flex-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_zapatillas-multitaco-joma-top-flex-tf-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_botas-turf-joma-top-flex-tf-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_botas-taco-turf-color-negro-joma-top-flex-tf_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_botas-multitaco-color-negro-joma-top-flex-tf_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_multitaco-negras-joma-top-flex-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_zapatillas-multitaco-joma-top-flex-tf-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_botas-turf-joma-top-flex-tf-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPW2501TF_botas-taco-turf-color-negro-joma-top-flex-tf_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/topw2501tf",
+    "language": "es",
+    "category": "Botas multitaco",
+    "captured_at": "2026-11-19",
+    "subtitle": "Zapatillas de fútbol multitaco de piel Joma TF suela turf - negras",
+    "tagline": "",
+    "intro": "Las Joma Top Flex TF están diseñadas para jugar en superficies sintéticas con gran agarre y control. Su estructura flexible y el corte en piel natural garantizan una sensación superior del balón y movimientos precisos en turf.",
+    "collection": "",
+    "key_benefits": [
+      "Toque preciso: Corte de piel adaptable que mejora el control del balón.",
+      "Amortiguación eficaz: Mediasuela ligera que reduce impactos sin perder sensibilidad.",
+      "Tracción optimizada: Suela con diseño específico para una pisada estable y reactiva.",
+      "Refuerzo duradero: Puntera reforzada para mayor resistencia al desgaste.",
+      "Ventilación inteligente: Paneles transpirables que mejoran la circulación del aire."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas multitaco"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/topw2501tf"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Top",
+    "submodel": "Flex",
+    "product_model": "Top Flex",
+    "sole_type": "TF"
+  }
+}

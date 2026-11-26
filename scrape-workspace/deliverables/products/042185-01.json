@@ -1,0 +1,97 @@
+{
+  "id": "042185-01",
+  "slug": "guantes-puma-essentials-black",
+  "name": "Puma Essentials",
+  "model": "Essentials",
+  "brand": "Puma",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "adidas thermal gloves for winter - black",
+    "tagline": "Protection and comfort for the coldest days",
+    "intro": "The Puma Essentials gloves are the perfect complement to face winter with comfort. Its soft, stretchy knit fabric provides a comfortable fit, while touch-screen compatible fingertips let you use your phone without taking them off.",
+    "collection": "",
+    "key_benefits": [
+      "Compatible with touch screens: Use your smartphone without taking off your gloves.",
+      "Warm and elastic fabric: Provides comfort and freedom of movement.",
+      "Ribbed cuffs: Better fit and greater protection against the cold.",
+      "Puma sports style: Clean and versatile design for any occasion."
+    ],
+    "technical_details": {
+      "range": "Puma Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b97fae4a5a9ce1d87ef547ac83e416cc6352e550-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b97fae4a5a9ce1d87ef547ac83e416cc6352e550-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/deb8c83e8395c76eb6fb7261e5d5840ecf3cc2aa-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b97fae4a5a9ce1d87ef547ac83e416cc6352e550-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/deb8c83e8395c76eb6fb7261e5d5840ecf3cc2aa-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b97fae4a5a9ce1d87ef547ac83e416cc6352e550-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b97fae4a5a9ce1d87ef547ac83e416cc6352e550-1500x1500.jpg"
+    },
+    {
+      "_id": "image-deb8c83e8395c76eb6fb7261e5d5840ecf3cc2aa-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/deb8c83e8395c76eb6fb7261e5d5840ecf3cc2aa-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042185-01",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes térmicos adidas para el invierno - negros",
+    "tagline": "Protección y confort para los días más fríos",
+    "intro": "Los guantes Puma Essentials son el complemento perfecto para afrontar el invierno con comodidad. Su tejido de punto suave y elástico proporciona un ajuste confortable, mientras que las puntas de los dedos compatibles con pantallas táctiles te permiten utilizar el móvil sin necesidad de quitártelos.",
+    "collection": "",
+    "key_benefits": [
+      "Compatibles con pantallas táctiles: Utiliza tu smartphone sin quitarte los guantes.",
+      "Tejido cálido y elástico: Aporta confort y libertad de movimiento.",
+      "Puños de canalé: Mejor ajuste y mayor protección frente al frío.",
+      "Estilo deportivo Puma: Diseño limpio y versátil para cualquier ocasión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042185-01"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "Essentials",
+    "submodel": "",
+    "product_model": "Essentials",
+    "sole_type": ""
+  }
+}

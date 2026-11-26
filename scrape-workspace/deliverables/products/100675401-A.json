@@ -1,0 +1,87 @@
+{
+  "id": "100675401-A",
+  "slug": "tobillera-uhlsport-black",
+  "name": "Tobillera Uhlsport",
+  "model": "Tobillera Uhlsport",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6e74d74d1dfb75fd214e7f27328f22ec3d4934cc-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100675401-a",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100675401-a"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Tobillera",
+    "submodel": "",
+    "product_model": "Tobillera Uhlsport",
+    "sole_type": ""
+  }
+}

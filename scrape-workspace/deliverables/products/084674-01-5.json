@@ -1,0 +1,109 @@
+{
+  "id": "084674-01-5",
+  "slug": "balon-puma-orbita-liga-portugal-25-26-talla-5-white",
+  "name": "Puma Orbita Liga Portugal 25 26 talla 5",
+  "model": "Orbita Liga Portugal 25 26 talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol Puma de la Liga Portuguesa 2025 2026 talla 5 - blanco",
+    "tagline": "The official ball that takes your football to the next level",
+    "intro": "Enjoy the professional touch and Puma quality with this official ball of the Portugal League. Its durable construction and eye-catching design make it the ideal choice for every play. Perfect for competing, training or improving your accuracy.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Same style used in the Portugal League 2025/26.",
+      "Vuelo preciso: Estructura optimizada para trayectorias estables.",
+      "Durabilidad superior: Material resistente para uso frecuente.",
+      "Excellent control: Textured surface for better ball handling.",
+      "High visibility: Eye-catching graphics visible in any environment."
+    ],
+    "technical_details": {
+      "range": "Puma Orbita Liga Portugal 25 26 talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ba491bc50ca50c6ee21d88218990371e557321e7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ba491bc50ca50c6ee21d88218990371e557321e7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/48307f65d711564c83277066c4ae303aa48943a9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7a97542ac0ae88f380d08ceb630bdc7f12e2f526-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ba491bc50ca50c6ee21d88218990371e557321e7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/48307f65d711564c83277066c4ae303aa48943a9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7a97542ac0ae88f380d08ceb630bdc7f12e2f526-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ba491bc50ca50c6ee21d88218990371e557321e7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ba491bc50ca50c6ee21d88218990371e557321e7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-48307f65d711564c83277066c4ae303aa48943a9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/48307f65d711564c83277066c4ae303aa48943a9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7a97542ac0ae88f380d08ceb630bdc7f12e2f526-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7a97542ac0ae88f380d08ceb630bdc7f12e2f526-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084674-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Liga Portuguesa 2025 2026 talla 5 - blanco",
+    "tagline": "El balón oficial que lleva tu fútbol al siguiente nivel",
+    "intro": "Disfruta del toque profesional y la calidad Puma con este balón oficial de la Liga Portugal. Su fabricación duradera y su diseño llamativo lo convierten en la opción ideal para cada jugada. Perfecto para competir, entrenar o mejorar tu precisión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Mismo estilo usado en la Liga Portugal 2025/26.",
+      "Vuelo preciso: Estructura optimizada para trayectorias estables.",
+      "Durabilidad superior: Material resistente para uso frecuente.",
+      "Excelente control: Superficie texturizada para mejor manejo del balón.",
+      "Alta visibilidad: Gráficos llamativos visibles en cualquier entorno."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084674-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita Liga Portugal 25 26 talla 5",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "FI4189",
+  "slug": "peto-adidas-training-bib-14-yellow",
+  "name": "Peto adidas Training Bib 14",
+  "model": "Peto adidas Training Bib 14",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Peto de entrenamiento de fútbol adidas - amarillo",
+    "tagline": "Dinamismo y organización en el campo",
+    "intro": "El Peto adidas Training Bib 14 amarillo destaca por su color llamativo y su tejido transpirable de alto rendimiento. Ideal para estructurar grupos en tus entrenamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Color vivo: Gran visibilidad en campo o pabellón.",
+      "Transpirabilidad total: Mantiene la frescura durante toda la sesión.",
+      "Diseño funcional: Fácil de poner y quitar.",
+      "Comodidad absoluta: Se ajusta sin apretar."
+    ],
+    "technical_details": {
+      "range": "adidas Training Bib 14",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4189_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-amarillo_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4189_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-amarillo_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4189_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-amarillo_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4189_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-amarillo_3_detalle-cuello.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4189_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-amarillo_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4189_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-amarillo_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4189_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-amarillo_3_detalle-cuello.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fi4189",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Peto de entrenamiento de fútbol adidas - amarillo",
+    "tagline": "Dinamismo y organización en el campo",
+    "intro": "El Peto adidas Training Bib 14 amarillo destaca por su color llamativo y su tejido transpirable de alto rendimiento. Ideal para estructurar grupos en tus entrenamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Color vivo: Gran visibilidad en campo o pabellón.",
+      "Transpirabilidad total: Mantiene la frescura durante toda la sesión.",
+      "Diseño funcional: Fácil de poner y quitar.",
+      "Comodidad absoluta: Se ajusta sin apretar."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fi4189"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Peto",
+    "submodel": "",
+    "product_model": "Peto adidas Training Bib 14",
+    "sole_type": ""
+  }
+}

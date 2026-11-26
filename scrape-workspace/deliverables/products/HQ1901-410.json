@@ -1,0 +1,96 @@
+{
+  "id": "HQ1901-410",
+  "slug": "pantalon-nike-barcelona-tech-fleece-blue",
+  "name": "Nike Barcelona Tech Fleece",
+  "model": "Barcelona Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del FC Barcelona - azul marino",
+    "tagline": "Diseño urbano con inspiración deportiva",
+    "intro": "El pantalón largo Nike Barça Tech ofrece abrigo ligero y estilo contemporáneo para fans exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Confección técnica: Tejido cálido y elástico.",
+      "Estilo versátil: Ideal para combinar con sudaderas o chaquetas.",
+      "Toque culé discreto: Escudo bordado y colores oficiales.",
+      "Cintura elástica: Ajuste cómodo y funcional."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-largo-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-largo-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-chandal-azul-marino-nike-barcelona-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-chandal-nike-barcelona-tech-fleece-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-largo-nike-barcelona-tech-fleece-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-largo-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-chandal-azul-marino-nike-barcelona-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-chandal-nike-barcelona-tech-fleece-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1901-410_pantalon-largo-nike-barcelona-tech-fleece-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq1901-410",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del FC Barcelona - azul marino",
+    "tagline": "Diseño urbano con inspiración deportiva",
+    "intro": "El pantalón largo Nike Barça Tech ofrece abrigo ligero y estilo contemporáneo para fans exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Confección técnica: Tejido cálido y elástico.",
+      "Estilo versátil: Ideal para combinar con sudaderas o chaquetas.",
+      "Toque culé discreto: Escudo bordado y colores oficiales.",
+      "Cintura elástica: Ajuste cómodo y funcional."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq1901-410"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Barcelona Tech",
+    "submodel": "",
+    "product_model": "Barcelona Tech Fleece",
+    "sole_type": ""
+  }
+}

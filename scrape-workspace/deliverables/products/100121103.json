@@ -1,0 +1,93 @@
+{
+  "id": "100121103",
+  "slug": "venda-adhesiva-uhlsport-tube-it-tape-7-5-cm-red",
+  "name": "Venda adhesiva Uhlsport Tube It Tape 7,5 cm",
+  "model": "Venda adhesiva Uhlsport Tube It Tape 7,5 cm",
+  "brand": "Uhlsport",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport Shin Guard Adhesive Elastic Bandage (7.5 cm x 4 m) - Red",
+    "tagline": "Reliable support for your shin guards",
+    "intro": "The Uhlsport Tube It Tape 7.5 cm adhesive bandage is designed to keep shin guards in place during training and matches. Its elastic and adhesive construction facilitates a tight fit around the leg to play with greater confidence and reduce protection movements.",
+    "collection": "",
+    "key_benefits": [
+      "Well-supported shin guards: Helps keep the protections in position during game movements.",
+      "Adaptive fit: Its elasticity allows it to wrap the leg comfortably and adapt the tension of the support.",
+      "Practical fixation: The adhesive surface makes it easy to secure the bandage without the need for additional closure systems.",
+      "Freedom to compete: A stable fit helps avoid frequent readjustments of the shin guards during training or matches."
+    ],
+    "technical_details": {
+      "range": "adhesiva Uhlsport Tube It Tape 7,5 cm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3686fbaf12743cffe548d1189ad07978f3d8a323-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3686fbaf12743cffe548d1189ad07978f3d8a323-1600x1600.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a7ee5c5ea1292a540ea434f1af7b3235ada2c4aa-1600x1600.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3686fbaf12743cffe548d1189ad07978f3d8a323-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a7ee5c5ea1292a540ea434f1af7b3235ada2c4aa-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3686fbaf12743cffe548d1189ad07978f3d8a323-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3686fbaf12743cffe548d1189ad07978f3d8a323-1600x1600.jpg"
+    },
+    {
+      "_id": "image-a7ee5c5ea1292a540ea434f1af7b3235ada2c4aa-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a7ee5c5ea1292a540ea434f1af7b3235ada2c4aa-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100121103",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Venda elástica adhesiva para sujeción de espinilleras Uhlsport (7,5 cm x 4 m) - roja",
+    "tagline": "Sujeción fiable para tus espinilleras",
+    "intro": "La venda adhesiva Uhlsport Tube It Tape 7,5 cm está diseñada para mantener las espinilleras bien colocadas durante entrenamientos y partidos. Su construcción elástica y adhesiva facilita una sujeción ajustada alrededor de la pierna para jugar con mayor confianza y reducir los movimientos de la protección.",
+    "collection": "",
+    "key_benefits": [
+      "Espinilleras bien sujetas: Ayuda a mantener las protecciones en su posición durante los movimientos propios del juego.",
+      "Ajuste adaptable: Su elasticidad permite envolver la pierna de manera cómoda y adaptar la tensión de la sujeción.",
+      "Fijación práctica: La superficie adhesiva facilita asegurar la venda sin necesidad de sistemas de cierre adicionales.",
+      "Libertad para competir: Una sujeción estable ayuda a evitar reajustes frecuentes de las espinilleras durante el entrenamiento o el partido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100121103"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "high",
+    "rule": "name contains 'venda'",
+    "root_model": "Venda",
+    "submodel": "",
+    "product_model": "Venda adhesiva Uhlsport Tube It Tape 7,5 cm",
+    "sole_type": ""
+  }
+}

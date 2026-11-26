@@ -1,0 +1,102 @@
+{
+  "id": "JP3983",
+  "slug": "pantalon-adidas-real-madrid-entrenamiento-grey",
+  "name": "adidas Real Madrid Training",
+  "model": "Real Madrid entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas long training pants - gray",
+    "tagline": "Train with the style of the champion",
+    "intro": "These Real Madrid adidas training pants allow you to perform at your best in each session. Its tight fit and technical fabric guarantee total mobility and great breathability.",
+    "collection": "",
+    "key_benefits": [
+      "Professional style: Part of the official Real Madrid training kit.",
+      "Total comfort: Technical fabric that adapts to movement.",
+      "Superior performance: Slim fit that promotes mobility.",
+      "Functionality: Ideal for intense workouts or daily use.",
+      "White pride: Club crest on the leg."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-largo-color-gris-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-largo-color-gris-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-chandal-gris-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-chandal-adidas-real-madrid-entrenamiento-color-gris_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-largo-adidas-real-madrid-entrenamiento-gris_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-largo-color-gris-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-chandal-gris-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-chandal-adidas-real-madrid-entrenamiento-color-gris_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3983_pantalon-largo-adidas-real-madrid-entrenamiento-gris_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3983",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas del Real Madrid - gris",
+    "tagline": "Entrena con el estilo del campeón",
+    "intro": "Este pantalón adidas de entrenamiento del Real Madrid te permite rendir al máximo en cada sesión. Su ajuste ceñido y tejido técnico garantizan una movilidad total y gran transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo profesional: Parte del conjunto oficial de entrenamiento del Real Madrid.",
+      "Comodidad total: Tejido técnico que se adapta al movimiento.",
+      "Rendimiento superior: Ajuste slim que favorece la movilidad.",
+      "Funcionalidad: Ideal para entrenamientos intensos o uso diario.",
+      "Orgullo blanco: Escudo del club en la pierna."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3983"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento",
+    "sole_type": ""
+  }
+}

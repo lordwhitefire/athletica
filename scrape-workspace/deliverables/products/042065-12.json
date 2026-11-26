@@ -1,0 +1,107 @@
+{
+  "id": "042065-12",
+  "slug": "puma-future-pro-hybrid-orange",
+  "name": "Puma Future Pro Hybrid",
+  "model": "Future Pro Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma hybrid cut goalkeeper gloves - orange",
+    "tagline": "Designed for goalkeepers who dominate their area",
+    "intro": "The Puma Future Pro Hybrid offers anatomical fit, advanced grip technology and a durable structure for the demands of the modern game.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Expanded control: Hybrid cut that improves the contact area with the ball.",
+      "Lasting comfort: Technical materials that guarantee comfort throughout the session.",
+      "Shocking style: Hot Pursuit design that transmits power and personality."
+    ],
+    "technical_details": {
+      "range": "Future Pro Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d045df09da00121bd7af214576a11b8e62a3f6bf-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d045df09da00121bd7af214576a11b8e62a3f6bf-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9d3f5aaf2316fd2bd3b5b3cc893bc03f71a19e10-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5bc07e75557fd13dbdaeb03658f537ccfa3f4eab-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4ecaa12533166521b30a133b4f03e6af6f832ce6-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d045df09da00121bd7af214576a11b8e62a3f6bf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9d3f5aaf2316fd2bd3b5b3cc893bc03f71a19e10-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5bc07e75557fd13dbdaeb03658f537ccfa3f4eab-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4ecaa12533166521b30a133b4f03e6af6f832ce6-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-d045df09da00121bd7af214576a11b8e62a3f6bf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d045df09da00121bd7af214576a11b8e62a3f6bf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9d3f5aaf2316fd2bd3b5b3cc893bc03f71a19e10-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9d3f5aaf2316fd2bd3b5b3cc893bc03f71a19e10-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5bc07e75557fd13dbdaeb03658f537ccfa3f4eab-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5bc07e75557fd13dbdaeb03658f537ccfa3f4eab-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4ecaa12533166521b30a133b4f03e6af6f832ce6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4ecaa12533166521b30a133b4f03e6af6f832ce6-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042065-12",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte híbrido - naranjas",
+    "tagline": "Diseñados para porteros que dominan su área",
+    "intro": "Los Puma Future Pro Hybrid ofrecen ajuste anatómico, tecnología de agarre avanzada y una estructura resistente para las exigencias del juego moderno.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Control ampliado: Corte híbrido que mejora el área de contacto con el balón.",
+      "Comodidad duradera: Materiales técnicos que garantizan confort durante toda la sesión.",
+      "Estilo impactante: Diseño Hot Pursuit que transmite potencia y personalidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042065-12"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro Hybrid",
+    "product_model": "Future Pro Hybrid",
+    "sole_type": ""
+  }
+}

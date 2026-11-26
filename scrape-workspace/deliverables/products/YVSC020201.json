@@ -1,0 +1,90 @@
+{
+  "id": "YVSC020201",
+  "slug": "g-form-volt-nino-black",
+  "name": "G-Form Volt Kids",
+  "model": "Volt niño",
+  "brand": "G-Form",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol infantiles G-Form con mallas de sujeción integradas - negras",
+    "tagline": "Seguridad pensada para crecer jugando",
+    "intro": "Las espinilleras G-Form Volt infantiles ofrecen equilibrio entre protección y confort para que te centres en el juego. Su diseño estable mantiene la espinillera en su sitio durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Protección sólida: Placa resistente que dispersa el impacto.",
+      "Ajuste seguro: Sistema de sujeción que mantiene la espinillera en su sitio.",
+      "Comodidad prolongada: Acolchado interior que evita rozaduras.",
+      "Ventilación activa: Zonas transpirables que favorecen la circulación de aire."
+    ],
+    "technical_details": {
+      "range": "Volt niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC020201_espinilleras-color-negro-g-form-volt-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC020201_espinilleras-color-negro-g-form-volt-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC020201_canilleras-negras-g-form-volt-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC020201_espinilleras-g-form-volt-nino-color-negro_3_vista-conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC020201_espinilleras-color-negro-g-form-volt-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC020201_canilleras-negras-g-form-volt-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC020201_espinilleras-g-form-volt-nino-color-negro_3_vista-conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/yvsc020201",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol infantiles G-Form con mallas de sujeción integradas - negras",
+    "tagline": "Seguridad pensada para crecer jugando",
+    "intro": "Las espinilleras G-Form Volt infantiles ofrecen equilibrio entre protección y confort para que te centres en el juego. Su diseño estable mantiene la espinillera en su sitio durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Protección sólida: Placa resistente que dispersa el impacto.",
+      "Ajuste seguro: Sistema de sujeción que mantiene la espinillera en su sitio.",
+      "Comodidad prolongada: Acolchado interior que evita rozaduras.",
+      "Ventilación activa: Zonas transpirables que favorecen la circulación de aire."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/yvsc020201"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Volt",
+    "submodel": "",
+    "product_model": "Volt niño",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "IB3833-012",
+  "slug": "sudadera-nike-chelsea-dri-fit-academy-pro-se-grey",
+  "name": "Nike Chelsea Dri-Fit Academy Pro SE",
+  "model": "Chelsea Dri-Fit Academy Pro SE",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chelsea Nike Training Sweatshirt - Gray",
+    "tagline": "High-level training with Blue identity",
+    "intro": "This Chelsea Nike sweatshirt is designed for training sessions, combining a professional look with technical materials designed for performance.",
+    "collection": "",
+    "key_benefits": [
+      "Sweat control: Helps keep the body dry during training.",
+      "Thermal comfort: Ideal for sessions in cool climates.",
+      "Club style: Official Chelsea design."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea Dri-Fit Academy Pro SE",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-color-gris-nike-chelsea-dri-fit-academy-pro-se_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-color-gris-nike-chelsea-dri-fit-academy-pro-se_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-gris-nike-chelsea-dri-fit-academy-pro-se_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-nike-chelsea-dri-fit-academy-pro-se-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-nike-chelsea-dri-fit-academy-pro-se-gris_4_detalle-acabado-manga.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-color-gris-nike-chelsea-dri-fit-academy-pro-se_5_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-color-gris-nike-chelsea-dri-fit-academy-pro-se_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-gris-nike-chelsea-dri-fit-academy-pro-se_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-nike-chelsea-dri-fit-academy-pro-se-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-nike-chelsea-dri-fit-academy-pro-se-gris_4_detalle-acabado-manga.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3833-012_camiseta-manga-larga-color-gris-nike-chelsea-dri-fit-academy-pro-se_5_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib3833-012",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Nike del Chelsea - gris",
+    "tagline": "Entrenamiento de alto nivel con identidad Blue",
+    "intro": "Esta sudadera Nike del Chelsea está diseñada para las sesiones de entrenamiento, combinando un look profesional con materiales técnicos pensados para el rendimiento..",
+    "collection": "",
+    "key_benefits": [
+      "Control del sudor: Ayuda a mantener el cuerpo seco durante el entrenamiento.",
+      "Comodidad térmica: Ideal para sesiones en climas frescos.",
+      "Estilo del club: Diseño oficial del Chelsea."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib3833-012"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Chelsea Dri-Fit",
+    "submodel": "",
+    "product_model": "Chelsea Dri-Fit Academy Pro SE",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "GAMS2501IN",
+  "slug": "joma-gambeta-in-black",
+  "name": "Joma Gambeta IN",
+  "model": "Joma Gambeta IN",
+  "brand": "Joma",
+  "category": "Offers",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Gambeta IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/gams2501in",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMS2501IN_zapatillas-futbol-sala-color-negro-joma-gambeta-in_1_pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMS2501IN_zapatillas-de-futbol-sala-negras-joma-gambeta-in_2_suela-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMS2501IN_botas-futbol-sala-joma-gambeta-in-color-negro_3_interior-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMS2501IN_bambas-futbol-sala-joma-gambeta-in-negras_4_superior.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMS2501IN_tenis-futbol-sala-color-negro-joma-gambeta-in_5_perspectiva.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/A/GAMS2501IN_zapatillas-futbol-sala-color-negro-joma-gambeta-in_1_pie-derecho.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level1",
+      "name": "Zapatillas fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level2",
+      "name": "Zapatillas Joma fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala-joma"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level1",
+      "name": "Ofertas fútbol",
+      "href": "https://www.futbolmania.com/es/productos-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level2",
+      "name": "Calzado",
+      "href": "https://www.futbolmania.com/es/calzado-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level3",
+      "name": "Fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-futbol-sala-ofertas"
+    }
+  ]
+}

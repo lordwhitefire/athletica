@@ -1,0 +1,103 @@
+{
+  "id": "084287-03-5",
+  "slug": "balon-puma-orbita-la-liga-1-24-25-hybrid-talla-5-orange",
+  "name": "Puma Orbita La Liga 1 24 25 Hybrid talla 5",
+  "model": "Orbita La Liga 1 24 25 Hybrid talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Orbita La Liga 1 24 25 Hybrid talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c166b0f0514a81a8fa25d60ef7b08cdbe26088cb-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c166b0f0514a81a8fa25d60ef7b08cdbe26088cb-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/329d9648d452f5ed9e13e1190cfaeb25bb0c0eda-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c1e245c7f93284bf1fab18330ca6f2ab8f3a0feb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2fcf2f2387b8b0f92b4ffce800f8244c657de7be-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c166b0f0514a81a8fa25d60ef7b08cdbe26088cb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/329d9648d452f5ed9e13e1190cfaeb25bb0c0eda-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c1e245c7f93284bf1fab18330ca6f2ab8f3a0feb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2fcf2f2387b8b0f92b4ffce800f8244c657de7be-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c166b0f0514a81a8fa25d60ef7b08cdbe26088cb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c166b0f0514a81a8fa25d60ef7b08cdbe26088cb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-329d9648d452f5ed9e13e1190cfaeb25bb0c0eda-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/329d9648d452f5ed9e13e1190cfaeb25bb0c0eda-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c1e245c7f93284bf1fab18330ca6f2ab8f3a0feb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c1e245c7f93284bf1fab18330ca6f2ab8f3a0feb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2fcf2f2387b8b0f92b4ffce800f8244c657de7be-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2fcf2f2387b8b0f92b4ffce800f8244c657de7be-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084287-03-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084287-03-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita La Liga 1 24 25 Hybrid talla 5",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "075617-01",
+  "slug": "monedero-puma-phase-black",
+  "name": "Monedero Puma Phase",
+  "model": "Monedero Puma Phase",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma wallet - black",
+    "tagline": "Organization in your pocket",
+    "intro": "The Puma Phase wallet offers you a compact and functional space to always carry cards, bills and coins at hand.",
+    "collection": "",
+    "key_benefits": [
+      "Smart organization: Compartments for bills, cards and coins.",
+      "Compact design: Fits in pockets and small bags without bulking.",
+      "Safety: Folding closure with secure fixation.",
+      "Durability: Resistant materials designed for daily use."
+    ],
+    "technical_details": {
+      "range": "Puma Phase",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ed26e137c8b445e98d8d0713707d589ae99711d9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ed26e137c8b445e98d8d0713707d589ae99711d9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7a0923ac7056d08cb8f8d198c8d9b4bd92a0284e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/35334bb45a14ff0a5b426c403917b46a8290ebda-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1d587f82854372acc740883ce1017b5b7c17a003-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ed26e137c8b445e98d8d0713707d589ae99711d9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7a0923ac7056d08cb8f8d198c8d9b4bd92a0284e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/35334bb45a14ff0a5b426c403917b46a8290ebda-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1d587f82854372acc740883ce1017b5b7c17a003-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ed26e137c8b445e98d8d0713707d589ae99711d9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ed26e137c8b445e98d8d0713707d589ae99711d9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7a0923ac7056d08cb8f8d198c8d9b4bd92a0284e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7a0923ac7056d08cb8f8d198c8d9b4bd92a0284e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-35334bb45a14ff0a5b426c403917b46a8290ebda-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/35334bb45a14ff0a5b426c403917b46a8290ebda-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1d587f82854372acc740883ce1017b5b7c17a003-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1d587f82854372acc740883ce1017b5b7c17a003-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/075617-01",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Cartera Puma - negra",
+    "tagline": "Organización en tu bolsillo",
+    "intro": "El monedero Puma Phase te ofrece un espacio compacto y funcional para llevar tarjetas, billetes y monedas siempre a mano.",
+    "collection": "",
+    "key_benefits": [
+      "Organización inteligente: Compartimentos para billetes, tarjetas y monedas.",
+      "Diseño compacto: Cabe en bolsillos y bolsos pequeños sin abultar.",
+      "Seguridad: Cierre plegado con fijación segura.",
+      "Durabilidad: Materiales resistentes pensados para el uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/075617-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Monedero",
+    "submodel": "",
+    "product_model": "Monedero Puma Phase",
+    "sole_type": ""
+  }
+}

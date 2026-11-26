@@ -1,0 +1,98 @@
+{
+  "id": "KC7806",
+  "slug": "pantalon-adidas-real-madrid-tiro-travel-black",
+  "name": "adidas Real Madrid Tiro Travel",
+  "model": "Real Madrid Tiro Travel",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo adidas del Real Madrid - negro",
+    "tagline": "Inspiración futbolística para tu día a día",
+    "intro": "El pantalón adidas Real Madrid Tiro Travel traslada el estilo del fútbol profesional al look cotidiano. Inspirado en la línea de viaje del club blanco, combina diseño técnico y estética urbana en un acabado elegante en color negro.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño Travel oficial: Inspirado en la ropa de viaje del Real Madrid.",
+      "Tejido woven técnico: Ligero, resistente y cómodo para uso diario.",
+      "Corte regular: Ajuste equilibrado que aporta libertad de movimiento.",
+      "Cintura elástica: Mayor comodidad y adaptación al cuerpo.",
+      "Diseño ergonómico: Costuras y líneas que mejoran la movilidad."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Tiro Travel",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-largo-color-negro-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-largo-color-negro-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-chandal-negro-adidas-real-madrid-tiro-travel_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-chandal-adidas-real-madrid-tiro-travel-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-largo-adidas-real-madrid-tiro-travel-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-largo-color-negro-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-chandal-negro-adidas-real-madrid-tiro-travel_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-chandal-adidas-real-madrid-tiro-travel-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7806_pantalon-largo-adidas-real-madrid-tiro-travel-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kc7806",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Real Madrid - negro",
+    "tagline": "Inspiración futbolística para tu día a día",
+    "intro": "El pantalón adidas Real Madrid Tiro Travel traslada el estilo del fútbol profesional al look cotidiano. Inspirado en la línea de viaje del club blanco, combina diseño técnico y estética urbana en un acabado elegante en color negro.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño Travel oficial: Inspirado en la ropa de viaje del Real Madrid.",
+      "Tejido woven técnico: Ligero, resistente y cómodo para uso diario.",
+      "Corte regular: Ajuste equilibrado que aporta libertad de movimiento.",
+      "Cintura elástica: Mayor comodidad y adaptación al cuerpo.",
+      "Diseño ergonómico: Costuras y líneas que mejoran la movilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kc7806"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Tiro Travel",
+    "sole_type": ""
+  }
+}

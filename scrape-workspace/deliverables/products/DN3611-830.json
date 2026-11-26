@@ -1,0 +1,89 @@
+{
+  "id": "DN3611-830",
+  "slug": "nike-mercurial-lite-orange",
+  "name": "Nike Mercurial Lite",
+  "model": "Mercurial Lite",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - naranjas",
+    "tagline": "Protección al nivel de los profesionales",
+    "intro": "Diseñadas para quienes buscan protección y ligereza sin comprometer la movilidad. Incluye medias de compresión para un ajuste más seguro.",
+    "collection": "MAX VOLTAGE PACK",
+    "key_benefits": [
+      "Máxima protección: Diseñadas para impactos de alta intensidad.",
+      "Ajuste seguro: Sistema de sujeción que evita desplazamientos.",
+      "Comodidad total: Materiales ligeros y transpirables.",
+      "Diseño Nike: Estilo que combina con tu equipación."
+    ],
+    "technical_details": {
+      "range": "Mercurial Lite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-830_espinilleras-color-naranja-nike-mercurial-lite_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-830_espinilleras-color-naranja-nike-mercurial-lite_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-830_espinilleras-color-naranja-nike-mercurial-lite_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dn3611-830",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - naranjas",
+    "tagline": "Protección al nivel de los profesionales",
+    "intro": "Diseñadas para quienes buscan protección y ligereza sin comprometer la movilidad. Incluye medias de compresión para un ajuste más seguro.",
+    "collection": "MAX VOLTAGE PACK",
+    "key_benefits": [
+      "Máxima protección: Diseñadas para impactos de alta intensidad.",
+      "Ajuste seguro: Sistema de sujeción que evita desplazamientos.",
+      "Comodidad total: Materiales ligeros y transpirables.",
+      "Diseño Nike: Estilo que combina con tu equipación."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dn3611-830"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite",
+    "product_model": "Mercurial Lite",
+    "sole_type": ""
+  }
+}

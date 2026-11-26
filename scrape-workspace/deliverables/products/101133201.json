@@ -1,0 +1,105 @@
+{
+  "id": "101133201",
+  "slug": "uhlsport-prediction-absolutgrip-sc-blue",
+  "name": "Uhlsport Prediction Absolutgrip SC",
+  "model": "Prediction Absolutgrip SC",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Prediction Absolutgrip SC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/1c5f181f02e9ded29b43ffab898c0f8e5323ff2c-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/1c5f181f02e9ded29b43ffab898c0f8e5323ff2c-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8e445424e98e8118983e95b63be5448deff5d4d5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/eda209df769ca11eb1944ebd6be5216659a12017-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/27bdea9714214967249f913ed306558b92560437-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1eaeab1ab918861e4fdeed46fabff8821d8addd7-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1c5f181f02e9ded29b43ffab898c0f8e5323ff2c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8e445424e98e8118983e95b63be5448deff5d4d5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/eda209df769ca11eb1944ebd6be5216659a12017-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/27bdea9714214967249f913ed306558b92560437-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1eaeab1ab918861e4fdeed46fabff8821d8addd7-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-1c5f181f02e9ded29b43ffab898c0f8e5323ff2c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1c5f181f02e9ded29b43ffab898c0f8e5323ff2c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8e445424e98e8118983e95b63be5448deff5d4d5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8e445424e98e8118983e95b63be5448deff5d4d5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-eda209df769ca11eb1944ebd6be5216659a12017-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/eda209df769ca11eb1944ebd6be5216659a12017-1500x1500.jpg"
+    },
+    {
+      "_id": "image-27bdea9714214967249f913ed306558b92560437-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/27bdea9714214967249f913ed306558b92560437-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1eaeab1ab918861e4fdeed46fabff8821d8addd7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1eaeab1ab918861e4fdeed46fabff8821d8addd7-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101133201",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101133201"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Prediction",
+    "submodel": "",
+    "product_model": "Prediction Absolutgrip SC",
+    "sole_type": ""
+  }
+}

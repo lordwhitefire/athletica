@@ -1,0 +1,90 @@
+{
+  "id": "HV1709-133",
+  "slug": "camiseta-nike-t90-white",
+  "name": "Nike T90",
+  "model": "T90",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Short Sleeve Cotton T-Shirt - White",
+    "tagline": "Minimalismo y herencia deportiva",
+    "intro": "The white Nike T90 t-shirt fuses a clean aesthetic with references to classic football. Its cotton fabric guarantees total comfort with a versatile design for any occasion.",
+    "collection": "",
+    "key_benefits": [
+      "Estética limpia: Color blanco que combina con todo.",
+      "Inspiración futbolera: Detalles que rinden tributo al legado T90.",
+      "Tacto suave: Tejido 100% algodón cómodo todo el día.",
+      "Versatilidad total: Ideal para looks deportivos o urbanos."
+    ],
+    "technical_details": {
+      "range": "Nike T90",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1709-133_camiseta-color-marron-nike-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1709-133_camiseta-color-marron-nike-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1709-133_camiseta-beige-nike-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1709-133_camiseta-nike-t90-color-marron_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1709-133_camiseta-color-marron-nike-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1709-133_camiseta-beige-nike-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1709-133_camiseta-nike-t90-color-marron_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv1709-133",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta Nike - blanca",
+    "tagline": "Minimalismo y herencia deportiva",
+    "intro": "La camiseta Nike T90 blanca fusiona una estética limpia con referencias al fútbol clásico. Su tejido de algodón garantiza comodidad total con un diseño versátil para cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Estética limpia: Color blanco que combina con todo.",
+      "Inspiración futbolera: Detalles que rinden tributo al legado T90.",
+      "Tacto suave: Tejido 100% algodón cómodo todo el día.",
+      "Versatilidad total: Ideal para looks deportivos o urbanos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv1709-133"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "T90",
+    "submodel": "",
+    "product_model": "T90",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "101133501",
+  "slug": "uhlsport-prediction-supersoft-blue",
+  "name": "Uhlsport Prediction Supersoft",
+  "model": "Prediction Supersoft",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Prediction Supersoft",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/72d5d8b2c6a9c7f417a8d5dd9b10b68f5cf15e18-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/72d5d8b2c6a9c7f417a8d5dd9b10b68f5cf15e18-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8f02feb95a6b17cd7030f03124d1761fa671b415-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/126639aa55c2e6273eea599e8230de5a0bc51700-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3ac759212b1ac42d13cedac1a5ae490e12c44020-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/afd81e015ffa4ea4b236ee010f6cbd07ab487890-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/72d5d8b2c6a9c7f417a8d5dd9b10b68f5cf15e18-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8f02feb95a6b17cd7030f03124d1761fa671b415-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/126639aa55c2e6273eea599e8230de5a0bc51700-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3ac759212b1ac42d13cedac1a5ae490e12c44020-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/afd81e015ffa4ea4b236ee010f6cbd07ab487890-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-72d5d8b2c6a9c7f417a8d5dd9b10b68f5cf15e18-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/72d5d8b2c6a9c7f417a8d5dd9b10b68f5cf15e18-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8f02feb95a6b17cd7030f03124d1761fa671b415-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8f02feb95a6b17cd7030f03124d1761fa671b415-1500x1500.jpg"
+    },
+    {
+      "_id": "image-126639aa55c2e6273eea599e8230de5a0bc51700-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/126639aa55c2e6273eea599e8230de5a0bc51700-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3ac759212b1ac42d13cedac1a5ae490e12c44020-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3ac759212b1ac42d13cedac1a5ae490e12c44020-1500x1500.jpg"
+    },
+    {
+      "_id": "image-afd81e015ffa4ea4b236ee010f6cbd07ab487890-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/afd81e015ffa4ea4b236ee010f6cbd07ab487890-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101133501",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101133501"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Prediction",
+    "submodel": "",
+    "product_model": "Prediction Supersoft",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "091164-01",
+  "slug": "mochila-puma-phase-black",
+  "name": "Mochila Puma Phase",
+  "model": "Mochila Puma Phase",
+  "brand": "Puma",
+  "category": "Kids Accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deportes Puma (44 x 30 x 14 cm) - negra",
+    "tagline": "Una compañera de aventuras urbana",
+    "intro": "Con un diseño moderno y funcional, la mochila Puma Phase combina comodidad y estilo para tus desplazamientos diarios. Su tamaño compacto y su estructura resistente la convierten en una opción ideal para el ritmo urbano.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño funcional: Compartimento principal amplio con cremallera bidireccional.",
+      "Confort diario: Panel trasero acolchado y tirantes ajustables para mayor comodidad.",
+      "Organización eficiente: Bolsillo frontal con cremallera y compartimento lateral de malla para botella."
+    ],
+    "technical_details": {
+      "range": "Puma Phase",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091164-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (44 x 30 x 14 cm) - negra",
+    "tagline": "Una compañera de aventuras urbana",
+    "intro": "Con un diseño moderno y funcional, la mochila Puma Phase combina comodidad y estilo para tus desplazamientos diarios. Su tamaño compacto y su estructura resistente la convierten en una opción ideal para el ritmo urbano.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño funcional: Compartimento principal amplio con cremallera bidireccional.",
+      "Confort diario: Panel trasero acolchado y tirantes ajustables para mayor comodidad.",
+      "Organización eficiente: Bolsillo frontal con cremallera y compartimento lateral de malla para botella."
+    ]
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/9/091164-01_mochila-color-negro-puma-phase_1_completa-frontal.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/9/091164-01_mochila-negra-puma-phase_2_completa-trasera.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/9/091164-01_mochila-puma-phase-color-negro_3_detalle.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/9/091164-01_mochila-puma-phase-negra_4_detalle-bolsillo-exterior.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/9/091164-01_mochila-color-negro-puma-phase_1_completa-frontal.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "kids",
+      "root": "Accesorios",
+      "level": "level1",
+      "name": "Accesorios",
+      "href": "https://www.futbolmania.com/es/kids/accesorios-futbol"
+    },
+    {
+      "audience": "kids",
+      "root": "Accesorios",
+      "level": "level2",
+      "name": "Bolsas",
+      "href": "https://www.futbolmania.com/es/kids/bolsa-futbol"
+    },
+    {
+      "audience": "kids",
+      "root": "Accesorios",
+      "level": "level3",
+      "name": "Mochilas",
+      "href": "https://www.futbolmania.com/es/kids/mochila-futbol-infantil"
+    },
+    {
+      "audience": "kids",
+      "root": "Marcas",
+      "level": "level1",
+      "name": "Marcas",
+      "href": "https://www.futbolmania.com/es/kids/marcas-futbol-infantil"
+    },
+    {
+      "audience": "kids",
+      "root": "Marcas",
+      "level": "level2",
+      "name": "Puma",
+      "href": "https://www.futbolmania.com/es/kids/Puma-football-infantil"
+    }
+  ]
+}

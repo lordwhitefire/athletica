@@ -1,0 +1,96 @@
+{
+  "id": "JN3057",
+  "slug": "pantalon-adidas-real-madrid-icon-blue",
+  "name": "adidas Real Madrid Icon",
+  "model": "Real Madrid Icon",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas long pants - blue",
+    "tagline": "Timeless style for true Madrid fans",
+    "intro": "The adidas Real Madrid Icon pants offer the perfect balance between comfort and football heritage. Ideal for urban looks with a sporty touch.",
+    "collection": "",
+    "key_benefits": [
+      "Classic cut: Comfortable silhouette with adjustable waist.",
+      "3 white stripes: adidas style recognizable anywhere.",
+      "Durable fabric: Designed for daily use and resistant to wear.",
+      "White aesthetic: Club details that reinforce the merengue identity."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-largo-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-largo-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-chandal-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-chandal-adidas-real-madrid-icon-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-largo-adidas-real-madrid-icon-azul_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-largo-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-chandal-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-chandal-adidas-real-madrid-icon-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3057_pantalon-largo-adidas-real-madrid-icon-azul_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn3057",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Real Madrid - azul",
+    "tagline": "Estilo atemporal para auténticos madridistas",
+    "intro": "El pantalón adidas Real Madrid Icon ofrece el equilibrio perfecto entre comodidad y herencia futbolística. Ideal para looks urbanos con toque deportivo.",
+    "collection": "",
+    "key_benefits": [
+      "Corte clásico: Silueta cómoda con cintura ajustable.",
+      "3 bandas blancas: Estilo adidas reconocible en cualquier parte.",
+      "Tejido duradero: Pensado para el uso diario y resistente al desgaste.",
+      "Estética blanca: Detalles del club que refuerzan la identidad merengue."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn3057"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Icon",
+    "sole_type": ""
+  }
+}

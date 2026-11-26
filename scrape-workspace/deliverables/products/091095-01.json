@@ -1,0 +1,101 @@
+{
+  "id": "091095-01",
+  "slug": "mochila-de-cuerdas-puma-portugal-black",
+  "name": "Backpack de cuerdas Puma Portugal",
+  "model": "Backpack de cuerdas Puma Portugal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Portugal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a7a6bc4006d66b15e40fd21d5058882bcd0d879d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a7a6bc4006d66b15e40fd21d5058882bcd0d879d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/528b2bf2c6f3b6d9a77c9aa49654fbc8c202da20-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2998f8619a8a6cad77b4f30d8d85a77aa5431fe6-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a7a6bc4006d66b15e40fd21d5058882bcd0d879d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/528b2bf2c6f3b6d9a77c9aa49654fbc8c202da20-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2998f8619a8a6cad77b4f30d8d85a77aa5431fe6-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a7a6bc4006d66b15e40fd21d5058882bcd0d879d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a7a6bc4006d66b15e40fd21d5058882bcd0d879d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-528b2bf2c6f3b6d9a77c9aa49654fbc8c202da20-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/528b2bf2c6f3b6d9a77c9aa49654fbc8c202da20-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2998f8619a8a6cad77b4f30d8d85a77aa5431fe6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2998f8619a8a6cad77b4f30d8d85a77aa5431fe6-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091095-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/091095-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Portugal",
+    "sole_type": ""
+  }
+}

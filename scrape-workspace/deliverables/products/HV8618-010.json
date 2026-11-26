@@ -1,0 +1,100 @@
+{
+  "id": "HV8618-010",
+  "slug": "sudadera-nike-inter-entrenamiento-dri-fit-strike-black",
+  "name": "Nike Inter Training Dri-Fit Strike",
+  "model": "Inter entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Inter Milan Nike Training Sweatshirt - Black",
+    "tagline": "Concentration and technique in each movement",
+    "intro": "The Nike Inter Training Dri-Fit Strike Sweatshirt is ideal for keeping up with your workouts in comfort. Its tight-fitting and breathable design is perfect for everyday sports.",
+    "collection": "",
+    "key_benefits": [
+      "Guaranteed performance: Ergonomic fit for freedom of movement.",
+      "Functional material: Made of technical fabric that wicks away sweat.",
+      "Professional design: Inspired by the players' equipment.",
+      "Nerazzurri style: Inter details and Nike logo."
+    ],
+    "technical_details": {
+      "range": "Nike Inter entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-color-negro-nike-inter-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-color-negro-nike-inter-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-negro-nike-inter-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-nike-inter-entrenamiento-dri-fit-strike-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-nike-inter-entrenamiento-dri-fit-strike-negro_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-color-negro-nike-inter-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-negro-nike-inter-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-nike-inter-entrenamiento-dri-fit-strike-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8618-010_sudadera-nike-inter-entrenamiento-dri-fit-strike-negro_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv8618-010",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Nike del Inter de Milán - negra",
+    "tagline": "Concentración y técnica en cada movimiento",
+    "intro": "La Sudadera Nike Inter entrenamiento Dri-Fit Strike es ideal para mantener el ritmo de tus entrenamientos con comodidad. Su diseño ajustado y transpirable es perfecto para el día a día deportivo.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento asegurado: Ajuste ergonómico para libertad de movimiento.",
+      "Material funcional: Confección en tejido técnico que evacua el sudor.",
+      "Diseño profesional: Inspirada en la equipación de los jugadores.",
+      "Estilo nerazzurro: Detalles del Inter y logo Nike."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv8618-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Inter Training",
+    "submodel": "",
+    "product_model": "Inter entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

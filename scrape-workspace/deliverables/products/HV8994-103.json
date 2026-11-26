@@ -1,0 +1,96 @@
+{
+  "id": "HV8994-103",
+  "slug": "polo-nike-psg-dri-fit-2-0-white",
+  "name": "Polo Nike PSG Dri-Fit 2.0",
+  "model": "Polo Nike PSG Dri-Fit 2.0",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "PSG Nike Polo - White",
+    "tagline": "Parisian style with sports technology",
+    "intro": "The Nike PSG Dri-Fit 2.0 Polo combines casual elegance and functional performance. Inspired by the club's competitive spirit, it offers a sophisticated look with the comfort of Nike technical fabric.",
+    "collection": "",
+    "key_benefits": [
+      "PSG design: Details of the Parisian club that show your loyalty in style.",
+      "Active comfort: Nike Dri-FIT technology that maintains breathability.",
+      "Versatile aesthetics: Ideal for everyday use or to cheer on the team with elegance.",
+      "Classic collar: Button placket that adds a more formal touch to the sporty look.",
+      "Freedom of movement: Tight cut that does not limit mobility."
+    ],
+    "technical_details": {
+      "range": "Nike PSG Dri-Fit 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8994-103_polo-color-blanco-nike-psg-dri-fit-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8994-103_polo-color-blanco-nike-psg-dri-fit-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8994-103_niqui-blanco-nike-psg-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8994-103_polo-nike-psg-dri-fit-2-0-color-blanco_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8994-103_polo-color-blanco-nike-psg-dri-fit-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8994-103_niqui-blanco-nike-psg-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8994-103_polo-nike-psg-dri-fit-2-0-color-blanco_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv8994-103",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Polo Nike del PSG - blanco",
+    "tagline": "Estilo parisino con tecnología deportiva",
+    "intro": "El polo Nike PSG Dri-Fit 2.0 combina elegancia casual y rendimiento funcional. Inspirado en el espíritu competitivo del club, ofrece un look sofisticado con la comodidad del tejido técnico Nike.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño del PSG: Detalles del club parisino que muestran tu fidelidad con estilo.",
+      "Confort activo: Tecnología Nike Dri-FIT que mantiene la transpirabilidad.",
+      "Estética versátil: Ideal para el día a día o para animar al equipo con elegancia.",
+      "Cuello clásico: Tapeta con botones que aporta un toque más formal al look deportivo.",
+      "Libertad de movimiento: Corte ajustado que no limita la movilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv8994-103"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo Nike PSG Dri-Fit 2.0",
+    "sole_type": ""
+  }
+}

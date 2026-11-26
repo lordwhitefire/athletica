@@ -1,0 +1,113 @@
+{
+  "id": "025956-07",
+  "slug": "gorra-puma-milan-ftblarchive-black",
+  "name": "Puma Milan FtblArchive",
+  "model": "Milan FtblArchive",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "AC Milan Puma Walking Cap - Black",
+    "tagline": "Rossonera heritage in your style",
+    "intro": "The Puma Milan FtblArchive cap recovers the classic essence of the Italian club. It includes the official shield on the front, a symbol of pride for Rossoneri fans.",
+    "collection": "",
+    "key_benefits": [
+      "Archive inspiration: Design that reflects the historical tradition of AC Milan.",
+      "Rossonero pride: Official club shield on the front to show your passion.",
+      "Distinctive details: Puma logo on the side for sporty authenticity.",
+      "Versatility: Ideal for urban looks or to wear on game days."
+    ],
+    "technical_details": {
+      "range": "Puma Milan FtblArchive",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cecae14cf4cedf51965edaf8788a76eb491e9fc9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/cecae14cf4cedf51965edaf8788a76eb491e9fc9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5575a383f5d43cc78f03300e4e276f7db81f9662-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7b347082f4dc61ec11c29d51e544c3c4b2d2862b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4ae7bcf6c9061fe55126b5c0bff9643cee39c3b2-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cecae14cf4cedf51965edaf8788a76eb491e9fc9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5575a383f5d43cc78f03300e4e276f7db81f9662-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7b347082f4dc61ec11c29d51e544c3c4b2d2862b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4ae7bcf6c9061fe55126b5c0bff9643cee39c3b2-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-cecae14cf4cedf51965edaf8788a76eb491e9fc9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cecae14cf4cedf51965edaf8788a76eb491e9fc9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5575a383f5d43cc78f03300e4e276f7db81f9662-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5575a383f5d43cc78f03300e4e276f7db81f9662-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7b347082f4dc61ec11c29d51e544c3c4b2d2862b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7b347082f4dc61ec11c29d51e544c3c4b2d2862b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4ae7bcf6c9061fe55126b5c0bff9643cee39c3b2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4ae7bcf6c9061fe55126b5c0bff9643cee39c3b2-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/025956-07",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma del AC Milan - negra",
+    "tagline": "Herencia rossonera en tu estilo",
+    "intro": "La gorra Puma Milan FtblArchive recupera la esencia clásica del club italiano. Incluye el escudo oficial en el frontal, un símbolo de orgullo para los seguidores rossoneri.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración de archivo: Diseño que refleja la tradición histórica del AC Milan.",
+      "Orgullo rossonero: Escudo oficial del club en el frontal para mostrar tu pasión.",
+      "Detalles distintivos: Logotipo Puma en el costado que aporta autenticidad deportiva.",
+      "Versatilidad: Ideal para looks urbanos o para llevar en días de partido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/025956-07"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Milan FtblArchive",
+    "submodel": "",
+    "product_model": "Milan FtblArchive",
+    "sole_type": ""
+  }
+}

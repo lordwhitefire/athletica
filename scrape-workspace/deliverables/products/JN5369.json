@@ -1,0 +1,90 @@
+{
+  "id": "JN5369",
+  "slug": "adidas-predator-league-orange",
+  "name": "adidas Predator League",
+  "model": "Predator League",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adidas negative cut goalkeeper gloves - orange",
+    "tagline": "Absolute confidence in each intervention",
+    "intro": "The adidas Predator League offer a perfect balance between comfort, technology and performance. Designed for goalkeepers who demand the maximum in every play.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Professional grip: URG 3.0 palm offers traction even in difficult conditions.",
+      "Secure Fit: Elastic wristband that wraps around the wrist for maximum stability."
+    ],
+    "technical_details": {
+      "range": "Predator League",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-de-portero-color-naranja-adidas-predator-league_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-de-portero-color-naranja-adidas-predator-league_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-portero-naranjas-adidas-predator-league_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-de-arquero-adidas-predator-league-color-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-de-futbol-adidas-predator-league-naranjas_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-guardameta-color-naranja-adidas-predator-league_5_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-de-portero-color-naranja-adidas-predator-league_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-portero-naranjas-adidas-predator-league_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-de-arquero-adidas-predator-league-color-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-de-futbol-adidas-predator-league-naranjas_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5369_guantes-guardameta-color-naranja-adidas-predator-league_5_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn5369",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero adidas corte negativo - naranjas",
+    "tagline": "Confianza absoluta en cada intervención",
+    "intro": "Los adidas Predator League ofrecen un equilibrio perfecto entre comodidad, tecnología y rendimiento. Pensados para porteros que exigen el máximo en cada jugada.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Agarre profesional: La palma URG 3.0 ofrece tracción incluso en condiciones difíciles.",
+      "Ajuste seguro: Muñequera elástica que envuelve la muñeca para máxima estabilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn5369"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "League",
+    "product_model": "Predator League",
+    "sole_type": ""
+  }
+}

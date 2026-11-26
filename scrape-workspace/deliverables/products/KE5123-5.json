@@ -1,0 +1,96 @@
+{
+  "id": "KE5123-5",
+  "slug": "balon-adidas-real-madrid-club-t-5-verde-blanco",
+  "name": "adidas Real Madrid Club T.5",
+  "model": "Real Madrid Club T.5",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Verde / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol adidas del Real Madrid en talla 5 - verde, blanco",
+    "tagline": "La pasión merengue en cada partido",
+    "intro": "El balón adidas del Real Madrid Club Talla 5 está diseñado para aficionados y jugadores que quieren demostrar su orgullo por los blancos dentro y fuera del terreno de juego. Inspirado en la segunda equipación del Real Madrid, combina un diseño llamativo con una construcción resistente para disfrutar de momentos de ocio futbolístico.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Real Madrid: Decorado con los colores y el escudo del club blanco.",
+      "Cámara de butilo: Favorece una excelente retención del aire.",
+      "Cosido a mano: Resistencia al desgaste y durabilidad.",
+      "Tacto suave: Ideal para entrenamientos y partidos recreativos."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Club T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_balon-de-futbol-color-verde-adidas-real-madrid-club-t-5_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_balon-de-futbol-color-verde-adidas-real-madrid-club-t-5_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_pelota-futbol-11-verde-adidas-real-madrid-club-t-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_pelota-futbol-adidas-real-madrid-club-t-5-color-verde_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_balon-de-futbol-11-adidas-real-madrid-club-t-5-verde_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_balon-de-futbol-color-verde-adidas-real-madrid-club-t-5_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_pelota-futbol-11-verde-adidas-real-madrid-club-t-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_pelota-futbol-adidas-real-madrid-club-t-5-color-verde_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5123-5_balon-de-futbol-11-adidas-real-madrid-club-t-5-verde_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ke5123-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol adidas del Real Madrid en talla 5 - verde, blanco",
+    "tagline": "La pasión merengue en cada partido",
+    "intro": "El balón adidas del Real Madrid Club Talla 5 está diseñado para aficionados y jugadores que quieren demostrar su orgullo por los blancos dentro y fuera del terreno de juego. Inspirado en la segunda equipación del Real Madrid, combina un diseño llamativo con una construcción resistente para disfrutar de momentos de ocio futbolístico.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Real Madrid: Decorado con los colores y el escudo del club blanco.",
+      "Cámara de butilo: Favorece una excelente retención del aire.",
+      "Cosido a mano: Resistencia al desgaste y durabilidad.",
+      "Tacto suave: Ideal para entrenamientos y partidos recreativos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ke5123-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Club T.5",
+    "sole_type": ""
+  }
+}

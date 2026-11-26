@@ -1,0 +1,94 @@
+{
+  "id": "KR7559",
+  "slug": "mochila-de-cuerdas-adidas-real-madrid-green",
+  "name": "Backpack de cuerdas adidas Real Madrid",
+  "model": "Backpack de cuerdas adidas Real Madrid",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de cuerdas adidas del Real Madrid - verde",
+    "tagline": "Ligera, práctica y con el orgullo blanco",
+    "intro": "La mochila de cuerdas adidas del Real Madrid es perfecta para llevar tu equipación y accesorios deportivos con comodidad y estilo en cualquier momento del día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño ligero: Ideal para entrenamientos, gimnasio o uso diario.",
+      "Cierre mediante cuerdas: Acceso rápido y cómodo al interior.",
+      "Tejido resistente: Material preparado para el uso frecuente.",
+      "Fácil de transportar: Formato compacto y práctico para cualquier situación.",
+      "Estilo oficial Real Madrid: Escudo y detalles adidas inspirados en el club blanco."
+    ],
+    "technical_details": {
+      "range": "de cuerdas adidas Real Madrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_mochila-de-cuerdas-color-verde-adidas-real-madrid_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_mochila-de-cuerdas-color-verde-adidas-real-madrid_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_bolsa-de-cuerdas-verde-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_saco-de-cuerdas-adidas-real-madrid-color-verde_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_mochila-de-cordones-adidas-real-madrid-verde_4_detalle-asas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_mochila-de-cuerdas-color-verde-adidas-real-madrid_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_bolsa-de-cuerdas-verde-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_saco-de-cuerdas-adidas-real-madrid-color-verde_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KR7559_mochila-de-cordones-adidas-real-madrid-verde_4_detalle-asas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kr7559",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de cuerdas adidas del Real Madrid - verde",
+    "tagline": "Ligera, práctica y con el orgullo blanco",
+    "intro": "La mochila de cuerdas adidas del Real Madrid es perfecta para llevar tu equipación y accesorios deportivos con comodidad y estilo en cualquier momento del día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño ligero: Ideal para entrenamientos, gimnasio o uso diario.",
+      "Cierre mediante cuerdas: Acceso rápido y cómodo al interior.",
+      "Tejido resistente: Material preparado para el uso frecuente.",
+      "Fácil de transportar: Formato compacto y práctico para cualquier situación.",
+      "Estilo oficial Real Madrid: Escudo y detalles adidas inspirados en el club blanco."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kr7559"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas adidas Real Madrid",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "GM0200",
+  "slug": "medias-adidas-arsenal-2021-2022-blanco-rojo",
+  "name": "adidas Arsenal 2021 2022",
+  "model": "Arsenal 2021 2022",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Arsenal 2021 2022",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/M/GM0200_medias-color-blanco-y-rojo-adidas-arsenal-2021-2022_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/M/GM0200_medias-color-blanco-y-rojo-adidas-arsenal-2021-2022_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/M/GM0200_medias-color-blanco-y-rojo-adidas-arsenal-2021-2022_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/gm0200",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/gm0200"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Arsenal 2021",
+    "submodel": "",
+    "product_model": "Arsenal 2021 2022",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "100429401",
+  "slug": "portaguantes-uhlsport-black",
+  "name": "Portaguantes Uhlsport",
+  "model": "Portaguantes Uhlsport",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport goalkeeper glove bag - black",
+    "tagline": "Protect and transport your gloves with comfort",
+    "intro": "The Uhlsport glove holder is a bag designed to store and transport goalkeeper gloves in a comfortable and organized way. Their compact format with zipper closure helps keep them separated from the rest of the equipment, while the side handle makes them easy to transport before and after each match or training session.",
+    "collection": "",
+    "key_benefits": [
+      "Well-organized gloves: Allows you to store goalkeeper gloves in a specific space and keep them separated from the rest of the sports equipment.",
+      "Convenient Carrying: The side handle makes it easy to carry the bag independently or quickly remove it from the backpack.",
+      "Easy access: Its zipper closure allows you to open and close the compartment in a practical way.",
+      "Compact format: Its design makes it easy to take the gloves to training or matches without taking up unnecessary space."
+    ],
+    "technical_details": {
+      "range": "Uhlsport",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a69613c58b31a9b150423b450d6c8473cc6fa573-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a69613c58b31a9b150423b450d6c8473cc6fa573-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a69613c58b31a9b150423b450d6c8473cc6fa573-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a69613c58b31a9b150423b450d6c8473cc6fa573-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a69613c58b31a9b150423b450d6c8473cc6fa573-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100429401",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Bolsa porta guantes de portero Uhlsport - negra",
+    "tagline": "Protege y transporta tus guantes con comodidad",
+    "intro": "El portaguantes Uhlsport es una bolsa diseñada para guardar y transportar los guantes de portero de forma cómoda y organizada. Su formato compacto con cierre de cremallera ayuda a mantenerlos separados del resto del equipamiento, mientras que el asa lateral facilita su transporte antes y después de cada partido o entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Guantes bien organizados: Permite guardar los guantes de portero en un espacio específico y mantenerlos separados del resto del material deportivo.",
+      "Transporte cómodo: El asa lateral facilita llevar la bolsa de forma independiente o sacarla rápidamente de la mochila.",
+      "Acceso sencillo: Su cierre de cremallera permite abrir y cerrar el compartimento de manera práctica.",
+      "Formato compacto: Su diseño facilita llevar los guantes al entrenamiento o partido sin ocupar espacio innecesario."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100429401"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "Portaguantes",
+    "submodel": "",
+    "product_model": "Portaguantes Uhlsport",
+    "sole_type": ""
+  }
+}

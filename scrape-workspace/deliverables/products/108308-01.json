@@ -1,0 +1,123 @@
+{
+  "id": "108308-01",
+  "slug": "puma-king-pro-fg-ag-red",
+  "name": "Puma King Pro FG/AG",
+  "model": "King Pro /AG",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "King Pro FG/AG",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/5b1d08237e2ab94e64af397ab8178e64944a9d6a-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5b1d08237e2ab94e64af397ab8178e64944a9d6a-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4dc790ee7bd681294d29715f1e17b9597493c4df-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8d66b0ee0b8db4c8e80f63f8f1bd73de493da2c4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/eca95babb3cfaea57e3ff07c5e78625fede1dbe0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7047dc9121f6a22b6c5245ac74dfc65a0d160847-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fbd0249c4f67120162c512b23ef11790efe6643c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44614ca096d305148ee185bff6201f2043b109a4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7cdfaf6f7af22dc233a82ece0c8ec3e6d3ba55e0-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5b1d08237e2ab94e64af397ab8178e64944a9d6a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4dc790ee7bd681294d29715f1e17b9597493c4df-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8d66b0ee0b8db4c8e80f63f8f1bd73de493da2c4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/eca95babb3cfaea57e3ff07c5e78625fede1dbe0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7047dc9121f6a22b6c5245ac74dfc65a0d160847-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fbd0249c4f67120162c512b23ef11790efe6643c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44614ca096d305148ee185bff6201f2043b109a4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7cdfaf6f7af22dc233a82ece0c8ec3e6d3ba55e0-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-5b1d08237e2ab94e64af397ab8178e64944a9d6a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5b1d08237e2ab94e64af397ab8178e64944a9d6a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4dc790ee7bd681294d29715f1e17b9597493c4df-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4dc790ee7bd681294d29715f1e17b9597493c4df-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8d66b0ee0b8db4c8e80f63f8f1bd73de493da2c4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8d66b0ee0b8db4c8e80f63f8f1bd73de493da2c4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-eca95babb3cfaea57e3ff07c5e78625fede1dbe0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/eca95babb3cfaea57e3ff07c5e78625fede1dbe0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7047dc9121f6a22b6c5245ac74dfc65a0d160847-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7047dc9121f6a22b6c5245ac74dfc65a0d160847-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fbd0249c4f67120162c512b23ef11790efe6643c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fbd0249c4f67120162c512b23ef11790efe6643c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-44614ca096d305148ee185bff6201f2043b109a4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/44614ca096d305148ee185bff6201f2043b109a4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7cdfaf6f7af22dc233a82ece0c8ec3e6d3ba55e0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7cdfaf6f7af22dc233a82ece0c8ec3e6d3ba55e0-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/108308-01",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/108308-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "King",
+    "submodel": "Pro /AG",
+    "product_model": "King Pro /AG",
+    "sole_type": "FG"
+  }
+}

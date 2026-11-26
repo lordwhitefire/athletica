@@ -1,0 +1,96 @@
+{
+  "id": "KE5111-5",
+  "slug": "balon-adidas-bayern-club-t-5-red",
+  "name": "adidas Bayern Club T.5",
+  "model": "Bayern Club T.5",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol adidas del Bayern de Múnich en talla 5 - rojo",
+    "tagline": "La pasión del Bayern en cada toque",
+    "intro": "El balón adidas del Bayern de Múnich Club Talla 5 es perfecto para aficionados y futbolistas que quieren representar al gigante bávaro dentro y fuera del terreno de juego. Inspirado en la primera equipación del FC Bayern de Múnich, presenta un diseño llamativo con los colores y el escudo del club.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial FC Bayern: Decorado con el escudo y los colores del club alemán.",
+      "Cámara de butilo: Excelente retención del aire para un rendimiento constante.",
+      "Cosido a máquina: Mayor resistencia al desgaste y larga durabilidad.",
+      "Tacto suave: Ideal para entrenamientos y partidos recreativos."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern Club T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_balon-de-futbol-color-rojo-adidas-bayern-club-t-5_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_balon-de-futbol-color-rojo-adidas-bayern-club-t-5_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_pelota-futbol-11-rojo-adidas-bayern-club-t-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_pelota-futbol-adidas-bayern-club-t-5-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_balon-de-futbol-11-adidas-bayern-club-t-5-rojo_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_balon-de-futbol-color-rojo-adidas-bayern-club-t-5_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_pelota-futbol-11-rojo-adidas-bayern-club-t-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_pelota-futbol-adidas-bayern-club-t-5-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5111-5_balon-de-futbol-11-adidas-bayern-club-t-5-rojo_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ke5111-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol adidas del Bayern de Múnich en talla 5 - rojo",
+    "tagline": "La pasión del Bayern en cada toque",
+    "intro": "El balón adidas del Bayern de Múnich Club Talla 5 es perfecto para aficionados y futbolistas que quieren representar al gigante bávaro dentro y fuera del terreno de juego. Inspirado en la primera equipación del FC Bayern de Múnich, presenta un diseño llamativo con los colores y el escudo del club.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial FC Bayern: Decorado con el escudo y los colores del club alemán.",
+      "Cámara de butilo: Excelente retención del aire para un rendimiento constante.",
+      "Cosido a máquina: Mayor resistencia al desgaste y larga durabilidad.",
+      "Tacto suave: Ideal para entrenamientos y partidos recreativos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ke5111-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Bayern Club",
+    "submodel": "",
+    "product_model": "Bayern Club T.5",
+    "sole_type": ""
+  }
+}

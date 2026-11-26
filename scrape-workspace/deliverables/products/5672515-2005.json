@@ -1,0 +1,90 @@
+{
+  "id": "5672515-2005",
+  "slug": "reusch-attrakt-solid-jr-yellow",
+  "name": "Reusch Attrakt Solid Jr",
+  "model": "Attrakt Solid Jr",
+  "brand": "Reusch",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes infantiles de portero Reusch corte Expanse Cut - amarillo flúor",
+    "tagline": "Comodidad clásica para empezar",
+    "intro": "Reusch Attrakt Solid Jr combina un corte positivo con una palma resistente para dar confianza a los más pequeños bajo palos.",
+    "collection": "",
+    "key_benefits": [
+      "Corte positivo: Comodidad clásica y eficaz",
+      "Diseño sencillo: Adaptado a las manos más jóvenes",
+      "Material duradero: Para uso continuado sin desgaste prematuro"
+    ],
+    "technical_details": {
+      "range": "Attrakt Solid Jr",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-de-portero-color-amarillo-reusch-attrakt-solid-jr_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-de-portero-color-amarillo-reusch-attrakt-solid-jr_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-de-arquero-reusch-attrakt-solid-jr-color-amarillo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-de-futbol-reusch-attrakt-solid-jr-amarillo-fluor_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-portero-amarillo-fluor-reusch-attrakt-solid-jr_2_completa-palma-mano-izquierda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-de-portero-color-amarillo-reusch-attrakt-solid-jr_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-de-arquero-reusch-attrakt-solid-jr-color-amarillo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-de-futbol-reusch-attrakt-solid-jr-amarillo-fluor_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/5672515-2005_guantes-portero-amarillo-fluor-reusch-attrakt-solid-jr_2_completa-palma-mano-izquierda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/5672515-2005",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes infantiles de portero Reusch corte Expanse Cut - amarillo flúor",
+    "tagline": "Comodidad clásica para empezar",
+    "intro": "Reusch Attrakt Solid Jr combina un corte positivo con una palma resistente para dar confianza a los más pequeños bajo palos.",
+    "collection": "",
+    "key_benefits": [
+      "Corte positivo: Comodidad clásica y eficaz",
+      "Diseño sencillo: Adaptado a las manos más jóvenes",
+      "Material duradero: Para uso continuado sin desgaste prematuro"
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/5672515-2005"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Attrakt",
+    "submodel": "",
+    "product_model": "Attrakt Solid Jr",
+    "sole_type": ""
+  }
+}

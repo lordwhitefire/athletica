@@ -1,0 +1,88 @@
+{
+  "id": "JD8017",
+  "slug": "adidas-copa-match-fingersave-j-white",
+  "name": "adidas Copa Match FingerSave J",
+  "model": "Copa Match FingerSave J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Copa Match FingerSave J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-portero-futbol-con-proteccion-en-los-dedos-color-blanco-adidas-copa-match-fingersave-j_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-portero-futbol-con-proteccion-en-los-dedos-color-blanco-adidas-copa-match-fingersave-j_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-portero-con-proteccion-blancos-adidas-copa-match-fingersave-j_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-con-ferulas-adidas-copa-match-fingersave-j-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-de-arquero-con-ferula-adidas-copa-match-fingersave-j-blancos_4_detalle-cierre-en-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-con-varilla-color-blanco-adidas-copa-match-fingersave-j_5_vista-conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-portero-futbol-con-proteccion-en-los-dedos-color-blanco-adidas-copa-match-fingersave-j_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-portero-con-proteccion-blancos-adidas-copa-match-fingersave-j_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-con-ferulas-adidas-copa-match-fingersave-j-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-de-arquero-con-ferula-adidas-copa-match-fingersave-j-blancos_4_detalle-cierre-en-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD8017_guantes-con-varilla-color-blanco-adidas-copa-match-fingersave-j_5_vista-conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jd8017",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jd8017"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Match FingerSave J",
+    "product_model": "Copa Match FingerSave J",
+    "sole_type": ""
+  }
+}

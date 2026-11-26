@@ -1,0 +1,103 @@
+{
+  "id": "030989-03",
+  "slug": "puma-ultra-light-sleeve-black",
+  "name": "Puma Ultra Light Sleeve",
+  "model": "Ultra Light Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - Black",
+    "tagline": "Lightweight protection for free play",
+    "intro": "The Puma Ultra Light Sleeve soccer shin guards are designed for soccer players looking for protection, lightness and comfort during the game. Its PP cover incorporates EVA padding and is complemented by elastic support meshes to help keep the shin guards correctly positioned.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight Protection: Its construction helps protect the shin while maintaining a light feel during play.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Stable fit: The support meshes help keep the protections correctly placed during the game.",
+      "Freedom of movement: Its lightweight design allows you to run, change direction and compete for the ball naturally.",
+      "Not too bulky feel: Its profile is designed to offer protection without being excessively restrictive."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4379a429e2837e7b78296f96fb779c313b3243d2-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4379a429e2837e7b78296f96fb779c313b3243d2-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a254e6f7390c7de39137f054a659b47baf7d1165-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4379a429e2837e7b78296f96fb779c313b3243d2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a254e6f7390c7de39137f054a659b47baf7d1165-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-4379a429e2837e7b78296f96fb779c313b3243d2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4379a429e2837e7b78296f96fb779c313b3243d2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a254e6f7390c7de39137f054a659b47baf7d1165-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a254e6f7390c7de39137f054a659b47baf7d1165-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/030989-03",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - negras",
+    "tagline": "Protección ligera para jugar con libertad",
+    "intro": "Las espinilleras de fútbol Puma Ultra Light Sleeve están diseñadas para futbolistas que buscan protección, ligereza y comodidad durante el juego. Su cubierta de PP incorpora acolchado de EVA y se complementa con mallas elásticas de sujeción para ayudar a mantener las espinilleras correctamente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su construcción ayuda a proteger la espinilla manteniendo una sensación ligera durante el juego.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Ajuste estable: Las mallas de sujeción ayudan a mantener las protecciones correctamente colocadas durante el juego.",
+      "Libertad de movimiento: Su diseño ligero permite correr, cambiar de dirección y disputar el balón con naturalidad.",
+      "Sensación poco voluminosa: Su perfil está pensado para ofrecer protección sin resultar excesivamente restrictivo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/030989-03"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Sleeve",
+    "product_model": "Ultra Light Sleeve",
+    "sole_type": ""
+  }
+}

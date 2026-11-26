@@ -1,0 +1,98 @@
+{
+  "id": "JY9602",
+  "slug": "chaqueta-adidas-italia-himno-blue",
+  "name": "adidas Italia himno",
+  "model": "Italia himno",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Italy 2026 national team adidas anthem jacket - blue",
+    "tagline": "Italian elegance with football spirit",
+    "intro": "The adidas Italia anthem 2026 jacket combines the tradition of Italian football with a modern design inspired by the team's official kit. A garment designed to stand out both in the stadium and in your daily life.",
+    "collection": "",
+    "key_benefits": [
+      "Official Italy design: Inspired by the national team kit.",
+      "Lightweight fabric: Provides all-day comfort.",
+      "Full Closure: Front zipper for ease of use.",
+      "High collar: Provides protection and an elegant sporty style."
+    ],
+    "technical_details": {
+      "range": "adidas Italia himno",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-color-azul-adidas-italia-himno_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-color-azul-adidas-italia-himno_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-chandal-azul-adidas-italia-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-entretiempo-adidas-italia-himno-color-azul_3_frontal-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-adidas-italia-himno-azul_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-chandal-color-azul-adidas-italia-himno_5_frontal-y-mangas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-color-azul-adidas-italia-himno_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-chandal-azul-adidas-italia-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-entretiempo-adidas-italia-himno-color-azul_3_frontal-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-adidas-italia-himno-azul_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY9602_chaqueta-chandal-color-azul-adidas-italia-himno_5_frontal-y-mangas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jy9602",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta himno adidas de la selección de Italia 2026 - azul",
+    "tagline": "Elegancia italiana con espíritu futbolero",
+    "intro": "La chaqueta adidas Italia himno 2026 combina la tradición del fútbol italiano con un diseño moderno inspirado en la equipación oficial de la selección. Una prenda pensada para destacar tanto en el estadio como en tu día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Italia: Inspirado en la equipación de la selección nacional.",
+      "Tejido ligero: Aporta comodidad durante todo el día.",
+      "Cierre completo: Cremallera frontal para mayor facilidad de uso.",
+      "Cuello alto: Proporciona protección y un estilo deportivo elegante."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jy9602"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Italia",
+    "submodel": "",
+    "product_model": "Italia himno",
+    "sole_type": ""
+  }
+}

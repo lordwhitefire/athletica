@@ -1,0 +1,78 @@
+{
+  "id": "2150309",
+  "slug": "munich-mundial-u25-black",
+  "name": "Munich Mundial U25",
+  "model": "Mundial U25",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mundial U25",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150309_imagen-de-las-botas-de-futbol-munich-mundial-u25-ag-negro-amarillo_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/2150309",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/2150309"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Mundial",
+    "submodel": "U25",
+    "product_model": "Mundial U25",
+    "sole_type": ""
+  }
+}

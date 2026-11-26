@@ -1,0 +1,98 @@
+{
+  "id": "HM3381-410",
+  "slug": "pantalon-nike-barcelona-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike Barcelona Training Dri-Fit Strike",
+  "model": "Barcelona entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento Nike del FC Barcelona 2025 2026 - azul marino",
+    "tagline": "Rendimiento profesional de arriba a abajo",
+    "intro": "El pantalón largo Strike Nike Barça combina comodidad, transpirabilidad y estilo oficial para tus sesiones más intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Corte entallado: Diseño ergonómico con tejido elástico.",
+      "Cremalleras en los tobillos: Fácil de poner y quitar con botas.",
+      "Confección técnica: Poliéster de alto rendimiento con secado rápido.",
+      "Colores Barça 25/26: Inspiración en la tercera equipación."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3381-410_pantalon-largo-color-azul-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3381-410_pantalon-largo-color-azul-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3381-410_pantalon-chandal-azul-marino-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3381-410_pantalon-chandal-nike-barcelona-entrenamiento-dri-fit-strike-color-azul_3_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3381-410_pantalon-largo-color-azul-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3381-410_pantalon-chandal-azul-marino-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3381-410_pantalon-chandal-nike-barcelona-entrenamiento-dri-fit-strike-color-azul_3_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3381-410",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de entrenamiento Nike del FC Barcelona 2025 2026 - azul marino",
+    "tagline": "Rendimiento profesional de arriba a abajo",
+    "intro": "El pantalón largo Strike Nike Barça combina comodidad, transpirabilidad y estilo oficial para tus sesiones más intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Corte entallado: Diseño ergonómico con tejido elástico.",
+      "Cremalleras en los tobillos: Fácil de poner y quitar con botas.",
+      "Confección técnica: Poliéster de alto rendimiento con secado rápido.",
+      "Colores Barça 25/26: Inspiración en la tercera equipación."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3381-410"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Barcelona Training",
+    "submodel": "",
+    "product_model": "Barcelona entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

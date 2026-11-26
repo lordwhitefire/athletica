@@ -1,0 +1,84 @@
+{
+  "id": "LIGS2509IN",
+  "slug": "joma-liga-5-in-yellow",
+  "name": "Joma Liga 5 IN",
+  "model": "Liga 5 IN",
+  "brand": "Joma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Liga 5 IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_zapatillas-futbol-sala-color-amarillo-joma-liga-5-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_zapatillas-futbol-sala-color-amarillo-joma-liga-5-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_zapatillas-de-futbol-sala-amarillas-joma-liga-5-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_botas-futbol-sala-joma-liga-5-in-color-amarillo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_bambas-futbol-sala-joma-liga-5-in-amarillas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_tenis-futbol-sala-color-amarillo-joma-liga-5-in_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_zapatillas-futbol-sala-color-amarillo-joma-liga-5-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_zapatillas-de-futbol-sala-amarillas-joma-liga-5-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_botas-futbol-sala-joma-liga-5-in-color-amarillo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_bambas-futbol-sala-joma-liga-5-in-amarillas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/L/I/LIGS2509IN_tenis-futbol-sala-color-amarillo-joma-liga-5-in_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ligs2509in",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ligs2509in"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Liga 5",
+    "submodel": "",
+    "product_model": "Liga 5 IN",
+    "sole_type": ""
+  }
+}

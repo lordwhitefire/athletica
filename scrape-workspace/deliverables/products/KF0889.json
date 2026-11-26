@@ -1,0 +1,100 @@
+{
+  "id": "KF0889",
+  "slug": "camiseta-adidas-emiratos-arabes-unidos-26-white",
+  "name": "adidas Emiratos Árabes Unidos 26",
+  "model": "Emiratos Árabes Unidos 26",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación adidas de la selección de UAE 2026 - blanca",
+    "tagline": "Estilo real, inspiración emiratí",
+    "intro": "Camiseta blanca con detalles rojos y dorados que transmite elegancia y pasión por el fútbol árabe.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño elegante: Inspirado en la cultura de los Emiratos y sus colores simbólicos.",
+      "Tejido técnico: Evita el sudor y mantiene la frescura en los entrenamientos.",
+      "Corte moderno: Se adapta al cuerpo sin limitar el movimiento.",
+      "Estilo distintivo: Perfecta para destacar dentro y fuera del campo."
+    ],
+    "technical_details": {
+      "range": "adidas Emiratos Árabes Unidos 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-color-blanco-adidas-emiratos-arabes-unidos-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-color-blanco-adidas-emiratos-arabes-unidos-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-blanca-adidas-emiratos-arabes-unidos-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-adidas-emiratos-arabes-unidos-26-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-adidas-emiratos-arabes-unidos-26-blanca_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-color-blanco-adidas-emiratos-arabes-unidos-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-blanca-adidas-emiratos-arabes-unidos-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-adidas-emiratos-arabes-unidos-26-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0889_camiseta-adidas-emiratos-arabes-unidos-26-blanca_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kf0889",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la primera equipación adidas de la selección de UAE 2026 - blanca",
+    "tagline": "Estilo real, inspiración emiratí",
+    "intro": "Camiseta blanca con detalles rojos y dorados que transmite elegancia y pasión por el fútbol árabe.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño elegante: Inspirado en la cultura de los Emiratos y sus colores simbólicos.",
+      "Tejido técnico: Evita el sudor y mantiene la frescura en los entrenamientos.",
+      "Corte moderno: Se adapta al cuerpo sin limitar el movimiento.",
+      "Estilo distintivo: Perfecta para destacar dentro y fuera del campo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kf0889"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Emiratos",
+    "submodel": "",
+    "product_model": "Emiratos Árabes Unidos 26",
+    "sole_type": ""
+  }
+}

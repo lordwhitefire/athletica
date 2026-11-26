@@ -1,0 +1,102 @@
+{
+  "id": "JM9412",
+  "slug": "camiseta-adidas-arsenal-us-white",
+  "name": "adidas Arsenal US",
+  "model": "Arsenal US",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Arsenal Adidas Short Sleeve Cotton T-Shirt - White",
+    "tagline": "Minimalism with gunner essence",
+    "intro": "This adidas Arsenal t-shirt stands out for its clean design and soft material, perfect for everyday use. Inspired by the world of baseball, but with a soccer soul, it is a versatile garment that subtly shows your fandom.",
+    "collection": "",
+    "key_benefits": [
+      "Simple style: Ideal for casual looks with sports inspiration.",
+      "Pure comfort: Soft cotton that accompanies every movement.",
+      "Club identity: Arsenal crest for authentic fans.",
+      "Sports inspiration: Design touches that evoke American baseball.",
+      "Easy to combine: Goes well with jeans, shorts or joggers."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal US",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-color-blanco-adidas-arsenal-us_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-color-blanco-adidas-arsenal-us_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-blanca-adidas-arsenal-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-adidas-arsenal-us-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-adidas-arsenal-us-blanca_4_detalle-autenticidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-color-blanco-adidas-arsenal-us_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-blanca-adidas-arsenal-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-adidas-arsenal-us-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM9412_camiseta-adidas-arsenal-us-blanca_4_detalle-autenticidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm9412",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Arsenal - blanca",
+    "tagline": "Minimalismo con esencia gunner",
+    "intro": "Esta camiseta adidas del Arsenal destaca por su diseño limpio y material suave, perfecta para el uso diario. Inspirada en el mundo del béisbol, pero con alma futbolera, es una prenda versátil que muestra con sutileza tu afición.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo sencillo: Ideal para looks informales con inspiración deportiva.",
+      "Confort puro: Algodón suave que acompaña cada movimiento.",
+      "Identidad del club: Escudo del Arsenal para fans auténticos.",
+      "Inspiración deportiva: Toques de diseño que evocan el béisbol americano.",
+      "Fácil de combinar: Va bien con jeans, shorts o joggers."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm9412"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Arsenal US",
+    "submodel": "",
+    "product_model": "Arsenal US",
+    "sole_type": ""
+  }
+}

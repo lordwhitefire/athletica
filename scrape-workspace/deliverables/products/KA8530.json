@@ -1,0 +1,98 @@
+{
+  "id": "KA8530",
+  "slug": "chaqueta-adidas-suecia-originals-yellow",
+  "name": "adidas Suecia Originals",
+  "model": "Suecia Originals",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas de la selección de Suecia - amarilla",
+    "tagline": "Tradición escandinava con esencia Originals",
+    "intro": "La chaqueta adidas Originals Suecia es una prenda de inspiración clásica que recupera la combinación de colores de la segunda equipación nacional. Un diseño que conecta el legado futbolístico sueco con la estética urbana actual.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en la segunda equipación: Colores icónicos que reflejan la identidad de Suecia.",
+      "Tejido interlock: Equilibrio ideal entre suavidad, estructura y resistencia.",
+      "Cremallera completa: Ajuste práctico.",
+      "Cuello alto tipo funnel: Protección y look deportivo clásico.",
+      "Escudo y logotipo Trefoil: Sello distintivo adidas Originals."
+    ],
+    "technical_details": {
+      "range": "adidas Suecia Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-color-amarillo-adidas-suecia-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-color-amarillo-adidas-suecia-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-chandal-amarilla-adidas-suecia-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-entretiempo-adidas-suecia-originals-color-amarillo_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-adidas-suecia-originals-amarilla_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-color-amarillo-adidas-suecia-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-chandal-amarilla-adidas-suecia-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-entretiempo-adidas-suecia-originals-color-amarillo_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8530_chaqueta-adidas-suecia-originals-amarilla_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka8530",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas de la selección de Suecia - amarilla",
+    "tagline": "Tradición escandinava con esencia Originals",
+    "intro": "La chaqueta adidas Originals Suecia es una prenda de inspiración clásica que recupera la combinación de colores de la segunda equipación nacional. Un diseño que conecta el legado futbolístico sueco con la estética urbana actual.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en la segunda equipación: Colores icónicos que reflejan la identidad de Suecia.",
+      "Tejido interlock: Equilibrio ideal entre suavidad, estructura y resistencia.",
+      "Cremallera completa: Ajuste práctico.",
+      "Cuello alto tipo funnel: Protección y look deportivo clásico.",
+      "Escudo y logotipo Trefoil: Sello distintivo adidas Originals."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka8530"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Suecia",
+    "submodel": "",
+    "product_model": "Suecia Originals",
+    "sole_type": ""
+  }
+}

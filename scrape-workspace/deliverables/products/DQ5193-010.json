@@ -1,0 +1,86 @@
+{
+  "id": "DQ5193-010",
+  "slug": "pantalon-nike-therma-fit-strike-winter-warrior-black",
+  "name": "Nike Therma-Fit Strike Winter Warrior",
+  "model": "Therma-Fit Strike Winter Warrior",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Therma-Fit Strike Winter Warrior",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-largo-color-negro-nike-therma-fit-strike-winter-warrior_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-largo-color-negro-nike-therma-fit-strike-winter-warrior_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-chandal-negro-nike-therma-fit-strike-winter-warrior_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-chandal-nike-therma-fit-strike-winter-warrior-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-largo-nike-therma-fit-strike-winter-warrior-negro_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-largo-color-negro-nike-therma-fit-strike-winter-warrior_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-chandal-negro-nike-therma-fit-strike-winter-warrior_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-chandal-nike-therma-fit-strike-winter-warrior-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/Q/DQ5193-010_pantalon-largo-nike-therma-fit-strike-winter-warrior-negro_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dq5193-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dq5193-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Therma-Fit",
+    "submodel": "",
+    "product_model": "Therma-Fit Strike Winter Warrior",
+    "sole_type": ""
+  }
+}

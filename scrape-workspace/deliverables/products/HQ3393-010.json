@@ -1,0 +1,94 @@
+{
+  "id": "HQ3393-010",
+  "slug": "pantalon-nike-repel-t90-woven-black",
+  "name": "Nike Repel T90 Woven",
+  "model": "Repel T90 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de chándal Nike - negro",
+    "tagline": "Movilidad y resistencia en todo tipo de sesiones",
+    "intro": "El pantalón Nike T90 negro está diseñado para soportar el ritmo de entrenamientos intensos con una silueta moderna y un ajuste cómodo. Su tejido técnico repele el agua sin sacrificar transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Protección exterior: Material técnico con acabado repelente.",
+      "Diseño ergonómico: Rodillas articuladas para libertad de movimiento.",
+      "Versatilidad total: Sirve para entrenar o usar como jogger diario.",
+      "Cintura elástica: Ajuste personalizado sin presión."
+    ],
+    "technical_details": {
+      "range": "Nike Repel T90 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-010_pantalon-largo-color-negro-nike-repel-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-010_pantalon-largo-color-negro-nike-repel-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-010_pantalon-chandal-negro-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-010_pantalon-chandal-nike-repel-t90-color-negro_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-010_pantalon-largo-color-negro-nike-repel-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-010_pantalon-chandal-negro-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ3393-010_pantalon-chandal-nike-repel-t90-color-negro_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq3393-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de chándal Nike - negro",
+    "tagline": "Movilidad y resistencia en todo tipo de sesiones",
+    "intro": "El pantalón Nike T90 negro está diseñado para soportar el ritmo de entrenamientos intensos con una silueta moderna y un ajuste cómodo. Su tejido técnico repele el agua sin sacrificar transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Protección exterior: Material técnico con acabado repelente.",
+      "Diseño ergonómico: Rodillas articuladas para libertad de movimiento.",
+      "Versatilidad total: Sirve para entrenar o usar como jogger diario.",
+      "Cintura elástica: Ajuste personalizado sin presión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq3393-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel T90 Woven",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "JX3208-Y",
+  "slug": "gorra-adidas-real-madrid-nino-white",
+  "name": "adidas Real Madrid Kids",
+  "model": "Real Madrid niño",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra de paseo infantil adidas del Real Madrid - blanca",
+    "tagline": "El escudo que inspira a las nuevas generaciones",
+    "intro": "Con esta gorra adidas infantil del Real Madrid, los más pequeños podrán demostrar su afición con un look limpio y moderno. El escudo del club destaca sobre la base blanca, transmitiendo identidad, historia y orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Estética madridista: Diseño blanco con el escudo estampado del club.",
+      "Ligereza y comodidad: Algodón suave para uso diario sin molestias.",
+      "Versatilidad infantil: Ideal para cualquier ocasión casual o deportiva.",
+      "Protección solar: Visera que protege mientras juegan o pasean.",
+      "Diseño funcional: Ajuste cómodo pensado para niños activos."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-color-blanco-adidas-real-madrid-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-color-blanco-adidas-real-madrid-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-blanca-adidas-real-madrid-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-adidas-real-madrid-nino-color-blanco_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-adidas-real-madrid-nino-blanca_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-color-blanco-adidas-real-madrid-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-blanca-adidas-real-madrid-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-adidas-real-madrid-nino-color-blanco_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX3208-Y_gorra-adidas-real-madrid-nino-blanca_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jx3208-y",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Gorra de paseo infantil adidas del Real Madrid - blanca",
+    "tagline": "El escudo que inspira a las nuevas generaciones",
+    "intro": "Con esta gorra adidas infantil del Real Madrid, los más pequeños podrán demostrar su afición con un look limpio y moderno. El escudo del club destaca sobre la base blanca, transmitiendo identidad, historia y orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Estética madridista: Diseño blanco con el escudo estampado del club.",
+      "Ligereza y comodidad: Algodón suave para uso diario sin molestias.",
+      "Versatilidad infantil: Ideal para cualquier ocasión casual o deportiva.",
+      "Protección solar: Visera que protege mientras juegan o pasean.",
+      "Diseño funcional: Ajuste cómodo pensado para niños activos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jx3208-y"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid niño",
+    "sole_type": ""
+  }
+}

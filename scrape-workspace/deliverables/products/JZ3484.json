@@ -1,0 +1,102 @@
+{
+  "id": "JZ3484",
+  "slug": "short-adidas-bayern-nino-entrenamiento-grey",
+  "name": "adidas Bayern Kids Training",
+  "model": "Bayern niño entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento infantil adidas del Bayern de Múnich - gris",
+    "tagline": "Entrena como las futuras estrellas del Bayern",
+    "intro": "El pantalón corto de entrenamiento infantil del Bayern combina comodidad técnica y estilo de élite para los jóvenes fans del club. Bolsillos con cremallera y escudo termotransferido, cada detalle está pensado para motivar y rendir.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento técnico: Tecnología AEROREADY que mantiene la piel seca.",
+      "Diseño funcional: Bolsillos con cremallera para guardar objetos con seguridad.",
+      "Inspiración de club: Escudo del Bayern termotransferido para sentirte parte del equipo.",
+      "Comodidad total: Tejido interlock suave y ajuste regular adaptado al movimiento infantil.",
+      "Sostenibilidad: Confeccionado parcialmente con materiales reciclados."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern niño entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_pantalon-corto-color-gris-adidas-bayern-nino-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_pantalon-corto-color-gris-adidas-bayern-nino-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_short-gris-adidas-bayern-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_pantalon-corto-adidas-bayern-nino-entrenamiento-color-gris_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_short-adidas-bayern-nino-entrenamiento-gris_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_pantalon-corto-color-gris-adidas-bayern-nino-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_short-gris-adidas-bayern-nino-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_pantalon-corto-adidas-bayern-nino-entrenamiento-color-gris_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ3484_short-adidas-bayern-nino-entrenamiento-gris_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jz3484",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento infantil adidas del Bayern de Múnich - gris",
+    "tagline": "Entrena como las futuras estrellas del Bayern",
+    "intro": "El pantalón corto de entrenamiento infantil del Bayern combina comodidad técnica y estilo de élite para los jóvenes fans del club. Bolsillos con cremallera y escudo termotransferido, cada detalle está pensado para motivar y rendir.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento técnico: Tecnología AEROREADY que mantiene la piel seca.",
+      "Diseño funcional: Bolsillos con cremallera para guardar objetos con seguridad.",
+      "Inspiración de club: Escudo del Bayern termotransferido para sentirte parte del equipo.",
+      "Comodidad total: Tejido interlock suave y ajuste regular adaptado al movimiento infantil.",
+      "Sostenibilidad: Confeccionado parcialmente con materiales reciclados."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jz3484"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Bayern Kids",
+    "submodel": "",
+    "product_model": "Bayern niño entrenamiento",
+    "sole_type": ""
+  }
+}

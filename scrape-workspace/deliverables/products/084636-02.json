@@ -1,0 +1,109 @@
+{
+  "id": "084636-02",
+  "slug": "balon-puma-laliga-25-26-mini-orbita-yellow",
+  "name": "Puma LaLiga 25 26 mini Orbita",
+  "model": "LaLiga 25 26 mini Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Spanish League Soccer Ball 2025 2026 High Visibility Mini - Yellow",
+    "tagline": "The ideal ball for winter nights",
+    "intro": "This mini size ball reproduces the official design of La Liga 25/26 in a compact and practical format. Perfect for technical training, leisure time or as an essential decorative piece for any fan.",
+    "collection": "",
+    "key_benefits": [
+      "Design: With vibrant colors to show off on cold winter nights.",
+      "Small and functional size: Ideal for practicing control, giving or collecting.",
+      "No inflation required: Internal foam core eliminates the need for a valve.",
+      "Excellent for small spaces: Perfect for playing indoors or outdoors with little space.",
+      "Great Gift Idea: Attractive and useful, ideal for fans of any age."
+    ],
+    "technical_details": {
+      "range": "Puma LaLiga 25 26 mini Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/aadf3f79cc344e09ffe46042925fb9543106e60b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/aadf3f79cc344e09ffe46042925fb9543106e60b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/594b10a7dfd28cb87c32aa06d49d552f4bc717d1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/de9228d6c7fa9a6475a89a1d1e2e31eb73cd1e3b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/aadf3f79cc344e09ffe46042925fb9543106e60b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/594b10a7dfd28cb87c32aa06d49d552f4bc717d1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/de9228d6c7fa9a6475a89a1d1e2e31eb73cd1e3b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-aadf3f79cc344e09ffe46042925fb9543106e60b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/aadf3f79cc344e09ffe46042925fb9543106e60b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-594b10a7dfd28cb87c32aa06d49d552f4bc717d1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/594b10a7dfd28cb87c32aa06d49d552f4bc717d1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-de9228d6c7fa9a6475a89a1d1e2e31eb73cd1e3b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/de9228d6c7fa9a6475a89a1d1e2e31eb73cd1e3b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084636-02",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Liga Española 2025 2026 de alta visibilidad mini - amarillo",
+    "tagline": "El balón ideal para las noches de invierno",
+    "intro": "Este balón en talla mini reproduce el diseño oficial de La Liga 25/26 en un formato compacto y práctico. Perfecto para entrenamientos técnicos, momentos de ocio o como pieza decorativa imprescindible para cualquier fan.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño: Con colores vibrantes para lucir en las noches frías de invierno.",
+      "Tamaño reducido y funcional: Ideal para practicar el control, regalar o coleccionar.",
+      "No requiere inflado: Núcleo de espuma interna que elimina la necesidad de válvula.",
+      "Excelente para espacios pequeños: Perfecto para jugar en interiores o exteriores con poco espacio.",
+      "Gran idea de regalo: Atractivo y útil, ideal para fans de cualquier edad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084636-02"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "LaLiga",
+    "submodel": "",
+    "product_model": "LaLiga 25 26 mini Orbita",
+    "sole_type": ""
+  }
+}

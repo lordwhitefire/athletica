@@ -1,0 +1,100 @@
+{
+  "id": "KA8189",
+  "slug": "short-adidas-espana-entrenamiento-blue",
+  "name": "adidas España Training",
+  "model": "España entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento adidas de la selección española 2026 - azul marino",
+    "tagline": "Agilidad y frescura en cada paso",
+    "intro": "Short de entrenamiento oficial de España 2026, diseñado para máxima libertad de movimiento y transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Inspirado en la indumentaria de entrenamiento de la selección española.",
+      "Comodidad superior: Tejido suave, ligero y transpirable para el máximo confort.",
+      "Tecnología aplicada: Incluye CLIMACOOL (transpirabilidad en cada movimiento).",
+      "Preparado para la acción: Diseño atlético para sesiones de entrenamiento dinámicas."
+    ],
+    "technical_details": {
+      "range": "adidas España entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_pantalon-corto-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_pantalon-corto-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_pantalon-corto-adidas-espana-entrenamiento-color-azul_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_short-adidas-espana-entrenamiento-azul-marino_4_detalle-lateral-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_short-azul-marino-adidas-espana-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_pantalon-corto-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_pantalon-corto-adidas-espana-entrenamiento-color-azul_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_short-adidas-espana-entrenamiento-azul-marino_4_detalle-lateral-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8189_short-azul-marino-adidas-espana-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka8189",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas de la selección española 2026 - azul marino",
+    "tagline": "Agilidad y frescura en cada paso",
+    "intro": "Short de entrenamiento oficial de España 2026, diseñado para máxima libertad de movimiento y transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Inspirado en la indumentaria de entrenamiento de la selección española.",
+      "Comodidad superior: Tejido suave, ligero y transpirable para el máximo confort.",
+      "Tecnología aplicada: Incluye CLIMACOOL (transpirabilidad en cada movimiento).",
+      "Preparado para la acción: Diseño atlético para sesiones de entrenamiento dinámicas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka8189"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España entrenamiento",
+    "sole_type": ""
+  }
+}

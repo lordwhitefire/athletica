@@ -1,0 +1,94 @@
+{
+  "id": "JZ0141",
+  "slug": "sudadera-adidas-liverpool-originals-red",
+  "name": "adidas Liverpool Originals",
+  "model": "Liverpool Originals",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Liverpool Adidas Cotton Sweatshirt - Red",
+    "tagline": "The spirit of Liverpool in Originals key",
+    "intro": "This adidas Originals sweatshirt represents Liverpool's football culture with a clean and timeless design, designed for the fan's daily life.",
+    "collection": "",
+    "key_benefits": [
+      "Classic style: Originals inspiration with club identity.",
+      "Everyday comfort: Soft-touch cotton fabric.",
+      "Versatility: Ideal for casual use."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-color-rojo-adidas-liverpool-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-color-rojo-adidas-liverpool-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-roja-adidas-liverpool-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-adidas-liverpool-originals-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-adidas-liverpool-originals-roja_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-color-rojo-adidas-liverpool-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-roja-adidas-liverpool-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-adidas-liverpool-originals-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0141_sudadera-adidas-liverpool-originals-roja_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz0141",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de algodón adidas del Liverpool - roja",
+    "tagline": "El espíritu del Liverpool en clave Originals",
+    "intro": "Esta sudadera adidas Originals representa la cultura futbolera del Liverpool con un diseño limpio y atemporal, pensada para el día a día del aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo clásico: Inspiración Originals con identidad del club.",
+      "Comodidad diaria: Tejido de algodón suave al tacto.",
+      "Versatilidad: Ideal para uso casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz0141"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Liverpool Originals",
+    "submodel": "",
+    "product_model": "Liverpool Originals",
+    "sole_type": ""
+  }
+}

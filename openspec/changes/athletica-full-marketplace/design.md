@@ -37,7 +37,7 @@ The system stores these things (full list in `blueprint/05-gap-questions.md` D1)
 Three independent gates, each can reject alone:
 
 1. **Invite code** — one-time, hashed, re-validated at submit (prevents race), 24h expiry. Issued out-of-band by the owner.
-2. **Door-key cookie** — HttpOnly, SameSite=Lax, Path=/admin, 30-day sliding renewal, SHA-256 hashed. Checked in middleware as a first-line filter. Does not authenticate — only lets the signin page load.
+2. **Door-key cookie** — HttpOnly, SameSite=Lax, 30-day sliding renewal, SHA-256 hashed. Set on **two paths, `/admin` and `/api/admin`** (same value), because the gate covers both prefixes and a `/admin`-scoped cookie is not sent to `/api/admin/*`. Checked in `src/proxy.ts` as a first-line filter for **both `/admin/*` and `/api/admin/*`**, through the `rollout.validate_door_key` RPC (SECURITY DEFINER; the service-role key never enters the gate). Does not authenticate — only lets the signin page load. **Next 16 refuses to start when both `src/middleware.ts` and `src/proxy.ts` exist** — there is one guard at the door, and it is `proxy.ts`. `src/middleware.ts` was removed on 2026-11-17; the merge is done and the server starts.
 3. **JWT role** — `app_metadata.role === 'admin'`, checked via `getClaims()` (not `getUser()` — saves 50–200ms/page). Set only by the service role.
 
 **Fail-silent 404** on any failure — a 404 conceals the admin surface; a 401/403 confirms it exists. Affiliates use a separate email/password + email-verify + admin-approval flow with ownership-based RLS.

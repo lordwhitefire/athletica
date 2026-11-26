@@ -1,0 +1,92 @@
+{
+  "id": "DC0736-427",
+  "slug": "pantalon-nike-barcelona-entrenamiento-mujer-strike-blue",
+  "name": "Nike Barcelona Training Women Strike",
+  "model": "Barcelona entrenamiento mujer Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Barcelona entrenamiento mujer Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_3_cintura-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_4_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_5_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_3_cintura-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_4_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/C/DC0736-427_imagen-del-pantalon-largo-futbol-mujer-entrenamiento-fc-barcelona-Nike-Dri-Fit-Strike-2021-azul_5_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dc0736-427",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dc0736-427"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Barcelona Training",
+    "submodel": "",
+    "product_model": "Barcelona entrenamiento mujer Strike",
+    "sole_type": ""
+  }
+}

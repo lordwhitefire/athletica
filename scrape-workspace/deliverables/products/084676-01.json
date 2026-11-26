@@ -1,0 +1,109 @@
+{
+  "id": "084676-01",
+  "slug": "balon-puma-orbita-liga-portugal-25-26-talla-mini-white",
+  "name": "Puma Orbita Liga Portugal 25 26 talla mini",
+  "model": "Orbita Liga Portugal 25 26 talla mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Portuguese League Soccer Ball 2025 2026 Mini Size - White",
+    "tagline": "The perfect ball to train technique with style",
+    "intro": "The official mini ball of the Portugal League allows you to improve your touch and precision anywhere. Designed for grassroots football, technical training and fun, it combines performance and style in a compact size.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Same style used in the Portugal League 2025/26.",
+      "Vuelo preciso: Estructura optimizada para trayectorias estables.",
+      "Durabilidad superior: Material resistente para uso frecuente.",
+      "Excellent control: Textured surface for better ball handling.",
+      "High visibility: Eye-catching graphics visible in any environment."
+    ],
+    "technical_details": {
+      "range": "Puma Orbita Liga Portugal 25 26 talla mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/88d38ca48c2e8d8654772166d36f9a3b09d13b18-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/88d38ca48c2e8d8654772166d36f9a3b09d13b18-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f34fc24f140071c126be38154e4ca2f848afc7bd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/582d2895544de2ae77af4cf71c9610e101223765-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/88d38ca48c2e8d8654772166d36f9a3b09d13b18-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f34fc24f140071c126be38154e4ca2f848afc7bd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/582d2895544de2ae77af4cf71c9610e101223765-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-88d38ca48c2e8d8654772166d36f9a3b09d13b18-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/88d38ca48c2e8d8654772166d36f9a3b09d13b18-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f34fc24f140071c126be38154e4ca2f848afc7bd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f34fc24f140071c126be38154e4ca2f848afc7bd-1500x1500.jpg"
+    },
+    {
+      "_id": "image-582d2895544de2ae77af4cf71c9610e101223765-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/582d2895544de2ae77af4cf71c9610e101223765-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084676-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Liga Portuguesa 2025 2026 talla mini - blanco",
+    "tagline": "El balón perfecto para entrenar técnica con estilo",
+    "intro": "El balón mini oficial de la Liga Portugal te permite mejorar tu toque y precisión en cualquier lugar. Diseñado para fútbol base, entrenamiento técnico y diversión, combina rendimiento y estilo en tamaño compacto.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Mismo estilo usado en la Liga Portugal 2025/26.",
+      "Vuelo preciso: Estructura optimizada para trayectorias estables.",
+      "Durabilidad superior: Material resistente para uso frecuente.",
+      "Excelente control: Superficie texturizada para mejor manejo del balón.",
+      "Alta visibilidad: Gráficos llamativos visibles en cualquier entorno."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084676-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita Liga Portugal 25 26 talla mini",
+    "sole_type": ""
+  }
+}

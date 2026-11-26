@@ -1,0 +1,98 @@
+{
+  "id": "KB1468",
+  "slug": "camiseta-adidas-liverpool-entrenamiento-nino-red",
+  "name": "adidas Liverpool Training Kids",
+  "model": "Liverpool entrenamiento niño",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de manga corta de entrenamiento adidas del Liverpool 2025 2026 - roja",
+    "tagline": "Para futuras estrellas de Anfield",
+    "intro": "La camiseta de entrenamiento del Liverpool para niño combina comodidad y rendimiento con el escudo que lo dice todo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño pro: Igual que el del primer equipo Red.",
+      "Secado rápido: Tecnología AEROREADY ideal para moverse.",
+      "Ajuste infantil: Comodidad y estilo adaptado a los más jóvenes."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool entrenamiento niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-color-rojo-adidas-liverpool-entrenamiento-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-color-rojo-adidas-liverpool-entrenamiento-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-roja-adidas-liverpool-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-adidas-liverpool-entrenamiento-nino-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-adidas-liverpool-entrenamiento-nino-roja_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-color-rojo-adidas-liverpool-entrenamiento-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-roja-adidas-liverpool-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-adidas-liverpool-entrenamiento-nino-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1468_camiseta-adidas-liverpool-entrenamiento-nino-roja_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kb1468",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de manga corta de entrenamiento adidas del Liverpool 2025 2026 - roja",
+    "tagline": "Para futuras estrellas de Anfield",
+    "intro": "La camiseta de entrenamiento del Liverpool para niño combina comodidad y rendimiento con el escudo que lo dice todo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño pro: Igual que el del primer equipo Red.",
+      "Secado rápido: Tecnología AEROREADY ideal para moverse.",
+      "Ajuste infantil: Comodidad y estilo adaptado a los más jóvenes."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kb1468"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Liverpool Training",
+    "submodel": "",
+    "product_model": "Liverpool entrenamiento niño",
+    "sole_type": ""
+  }
+}

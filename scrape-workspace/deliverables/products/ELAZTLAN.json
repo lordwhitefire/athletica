@@ -1,0 +1,90 @@
+{
+  "id": "ELAZTLAN",
+  "slug": "elite-azteca-black",
+  "name": "Elite AZTECA",
+  "model": "AZTECA",
+  "brand": "Elite",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero con protecciones extraíbles Elite corte Negative Roll - negros",
+    "tagline": "Inspiración azteca, protección total",
+    "intro": "Los Elite AZTECA combinan un diseño impactante con un rendimiento de alto nivel. Su estética inspirada en la cultura azteca se une a un ajuste técnico con protecciones extraíbles para brindar confianza y control en cada intervención.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño cultural: Gráficos inspirados en el arte azteca.",
+      "Protecciones desmontables: Adaptación a tu estilo de juego.",
+      "Agarre superior: Palma de látex de alto rendimiento.",
+      "Muñequera envolvente: Estabilidad y ajuste seguro.",
+      "Comodidad interior: Material textil suave y transpirable."
+    ],
+    "technical_details": {
+      "range": "AZTECA",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-elite-sport-aztlan_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-elite-sport-aztlan_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-portero-con-proteccion-negros-elite-sport-aztlan_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-con-ferulas-elite-sport-aztlan-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-de-arquero-con-ferula-elite-sport-aztlan-negros_4_detalle-cierre-en-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-elite-sport-aztlan_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-portero-con-proteccion-negros-elite-sport-aztlan_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-con-ferulas-elite-sport-aztlan-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELAZTLAN_guantes-de-arquero-con-ferula-elite-sport-aztlan-negros_4_detalle-cierre-en-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/elaztlan",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero con protecciones extraíbles Elite corte Negative Roll - negros",
+    "tagline": "Inspiración azteca, protección total",
+    "intro": "Los Elite AZTECA combinan un diseño impactante con un rendimiento de alto nivel. Su estética inspirada en la cultura azteca se une a un ajuste técnico con protecciones extraíbles para brindar confianza y control en cada intervención.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño cultural: Gráficos inspirados en el arte azteca.",
+      "Protecciones desmontables: Adaptación a tu estilo de juego.",
+      "Agarre superior: Palma de látex de alto rendimiento.",
+      "Muñequera envolvente: Estabilidad y ajuste seguro.",
+      "Comodidad interior: Material textil suave y transpirable."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/elaztlan"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "AZTECA",
+    "submodel": "",
+    "product_model": "AZTECA",
+    "sole_type": ""
+  }
+}

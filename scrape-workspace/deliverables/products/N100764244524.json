@@ -1,0 +1,80 @@
+{
+  "id": "N100764244524",
+  "slug": "botellin-nike-renew-recharge-straw-700-ml-blue",
+  "name": "Botellín Nike Renew Recharge Straw 700 ml",
+  "model": "Botellín Nike Renew Recharge Straw 700 ml",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Renew Recharge Straw 700 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N100764244524_botellin-agua-color-transparente-nike-recharge-straw-700-ml_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N100764244524_botellin-agua-color-transparente-nike-recharge-straw-700-ml_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N100764244524_botellin-agua-transparente-nike-recharge-straw-700-ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N100764244524_botellin-agua-nike-recharge-straw-700-ml-color-transparente_3_detalle-boquilla.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N100764244524_botellin-agua-color-transparente-nike-recharge-straw-700-ml_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N100764244524_botellin-agua-transparente-nike-recharge-straw-700-ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N100764244524_botellin-agua-nike-recharge-straw-700-ml-color-transparente_3_detalle-boquilla.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n100764244524",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n100764244524"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín Nike Renew Recharge Straw 700 ml",
+    "sole_type": ""
+  }
+}

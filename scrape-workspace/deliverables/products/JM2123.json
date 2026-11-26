@@ -1,0 +1,100 @@
+{
+  "id": "JM2123",
+  "slug": "camiseta-adidas-real-madrid-icon-blue",
+  "name": "adidas Real Madrid Icon",
+  "model": "Real Madrid Icon",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Short Sleeve Cotton T-Shirt - Blue",
+    "tagline": "White identity with retro style",
+    "intro": "The adidas Icon Real Madrid t-shirt stands out for its vintage aesthetic and the classic adidas logo on the chest. A tribute to the golden decades of football with a modern design.",
+    "collection": "",
+    "key_benefits": [
+      "Authentic retro style: White adidas Originals logo and classic silhouette.",
+      "Natural comfort: Soft and breathable cotton ideal for everyday use.",
+      "Versatile look: Dress with Madrid identity on and off the field.",
+      "Lifestyle edition: Part of the adidas Icon 25/26 collection."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-adidas-real-madrid-icon-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-adidas-real-madrid-icon-azul_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-adidas-real-madrid-icon-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM2123_camiseta-adidas-real-madrid-icon-azul_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm2123",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Real Madrid - azul",
+    "tagline": "Identidad blanca con estilo retro",
+    "intro": "La camiseta adidas Icon del Real Madrid destaca por su estética vintage y el logo clásico de adidas en el pecho. Un homenaje a las décadas doradas del fútbol con un diseño moderno.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo retro auténtico: Logo adidas Originals en blanco y silueta clásica.",
+      "Confort natural: Algodón suave y transpirable ideal para el día a día.",
+      "Look versátil: Viste con identidad madridista dentro y fuera del campo.",
+      "Edición lifestyle: Parte de la colección adidas Icon 25/26."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm2123"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Icon",
+    "sole_type": ""
+  }
+}

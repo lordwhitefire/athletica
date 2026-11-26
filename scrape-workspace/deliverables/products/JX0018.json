@@ -1,0 +1,106 @@
+{
+  "id": "JX0018",
+  "slug": "guantes-adidas-real-madrid-blue",
+  "name": "adidas Real Madrid",
+  "model": "Real Madrid",
+  "brand": "adidas",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes térmicos adidas del Real Madrid - azul marino",
+    "tagline": "Comodidad y calor con identidad madridista",
+    "intro": "Estos guantes térmicos oficiales del Real Madrid son ideales para protegerte del frío con estilo. Confeccionados con tejido suave y elástico, ofrecen un ajuste perfecto y libertad de movimiento en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo garantizado: Tejido térmico para protegerte del frío.",
+      "Diseño oficial: Escudo del Real Madrid bordado en el dorso.",
+      "Ajuste cómodo: Composición elástica que se adapta a la mano.",
+      "Uso versátil: Ideal para entrenamientos o uso diario.",
+      "Estilo discreto: Acabado sobrio en azul marino."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-termicos-color-azul-adidas-real-madrid_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-termicos-color-azul-adidas-real-madrid_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-frio-azul-marino-adidas-real-madrid_2_detalle-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-adidas-real-madrid-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-invierno-adidas-real-madrid-azul-marino_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-termicos-color-azul-adidas-real-madrid_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-frio-azul-marino-adidas-real-madrid_2_detalle-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-adidas-real-madrid-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX0018_guantes-invierno-adidas-real-madrid-azul-marino_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jx0018",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes térmicos adidas del Real Madrid - azul marino",
+    "tagline": "Comodidad y calor con identidad madridista",
+    "intro": "Estos guantes térmicos oficiales del Real Madrid son ideales para protegerte del frío con estilo. Confeccionados con tejido suave y elástico, ofrecen un ajuste perfecto y libertad de movimiento en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo garantizado: Tejido térmico para protegerte del frío.",
+      "Diseño oficial: Escudo del Real Madrid bordado en el dorso.",
+      "Ajuste cómodo: Composición elástica que se adapta a la mano.",
+      "Uso versátil: Ideal para entrenamientos o uso diario.",
+      "Estilo discreto: Acabado sobrio en azul marino."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jx0018"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid",
+    "sole_type": ""
+  }
+}

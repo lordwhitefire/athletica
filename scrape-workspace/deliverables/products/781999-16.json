@@ -1,0 +1,94 @@
+{
+  "id": "781999-16",
+  "slug": "sudadera-puma-manchester-city-entrenamiento-green",
+  "name": "Puma Manchester City Training",
+  "model": "Manchester City entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Training Sweatshirt 2025 2026 - Light Green",
+    "tagline": "Comodidad y rendimiento sobre el terreno",
+    "intro": "A high-performance sweatshirt that protects from the cold without losing breathability. Ideal to accompany you in your sports routines.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad: Mantiene el cuerpo seco en todo momento.",
+      "Ergonomic fit: Follow your movements without restrictions.",
+      "Estilo profesional: Con los colores y escudo del equipo."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781999-16_sudadera-color-verde-puma-manchester-city-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781999-16_sudadera-color-verde-puma-manchester-city-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781999-16_sudadera-verde-claro-puma-manchester-city-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781999-16_sudadera-color-verde-puma-manchester-city-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781999-16_sudadera-verde-claro-puma-manchester-city-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/781999-16",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Puma del Manchester City 2025 2026 - verde claro",
+    "tagline": "Comodidad y rendimiento sobre el terreno",
+    "intro": "Una sudadera de alto rendimiento que protege del frío sin perder transpirabilidad. Ideal para acompañarte en tus rutinas deportivas.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad: Mantiene el cuerpo seco en todo momento.",
+      "Ajuste ergonómico: Acompaña tus movimientos sin restricciones.",
+      "Estilo profesional: Con los colores y escudo del equipo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/781999-16"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City entrenamiento",
+    "sole_type": ""
+  }
+}

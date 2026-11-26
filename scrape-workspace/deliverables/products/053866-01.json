@@ -1,0 +1,103 @@
+{
+  "id": "053866-01",
+  "slug": "cinta-de-pelo-puma-essentials-entrenamiento-black",
+  "name": "Cinta de pelo Puma Essentials Training",
+  "model": "Cinta de pelo Puma Essentials Training",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma headband - black",
+    "tagline": "Keep sweat under control",
+    "intro": "The Puma Essentials training headband is designed to absorb sweat and keep your forehead clear during training and competition. Its soft and stretchy terry fabric offers a comfortable and secure fit, while the embroidered Puma logo adds a sporty finish.",
+    "collection": "",
+    "key_benefits": [
+      "Absorbent terry fabric: Helps control sweat during exercise.",
+      "Stretch fit: Fits comfortably without excessive pressure.",
+      "Logotipo Puma bordado: Acabado deportivo de gran calidad."
+    ],
+    "technical_details": {
+      "range": "de pelo Puma Essentials entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2af0ebfbc2c7ecf8d06bab1a91b5bae8db2d1d13-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2af0ebfbc2c7ecf8d06bab1a91b5bae8db2d1d13-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f8e16f185c1a56e50d15353eee3ab081b21854ab-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/68be4f8e16731411bbaa30ede7ef98e1f97f36fd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/05707a83ff5639c2d43706e2583b35e12bb351be-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2af0ebfbc2c7ecf8d06bab1a91b5bae8db2d1d13-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f8e16f185c1a56e50d15353eee3ab081b21854ab-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/68be4f8e16731411bbaa30ede7ef98e1f97f36fd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/05707a83ff5639c2d43706e2583b35e12bb351be-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2af0ebfbc2c7ecf8d06bab1a91b5bae8db2d1d13-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2af0ebfbc2c7ecf8d06bab1a91b5bae8db2d1d13-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f8e16f185c1a56e50d15353eee3ab081b21854ab-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f8e16f185c1a56e50d15353eee3ab081b21854ab-1500x1500.jpg"
+    },
+    {
+      "_id": "image-68be4f8e16731411bbaa30ede7ef98e1f97f36fd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/68be4f8e16731411bbaa30ede7ef98e1f97f36fd-1500x1500.jpg"
+    },
+    {
+      "_id": "image-05707a83ff5639c2d43706e2583b35e12bb351be-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/05707a83ff5639c2d43706e2583b35e12bb351be-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/053866-01",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Cinta de pelo Puma - negra",
+    "tagline": "Mantén el sudor bajo control",
+    "intro": "La cinta de pelo Puma Essentials entrenamiento está diseñada para absorber el sudor y mantener la frente despejada durante los entrenamientos y la competición. Su tejido de rizo, suave y elástico, ofrece un ajuste cómodo y seguro, mientras que el logotipo Puma bordado aporta un acabado deportivo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de rizo absorbente: Ayuda a controlar el sudor durante el ejercicio.",
+      "Ajuste elástico: Se adapta cómodamente sin ejercer presión excesiva.",
+      "Logotipo Puma bordado: Acabado deportivo de gran calidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/053866-01"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Cinta",
+    "submodel": "",
+    "product_model": "Cinta de pelo Puma Essentials Training",
+    "sole_type": ""
+  }
+}

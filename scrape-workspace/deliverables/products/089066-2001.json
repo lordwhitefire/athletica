@@ -1,0 +1,109 @@
+{
+  "id": "089066-2001",
+  "slug": "gorra-hummel-real-betis-balompie-black",
+  "name": "Hummel Real Betis Balompié",
+  "model": "Real Betis Balompié",
+  "brand": "Hummel",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Betis Hummel Cap - black",
+    "tagline": "green and white pride",
+    "intro": "The Real Betis Hummel cap is the ideal accessory to show your passion for the Sevillian team. Made of durable polyester and with the shield printed on the front, it combines comfort and style to accompany you in your daily life.",
+    "collection": "",
+    "key_benefits": [
+      "Green and white identity: Official Real Betis Balompié crest printed on the front.",
+      "Sporty design: Modern aesthetics with urban inspiration.",
+      "Comfortable fabric: Light and resistant polyester.",
+      "Adaptive fit: Adjustable back closure for greater comfort.",
+      "Ideal for everyday use: Perfect for free time, training or cheering on Betis in the stadium."
+    ],
+    "technical_details": {
+      "range": "Hummel Real Betis Balompié",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c1ca375cf7893d49c1abf026465ada6a5853400c-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c1ca375cf7893d49c1abf026465ada6a5853400c-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7dc4b4cb69b56b6dae1b018079fb496b4bf60cfe-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f77faaf85e761011ebcad890c0234b4266f1a5ae-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c1ca375cf7893d49c1abf026465ada6a5853400c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7dc4b4cb69b56b6dae1b018079fb496b4bf60cfe-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f77faaf85e761011ebcad890c0234b4266f1a5ae-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c1ca375cf7893d49c1abf026465ada6a5853400c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c1ca375cf7893d49c1abf026465ada6a5853400c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7dc4b4cb69b56b6dae1b018079fb496b4bf60cfe-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7dc4b4cb69b56b6dae1b018079fb496b4bf60cfe-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f77faaf85e761011ebcad890c0234b4266f1a5ae-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f77faaf85e761011ebcad890c0234b4266f1a5ae-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/089066-2001",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra Hummel del Real Betis - negra",
+    "tagline": "Orgullo verdiblanco",
+    "intro": "La gorra Hummel del Real Betis es el complemento ideal para mostrar tu pasión por el conjunto sevillano. Confeccionada en poliéster resistente y con el escudo estampado en el frontal, combina comodidad y estilo para acompañarte en tu día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad verdiblanca: Escudo oficial del Real Betis Balompié estampado en el frontal.",
+      "Diseño deportivo: Estética moderna con inspiración urbana.",
+      "Tejido cómodo: Poliéster ligero y resistente.",
+      "Ajuste adaptable: Cierre trasero regulable para mayor confort.",
+      "Ideal para diario: Perfecta para Tiempo libre, entrenamientos o animar al Betis en el estadio."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/089066-2001"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Real Betis",
+    "submodel": "",
+    "product_model": "Real Betis Balompié",
+    "sole_type": ""
+  }
+}

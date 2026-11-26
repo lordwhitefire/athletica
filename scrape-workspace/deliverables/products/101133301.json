@@ -1,0 +1,105 @@
+{
+  "id": "101133301",
+  "slug": "uhlsport-prediction-absolutgrip-hn-blue",
+  "name": "Uhlsport Prediction Absolutgrip HN",
+  "model": "Prediction Absolutgrip HN",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Prediction Absolutgrip HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6337da61389566ef3f930a7a4b314f4f1f151e4b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/6337da61389566ef3f930a7a4b314f4f1f151e4b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ee0300a2f4eedbde559c7fba26c03a8e1d4a6e88-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ed690125abd9d99626ac4b18d5017d0db773edea-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e34d0ff85250e6fe09b23d244fc323f168d92321-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b5bf8efe05780cca68f5b47fc32ba4c01ecda5fb-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6337da61389566ef3f930a7a4b314f4f1f151e4b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ee0300a2f4eedbde559c7fba26c03a8e1d4a6e88-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ed690125abd9d99626ac4b18d5017d0db773edea-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e34d0ff85250e6fe09b23d244fc323f168d92321-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b5bf8efe05780cca68f5b47fc32ba4c01ecda5fb-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-6337da61389566ef3f930a7a4b314f4f1f151e4b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6337da61389566ef3f930a7a4b314f4f1f151e4b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ee0300a2f4eedbde559c7fba26c03a8e1d4a6e88-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ee0300a2f4eedbde559c7fba26c03a8e1d4a6e88-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ed690125abd9d99626ac4b18d5017d0db773edea-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ed690125abd9d99626ac4b18d5017d0db773edea-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e34d0ff85250e6fe09b23d244fc323f168d92321-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e34d0ff85250e6fe09b23d244fc323f168d92321-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b5bf8efe05780cca68f5b47fc32ba4c01ecda5fb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b5bf8efe05780cca68f5b47fc32ba4c01ecda5fb-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101133301",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101133301"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Prediction",
+    "submodel": "",
+    "product_model": "Prediction Absolutgrip HN",
+    "sole_type": ""
+  }
+}

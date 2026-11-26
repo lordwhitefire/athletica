@@ -1,0 +1,103 @@
+{
+  "id": "026544-01",
+  "slug": "gorra-puma-girona-essentials-red",
+  "name": "Puma Girona Essentials",
+  "model": "Girona Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Girona FC Puma Walking Cap - Red",
+    "tagline": "Girona pride in your daily life",
+    "intro": "The Puma Girona Essentials cap is the perfect accessory to show your passion for your team. Its design combines comfort and style, becoming an essential basic for any fan.",
+    "collection": "",
+    "key_benefits": [
+      "Club identity: Official Girona FC shield on the front.",
+      "Distinctive details: Brand logo on the side that provides a sporty character.",
+      "Versatile design: Adapts to different occasions of daily use.",
+      "Guaranteed comfort: Light and practical to wear throughout the day."
+    ],
+    "technical_details": {
+      "range": "Puma Girona Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b43cb830ed8a229e44ea6e98ae0c54c8998844b6-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b43cb830ed8a229e44ea6e98ae0c54c8998844b6-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a1cb681dbe1c719f09e94f7164fd3a14444b0f8b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2c6013a7790f54098648ebef14fd8ff058f8be90-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b43cb830ed8a229e44ea6e98ae0c54c8998844b6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a1cb681dbe1c719f09e94f7164fd3a14444b0f8b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2c6013a7790f54098648ebef14fd8ff058f8be90-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b43cb830ed8a229e44ea6e98ae0c54c8998844b6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b43cb830ed8a229e44ea6e98ae0c54c8998844b6-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a1cb681dbe1c719f09e94f7164fd3a14444b0f8b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a1cb681dbe1c719f09e94f7164fd3a14444b0f8b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2c6013a7790f54098648ebef14fd8ff058f8be90-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2c6013a7790f54098648ebef14fd8ff058f8be90-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/026544-01",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma del Girona FC - roja",
+    "tagline": "Orgullo gerundense en tu día a día",
+    "intro": "La gorra Puma Girona Essentials es el accesorio perfecto para mostrar la pasión por tu equipo. Su diseño combina comodidad y estilo, convirtiéndose en un básico imprescindible para cualquier aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad del club: Escudo oficial del Girona FC en el frontal.",
+      "Detalles distintivos: Logotipo de la marca en el lateral que aporta carácter deportivo.",
+      "Diseño versátil: Se adapta a diferentes ocasiones de uso diario.",
+      "Comodidad asegurada: Ligera y práctica para llevar durante todo el día."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/026544-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Girona",
+    "submodel": "",
+    "product_model": "Girona Essentials",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "KB4444",
+  "slug": "short-adidas-alemania-entrenamiento-black",
+  "name": "adidas Alemania Training",
+  "model": "Alemania entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento adidas de la selección alemana 2026 - negro",
+    "tagline": "Ligereza y frescura para cada sesión",
+    "intro": "Este short técnico de entrenamiento es la elección perfecta para quienes buscan rendimiento y movilidad sin sacrificar estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido ligero: Permite moverse libremente en entrenamientos intensos.",
+      "Diseño funcional: Con cintura elástica ajustable y bolsillos laterales.",
+      "Estilo profesional: Con el escudo oficial y logotipos adidas."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_pantalon-corto-color-negro-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_pantalon-corto-color-negro-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_short-negro-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_pantalon-corto-adidas-alemania-entrenamiento-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_short-adidas-alemania-entrenamiento-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_pantalon-corto-color-negro-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_short-negro-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_pantalon-corto-adidas-alemania-entrenamiento-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4444_short-adidas-alemania-entrenamiento-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb4444",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas de la selección alemana 2026 - negro",
+    "tagline": "Ligereza y frescura para cada sesión",
+    "intro": "Este short técnico de entrenamiento es la elección perfecta para quienes buscan rendimiento y movilidad sin sacrificar estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido ligero: Permite moverse libremente en entrenamientos intensos.",
+      "Diseño funcional: Con cintura elástica ajustable y bolsillos laterales.",
+      "Estilo profesional: Con el escudo oficial y logotipos adidas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb4444"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "HM1094",
+  "slug": "sujetador-adidas-powerract-impacto-medio-pink",
+  "name": "Sujetador adidas Powerract impacto medio",
+  "model": "Sujetador adidas Powerract impacto medio",
+  "brand": "adidas",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Powerract impacto medio",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sujetador-color-rosa-adidas-powerract-impacto-medio_1_completa-pecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sujetador-color-rosa-adidas-powerract-impacto-medio_1_completa-pecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sostenes-rosa-adidas-powerract-impacto-medio_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sujetador-adidas-powerract-impacto-medio-color-rosa_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sostenes-adidas-powerract-impacto-medio-rosa_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sujetador-color-rosa-adidas-powerract-impacto-medio_1_completa-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sostenes-rosa-adidas-powerract-impacto-medio_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sujetador-adidas-powerract-impacto-medio-color-rosa_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM1094_sostenes-adidas-powerract-impacto-medio-rosa_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm1094",
+    "language": "es",
+    "category": "Ropa entrenamiento",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm1094"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Sujetador",
+    "submodel": "",
+    "product_model": "Sujetador adidas Powerract impacto medio",
+    "sole_type": ""
+  }
+}

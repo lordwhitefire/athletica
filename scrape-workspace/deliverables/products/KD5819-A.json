@@ -1,0 +1,90 @@
+{
+  "id": "KD5819-A",
+  "slug": "gorra-adidas-espana-white",
+  "name": "adidas España",
+  "model": "España",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra de paseo adidas de la selección española 2026 - blanca",
+    "tagline": "Orgullo nacional desde pequeño",
+    "intro": "La gorra adidas de la Selección Española es el complemento perfecto para mostrar tu pasión por La Roja dentro y fuera del estadio. Con las letras de España bordadas en el frontal y los detalles en contraste, combina estilo deportivo y sentimiento de afición.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad española: Nombre de la selección bordado en el frontal.",
+      "Diseño limpio: Estética clásica y elegante que combina con cualquier estilo.",
+      "Comfortable fabric: Soft and breathable cotton.",
+      "Ajuste adaptable: Cierre trasero regulable con hebilla para mayor confort.",
+      "Ideal para diario: Perfecta para tiempo libre, entrenamientos o animar a La Roja."
+    ],
+    "technical_details": {
+      "range": "adidas España",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5819-A_gorra-color-blanco-adidas-espana_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5819-A_gorra-color-blanco-adidas-espana_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5819-A_gorra-blanca-adidas-espana_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5819-A_gorra-color-blanco-adidas-espana_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5819-A_gorra-blanca-adidas-espana_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kd5819-a",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Gorra de paseo adidas de la selección española 2026 - blanca",
+    "tagline": "Orgullo nacional desde pequeño",
+    "intro": "La gorra adidas de la Selección Española es el complemento perfecto para mostrar tu pasión por La Roja dentro y fuera del estadio. Con las letras de España bordadas en el frontal y los detalles en contraste, combina estilo deportivo y sentimiento de afición.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad española: Nombre de la selección bordado en el frontal.",
+      "Diseño limpio: Estética clásica y elegante que combina con cualquier estilo.",
+      "Tejido cómodo: Algodón suave y transpirable.",
+      "Ajuste adaptable: Cierre trasero regulable con hebilla para mayor confort.",
+      "Ideal para diario: Perfecta para tiempo libre, entrenamientos o animar a La Roja."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kd5819-a"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España",
+    "sole_type": ""
+  }
+}

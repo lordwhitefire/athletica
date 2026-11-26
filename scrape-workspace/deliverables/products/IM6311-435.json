@@ -1,0 +1,92 @@
+{
+  "id": "IM6311-435",
+  "slug": "camiseta-nike-t90-energy-dri-fit-blue",
+  "name": "Nike T90 Energy Dri-Fit",
+  "model": "T90 Energy Dri-Fit",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga larga de entrenamiento Nike - azul claro",
+    "tagline": "Agilidad y frescura con cada zancada",
+    "intro": "La camiseta Nike T90 Energy Dri-Fit azul claro está hecha para los que entrenan con ritmo y estilo. Su tejido técnico te mantiene seco y su diseño dinámico realza tu presencia en el campo.",
+    "collection": "",
+    "key_benefits": [
+      "Active breathability: Dri-FIT technology that fights sweat.",
+      "Ligereza sin límites: Tejido que acompaña cada movimiento.",
+      "Sporty aesthetic: Vibrant blue with exclusive T90 details."
+    ],
+    "technical_details": {
+      "range": "Nike T90 Energy Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6311-435_camiseta-manga-larga-color-azul-nike-t90-energy-4-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6311-435_camiseta-manga-larga-color-azul-nike-t90-energy-4-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6311-435_camiseta-manga-larga-azul-claro-nike-t90-energy-4-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6311-435_camiseta-manga-larga-nike-t90-energy-4-dri-fit-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6311-435_camiseta-manga-larga-color-azul-nike-t90-energy-4-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6311-435_camiseta-manga-larga-azul-claro-nike-t90-energy-4-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6311-435_camiseta-manga-larga-nike-t90-energy-4-dri-fit-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im6311-435",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga larga de entrenamiento Nike - azul claro",
+    "tagline": "Agilidad y frescura con cada zancada",
+    "intro": "La camiseta Nike T90 Energy Dri-Fit azul claro está hecha para los que entrenan con ritmo y estilo. Su tejido técnico te mantiene seco y su diseño dinámico realza tu presencia en el campo.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad activa: Tecnología Dri-FIT que combate el sudor.",
+      "Ligereza sin límites: Tejido que acompaña cada movimiento.",
+      "Estética deportiva: Azul vibrante con detalles T90 exclusivos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im6311-435"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "T90",
+    "submodel": "",
+    "product_model": "T90 Energy Dri-Fit",
+    "sole_type": ""
+  }
+}

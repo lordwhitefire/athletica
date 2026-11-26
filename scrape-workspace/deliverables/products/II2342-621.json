@@ -1,0 +1,100 @@
+{
+  "id": "II2342-621",
+  "slug": "camiseta-nike-barcelona-mujer-entrenamiento-dri-fit-strike-red",
+  "name": "Nike Barcelona Women Training Dri-Fit Strike",
+  "model": "Barcelona mujer entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "FC Barcelona 2026 2027 Nike Women's Short Sleeve Training Jersey - Maroon",
+    "tagline": "Train with the intensity of Barça",
+    "intro": "The Nike Barcelona women's Dri-Fit Strike training t-shirt has been designed for soccer players and fans who seek comfort and performance in each session.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT: Evacuates sweat to keep you cool during exercise.",
+      "Breathable fabric: Promotes ventilation and comfort.",
+      "Women's specific cut: Comfortable fit adapted to the female anatomy.",
+      "Official FC Barcelona crest: Show your passion for the club in every training session."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona mujer entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-color-rojo-nike-barcelona-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-color-rojo-nike-barcelona-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-granate-nike-barcelona-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-nike-barcelona-mujer-entrenamiento-dri-fit-strike-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-nike-barcelona-mujer-entrenamiento-dri-fit-strike-granate_4_detalle-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-color-rojo-nike-barcelona-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-granate-nike-barcelona-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-nike-barcelona-mujer-entrenamiento-dri-fit-strike-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2342-621_camiseta-nike-barcelona-mujer-entrenamiento-dri-fit-strike-granate_4_detalle-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ii2342-621",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta para mujer de manga corta de entrenamiento Nike del FC Barcelona 2026 2027 - granate",
+    "tagline": "Entrena con la intensidad del Barça",
+    "intro": "La camiseta Nike Barcelona mujer entrenamiento Dri-Fit Strike ha sido diseñada para futbolistas y aficionadas que buscan comodidad y rendimiento en cada sesión.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT: Evacúa el sudor para mantener la frescura durante el ejercicio.",
+      "Tejido transpirable: Favorece la ventilación y la comodidad.",
+      "Corte específico para mujer: Ajuste cómodo adaptado a la anatomía femenina.",
+      "Escudo oficial FC Barcelona: Muestra tu pasión por el club en cada entrenamiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ii2342-621"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Barcelona Women",
+    "submodel": "",
+    "product_model": "Barcelona mujer entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

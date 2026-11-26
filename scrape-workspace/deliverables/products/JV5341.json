@@ -1,0 +1,100 @@
+{
+  "id": "JV5341",
+  "slug": "chaqueta-adidas-arsenal-nino-vis-tech-blue",
+  "name": "adidas Arsenal Kids Vis Tech",
+  "model": "Arsenal niño Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal infantil adidas del Arsenal - azul marino",
+    "tagline": "Para jóvenes Gunners con estilo y energía",
+    "intro": "La chaqueta infantil Vis Tech del Arsenal combina colores llamativos con confort y funcionalidad. Una prenda diseñada para los pequeños aficionados que no quieren pasar desapercibidos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño vibrante: Color púrpura con detalles modernos que destacan.",
+      "Confort pensado para niños: Suavidad y libertad de movimiento.",
+      "Orgullo Gunner: Escudo del Arsenal presente con estilo.",
+      "Uso versátil: Ideal para el colegio, el parque o el estadio."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal niño Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-color-azul-adidas-arsenal-nino-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-color-azul-adidas-arsenal-nino-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-chandal-azul-marino-adidas-arsenal-nino-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-entretiempo-adidas-arsenal-nino-vis-tech-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-adidas-arsenal-nino-vis-tech-azul-marino_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-color-azul-adidas-arsenal-nino-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-chandal-azul-marino-adidas-arsenal-nino-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-entretiempo-adidas-arsenal-nino-vis-tech-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5341_chaqueta-adidas-arsenal-nino-vis-tech-azul-marino_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jv5341",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal infantil adidas del Arsenal - azul marino",
+    "tagline": "Para jóvenes Gunners con estilo y energía",
+    "intro": "La chaqueta infantil Vis Tech del Arsenal combina colores llamativos con confort y funcionalidad. Una prenda diseñada para los pequeños aficionados que no quieren pasar desapercibidos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño vibrante: Color púrpura con detalles modernos que destacan.",
+      "Confort pensado para niños: Suavidad y libertad de movimiento.",
+      "Orgullo Gunner: Escudo del Arsenal presente con estilo.",
+      "Uso versátil: Ideal para el colegio, el parque o el estadio."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jv5341"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Arsenal Kids",
+    "submodel": "",
+    "product_model": "Arsenal niño Vis Tech",
+    "sole_type": ""
+  }
+}

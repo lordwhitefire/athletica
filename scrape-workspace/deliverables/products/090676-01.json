@@ -1,0 +1,101 @@
+{
+  "id": "090676-01",
+  "slug": "mochila-de-cuerdas-puma-borussia-dortmund-essentials-yellow",
+  "name": "Backpack de cuerdas Puma Borussia Dortmund Essentials",
+  "model": "Backpack de cuerdas Puma Borussia Dortmund Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Borussia Dortmund Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cf631dfa31a0a874c506762c18f5e2c94cf2383a-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/cf631dfa31a0a874c506762c18f5e2c94cf2383a-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/805b0908af92366b5db7757b9ca5a241d2688fee-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/935d1f3ba16a0b86934ab79876194f5e57b1a27e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cf631dfa31a0a874c506762c18f5e2c94cf2383a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/805b0908af92366b5db7757b9ca5a241d2688fee-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/935d1f3ba16a0b86934ab79876194f5e57b1a27e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-cf631dfa31a0a874c506762c18f5e2c94cf2383a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cf631dfa31a0a874c506762c18f5e2c94cf2383a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-805b0908af92366b5db7757b9ca5a241d2688fee-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/805b0908af92366b5db7757b9ca5a241d2688fee-1500x1500.jpg"
+    },
+    {
+      "_id": "image-935d1f3ba16a0b86934ab79876194f5e57b1a27e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/935d1f3ba16a0b86934ab79876194f5e57b1a27e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090676-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090676-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Borussia Dortmund Essentials",
+    "sole_type": ""
+  }
+}

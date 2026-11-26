@@ -1,0 +1,107 @@
+{
+  "id": "050.6052.01",
+  "slug": "coderas-ho-soccer-strange-white",
+  "name": "Coderas HO Soccer Strange",
+  "model": "Coderas HO Soccer Strange",
+  "brand": "Ho Soccer",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "HO Soccer Strange",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/eafc7653e2ed36d1d283af784ea3e8da6adac2be-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/eafc7653e2ed36d1d283af784ea3e8da6adac2be-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f0fba768e2f6d5bcd712133aa12652a98f0b23fb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ac677744c81c945d4da7210ce7094b1216980ea3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/024930fa776a45ad63cf01211c7d551bd40ef0fd-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/eafc7653e2ed36d1d283af784ea3e8da6adac2be-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f0fba768e2f6d5bcd712133aa12652a98f0b23fb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ac677744c81c945d4da7210ce7094b1216980ea3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/024930fa776a45ad63cf01211c7d551bd40ef0fd-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-eafc7653e2ed36d1d283af784ea3e8da6adac2be-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/eafc7653e2ed36d1d283af784ea3e8da6adac2be-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f0fba768e2f6d5bcd712133aa12652a98f0b23fb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f0fba768e2f6d5bcd712133aa12652a98f0b23fb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ac677744c81c945d4da7210ce7094b1216980ea3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ac677744c81c945d4da7210ce7094b1216980ea3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-024930fa776a45ad63cf01211c7d551bd40ef0fd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/024930fa776a45ad63cf01211c7d551bd40ef0fd-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/050-6052-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/050-6052-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Coderas",
+    "submodel": "",
+    "product_model": "Coderas HO Soccer Strange",
+    "sole_type": ""
+  }
+}

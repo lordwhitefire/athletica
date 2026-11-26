@@ -1,0 +1,107 @@
+{
+  "id": "091102-02",
+  "slug": "mochila-puma-borussia-dortmund-ftblarchive-black",
+  "name": "Backpack Puma Borussia Dortmund FtblArchive",
+  "model": "Backpack Puma Borussia Dortmund FtblArchive",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Borussia Dortmund FtblArchive",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3d3cf23acc5cbbe303e84ba98e6569ce05b3f640-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3d3cf23acc5cbbe303e84ba98e6569ce05b3f640-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8b45e1749735566f68ff21766b27ae77bef1033d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c9fe185721c99aa40788c64786f6dbbff9c3ba45-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/36a01d3fc272178244313098547480ca6fba7135-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3d3cf23acc5cbbe303e84ba98e6569ce05b3f640-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8b45e1749735566f68ff21766b27ae77bef1033d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c9fe185721c99aa40788c64786f6dbbff9c3ba45-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/36a01d3fc272178244313098547480ca6fba7135-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3d3cf23acc5cbbe303e84ba98e6569ce05b3f640-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3d3cf23acc5cbbe303e84ba98e6569ce05b3f640-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8b45e1749735566f68ff21766b27ae77bef1033d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8b45e1749735566f68ff21766b27ae77bef1033d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c9fe185721c99aa40788c64786f6dbbff9c3ba45-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c9fe185721c99aa40788c64786f6dbbff9c3ba45-1500x1500.jpg"
+    },
+    {
+      "_id": "image-36a01d3fc272178244313098547480ca6fba7135-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/36a01d3fc272178244313098547480ca6fba7135-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091102-02",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/091102-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Borussia Dortmund FtblArchive",
+    "sole_type": ""
+  }
+}

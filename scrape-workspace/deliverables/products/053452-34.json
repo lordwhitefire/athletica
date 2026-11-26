@@ -1,0 +1,90 @@
+{
+  "id": "053452-34",
+  "slug": "pack-6-cintas-de-pelo-puma-train-essentials",
+  "name": "Pack 6 cintas de pelo Puma Train Essentials",
+  "model": "Pack 6 cintas de pelo Puma Train Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pack of six Puma elastic headbands - various colors",
+    "tagline": "Estilo deportivo sin distracciones",
+    "intro": "Puma Train Essentials hair ties keep your hair in place even during the most demanding workouts. Its elastic and non-slip design provides support and comfort in every movement.",
+    "collection": "",
+    "key_benefits": [
+      "Secure fit: Keeps hair under control at all times.",
+      "Long-lasting comfort: Soft fabric that does not bother or constrict.",
+      "Versatilidad total: Pack de 6 cintas para combinar o compartir.",
+      "Estilo deportivo: Perfectas para entrenar o vestir con look casual."
+    ],
+    "technical_details": {
+      "range": "6 cintas de pelo Puma Train Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c3fd43efc57dd280add1fa70ea4811323bb102d5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c3fd43efc57dd280add1fa70ea4811323bb102d5-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c3fd43efc57dd280add1fa70ea4811323bb102d5-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c3fd43efc57dd280add1fa70ea4811323bb102d5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c3fd43efc57dd280add1fa70ea4811323bb102d5-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/053452-34",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pack de seis cintas de pelo elásticas Puma - varios colores",
+    "tagline": "Estilo deportivo sin distracciones",
+    "intro": "Las cintas de pelo Puma Train Essentials mantienen tu cabello en su sitio incluso durante los entrenamientos más exigentes. Su diseño elástico y antideslizante proporciona sujeción y comodidad en cada movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste seguro: Mantienen el pelo bajo control en todo momento.",
+      "Comodidad prolongada: Tejido suave que no molesta ni aprieta.",
+      "Versatilidad total: Pack de 6 cintas para combinar o compartir.",
+      "Estilo deportivo: Perfectas para entrenar o vestir con look casual."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/053452-34"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'cinta'",
+    "root_model": "Pack",
+    "submodel": "",
+    "product_model": "Pack 6 cintas de pelo Puma Train Essentials",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "084706-01-5",
+  "slug": "balon-puma-premier-25-26-fifaquality-match-t-5-thrill-orbita-white",
+  "name": "Puma Premier 25 26 FIFAQuality Match T.5 Thrill Orbita",
+  "model": "Premier 25 26 FIFAQuality Match T.5 Thrill Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League Soccer Ball 2025 2026 Size 5 - White",
+    "tagline": "Designed for official Premier matches",
+    "intro": "The Puma Premier 25/26 ball is the professional choice for English league matches. Its technical design and high-performance materials guarantee precision, control and durability at the highest level.",
+    "collection": "",
+    "key_benefits": [
+      "Endorsed by FIFA: Meets the most demanding standards in weight, water absorption and shape retention.",
+      "Aerodynamic precision: 32-panel structure that optimizes the trajectory of the ball.",
+      "Seamless construction: Thermal bonding ensures predictable trajectory and better touch.",
+      "Air retention: Rubber chamber that maintains the ideal pressure for longer."
+    ],
+    "technical_details": {
+      "range": "Puma Premier 25 26 FIFAQuality Match T.5 Thrill Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/7821765cde73161926b27e361a4c75d470cab14a-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/7821765cde73161926b27e361a4c75d470cab14a-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/95816d83eabedcb62bcd2e991ba4187f8e9cdfda-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ce329bfb7fefea651d9fb28d1ea6b6b1422d8f4d-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7821765cde73161926b27e361a4c75d470cab14a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/95816d83eabedcb62bcd2e991ba4187f8e9cdfda-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ce329bfb7fefea651d9fb28d1ea6b6b1422d8f4d-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-7821765cde73161926b27e361a4c75d470cab14a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7821765cde73161926b27e361a4c75d470cab14a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-95816d83eabedcb62bcd2e991ba4187f8e9cdfda-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/95816d83eabedcb62bcd2e991ba4187f8e9cdfda-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ce329bfb7fefea651d9fb28d1ea6b6b1422d8f4d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ce329bfb7fefea651d9fb28d1ea6b6b1422d8f4d-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084706-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 talla 5 - blanco",
+    "tagline": "Diseñado para los partidos oficiales de la Premier",
+    "intro": "El balón Puma Premier 25/26 es la elección profesional para los encuentros de la liga inglesa. Su diseño técnico y materiales de alto rendimiento garantizan precisión, control y durabilidad al máximo nivel.",
+    "collection": "",
+    "key_benefits": [
+      "Avalado por FIFA: Cumple los estándares más exigentes en peso, absorción de agua y retención de forma.",
+      "Precisión aerodinámica: Estructura de 32 paneles que optimiza la trayectoria del balón.",
+      "Construcción sin costuras: Unión térmica que garantiza una trayectoria predecible y un mejor toque.",
+      "Retención de aire: Cámara de goma que mantiene la presión ideal durante más tiempo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084706-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Premier 25",
+    "submodel": "",
+    "product_model": "Premier 25 26 FIFAQuality Match T.5 Thrill Orbita",
+    "sole_type": ""
+  }
+}

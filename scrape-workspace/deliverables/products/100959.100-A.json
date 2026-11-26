@@ -1,0 +1,84 @@
+{
+  "id": "100959.100-A",
+  "slug": "mallas-de-portero-joma-3-4-protec-gk-black",
+  "name": "Mallas de Goalkeeper Joma 3/4 Protec GK",
+  "model": "Mallas de Goalkeeper Joma 3/4 Protec GK",
+  "brand": "Joma",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de portero Joma 3/4 Protec GK",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2527963757c833989105445ae93b8d3c8f38b3cf-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2527963757c833989105445ae93b8d3c8f38b3cf-1600x1600.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2527963757c833989105445ae93b8d3c8f38b3cf-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2527963757c833989105445ae93b8d3c8f38b3cf-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2527963757c833989105445ae93b8d3c8f38b3cf-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100959-100-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100959-100-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas de Goalkeeper Joma 3/4 Protec GK",
+    "sole_type": ""
+  }
+}

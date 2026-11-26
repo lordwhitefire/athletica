@@ -1,0 +1,90 @@
+{
+  "id": "DN3611-354",
+  "slug": "nike-mercurial-lite-blue",
+  "name": "Nike Mercurial Lite",
+  "model": "Mercurial Lite",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - verdes turquesa",
+    "tagline": "Protección ligera para jugar a máxima velocidad",
+    "intro": "Las espinilleras Nike Mercurial Lite están diseñadas para futbolistas rápidos que buscan protección sin perder movilidad. Su estructura ligera y anatómica ayuda a reducir impactos mientras mantienes la agilidad en cada sprint y cambio de dirección.",
+    "collection": "PEAK PERFORMANCE PACK",
+    "key_benefits": [
+      "Diseño ligero: Protección cómoda sin limitar la velocidad.",
+      "Espuma perforada: Mejor amortiguación y ventilación.",
+      "Mangas de sujeción: Mantienen las espinilleras en su sitio.",
+      "Perfil bajo: Ajuste cómodo y discreto bajo las medias."
+    ],
+    "technical_details": {
+      "range": "Mercurial Lite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-354_espinilleras-color-azul-nike-mercurial-lite_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-354_espinilleras-color-azul-nike-mercurial-lite_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-354_canilleras-verdes-turquesa--moradas-nike-mercurial-lite_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-354_espinilleras-nike-mercurial-lite-color-azul_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-354_espinilleras-color-azul-nike-mercurial-lite_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-354_canilleras-verdes-turquesa--moradas-nike-mercurial-lite_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-354_espinilleras-nike-mercurial-lite-color-azul_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dn3611-354",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - verdes turquesa",
+    "tagline": "Protección ligera para jugar a máxima velocidad",
+    "intro": "Las espinilleras Nike Mercurial Lite están diseñadas para futbolistas rápidos que buscan protección sin perder movilidad. Su estructura ligera y anatómica ayuda a reducir impactos mientras mantienes la agilidad en cada sprint y cambio de dirección.",
+    "collection": "PEAK PERFORMANCE PACK",
+    "key_benefits": [
+      "Diseño ligero: Protección cómoda sin limitar la velocidad.",
+      "Espuma perforada: Mejor amortiguación y ventilación.",
+      "Mangas de sujeción: Mantienen las espinilleras en su sitio.",
+      "Perfil bajo: Ajuste cómodo y discreto bajo las medias."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dn3611-354"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite",
+    "product_model": "Mercurial Lite",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "100223304-Y",
+  "slug": "short-uhlsport-nino-performance-short-red",
+  "name": "Uhlsport Kids Performance Short",
+  "model": "niño Performance Short",
+  "brand": "Uhlsport",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport niño Performance Short",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100223304-Y_pantalon-corto-color-rojo-uhlsport-nino-performance-shorts_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100223304-Y_pantalon-corto-color-rojo-uhlsport-nino-performance-shorts_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100223304-Y_short-rojo-uhlsport-nino-performance-shorts_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100223304-Y_pantalon-corto-uhlsport-nino-performance-shorts-color-rojo_3_vista-lateral.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100223304-Y_pantalon-corto-color-rojo-uhlsport-nino-performance-shorts_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100223304-Y_short-rojo-uhlsport-nino-performance-shorts_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100223304-Y_pantalon-corto-uhlsport-nino-performance-shorts-color-rojo_3_vista-lateral.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100223304-y",
+    "language": "es",
+    "category": "Ofertas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100223304-y"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Kids",
+    "submodel": "",
+    "product_model": "niño Performance Short",
+    "sole_type": ""
+  }
+}

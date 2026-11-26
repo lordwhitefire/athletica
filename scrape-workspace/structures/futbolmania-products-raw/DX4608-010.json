@@ -1,0 +1,91 @@
+{
+  "id": "DX4608-010",
+  "slug": "nike-charge-black",
+  "name": "Nike Charge",
+  "model": "Nike Charge",
+  "brand": "Nike",
+  "category": "Shin Guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Charge",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/dx4608-010",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4608-010_espinilleras-con-tobillera-color-negro-nike-charge_1_completa-frontal.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4608-010_canilleras-con-tobillera-negras-nike-charge_2_detalle-logotipo.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4608-010_espinilleras-con-tobillera-color-negro-nike-charge_1_completa-frontal.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level1",
+      "name": "Espinilleras fútbol",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level2",
+      "name": "Espinilleras Nike",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol-Nike"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level3",
+      "name": "Charge",
+      "href": "https://www.futbolmania.com/es/adulto/espinilleras/marcas/nike/charge"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level3",
+      "name": "Espinilleras con tobillera",
+      "href": "https://www.futbolmania.com/es/espinilleras-con-tobillera"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level3",
+      "name": "Espinilleras gama media",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol-gama-media"
+    }
+  ]
+}

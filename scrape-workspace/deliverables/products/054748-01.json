@@ -1,0 +1,101 @@
+{
+  "id": "054748-01",
+  "slug": "botellin-puma-portugal-750-ml-black",
+  "name": "Botellín Puma Portugal 750 ml",
+  "model": "Botellín Puma Portugal 750 ml",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Portugal National Team Puma Training Water Bottle 750ml - Black",
+    "tagline": "Hydration with team pride",
+    "intro": "The 750 ml Puma Portugal bottle combines functionality and official design of the team. A practical and resistant piece to accompany you in every workout and show your support at all times.",
+    "collection": "",
+    "key_benefits": [
+      "Practical capacity: 750 ml that ensures sufficient hydration during activity.",
+      "Team identity: design with the official image of the Portugal National Team.",
+      "Material resistente: pensado para el uso deportivo y cotidiano.",
+      "Portable Design: Convenient size to carry in backpacks or sports bags."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal 750 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/45499b23e945cd8927c5b1403f825f0222c2082e-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/45499b23e945cd8927c5b1403f825f0222c2082e-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6a17c1c7474c3e18f8878750444871efcca02516-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/45499b23e945cd8927c5b1403f825f0222c2082e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6a17c1c7474c3e18f8878750444871efcca02516-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-45499b23e945cd8927c5b1403f825f0222c2082e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/45499b23e945cd8927c5b1403f825f0222c2082e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6a17c1c7474c3e18f8878750444871efcca02516-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6a17c1c7474c3e18f8878750444871efcca02516-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/054748-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botellín de agua para entrenamiento Puma de la selección de Portugal de 750 ml - negro",
+    "tagline": "Hidratación con orgullo de equipo",
+    "intro": "El botellín Puma Portugal de 750 ml combina funcionalidad y diseño oficial de la selección. Una pieza práctica y resistente para acompañarte en cada entrenamiento y mostrar tu apoyo en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad práctica: 750 ml que aseguran hidratación suficiente durante la actividad.",
+      "Identidad de equipo: diseño con la imagen oficial de la Selección de Portugal.",
+      "Material resistente: pensado para el uso deportivo y cotidiano.",
+      "Diseño portátil: tamaño cómodo para llevar en mochilas o bolsas deportivas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/054748-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín Puma Portugal 750 ml",
+    "sole_type": ""
+  }
+}

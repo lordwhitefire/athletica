@@ -1,0 +1,98 @@
+{
+  "id": "JN3081",
+  "slug": "short-adidas-real-madrid-us-blue",
+  "name": "adidas Real Madrid US",
+  "model": "Real Madrid US",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas shorts - navy blue",
+    "tagline": "Sporty style with transatlantic identity",
+    "intro": "The adidas Real Madrid US shorts provide a unique fusion between European football and American culture. Designed to stand out, it is ideal to show your passion for the white club with a modern touch.",
+    "collection": "",
+    "key_benefits": [
+      "US Pack Design: Inspiration in American sports style.",
+      "Premium Comfort: Soft, skin-friendly plush fabric.",
+      "Sports style: Ideal for days of rest or urban looks.",
+      "Visible shield: Distinctive detail of Real Madrid.",
+      "Total versatility: Perfect for casual use or cheering from the stands."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid US",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_pantalon-corto-color-negro-adidas-real-madrid-us_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_pantalon-corto-color-negro-adidas-real-madrid-us_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_short-negro-adidas-real-madrid-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_pantalon-corto-adidas-real-madrid-us-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_short-adidas-real-madrid-us-negro_4_detalle-lateral-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_pantalon-corto-color-negro-adidas-real-madrid-us_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_short-negro-adidas-real-madrid-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_pantalon-corto-adidas-real-madrid-us-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3081_short-adidas-real-madrid-us-negro_4_detalle-lateral-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn3081",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto adidas del Real Madrid - azul marino",
+    "tagline": "Estilo deportivo con identidad transatlántica",
+    "intro": "El short adidas Real Madrid US aporta una fusión única entre el fútbol europeo y la cultura americana. Diseñado para destacar, es ideal para mostrar tu pasión por el club blanco con un toque moderno.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño US Pack: Inspiración en el estilo deportivo americano.",
+      "Confort premium: Tejido de felpa suave y agradable al tacto.",
+      "Estilo deportivo: Ideal para días de descanso o looks urbanos.",
+      "Escudo visible: Detalle distintivo del Real Madrid.",
+      "Versatilidad total: Perfecto para uso casual o para animar desde la grada."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn3081"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid US",
+    "sole_type": ""
+  }
+}

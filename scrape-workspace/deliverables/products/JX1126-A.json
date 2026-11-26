@@ -1,0 +1,94 @@
+{
+  "id": "JX1126-A",
+  "slug": "gorra-adidas-arsenal-bb-red",
+  "name": "adidas Arsenal BB",
+  "model": "Arsenal BB",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Arsenal adidas Walking Cap - Red",
+    "tagline": "Your shield, your daily style",
+    "intro": "With this Arsenal cap in classic red, you represent your team with pride. Its adjustable and comfortable design accompanies you in any situation.",
+    "collection": "",
+    "key_benefits": [
+      "Timeless style: Inspired by Arsenal tradition.",
+      "Superior comfort: Adjustable closure and breathable material.",
+      "Practical protection: Ideal for the sun or to complement your look.",
+      "Total versatility: Perfect for everyday use or on the way to the stadium.",
+      "Gunner Identity: Visible shield that shows your passion."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal BB",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-color-rojo-adidas-arsenal-bb_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-color-rojo-adidas-arsenal-bb_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-roja-adidas-arsenal-bb_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-adidas-arsenal-bb-color-rojo_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-adidas-arsenal-bb-roja_4_detalle-frontal-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-color-rojo-adidas-arsenal-bb_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-roja-adidas-arsenal-bb_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-adidas-arsenal-bb-color-rojo_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/X/JX1126-A_gorra-adidas-arsenal-bb-roja_4_detalle-frontal-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jx1126-a",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Gorra de paseo adidas del Arsenal - roja",
+    "tagline": "Tu escudo, tu estilo diario",
+    "intro": "Con esta gorra del Arsenal en color rojo clásico, representas a tu equipo con orgullo. Su diseño ajustable y cómodo te acompaña en cualquier situación.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo atemporal: Inspirada en la tradición del Arsenal.",
+      "Comodidad superior: Cierre ajustable y material transpirable.",
+      "Protección práctica: Ideal para el sol o complementar tu look.",
+      "Versatilidad total: Perfecta para el día a día o camino al estadio.",
+      "Identidad Gunner: Escudo visible que muestra tu pasión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jx1126-a"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Arsenal BB",
+    "submodel": "",
+    "product_model": "Arsenal BB",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "100427501",
+  "slug": "funda-sujeta-espinilleras-uhlsport-guard-sleeve-black",
+  "name": "Funda sujeta Shin Guards Uhlsport Guard Sleeve",
+  "model": "Funda sujeta Shin Guards Uhlsport Guard Sleeve",
+  "brand": "Uhlsport",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "sujeta espinilleras Uhlsport Guard Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f1db5abc910c9fc3392779176dd805cb91d3e475-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f1db5abc910c9fc3392779176dd805cb91d3e475-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/857857e3a8be017a79e8277296d9516abc4a506f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a460a8ef6ba32472477bff86ac8a74bc57211a35-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/60c1a88021752ab663c2d655fcb332518f14b476-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f1db5abc910c9fc3392779176dd805cb91d3e475-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/857857e3a8be017a79e8277296d9516abc4a506f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a460a8ef6ba32472477bff86ac8a74bc57211a35-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/60c1a88021752ab663c2d655fcb332518f14b476-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f1db5abc910c9fc3392779176dd805cb91d3e475-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f1db5abc910c9fc3392779176dd805cb91d3e475-1500x1500.jpg"
+    },
+    {
+      "_id": "image-857857e3a8be017a79e8277296d9516abc4a506f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/857857e3a8be017a79e8277296d9516abc4a506f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a460a8ef6ba32472477bff86ac8a74bc57211a35-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a460a8ef6ba32472477bff86ac8a74bc57211a35-1500x1500.jpg"
+    },
+    {
+      "_id": "image-60c1a88021752ab663c2d655fcb332518f14b476-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/60c1a88021752ab663c2d655fcb332518f14b476-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100427501",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100427501"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "high",
+    "rule": "name contains 'espinillera'",
+    "root_model": "Funda",
+    "submodel": "",
+    "product_model": "Funda sujeta Shin Guards Uhlsport Guard Sleeve",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "KA7780",
+  "slug": "adidas-predator-pro-black",
+  "name": "adidas Predator Pro",
+  "model": "Predator Pro",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - negros",
+    "tagline": "Máximo rendimiento en cada parada",
+    "intro": "Los adidas Predator Pro están diseñados para porteros que marcan la diferencia. Su corte negativo y la tecnología avanzada de adidas ofrecen ajuste, precisión y seguridad para competir al más alto nivel.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Ajuste profesional: Corte negativo que mejora el control en cada intervención.",
+      "Comodidad flexible: Materiales que permiten total libertad de movimiento.",
+      "Diseño técnico: Inspirado en los mejores porteros del mundo.",
+      "Adherencia total: Espuma y envoltura para atrapadas seguras."
+    ],
+    "technical_details": {
+      "range": "Predator Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-de-portero-color-negro-adidas-predator-pro_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-de-portero-color-negro-adidas-predator-pro_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-portero-negros-adidas-predator-pro_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-de-arquero-adidas-predator-pro-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-de-futbol-adidas-predator-pro-negros_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-de-portero-color-negro-adidas-predator-pro_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-portero-negros-adidas-predator-pro_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-de-arquero-adidas-predator-pro-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7780_guantes-de-futbol-adidas-predator-pro-negros_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka7780",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - negros",
+    "tagline": "Máximo rendimiento en cada parada",
+    "intro": "Los adidas Predator Pro están diseñados para porteros que marcan la diferencia. Su corte negativo y la tecnología avanzada de adidas ofrecen ajuste, precisión y seguridad para competir al más alto nivel.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Ajuste profesional: Corte negativo que mejora el control en cada intervención.",
+      "Comodidad flexible: Materiales que permiten total libertad de movimiento.",
+      "Diseño técnico: Inspirado en los mejores porteros del mundo.",
+      "Adherencia total: Espuma y envoltura para atrapadas seguras."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka7780"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Pro",
+    "product_model": "Predator Pro",
+    "sole_type": ""
+  }
+}

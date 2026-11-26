@@ -1,0 +1,103 @@
+{
+  "id": "092880-01",
+  "slug": "mochila-puma-day-pro-black",
+  "name": "Backpack Puma Day Pro",
+  "model": "Backpack Puma Day Pro",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Sports Backpack (42.5 x 31 x 12.5 cm) - Black",
+    "tagline": "Todo tu material siempre organizado",
+    "intro": "The Puma Day Pro backpack is designed to accompany you at school, work or any sporting activity. Its large main compartment, multiple pockets and ergonomic design offer the space and comfort necessary to carry everything you need during the day.",
+    "collection": "",
+    "key_benefits": [
+      "Compartimento principal de gran capacidad: Acceso mediante cremallera de doble sentido.",
+      "Multiple pockets: Front zipper pocket and side pockets.",
+      "Espalda acolchada: Mayor comodidad durante el transporte.",
+      "Adjustable shoulder pads: Ergonomic fit for everyday use."
+    ],
+    "technical_details": {
+      "range": "Puma Day Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/96f4cf771fe7935f1be7c9054f133e2f500be1c7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/96f4cf771fe7935f1be7c9054f133e2f500be1c7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6bff61650b75b0f4af71afbd63ac35be14ae3487-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c537c520f210759d47bec3d3986e31984f80d962-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/96f4cf771fe7935f1be7c9054f133e2f500be1c7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6bff61650b75b0f4af71afbd63ac35be14ae3487-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c537c520f210759d47bec3d3986e31984f80d962-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-96f4cf771fe7935f1be7c9054f133e2f500be1c7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/96f4cf771fe7935f1be7c9054f133e2f500be1c7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6bff61650b75b0f4af71afbd63ac35be14ae3487-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6bff61650b75b0f4af71afbd63ac35be14ae3487-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c537c520f210759d47bec3d3986e31984f80d962-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c537c520f210759d47bec3d3986e31984f80d962-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092880-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (42,5 x 31 x 12,5 cm) - negra",
+    "tagline": "Todo tu material siempre organizado",
+    "intro": "La mochila Puma Day Pro está diseñada para acompañarte en el colegio, el trabajo o cualquier actividad deportiva. Su amplio compartimento principal, los múltiples bolsillos y su diseño ergonómico ofrecen el espacio y la comodidad necesarios para transportar todo lo imprescindible durante el día.",
+    "collection": "",
+    "key_benefits": [
+      "Compartimento principal de gran capacidad: Acceso mediante cremallera de doble sentido.",
+      "Múltiples bolsillos: Bolsillo frontal con cremallera y bolsillos laterales.",
+      "Espalda acolchada: Mayor comodidad durante el transporte.",
+      "Hombreras ajustables: Ajuste ergonómico para el uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092880-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Day Pro",
+    "sole_type": ""
+  }
+}

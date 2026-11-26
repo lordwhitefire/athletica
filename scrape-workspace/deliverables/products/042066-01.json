@@ -1,0 +1,93 @@
+{
+  "id": "042066-01",
+  "slug": "puma-future-pro-sgc-black",
+  "name": "Puma Future Pro SGC",
+  "model": "Future Pro SGC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Future Pro SGC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/803c11267343b0aa72ebdba9e95cb457739969a1-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/803c11267343b0aa72ebdba9e95cb457739969a1-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/98e0e42e00aea53b08d88a3bec00cd950968d843-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/90da8478892e28c5e048c67f9d86e138efe47dde-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/803c11267343b0aa72ebdba9e95cb457739969a1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/98e0e42e00aea53b08d88a3bec00cd950968d843-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/90da8478892e28c5e048c67f9d86e138efe47dde-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-803c11267343b0aa72ebdba9e95cb457739969a1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/803c11267343b0aa72ebdba9e95cb457739969a1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-98e0e42e00aea53b08d88a3bec00cd950968d843-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/98e0e42e00aea53b08d88a3bec00cd950968d843-1500x1500.jpg"
+    },
+    {
+      "_id": "image-90da8478892e28c5e048c67f9d86e138efe47dde-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/90da8478892e28c5e048c67f9d86e138efe47dde-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042066-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042066-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro SGC",
+    "product_model": "Future Pro SGC",
+    "sole_type": ""
+  }
+}

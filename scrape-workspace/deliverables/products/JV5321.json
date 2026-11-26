@@ -1,0 +1,98 @@
+{
+  "id": "JV5321",
+  "slug": "pantalon-adidas-real-madrid-vis-tech-grey",
+  "name": "adidas Real Madrid Vis Tech",
+  "model": "Real Madrid Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas long pants - gray",
+    "tagline": "Style and functionality in every workout",
+    "intro": "These gray adidas Real Madrid Vis Tech pants combine modern design with sports functionality. Ideal to represent your team with pride while training or enjoying everyday life in comfort.",
+    "collection": "",
+    "key_benefits": [
+      "White inspiration: Official Real Madrid design with club details.",
+      "Freedom of movement: Elastic technical fabric for training without restrictions.",
+      "Everyday comfort: Perfect for both sport and casual use.",
+      "Modern design: Slim fit and elegant finishes.",
+      "adidas Authenticity: Guarantee of quality and sporty style."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-largo-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-largo-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-chandal-gris-adidas-real-madrid-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-chandal-adidas-real-madrid-vis-tech-color-gris_3_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-largo-adidas-real-madrid-vis-tech-gris_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-largo-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-chandal-gris-adidas-real-madrid-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-chandal-adidas-real-madrid-vis-tech-color-gris_3_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5321_pantalon-largo-adidas-real-madrid-vis-tech-gris_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jv5321",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Real Madrid - gris",
+    "tagline": "Estilo y funcionalidad en cada entrenamiento",
+    "intro": "Este pantalón adidas Real Madrid Vis Tech gris combina diseño moderno con funcionalidad deportiva. Ideal para representar a tu equipo con orgullo mientras entrenas o disfrutas del día a día con comodidad.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración blanca: Diseño oficial del Real Madrid con detalles del club.",
+      "Libertad de movimiento: Tejido técnico elástico para entrenar sin restricciones.",
+      "Comodidad diaria: Perfecto tanto para deporte como para uso casual.",
+      "Diseño moderno: Corte ajustado y acabados elegantes.",
+      "Autenticidad adidas: Garantía de calidad y estilo deportivo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jv5321"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Vis Tech",
+    "sole_type": ""
+  }
+}

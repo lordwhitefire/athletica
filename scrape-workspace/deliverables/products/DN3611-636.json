@@ -1,0 +1,89 @@
+{
+  "id": "DN3611-636",
+  "slug": "nike-mercurial-lite-red",
+  "name": "Nike Mercurial Lite",
+  "model": "Mercurial Lite",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - rojas",
+    "tagline": "Protección ligera para futbolistas veloces",
+    "intro": "Las Nike Mercurial Lite son el equilibrio ideal entre comodidad, peso mínimo y protección. Pensadas para quienes priorizan la rapidez y los movimientos fluidos sin sacrificar seguridad.",
+    "collection": "SCARY GOOD",
+    "key_benefits": [
+      "Construcción ligera: Se adapta sin fricciones al gemelo.",
+      "Espuma densa: Disipa los impactos de forma eficaz.",
+      "Diseño estilizado: Perfectas para jugadores técnicos y rápidos.",
+      "Fácil mantenimiento: Se limpian rápidamente y secan al instante."
+    ],
+    "technical_details": {
+      "range": "Mercurial Lite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-636_espinilleras-color-rosa-y-rojo-nike-mercurial-lite_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-636_espinilleras-color-rosa-y-rojo-nike-mercurial-lite_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-636_espinilleras-color-rosa-y-rojo-nike-mercurial-lite_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dn3611-636",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - rojas",
+    "tagline": "Protección ligera para futbolistas veloces",
+    "intro": "Las Nike Mercurial Lite son el equilibrio ideal entre comodidad, peso mínimo y protección. Pensadas para quienes priorizan la rapidez y los movimientos fluidos sin sacrificar seguridad.",
+    "collection": "SCARY GOOD",
+    "key_benefits": [
+      "Construcción ligera: Se adapta sin fricciones al gemelo.",
+      "Espuma densa: Disipa los impactos de forma eficaz.",
+      "Diseño estilizado: Perfectas para jugadores técnicos y rápidos.",
+      "Fácil mantenimiento: Se limpian rápidamente y secan al instante."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dn3611-636"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite",
+    "product_model": "Mercurial Lite",
+    "sole_type": ""
+  }
+}

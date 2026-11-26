@@ -1,0 +1,106 @@
+{
+  "id": "JP4054",
+  "slug": "camiseta-adidas-real-madrid-dna-green",
+  "name": "adidas Real Madrid DNA",
+  "model": "Real Madrid DNA",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Short Sleeve Cotton T-Shirt - Light Green",
+    "tagline": "Fresh style with Madrid essence",
+    "intro": "Refresh your daily look with this adidas Real Madrid t-shirt, ideal for showing off your white pride in comfort. Its soft cotton fabric provides a light and natural feel at all times.",
+    "collection": "",
+    "key_benefits": [
+      "Iconic design: Real Madrid graphic on the chest with club identity.",
+      "Soft touch: High quality cotton that respects your skin.",
+      "Casual aesthetic: Classic cut that adapts to any informal occasion.",
+      "Total versatility: Ideal for everyday use or moments of relaxation.",
+      "Football inspiration: club DNA in every detail."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid DNA",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-color-verde-adidas-real-madrid-dna_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-color-verde-adidas-real-madrid-dna_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-verde-claro-adidas-real-madrid-dna_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-adidas-real-madrid-dna-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-adidas-real-madrid-dna-verde-claro_4_detalle-lateral.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-color-verde-adidas-real-madrid-dna_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-verde-claro-adidas-real-madrid-dna_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-adidas-real-madrid-dna-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4054_camiseta-adidas-real-madrid-dna-verde-claro_4_detalle-lateral.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp4054",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Real Madrid - verde claro",
+    "tagline": "Estilo fresco con esencia madridista",
+    "intro": "Refresca tu look diario con esta camiseta adidas del Real Madrid, ideal para lucir tu orgullo blanco con comodidad. Su tejido de algodón suave proporciona una sensación ligera y natural en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño icónico: Gráfico del Real Madrid en el pecho con identidad de club.",
+      "Tacto suave: Algodón de alta calidad que respeta tu piel.",
+      "Estética casual: Corte clásico que se adapta a cualquier ocasión informal.",
+      "Versatilidad total: Ideal para el día a día o momentos de relax.",
+      "Inspiración futbolera: ADN del club en cada detalle."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp4054"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid DNA",
+    "sole_type": ""
+  }
+}

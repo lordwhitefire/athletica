@@ -1,0 +1,96 @@
+{
+  "id": "IB5064-451",
+  "slug": "short-nike-inglaterra-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike Inglaterra Training Dri-Fit Strike",
+  "model": "Inglaterra entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "England Nike Training Shorts - Navy",
+    "tagline": "England training shorts",
+    "intro": "The Nike England Dri-FIT Strike shorts are designed to accompany every workout with comfort and performance. Its navy blue design reflects the sports style of the English team.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT Technology: Keeps skin dry and comfortable during exercise.",
+      "Strike Design: Inspired by the training garments of professional players.",
+      "Breathable mesh panels: Promote ventilation during training.",
+      "Zippered pockets: Allow you to store personal items safely."
+    ],
+    "technical_details": {
+      "range": "Nike Inglaterra entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_pantalon-corto-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_pantalon-corto-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_pantalon-corto-nike-inglaterra-entrenamiento-dri-fit-strike-color-azul_3_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_short-azul-marino-nike-inglaterra-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_short-nike-inglaterra-entrenamiento-dri-fit-strike-azul-marino_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_pantalon-corto-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_pantalon-corto-nike-inglaterra-entrenamiento-dri-fit-strike-color-azul_3_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_short-azul-marino-nike-inglaterra-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5064-451_short-nike-inglaterra-entrenamiento-dri-fit-strike-azul-marino_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib5064-451",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike de la selección de Inglaterra - azul marino",
+    "tagline": "El pantalón corto de entrenamiento de Inglaterra",
+    "intro": "El short Nike Inglaterra Dri-FIT Strike está diseñado para acompañar cada entrenamiento con comodidad y rendimiento. Su diseño en color azul marino refleja el estilo deportivo de la selección inglesa.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Nike Dri-FIT: Mantiene la piel seca y cómoda durante el ejercicio.",
+      "Diseño Strike: Inspirado en las prendas de entrenamiento de los jugadores profesionales.",
+      "Paneles de malla transpirables: Favorecen la ventilación durante el entrenamiento.",
+      "Bolsillos con cremallera: Permiten guardar objetos personales de forma segura."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib5064-451"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Inglaterra",
+    "submodel": "",
+    "product_model": "Inglaterra entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

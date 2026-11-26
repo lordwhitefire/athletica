@@ -1,0 +1,84 @@
+{
+  "id": "4122",
+  "slug": "red-zastor-6-8-balones-black",
+  "name": "Red Zastor 6-8 Balls",
+  "model": "Red Zastor 6-8 Balls",
+  "brand": "Zastor",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Red para 6-8 balones Zastor - negra",
+    "tagline": "Resistencia para el ritmo del equipo",
+    "intro": "La Red Zastor 6-8 balones combina durabilidad y diseño versátil para adaptarse a cualquier rutina deportiva. Preparada para el uso constante.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño para 6-8 balones: Equilibrio perfecto entre tamaño y funcionalidad",
+      "Tejido reforzado: Nailon de alta resistencia",
+      "Uso frecuente: Soporta el ritmo diario del equipo",
+      "Fácil acceso: Apertura amplia para guardar rápido"
+    ],
+    "technical_details": {
+      "range": "Zastor 6-8 balones",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4122_imagen-de-la-red-portabalones-capacidad-8-Balones-2019-zastor-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4122_imagen-de-la-red-portabalones-capacidad-8-Balones-2019-zastor-negro_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4122_imagen-de-la-red-portabalones-capacidad-8-Balones-2019-zastor-negro_2_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4122_imagen-de-la-red-portabalones-capacidad-8-Balones-2019-zastor-negro_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/1/4122_imagen-de-la-red-portabalones-capacidad-8-Balones-2019-zastor-negro_2_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4122",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Red para 6-8 balones Zastor - negra",
+    "tagline": "Resistencia para el ritmo del equipo",
+    "intro": "La Red Zastor 6-8 balones combina durabilidad y diseño versátil para adaptarse a cualquier rutina deportiva. Preparada para el uso constante.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño para 6-8 balones: Equilibrio perfecto entre tamaño y funcionalidad",
+      "Tejido reforzado: Nailon de alta resistencia",
+      "Uso frecuente: Soporta el ritmo diario del equipo",
+      "Fácil acceso: Apertura amplia para guardar rápido"
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4122"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Red",
+    "submodel": "",
+    "product_model": "Red Zastor 6-8 Balls",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "KB1848",
+  "slug": "sudadera-adidas-arsenal-entrenamiento-nino-blue",
+  "name": "adidas Arsenal Training Kids",
+  "model": "Arsenal entrenamiento niño",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Arsenal 2025 2026 - trullo",
+    "tagline": "Pequeños Gunners, gran actitud",
+    "intro": "Diseñada para los jóvenes fans del Arsenal, esta sudadera técnica ofrece comodidad térmica y movilidad total para rendir en cada entrenamiento o juego.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo técnico: Interior cálido ideal para días frescos.",
+      "Diseño oficial: Escudo del Arsenal y look profesional.",
+      "Libertad total: Ajuste juvenil que no limita movimientos."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal entrenamiento niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-color-azul-adidas-arsenal-entrenamiento-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-color-azul-adidas-arsenal-entrenamiento-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-trullo-adidas-arsenal-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-adidas-arsenal-entrenamiento-nino-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-adidas-arsenal-entrenamiento-nino-trullo_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-color-azul-adidas-arsenal-entrenamiento-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-trullo-adidas-arsenal-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-adidas-arsenal-entrenamiento-nino-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1848_sudadera-adidas-arsenal-entrenamiento-nino-trullo_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kb1848",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera infantil de entrenamiento adidas del Arsenal 2025 2026 - trullo",
+    "tagline": "Pequeños Gunners, gran actitud",
+    "intro": "Diseñada para los jóvenes fans del Arsenal, esta sudadera técnica ofrece comodidad térmica y movilidad total para rendir en cada entrenamiento o juego.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo técnico: Interior cálido ideal para días frescos.",
+      "Diseño oficial: Escudo del Arsenal y look profesional.",
+      "Libertad total: Ajuste juvenil que no limita movimientos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kb1848"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Arsenal Training",
+    "submodel": "",
+    "product_model": "Arsenal entrenamiento niño",
+    "sole_type": ""
+  }
+}

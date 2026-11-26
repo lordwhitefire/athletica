@@ -1,0 +1,94 @@
+{
+  "id": "KA7792",
+  "slug": "adidas-predator-training-j-white",
+  "name": "adidas Predator Training J",
+  "model": "Predator Training J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - blancos",
+    "tagline": "Diseñados para empezar con buen pie",
+    "intro": "Estos guantes ofrecen un ajuste cómodo y un buen agarre para iniciarse o mejorar bajo palos.",
+    "collection": "BORN FOR GOALS",
+    "key_benefits": [
+      "Comodidad inmediata: Materiales suaves y ligeros que se adaptan bien desde el primer uso.",
+      "Ajuste seguro: El corte positivo permite controlar mejor el balón y reaccionar rápido.",
+      "Durabilidad: Perfectos para entrenamientos continuos gracias a su resistencia."
+    ],
+    "technical_details": {
+      "range": "Predator Training J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-de-portero-color-blanco-adidas-predator-training-j_1_completa-dorso-mano-izquierda.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-de-portero-color-blanco-adidas-predator-training-j_1_completa-dorso-mano-izquierda.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-portero-blancos-adidas-predator-training-j_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-de-arquero-adidas-predator-training-j-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-de-futbol-adidas-predator-training-j-blancos_4_conjunto-y-cierres.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-de-portero-color-blanco-adidas-predator-training-j_1_completa-dorso-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-portero-blancos-adidas-predator-training-j_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-de-arquero-adidas-predator-training-j-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7792_guantes-de-futbol-adidas-predator-training-j-blancos_4_conjunto-y-cierres.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ka7792",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - blancos",
+    "tagline": "Diseñados para empezar con buen pie",
+    "intro": "Estos guantes ofrecen un ajuste cómodo y un buen agarre para iniciarse o mejorar bajo palos.",
+    "collection": "BORN FOR GOALS",
+    "key_benefits": [
+      "Comodidad inmediata: Materiales suaves y ligeros que se adaptan bien desde el primer uso.",
+      "Ajuste seguro: El corte positivo permite controlar mejor el balón y reaccionar rápido.",
+      "Durabilidad: Perfectos para entrenamientos continuos gracias a su resistencia."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ka7792"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Training J",
+    "product_model": "Predator Training J",
+    "sole_type": ""
+  }
+}

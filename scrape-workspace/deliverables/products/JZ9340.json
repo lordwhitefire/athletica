@@ -1,0 +1,98 @@
+{
+  "id": "JZ9340",
+  "slug": "chaqueta-adidas-alemania-originals-blue",
+  "name": "adidas Alemania Originals",
+  "model": "Alemania Originals",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas de la selección de Alemania - azul claro",
+    "tagline": "Herencia futbolera con estilo Originals",
+    "intro": "La chaqueta de chándal Alemania adidas OG combina la pasión por el fútbol con la estética urbana icónica de adidas Originals. Inspirada en la equipación visitante de Alemania, esta chaqueta presenta un diseño limpio y atemporal que conecta el legado deportivo con la moda streetwear actual.",
+    "collection": "",
+    "key_benefits": [
+      "Estética retro Alemania: Inspirada en los colores de la segunda equipación.",
+      "Tejido de punto cómodo: Construcción suave que aporta confort durante todo el día.",
+      "Cuello alto: Diseño clásico que estiliza y aporta protección ligera.",
+      "Cremallera completa: Fácil de poner y versátil para combinar.",
+      "Logo Trefoil: Sello Originals que añade autenticidad y carácter."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-color-azul-adidas-alemania-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-color-azul-adidas-alemania-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-chandal-azul-claro-adidas-alemania-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-entretiempo-adidas-alemania-originals-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-adidas-alemania-originals-azul-claro_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-color-azul-adidas-alemania-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-chandal-azul-claro-adidas-alemania-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-entretiempo-adidas-alemania-originals-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9340_chaqueta-adidas-alemania-originals-azul-claro_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9340",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas de la selección de Alemania - azul claro",
+    "tagline": "Herencia futbolera con estilo Originals",
+    "intro": "La chaqueta de chándal Alemania adidas OG combina la pasión por el fútbol con la estética urbana icónica de adidas Originals. Inspirada en la equipación visitante de Alemania, esta chaqueta presenta un diseño limpio y atemporal que conecta el legado deportivo con la moda streetwear actual.",
+    "collection": "",
+    "key_benefits": [
+      "Estética retro Alemania: Inspirada en los colores de la segunda equipación.",
+      "Tejido de punto cómodo: Construcción suave que aporta confort durante todo el día.",
+      "Cuello alto: Diseño clásico que estiliza y aporta protección ligera.",
+      "Cremallera completa: Fácil de poner y versátil para combinar.",
+      "Logo Trefoil: Sello Originals que añade autenticidad y carácter."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9340"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania Originals",
+    "sole_type": ""
+  }
+}

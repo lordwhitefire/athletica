@@ -1,0 +1,92 @@
+{
+  "id": "CW4672-015",
+  "slug": "gafas-de-sol-nike-windstorm-blue",
+  "name": "Gafas de Sol Nike Windstorm",
+  "model": "Gafas de Sol Nike Windstorm",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gafas de Sol deportivas Nike - moradas",
+    "tagline": "Protección y visión optimizada en todo momento",
+    "intro": "Las gafas de sol Nike Windstorm están diseñadas para ofrecer el máximo confort y seguridad bajo el sol. Su construcción deportiva asegura protección y un rendimiento visual de primer nivel en tus actividades al aire libre.",
+    "collection": "",
+    "key_benefits": [
+      "Visión precisa: Lente MAX Optics de Zeiss que garantiza nitidez y evita reflejos desde todos los ángulos",
+      "Protección solar: Categoría 3 para reducir el deslumbramiento y mejorar la experiencia visual",
+      "Durabilidad y ligereza: Lentes y montura fabricadas en policarbonato resistente",
+      "Ajuste seguro: Patillas diseñadas para proporcionar estabilidad y sujeción",
+      "Comodidad extra: Puntas de patilla con líneas aerodinámicas que aportan confort prolongado",
+      "Practicidad: Incluyen funda de tela para guardarlas con seguridad"
+    ],
+    "technical_details": {
+      "range": "de Sol Nike Windstorm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-color-z-purpura-oscuro-nike-windstorm_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-color-z-purpura-oscuro-nike-windstorm_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-moradas-nike-windstorm_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-nike-windstorm-moradas_4_logo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-color-z-purpura-oscuro-nike-windstorm_5_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-color-z-purpura-oscuro-nike-windstorm_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-moradas-nike-windstorm_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-nike-windstorm-moradas_4_logo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW4672-015_gafas-color-z-purpura-oscuro-nike-windstorm_5_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/cw4672-015",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gafas de Sol deportivas Nike - moradas",
+    "tagline": "Protección y visión optimizada en todo momento",
+    "intro": "Las gafas de sol Nike Windstorm están diseñadas para ofrecer el máximo confort y seguridad bajo el sol. Su construcción deportiva asegura protección y un rendimiento visual de primer nivel en tus actividades al aire libre.",
+    "collection": "",
+    "key_benefits": [
+      "Visión precisa: Lente MAX Optics de Zeiss que garantiza nitidez y evita reflejos desde todos los ángulos",
+      "Protección solar: Categoría 3 para reducir el deslumbramiento y mejorar la experiencia visual",
+      "Durabilidad y ligereza: Lentes y montura fabricadas en policarbonato resistente",
+      "Ajuste seguro: Patillas diseñadas para proporcionar estabilidad y sujeción",
+      "Comodidad extra: Puntas de patilla con líneas aerodinámicas que aportan confort prolongado",
+      "Practicidad: Incluyen funda de tela para guardarlas con seguridad"
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/cw4672-015"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Gafas",
+    "submodel": "",
+    "product_model": "Gafas de Sol Nike Windstorm",
+    "sole_type": ""
+  }
+}

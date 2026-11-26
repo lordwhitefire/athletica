@@ -1,0 +1,102 @@
+{
+  "id": "JP3988",
+  "slug": "short-adidas-real-madrid-downtown-grey",
+  "name": "adidas Real Madrid DownTown",
+  "model": "Real Madrid DownTown",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas walking shorts - gray",
+    "tagline": "Urban comfort with Madrid essence",
+    "intro": "These adidas Real Madrid shorts are perfect for moving around the city with style and pride in your team. Its comfortable fit and light fabric make it an ideal option for summer days.",
+    "collection": "",
+    "key_benefits": [
+      "Club pride: Real Madrid crest embroidered on the leg.",
+      "Informal style: Urban and modern design for everyday life.",
+      "Freedom of movement: Comfortable cut that allows great mobility.",
+      "Functional fabric: Blend of soft and breathable materials.",
+      "Versatility: Ideal for walks, leisure or relaxation."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid DownTown",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_pantalon-corto-color-gris-adidas-real-madrid-downtown_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_pantalon-corto-color-gris-adidas-real-madrid-downtown_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_short-gris-adidas-real-madrid-downtown_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_pantalon-corto-adidas-real-madrid-downtown-color-gris_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_short-adidas-real-madrid-downtown-gris_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_pantalon-corto-color-gris-adidas-real-madrid-downtown_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_short-gris-adidas-real-madrid-downtown_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_pantalon-corto-adidas-real-madrid-downtown-color-gris_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3988_short-adidas-real-madrid-downtown-gris_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3988",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de paseo adidas del Real Madrid - gris",
+    "tagline": "Comodidad urbana con esencia madridista",
+    "intro": "Este short adidas del Real Madrid es perfecto para moverte por la ciudad con estilo y orgullo por tu equipo. Su ajuste cómodo y tejido ligero lo convierten en una opción ideal para los días de verano.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo de club: Escudo del Real Madrid bordado en la pernera.",
+      "Estilo informal: Diseño urbano y moderno para el día a día.",
+      "Libertad de movimiento: Corte cómodo que permite una gran movilidad.",
+      "Tejido funcional: Mezcla de materiales suaves y transpirables.",
+      "Versatilidad: Ideal para paseos, ocio o relax."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3988"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid DownTown",
+    "sole_type": ""
+  }
+}

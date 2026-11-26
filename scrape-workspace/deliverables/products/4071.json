@@ -1,0 +1,76 @@
+{
+  "id": "4071",
+  "slug": "set-zastor-entrenador-mister-futbol-black",
+  "name": "Set Zastor entrenador Míster fútbol",
+  "model": "Set Zastor entrenador Míster fútbol",
+  "brand": "Zastor",
+  "category": "Kits",
+  "category_slug": "kits",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Zastor entrenador Míster fútbol",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4071_imagen-Set-Entrenador-Zastor-MISTER-Futbol-2019-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4071_imagen-Set-Entrenador-Zastor-MISTER-Futbol-2019-negro_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4071_imagen-Set-Entrenador-Zastor-MISTER-Futbol-2019-negro_2_cerrado.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4071_imagen-Set-Entrenador-Zastor-MISTER-Futbol-2019-negro_3_detalle-cremallera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4071_imagen-Set-Entrenador-Zastor-MISTER-Futbol-2019-negro_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4071_imagen-Set-Entrenador-Zastor-MISTER-Futbol-2019-negro_2_cerrado.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4071_imagen-Set-Entrenador-Zastor-MISTER-Futbol-2019-negro_3_detalle-cremallera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4071",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4071"
+  },
+  "classification": {
+    "category": "kits",
+    "confidence": "high",
+    "rule": "name contains 'set'",
+    "root_model": "Set",
+    "submodel": "",
+    "product_model": "Set Zastor entrenador Míster fútbol",
+    "sole_type": ""
+  }
+}

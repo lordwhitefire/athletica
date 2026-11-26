@@ -1,0 +1,80 @@
+{
+  "id": "S12241-5",
+  "slug": "balon-adidas-tango-glider-talla-5-white",
+  "name": "adidas Tango Glider talla 5",
+  "model": "Tango Glider talla 5",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Tango Glider talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_balon-de-futbol-color-blanco-adidas-tango-glider-talla-5_1_800.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_balon-de-futbol-color-blanco-adidas-tango-glider-talla-5_1_800.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_balon-de-futbol-color-blanco-adidas-tango-glider-talla-5_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_pelota-futbol-11-blanco--negro-adidas-tango-glider-talla-5_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_balon-de-futbol-11-adidas-tango-glider-talla-5-blanco--negro_4_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_pelota-futbol-adidas-tango-glider-talla-5-color-blanco_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_balon-de-futbol-color-blanco-adidas-tango-glider-talla-5_1_800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_balon-de-futbol-color-blanco-adidas-tango-glider-talla-5_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_pelota-futbol-11-blanco--negro-adidas-tango-glider-talla-5_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_balon-de-futbol-11-adidas-tango-glider-talla-5-blanco--negro_4_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/1/S12241-5_pelota-futbol-adidas-tango-glider-talla-5-color-blanco_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/s12241-5",
+    "language": "es",
+    "category": "Balón de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Balón de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/s12241-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Tango",
+    "submodel": "",
+    "product_model": "Tango Glider talla 5",
+    "sole_type": ""
+  }
+}

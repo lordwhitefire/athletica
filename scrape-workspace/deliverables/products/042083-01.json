@@ -1,0 +1,113 @@
+{
+  "id": "042083-01",
+  "slug": "puma-ultra-match-rc-blue",
+  "name": "Puma Ultra Match RC",
+  "model": "Ultra Match RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma goalkeeper gloves regular fit - blue",
+    "tagline": "Solid Performance for Consistent Goalkeepers",
+    "intro": "The PUMA ULTRA MATCH RC combine durability and control for intense sessions. A glove that responds well both in training and in school matches.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Comodidad y control: Corte regular que da libertad de movimiento.",
+      "Resistant materials: Withstands demanding training without rapid wear.",
+      "Functional fit: Easy to put on and take off with good support.",
+      "Ideal for young goalkeepers: Perfect for grassroots football."
+    ],
+    "technical_details": {
+      "range": "Ultra Match RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/7620c1bd59f531abff904a69c0b45cad3a65f897-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/7620c1bd59f531abff904a69c0b45cad3a65f897-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ec5868d43290f82a41520ce54da6ff1ba7bfbcd2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0936afebc8b1e35a56f2f19dd4322d587b1c2cae-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d745fbda017a4b0e33f4a9b02d1017dd1e7f5ded-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7620c1bd59f531abff904a69c0b45cad3a65f897-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ec5868d43290f82a41520ce54da6ff1ba7bfbcd2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0936afebc8b1e35a56f2f19dd4322d587b1c2cae-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d745fbda017a4b0e33f4a9b02d1017dd1e7f5ded-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-7620c1bd59f531abff904a69c0b45cad3a65f897-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7620c1bd59f531abff904a69c0b45cad3a65f897-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ec5868d43290f82a41520ce54da6ff1ba7bfbcd2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ec5868d43290f82a41520ce54da6ff1ba7bfbcd2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0936afebc8b1e35a56f2f19dd4322d587b1c2cae-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0936afebc8b1e35a56f2f19dd4322d587b1c2cae-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d745fbda017a4b0e33f4a9b02d1017dd1e7f5ded-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d745fbda017a4b0e33f4a9b02d1017dd1e7f5ded-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/042083-01",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Puma corte regular - azules",
+    "tagline": "Rendimiento Sólido para Porteros Consistentes",
+    "intro": "Los PUMA ULTRA MATCH RC combinan durabilidad y control para sesiones intensas. Un guante que responde bien tanto en entrenamiento como en partidos escolares.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Comodidad y control: Corte regular que da libertad de movimiento.",
+      "Materiales resistentes: Soporta entrenos exigentes sin desgaste rápido.",
+      "Ajuste funcional: Fácil de poner y quitar con buena sujeción.",
+      "Ideal para porteros jóvenes: Perfecto para fútbol base."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/042083-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Match RC",
+    "product_model": "Ultra Match RC",
+    "sole_type": ""
+  }
+}

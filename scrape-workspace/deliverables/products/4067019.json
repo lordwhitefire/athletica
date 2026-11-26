@@ -1,0 +1,96 @@
+{
+  "id": "4067019",
+  "slug": "munich-rondito-kid-yellow",
+  "name": "Munich Rondito Kid",
+  "model": "Rondito Kid",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol sala infantiles Munich suela lisa IN - amarillas",
+    "tagline": "Domina la pista con velocidad",
+    "intro": "Diseñadas para los pequeños grandes jugadores, las Munich Rondito Kid capturan la esencia del fútbol sala con un diseño llamativo y funcional. Esta zapatilla infantil ofrece estilo y comodidad para los más jóvenes dentro y fuera de la pista.",
+    "collection": "",
+    "key_benefits": [
+      "Estética llamativa: Diseño vanguardista y actual que refleja dinamismo.",
+      "Comodidad infantil: Pensadas para el pie de los más pequeños, con materiales suaves y confortables.",
+      "Versatilidad urbana: Ideales tanto para jugar como para el uso diario gracias a su diseño casual."
+    ],
+    "technical_details": {
+      "range": "Rondito Kid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_zapatillas-futbol-sala-color-amarillo-munich-rondito-kid_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_zapatillas-futbol-sala-color-amarillo-munich-rondito-kid_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_zapatillas-de-futbol-sala-amarillas-munich-rondito-kid_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_botas-futbol-sala-munich-rondito-kid-color-amarillo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_bambas-futbol-sala-munich-rondito-kid-amarillas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_tenis-futbol-sala-color-amarillo-munich-rondito-kid_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_zapatillas-futbol-sala-color-amarillo-munich-rondito-kid_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_zapatillas-de-futbol-sala-amarillas-munich-rondito-kid_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_botas-futbol-sala-munich-rondito-kid-color-amarillo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_bambas-futbol-sala-munich-rondito-kid-amarillas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4067019_tenis-futbol-sala-color-amarillo-munich-rondito-kid_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/4067019",
+    "language": "es",
+    "category": "Botas niño fútbol sala",
+    "captured_at": "2026-11-19",
+    "subtitle": "Zapatillas de fútbol sala infantiles Munich suela lisa IN - amarillas",
+    "tagline": "Domina la pista con velocidad",
+    "intro": "Diseñadas para los pequeños grandes jugadores, las Munich Rondito Kid capturan la esencia del fútbol sala con un diseño llamativo y funcional. Esta zapatilla infantil ofrece estilo y comodidad para los más jóvenes dentro y fuera de la pista.",
+    "collection": "",
+    "key_benefits": [
+      "Estética llamativa: Diseño vanguardista y actual que refleja dinamismo.",
+      "Comodidad infantil: Pensadas para el pie de los más pequeños, con materiales suaves y confortables.",
+      "Versatilidad urbana: Ideales tanto para jugar como para el uso diario gracias a su diseño casual."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Calzado fútbol"
+      },
+      {
+        "audience": "kids",
+        "root": "Botas niño fútbol sala"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/4067019"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Rondito",
+    "submodel": "Kid",
+    "product_model": "Rondito Kid",
+    "sole_type": ""
+  }
+}

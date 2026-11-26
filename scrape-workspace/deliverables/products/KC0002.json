@@ -1,0 +1,100 @@
+{
+  "id": "KC0002",
+  "slug": "camiseta-adidas-arsenal-entrenamiento-black",
+  "name": "adidas Arsenal Training",
+  "model": "Arsenal entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de entrenamiento adidas del Arsenal 2026 2027 - negra",
+    "tagline": "Entrena como los Gunners",
+    "intro": "La camiseta de entrenamiento adidas del Arsenal 26 27 ha sido diseñada para jugadores y aficionados que quieren mostrar su pasión por el Arsenal mientras mejoran su rendimiento. Su diseño en color negro con detalles naranjas ofrece una estética moderna inspirada en las prendas que utilizan los futbolistas durante las sesiones de entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirada en la equipación de entrenamiento del club londinense.",
+      "CLIMACOOL: Ayuda a evacuar el sudor para mantener la piel fresca y seca.",
+      "Corte ajustado: Favorece la libertad de movimientos y un ajuste más deportivo.",
+      "Paneles transpirables: Mejoran la ventilación durante los entrenamientos más exigentes."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-negra-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-adidas-arsenal-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-adidas-arsenal-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-negra-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-adidas-arsenal-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC0002_camiseta-adidas-arsenal-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kc0002",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de entrenamiento adidas del Arsenal 2026 2027 - negra",
+    "tagline": "Entrena como los Gunners",
+    "intro": "La camiseta de entrenamiento adidas del Arsenal 26 27 ha sido diseñada para jugadores y aficionados que quieren mostrar su pasión por el Arsenal mientras mejoran su rendimiento. Su diseño en color negro con detalles naranjas ofrece una estética moderna inspirada en las prendas que utilizan los futbolistas durante las sesiones de entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirada en la equipación de entrenamiento del club londinense.",
+      "CLIMACOOL: Ayuda a evacuar el sudor para mantener la piel fresca y seca.",
+      "Corte ajustado: Favorece la libertad de movimientos y un ajuste más deportivo.",
+      "Paneles transpirables: Mejoran la ventilación durante los entrenamientos más exigentes."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kc0002"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Arsenal Training",
+    "submodel": "",
+    "product_model": "Arsenal entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "IM5520",
+  "slug": "mochila-adidas-4athlets-black",
+  "name": "Backpack adidas 4Athlets",
+  "model": "Backpack adidas 4Athlets",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adidas 4Athlets Sports Backpack (16.5 x 30 x 50) cm - Black",
+    "tagline": "More space, less mess",
+    "intro": "Designed for training and moving around the city, the adidas 4Athlets combines durability and comfort. Its robust construction and quick access to the main compartment keep your equipment always at hand.",
+    "collection": "",
+    "key_benefits": [
+      "Ensured durability: Ripstop fabric with abrasion-resistant reinforcements.",
+      "Extra protection: Coated base that isolates soil moisture or fine rain.",
+      "Practical organization: Main compartment with zipper and front and side pockets.",
+      "Everyday comfort: Adjustable straps and top handle for different ways of carrying."
+    ],
+    "technical_details": {
+      "range": "adidas 4Athlets",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-color-negro-adidas-4athlets_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-color-negro-adidas-4athlets_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-negra-adidas-4athlets_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-adidas-4athlets-color-negro_3_detalle-asa.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-adidas-4athlets-negra_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-color-negro-adidas-4athlets_5_detalle-capacidad-interior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-color-negro-adidas-4athlets_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-negra-adidas-4athlets_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-adidas-4athlets-color-negro_3_detalle-asa.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-adidas-4athlets-negra_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5520_mochila-color-negro-adidas-4athlets_5_detalle-capacidad-interior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/im5520",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte adidas 4Athlets (16,5 x 30 x 50) cm - negra",
+    "tagline": "Más espacio, menos líos",
+    "intro": "Pensada para entrenar y moverte por la ciudad, la 4Athlets de adidas combina durabilidad y comodidad. Su construcción robusta y el acceso rápido al compartimento principal mantienen tu material siempre a mano.",
+    "collection": "",
+    "key_benefits": [
+      "Durabilidad asegurada: Tejido ripstop con refuerzos resistentes a la abrasión.",
+      "Protección extra: Base revestida que aísla la humedad del suelo o la lluvia fina.",
+      "Organización práctica: Compartimento principal con cremallera y bolsillos frontales y laterales.",
+      "Comodidad diaria: Correas ajustables y asa superior para diferentes formas de transporte."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/im5520"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack adidas 4Athlets",
+    "sole_type": ""
+  }
+}

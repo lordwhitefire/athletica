@@ -1,0 +1,96 @@
+{
+  "id": "IB4138-100",
+  "slug": "camiseta-nike-inter-mujer-wordmark-white",
+  "name": "Nike Inter Women WordMark",
+  "model": "Inter mujer WordMark",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Inter Milan Nike Short Sleeve Cotton Women's T-Shirt",
+    "tagline": "Inter is also experienced in your daily life",
+    "intro": "This Nike Inter Milan t-shirt for women is designed to show off Nerazzurri pride with a comfortable and casual style, ideal to accompany you inside and outside the stadium.",
+    "collection": "",
+    "key_benefits": [
+      "Natural comfort: Soft and skin-friendly cotton fabric.",
+      "Feminine design: Tailored cut for a comfortable fit.",
+      "Club identity: Inter Milan graphic with modern aesthetics."
+    ],
+    "technical_details": {
+      "range": "Nike Inter mujer WordMark",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4138-100_camiseta-color-blanco-nike-inter-mujer-wordmark_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4138-100_camiseta-color-blanco-nike-inter-mujer-wordmark_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4138-100_camiseta-blanca-nike-inter-mujer-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4138-100_camiseta-nike-inter-mujer-wordmark-color-blanco_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4138-100_camiseta-color-blanco-nike-inter-mujer-wordmark_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4138-100_camiseta-blanca-nike-inter-mujer-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4138-100_camiseta-nike-inter-mujer-wordmark-color-blanco_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib4138-100",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta para mujer de algodón de manga corta Nike del Inter de Milán",
+    "tagline": "El Inter también se vive en tu día a día",
+    "intro": "Esta camiseta Nike del Inter de Milán para mujer está pensada para lucir el orgullo nerazzurro con un estilo cómodo y casual, ideal para acompañarte dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad natural: Tejido de algodón suave y agradable al tacto.",
+      "Diseño femenino: Corte adaptado para un ajuste cómodo.",
+      "Identidad del club: Gráfico del Inter de Milán con estética moderna."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib4138-100"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Inter Women",
+    "submodel": "",
+    "product_model": "Inter mujer WordMark",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "JZ9149",
+  "slug": "chaqueta-adidas-real-madrid-nino-himno-black",
+  "name": "adidas Real Madrid Kids himno",
+  "model": "Real Madrid niño himno",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta himno infantil adidas del Real Madrid 2025 2026 - negra",
+    "tagline": "Estilo legendario para los más jóvenes",
+    "intro": "La chaqueta de himno adidas para niño te conecta con el espíritu del Real Madrid. Icónica, cómoda y lista para los grandes momentos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial del Real Madrid: Equipación temporada 25/26.",
+      "Tejido técnico: Cómodo, transpirable y ligero.",
+      "Estética moderna: Colores, escudo y detalles adidas con estilo.",
+      "Versatilidad total: Para entrenos, antes del partido o uso diario con orgullo."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid niño himno",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-color-negro-adidas-real-madrid-himno_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-color-negro-adidas-real-madrid-himno_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-chandal-negra-adidas-real-madrid-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-entretiempo-adidas-real-madrid-himno-color-negro_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-adidas-real-madrid-himno-negra_4_detalle-acabado-manga.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-chandal-color-negro-adidas-real-madrid-himno_5_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-color-negro-adidas-real-madrid-himno_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-chandal-negra-adidas-real-madrid-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-entretiempo-adidas-real-madrid-himno-color-negro_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-adidas-real-madrid-himno-negra_4_detalle-acabado-manga.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9149_chaqueta-chandal-color-negro-adidas-real-madrid-himno_5_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jz9149",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta himno infantil adidas del Real Madrid 2025 2026 - negra",
+    "tagline": "Estilo legendario para los más jóvenes",
+    "intro": "La chaqueta de himno adidas para niño te conecta con el espíritu del Real Madrid. Icónica, cómoda y lista para los grandes momentos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial del Real Madrid: Equipación temporada 25/26.",
+      "Tejido técnico: Cómodo, transpirable y ligero.",
+      "Estética moderna: Colores, escudo y detalles adidas con estilo.",
+      "Versatilidad total: Para entrenos, antes del partido o uso diario con orgullo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jz9149"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid niño himno",
+    "sole_type": ""
+  }
+}

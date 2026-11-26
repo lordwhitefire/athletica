@@ -1,0 +1,84 @@
+{
+  "id": "100118701",
+  "slug": "inflador-uhlsport-small-23-cm-black",
+  "name": "Inflador Uhlsport Small 23 cm",
+  "model": "Inflador Uhlsport Small 23 cm",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport ball inflator spot - black",
+    "tagline": "Inflate with comfort and precision",
+    "intro": "The Uhlsport Small Inflator is designed to offer effective and effortless inflation in any training environment.",
+    "collection": "",
+    "key_benefits": [
+      "Compact design: Easy to carry and use anywhere.",
+      "High Compatibility: Works with most standard ball valves.",
+      "Intuitive use: Efficient pumping system for quick inflation."
+    ],
+    "technical_details": {
+      "range": "Uhlsport Small 23 cm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/35922fa1fb41454a37cca4d9242e53b5a1f53f12-800x800.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/35922fa1fb41454a37cca4d9242e53b5a1f53f12-800x800.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/35922fa1fb41454a37cca4d9242e53b5a1f53f12-800x800.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-35922fa1fb41454a37cca4d9242e53b5a1f53f12-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/35922fa1fb41454a37cca4d9242e53b5a1f53f12-800x800.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100118701",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Mancha para inflar balones Uhlsport - negro",
+    "tagline": "Infla con comodidad y precisión",
+    "intro": "El Inflador Uhlsport Small está diseñado para ofrecer un inflado eficaz y sin esfuerzo en cualquier entorno de entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño compacto: Fácil de transportar y usar en cualquier lugar.",
+      "Alta compatibilidad: Funciona con la mayoría de válvulas estándar de balones.",
+      "Uso intuitivo: Sistema de bombeo eficiente para un inflado rápido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100118701"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Inflador",
+    "submodel": "",
+    "product_model": "Inflador Uhlsport Small 23 cm",
+    "sole_type": ""
+  }
+}

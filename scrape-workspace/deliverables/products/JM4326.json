@@ -1,0 +1,84 @@
+{
+  "id": "JM4326",
+  "slug": "adidas-copa-match-fingersave-black",
+  "name": "adidas Copa Match FingerSave",
+  "model": "Copa Match FingerSave",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Copa Match FingerSave",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-adidas-copa-match-fingersave_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-adidas-copa-match-fingersave_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-portero-con-proteccion-negros-adidas-copa-match-fingersave_2_detalle-agarre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-con-ferulas-adidas-copa-match-fingersave-color-negro_3_vista-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-de-arquero-con-ferula-adidas-copa-match-fingersave-negros_4_detalle-cierres.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-con-varilla-color-negro-adidas-copa-match-fingersave_5_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-portero-futbol-con-proteccion-en-los-dedos-color-negro-adidas-copa-match-fingersave_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-portero-con-proteccion-negros-adidas-copa-match-fingersave_2_detalle-agarre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-con-ferulas-adidas-copa-match-fingersave-color-negro_3_vista-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-de-arquero-con-ferula-adidas-copa-match-fingersave-negros_4_detalle-cierres.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM4326_guantes-con-varilla-color-negro-adidas-copa-match-fingersave_5_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm4326",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm4326"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Match FingerSave",
+    "product_model": "Copa Match FingerSave",
+    "sole_type": ""
+  }
+}

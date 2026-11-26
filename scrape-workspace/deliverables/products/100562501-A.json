@@ -1,0 +1,87 @@
+{
+  "id": "100562501-A",
+  "slug": "mallas-de-portero-uhlsport-3-4-anatomic-gk-black",
+  "name": "Mallas de Goalkeeper Uhlsport 3/4 Anatomic Gk",
+  "model": "Mallas de Goalkeeper Uhlsport 3/4 Anatomic Gk",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de portero Uhlsport 3/4 Anatomic Gk",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/dbd7e5c1bac8440816d1badacce5ead2d576b169-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/dbd7e5c1bac8440816d1badacce5ead2d576b169-1600x1600.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1da6ba21d682c72d1a063a018f5dc7a1211551a6-1600x1600.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/dbd7e5c1bac8440816d1badacce5ead2d576b169-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1da6ba21d682c72d1a063a018f5dc7a1211551a6-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-dbd7e5c1bac8440816d1badacce5ead2d576b169-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/dbd7e5c1bac8440816d1badacce5ead2d576b169-1600x1600.jpg"
+    },
+    {
+      "_id": "image-1da6ba21d682c72d1a063a018f5dc7a1211551a6-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1da6ba21d682c72d1a063a018f5dc7a1211551a6-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100562501-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100562501-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas de Goalkeeper Uhlsport 3/4 Anatomic Gk",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "CW6095-700",
+  "slug": "short-nike-dri-fit-strike-21-mujer-gold",
+  "name": "Nike Dri-Fit Strike 21 Women",
+  "model": "Dri-Fit Strike 21 mujer",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Gold",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Dri-Fit Strike 21 mujer",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/W/CW6095-700_imagen-del-pantalon-corto-mujer-entrenamiento-nike-strike-2021-amarillo_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/cw6095-700",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/cw6095-700"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Dri-Fit",
+    "submodel": "",
+    "product_model": "Dri-Fit Strike 21 mujer",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "100695102",
+  "slug": "tobillera-uhlsport-bandage-black",
+  "name": "Tobillera Uhlsport Bandage",
+  "model": "Tobillera Uhlsport Bandage",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport Bandage",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a5a33873a133c6a63cdbeba51d77b21d3454ae19-800x800.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a5a33873a133c6a63cdbeba51d77b21d3454ae19-800x800.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b72a15cc87bc036307fbbf6a87930382944644c0-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4da5f720f555cabac7a109cc335e35a4830e1a67-800x800.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a5a33873a133c6a63cdbeba51d77b21d3454ae19-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b72a15cc87bc036307fbbf6a87930382944644c0-800x800.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4da5f720f555cabac7a109cc335e35a4830e1a67-800x800.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a5a33873a133c6a63cdbeba51d77b21d3454ae19-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a5a33873a133c6a63cdbeba51d77b21d3454ae19-800x800.jpg"
+    },
+    {
+      "_id": "image-b72a15cc87bc036307fbbf6a87930382944644c0-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b72a15cc87bc036307fbbf6a87930382944644c0-800x800.jpg"
+    },
+    {
+      "_id": "image-4da5f720f555cabac7a109cc335e35a4830e1a67-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4da5f720f555cabac7a109cc335e35a4830e1a67-800x800.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100695102",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100695102"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Tobillera",
+    "submodel": "",
+    "product_model": "Tobillera Uhlsport Bandage",
+    "sole_type": ""
+  }
+}

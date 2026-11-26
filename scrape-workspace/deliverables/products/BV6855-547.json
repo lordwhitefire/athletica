@@ -1,0 +1,94 @@
+{
+  "id": "BV6855-547",
+  "slug": "short-nike-dri-fit-park-3-purple",
+  "name": "Nike Dri-Fit Park 3",
+  "model": "Dri-Fit Park 3",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Nike - púrpura",
+    "tagline": "El pantalón corto perfecto para rendir en cada entrenamiento",
+    "intro": "El Short Nike Dri-FIT Park 3 está diseñado para ofrecer comodidad, ligereza y libertad de movimiento en cada sesión. Su tejido transpirable con tecnología Dri-FIT ayuda a mantener la piel seca, convirtiéndolo en una opción ideal tanto para entrenamientos como para partidos.",
+    "collection": "",
+    "key_benefits": [
+      "Mantente seco: La tecnología Nike Dri-FIT evacua el sudor para una mayor comodidad.",
+      "Libertad de movimiento: Corte deportivo que favorece una movilidad natural.",
+      "Comodidad durante todo el partido: Tejido Knit ligero, suave y elástico.",
+      "Ajuste seguro: Cintura elástica con cordón para un ajuste personalizado.",
+      "Combínalo con tu equipo: Disponible en múltiples colores para adaptarse a cualquier equipación."
+    ],
+    "technical_details": {
+      "range": "Nike Dri-Fit Park 3",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_pantalon-corto-color-purpura-nike-dri-fit-park-3_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_pantalon-corto-color-purpura-nike-dri-fit-park-3_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_short-purpura-nike-dri-fit-park-3_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_pantalon-corto-nike-dri-fit-park-3-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_short-nike-dri-fit-park-3-purpura_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_pantalon-corto-color-purpura-nike-dri-fit-park-3_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_short-purpura-nike-dri-fit-park-3_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_pantalon-corto-nike-dri-fit-park-3-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/B/V/BV6855-547_short-nike-dri-fit-park-3-purpura_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/bv6855-547",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike - púrpura",
+    "tagline": "El pantalón corto perfecto para rendir en cada entrenamiento",
+    "intro": "El Short Nike Dri-FIT Park 3 está diseñado para ofrecer comodidad, ligereza y libertad de movimiento en cada sesión. Su tejido transpirable con tecnología Dri-FIT ayuda a mantener la piel seca, convirtiéndolo en una opción ideal tanto para entrenamientos como para partidos.",
+    "collection": "",
+    "key_benefits": [
+      "Mantente seco: La tecnología Nike Dri-FIT evacua el sudor para una mayor comodidad.",
+      "Libertad de movimiento: Corte deportivo que favorece una movilidad natural.",
+      "Comodidad durante todo el partido: Tejido Knit ligero, suave y elástico.",
+      "Ajuste seguro: Cintura elástica con cordón para un ajuste personalizado.",
+      "Combínalo con tu equipo: Disponible en múltiples colores para adaptarse a cualquier equipación."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/bv6855-547"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Dri-Fit",
+    "submodel": "",
+    "product_model": "Dri-Fit Park 3",
+    "sole_type": ""
+  }
+}

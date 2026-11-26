@@ -1,0 +1,101 @@
+{
+  "id": "092461-11",
+  "slug": "mochila-de-cuerdas-puma-portugal-red",
+  "name": "Backpack de cuerdas Puma Portugal",
+  "model": "Backpack de cuerdas Puma Portugal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Portugal national team Puma drawstring backpack - red",
+    "tagline": "Take your passion for Portugal anywhere",
+    "intro": "The Puma drawstring backpack of the Portugal national team is a light, practical and functional option for everyday life or training. Its red design with green details reflects the iconic colors of the Portuguese team.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight design: Perfect for carrying essentials without extra weight.",
+      "Lace-up closure: Quick and secure access to your belongings.",
+      "Official product: Licensed design of the Portugal national team.",
+      "Versatile use: Ideal for training, gym or everyday use."
+    ],
+    "technical_details": {
+      "range": "de cuerdas Puma Portugal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c8c741530a9ebdbe740963b9083a4860324e103a-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c8c741530a9ebdbe740963b9083a4860324e103a-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/39190a82b770ddec358eac3b7dfcf59c0fae7e0e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c8c741530a9ebdbe740963b9083a4860324e103a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/39190a82b770ddec358eac3b7dfcf59c0fae7e0e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c8c741530a9ebdbe740963b9083a4860324e103a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c8c741530a9ebdbe740963b9083a4860324e103a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-39190a82b770ddec358eac3b7dfcf59c0fae7e0e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/39190a82b770ddec358eac3b7dfcf59c0fae7e0e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092461-11",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de cuerdas Puma de la selección de Portugal - roja",
+    "tagline": "Lleva tu pasión por Portugal a cualquier parte",
+    "intro": "La mochila de cuerdas Puma de la selección de Portugal es una opción ligera, práctica y funcional para el día a día o el entrenamiento. Su diseño en rojo con detalles en verde refleja los colores icónicos del combinado portugués.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño ligero: Perfecta para transportar lo esencial sin peso extra.",
+      "Cierre con cordones: Acceso rápido y seguro a tus pertenencias.",
+      "Producto oficial: Diseño licenciado de la selección de Portugal.",
+      "Uso versátil: Ideal para entrenamiento, gimnasio o uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092461-11"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Portugal",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "JN5340",
+  "slug": "adidas-copa-club-negro-verde",
+  "name": "adidas Copa Club",
+  "model": "Copa Club",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Negro / Verde",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adidas positive cut goalkeeper gloves - black, light green",
+    "tagline": "Comfort and control from the first minute",
+    "intro": "The adidas Copa Club accompany you in every workout with a robust design and comfortable fit.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Classic fit: Comfortable cut that facilitates natural hand movement.",
+      "Superior durability: Resistant materials for intensive use.",
+      "Functional palm: Good grip in standard playing conditions.",
+      "Hassle-free design: Ideal for goalkeepers who want practical performance.",
+      "Modern aesthetics: Easily combinable adidas colors and style."
+    ],
+    "technical_details": {
+      "range": "Copa Club",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-de-portero-color-negro-y-verde-adidas-copa-club_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-de-portero-color-negro-y-verde-adidas-copa-club_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-portero-negros--verde-claro-adidas-copa-club_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-de-arquero-adidas-copa-club-color-negro-y-verde_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-de-futbol-adidas-copa-club-negros--verde-claro_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-guardameta-color-negro-y-verde-adidas-copa-club_5_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-de-portero-color-negro-y-verde-adidas-copa-club_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-portero-negros--verde-claro-adidas-copa-club_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-de-arquero-adidas-copa-club-color-negro-y-verde_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-de-futbol-adidas-copa-club-negros--verde-claro_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5340_guantes-guardameta-color-negro-y-verde-adidas-copa-club_5_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn5340",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero adidas corte positivo - negros, verde claro",
+    "tagline": "Comodidad y control desde el primer minuto",
+    "intro": "Los adidas Copa Club te acompañan en cada entrenamiento con un diseño robusto y un ajuste cómodo.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Ajuste clásico: Corte cómodo que facilita el movimiento natural de la mano.",
+      "Durabilidad superior: Materiales resistentes para uso intensivo.",
+      "Palma funcional: Buen agarre en condiciones de juego estándar.",
+      "Diseño sin complicaciones: Ideal para porteros que quieren rendimiento práctico.",
+      "Estética moderna: Colores y estilo adidas fácilmente combinables."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn5340"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Club",
+    "product_model": "Copa Club",
+    "sole_type": ""
+  }
+}

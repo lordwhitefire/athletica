@@ -1,0 +1,102 @@
+{
+  "id": "KG5097",
+  "slug": "camiseta-adidas-alemania-originals-black",
+  "name": "adidas Alemania Originals",
+  "model": "Alemania Originals",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Alemania - negra",
+    "tagline": "Tradición alemana con carácter Originals",
+    "intro": "La camiseta Alemania adidas Originals celebra la cultura del fútbol con un diseño inspirado en la histórica segunda equipación del equipo. Una prenda que combina tradición y estilo moderno para quienes sienten el fútbol como parte de su identidad diaria.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Diseño basado en los colores de Alemania.",
+      "Tejido de punto sencillo: Suave y cómodo para el uso diario.",
+      "Corte regular: Ajuste equilibrado que favorece la movilidad.",
+      "Logo Trefoil: Autenticidad Originals con herencia deportiva.",
+      "Estética versátil: Fácil de combinar en looks casuales."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-color-negro-adidas-alemania-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-color-negro-adidas-alemania-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-negra-adidas-alemania-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-adidas-alemania-originals-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-adidas-alemania-originals-negra_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-color-negro-adidas-alemania-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-negra-adidas-alemania-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-adidas-alemania-originals-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5097_camiseta-adidas-alemania-originals-negra_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg5097",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Alemania - negra",
+    "tagline": "Tradición alemana con carácter Originals",
+    "intro": "La camiseta Alemania adidas Originals celebra la cultura del fútbol con un diseño inspirado en la histórica segunda equipación del equipo. Una prenda que combina tradición y estilo moderno para quienes sienten el fútbol como parte de su identidad diaria.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Diseño basado en los colores de Alemania.",
+      "Tejido de punto sencillo: Suave y cómodo para el uso diario.",
+      "Corte regular: Ajuste equilibrado que favorece la movilidad.",
+      "Logo Trefoil: Autenticidad Originals con herencia deportiva.",
+      "Estética versátil: Fácil de combinar en looks casuales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg5097"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania Originals",
+    "sole_type": ""
+  }
+}

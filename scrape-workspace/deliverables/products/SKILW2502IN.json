@@ -1,0 +1,94 @@
+{
+  "id": "SKILW2502IN",
+  "slug": "joma-skilful-in-white",
+  "name": "Joma Skilful IN",
+  "model": "Skilful IN",
+  "brand": "Joma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol sala Joma suela lisa IN - blancas",
+    "tagline": "Agilidad que cambia el ritmo",
+    "intro": "En su versión blanca, las Joma Skilful IN potencian arrancadas rápidas y toques limpios. Perfectas para enlazar paredes y romper líneas con un control fino del balón.",
+    "collection": "",
+    "key_benefits": [
+      "Agarre decisivo: Suela IN que optimiza la tracción en superficies interiores.",
+      "Golpeo preciso: Corte diseñado para mejorar el contacto con el balón.",
+      "Estabilidad: Refuerzos que sostienen el pie en cambios de ritmo.",
+      "Comodidad prolongada: Amortiguación que reduce el impacto en cada jugada."
+    ],
+    "technical_details": {
+      "range": "Skilful IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_zapatillas-futbol-sala-color-blanco-joma-skilful-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_zapatillas-futbol-sala-color-blanco-joma-skilful-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_zapatillas-de-futbol-sala-blancas-joma-skilful-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_botas-futbol-sala-joma-skilful-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_bambas-futbol-sala-joma-skilful-in-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_tenis-futbol-sala-color-blanco-joma-skilful-in_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_zapatillas-futbol-sala-color-blanco-joma-skilful-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_zapatillas-de-futbol-sala-blancas-joma-skilful-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_botas-futbol-sala-joma-skilful-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_bambas-futbol-sala-joma-skilful-in-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/K/SKILW2502IN_tenis-futbol-sala-color-blanco-joma-skilful-in_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/skilw2502in",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Zapatillas de fútbol sala Joma suela lisa IN - blancas",
+    "tagline": "Agilidad que cambia el ritmo",
+    "intro": "En su versión blanca, las Joma Skilful IN potencian arrancadas rápidas y toques limpios. Perfectas para enlazar paredes y romper líneas con un control fino del balón.",
+    "collection": "",
+    "key_benefits": [
+      "Agarre decisivo: Suela IN que optimiza la tracción en superficies interiores.",
+      "Golpeo preciso: Corte diseñado para mejorar el contacto con el balón.",
+      "Estabilidad: Refuerzos que sostienen el pie en cambios de ritmo.",
+      "Comodidad prolongada: Amortiguación que reduce el impacto en cada jugada."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/skilw2502in"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Skilful",
+    "submodel": "",
+    "product_model": "Skilful IN",
+    "sole_type": ""
+  }
+}

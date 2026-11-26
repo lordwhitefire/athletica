@@ -1,0 +1,100 @@
+{
+  "id": "KG2967",
+  "slug": "camiseta-adidas-real-madrid-tiro-travel-blue",
+  "name": "adidas Real Madrid Tiro Travel",
+  "model": "Real Madrid Tiro Travel",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas del Real Madrid - azul marino",
+    "tagline": "Viaja con el estilo del Real Madrid",
+    "intro": "La camiseta adidas Real Madrid Tiro Travel combina la inspiración del fútbol profesional con un diseño limpio y versátil para acompañarte en cada desplazamiento. Su estilo deportivo y el escudo del Real Madrid la convierten en una prenda perfecta para mostrar tu pasión dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Tacto suave y cómodo para el uso diario.",
+      "Ajuste clásico: Corte regular que ofrece libertad de movimiento.",
+      "Diseño Travel: Inspirado en la ropa de viaje del primer equipo.",
+      "Detalles oficiales: Escudo del Real Madrid."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Tiro Travel",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-color-azul-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-color-azul-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-azul-marino-adidas-real-madrid-tiro-travel_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-adidas-real-madrid-tiro-travel-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-adidas-real-madrid-tiro-travel-azul-marino_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-color-azul-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-azul-marino-adidas-real-madrid-tiro-travel_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-adidas-real-madrid-tiro-travel-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2967_camiseta-adidas-real-madrid-tiro-travel-azul-marino_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2967",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Real Madrid - azul marino",
+    "tagline": "Viaja con el estilo del Real Madrid",
+    "intro": "La camiseta adidas Real Madrid Tiro Travel combina la inspiración del fútbol profesional con un diseño limpio y versátil para acompañarte en cada desplazamiento. Su estilo deportivo y el escudo del Real Madrid la convierten en una prenda perfecta para mostrar tu pasión dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Tacto suave y cómodo para el uso diario.",
+      "Ajuste clásico: Corte regular que ofrece libertad de movimiento.",
+      "Diseño Travel: Inspirado en la ropa de viaje del primer equipo.",
+      "Detalles oficiales: Escudo del Real Madrid."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2967"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Tiro Travel",
+    "sole_type": ""
+  }
+}

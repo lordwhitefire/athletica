@@ -1,0 +1,100 @@
+{
+  "id": "JV6575",
+  "slug": "short-adidas-liverpool-entrenamiento-black",
+  "name": "adidas Liverpool Training",
+  "model": "Liverpool entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Liverpool adidas Training Shorts 2025 2026 - Black",
+    "tagline": "Shorts with unique style",
+    "intro": "The adidas Liverpool training shorts combine tradition and modern design to represent your team with pride. Inspired by the club's heritage, this garment provides comfort and personality for your daily life.",
+    "collection": "",
+    "key_benefits": [
+      "Iconic design: Retro inspiration with classic club logos.",
+      "Total comfort: Soft fabric ideal for daily use.",
+      "Club identity: Embroidered shield and official colors.",
+      "adidas Originals style: Vintage touches with the 3 stripes."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_pantalon-corto-color-negro-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_pantalon-corto-color-negro-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_short-negro-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_pantalon-corto-adidas-liverpool-entrenamiento-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_short-adidas-liverpool-entrenamiento-negro_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_pantalon-corto-color-negro-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_short-negro-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_pantalon-corto-adidas-liverpool-entrenamiento-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV6575_short-adidas-liverpool-entrenamiento-negro_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jv6575",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas del Liverpool 2025 2026 - negro",
+    "tagline": "Short con estilo único",
+    "intro": "La Short adidas Liverpool entrenamiento combina tradición y diseño moderno para representar a tu equipo con orgullo. Inspirada en la herencia del club, esta prenda aporta comodidad y personalidad para tu día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño icónico: Inspiración retro con logos clásicos del club.",
+      "Comodidad total: Tejido suave ideal para el uso diario.",
+      "Identidad del club: Escudo bordado y colores oficiales.",
+      "Estilo adidas Originals: Toques vintage con las 3 bandas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jv6575"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Liverpool Training",
+    "submodel": "",
+    "product_model": "Liverpool entrenamiento",
+    "sole_type": ""
+  }
+}

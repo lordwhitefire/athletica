@@ -1,0 +1,107 @@
+{
+  "id": "092833-01",
+  "slug": "mochila-puma-buzz-ii-black",
+  "name": "Backpack Puma Buzz II",
+  "model": "Backpack Puma Buzz II",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack - black",
+    "tagline": "Organize your day with style and functionality",
+    "intro": "The Puma Buzz II backpack combines a modern and minimalist design with the practicality necessary for everyday life. Its black aesthetic and discreet embossed Puma logo give it an elegant and versatile look, perfect for daily commutes. Made mainly from recycled materials, it offers a comfortable and resistant solution to transport your belongings safely.",
+    "collection": "",
+    "key_benefits": [
+      "Versatile design: Ideal for daily, sports or urban use.",
+      "Great organization capacity: Practical compartments for your essential items.",
+      "Comodidad de transporte: Espalda y tirantes acolchados para mayor confort."
+    ],
+    "technical_details": {
+      "range": "Puma Buzz II",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b58c6fd10e2d0957758d00439baaa67bb90dfb6e-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b58c6fd10e2d0957758d00439baaa67bb90dfb6e-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/947a108e9f62ae74059709f3c452f77aa9b3b7a8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a8f1679c20d157719e53cea2ea16e3be2441c44d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/575ff269b91c4db0887d36cdc9aca23876a0cd63-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b58c6fd10e2d0957758d00439baaa67bb90dfb6e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/947a108e9f62ae74059709f3c452f77aa9b3b7a8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a8f1679c20d157719e53cea2ea16e3be2441c44d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/575ff269b91c4db0887d36cdc9aca23876a0cd63-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b58c6fd10e2d0957758d00439baaa67bb90dfb6e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b58c6fd10e2d0957758d00439baaa67bb90dfb6e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-947a108e9f62ae74059709f3c452f77aa9b3b7a8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/947a108e9f62ae74059709f3c452f77aa9b3b7a8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a8f1679c20d157719e53cea2ea16e3be2441c44d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a8f1679c20d157719e53cea2ea16e3be2441c44d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-575ff269b91c4db0887d36cdc9aca23876a0cd63-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/575ff269b91c4db0887d36cdc9aca23876a0cd63-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092833-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma - negra",
+    "tagline": "Organiza tu día con estilo y funcionalidad",
+    "intro": "La mochila Puma Buzz II combina un diseño moderno y minimalista con la practicidad necesaria para el día a día. Su estética en color negro y el discreto logotipo Puma en relieve le aportan un aspecto elegante y versátil, perfecto para los desplazamientos diarios. Fabricada principalmente con materiales reciclados, ofrece una solución cómoda y resistente para transportar tus pertenencias de forma segura.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño versátil: Ideal para uso diario, deportivo o urbano.",
+      "Gran capacidad de organización: Compartimentos prácticos para tus objetos esenciales.",
+      "Comodidad de transporte: Espalda y tirantes acolchados para mayor confort."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092833-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Buzz II",
+    "sole_type": ""
+  }
+}

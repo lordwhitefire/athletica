@@ -1,0 +1,113 @@
+{
+  "id": "042124-01",
+  "slug": "puma-future-match-nc-red",
+  "name": "Puma Future Match NC",
+  "model": "Future Match NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma goalkeeper gloves negative cut - red",
+    "tagline": "Comodidad y agarre para cada parada",
+    "intro": "The Puma Future Match NC combines a perfect fit, specific technologies and high-performance materials to raise your level as a goalkeeper. Enjoy superior grip and total control on every play.",
+    "collection": "THE UNLEASHED PACK",
+    "key_benefits": [
+      "Negative fit: Snug fit that improves ball control.",
+      "Super soft palm: Greater shock absorption and comfort.",
+      "Dorso con relieve: Aporta flexibilidad y mejora la potencia en los despejes.",
+      "Thumb wrap: Larger contact surface for a firmer grip."
+    ],
+    "technical_details": {
+      "range": "Future Match NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8d598412f4b07bc4fc66a506ddaa0e6ef1beaa4d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8d598412f4b07bc4fc66a506ddaa0e6ef1beaa4d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/807a14e04d859d2110c93ae0ad74e0d9ece565bf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a06403fb8b0ec7167b22c31dc27f5c0ae3063480-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0ec2dd11e0c759aecacb4e8a06fcfc5501b48cda-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8d598412f4b07bc4fc66a506ddaa0e6ef1beaa4d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/807a14e04d859d2110c93ae0ad74e0d9ece565bf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a06403fb8b0ec7167b22c31dc27f5c0ae3063480-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0ec2dd11e0c759aecacb4e8a06fcfc5501b48cda-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-8d598412f4b07bc4fc66a506ddaa0e6ef1beaa4d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8d598412f4b07bc4fc66a506ddaa0e6ef1beaa4d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-807a14e04d859d2110c93ae0ad74e0d9ece565bf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/807a14e04d859d2110c93ae0ad74e0d9ece565bf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a06403fb8b0ec7167b22c31dc27f5c0ae3063480-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a06403fb8b0ec7167b22c31dc27f5c0ae3063480-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0ec2dd11e0c759aecacb4e8a06fcfc5501b48cda-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0ec2dd11e0c759aecacb4e8a06fcfc5501b48cda-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/042124-01",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Puma corte negativo - rojos",
+    "tagline": "Comodidad y agarre para cada parada",
+    "intro": "Los Puma Future Match NC combinan un ajuste perfecto, tecnologías específicas y materiales de alto rendimiento para elevar tu nivel como portero. Disfruta de un agarre superior y control total en cada jugada.",
+    "collection": "THE UNLEASHED PACK",
+    "key_benefits": [
+      "Ajuste negativo: Ajuste ceñido que mejora el control del balón.",
+      "Palma supersuave: Mayor absorción de impactos y comodidad.",
+      "Dorso con relieve: Aporta flexibilidad y mejora la potencia en los despejes.",
+      "Envoltura en el pulgar: Mayor superficie de contacto para un agarre más firme."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/042124-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Match NC",
+    "product_model": "Future Match NC",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "JP3998",
+  "slug": "chaqueta-adidas-real-madrid-mujer-entrenamiento-green",
+  "name": "adidas Real Madrid Women Training",
+  "model": "Real Madrid mujer entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Women's Training Tracksuit Jacket - Light Green",
+    "tagline": "Style and performance in every workout",
+    "intro": "The Real Madrid women's training jacket combines functionality and elegance to offer you the best performance. Its breathable technical fabric keeps you dry and comfortable in each session.",
+    "collection": "",
+    "key_benefits": [
+      "Thermal comfort: Ideal for training on cool days.",
+      "Quick drying: AEROREADY technology that promotes breathability.",
+      "Feminine design: Cut designed to fit the silhouette.",
+      "Club identity: Real Madrid crest heat-transferred on the chest.",
+      "Versatility: Suitable for before, during or after training."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid mujer entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-color-verde-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-color-verde-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-chandal-verde-claro-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-entretiempo-adidas-real-madrid-mujer-entrenamiento-color-verde_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-adidas-real-madrid-mujer-entrenamiento-verde-claro_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-color-verde-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-chandal-verde-claro-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-entretiempo-adidas-real-madrid-mujer-entrenamiento-color-verde_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3998_chaqueta-adidas-real-madrid-mujer-entrenamiento-verde-claro_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3998",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal para mujer de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Estilo y rendimiento en cada entrenamiento",
+    "intro": "La chaqueta de entrenamiento para mujer del Real Madrid combina funcionalidad y elegancia para ofrecerte el mejor rendimiento. Su tejido técnico transpirable te mantiene seca y cómoda en cada sesión.",
+    "collection": "",
+    "key_benefits": [
+      "Confort térmico: Ideal para entrenar en días frescos.",
+      "Secado rápido: Tecnología AEROREADY que favorece la transpiración.",
+      "Diseño femenino: Corte pensado para ajustarse a la silueta.",
+      "Identidad de club: Escudo del Real Madrid termotransferido en el pecho.",
+      "Versatilidad: Apta para antes, durante o después del entrenamiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3998"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid mujer entrenamiento",
+    "sole_type": ""
+  }
+}

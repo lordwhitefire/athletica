@@ -1,0 +1,79 @@
+{
+  "id": "N1009194152OS",
+  "slug": "pack-6-coleteros-nike-flex-blanco-negro",
+  "name": "Pack 6 coleteros Nike Flex",
+  "model": "Pack 6 coleteros Nike Flex",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blanco / Negro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pack de seis coleteros flexibles Nike - blancos, negros",
+    "tagline": "Controla tu juego",
+    "intro": "Mantén el cabello recogido con estilo y comodidad.",
+    "collection": "",
+    "key_benefits": [
+      "Alta elasticidad: Sujeta sin tirar del cabello.",
+      "Diseño deportivo: Ideal para entrenamientos intensos.",
+      "Pack surtido: Diferentes colores para cada ocasión."
+    ],
+    "technical_details": {
+      "range": "6 coleteros Nike Flex",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009194152OS_coletero-color-blanco-y-negro-nike-flex-6-unidades_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009194152OS_coletero-color-blanco-y-negro-nike-flex-6-unidades_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1009194152OS_coletero-color-blanco-y-negro-nike-flex-6-unidades_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n1009194152os",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pack de seis coleteros flexibles Nike - blancos, negros",
+    "tagline": "Controla tu juego",
+    "intro": "Mantén el cabello recogido con estilo y comodidad.",
+    "collection": "",
+    "key_benefits": [
+      "Alta elasticidad: Sujeta sin tirar del cabello.",
+      "Diseño deportivo: Ideal para entrenamientos intensos.",
+      "Pack surtido: Diferentes colores para cada ocasión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n1009194152os"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Pack",
+    "submodel": "6 coleteros Nike Flex",
+    "product_model": "Pack 6 coleteros Nike Flex",
+    "sole_type": ""
+  }
+}

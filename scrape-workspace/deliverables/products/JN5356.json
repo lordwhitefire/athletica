@@ -1,0 +1,96 @@
+{
+  "id": "JN5356",
+  "slug": "adidas-predator-training-green",
+  "name": "adidas Predator Training",
+  "model": "Predator Training",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adidas positive cut goalkeeper gloves - light green",
+    "tagline": "Designed to improve every workout",
+    "intro": "The adidas Predator Training offer a practical and resistant solution for goalkeepers in the improvement phase.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Functional grip: Adhesive palm that provides security in dry conditions.",
+      "Lasting comfort: Positive cut that fits without tightening.",
+      "Resistance to daily use: Materials designed for many training sessions.",
+      "Reliable fit: Velcro strap that allows you to put them on quickly.",
+      "Professional aesthetics: Design inspired by high-end gloves."
+    ],
+    "technical_details": {
+      "range": "Predator Training",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-de-portero-color-verde-adidas-predator-training_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-de-portero-color-verde-adidas-predator-training_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-portero-verde-claro-adidas-predator-training_2_detalle-agarre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-de-arquero-adidas-predator-training-color-verde_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-de-futbol-adidas-predator-training-verde-claro_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-guardameta-color-verde-adidas-predator-training_5_detalle-uso.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-de-portero-color-verde-adidas-predator-training_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-portero-verde-claro-adidas-predator-training_2_detalle-agarre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-de-arquero-adidas-predator-training-color-verde_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-de-futbol-adidas-predator-training-verde-claro_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN5356_guantes-guardameta-color-verde-adidas-predator-training_5_detalle-uso.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn5356",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero adidas corte positivo - verde claro",
+    "tagline": "Diseñados para mejorar cada entrenamiento",
+    "intro": "Los adidas Predator Training ofrecen una solución práctica y resistente para porteros en fase de mejora.",
+    "collection": "RADIANT BLAZE",
+    "key_benefits": [
+      "Agarre funcional: Palma adherente que aporta seguridad en condiciones secas.",
+      "Comodidad duradera: Corte positivo que se adapta sin apretar.",
+      "Resistencia al uso diario: Materiales pensados para muchos entrenamientos.",
+      "Ajuste fiable: Cinta de velcro que permite colocarlos rápidamente.",
+      "Estética profesional: Diseño inspirado en guantes de alta gama."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn5356"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Training",
+    "product_model": "Predator Training",
+    "sole_type": ""
+  }
+}

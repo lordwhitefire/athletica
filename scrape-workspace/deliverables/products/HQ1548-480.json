@@ -1,0 +1,96 @@
+{
+  "id": "HQ1548-480",
+  "slug": "pantalon-nike-atletico-dri-fit-blue",
+  "name": "Nike Atlético Dri-Fit",
+  "model": "Atlético Dri-Fit",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del Atlético de Madrid - azul",
+    "tagline": "Comodidad y estilo colchonero para tu día a día",
+    "intro": "Este pantalón largo Nike del Atlético de Madrid combina rendimiento deportivo y diseño casual. Con tejido suave y tecnología Dri-FIT, ofrece comodidad y frescura tanto en movimiento como en descanso.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño atlético y moderno: Inspirado en la ropa de entrenamiento profesional del Atleti.",
+      "Tejido con tecnología Dri-FIT: Expulsa el sudor para mantenerte seco en cualquier momento.",
+      "Comodidad total: Ajuste regular con cintura elástica y cordón interno.",
+      "Funcionalidad práctica: Bolsillos laterales para tus objetos esenciales.",
+      "Estilo versátil: Ideal para entrenamientos, viajes o looks urbanos."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1548-480_pantalon-largo-color-azul-nike-atletico-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1548-480_pantalon-largo-color-azul-nike-atletico-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1548-480_pantalon-chandal-azul-nike-atletico-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1548-480_pantalon-chandal-nike-atletico-dri-fit-color-azul_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1548-480_pantalon-largo-color-azul-nike-atletico-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1548-480_pantalon-chandal-azul-nike-atletico-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1548-480_pantalon-chandal-nike-atletico-dri-fit-color-azul_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq1548-480",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del Atlético de Madrid - azul",
+    "tagline": "Comodidad y estilo colchonero para tu día a día",
+    "intro": "Este pantalón largo Nike del Atlético de Madrid combina rendimiento deportivo y diseño casual. Con tejido suave y tecnología Dri-FIT, ofrece comodidad y frescura tanto en movimiento como en descanso.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño atlético y moderno: Inspirado en la ropa de entrenamiento profesional del Atleti.",
+      "Tejido con tecnología Dri-FIT: Expulsa el sudor para mantenerte seco en cualquier momento.",
+      "Comodidad total: Ajuste regular con cintura elástica y cordón interno.",
+      "Funcionalidad práctica: Bolsillos laterales para tus objetos esenciales.",
+      "Estilo versátil: Ideal para entrenamientos, viajes o looks urbanos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq1548-480"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Atlético",
+    "submodel": "",
+    "product_model": "Atlético Dri-Fit",
+    "sole_type": ""
+  }
+}

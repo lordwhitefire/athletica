@@ -20,6 +20,39 @@ const EXEMPT_PREFIXES = ["/admin/key/", "/api/admin/auth/"];
 const DOOR_KEY_COOKIE = "admin_door_key";
 const DOOR_KEY_MAX_AGE = 30 * 24 * 60 * 60;
 
+// Lock #2 — the door key. The cookie is not authentication; it only makes
+// /admin/* and /api/admin/* unreachable to anyone without it. Validated
+// against rollout.admin_access_keys through the SECURITY DEFINER RPC, so the
+// service-role key never enters the gate.
+async function hasValidDoorKey(req: NextRequest): Promise<boolean> {
+  const token = req.cookies.get(DOOR_KEY_COOKIE)?.value;
+  if (!token) return false;
+
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !anonKey) return false;
+
+  try {
+    const res = await fetch(`${url}/rest/v1/rpc/validate_door_key`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Content-Profile": "rollout",
+        "Accept-Profile": "rollout",
+        apikey: anonKey,
+        Authorization: `Bearer ${anonKey}`,
+      },
+      body: JSON.stringify({ token_value: token }),
+      cache: "no-store",
+    });
+    if (!res.ok) return false;
+    const data: unknown = await res.json();
+    return typeof data === "string" && data.length > 0;
+  } catch {
+    return false;
+  }
+}
+
 export default async function proxy(req: NextRequest) {
   const path = req.nextUrl.pathname;
   const isAdminRoute =
@@ -29,20 +62,24 @@ export default async function proxy(req: NextRequest) {
 
   // Slide the door-key cookie's browser lifetime on every admin visit, so an
   // active admin never needs a second link. This only extends the browser-side
-  // expiry — it grants nothing. Validity is still checked against the server's
-  // record on the page itself.
+  // expiry — it grants nothing. Validity is checked against the server's record
+  // on every admin request below.
   const doorKey = req.cookies.get(DOOR_KEY_COOKIE)?.value;
   if (isAdminRoute && doorKey) {
     const secure = req.nextUrl.protocol === "https:";
-    const parts = [
-      `${DOOR_KEY_COOKIE}=${doorKey}`,
-      "Path=/admin",
-      "HttpOnly",
-      secure ? "Secure" : "",
-      "SameSite=Lax",
-      `Max-Age=${DOOR_KEY_MAX_AGE}`,
-    ].filter(Boolean);
-    res.headers.append("Set-Cookie", parts.join("; "));
+    // The matcher covers /admin/* and /api/admin/*. A cookie scoped only to
+    // /admin is not sent to /api/admin/*, so keep one cookie per path.
+    for (const path of ["/admin", "/api/admin"]) {
+      const parts = [
+        `${DOOR_KEY_COOKIE}=${doorKey}`,
+        `Path=${path}`,
+        "HttpOnly",
+        secure ? "Secure" : "",
+        "SameSite=Lax",
+        `Max-Age=${DOOR_KEY_MAX_AGE}`,
+      ].filter(Boolean);
+      res.headers.append("Set-Cookie", parts.join("; "));
+    }
   }
 
   // Let exempt routes through — nobody should be blocked from reaching sign-in/sign-up.
@@ -52,7 +89,12 @@ export default async function proxy(req: NextRequest) {
   // Only admin routes are gated here.
   if (!isAdminRoute) return res;
 
-  // Fast path: no session cookie → 404 immediately, never call Supabase.
+  // Lock #2: no valid door key → 404, never reach the app.
+  if (!(await hasValidDoorKey(req))) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  }
+
+  // No session cookie → 404 immediately.
   if (!hasSessionCookie(req)) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }

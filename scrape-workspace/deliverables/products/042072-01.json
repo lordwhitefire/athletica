@@ -1,0 +1,80 @@
+{
+  "id": "042072-01",
+  "slug": "puma-ultra-ultimate-forever-hybrid-blanco-morado",
+  "name": "Puma Ultra Ultimate Forever Hybrid",
+  "model": "Ultra Ultimate Forever Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blanco / Morado",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Ultimate Forever Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9fa48a4883e6983155af096849fc7ab093ffcc3e-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9fa48a4883e6983155af096849fc7ab093ffcc3e-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9fa48a4883e6983155af096849fc7ab093ffcc3e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9fa48a4883e6983155af096849fc7ab093ffcc3e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9fa48a4883e6983155af096849fc7ab093ffcc3e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042072-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042072-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Ultimate Forever Hybrid",
+    "product_model": "Ultra Ultimate Forever Hybrid",
+    "sole_type": ""
+  }
+}

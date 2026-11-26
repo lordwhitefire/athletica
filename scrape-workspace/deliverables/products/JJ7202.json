@@ -1,0 +1,94 @@
+{
+  "id": "JJ7202",
+  "slug": "accesorio-adidas-footwear-odor-control-100ml-azul-gris",
+  "name": "adidas Footwear Odor Control 100ML",
+  "model": "Footwear Odor Control 100ML",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Azul / Gris",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Neutralizador de olor para botas de fútbol 100ML - spray base vegetal",
+    "tagline": "Elimina olores sin comprometer tus botas",
+    "intro": "Spray desodorante con fórmula vegetal que actúa al instante sobre calzado deportivo.",
+    "collection": "",
+    "key_benefits": [
+      "Acción inmediata contra el mal olor: Microbios enzimáticos que neutralizan el olor al contacto.",
+      "Fórmula natural y segura: Base vegetal y no tóxica, compatible con piel y materiales sintéticos.",
+      "Ideal para entrenos y partidos: Rápida aplicación antes o después del uso del calzado.",
+      "Envase compacto y ligero: Tamaño perfecto para llevar en tu mochila o bolsa de deporte.",
+      "Apto para más que botas: Úsalo también en ropa, mochilas o equipamiento de gimnasio."
+    ],
+    "technical_details": {
+      "range": "adidas Footwear Odor Control 100ML",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_deshodorante-color-azul-y-gris-adidas-footwear-odor-control-100ml_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_deshodorante-color-azul-y-gris-adidas-footwear-odor-control-100ml_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_eliminador-olor-azul-adidas-footwear-odor-control-100ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_deshodorante-adidas-footwear-odor-control-100ml-color-azul-y-gris_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_eliminador-olor-adidas-footwear-odor-control-100ml-azul_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_deshodorante-color-azul-y-gris-adidas-footwear-odor-control-100ml_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_eliminador-olor-azul-adidas-footwear-odor-control-100ml_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_deshodorante-adidas-footwear-odor-control-100ml-color-azul-y-gris_3_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ7202_eliminador-olor-adidas-footwear-odor-control-100ml-azul_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jj7202",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Neutralizador de olor para botas de fútbol 100ML - spray base vegetal",
+    "tagline": "Elimina olores sin comprometer tus botas",
+    "intro": "Spray desodorante con fórmula vegetal que actúa al instante sobre calzado deportivo.",
+    "collection": "",
+    "key_benefits": [
+      "Acción inmediata contra el mal olor: Microbios enzimáticos que neutralizan el olor al contacto.",
+      "Fórmula natural y segura: Base vegetal y no tóxica, compatible con piel y materiales sintéticos.",
+      "Ideal para entrenos y partidos: Rápida aplicación antes o después del uso del calzado.",
+      "Envase compacto y ligero: Tamaño perfecto para llevar en tu mochila o bolsa de deporte.",
+      "Apto para más que botas: Úsalo también en ropa, mochilas o equipamiento de gimnasio."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jj7202"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'accesorio'",
+    "root_model": "Footwear",
+    "submodel": "",
+    "product_model": "Footwear Odor Control 100ML",
+    "sole_type": ""
+  }
+}

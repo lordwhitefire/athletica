@@ -1,0 +1,104 @@
+{
+  "id": "IB0999-481",
+  "slug": "camiseta-nike-chelsea-mujer-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike Chelsea Women Training Dri-Fit Strike",
+  "model": "Chelsea mujer entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chelsea Women's Nike Training Short Sleeve T-Shirt - Blue",
+    "tagline": "Blue pride in every detail",
+    "intro": "The Chelsea Women's Nike Training Short Sleeve Top. Designed to train, warm up and experience the club on and off the field.",
+    "collection": "",
+    "key_benefits": [
+      "Technical lightness: Fabric that promotes ventilation during effort.",
+      "Quick drying: Comfort between repetitions and sets.",
+      "Sporty fit: Cut that accompanies the stride and stroke.",
+      "Blue Pride: Official details to feel the shield."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea mujer entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-color-azul-nike-chelsea-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-color-azul-nike-chelsea-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-azul-nike-chelsea-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-nike-chelsea-mujer-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-nike-chelsea-mujer-entrenamiento-dri-fit-strike-azul_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-color-azul-nike-chelsea-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-azul-nike-chelsea-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-nike-chelsea-mujer-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB0999-481_camiseta-nike-chelsea-mujer-entrenamiento-dri-fit-strike-azul_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib0999-481",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta para mujer de manga corta de entrenamiento Nike del Chelsea - azul",
+    "tagline": "Orgullo Blue en cada detalle",
+    "intro": "La Camiseta para mujer de manga corta de entrenamiento Nike del Chelsea. Pensada para entrenar, calentar y vivir el club dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Ligereza técnica: Tejido que favorece la ventilación en el esfuerzo.",
+      "Secado rápido: Comodidad entre repeticiones y series.",
+      "Ajuste deportivo: Corte que acompaña la zancada y el braceo.",
+      "Orgullo Blue: Detalles oficiales para sentir el escudo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib0999-481"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Chelsea Women",
+    "submodel": "",
+    "product_model": "Chelsea mujer entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

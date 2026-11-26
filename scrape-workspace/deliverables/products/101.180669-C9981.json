@@ -1,0 +1,111 @@
+{
+  "id": "101.180669-C9981",
+  "slug": "diadora-brasil-gr-lt-mph-white",
+  "name": "Diadora Brasil GR LT+ MPH",
+  "model": "Brasil GR LT+ MPH",
+  "brand": "Diadora",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Brasil GR LT+ MPH",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4ab5e291b2c8b0d46431c84c122543b90eb5fc39-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4ab5e291b2c8b0d46431c84c122543b90eb5fc39-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bbbce8109f305f744b785f653fb3e171c5c78688-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/664964fc67e44016196f4b683d0b45ad6ed6d427-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/275cc57a603ad15df026d0a3e217a5b2ba6b8469-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/18e225f8c8b011108ace4107d1ffb8909add2ebc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/866382d8d68ec308722fe18fc16b3db9f798dcc3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4ab5e291b2c8b0d46431c84c122543b90eb5fc39-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bbbce8109f305f744b785f653fb3e171c5c78688-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/664964fc67e44016196f4b683d0b45ad6ed6d427-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/275cc57a603ad15df026d0a3e217a5b2ba6b8469-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/18e225f8c8b011108ace4107d1ffb8909add2ebc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/866382d8d68ec308722fe18fc16b3db9f798dcc3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-4ab5e291b2c8b0d46431c84c122543b90eb5fc39-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4ab5e291b2c8b0d46431c84c122543b90eb5fc39-1500x1500.jpg"
+    },
+    {
+      "_id": "image-bbbce8109f305f744b785f653fb3e171c5c78688-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bbbce8109f305f744b785f653fb3e171c5c78688-1500x1500.jpg"
+    },
+    {
+      "_id": "image-664964fc67e44016196f4b683d0b45ad6ed6d427-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/664964fc67e44016196f4b683d0b45ad6ed6d427-1500x1500.jpg"
+    },
+    {
+      "_id": "image-275cc57a603ad15df026d0a3e217a5b2ba6b8469-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/275cc57a603ad15df026d0a3e217a5b2ba6b8469-1500x1500.jpg"
+    },
+    {
+      "_id": "image-18e225f8c8b011108ace4107d1ffb8909add2ebc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/18e225f8c8b011108ace4107d1ffb8909add2ebc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-866382d8d68ec308722fe18fc16b3db9f798dcc3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/866382d8d68ec308722fe18fc16b3db9f798dcc3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101-180669-c9981",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101-180669-c9981"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Brasil",
+    "submodel": "GR LT+ MPH",
+    "product_model": "Brasil GR LT+ MPH",
+    "sole_type": ""
+  }
+}

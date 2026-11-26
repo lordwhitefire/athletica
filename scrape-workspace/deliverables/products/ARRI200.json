@@ -1,0 +1,90 @@
+{
+  "id": "ARRI200",
+  "slug": "rinat-aries-nemesis-prime-jr-yellow",
+  "name": "Rinat Aries Némesis Prime Jr",
+  "model": "Aries Némesis Prime Jr",
+  "brand": "Rinat",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Aries Némesis Prime Jr",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-portero-color-amarillo-rinat-aries-nemesis-prime-jr_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-portero-color-amarillo-rinat-aries-nemesis-prime-jr_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-portero-amarillos-rinat-aries-nemesis-prime-jr_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-arquero-rinat-aries-nemesis-prime-jr-color-amarillo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-futbol-rinat-aries-nemesis-prime-jr-amarillos_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-guardameta-color-amarillo-rinat-aries-nemesis-prime-jr_5_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-portero-amarillos-rinat-aries-nemesis-prime-jr_6_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-portero-color-amarillo-rinat-aries-nemesis-prime-jr_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-portero-amarillos-rinat-aries-nemesis-prime-jr_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-arquero-rinat-aries-nemesis-prime-jr-color-amarillo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-futbol-rinat-aries-nemesis-prime-jr-amarillos_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-guardameta-color-amarillo-rinat-aries-nemesis-prime-jr_5_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/R/ARRI200_guantes-de-portero-amarillos-rinat-aries-nemesis-prime-jr_6_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/arri200",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/arri200"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Aries",
+    "submodel": "",
+    "product_model": "Aries Némesis Prime Jr",
+    "sole_type": ""
+  }
+}

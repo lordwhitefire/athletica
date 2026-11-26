@@ -1,0 +1,98 @@
+{
+  "id": "HV9960-092",
+  "slug": "short-nike-inter-tech-fleece-grey",
+  "name": "Nike Inter Tech Fleece",
+  "model": "Inter Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Inter Milan Nike Shorts - Gray",
+    "tagline": "Sporty freshness with Nerazzurri identity",
+    "intro": "These Nike Inter Tech Fleece shorts offer lightweight comfort and modern style for true Inter fans. Perfect for warm days, it maintains comfort without losing the spirit of the club.",
+    "collection": "",
+    "key_benefits": [
+      "Exclusive Inter design: Inspired by the club's DNA with modern details.",
+      "Technical Fleece fabric: Offers softness and breathability without adding weight.",
+      "Adjustable Waist: Elastic band with drawstring for a comfortable and secure fit.",
+      "Functional style: Ideal for training, walking or cheering on the team in summer.",
+      "Practical Pockets: Secure space for your essential items."
+    ],
+    "technical_details": {
+      "range": "Nike Inter Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_pantalon-corto-color-gris-nike-inter-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_pantalon-corto-color-gris-nike-inter-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_short-gris-nike-inter-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_pantalon-corto-nike-inter-tech-fleece-color-gris_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_short-nike-inter-tech-fleece-gris_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_pantalon-corto-color-gris-nike-inter-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_short-gris-nike-inter-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_pantalon-corto-nike-inter-tech-fleece-color-gris_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV9960-092_short-nike-inter-tech-fleece-gris_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv9960-092",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto Nike del Inter de Milán - gris",
+    "tagline": "Frescura deportiva con identidad nerazzurra",
+    "intro": "Este pantalón corto Nike Inter Tech Fleece ofrece comodidad ligera y estilo moderno para los verdaderos fans del Inter. Perfecto para los días cálidos, mantiene el confort sin perder el espíritu del club.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño exclusivo del Inter: Inspirado en el ADN del club con detalles modernos.",
+      "Tejido técnico Fleece: Ofrece suavidad y transpirabilidad sin añadir peso.",
+      "Cintura ajustable: Banda elástica con cordón para un ajuste cómodo y seguro.",
+      "Estilo funcional: Ideal para entrenar, pasear o animar al equipo en verano.",
+      "Bolsillos prácticos: Espacio seguro para tus objetos esenciales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv9960-092"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Inter Tech",
+    "submodel": "",
+    "product_model": "Inter Tech Fleece",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "030861-03",
+  "slug": "puma-standalone-yellow",
+  "name": "Puma Standalone",
+  "model": "Standalone",
+  "brand": "Puma",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma football shin guards with support tights - fluor yellow",
+    "tagline": "Protection and comfort for every game",
+    "intro": "The Puma Standalone soccer shin guards are designed for soccer players looking to combine protection, cushioning and stable support. Its PP cover incorporates EVA padding and is complemented by elastic meshes to help keep the shin pads correctly positioned during the game.",
+    "collection": "",
+    "key_benefits": [
+      "Resistant protection: Its construction helps protect the shin against the impacts of the game.",
+      "Greater cushioning: Padding helps absorb impacts and improve comfort.",
+      "Stable fit: The support meshes help keep the protections correctly placed during the game.",
+      "Comfort in movement: Its design allows you to move naturally during training and matches.",
+      "Secure Hold: The set is designed to offer a stable feeling while you run and change direction."
+    ],
+    "technical_details": {
+      "range": "Standalone",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/642e669b10ac796d24f2378c7629d2072fc288de-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/642e669b10ac796d24f2378c7629d2072fc288de-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cb6d37c29fd4a9de916f8bec0ac599c30c9d3f3e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/642e669b10ac796d24f2378c7629d2072fc288de-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cb6d37c29fd4a9de916f8bec0ac599c30c9d3f3e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-642e669b10ac796d24f2378c7629d2072fc288de-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/642e669b10ac796d24f2378c7629d2072fc288de-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cb6d37c29fd4a9de916f8bec0ac599c30c9d3f3e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cb6d37c29fd4a9de916f8bec0ac599c30c9d3f3e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030861-03",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - amarillas flúor",
+    "tagline": "Protección y comodidad para cada partido",
+    "intro": "Las espinilleras de fútbol Puma Standalone están diseñadas para futbolistas que buscan combinar protección, amortiguación y una sujeción estable. Su cubierta de PP incorpora acolchado de EVA y se complementa con mallas elásticas para ayudar a mantener las espinilleras correctamente colocadas durante el juego.",
+    "collection": "",
+    "key_benefits": [
+      "Protección resistente: Su construcción ayuda a proteger la espinilla frente a los impactos propios del juego.",
+      "Mayor amortiguación: El acolchado contribuye a absorber los impactos y mejorar la comodidad.",
+      "Ajuste estable: Las mallas de sujeción ayudan a mantener las protecciones correctamente colocadas durante el juego.",
+      "Comodidad en movimiento: Su diseño permite moverse con naturalidad durante entrenamientos y partidos.",
+      "Sujeción segura: El conjunto está pensado para ofrecer una sensación estable mientras corres y cambias de dirección."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030861-03"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Standalone",
+    "submodel": "",
+    "product_model": "Standalone",
+    "sole_type": ""
+  }
+}

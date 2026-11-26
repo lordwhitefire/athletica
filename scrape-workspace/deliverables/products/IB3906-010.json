@@ -1,0 +1,100 @@
+{
+  "id": "IB3906-010",
+  "slug": "camiseta-nike-atletico-wordmark-black",
+  "name": "Nike Atlético WordMark",
+  "model": "Atlético WordMark",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Atlético de Madrid 2025 2026 Nike Cotton T-shirt - Black",
+    "tagline": "Minimalism with athletic identity",
+    "intro": "The Atlético WordMark t-shirt offers a simple but powerful design to show off your passion with casual style.",
+    "collection": "",
+    "key_benefits": [
+      "Clean style: Simple graphic with the club name.",
+      "Comfortable fabric: Soft cotton for daily use.",
+      "Easy to combine: Ideal with jeans or sports pants."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético WordMark",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-color-negro-nike-atletico-wordmark_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-color-negro-nike-atletico-wordmark_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-negra-nike-atletico-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-nike-atletico-wordmark-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-nike-atletico-wordmark-negra_4_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-color-negro-nike-atletico-wordmark_5_detalle-cuello-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-color-negro-nike-atletico-wordmark_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-negra-nike-atletico-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-nike-atletico-wordmark-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-nike-atletico-wordmark-negra_4_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3906-010_camiseta-color-negro-nike-atletico-wordmark_5_detalle-cuello-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib3906-010",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón Nike del Atlético de Madrid 2025 2026 - negra",
+    "tagline": "Minimalismo con identidad atlética",
+    "intro": "La camiseta WordMark del Atlético ofrece un diseño sencillo pero poderoso para lucir tu pasión con estilo casual.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo limpio: Gráfico simple con el nombre del club.",
+      "Tejido cómodo: Algodón suave para uso diario.",
+      "Fácil de combinar: Ideal con jeans o pantalones deportivos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib3906-010"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Atlético",
+    "submodel": "",
+    "product_model": "Atlético WordMark",
+    "sole_type": ""
+  }
+}

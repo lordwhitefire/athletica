@@ -1,0 +1,113 @@
+{
+  "id": "084788-02-5",
+  "slug": "balon-puma-olympique-marsella-culture-talla-5-blue",
+  "name": "Puma Olympique Marsella Culture talla 5",
+  "model": "Olympique Marsella Culture talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Olympique de Marseille Puma soccer ball in size 5 - turquoise",
+    "tagline": "Marseille style with character",
+    "intro": "This Olympique de Marseille ball mixes tradition and modernity with a vibrant design and resistant materials. It is perfect for those looking to represent the club while training or playing with passion and precision.",
+    "collection": "",
+    "key_benefits": [
+      "Marseille design: Inspired by the club's culture and its unique colors.",
+      "High resistance: Durable structure for multiple gaming sessions.",
+      "Good control: Well-distributed panels for more precise touches.",
+      "Color llamativo: Excelente visibilidad en cualquier terreno.",
+      "Identidad deportiva: Juega con el escudo de tu equipo en cada pase."
+    ],
+    "technical_details": {
+      "range": "Puma Olympique Marsella Culture talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/882ceded2c9231ab7e8aef4915ba1dcf3d2b4ef9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/882ceded2c9231ab7e8aef4915ba1dcf3d2b4ef9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/15e769c9c4118c7256b39284dd7cf81b714f6a4e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/18f327de6063ee72650691dbab7f570380f13268-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/882ceded2c9231ab7e8aef4915ba1dcf3d2b4ef9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/15e769c9c4118c7256b39284dd7cf81b714f6a4e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/18f327de6063ee72650691dbab7f570380f13268-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-882ceded2c9231ab7e8aef4915ba1dcf3d2b4ef9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/882ceded2c9231ab7e8aef4915ba1dcf3d2b4ef9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-15e769c9c4118c7256b39284dd7cf81b714f6a4e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/15e769c9c4118c7256b39284dd7cf81b714f6a4e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-18f327de6063ee72650691dbab7f570380f13268-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/18f327de6063ee72650691dbab7f570380f13268-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084788-02-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Olympique de Marsella en talla 5 - turquesa",
+    "tagline": "Estilo marsellés con carácter",
+    "intro": "Este balón del Olympique de Marsella mezcla tradición y modernidad con un diseño vibrante y materiales resistentes. Es perfecto para quienes buscan representar al club mientras entrenan o juegan con pasión y precisión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño del Marsella: Inspirado en la cultura del club y sus colores únicos.",
+      "Alta resistencia: Estructura duradera para múltiples sesiones de juego.",
+      "Buen control: Paneles bien distribuidos para toques más precisos.",
+      "Color llamativo: Excelente visibilidad en cualquier terreno.",
+      "Identidad deportiva: Juega con el escudo de tu equipo en cada pase."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084788-02-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Olympique",
+    "submodel": "",
+    "product_model": "Olympique Marsella Culture talla 5",
+    "sole_type": ""
+  }
+}

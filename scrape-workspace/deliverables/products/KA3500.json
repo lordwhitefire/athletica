@@ -1,0 +1,96 @@
+{
+  "id": "KA3500",
+  "slug": "short-adidas-espana-downtown-blue",
+  "name": "adidas España DownTown",
+  "model": "España DownTown",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de la selección española 2026 - azul marino",
+    "tagline": "Estilo español con esencia futbolera",
+    "intro": "El Short adidas España DownTown fusiona la herencia de la selección española con un diseño urbano actual. Inspirado en los colores vibrantes de la bandera, es una prenda pensada para disfrutar del fútbol con comodidad dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad total de movimiento: Tejido ligero que acompaña cada paso.",
+      "Ajuste seguro: Cintura elástica con cordón regulable.",
+      "Inspiración nacional: Diseño basado en la identidad visual de España 2026.",
+      "Comodidad diaria: Ideal para descanso, entrenamientos suaves o uso casual."
+    ],
+    "technical_details": {
+      "range": "adidas España DownTown",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_pantalon-corto-color-azul-adidas-espana-downtown_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_pantalon-corto-color-azul-adidas-espana-downtown_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_short-azul-marino-adidas-espana-downtown_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_pantalon-corto-adidas-espana-downtown-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_short-adidas-espana-downtown-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_pantalon-corto-color-azul-adidas-espana-downtown_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_short-azul-marino-adidas-espana-downtown_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_pantalon-corto-adidas-espana-downtown-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA3500_short-adidas-espana-downtown-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka3500",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de la selección española 2026 - azul marino",
+    "tagline": "Estilo español con esencia futbolera",
+    "intro": "El Short adidas España DownTown fusiona la herencia de la selección española con un diseño urbano actual. Inspirado en los colores vibrantes de la bandera, es una prenda pensada para disfrutar del fútbol con comodidad dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad total de movimiento: Tejido ligero que acompaña cada paso.",
+      "Ajuste seguro: Cintura elástica con cordón regulable.",
+      "Inspiración nacional: Diseño basado en la identidad visual de España 2026.",
+      "Comodidad diaria: Ideal para descanso, entrenamientos suaves o uso casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka3500"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España DownTown",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "JP3989",
+  "slug": "camiseta-adidas-real-madrid-dna-grey",
+  "name": "adidas Real Madrid DNA",
+  "model": "Real Madrid DNA",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Short Sleeve Cotton T-Shirt - Gray",
+    "tagline": "Casual style with Madridista DNA",
+    "intro": "Show your passion with this adidas Real Madrid t-shirt, ideal to show off in your daily life. Its soft cotton fabric offers total comfort with a sporty and representative design.",
+    "collection": "",
+    "key_benefits": [
+      "Merengue pride: Distinctive Real Madrid graphic on the chest.",
+      "Guaranteed comfort: Soft-touch cotton for everyday use.",
+      "Versatile style: Classic design that combines with any look.",
+      "Relaxed fit: Regular cut that fits easily.",
+      "Urban use: Ideal for leisure, street or informal moments."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid DNA",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3989_camiseta-color-gris-adidas-real-madrid-dna_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3989_camiseta-color-gris-adidas-real-madrid-dna_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3989_camiseta-gris-adidas-real-madrid-dna_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3989_camiseta-adidas-real-madrid-dna-color-gris_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3989_camiseta-color-gris-adidas-real-madrid-dna_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3989_camiseta-gris-adidas-real-madrid-dna_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3989_camiseta-adidas-real-madrid-dna-color-gris_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3989",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Real Madrid - gris",
+    "tagline": "Estilo casual con ADN madridista",
+    "intro": "Demuestra tu pasión con esta camiseta adidas del Real Madrid, ideal para lucir en tu día a día. Su tejido de algodón suave ofrece confort total con un diseño deportivo y representativo.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo merengue: Gráfico distintivo del Real Madrid en el pecho.",
+      "Comodidad asegurada: Algodón suave al tacto para uso diario.",
+      "Estilo versátil: Diseño clásico que combina con cualquier look.",
+      "Ajuste relajado: Corte regular que se adapta con facilidad.",
+      "Uso urbano: Ideal para ocio, calle o momentos informales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3989"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid DNA",
+    "sole_type": ""
+  }
+}

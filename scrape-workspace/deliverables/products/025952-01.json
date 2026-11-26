@@ -1,0 +1,107 @@
+{
+  "id": "025952-01",
+  "slug": "gorra-puma-portugal-black",
+  "name": "Puma Portugal",
+  "model": "Portugal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Portugal national team Puma cap - black",
+    "tagline": "Portuguese pride in every detail",
+    "intro": "The Puma Portugal cap is the ideal accessory for those who want to always carry their passion for their team. It includes the official coat of arms and the name of the country, together with a design that combines comfort and style.",
+    "collection": "",
+    "key_benefits": [
+      "Portuguese identity: Official team crest and name Portugal embroidered on the front.",
+      "Distinctive details: Embroidered Puma logo for sporting authenticity.",
+      "Comfort: Adaptive fit for daily wear without discomfort.",
+      "Versatility: Ideal for both day to day and match days."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2b66ae0e3d929b9c6dec450bbf22c92ad0a3b0ec-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2b66ae0e3d929b9c6dec450bbf22c92ad0a3b0ec-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/92643c2a5a3436c83fa565ae1ece32650294bf7f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7c47273c208fcd197d45b8eda70068318f716e97-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2b66ae0e3d929b9c6dec450bbf22c92ad0a3b0ec-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/92643c2a5a3436c83fa565ae1ece32650294bf7f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7c47273c208fcd197d45b8eda70068318f716e97-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2b66ae0e3d929b9c6dec450bbf22c92ad0a3b0ec-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2b66ae0e3d929b9c6dec450bbf22c92ad0a3b0ec-1500x1500.jpg"
+    },
+    {
+      "_id": "image-92643c2a5a3436c83fa565ae1ece32650294bf7f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/92643c2a5a3436c83fa565ae1ece32650294bf7f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7c47273c208fcd197d45b8eda70068318f716e97-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7c47273c208fcd197d45b8eda70068318f716e97-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/025952-01",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra Puma de la selección de Portugal - negra",
+    "tagline": "Orgullo luso en cada detalle",
+    "intro": "La gorra Puma Portugal es el accesorio ideal para quienes quieren llevar siempre presente la pasión por su selección. Incluye el escudo oficial y el nombre del país, unidos a un diseño que combina comodidad y estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad portuguesa: Escudo oficial de la selección y nombre Portugal bordados en el frontal.",
+      "Detalles distintivos: Logotipo Puma bordado que aporta autenticidad deportiva.",
+      "Comodidad: Ajuste adaptable para un uso diario sin molestias.",
+      "Versatilidad: Ideal tanto para el día a día como para días de partido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/025952-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Portugal",
+    "submodel": "",
+    "product_model": "Portugal",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "DN1280-410",
+  "slug": "pantalon-nike-psg-entrenamiento-mujer-adv-strike-elite-blue",
+  "name": "Nike PSG Training Women ADV Strike Elite",
+  "model": "PSG entrenamiento mujer ADV Strike Elite",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike PSG entrenamiento mujer ADV Strike Elite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-largo-color-z-purpura-oscuro-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-largo-color-z-purpura-oscuro-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-chandal-azul-marino-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-chandal-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite-color-z-purpura-oscuro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-largo-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite-azul-marino_4_detalle-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-largo-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite-azul-marino_5_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-largo-color-z-purpura-oscuro-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-chandal-azul-marino-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-chandal-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite-color-z-purpura-oscuro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-largo-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite-azul-marino_4_detalle-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN1280-410_pantalon-largo-nike-psg-entrenamiento-mujer-dri-fit-adv-strike-elite-azul-marino_5_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dn1280-410",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dn1280-410"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "PSG Training",
+    "submodel": "",
+    "product_model": "PSG entrenamiento mujer ADV Strike Elite",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "784772-15",
+  "slug": "sudadera-puma-portugal-entrenamiento-blue",
+  "name": "Puma Portugal Training",
+  "model": "Portugal entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento Puma de la selección de Portugal 2026 - trullo",
+    "tagline": "Entrena con comodidad y estilo profesional",
+    "intro": "La sudadera de entrenamiento Puma de la selección de Portugal está diseñada para ofrecer rendimiento y confort en sesiones exigentes. Su diseño con detalles en contraste refleja la identidad moderna del combinado portugués.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Mantiene la piel seca gracias a su sistema de absorción del sudor.",
+      "Tejido técnico: 100% poliéster reciclado que aporta ligereza y transpirabilidad.",
+      "Diseño oficial: Parte de la colección de entrenamiento de la selección.",
+      "Confort térmico: Ideal para entrenamientos en condiciones frescas."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-color-azul-puma-portugal-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-color-azul-puma-portugal-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-trullo-puma-portugal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-puma-portugal-entrenamiento-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-puma-portugal-entrenamiento-trullo_4_detalle-acabado-mangas-y-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-color-azul-puma-portugal-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-trullo-puma-portugal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-puma-portugal-entrenamiento-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784772-15_sudadera-puma-portugal-entrenamiento-trullo_4_detalle-acabado-mangas-y-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/784772-15",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Puma de la selección de Portugal 2026 - trullo",
+    "tagline": "Entrena con comodidad y estilo profesional",
+    "intro": "La sudadera de entrenamiento Puma de la selección de Portugal está diseñada para ofrecer rendimiento y confort en sesiones exigentes. Su diseño con detalles en contraste refleja la identidad moderna del combinado portugués.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Mantiene la piel seca gracias a su sistema de absorción del sudor.",
+      "Tejido técnico: 100% poliéster reciclado que aporta ligereza y transpirabilidad.",
+      "Diseño oficial: Parte de la colección de entrenamiento de la selección.",
+      "Confort térmico: Ideal para entrenamientos en condiciones frescas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/784772-15"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Portugal",
+    "submodel": "",
+    "product_model": "Portugal entrenamiento",
+    "sole_type": ""
+  }
+}

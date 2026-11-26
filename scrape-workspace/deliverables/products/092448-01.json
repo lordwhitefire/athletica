@@ -1,0 +1,117 @@
+{
+  "id": "092448-01",
+  "slug": "mochila-puma-milan-culture-black",
+  "name": "Backpack Puma Milan Culture",
+  "model": "Backpack Puma Milan Culture",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "AC Milan Puma Sports Backpack - Black",
+    "tagline": "Functional design with club identity",
+    "intro": "The Puma Milan Culture Backpack combines sporty style with everyday practicality. Perfect for carrying your belongings comfortably while representing your team colors. Its light and resistant design makes it an essential ally for everyday use.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Licensed product for true fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Club Identity: Unique details of the team you love."
+    ],
+    "technical_details": {
+      "range": "Puma Milan Culture",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4e45012aaa019e0e337ad078ac0faeca9fa04afd-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4e45012aaa019e0e337ad078ac0faeca9fa04afd-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3d27417eff3e5215d327504a33b3fb6961c0e8e9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/65dd2aa3f5d423c934e80e4dd4cc8caf399f0b31-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c0a4602db7acbb81e7adf5606fbcb0579bb527b6-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4e45012aaa019e0e337ad078ac0faeca9fa04afd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3d27417eff3e5215d327504a33b3fb6961c0e8e9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/65dd2aa3f5d423c934e80e4dd4cc8caf399f0b31-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c0a4602db7acbb81e7adf5606fbcb0579bb527b6-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-4e45012aaa019e0e337ad078ac0faeca9fa04afd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4e45012aaa019e0e337ad078ac0faeca9fa04afd-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3d27417eff3e5215d327504a33b3fb6961c0e8e9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3d27417eff3e5215d327504a33b3fb6961c0e8e9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-65dd2aa3f5d423c934e80e4dd4cc8caf399f0b31-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/65dd2aa3f5d423c934e80e4dd4cc8caf399f0b31-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c0a4602db7acbb81e7adf5606fbcb0579bb527b6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c0a4602db7acbb81e7adf5606fbcb0579bb527b6-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092448-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte Puma del AC Milan - negra",
+    "tagline": "Diseño funcional con identidad de club",
+    "intro": "La Mochila Puma Milan Culture combina estilo deportivo con practicidad diaria. Perfecta para llevar tus pertenencias con comodidad mientras representas los colores de tu equipo. Su diseño ligero y resistente la convierte en una aliada esencial para el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Producto licenciado para los verdaderos fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Identidad de club: Detalles únicos del equipo que amas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092448-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Milan Culture",
+    "sole_type": ""
+  }
+}

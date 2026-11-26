@@ -1,0 +1,113 @@
+{
+  "id": "092462-11",
+  "slug": "mochila-puma-portugal-red",
+  "name": "Backpack Puma Portugal",
+  "model": "Backpack Puma Portugal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Portugal national team Puma sports backpack - red",
+    "tagline": "Organize your day with the style of Portugal",
+    "intro": "The Puma backpack of the Portugal national team combines functionality and sports design to accompany you in your daily life or training. Its red and green color combination reflects the identity of the team, making it an essential accessory for any fan.",
+    "collection": "",
+    "key_benefits": [
+      "Ample storage space: Compartments designed to organize your equipment.",
+      "Functional pockets: Side and front for quick access.",
+      "Official design: Licensed product of the Portugal national team.",
+      "Comodidad de transporte: Tirantes acolchados ajustables."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8c9766f1b33bfe033ad8b72a032b48fbb0c81d7b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8c9766f1b33bfe033ad8b72a032b48fbb0c81d7b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d13a6b3b133ab23675e46d3db3bf64d130461077-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/267b34591161e47de8799e9624959f6c149a3bef-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7d4205865602b3ee3e063481e90032d4fb15ba2c-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8c9766f1b33bfe033ad8b72a032b48fbb0c81d7b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d13a6b3b133ab23675e46d3db3bf64d130461077-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/267b34591161e47de8799e9624959f6c149a3bef-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7d4205865602b3ee3e063481e90032d4fb15ba2c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-8c9766f1b33bfe033ad8b72a032b48fbb0c81d7b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8c9766f1b33bfe033ad8b72a032b48fbb0c81d7b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d13a6b3b133ab23675e46d3db3bf64d130461077-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d13a6b3b133ab23675e46d3db3bf64d130461077-1500x1500.jpg"
+    },
+    {
+      "_id": "image-267b34591161e47de8799e9624959f6c149a3bef-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/267b34591161e47de8799e9624959f6c149a3bef-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7d4205865602b3ee3e063481e90032d4fb15ba2c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7d4205865602b3ee3e063481e90032d4fb15ba2c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092462-11",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma de la selección de Portugal - roja",
+    "tagline": "Organiza tu día con el estilo de Portugal",
+    "intro": "La mochila Puma de la selección de Portugal combina funcionalidad y diseño deportivo para acompañarte en tu día a día o entrenamientos. Su combinación de colores en rojo y verde refleja la identidad de la selección, convirtiéndola en un accesorio imprescindible para cualquier aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Amplio espacio de almacenamiento: Compartimentos diseñados para organizar tu equipamiento.",
+      "Bolsillos funcionales: Laterales y frontales para acceso rápido.",
+      "Diseño oficial: Producto licenciado de la selección de Portugal.",
+      "Comodidad de transporte: Tirantes acolchados ajustables."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092462-11"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Portugal",
+    "sole_type": ""
+  }
+}

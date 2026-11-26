@@ -1,0 +1,88 @@
+{
+  "id": "101133601P",
+  "slug": "uhlsport-nino-prediction-soft-flex-frame-blue",
+  "name": "Uhlsport Kids Prediction Soft Flex Frame",
+  "model": "niño Prediction Soft Flex Frame",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "niño Prediction Soft Flex Frame",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-portero-futbol-con-proteccion-en-los-dedos-color-azul-uhlsport--prediction-soft-flex-frame_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-portero-futbol-con-proteccion-en-los-dedos-color-azul-uhlsport--prediction-soft-flex-frame_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-portero-con-proteccion-azules-marino-uhlsport--prediction-soft-flex-frame_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-con-ferulas-uhlsport--prediction-soft-flex-frame-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-de-arquero-con-ferula-uhlsport--prediction-soft-flex-frame-azules-marino_4_detalle-cierre-en-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-con-varilla-color-azul-uhlsport--prediction-soft-flex-frame_5_detalle-caracteristicas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-portero-futbol-con-proteccion-en-los-dedos-color-azul-uhlsport--prediction-soft-flex-frame_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-portero-con-proteccion-azules-marino-uhlsport--prediction-soft-flex-frame_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-con-ferulas-uhlsport--prediction-soft-flex-frame-color-azul_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-de-arquero-con-ferula-uhlsport--prediction-soft-flex-frame-azules-marino_4_detalle-cierre-en-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/101133601P_guantes-con-varilla-color-azul-uhlsport--prediction-soft-flex-frame_5_detalle-caracteristicas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/101133601p",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/101133601p"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Kids",
+    "submodel": "",
+    "product_model": "niño Prediction Soft Flex Frame",
+    "sole_type": ""
+  }
+}

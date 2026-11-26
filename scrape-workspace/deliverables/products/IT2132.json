@@ -1,0 +1,98 @@
+{
+  "id": "IT2132",
+  "slug": "mochila-adidas-city-xplorer-blue",
+  "name": "Backpack adidas City Xplorer",
+  "model": "Backpack adidas City Xplorer",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "adidas City Xplorer sports backpack (13 x 24 x 37) cm - navy blue",
+    "tagline": "Light, compact and versatile",
+    "intro": "The adidas City Xplorer brings together outdoor inspiration in a small format, offering resistance and organization in a practical backpack that adapts to your daily urban life.",
+    "collection": "",
+    "key_benefits": [
+      "Compact format: 16.5 l capacity, ideal for carrying the essentials on the go.",
+      "Outdoor inspiration: Flap with buckles and external elastic cord to carry additional equipment.",
+      "Practical organization: Large main compartment and open side pockets for bottles or quick-access items.",
+      "Urban comfort: Adjustable straps ensure light and easy transportation."
+    ],
+    "technical_details": {
+      "range": "adidas City Xplorer",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-color-azul-adidas-city-xplorer_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-color-azul-adidas-city-xplorer_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-azul-marino-adidas-city-xplorer_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-adidas-city-xplorer-color-azul_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-adidas-city-xplorer-azul-marino_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-color-azul-adidas-city-xplorer_5_detalle-cierre.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-color-azul-adidas-city-xplorer_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-azul-marino-adidas-city-xplorer_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-adidas-city-xplorer-color-azul_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-adidas-city-xplorer-azul-marino_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT2132_mochila-color-azul-adidas-city-xplorer_5_detalle-cierre.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/it2132",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte adidas City Xplorer (13 x 24 x 37) cm - azul marino",
+    "tagline": "Ligera, compacta y versátil",
+    "intro": "La adidas City Xplorer reúne la inspiración outdoor en un formato reducido, ofreciendo resistencia y organización en una mochila práctica que se adapta a tu día a día urbano.",
+    "collection": "",
+    "key_benefits": [
+      "Formato compacto: Capacidad de 16,5 l ideal para llevar lo esencial en tus desplazamientos.",
+      "Inspiración outdoor: Solapa con hebillas y cordón elástico exterior para transportar equipo adicional.",
+      "Organización práctica: Compartimento principal amplio y bolsillos laterales abiertos para botellas u objetos de acceso rápido.",
+      "Comodidad urbana: Correas ajustables que aseguran un transporte ligero y sencillo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/it2132"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Backpack",
+    "submodel": "adidas City Xplorer",
+    "product_model": "Backpack adidas City Xplorer",
+    "sole_type": ""
+  }
+}

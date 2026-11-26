@@ -1,0 +1,101 @@
+{
+  "id": "084984-01",
+  "slug": "balon-puma-portugal-culture-mini-verde-rojo",
+  "name": "Puma Portugal Culture mini",
+  "model": "Portugal Culture mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Verde / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma soccer ball for the Portugal national team 2026 in mini size - green, red",
+    "tagline": "Passion for Portugal in mini format",
+    "intro": "The Puma Portugal Culture mini ball is perfect for fans and young footballers who want to show their passion for the national team. Its green and red design with the Portuguese shield makes it an ideal accessory for recreational play or collection.",
+    "collection": "",
+    "key_benefits": [
+      "Machine-stitched construction: Increased durability for recreational use.",
+      "Mini format: Perfect for improving control and technique.",
+      "Official design: Licensed product of the Portugal national team.",
+      "Versatile use: Ideal for play, light training or collection."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal Culture mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/59e804d6aae89a2fe9f528d4bab67a89eaa5a270-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/59e804d6aae89a2fe9f528d4bab67a89eaa5a270-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/01d12ccba83ae7d0e3dee950ba9754124f159f5b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/59e804d6aae89a2fe9f528d4bab67a89eaa5a270-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/01d12ccba83ae7d0e3dee950ba9754124f159f5b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-59e804d6aae89a2fe9f528d4bab67a89eaa5a270-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/59e804d6aae89a2fe9f528d4bab67a89eaa5a270-1500x1500.jpg"
+    },
+    {
+      "_id": "image-01d12ccba83ae7d0e3dee950ba9754124f159f5b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/01d12ccba83ae7d0e3dee950ba9754124f159f5b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084984-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la selección de Portugal 2026 en talla mini - verde, rojo",
+    "tagline": "Pasión por Portugal en formato mini",
+    "intro": "El balón mini Puma Portugal Culture es perfecto para fans y jóvenes futbolistas que quieren mostrar su pasión por la selección. Su diseño en verde y rojo con el escudo de Portugal lo convierte en un accesorio ideal para el juego recreativo o la colección.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción cosida a máquina: Mayor durabilidad para uso recreativo.",
+      "Formato mini: Perfecto para mejorar el control y la técnica.",
+      "Diseño oficial: Producto licenciado de la selección de Portugal.",
+      "Uso versátil: Ideal para juego, entrenamiento ligero o colección."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084984-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Portugal",
+    "submodel": "",
+    "product_model": "Portugal Culture mini",
+    "sole_type": ""
+  }
+}

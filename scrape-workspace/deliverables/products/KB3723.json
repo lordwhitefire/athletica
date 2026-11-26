@@ -1,0 +1,100 @@
+{
+  "id": "KB3723",
+  "slug": "camiseta-adidas-venezuela-26-red",
+  "name": "adidas Venezuela 26",
+  "model": "Venezuela 26",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación adidas de la selección de Venezuela 2026 - granate",
+    "tagline": "Granate con orgullo",
+    "intro": "Diseño impactante y cómodo, inspirado en las montañas de Venezuela. Ideal para representar a la Vinotinto.",
+    "collection": "",
+    "key_benefits": [
+      "Montañas de inspiración: Diseño que evoca la belleza de Tepuy.",
+      "Confort en cada paso: Corte ergonómico y material técnico.",
+      "Versátil: Ideal para animar, entrenar o vestir diario.",
+      "Vinotinto oficial: Escudo con acabados de alta calidad."
+    ],
+    "technical_details": {
+      "range": "adidas Venezuela 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-color-rojo-adidas-venezuela-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-color-rojo-adidas-venezuela-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-adidas-venezuela-26-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-adidas-venezuela-26-granate_4_detalle-cuello-y-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-granate-adidas-venezuela-26_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-color-rojo-adidas-venezuela-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-adidas-venezuela-26-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-adidas-venezuela-26-granate_4_detalle-cuello-y-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB3723_camiseta-granate-adidas-venezuela-26_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb3723",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la primera equipación adidas de la selección de Venezuela 2026 - granate",
+    "tagline": "Granate con orgullo",
+    "intro": "Diseño impactante y cómodo, inspirado en las montañas de Venezuela. Ideal para representar a la Vinotinto.",
+    "collection": "",
+    "key_benefits": [
+      "Montañas de inspiración: Diseño que evoca la belleza de Tepuy.",
+      "Confort en cada paso: Corte ergonómico y material técnico.",
+      "Versátil: Ideal para animar, entrenar o vestir diario.",
+      "Vinotinto oficial: Escudo con acabados de alta calidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb3723"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Venezuela",
+    "submodel": "",
+    "product_model": "Venezuela 26",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "HM2292",
+  "slug": "guantes-adidas-espana-blue",
+  "name": "adidas España",
+  "model": "España",
+  "brand": "adidas",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de fútbol adidas España - negros",
+    "tagline": "Orgullo y abrigo para tus manos",
+    "intro": "Estos guantes adidas celebran a la selección española con un tejido elástico y cálido para entrenar en clima frío. Confección en punto que aporta comodidad y ajuste fiable durante el uso.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido cálido: punto con alto contenido en acrílico que protege del frío.",
+      "Elasticidad cómoda: mezcla con elastano para un ajuste que acompaña el movimiento.",
+      "Identidad de equipo: diseño inspirado en la selección para entrenar con orgullo.",
+      "Uso diario: confort fiable para entrenamientos y desplazamientos en invierno."
+    ],
+    "technical_details": {
+      "range": "adidas España",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2292_guantes-termicos-color-z-purpura-oscuro-adidas-espana_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2292_guantes-termicos-color-z-purpura-oscuro-adidas-espana_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2292_guantes-frio-azul-marino-adidas-espana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2292_guantes-adidas-espana-color-z-purpura-oscuro_3_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2292_guantes-termicos-color-z-purpura-oscuro-adidas-espana_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2292_guantes-frio-azul-marino-adidas-espana_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2292_guantes-adidas-espana-color-z-purpura-oscuro_3_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm2292",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de fútbol adidas España - negros",
+    "tagline": "Orgullo y abrigo para tus manos",
+    "intro": "Estos guantes adidas celebran a la selección española con un tejido elástico y cálido para entrenar en clima frío. Confección en punto que aporta comodidad y ajuste fiable durante el uso.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido cálido: punto con alto contenido en acrílico que protege del frío.",
+      "Elasticidad cómoda: mezcla con elastano para un ajuste que acompaña el movimiento.",
+      "Identidad de equipo: diseño inspirado en la selección para entrenar con orgullo.",
+      "Uso diario: confort fiable para entrenamientos y desplazamientos en invierno."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm2292"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España",
+    "sole_type": ""
+  }
+}

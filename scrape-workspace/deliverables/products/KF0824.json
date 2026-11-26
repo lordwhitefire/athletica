@@ -1,0 +1,100 @@
+{
+  "id": "KF0824",
+  "slug": "camiseta-adidas-qatar-26-red",
+  "name": "adidas Qatar 26",
+  "model": "Qatar 26",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación adidas de la selección de Qatar 2026 - granate",
+    "tagline": "Qatar vibra en esta camiseta",
+    "intro": "Inspiración árabe y rendimiento deportivo unidos en una prenda de élite.",
+    "collection": "",
+    "key_benefits": [
+      "Cultura qatarí: Colores y formas inspiradas en Doha.",
+      "Diseño técnico: Camiseta lista para el juego o el día a día.",
+      "Alta ventilación: Te mantiene seco en condiciones exigentes.",
+      "Edición oficial: Escudo termosellado y acabado profesional."
+    ],
+    "technical_details": {
+      "range": "adidas Qatar 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-color-rojo-adidas-qatar-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-color-rojo-adidas-qatar-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-adidas-qatar-26-color-rojo_3_detalle-cuello-y-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-adidas-qatar-26-granate_4_detalle-lateral-y-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-granate-adidas-qatar-26_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-color-rojo-adidas-qatar-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-adidas-qatar-26-color-rojo_3_detalle-cuello-y-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-adidas-qatar-26-granate_4_detalle-lateral-y-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF0824_camiseta-granate-adidas-qatar-26_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kf0824",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la primera equipación adidas de la selección de Qatar 2026 - granate",
+    "tagline": "Qatar vibra en esta camiseta",
+    "intro": "Inspiración árabe y rendimiento deportivo unidos en una prenda de élite.",
+    "collection": "",
+    "key_benefits": [
+      "Cultura qatarí: Colores y formas inspiradas en Doha.",
+      "Diseño técnico: Camiseta lista para el juego o el día a día.",
+      "Alta ventilación: Te mantiene seco en condiciones exigentes.",
+      "Edición oficial: Escudo termosellado y acabado profesional."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kf0824"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Qatar",
+    "submodel": "",
+    "product_model": "Qatar 26",
+    "sole_type": ""
+  }
+}

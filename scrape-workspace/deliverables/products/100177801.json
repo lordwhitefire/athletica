@@ -1,0 +1,97 @@
+{
+  "id": "100177801",
+  "slug": "balon-uhlsport-reflex-ball-yellow",
+  "name": "Uhlsport Reflex Ball",
+  "model": "Reflex Ball",
+  "brand": "Uhlsport",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport Reflex Ball",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/de90633b656559cc23a13aaf77af7773c7314461-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/de90633b656559cc23a13aaf77af7773c7314461-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7a20d560f528baa80b8d95766b56d3703380305d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/917345296f6e40a5cd15e9baeb309c345241cebf-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/de90633b656559cc23a13aaf77af7773c7314461-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7a20d560f528baa80b8d95766b56d3703380305d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/917345296f6e40a5cd15e9baeb309c345241cebf-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-de90633b656559cc23a13aaf77af7773c7314461-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/de90633b656559cc23a13aaf77af7773c7314461-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7a20d560f528baa80b8d95766b56d3703380305d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7a20d560f528baa80b8d95766b56d3703380305d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-917345296f6e40a5cd15e9baeb309c345241cebf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/917345296f6e40a5cd15e9baeb309c345241cebf-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100177801",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100177801"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Reflex",
+    "submodel": "",
+    "product_model": "Reflex Ball",
+    "sole_type": ""
+  }
+}

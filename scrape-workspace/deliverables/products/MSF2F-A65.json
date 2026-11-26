@@ -1,0 +1,82 @@
+{
+  "id": "MSF2F-A65",
+  "slug": "new-balance-furon-v7-destroy-fg-orange",
+  "name": "New Balance Furon v7 Destroy FG",
+  "model": "Furon v7 Destroy",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Balance Furon v7 Destroy",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-de-futbol-color-naranja-new-balance-furon-v7-destroy-fg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-de-futbol-color-naranja-new-balance-furon-v7-destroy-fg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-de-futbol-con-tacos-naranjas-new-balance-furon-v7-destroy-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-futbol-new-balance-furon-v7-destroy-fg-color-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-de-futbol-tacos-new-balance-furon-v7-destroy-fg-naranjas_4_superior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-de-futbol-color-naranja-new-balance-furon-v7-destroy-fg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-de-futbol-con-tacos-naranjas-new-balance-furon-v7-destroy-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-futbol-new-balance-furon-v7-destroy-fg-color-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MSF2F-A65_botas-de-futbol-tacos-new-balance-furon-v7-destroy-fg-naranjas_4_superior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/msf2f-a65",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/msf2f-a65"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Furon",
+    "submodel": "v7 Destroy",
+    "product_model": "Furon v7 Destroy",
+    "sole_type": "FG"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "IF1341",
+  "slug": "adidas-f50-league-mg-white",
+  "name": "adidas F50 League MG",
+  "model": "F50 League",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "F50 League",
+      "sole_type": "MG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "MG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-para-cesped-artificial-color-blanco-adidas-f50-league-mg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-para-cesped-artificial-color-blanco-adidas-f50-league-mg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-cesped-artificial-blancas-adidas-f50-league-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-hierba-artificial-adidas-f50-league-mg-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_zapatillas-de-futbol-para-hierba-sintetica-adidas-f50-league-mg-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-con-tacos-color-blanco-adidas-f50-league-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-para-cesped-artificial-blancas-adidas-f50-league-mg_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-cesped-artificial-adidas-f50-league-mg-color-blanco_7_detalle-frontal.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-para-cesped-artificial-color-blanco-adidas-f50-league-mg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-cesped-artificial-blancas-adidas-f50-league-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-hierba-artificial-adidas-f50-league-mg-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_zapatillas-de-futbol-para-hierba-sintetica-adidas-f50-league-mg-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-con-tacos-color-blanco-adidas-f50-league-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-para-cesped-artificial-blancas-adidas-f50-league-mg_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1341_botas-de-futbol-cesped-artificial-adidas-f50-league-mg-color-blanco_7_detalle-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/if1341",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/if1341"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "F50",
+    "submodel": "League",
+    "product_model": "F50 League",
+    "sole_type": "MG"
+  }
+}

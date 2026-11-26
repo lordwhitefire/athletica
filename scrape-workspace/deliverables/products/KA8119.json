@@ -1,0 +1,94 @@
+{
+  "id": "KA8119",
+  "slug": "camiseta-adidas-argentina-nino-26-azul-blanco",
+  "name": "adidas Argentina Kids 26",
+  "model": "Argentina niño 26",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Azul / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de la primera equipación adidas de la selección argentina 2026 - albiceleste",
+    "tagline": "Pequeños hinchas, grandes sueños",
+    "intro": "La camiseta adidas Argentina niño 2026 permite a los más jóvenes mostrar su orgullo albiceleste. Diseñada con confort y estilo, es ideal para acompañar cada jugada desde el parque o la grada.",
+    "collection": "",
+    "key_benefits": [
+      "Confección cómoda: Tejido transpirable pensado para niños activos.",
+      "Diseño réplica: Mismo look que el de los jugadores en el Mundial 2026.",
+      "Escudo bordado: Detalle de calidad para mostrar la pasión por Argentina."
+    ],
+    "technical_details": {
+      "range": "adidas Argentina niño 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-color-blanco-y-azul-adidas-argentina-nino-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-color-blanco-y-azul-adidas-argentina-nino-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-albiceleste-adidas-argentina-nino-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-adidas-argentina-nino-26-color-blanco-y-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-adidas-argentina-nino-26-albiceleste_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-color-blanco-y-azul-adidas-argentina-nino-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-albiceleste-adidas-argentina-nino-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-adidas-argentina-nino-26-color-blanco-y-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8119_camiseta-adidas-argentina-nino-26-albiceleste_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ka8119",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de la primera equipación adidas de la selección argentina 2026 - albiceleste",
+    "tagline": "Pequeños hinchas, grandes sueños",
+    "intro": "La camiseta adidas Argentina niño 2026 permite a los más jóvenes mostrar su orgullo albiceleste. Diseñada con confort y estilo, es ideal para acompañar cada jugada desde el parque o la grada.",
+    "collection": "",
+    "key_benefits": [
+      "Confección cómoda: Tejido transpirable pensado para niños activos.",
+      "Diseño réplica: Mismo look que el de los jugadores en el Mundial 2026.",
+      "Escudo bordado: Detalle de calidad para mostrar la pasión por Argentina."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ka8119"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Argentina",
+    "submodel": "",
+    "product_model": "Argentina niño 26",
+    "sole_type": ""
+  }
+}

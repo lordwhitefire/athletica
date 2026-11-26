@@ -1,0 +1,96 @@
+{
+  "id": "IM4171-011",
+  "slug": "chaqueta-nike-repel-i96-woven-negro-amarillo",
+  "name": "Nike Repel I96 Woven",
+  "model": "Repel I96 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Negro / Amarillo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike I96 Track Jacket - Black, Yellow",
+    "tagline": "The nineties style returns to the playing field",
+    "intro": "The Nike Repel I96 Woven jacket recovers the essence of the iconic football jackets of the 90s with a renewed design for everyday use. Its water-repellent finish helps keep you dry in light rain, while its lightweight fabric and loose fit offer great freedom of movement.",
+    "collection": "",
+    "key_benefits": [
+      "Water repellent: Protects against light rain and humidity.",
+      "Nike I96 Inspiration: Classic design inspired by 90s football jackets.",
+      "Wide cut: Facilitates movement and allows you to wear other clothes underneath.",
+      "Side pockets: Practical space to store small items.",
+      "Elastic cuffs and waist: Help maintain shape and improve fit."
+    ],
+    "technical_details": {
+      "range": "Nike Repel I96 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4171-011_chaqueta-color-negro-y-amarillo-nike-repel-i96-woven_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4171-011_chaqueta-color-negro-y-amarillo-nike-repel-i96-woven_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4171-011_chaqueta-chandal-negra--amarilla-nike-repel-i96-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4171-011_chaqueta-entretiempo-nike-repel-i96-woven-color-negro-y-amarillo_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4171-011_chaqueta-color-negro-y-amarillo-nike-repel-i96-woven_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4171-011_chaqueta-chandal-negra--amarilla-nike-repel-i96-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4171-011_chaqueta-entretiempo-nike-repel-i96-woven-color-negro-y-amarillo_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im4171-011",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de chándal Nike I96 - negra, amarilla",
+    "tagline": "El estilo noventero vuelve al terreno de juego",
+    "intro": "La chaqueta Nike Repel I96 Woven recupera la esencia de las icónicas chaquetas de fútbol de los años 90 con un diseño renovado para el día a día. Su acabado repelente al agua ayuda a mantenerte seco frente a la lluvia ligera, mientras que su tejido ligero y su corte amplio ofrecen una gran libertad de movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Rrepelente al agua: Protege frente a la lluvia ligera y la humedad.",
+      "Inspiración Nike I96: Diseño clásico inspirado en las chaquetas de fútbol de los años 90.",
+      "Corte amplio: Facilita el movimiento y permite llevar otras prendas debajo.",
+      "Bolsillos laterales: Espacio práctico para guardar pequeños objetos.",
+      "Puños y cintura elásticos: Ayudan a mantener la forma y mejoran el ajuste."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im4171-011"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel I96 Woven",
+    "sole_type": ""
+  }
+}

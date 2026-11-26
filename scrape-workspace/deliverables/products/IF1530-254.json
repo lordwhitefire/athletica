@@ -1,0 +1,90 @@
+{
+  "id": "IF1530-254",
+  "slug": "pantalon-nike-repel-strike-woven-grey",
+  "name": "Nike Repel Strike+ Woven",
+  "model": "Repel Strike+ Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike long football training pants - gray",
+    "tagline": "Comfort and performance to train like a professional",
+    "intro": "The Nike Repel Strike+ Woven Pants are designed to offer freedom of movement, weather protection and a technical feel in every session. Thanks to its technical materials and stylized design, it adapts perfectly to high-level training.",
+    "collection": "",
+    "key_benefits": [
+      "Wind and rain protection: Water-repellent fabric to keep you dry during intense workouts.",
+      "Freedom of movement: Ergonomic cut with elastic areas that adapt to your game.",
+      "Professional design: Inspired by the training clothing of elite players.",
+      "Practical details: Side pockets and adjustable waist with interior drawstring."
+    ],
+    "technical_details": {
+      "range": "Nike Repel Strike+ Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1530-254_pantalon-largo-color-gris-nike-repel-strike--woven_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1530-254_pantalon-largo-color-gris-nike-repel-strike--woven_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1530-254_pantalon-chandal-gris-nike-repel-strike--woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1530-254_pantalon-chandal-nike-repel-strike--woven-color-gris_3_detalle-cintura-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1530-254_pantalon-largo-color-gris-nike-repel-strike--woven_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1530-254_pantalon-chandal-gris-nike-repel-strike--woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1530-254_pantalon-chandal-nike-repel-strike--woven-color-gris_3_detalle-cintura-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/if1530-254",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo para entrenamiento de fútbol Nike - gris",
+    "tagline": "Comodidad y rendimiento para entrenar como un profesional",
+    "intro": "El pantalón Nike Repel Strike+ Woven está diseñado para ofrecer libertad de movimiento, protección contra el clima y una sensación técnica en cada sesión. Gracias a sus materiales técnicos y su diseño estilizado, se adapta perfectamente a los entrenamientos de alto nivel.",
+    "collection": "",
+    "key_benefits": [
+      "Protección contra el viento y la lluvia: Tejido repelente al agua para mantenerte seco durante los entrenamientos intensos.",
+      "Libertad de movimiento: Corte ergonómico con zonas elásticas que se adaptan a tu juego.",
+      "Diseño profesional: Inspirado en la ropa de entrenamiento de los jugadores de élite.",
+      "Detalles prácticos: Bolsillos laterales y cintura ajustable con cordón interior."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/if1530-254"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel Strike+ Woven",
+    "sole_type": ""
+  }
+}

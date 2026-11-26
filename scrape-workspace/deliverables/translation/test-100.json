@@ -1,0 +1,712 @@
+{
+  "meta": {
+    "tested": 100,
+    "total": 100,
+    "concurrency": 12,
+    "elapsed_ms": 16155,
+    "cached": 0,
+    "errors": 9
+  },
+  "results": [
+    {
+      "id": "s-706a8b24e7be",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - amarillo flúor",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - fluorine yellow",
+      "ms": 1183,
+      "cached": false
+    },
+    {
+      "id": "s-53dff38b3250",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - azul traslúcido",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - translucent blue",
+      "ms": 1135,
+      "cached": false
+    },
+    {
+      "id": "s-8c73947e04fb",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - dorado traslúcido",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - translucent gold",
+      "ms": 1112,
+      "cached": false
+    },
+    {
+      "id": "s-a9c29547f40c",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - naranja flúor",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - fluorine orange",
+      "ms": 1132,
+      "cached": false
+    },
+    {
+      "id": "s-4365e59e8872",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - negro translúcido",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - translucent black",
+      "ms": 1108,
+      "cached": false
+    },
+    {
+      "id": "s-b07beb51078f",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - púrpura translúcido",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - translucent purple",
+      "ms": 1108,
+      "cached": false
+    },
+    {
+      "id": "s-3efabc466ac0",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - rojo translúcido",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - translucent red",
+      "ms": 1251,
+      "cached": false
+    },
+    {
+      "id": "s-f2e60b9281bc",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - rosa flúor",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - fluorine pink",
+      "ms": 1251,
+      "cached": false
+    },
+    {
+      "id": "s-65466505e392",
+      "source": "1 ud de taco de goma delantero de repuesto para botas Nike, Puma, New Balance,... de 6 mm - verde flúor",
+      "translation": "1 pc of replacement front rubber cleat for Nike, Puma, New Balance,... boots, 6 mm - fluorine green",
+      "ms": 1103,
+      "cached": false
+    },
+    {
+      "id": "s-4ecb7313e2f1",
+      "source": "1 ud de taco de goma delantero de repuesto para botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 6 mm - amarillo flúor",
+      "translation": "1 pc of replacement front rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 6 mm - fluorine yellow",
+      "ms": 1249,
+      "cached": false
+    },
+    {
+      "id": "s-4ffbe33d1e87",
+      "source": "1 ud de taco de goma delantero de repuesto para botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 6 mm - azul traslúcido",
+      "translation": "1 pc of replacement front rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 6 mm - translucent blue",
+      "ms": 1241,
+      "cached": false
+    },
+    {
+      "id": "s-e5d377d077ae",
+      "source": "1 ud de taco de goma delantero de repuesto para botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 6 mm - dorado",
+      "translation": "1 pc of replacement front rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 6 mm - gold",
+      "ms": 1099,
+      "cached": false
+    },
+    {
+      "id": "s-b3f0ff07eba5",
+      "source": "1 ud de taco de goma delantero de repuesto para botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 6 mm - naranja flúor",
+      "translation": "1 pc of replacement front rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 6 mm - fluorescent orange",
+      "ms": 737,
+      "cached": false
+    },
+    {
+      "id": "s-bbd6514a7369",
+      "source": "1 ud de taco de goma delantero de repuesto para botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 6 mm - rojo traslúcido",
+      "translation": "1 pc of replacement front rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 6 mm - translucent red",
+      "ms": 733,
+      "cached": false
+    },
+    {
+      "id": "s-3dc906132a51",
+      "source": "1 ud de taco de goma delantero de repuesto para botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 6 mm - rosa flúor",
+      "translation": "1 pc of replacement front rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 6 mm - fluorine pink",
+      "ms": 731,
+      "cached": false
+    },
+    {
+      "id": "s-a881e44567ed",
+      "source": "1 ud de taco de goma trasero de repuesto botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 9 mm - amarillo flúor",
+      "translation": "1 pc of replacement rear rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 9 mm - fluorine yellow",
+      "ms": 737,
+      "cached": false
+    },
+    {
+      "id": "s-10c29f3bba6d",
+      "source": "1 ud de taco de goma trasero de repuesto botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 9 mm - azul traslúcido",
+      "translation": "1 pc of replacement rear rubber heel for adidas boots (except World Cup, Kaiser and SG Lite sole) 9 mm - translucent blue",
+      "ms": 736,
+      "cached": false
+    },
+    {
+      "id": "s-592a1fec1297",
+      "source": "1 ud de taco de goma trasero de repuesto botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 9 mm - dorado",
+      "translation": "1 pc of replacement rear rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 9 mm - gold",
+      "ms": 735,
+      "cached": false
+    },
+    {
+      "id": "s-ca89d23ea8ab",
+      "source": "1 ud de taco de goma trasero de repuesto botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 9 mm - naranja flúor",
+      "translation": "1 pc of replacement rear rubber stud for adidas boots (except World Cup, Kaiser and SG Lite sole) 9 mm - fluorine orange",
+      "ms": 727,
+      "cached": false
+    },
+    {
+      "id": "s-a5db8e777c3b",
+      "source": "1 ud de taco de goma trasero de repuesto botas adidas (excepto World Cup, Kaiser y suela SG Lite) de 9 mm - rosa flúor",
+      "translation": "1 pc of replacement rear rubber heel for adidas boots (except World Cup, Kaiser and SG Lite sole) 9 mm - fluorine pink",
+      "ms": 730,
+      "cached": false
+    },
+    {
+      "id": "s-15a2b2ae912f",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - amarillo flúor",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - fluorine yellow",
+      "ms": 724,
+      "cached": false
+    },
+    {
+      "id": "s-967f880a51ba",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - azul traslúcido",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - translucent blue",
+      "ms": 733,
+      "cached": false
+    },
+    {
+      "id": "s-a00382a753c6",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - dorado traslúcido",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - translucent gold",
+      "ms": 1424,
+      "cached": false
+    },
+    {
+      "id": "s-36efd3eef1aa",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - naranja flúor",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - fluorine orange",
+      "ms": 720,
+      "cached": false
+    },
+    {
+      "id": "s-b8d13d187924",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - negro translúcido",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - translucent black",
+      "ms": 525,
+      "cached": false
+    },
+    {
+      "id": "s-44688b46dad2",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - púrpura translúcido",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - translucent purple",
+      "ms": 554,
+      "cached": false
+    },
+    {
+      "id": "s-86eaf39f2d02",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - rojo translúcido",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - translucent red",
+      "ms": 623,
+      "cached": false
+    },
+    {
+      "id": "s-2f0bb8474c74",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - rosa flúor",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... boots, 9 mm - fluorine pink",
+      "ms": 551,
+      "cached": false
+    },
+    {
+      "id": "s-6a2932734216",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - transparente",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - transparent",
+      "ms": 551,
+      "cached": false
+    },
+    {
+      "id": "s-a0a3d1bfca2b",
+      "source": "1 ud de taco de goma trasero de repuesto para botas Nike, Puma, New Balance,... de 9 mm - verde flúor",
+      "translation": "1 pc of replacement rear rubber cleat for Nike, Puma, New Balance,... 9 mm boots - fluorine green",
+      "ms": 555,
+      "cached": false
+    },
+    {
+      "id": "s-ea93493e96d0",
+      "source": "110 años de historia del Club América",
+      "translation": "110 years of history of Club América",
+      "ms": 3554,
+      "cached": false
+    },
+    {
+      "id": "s-42f62b7519dc",
+      "source": "110 años de historia y orgullo del Club América",
+      "translation": "110 years of history and pride of Club América",
+      "ms": 555,
+      "cached": false
+    },
+    {
+      "id": "s-a7eaa2f43a10",
+      "source": "12 uds. tacos recambiables de plástico TPU de 8x6mm posición delantera y 4x9mm posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - amarillo flúor",
+      "translation": "12 pcs. replaceable TPU plastic studs of 8x6mm front position and 4x9mm rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - fluorine yellow",
+      "ms": 3553,
+      "cached": false
+    },
+    {
+      "id": "s-c0492880b26e",
+      "source": "120 años de historia en la camiseta del Estrasburgo",
+      "translation": "120 years of history in the Strasbourg shirt",
+      "ms": 556,
+      "cached": false
+    },
+    {
+      "id": "s-5639ce646d09",
+      "source": "120 años de historia sobre el césped",
+      "translation": "120 years of history on the grass",
+      "ms": 3542,
+      "cached": false
+    },
+    {
+      "id": "s-eff5c46cb284",
+      "source": "125 años de historia en una camiseta especial",
+      "translation": "125 years of history in a special t-shirt",
+      "ms": 3541,
+      "cached": false
+    },
+    {
+      "id": "s-3ef6efb292c9",
+      "source": "125 años de historia húngara",
+      "translation": "125 years of Hungarian history",
+      "ms": 958,
+      "cached": false
+    },
+    {
+      "id": "s-f438e7f9bd7c",
+      "source": "125 años de historia y grandeza millonaria",
+      "translation": "125 years of history and millionaire greatness",
+      "ms": 953,
+      "cached": false
+    },
+    {
+      "id": "s-c3b3e91b4742",
+      "source": "125 años de pasión millonaria",
+      "translation": "125 years of millionaire passion",
+      "ms": 962,
+      "cached": false
+    },
+    {
+      "id": "s-e2ad65e84d71",
+      "source": "125 años de pasión xeneize",
+      "translation": "125 years of xeneize passion",
+      "ms": 953,
+      "cached": false
+    },
+    {
+      "id": "s-73ad302ad7e4",
+      "source": "12x tacos goma TPU botas fútbol adidas Studiamonds",
+      "translation": "12x TPU rubber studs football boots adidas Studiamonds",
+      "ms": 961,
+      "cached": false
+    },
+    {
+      "id": "s-130208b9fdf7",
+      "source": "14 uds. tacos recambiables de plástico TPU de 8x6mm + 1x6mm repuesto posición delantera y 4x9mm + 1x9mm repuesto posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - amarillo flúor",
+      "translation": "14 pcs. Replaceable TPU plastic studs of 8x6mm + 1x6mm replacement front position and 4x9mm + 1x9mm replacement rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - fluorine yellow",
+      "ms": 1031,
+      "cached": false
+    },
+    {
+      "id": "s-38dc987e1428",
+      "source": "14 uds. tacos recambiables de plástico TPU de 8x6mm + 1x6mm repuesto posición delantera y 4x9mm + 1x9mm repuesto posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - dorado",
+      "translation": "14 pcs. Replaceable TPU plastic studs of 8x6mm + 1x6mm replacement front position and 4x9mm + 1x9mm replacement rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - gold",
+      "ms": 1197,
+      "cached": false
+    },
+    {
+      "id": "s-a207cf028672",
+      "source": "14 uds. tacos recambiables de plástico TPU de 8x6mm + 1x6mm repuesto posición delantera y 4x9mm + 1x9mm repuesto posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - púrpura translúcido",
+      "translation": "14 pcs. Replaceable TPU plastic studs of 8x6mm + 1x6mm replacement front position and 4x9mm + 1x9mm replacement rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - translucent purple",
+      "ms": 1180,
+      "cached": false
+    },
+    {
+      "id": "s-ee25d090615b",
+      "source": "14 uds. tacos recambiables de plástico TPU de 8x6mm + 1x6mm repuesto posición delantera y 4x9mm + 1x9mm repuesto posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - verde flúor",
+      "translation": "14 pcs. Replaceable TPU plastic studs of 8x6mm + 1x6mm replacement front position and 4x9mm + 1x9mm replacement rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - fluorine green",
+      "ms": 1191,
+      "cached": false
+    },
+    {
+      "id": "s-1a60a6e468b2",
+      "source": "14 uds. tacos recambiables de plástico TPU de 9x6mm posición delantera y 5x9mm posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite). Incluye 1 llave hexagonal y 1 llave 3 puntas de acero zincado - rojo translúcido",
+      "translation": "14 pcs. Replaceable TPU plastic studs of 9x6mm front position and 5x9mm rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole). Includes 1 hexagonal wrench and 1 zinc-plated steel 3-point wrench - translucent red",
+      "ms": 1193,
+      "cached": false
+    },
+    {
+      "id": "s-af6261b74c79",
+      "source": "14x tacos TPU adidas Studiamonds rojo + 2 llaves",
+      "translation": "14x adidas Studiamonds TPU studs red + 2 keys",
+      "ms": 955,
+      "cached": false
+    },
+    {
+      "id": "s-5c6df4ac6437",
+      "source": "14x tacos goma TPU botas fútbol adidas Studiamonds",
+      "translation": "14x TPU rubber studs football boots adidas Studiamonds",
+      "ms": 952,
+      "cached": false
+    },
+    {
+      "id": "s-20cb844a91cd",
+      "source": "14x tacos goma TPU botas fútbol adidas Studiamonds oro",
+      "translation": "14x TPU rubber studs football boots adidas Studiamonds gold",
+      "ms": 568,
+      "cached": false
+    },
+    {
+      "id": "s-1514a3087280",
+      "source": "14x tacos goma TPU botas fútbol adidas Studiamonds púrpura",
+      "translation": "14x TPU rubber studs football boots adidas Studiamonds purple",
+      "ms": 568,
+      "cached": false
+    },
+    {
+      "id": "s-0e020040a74a",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - amarillo flúor",
+      "translation": "2 pcs. replaceable TPU plastic studs of 1x6mm front position and 1x9mm rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - fluorine yellow",
+      "ms": 992,
+      "cached": false
+    },
+    {
+      "id": "s-b3825cbd40ce",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - dorado",
+      "translation": "2 pcs. Replaceable TPU plastic studs of 1x6mm front position and 1x9mm rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - gold",
+      "ms": 985,
+      "cached": false
+    },
+    {
+      "id": "s-02216d578484",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - naranja flúor",
+      "translation": "2 pcs. replaceable TPU plastic studs of 1x6mm front position and 1x9mm rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - fluorine orange",
+      "ms": 988,
+      "cached": false
+    },
+    {
+      "id": "s-22392ef1e887",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol adidas (excepto World Cup, Kaiser y suela SG Lite) - rojo translúcido",
+      "translation": "2 pcs. replaceable TPU plastic studs of 1x6mm front position and 1x9mm rear position for adidas football boots (except World Cup, Kaiser and SG Lite sole) - translucent red",
+      "ms": 985,
+      "cached": false
+    },
+    {
+      "id": "s-2d997e37e72e",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol con métrica estándar (Nike, Puma, New Balance,...) - amarillo flúor",
+      "translation": "2 pcs. Replaceable TPU plastic studs with 1x6mm front position and 1x9mm rear position for football boots with standard measurements (Nike, Puma, New Balance,...) - fluorine yellow",
+      "ms": 992,
+      "cached": false
+    },
+    {
+      "id": "s-4a0ce53ec564",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol con métrica estándar (Nike, Puma, New Balance,...) - dorado traslúcido",
+      "translation": "2 pcs. Replaceable TPU plastic studs with 1x6mm front position and 1x9mm rear position for football boots with standard measurements (Nike, Puma, New Balance,...) - translucent gold",
+      "ms": 992,
+      "cached": false
+    },
+    {
+      "id": "s-70cd3e14d3b4",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol con métrica estándar (Nike, Puma, New Balance,...) - naranja flúor",
+      "translation": "2 pcs. Replaceable TPU plastic studs with 1x6mm front position and 1x9mm rear position for football boots with standard measurements (Nike, Puma, New Balance,...) - fluorine orange",
+      "ms": 992,
+      "cached": false
+    },
+    {
+      "id": "s-b48f8aed2631",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol con métrica estándar (Nike, Puma, New Balance,...) - púrpura translúcido",
+      "translation": "2 pcs. Replaceable TPU plastic studs with 1x6mm front position and 1x9mm rear position for football boots with standard measurements (Nike, Puma, New Balance,...) - translucent purple",
+      "ms": 990,
+      "cached": false
+    },
+    {
+      "id": "s-fe49ee019fff",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol con métrica estándar (Nike, Puma, New Balance,...) - rojo translúcido",
+      "translation": "2 pcs. Replaceable TPU plastic studs with 1x6mm front position and 1x9mm rear position for football boots with standard measurements (Nike, Puma, New Balance,...) - translucent red",
+      "ms": 988,
+      "cached": false
+    },
+    {
+      "id": "s-799ed84c6a4b",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol con métrica estándar (Nike, Puma, New Balance,...) - rosa flúor",
+      "translation": "2 pcs. Replaceable TPU plastic studs with 1x6mm front position and 1x9mm rear position for football boots with standard measurements (Nike, Puma, New Balance,...) - fluorine pink",
+      "ms": 981,
+      "cached": false
+    },
+    {
+      "id": "s-2f56850a8ea4",
+      "source": "2 uds. tacos recambiables de plástico TPU de 1x6mm posición delantera y 1x9mm posición trasera para botas de fútbol con métrica estándar (Nike, Puma, New Balance,...) - verde flúor",
+      "translation": "2 pcs. Replaceable TPU plastic studs with 1x6mm front position and 1x9mm rear position for football boots with standard measurements (Nike, Puma, New Balance,...) - fluorine green",
+      "ms": 705,
+      "cached": false
+    },
+    {
+      "id": "s-4e14b8906b9e",
+      "source": "25 hojas tácticas A4 fútbol sala",
+      "translation": "25 tactical sheets A4 futsal",
+      "ms": 473,
+      "cached": false
+    },
+    {
+      "id": "s-d1b6283520e0",
+      "source": "27 fichas magnéticas 12 mm",
+      "translation": "27 magnetic tokens 12 mm",
+      "ms": 498,
+      "cached": false
+    },
+    {
+      "id": "s-da508372e95e",
+      "source": "2a AS Mónaco 2024 2025",
+      "translation": "2nd AS Monaco 2024 2025",
+      "ms": 1115,
+      "cached": false
+    },
+    {
+      "id": "s-dcaad17b59cc",
+      "source": "2a Alemania Sané 2024",
+      "translation": "2nd Germany Sané 2024",
+      "ms": 1115,
+      "cached": false
+    },
+    {
+      "id": "s-f3bebfe61fd3",
+      "source": "2a Alemania Sané authentic 24",
+      "translation": "2a Germany Sané authentic 24",
+      "ms": 496,
+      "cached": false
+    },
+    {
+      "id": "s-abc8b8e69601",
+      "source": "2a Alemania mujer 2022 2023",
+      "translation": "2nd Germany women 2022 2023",
+      "ms": 485,
+      "cached": false
+    },
+    {
+      "id": "s-791cc7d97ca2",
+      "source": "2a Alemania niño 26",
+      "translation": "2nd Germany boy 26",
+      "ms": 1115,
+      "cached": false
+    },
+    {
+      "id": "s-d6938147870e",
+      "source": "2a Arabia Saudí 26",
+      "translation": "2nd Saudi Arabia 26",
+      "ms": 1119,
+      "cached": false
+    },
+    {
+      "id": "s-73db49253d89",
+      "source": "2a Argentina J.Álvarez 26",
+      "translation": "2nd Argentina J.Álvarez 26",
+      "ms": 494,
+      "cached": false
+    },
+    {
+      "id": "s-5a0e1a92ccb6",
+      "source": "2a Argentina mujer 26",
+      "translation": "2nd Argentina woman 26",
+      "ms": 1114,
+      "cached": false
+    },
+    {
+      "id": "s-07ffe288fd6f",
+      "source": "2a Argentina niño Messi 26",
+      "translation": "2nd Argentina boy Messi 26",
+      "ms": 484,
+      "cached": false
+    },
+    {
+      "id": "s-fe1cd43773c9",
+      "source": "2a Arsenal mujer 25 26",
+      "translation": "2nd Arsenal woman 25 26",
+      "ms": 1093,
+      "cached": false
+    },
+    {
+      "id": "s-f3a9c1ce9bc3",
+      "source": "2a Arsenal niño 25 26",
+      "translation": "2nd Arsenal child 25 26",
+      "ms": 1093,
+      "cached": false
+    },
+    {
+      "id": "s-6c3116101722",
+      "source": "2a Arsenal niño 26 27",
+      "translation": "2nd Arsenal child 26 27",
+      "ms": 1091,
+      "cached": false
+    },
+    {
+      "id": "s-cf3f89533e8c",
+      "source": "2a Athletic Club niño 2024 2025",
+      "translation": "2nd Athletic Club child 2024 2025",
+      "ms": 510,
+      "cached": false
+    },
+    {
+      "id": "s-b25e7e058792",
+      "source": "2a Athletic Club niño 26 27",
+      "translation": "2a Athletic Club child 26 27",
+      "ms": 512,
+      "cached": false
+    },
+    {
+      "id": "s-be1b6dbaa870",
+      "source": "2a Atlético 2023 2024 Dri-Fit Stadium",
+      "translation": "2a Atlético 2023 2024 Dri-Fit Stadium",
+      "ms": 510,
+      "cached": false
+    },
+    {
+      "id": "s-eadbe947bcb4",
+      "source": "2a Atlético 2024 2025 Dri-Fit Stadium",
+      "translation": "2a Atlético 2024 2025 Dri-Fit Stadium",
+      "ms": 914,
+      "cached": false
+    },
+    {
+      "id": "s-99db60f0dc76",
+      "source": "2a Atlético 25 26 Dri-Fit Stadium",
+      "translation": "2a Atlético 25 26 Dri-Fit Stadium",
+      "ms": 508,
+      "cached": false
+    },
+    {
+      "id": "s-1c249982b17b",
+      "source": "2a Atlético 26 27 Dri-Fit Stadium",
+      "translation": "2a Atlético 26 27 Dri-Fit Stadium",
+      "ms": 509,
+      "cached": false
+    },
+    {
+      "id": "s-3dd17f8a79cf",
+      "source": "2a Atlético J.Álvarez 25 26 Dri-Fit Stadium",
+      "translation": "2a Atlético J.Álvarez 25 26 Dri-Fit Stadium",
+      "ms": 510,
+      "cached": false
+    },
+    {
+      "id": "s-87b85b627b8b",
+      "source": "2a Atlético Match 25 26 DFADV",
+      "translation": "2nd Atlético Match 25 26 DFADV",
+      "ms": 510,
+      "cached": false
+    },
+    {
+      "id": "s-12f389e1570a",
+      "source": "2a Atlético Match 26 27 Aero-Fit",
+      "translation": "2a Atlético Match 26 27 Aero-Fit",
+      "ms": 510,
+      "cached": false
+    },
+    {
+      "id": "s-d8c535b57e87",
+      "source": "2a Atlético Pre-Match Dri-Fit",
+      "translation": "2a Atlético Pre-Match Dri-Fit",
+      "ms": 562,
+      "cached": false
+    },
+    {
+      "id": "s-3946fb638115",
+      "source": "2a Atlético mujer 2022 2023 Dri-Fit Stadium",
+      "translation": "2nd Atlético woman 2022 2023 Dri-Fit Stadium",
+      "ms": 551,
+      "cached": false
+    },
+    {
+      "id": "s-9b208cb78e89",
+      "source": "2a Atlético mujer 2023 2024 Dri-Fit Stadium",
+      "translation": "2nd Atlético woman 2023 2024 Dri-Fit Stadium",
+      "ms": 1552,
+      "cached": false
+    },
+    {
+      "id": "s-a86d4f257e24",
+      "source": "2a Atlético niño 2023 2024 Dri-Fit Stadium",
+      "translation": "2nd Atlético Niño 2023 2024 Dri-Fit Stadium",
+      "ms": 553,
+      "cached": false
+    },
+    {
+      "id": "s-c5f9342d3fe0",
+      "source": "2a Atlético niño 2024 2025 Dri-Fit Stadium",
+      "translation": "2a Atlético Niño 2024 2025 Dri-Fit Stadium",
+      "ms": 1546,
+      "cached": false
+    },
+    {
+      "id": "s-10e2e50d651e",
+      "source": "2a Atlético niño 25 26 Dri-Fit Stadium",
+      "translation": "2a Atlético child 25 26 Dri-Fit Stadium",
+      "ms": 551,
+      "cached": false
+    },
+    {
+      "id": "s-694ca2fe47cb",
+      "source": "2a Atlético niño 26 27 Dri-Fit Stadium",
+      "translation": "2a Atlético child 26 27 Dri-Fit Stadium",
+      "ms": 1546,
+      "cached": false
+    },
+    {
+      "id": "s-6305f3a2d1df",
+      "source": "2a Atlético niño Pre-Match Dri-Fit",
+      "translation": "2a Athletic Boy Pre-Match Dri-Fit",
+      "ms": 933,
+      "cached": false
+    },
+    {
+      "id": "s-0762ea1af939",
+      "source": "2a Barcelona Cubarsí 26 27 Dri-Fit Stadium UCL",
+      "translation": "2a Barcelona Cubarsí 26 27 Dri-Fit Stadium UCL",
+      "ms": 553,
+      "cached": false
+    },
+    {
+      "id": "s-7550b3effcfd",
+      "source": "2a Barcelona Cubarsí Match 26 27 Aero-Fit UCL",
+      "translation": "2nd Barcelona Cubarsí Match 26 27 Aero-Fit UCL",
+      "ms": 552,
+      "cached": false
+    },
+    {
+      "id": "s-bab3961094ff",
+      "source": "2a Barcelona Fermín 26 27 Dri-Fit Stadium UCL",
+      "translation": "2a Barcelona Fermín 26 27 Dri-Fit Stadium UCL",
+      "ms": 1549,
+      "cached": false
+    },
+    {
+      "id": "s-9b219c34ba26",
+      "source": "2a Barcelona L Yamal niño 25 26 DF Stadium UCL",
+      "translation": "2a Barcelona L Yamal child 25 26 DF Stadium UCL",
+      "ms": 1549,
+      "cached": false
+    },
+    {
+      "id": "s-84403318b124",
+      "source": "2a Barcelona L Yamal niño 2526 DF Stadium Liga",
+      "translation": "2a Barcelona L Yamal child 2526 DF Stadium Liga",
+      "ms": 3707,
+      "cached": false
+    },
+    {
+      "id": "s-410c53b9d29c",
+      "source": "2a Barcelona L Yamal niño Match 2526 DFADV UCL",
+      "translation": "2a Barcelona L Yamal child Match 2526 DFADV UCL",
+      "ms": 3859,
+      "cached": false
+    },
+    {
+      "id": "s-0ca4d1402b3d",
+      "source": "2a Barcelona Pedri niño 25 26 DF Stadium Liga",
+      "translation": "2nd Barcelona Pedri child 25 26 DF Stadium Liga",
+      "ms": 3703,
+      "cached": false
+    },
+    {
+      "id": "s-e8350a7fc9b1",
+      "source": "2a Barcelona Pedri niño 25 26 DF Stadium UCL",
+      "translation": "2a Barcelona Pedri child 25 26 DF Stadium UCL",
+      "ms": 3705,
+      "cached": false
+    }
+  ]
+}

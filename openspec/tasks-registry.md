@@ -4,6 +4,17 @@ The Orchestrator does not write here. When a new planning artifact lands (propos
 
 > **2026-11-16 — Full-marketplace change landed.** The `athletica-full-marketplace` change (proposal + design + 7 specs + tasks) is written under `openspec/changes/athletica-full-marketplace/`. The FM-01…FM-26 tasks below are the full-marketplace build, organized in 6 phases. The completed ROLL-12/13/14 items are the foundation FM builds on. The MVP-pending ROLL items (08/09/15/16/17/18) and ARCH-10/11 are **superseded** by the FM tasks as noted — they are kept below for history. Each FM task has `task.md` + `testing.md` under `openspec/tasks/FM-NN/` (intent, not instructions). Rule: one task at a time; phase gates between phases.
 
+## ALIGN — System alignment investigation (2026-11-17)
+
+**Source:** `ATHLETICA-OPENSPEC-ALIGNMENT-DRAFT.md` (`REMAREMA6/deliverables`, revision `19230dd`).
+**Status:** active | **Rule:** evidence only; no code, database, or specification rewrite until the owner approves the plan.
+
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| ALIGN-01 | Full system investigation against the alignment draft (A–H) + the section-6 plan | 🟡 In progress | Static half done (`findings.md`); runtime evidence: `/` 200, `/shop` 200, `/admin/products` 200 with JI1092. A/B/E fixed; door-key path fixed. Output: confirmed/denied table + plan for owner review. |
+
+---
+
 ## ARCH — Development App
 Track: `frontend/` | Status: development/private only | Local dev or private URL; never the public customer URL
 
@@ -162,11 +173,24 @@ These are the architecture decisions from the product-management handoff and six
 > - **Non-UI defects fixed 2026-11-17** per the audit (`AGENT-NON-UI-REMEDIATION.md`): stale types, unwired rate limit, dual URL-derivation path, global-tag Creators API, dead-link false-positives, publish-gate leak, fake popular sort, category filter. See `openspec/NON-UI-REMEDIATION-REPORT.md`.
 > - **UI** (admin editor, affiliate dashboard, media library page, product-detail redesign) — NOT built; handled separately.
 
+> **2026-11-17 — FM-01 gate merged; the app runs.** The two-file conflict is resolved:
+> `src/proxy.ts` validates the door key through `rollout.validate_door_key` for **both**
+> `/admin/*` and `/api/admin/*`; `src/middleware.ts` is deleted. `next dev` is on port 4252.
+> Runtime evidence: `/` **200** with the product, `/shop` **200** with the product,
+> `/admin/products` **200** with a real admin session and **JI1092 / active / $167.99**;
+> no door key → **404**. Defects fixed to get there: missing `createServiceClient` (A), the
+> public gate hiding `available_on IS NULL` (B), the missing admin list/publish functions (E),
+> and the door-key cookie not reaching `/api/admin/*` (now set on both paths). Still open: the
+> proper `next.config.ts` image host (components use `unoptimized`; that file is off-limits)
+> and the full 5-state admin UI. **FM-01-FIX is done; FM-01 stays open for the signin/invite
+> checks.**
+
 ### Phase 1 — Foundation
 
 | # | Task | Spec | Depends on | Status |
 |---|---|---|---|---|
-| FM-01 | Three-locks admin auth (invite + door-key + JWT role, fail-silent 404, getClaims, middleware, signin rate limit, invite issuance script) | foundation | — | ✅ |
+| FM-01 | Three-locks admin auth (invite + door-key + JWT role, fail-silent 404, getClaims, `proxy.ts` door-key check, signin rate limit, invite issuance script) | foundation | — | 🟡 door key + session verified; invite/rate-limit pending |
+| FM-01-FIX | Step zero for ALIGN-01: merge the door-key check into `proxy.ts`; remove `middleware.ts`; prove the app starts | foundation | FM-01 | ✅ merged 2026-11-17; server on 4252; no-key 404 |
 | FM-02 | Core data model migrations (products 5-status + variants + categories + collections + analytics fields + admin_access_keys + marketplaces seed + amazon_product_cache + affiliate.* schema + audit_log + RLS FORCE + select-wrappers) | foundation | — | ✅ |
 | FM-03 | Product page (`/product/[slug]`, 3-condition publish gate, gallery, buy-box, CTA states, generateMetadata, JSON-LD, no price, server-side view) | foundation | FM-02 | ✅ |
 | FM-04 | Redirect + click pipeline (`/go/[id]` 302, X-Robots-Tag, async click write, 6-layer bot filter, identity hash, 1h dedup, EU redaction, redirect rate-limit policy) | redirect-click | FM-02 | ✅ |

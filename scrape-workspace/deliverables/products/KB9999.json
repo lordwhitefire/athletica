@@ -1,0 +1,96 @@
+{
+  "id": "KB9999",
+  "slug": "pantalon-adidas-arsenal-entrenamiento-black",
+  "name": "adidas Arsenal Training",
+  "model": "Arsenal entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento adidas del Arsenal 2026 2027 - negro",
+    "tagline": "Entrena con el estilo del Arsenal",
+    "intro": "El pantalón largo de entrenamiento adidas del Arsenal 26 27 combina rendimiento, comodidad y diseño deportivo para acompañarte en cada sesión. Inspirado en la equipación de entrenamiento del club londinense, presenta un diseño negro con detalles naranjas y un corte ajustado que favorece la movilidad durante los ejercicios más exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirado en la ropa de entrenamiento utilizada por los jugadores.",
+      "FORMOTION: Favorece movimientos más naturales durante la actividad deportiva.",
+      "Corte ajustado: Proporciona una silueta deportiva sin limitar la movilidad.",
+      "Cintura ajustable: Permite personalizar el ajuste para una mayor comodidad."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-largo-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-largo-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-chandal-negro-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-chandal-adidas-arsenal-entrenamiento-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-largo-adidas-arsenal-entrenamiento-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-largo-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-chandal-negro-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-chandal-adidas-arsenal-entrenamiento-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9999_pantalon-largo-adidas-arsenal-entrenamiento-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb9999",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas del Arsenal 2026 2027 - negro",
+    "tagline": "Entrena con el estilo del Arsenal",
+    "intro": "El pantalón largo de entrenamiento adidas del Arsenal 26 27 combina rendimiento, comodidad y diseño deportivo para acompañarte en cada sesión. Inspirado en la equipación de entrenamiento del club londinense, presenta un diseño negro con detalles naranjas y un corte ajustado que favorece la movilidad durante los ejercicios más exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirado en la ropa de entrenamiento utilizada por los jugadores.",
+      "FORMOTION: Favorece movimientos más naturales durante la actividad deportiva.",
+      "Corte ajustado: Proporciona una silueta deportiva sin limitar la movilidad.",
+      "Cintura ajustable: Permite personalizar el ajuste para una mayor comodidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb9999"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Arsenal Training",
+    "submodel": "",
+    "product_model": "Arsenal entrenamiento",
+    "sole_type": ""
+  }
+}

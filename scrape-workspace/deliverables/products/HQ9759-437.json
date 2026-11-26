@@ -1,0 +1,96 @@
+{
+  "id": "HQ9759-437",
+  "slug": "pantalon-nike-inter-t90-woven-grey",
+  "name": "Nike Inter T90 Woven",
+  "model": "Inter T90 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de paseo Nike del Inter - gris oscuro",
+    "tagline": "Estilo sobrio con el sello nerazzurro",
+    "intro": "El pantalón Nike Inter T90 aporta una combinación perfecta de comodidad y estética. Con detalles naranjas y escudo bordado, es ideal para quienes viven el fútbol dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad del Inter: Logos bordados con contraste naranja que destaca.",
+      "Look moderno: Tono gris oscuro sobrio y combinable.",
+      "Diseño cómodo: Ajuste ergonómico para el día a día.",
+      "Parte del conjunto: Combina con la chaqueta T90 para look completo.",
+      "Inspiración retro: Sutil homenaje a la línea Total90 de Nike."
+    ],
+    "technical_details": {
+      "range": "Nike Inter T90 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9759-437_pantalon-largo-color-purpura-nike-inter-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9759-437_pantalon-largo-color-purpura-nike-inter-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9759-437_pantalon-chandal-purpura-nike-inter-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9759-437_pantalon-chandal-nike-inter-t90-color-purpura_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9759-437_pantalon-largo-color-purpura-nike-inter-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9759-437_pantalon-chandal-purpura-nike-inter-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9759-437_pantalon-chandal-nike-inter-t90-color-purpura_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq9759-437",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de paseo Nike del Inter - gris oscuro",
+    "tagline": "Estilo sobrio con el sello nerazzurro",
+    "intro": "El pantalón Nike Inter T90 aporta una combinación perfecta de comodidad y estética. Con detalles naranjas y escudo bordado, es ideal para quienes viven el fútbol dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad del Inter: Logos bordados con contraste naranja que destaca.",
+      "Look moderno: Tono gris oscuro sobrio y combinable.",
+      "Diseño cómodo: Ajuste ergonómico para el día a día.",
+      "Parte del conjunto: Combina con la chaqueta T90 para look completo.",
+      "Inspiración retro: Sutil homenaje a la línea Total90 de Nike."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq9759-437"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Inter T90",
+    "submodel": "",
+    "product_model": "Inter T90 Woven",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "050.5588-A",
+  "slug": "mallas-ho-soccer-raven-black",
+  "name": "Mallas Ho Soccer Raven",
+  "model": "Mallas Ho Soccer Raven",
+  "brand": "Ho Soccer",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Short goalkeeper tights with Ho Soccer protections - black",
+    "tagline": "Total mobility with essential protection",
+    "intro": "The Ho Soccer Raven Tights offer the perfect balance between freedom of movement and padding in key points. Designed for explosive goalkeepers.",
+    "collection": "",
+    "key_benefits": [
+      "Protection without restrictions: Hip reinforcements to absorb impacts.",
+      "Short and technical design: Agility without limitations.",
+      "Elastic fabric: Adapts to your every movement.",
+      "Ideal for training and matches: Versatile and durable."
+    ],
+    "technical_details": {
+      "range": "Ho Soccer Raven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3a4d10e0159c876c393ad621b637f8bd4332a387-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3a4d10e0159c876c393ad621b637f8bd4332a387-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2d20910f393d2ba1e42063ac47d65c2e6f16026f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3a4d10e0159c876c393ad621b637f8bd4332a387-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2d20910f393d2ba1e42063ac47d65c2e6f16026f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3a4d10e0159c876c393ad621b637f8bd4332a387-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3a4d10e0159c876c393ad621b637f8bd4332a387-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2d20910f393d2ba1e42063ac47d65c2e6f16026f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2d20910f393d2ba1e42063ac47d65c2e6f16026f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/050-5588-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Mallas cortas de portero con protecciones Ho Soccer - negras",
+    "tagline": "Movilidad total con protección esencial",
+    "intro": "La Mallas Ho Soccer Raven ofrece el balance perfecto entre libertad de movimiento y acolchado en los puntos clave. Pensada para porteros explosivos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección sin restricciones: Refuerzos en cadera para absorber impactos.",
+      "Diseño corto y técnico: Agilidad sin limitaciones.",
+      "Tejido elástico: Se adapta a cada movimiento.",
+      "Ideal para entreno y partido: Versátil y duradera."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/050-5588-a"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas Ho Soccer Raven",
+    "sole_type": ""
+  }
+}

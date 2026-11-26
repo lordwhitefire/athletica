@@ -1,0 +1,107 @@
+{
+  "id": "085224-01-5",
+  "slug": "balon-puma-borussia-dortmund-essentials-t-5-amarillo-negro",
+  "name": "Puma Borussia Dortmund Essentials T.5",
+  "model": "Borussia Dortmund Essentials T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Amarillo / Negro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Borussia Dortmund Puma soccer ball in size 5 - yellow, black",
+    "tagline": "Entrena con los colores del BVB",
+    "intro": "The Puma Borussia Dortmund Essentials Size 5 soccer ball is the perfect option for fans who want to enjoy soccer in the style of their favorite team. Its design incorporates the Dortmund crest, making it an ideal accessory. Made with durable materials and a machine-stitched construction, it offers good durability and a reliable touch with every shot.",
+    "collection": "",
+    "key_benefits": [
+      "Official Borussia Dortmund design: With club crest and characteristic colors.",
+      "Machine-stitched construction: Greater resistance for frequent use.",
+      "Talla 5: Medida oficial para entrenamientos y partidos recreativos.",
+      "Versatile use: Ideal for hobbyists of all ages."
+    ],
+    "technical_details": {
+      "range": "Puma Borussia Dortmund Essentials T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d203541facb3f702886b9167f58976b014e41e05-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d203541facb3f702886b9167f58976b014e41e05-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e1bfce4b0fc1aec563ca7a5a91a655414578a624-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/83455cb4c3c52b36528fd4ac6c42bbf4b3306a7e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d203541facb3f702886b9167f58976b014e41e05-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e1bfce4b0fc1aec563ca7a5a91a655414578a624-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/83455cb4c3c52b36528fd4ac6c42bbf4b3306a7e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-d203541facb3f702886b9167f58976b014e41e05-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d203541facb3f702886b9167f58976b014e41e05-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e1bfce4b0fc1aec563ca7a5a91a655414578a624-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e1bfce4b0fc1aec563ca7a5a91a655414578a624-1500x1500.jpg"
+    },
+    {
+      "_id": "image-83455cb4c3c52b36528fd4ac6c42bbf4b3306a7e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/83455cb4c3c52b36528fd4ac6c42bbf4b3306a7e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085224-01-5",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Borussia Dortmund en talla 5 - amarillo, negro",
+    "tagline": "Entrena con los colores del BVB",
+    "intro": "El balón de fútbol Puma del Borussia Dortmund Essentials Talla 5 es la opción perfecta para los aficionados que quieren disfrutar del fútbol con el estilo de su equipo favorito. Su diseño incorpora el escudo del Dortmund, convirtiéndolo en un accesorio ideal. Fabricado con materiales resistentes y una construcción cosida a máquina, ofrece una buena durabilidad y un toque fiable en cada golpeo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Borussia Dortmund: Con escudo del club y colores característicos.",
+      "Construcción cosida a máquina: Mayor resistencia para el uso frecuente.",
+      "Talla 5: Medida oficial para entrenamientos y partidos recreativos.",
+      "Uso versátil: Ideal para aficionados de todas las edades."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085224-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Borussia",
+    "submodel": "",
+    "product_model": "Borussia Dortmund Essentials T.5",
+    "sole_type": ""
+  }
+}

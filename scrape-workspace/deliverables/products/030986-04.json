@@ -1,0 +1,92 @@
+{
+  "id": "030986-04",
+  "slug": "puma-ultra-twist-sleeve-blue",
+  "name": "Puma Ultra Twist Sleeve",
+  "model": "Ultra Twist Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - Blue",
+    "tagline": "Maximum lightness and enveloping fit",
+    "intro": "The Puma Ultra Twist Sleeve offers a perfect combination of comfort, stability and freedom of movement. Designed for players who do not want distractions during the game.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Ultralight: Protection that does not weigh down or interfere with the game.",
+      "Tight fit: Includes elastic tights for firm and comfortable support.",
+      "Flexible design: Conforms to the shape of your leg for a natural feel.",
+      "Sporty style: Eye-catching graphics to stand out on the field.",
+      "No distractions: Stay protected without losing agility."
+    ],
+    "technical_details": {
+      "range": "Ultra Twist Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a533a83c18e823e121ec61daea60a008b8079a21-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a533a83c18e823e121ec61daea60a008b8079a21-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a533a83c18e823e121ec61daea60a008b8079a21-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a533a83c18e823e121ec61daea60a008b8079a21-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a533a83c18e823e121ec61daea60a008b8079a21-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030986-04",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - azules",
+    "tagline": "Máxima ligereza y ajuste envolvente",
+    "intro": "Las Puma Ultra Twist Sleeve ofrecen una combinación perfecta de comodidad, estabilidad y libertad de movimiento. Diseñadas para jugadores que no quieren distracciones durante el partido.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Ultraligeras: Protección que no pesa ni interfiere en el juego.",
+      "Ajuste ceñido: Incluyen mallas elásticas para un soporte firme y cómodo.",
+      "Diseño flexible: Se adapta a la forma de tu pierna para una sensación natural.",
+      "Estilo deportivo: Gráficos llamativos para destacar en el campo.",
+      "Sin distracciones: Mantente protegido sin perder agilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030986-04"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Twist Sleeve",
+    "product_model": "Ultra Twist Sleeve",
+    "sole_type": ""
+  }
+}

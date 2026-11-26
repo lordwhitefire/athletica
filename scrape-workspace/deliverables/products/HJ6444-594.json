@@ -1,0 +1,96 @@
+{
+  "id": "HJ6444-594",
+  "slug": "pantalon-nike-barcelona-tech-fleece-purple",
+  "name": "Nike Barcelona Tech Fleece",
+  "model": "Barcelona Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del FC Barcelona - púrpura",
+    "tagline": "Diseño premium para tu día a día",
+    "intro": "Este pantalón Nike Tech Fleece del Barça combina tecnología moderna con estilo deportivo para los más exigentes. Perfecto para mantener el calor sin añadir peso.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blaugrana: Escudo del Barça bordado en la pierna.",
+      "Tejido técnico: Aislamiento ligero gracias a la tecnología Tech Fleece.",
+      "Comodidad moderna: Corte estilizado y cintura ajustable.",
+      "Almacenamiento práctico: Bolsillos laterales con cremallera."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-largo-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-largo-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-chandal-purpura-nike-barcelona-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-chandal-nike-barcelona-tech-fleece-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-largo-color-purpura-nike-barcelona-tech-fleece_1_completa-frontal.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-largo-color-azul-nike-barcelona-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-chandal-purpura-nike-barcelona-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-chandal-nike-barcelona-tech-fleece-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6444-594_pantalon-largo-color-purpura-nike-barcelona-tech-fleece_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6444-594",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del FC Barcelona - púrpura",
+    "tagline": "Diseño premium para tu día a día",
+    "intro": "Este pantalón Nike Tech Fleece del Barça combina tecnología moderna con estilo deportivo para los más exigentes. Perfecto para mantener el calor sin añadir peso.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blaugrana: Escudo del Barça bordado en la pierna.",
+      "Tejido técnico: Aislamiento ligero gracias a la tecnología Tech Fleece.",
+      "Comodidad moderna: Corte estilizado y cintura ajustable.",
+      "Almacenamiento práctico: Bolsillos laterales con cremallera."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6444-594"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Barcelona Tech",
+    "submodel": "",
+    "product_model": "Barcelona Tech Fleece",
+    "sole_type": ""
+  }
+}

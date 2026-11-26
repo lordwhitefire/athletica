@@ -1,0 +1,100 @@
+{
+  "id": "JP3993",
+  "slug": "short-adidas-real-madrid-mujer-entrenamiento-grey",
+  "name": "adidas Real Madrid Women Training",
+  "model": "Real Madrid mujer entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Women's Training Shorts - Gray",
+    "tagline": "Lightweight performance to train in style",
+    "intro": "These Real Madrid women's training shorts offer comfort and freshness in every movement. Its shorter cut than usual and its breathable fabric make it an essential garment for training.",
+    "collection": "",
+    "key_benefits": [
+      "Freedom of movement: Short cut that facilitates mobility in each exercise.",
+      "Keeps you dry: AEROREADY technology that absorbs sweat.",
+      "Feminine fit: Designed for women's comfort and shape.",
+      "Real Madrid pride: Heat-transferred shield without adding weight.",
+      "Total versatility: Ideal for training or casual sports use."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid mujer entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3993_pantalon-corto-color-gris-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3993_pantalon-corto-color-gris-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3993_pantalon-corto-adidas-real-madrid-mujer-entrenamiento-color-gris_3_detalle-lateral-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3993_short-gris-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3993_pantalon-corto-color-gris-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3993_pantalon-corto-adidas-real-madrid-mujer-entrenamiento-color-gris_3_detalle-lateral-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3993_short-gris-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3993",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto para mujer de entrenamiento adidas del Real Madrid - gris",
+    "tagline": "Rendimiento ligero para entrenar con estilo",
+    "intro": "Este short de entrenamiento para mujer del Real Madrid ofrece comodidad y frescura en cada movimiento. Su corte más corto de lo habitual y su tejido transpirable lo convierten en una prenda esencial para el entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad de movimiento: Corte corto que facilita la movilidad en cada ejercicio.",
+      "Te mantiene seca: Tecnología AEROREADY que absorbe el sudor.",
+      "Ajuste femenino: Pensado para el confort y la forma de la mujer.",
+      "Orgullo madridista: Escudo termotransferido sin añadir peso.",
+      "Versatilidad total: Ideal para entrenamiento o uso deportivo casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3993"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid mujer entrenamiento",
+    "sole_type": ""
+  }
+}

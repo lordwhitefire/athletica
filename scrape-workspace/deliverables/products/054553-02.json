@@ -1,0 +1,103 @@
+{
+  "id": "054553-02",
+  "slug": "toalla-puma-team-pequena-red",
+  "name": "Toalla Puma Team pequeña",
+  "model": "Toalla Puma Team pequeña",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports towel (50 x 100 cm) - red",
+    "tagline": "Absorption and style after each game",
+    "intro": "The Puma Team small towel combines comfort and performance in a compact format. Ideal for drying off after training or showering with a functional and elegant design.",
+    "collection": "",
+    "key_benefits": [
+      "Soft touch: High quality cotton for maximum comfort.",
+      "Quick drying: Fiber mix optimized to absorb without retaining moisture.",
+      "Ideal size: Perfect for training, gym or daily use.",
+      "Puma Design: Sporty look with identity."
+    ],
+    "technical_details": {
+      "range": "Puma Team pequeña",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/57d4f1dd42faabab88274f3b815c069c9a92d9ac-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/57d4f1dd42faabab88274f3b815c069c9a92d9ac-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f0b62edc38c4e8c9352f3b69124d97332439bd1e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8b800366b41d3d86409f279432d6d701143d3117-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/57d4f1dd42faabab88274f3b815c069c9a92d9ac-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f0b62edc38c4e8c9352f3b69124d97332439bd1e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8b800366b41d3d86409f279432d6d701143d3117-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-57d4f1dd42faabab88274f3b815c069c9a92d9ac-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/57d4f1dd42faabab88274f3b815c069c9a92d9ac-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f0b62edc38c4e8c9352f3b69124d97332439bd1e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f0b62edc38c4e8c9352f3b69124d97332439bd1e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8b800366b41d3d86409f279432d6d701143d3117-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8b800366b41d3d86409f279432d6d701143d3117-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/054553-02",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Toalla deportiva Puma (50 x 100 cm) - roja",
+    "tagline": "Absorción y estilo tras cada partido",
+    "intro": "La toalla Puma Team pequeña combina comodidad y rendimiento en un formato compacto. Ideal para secarte tras entrenar o ducharte con un diseño funcional y elegante.",
+    "collection": "",
+    "key_benefits": [
+      "Tacto suave: Algodón de alta calidad para máxima comodidad.",
+      "Secado rápido: Mezcla de fibras optimizada para absorber sin retener humedad.",
+      "Tamaño ideal: Perfecta para entrenos, gimnasio o uso diario.",
+      "Diseño Puma: Look deportivo con identidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/054553-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'toalla'",
+    "root_model": "Toalla",
+    "submodel": "",
+    "product_model": "Toalla Puma Team pequeña",
+    "sole_type": ""
+  }
+}

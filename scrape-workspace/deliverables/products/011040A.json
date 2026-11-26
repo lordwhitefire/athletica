@@ -1,0 +1,119 @@
+{
+  "id": "011040A",
+  "slug": "adidas-world-cup-sg-black",
+  "name": "adidas World Cup SG",
+  "model": "World Cup",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "World Cup",
+      "sole_type": "SG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "SG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9a1f2144b50c31b00f5d61fb37454c0eb2029f36-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9a1f2144b50c31b00f5d61fb37454c0eb2029f36-1600x1600.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/dd8bdf8ea5af8a9d5e5d50d76fdf27a66d0b9235-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44cb9e48a98846aa2ac349b66b102a5f595f3932-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2d1e85160daa77a1b70befd1f3fb51ad2e56c5d5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b388d7ad57c29e0de8e58e1f7293d8f691dce640-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cc3fc93b3f72ec07d03e9bf3abed6e88e649aee3-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b3a52afa271222b411ab0f327963f7f34848151e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d21d3c805959a6f2ecccc65f3c4355c9ee1c9512-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9a1f2144b50c31b00f5d61fb37454c0eb2029f36-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/dd8bdf8ea5af8a9d5e5d50d76fdf27a66d0b9235-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44cb9e48a98846aa2ac349b66b102a5f595f3932-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2d1e85160daa77a1b70befd1f3fb51ad2e56c5d5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b388d7ad57c29e0de8e58e1f7293d8f691dce640-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cc3fc93b3f72ec07d03e9bf3abed6e88e649aee3-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b3a52afa271222b411ab0f327963f7f34848151e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d21d3c805959a6f2ecccc65f3c4355c9ee1c9512-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9a1f2144b50c31b00f5d61fb37454c0eb2029f36-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9a1f2144b50c31b00f5d61fb37454c0eb2029f36-1600x1600.jpg"
+    },
+    {
+      "_id": "image-dd8bdf8ea5af8a9d5e5d50d76fdf27a66d0b9235-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/dd8bdf8ea5af8a9d5e5d50d76fdf27a66d0b9235-1500x1500.jpg"
+    },
+    {
+      "_id": "image-44cb9e48a98846aa2ac349b66b102a5f595f3932-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/44cb9e48a98846aa2ac349b66b102a5f595f3932-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2d1e85160daa77a1b70befd1f3fb51ad2e56c5d5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2d1e85160daa77a1b70befd1f3fb51ad2e56c5d5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b388d7ad57c29e0de8e58e1f7293d8f691dce640-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b388d7ad57c29e0de8e58e1f7293d8f691dce640-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cc3fc93b3f72ec07d03e9bf3abed6e88e649aee3-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cc3fc93b3f72ec07d03e9bf3abed6e88e649aee3-1600x1600.jpg"
+    },
+    {
+      "_id": "image-b3a52afa271222b411ab0f327963f7f34848151e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b3a52afa271222b411ab0f327963f7f34848151e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d21d3c805959a6f2ecccc65f3c4355c9ee1c9512-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d21d3c805959a6f2ecccc65f3c4355c9ee1c9512-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/011040a",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/011040a"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "World",
+    "submodel": "Cup",
+    "product_model": "World Cup",
+    "sole_type": "SG"
+  }
+}

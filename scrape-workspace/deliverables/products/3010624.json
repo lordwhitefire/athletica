@@ -1,0 +1,82 @@
+{
+  "id": "3010624",
+  "slug": "munich-gresca-genius-red",
+  "name": "Munich Gresca Genius",
+  "model": "Gresca Genius",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Gresca Genius",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-multitaco-color-rojo-munich-gresca-genius-624_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-multitaco-color-rojo-munich-gresca-genius-624_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_multitaco-rojas-munich-gresca-genius-624_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_zapatillas-multitaco-munich-gresca-genius-624-color-rojo_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-turf-munich-gresca-genius-624-rojas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-taco-turf-color-rojo-munich-gresca-genius-624_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-multitaco-rojas-munich-gresca-genius-624_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-multitaco-color-rojo-munich-gresca-genius-624_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_multitaco-rojas-munich-gresca-genius-624_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_zapatillas-multitaco-munich-gresca-genius-624-color-rojo_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-turf-munich-gresca-genius-624-rojas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-taco-turf-color-rojo-munich-gresca-genius-624_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3010624_botas-multitaco-rojas-munich-gresca-genius-624_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/3010624",
+    "language": "es",
+    "category": "Botas multitaco",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas multitaco"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/3010624"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Gresca",
+    "submodel": "Genius",
+    "product_model": "Gresca Genius",
+    "sole_type": ""
+  }
+}

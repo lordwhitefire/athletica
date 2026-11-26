@@ -1,0 +1,86 @@
+{
+  "id": "FS9763",
+  "slug": "calcetines-media-cana-adidas-alphaskin-crew-ultralight-black",
+  "name": "media caña adidas Alphaskin Crew Ultralight",
+  "model": "media caña adidas Alphaskin Crew Ultralight",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "media caña adidas Alphaskin Crew Ultralight",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9763_imagen-de-los-calcetines-de-entrenamiento-de-futbol-adidas-alphaskin-crew-ultralight-2020-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9763_imagen-de-los-calcetines-de-entrenamiento-de-futbol-adidas-alphaskin-crew-ultralight-2020-negro_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9763_imagen-de-los-calcetines-de-entrenamiento-de-futbol-adidas-alphaskin-crew-ultralight-2020-negro_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9763_imagen-de-los-calcetines-de-entrenamiento-de-futbol-adidas-alphaskin-crew-ultralight-2020-negro_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/f/s/fs9763_imagen-de-los-calcetines-de-entrenamiento-de-futbol-adidas-alphaskin-crew-ultralight-2020-negro_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fs9763",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fs9763"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "media",
+    "submodel": "caña adidas Alphaskin Crew Ultralight",
+    "product_model": "media caña adidas Alphaskin Crew Ultralight",
+    "sole_type": ""
+  }
+}

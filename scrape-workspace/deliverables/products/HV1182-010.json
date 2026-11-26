@@ -1,0 +1,92 @@
+{
+  "id": "HV1182-010",
+  "slug": "short-nike-t90-dri-fit-woven-black",
+  "name": "Nike T90 Dri-Fit Woven",
+  "model": "T90 Dri-Fit Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Nike - negro",
+    "tagline": "Entrena con energía y estilo total black",
+    "intro": "Este short Nike T90 Dri-Fit negro destaca por su versatilidad y estética impecable. Diseñado para ofrecer libertad de movimiento y gestión del sudor, es tu aliado perfecto para entrenamientos intensos o días activos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño elegante: Color negro versátil que combina con todo.",
+      "Máxima transpirabilidad: Tecnología Dri-FIT que expulsa el sudor.",
+      "Confort asegurado: Tejido suave y ligero para uso prolongado."
+    ],
+    "technical_details": {
+      "range": "Nike T90 Dri-Fit Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-010_pantalon-corto-color-negro-nike-t90-mujer-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-010_pantalon-corto-color-negro-nike-t90-mujer-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-010_short-negro-nike-t90-mujer-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-010_pantalon-corto-nike-t90-mujer-dri-fit-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-010_pantalon-corto-color-negro-nike-t90-mujer-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-010_short-negro-nike-t90-mujer-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV1182-010_pantalon-corto-nike-t90-mujer-dri-fit-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv1182-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike - negro",
+    "tagline": "Entrena con energía y estilo total black",
+    "intro": "Este short Nike T90 Dri-Fit negro destaca por su versatilidad y estética impecable. Diseñado para ofrecer libertad de movimiento y gestión del sudor, es tu aliado perfecto para entrenamientos intensos o días activos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño elegante: Color negro versátil que combina con todo.",
+      "Máxima transpirabilidad: Tecnología Dri-FIT que expulsa el sudor.",
+      "Confort asegurado: Tejido suave y ligero para uso prolongado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv1182-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "T90",
+    "submodel": "",
+    "product_model": "T90 Dri-Fit Woven",
+    "sole_type": ""
+  }
+}

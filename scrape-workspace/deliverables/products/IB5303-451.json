@@ -1,0 +1,96 @@
+{
+  "id": "IB5303-451",
+  "slug": "pantalon-nike-inglaterra-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike Inglaterra Training Dri-Fit Strike",
+  "model": "Inglaterra entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "England National Team Nike Training Long Pants - Navy",
+    "tagline": "England's long training pants",
+    "intro": "The Nike England Dri-FIT Strike Pants are designed to offer comfort and performance during every training session. Its navy blue design reflects the sports style of the English team.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT Technology: Wicks sweat away to keep skin dry and comfortable.",
+      "Elastic knit fabric: Promotes freedom of movement during training.",
+      "Zippered hems: Make it easier to put on and take off the pants with sneakers.",
+      "Strike Design: Inspired by the clothing used by professional players."
+    ],
+    "technical_details": {
+      "range": "Nike Inglaterra entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-largo-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-largo-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-chandal-azul-marino-nike-inglaterra-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-chandal-nike-inglaterra-entrenamiento-dri-fit-strike-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-largo-nike-inglaterra-entrenamiento-dri-fit-strike-azul-marino_4_detalle-bajos-pantalon.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-largo-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-chandal-azul-marino-nike-inglaterra-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-chandal-nike-inglaterra-entrenamiento-dri-fit-strike-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5303-451_pantalon-largo-nike-inglaterra-entrenamiento-dri-fit-strike-azul-marino_4_detalle-bajos-pantalon.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib5303-451",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de entrenamiento Nike de la selección de Inglaterra - azul marino",
+    "tagline": "El pantalón largo de entrenamiento de Inglaterra",
+    "intro": "El pantalón Nike Inglaterra Dri-FIT Strike está diseñado para ofrecer comodidad y rendimiento durante cada sesión de entrenamiento. Su diseño en color azul marino refleja el estilo deportivo de la selección inglesa.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Nike Dri-FIT: Evacúa el sudor para mantener la piel seca y cómoda.",
+      "Tejido Knit elástico: Favorece la libertad de movimiento durante el entrenamiento.",
+      "Bajos con cremallera: Facilitan poner y quitar el pantalón con zapatillas.",
+      "Diseño Strike: Inspirado en las prendas utilizadas por los jugadores profesionales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib5303-451"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Inglaterra",
+    "submodel": "",
+    "product_model": "Inglaterra entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

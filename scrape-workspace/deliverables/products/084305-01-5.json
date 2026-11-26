@@ -1,0 +1,97 @@
+{
+  "id": "084305-01-5",
+  "slug": "balon-puma-orbita-liga-portugal-25-hybrid-talla-5-white",
+  "name": "Puma Orbita Liga Portugal 25 Hybrid talla 5",
+  "model": "Orbita Liga Portugal 25 Hybrid talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Orbita Liga Portugal 25 Hybrid talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2ea1c8ccdeee74ae4eafee62b10aa8b1686a0ff2-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2ea1c8ccdeee74ae4eafee62b10aa8b1686a0ff2-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0ce0d3e0de9b1f0c0dc3187d4c023fa4062a71f5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d9d281ddee4f926cdc15d17638e67c20e4e9f2cb-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2ea1c8ccdeee74ae4eafee62b10aa8b1686a0ff2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0ce0d3e0de9b1f0c0dc3187d4c023fa4062a71f5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d9d281ddee4f926cdc15d17638e67c20e4e9f2cb-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2ea1c8ccdeee74ae4eafee62b10aa8b1686a0ff2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2ea1c8ccdeee74ae4eafee62b10aa8b1686a0ff2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0ce0d3e0de9b1f0c0dc3187d4c023fa4062a71f5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0ce0d3e0de9b1f0c0dc3187d4c023fa4062a71f5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d9d281ddee4f926cdc15d17638e67c20e4e9f2cb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d9d281ddee4f926cdc15d17638e67c20e4e9f2cb-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084305-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084305-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita Liga Portugal 25 Hybrid talla 5",
+    "sole_type": ""
+  }
+}

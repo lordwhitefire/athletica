@@ -1,0 +1,98 @@
+{
+  "id": "JY1085",
+  "slug": "pantalon-adidas-real-madrid-nino-icon-blue",
+  "name": "adidas Real Madrid Kids Icon",
+  "model": "Real Madrid niño Icon",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo infantil adidas del Real Madrid - azul",
+    "tagline": "Comodidad legendaria con aire retro",
+    "intro": "El pantalón Icon del Real Madrid para niño fusiona inspiración clásica con funcionalidad actual. Pantalón azul, con las tres rayas en los lados y escudo bordado.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño clásico: Silueta retro con espíritu futbolero.",
+      "Versatilidad total: Ideal para entrenar o vestir casual.",
+      "Escudo visible: Detalle oficial bordado que refuerza la identidad."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid niño Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-largo-color-azul-adidas-real-madrid-nino-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-largo-color-azul-adidas-real-madrid-nino-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-chandal-azul-adidas-real-madrid-nino-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-chandal-adidas-real-madrid-nino-icon-color-azul_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-largo-adidas-real-madrid-nino-icon-azul_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-largo-color-azul-adidas-real-madrid-nino-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-chandal-azul-adidas-real-madrid-nino-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-chandal-adidas-real-madrid-nino-icon-color-azul_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY1085_pantalon-largo-adidas-real-madrid-nino-icon-azul_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jy1085",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo infantil adidas del Real Madrid - azul",
+    "tagline": "Comodidad legendaria con aire retro",
+    "intro": "El pantalón Icon del Real Madrid para niño fusiona inspiración clásica con funcionalidad actual. Pantalón azul, con las tres rayas en los lados y escudo bordado.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño clásico: Silueta retro con espíritu futbolero.",
+      "Versatilidad total: Ideal para entrenar o vestir casual.",
+      "Escudo visible: Detalle oficial bordado que refuerza la identidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jy1085"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid niño Icon",
+    "sole_type": ""
+  }
+}

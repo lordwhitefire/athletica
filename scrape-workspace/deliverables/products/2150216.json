@@ -1,0 +1,84 @@
+{
+  "id": "2150216",
+  "slug": "munich-mundial-u-white",
+  "name": "Munich Mundial U",
+  "model": "Mundial U",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mundial U",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_5_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/2150216_imagen-de-las-botas-de-futbol-munich-mundial-u-blanco-negro_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/2150216",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/2150216"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Mundial",
+    "submodel": "U",
+    "product_model": "Mundial U",
+    "sole_type": ""
+  }
+}

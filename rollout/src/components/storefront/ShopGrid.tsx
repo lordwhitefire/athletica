@@ -66,7 +66,7 @@ export function ShopGrid(props: {
           return (
             <Link key={p.id} href={`/product/${p.slug}`} className="group block">
               <div className="relative aspect-square overflow-hidden rounded-lg bg-neutral-900">
-                {p.main_image && <Image src={p.main_image} alt={p.name} fill sizes="(max-width:768px) 50vw, 25vw" className="object-cover" />}
+                {p.main_image && <Image src={p.main_image} alt={p.name} fill unoptimized sizes="(max-width:768px) 50vw, 25vw" className="object-cover" />}
               </div>
               <h3 className={`mt-2 truncate text-sm ${oos ? 'text-neutral-500 line-through' : 'text-white'}`} title={oos ? 'Out of Stock' : p.name}>
                 {p.name}

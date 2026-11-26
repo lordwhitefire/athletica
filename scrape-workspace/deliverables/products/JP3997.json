@@ -1,0 +1,102 @@
+{
+  "id": "JP3997",
+  "slug": "chaqueta-adidas-real-madrid-all-weather-green",
+  "name": "adidas Real Madrid All Weather",
+  "model": "Real Madrid All Weather",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas jacket - light green",
+    "tagline": "Total protection to train in style",
+    "intro": "This adidas Real Madrid jacket is ideal for days of light rain or wind. Its water-repellent technical fabric and foldable hood guarantee protection without losing mobility.",
+    "collection": "",
+    "key_benefits": [
+      "Functional design: Inspired by the club's official training kit.",
+      "Weather Protection: Repels water to keep you dry in light rain.",
+      "Extra practicality: Integrated folding hood for adjustable coverage.",
+      "Club style: Printed Real Madrid crest on the chest.",
+      "Sustainable construction: Made in part with recycled materials."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid All Weather",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-color-verde-adidas-real-madrid-all-weather_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-color-verde-adidas-real-madrid-all-weather_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-chandal-verde-claro-adidas-real-madrid-all-weather_2_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-entretiempo-adidas-real-madrid-all-weather-color-verde_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-adidas-real-madrid-all-weather-verde-claro_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-color-verde-adidas-real-madrid-all-weather_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-chandal-verde-claro-adidas-real-madrid-all-weather_2_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-entretiempo-adidas-real-madrid-all-weather-color-verde_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3997_chaqueta-adidas-real-madrid-all-weather-verde-claro_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3997",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta adidas del Real Madrid - verde claro",
+    "tagline": "Protección total para entrenar con estilo",
+    "intro": "Esta chaqueta adidas del Real Madrid es ideal para los días de lluvia ligera o viento. Su tecido técnico repelente al agua y capucha plegable garantizan protección sin perder movilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño funcional: Inspirado en la equipación oficial de entrenamiento del club.",
+      "Protección climática: Repele el agua para mantenerte seco bajo lluvia ligera.",
+      "Practicidad extra: Capucha plegable integrada para una cobertura ajustable.",
+      "Estilo del club: Escudo estampado del Real Madrid en el pecho.",
+      "Confección sostenible: Elaborada en parte con materiales reciclados."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3997"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid All Weather",
+    "sole_type": ""
+  }
+}

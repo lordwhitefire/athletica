@@ -1,0 +1,94 @@
+{
+  "id": "JY7035",
+  "slug": "sudadera-adidas-argentina-entrenamiento-white",
+  "name": "adidas Argentina Training",
+  "model": "Argentina entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Argentina national team 2026 adidas training sweatshirt - white",
+    "tagline": "A shield that shelters and motivates",
+    "intro": "With the adidas Argentina 2026 sweatshirt you train in style and without losing temperature. Part of the official collection, it is your ideal companion to warm up or wear with pride.",
+    "collection": "",
+    "key_benefits": [
+      "Light insulation: Keeps you warm without losing mobility.",
+      "Premium aesthetics: Inspired by high-level football fashion.",
+      "Full functionality: Adjustable hood and elastic cuffs."
+    ],
+    "technical_details": {
+      "range": "adidas Argentina entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-color-blanco-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-color-blanco-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-blanca-adidas-argentina-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-adidas-argentina-entrenamiento-color-blanco_3_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-adidas-argentina-entrenamiento-blanca_4_detalle-acabado-mangas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-color-blanco-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-blanca-adidas-argentina-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-adidas-argentina-entrenamiento-color-blanco_3_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7035_sudadera-adidas-argentina-entrenamiento-blanca_4_detalle-acabado-mangas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jy7035",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas de la selección argentina 2026 - blanca",
+    "tagline": "Un escudo que abriga y motiva",
+    "intro": "Con la sudadera adidas Argentina 2026 entrenas con estilo y sin perder temperatura. Parte de la colección oficial, es tu compañera ideal para calentar o vestir con orgullo.",
+    "collection": "",
+    "key_benefits": [
+      "Aislamiento ligero: Te mantiene abrigado sin perder movilidad.",
+      "Estética premium: Inspirada en la moda futbolera de alto nivel.",
+      "Funcionalidad total: Capucha ajustable y puños elásticos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jy7035"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Argentina",
+    "submodel": "",
+    "product_model": "Argentina entrenamiento",
+    "sole_type": ""
+  }
+}

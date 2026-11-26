@@ -1,0 +1,96 @@
+{
+  "id": "KD5821-A",
+  "slug": "gorro-adidas-espana-marron",
+  "name": "Gorro adidas España",
+  "model": "Gorro adidas España",
+  "brand": "adidas",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorro adidas de la selección de España - beige",
+    "tagline": "Estilo futbolero con identidad española",
+    "intro": "El gorro adidas España es el complemento perfecto para mostrar tu pasión por la selección en tu día a día. Inspirado en la segunda equipación de España, combina un diseño moderno con un toque clásico.",
+    "collection": "",
+    "key_benefits": [
+      "Cobertura completa: Ala envolvente que protege del sol.",
+      "Diseño cómodo: Tejido ligero para uso prolongado.",
+      "Estilo oficial España: Representa a la selección en tu día a día.",
+      "Uso versátil: Ideal para ocio, viajes o actividades al aire libre."
+    ],
+    "technical_details": {
+      "range": "adidas España",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5821-A_gorro-color-blanco-adidas-espana_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5821-A_gorro-color-blanco-adidas-espana_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5821-A_gorro-blanco-adidas-espana_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5821-A_gorro-color-blanco-adidas-espana_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD5821-A_gorro-blanco-adidas-espana_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kd5821-a",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Gorro adidas de la selección de España - beige",
+    "tagline": "Estilo futbolero con identidad española",
+    "intro": "El gorro adidas España es el complemento perfecto para mostrar tu pasión por la selección en tu día a día. Inspirado en la segunda equipación de España, combina un diseño moderno con un toque clásico.",
+    "collection": "",
+    "key_benefits": [
+      "Cobertura completa: Ala envolvente que protege del sol.",
+      "Diseño cómodo: Tejido ligero para uso prolongado.",
+      "Estilo oficial España: Representa a la selección en tu día a día.",
+      "Uso versátil: Ideal para ocio, viajes o actividades al aire libre."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kd5821-a"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "high",
+    "rule": "name contains 'gorro'",
+    "root_model": "Gorro",
+    "submodel": "",
+    "product_model": "Gorro adidas España",
+    "sole_type": ""
+  }
+}

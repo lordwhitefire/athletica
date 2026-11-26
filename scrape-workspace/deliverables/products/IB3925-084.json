@@ -1,0 +1,96 @@
+{
+  "id": "IB3925-084",
+  "slug": "camiseta-nike-barcelona-nino-football-grey",
+  "name": "Nike Barcelona Kids Football",
+  "model": "Barcelona niño Football",
+  "brand": "Nike",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de algodón de manga corta Nike del FC Barcelona 2025 2026 - gris",
+    "tagline": "Para los más pequeños fans del Barça",
+    "intro": "Camiseta Nike cómoda, suave y con todo el orgullo azulgrana para niños que sueñan con el Camp Nou.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón suave: Perfecto para uso diario y confort duradero.",
+      "Diseño casual: Ideal para jugar, entrenar o animar al equipo.",
+      "Estilo oficial: Logo Nike y escudo del Barça bien visibles.",
+      "Inspiración infantil: Hecha para futuros cracks del club."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona niño Football",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3925-084_camiseta-color-gris-nike-barcelona-nino-football_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3925-084_camiseta-color-gris-nike-barcelona-nino-football_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3925-084_camiseta-gris-nike-barcelona-nino-football_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3925-084_camiseta-color-gris-nike-barcelona-nino-football_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3925-084_camiseta-gris-nike-barcelona-nino-football_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ib3925-084",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de algodón de manga corta Nike del FC Barcelona 2025 2026 - gris",
+    "tagline": "Para los más pequeños fans del Barça",
+    "intro": "Camiseta Nike cómoda, suave y con todo el orgullo azulgrana para niños que sueñan con el Camp Nou.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón suave: Perfecto para uso diario y confort duradero.",
+      "Diseño casual: Ideal para jugar, entrenar o animar al equipo.",
+      "Estilo oficial: Logo Nike y escudo del Barça bien visibles.",
+      "Inspiración infantil: Hecha para futuros cracks del club."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ib3925-084"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'ball'",
+    "root_model": "Barcelona Kids",
+    "submodel": "",
+    "product_model": "Barcelona niño Football",
+    "sole_type": ""
+  }
+}

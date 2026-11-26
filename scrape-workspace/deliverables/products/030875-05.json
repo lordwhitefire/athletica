@@ -1,0 +1,99 @@
+{
+  "id": "030875-05",
+  "slug": "puma-ultra-light-strap-white",
+  "name": "Puma Ultra Light Strap",
+  "model": "Ultra Light Strap",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Velcro Straps - White, Red",
+    "tagline": "Lightweight protection with a secure fit",
+    "intro": "The Puma Ultra Light Strap soccer shin guards are designed for soccer players looking for protection, lightness and adjustable support during the game. Its PP cover incorporates EVA padding and is combined with Velcro straps to help keep the shin guards correctly positioned.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight Protection: Its construction helps protect the shin while maintaining a light feel during play.",
+      "Greater comfort: The padding helps soften the contact of the shin guard with the leg.",
+      "Adjustable fit: Velcro straps allow you to adapt the fastening to keep the protections in place.",
+      "Freedom of movement: Its lightweight design encourages natural movements when running and changing direction.",
+      "Practical support: The strap system facilitates quick adjustment before training and matches."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Strap",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b6a87e9eb8a0b3239bad9c4cec675928f541a0d7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b6a87e9eb8a0b3239bad9c4cec675928f541a0d7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8aa7ee7a71f41b18289371098d39f4a91e9c8892-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b6a87e9eb8a0b3239bad9c4cec675928f541a0d7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8aa7ee7a71f41b18289371098d39f4a91e9c8892-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b6a87e9eb8a0b3239bad9c4cec675928f541a0d7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b6a87e9eb8a0b3239bad9c4cec675928f541a0d7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8aa7ee7a71f41b18289371098d39f4a91e9c8892-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8aa7ee7a71f41b18289371098d39f4a91e9c8892-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030875-05",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con cintas de velcro - blancas, rojas",
+    "tagline": "Protección ligera con un ajuste seguro",
+    "intro": "Las espinilleras de fútbol Puma Ultra Light Strap están diseñadas para futbolistas que buscan protección, ligereza y una sujeción ajustable durante el juego. Su cubierta de PP incorpora acolchado de EVA y se combina con cintas de velcro para ayudar a mantener las espinilleras correctamente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su construcción ayuda a proteger la espinilla manteniendo una sensación ligera durante el juego.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Ajuste regulable: Las cintas de velcro permiten adaptar la sujeción para mantener las protecciones en su sitio.",
+      "Libertad de movimiento: Su diseño ligero favorece movimientos naturales al correr y cambiar de dirección.",
+      "Sujeción práctica: El sistema de cintas facilita un ajuste rápido antes de entrenamientos y partidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030875-05"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Strap",
+    "product_model": "Ultra Light Strap",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "783165-01",
+  "slug": "camiseta-puma-senegal-26-white",
+  "name": "Puma Senegal 26",
+  "model": "Senegal 26",
+  "brand": "Puma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación Puma de la selección de Senegal 2026 - blanca",
+    "tagline": "Senegal's home kit for 2026",
+    "intro": "La camiseta Puma Senegal 2026 de local presenta un diseño vibrante en color blanco con gráficos multicolor inspirados en la riqueza cultural y artística del país africano. Una equipación que combina tradición, energía y modernidad para representar a los Leones de la Teranga dentro y fuera del terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración cultural: Diseño gráfico basado en patrones tradicionales africanos.",
+      "Tejido transpirable: Favorece la evacuación del sudor para mayor comodidad.",
+      "Diseño llamativo: Estilo multicolor sobre base blanca.",
+      "Equipación oficial: Escudo de Senegal y logotipo Puma."
+    ],
+    "technical_details": {
+      "range": "Puma Senegal 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-color-blanco-puma-senegal-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-color-blanco-puma-senegal-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-blanca-puma-senegal-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-puma-senegal-26-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-puma-senegal-26-blanca_4_detalle-autenticidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-color-blanco-puma-senegal-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-blanca-puma-senegal-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-puma-senegal-26-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783165-01_camiseta-puma-senegal-26-blanca_4_detalle-autenticidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/783165-01",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de la primera equipación Puma de la selección de Senegal 2026 - blanca",
+    "tagline": "La primera equipación de Senegal para 2026",
+    "intro": "La camiseta Puma Senegal 2026 de local presenta un diseño vibrante en color blanco con gráficos multicolor inspirados en la riqueza cultural y artística del país africano. Una equipación que combina tradición, energía y modernidad para representar a los Leones de la Teranga dentro y fuera del terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración cultural: Diseño gráfico basado en patrones tradicionales africanos.",
+      "Tejido transpirable: Favorece la evacuación del sudor para mayor comodidad.",
+      "Diseño llamativo: Estilo multicolor sobre base blanca.",
+      "Equipación oficial: Escudo de Senegal y logotipo Puma."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/783165-01"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Senegal",
+    "submodel": "",
+    "product_model": "Senegal 26",
+    "sole_type": ""
+  }
+}

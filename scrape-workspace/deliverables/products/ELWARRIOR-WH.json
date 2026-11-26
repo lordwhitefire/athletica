@@ -1,0 +1,94 @@
+{
+  "id": "ELWARRIOR-WH",
+  "slug": "elite-warrior-jr-white",
+  "name": "Elite WARRIOR Jr",
+  "model": "WARRIOR Jr",
+  "brand": "Elite",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero infantiles con protecciones Elite corte Flat - blancos",
+    "tagline": "Estilo clásico para nuevos héroes",
+    "intro": "Elite WARRIOR Jr en blanco está pensado para porteros jóvenes que buscan elegancia, agarre y control en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Estética pulida: Diseño blanco profesional que transmite seguridad y estilo.",
+      "Máximo contacto: Corte negativo que envuelve los dedos para mejor control.",
+      "Agarre confiable: Palma de látex profesional para paradas efectivas.",
+      "Construcción resistente: Diseñados para soportar entrenamientos y partidos exigentes.",
+      "Control total: Sistema de cierre firme y ajustable."
+    ],
+    "technical_details": {
+      "range": "WARRIOR Jr",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-de-portero-color-blanco-elite-warrior-jr_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-de-portero-color-blanco-elite-warrior-jr_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-de-arquero-elite-warrior-jr-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-de-futbol-elite-warrior-jr-blancos_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-portero-blancos-elite-warrior-jr_2_completa-palma-mano-izquierda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-de-portero-color-blanco-elite-warrior-jr_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-de-arquero-elite-warrior-jr-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-de-futbol-elite-warrior-jr-blancos_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/L/ELWARRIOR-WH_guantes-portero-blancos-elite-warrior-jr_2_completa-palma-mano-izquierda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/elwarrior-wh",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero infantiles con protecciones Elite corte Flat - blancos",
+    "tagline": "Estilo clásico para nuevos héroes",
+    "intro": "Elite WARRIOR Jr en blanco está pensado para porteros jóvenes que buscan elegancia, agarre y control en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Estética pulida: Diseño blanco profesional que transmite seguridad y estilo.",
+      "Máximo contacto: Corte negativo que envuelve los dedos para mejor control.",
+      "Agarre confiable: Palma de látex profesional para paradas efectivas.",
+      "Construcción resistente: Diseñados para soportar entrenamientos y partidos exigentes.",
+      "Control total: Sistema de cierre firme y ajustable."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/elwarrior-wh"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "WARRIOR",
+    "submodel": "",
+    "product_model": "WARRIOR Jr",
+    "sole_type": ""
+  }
+}

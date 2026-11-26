@@ -1,0 +1,76 @@
+{
+  "id": "4518",
+  "slug": "cintas-zastor-sujeta-medias-2-unidades-black",
+  "name": "Cintas Zastor sujeta Socks 2 unidades",
+  "model": "Cintas Zastor sujeta Socks 2 unidades",
+  "brand": "Zastor",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Zastor sujeta medias 2 unidades",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/5/4518_sujeta-medias-color-negro-zastor-sujeta-medias-2-unidades_1_completa.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/5/4518_sujeta-medias-color-negro-zastor-sujeta-medias-2-unidades_1_completa.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/5/4518_cintas-para-sujetar-la-media-negras-zastor-sujeta-medias-2-unidades_2_detalle-abierto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/5/4518_sujeta-medias-zastor-sujeta-medias-2-unidades-color-negro_3_detalle-cerrado.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/5/4518_sujeta-medias-color-negro-zastor-sujeta-medias-2-unidades_1_completa.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/5/4518_cintas-para-sujetar-la-media-negras-zastor-sujeta-medias-2-unidades_2_detalle-abierto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/5/4518_sujeta-medias-zastor-sujeta-medias-2-unidades-color-negro_3_detalle-cerrado.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4518",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4518"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Cintas",
+    "submodel": "",
+    "product_model": "Cintas Zastor sujeta Socks 2 unidades",
+    "sole_type": ""
+  }
+}

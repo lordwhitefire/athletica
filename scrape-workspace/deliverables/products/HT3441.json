@@ -1,0 +1,82 @@
+{
+  "id": "HT3441",
+  "slug": "calcetines-tobilleros-adidas-sportwear-acolchados-3-pares-white",
+  "name": "tobilleros adidas Sportwear acolchados 3 pares",
+  "model": "tobilleros adidas Sportwear acolchados 3 pares",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "tobilleros adidas Sportwear acolchados 3 pares",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-tobilleros-color-blanco-adidas-acolchados-3-pares-_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-tobilleros-color-blanco-adidas-acolchados-3-pares-_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-cortos-blancos-adidas-acolchados-3-pares-_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-tobilleros-adidas-acolchados-3-pares--color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-cortos-adidas-acolchados-3-pares--blancos_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-tobilleros-color-blanco-adidas-acolchados-3-pares-_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-cortos-blancos-adidas-acolchados-3-pares-_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-tobilleros-adidas-acolchados-3-pares--color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/T/HT3441_calcetines-cortos-adidas-acolchados-3-pares--blancos_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ht3441",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ht3441"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'calcetin'",
+    "root_model": "tobilleros",
+    "submodel": "",
+    "product_model": "tobilleros adidas Sportwear acolchados 3 pares",
+    "sole_type": ""
+  }
+}

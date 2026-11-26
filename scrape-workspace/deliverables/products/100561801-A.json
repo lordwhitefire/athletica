@@ -1,0 +1,103 @@
+{
+  "id": "100561801-A",
+  "slug": "pantalon-portero-uhlsport-anatomic-kevlar-black",
+  "name": "Goalkeeper Uhlsport Anatomic Kevlar",
+  "model": "Goalkeeper Uhlsport Anatomic Kevlar",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport long padded goalkeeper pants - black",
+    "tagline": "Elite protection with Kevlar reinforcement",
+    "intro": "Designed for those who face the most demanding matches, these pants incorporate Kevlar® in key areas to resist abrasion and maintain maximum mobility. Ideal for hard surfaces and technical goalkeepers.",
+    "collection": "",
+    "key_benefits": [
+      "Reliable protection: Padded areas to absorb impacts.",
+      "Technical comfort: Cut designed for goalkeepers on the move.",
+      "Guaranteed durability: Materials resistant to friction and daily use.",
+      "Functional design: Ideal for any level of play."
+    ],
+    "technical_details": {
+      "range": "portero Uhlsport Anatomic Kevlar",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/640efc7245416b8ae9c648a57ee8af8ae634a154-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/640efc7245416b8ae9c648a57ee8af8ae634a154-1600x1600.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/662bffd529f917eddc9356c3cd48a63d396cc512-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/07cfa55548bba719fbe4e70dfa0c968e3e6b4d92-1600x1600.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/640efc7245416b8ae9c648a57ee8af8ae634a154-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/662bffd529f917eddc9356c3cd48a63d396cc512-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/07cfa55548bba719fbe4e70dfa0c968e3e6b4d92-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-640efc7245416b8ae9c648a57ee8af8ae634a154-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/640efc7245416b8ae9c648a57ee8af8ae634a154-1600x1600.jpg"
+    },
+    {
+      "_id": "image-662bffd529f917eddc9356c3cd48a63d396cc512-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/662bffd529f917eddc9356c3cd48a63d396cc512-1600x1600.jpg"
+    },
+    {
+      "_id": "image-07cfa55548bba719fbe4e70dfa0c968e3e6b4d92-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/07cfa55548bba719fbe4e70dfa0c968e3e6b4d92-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100561801-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de portero acolchados Uhlsport - negro",
+    "tagline": "Protección de élite con refuerzo Kevlar",
+    "intro": "Diseñado para quienes se enfrentan a los partidos más exigentes, este pantalón incorpora Kevlar® en zonas clave para resistir la abrasión y mantener la máxima movilidad. Ideal para superficies duras y porteros técnicos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección fiable: Zonas acolchadas para absorber impactos.",
+      "Comodidad técnica: Corte pensado para porteros en movimiento.",
+      "Durabilidad garantizada: Materiales resistentes al roce y al uso diario.",
+      "Diseño funcional: Ideal para cualquier nivel de juego."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100561801-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Goalkeeper",
+    "submodel": "",
+    "product_model": "Goalkeeper Uhlsport Anatomic Kevlar",
+    "sole_type": ""
+  }
+}

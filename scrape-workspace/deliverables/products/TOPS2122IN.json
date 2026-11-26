@@ -1,0 +1,82 @@
+{
+  "id": "TOPS2122IN",
+  "slug": "joma-top-flex-in-white",
+  "name": "Joma Top Flex IN",
+  "model": "Top Flex IN",
+  "brand": "Joma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Top Flex IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-futbol-sala-color-blanco-joma-top-flex-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-futbol-sala-color-blanco-joma-top-flex-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-de-futbol-sala-blancas-joma-top-flex-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_botas-futbol-sala-joma-top-flex-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_bambas-futbol-sala-joma-top-flex-in-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-futbol-sala-blancas-joma-top-flex-in_6_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-de-futbol-sala-joma-top-flex-in-color-blanco_7_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-futbol-sala-color-blanco-joma-top-flex-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-de-futbol-sala-blancas-joma-top-flex-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_botas-futbol-sala-joma-top-flex-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_bambas-futbol-sala-joma-top-flex-in-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-futbol-sala-blancas-joma-top-flex-in_6_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/O/TOPS2122IN_zapatillas-de-futbol-sala-joma-top-flex-in-color-blanco_7_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/tops2122in",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/tops2122in"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Top",
+    "submodel": "Flex IN",
+    "product_model": "Top Flex IN",
+    "sole_type": ""
+  }
+}

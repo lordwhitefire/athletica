@@ -1,0 +1,98 @@
+{
+  "id": "JZ9375",
+  "slug": "camiseta-adidas-italia-entrenamiento-white",
+  "name": "adidas Italia Training",
+  "model": "Italia entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas de la selección italiana 2026 - blanca",
+    "tagline": "Entrena como los profesionales",
+    "intro": "Inspirada en el orgullo nacional, esta prenda de la colección Italia 2026 combina diseño premium con comodidad técnica. Ideal para representar a los Azzurri dentro o fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Italia 2026: Muestra con orgullo los colores nacionales.",
+      "Comodidad garantizada: Materiales suaves y transpirables.",
+      "Versatilidad total: Apto para deporte y uso diario."
+    ],
+    "technical_details": {
+      "range": "adidas Italia entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-color-blanco-adidas-italia-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-color-blanco-adidas-italia-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-blanca-adidas-italia-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-adidas-italia-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-adidas-italia-entrenamiento-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-color-blanco-adidas-italia-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-blanca-adidas-italia-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-adidas-italia-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9375_camiseta-adidas-italia-entrenamiento-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9375",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas de la selección italiana 2026 - blanca",
+    "tagline": "Entrena como los profesionales",
+    "intro": "Inspirada en el orgullo nacional, esta prenda de la colección Italia 2026 combina diseño premium con comodidad técnica. Ideal para representar a los Azzurri dentro o fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Italia 2026: Muestra con orgullo los colores nacionales.",
+      "Comodidad garantizada: Materiales suaves y transpirables.",
+      "Versatilidad total: Apto para deporte y uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9375"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Italia",
+    "submodel": "",
+    "product_model": "Italia entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "084716-01-5",
+  "slug": "balon-puma-premier-25-26-cup-t-5-thrill-orbita-white",
+  "name": "Puma Premier 25 26 Cup T.5 Thrill Orbita",
+  "model": "Premier 25 26 Cup T.5 Thrill Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League Soccer Ball 2025 2026 Size 5 - White",
+    "tagline": "Designed for future stars",
+    "intro": "The Puma Orbita Premier League T.5 Thrill ball is the perfect choice for young talents who dream of playing like their idols. Inspired by the official Premier League 25/26 design, it combines durability, visibility and control for every training and match.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Replicas the style of the Premier League 25/26 ball.",
+      "Durabilidad mejorada: Estructura resistente al desgaste por uso frecuente.",
+      "Uso recreativo: Perfecto para entrenamientos informales y partidos entre amigos."
+    ],
+    "technical_details": {
+      "range": "Puma Premier 25 26 Cup T.5 Thrill Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/8636dba5bba429df86ab4d75204cad1f65d577b4-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/8636dba5bba429df86ab4d75204cad1f65d577b4-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/803cfcea930fbba9744955524679fb7db6afca2f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/dd281f4b04275fb51688bb6f00bf478380bf2b12-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8636dba5bba429df86ab4d75204cad1f65d577b4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/803cfcea930fbba9744955524679fb7db6afca2f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/dd281f4b04275fb51688bb6f00bf478380bf2b12-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-8636dba5bba429df86ab4d75204cad1f65d577b4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8636dba5bba429df86ab4d75204cad1f65d577b4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-803cfcea930fbba9744955524679fb7db6afca2f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/803cfcea930fbba9744955524679fb7db6afca2f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-dd281f4b04275fb51688bb6f00bf478380bf2b12-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/dd281f4b04275fb51688bb6f00bf478380bf2b12-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084716-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 talla 5 - blanco",
+    "tagline": "Diseñado para las futuras estrellas",
+    "intro": "El balón Puma Orbita Premier League T.5 Thrill es la elección perfecta para los jóvenes talentos que sueñan con jugar como sus ídolos. Inspirado en el diseño oficial de la Premier League 25/26, combina durabilidad, visibilidad y control para cada entrenamiento y partido.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Replica el estilo del balón de la Premier League 25/26.",
+      "Durabilidad mejorada: Estructura resistente al desgaste por uso frecuente.",
+      "Uso recreativo: Perfecto para entrenamientos informales y partidos entre amigos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084716-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Premier 25",
+    "submodel": "",
+    "product_model": "Premier 25 26 Cup T.5 Thrill Orbita",
+    "sole_type": ""
+  }
+}

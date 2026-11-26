@@ -1,0 +1,99 @@
+{
+  "id": "030871-01",
+  "slug": "puma-ultra-flex-sleeve-orange",
+  "name": "Puma Ultra Flex Sleeve",
+  "model": "Ultra Flex Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - Orange, Blue",
+    "tagline": "Flexible protection to move without limits",
+    "intro": "The Puma Ultra Flex Sleeve soccer shin guards are designed for soccer players looking to combine protection, lightness and freedom of movement. Its TPU plate incorporates EVA cushioning and is complemented by elastic support meshes to keep the shin guards tight during the game.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight protection: Its design helps protect the shin area without adding excessive volume to the equipment.",
+      "Greater comfort: The cushioning layer helps soften the contact of the shin guard with the leg.",
+      "Stable fit: The support meshes help keep the protections correctly placed during the game.",
+      "Freedom of movement: Its flexible construction favors natural movements when running, changing direction and fighting for the ball.",
+      "Dynamic sensation: The set is designed to accompany the rhythm of the footballer while maintaining a light and unrestrictive sensation."
+    ],
+    "technical_details": {
+      "range": "Ultra Flex Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a69b4e11620303deaaa33d3672038cc91b97ed93-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a69b4e11620303deaaa33d3672038cc91b97ed93-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b32b1e4d8696ad65d6f67b4fb215b9b68d2b77c9-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a69b4e11620303deaaa33d3672038cc91b97ed93-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b32b1e4d8696ad65d6f67b4fb215b9b68d2b77c9-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a69b4e11620303deaaa33d3672038cc91b97ed93-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a69b4e11620303deaaa33d3672038cc91b97ed93-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b32b1e4d8696ad65d6f67b4fb215b9b68d2b77c9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b32b1e4d8696ad65d6f67b4fb215b9b68d2b77c9-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030871-01",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - naranjas, azules",
+    "tagline": "Protección flexible para moverte sin límites",
+    "intro": "Las espinilleras de fútbol Puma Ultra Flex Sleeve están diseñadas para futbolistas que buscan combinar protección, ligereza y libertad de movimiento. Su placa de TPU incorpora amortiguación de EVA y se complementa con mallas elásticas de sujeción para mantener las espinilleras ajustadas durante el juego.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su diseño ayuda a proteger la zona de la espinilla sin añadir un volumen excesivo al equipamiento.",
+      "Mayor comodidad: La capa de amortiguación contribuye a suavizar el contacto de la espinillera con la pierna.",
+      "Ajuste estable: Las mallas de sujeción ayudan a mantener las protecciones correctamente colocadas durante el juego.",
+      "Libertad de movimiento: Su construcción flexible favorece movimientos naturales al correr, cambiar de dirección y disputar el balón.",
+      "Sensación dinámica: El conjunto está pensado para acompañar el ritmo del futbolista manteniendo una sensación ligera y poco restrictiva."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030871-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Flex Sleeve",
+    "product_model": "Ultra Flex Sleeve",
+    "sole_type": ""
+  }
+}

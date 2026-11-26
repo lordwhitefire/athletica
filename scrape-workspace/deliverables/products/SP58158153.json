@@ -1,0 +1,84 @@
+{
+  "id": "SP58158153",
+  "slug": "g-form-pro-s-blade-black",
+  "name": "G-Form Pro-S Blade",
+  "model": "Pro-S Blade",
+  "brand": "G-Form",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol G-Form con mallas de sujeción - negras",
+    "tagline": "Protección ligera, comodidad total",
+    "intro": "G-Form Pro-S Blade ofrece una combinación perfecta entre seguridad, ligereza y comodidad. Diseñadas para adaptarse a tu juego, estas espinilleras son ideales para jugadores que buscan rendimiento sin distracciones.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Se adapta perfectamente a la pierna para evitar movimientos innecesarios.",
+      "Máxima libertad: Sin sacrificar protección, permite un juego fluido y rápido.",
+      "Comodidad duradera: Materiales ligeros y transpirables para sesiones intensas.",
+      "Protección avanzada: Absorbe los impactos sin comprometer la movilidad."
+    ],
+    "technical_details": {
+      "range": "Pro-S Blade",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP58158153_espinilleras-color-negro-g-form-pro-s-blade_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP58158153_espinilleras-color-negro-g-form-pro-s-blade_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP58158153_canilleras-negras-g-form-pro-s-blade_2_detalle-perfil-e-interior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP58158153_espinilleras-color-negro-g-form-pro-s-blade_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/P/SP58158153_canilleras-negras-g-form-pro-s-blade_2_detalle-perfil-e-interior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sp58158153",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol G-Form con mallas de sujeción - negras",
+    "tagline": "Protección ligera, comodidad total",
+    "intro": "G-Form Pro-S Blade ofrece una combinación perfecta entre seguridad, ligereza y comodidad. Diseñadas para adaptarse a tu juego, estas espinilleras son ideales para jugadores que buscan rendimiento sin distracciones.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Se adapta perfectamente a la pierna para evitar movimientos innecesarios.",
+      "Máxima libertad: Sin sacrificar protección, permite un juego fluido y rápido.",
+      "Comodidad duradera: Materiales ligeros y transpirables para sesiones intensas.",
+      "Protección avanzada: Absorbe los impactos sin comprometer la movilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sp58158153"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Pro-S",
+    "submodel": "",
+    "product_model": "Pro-S Blade",
+    "sole_type": ""
+  }
+}

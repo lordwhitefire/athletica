@@ -1,0 +1,98 @@
+{
+  "id": "HM3421-010",
+  "slug": "pantalon-nike-psg-mujer-entrenamiento-dri-fit-strike-black",
+  "name": "Nike PSG Women Training Dri-Fit Strike",
+  "model": "PSG mujer entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo para mujer de entrenamiento Nike del PSG - negro",
+    "tagline": "Comodidad técnica en versión femenina",
+    "intro": "El pantalón Nike PSG Dri-Fit Strike mujer está diseñado para adaptarse a la silueta femenina. En color negro clásico, combina ligereza y elasticidad. Con su ajuste entallado y su tecnología Dri-FIT, es la prenda ideal para cada sesión.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste femenino: Corte específico para mayor confort.",
+      "Movilidad asegurada: Tejido elástico que favorece la agilidad.",
+      "Detalles PSG: Escudo oficial en la pierna.",
+      "Comodidad práctica: Bolsillos laterales para uso diario."
+    ],
+    "technical_details": {
+      "range": "Nike PSG mujer entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3421-010_pantalon-largo-color-negro-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3421-010_pantalon-largo-color-negro-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3421-010_pantalon-chandal-negro-nike-psg-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3421-010_pantalon-chandal-nike-psg-mujer-entrenamiento-dri-fit-strike-color-negro_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3421-010_pantalon-largo-color-negro-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3421-010_pantalon-chandal-negro-nike-psg-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3421-010_pantalon-chandal-nike-psg-mujer-entrenamiento-dri-fit-strike-color-negro_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3421-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo para mujer de entrenamiento Nike del PSG - negro",
+    "tagline": "Comodidad técnica en versión femenina",
+    "intro": "El pantalón Nike PSG Dri-Fit Strike mujer está diseñado para adaptarse a la silueta femenina. En color negro clásico, combina ligereza y elasticidad. Con su ajuste entallado y su tecnología Dri-FIT, es la prenda ideal para cada sesión.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste femenino: Corte específico para mayor confort.",
+      "Movilidad asegurada: Tejido elástico que favorece la agilidad.",
+      "Detalles PSG: Escudo oficial en la pierna.",
+      "Comodidad práctica: Bolsillos laterales para uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3421-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "PSG Women",
+    "submodel": "",
+    "product_model": "PSG mujer entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

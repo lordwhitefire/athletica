@@ -1,0 +1,76 @@
+{
+  "id": "100-0001",
+  "slug": "cordon-silbato-arbitro-fox-40-break-away-black",
+  "name": "Cordón silbato árbitro Fox 40 Break Away",
+  "model": "Cordón silbato árbitro Fox 40 Break Away",
+  "brand": "Fox 40",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "silbato árbitro Fox 40 Break Away",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/71a90dd15e61fcf73b583ec3279bd0135f970282-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/71a90dd15e61fcf73b583ec3279bd0135f970282-1600x1600.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/71a90dd15e61fcf73b583ec3279bd0135f970282-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-71a90dd15e61fcf73b583ec3279bd0135f970282-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/71a90dd15e61fcf73b583ec3279bd0135f970282-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100-0001",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100-0001"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Cordón",
+    "submodel": "",
+    "product_model": "Cordón silbato árbitro Fox 40 Break Away",
+    "sole_type": ""
+  }
+}

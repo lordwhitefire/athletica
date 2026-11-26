@@ -1,0 +1,94 @@
+{
+  "id": "JZ9156",
+  "slug": "chaqueta-adidas-real-madrid-originals-white",
+  "name": "adidas Real Madrid Originals",
+  "model": "Real Madrid Originals",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - blanca",
+    "tagline": "Un icono del Real Madrid en clave Originals",
+    "intro": "Esta sudadera adidas Real Madrid Originals es un guiño a la rica herencia del club y combina el estilo vintage con la comodidad moderna para el día a día del aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo vintage: Diseño Originals inspirado en la historia del club.",
+      "Comodidad duradera: Tejido interlock suave y resistente al desgaste.",
+      "Diseño funcional: Cremallera completa y bolsillos laterales integrados."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-color-blanco-adidas-real-madrid-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-color-blanco-adidas-real-madrid-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-chandal-blanca-adidas-real-madrid-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-entretiempo-adidas-real-madrid-originals-color-blanco_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-adidas-real-madrid-originals-blanca_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-color-blanco-adidas-real-madrid-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-chandal-blanca-adidas-real-madrid-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-entretiempo-adidas-real-madrid-originals-color-blanco_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9156_chaqueta-adidas-real-madrid-originals-blanca_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9156",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - blanca",
+    "tagline": "Un icono del Real Madrid en clave Originals",
+    "intro": "Esta sudadera adidas Real Madrid Originals es un guiño a la rica herencia del club y combina el estilo vintage con la comodidad moderna para el día a día del aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo vintage: Diseño Originals inspirado en la historia del club.",
+      "Comodidad duradera: Tejido interlock suave y resistente al desgaste.",
+      "Diseño funcional: Cremallera completa y bolsillos laterales integrados."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9156"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Originals",
+    "sole_type": ""
+  }
+}

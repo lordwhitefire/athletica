@@ -1,0 +1,93 @@
+{
+  "id": "041924-02",
+  "slug": "puma-future-pro-hybrid-pink",
+  "name": "Puma Future Pro Hybrid",
+  "model": "Future Pro Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Future Pro Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f854ee12739119aaecd78ebc99adb04f73121ec2-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f854ee12739119aaecd78ebc99adb04f73121ec2-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7243ebd86bc6c7250dab5d053fc87f7d0c0ff747-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/92afa478c053a2ef31796566e52fa9cc14d3995b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f854ee12739119aaecd78ebc99adb04f73121ec2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7243ebd86bc6c7250dab5d053fc87f7d0c0ff747-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/92afa478c053a2ef31796566e52fa9cc14d3995b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f854ee12739119aaecd78ebc99adb04f73121ec2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f854ee12739119aaecd78ebc99adb04f73121ec2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7243ebd86bc6c7250dab5d053fc87f7d0c0ff747-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7243ebd86bc6c7250dab5d053fc87f7d0c0ff747-1500x1500.jpg"
+    },
+    {
+      "_id": "image-92afa478c053a2ef31796566e52fa9cc14d3995b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/92afa478c053a2ef31796566e52fa9cc14d3995b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/041924-02",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/041924-02"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro Hybrid",
+    "product_model": "Future Pro Hybrid",
+    "sole_type": ""
+  }
+}

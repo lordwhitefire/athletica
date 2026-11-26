@@ -1,0 +1,96 @@
+{
+  "id": "II2630-010",
+  "slug": "short-nike-atletico-entrenamiento-dri-fit-strike-black",
+  "name": "Nike Atlético Training Dri-Fit Strike",
+  "model": "Atlético entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Atlético de Madrid Nike training shorts 2026 2027 - black",
+    "tagline": "Train like the red and whites",
+    "intro": "The Nike Atlético de Madrid Strike Dri-FIT 26 27 shorts are designed for players looking to perform at their best in every training session. Inspired by Atlético de Madrid's training kit, it combines a lightweight and functional design with high-performance materials to offer comfort and freedom of movement.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT: Technology that moves sweat away from the skin to maintain comfort.",
+      "Mesh panels: Promote ventilation and improve breathability.",
+      "Zippered pockets: Allow you to store personal items safely.",
+      "Atlético de Madrid Design: Inspired by the club's official training clothing."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_pantalon-corto-color-negro-nike-atletico-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_pantalon-corto-color-negro-nike-atletico-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_short-negro-nike-atletico-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_pantalon-corto-nike-atletico-entrenamiento-dri-fit-strike-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_short-nike-atletico-entrenamiento-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_pantalon-corto-color-negro-nike-atletico-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_short-negro-nike-atletico-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_pantalon-corto-nike-atletico-entrenamiento-dri-fit-strike-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/I/II2630-010_short-nike-atletico-entrenamiento-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ii2630-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike del Atlético de Madrid 2026 2027 - negro",
+    "tagline": "Entrena como los rojiblancos",
+    "intro": "El short Nike del Atlético de Madrid Strike Dri-FIT 26 27 está diseñado para los jugadores que buscan rendir al máximo en cada entrenamiento. Inspirado en la equipación de entrenamiento del Atlético de Madrid, combina un diseño ligero y funcional con materiales de alto rendimiento para ofrecer comodidad y libertad de movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT: Tecnología que aleja el sudor de la piel para mantener la comodidad.",
+      "Paneles de malla: Favorecen la ventilación y mejoran la transpirabilidad.",
+      "Bolsillos con cremallera: Permiten guardar objetos personales de forma segura.",
+      "Diseño Atlético de Madrid: Inspirado en la ropa de entrenamiento oficial del club."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ii2630-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Atlético",
+    "submodel": "",
+    "product_model": "Atlético entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

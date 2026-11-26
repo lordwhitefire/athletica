@@ -1,0 +1,109 @@
+{
+  "id": "085225-01",
+  "slug": "balon-puma-borussia-dortmund-essentials-mini-amarillo-negro",
+  "name": "Puma Borussia Dortmund Essentials mini",
+  "model": "Borussia Dortmund Essentials mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Amarillo / Negro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Borussia Dortmund Puma soccer ball in mini size - yellow, black",
+    "tagline": "Mini design for big fans",
+    "intro": "The Puma Borussia Dortmund Essentials football is perfect for fans of the club who want to enjoy football anywhere. Its mini size makes it ideal for improving control, playing recreational games or completing any soccer collection.",
+    "collection": "",
+    "key_benefits": [
+      "Mini size: Perfect for improving technique and ball control",
+      "Official Borussia Dortmund design: Colors and crest inspired by the German club",
+      "Heavy Duty Construction: Machine stitched panels for durability",
+      "Uso recreativo: Ideal para entrenamientos ligeros y ocio",
+      "Comfortable touch: Smooth surface for better hitting feeling"
+    ],
+    "technical_details": {
+      "range": "Puma Borussia Dortmund Essentials mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9366e33a482124cf14b1eee84e4ce3471e8ba812-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9366e33a482124cf14b1eee84e4ce3471e8ba812-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f8982e93cd7c4040b91bcde1f66e74aef553bf6b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/331acc65d346ff9af1f785bf5a16c62b95cf9105-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9366e33a482124cf14b1eee84e4ce3471e8ba812-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f8982e93cd7c4040b91bcde1f66e74aef553bf6b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/331acc65d346ff9af1f785bf5a16c62b95cf9105-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9366e33a482124cf14b1eee84e4ce3471e8ba812-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9366e33a482124cf14b1eee84e4ce3471e8ba812-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f8982e93cd7c4040b91bcde1f66e74aef553bf6b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f8982e93cd7c4040b91bcde1f66e74aef553bf6b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-331acc65d346ff9af1f785bf5a16c62b95cf9105-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/331acc65d346ff9af1f785bf5a16c62b95cf9105-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085225-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Borussia Dortmund en talla mini - amarillo, negro",
+    "tagline": "Diseño mini para grandes aficionados",
+    "intro": "El balón de fútbol Puma del Borussia Dortmund Essentials es perfecto para los seguidores del club que quieren disfrutar del fútbol en cualquier lugar. Su tamaño mini lo hace ideal para mejorar el control, realizar juegos recreativos o completar cualquier colección futbolera.",
+    "collection": "",
+    "key_benefits": [
+      "Tamaño mini: Perfecto para mejorar la técnica y el control del balón",
+      "Diseño oficial Borussia Dortmund: Colores y escudo inspirados en el club alemán",
+      "Construcción resistente: Paneles cosidos a máquina para mayor durabilidad",
+      "Uso recreativo: Ideal para entrenamientos ligeros y ocio",
+      "Toque cómodo: Superficie suave para una mejor sensación de golpeo"
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085225-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Borussia",
+    "submodel": "",
+    "product_model": "Borussia Dortmund Essentials mini",
+    "sole_type": ""
+  }
+}

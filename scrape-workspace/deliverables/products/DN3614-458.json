@@ -1,0 +1,90 @@
+{
+  "id": "DN3614-458",
+  "slug": "nike-mercurial-hardshell-blue",
+  "name": "Nike Mercurial Hardshell",
+  "model": "Mercurial Hardshell",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con cintas de velcro - azules",
+    "tagline": "Defensa sólida en cada jugada",
+    "intro": "Las Nike Mercurial Hardshell están diseñadas para ofrecer resistencia total a los impactos. Gracias a su carcasa rígida y su sistema de velcro, garantizan una sujeción estable en partidos exigentes.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Protección máxima: Capa exterior rígida que absorbe impactos directos.",
+      "Fácil colocación: Correas ajustables con velcro.",
+      "Estilo clásico: Inspiradas en los modelos tradicionales de competición."
+    ],
+    "technical_details": {
+      "range": "Mercurial Hardshell",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-458_espinilleras-color-azul-nike-mercurial-hardshell_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-458_espinilleras-color-azul-nike-mercurial-hardshell_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-458_canilleras-azules-nike-mercurial-hardshell_2_detalle-perfil-e-interior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-458_espinilleras-color-azul-nike-mercurial-hardshell_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-458_canilleras-azules-nike-mercurial-hardshell_2_detalle-perfil-e-interior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dn3614-458",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Nike con cintas de velcro - azules",
+    "tagline": "Defensa sólida en cada jugada",
+    "intro": "Las Nike Mercurial Hardshell están diseñadas para ofrecer resistencia total a los impactos. Gracias a su carcasa rígida y su sistema de velcro, garantizan una sujeción estable en partidos exigentes.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Protección máxima: Capa exterior rígida que absorbe impactos directos.",
+      "Fácil colocación: Correas ajustables con velcro.",
+      "Estilo clásico: Inspiradas en los modelos tradicionales de competición."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dn3614-458"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Hardshell",
+    "product_model": "Mercurial Hardshell",
+    "sole_type": ""
+  }
+}

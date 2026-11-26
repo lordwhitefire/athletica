@@ -17,7 +17,7 @@
 - **Env completeness:** cross-check `.env.example` against the actual env usage in the code (`process.env.*` references) → every var is documented with a one-line comment.
 - **Admin guide:** read the admin guide → it covers sign in, products + variants + categories, bulk ops, CSV import, media library, analytics, payouts, affiliates. A non-technical owner could follow it.
 - **Affiliate guide:** read the affiliate guide → it covers signup, verify, trackers, balance, payout request.
-- **Architect handoff:** open the handoff → for each blueprint decision, it names the file(s) that implement it (e.g. "three locks → `auth/admin.ts` + `auth/door-key-validate.ts` + `middleware.ts`").
+- **Architect handoff:** open the handoff → for each blueprint decision, it names the file(s) that implement it (e.g. "three locks → `auth/admin.ts` + `auth/door-key-validate.ts` + `src/proxy.ts`").
 - **Smoke notes:** the smoke-test notes exist for each phase (the critical-path manual checks).
 
 ## What "working" means

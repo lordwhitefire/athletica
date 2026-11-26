@@ -1,0 +1,94 @@
+{
+  "id": "IR5108-100",
+  "slug": "balon-nike-psg-skills-mini-white",
+  "name": "Nike PSG Skills mini",
+  "model": "PSG Skills mini",
+  "brand": "Nike",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike PSG soccer ball in mini size - white",
+    "tagline": "Improve your technique with the PSG ball",
+    "intro": "The Nike PSG Skills mini ball is perfect for working on control, precision and technique in small spaces. Inspired by Paris Saint-Germain, it combines a compact design with the resistance necessary for technical training.",
+    "collection": "",
+    "key_benefits": [
+      "Mini size: Ideal for improving control and precision in tight spaces.",
+      "High durability: Resistant material for intensive training.",
+      "Official PSG style: Represent the team while you train.",
+      "Technical use: Perfect for skill and coordination exercises."
+    ],
+    "technical_details": {
+      "range": "Nike PSG Skills mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5108-100_mini-balon-color-blanco-nike-psg-skills-mini_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5108-100_mini-balon-color-blanco-nike-psg-skills-mini_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5108-100_mini-pelota-blanco-nike-psg-skills-mini_2_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5108-100_balon-mini-nike-psg-skills-mini-color-blanco_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5108-100_mini-balon-color-blanco-nike-psg-skills-mini_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5108-100_mini-pelota-blanco-nike-psg-skills-mini_2_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5108-100_balon-mini-nike-psg-skills-mini-color-blanco_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ir5108-100",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Nike del PSG en talla mini - blanco",
+    "tagline": "Mejora tu técnica con el balón del PSG",
+    "intro": "El balón Nike PSG Skills mini es perfecto para trabajar el control, la precisión y la técnica en espacios reducidos. Inspirado en el Paris Saint-Germain, combina un diseño compacto con la resistencia necesaria para entrenamientos técnicos.",
+    "collection": "",
+    "key_benefits": [
+      "Tamaño mini: Ideal para mejorar el control y la precisión en espacios reducidos.",
+      "Alta durabilidad: Material resistente para entrenamientos intensivos.",
+      "Estilo oficial PSG: Representa al equipo mientras entrenas.",
+      "Uso técnico: Perfecto para ejercicios de habilidad y coordinación."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ir5108-100"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "PSG Skills",
+    "submodel": "",
+    "product_model": "PSG Skills mini",
+    "sole_type": ""
+  }
+}

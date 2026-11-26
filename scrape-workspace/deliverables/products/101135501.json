@@ -1,0 +1,105 @@
+{
+  "id": "101135501",
+  "slug": "uhlsport-soft-advanced-white",
+  "name": "Uhlsport Soft Advanced",
+  "model": "Soft Advanced",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Soft Advanced",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4af257af2478e1e48813ca9d4048225679aed4de-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4af257af2478e1e48813ca9d4048225679aed4de-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9842acfea12500ea50d02bc130306c495c1af0ba-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d92f4cbcbb1cf65da87b7a9b9418482c157cc512-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8343a95ce813879ba4c546f4562faeb800d83058-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/69655086a3b4ba4b59e255a82c265556a1fd499a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4af257af2478e1e48813ca9d4048225679aed4de-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9842acfea12500ea50d02bc130306c495c1af0ba-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d92f4cbcbb1cf65da87b7a9b9418482c157cc512-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8343a95ce813879ba4c546f4562faeb800d83058-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/69655086a3b4ba4b59e255a82c265556a1fd499a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-4af257af2478e1e48813ca9d4048225679aed4de-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4af257af2478e1e48813ca9d4048225679aed4de-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9842acfea12500ea50d02bc130306c495c1af0ba-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9842acfea12500ea50d02bc130306c495c1af0ba-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d92f4cbcbb1cf65da87b7a9b9418482c157cc512-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d92f4cbcbb1cf65da87b7a9b9418482c157cc512-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8343a95ce813879ba4c546f4562faeb800d83058-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8343a95ce813879ba4c546f4562faeb800d83058-1500x1500.jpg"
+    },
+    {
+      "_id": "image-69655086a3b4ba4b59e255a82c265556a1fd499a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/69655086a3b4ba4b59e255a82c265556a1fd499a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101135501",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101135501"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Soft",
+    "submodel": "",
+    "product_model": "Soft Advanced",
+    "sole_type": ""
+  }
+}

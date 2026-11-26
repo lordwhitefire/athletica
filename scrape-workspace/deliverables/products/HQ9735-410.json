@@ -1,0 +1,94 @@
+{
+  "id": "HQ9735-410",
+  "slug": "chaqueta-nike-barcelona-t90-woven-blue",
+  "name": "Nike Barcelona T90 Woven",
+  "model": "Barcelona T90 Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de paseo Nike del FC Barcelona - azul marino",
+    "tagline": "La esencia T90, reinventada para hoy",
+    "intro": "La chaqueta Nike Total90 Barça fusiona diseño noventero, funcionalidad y abrigo ligero para fans modernos.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Corte y gráficos icónicos Total90.",
+      "Tejido Woven: Protección ligera con tacto premium.",
+      "Escudo y branding: Identidad Barça con estilo urbano.",
+      "Versátil: Para calle, grada o paseo prepartido."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona T90 Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9735-410_chaqueta-color-azul-nike-barcelona-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9735-410_chaqueta-color-azul-nike-barcelona-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9735-410_chaqueta-chandal-azul-marino-nike-barcelona-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9735-410_chaqueta-entretiempo-nike-barcelona-t90-color-azul_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9735-410_chaqueta-color-azul-nike-barcelona-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9735-410_chaqueta-chandal-azul-marino-nike-barcelona-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9735-410_chaqueta-entretiempo-nike-barcelona-t90-color-azul_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq9735-410",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de paseo Nike del FC Barcelona - azul marino",
+    "tagline": "La esencia T90, reinventada para hoy",
+    "intro": "La chaqueta Nike Total90 Barça fusiona diseño noventero, funcionalidad y abrigo ligero para fans modernos.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Corte y gráficos icónicos Total90.",
+      "Tejido Woven: Protección ligera con tacto premium.",
+      "Escudo y branding: Identidad Barça con estilo urbano.",
+      "Versátil: Para calle, grada o paseo prepartido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq9735-410"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Barcelona T90",
+    "submodel": "",
+    "product_model": "Barcelona T90 Woven",
+    "sole_type": ""
+  }
+}

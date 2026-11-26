@@ -1,0 +1,107 @@
+{
+  "id": "092910-02",
+  "slug": "mochila-puma-girona-black",
+  "name": "Backpack Puma Girona",
+  "model": "Backpack Puma Girona",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma del Girona sports backpack - black",
+    "tagline": "Lleva el orgullo del Girona a cualquier parte",
+    "intro": "The Puma Girona backpack combines a functional design with the club's official style. Made with resistant and recycled materials, it offers the necessary space to transport your equipment, school supplies or your personal items with total comfort on a daily basis.",
+    "collection": "",
+    "key_benefits": [
+      "Ample storage space: Compartments designed to organize your equipment.",
+      "Functional pockets: Side and front for quick access.",
+      "Official design: Girona product.",
+      "Comodidad de transporte: Tirantes acolchados ajustables."
+    ],
+    "technical_details": {
+      "range": "Puma Girona",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0060542b74a1dc32abb4b3c586dac122152ea6b9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0060542b74a1dc32abb4b3c586dac122152ea6b9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/670d8e3a89005c86c0906d3830ed42643f36e3f2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f84aee9721b645a3e5dc0d15f4ee651957b79789-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0060542b74a1dc32abb4b3c586dac122152ea6b9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/670d8e3a89005c86c0906d3830ed42643f36e3f2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f84aee9721b645a3e5dc0d15f4ee651957b79789-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-0060542b74a1dc32abb4b3c586dac122152ea6b9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0060542b74a1dc32abb4b3c586dac122152ea6b9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-670d8e3a89005c86c0906d3830ed42643f36e3f2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/670d8e3a89005c86c0906d3830ed42643f36e3f2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f84aee9721b645a3e5dc0d15f4ee651957b79789-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f84aee9721b645a3e5dc0d15f4ee651957b79789-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092910-02",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma del Girona - negra",
+    "tagline": "Lleva el orgullo del Girona a cualquier parte",
+    "intro": "La mochila Puma Girona combina un diseño funcional con el estilo oficial del club. Fabricada con materiales resistentes y reciclados, ofrece el espacio necesario para transportar tu equipación, material escolar o tus objetos personales con total comodidad en el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Amplio espacio de almacenamiento: Compartimentos diseñados para organizar tu equipamiento.",
+      "Bolsillos funcionales: Laterales y frontales para acceso rápido.",
+      "Diseño oficial: Producto del Girona.",
+      "Comodidad de transporte: Tirantes acolchados ajustables."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092910-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Girona",
+    "sole_type": ""
+  }
+}

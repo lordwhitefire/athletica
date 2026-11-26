@@ -1,0 +1,84 @@
+{
+  "id": "SG23065M-WG",
+  "slug": "new-balance-furon-match-slip-guard-white",
+  "name": "New Balance Furon Match Slip Guard",
+  "model": "Furon Match Slip Guard",
+  "brand": "New Balance",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol New Balance con mallas de sujeción - blancas",
+    "tagline": "Protección y comodidad para cada partido",
+    "intro": "Las espinilleras New Balance Furon Match Slip Guard ofrecen una protección ligera y flexible para que juegues con total confianza. Su diseño anatómico se adapta a la forma de la pierna, mientras que la malla de compresión mantiene las espinilleras firmemente en su sitio durante todo el encuentro.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Escudo resistente que absorbe los impactos sin limitar la movilidad.",
+      "Ajuste seguro: La malla de compresión de licra mantiene la espinillera estable durante todo el partido.",
+      "Gran comodidad: Diseño anatómico que sigue la forma natural de la pierna.",
+      "Mejor ventilación: Espuma trasera moldeada y perforada que favorece la transpirabilidad."
+    ],
+    "technical_details": {
+      "range": "Balance Furon Match Slip Guard",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/G/SG23065M-WG_espinilleras-color-blanco-new-balance-furon-match-slip-guard_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/G/SG23065M-WG_espinilleras-color-blanco-new-balance-furon-match-slip-guard_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/G/SG23065M-WG_canilleras-blancas-new-balance-furon-match-slip-guard_2_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/G/SG23065M-WG_espinilleras-color-blanco-new-balance-furon-match-slip-guard_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/G/SG23065M-WG_canilleras-blancas-new-balance-furon-match-slip-guard_2_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sg23065m-wg",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol New Balance con mallas de sujeción - blancas",
+    "tagline": "Protección y comodidad para cada partido",
+    "intro": "Las espinilleras New Balance Furon Match Slip Guard ofrecen una protección ligera y flexible para que juegues con total confianza. Su diseño anatómico se adapta a la forma de la pierna, mientras que la malla de compresión mantiene las espinilleras firmemente en su sitio durante todo el encuentro.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Escudo resistente que absorbe los impactos sin limitar la movilidad.",
+      "Ajuste seguro: La malla de compresión de licra mantiene la espinillera estable durante todo el partido.",
+      "Gran comodidad: Diseño anatómico que sigue la forma natural de la pierna.",
+      "Mejor ventilación: Espuma trasera moldeada y perforada que favorece la transpirabilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sg23065m-wg"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Furon",
+    "submodel": "",
+    "product_model": "Furon Match Slip Guard",
+    "sole_type": ""
+  }
+}

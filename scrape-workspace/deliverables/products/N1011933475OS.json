@@ -1,0 +1,81 @@
+{
+  "id": "N1011933475OS",
+  "slug": "pack-3-cintas-de-pelo-nike-flex-classic",
+  "name": "Pack 3 cintas de pelo Nike Flex Classic",
+  "model": "Pack 3 cintas de pelo Nike Flex Classic",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pack de tres cintas de pelo elásticas Nike - varios colores",
+    "tagline": "Estilo y sujeción para cada entrenamiento",
+    "intro": "Las cintas de pelo Nike Flex Classic te ofrecen una sujeción firme y antideslizante, ideal para mantener el foco mientras entrenas. Fabricadas con materiales suaves y cómodos, evitan tirones y aportan estabilidad sin sacrificar estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Sujeción segura: No resbalan ni se mueven durante el ejercicio.",
+      "Comodidad sin tirones: Material suave que protege tu cabello.",
+      "Estilo deportivo: Toque moderno para tu look de entrenamiento.",
+      "Versatilidad total: Perfectas para entrenos, partidos o uso diario."
+    ],
+    "technical_details": {
+      "range": "3 cintas de pelo Nike Flex Classic",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1011933475OS_cintas-para-el-pelo-nike-flex-classic-3-unidades_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1011933475OS_cintas-para-el-pelo-nike-flex-classic-3-unidades_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/1/N1011933475OS_cintas-para-el-pelo-nike-flex-classic-3-unidades_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n1011933475os",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pack de tres cintas de pelo elásticas Nike - varios colores",
+    "tagline": "Estilo y sujeción para cada entrenamiento",
+    "intro": "Las cintas de pelo Nike Flex Classic te ofrecen una sujeción firme y antideslizante, ideal para mantener el foco mientras entrenas. Fabricadas con materiales suaves y cómodos, evitan tirones y aportan estabilidad sin sacrificar estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Sujeción segura: No resbalan ni se mueven durante el ejercicio.",
+      "Comodidad sin tirones: Material suave que protege tu cabello.",
+      "Estilo deportivo: Toque moderno para tu look de entrenamiento.",
+      "Versatilidad total: Perfectas para entrenos, partidos o uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n1011933475os"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Pack",
+    "submodel": "3 cintas de pelo Nike Flex Classic",
+    "product_model": "Pack 3 cintas de pelo Nike Flex Classic",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "JP4171",
+  "slug": "pantalon-adidas-real-madrid-presentacion-grey",
+  "name": "adidas Real Madrid presentación",
+  "model": "Real Madrid presentación",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas long presentation pants - gray",
+    "tagline": "Style and comfort at the level of champions",
+    "intro": "These Real Madrid presentation pants combine a professional design with superior comfort. Ideal to look like the players off the field.",
+    "collection": "",
+    "key_benefits": [
+      "Official look: Design identical to that used by Real Madrid players.",
+      "Constant freshness: AEROREADY technology that keeps skin dry.",
+      "Maximum comfort: Elastic waist with drawstring for a personalized fit.",
+      "Premium details: Embroidered crest on the leg and practical side pockets.",
+      "Total versatility: Perfect for pre-game, travel or everyday use."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-largo-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-largo-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-chandal-gris-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-chandal-adidas-real-madrid-presentacion-color-gris_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-largo-adidas-real-madrid-presentacion-gris_4_detalle-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-chandal-color-gris-adidas-real-madrid-presentacion_5_detalle-logotipo-y-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-largo-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-chandal-gris-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-chandal-adidas-real-madrid-presentacion-color-gris_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-largo-adidas-real-madrid-presentacion-gris_4_detalle-bajos.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4171_pantalon-chandal-color-gris-adidas-real-madrid-presentacion_5_detalle-logotipo-y-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp4171",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de presentación adidas del Real Madrid - gris",
+    "tagline": "Estilo y comodidad al nivel de los campeones",
+    "intro": "Este pantalón de presentación del Real Madrid combina un diseño profesional con una comodidad superior. Ideal para lucir como los jugadores fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Look oficial: Diseño idéntico al que usan los jugadores del Real Madrid.",
+      "Frescura constante: Tecnología AEROREADY que mantiene la piel seca.",
+      "Máximo confort: Cintura elástica con cordón para un ajuste personalizado.",
+      "Detalles premium: Escudo bordado en la pernera y bolsillos laterales prácticos.",
+      "Versatilidad total: Perfecto para prepartido, viaje o uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp4171"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid presentación",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "784777-15",
+  "slug": "short-puma-portugal-entrenamiento-blue",
+  "name": "Puma Portugal Training",
+  "model": "Portugal entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Puma de la selección de Portugal 2026 - trullo",
+    "tagline": "Ligereza y rendimiento en cada entrenamiento",
+    "intro": "El pantalón corto de entrenamiento Puma de Portugal está diseñado para ofrecer máxima comodidad y libertad de movimiento. Su diseño con detalles en contraste refleja el dinamismo y la identidad del combinado portugués.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Ayuda a mantener la piel seca durante el esfuerzo.",
+      "Lightweight fabric: 100% recycled polyester that promotes breathability.",
+      "Diseño oficial: Parte de la equipación de entrenamiento de la selección.",
+      "Libertad de movimiento: Corte pensado para entrenamientos intensos."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784777-15_pantalon-corto-color-azul-puma-portugal-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784777-15_pantalon-corto-color-azul-puma-portugal-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784777-15_pantalon-corto-puma-portugal-entrenamiento-color-azul_3_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784777-15_short-puma-portugal-entrenamiento-trullo_4_detalle-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784777-15_pantalon-corto-color-azul-puma-portugal-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784777-15_pantalon-corto-puma-portugal-entrenamiento-color-azul_3_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/784777-15_short-puma-portugal-entrenamiento-trullo_4_detalle-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/784777-15",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Puma de la selección de Portugal 2026 - trullo",
+    "tagline": "Ligereza y rendimiento en cada entrenamiento",
+    "intro": "El pantalón corto de entrenamiento Puma de Portugal está diseñado para ofrecer máxima comodidad y libertad de movimiento. Su diseño con detalles en contraste refleja el dinamismo y la identidad del combinado portugués.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Ayuda a mantener la piel seca durante el esfuerzo.",
+      "Tejido ligero: 100% poliéster reciclado que favorece la transpirabilidad.",
+      "Diseño oficial: Parte de la equipación de entrenamiento de la selección.",
+      "Libertad de movimiento: Corte pensado para entrenamientos intensos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/784777-15"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Portugal",
+    "submodel": "",
+    "product_model": "Portugal entrenamiento",
+    "sole_type": ""
+  }
+}

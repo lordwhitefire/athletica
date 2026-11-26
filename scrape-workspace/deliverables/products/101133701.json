@@ -1,0 +1,105 @@
+{
+  "id": "101133701",
+  "slug": "uhlsport-prediction-soft-pro-blue",
+  "name": "Uhlsport Prediction Soft Pro",
+  "model": "Prediction Soft Pro",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Prediction Soft Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2f16f29f646344eda0e639fbb771175a88d15dfb-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2f16f29f646344eda0e639fbb771175a88d15dfb-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/540db6c81dd77d1766c8818c4097eae240956a11-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9b253070f5d7da96c9356f8994d66159d929fd03-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fe1b29aaa0b046eb7c16bd0df47452abfaac8b4b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d0f2a71ca58720cd17b08612e7e39b7db766b78f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2f16f29f646344eda0e639fbb771175a88d15dfb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/540db6c81dd77d1766c8818c4097eae240956a11-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9b253070f5d7da96c9356f8994d66159d929fd03-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fe1b29aaa0b046eb7c16bd0df47452abfaac8b4b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d0f2a71ca58720cd17b08612e7e39b7db766b78f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2f16f29f646344eda0e639fbb771175a88d15dfb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2f16f29f646344eda0e639fbb771175a88d15dfb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-540db6c81dd77d1766c8818c4097eae240956a11-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/540db6c81dd77d1766c8818c4097eae240956a11-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9b253070f5d7da96c9356f8994d66159d929fd03-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9b253070f5d7da96c9356f8994d66159d929fd03-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fe1b29aaa0b046eb7c16bd0df47452abfaac8b4b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fe1b29aaa0b046eb7c16bd0df47452abfaac8b4b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d0f2a71ca58720cd17b08612e7e39b7db766b78f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d0f2a71ca58720cd17b08612e7e39b7db766b78f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101133701",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101133701"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Prediction",
+    "submodel": "",
+    "product_model": "Prediction Soft Pro",
+    "sole_type": ""
+  }
+}

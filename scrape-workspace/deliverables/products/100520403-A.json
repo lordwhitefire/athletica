@@ -1,0 +1,103 @@
+{
+  "id": "100520403-A",
+  "slug": "equipacion-uhlsport-offense-23-portero-red",
+  "name": "Kit Uhlsport Offense 23 Goalkeeper",
+  "model": "Kit Uhlsport Offense 23 Goalkeeper",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport Offense 23 portero",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d2a9dd30c641b231bfb32b0459ea0830f466bfac-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d2a9dd30c641b231bfb32b0459ea0830f466bfac-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4cae1a9b168872adcb7dda1cd2ada9609dde3a23-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aae64d93341f3d7bca54f1799bcbb199caaee2c0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d1d36f952ef38cfe78fd23e4643459c99390408f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d2a9dd30c641b231bfb32b0459ea0830f466bfac-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4cae1a9b168872adcb7dda1cd2ada9609dde3a23-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aae64d93341f3d7bca54f1799bcbb199caaee2c0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d1d36f952ef38cfe78fd23e4643459c99390408f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-d2a9dd30c641b231bfb32b0459ea0830f466bfac-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d2a9dd30c641b231bfb32b0459ea0830f466bfac-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4cae1a9b168872adcb7dda1cd2ada9609dde3a23-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4cae1a9b168872adcb7dda1cd2ada9609dde3a23-1500x1500.jpg"
+    },
+    {
+      "_id": "image-aae64d93341f3d7bca54f1799bcbb199caaee2c0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/aae64d93341f3d7bca54f1799bcbb199caaee2c0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d1d36f952ef38cfe78fd23e4643459c99390408f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d1d36f952ef38cfe78fd23e4643459c99390408f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100520403-a",
+    "language": "es",
+    "category": "Equipaciones de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100520403-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Kit",
+    "submodel": "",
+    "product_model": "Kit Uhlsport Offense 23 Goalkeeper",
+    "sole_type": ""
+  }
+}

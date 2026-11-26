@@ -1,0 +1,111 @@
+{
+  "id": "092445-01",
+  "slug": "mochila-de-cuerdas-puma-milan-essentials-red",
+  "name": "Backpack de cuerdas Puma Milan Essentials",
+  "model": "Backpack de cuerdas Puma Milan Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "AC Milan Puma Drawstring Backpack - Red",
+    "tagline": "Functional design with club identity",
+    "intro": "The Puma Milan Essentials Drawstring Backpack combines sporty style with everyday practicality. Perfect for carrying your belongings comfortably while representing your team colors. Its light and resistant design makes it an essential ally for everyday use.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Licensed product for true fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Club Identity: Unique details of the team you love."
+    ],
+    "technical_details": {
+      "range": "de cuerdas Puma Milan Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ef6aeb3fb6bad93afdfcd9316fd3cdf864928e17-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ef6aeb3fb6bad93afdfcd9316fd3cdf864928e17-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/87ac61cbf9b4f8b33a2b1f0219abfe8a69cd1ca2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/052036787aca5cfdde3ead950df7795c2a4f426d-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ef6aeb3fb6bad93afdfcd9316fd3cdf864928e17-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/87ac61cbf9b4f8b33a2b1f0219abfe8a69cd1ca2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/052036787aca5cfdde3ead950df7795c2a4f426d-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ef6aeb3fb6bad93afdfcd9316fd3cdf864928e17-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ef6aeb3fb6bad93afdfcd9316fd3cdf864928e17-1500x1500.jpg"
+    },
+    {
+      "_id": "image-87ac61cbf9b4f8b33a2b1f0219abfe8a69cd1ca2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/87ac61cbf9b4f8b33a2b1f0219abfe8a69cd1ca2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-052036787aca5cfdde3ead950df7795c2a4f426d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/052036787aca5cfdde3ead950df7795c2a4f426d-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092445-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de cuerdas Puma del AC Milan - roja",
+    "tagline": "Diseño funcional con identidad de club",
+    "intro": "La Mochila de cuerdas Puma Milan Essentials combina estilo deportivo con practicidad diaria. Perfecta para llevar tus pertenencias con comodidad mientras representas los colores de tu equipo. Su diseño ligero y resistente la convierte en una aliada esencial para el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Producto licenciado para los verdaderos fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Identidad de club: Detalles únicos del equipo que amas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092445-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Milan Essentials",
+    "sole_type": ""
+  }
+}

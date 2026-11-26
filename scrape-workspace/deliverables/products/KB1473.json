@@ -1,0 +1,98 @@
+{
+  "id": "KB1473",
+  "slug": "sudadera-adidas-liverpool-entrenamiento-red",
+  "name": "adidas Liverpool Training",
+  "model": "Liverpool entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas del Liverpool 2025 2026 - roja",
+    "tagline": "Rinde a cualquier temperatura",
+    "intro": "Esta sudadera del Liverpool mantiene tu cuerpo cálido y tu energía intacta durante los entrenamientos. Rendimiento y escudo, unidos en una misma prenda.",
+    "collection": "",
+    "key_benefits": [
+      "Protección térmica: Interior suave y tejido técnico.",
+      "Diseño profesional: Igual al que usan los jugadores.",
+      "Ajuste técnico: Slim fit que no resta movilidad."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-color-rojo-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-color-rojo-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-roja-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-adidas-liverpool-entrenamiento-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-adidas-liverpool-entrenamiento-roja_4_detalle-hombro-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-color-rojo-adidas-liverpool-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-roja-adidas-liverpool-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-adidas-liverpool-entrenamiento-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB1473_sudadera-adidas-liverpool-entrenamiento-roja_4_detalle-hombro-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb1473",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Liverpool 2025 2026 - roja",
+    "tagline": "Rinde a cualquier temperatura",
+    "intro": "Esta sudadera del Liverpool mantiene tu cuerpo cálido y tu energía intacta durante los entrenamientos. Rendimiento y escudo, unidos en una misma prenda.",
+    "collection": "",
+    "key_benefits": [
+      "Protección térmica: Interior suave y tejido técnico.",
+      "Diseño profesional: Igual al que usan los jugadores.",
+      "Ajuste técnico: Slim fit que no resta movilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb1473"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Liverpool Training",
+    "submodel": "",
+    "product_model": "Liverpool entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "KA0028",
+  "slug": "adidas-tiro-club-orange",
+  "name": "adidas Tiro Club",
+  "model": "Tiro Club",
+  "brand": "adidas",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol adidas con cintas de velcro - naranjas",
+    "tagline": "Protección discreta para un juego veloz",
+    "intro": "Las adidas Tiro Club son ideales para jugadores rápidos que buscan protección ligera y ajuste cómodo sin interrumpir el movimiento natural del juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Espinillera ultradelgada para máxima movilidad.",
+      "Sujeción estable: Con cinta de velcro para mayor sujeción.",
+      "Material técnico: Protección de espuma maximizada.",
+      "Fácil de usar: Se coloca y ajusta rápidamente.",
+      "Estilo limpio: Acabado moderno y discreto."
+    ],
+    "technical_details": {
+      "range": "Tiro Club",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_espinilleras-color-rojo-adidas-tiro-club_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_espinilleras-color-rojo-adidas-tiro-club_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_canilleras-rojas-adidas-tiro-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_espinilleras-adidas-tiro-club-color-rojo_3_detalle-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_canilleras-adidas-tiro-club-rojas_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_espinilleras-color-rojo-adidas-tiro-club_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_canilleras-rojas-adidas-tiro-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_espinilleras-adidas-tiro-club-color-rojo_3_detalle-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA0028_canilleras-adidas-tiro-club-rojas_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka0028",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol adidas con cintas de velcro - naranjas",
+    "tagline": "Protección discreta para un juego veloz",
+    "intro": "Las adidas Tiro Club son ideales para jugadores rápidos que buscan protección ligera y ajuste cómodo sin interrumpir el movimiento natural del juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Espinillera ultradelgada para máxima movilidad.",
+      "Sujeción estable: Con cinta de velcro para mayor sujeción.",
+      "Material técnico: Protección de espuma maximizada.",
+      "Fácil de usar: Se coloca y ajusta rápidamente.",
+      "Estilo limpio: Acabado moderno y discreto."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka0028"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Tiro",
+    "submodel": "",
+    "product_model": "Tiro Club",
+    "sole_type": ""
+  }
+}

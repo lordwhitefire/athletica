@@ -1,0 +1,94 @@
+{
+  "id": "IM5017-010",
+  "slug": "guantes-nike-academy-therma-fit-t90-black",
+  "name": "Nike Academy Therma-Fit T90",
+  "model": "Academy Therma-Fit T90",
+  "brand": "Nike",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Total 90 Thermal Gloves - Black",
+    "tagline": "Heat and control, T90 style",
+    "intro": "The Nike Academy Total 90 thermal gloves are designed for training in cold weather with the best grip. Its Therma-FIT technology preserves heat without sacrificing sensitivity in contact with the ball.",
+    "collection": "",
+    "key_benefits": [
+      "Thermal insulation: Therma-FIT maintains body heat.",
+      "Textured palm: Greater grip on throw-ins and ball control.",
+      "Perfect fit: Elastic cuffs for secure hold.",
+      "Retro aesthetics: Total 90 classic logos and finishes."
+    ],
+    "technical_details": {
+      "range": "Nike Academy Therma-Fit T90",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-termicos-color-negro-nike-academy-therma-fit-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-termicos-color-negro-nike-academy-therma-fit-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-frio-negro-nike-academy-therma-fit-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-nike-academy-therma-fit-t90-color-negro_3_detalle-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-invierno-nike-academy-therma-fit-t90-negro_4_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-de-frio-color-negro-nike-academy-therma-fit-t90_5_detalle-corte.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-termicos-color-negro-nike-academy-therma-fit-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-frio-negro-nike-academy-therma-fit-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-nike-academy-therma-fit-t90-color-negro_3_detalle-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-invierno-nike-academy-therma-fit-t90-negro_4_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5017-010_guantes-de-frio-color-negro-nike-academy-therma-fit-t90_5_detalle-corte.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im5017-010",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes térmicos Nike Total 90 - negros",
+    "tagline": "Calor y control, al estilo T90",
+    "intro": "Los guantes térmicos Nike Academy Total 90 están diseñados para entrenar en climas fríos con el mejor agarre. Su tecnología Therma-FIT conserva el calor sin sacrificar sensibilidad en el contacto con el balón.",
+    "collection": "",
+    "key_benefits": [
+      "Aislamiento térmico: Therma-FIT mantiene el calor corporal.",
+      "Palma texturizada: Mayor agarre en saques de banda y control del balón.",
+      "Ajuste perfecto: Puños elásticos para sujeción segura.",
+      "Estética retro: Logos y acabados Total 90 clásicos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im5017-010"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "Academy",
+    "submodel": "",
+    "product_model": "Academy Therma-Fit T90",
+    "sole_type": ""
+  }
+}

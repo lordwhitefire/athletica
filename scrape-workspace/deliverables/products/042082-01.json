@@ -1,0 +1,109 @@
+{
+  "id": "042082-01",
+  "slug": "puma-ultra-pro-nc-blue",
+  "name": "Puma Ultra Pro NC",
+  "model": "Ultra Pro NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma negative cut goalkeeper gloves - blue",
+    "tagline": "Precision and Grip for High Performance",
+    "intro": "With the PUMA ULTRA PRO NC, every stop exudes confidence. Its negative cut optimizes the fit and improves the contact surface with the ball.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Secure fit: Wraparound wristband for added stability.",
+      "Total control: Negative cut that improves sensitivity with the ball.",
+      "Aerodynamic design: Modern and dynamic lines.",
+      "Advanced comfort: Soft, breathable materials."
+    ],
+    "technical_details": {
+      "range": "Ultra Pro NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b245ab1870ffe7f0102de8f4848d6ab2c1fbda79-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b245ab1870ffe7f0102de8f4848d6ab2c1fbda79-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9c645dcb1976916b9ac1cc88caede2b5520736ec-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c7a06cc686ba8e5c68f4c5029b6891f56efd7e3a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/49e7bf6d9c660ee7ee01e6585c4f207d46f5fdd1-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b245ab1870ffe7f0102de8f4848d6ab2c1fbda79-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9c645dcb1976916b9ac1cc88caede2b5520736ec-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c7a06cc686ba8e5c68f4c5029b6891f56efd7e3a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/49e7bf6d9c660ee7ee01e6585c4f207d46f5fdd1-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b245ab1870ffe7f0102de8f4848d6ab2c1fbda79-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b245ab1870ffe7f0102de8f4848d6ab2c1fbda79-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9c645dcb1976916b9ac1cc88caede2b5520736ec-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9c645dcb1976916b9ac1cc88caede2b5520736ec-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c7a06cc686ba8e5c68f4c5029b6891f56efd7e3a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c7a06cc686ba8e5c68f4c5029b6891f56efd7e3a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-49e7bf6d9c660ee7ee01e6585c4f207d46f5fdd1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/49e7bf6d9c660ee7ee01e6585c4f207d46f5fdd1-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042082-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte negativo - azules",
+    "tagline": "Precisión y Agarre para Alto Rendimiento",
+    "intro": "Con los PUMA ULTRA PRO NC, cada parada transmite confianza. Su corte negativo optimiza el ajuste y mejora la superficie de contacto con el balón.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Ajuste seguro: Muñequera envolvente para mayor estabilidad.",
+      "Control total: Corte negativo que mejora la sensibilidad con el balón.",
+      "Diseño aerodinámico: Líneas modernas y dinámicas.",
+      "Comodidad avanzada: Materiales suaves y transpirables."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042082-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Pro NC",
+    "product_model": "Ultra Pro NC",
+    "sole_type": ""
+  }
+}

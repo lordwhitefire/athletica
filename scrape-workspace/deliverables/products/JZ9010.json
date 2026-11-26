@@ -1,0 +1,98 @@
+{
+  "id": "JZ9010",
+  "slug": "camiseta-adidas-real-madrid-entrenamiento-nino-purple",
+  "name": "adidas Real Madrid Training Kids",
+  "model": "Real Madrid entrenamiento niño",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de manga corta de entrenamiento adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Pasión madridista desde la cantera",
+    "intro": "Esta camiseta de entrenamiento para niño del Real Madrid es ligera, transpirable y auténtica. Ideal para los que se forman como campeones.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño funcional: Corte cómodo para moverse sin límites.",
+      "Inspiración profesional: Igual a la que usan los cracks.",
+      "Frescura garantizada: Secado rápido gracias a AEROREADY."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-color-gris-adidas-real-madrid-entrenamiento-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-color-gris-adidas-real-madrid-entrenamiento-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-gris-adidas-real-madrid-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-adidas-real-madrid-entrenamiento-nino-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-adidas-real-madrid-entrenamiento-nino-gris_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-color-gris-adidas-real-madrid-entrenamiento-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-gris-adidas-real-madrid-entrenamiento-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-adidas-real-madrid-entrenamiento-nino-color-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9010_camiseta-adidas-real-madrid-entrenamiento-nino-gris_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jz9010",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de manga corta de entrenamiento adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Pasión madridista desde la cantera",
+    "intro": "Esta camiseta de entrenamiento para niño del Real Madrid es ligera, transpirable y auténtica. Ideal para los que se forman como campeones.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño funcional: Corte cómodo para moverse sin límites.",
+      "Inspiración profesional: Igual a la que usan los cracks.",
+      "Frescura garantizada: Secado rápido gracias a AEROREADY."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jz9010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento niño",
+    "sole_type": ""
+  }
+}

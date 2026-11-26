@@ -1,0 +1,92 @@
+{
+  "id": "AV2610-302",
+  "slug": "camiseta-interior-termica-nike-mujer-park-first-layer-df-green",
+  "name": "interior térmica Nike Women Park First Layer DF",
+  "model": "interior térmica Nike Women Park First Layer DF",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta interior compresiva para mujer manga larga Nike - verde",
+    "tagline": "Compresión y calor para rendir en invierno",
+    "intro": "La camiseta térmica Park First Layer de Nike ofrece un ajuste ceñido que se adapta al cuerpo femenino, manteniendo el calor corporal y permitiendo una movilidad total. Diseñada para rendir incluso en los días más fríos.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Compresión que se adapta al cuerpo femenino.",
+      "Retención térmica: Ideal para mantener el calor en climas fríos.",
+      "Transpirabilidad activa: Mantiene el cuerpo seco incluso en sesiones intensas.",
+      "Libertad total: Tejido elástico que no limita tus movimientos."
+    ],
+    "technical_details": {
+      "range": "interior térmica Nike mujer Park First Layer DF",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-color-verde-nike-mujer-park-first-layer-df_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-color-verde-nike-mujer-park-first-layer-df_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-verde-oscuro-nike-mujer-park-first-layer-df_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-nike-mujer-park-first-layer-df-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-nike-mujer-park-first-layer-df-verde-oscuro_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-color-verde-nike-mujer-park-first-layer-df_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-verde-oscuro-nike-mujer-park-first-layer-df_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-nike-mujer-park-first-layer-df-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/V/AV2610-302_camiseta-manga-larga-nike-mujer-park-first-layer-df-verde-oscuro_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/av2610-302",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta interior compresiva para mujer manga larga Nike - verde",
+    "tagline": "Compresión y calor para rendir en invierno",
+    "intro": "La camiseta térmica Park First Layer de Nike ofrece un ajuste ceñido que se adapta al cuerpo femenino, manteniendo el calor corporal y permitiendo una movilidad total. Diseñada para rendir incluso en los días más fríos.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Compresión que se adapta al cuerpo femenino.",
+      "Retención térmica: Ideal para mantener el calor en climas fríos.",
+      "Transpirabilidad activa: Mantiene el cuerpo seco incluso en sesiones intensas.",
+      "Libertad total: Tejido elástico que no limita tus movimientos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/av2610-302"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "interior",
+    "submodel": "",
+    "product_model": "interior térmica Nike Women Park First Layer DF",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "101135201",
+  "slug": "uhlsport-supersoft-hn-flex-frame-black",
+  "name": "Uhlsport Supersoft HN Flex Frame",
+  "model": "Supersoft HN Flex Frame",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Supersoft HN Flex Frame",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/721af4885009d35c503fe7044b888a0de38b8b07-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/721af4885009d35c503fe7044b888a0de38b8b07-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/db01f12a23fc8fdb6af9c9ceaeff44a884e61a14-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c4a1aec01eacf3862c9b0a07793433b56da370a9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/85a0453ddfd03463392aac715bc9587b72c2b5c1-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/721af4885009d35c503fe7044b888a0de38b8b07-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/db01f12a23fc8fdb6af9c9ceaeff44a884e61a14-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c4a1aec01eacf3862c9b0a07793433b56da370a9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/85a0453ddfd03463392aac715bc9587b72c2b5c1-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-721af4885009d35c503fe7044b888a0de38b8b07-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/721af4885009d35c503fe7044b888a0de38b8b07-1500x1500.jpg"
+    },
+    {
+      "_id": "image-db01f12a23fc8fdb6af9c9ceaeff44a884e61a14-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/db01f12a23fc8fdb6af9c9ceaeff44a884e61a14-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c4a1aec01eacf3862c9b0a07793433b56da370a9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c4a1aec01eacf3862c9b0a07793433b56da370a9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-85a0453ddfd03463392aac715bc9587b72c2b5c1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/85a0453ddfd03463392aac715bc9587b72c2b5c1-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101135201",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101135201"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Supersoft",
+    "submodel": "",
+    "product_model": "Supersoft HN Flex Frame",
+    "sole_type": ""
+  }
+}

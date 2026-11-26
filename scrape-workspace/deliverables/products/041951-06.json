@@ -1,0 +1,97 @@
+{
+  "id": "041951-06",
+  "slug": "puma-ultra-match-rc-blanco-rojo",
+  "name": "Puma Ultra Match RC",
+  "model": "Ultra Match RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Match RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/01e4028b87c4f411cc15ad97287ac19a7265eabb-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/01e4028b87c4f411cc15ad97287ac19a7265eabb-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4a91ecd9c2c78eb4ab68a2675f7cf2de962879c4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f0a12753a148c0f044d0f5d75a3b009404c0ba04-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/01e4028b87c4f411cc15ad97287ac19a7265eabb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4a91ecd9c2c78eb4ab68a2675f7cf2de962879c4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f0a12753a148c0f044d0f5d75a3b009404c0ba04-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-01e4028b87c4f411cc15ad97287ac19a7265eabb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/01e4028b87c4f411cc15ad97287ac19a7265eabb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4a91ecd9c2c78eb4ab68a2675f7cf2de962879c4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4a91ecd9c2c78eb4ab68a2675f7cf2de962879c4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f0a12753a148c0f044d0f5d75a3b009404c0ba04-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f0a12753a148c0f044d0f5d75a3b009404c0ba04-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/041951-06",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/041951-06"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Match RC",
+    "product_model": "Ultra Match RC",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "085174-01",
+  "slug": "balon-puma-serie-a-26-27-mini-stellar-hi-vis-yellow",
+  "name": "Puma Serie A 26 27 mini Stellar Hi-Vis",
+  "model": "Serie A 26 27 mini Stellar Hi-Vis",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Stellar Serie A 2026 2027 Mini Soccer Ball - Yellow",
+    "tagline": "The Serie A mini ball with maximum visibility",
+    "intro": "The Puma Serie A 26 27 mini Stellar Hi-Vis ball is perfect for improving control, practicing technical skills or enjoying football anywhere. Inspired by the official ball of the Italian Serie A, it presents a compact and resistant design with high visibility colors, ideal for recreational sessions and technical training. Its mini size makes it easy to handle and makes it a perfect option for players of all ages.",
+    "collection": "",
+    "key_benefits": [
+      "Official Serie A design: Inspired by the Italian competition ball.",
+      "Mini size: Ideal for improving control and technique.",
+      "Gran resistencia: Materiales preparados para un uso frecuente.",
+      "High visibility: Its striking design makes it easy to track the ball during the game.",
+      "Versatile use: Perfect for recreational play and technical training."
+    ],
+    "technical_details": {
+      "range": "Puma Serie A 26 27 mini Stellar Hi-Vis",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f698bbb25d45bdb86e9dd5017c60769ecea7a724-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f698bbb25d45bdb86e9dd5017c60769ecea7a724-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8b3de599025e908c279bd514c34c40e1339ff07e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/dacc28c28eaed3b16f3e47a58e0a1b725bff318b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f698bbb25d45bdb86e9dd5017c60769ecea7a724-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8b3de599025e908c279bd514c34c40e1339ff07e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/dacc28c28eaed3b16f3e47a58e0a1b725bff318b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f698bbb25d45bdb86e9dd5017c60769ecea7a724-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f698bbb25d45bdb86e9dd5017c60769ecea7a724-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8b3de599025e908c279bd514c34c40e1339ff07e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8b3de599025e908c279bd514c34c40e1339ff07e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-dacc28c28eaed3b16f3e47a58e0a1b725bff318b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/dacc28c28eaed3b16f3e47a58e0a1b725bff318b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085174-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma Stellar de la Serie A 2026 2027 mini - amarillo",
+    "tagline": "El mini balón de la Serie A con máxima visibilidad",
+    "intro": "El balón Puma Serie A 26 27 mini Stellar Hi-Vis es perfecto para mejorar el control, practicar habilidades técnicas o disfrutar del fútbol en cualquier lugar. Inspirado en el balón oficial de la Serie A italiana, presenta un diseño compacto y resistente con colores de alta visibilidad, ideal para sesiones recreativas y entrenamiento técnico. Su tamaño mini facilita el manejo y lo convierte en una opción perfecta para jugadores de todas las edades.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Serie A: Inspirado en el balón de la competición italiana.",
+      "Tamaño mini: Ideal para mejorar el control y la técnica.",
+      "Gran resistencia: Materiales preparados para un uso frecuente.",
+      "Alta visibilidad: Su llamativo diseño facilita el seguimiento del balón durante el juego.",
+      "Uso versátil: Perfecto para juego recreativo y entrenamiento técnico."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085174-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Serie A",
+    "submodel": "",
+    "product_model": "Serie A 26 27 mini Stellar Hi-Vis",
+    "sole_type": ""
+  }
+}

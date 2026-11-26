@@ -1,0 +1,96 @@
+{
+  "id": "JM7302",
+  "slug": "short-adidas-inter-miami-og-blue",
+  "name": "adidas Inter Miami OG",
+  "model": "Inter Miami OG",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de algodón adidas del Inter de Miami - cian",
+    "tagline": "Comodidad y estilo para fans auténticos",
+    "intro": "Estos pantalones cortos del Inter de Miami están diseñados para quienes buscan confort diario sin renunciar al orgullo por su club. Perfectos para relajarse con un look deportivo y actual.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño versátil: Apto para casa, calle o entrenamientos suaves.",
+      "Tejido confortable: Mezcla de algodón suave al tacto.",
+      "Identidad de club: Escudo oficial bordado en la pierna.",
+      "Detalles funcionales: Cintura elástica y bolsillos laterales."
+    ],
+    "technical_details": {
+      "range": "adidas Inter Miami OG",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_pantalon-corto-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_pantalon-corto-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_short-azul-claro-adidas-inter-miami-og_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_pantalon-corto-adidas-inter-miami-og-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_short-adidas-inter-miami-og-azul-claro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_pantalon-corto-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_short-azul-claro-adidas-inter-miami-og_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_pantalon-corto-adidas-inter-miami-og-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7302_short-adidas-inter-miami-og-azul-claro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm7302",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de algodón adidas del Inter de Miami - cian",
+    "tagline": "Comodidad y estilo para fans auténticos",
+    "intro": "Estos pantalones cortos del Inter de Miami están diseñados para quienes buscan confort diario sin renunciar al orgullo por su club. Perfectos para relajarse con un look deportivo y actual.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño versátil: Apto para casa, calle o entrenamientos suaves.",
+      "Tejido confortable: Mezcla de algodón suave al tacto.",
+      "Identidad de club: Escudo oficial bordado en la pierna.",
+      "Detalles funcionales: Cintura elástica y bolsillos laterales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm7302"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Inter Miami",
+    "submodel": "",
+    "product_model": "Inter Miami OG",
+    "sole_type": ""
+  }
+}

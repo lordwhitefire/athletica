@@ -1,0 +1,100 @@
+{
+  "id": "TM11144-023",
+  "slug": "short-castore-athletic-club-entrenamiento-25-26-blue",
+  "name": "Castore Athletic Club Training 25 26",
+  "model": "Athletic Club entrenamiento 25 26",
+  "brand": "Castore",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Castore del Athletic Club 2025 2026 - azul marino",
+    "tagline": "Libertad total en cada sprint",
+    "intro": "El short de entrenamiento Castore del Athletic Club está diseñado para máxima movilidad y frescura en cada sesión.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido técnico ligero: Sensación de libertad durante el esfuerzo.",
+      "Cintura elástica: Ajuste perfecto sin presión.",
+      "Color púrpura oscuro: Identidad del club con estilo diferencial.",
+      "Diseño sin restricciones: Ideal para cualquier tipo de ejercicio."
+    ],
+    "technical_details": {
+      "range": "Castore Athletic Club entrenamiento  25 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_pantalon-corto-color-azul-castore-athletic-club-entrenamiento--25-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_pantalon-corto-color-azul-castore-athletic-club-entrenamiento--25-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_pantalon-corto-castore-athletic-club-entrenamiento--25-26-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_short-azul-marino-castore-athletic-club-entrenamiento--25-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_short-castore-athletic-club-entrenamiento--25-26-azul-marino_4_detalle-cintura-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_pantalon-corto-color-azul-castore-athletic-club-entrenamiento--25-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_pantalon-corto-castore-athletic-club-entrenamiento--25-26-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_short-azul-marino-castore-athletic-club-entrenamiento--25-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11144-023_short-castore-athletic-club-entrenamiento--25-26-azul-marino_4_detalle-cintura-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/tm11144-023",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento Castore del Athletic Club 2025 2026 - azul marino",
+    "tagline": "Libertad total en cada sprint",
+    "intro": "El short de entrenamiento Castore del Athletic Club está diseñado para máxima movilidad y frescura en cada sesión.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido técnico ligero: Sensación de libertad durante el esfuerzo.",
+      "Cintura elástica: Ajuste perfecto sin presión.",
+      "Color púrpura oscuro: Identidad del club con estilo diferencial.",
+      "Diseño sin restricciones: Ideal para cualquier tipo de ejercicio."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/tm11144-023"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Athletic",
+    "submodel": "",
+    "product_model": "Athletic Club entrenamiento 25 26",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "042084-02",
+  "slug": "puma-ultra-play-rc-orange",
+  "name": "Puma Ultra Play RC",
+  "model": "Ultra Play RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma goalkeeper gloves regular fit - orange",
+    "tagline": "Designed for goalkeepers who dominate their area",
+    "intro": "The Puma Ultra Play RC offers anatomical fit, advanced grip technology and a durable construction for the demands of the modern game.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Lasting comfort: Technical materials that guarantee comfort throughout the session.",
+      "Shocking style: Hot Pursuit design that transmits power and personality."
+    ],
+    "technical_details": {
+      "range": "Ultra Play RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/721830e041183189817769a8bbc8c19bfe668312-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/721830e041183189817769a8bbc8c19bfe668312-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f29fad7d8e25216e181185d4ec7e20480e3bebac-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/be783a54044197731a2b3d52fa24a51d2e7fdbee-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9528cbf310b2eb6eadc985778d76a20ec4403097-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/721830e041183189817769a8bbc8c19bfe668312-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f29fad7d8e25216e181185d4ec7e20480e3bebac-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/be783a54044197731a2b3d52fa24a51d2e7fdbee-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9528cbf310b2eb6eadc985778d76a20ec4403097-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-721830e041183189817769a8bbc8c19bfe668312-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/721830e041183189817769a8bbc8c19bfe668312-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f29fad7d8e25216e181185d4ec7e20480e3bebac-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f29fad7d8e25216e181185d4ec7e20480e3bebac-1500x1500.jpg"
+    },
+    {
+      "_id": "image-be783a54044197731a2b3d52fa24a51d2e7fdbee-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/be783a54044197731a2b3d52fa24a51d2e7fdbee-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9528cbf310b2eb6eadc985778d76a20ec4403097-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9528cbf310b2eb6eadc985778d76a20ec4403097-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/042084-02",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Puma corte regular - naranjas",
+    "tagline": "Diseñados para porteros que dominan su área",
+    "intro": "Los Puma Ultra Play RC ofrecen ajuste anatómico, tecnología de agarre avanzada y una estructura resistente para las exigencias del juego moderno.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Comodidad duradera: Materiales técnicos que garantizan confort durante toda la sesión.",
+      "Estilo impactante: Diseño Hot Pursuit que transmite potencia y personalidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/042084-02"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Play RC",
+    "product_model": "Ultra Play RC",
+    "sole_type": ""
+  }
+}

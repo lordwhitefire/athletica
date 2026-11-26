@@ -1,0 +1,98 @@
+{
+  "id": "KA1521",
+  "slug": "camiseta-adidas-japon-originals-black",
+  "name": "adidas Japón Originals",
+  "model": "Japón Originals",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Japón - negra",
+    "tagline": "Orgullo japonés con sello Originals",
+    "intro": "La camiseta adidas Originals Japón celebra la herencia futbolística combinando cultura deportiva y diseño atemporal. Inspirada en la segunda equipación de la selección japonesa, esta prenda equilibra tradición y estética moderna en una silueta versátil.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en la segunda equipación: Detalles que evocan la identidad visual de Japón.",
+      "Tejido de punto suave: Ligero, cómodo y agradable al tacto.",
+      "Corte slim fit: Ajuste estilizado que realza la silueta.",
+      "Cuello redondo clásico: Acabado limpio y fácil de combinar.",
+      "Logo Trefoil y escudo oficial: Autenticidad adidas con carácter histórico."
+    ],
+    "technical_details": {
+      "range": "adidas Japón Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-color-negro-adidas-japon-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-color-negro-adidas-japon-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-negra-adidas-japon-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-adidas-japon-originals-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-adidas-japon-originals-negra_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-color-negro-adidas-japon-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-negra-adidas-japon-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-adidas-japon-originals-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA1521_camiseta-adidas-japon-originals-negra_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka1521",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Japón - negra",
+    "tagline": "Orgullo japonés con sello Originals",
+    "intro": "La camiseta adidas Originals Japón celebra la herencia futbolística combinando cultura deportiva y diseño atemporal. Inspirada en la segunda equipación de la selección japonesa, esta prenda equilibra tradición y estética moderna en una silueta versátil.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en la segunda equipación: Detalles que evocan la identidad visual de Japón.",
+      "Tejido de punto suave: Ligero, cómodo y agradable al tacto.",
+      "Corte slim fit: Ajuste estilizado que realza la silueta.",
+      "Cuello redondo clásico: Acabado limpio y fácil de combinar.",
+      "Logo Trefoil y escudo oficial: Autenticidad adidas con carácter histórico."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka1521"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Japón",
+    "submodel": "",
+    "product_model": "Japón Originals",
+    "sole_type": ""
+  }
+}

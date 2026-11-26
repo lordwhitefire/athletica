@@ -1,0 +1,90 @@
+{
+  "id": "AT6178-010",
+  "slug": "nike-premier-3-tf-black",
+  "name": "Nike Premier 3 TF",
+  "model": "Premier 3",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Premier 3",
+      "sole_type": "TF",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "TF",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-multitaco-color-negro-nike-premier-3-tf_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-multitaco-color-negro-nike-premier-3-tf_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_multitaco-negras-nike-premier-3-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-turf-nike-premier-3-tf-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-taco-turf-color-negro-nike-premier-3-tf_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-multitaco-negras-nike-premier-3-tf_6_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_multitaco-nike-premier-3-tf-color-negro_7_pie-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_zapatillas-multitaco-nike-premier-3-tf-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_zapatillas-multitaco-nike-premier-3-tf-negras_8_lengueta.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-multitaco-color-negro-nike-premier-3-tf_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_multitaco-negras-nike-premier-3-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-turf-nike-premier-3-tf-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-taco-turf-color-negro-nike-premier-3-tf_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_botas-multitaco-negras-nike-premier-3-tf_6_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_multitaco-nike-premier-3-tf-color-negro_7_pie-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_zapatillas-multitaco-nike-premier-3-tf-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/T/AT6178-010_zapatillas-multitaco-nike-premier-3-tf-negras_8_lengueta.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/at6178-010",
+    "language": "es",
+    "category": "Botas multitaco",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas multitaco"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/at6178-010"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Premier",
+    "submodel": "3",
+    "product_model": "Premier 3",
+    "sole_type": "TF"
+  }
+}

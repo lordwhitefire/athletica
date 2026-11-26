@@ -1,0 +1,92 @@
+{
+  "id": "IM6315-719",
+  "slug": "camiseta-nike-t90-energy-dri-fit-yellow",
+  "name": "Nike T90 Energy Dri-Fit",
+  "model": "T90 Energy Dri-Fit",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga larga de entrenamiento Nike - amarilla",
+    "tagline": "Explosión de energía para entrenamientos intensos",
+    "intro": "La camiseta Nike T90 amarilla está diseñada para destacar en todos los sentidos: color, rendimiento y tecnología. Llévala cuando tu entrenamiento pida lo mejor de ti.",
+    "collection": "",
+    "key_benefits": [
+      "Visibilidad total: Amarillo vibrante que resalta en cualquier entorno.",
+      "Technical comfort: Dri-FIT that regulates sweat.",
+      "Rendimiento superior: Corte ajustado para libertad en cada movimiento."
+    ],
+    "technical_details": {
+      "range": "Nike T90 Energy Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6315-719_camiseta-manga-larga-color-amarillo-nike-t90-energy-6-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6315-719_camiseta-manga-larga-color-amarillo-nike-t90-energy-6-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6315-719_camiseta-manga-larga-amarilla-nike-t90-energy-6-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6315-719_camiseta-manga-larga-nike-t90-energy-6-dri-fit-color-amarillo_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6315-719_camiseta-manga-larga-color-amarillo-nike-t90-energy-6-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6315-719_camiseta-manga-larga-amarilla-nike-t90-energy-6-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM6315-719_camiseta-manga-larga-nike-t90-energy-6-dri-fit-color-amarillo_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im6315-719",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga larga de entrenamiento Nike - amarilla",
+    "tagline": "Explosión de energía para entrenamientos intensos",
+    "intro": "La camiseta Nike T90 amarilla está diseñada para destacar en todos los sentidos: color, rendimiento y tecnología. Llévala cuando tu entrenamiento pida lo mejor de ti.",
+    "collection": "",
+    "key_benefits": [
+      "Visibilidad total: Amarillo vibrante que resalta en cualquier entorno.",
+      "Comodidad técnica: Dri-FIT que regula el sudor.",
+      "Rendimiento superior: Corte ajustado para libertad en cada movimiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im6315-719"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "T90",
+    "submodel": "",
+    "product_model": "T90 Energy Dri-Fit",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "HS9753",
+  "slug": "gorra-adidas-sevilla-black",
+  "name": "adidas Sevilla",
+  "model": "Sevilla",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra de paseo adidas del Sevilla - negra",
+    "tagline": "Estilo hispalense para el día a día",
+    "intro": "La gorra adidas del Sevilla combina tradición, diseño urbano y pasión por el fútbol. Su rojo intenso y el escudo bordado hacen de esta gorra un complemento ideal para fans del club sevillano.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño clásico: Con visera curva y cierre ajustable.",
+      "Identidad fuerte: Escudo bordado del Sevilla en el frontal.",
+      "Comodidad diaria: Banda interior acolchada y material ligero.",
+      "Uso versátil: Perfecta para el estadio o la calle."
+    ],
+    "technical_details": {
+      "range": "adidas Sevilla",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9753_gorra-color-negro-adidas-sevilla_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9753_gorra-color-negro-adidas-sevilla_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9753_gorra-negra-adidas-sevilla_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9753_gorra-adidas-sevilla-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9753_gorra-color-negro-adidas-sevilla_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9753_gorra-negra-adidas-sevilla_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/S/HS9753_gorra-adidas-sevilla-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hs9753",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo adidas del Sevilla - negra",
+    "tagline": "Estilo hispalense para el día a día",
+    "intro": "La gorra adidas del Sevilla combina tradición, diseño urbano y pasión por el fútbol. Su rojo intenso y el escudo bordado hacen de esta gorra un complemento ideal para fans del club sevillano.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño clásico: Con visera curva y cierre ajustable.",
+      "Identidad fuerte: Escudo bordado del Sevilla en el frontal.",
+      "Comodidad diaria: Banda interior acolchada y material ligero.",
+      "Uso versátil: Perfecta para el estadio o la calle."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hs9753"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Sevilla",
+    "submodel": "",
+    "product_model": "Sevilla",
+    "sole_type": ""
+  }
+}

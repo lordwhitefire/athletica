@@ -1,0 +1,113 @@
+{
+  "id": "042067-11",
+  "slug": "puma-future-match-nc-white",
+  "name": "Puma Future Match NC",
+  "model": "Future Match NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma negative cut goalkeeper gloves - white",
+    "tagline": "Versatility and Comfort for Every Workout",
+    "intro": "The Puma Future Match NC are designed for goalkeepers looking for a balance between performance and comfort. Its negative cut ensures a tight fit and a great feeling of control. Ideal for intense training sessions.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Comfortable Fit: Negative design for a snug, controlled feel.",
+      "Durabilidad destacada: Materiales pensados para uso frecuente.",
+      "Facilidad de uso: Ideal para entrenamientos intensos y diarios.",
+      "Value for money: Balanced option with good features."
+    ],
+    "technical_details": {
+      "range": "Future Match NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b93a87b643313f5cafd60a988496782434cf1aca-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b93a87b643313f5cafd60a988496782434cf1aca-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b3c4112a29d936fd69bfbec36b2b6f43236d584d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/02ba702b290e6cdf893c9d395af8580878290598-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/865794353ce80674b93428b474ed3da527f7a451-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b93a87b643313f5cafd60a988496782434cf1aca-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b3c4112a29d936fd69bfbec36b2b6f43236d584d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/02ba702b290e6cdf893c9d395af8580878290598-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/865794353ce80674b93428b474ed3da527f7a451-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b93a87b643313f5cafd60a988496782434cf1aca-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b93a87b643313f5cafd60a988496782434cf1aca-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b3c4112a29d936fd69bfbec36b2b6f43236d584d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b3c4112a29d936fd69bfbec36b2b6f43236d584d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-02ba702b290e6cdf893c9d395af8580878290598-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/02ba702b290e6cdf893c9d395af8580878290598-1500x1500.jpg"
+    },
+    {
+      "_id": "image-865794353ce80674b93428b474ed3da527f7a451-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/865794353ce80674b93428b474ed3da527f7a451-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/042067-11",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Puma corte negativo - blancos",
+    "tagline": "Versatilidad y Comodidad para Cada Entrenamiento",
+    "intro": "Los Puma Future Match NC están pensados para porteros que buscan equilibrio entre rendimiento y comodidad. Su corte negativo asegura un ajuste ceñido y una gran sensación de control. Ideales para sesiones intensas de entrenamiento.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Ajuste cómodo: Diseño negativo para sensación ceñida y controlada.",
+      "Durabilidad destacada: Materiales pensados para uso frecuente.",
+      "Facilidad de uso: Ideal para entrenamientos intensos y diarios.",
+      "Relación calidad-precio: Opción equilibrada con buenas prestaciones."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/042067-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Match NC",
+    "product_model": "Future Match NC",
+    "sole_type": ""
+  }
+}

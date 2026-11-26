@@ -1,0 +1,85 @@
+{
+  "id": "DN3611-014",
+  "slug": "nike-mercurial-lite-black",
+  "name": "Nike Mercurial Lite",
+  "model": "Mercurial Lite",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - negras",
+    "tagline": "Protección ligera para jugar sin límites",
+    "intro": "Las espinilleras Nike Mercurial Lite están diseñadas para ofrecer una protección eficaz sin comprometer la velocidad ni la movilidad. Su construcción ultrafina combina una carcasa resistente de perfil bajo con una espuma suave perforada que ayuda a dispersar los impactos durante el juego. Ideales para futbolistas que buscan comodidad, ligereza y seguridad en entrenamientos y partidos.",
+    "collection": "",
+    "key_benefits": [
+      "Perfil bajo: Diseño ligero y resistente que no limita los movimientos.",
+      "Espuma perforada: Mayor amortiguación y absorción de impactos.",
+      "Nike Dri-FIT: Ayuda a mantener la piel seca y cómoda.",
+      "Fundas elásticas: Sujeción estable durante todo el partido."
+    ],
+    "technical_details": {
+      "range": "Mercurial Lite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-014_espinilleras-color-negro-nike-mercurial-lite_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-014_espinilleras-color-negro-nike-mercurial-lite_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3611-014_espinilleras-color-negro-nike-mercurial-lite_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dn3611-014",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - negras",
+    "tagline": "Protección ligera para jugar sin límites",
+    "intro": "Las espinilleras Nike Mercurial Lite están diseñadas para ofrecer una protección eficaz sin comprometer la velocidad ni la movilidad. Su construcción ultrafina combina una carcasa resistente de perfil bajo con una espuma suave perforada que ayuda a dispersar los impactos durante el juego. Ideales para futbolistas que buscan comodidad, ligereza y seguridad en entrenamientos y partidos.",
+    "collection": "",
+    "key_benefits": [
+      "Perfil bajo: Diseño ligero y resistente que no limita los movimientos.",
+      "Espuma perforada: Mayor amortiguación y absorción de impactos.",
+      "Nike Dri-FIT: Ayuda a mantener la piel seca y cómoda.",
+      "Fundas elásticas: Sujeción estable durante todo el partido."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dn3611-014"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite",
+    "product_model": "Mercurial Lite",
+    "sole_type": ""
+  }
+}

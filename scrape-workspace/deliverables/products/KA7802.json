@@ -1,0 +1,92 @@
+{
+  "id": "KA7802",
+  "slug": "adidas-copa-pro-black",
+  "name": "adidas Copa Pro",
+  "model": "Copa Pro",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - negros",
+    "tagline": "Control total en cada intervención",
+    "intro": "Los adidas Copa Pro están diseñados para porteros que buscan seguridad, ajuste y rendimiento. Gracias a su corte negativo y materiales específicos, estos guantes te acompañan en cada desafío bajo palos.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Corte Negativo: Permite un ajuste cómodo que mejora el control del balón.",
+      "Comodidad superior: Diseñados para adaptarse con precisión a la forma de la mano.",
+      "Construcción adidas: Inspirados en el legado profesional con visión moderna.",
+      "Preparados para competir: Pensados para jugadores que entrenan o compiten al máximo nivel."
+    ],
+    "technical_details": {
+      "range": "Copa Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-de-portero-color-negro-adidas-copa-pro_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-de-portero-color-negro-adidas-copa-pro_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-portero-negros-adidas-copa-pro_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-de-arquero-adidas-copa-pro-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-de-futbol-adidas-copa-pro-negros_4_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-de-portero-color-negro-adidas-copa-pro_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-portero-negros-adidas-copa-pro_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-de-arquero-adidas-copa-pro-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7802_guantes-de-futbol-adidas-copa-pro-negros_4_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka7802",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - negros",
+    "tagline": "Control total en cada intervención",
+    "intro": "Los adidas Copa Pro están diseñados para porteros que buscan seguridad, ajuste y rendimiento. Gracias a su corte negativo y materiales específicos, estos guantes te acompañan en cada desafío bajo palos.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Corte Negativo: Permite un ajuste cómodo que mejora el control del balón.",
+      "Comodidad superior: Diseñados para adaptarse con precisión a la forma de la mano.",
+      "Construcción adidas: Inspirados en el legado profesional con visión moderna.",
+      "Preparados para competir: Pensados para jugadores que entrenan o compiten al máximo nivel."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka7802"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Pro",
+    "product_model": "Copa Pro",
+    "sole_type": ""
+  }
+}

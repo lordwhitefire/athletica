@@ -1,0 +1,84 @@
+{
+  "id": "RINATCO-MNE-A",
+  "slug": "manguitos-rinat-portero-black",
+  "name": "Manguitos Rinat Goalkeeper",
+  "model": "Manguitos Rinat Goalkeeper",
+  "brand": "Rinat",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manguitos de portero compresivos y antiabrasión Rinat - negros",
+    "tagline": "Protección ligera para parar sin límites",
+    "intro": "Los manguitos Rinat combinan compresión con refuerzo técnico en los puntos clave del brazo. Diseñados para porteros que necesitan rendimiento y libertad total.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño compresivo: Estimula la circulación y reduce la fatiga muscular.",
+      "Refuerzo anatómico: Acolchado en zonas de impacto sin perder agilidad.",
+      "Adaptabilidad total: Apto para entreno o partido, cualquier posición de portero."
+    ],
+    "technical_details": {
+      "range": "Rinat portero",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/R/I/RINATCO-MNE-A_imagen-de-los-manguitos-de-entrenamiento-de-futbol-rinat-a-tech-2018-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/R/I/RINATCO-MNE-A_imagen-de-los-manguitos-de-entrenamiento-de-futbol-rinat-a-tech-2018-negro_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/R/I/RINATCO-MNE-A_manguitos-negros-rinat-portero_2_dos-unidades.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/R/I/RINATCO-MNE-A_manguitos-para-portero-rinat-portero-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/R/I/RINATCO-MNE-A_imagen-de-los-manguitos-de-entrenamiento-de-futbol-rinat-a-tech-2018-negro_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/R/I/RINATCO-MNE-A_manguitos-negros-rinat-portero_2_dos-unidades.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/R/I/RINATCO-MNE-A_manguitos-para-portero-rinat-portero-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/rinatco-mne-a",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Manguitos de portero compresivos y antiabrasión Rinat - negros",
+    "tagline": "Protección ligera para parar sin límites",
+    "intro": "Los manguitos Rinat combinan compresión con refuerzo técnico en los puntos clave del brazo. Diseñados para porteros que necesitan rendimiento y libertad total.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño compresivo: Estimula la circulación y reduce la fatiga muscular.",
+      "Refuerzo anatómico: Acolchado en zonas de impacto sin perder agilidad.",
+      "Adaptabilidad total: Apto para entreno o partido, cualquier posición de portero."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/rinatco-mne-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Manguitos",
+    "submodel": "",
+    "product_model": "Manguitos Rinat Goalkeeper",
+    "sole_type": ""
+  }
+}

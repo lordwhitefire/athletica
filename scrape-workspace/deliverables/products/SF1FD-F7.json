@@ -1,0 +1,86 @@
+{
+  "id": "SF1FD-F7",
+  "slug": "new-balance-furon-v7-pro-fg-naranja-rojo",
+  "name": "New Balance Furon v7 Pro FG",
+  "model": "Furon v7 Pro",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Naranja / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Balance Furon v7 Pro",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-color-rojo-y-naranja-new-balance-furon-v7-pro-fg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-color-rojo-y-naranja-new-balance-furon-v7-pro-fg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-con-tacos-naranjas-rojizas-new-balance-furon-v7-pro-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-futbol-new-balance-furon-v7-pro-fg-color-rojo-y-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-tacos-new-balance-furon-v7-pro-fg-naranjas-rojizas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_zapatillas-futbol-color-rojo-y-naranja-new-balance-furon-v7-pro-fg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-naranjas-rojizas-new-balance-furon-v7-pro-fg_6_detalle-suela.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-color-rojo-y-naranja-new-balance-furon-v7-pro-fg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-con-tacos-naranjas-rojizas-new-balance-furon-v7-pro-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-futbol-new-balance-furon-v7-pro-fg-color-rojo-y-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-tacos-new-balance-furon-v7-pro-fg-naranjas-rojizas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_zapatillas-futbol-color-rojo-y-naranja-new-balance-furon-v7-pro-fg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF1FD-F7_botas-de-futbol-naranjas-rojizas-new-balance-furon-v7-pro-fg_6_detalle-suela.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sf1fd-f7",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sf1fd-f7"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Furon",
+    "submodel": "v7 Pro",
+    "product_model": "Furon v7 Pro",
+    "sole_type": "FG"
+  }
+}

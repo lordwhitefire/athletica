@@ -1,0 +1,96 @@
+{
+  "id": "JM7347",
+  "slug": "chaqueta-adidas-ajax-icon-marron",
+  "name": "adidas Ajax Icon",
+  "model": "Ajax Icon",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas del Ajax - beige",
+    "tagline": "Estilo clásico con alma ajacied",
+    "intro": "La chaqueta Ajax Icon de adidas revive el espíritu de los años dorados del club con un diseño retro y funcional. Ideal para los días de partido o como prenda urbana con historia futbolera.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Diseño basado en los años 90 con corte deportivo clásico.",
+      "Comodidad de élite: Tejido suave y ligero para un ajuste cómodo todo el día.",
+      "Orgullo ajacied: Escudo del Ajax bordado al pecho.",
+      "Versatilidad total: Perfecta para looks deportivos o casuales."
+    ],
+    "technical_details": {
+      "range": "adidas Ajax Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-color-marron-adidas-ajax-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-color-marron-adidas-ajax-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-chandal-beige-adidas-ajax-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-entretiempo-adidas-ajax-icon-color-marron_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-adidas-ajax-icon-beige_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-color-marron-adidas-ajax-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-chandal-beige-adidas-ajax-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-entretiempo-adidas-ajax-icon-color-marron_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7347_chaqueta-adidas-ajax-icon-beige_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm7347",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Ajax - beige",
+    "tagline": "Estilo clásico con alma ajacied",
+    "intro": "La chaqueta Ajax Icon de adidas revive el espíritu de los años dorados del club con un diseño retro y funcional. Ideal para los días de partido o como prenda urbana con historia futbolera.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Diseño basado en los años 90 con corte deportivo clásico.",
+      "Comodidad de élite: Tejido suave y ligero para un ajuste cómodo todo el día.",
+      "Orgullo ajacied: Escudo del Ajax bordado al pecho.",
+      "Versatilidad total: Perfecta para looks deportivos o casuales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm7347"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ajax",
+    "submodel": "Icon",
+    "product_model": "Ajax Icon",
+    "sole_type": ""
+  }
+}

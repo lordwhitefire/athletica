@@ -1,0 +1,109 @@
+{
+  "id": "092794-01",
+  "slug": "mochila-puma-rolltop-black",
+  "name": "Backpack Puma RollTop",
+  "model": "Backpack Puma RollTop",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack (44 x 30 x 14 cm) - black",
+    "tagline": "Comfort and space for everyday life",
+    "intro": "La mochila Puma RollTop combina un diseño urbano con la funcionalidad que necesitas para el deporte, el trabajo o los estudios. Su práctico cierre enrollable (roll-top) permite adaptar la capacidad según el contenido, mientras que sus múltiples compartimentos facilitan mantener todas tus pertenencias perfectamente organizadas.",
+    "collection": "",
+    "key_benefits": [
+      "RollTop Design: Roll-top closure that offers greater security and adaptable capacity.",
+      "Multiple compartments: Easily organize clothes, accessories, laptop and personal items.",
+      "Espalda acolchada: Mayor confort durante el transporte diario.",
+      "Adjustable shoulder pads: Ergonomic fit for more comfortable carrying."
+    ],
+    "technical_details": {
+      "range": "Puma RollTop",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2fbda3dea8f9f28c1e4e70bece660c89f34186e4-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2fbda3dea8f9f28c1e4e70bece660c89f34186e4-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/24eb85775816e59ec05b93496f2750d371c646c7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a45940fafec97f99397081bd308ad46de04e2ab4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/58d85187a579160edbf52a3ee4271ccb3edbf434-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2fbda3dea8f9f28c1e4e70bece660c89f34186e4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/24eb85775816e59ec05b93496f2750d371c646c7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a45940fafec97f99397081bd308ad46de04e2ab4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/58d85187a579160edbf52a3ee4271ccb3edbf434-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2fbda3dea8f9f28c1e4e70bece660c89f34186e4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2fbda3dea8f9f28c1e4e70bece660c89f34186e4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-24eb85775816e59ec05b93496f2750d371c646c7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/24eb85775816e59ec05b93496f2750d371c646c7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a45940fafec97f99397081bd308ad46de04e2ab4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a45940fafec97f99397081bd308ad46de04e2ab4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-58d85187a579160edbf52a3ee4271ccb3edbf434-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/58d85187a579160edbf52a3ee4271ccb3edbf434-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092794-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (44 x 30 x 14 cm) - negra",
+    "tagline": "Comodidad y espacio para el día a día",
+    "intro": "La mochila Puma RollTop combina un diseño urbano con la funcionalidad que necesitas para el deporte, el trabajo o los estudios. Su práctico cierre enrollable (roll-top) permite adaptar la capacidad según el contenido, mientras que sus múltiples compartimentos facilitan mantener todas tus pertenencias perfectamente organizadas.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño RollTop: Cierre enrollable que ofrece mayor seguridad y capacidad adaptable.",
+      "Múltiples compartimentos: Organiza fácilmente ropa, accesorios, portátil y objetos personales.",
+      "Espalda acolchada: Mayor confort durante el transporte diario.",
+      "Hombreras ajustables: Ajuste ergonómico para un transporte más cómodo."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092794-01"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'top'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma RollTop",
+    "sole_type": ""
+  }
+}

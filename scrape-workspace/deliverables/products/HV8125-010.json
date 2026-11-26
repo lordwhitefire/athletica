@@ -1,0 +1,100 @@
+{
+  "id": "HV8125-010",
+  "slug": "camiseta-nike-inter-black",
+  "name": "Nike Inter",
+  "model": "Inter",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Inter Milan Nike Cotton Short Sleeve T-Shirt - Black",
+    "tagline": "Nerazzurri pride in your daily life",
+    "intro": "The Nike Inter jersey offers a casual look with a football identity. Perfect for club fans looking for comfort and style off the pitch.",
+    "collection": "",
+    "key_benefits": [
+      "Design with official crest: Show your passion for Inter at any time.",
+      "Natural comfort: Soft-touch cotton fabric.",
+      "Versatile style: Classic cut that combines with any casual look.",
+      "Timeless color: Black background with club details for maximum presence.",
+      "Ideal for daily use: Perfect for taking your equipment with you wherever you go."
+    ],
+    "technical_details": {
+      "range": "Nike Inter",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8125-010_camiseta-color-negro-nike-inter_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8125-010_camiseta-color-negro-nike-inter_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8125-010_camiseta-negra-nike-inter_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8125-010_camiseta-nike-inter-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8125-010_camiseta-color-negro-nike-inter_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8125-010_camiseta-negra-nike-inter_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV8125-010_camiseta-nike-inter-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv8125-010",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga corta de algodón Nike del Inter de Milán - negra",
+    "tagline": "Orgullo nerazzurro en tu día a día",
+    "intro": "La camiseta Nike del Inter ofrece un look casual con identidad futbolera. Perfecta para los seguidores del club que buscan comodidad y estilo fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño con escudo oficial: Muestra tu pasión por el Inter en cualquier momento.",
+      "Comodidad natural: Tejido de algodón suave al tacto.",
+      "Estilo versátil: Corte clásico que combina con cualquier look informal.",
+      "Color atemporal: Fondo negro con detalles del club para máxima presencia.",
+      "Ideal para uso diario: Perfecta para llevar tu equipo contigo donde vayas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv8125-010"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Inter",
+    "submodel": "",
+    "product_model": "Inter",
+    "sole_type": ""
+  }
+}

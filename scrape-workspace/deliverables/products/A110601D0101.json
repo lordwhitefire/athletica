@@ -1,0 +1,100 @@
+{
+  "id": "A110601D0101",
+  "slug": "camiseta-joma-torino-26-27-red",
+  "name": "Joma Torino 26 27",
+  "model": "Torino 26 27",
+  "brand": "Joma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación Joma del Torino 2026 2027 - granate",
+    "tagline": "La esencia del Torino en cada detalle",
+    "intro": "La camiseta Joma Torino 26 27 mantiene viva la identidad del club italiano con un diseño elegante y un tejido técnico pensado para ofrecer comodidad, ligereza y rendimiento tanto en el terreno de juego como en el día a día. Su acabado en relieve aporta un estilo exclusivo inspirado en la tradición del Torino FC.",
+    "collection": "",
+    "key_benefits": [
+      "MICRO-MESH SYSTEM: Favorece la ventilación en las zonas de mayor sudoración para mantener el cuerpo fresco.",
+      "Tejido jacquard reciclado: Ligero, resistente y fabricado con poliéster reciclado.",
+      "Cuello y puños en rib: Ajuste cómodo que mejora la libertad de movimiento.",
+      "Diseño embossed: Relieve integrado en el tejido para un acabado moderno y distintivo."
+    ],
+    "technical_details": {
+      "range": "Joma Torino 26 27",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-color-rojo-joma-torino-26-27_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-color-rojo-joma-torino-26-27_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-granate-joma-torino-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-joma-torino-26-27-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-joma-torino-26-27-granate_4_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-color-rojo-joma-torino-26-27_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-granate-joma-torino-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-joma-torino-26-27-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/1/A110601D0101_camiseta-joma-torino-26-27-granate_4_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/a110601d0101",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de la primera equipación Joma del Torino 2026 2027 - granate",
+    "tagline": "La esencia del Torino en cada detalle",
+    "intro": "La camiseta Joma Torino 26 27 mantiene viva la identidad del club italiano con un diseño elegante y un tejido técnico pensado para ofrecer comodidad, ligereza y rendimiento tanto en el terreno de juego como en el día a día. Su acabado en relieve aporta un estilo exclusivo inspirado en la tradición del Torino FC.",
+    "collection": "",
+    "key_benefits": [
+      "MICRO-MESH SYSTEM: Favorece la ventilación en las zonas de mayor sudoración para mantener el cuerpo fresco.",
+      "Tejido jacquard reciclado: Ligero, resistente y fabricado con poliéster reciclado.",
+      "Cuello y puños en rib: Ajuste cómodo que mejora la libertad de movimiento.",
+      "Diseño embossed: Relieve integrado en el tejido para un acabado moderno y distintivo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/a110601d0101"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Torino",
+    "submodel": "",
+    "product_model": "Torino 26 27",
+    "sole_type": ""
+  }
+}

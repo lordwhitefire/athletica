@@ -1,0 +1,107 @@
+{
+  "id": "042125-12",
+  "slug": "puma-future-play-nc-blue",
+  "name": "Puma Future Play NC",
+  "model": "Future Play NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma negative cut goalkeeper gloves - blue",
+    "tagline": "Comfort and control to defend your goal",
+    "intro": "The Puma Future Play NC goalkeeper gloves are designed for goalkeepers looking for comfort, grip and good ball control. Its super-soft palm and the snug fit of the negative cut provide confidence with every intervention, while the flexible backhand facilitates hand movements.",
+    "collection": "PUMA UNSCRIPTED PACK",
+    "key_benefits": [
+      "Reliable grip: The super-soft palm promotes secure contact with the ball.",
+      "Increased Sensitivity: Negative cut provides a snug fit for improved ball control.",
+      "Flexibility in clearances: The back with raised details accompanies hand movements and facilitates punching.",
+      "Easy Donning: The side wrist cutout helps you put on and take off the gloves comfortably.",
+      "Secure Hold: The wraparound strap keeps the glove secure during play."
+    ],
+    "technical_details": {
+      "range": "Future Play NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3f17f7e7bafd6ab79d8c9044b228fabd4ea4cfe4-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3f17f7e7bafd6ab79d8c9044b228fabd4ea4cfe4-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/29af1a97bad02796767d5734178099bed5656258-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44edb7474536cad3b9012738ec5a6a03247821d0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0358d7a2943fa78819c8ce7fab9648245611b7a1-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3f17f7e7bafd6ab79d8c9044b228fabd4ea4cfe4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/29af1a97bad02796767d5734178099bed5656258-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/44edb7474536cad3b9012738ec5a6a03247821d0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0358d7a2943fa78819c8ce7fab9648245611b7a1-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3f17f7e7bafd6ab79d8c9044b228fabd4ea4cfe4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3f17f7e7bafd6ab79d8c9044b228fabd4ea4cfe4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-29af1a97bad02796767d5734178099bed5656258-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/29af1a97bad02796767d5734178099bed5656258-1500x1500.jpg"
+    },
+    {
+      "_id": "image-44edb7474536cad3b9012738ec5a6a03247821d0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/44edb7474536cad3b9012738ec5a6a03247821d0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0358d7a2943fa78819c8ce7fab9648245611b7a1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0358d7a2943fa78819c8ce7fab9648245611b7a1-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042125-12",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte negativo - azules",
+    "tagline": "Comodidad y control para defender tu portería",
+    "intro": "Los guantes de portero Puma Future Play NC están diseñados para porteros que buscan comodidad, agarre y un buen control del balón. Su palma supersuave y el ajuste ceñido del corte negativo proporcionan confianza en cada intervención, mientras que el dorso flexible facilita los movimientos de la mano.",
+    "collection": "PUMA UNSCRIPTED PACK",
+    "key_benefits": [
+      "Agarre fiable: La palma supersuave favorece un contacto seguro con el balón.",
+      "Mayor sensibilidad: El corte negativo proporciona un ajuste ceñido para mejorar el control del balón.",
+      "Flexibilidad en los despejes: El dorso con detalles en relieve acompaña los movimientos de la mano y facilita el golpeo de puños.",
+      "Fácil colocación: El corte lateral de la muñeca ayuda a ponerse y quitarse los guantes con comodidad.",
+      "Sujeción segura: La correa envolvente permite mantener el guante firme durante el juego."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042125-12"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Play NC",
+    "product_model": "Future Play NC",
+    "sole_type": ""
+  }
+}

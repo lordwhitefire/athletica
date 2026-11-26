@@ -1,0 +1,102 @@
+{
+  "id": "JP4056",
+  "slug": "chaqueta-adidas-real-madrid-presentacion-green",
+  "name": "adidas Real Madrid presentación",
+  "model": "Real Madrid presentación",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Presentation Jacket - Light Green",
+    "tagline": "The elegance of the club on and off the field",
+    "intro": "This Real Madrid presentation jacket allows you to dress like the professionals in their most representative moments. Ideal for before the game or to proudly show off your fans.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Same model used by players in presentations.",
+      "Thermal comfort: Breathable AEROREADY fabric that keeps skin dry.",
+      "Stylish fit: Slim cut that adapts to the body.",
+      "Iconic details: Club crest sewn on the chest.",
+      "Responsible manufacturing: Recycled materials that take care of the planet."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-color-verde-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-color-verde-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-chandal-verde-claro-adidas-real-madrid-presentacion_2_com.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-adidas-real-madrid-presentacion-verde-claro_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-entretiempo-adidas-real-madrid-presentacion-color-verde_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-color-verde-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-chandal-verde-claro-adidas-real-madrid-presentacion_2_com.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-adidas-real-madrid-presentacion-verde-claro_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4056_chaqueta-entretiempo-adidas-real-madrid-presentacion-color-verde_3_detalle-cuello-y-pecho-con-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp4056",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de presentación adidas del Real Madrid - verde claro",
+    "tagline": "La elegancia del club dentro y fuera del campo",
+    "intro": "Esta chaqueta de presentación del Real Madrid te permite vestir como los profesionales en sus momentos más representativos. Ideal para antes del partido o para lucir con orgullo tu afición.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Mismo modelo que utilizan los jugadores en presentaciones.",
+      "Comodidad térmica: Tejido transpirable AEROREADY que mantiene la piel seca.",
+      "Ajuste estilizado: Corte slim que se adapta al cuerpo.",
+      "Detalles icónicos: Escudo del club cosido en el pecho.",
+      "Fabricación responsable: Materiales reciclados que cuidan del planeta."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp4056"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid presentación",
+    "sole_type": ""
+  }
+}

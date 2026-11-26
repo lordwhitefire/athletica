@@ -1,0 +1,94 @@
+{
+  "id": "GN5675",
+  "slug": "camiseta-compresiva-m-l-adidas-team-blue",
+  "name": "compresiva M/L adidas Team",
+  "model": "compresiva M/L adidas Team",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta entrenamiento compresiva manga larga adidas - azul marino",
+    "tagline": "Rinde al máximo con control térmico y libertad de movimiento",
+    "intro": "La camiseta térmica adidas Team es tu aliada ideal en entrenamientos frescos. Gracias a su tejido ajustado y la tecnología AEROREADY, te mantiene seco y cómodo incluso en los momentos más intensos.",
+    "collection": "",
+    "key_benefits": [
+      "Control de la humedad: Tecnología AEROREADY que absorbe el sudor eficazmente.",
+      "Libertad de movimiento: Tejido elástico que acompaña tus gestos deportivos.",
+      "Comodidad ligera: Alternativa ideal a la sudadera en días templados.",
+      "Compromiso ecológico: Fabricada con al menos un 70% de materiales reciclados.",
+      "Versatilidad: Perfecta como primera capa en entrenamientos o partidos."
+    ],
+    "technical_details": {
+      "range": "compresiva M/L adidas Team",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-color-azul-adidas-team_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-color-azul-adidas-team_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-azul-marino-adidas-team_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-adidas-team-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-adidas-team-azul-marino_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-color-azul-adidas-team_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-azul-marino-adidas-team_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-adidas-team-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/N/GN5675_camiseta-manga-larga-adidas-team-azul-marino_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/gn5675",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta entrenamiento compresiva manga larga adidas - azul marino",
+    "tagline": "Rinde al máximo con control térmico y libertad de movimiento",
+    "intro": "La camiseta térmica adidas Team es tu aliada ideal en entrenamientos frescos. Gracias a su tejido ajustado y la tecnología AEROREADY, te mantiene seco y cómodo incluso en los momentos más intensos.",
+    "collection": "",
+    "key_benefits": [
+      "Control de la humedad: Tecnología AEROREADY que absorbe el sudor eficazmente.",
+      "Libertad de movimiento: Tejido elástico que acompaña tus gestos deportivos.",
+      "Comodidad ligera: Alternativa ideal a la sudadera en días templados.",
+      "Compromiso ecológico: Fabricada con al menos un 70% de materiales reciclados.",
+      "Versatilidad: Perfecta como primera capa en entrenamientos o partidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/gn5675"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "compresiva",
+    "submodel": "",
+    "product_model": "compresiva M/L adidas Team",
+    "sole_type": ""
+  }
+}

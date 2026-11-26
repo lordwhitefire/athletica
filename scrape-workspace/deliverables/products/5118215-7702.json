@@ -1,0 +1,90 @@
+{
+  "id": "5118215-7702",
+  "slug": "short-reusch-contest-2-advance-black",
+  "name": "Reusch Contest 2 Advance",
+  "model": "Contest 2 Advance",
+  "brand": "Reusch",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de portero Uhlsport - rojo",
+    "tagline": "Comodidad, Protección y Estilo en Cada Estirada",
+    "intro": "Los pantalones cortos de portero Uhlsport están diseñados para ofrecer máxima protección, comodidad absoluta y libertad de movimiento. Perfectos para quienes buscan rendimiento y confianza bajo palos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección estratégica: Refuerzos acolchados en zonas clave.",
+      "Libertad total: Tejido flexible que acompaña cada movimiento.",
+      "Diseño técnico: Ideal para entrenos intensos y partidos competitivos.",
+      "Confort duradero: Transpirable y resistente al desgaste."
+    ],
+    "technical_details": {
+      "range": "Reusch Contest 2 Advance",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5118215-7702_pantalon-corto-color-negro-reusch-contest-2-advance_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5118215-7702_pantalon-corto-color-negro-reusch-contest-2-advance_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5118215-7702_short-negro-reusch-contest-2-advance_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5118215-7702_pantalon-corto-reusch-contest-2-advance-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5118215-7702_pantalon-corto-color-negro-reusch-contest-2-advance_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5118215-7702_short-negro-reusch-contest-2-advance_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/1/5118215-7702_pantalon-corto-reusch-contest-2-advance-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/5118215-7702",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de portero Uhlsport - rojo",
+    "tagline": "Comodidad, Protección y Estilo en Cada Estirada",
+    "intro": "Los pantalones cortos de portero Uhlsport están diseñados para ofrecer máxima protección, comodidad absoluta y libertad de movimiento. Perfectos para quienes buscan rendimiento y confianza bajo palos.",
+    "collection": "",
+    "key_benefits": [
+      "Protección estratégica: Refuerzos acolchados en zonas clave.",
+      "Libertad total: Tejido flexible que acompaña cada movimiento.",
+      "Diseño técnico: Ideal para entrenos intensos y partidos competitivos.",
+      "Confort duradero: Transpirable y resistente al desgaste."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/5118215-7702"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Contest",
+    "submodel": "",
+    "product_model": "Contest 2 Advance",
+    "sole_type": ""
+  }
+}

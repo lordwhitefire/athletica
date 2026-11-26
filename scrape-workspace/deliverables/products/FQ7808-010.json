@@ -1,0 +1,88 @@
+{
+  "id": "FQ7808-010",
+  "slug": "sujetador-nike-3a-barcelona-mujer-con-relleno-black",
+  "name": "Sujetador Nike 3a Barcelona Women con relleno",
+  "model": "Sujetador Nike 3a Barcelona Women con relleno",
+  "brand": "Nike",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike 3a Barcelona mujer con relleno",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ7808-010_sujetador-color-negro-nike-3a-barcelona-mujer-con-relleno_1_completa-pecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ7808-010_sujetador-color-negro-nike-3a-barcelona-mujer-con-relleno_1_completa-pecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ7808-010_sostenes-negro-nike-3a-barcelona-mujer-con-relleno_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ7808-010_sujetador-nike-3a-barcelona-mujer-con-relleno-color-negro_3_detalle-autenticidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ7808-010_sujetador-color-negro-nike-3a-barcelona-mujer-con-relleno_1_completa-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ7808-010_sostenes-negro-nike-3a-barcelona-mujer-con-relleno_2_completa-espalda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Q/FQ7808-010_sujetador-nike-3a-barcelona-mujer-con-relleno-color-negro_3_detalle-autenticidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fq7808-010",
+    "language": "es",
+    "category": "Ropa entrenamiento",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fq7808-010"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Sujetador",
+    "submodel": "",
+    "product_model": "Sujetador Nike 3a Barcelona Women con relleno",
+    "sole_type": ""
+  }
+}

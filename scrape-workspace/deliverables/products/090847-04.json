@@ -1,0 +1,107 @@
+{
+  "id": "090847-04",
+  "slug": "mochila-de-cuerdas-puma-milan-black",
+  "name": "Backpack de cuerdas Puma Milan",
+  "model": "Backpack de cuerdas Puma Milan",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Milan",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/31750427b9650835d3eda26889a35ba022f23291-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/31750427b9650835d3eda26889a35ba022f23291-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/451aa3c20f14cee4eb5394959f010612db7389fc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/920fa164da67f960703f37531fadb0c64fdcf87d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1426f0066335667a37d4bd3ac1999e2db76f30d3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/31750427b9650835d3eda26889a35ba022f23291-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/451aa3c20f14cee4eb5394959f010612db7389fc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/920fa164da67f960703f37531fadb0c64fdcf87d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1426f0066335667a37d4bd3ac1999e2db76f30d3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-31750427b9650835d3eda26889a35ba022f23291-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/31750427b9650835d3eda26889a35ba022f23291-1500x1500.jpg"
+    },
+    {
+      "_id": "image-451aa3c20f14cee4eb5394959f010612db7389fc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/451aa3c20f14cee4eb5394959f010612db7389fc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-920fa164da67f960703f37531fadb0c64fdcf87d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/920fa164da67f960703f37531fadb0c64fdcf87d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1426f0066335667a37d4bd3ac1999e2db76f30d3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1426f0066335667a37d4bd3ac1999e2db76f30d3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090847-04",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090847-04"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Milan",
+    "sole_type": ""
+  }
+}

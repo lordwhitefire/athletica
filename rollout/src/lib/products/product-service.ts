@@ -8,11 +8,23 @@
 // - The public gate is centralized in applyPublicGate().
 
 import { createServiceClient } from '@/lib/supabase/server';
+import type { SupabaseClient } from '@supabase/supabase-js';
+import type { Database, ProductRow } from '@/lib/database.types';
 import type { Product, ProductVariant, Category } from './types';
 
+type AdminClient = SupabaseClient<Database, 'rollout'>;
+
 /** The 3-condition publish gate, applied as query filters. */
-function applyPublicGate<T extends { eq: (col: string, val: unknown) => T; is: (col: string, val: null) => T; lte: (col: string, val: string) => T }>(q: T): T {
-  return q.eq('status', 'active').is('deleted_at', null).lte('available_on', new Date().toISOString());
+function applyPublicGate<T>(q: T): T {
+  // `available_on IS NULL` means "available now" — the RLS policy says the same.
+  // A plain .lte() would hide every product that has no launch date.
+  // Return T (the caller's builder type) so .maybeSingle()/.order()/.range() stay available.
+  const now = new Date().toISOString();
+  const query = q as any;
+  return query
+    .eq('status', 'active')
+    .is('deleted_at', null)
+    .or(`available_on.is.null,available_on.lte.${now}`) as T;
 }
 
 // ---- Public reads ----
@@ -128,7 +140,7 @@ export async function listCategorySlugs(): Promise<string[]> {
 
 // ---- Admin writes (role-checked at the route layer via requireAdmin) ----
 
-export async function createProductAdmin(input: Partial<Product>): Promise<Product> {
+export async function createProductAdmin(input: Partial<Product>, _sb?: AdminClient): Promise<Product> {
   const sb = createServiceClient();
   const { data, error } = await sb.from('products').insert({ ...input, status: input.status ?? 'draft' }).select().single();
   if (error) throw new Error(`createProduct failed: ${error.message}`);
@@ -142,10 +154,77 @@ export async function updateProductAdmin(id: string, patch: Partial<Product>): P
   return data as Product;
 }
 
-export async function deleteProductAdmin(id: string): Promise<void> {
+export async function deleteProductAdmin(id: string, _sb?: AdminClient): Promise<void> {
   const sb = createServiceClient();
   const { error } = await sb.from('products').update({ deleted_at: new Date().toISOString(), status: 'archived' }).eq('id', id);
   if (error) throw new Error(`deleteProduct failed: ${error.message}`);
+}
+
+/**
+ * Admin catalog list. The route has already passed requireAdmin, so this uses
+ * the service client and sees the whole catalog, including drafts.
+ *
+ * The UI speaks two states (Published / Unpublished); the database speaks five.
+ * Published = active. Unpublished = anything that is not active.
+ */
+export async function getProductsAdmin(
+  args: {
+    status: 'all' | 'published' | 'unpublished';
+    search: string;
+    sort: 'newest' | 'oldest' | 'name_asc' | 'name_desc' | 'price_asc' | 'price_desc';
+    page: number;
+    pageSize: number;
+  },
+  _sb?: AdminClient,
+): Promise<{ items: ProductRow[]; total: number }> {
+  const sb = createServiceClient();
+  let q = sb.from('products').select('*', { count: 'exact' });
+
+  if (args.status === 'published') q = q.eq('status', 'active');
+  else if (args.status === 'unpublished') q = q.neq('status', 'active');
+
+  const search = (args.search ?? '').trim().replace(/[%,()]/g, ' ').trim();
+  if (search) {
+    q = q.or(
+      `name.ilike.%${search}%,id.ilike.%${search}%,slug.ilike.%${search}%,color.ilike.%${search}%`,
+    );
+  }
+
+  switch (args.sort) {
+    case 'oldest': q = q.order('created_at', { ascending: true }); break;
+    case 'name_asc': q = q.order('name', { ascending: true }); break;
+    case 'name_desc': q = q.order('name', { ascending: false }); break;
+    case 'price_asc': q = q.order('price', { ascending: true, nullsFirst: false }); break;
+    case 'price_desc': q = q.order('price', { ascending: false, nullsFirst: false }); break;
+    default: q = q.order('created_at', { ascending: false });
+  }
+
+  const page = Math.max(1, args.page || 1);
+  const pageSize = Math.min(100, Math.max(1, args.pageSize || 8));
+  const from = (page - 1) * pageSize;
+  const { data, count, error } = await q.range(from, from + pageSize - 1);
+  if (error) throw new Error(`getProductsAdmin failed: ${error.message}`);
+  return { items: (data as ProductRow[]) ?? [], total: count ?? 0 };
+}
+
+async function setProductStatus(id: string, status: ProductRow['status']): Promise<ProductRow> {
+  const sb = createServiceClient();
+  const { data, error } = await sb
+    .from('products')
+    .update({ status, updated_at: new Date().toISOString() })
+    .eq('id', id)
+    .select()
+    .single();
+  if (error) throw new Error(`setProductStatus failed: ${error.message}`);
+  return data as ProductRow;
+}
+
+export async function publishProductAdmin(id: string, _sb?: AdminClient): Promise<ProductRow> {
+  return setProductStatus(id, 'active');
+}
+
+export async function unpublishProductAdmin(id: string, _sb?: AdminClient): Promise<ProductRow> {
+  return setProductStatus(id, 'draft');
 }
 
 export async function discontinueProduct(id: string): Promise<void> {

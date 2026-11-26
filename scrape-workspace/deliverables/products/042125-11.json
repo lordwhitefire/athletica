@@ -1,0 +1,109 @@
+{
+  "id": "042125-11",
+  "slug": "puma-future-play-nc-marron",
+  "name": "Puma Future Play NC",
+  "model": "Future Play NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma goalkeeper gloves negative cut - beige",
+    "tagline": "Start dominating your area",
+    "intro": "The Puma Future Play NC are designed for goalkeepers looking for safety, comfort and a precise fit in each intervention. Its negative cut offers a more natural contact with the ball, while the super-soft palm provides the confidence needed to grow under the sticks.",
+    "collection": "ARRIVAL PACK",
+    "key_benefits": [
+      "Control with every stop: The negative cut brings the palm closer to the hand for a more natural feel and better ball control.",
+      "Grip with complete confidence: The super-soft latex palm provides a good balance between grip, comfort and cushioning.",
+      "Freedom of movement: The flexible back favors the mobility of the hand to react quickly in any action.",
+      "Secure fit: The wraparound strap with side opening makes it easy to put on and keeps the glove firm throughout the game."
+    ],
+    "technical_details": {
+      "range": "Future Play NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/09f1ef3ac12adac36fba82a5d4bbfe13a079f8ef-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/09f1ef3ac12adac36fba82a5d4bbfe13a079f8ef-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ad84121292609ab363bc822bc6f209651e1dbb13-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cee7fdf9d9ee6c6fb6ac067b9ddee250f90d2433-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/07c6be61f94bbc6f4ae0fb33c369619dea0fd337-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/09f1ef3ac12adac36fba82a5d4bbfe13a079f8ef-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ad84121292609ab363bc822bc6f209651e1dbb13-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cee7fdf9d9ee6c6fb6ac067b9ddee250f90d2433-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/07c6be61f94bbc6f4ae0fb33c369619dea0fd337-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-09f1ef3ac12adac36fba82a5d4bbfe13a079f8ef-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/09f1ef3ac12adac36fba82a5d4bbfe13a079f8ef-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ad84121292609ab363bc822bc6f209651e1dbb13-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ad84121292609ab363bc822bc6f209651e1dbb13-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cee7fdf9d9ee6c6fb6ac067b9ddee250f90d2433-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cee7fdf9d9ee6c6fb6ac067b9ddee250f90d2433-1500x1500.jpg"
+    },
+    {
+      "_id": "image-07c6be61f94bbc6f4ae0fb33c369619dea0fd337-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/07c6be61f94bbc6f4ae0fb33c369619dea0fd337-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042125-11",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte negativo - beige",
+    "tagline": "Empieza a dominar tu área",
+    "intro": "Los Puma Future Play NC están diseñados para porteros que buscan seguridad, comodidad y un ajuste preciso en cada intervención. Su corte negativo ofrece un contacto más natural con el balón, mientras que la palma supersuave proporciona la confianza necesaria para crecer bajo palos.",
+    "collection": "ARRIVAL PACK",
+    "key_benefits": [
+      "Control en cada parada: El corte negativo acerca la palma a la mano para ofrecer una sensación más natural y un mejor control del balón.",
+      "Agarre con total confianza: La palma de látex supersuave proporciona un buen equilibrio entre agarre, confort y amortiguación.",
+      "Libertad de movimiento: El dorso flexible favorece la movilidad de la mano para reaccionar con rapidez en cualquier acción.",
+      "Ajuste seguro: La correa envolvente con apertura lateral facilita la colocación y mantiene el guante firme durante todo el partido."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042125-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Play NC",
+    "product_model": "Future Play NC",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "55257-006",
+  "slug": "kelme-indoor-copa-white",
+  "name": "Kelme Indoor Copa",
+  "model": "Indoor Copa",
+  "brand": "Kelme",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Indoor Copa",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_zapatillas-futbol-sala-color-blanco-kelme-indoor-copa_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_zapatillas-futbol-sala-color-blanco-kelme-indoor-copa_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_zapatillas-de-futbol-sala-blancas-kelme-indoor-copa_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_botas-futbol-sala-kelme-indoor-copa-color-blanco_3_vista-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_bambas-futbol-sala-kelme-indoor-copa-blancas_4_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_tenis-futbol-sala-color-blanco-kelme-indoor-copa_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_zapatillas-futbol-sala-blancas-kelme-indoor-copa_6_detalle-suela.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_zapatillas-futbol-sala-color-blanco-kelme-indoor-copa_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_zapatillas-de-futbol-sala-blancas-kelme-indoor-copa_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_botas-futbol-sala-kelme-indoor-copa-color-blanco_3_vista-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_bambas-futbol-sala-kelme-indoor-copa-blancas_4_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_tenis-futbol-sala-color-blanco-kelme-indoor-copa_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-006_zapatillas-futbol-sala-blancas-kelme-indoor-copa_6_detalle-suela.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/55257-006",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/55257-006"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Indoor",
+    "submodel": "Copa",
+    "product_model": "Indoor Copa",
+    "sole_type": ""
+  }
+}

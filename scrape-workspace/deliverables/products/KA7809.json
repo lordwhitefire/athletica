@@ -1,0 +1,92 @@
+{
+  "id": "KA7809",
+  "slug": "adidas-copa-club-j-black",
+  "name": "adidas Copa Club J",
+  "model": "Copa Club J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - negros",
+    "tagline": "Control total en cada intervención",
+    "intro": "Los adidas Copa Club J están diseñados para porteros que buscan seguridad, ajuste y rendimiento. Gracias a su corte positivo y materiales específicos, estos guantes te acompañan en cada desafío bajo palos.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Corte Positivo: Permite un ajuste cómodo que mejora el control del balón.",
+      "Comodidad superior: Diseñados para adaptarse con precisión a la forma de la mano.",
+      "Construcción adidas: Inspirados en el legado profesional con visión moderna.",
+      "Preparados para competir: Pensados para jugadores que entrenan o compiten al máximo nivel."
+    ],
+    "technical_details": {
+      "range": "Copa Club J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7809_guantes-de-portero-color-negro-adidas-copa-club-j_1_completa-mano-izquierda.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7809_guantes-de-portero-color-negro-adidas-copa-club-j_1_completa-mano-izquierda.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7809_guantes-portero-negros-adidas-copa-club-j_2_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7809_guantes-de-portero-color-negro-adidas-copa-club-j_1_completa-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7809_guantes-portero-negros-adidas-copa-club-j_2_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ka7809",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - negros",
+    "tagline": "Control total en cada intervención",
+    "intro": "Los adidas Copa Club J están diseñados para porteros que buscan seguridad, ajuste y rendimiento. Gracias a su corte positivo y materiales específicos, estos guantes te acompañan en cada desafío bajo palos.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Corte Positivo: Permite un ajuste cómodo que mejora el control del balón.",
+      "Comodidad superior: Diseñados para adaptarse con precisión a la forma de la mano.",
+      "Construcción adidas: Inspirados en el legado profesional con visión moderna.",
+      "Preparados para competir: Pensados para jugadores que entrenan o compiten al máximo nivel."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ka7809"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Club J",
+    "product_model": "Copa Club J",
+    "sole_type": ""
+  }
+}

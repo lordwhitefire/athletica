@@ -1,0 +1,99 @@
+{
+  "id": "054827-01",
+  "slug": "botellin-puma-manchester-city-750-ml-blue",
+  "name": "Botellín Puma Manchester City 750 ml",
+  "model": "Botellín Puma Manchester City 750 ml",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Training Water Bottle 750ml - Light Blue",
+    "tagline": "Manchester City hydration",
+    "intro": "This Manchester City Puma water bottle is designed to accompany you in training and matches, offering a practical solution to maintain hydration at all times.",
+    "collection": "",
+    "key_benefits": [
+      "Optimal capacity: Allows you to carry enough water for complete sessions.",
+      "Practical use: Comfortable format for training and competitions.",
+      "Identidad del club: Producto oficial del Manchester City."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City 750 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/72e7e6daa21a376ad831f5d8ce3cbcaf468a347e-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/72e7e6daa21a376ad831f5d8ce3cbcaf468a347e-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/55ec515965ad2e887e45421a874f4cb006827a9f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/72e7e6daa21a376ad831f5d8ce3cbcaf468a347e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/55ec515965ad2e887e45421a874f4cb006827a9f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-72e7e6daa21a376ad831f5d8ce3cbcaf468a347e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/72e7e6daa21a376ad831f5d8ce3cbcaf468a347e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-55ec515965ad2e887e45421a874f4cb006827a9f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/55ec515965ad2e887e45421a874f4cb006827a9f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/054827-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botellín de agua para entrenamiento Puma del Manchester City de 750 ml - azul claro",
+    "tagline": "Hidratación del Manchester City",
+    "intro": "Este botelí­n Puma del Manchester City está diseñado para acompañarte en entrenamientos y partidos, ofreciendo una solución práctica para mantener la hidratación en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad óptima: Permite llevar suficiente agua para sesiones completas.",
+      "Uso práctico: Formato cómodo para entrenamientos y competiciones.",
+      "Identidad del club: Producto oficial del Manchester City."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/054827-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Botellín",
+    "submodel": "",
+    "product_model": "Botellín Puma Manchester City 750 ml",
+    "sole_type": ""
+  }
+}

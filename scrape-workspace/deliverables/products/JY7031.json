@@ -1,0 +1,94 @@
+{
+  "id": "JY7031",
+  "slug": "short-adidas-argentina-entrenamiento-blue",
+  "name": "adidas Argentina Training",
+  "model": "Argentina entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Argentina national team adidas training shorts 2026 - navy blue",
+    "tagline": "Freedom to train like a professional",
+    "intro": "The adidas Argentina 2026 shorts are part of the Tiro collection, with a comfortable fit and technical fabric that accompanies every movement.",
+    "collection": "",
+    "key_benefits": [
+      "Unrestricted movement: Athletic cut with elastic waist.",
+      "Guaranteed freshness: Quick-drying Climacool technology.",
+      "Official design: National team details on each seam."
+    ],
+    "technical_details": {
+      "range": "adidas Argentina entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_pantalon-corto-color-azul-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_pantalon-corto-color-azul-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_short-azul-marino-adidas-argentina-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_pantalon-corto-adidas-argentina-entrenamiento-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_short-adidas-argentina-entrenamiento-azul-marino_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_pantalon-corto-color-azul-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_short-azul-marino-adidas-argentina-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_pantalon-corto-adidas-argentina-entrenamiento-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7031_short-adidas-argentina-entrenamiento-azul-marino_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jy7031",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas de la selección argentina 2026 - azul marino",
+    "tagline": "Libertad para entrenar como un profesional",
+    "intro": "El short adidas Argentina 2026 es parte de la colección Tiro, con un ajuste cómodo y tejido técnico que acompaña cada movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Movimiento sin restricciones: Corte atlético con cintura elástica.",
+      "Frescura garantizada: Tecnología Climacool de secado rápido.",
+      "Diseño oficial: Detalles del equipo nacional en cada costura."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jy7031"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Argentina",
+    "submodel": "",
+    "product_model": "Argentina entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "041859-09",
+  "slug": "puma-ultra-pro-rc-orange",
+  "name": "Puma Ultra Pro RC",
+  "model": "Ultra Pro RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Pro RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9ef08da8deda12c0a5096bf03cd902076e876e66-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9ef08da8deda12c0a5096bf03cd902076e876e66-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/874dcc20b5b78f4aea2d8168d75bcd6fec79ceb5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b8506df8caa83c8f136c894a0f338627123526e7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/92a57b697eaa76d7dfcaec24056adbc9a81b3b06-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9ef08da8deda12c0a5096bf03cd902076e876e66-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/874dcc20b5b78f4aea2d8168d75bcd6fec79ceb5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b8506df8caa83c8f136c894a0f338627123526e7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/92a57b697eaa76d7dfcaec24056adbc9a81b3b06-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9ef08da8deda12c0a5096bf03cd902076e876e66-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9ef08da8deda12c0a5096bf03cd902076e876e66-1500x1500.jpg"
+    },
+    {
+      "_id": "image-874dcc20b5b78f4aea2d8168d75bcd6fec79ceb5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/874dcc20b5b78f4aea2d8168d75bcd6fec79ceb5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b8506df8caa83c8f136c894a0f338627123526e7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b8506df8caa83c8f136c894a0f338627123526e7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-92a57b697eaa76d7dfcaec24056adbc9a81b3b06-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/92a57b697eaa76d7dfcaec24056adbc9a81b3b06-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/041859-09",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/041859-09"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Pro RC",
+    "product_model": "Ultra Pro RC",
+    "sole_type": ""
+  }
+}

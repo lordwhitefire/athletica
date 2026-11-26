@@ -1,0 +1,86 @@
+{
+  "id": "220067-1X5",
+  "slug": "lotto-stadio-200-3-fg-50-white",
+  "name": "Lotto Stadio 200 3 FG 50",
+  "model": "Stadio 200 3 50",
+  "brand": "Lotto",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Stadio 200 3 FG 50",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-de-futbol-color-blanco-lotto-stadio-200-3-fg-50_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-de-futbol-color-blanco-lotto-stadio-200-3-fg-50_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-de-futbol-con-tacos-blancas-lotto-stadio-200-3-fg-50_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-futbol-lotto-stadio-200-3-fg-50-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_zapatillas-futbol-color-blanco-lotto-stadio-200-3-fg-50_4_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_zapatillas-futbol-color-blanco-lotto-stadio-200-3-fg-50_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-de-futbol-con-tacos-lotto-stadio-200-3-fg-50-color-blanco_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-de-futbol-color-blanco-lotto-stadio-200-3-fg-50_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-de-futbol-con-tacos-blancas-lotto-stadio-200-3-fg-50_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-futbol-lotto-stadio-200-3-fg-50-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_zapatillas-futbol-color-blanco-lotto-stadio-200-3-fg-50_4_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_zapatillas-futbol-color-blanco-lotto-stadio-200-3-fg-50_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/2/220067-1X5_botas-de-futbol-con-tacos-lotto-stadio-200-3-fg-50-color-blanco_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/220067-1x5",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/220067-1x5"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Stadio",
+    "submodel": "200 3 50",
+    "product_model": "Stadio 200 3 50",
+    "sole_type": "FG"
+  }
+}

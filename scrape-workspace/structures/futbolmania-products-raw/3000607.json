@@ -1,0 +1,94 @@
+{
+  "id": "3000607",
+  "slug": "munich-gresca-yellow",
+  "name": "Munich Gresca",
+  "model": "Munich Gresca",
+  "brand": "Munich",
+  "category": "Indoor Shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Gresca",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/3000607",
+    "language": "es",
+    "category": "Zapatillas fútbol sala",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3000607_zapatilla-de-futbol-sala-munich-gresca-amarillo-azul_1_pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3000607_zapatilla-de-futbol-sala-munich-gresca-amarillo-azul_2_suela-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3000607_zapatilla-de-futbol-sala-munich-gresca-amarillo-azul_3_interior-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3000607_zapatilla-de-futbol-sala-munich-gresca-amarillo-azul_4_perspectiva.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3000607_zapatilla-de-futbol-sala-munich-gresca-amarillo-azul_5_trasera.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3000607_zapatilla-de-futbol-sala-munich-gresca-amarillo-azul_1_pie-derecho.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level1",
+      "name": "Zapatillas fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level2",
+      "name": "Nuevas zapatillas fútbol sala",
+      "href": "https://www.futbolmania.com/es/nuevas-botas-de-futbol-sala"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level2",
+      "name": "Zapatillas Munich fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala-munich"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level3",
+      "name": "Munich Gresca",
+      "href": "https://www.futbolmania.com/es/zapatillas-munich-gresca"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level3",
+      "name": "Zapatillas fútbol sala gama media",
+      "href": "https://www.futbolmania.com/es/zapatillas-futbol-sala-gama-media"
+    }
+  ]
+}

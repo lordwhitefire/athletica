@@ -1,0 +1,103 @@
+{
+  "id": "101134501",
+  "slug": "uhlsport-starter-resist-hn-orange",
+  "name": "Uhlsport Starter Resist+ HN",
+  "model": "Starter Resist+ HN",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Starter Resist+ HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ec2da63be2a69009a9fef126e7b56c5cd76cfe26-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ec2da63be2a69009a9fef126e7b56c5cd76cfe26-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1e382e687444d9d016e404d4eff2051ce4baeaa4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/636953989b08b054e704749989112f737a9b5f44-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0b4af8960d587d36e669290b1790767565d7577b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ec2da63be2a69009a9fef126e7b56c5cd76cfe26-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1e382e687444d9d016e404d4eff2051ce4baeaa4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/636953989b08b054e704749989112f737a9b5f44-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0b4af8960d587d36e669290b1790767565d7577b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ec2da63be2a69009a9fef126e7b56c5cd76cfe26-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ec2da63be2a69009a9fef126e7b56c5cd76cfe26-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1e382e687444d9d016e404d4eff2051ce4baeaa4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1e382e687444d9d016e404d4eff2051ce4baeaa4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-636953989b08b054e704749989112f737a9b5f44-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/636953989b08b054e704749989112f737a9b5f44-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0b4af8960d587d36e669290b1790767565d7577b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0b4af8960d587d36e669290b1790767565d7577b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/101134501",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/101134501"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Starter",
+    "submodel": "",
+    "product_model": "Starter Resist+ HN",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "IM4970-838",
+  "slug": "nike-mercurial-lite-km-orange",
+  "name": "Nike Mercurial Lite KM",
+  "model": "Mercurial Lite KM",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Soccer Shin Guards with Kylian Mbappé Support Tights - Orange",
+    "tagline": "Weightless protection for fast players",
+    "intro": "The Nike Mercurial Lite KM shin guards are designed to offer maximum lightness and mobility without compromising safety. Ideal for those who play at full speed like Mbappé.",
+    "collection": "KYLIAN MBAPPÉ PACK",
+    "key_benefits": [
+      "Ergonomic design: Conforms to the shape of the leg for greater comfort.",
+      "Lightweight construction: Effective protection without adding weight.",
+      "Professional inspiration: Kylian Mbappé special graphic."
+    ],
+    "technical_details": {
+      "range": "Mercurial Lite KM",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4970-838_espinilleras-color-naranja-nike-mercurial-lite-km_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4970-838_espinilleras-color-naranja-nike-mercurial-lite-km_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4970-838_canilleras-naranjas-nike-mercurial-lite-km_2_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4970-838_espinilleras-color-naranja-nike-mercurial-lite-km_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM4970-838_canilleras-naranjas-nike-mercurial-lite-km_2_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im4970-838",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción de Kylian Mbappé - naranjas",
+    "tagline": "Protección sin peso para jugadores veloces",
+    "intro": "Las espinilleras Nike Mercurial Lite KM están diseñadas para ofrecer máxima ligereza y movilidad sin comprometer la seguridad. Ideales para quienes juegan a toda velocidad como Mbappé.",
+    "collection": "KYLIAN MBAPPÉ PACK",
+    "key_benefits": [
+      "Diseño ergonómico: Se ajusta a la forma de la pierna para mayor comodidad.",
+      "Construcción ligera: Protección eficaz sin añadir peso.",
+      "Inspiración profesional: Gráfico especial de Kylian Mbappé."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im4970-838"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite KM",
+    "product_model": "Mercurial Lite KM",
+    "sole_type": ""
+  }
+}

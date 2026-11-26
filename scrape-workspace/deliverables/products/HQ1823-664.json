@@ -1,0 +1,100 @@
+{
+  "id": "HQ1823-664",
+  "slug": "camiseta-nike-barcelona-primary-stmt-dri-fit-orange",
+  "name": "Nike Barcelona Primary STMT Dri-Fit",
+  "model": "Barcelona Primary STMT Dri-Fit",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta Nike del FC Barcelona - melocotón",
+    "tagline": "Estilo Barça con el máximo confort diario",
+    "intro": "La camiseta Barça Primary está confeccionada en algodón suave y transpirable, ideal para vestir tu pasión fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Sensación natural y agradable todo el día.",
+      "Diseño exclusivo: Gráfico inspirado en la tercera equipación.",
+      "Corte clásico: Ajuste regular para cualquier ocasión.",
+      "Perfecta para fans: Estilo urbano con alma futbolera."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Primary STMT Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-color-naranja-nike-barcelona-primary-stmt-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-color-naranja-nike-barcelona-primary-stmt-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-melocoton-nike-barcelona-primary-stmt-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-nike-barcelona-primary-stmt-dri-fit-color-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-nike-barcelona-primary-stmt-dri-fit-melocoton_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-color-naranja-nike-barcelona-primary-stmt-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-melocoton-nike-barcelona-primary-stmt-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-nike-barcelona-primary-stmt-dri-fit-color-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1823-664_camiseta-nike-barcelona-primary-stmt-dri-fit-melocoton_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq1823-664",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta Nike del FC Barcelona - melocotón",
+    "tagline": "Estilo Barça con el máximo confort diario",
+    "intro": "La camiseta Barça Primary está confeccionada en algodón suave y transpirable, ideal para vestir tu pasión fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Sensación natural y agradable todo el día.",
+      "Diseño exclusivo: Gráfico inspirado en la tercera equipación.",
+      "Corte clásico: Ajuste regular para cualquier ocasión.",
+      "Perfecta para fans: Estilo urbano con alma futbolera."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq1823-664"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Barcelona Primary",
+    "submodel": "",
+    "product_model": "Barcelona Primary STMT Dri-Fit",
+    "sole_type": ""
+  }
+}

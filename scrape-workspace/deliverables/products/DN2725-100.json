@@ -1,0 +1,88 @@
+{
+  "id": "DN2725-100",
+  "slug": "short-nike-2a-liverpool-2022-2023-dri-fit-stadium-white",
+  "name": "Nike 2a Liverpool 2022 2023 Dri-Fit Stadium",
+  "model": "2a Liverpool 2022 2023 Dri-Fit Stadium",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike 2a Liverpool 2022 2023 Dri-Fit Stadium",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN2725-100_pantalon-corto-color-blanco-nike-2a-liverpool-2022-2023-dri-fit-stadium_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN2725-100_pantalon-corto-color-blanco-nike-2a-liverpool-2022-2023-dri-fit-stadium_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN2725-100_short-blanco-nike-2a-liverpool-2022-2023-dri-fit-stadium_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN2725-100_pantalon-corto-nike-2a-liverpool-2022-2023-dri-fit-stadium-color-blanco_3_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN2725-100_pantalon-corto-color-blanco-nike-2a-liverpool-2022-2023-dri-fit-stadium_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN2725-100_short-blanco-nike-2a-liverpool-2022-2023-dri-fit-stadium_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN2725-100_pantalon-corto-nike-2a-liverpool-2022-2023-dri-fit-stadium-color-blanco_3_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dn2725-100",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dn2725-100"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "2a",
+    "submodel": "",
+    "product_model": "2a Liverpool 2022 2023 Dri-Fit Stadium",
+    "sole_type": ""
+  }
+}

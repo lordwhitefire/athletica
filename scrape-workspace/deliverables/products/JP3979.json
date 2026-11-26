@@ -1,0 +1,102 @@
+{
+  "id": "JP3979",
+  "slug": "sudadera-adidas-real-madrid-entrenamiento-green",
+  "name": "adidas Real Madrid Training",
+  "model": "Real Madrid entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Training Sweatshirt - Light Green",
+    "tagline": "Protection and performance in every session",
+    "intro": "With this Real Madrid training sweatshirt, you can face the cold without losing comfort. Its breathable AEROREADY fabric keeps your body dry while you train intensely.",
+    "collection": "",
+    "key_benefits": [
+      "Thermal regulation: Keeps you warm during warm-up and training.",
+      "Advanced Comfort: Soft, breathable fabric with a slim fit.",
+      "Professional design: Inspired by the official Real Madrid kit.",
+      "Team identity: Heat-transferred crest that reinforces your connection with the club.",
+      "Ecological responsibility: Made with recycled materials."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-verde-claro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-adidas-real-madrid-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-verde-claro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3979_sudadera-adidas-real-madrid-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3979",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Protección y rendimiento en cada sesión",
+    "intro": "Con esta sudadera de entrenamiento del Real Madrid, puedes enfrentarte al frío sin perder comodidad. Su tejido transpirable AEROREADY mantiene tu cuerpo seco mientras entrenas con intensidad.",
+    "collection": "",
+    "key_benefits": [
+      "Regulación térmica: Te mantiene abrigado durante el calentamiento y el entrenamiento.",
+      "Comodidad avanzada: Tejido suave y transpirable con ajuste entallado.",
+      "Diseño profesional: Inspirada en la equipación oficial del Real Madrid.",
+      "Identidad de equipo: Escudo termotransferido que refuerza tu conexión con el club.",
+      "Responsabilidad ecológica: Elaborada con materiales reciclados."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3979"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "077012-01",
+  "slug": "zapatillero-puma-challenger-black",
+  "name": "Zapatillero Puma Challenger",
+  "model": "Zapatillero Puma Challenger",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma football boot holder - black",
+    "tagline": "Comodidad en cada desplazamiento",
+    "intro": "With a durable and practical design, the Puma Challenger shoe rack helps you transport your boots with complete confidence and ease.",
+    "collection": "",
+    "key_benefits": [
+      "Protection and order: Keeps your boots isolated from the rest of your equipment.",
+      "Comfortable use: Hand handle for easy movement.",
+      "Acceso eficiente: Cremallera con apertura lateral.",
+      "Durability: Sturdy construction for everyday use."
+    ],
+    "technical_details": {
+      "range": "Puma Challenger",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0cd650fa51dc4c14cbc805ed5ac4b7477ded9586-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0cd650fa51dc4c14cbc805ed5ac4b7477ded9586-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1e3561b5b8b6fb21f13aaec4254cbc371b4b18bd-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0cd650fa51dc4c14cbc805ed5ac4b7477ded9586-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1e3561b5b8b6fb21f13aaec4254cbc371b4b18bd-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-0cd650fa51dc4c14cbc805ed5ac4b7477ded9586-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0cd650fa51dc4c14cbc805ed5ac4b7477ded9586-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1e3561b5b8b6fb21f13aaec4254cbc371b4b18bd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1e3561b5b8b6fb21f13aaec4254cbc371b4b18bd-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/077012-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Porta botas de fútbol Puma - negro",
+    "tagline": "Comodidad en cada desplazamiento",
+    "intro": "Con un diseño resistente y práctico, el zapatillero Puma Challenger te ayuda a transportar tus botas con total confianza y facilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Protección y orden: Mantiene las botas aisladas del resto de tu equipación.",
+      "Uso cómodo: Asa de mano para moverlo con facilidad.",
+      "Acceso eficiente: Cremallera con apertura lateral.",
+      "Durabilidad: Construcción robusta para el uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/077012-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Zapatillero",
+    "submodel": "",
+    "product_model": "Zapatillero Puma Challenger",
+    "sole_type": ""
+  }
+}

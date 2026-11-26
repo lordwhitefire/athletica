@@ -1,0 +1,92 @@
+{
+  "id": "030989-11",
+  "slug": "puma-ultra-light-sleeve-white",
+  "name": "Puma Ultra Light Sleeve",
+  "model": "Ultra Light Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - White",
+    "tagline": "Discreet protection for fast gameplay",
+    "intro": "The Puma Ultra Light Sleeve are ideal for fast players looking for lightweight protection and a comfortable fit without interrupting the natural movement of the game.",
+    "collection": "UNLIMITED PACK",
+    "key_benefits": [
+      "Minimalist design: Ultra-thin shin guard for maximum mobility.",
+      "Stable support: Stockings included that fix without pressing.",
+      "Technical material: Foam and light plastic protection.",
+      "Easy to use: Quickly install and adjust.",
+      "Clean style: Modern and discreet finish."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f88f6b4776c58b5744b5860e4605c8dbe59551c3-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f88f6b4776c58b5744b5860e4605c8dbe59551c3-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f88f6b4776c58b5744b5860e4605c8dbe59551c3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f88f6b4776c58b5744b5860e4605c8dbe59551c3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f88f6b4776c58b5744b5860e4605c8dbe59551c3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030989-11",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - blancas",
+    "tagline": "Protección discreta para un juego veloz",
+    "intro": "Las Puma Ultra Light Sleeve son ideales para jugadores rápidos que buscan protección ligera y ajuste cómodo sin interrumpir el movimiento natural del juego.",
+    "collection": "UNLIMITED PACK",
+    "key_benefits": [
+      "Diseño minimalista: Espinillera ultradelgada para máxima movilidad.",
+      "Sujeción estable: Medias incluidas que fijan sin presionar.",
+      "Material técnico: Protección de espuma y plástico ligero.",
+      "Fácil de usar: Se coloca y ajusta rápidamente.",
+      "Estilo limpio: Acabado moderno y discreto."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030989-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Sleeve",
+    "product_model": "Ultra Light Sleeve",
+    "sole_type": ""
+  }
+}

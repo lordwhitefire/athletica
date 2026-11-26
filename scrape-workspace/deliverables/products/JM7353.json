@@ -1,0 +1,100 @@
+{
+  "id": "JM7353",
+  "slug": "camiseta-adidas-ajax-icon-marron",
+  "name": "adidas Ajax Icon",
+  "model": "Ajax Icon",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Marrón",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas del Ajax - beige",
+    "tagline": "Un tributo en algodón a los años dorados",
+    "intro": "La camiseta Ajax Icon rinde homenaje a los equipos legendarios del club con un look ochentero, combinando estilo retro y comodidad casual para cualquier día.",
+    "collection": "",
+    "key_benefits": [
+      "Estética vintage: Detalles gráficos y colores que evocan el pasado glorioso.",
+      "Confort natural: Algodón suave que cuida la piel.",
+      "Estilo urbano: Combina fácilmente con vaqueros o joggers.",
+      "Escudo Ajax: Presente al frente para mostrar tu pasión."
+    ],
+    "technical_details": {
+      "range": "adidas Ajax Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-color-marron-adidas-ajax-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-color-marron-adidas-ajax-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-beige-adidas-ajax-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-adidas-ajax-icon-color-marron_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-adidas-ajax-icon-beige_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-color-marron-adidas-ajax-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-beige-adidas-ajax-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-adidas-ajax-icon-color-marron_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM7353_camiseta-adidas-ajax-icon-beige_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm7353",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Ajax - beige",
+    "tagline": "Un tributo en algodón a los años dorados",
+    "intro": "La camiseta Ajax Icon rinde homenaje a los equipos legendarios del club con un look ochentero, combinando estilo retro y comodidad casual para cualquier día.",
+    "collection": "",
+    "key_benefits": [
+      "Estética vintage: Detalles gráficos y colores que evocan el pasado glorioso.",
+      "Confort natural: Algodón suave que cuida la piel.",
+      "Estilo urbano: Combina fácilmente con vaqueros o joggers.",
+      "Escudo Ajax: Presente al frente para mostrar tu pasión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm7353"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ajax",
+    "submodel": "Icon",
+    "product_model": "Ajax Icon",
+    "sole_type": ""
+  }
+}

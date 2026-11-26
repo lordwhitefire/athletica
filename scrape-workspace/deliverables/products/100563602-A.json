@@ -1,0 +1,103 @@
+{
+  "id": "100563602-A",
+  "slug": "camiseta-interior-uhlsport-bionik-frame-baselayer-black",
+  "name": "interior Uhlsport Bionik Frame Baselayer",
+  "model": "interior Uhlsport Bionik Frame Baselayer",
+  "brand": "Uhlsport",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "interior Uhlsport Bionik Frame Baselayer",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ada7217089f8a93ef76f235479750839a3064660-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ada7217089f8a93ef76f235479750839a3064660-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/12718352014558f0cf7665eb04beb5fa624ab290-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4102442e1d6e87086896c621b10c9833306b2e98-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/682b62d5a3f323123c08da27d1c07a9228bc4ee3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ada7217089f8a93ef76f235479750839a3064660-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/12718352014558f0cf7665eb04beb5fa624ab290-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4102442e1d6e87086896c621b10c9833306b2e98-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/682b62d5a3f323123c08da27d1c07a9228bc4ee3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ada7217089f8a93ef76f235479750839a3064660-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ada7217089f8a93ef76f235479750839a3064660-1500x1500.jpg"
+    },
+    {
+      "_id": "image-12718352014558f0cf7665eb04beb5fa624ab290-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/12718352014558f0cf7665eb04beb5fa624ab290-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4102442e1d6e87086896c621b10c9833306b2e98-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4102442e1d6e87086896c621b10c9833306b2e98-1500x1500.jpg"
+    },
+    {
+      "_id": "image-682b62d5a3f323123c08da27d1c07a9228bc4ee3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/682b62d5a3f323123c08da27d1c07a9228bc4ee3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100563602-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100563602-a"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "interior",
+    "submodel": "",
+    "product_model": "interior Uhlsport Bionik Frame Baselayer",
+    "sole_type": ""
+  }
+}

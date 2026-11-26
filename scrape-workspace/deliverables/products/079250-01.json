@@ -1,0 +1,107 @@
+{
+  "id": "079250-01",
+  "slug": "mochila-de-cuerdas-puma-valencia-mestalla-footballcore-black",
+  "name": "Backpack de cuerdas Puma Valencia Mestalla Footballcore",
+  "model": "Backpack de cuerdas Puma Valencia Mestalla Footballcore",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de cuerdas Puma Valencia Mestalla Footballcore",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/463644a6c20592bfecb91e9a0bd525be1f7517d2-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/463644a6c20592bfecb91e9a0bd525be1f7517d2-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2fe4bf9b6049be3afa5905f26fa414201a455a24-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f482eef815eb150a02642bf500be390d960fed91-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1962af6a217ccb631fc06d28baa036cc402d97e5-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/463644a6c20592bfecb91e9a0bd525be1f7517d2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2fe4bf9b6049be3afa5905f26fa414201a455a24-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f482eef815eb150a02642bf500be390d960fed91-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1962af6a217ccb631fc06d28baa036cc402d97e5-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-463644a6c20592bfecb91e9a0bd525be1f7517d2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/463644a6c20592bfecb91e9a0bd525be1f7517d2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2fe4bf9b6049be3afa5905f26fa414201a455a24-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2fe4bf9b6049be3afa5905f26fa414201a455a24-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f482eef815eb150a02642bf500be390d960fed91-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f482eef815eb150a02642bf500be390d960fed91-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1962af6a217ccb631fc06d28baa036cc402d97e5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1962af6a217ccb631fc06d28baa036cc402d97e5-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/079250-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/079250-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'ball'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Valencia Mestalla Footballcore",
+    "sole_type": ""
+  }
+}

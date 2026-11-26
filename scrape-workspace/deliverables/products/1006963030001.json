@@ -1,0 +1,93 @@
+{
+  "id": "1006963030001",
+  "slug": "cinta-sujeta-espinilleras-uhlsport-red",
+  "name": "Cinta sujeta Shin Guards Uhlsport",
+  "model": "Cinta sujeta Shin Guards Uhlsport",
+  "brand": "Uhlsport",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport Velcro Guard Stay 6.5cm - Red",
+    "tagline": "Maximum support for your shin guards",
+    "intro": "Uhlsport Guard Stay tapes offer a secure fit so your shin guards stay in place throughout the match. Made with elastic material and velcro closure, they guarantee comfort and resistance without causing discomfort.",
+    "collection": "",
+    "key_benefits": [
+      "Firm fit: Keeps the shin guards in their ideal position.",
+      "Total comfort: Elastic material that does not irritate or tighten excessively.",
+      "Quick closure: Velcro system for easy placement.",
+      "Reusable: Wash them and use them as many times as you want."
+    ],
+    "technical_details": {
+      "range": "sujeta espinilleras Uhlsport",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f4b5d945a35a51754daaa09b479cf40750feab82-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f4b5d945a35a51754daaa09b479cf40750feab82-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cd5f0ca4b8077ae2855947049a158de64130d70c-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f4b5d945a35a51754daaa09b479cf40750feab82-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cd5f0ca4b8077ae2855947049a158de64130d70c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f4b5d945a35a51754daaa09b479cf40750feab82-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f4b5d945a35a51754daaa09b479cf40750feab82-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cd5f0ca4b8077ae2855947049a158de64130d70c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cd5f0ca4b8077ae2855947049a158de64130d70c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/1006963030001",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guard Stay de velcro Uhlsport de 6,5cm - rojas",
+    "tagline": "Máxima sujeción para tus espinilleras",
+    "intro": "Las cintas Guard Stay de Uhlsport ofrecen un ajuste seguro para que tus espinilleras se mantengan en su sitio durante todo el partido. Fabricadas con material elástico y cierre de velcro, garantizan confort y resistencia sin generar molestias.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste firme: Mantiene las espinilleras en su posición ideal.",
+      "Comodidad total: Material elástico que no irrita ni aprieta en exceso.",
+      "Cierre rápido: Sistema de velcro de fácil colocación.",
+      "Reutilizable: Lávalas y úsalas tantas veces como quieras."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/1006963030001"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "high",
+    "rule": "name contains 'espinillera'",
+    "root_model": "Cinta",
+    "submodel": "",
+    "product_model": "Cinta sujeta Shin Guards Uhlsport",
+    "sole_type": ""
+  }
+}

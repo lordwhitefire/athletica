@@ -1,0 +1,98 @@
+{
+  "id": "KA8936",
+  "slug": "short-adidas-manchester-united-entrenamiento-purple",
+  "name": "adidas Manchester United Training",
+  "model": "Manchester United entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento adidas del Manchester United 2025 2026 - púrpura",
+    "tagline": "Muévete como los cracks del United",
+    "intro": "Estos shorts adidas te dan ligereza, frescura y el toque oficial de los Red Devils.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial entrenamiento: Parte del conjunto técnico del United.",
+      "Colores del equipo: Inspirado en la segunda equipación 25/26.",
+      "Ligereza total: Ideal para sesiones de alta intensidad."
+    ],
+    "technical_details": {
+      "range": "adidas Manchester United entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_pantalon-corto-color-negro-y-purpura-adidas-manchester-united-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_pantalon-corto-color-negro-y-purpura-adidas-manchester-united-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_short-purpura-adidas-manchester-united-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_pantalon-corto-adidas-manchester-united-entrenamiento-color-negro-y-purpura_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_short-adidas-manchester-united-entrenamiento-purpura_4_detalle-lateral.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_pantalon-corto-color-negro-y-purpura-adidas-manchester-united-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_short-purpura-adidas-manchester-united-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_pantalon-corto-adidas-manchester-united-entrenamiento-color-negro-y-purpura_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8936_short-adidas-manchester-united-entrenamiento-purpura_4_detalle-lateral.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka8936",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas del Manchester United 2025 2026 - púrpura",
+    "tagline": "Muévete como los cracks del United",
+    "intro": "Estos shorts adidas te dan ligereza, frescura y el toque oficial de los Red Devils.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial entrenamiento: Parte del conjunto técnico del United.",
+      "Colores del equipo: Inspirado en la segunda equipación 25/26.",
+      "Ligereza total: Ideal para sesiones de alta intensidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka8936"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Manchester United",
+    "submodel": "",
+    "product_model": "Manchester United entrenamiento",
+    "sole_type": ""
+  }
+}

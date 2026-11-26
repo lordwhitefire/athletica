@@ -1,0 +1,100 @@
+{
+  "id": "JN3067",
+  "slug": "short-adidas-real-madrid-ubp-grey",
+  "name": "adidas Real Madrid UBP",
+  "model": "Real Madrid UBP",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas shorts - gray",
+    "tagline": "Classic style for game days",
+    "intro": "The adidas Real Madrid UBP shorts allow you to show off your team's colors with a comfortable and relaxed design.",
+    "collection": "",
+    "key_benefits": [
+      "Retro aesthetic: Inspired by the football design of the 2010s.",
+      "Guaranteed comfort: Loose fit and light fabric.",
+      "Club identity: Real Madrid shield visible.",
+      "Total versatility: Ideal for leisure, home or game days.",
+      "Nice fabric: Soft and comfortable touch for all day."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid UBP",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_pantalon-corto-color-gris-adidas-real-madrid-ubp_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_pantalon-corto-color-gris-adidas-real-madrid-ubp_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_short-gris-adidas-real-madrid-ubp_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_pantalon-corto-adidas-real-madrid-ubp-color-gris_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_short-adidas-real-madrid-ubp-gris_4_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_pantalon-corto-color-gris-adidas-real-madrid-ubp_5_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_pantalon-corto-color-gris-adidas-real-madrid-ubp_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_short-gris-adidas-real-madrid-ubp_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_pantalon-corto-adidas-real-madrid-ubp-color-gris_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_short-adidas-real-madrid-ubp-gris_4_detalle-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3067_pantalon-corto-color-gris-adidas-real-madrid-ubp_5_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn3067",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto adidas del Real Madrid - gris",
+    "tagline": "Estilo clásico para los días de partido",
+    "intro": "El short adidas Real Madrid UBP te permite lucir los colores de tu equipo con un diseño cómodo y relajado.",
+    "collection": "",
+    "key_benefits": [
+      "Estética retro: Inspirado en el diseño futbolero de los años 2010.",
+      "Comodidad asegurada: Corte holgado y tejido ligero.",
+      "Identidad de club: Escudo del Real Madrid visible.",
+      "Versatilidad total: Ideal para ocio, casa o días de partido.",
+      "Tejido agradable: Tacto suave y cómodo para todo el día."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn3067"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid UBP",
+    "sole_type": ""
+  }
+}

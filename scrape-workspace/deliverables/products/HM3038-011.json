@@ -1,0 +1,94 @@
+{
+  "id": "HM3038-011",
+  "slug": "polo-nike-chelsea-dri-fit-2-0-black",
+  "name": "Polo Nike Chelsea Dri-Fit 2.0",
+  "model": "Polo Nike Chelsea Dri-Fit 2.0",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Polo Nike del Chelsea FC - negro",
+    "tagline": "Elegancia blue para cada día",
+    "intro": "El polo Nike Chelsea Dri-Fit 2.0 combina estilo de club y rendimiento ligero para llevar la identidad blue con comodidad. Inspirado en la indumentaria de viaje del equipo, su tejido transpirable y el cuello clásico de dos botones ofrecen una presencia pulida antes y después del partido.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad técnica: Tejido que ayuda a mantener la frescura cuando sube la temperatura.",
+      "Estilo versátil: Diseño con cuello y tapeta de botones apto para oficina o previa de estadio.",
+      "Identidad de club: Detalles oficiales del Chelsea FC para mostrar tus colores.",
+      "Libertad de movimiento: Estructura ligera que no limita los gestos del día a día."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea Dri-Fit 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3038-011_polo-color-negro-nike-chelsea-dri-fit-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3038-011_polo-color-negro-nike-chelsea-dri-fit-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3038-011_niqui-negro-nike-chelsea-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3038-011_polo-nike-chelsea-dri-fit-2-0-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3038-011_polo-color-negro-nike-chelsea-dri-fit-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3038-011_niqui-negro-nike-chelsea-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3038-011_polo-nike-chelsea-dri-fit-2-0-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3038-011",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Polo Nike del Chelsea FC - negro",
+    "tagline": "Elegancia blue para cada día",
+    "intro": "El polo Nike Chelsea Dri-Fit 2.0 combina estilo de club y rendimiento ligero para llevar la identidad blue con comodidad. Inspirado en la indumentaria de viaje del equipo, su tejido transpirable y el cuello clásico de dos botones ofrecen una presencia pulida antes y después del partido.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad técnica: Tejido que ayuda a mantener la frescura cuando sube la temperatura.",
+      "Estilo versátil: Diseño con cuello y tapeta de botones apto para oficina o previa de estadio.",
+      "Identidad de club: Detalles oficiales del Chelsea FC para mostrar tus colores.",
+      "Libertad de movimiento: Estructura ligera que no limita los gestos del día a día."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3038-011"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo Nike Chelsea Dri-Fit 2.0",
+    "sole_type": ""
+  }
+}

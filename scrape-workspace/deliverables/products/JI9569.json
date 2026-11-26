@@ -1,0 +1,100 @@
+{
+  "id": "JI9569",
+  "slug": "pantalon-adidas-arsenal-entrenamiento-ucl-grey",
+  "name": "adidas Arsenal Training UCL",
+  "model": "Arsenal entrenamiento UCL",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Arsenal adidas long training pants for the Champions League 2025 2026 - gray",
+    "tagline": "Control and comfort in each session",
+    "intro": "The Arsenal training pants offer technical performance and perfect fit. Ideal for demanding training or tactical sessions.",
+    "collection": "",
+    "key_benefits": [
+      "Technical fabric: Breathable to maintain freshness.",
+      "Arsenal Aesthetics: Club crest and colors.",
+      "Functionality: Ankle zippers and elastic waist.",
+      "Active design: Tight cut that allows total freedom."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal entrenamiento UCL",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-largo-color-marron-adidas-arsenal-entrenamiento-ucl_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-largo-color-marron-adidas-arsenal-entrenamiento-ucl_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-chandal-borgona-adidas-arsenal-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-chandal-adidas-arsenal-entrenamiento-ucl-color-marron_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-largo-adidas-arsenal-entrenamiento-ucl-borgona_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-largo-color-marron-adidas-arsenal-entrenamiento-ucl_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-chandal-borgona-adidas-arsenal-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-chandal-adidas-arsenal-entrenamiento-ucl-color-marron_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/I/JI9569_pantalon-largo-adidas-arsenal-entrenamiento-ucl-borgona_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ji9569",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas del Arsenal para la Champions League 2025 2026 - gris",
+    "tagline": "Control y comodidad en cada sesión",
+    "intro": "Los pantalones de entrenamiento del Arsenal ofrecen rendimiento técnico y ajuste perfecto. Ideal para entrenos exigentes o sesiones tácticas.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido técnico: Transpirable para mantener la frescura.",
+      "Estética Arsenal: Escudo y colores del club.",
+      "Funcionalidad: Cremalleras en los tobillos y cintura elástica.",
+      "Diseño activo: Corte ajustado que permite libertad total."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ji9569"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Arsenal Training",
+    "submodel": "",
+    "product_model": "Arsenal entrenamiento UCL",
+    "sole_type": ""
+  }
+}

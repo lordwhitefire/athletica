@@ -1,0 +1,98 @@
+{
+  "id": "IB3921-010",
+  "slug": "camiseta-nike-atletico-nino-black",
+  "name": "Nike Atlético Kids",
+  "model": "Atlético niño",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de algodón Nike del Atlético de Madrid 2025 2026 - negra",
+    "tagline": "Orgullo rojiblanco desde pequeño",
+    "intro": "La camiseta del Atlético para niño combina un diseño clásico con la comodidad del algodón. Perfecta para vestir con estilo y pasión por el Atleti en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño infantil: Adaptado para los más jóvenes, cómodo y fácil de llevar.",
+      "Algodón suave: Ideal para el uso diario sin irritaciones.",
+      "Identidad del club: Escudo visible que destaca la pasión atlética."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-color-negro-nike-atletico-nino-wordmark_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-color-negro-nike-atletico-nino-wordmark_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-negra-nike-atletico-nino-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-nike-atletico-nino-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-nike-atletico-nino-negra_4_detalle-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-color-negro-nike-atletico-nino-wordmark_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-negra-nike-atletico-nino-wordmark_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-nike-atletico-nino-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB3921-010_camiseta-nike-atletico-nino-negra_4_detalle-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ib3921-010",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de algodón Nike del Atlético de Madrid 2025 2026 - negra",
+    "tagline": "Orgullo rojiblanco desde pequeño",
+    "intro": "La camiseta del Atlético para niño combina un diseño clásico con la comodidad del algodón. Perfecta para vestir con estilo y pasión por el Atleti en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño infantil: Adaptado para los más jóvenes, cómodo y fácil de llevar.",
+      "Algodón suave: Ideal para el uso diario sin irritaciones.",
+      "Identidad del club: Escudo visible que destaca la pasión atlética."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ib3921-010"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Atlético",
+    "submodel": "",
+    "product_model": "Atlético niño",
+    "sole_type": ""
+  }
+}

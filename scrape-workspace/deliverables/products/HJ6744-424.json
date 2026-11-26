@@ -1,0 +1,100 @@
+{
+  "id": "HJ6744-424",
+  "slug": "short-nike-atletico-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike Atlético Training Dri-Fit Strike",
+  "model": "Atlético entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Nike del Atlético de Madrid - azul marino",
+    "tagline": "Comodidad y rendimiento en cada movimiento",
+    "intro": "El Short Nike Atlético entrenamiento Dri-Fit Strike está diseñado para ofrecer libertad de movimiento y transpirabilidad en cada jugada. Ideal para entrenamientos o partidos intensos, su tejido técnico mantiene la piel seca y el ajuste cómodo garantiza un desempeño óptimo.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento activo: Diseñado para ofrecer libertad en cada movimiento.",
+      "Control de la humedad: Tecnología Dri-FIT que mantiene la piel seca.",
+      "Comodidad superior: Cintura elástica con ajuste regulable.",
+      "Identidad de equipo: Incluye escudo del Atlético de Madrid.",
+      "Uso versátil: Perfecto para entrenar o vestir con estilo deportivo."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6744-424_pantalon-corto-color-azul-nike-atletico-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6744-424_pantalon-corto-color-azul-nike-atletico-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6744-424_pantalon-corto-nike-atletico-entrenamiento-dri-fit-strike-color-azul_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6744-424_short-azul-marino-nike-atletico-entrenamiento-dri-fit-strike_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6744-424_pantalon-corto-color-azul-nike-atletico-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6744-424_pantalon-corto-nike-atletico-entrenamiento-dri-fit-strike-color-azul_3_detalle-aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6744-424_short-azul-marino-nike-atletico-entrenamiento-dri-fit-strike_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6744-424",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike del Atlético de Madrid - azul marino",
+    "tagline": "Comodidad y rendimiento en cada movimiento",
+    "intro": "El Short Nike Atlético entrenamiento Dri-Fit Strike está diseñado para ofrecer libertad de movimiento y transpirabilidad en cada jugada. Ideal para entrenamientos o partidos intensos, su tejido técnico mantiene la piel seca y el ajuste cómodo garantiza un desempeño óptimo.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento activo: Diseñado para ofrecer libertad en cada movimiento.",
+      "Control de la humedad: Tecnología Dri-FIT que mantiene la piel seca.",
+      "Comodidad superior: Cintura elástica con ajuste regulable.",
+      "Identidad de equipo: Incluye escudo del Atlético de Madrid.",
+      "Uso versátil: Perfecto para entrenar o vestir con estilo deportivo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6744-424"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Atlético",
+    "submodel": "",
+    "product_model": "Atlético entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

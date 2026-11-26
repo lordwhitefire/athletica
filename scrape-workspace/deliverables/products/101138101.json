@@ -1,0 +1,107 @@
+{
+  "id": "101138101",
+  "slug": "uhlsport-cybertec-supersoft-azul-blanco",
+  "name": "Uhlsport Cybertec Supersoft",
+  "model": "Cybertec Supersoft",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Azul / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport Goalkeeper Gloves Classic Cut - White, Cyan Blue",
+    "tagline": "The control is in your hands",
+    "intro": "The Uhlsport Cybertec Supersoft combines Uhlsport technology with specialized cuts to offer a perfect fit and confident grip at every stop.",
+    "collection": "",
+    "key_benefits": [
+      "Great cushioning: SUPERSOFT latex designed for training and matches.",
+      "Renewed design: Modern Cybertec line with striking aesthetics.",
+      "Advanced comfort: Technical materials that maximize comfort."
+    ],
+    "technical_details": {
+      "range": "Cybertec Supersoft",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/fe887a6c3376816055422d7c4c7a6a8c08d33c11-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/fe887a6c3376816055422d7c4c7a6a8c08d33c11-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cc8b1b5db5ab7c0f45acd1834ae0e62678f4eeac-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8518e990af056c64843b27e1fad89b918906fcb8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d13ce0e39545b61574f7400e4af8cb2538886e42-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fe887a6c3376816055422d7c4c7a6a8c08d33c11-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cc8b1b5db5ab7c0f45acd1834ae0e62678f4eeac-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8518e990af056c64843b27e1fad89b918906fcb8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d13ce0e39545b61574f7400e4af8cb2538886e42-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-fe887a6c3376816055422d7c4c7a6a8c08d33c11-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fe887a6c3376816055422d7c4c7a6a8c08d33c11-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cc8b1b5db5ab7c0f45acd1834ae0e62678f4eeac-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cc8b1b5db5ab7c0f45acd1834ae0e62678f4eeac-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8518e990af056c64843b27e1fad89b918906fcb8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8518e990af056c64843b27e1fad89b918906fcb8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d13ce0e39545b61574f7400e4af8cb2538886e42-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d13ce0e39545b61574f7400e4af8cb2538886e42-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101138101",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Uhlsport corte Classic - blancos, azul cian",
+    "tagline": "El control está en tus manos",
+    "intro": "Los Uhlsport Cybertec Supersoft combinan tecnología Uhlsport con cortes especializados para ofrecer un ajuste perfecto y un agarre de confianza en cada parada.",
+    "collection": "",
+    "key_benefits": [
+      "Gran amortiguación: Látex SUPERSOFT pensado para entrenamientos y partidos.",
+      "Diseño renovado: Línea Cybertec moderna con estética impactante.",
+      "Comodidad avanzada: Materiales técnicos que maximizan el confort."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101138101"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Cybertec",
+    "submodel": "",
+    "product_model": "Cybertec Supersoft",
+    "sole_type": ""
+  }
+}

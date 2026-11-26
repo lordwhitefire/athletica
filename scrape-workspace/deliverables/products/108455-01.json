@@ -1,0 +1,131 @@
+{
+  "id": "108455-01",
+  "slug": "puma-ibero-v-white",
+  "name": "Puma Ibero V",
+  "model": "Ibero V",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma indoor soccer shoes with smooth sole - white",
+    "tagline": "Master each play with precision",
+    "intro": "The Puma Ibero V allow you to move fluidly and safely with every touch. Its balanced design provides a firm base, while its lightweight structure accompanies your pace of play.",
+    "collection": "",
+    "key_benefits": [
+      "Ergonomic fit: Firm support without sacrificing comfort.",
+      "Good contact with the ball: Materials that promote control.",
+      "Reliable Traction: Grip suitable for smooth room surfaces."
+    ],
+    "technical_details": {
+      "range": "Ibero V",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3134b57c7d4b4598c593de2f732ae3ba5658cad0-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3134b57c7d4b4598c593de2f732ae3ba5658cad0-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a2dd932a6d0dc40be93eb582358ae4370bbfb3e8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/abf4d2c700047afd9993b3b491d3e3d01b16abb2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aeebe26bbc07224d0a8eb078ffcb8bf6a0c80a07-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e64c43a209af5d92af6adc12b68c988e877b9ca4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c577b7d4104961f8d35350bd88b00f97681fa206-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5dbfa5efc0fcca1e1ea046a2e18c3adc9521a849-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cc55f345a8fbfeee1b5308c53286c17e8c9e0e82-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3134b57c7d4b4598c593de2f732ae3ba5658cad0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a2dd932a6d0dc40be93eb582358ae4370bbfb3e8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/abf4d2c700047afd9993b3b491d3e3d01b16abb2-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aeebe26bbc07224d0a8eb078ffcb8bf6a0c80a07-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e64c43a209af5d92af6adc12b68c988e877b9ca4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c577b7d4104961f8d35350bd88b00f97681fa206-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5dbfa5efc0fcca1e1ea046a2e18c3adc9521a849-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cc55f345a8fbfeee1b5308c53286c17e8c9e0e82-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3134b57c7d4b4598c593de2f732ae3ba5658cad0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3134b57c7d4b4598c593de2f732ae3ba5658cad0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a2dd932a6d0dc40be93eb582358ae4370bbfb3e8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a2dd932a6d0dc40be93eb582358ae4370bbfb3e8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-abf4d2c700047afd9993b3b491d3e3d01b16abb2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/abf4d2c700047afd9993b3b491d3e3d01b16abb2-1500x1500.jpg"
+    },
+    {
+      "_id": "image-aeebe26bbc07224d0a8eb078ffcb8bf6a0c80a07-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/aeebe26bbc07224d0a8eb078ffcb8bf6a0c80a07-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e64c43a209af5d92af6adc12b68c988e877b9ca4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e64c43a209af5d92af6adc12b68c988e877b9ca4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c577b7d4104961f8d35350bd88b00f97681fa206-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c577b7d4104961f8d35350bd88b00f97681fa206-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5dbfa5efc0fcca1e1ea046a2e18c3adc9521a849-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5dbfa5efc0fcca1e1ea046a2e18c3adc9521a849-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cc55f345a8fbfeee1b5308c53286c17e8c9e0e82-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cc55f345a8fbfeee1b5308c53286c17e8c9e0e82-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/108455-01",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Zapatillas de fútbol sala Puma suela lisa - blancas",
+    "tagline": "Domina cada jugada con precisión",
+    "intro": "Las Puma Ibero V te permiten moverte con fluidez y seguridad en cada toque. Su diseño equilibrado proporciona una base firme, mientras su estructura ligera acompaña tu ritmo de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste ergonómico: Sujeción firme sin sacrificar comodidad.",
+      "Buen contacto con el balón: Materiales que favorecen el control.",
+      "Tracción confiable: Agarre adecuado para superficies lisas de sala."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/108455-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Ibero",
+    "submodel": "",
+    "product_model": "Ibero V",
+    "sole_type": ""
+  }
+}

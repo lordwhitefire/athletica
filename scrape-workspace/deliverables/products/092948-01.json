@@ -1,0 +1,113 @@
+{
+  "id": "092948-01",
+  "slug": "mochila-puma-valencia-culture-black",
+  "name": "Backpack Puma Valencia Culture",
+  "model": "Backpack Puma Valencia Culture",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Valencia Sports Backpack - Black",
+    "tagline": "Lleva los colores del Valencia CF a todas partes",
+    "intro": "The Puma Valencia Culture backpack combines functionality, comfort and the pride of supporting Valencia CF. Its design and the official club crest make it the perfect companion for everyday life, work, studies or training.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Licensed product for true fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Club identity: Unique details of the team you follow."
+    ],
+    "technical_details": {
+      "range": "Puma Valencia Culture",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c3ad026bc4d52fd7af58cce9ddffec8b34ad3a0d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c3ad026bc4d52fd7af58cce9ddffec8b34ad3a0d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/01e9227e92b0e951ebab897ccf1c0a6265f59f4e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4a2d50883fef5731181d73d11258050229a0b833-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6a83127b3df988d747e0168a70505f3171e08f0b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c3ad026bc4d52fd7af58cce9ddffec8b34ad3a0d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/01e9227e92b0e951ebab897ccf1c0a6265f59f4e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4a2d50883fef5731181d73d11258050229a0b833-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6a83127b3df988d747e0168a70505f3171e08f0b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c3ad026bc4d52fd7af58cce9ddffec8b34ad3a0d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c3ad026bc4d52fd7af58cce9ddffec8b34ad3a0d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-01e9227e92b0e951ebab897ccf1c0a6265f59f4e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/01e9227e92b0e951ebab897ccf1c0a6265f59f4e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4a2d50883fef5731181d73d11258050229a0b833-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4a2d50883fef5731181d73d11258050229a0b833-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6a83127b3df988d747e0168a70505f3171e08f0b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6a83127b3df988d747e0168a70505f3171e08f0b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092948-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma del Valencia - negra",
+    "tagline": "Lleva los colores del Valencia CF a todas partes",
+    "intro": "La mochila Puma Valencia Culture combina funcionalidad, comodidad y el orgullo de apoyar al Valencia CF. Su diseño y el escudo oficial del club la convierten en la compañera perfecta para el día a día, el trabajo, los estudios o los entrenamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Producto licenciado para los verdaderos fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Identidad de club: Detalles únicos del equipo que sigues."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092948-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Valencia Culture",
+    "sole_type": ""
+  }
+}

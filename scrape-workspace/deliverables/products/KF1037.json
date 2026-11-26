@@ -1,0 +1,100 @@
+{
+  "id": "KF1037",
+  "slug": "sudadera-adidas-bayern-entrenamiento-azul-gris",
+  "name": "adidas Bayern Training",
+  "model": "Bayern entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Azul / Gris",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas del Bayern de Múnich 2026 2027 - azul claro, gris",
+    "tagline": "Entrena como el Bayern con máxima comodidad",
+    "intro": "La sudadera adidas del Bayern de Múnich de entrenamiento está diseñada para acompañarte en cada sesión con el mismo estilo que los profesionales. Inspirada en el conjunto de entrenamiento del Bayern de Múnich, combina ligereza y rendimiento para ofrecerte total libertad de movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido ligero: Favorece la movilidad y la comodidad durante el entrenamiento.",
+      "Ajuste entallado: Se adapta al cuerpo para un look deportivo y funcional.",
+      "Cierre con cremallera de 1/4: Facilita poner y quitar la prenda rápidamente.",
+      "Estilo oficial Bayern: Diseñada con detalles del club alemán."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-color-azul-y-gris-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-color-azul-y-gris-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-azul--gris-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-adidas-bayern-entrenamiento-color-azul-y-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-adidas-bayern-entrenamiento-azul--gris_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-color-azul-y-gris-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-azul--gris-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-adidas-bayern-entrenamiento-color-azul-y-gris_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF1037_sudadera-adidas-bayern-entrenamiento-azul--gris_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kf1037",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Bayern de Múnich 2026 2027 - azul claro, gris",
+    "tagline": "Entrena como el Bayern con máxima comodidad",
+    "intro": "La sudadera adidas del Bayern de Múnich de entrenamiento está diseñada para acompañarte en cada sesión con el mismo estilo que los profesionales. Inspirada en el conjunto de entrenamiento del Bayern de Múnich, combina ligereza y rendimiento para ofrecerte total libertad de movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido ligero: Favorece la movilidad y la comodidad durante el entrenamiento.",
+      "Ajuste entallado: Se adapta al cuerpo para un look deportivo y funcional.",
+      "Cierre con cremallera de 1/4: Facilita poner y quitar la prenda rápidamente.",
+      "Estilo oficial Bayern: Diseñada con detalles del club alemán."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kf1037"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Bayern Training",
+    "submodel": "",
+    "product_model": "Bayern entrenamiento",
+    "sole_type": ""
+  }
+}

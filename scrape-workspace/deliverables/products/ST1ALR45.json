@@ -1,0 +1,84 @@
+{
+  "id": "ST1ALR45",
+  "slug": "new-balance-tekela-v4-pro-low-laced-ag-negro-rojo",
+  "name": "New Balance Tekela V4+ Pro Low Laced AG",
+  "model": "Tekela V4+ Pro Low Laced",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Negro / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Balance Tekela V4+ Pro Low Laced",
+      "sole_type": "AG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "AG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-para-cesped-artificial-color-negro-y-rojo-new-balance-tekela-v4--pro-low-laced-ag_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-para-cesped-artificial-color-negro-y-rojo-new-balance-tekela-v4--pro-low-laced-ag_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-cesped-artificial-negras--rojas-new-balance-tekela-v4--pro-low-laced-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-hierba-artificial-new-balance-tekela-v4--pro-low-laced-ag-color-negro-y-rojo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_zapatillas-de-futbol-para-hierba-sintetica-new-balance-tekela-v4--pro-low-laced-ag-negras--rojas_4_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-con-tacos-color-negro-y-rojo-new-balance-tekela-v4--pro-low-laced-ag_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-para-cesped-artificial-color-negro-y-rojo-new-balance-tekela-v4--pro-low-laced-ag_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-cesped-artificial-negras--rojas-new-balance-tekela-v4--pro-low-laced-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-hierba-artificial-new-balance-tekela-v4--pro-low-laced-ag-color-negro-y-rojo_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_zapatillas-de-futbol-para-hierba-sintetica-new-balance-tekela-v4--pro-low-laced-ag-negras--rojas_4_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/T/ST1ALR45_botas-de-futbol-con-tacos-color-negro-y-rojo-new-balance-tekela-v4--pro-low-laced-ag_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/st1alr45",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/st1alr45"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Tekela",
+    "submodel": "V4+ Pro Low Laced",
+    "product_model": "Tekela V4+ Pro Low Laced",
+    "sole_type": "AG"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "782374-04",
+  "slug": "pantalon-puma-milan-entrenamiento-black",
+  "name": "Puma Milan Training",
+  "model": "Milan entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento Puma del AC Milan 2025 2026 - negro",
+    "tagline": "Comodidad que rinde como un profesional",
+    "intro": "Versatilidad total para el entrenamiento diario. Este pantalón largo del AC Milan ofrece un equilibrio perfecto entre comodidad, abrigo y rendimiento técnico.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad activa: Tejido suave y elástico para acompañarte en cada paso.",
+      "Protección ligera: Ideal para climas templados o frescos.",
+      "Sporty design: Inspired by the official training uniform.",
+      "Detalles prácticos: Cremalleras en los bajos y bolsillos funcionales."
+    ],
+    "technical_details": {
+      "range": "Puma Milan entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-largo-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-largo-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-chandal-negros-puma-milan-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-chandal-puma-milan-entrenamiento-color-negro_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-largo-puma-milan-entrenamiento-negros_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-largo-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-chandal-negros-puma-milan-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-chandal-puma-milan-entrenamiento-color-negro_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782374-04_pantalon-largo-puma-milan-entrenamiento-negros_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/782374-04",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de entrenamiento Puma del AC Milan 2025 2026 - negro",
+    "tagline": "Comodidad que rinde como un profesional",
+    "intro": "Versatilidad total para el entrenamiento diario. Este pantalón largo del AC Milan ofrece un equilibrio perfecto entre comodidad, abrigo y rendimiento técnico.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad activa: Tejido suave y elástico para acompañarte en cada paso.",
+      "Protección ligera: Ideal para climas templados o frescos.",
+      "Diseño deportivo: Inspirado en el uniforme de entrenamiento oficial.",
+      "Detalles prácticos: Cremalleras en los bajos y bolsillos funcionales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/782374-04"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Milan Training",
+    "submodel": "",
+    "product_model": "Milan entrenamiento",
+    "sole_type": ""
+  }
+}

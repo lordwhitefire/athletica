@@ -1,0 +1,89 @@
+{
+  "id": "026238-01",
+  "slug": "pack-6-cintas-de-pelo-puma-hyrox-blanco-negro",
+  "name": "Pack 6 cintas de pelo Puma Hyrox",
+  "model": "Pack 6 cintas de pelo Puma Hyrox",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blanco / Negro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "6 cintas de pelo Puma Hyrox",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cd56d52ef886c3ebda2f445905a44ffb1a32d16b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/cd56d52ef886c3ebda2f445905a44ffb1a32d16b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4fffb53f086b7a4e2e1b9f111df9a7bf058c6b07-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b4bf35e799ca2939142b32097abeca2d26bffa48-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cd56d52ef886c3ebda2f445905a44ffb1a32d16b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4fffb53f086b7a4e2e1b9f111df9a7bf058c6b07-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b4bf35e799ca2939142b32097abeca2d26bffa48-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-cd56d52ef886c3ebda2f445905a44ffb1a32d16b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cd56d52ef886c3ebda2f445905a44ffb1a32d16b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4fffb53f086b7a4e2e1b9f111df9a7bf058c6b07-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4fffb53f086b7a4e2e1b9f111df9a7bf058c6b07-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b4bf35e799ca2939142b32097abeca2d26bffa48-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b4bf35e799ca2939142b32097abeca2d26bffa48-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/026238-01",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/026238-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Pack",
+    "submodel": "6 cintas de pelo Puma Hyrox",
+    "product_model": "Pack 6 cintas de pelo Puma Hyrox",
+    "sole_type": ""
+  }
+}

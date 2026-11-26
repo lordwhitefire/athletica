@@ -1,0 +1,98 @@
+{
+  "id": "KW4631",
+  "slug": "camiseta-adidas-roma-26-27-red",
+  "name": "adidas Roma 26 27",
+  "model": "Roma 26 27",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación adidas de la Roma 2026 2027 - granate",
+    "tagline": "La pasión de Roma en cada partido",
+    "intro": "La camiseta adidas Roma 26 27 rinde homenaje al coraje y al espíritu del conjunto romano con un diseño inspirado en el símbolo atemporal de la Virtus. Su característico color granate se combina con detalles amarillos para representar la identidad de la AS Roma. Confeccionada en poliéster reciclado, incorpora un tejido ligero de secado rápido y tecnología Climacool para favorecer la gestión del sudor y ofrecer una sensación de frescura y comodidad.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Ayuda a mantener la frescura al evacuar el sudor durante el juego.",
+      "Tejido ligero y transpirable: Favorece la comodidad durante el partido o el uso diario.",
+      "Diseño oficial de la Roma: Combina el clásico granate del club con detalles amarillos."
+    ],
+    "technical_details": {
+      "range": "adidas Roma 26 27",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-color-rojo-adidas-roma-26-27_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-color-rojo-adidas-roma-26-27_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-granate-adidas-roma-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-adidas-roma-26-27-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-adidas-roma-26-27-granate_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-color-rojo-adidas-roma-26-27_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-granate-adidas-roma-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-adidas-roma-26-27-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/W/KW4631_camiseta-adidas-roma-26-27-granate_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kw4631",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la primera equipación adidas de la Roma 2026 2027 - granate",
+    "tagline": "La pasión de Roma en cada partido",
+    "intro": "La camiseta adidas Roma 26 27 rinde homenaje al coraje y al espíritu del conjunto romano con un diseño inspirado en el símbolo atemporal de la Virtus. Su característico color granate se combina con detalles amarillos para representar la identidad de la AS Roma. Confeccionada en poliéster reciclado, incorpora un tejido ligero de secado rápido y tecnología Climacool para favorecer la gestión del sudor y ofrecer una sensación de frescura y comodidad.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Ayuda a mantener la frescura al evacuar el sudor durante el juego.",
+      "Tejido ligero y transpirable: Favorece la comodidad durante el partido o el uso diario.",
+      "Diseño oficial de la Roma: Combina el clásico granate del club con detalles amarillos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kw4631"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Roma",
+    "submodel": "",
+    "product_model": "Roma 26 27",
+    "sole_type": ""
+  }
+}

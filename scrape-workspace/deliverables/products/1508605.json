@@ -1,0 +1,88 @@
+{
+  "id": "1508605",
+  "slug": "munich-gresca-kid-velcro-blue",
+  "name": "Munich Gresca Kid velcro",
+  "model": "Gresca Kid velcro",
+  "brand": "Munich",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Gresca Kid velcro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_4_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_5_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_2_suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_3_interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_4_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/5/1508605_imagen-de-las-zapatillas-de-futbol-sala-infantil-munich-gresca-azul-blanco_5_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/1508605",
+    "language": "es",
+    "category": "Botas niño fútbol sala",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Calzado fútbol"
+      },
+      {
+        "audience": "kids",
+        "root": "Botas niño fútbol sala"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/1508605"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Gresca",
+    "submodel": "Kid velcro",
+    "product_model": "Gresca Kid velcro",
+    "sole_type": ""
+  }
+}

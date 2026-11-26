@@ -1,0 +1,84 @@
+{
+  "id": "MUNS2511TF",
+  "slug": "joma-mundial-tf-green",
+  "name": "Joma Mundial TF",
+  "model": "Mundial",
+  "brand": "Joma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mundial",
+      "sole_type": "TF",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "TF",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_botas-multitaco-color-verde-joma-mundial-tf_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_botas-multitaco-color-verde-joma-mundial-tf_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_multitaco-verde-fluor-joma-mundial-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_zapatillas-multitaco-joma-mundial-tf-color-verde_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_botas-turf-joma-mundial-tf-verde-fluor_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_botas-taco-turf-color-verde-joma-mundial-tf_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_botas-multitaco-color-verde-joma-mundial-tf_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_multitaco-verde-fluor-joma-mundial-tf_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_zapatillas-multitaco-joma-mundial-tf-color-verde_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_botas-turf-joma-mundial-tf-verde-fluor_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/U/MUNS2511TF_botas-taco-turf-color-verde-joma-mundial-tf_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/muns2511tf",
+    "language": "es",
+    "category": "Botas multitaco",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas multitaco"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/muns2511tf"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Mundial",
+    "submodel": "",
+    "product_model": "Mundial",
+    "sole_type": "TF"
+  }
+}

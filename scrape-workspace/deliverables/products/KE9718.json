@@ -1,0 +1,92 @@
+{
+  "id": "KE9718",
+  "slug": "adidas-predator-competition-white",
+  "name": "adidas Predator Competition",
+  "model": "Predator Competition",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - blancos",
+    "tagline": "Agarre profesional para marcar la diferencia",
+    "intro": "Los guantes de portero adidas Predator Competition están diseñados para porteros que buscan un equilibrio perfecto entre agarre, comodidad y precisión en cada intervención. Incorporan una palma de látex URG 2.0 y un corte negativo que proporciona un ajuste ceñido para maximizar el contacto con el balón.",
+    "collection": "CHAOS VS CONTROL",
+    "key_benefits": [
+      "URG 2.0: Palma de látex de alto rendimiento con excelente agarre y confort.",
+      "Negative Cut: Ajuste ceñido que mejora la sensibilidad y el control del balón.",
+      "Mechano Backhand: Dorso flexible y transpirable para una mayor comodidad durante el juego.",
+      "PalmWrap y ThumbWrap: Mayor superficie de contacto para un agarre más seguro."
+    ],
+    "technical_details": {
+      "range": "Predator Competition",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-de-portero-color-blanco-adidas-predator-competition_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-de-portero-color-blanco-adidas-predator-competition_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-portero-blancos-adidas-predator-competition_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-de-arquero-adidas-predator-competition-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-de-futbol-adidas-predator-competition-blancos_4_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-de-portero-color-blanco-adidas-predator-competition_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-portero-blancos-adidas-predator-competition_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-de-arquero-adidas-predator-competition-color-blanco_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE9718_guantes-de-futbol-adidas-predator-competition-blancos_4_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ke9718",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - blancos",
+    "tagline": "Agarre profesional para marcar la diferencia",
+    "intro": "Los guantes de portero adidas Predator Competition están diseñados para porteros que buscan un equilibrio perfecto entre agarre, comodidad y precisión en cada intervención. Incorporan una palma de látex URG 2.0 y un corte negativo que proporciona un ajuste ceñido para maximizar el contacto con el balón.",
+    "collection": "CHAOS VS CONTROL",
+    "key_benefits": [
+      "URG 2.0: Palma de látex de alto rendimiento con excelente agarre y confort.",
+      "Negative Cut: Ajuste ceñido que mejora la sensibilidad y el control del balón.",
+      "Mechano Backhand: Dorso flexible y transpirable para una mayor comodidad durante el juego.",
+      "PalmWrap y ThumbWrap: Mayor superficie de contacto para un agarre más seguro."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ke9718"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Competition",
+    "product_model": "Predator Competition",
+    "sole_type": ""
+  }
+}

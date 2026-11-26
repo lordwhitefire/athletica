@@ -1,0 +1,77 @@
+{
+  "id": "CD6003-621",
+  "slug": "chandal-nike-barcelona-strike-2020-2021-red",
+  "name": "Chándal Nike Barcelona Strike 2020 2021",
+  "model": "Chándal Nike Barcelona Strike 2020 2021",
+  "brand": "Nike",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Barcelona Strike 2020 2021",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "",
+  "thumbnail": "",
+  "image_gallery": [],
+  "image_links": [],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/cd6003-621",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/cd6003-621"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "medium",
+    "rule": "source fallback 'ropa'",
+    "root_model": "Chándal",
+    "submodel": "",
+    "product_model": "Chándal Nike Barcelona Strike 2020 2021",
+    "sole_type": ""
+  }
+}

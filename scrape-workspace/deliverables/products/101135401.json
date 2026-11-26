@@ -1,0 +1,105 @@
+{
+  "id": "101135401",
+  "slug": "uhlsport-soft-hn-comp-blue",
+  "name": "Uhlsport Soft HN Comp",
+  "model": "Soft HN Comp",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Soft HN Comp",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e022116a3a15d839f257545e2abb9c3824dedcdf-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e022116a3a15d839f257545e2abb9c3824dedcdf-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/48c069e1463ddd302c70c03bc1580653301be34b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/209893caf3a5cfa7176cd3eb23f25eb0f109f65f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/edb73de4ce6c0a4ab71d378225591f8b9499aa30-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4d4b50043b8a5ee56aecbbbb1a4dda12d8cdfa3a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e022116a3a15d839f257545e2abb9c3824dedcdf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/48c069e1463ddd302c70c03bc1580653301be34b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/209893caf3a5cfa7176cd3eb23f25eb0f109f65f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/edb73de4ce6c0a4ab71d378225591f8b9499aa30-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4d4b50043b8a5ee56aecbbbb1a4dda12d8cdfa3a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e022116a3a15d839f257545e2abb9c3824dedcdf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e022116a3a15d839f257545e2abb9c3824dedcdf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-48c069e1463ddd302c70c03bc1580653301be34b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/48c069e1463ddd302c70c03bc1580653301be34b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-209893caf3a5cfa7176cd3eb23f25eb0f109f65f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/209893caf3a5cfa7176cd3eb23f25eb0f109f65f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-edb73de4ce6c0a4ab71d378225591f8b9499aa30-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/edb73de4ce6c0a4ab71d378225591f8b9499aa30-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4d4b50043b8a5ee56aecbbbb1a4dda12d8cdfa3a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4d4b50043b8a5ee56aecbbbb1a4dda12d8cdfa3a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101135401",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101135401"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Soft",
+    "submodel": "",
+    "product_model": "Soft HN Comp",
+    "sole_type": ""
+  }
+}

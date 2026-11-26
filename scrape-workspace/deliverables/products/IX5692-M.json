@@ -1,0 +1,98 @@
+{
+  "id": "IX5692-M",
+  "slug": "gorra-adidas-bayern-red",
+  "name": "adidas Bayern",
+  "model": "Bayern",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra adidas del Bayern de Múnich - roja",
+    "tagline": "Un clásico del Bayern para tu día a día",
+    "intro": "La gorra adidas del Bayern de Múnich es un accesorio imprescindible para mostrar tu pasión. Confeccionada en algodón y con el lema \"Mia san mia\" bordado junto al escudo oficial, une comodidad y orgullo bávaro en un diseño atemporal.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo bávaro: escudo oficial del Bayern de Múnich y lema \"Mia san mia\".",
+      "Comodidad natural: tejido 100% algodón que aporta suavidad y transpirabilidad.",
+      "Ajuste perfecto: correa trasera regulable para adaptarse a cada medida.",
+      "Protección diaria: visera curva que ofrece cobertura frente al sol.",
+      "Estilo oficial: producto adidas con licencia del Bayern."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-color-rojo-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-color-rojo-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-roja-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-adidas-bayern-entrenamiento-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-adidas-bayern-entrenamiento-roja_4_detalle-cierre.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-color-rojo-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-roja-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-adidas-bayern-entrenamiento-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/X/IX5692-M_gorra-adidas-bayern-entrenamiento-roja_4_detalle-cierre.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ix5692-m",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra adidas del Bayern de Múnich - roja",
+    "tagline": "Un clásico del Bayern para tu día a día",
+    "intro": "La gorra adidas del Bayern de Múnich es un accesorio imprescindible para mostrar tu pasión. Confeccionada en algodón y con el lema \"Mia san mia\" bordado junto al escudo oficial, une comodidad y orgullo bávaro en un diseño atemporal.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo bávaro: escudo oficial del Bayern de Múnich y lema \"Mia san mia\".",
+      "Comodidad natural: tejido 100% algodón que aporta suavidad y transpirabilidad.",
+      "Ajuste perfecto: correa trasera regulable para adaptarse a cada medida.",
+      "Protección diaria: visera curva que ofrece cobertura frente al sol.",
+      "Estilo oficial: producto adidas con licencia del Bayern."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ix5692-m"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Bayern",
+    "submodel": "",
+    "product_model": "Bayern",
+    "sole_type": ""
+  }
+}

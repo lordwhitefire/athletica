@@ -1,0 +1,96 @@
+{
+  "id": "KE5120",
+  "slug": "balon-adidas-manchester-united-mini-red",
+  "name": "adidas Manchester United mini",
+  "model": "Manchester United mini",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol adidas del Manchester United en talla mini - rojo",
+    "tagline": "Demuestra tu pasión por el Manchester United",
+    "intro": "El balón mini adidas del Manchester United está inspirado en la histórica primera equipación del club y es perfecto para disfrutar del fútbol en cualquier lugar. Su diseño en color rojo con el escudo oficial del United refleja toda la esencia de Old Trafford.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Manchester United: Con escudo del club y detalles inspirados en la equipación oficial.",
+      "Núcleo de espuma: No necesita inflado y mantiene siempre su forma.",
+      "Tamaño mini: Perfecto para mejorar el control y la técnica.",
+      "Construcción ligera: Fácil de transportar y utilizar en cualquier momento."
+    ],
+    "technical_details": {
+      "range": "adidas Manchester United mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_mini-balon-color-rojo-adidas-manchester-united-mini_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_mini-balon-color-rojo-adidas-manchester-united-mini_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_mini-pelota-rojo-adidas-manchester-united-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_balon-mini-adidas-manchester-united-mini-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_mini-balon-adidas-manchester-united-mini-rojo_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_mini-balon-color-rojo-adidas-manchester-united-mini_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_mini-pelota-rojo-adidas-manchester-united-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_balon-mini-adidas-manchester-united-mini-color-rojo_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE5120_mini-balon-adidas-manchester-united-mini-rojo_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ke5120",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol adidas del Manchester United en talla mini - rojo",
+    "tagline": "Demuestra tu pasión por el Manchester United",
+    "intro": "El balón mini adidas del Manchester United está inspirado en la histórica primera equipación del club y es perfecto para disfrutar del fútbol en cualquier lugar. Su diseño en color rojo con el escudo oficial del United refleja toda la esencia de Old Trafford.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Manchester United: Con escudo del club y detalles inspirados en la equipación oficial.",
+      "Núcleo de espuma: No necesita inflado y mantiene siempre su forma.",
+      "Tamaño mini: Perfecto para mejorar el control y la técnica.",
+      "Construcción ligera: Fácil de transportar y utilizar en cualquier momento."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ke5120"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Manchester United",
+    "submodel": "",
+    "product_model": "Manchester United mini",
+    "sole_type": ""
+  }
+}

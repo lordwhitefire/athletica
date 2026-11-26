@@ -1,0 +1,100 @@
+{
+  "id": "KM1663",
+  "slug": "camiseta-adidas-union-berlin-26-27-red",
+  "name": "adidas Union Berlin 26 27",
+  "model": "Union Berlin 26 27",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación adidas del Union Berlin 2026 2027 - roja",
+    "tagline": "La pasión del Union Berlin sobre el terreno de juego",
+    "intro": "La camiseta adidas Union Berlin 26 27 presenta un diseño inspirado en la arquitectura más representativa del club, con un elegante estampado tonal que se integra sobre el clásico color rojo. Equipada con la tecnología CLIMACOOL, mantiene la piel fresca y seca para que disfrutes del máximo confort tanto dentro como fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "CLIMACOOL: Favorece la ventilación y mantiene la piel fresca y seca.",
+      "Tejido transpirable: Ofrece comodidad y un secado rápido durante el juego.",
+      "Ajuste clásico: Proporciona libertad de movimiento y confort.",
+      "Diseño oficial: Inspirado en la primera equipación del Union Berlin 26/27."
+    ],
+    "technical_details": {
+      "range": "adidas Union Berlin 26 27",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-color-rojo-adidas-union-berlin-26-27_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-color-rojo-adidas-union-berlin-26-27_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-roja-adidas-union-berlin-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-adidas-union-berlin-26-27-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-adidas-union-berlin-26-27-roja_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-color-rojo-adidas-union-berlin-26-27_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-roja-adidas-union-berlin-26-27_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-adidas-union-berlin-26-27-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM1663_camiseta-adidas-union-berlin-26-27-roja_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/km1663",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de la primera equipación adidas del Union Berlin 2026 2027 - roja",
+    "tagline": "La pasión del Union Berlin sobre el terreno de juego",
+    "intro": "La camiseta adidas Union Berlin 26 27 presenta un diseño inspirado en la arquitectura más representativa del club, con un elegante estampado tonal que se integra sobre el clásico color rojo. Equipada con la tecnología CLIMACOOL, mantiene la piel fresca y seca para que disfrutes del máximo confort tanto dentro como fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "CLIMACOOL: Favorece la ventilación y mantiene la piel fresca y seca.",
+      "Tejido transpirable: Ofrece comodidad y un secado rápido durante el juego.",
+      "Ajuste clásico: Proporciona libertad de movimiento y confort.",
+      "Diseño oficial: Inspirado en la primera equipación del Union Berlin 26/27."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/km1663"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Union",
+    "submodel": "",
+    "product_model": "Union Berlin 26 27",
+    "sole_type": ""
+  }
+}

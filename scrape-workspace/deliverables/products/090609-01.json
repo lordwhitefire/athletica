@@ -1,0 +1,97 @@
+{
+  "id": "090609-01",
+  "slug": "mochila-puma-teamgoal-black",
+  "name": "Backpack Puma TeamGoal",
+  "model": "Backpack Puma TeamGoal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack with boot compartment - black",
+    "tagline": "Organization and comfort assured",
+    "intro": "Made of durable polyester, it has a specific space for shoes, side ventilation and a practical design that adapts to your needs.",
+    "collection": "",
+    "key_benefits": [
+      "Practical capacity: 24 liters that offer space for your sports and personal items.",
+      "Ventilated compartment: Special section for footwear with side mesh.",
+      "Technological protection: Padded laptop compartment.",
+      "Everyday comfort: Ergonomic design with padded straps."
+    ],
+    "technical_details": {
+      "range": "Puma TeamGoal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c7396a934d7c5e9e53eb1d80b47c52fce5fb1e11-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c7396a934d7c5e9e53eb1d80b47c52fce5fb1e11-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d715656f61a025bf8beceb8bd6ed8759137e4ca3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c7396a934d7c5e9e53eb1d80b47c52fce5fb1e11-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d715656f61a025bf8beceb8bd6ed8759137e4ca3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c7396a934d7c5e9e53eb1d80b47c52fce5fb1e11-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c7396a934d7c5e9e53eb1d80b47c52fce5fb1e11-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d715656f61a025bf8beceb8bd6ed8759137e4ca3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d715656f61a025bf8beceb8bd6ed8759137e4ca3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090609-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte Puma con compartimento para botas - negra",
+    "tagline": "Organización y comodidad aseguradas",
+    "intro": "Fabricada en poliéster resistente, cuenta con espacio específico para zapatillas, ventilación lateral y un diseño práctico que se adapta a tus necesidades.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad práctica: 24 litros que ofrecen espacio para tus objetos deportivos y personales.",
+      "Compartimento ventilado: Sección especial para calzado con malla lateral.",
+      "Protección tecnológica: Compartimento acolchado para portátil.",
+      "Comodidad diaria: Diseño ergonómico con correas acolchadas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090609-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma TeamGoal",
+    "sole_type": ""
+  }
+}

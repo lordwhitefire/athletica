@@ -1,0 +1,96 @@
+{
+  "id": "HV6406-010",
+  "slug": "chaqueta-nike-repel-t90-black",
+  "name": "Nike Repel T90",
+  "model": "Repel T90",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Total 90 Track Jacket - Black",
+    "tagline": "Rain-defying retro design",
+    "intro": "The Nike Repel T90 Jacket unites the classic 2000s look with Nike Repel waterproof technology. A tribute to football from before, with protection from today.",
+    "collection": "",
+    "key_benefits": [
+      "Protection against water: Nike Repel treatment resistant to light rain.",
+      "Tracksuit design: Sporty cut with vintage T90 details.",
+      "Lightweight comfort: Perfect for warming up or training.",
+      "Nostalgic look: Total 90 in its purest form."
+    ],
+    "technical_details": {
+      "range": "Nike Repel T90",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-color-negro-nike-repel-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-color-negro-nike-repel-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-chandal-negra-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-entretiempo-nike-repel-t90-color-negro_3_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-nike-repel-t90-negra_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-color-negro-nike-repel-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-chandal-negra-nike-repel-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-entretiempo-nike-repel-t90-color-negro_3_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV6406-010_chaqueta-nike-repel-t90-negra_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv6406-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de chándal Nike Total 90 - negra",
+    "tagline": "Diseño retro que desafía la lluvia",
+    "intro": "La chaqueta Nike Repel T90 une el look clásico de los 2000 con tecnología impermeable Nike Repel. Un homenaje al fútbol de antes, con protección de hoy.",
+    "collection": "",
+    "key_benefits": [
+      "Protección contra el agua: Tratamiento Nike Repel resistente a la lluvia ligera.",
+      "Diseño de chándal: Corte deportivo con detalles vintage T90.",
+      "Comodidad ligera: Perfecta para calentar o entrenar.",
+      "Look nostálgico: Total 90 en estado puro."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv6406-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel T90",
+    "sole_type": ""
+  }
+}

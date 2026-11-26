@@ -1,0 +1,104 @@
+{
+  "id": "JP4026",
+  "slug": "camiseta-adidas-real-madrid-entrenamiento-ucl-white",
+  "name": "adidas Real Madrid Training UCL",
+  "model": "Real Madrid entrenamiento UCL",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas training shirt for the Champions League 2025 2026 - white",
+    "tagline": "Reach your maximum level",
+    "intro": "The Real Madrid training shirt is designed to perform like a professional. AEROREADY technology and technical design for those who train to the limit.",
+    "collection": "",
+    "key_benefits": [
+      "Superior Breathability: AEROREADY keeps your body dry and cool.",
+      "Technical cut: Ergonomic sleeves and athletic fit.",
+      "Elite design: Inspired by Champions training.",
+      "Total lightness: Ultralight fabric for maximum performance."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento UCL",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-color-blanco-adidas-real-madrid-entrenamiento-ucl_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-color-blanco-adidas-real-madrid-entrenamiento-ucl_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-blanca-adidas-real-madrid-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-adidas-real-madrid-entrenamiento-ucl-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-adidas-real-madrid-entrenamiento-ucl-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-color-blanco-adidas-real-madrid-entrenamiento-ucl_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-blanca-adidas-real-madrid-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-adidas-real-madrid-entrenamiento-ucl-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP4026_camiseta-adidas-real-madrid-entrenamiento-ucl-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp4026",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de entrenamiento adidas del Real Madrid para la Champions League 2025 2026 - blanca",
+    "tagline": "Alcanza tu máximo nivel",
+    "intro": "La camiseta de entrenamiento del Real Madrid está pensada para rendir como un profesional. Tecnología AEROREADY y diseño técnico para quienes entrenan al límite.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad superior: AEROREADY mantiene tu cuerpo seco y fresco.",
+      "Corte técnico: Mangas ergonómicas y ajuste atlético.",
+      "Diseño de élite: Inspirado en los entrenamientos de Champions.",
+      "Ligereza total: Tejido ultraligero para máximo rendimiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp4026"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento UCL",
+    "sole_type": ""
+  }
+}

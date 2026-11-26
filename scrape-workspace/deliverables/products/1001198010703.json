@@ -1,0 +1,83 @@
+{
+  "id": "1001198010703",
+  "slug": "pack-agujas-uhlsport-3-unidades-silver",
+  "name": "Pack agujas Uhlsport 3 unidades",
+  "model": "Pack agujas Uhlsport 3 unidades",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Silver",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "agujas Uhlsport 3 unidades",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/5ef05f94668d2afd23f992ae7858833df250dbae-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5ef05f94668d2afd23f992ae7858833df250dbae-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f9c7785ddf450641e6c32c0797f021df3056719d-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5ef05f94668d2afd23f992ae7858833df250dbae-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f9c7785ddf450641e6c32c0797f021df3056719d-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-5ef05f94668d2afd23f992ae7858833df250dbae-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5ef05f94668d2afd23f992ae7858833df250dbae-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f9c7785ddf450641e6c32c0797f021df3056719d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f9c7785ddf450641e6c32c0797f021df3056719d-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/1001198010703",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/1001198010703"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Pack",
+    "submodel": "",
+    "product_model": "Pack agujas Uhlsport 3 unidades",
+    "sole_type": ""
+  }
+}

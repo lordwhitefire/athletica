@@ -1,0 +1,92 @@
+{
+  "id": "KV6723",
+  "slug": "chaqueta-adidas-real-madrid-himno-white",
+  "name": "adidas Real Madrid himno",
+  "model": "Real Madrid himno",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta himno adidas del Real Madrid 2026 2027 - blanca",
+    "tagline": "La pasión del Real Madrid con estilo legendario",
+    "intro": "La chaqueta himno adidas del Real Madrid 2026/2027 está inspirada en la equipación que visten los jugadores antes de saltar al terreno de juego. Su diseño elegante y distintivo permite mostrar el orgullo madridista con un estilo auténtico tanto en los días de partido como en el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido técnico de poliamida: Ligero, resistente y cómodo para un uso diario.",
+      "Cremallera completa: Facilita poner y quitar la prenda rápidamente.",
+      "Cuello alto: Aporta protección adicional y un estilo deportivo clásico.",
+      "Escudo oficial del Real Madrid: Demuestra tu pasión por el club blanco."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid himno",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-color-blanco-adidas-real-madrid-himno_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-color-blanco-adidas-real-madrid-himno_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-chandal-blanca-adidas-real-madrid-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-adidas-real-madrid-himno-blanca_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-entretiempo-adidas-real-madrid-himno-color-blanco_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-color-blanco-adidas-real-madrid-himno_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-chandal-blanca-adidas-real-madrid-himno_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-adidas-real-madrid-himno-blanca_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/V/KV6723_chaqueta-entretiempo-adidas-real-madrid-himno-color-blanco_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kv6723",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta himno adidas del Real Madrid 2026 2027 - blanca",
+    "tagline": "La pasión del Real Madrid con estilo legendario",
+    "intro": "La chaqueta himno adidas del Real Madrid 2026/2027 está inspirada en la equipación que visten los jugadores antes de saltar al terreno de juego. Su diseño elegante y distintivo permite mostrar el orgullo madridista con un estilo auténtico tanto en los días de partido como en el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido técnico de poliamida: Ligero, resistente y cómodo para un uso diario.",
+      "Cremallera completa: Facilita poner y quitar la prenda rápidamente.",
+      "Cuello alto: Aporta protección adicional y un estilo deportivo clásico.",
+      "Escudo oficial del Real Madrid: Demuestra tu pasión por el club blanco."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kv6723"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid himno",
+    "sole_type": ""
+  }
+}

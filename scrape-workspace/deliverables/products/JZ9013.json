@@ -1,0 +1,96 @@
+{
+  "id": "JZ9013",
+  "slug": "short-adidas-real-madrid-entrenamiento-black",
+  "name": "adidas Real Madrid Training",
+  "model": "Real Madrid entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento adidas del Real Madrid 2025 2026 - negro",
+    "tagline": "Entrena con libertad y estilo blanco",
+    "intro": "Este short oficial del Real Madrid te da frescura, ligereza y un diseño técnico para rendir al máximo en sesiones intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad de movimiento: Corte fluido y ligero.",
+      "Frescura continua: AEROREADY que gestiona el sudor.",
+      "Estilo oficial: Escudo del club termotransferido al frente."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9013_pantalon-corto-color-negro-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9013_pantalon-corto-color-negro-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9013_short-negro-adidas-real-madrid-entrenamiento_2_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9013_pantalon-corto-adidas-real-madrid-entrenamiento-color-negro_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9013_pantalon-corto-color-negro-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9013_short-negro-adidas-real-madrid-entrenamiento_2_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9013_pantalon-corto-adidas-real-madrid-entrenamiento-color-negro_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9013",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas del Real Madrid 2025 2026 - negro",
+    "tagline": "Entrena con libertad y estilo blanco",
+    "intro": "Este short oficial del Real Madrid te da frescura, ligereza y un diseño técnico para rendir al máximo en sesiones intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad de movimiento: Corte fluido y ligero.",
+      "Frescura continua: AEROREADY que gestiona el sudor.",
+      "Estilo oficial: Escudo del club termotransferido al frente."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9013"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento",
+    "sole_type": ""
+  }
+}

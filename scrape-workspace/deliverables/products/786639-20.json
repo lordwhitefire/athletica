@@ -1,0 +1,98 @@
+{
+  "id": "786639-20",
+  "slug": "camiseta-puma-milan-entrenamiento-black",
+  "name": "Puma Milan Training",
+  "model": "Milan entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta de entrenamiento Puma del AC Milan 2026 2027 - negra",
+    "tagline": "Entrena con la intensidad del Milan",
+    "intro": "La camiseta Puma Milan entrenamiento está diseñada para acompañar las sesiones de entrenamiento del AC Milan durante la temporada 2026/27. Su diseño con detalles rossoneri combina un estilo moderno con la comodidad y el rendimiento que necesitan los jugadores en cada ejercicio.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Ayuda a mantener la piel seca y cómoda durante el juego.",
+      "Diseño AC Milan: Inspirado en la ropa de entrenamiento del Milan.",
+      "Tejido jacquard: Mayor comodidad, ligereza y transpirabilidad."
+    ],
+    "technical_details": {
+      "range": "Puma Milan entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-color-gris-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-color-gris-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-gris-puma-milan-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-puma-milan-entrenamiento-color-negro_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-puma-milan-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-color-gris-puma-milan-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-gris-puma-milan-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-puma-milan-entrenamiento-color-negro_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786639-20_camiseta-puma-milan-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/786639-20",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga corta de entrenamiento Puma del AC Milan 2026 2027 - negra",
+    "tagline": "Entrena con la intensidad del Milan",
+    "intro": "La camiseta Puma Milan entrenamiento está diseñada para acompañar las sesiones de entrenamiento del AC Milan durante la temporada 2026/27. Su diseño con detalles rossoneri combina un estilo moderno con la comodidad y el rendimiento que necesitan los jugadores en cada ejercicio.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Ayuda a mantener la piel seca y cómoda durante el juego.",
+      "Diseño AC Milan: Inspirado en la ropa de entrenamiento del Milan.",
+      "Tejido jacquard: Mayor comodidad, ligereza y transpirabilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/786639-20"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Milan Training",
+    "submodel": "",
+    "product_model": "Milan entrenamiento",
+    "sole_type": ""
+  }
+}

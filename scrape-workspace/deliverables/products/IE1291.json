@@ -1,0 +1,88 @@
+{
+  "id": "IE1291",
+  "slug": "adidas-f50-league-fg-mg-pink",
+  "name": "adidas F50 League FG/MG",
+  "model": "F50 League /MG",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "F50 League FG/MG",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-con-tacos-color-rosa-adidas-f50-league-fg-mg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-con-tacos-color-rosa-adidas-f50-league-fg-mg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-rosas-adidas-f50-league-fg-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_zapatillas-futbol-adidas-f50-league-fg-mg-color-rosa_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_zapatillas-de-futbol-adidas-f50-league-fg-mg-rosas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-futbol-color-rosa-adidas-f50-league-fg-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-con-tacos-rosas-adidas-f50-league-fg-mg_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-adidas-f50-league-fg-mg-color-rosa_7_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-con-tacos-color-rosa-adidas-f50-league-fg-mg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-rosas-adidas-f50-league-fg-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_zapatillas-futbol-adidas-f50-league-fg-mg-color-rosa_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_zapatillas-de-futbol-adidas-f50-league-fg-mg-rosas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-futbol-color-rosa-adidas-f50-league-fg-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-con-tacos-rosas-adidas-f50-league-fg-mg_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/E/IE1291_botas-de-futbol-adidas-f50-league-fg-mg-color-rosa_7_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ie1291",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ie1291"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "F50",
+    "submodel": "League /MG",
+    "product_model": "F50 League /MG",
+    "sole_type": "FG"
+  }
+}

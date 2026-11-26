@@ -12,7 +12,7 @@ export function ThreeItemGrid({ products }: { products: Product[] }) {
           <Link href={`/product/${p.slug}`} className="group block">
             <div className="relative aspect-square overflow-hidden rounded-lg bg-neutral-900">
               {p.main_image && (
-                <Image src={p.main_image} alt={p.name} fill priority sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform group-hover:scale-105" />
+                <Image src={p.main_image} alt={p.name} fill priority unoptimized sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform group-hover:scale-105" />
               )}
             </div>
             <h3 className="mt-3 text-lg font-semibold text-white">{p.name}</h3>

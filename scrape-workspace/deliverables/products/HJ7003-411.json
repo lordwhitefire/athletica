@@ -1,0 +1,104 @@
+{
+  "id": "HJ7003-411",
+  "slug": "camiseta-nike-psg-mujer-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike PSG Women Training Dri-Fit Strike",
+  "model": "PSG mujer entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta para mujer de entrenamiento Nike del PSG - azul marino",
+    "tagline": "Entrena como las estrellas del PSG",
+    "intro": "La camiseta para mujer de entrenamiento del PSG te acompaña en cada sesión con frescura y libertad. Diseñada con tecnología Nike y un corte técnico, es ideal para darlo todo en el campo. Rinde al máximo como tus ídolos en cada entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial PSG 2025/2026: Inspirado en la equipación del equipo parisino.",
+      "Comodidad y frescura: Tejido técnico con tecnología Nike Dri-FIT.",
+      "Ajuste funcional: Corte que se adapta al movimiento.",
+      "Versatilidad: Ideal para uso deportivo o casual.",
+      "Detalles auténticos: Escudo del club y logo Nike aplicados con precisión."
+    ],
+    "technical_details": {
+      "range": "Nike PSG mujer entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7003-411_camiseta-color-azul-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7003-411_camiseta-color-azul-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7003-411_camiseta-azul-marino-nike-psg-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7003-411_camiseta-nike-psg-mujer-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7003-411_camiseta-color-azul-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7003-411_camiseta-azul-marino-nike-psg-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7003-411_camiseta-nike-psg-mujer-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj7003-411",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga corta para mujer de entrenamiento Nike del PSG - azul marino",
+    "tagline": "Entrena como las estrellas del PSG",
+    "intro": "La camiseta para mujer de entrenamiento del PSG te acompaña en cada sesión con frescura y libertad. Diseñada con tecnología Nike y un corte técnico, es ideal para darlo todo en el campo. Rinde al máximo como tus ídolos en cada entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial PSG 2025/2026: Inspirado en la equipación del equipo parisino.",
+      "Comodidad y frescura: Tejido técnico con tecnología Nike Dri-FIT.",
+      "Ajuste funcional: Corte que se adapta al movimiento.",
+      "Versatilidad: Ideal para uso deportivo o casual.",
+      "Detalles auténticos: Escudo del club y logo Nike aplicados con precisión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj7003-411"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "PSG Women",
+    "submodel": "",
+    "product_model": "PSG mujer entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

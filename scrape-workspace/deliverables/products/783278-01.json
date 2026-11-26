@@ -1,0 +1,102 @@
+{
+  "id": "783278-01",
+  "slug": "camiseta-puma-portugal-26-red",
+  "name": "Puma Portugal 26",
+  "model": "Portugal 26",
+  "brand": "Puma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación Puma de Portugal 2026 - roja",
+    "tagline": "Apoya a tu selección con orgullo y comodidad",
+    "intro": "La camiseta Puma Portugal 26 te conecta con la pasión por el país luso. Con tecnología dryCELL y un corte cómodo, es perfecta para mostrar tu apoyo en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Réplica de la equipación usada por los jugadores portugueses.",
+      "Comodidad duradera: Corte regular y tejido suave para uso diario.",
+      "Transpirabilidad: Tecnología dryCELL que ayuda a mantenerte seco.",
+      "Identidad nacional: Escudo y colores icónicos para los verdaderos fans."
+    ],
+    "technical_details": {
+      "range": "Puma Portugal 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_1.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_1.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_2.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_camiseta-puma-portugal-26-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_camiseta-puma-portugal-26-roja_4_detalle-autenticidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_camiseta-color-rojo-puma-portugal-26_5_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_1.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_2.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_camiseta-puma-portugal-26-color-rojo_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_camiseta-puma-portugal-26-roja_4_detalle-autenticidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783278-01_camiseta-color-rojo-puma-portugal-26_5_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/783278-01",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de la primera equipación Puma de Portugal 2026 - roja",
+    "tagline": "Apoya a tu selección con orgullo y comodidad",
+    "intro": "La camiseta Puma Portugal 26 te conecta con la pasión por el país luso. Con tecnología dryCELL y un corte cómodo, es perfecta para mostrar tu apoyo en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Réplica de la equipación usada por los jugadores portugueses.",
+      "Comodidad duradera: Corte regular y tejido suave para uso diario.",
+      "Transpirabilidad: Tecnología dryCELL que ayuda a mantenerte seco.",
+      "Identidad nacional: Escudo y colores icónicos para los verdaderos fans."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/783278-01"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Portugal",
+    "submodel": "",
+    "product_model": "Portugal 26",
+    "sole_type": ""
+  }
+}

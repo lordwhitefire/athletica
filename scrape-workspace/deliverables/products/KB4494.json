@@ -1,0 +1,104 @@
+{
+  "id": "KB4494",
+  "slug": "camiseta-sin-mangas-adidas-alemania-entrenamiento-white",
+  "name": "sin mangas adidas Alemania Training",
+  "model": "sin mangas adidas Alemania Training",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta sin mangas de entrenamiento adidas de la selección alemana 2026 - blanca",
+    "tagline": "La camiseta sin mangas de entrenamiento de Alemania",
+    "intro": "La camiseta sin mangas adidas Alemania 26 Tiro está diseñada para ofrecer comodidad y rendimiento durante los entrenamientos más intensos. Inspirada en el equipamiento de preparación de la selección alemana, combina un diseño deportivo con materiales técnicos de alta calidad.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología adidas Climacool: Expulsa y dispersa el sudor para mantener la piel fresca y seca durante el entrenamiento.",
+      "Diseño sin mangas: Favorece la libertad de movimiento y la ventilación en sesiones intensas.",
+      "Inserciones de malla: Aportan ventilación adicional para mayor confort.",
+      "Escudo de Alemania: Permite mostrar el orgullo por la selección alemana dentro y fuera del campo."
+    ],
+    "technical_details": {
+      "range": "sin mangas adidas Alemania entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-blanca-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-adidas-alemania-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-adidas-alemania-entrenamiento-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-blanca-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-adidas-alemania-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4494_camiseta-tirantes-adidas-alemania-entrenamiento-blanca_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb4494",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta sin mangas de entrenamiento adidas de la selección alemana 2026 - blanca",
+    "tagline": "La camiseta sin mangas de entrenamiento de Alemania",
+    "intro": "La camiseta sin mangas adidas Alemania 26 Tiro está diseñada para ofrecer comodidad y rendimiento durante los entrenamientos más intensos. Inspirada en el equipamiento de preparación de la selección alemana, combina un diseño deportivo con materiales técnicos de alta calidad.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología adidas Climacool: Expulsa y dispersa el sudor para mantener la piel fresca y seca durante el entrenamiento.",
+      "Diseño sin mangas: Favorece la libertad de movimiento y la ventilación en sesiones intensas.",
+      "Inserciones de malla: Aportan ventilación adicional para mayor confort.",
+      "Escudo de Alemania: Permite mostrar el orgullo por la selección alemana dentro y fuera del campo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb4494"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin mangas adidas Alemania Training",
+    "sole_type": ""
+  }
+}

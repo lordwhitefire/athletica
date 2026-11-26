@@ -1,0 +1,94 @@
+{
+  "id": "MS41FMS2",
+  "slug": "new-balance-442-v2-pro-fg-black",
+  "name": "New Balance 442 V2 Pro FG",
+  "model": "442 V2 Pro",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Botas de fútbol New Balance FG para césped natural o artificial de última generación - negras",
+    "tagline": "Tradición que evoluciona",
+    "intro": "Las botas New Balance 442 V2 Pro FG aportan un equilibrio perfecto entre el estilo clásico y la innovación moderna. Confeccionadas para adaptarse al ritmo del juego actual, sin perder el confort de siempre.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño anatómico: Ajuste envolvente para máxima seguridad.",
+      "Respuesta técnica: Material de cuero natural con excelente toque.",
+      "Tracción estable: Placa equilibrada para estabilidad multidireccional.",
+      "Estética profesional: Color negro sobrio que impone presencia."
+    ],
+    "technical_details": {
+      "range": "Balance 442 V2 Pro",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-de-futbol-color-negro-new-balance-442-v2-pro-fg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-de-futbol-color-negro-new-balance-442-v2-pro-fg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-de-futbol-con-tacos-negras-new-balance-442-v2-pro-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-de-futbol-tacos-new-balance-442-v2-pro-fg-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-futbol-new-balance-442-v2-pro-fg-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_zapatillas-futbol-color-negro-new-balance-442-v2-pro-fg_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-de-futbol-color-negro-new-balance-442-v2-pro-fg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-de-futbol-con-tacos-negras-new-balance-442-v2-pro-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-de-futbol-tacos-new-balance-442-v2-pro-fg-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_botas-futbol-new-balance-442-v2-pro-fg-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/M/S/MS41FMS2_zapatillas-futbol-color-negro-new-balance-442-v2-pro-fg_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ms41fms2",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Botas de fútbol New Balance FG para césped natural o artificial de última generación - negras",
+    "tagline": "Tradición que evoluciona",
+    "intro": "Las botas New Balance 442 V2 Pro FG aportan un equilibrio perfecto entre el estilo clásico y la innovación moderna. Confeccionadas para adaptarse al ritmo del juego actual, sin perder el confort de siempre.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño anatómico: Ajuste envolvente para máxima seguridad.",
+      "Respuesta técnica: Material de cuero natural con excelente toque.",
+      "Tracción estable: Placa equilibrada para estabilidad multidireccional.",
+      "Estética profesional: Color negro sobrio que impone presencia."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ms41fms2"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "442",
+    "submodel": "V2 Pro",
+    "product_model": "442 V2 Pro",
+    "sole_type": "FG"
+  }
+}

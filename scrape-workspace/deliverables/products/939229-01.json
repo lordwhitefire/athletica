@@ -1,0 +1,92 @@
+{
+  "id": "939229-01",
+  "slug": "gorra-puma-girona-red",
+  "name": "Puma Girona",
+  "model": "Girona",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra Puma del Girona FC - roja",
+    "tagline": "Un básico del Girona FC",
+    "intro": "La gorra Puma Girona es un accesorio indispensable para los seguidores del club. Diseñada con un estilo sencillo y práctico, aporta un toque distintivo en cualquier momento del día.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo del Girona FC: Nombre del club estampado en la parte frontal para mostrar tu pasión.",
+      "Detalles distintivos: Diseño con sello Puma que aporta carácter deportivo.",
+      "Diseño funcional: Complemento ligero y cómodo para cualquier ocasión.",
+      "Uso diario: Perfecta para acompañar tu look urbano o asistir a partidos del Girona."
+    ],
+    "technical_details": {
+      "range": "Puma Girona",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/3/939229-01_gorra-color-rojo-puma-girona_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/3/939229-01_gorra-color-rojo-puma-girona_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/3/939229-01_gorra-roja-puma-girona_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/3/939229-01_gorra-color-rojo-puma-girona_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/9/3/939229-01_gorra-roja-puma-girona_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/939229-01",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra Puma del Girona FC - roja",
+    "tagline": "Un básico del Girona FC",
+    "intro": "La gorra Puma Girona es un accesorio indispensable para los seguidores del club. Diseñada con un estilo sencillo y práctico, aporta un toque distintivo en cualquier momento del día.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo del Girona FC: Nombre del club estampado en la parte frontal para mostrar tu pasión.",
+      "Detalles distintivos: Diseño con sello Puma que aporta carácter deportivo.",
+      "Diseño funcional: Complemento ligero y cómodo para cualquier ocasión.",
+      "Uso diario: Perfecta para acompañar tu look urbano o asistir a partidos del Girona."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/939229-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Girona",
+    "submodel": "",
+    "product_model": "Girona",
+    "sole_type": ""
+  }
+}

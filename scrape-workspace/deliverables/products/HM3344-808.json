@@ -1,0 +1,102 @@
+{
+  "id": "HM3344-808",
+  "slug": "camiseta-nike-barcelona-entrenamiento-dri-fit-strike-orange",
+  "name": "Nike Barcelona Training Dri-Fit Strike",
+  "model": "Barcelona entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta de entrenamiento Nike del FC Barcelona 2025 2026 - melocotón",
+    "tagline": "Estilo vibrante, rendimiento superior",
+    "intro": "La camiseta de entrenamiento Barça Strike 25/26 ofrece comodidad, ligereza y estética explosiva.",
+    "collection": "",
+    "key_benefits": [
+      "Color llamativo: Diseño en tono melocotón único.",
+      "Comodidad en cada repetición: Ajuste atlético y suave al tacto.",
+      "Secado rápido: Tecnología Dri-FIT que expulsa el sudor.",
+      "Inspiración Barça: Parte de la colección oficial 25/26."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3344-808_camiseta-color-naranja-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3344-808_camiseta-color-naranja-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3344-808_camiseta-melocoton-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3344-808_camiseta-nike-barcelona-entrenamiento-dri-fit-strike-color-naranja_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3344-808_camiseta-color-naranja-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3344-808_camiseta-melocoton-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3344-808_camiseta-nike-barcelona-entrenamiento-dri-fit-strike-color-naranja_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3344-808",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga corta de entrenamiento Nike del FC Barcelona 2025 2026 - melocotón",
+    "tagline": "Estilo vibrante, rendimiento superior",
+    "intro": "La camiseta de entrenamiento Barça Strike 25/26 ofrece comodidad, ligereza y estética explosiva.",
+    "collection": "",
+    "key_benefits": [
+      "Color llamativo: Diseño en tono melocotón único.",
+      "Comodidad en cada repetición: Ajuste atlético y suave al tacto.",
+      "Secado rápido: Tecnología Dri-FIT que expulsa el sudor.",
+      "Inspiración Barça: Parte de la colección oficial 25/26."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3344-808"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Barcelona Training",
+    "submodel": "",
+    "product_model": "Barcelona entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

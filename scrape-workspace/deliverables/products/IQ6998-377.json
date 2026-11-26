@@ -1,0 +1,96 @@
+{
+  "id": "IQ6998-377",
+  "slug": "mochila-nike-brasil-academy-green",
+  "name": "Backpack Nike Brasil Academy",
+  "model": "Backpack Nike Brasil Academy",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Brazil national team Nike sports backpack - green",
+    "tagline": "Performance and resistance with Brazilian style",
+    "intro": "The Nike Brasil Academy backpack is designed to accompany you in training and matches, even in demanding conditions. Inspired by the Brazilian national team, it combines capacity, resistance and functionality to transport all your equipment.",
+    "collection": "",
+    "key_benefits": [
+      "Weather Protection: Storm-FIT Technology helps keep your gear dry.",
+      "Large capacity: Enough space for clothes, accessories and ball.",
+      "Comfort and ventilation: Mesh panels that improve breathability.",
+      "Brazil official style: Represent the team in your daily life."
+    ],
+    "technical_details": {
+      "range": "Nike Brasil Academy",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-color-verde-nike-brasil-academy_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-color-verde-nike-brasil-academy_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-verde-nike-brasil-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-nike-brasil-academy-color-verde_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-nike-brasil-academy-verde_4_detalle-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-color-verde-nike-brasil-academy_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-verde-nike-brasil-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-nike-brasil-academy-color-verde_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Q/IQ6998-377_mochila-nike-brasil-academy-verde_4_detalle-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/iq6998-377",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Nike de la selección de Brasil - verde",
+    "tagline": "Rendimiento y resistencia con el estilo de Brasil",
+    "intro": "La mochila Nike Brasil Academy está diseñada para acompañarte en entrenamientos y partidos, incluso en condiciones exigentes. Inspirada en la selección brasileña, combina capacidad, resistencia y funcionalidad para transportar todo tu equipamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Protección contra el clima: Tecnología Storm-FIT que ayuda a mantener tu equipación seca.",
+      "Gran capacidad: Espacio suficiente para ropa, accesorios y balón.",
+      "Comodidad y ventilación: Paneles de malla que mejoran la transpirabilidad.",
+      "Estilo oficial Brasil: Representa a la selección en tu día a día."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/iq6998-377"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Nike Brasil Academy",
+    "sole_type": ""
+  }
+}

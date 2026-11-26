@@ -1,0 +1,113 @@
+{
+  "id": "101138301",
+  "slug": "uhlsport-cybertec-soft-pro-azul-blanco",
+  "name": "Uhlsport Cybertec Soft Pro",
+  "model": "Cybertec Soft Pro",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Azul / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport Goalkeeper Gloves Classic Cut - White, Cyan Blue",
+    "tagline": "Maximum precision for demanding goalkeepers",
+    "intro": "The Uhlsport Cybertec Soft Pro combines high-performance technologies with a modern design to offer a perfect fit and superior control. Ideal for goalkeepers looking for professional performance in every stop. Its advanced construction guarantees grip, comfort and durability at key moments.",
+    "collection": "",
+    "key_benefits": [
+      "Elite grip: Professional palm that maximizes ball control in dry and wet conditions.",
+      "Ergonomic comfort: Snug fit that fits your hand like a second skin.",
+      "Positive cut: Natural feel and greater contact surface.",
+      "Secure closure: Wraparound wristband for maximum support in every action."
+    ],
+    "technical_details": {
+      "range": "Cybertec Soft Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0c8bcc125aee11473a847ecb97730c9834bc8820-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0c8bcc125aee11473a847ecb97730c9834bc8820-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3cf7e626c86e171d456a276cd615500c8eabdf32-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a2cae2c3dd043651112c05f75439fc453d522194-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b50bb1672ee8b0cd246886465fc46b754458d360-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0c8bcc125aee11473a847ecb97730c9834bc8820-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3cf7e626c86e171d456a276cd615500c8eabdf32-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a2cae2c3dd043651112c05f75439fc453d522194-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b50bb1672ee8b0cd246886465fc46b754458d360-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-0c8bcc125aee11473a847ecb97730c9834bc8820-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0c8bcc125aee11473a847ecb97730c9834bc8820-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3cf7e626c86e171d456a276cd615500c8eabdf32-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3cf7e626c86e171d456a276cd615500c8eabdf32-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a2cae2c3dd043651112c05f75439fc453d522194-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a2cae2c3dd043651112c05f75439fc453d522194-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b50bb1672ee8b0cd246886465fc46b754458d360-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b50bb1672ee8b0cd246886465fc46b754458d360-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/101138301",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Uhlsport corte Classic - blancos, azul cian",
+    "tagline": "Máxima precisión para porteros exigentes",
+    "intro": "Los Uhlsport Cybertec Soft Pro combinan tecnologías de alto rendimiento con un diseño moderno para ofrecer un ajuste perfecto y control superior. Ideales para porteros que buscan rendimiento profesional en cada parada. Su confección avanzada garantiza agarre, comodidad y durabilidad en los momentos clave.",
+    "collection": "",
+    "key_benefits": [
+      "Agarre de élite: Palma profesional que maximiza el control del balón en seco y mojado.",
+      "Comodidad ergonómica: Ajuste ceñido que se adapta a la mano como una segunda piel.",
+      "Corte positivo: Sensación natural y mayor superficie de contacto.",
+      "Cierre seguro: Muñequera envolvente para máxima sujeción en cada acción."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/101138301"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Cybertec",
+    "submodel": "",
+    "product_model": "Cybertec Soft Pro",
+    "sole_type": ""
+  }
+}

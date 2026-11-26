@@ -1,0 +1,98 @@
+{
+  "id": "KZ2483",
+  "slug": "camiseta-adidas-real-madrid-nino-green",
+  "name": "adidas Real Madrid Kids",
+  "model": "Real Madrid niño",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de algodón de manga corta adidas del Real Madrid - verde",
+    "tagline": "La pasión del Real Madrid para los más jóvenes",
+    "intro": "La camiseta infantil adidas del Real Madrid es la prenda perfecta para que los pequeños madridistas muestren su pasión por el club dentro y fuera del terreno de juego. Inspirada en la identidad del Real Madrid, combina un diseño limpio y versátil con detalles oficiales que permiten lucir los colores del equipo en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón: Tacto suave y gran comodidad para el uso diario.",
+      "Escudo del Real Madrid: Diseño oficial para mostrar la pasión por el club.",
+      "Corte clásico: Ajuste cómodo que favorece la libertad de movimiento.",
+      "Diseño versátil: Perfecta para deporte, colegio o tiempo libre."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2483_camiseta-color-verde-adidas-real-madrid-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2483_camiseta-color-verde-adidas-real-madrid-nino_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2483_camiseta-verde-adidas-real-madrid-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2483_camiseta-adidas-real-madrid-nino-color-verde_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2483_camiseta-color-verde-adidas-real-madrid-nino_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2483_camiseta-verde-adidas-real-madrid-nino_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2483_camiseta-adidas-real-madrid-nino-color-verde_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kz2483",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de algodón de manga corta adidas del Real Madrid - verde",
+    "tagline": "La pasión del Real Madrid para los más jóvenes",
+    "intro": "La camiseta infantil adidas del Real Madrid es la prenda perfecta para que los pequeños madridistas muestren su pasión por el club dentro y fuera del terreno de juego. Inspirada en la identidad del Real Madrid, combina un diseño limpio y versátil con detalles oficiales que permiten lucir los colores del equipo en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Algodón: Tacto suave y gran comodidad para el uso diario.",
+      "Escudo del Real Madrid: Diseño oficial para mostrar la pasión por el club.",
+      "Corte clásico: Ajuste cómodo que favorece la libertad de movimiento.",
+      "Diseño versátil: Perfecta para deporte, colegio o tiempo libre."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kz2483"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid niño",
+    "sole_type": ""
+  }
+}

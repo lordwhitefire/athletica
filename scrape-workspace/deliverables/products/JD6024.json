@@ -1,0 +1,92 @@
+{
+  "id": "JD6024",
+  "slug": "adidas-tiro-club-green",
+  "name": "adidas Tiro Club",
+  "model": "Tiro Club",
+  "brand": "adidas",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol adidas con cintas de velcro - verde claro",
+    "tagline": "Protección discreta para un juego veloz",
+    "intro": "Las adidas Tiro Club son ideales para jugadores rápidos que buscan protección ligera y ajuste cómodo sin interrumpir el movimiento natural del juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Espinillera ultradelgada para máxima movilidad.",
+      "Sujeción estable: Con cinta de velcro para mayor sujeción.",
+      "Material técnico: Protección de espuma maximizada.",
+      "Fácil de usar: Se coloca y ajusta rápidamente.",
+      "Estilo limpio: Acabado moderno y discreto."
+    ],
+    "technical_details": {
+      "range": "Tiro Club",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6024_espinilleras-color-negro-adidas-tiro-club_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6024_espinilleras-color-negro-adidas-tiro-club_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6024_canilleras-negras-adidas-tiro-club_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6024_espinilleras-adidas-tiro-club-color-negro_3_detalle-interior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6024_espinilleras-color-negro-adidas-tiro-club_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6024_canilleras-negras-adidas-tiro-club_2_detalle-perfil-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/D/JD6024_espinilleras-adidas-tiro-club-color-negro_3_detalle-interior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jd6024",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol adidas con cintas de velcro - verde claro",
+    "tagline": "Protección discreta para un juego veloz",
+    "intro": "Las adidas Tiro Club son ideales para jugadores rápidos que buscan protección ligera y ajuste cómodo sin interrumpir el movimiento natural del juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Espinillera ultradelgada para máxima movilidad.",
+      "Sujeción estable: Con cinta de velcro para mayor sujeción.",
+      "Material técnico: Protección de espuma maximizada.",
+      "Fácil de usar: Se coloca y ajusta rápidamente.",
+      "Estilo limpio: Acabado moderno y discreto."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jd6024"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Tiro",
+    "submodel": "",
+    "product_model": "Tiro Club",
+    "sole_type": ""
+  }
+}

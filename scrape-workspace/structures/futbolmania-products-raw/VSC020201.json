@@ -1,0 +1,89 @@
+{
+  "id": "VSC020201",
+  "slug": "g-form-volt-black",
+  "name": "G-Form Volt",
+  "model": "G-Form Volt",
+  "brand": "G-Form",
+  "category": "Shin Guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol G-Form con mallas de sujeción integradas - negras",
+    "tagline": "Protección que te acompaña en cada choque",
+    "intro": "Las espinilleras G-Form Volt ofrecen un equilibrio entre protección y confort para que te centres en el juego. Su diseño estable mantiene la espinillera en su sitio durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Protección sólida: Placa resistente que dispersa el impacto.",
+      "Ajuste seguro: Sistema de sujeción que mantiene la espinillera en su sitio.",
+      "Comodidad prolongada: Acolchado interior que evita rozaduras.",
+      "Ventilación activa: Zonas transpirables que favorecen la circulación de aire."
+    ],
+    "technical_details": {
+      "range": "Volt",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/vsc020201",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol G-Form con mallas de sujeción integradas - negras",
+    "tagline": "Protección que te acompaña en cada choque",
+    "intro": "Las espinilleras G-Form Volt ofrecen un equilibrio entre protección y confort para que te centres en el juego. Su diseño estable mantiene la espinillera en su sitio durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Protección sólida: Placa resistente que dispersa el impacto.",
+      "Ajuste seguro: Sistema de sujeción que mantiene la espinillera en su sitio.",
+      "Comodidad prolongada: Acolchado interior que evita rozaduras.",
+      "Ventilación activa: Zonas transpirables que favorecen la circulación de aire."
+    ]
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-color-negro-g-form-volt_1_completa-frontal.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_canilleras-negras-g-form-volt_2_completa-trasera.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-g-form-volt-color-negro_3_vista-conjunto.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_canilleras-g-form-volt-negras_4_detalle-aplicacion.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-color-negro-g-form-volt_1_completa-frontal.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level1",
+      "name": "Espinilleras fútbol",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level2",
+      "name": "Espinilleras G-Form",
+      "href": "https://www.futbolmania.com/es/espinilleras-G-Form"
+    },
+    {
+      "audience": "adult",
+      "root": "Espinilleras fútbol",
+      "level": "level3",
+      "name": "Espinilleras profesionales",
+      "href": "https://www.futbolmania.com/es/espinilleras-futbol-profesional"
+    }
+  ]
+}

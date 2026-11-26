@@ -1,0 +1,81 @@
+{
+  "id": "4260",
+  "slug": "bolsa-frio-zastor-intantaneo-icy-azul-blanco",
+  "name": "Bolsa frío Zastor intantáneo ICY",
+  "model": "Bolsa frío Zastor intantáneo ICY",
+  "brand": "Zastor",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Azul / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Bolsa de frío instantáneo Zastor - blanca y azul",
+    "tagline": "Alivio inmediato y práctico en situaciones de emergencia",
+    "intro": "La bolsa Zastor de frío instantáneo proporciona un efecto frío rápido y eficaz para aliviar el dolor tras un golpe o lesión. Su diseño desechable la convierte en un recurso seguro y listo para usar en cualquier momento.",
+    "collection": "",
+    "key_benefits": [
+      "Acción inmediata: Ofrece frío instantáneo tras la activación.",
+      "Alivio eficaz: Reduce inflamaciones y molestias ocasionadas por golpes o lesiones.",
+      "Uso práctico: Efecto frío sin necesidad de almacenarla en la nevera.",
+      "Fácil activación: Basta con golpear la bolsa para que la reacción de las sales nitrogenadas genere el efecto frío."
+    ],
+    "technical_details": {
+      "range": "frío Zastor intantáneo ICY",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/2/4260_imagen-de-la-bolsa-de-frio-instanteneo-icy-2019-blanco_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/2/4260_imagen-de-la-bolsa-de-frio-instanteneo-icy-2019-blanco_1_frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/2/4260_imagen-de-la-bolsa-de-frio-instanteneo-icy-2019-blanco_1_frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4260",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Bolsa de frío instantáneo Zastor - blanca y azul",
+    "tagline": "Alivio inmediato y práctico en situaciones de emergencia",
+    "intro": "La bolsa Zastor de frío instantáneo proporciona un efecto frío rápido y eficaz para aliviar el dolor tras un golpe o lesión. Su diseño desechable la convierte en un recurso seguro y listo para usar en cualquier momento.",
+    "collection": "",
+    "key_benefits": [
+      "Acción inmediata: Ofrece frío instantáneo tras la activación.",
+      "Alivio eficaz: Reduce inflamaciones y molestias ocasionadas por golpes o lesiones.",
+      "Uso práctico: Efecto frío sin necesidad de almacenarla en la nevera.",
+      "Fácil activación: Basta con golpear la bolsa para que la reacción de las sales nitrogenadas genere el efecto frío."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4260"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'bolsa'",
+    "root_model": "Bolsa",
+    "submodel": "",
+    "product_model": "Bolsa frío Zastor intantáneo ICY",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "100121201",
+  "slug": "red-uhlsport-12-balones-blanco-negro",
+  "name": "Red Uhlsport 12 Balls",
+  "model": "Red Uhlsport 12 Balls",
+  "brand": "Uhlsport",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blanco / Negro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport 12-ball net - black and white",
+    "tagline": "Capacity and resistance for everyday life",
+    "intro": "The Uhlsport 12-ball Net allows you to transport a large number of balls effortlessly thanks to its functional design. Ideal for coaches and teams looking for efficiency.",
+    "collection": "",
+    "key_benefits": [
+      "Large capacity: Carry up to 12 balls effortlessly",
+      "Durable material: Durable polypropylene for intensive use",
+      "Top closure: Keeps balls safe and secure",
+      "Practical design: Ideal for coaches or club staff"
+    ],
+    "technical_details": {
+      "range": "Uhlsport 12 balones",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0f171704aca8237f0cd3c6560dd26fcc9bd27e6d-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0f171704aca8237f0cd3c6560dd26fcc9bd27e6d-1600x1600.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0f171704aca8237f0cd3c6560dd26fcc9bd27e6d-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-0f171704aca8237f0cd3c6560dd26fcc9bd27e6d-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0f171704aca8237f0cd3c6560dd26fcc9bd27e6d-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100121201",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Red para 12 balones Uhlsport - negro y blanco",
+    "tagline": "Capacidad y resistencia para el día a día",
+    "intro": "La Red Uhlsport 12 balones permite transportar un número elevado de balones sin esfuerzo gracias a su diseño funcional. Ideal para entrenadores y equipos que buscan eficiencia.",
+    "collection": "",
+    "key_benefits": [
+      "Gran capacidad: Transporta hasta 12 balones sin esfuerzo",
+      "Material resistente: Polipropileno duradero ante el uso intensivo",
+      "Cierre superior: Mantiene los balones seguros y bien sujetos",
+      "Diseño práctico: Ideal para entrenadores o staff de club"
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100121201"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Red",
+    "submodel": "",
+    "product_model": "Red Uhlsport 12 Balls",
+    "sole_type": ""
+  }
+}

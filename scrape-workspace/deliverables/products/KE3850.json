@@ -1,0 +1,94 @@
+{
+  "id": "KE3850",
+  "slug": "sudadera-adidas-real-madrid-originals-blue",
+  "name": "adidas Real Madrid Originals",
+  "model": "Real Madrid Originals",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de algodón adidas del Real Madrid - azul marino",
+    "tagline": "Herencia blanca en clave Originals",
+    "intro": "Esta sudadera adidas Real Madrid Originals rinde homenaje a la historia del club con un diseño urbano pensado para el uso diario del aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo atemporal: Diseño Originals con identidad madridista.",
+      "Confort diario: Algodón suave para uso prolongado.",
+      "Versatilidad urbana: Fácil de combinar en looks casuales."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-color-azul-adidas-real-madrid-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-color-azul-adidas-real-madrid-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-azul-marino-adidas-real-madrid-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-adidas-real-madrid-originals-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-adidas-real-madrid-originals-azul-marino_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-color-azul-adidas-real-madrid-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-azul-marino-adidas-real-madrid-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-adidas-real-madrid-originals-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/E/KE3850_sudadera-adidas-real-madrid-originals-azul-marino_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ke3850",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de algodón adidas del Real Madrid - azul marino",
+    "tagline": "Herencia blanca en clave Originals",
+    "intro": "Esta sudadera adidas Real Madrid Originals rinde homenaje a la historia del club con un diseño urbano pensado para el uso diario del aficionado.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo atemporal: Diseño Originals con identidad madridista.",
+      "Confort diario: Algodón suave para uso prolongado.",
+      "Versatilidad urbana: Fácil de combinar en looks casuales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ke3850"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Originals",
+    "sole_type": ""
+  }
+}

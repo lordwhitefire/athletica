@@ -1,0 +1,94 @@
+{
+  "id": "DRIS2502TF",
+  "slug": "joma-dribling-tf-white",
+  "name": "Joma Dribling TF",
+  "model": "Joma Dribling TF",
+  "brand": "Joma",
+  "category": "Offers",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Dribling",
+      "sole_type": "TF",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "TF",
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/dris2502tf",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/R/DRIS2502TF_botas-multitaco-color-blanco-joma-dribling-tf_1_pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/R/DRIS2502TF_multitaco-blancas-joma-dribling-tf_2_suela-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/R/DRIS2502TF_zapatillas-multitaco-joma-dribling-tf-color-blanco_3_interior-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/R/DRIS2502TF_botas-turf-joma-dribling-tf-blancas_4_superior.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/R/DRIS2502TF_botas-taco-turf-color-blanco-joma-dribling-tf_5_perspectiva.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/R/DRIS2502TF_botas-multitaco-color-blanco-joma-dribling-tf_1_pie-derecho.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Botas multitaco",
+      "level": "level1",
+      "name": "Botas multitaco",
+      "href": "https://www.futbolmania.com/es/botas-multitaco"
+    },
+    {
+      "audience": "adult",
+      "root": "Botas multitaco",
+      "level": "level2",
+      "name": "Joma multitaco",
+      "href": "https://www.futbolmania.com/es/botas-multitaco-Joma"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level1",
+      "name": "Ofertas fútbol",
+      "href": "https://www.futbolmania.com/es/productos-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level2",
+      "name": "Calzado",
+      "href": "https://www.futbolmania.com/es/calzado-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level3",
+      "name": "Multitacos",
+      "href": "https://www.futbolmania.com/es/botas-multitaco-ofertas"
+    }
+  ]
+}

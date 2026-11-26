@@ -1,0 +1,80 @@
+{
+  "id": "051917-01",
+  "slug": "munequeras-puma-team-long-black",
+  "name": "Muñequeras Puma Team Long",
+  "model": "Muñequeras Puma Team Long",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Team Long",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b1bef5acc61e066f0ee5f26630a1e86b82fb7bd2-300x300.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b1bef5acc61e066f0ee5f26630a1e86b82fb7bd2-300x300.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b1bef5acc61e066f0ee5f26630a1e86b82fb7bd2-300x300.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b1bef5acc61e066f0ee5f26630a1e86b82fb7bd2-300x300-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b1bef5acc61e066f0ee5f26630a1e86b82fb7bd2-300x300.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/051917-01",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/051917-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Muñequeras",
+    "submodel": "",
+    "product_model": "Muñequeras Puma Team Long",
+    "sole_type": ""
+  }
+}

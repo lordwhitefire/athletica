@@ -1,0 +1,97 @@
+{
+  "id": "100130701",
+  "slug": "spray-uhlsport-power-gripx-120-ml-white",
+  "name": "Spray Uhlsport Power Gripx 120 ml",
+  "model": "Spray Uhlsport Power Gripx 120 ml",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adhesion enhancer spray for latex Uhlsport goalkeeper gloves 120 ml - white",
+    "tagline": "More grip for each intervention",
+    "intro": "Uhlsport Power Gripx 120 ml spray is designed to immediately improve and enhance the grip of goalkeeper gloves. Its formula allows you to strengthen the grip of any type of latex, also helping to recover grip sensations in dry or worn palms to face blocks and receptions with greater confidence.",
+    "collection": "",
+    "key_benefits": [
+      "Immediate grip: Its formula helps to quickly enhance the grip of the palm to offer greater security on the ball.",
+      "Recover grip: Refreshes dry or worn latex to help recover the grip sensations of the gloves.",
+      "All-Weather Performance: Provides reliable grip in both dry and wet conditions.",
+      "Flexible application: It can be used before starting to play or during the game when it is necessary to reinforce adhesion."
+    ],
+    "technical_details": {
+      "range": "Uhlsport Power Gripx 120 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cd0ba41e0b8e6aad8de8696bfd4e8323f2316972-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/cd0ba41e0b8e6aad8de8696bfd4e8323f2316972-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/df0495496a43eed66f5d34ae679a7b44cda0fdfa-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cd0ba41e0b8e6aad8de8696bfd4e8323f2316972-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/df0495496a43eed66f5d34ae679a7b44cda0fdfa-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-cd0ba41e0b8e6aad8de8696bfd4e8323f2316972-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cd0ba41e0b8e6aad8de8696bfd4e8323f2316972-1500x1500.jpg"
+    },
+    {
+      "_id": "image-df0495496a43eed66f5d34ae679a7b44cda0fdfa-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/df0495496a43eed66f5d34ae679a7b44cda0fdfa-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100130701",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Spray potenciador adherencia para látex de guantes de portero Uhlsport de 120 ml - blanco",
+    "tagline": "Más agarre para cada intervención",
+    "intro": "El spray Uhlsport Power Gripx 120 ml está diseñado para mejorar y potenciar de forma inmediata la adherencia de los guantes de portero. Su fórmula permite reforzar el grip de cualquier tipo de látex, ayudando también a recuperar las sensaciones de agarre en palmas secas o desgastadas para afrontar blocajes y recepciones con mayor confianza.",
+    "collection": "",
+    "key_benefits": [
+      "Agarre inmediato: Su fórmula ayuda a potenciar rápidamente la adherencia de la palma para ofrecer mayor seguridad sobre el balón.",
+      "Recupera el grip: Refresca el látex seco o desgastado para ayudar a recuperar las sensaciones de agarre de los guantes.",
+      "Rendimiento en cualquier clima: Proporciona un agarre fiable tanto en condiciones secas como húmedas.",
+      "Aplicación flexible: Puede utilizarse antes de comenzar a jugar o durante el partido cuando sea necesario reforzar la adherencia."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100130701"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Spray",
+    "submodel": "",
+    "product_model": "Spray Uhlsport Power Gripx 120 ml",
+    "sole_type": ""
+  }
+}

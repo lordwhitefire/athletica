@@ -1,0 +1,98 @@
+{
+  "id": "DA5435-425",
+  "slug": "mochila-de-cuerdas-nike-academy-blue",
+  "name": "Backpack de cuerdas Nike Academy",
+  "model": "Backpack de cuerdas Nike Academy",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de cuerdas Nike Academy - azul claro",
+    "tagline": "Diseño funcional para el día a día",
+    "intro": "La Mochila de cuerdas Nike Academy destaca por su comodidad, resistencia y organización inteligente. Con capacidad de 18L, es ideal para transportar tu equipación esencial con un toque deportivo. El diseño Nike asegura estilo y practicidad allá donde vayas.",
+    "collection": "SCARY GOOD",
+    "key_benefits": [
+      "Diseño ligero y funcional: Fácil de transportar para entrenamientos o el día a día.",
+      "Tejido resistente: Protege el contenido frente a la humedad y el desgaste.",
+      "Cordón ajustable: Permite un cierre rápido y seguro.",
+      "Side pocket: Ideal for separating small or wet items.",
+      "Estilo deportivo: Perfecta para jugadores que buscan funcionalidad con el look Nike."
+    ],
+    "technical_details": {
+      "range": "de cuerdas Nike Academy",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_mochila-de-cuerdas-color-azul-nike-academy_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_mochila-de-cuerdas-color-azul-nike-academy_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_bolsa-de-cuerdas-azul-claro-nike-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_mochila-de-cordones-nike-academy-azul-claro_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_saco-de-cuerdas-nike-academy-color-azul_3_detalle-capacidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_mochila-de-cuerdas-color-azul-nike-academy_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_bolsa-de-cuerdas-azul-claro-nike-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_mochila-de-cordones-nike-academy-azul-claro_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-425_saco-de-cuerdas-nike-academy-color-azul_3_detalle-capacidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/da5435-425",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de cuerdas Nike Academy - azul claro",
+    "tagline": "Diseño funcional para el día a día",
+    "intro": "La Mochila de cuerdas Nike Academy destaca por su comodidad, resistencia y organización inteligente. Con capacidad de 18L, es ideal para transportar tu equipación esencial con un toque deportivo. El diseño Nike asegura estilo y practicidad allá donde vayas.",
+    "collection": "SCARY GOOD",
+    "key_benefits": [
+      "Diseño ligero y funcional: Fácil de transportar para entrenamientos o el día a día.",
+      "Tejido resistente: Protege el contenido frente a la humedad y el desgaste.",
+      "Cordón ajustable: Permite un cierre rápido y seguro.",
+      "Bolsillo lateral: Ideal para separar objetos pequeños o mojados.",
+      "Estilo deportivo: Perfecta para jugadores que buscan funcionalidad con el look Nike."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/da5435-425"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Nike Academy",
+    "sole_type": ""
+  }
+}

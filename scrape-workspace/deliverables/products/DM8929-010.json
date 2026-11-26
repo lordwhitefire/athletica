@@ -1,0 +1,98 @@
+{
+  "id": "DM8929-010",
+  "slug": "gorro-nike-psg-beanie-training-black",
+  "name": "Gorro Nike PSG Beanie Training",
+  "model": "Gorro Nike PSG Beanie Training",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorro de invierno de entrenamiento Nike del Paris Saint-Germain - negro",
+    "tagline": "Diseño técnico con inspiración deportiva",
+    "intro": "Diseño en completo color negro con detalles en color gris y una etiqueta con el logotipo de Nike y el escudo del club.Fabricado en material acrílico que ofrece una perfecta retención de la temperatura corporal.",
+    "collection": "",
+    "key_benefits": [
+      "Aislamiento térmico: Ideal para entrenamientos al aire libre.",
+      "Diseño oficial del PSG: Con escudo bordado para auténticos fans.",
+      "Estilo discreto: Combinación de colores fácil de integrar en cualquier outfit.",
+      "Ajuste seguro: Tejido elástico que se adapta sin apretar."
+    ],
+    "technical_details": {
+      "range": "Nike PSG Beanie Training",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/M/DM8929-010_gorro-color-negro-nike-psg-beanie-training_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/M/DM8929-010_gorro-color-negro-nike-psg-beanie-training_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/M/DM8929-010_gorro-negro-nike-psg-beanie-training_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/M/DM8929-010_gorro-nike-psg-beanie-training-color-negro_3_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/M/DM8929-010_gorro-color-negro-nike-psg-beanie-training_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/M/DM8929-010_gorro-negro-nike-psg-beanie-training_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/M/DM8929-010_gorro-nike-psg-beanie-training-color-negro_3_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dm8929-010",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorro de invierno de entrenamiento Nike del Paris Saint-Germain - negro",
+    "tagline": "Diseño técnico con inspiración deportiva",
+    "intro": "Diseño en completo color negro con detalles en color gris y una etiqueta con el logotipo de Nike y el escudo del club.Fabricado en material acrílico que ofrece una perfecta retención de la temperatura corporal.",
+    "collection": "",
+    "key_benefits": [
+      "Aislamiento térmico: Ideal para entrenamientos al aire libre.",
+      "Diseño oficial del PSG: Con escudo bordado para auténticos fans.",
+      "Estilo discreto: Combinación de colores fácil de integrar en cualquier outfit.",
+      "Ajuste seguro: Tejido elástico que se adapta sin apretar."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dm8929-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Gorro",
+    "submodel": "",
+    "product_model": "Gorro Nike PSG Beanie Training",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "084814-01-5",
+  "slug": "balon-puma-valencia-culture-talla-5-white",
+  "name": "Puma Valencia Culture talla 5",
+  "model": "Valencia Culture talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Valencia Puma soccer ball size 5 - white",
+    "tagline": "Entrena con orgullo valencianista",
+    "intro": "The Puma Valencia Culture Size 5 Ball combines club identity and functional performance in an official design. Thanks to its machine sewing with a rubber chamber, it is ideal for your training sessions or matches with friends.",
+    "collection": "",
+    "key_benefits": [
+      "Club pride: Official Valencia design to show off your colors.",
+      "Sturdy Construction: Machine stitched with rubber chamber ensuring stable shape and long-lasting use.",
+      "Good control: Textured material for greater precision in passing and shooting.",
+      "Adapted to your age: Size 5: Standard for competitions and players from 12 years old.",
+      "Perfect for training: Designed to improve technique and consistency."
+    ],
+    "technical_details": {
+      "range": "Puma Valencia Culture talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a9f09d52aea78214e94188a5ca547084f5b7a040-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a9f09d52aea78214e94188a5ca547084f5b7a040-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d425b33f1c95d8211b0c00281df85dd096d11835-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a9f09d52aea78214e94188a5ca547084f5b7a040-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d425b33f1c95d8211b0c00281df85dd096d11835-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a9f09d52aea78214e94188a5ca547084f5b7a040-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a9f09d52aea78214e94188a5ca547084f5b7a040-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d425b33f1c95d8211b0c00281df85dd096d11835-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d425b33f1c95d8211b0c00281df85dd096d11835-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084814-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Valencia talla 5 - blanco",
+    "tagline": "Entrena con orgullo valencianista",
+    "intro": "El Balón Puma Valencia Culture talla 5 combina identidad de club y rendimiento funcional en un diseño oficial. Gracias a su cosido a máquina con cámara de goma, es ideal para tus sesiones de entrenamiento o partidos con amigos.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo de club: Diseño oficial del Valencia para lucir tus colores.",
+      "Construcción resistente: Cosido a máquina con cámara de goma que garantiza forma estable y uso prolongado.",
+      "Buen control: Material con textura para mayor precisión en el pase y tiro.",
+      "Adaptado a tu edad: Tamaño 5: Estándar para competiciones y jugadores a partir de 12 años.",
+      "Perfecto para entrenar: Diseñado para mejorar técnica y consistencia."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084814-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Valencia",
+    "submodel": "",
+    "product_model": "Valencia Culture talla 5",
+    "sole_type": ""
+  }
+}

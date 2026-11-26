@@ -1,0 +1,104 @@
+{
+  "id": "782356-04",
+  "slug": "camiseta-puma-milan-entrenamiento-black",
+  "name": "Puma Milan Training",
+  "model": "Milan entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de manga corta de entrenamiento Puma del AC Milan 2025 2026 - negra",
+    "tagline": "Rinde al máximo con estilo y sobriedad",
+    "intro": "Elegancia y rendimiento en cada movimiento. Esta versión negra de la camiseta de entrenamiento del AC Milan destaca por su estilo minimalista, sin renunciar a la eficiencia técnica que exige un entrenamiento de élite.",
+    "collection": "",
+    "key_benefits": [
+      "Estética profesional: El color negro combina con cualquier outfit deportivo o casual.",
+      "Ventilación estratégica: Material transpirable que mantiene el cuerpo fresco.",
+      "Ergonomía superior: Ajuste atlético que se adapta sin restringir tus movimientos.",
+      "Inspiración rossonera: Lleva el escudo del AC Milan como símbolo de entrega."
+    ],
+    "technical_details": {
+      "range": "Puma Milan entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-negra-puma-milan-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-puma-milan-entrenamiento-color-negro_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-puma-milan-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-color-negro-puma-milan-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-negra-puma-milan-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-puma-milan-entrenamiento-color-negro_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782356-04_camiseta-puma-milan-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/782356-04",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga corta de entrenamiento Puma del AC Milan 2025 2026 - negra",
+    "tagline": "Rinde al máximo con estilo y sobriedad",
+    "intro": "Elegancia y rendimiento en cada movimiento. Esta versión negra de la camiseta de entrenamiento del AC Milan destaca por su estilo minimalista, sin renunciar a la eficiencia técnica que exige un entrenamiento de élite.",
+    "collection": "",
+    "key_benefits": [
+      "Estética profesional: El color negro combina con cualquier outfit deportivo o casual.",
+      "Ventilación estratégica: Material transpirable que mantiene el cuerpo fresco.",
+      "Ergonomía superior: Ajuste atlético que se adapta sin restringir tus movimientos.",
+      "Inspiración rossonera: Lleva el escudo del AC Milan como símbolo de entrega."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/782356-04"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Milan Training",
+    "submodel": "",
+    "product_model": "Milan entrenamiento",
+    "sole_type": ""
+  }
+}

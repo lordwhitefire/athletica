@@ -1,0 +1,88 @@
+{
+  "id": "IH0328-010",
+  "slug": "sudadera-nike-mujer-dri-fit-strike-black",
+  "name": "Nike Women Dri-Fit Strike",
+  "model": "mujer Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Women's Soccer Training Sweatshirt - Black",
+    "tagline": "Master every workout",
+    "intro": "Designed for players who don't stop, this sweatshirt combines style and performance. Dri-FIT fabric offers breathability at all times and its slim fit follows your every move.",
+    "collection": "",
+    "key_benefits": [
+      "Total Breathability: Dri-FIT fabric helps keep skin dry",
+      "Slim fit: Promotes mobility without restrictions",
+      "Athletic design: Ideal for high-performance football"
+    ],
+    "technical_details": {
+      "range": "Nike mujer Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0328-010_sudadera-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0328-010_sudadera-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0328-010_sudadera-negra-nike-mujer-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0328-010_sudadera-nike-mujer-dri-fit-strike-color-negro_3_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0328-010_sudadera-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0328-010_sudadera-negra-nike-mujer-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0328-010_sudadera-nike-mujer-dri-fit-strike-color-negro_3_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ih0328-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera para mujer de entrenamiento de fútbol Nike - negra",
+    "tagline": "Domina cada entrenamiento",
+    "intro": "Diseñada para jugadoras que no se detienen, esta sudadera combina estilo y rendimiento. El tejido Dri-FIT ofrece transpirabilidad en todo momento y su ajuste entallado acompaña cada movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad total: El tejido Dri-FIT ayuda a mantener la piel seca",
+      "Ajuste entallado: Favorece la movilidad sin restricciones",
+      "Diseño atlético: Ideal para el fútbol de alto rendimiento"
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ih0328-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Women",
+    "submodel": "",
+    "product_model": "mujer Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

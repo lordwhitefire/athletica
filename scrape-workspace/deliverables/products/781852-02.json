@@ -1,0 +1,92 @@
+{
+  "id": "781852-02",
+  "slug": "short-puma-valencia-evostripe-black",
+  "name": "Puma Valencia Evostripe",
+  "model": "Valencia Evostripe",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Valencia Puma shorts - black",
+    "tagline": "Perform at your best with freshness and freedom",
+    "intro": "These Valencia shorts offer a perfect combination of lightness, breathability and dynamic fit. Ideal for high intensity sessions and maximum mobility on the playing field.",
+    "collection": "",
+    "key_benefits": [
+      "Freedom of movement: Lightweight and breathable design to perform in every session.",
+      "Elastic waist with drawstring: Customized and secure fit.",
+      "Material reciclado: Compromiso con el medio ambiente sin sacrificar rendimiento.",
+      "Diseño oficial del club: Representa con orgullo al Valencia CF."
+    ],
+    "technical_details": {
+      "range": "Puma Valencia Evostripe",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781852-02_pantalon-corto-color-negro-puma-valencia-evostripe_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781852-02_pantalon-corto-color-negro-puma-valencia-evostripe_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781852-02_short-negros-puma-valencia-evostripe_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781852-02_pantalon-corto-color-negro-puma-valencia-evostripe_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/781852-02_short-negros-puma-valencia-evostripe_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/781852-02",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto Puma del Valencia - negro",
+    "tagline": "Rinde al máximo con frescura y libertad",
+    "intro": "Este short del Valencia ofrece una combinación perfecta entre ligereza, transpirabilidad y ajuste dinámico. Ideal para sesiones de alta intensidad y máxima movilidad en el terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad de movimiento: Diseño ligero y transpirable para rendir en cada sesión.",
+      "Cintura elástica con cordón: Ajuste personalizado y seguro.",
+      "Material reciclado: Compromiso con el medio ambiente sin sacrificar rendimiento.",
+      "Diseño oficial del club: Representa con orgullo al Valencia CF."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/781852-02"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Valencia",
+    "submodel": "",
+    "product_model": "Valencia Evostripe",
+    "sole_type": ""
+  }
+}

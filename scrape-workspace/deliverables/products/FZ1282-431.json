@@ -1,0 +1,94 @@
+{
+  "id": "FZ1282-431",
+  "slug": "pantalon-nike-barcelona-woven-se-blue",
+  "name": "Nike Barcelona Woven SE",
+  "model": "Barcelona Woven SE",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del FC Barcelona 2025 2026 - azul",
+    "tagline": "Inspiración urbana con ADN blaugrana",
+    "intro": "La línea Woven del Barça combina tejido ligero y estilo callejero con los colores del club. Perfecta para los que viven el fútbol dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido resistente: Material Nike Woven preparado para el día a día.",
+      "Diseño versátil: Ideal para looks urbanos o entrenamiento ligero.",
+      "Escudo oficial: Detalles premium con identidad Barça."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Woven SE",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-largo-color-azul-nike-barcelona-woven_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-largo-color-azul-nike-barcelona-woven_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-chandal-azul-nike-barcelona-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-chandal-nike-barcelona-woven-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-largo-nike-barcelona-woven-azul_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-largo-color-azul-nike-barcelona-woven_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-chandal-azul-nike-barcelona-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-chandal-nike-barcelona-woven-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/Z/FZ1282-431_pantalon-largo-nike-barcelona-woven-azul_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fz1282-431",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del FC Barcelona 2025 2026 - azul",
+    "tagline": "Inspiración urbana con ADN blaugrana",
+    "intro": "La línea Woven del Barça combina tejido ligero y estilo callejero con los colores del club. Perfecta para los que viven el fútbol dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido resistente: Material Nike Woven preparado para el día a día.",
+      "Diseño versátil: Ideal para looks urbanos o entrenamiento ligero.",
+      "Escudo oficial: Detalles premium con identidad Barça."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fz1282-431"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Barcelona Woven",
+    "submodel": "",
+    "product_model": "Barcelona Woven SE",
+    "sole_type": ""
+  }
+}

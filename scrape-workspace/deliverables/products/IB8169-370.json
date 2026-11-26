@@ -1,0 +1,98 @@
+{
+  "id": "IB8169-370",
+  "slug": "short-nike-chelsea-tech-fleece-green",
+  "name": "Nike Chelsea Tech Fleece",
+  "model": "Chelsea Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chelsea Nike Shorts - Light Green",
+    "tagline": "Style and comfort to cheer on Chelsea",
+    "intro": "The Nike Tech Fleece Chelsea shorts combine a modern design with the lightest, softest fleece fabric. Ideal for training, lounging or showing your support for the club in style.",
+    "collection": "",
+    "key_benefits": [
+      "Premium fabric: Lightweight fleece that keeps you warm without sacrificing lightness.",
+      "Official Chelsea design: Inspired by the club's kit for an authentic look.",
+      "Everyday Comfort: Soft feel inside and out for long wear.",
+      "Functional pockets: Practical storage for personal items.",
+      "Urban style: Modern cut ideal for training or casual wear."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_pantalon-corto-color-verde-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_pantalon-corto-color-verde-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_short-verde-claro-nike-chelsea-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_pantalon-corto-nike-chelsea-tech-fleece-color-verde_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_short-nike-chelsea-tech-fleece-verde-claro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_pantalon-corto-color-verde-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_short-verde-claro-nike-chelsea-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_pantalon-corto-nike-chelsea-tech-fleece-color-verde_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8169-370_short-nike-chelsea-tech-fleece-verde-claro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib8169-370",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto Nike del Chelsea - verde claro",
+    "tagline": "Estilo y comodidad para animar al Chelsea",
+    "intro": "El short Nike Tech Fleece del Chelsea combina un diseño moderno con el tejido Fleece más ligero y suave. Ideal para entrenar, descansar o mostrar tu apoyo al club con estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido premium: Fleece ligero que mantiene el calor sin sacrificar ligereza.",
+      "Diseño oficial del Chelsea: Inspirado en la equipación del club para una imagen auténtica.",
+      "Comodidad diaria: Tacto suave por dentro y por fuera para un uso prolongado.",
+      "Bolsillos funcionales: Almacenamiento práctico para objetos personales.",
+      "Estilo urbano: Corte moderno ideal para entrenar o vestir casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib8169-370"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Chelsea Tech",
+    "submodel": "",
+    "product_model": "Chelsea Tech Fleece",
+    "sole_type": ""
+  }
+}

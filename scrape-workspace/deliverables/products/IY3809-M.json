@@ -1,0 +1,98 @@
+{
+  "id": "IY3809-M",
+  "slug": "gorra-adidas-real-madrid-white",
+  "name": "adidas Real Madrid",
+  "model": "Real Madrid",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorra adidas del Real Madrid - blanca",
+    "tagline": "Madridismo con estilo urbano",
+    "intro": "La gorra adidas Real Madrid es un complemento versátil que combina la pasión por el club blanco con un diseño casual y moderno. Confeccionada en algodón y con detalles bordados, ofrece comodidad y orgullo merengue en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad merengue: detalles bordados con el nombre del Real Madrid.",
+      "Diseño elegante: estilo minimalista que se adapta a looks urbanos y deportivos.",
+      "Tejido cómodo: algodón suave que garantiza confort en todo momento.",
+      "Ajuste adaptable: cierre trasero regulable para un ajuste perfecto.",
+      "Ideal para diario: perfecta para el uso urbano, días de partido o tiempo libre."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-color-blanco-adidas-real-madrid_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-color-blanco-adidas-real-madrid_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-blanca-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-adidas-real-madrid-color-blanco_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-adidas-real-madrid-blanca_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-color-blanco-adidas-real-madrid_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-blanca-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-adidas-real-madrid-color-blanco_3_detalle-cierre.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/Y/IY3809-M_gorra-adidas-real-madrid-blanca_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/iy3809-m",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra adidas del Real Madrid - blanca",
+    "tagline": "Madridismo con estilo urbano",
+    "intro": "La gorra adidas Real Madrid es un complemento versátil que combina la pasión por el club blanco con un diseño casual y moderno. Confeccionada en algodón y con detalles bordados, ofrece comodidad y orgullo merengue en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad merengue: detalles bordados con el nombre del Real Madrid.",
+      "Diseño elegante: estilo minimalista que se adapta a looks urbanos y deportivos.",
+      "Tejido cómodo: algodón suave que garantiza confort en todo momento.",
+      "Ajuste adaptable: cierre trasero regulable para un ajuste perfecto.",
+      "Ideal para diario: perfecta para el uso urbano, días de partido o tiempo libre."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/iy3809-m"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid",
+    "sole_type": ""
+  }
+}

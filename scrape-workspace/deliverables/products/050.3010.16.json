@@ -1,0 +1,109 @@
+{
+  "id": "050.3010.16",
+  "slug": "medias-portero-ho-soccer-pro-keeper-yellow",
+  "name": "Goalkeeper HO Soccer Pro Keeper",
+  "model": "Goalkeeper HO Soccer Pro Keeper",
+  "brand": "Ho Soccer",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "portero HO Soccer Pro Keeper",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b9b89a5e76debc397a1763fb096d7112cbf9fcd5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b9b89a5e76debc397a1763fb096d7112cbf9fcd5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/24bbe00fa0dfae243e9f7d5f6053f60da2d2ba27-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c1f5dfcd3d7baf4da31f68a46ec3c632d0151ab1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/843af6611ceff531311d31eda081c54cdfe27927-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/85e849a4da7c795b1857ef68b6b2c1e90a7cb0ac-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b9b89a5e76debc397a1763fb096d7112cbf9fcd5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/24bbe00fa0dfae243e9f7d5f6053f60da2d2ba27-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c1f5dfcd3d7baf4da31f68a46ec3c632d0151ab1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/843af6611ceff531311d31eda081c54cdfe27927-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/85e849a4da7c795b1857ef68b6b2c1e90a7cb0ac-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b9b89a5e76debc397a1763fb096d7112cbf9fcd5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b9b89a5e76debc397a1763fb096d7112cbf9fcd5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-24bbe00fa0dfae243e9f7d5f6053f60da2d2ba27-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/24bbe00fa0dfae243e9f7d5f6053f60da2d2ba27-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c1f5dfcd3d7baf4da31f68a46ec3c632d0151ab1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c1f5dfcd3d7baf4da31f68a46ec3c632d0151ab1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-843af6611ceff531311d31eda081c54cdfe27927-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/843af6611ceff531311d31eda081c54cdfe27927-1500x1500.jpg"
+    },
+    {
+      "_id": "image-85e849a4da7c795b1857ef68b6b2c1e90a7cb0ac-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/85e849a4da7c795b1857ef68b6b2c1e90a7cb0ac-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/050-3010-16",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/050-3010-16"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Goalkeeper",
+    "submodel": "",
+    "product_model": "Goalkeeper HO Soccer Pro Keeper",
+    "sole_type": ""
+  }
+}

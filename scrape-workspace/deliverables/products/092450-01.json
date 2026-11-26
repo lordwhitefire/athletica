@@ -1,0 +1,111 @@
+{
+  "id": "092450-01",
+  "slug": "mochila-puma-manchester-city-culture-blue",
+  "name": "Backpack Puma Manchester City Culture",
+  "model": "Backpack Puma Manchester City Culture",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manchester City Puma Sports Backpack - Navy",
+    "tagline": "Functional design with club identity",
+    "intro": "The Puma Manchester City Culture Backpack combines sporty style with everyday practicality. Perfect for carrying your belongings comfortably while representing your team colors. Its light and resistant design makes it an essential ally for everyday use.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Licensed product for true fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Club Identity: Unique details of the team you love."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City Culture",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0aa390be079372031207cb31c76cc66f60aa95f9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0aa390be079372031207cb31c76cc66f60aa95f9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f077a890ee7018747e2b25b54a4a557ab868c99f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e35f45a3dd97656a3ba451546b047932546a057b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0aa390be079372031207cb31c76cc66f60aa95f9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f077a890ee7018747e2b25b54a4a557ab868c99f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e35f45a3dd97656a3ba451546b047932546a057b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-0aa390be079372031207cb31c76cc66f60aa95f9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0aa390be079372031207cb31c76cc66f60aa95f9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f077a890ee7018747e2b25b54a4a557ab868c99f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f077a890ee7018747e2b25b54a4a557ab868c99f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e35f45a3dd97656a3ba451546b047932546a057b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e35f45a3dd97656a3ba451546b047932546a057b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092450-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte Puma del Manchester City - azul marino",
+    "tagline": "Diseño funcional con identidad de club",
+    "intro": "La Mochila Puma Manchester City Culture combina estilo deportivo con practicidad diaria. Perfecta para llevar tus pertenencias con comodidad mientras representas los colores de tu equipo. Su diseño ligero y resistente la convierte en una aliada esencial para el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Producto licenciado para los verdaderos fans.",
+      "Funcionalidad deportiva: Ideal para entrenamientos o uso diario.",
+      "Comodidad garantizada: Materiales ligeros y resistentes.",
+      "Identidad de club: Detalles únicos del equipo que amas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092450-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Manchester City Culture",
+    "sole_type": ""
+  }
+}

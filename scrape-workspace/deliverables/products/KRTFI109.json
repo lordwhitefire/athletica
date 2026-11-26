@@ -1,0 +1,86 @@
+{
+  "id": "KRTFI109",
+  "slug": "rinat-kratos-turf-jr-black",
+  "name": "Rinat Kratos Turf Jr",
+  "model": "Kratos Turf Jr",
+  "brand": "Rinat",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Kratos Turf Jr",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-portero-color-negro-rinat-kratos-turf-jr_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-portero-color-negro-rinat-kratos-turf-jr_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-arquero-rinat-kratos-turf-jr-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-futbol-rinat-kratos-turf-jr-negros_4_detalle-cierre-muneca-dorso.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-guardameta-color-negro-rinat-kratos-turf-jr_5_detalle-cierre-muneca-palma.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-portero-negros-rinat-kratos-turf-jr_6_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-portero-negros-rinat-kratos-turf-jr_2_detalle-palma-derecha.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-portero-color-negro-rinat-kratos-turf-jr_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-arquero-rinat-kratos-turf-jr-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-futbol-rinat-kratos-turf-jr-negros_4_detalle-cierre-muneca-dorso.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-guardameta-color-negro-rinat-kratos-turf-jr_5_detalle-cierre-muneca-palma.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-de-portero-negros-rinat-kratos-turf-jr_6_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/R/KRTFI109_guantes-portero-negros-rinat-kratos-turf-jr_2_detalle-palma-derecha.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/krtfi109",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/krtfi109"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Kratos",
+    "submodel": "",
+    "product_model": "Kratos Turf Jr",
+    "sole_type": ""
+  }
+}

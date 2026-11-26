@@ -1,0 +1,92 @@
+{
+  "id": "PMA109",
+  "slug": "pantalon-rinat-portero-moya-protec-black",
+  "name": "Rinat Goalkeeper Moyá Protec",
+  "model": "portero Moyá Protec",
+  "brand": "Rinat",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo acolchado de portero Rinat - negro",
+    "tagline": "El pantalón de portero que va contigo a cada batalla",
+    "intro": "El Moyá Protec de Rinat está pensado para los porteros que luchan cada balón. Ofrece protección inteligente con un diseño sobrio y resistente.",
+    "collection": "",
+    "key_benefits": [
+      "Protección donde importa: Refuerzos en caderas y rodillas para impactos.",
+      "Confort técnico: Tejido ligero que no entorpece tus movimientos.",
+      "Durabilidad garantizada: Materiales resistentes al desgaste.",
+      "Diseño funcional: Ideal para porteros en todas las categorías."
+    ],
+    "technical_details": {
+      "range": "Rinat portero Moyá Protec",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-largo-color-negro-rinat-portero-moya-protec_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-largo-color-negro-rinat-portero-moya-protec_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-chandal-negro-rinat-portero-moya-protec_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-chandal-rinat-portero-moya-protec-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-chandal-color-negro-rinat-portero-moya-protec_5_detalle-protecciones.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-largo-color-negro-rinat-portero-moya-protec_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-chandal-negro-rinat-portero-moya-protec_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-chandal-rinat-portero-moya-protec-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/M/PMA109_pantalon-chandal-color-negro-rinat-portero-moya-protec_5_detalle-protecciones.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/pma109",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo acolchado de portero Rinat - negro",
+    "tagline": "El pantalón de portero que va contigo a cada batalla",
+    "intro": "El Moyá Protec de Rinat está pensado para los porteros que luchan cada balón. Ofrece protección inteligente con un diseño sobrio y resistente.",
+    "collection": "",
+    "key_benefits": [
+      "Protección donde importa: Refuerzos en caderas y rodillas para impactos.",
+      "Confort técnico: Tejido ligero que no entorpece tus movimientos.",
+      "Durabilidad garantizada: Materiales resistentes al desgaste.",
+      "Diseño funcional: Ideal para porteros en todas las categorías."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/pma109"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Goalkeeper",
+    "submodel": "",
+    "product_model": "portero Moyá Protec",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "084295-01-5",
+  "slug": "balon-puma-orbita-liga-f-2024-2025-hybrid-talla-5-white",
+  "name": "Puma Orbita Liga F 2024 2025 Hybrid talla 5",
+  "model": "Orbita Liga F 2024 2025 Hybrid talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Orbita Liga F 2024 2025 Hybrid talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/4d3212dfe26fd180c97f65c51cbea02675a890e9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/4d3212dfe26fd180c97f65c51cbea02675a890e9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3b26afaf16984ef48a3d57480b5ac8c146952ee9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2f7541e012df1052f20e063b26a1cf1f661d4202-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a9a31d3bf2158a3e8307112194c5df720eee98b2-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4d3212dfe26fd180c97f65c51cbea02675a890e9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3b26afaf16984ef48a3d57480b5ac8c146952ee9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2f7541e012df1052f20e063b26a1cf1f661d4202-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a9a31d3bf2158a3e8307112194c5df720eee98b2-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-4d3212dfe26fd180c97f65c51cbea02675a890e9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4d3212dfe26fd180c97f65c51cbea02675a890e9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3b26afaf16984ef48a3d57480b5ac8c146952ee9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3b26afaf16984ef48a3d57480b5ac8c146952ee9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2f7541e012df1052f20e063b26a1cf1f661d4202-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2f7541e012df1052f20e063b26a1cf1f661d4202-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a9a31d3bf2158a3e8307112194c5df720eee98b2-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a9a31d3bf2158a3e8307112194c5df720eee98b2-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084295-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084295-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita Liga F 2024 2025 Hybrid talla 5",
+    "sole_type": ""
+  }
+}

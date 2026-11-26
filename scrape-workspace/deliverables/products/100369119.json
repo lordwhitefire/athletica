@@ -1,0 +1,84 @@
+{
+  "id": "100369119",
+  "slug": "medias-uhlsport-team-pro-player-grey",
+  "name": "Uhlsport Team Pro Player",
+  "model": "Team Pro Player",
+  "brand": "Uhlsport",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport Team Pro Player",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/ace222d6eac7f6dcd3135b39f5436d8738828b23-800x800.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/ace222d6eac7f6dcd3135b39f5436d8738828b23-800x800.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ace222d6eac7f6dcd3135b39f5436d8738828b23-800x800.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-ace222d6eac7f6dcd3135b39f5436d8738828b23-800x800-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ace222d6eac7f6dcd3135b39f5436d8738828b23-800x800.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100369119",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100369119"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Team",
+    "submodel": "",
+    "product_model": "Team Pro Player",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "JZ6322",
+  "slug": "sudadera-adidas-bayern-entrenamiento-rojo-naranja",
+  "name": "adidas Bayern Training",
+  "model": "Bayern entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Rojo / Naranja",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas del Bayern de Múnich 2025 2026 - roja",
+    "tagline": "Preparado para todo, incluso el frío",
+    "intro": "La sudadera adidas del Bayern es tu aliada en sesiones de entrenamiento con clima fresco. Diseño ajustado y tecnología térmica para mantener la concentración.",
+    "collection": "",
+    "key_benefits": [
+      "Confort térmico: Te protege del frío sin sobrecalentarte.",
+      "Estilo Bayern: Escudo visible y diseño profesional.",
+      "Movilidad garantizada: Tejido elástico que acompaña tus gestos."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-color-rojo-y-naranja-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-color-rojo-y-naranja-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-roja-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-adidas-bayern-entrenamiento-color-rojo-y-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-adidas-bayern-entrenamiento-roja_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-color-rojo-y-naranja-adidas-bayern-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-roja-adidas-bayern-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-adidas-bayern-entrenamiento-color-rojo-y-naranja_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ6322_sudadera-adidas-bayern-entrenamiento-roja_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz6322",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Bayern de Múnich 2025 2026 - roja",
+    "tagline": "Preparado para todo, incluso el frío",
+    "intro": "La sudadera adidas del Bayern es tu aliada en sesiones de entrenamiento con clima fresco. Diseño ajustado y tecnología térmica para mantener la concentración.",
+    "collection": "",
+    "key_benefits": [
+      "Confort térmico: Te protege del frío sin sobrecalentarte.",
+      "Estilo Bayern: Escudo visible y diseño profesional.",
+      "Movilidad garantizada: Tejido elástico que acompaña tus gestos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz6322"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Bayern Training",
+    "submodel": "",
+    "product_model": "Bayern entrenamiento",
+    "sole_type": ""
+  }
+}

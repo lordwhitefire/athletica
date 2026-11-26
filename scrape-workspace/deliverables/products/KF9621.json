@@ -1,0 +1,94 @@
+{
+  "id": "KF9621",
+  "slug": "adidas-predator-competition-black",
+  "name": "adidas Predator Competition",
+  "model": "Predator Competition",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - negros",
+    "tagline": "Control total en cada intervención",
+    "intro": "Los adidas Predator Competition están diseñados para porteros que buscan seguridad, ajuste y rendimiento. Gracias a su corte negativo y materiales específicos, estos guantes te acompañan en cada desafío bajo palos.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Corte Negativo: Permite un ajuste cómodo que mejora el control del balón.",
+      "Comodidad superior: Diseñados para adaptarse con precisión a la forma de la mano.",
+      "Construcción adidas: Inspirados en el legado profesional con visión moderna.",
+      "Preparados para competir: Pensados para jugadores que entrenan o compiten al máximo nivel."
+    ],
+    "technical_details": {
+      "range": "Predator Competition",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-de-portero-color-negro-adidas-predator-competition_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-de-portero-color-negro-adidas-predator-competition_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-portero-negros-adidas-predator-competition_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-de-arquero-adidas-predator-competition-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-de-futbol-adidas-predator-competition-negros_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-guardameta-color-negro-adidas-predator-competition_5_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-de-portero-color-negro-adidas-predator-competition_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-portero-negros-adidas-predator-competition_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-de-arquero-adidas-predator-competition-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-de-futbol-adidas-predator-competition-negros_4_detalle-cierre-muneca.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/F/KF9621_guantes-guardameta-color-negro-adidas-predator-competition_5_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kf9621",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - negros",
+    "tagline": "Control total en cada intervención",
+    "intro": "Los adidas Predator Competition están diseñados para porteros que buscan seguridad, ajuste y rendimiento. Gracias a su corte negativo y materiales específicos, estos guantes te acompañan en cada desafío bajo palos.",
+    "collection": "IMMORTAL DNA BLACK PACK",
+    "key_benefits": [
+      "Corte Negativo: Permite un ajuste cómodo que mejora el control del balón.",
+      "Comodidad superior: Diseñados para adaptarse con precisión a la forma de la mano.",
+      "Construcción adidas: Inspirados en el legado profesional con visión moderna.",
+      "Preparados para competir: Pensados para jugadores que entrenan o compiten al máximo nivel."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kf9621"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Competition",
+    "product_model": "Predator Competition",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "084987-01-5",
+  "slug": "balon-puma-suiza-culture-t-5-rojo-blanco",
+  "name": "Puma Suiza Culture T.5",
+  "model": "Suiza Culture T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Rojo / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Switzerland 2026 Soccer Ball in Size 5 - Red, White",
+    "tagline": "Play with the spirit of Switzerland",
+    "intro": "The Puma Switzerland Culture size 5 ball reflects your passion for football in every touch. Inspired by the Swiss national team, it combines striking design and performance for your training and matches.",
+    "collection": "",
+    "key_benefits": [
+      "32-panel construction: Improves precision and ball control.",
+      "Machine sewn: Greater resistance and durability.",
+      "Stable flight: Ensures more precise trajectories.",
+      "Versatile use: Ideal for training and recreational play.",
+      "Official design: Inspired by the Swiss national team."
+    ],
+    "technical_details": {
+      "range": "Puma Suiza Culture T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/fbe2971403c24e76e041fd31d9ac098c3f92e716-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/fbe2971403c24e76e041fd31d9ac098c3f92e716-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3095f3285d6c3403936e366b7a57ba3ddcd1cd59-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fbe2971403c24e76e041fd31d9ac098c3f92e716-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3095f3285d6c3403936e366b7a57ba3ddcd1cd59-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-fbe2971403c24e76e041fd31d9ac098c3f92e716-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fbe2971403c24e76e041fd31d9ac098c3f92e716-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3095f3285d6c3403936e366b7a57ba3ddcd1cd59-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3095f3285d6c3403936e366b7a57ba3ddcd1cd59-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084987-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la selección de Suiza 2026 en talla 5 - rojo, blanco",
+    "tagline": "Juega con el espíritu de Suiza",
+    "intro": "El balón Puma Suiza Culture talla 5 refleja tu pasión por el fútbol en cada toque. Inspirado en la selección suiza, combina diseño llamativo y rendimiento para tus entrenamientos y partidos.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción de 32 paneles: Mejora la precisión y el control del balón.",
+      "Cosido a máquina: Mayor resistencia y durabilidad.",
+      "Vuelo estable: Garantiza trayectorias más precisas.",
+      "Uso versátil: Ideal para entrenamientos y juego recreativo.",
+      "Diseño oficial: Inspirado en la selección de Suiza."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084987-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Suiza",
+    "submodel": "",
+    "product_model": "Suiza Culture T.5",
+    "sole_type": ""
+  }
+}

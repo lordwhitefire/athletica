@@ -1,0 +1,103 @@
+{
+  "id": "090127-01",
+  "slug": "rinonera-puma-manchester-city-fan-blue",
+  "name": "Riñonera Puma Manchester City fan",
+  "model": "Riñonera Puma Manchester City fan",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Manchester City fan",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/89dd5e38a51ad0674fb07e64c6c6d205848e74d3-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/89dd5e38a51ad0674fb07e64c6c6d205848e74d3-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b6dcd7da28bdd39ae285d520f7345d6a4c05656d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/046ae63c15bd13bde9bff1b5317833a8bd24ab0e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d126548f916d8337a66fa981afd036e1a5432b4b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/89dd5e38a51ad0674fb07e64c6c6d205848e74d3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b6dcd7da28bdd39ae285d520f7345d6a4c05656d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/046ae63c15bd13bde9bff1b5317833a8bd24ab0e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d126548f916d8337a66fa981afd036e1a5432b4b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-89dd5e38a51ad0674fb07e64c6c6d205848e74d3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/89dd5e38a51ad0674fb07e64c6c6d205848e74d3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b6dcd7da28bdd39ae285d520f7345d6a4c05656d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b6dcd7da28bdd39ae285d520f7345d6a4c05656d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-046ae63c15bd13bde9bff1b5317833a8bd24ab0e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/046ae63c15bd13bde9bff1b5317833a8bd24ab0e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d126548f916d8337a66fa981afd036e1a5432b4b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d126548f916d8337a66fa981afd036e1a5432b4b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090127-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090127-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'equipos'",
+    "root_model": "Riñonera",
+    "submodel": "",
+    "product_model": "Riñonera Puma Manchester City fan",
+    "sole_type": ""
+  }
+}

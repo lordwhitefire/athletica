@@ -1,0 +1,88 @@
+{
+  "id": "IH0458-010",
+  "slug": "pantalon-nike-mujer-dri-fit-strike-black",
+  "name": "Nike Women Dri-Fit Strike",
+  "model": "mujer Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Women's Soccer Training Long Pants - Black",
+    "tagline": "Your rhythm, your style",
+    "intro": "The Nike Dri-Fit Strike Women's Pants provide total freedom to move, with a modern silhouette and comfortable fit. Perfect for demanding sessions thanks to its Dri-FIT technology.",
+    "collection": "",
+    "key_benefits": [
+      "Long-lasting comfort: Designed to accompany you throughout the session",
+      "Active ventilation: Dri-FIT fabric keeps you cool",
+      "Functional fit: Ankle zippers for easy donning"
+    ],
+    "technical_details": {
+      "range": "Nike mujer Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0458-010_pantalon-largo-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0458-010_pantalon-largo-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0458-010_pantalon-chandal-negro-nike-mujer-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0458-010_pantalon-chandal-nike-mujer-dri-fit-strike-color-negro_3_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0458-010_pantalon-largo-color-negro-nike-mujer-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0458-010_pantalon-chandal-negro-nike-mujer-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH0458-010_pantalon-chandal-nike-mujer-dri-fit-strike-color-negro_3_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ih0458-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo para mujer de entrenamiento de fútbol Nike - negro",
+    "tagline": "Tu ritmo, tu estilo",
+    "intro": "El pantalón Nike Dri-Fit Strike para mujer proporciona libertad total para moverse, con una silueta moderna y un ajuste cómodo. Perfecto para sesiones exigentes gracias a su tecnología Dri-FIT.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad prolongada: Diseñado para acompañarte durante toda la sesión",
+      "Ventilación activa: El tejido Dri-FIT mantiene la frescura",
+      "Ajuste funcional: Cremalleras en los tobillos para fácil colocación"
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ih0458-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Women",
+    "submodel": "",
+    "product_model": "mujer Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "KG2577",
+  "slug": "short-adidas-espana-eqt-blue",
+  "name": "adidas España EQT",
+  "model": "España EQT",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto adidas de la selección de España - azul marino",
+    "tagline": "La esencia de España con el estilo legendario EQT",
+    "intro": "El pantalón corto adidas España EQT recupera la estética icónica de la colección Equipment para rendir homenaje a la selección española. Su diseño combina detalles retro inspirados en los años 90 con materiales ligeros y cómodos pensados para el uso diario. Perfecto para los aficionados que quieren mostrar su pasión por La Roja con una prenda versátil, cómoda y llena de personalidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT clásico: Inspirado en la histórica colección adidas Equipment.",
+      "Tejido técnico ligero: Ofrece comodidad y resistencia para el día a día.",
+      "Cintura elástica con cordón: Permite un ajuste personalizado y seguro.",
+      "Detalles oficiales de España: Acabados exclusivos inspirados en la selección nacional."
+    ],
+    "technical_details": {
+      "range": "adidas España EQT",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_pantalon-corto-color-azul-adidas-espana-eqt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_pantalon-corto-color-azul-adidas-espana-eqt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_short-azul-marino-adidas-espana-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_pantalon-corto-adidas-espana-eqt-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_short-adidas-espana-eqt-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_pantalon-corto-color-azul-adidas-espana-eqt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_short-azul-marino-adidas-espana-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_pantalon-corto-adidas-espana-eqt-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2577_short-adidas-espana-eqt-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2577",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto adidas de la selección de España - azul marino",
+    "tagline": "La esencia de España con el estilo legendario EQT",
+    "intro": "El pantalón corto adidas España EQT recupera la estética icónica de la colección Equipment para rendir homenaje a la selección española. Su diseño combina detalles retro inspirados en los años 90 con materiales ligeros y cómodos pensados para el uso diario. Perfecto para los aficionados que quieren mostrar su pasión por La Roja con una prenda versátil, cómoda y llena de personalidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT clásico: Inspirado en la histórica colección adidas Equipment.",
+      "Tejido técnico ligero: Ofrece comodidad y resistencia para el día a día.",
+      "Cintura elástica con cordón: Permite un ajuste personalizado y seguro.",
+      "Detalles oficiales de España: Acabados exclusivos inspirados en la selección nacional."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2577"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España EQT",
+    "sole_type": ""
+  }
+}

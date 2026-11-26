@@ -1,0 +1,82 @@
+{
+  "id": "P1GA2534-37",
+  "slug": "mizuno-morelia-neo-4-pro-md-white",
+  "name": "Mizuno Morelia Neo 4 Pro MD",
+  "model": "Morelia Neo 4 Pro MD",
+  "brand": "Mizuno",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Morelia Neo 4 Pro MD",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-color-blanco-mizuno-morelia-neo-4-pro-md_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-color-blanco-mizuno-morelia-neo-4-pro-md_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-con-tacos-blancas-mizuno-morelia-neo-4-pro-md_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-futbol-mizuno-morelia-neo-4-pro-md-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-tacos-mizuno-morelia-neo-4-pro-md-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_zapatillas-futbol-color-blanco-mizuno-morelia-neo-4-pro-md_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-blancas-mizuno-morelia-neo-4-pro-md_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-color-blanco-mizuno-morelia-neo-4-pro-md_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-con-tacos-blancas-mizuno-morelia-neo-4-pro-md_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-futbol-mizuno-morelia-neo-4-pro-md-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-tacos-mizuno-morelia-neo-4-pro-md-blancas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_zapatillas-futbol-color-blanco-mizuno-morelia-neo-4-pro-md_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2534-37_botas-de-futbol-blancas-mizuno-morelia-neo-4-pro-md_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/p1ga2534-37",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/p1ga2534-37"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Morelia",
+    "submodel": "Neo 4 Pro MD",
+    "product_model": "Morelia Neo 4 Pro MD",
+    "sole_type": ""
+  }
+}

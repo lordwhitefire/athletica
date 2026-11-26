@@ -1,0 +1,111 @@
+{
+  "id": "092156-01",
+  "slug": "mochila-puma-plus-ii-black",
+  "name": "Backpack Puma Plus II",
+  "model": "Backpack Puma Plus II",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack (44 x 30 x 14 cm) - black",
+    "tagline": "Todo tu material siempre organizado",
+    "intro": "La mochila Puma Plus II está diseñada para acompañarte en el colegio, el trabajo o cualquier actividad deportiva. Su amplio compartimento principal, los múltiples bolsillos y su diseño ergonómico ofrecen el espacio y la comodidad necesarios para transportar todo lo imprescindible durante el día.",
+    "collection": "",
+    "key_benefits": [
+      "Compartimento principal de gran capacidad: Acceso mediante cremallera de doble sentido.",
+      "Multiple pockets: Front zipper pocket and two side mesh pockets.",
+      "Front panel with elastic cord: Allows you to carry additional clothing or accessories.",
+      "Espalda acolchada: Mayor comodidad durante el transporte.",
+      "Adjustable shoulder pads: Ergonomic fit for everyday use."
+    ],
+    "technical_details": {
+      "range": "Puma Plus II",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e235a562fc7f03890bcfa27766ab71375dac3634-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e235a562fc7f03890bcfa27766ab71375dac3634-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/efd7a03b18372a5149a0d648f05cc2021356a453-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/abd18d7b2d330809acec40348f9e978e32d27d4a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b08ecebcc57144794df2ff3935d07e6bf3d56cb0-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e235a562fc7f03890bcfa27766ab71375dac3634-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/efd7a03b18372a5149a0d648f05cc2021356a453-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/abd18d7b2d330809acec40348f9e978e32d27d4a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b08ecebcc57144794df2ff3935d07e6bf3d56cb0-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e235a562fc7f03890bcfa27766ab71375dac3634-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e235a562fc7f03890bcfa27766ab71375dac3634-1500x1500.jpg"
+    },
+    {
+      "_id": "image-efd7a03b18372a5149a0d648f05cc2021356a453-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/efd7a03b18372a5149a0d648f05cc2021356a453-1500x1500.jpg"
+    },
+    {
+      "_id": "image-abd18d7b2d330809acec40348f9e978e32d27d4a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/abd18d7b2d330809acec40348f9e978e32d27d4a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b08ecebcc57144794df2ff3935d07e6bf3d56cb0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b08ecebcc57144794df2ff3935d07e6bf3d56cb0-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092156-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (44 x 30 x 14 cm) - negra",
+    "tagline": "Todo tu material siempre organizado",
+    "intro": "La mochila Puma Plus II está diseñada para acompañarte en el colegio, el trabajo o cualquier actividad deportiva. Su amplio compartimento principal, los múltiples bolsillos y su diseño ergonómico ofrecen el espacio y la comodidad necesarios para transportar todo lo imprescindible durante el día.",
+    "collection": "",
+    "key_benefits": [
+      "Compartimento principal de gran capacidad: Acceso mediante cremallera de doble sentido.",
+      "Múltiples bolsillos: Bolsillo frontal con cremallera y dos bolsillos laterales de malla.",
+      "Panel frontal con cordón elástico: Permite transportar prendas o accesorios adicionales.",
+      "Espalda acolchada: Mayor comodidad durante el transporte.",
+      "Hombreras ajustables: Ajuste ergonómico para el uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092156-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Plus II",
+    "sole_type": ""
+  }
+}

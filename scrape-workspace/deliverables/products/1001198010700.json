@@ -1,0 +1,76 @@
+{
+  "id": "1001198010700",
+  "slug": "aguja-uhlsport-1-unidad-silver",
+  "name": "Aguja Uhlsport 1 unidad",
+  "model": "Aguja Uhlsport 1 unidad",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Silver",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport 1 unidad",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/668c15c935966a92044c3e2eff140e663d0d21a5-2500x1200.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/668c15c935966a92044c3e2eff140e663d0d21a5-2500x1200.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/668c15c935966a92044c3e2eff140e663d0d21a5-2500x1200.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-668c15c935966a92044c3e2eff140e663d0d21a5-2500x1200-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/668c15c935966a92044c3e2eff140e663d0d21a5-2500x1200.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/1001198010700",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/1001198010700"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Aguja",
+    "submodel": "",
+    "product_model": "Aguja Uhlsport 1 unidad",
+    "sole_type": ""
+  }
+}

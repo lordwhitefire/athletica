@@ -1,0 +1,94 @@
+{
+  "id": "55257-107",
+  "slug": "kelme-indoor-copa-blue",
+  "name": "Kelme Indoor Copa",
+  "model": "Indoor Copa",
+  "brand": "Kelme",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Zapatillas de fútbol sala Kelme suela lisa IN - azul marino",
+    "tagline": "Control y estilo en pista",
+    "intro": "Las Kelme Indoor Copa unen tradición y rendimiento para que puedas destacar con seguridad en cada jugada. Perfectas para jugadores de toque y precisión.",
+    "collection": "",
+    "key_benefits": [
+      "Toque mejorado: Material suave que favorece el control del balón.",
+      "Estética retro: Diseño que rinde homenaje al fútbol de siempre.",
+      "Indoor sole: Secure grip on indoor courts.",
+      "Confort diario: Ideal también para entrenamientos regulares."
+    ],
+    "technical_details": {
+      "range": "Indoor Copa",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_zapatillas-futbol-sala-color-azul-kelme-indoor-copa_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_zapatillas-futbol-sala-color-azul-kelme-indoor-copa_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_zapatillas-de-futbol-sala-azul-marino-kelme-indoor-copa_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_botas-futbol-sala-kelme-indoor-copa-color-azul_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_bambas-futbol-sala-kelme-indoor-copa-azul-marino_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_tenis-futbol-sala-color-azul-kelme-indoor-copa_5_perspectiva.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_zapatillas-futbol-sala-color-azul-kelme-indoor-copa_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_zapatillas-de-futbol-sala-azul-marino-kelme-indoor-copa_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_botas-futbol-sala-kelme-indoor-copa-color-azul_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_bambas-futbol-sala-kelme-indoor-copa-azul-marino_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/5/55257-107_tenis-futbol-sala-color-azul-kelme-indoor-copa_5_perspectiva.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/55257-107",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Zapatillas de fútbol sala Kelme suela lisa IN - azul marino",
+    "tagline": "Control y estilo en pista",
+    "intro": "Las Kelme Indoor Copa unen tradición y rendimiento para que puedas destacar con seguridad en cada jugada. Perfectas para jugadores de toque y precisión.",
+    "collection": "",
+    "key_benefits": [
+      "Toque mejorado: Material suave que favorece el control del balón.",
+      "Estética retro: Diseño que rinde homenaje al fútbol de siempre.",
+      "Suela indoor: Agarre seguro en pista cubierta.",
+      "Confort diario: Ideal también para entrenamientos regulares."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/55257-107"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Indoor",
+    "submodel": "Copa",
+    "product_model": "Indoor Copa",
+    "sole_type": ""
+  }
+}

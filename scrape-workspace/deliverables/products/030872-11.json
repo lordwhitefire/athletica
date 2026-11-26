@@ -1,0 +1,96 @@
+{
+  "id": "030872-11",
+  "slug": "puma-ultra-flex-ankle-blue",
+  "name": "Puma Ultra Flex Ankle",
+  "model": "Ultra Flex Ankle",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Protective Ankle Pad - Blue",
+    "tagline": "Flexible protection with additional coverage",
+    "intro": "The Puma Ultra Flex Ankle football shin guards are designed for footballers looking to combine protection, flexibility and comfort during the game. Its TPU cover incorporates EVA padding and is complemented by a protective ankle strap to offer stable support and greater coverage.",
+    "collection": "",
+    "key_benefits": [
+      "Flexible protection: Its construction helps protect the shin while maintaining a comfortable and unrestrictive feeling.",
+      "Greater cushioning: Padding helps absorb impacts and improve comfort during play.",
+      "Additional coverage: The integrated ankle support provides additional protection in the ankle area.",
+      "Stable fit: Its fastening system helps keep the protections correctly placed during movement.",
+      "Freedom of movement: Its flexible design is designed to accompany quick movements and changes of direction."
+    ],
+    "technical_details": {
+      "range": "Ultra Flex Ankle",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b9482bedd6d3b45bde98d07b816dba3fbebef147-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b9482bedd6d3b45bde98d07b816dba3fbebef147-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b9482bedd6d3b45bde98d07b816dba3fbebef147-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b9482bedd6d3b45bde98d07b816dba3fbebef147-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b9482bedd6d3b45bde98d07b816dba3fbebef147-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/030872-11",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Puma con tobillera protectora - azules",
+    "tagline": "Protección flexible con cobertura adicional",
+    "intro": "Las espinilleras de fútbol Puma Ultra Flex Ankle están diseñadas para futbolistas que buscan combinar protección, flexibilidad y comodidad durante el juego. Su cubierta de TPU incorpora acolchado de EVA y se complementa con una tobillera protectora para ofrecer una sujeción estable y mayor cobertura.",
+    "collection": "",
+    "key_benefits": [
+      "Protección flexible: Su construcción ayuda a proteger la espinilla manteniendo una sensación cómoda y poco restrictiva.",
+      "Mayor amortiguación: El acolchado contribuye a absorber los impactos y mejorar la comodidad durante el juego.",
+      "Cobertura adicional: La tobillera integrada aporta protección complementaria en la zona del tobillo.",
+      "Ajuste estable: Su sistema de sujeción ayuda a mantener las protecciones correctamente colocadas durante el movimiento.",
+      "Libertad de movimiento: Su diseño flexible está pensado para acompañar movimientos rápidos y cambios de dirección."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/030872-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Flex Ankle",
+    "product_model": "Ultra Flex Ankle",
+    "sole_type": ""
+  }
+}

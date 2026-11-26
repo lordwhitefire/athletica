@@ -1,0 +1,92 @@
+{
+  "id": "JJ3533",
+  "slug": "adidas-predator-pro-orange",
+  "name": "adidas Predator Pro",
+  "model": "Predator Pro",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adidas Negative Cut Professional Goalkeeper Gloves - Orange",
+    "tagline": "Professional performance",
+    "intro": "The adidas Predator Pro have been designed for goalkeepers looking for comfort, control and perfect fit in each intervention. Its structure adapts to the modern game, allowing a quick and safe response.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Ergonomic fit: Designed to fit the hand precisely.",
+      "Comfort at all times: Materials that allow you to play without distractions.",
+      "Technical palm: URG 2.0 latex that improves grip and cushioning.",
+      "adidas style: Modern design with recognizable sports identity."
+    ],
+    "technical_details": {
+      "range": "Predator Pro",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-de-portero-color-naranja-adidas-predator-pro_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-de-portero-color-naranja-adidas-predator-pro_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-portero-naranjas-adidas-predator-pro_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-de-arquero-adidas-predator-pro-color-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-de-futbol-adidas-predator-pro-naranjas_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-de-portero-color-naranja-adidas-predator-pro_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-portero-naranjas-adidas-predator-pro_2_completa-palma-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-de-arquero-adidas-predator-pro-color-naranja_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/J/JJ3533_guantes-de-futbol-adidas-predator-pro-naranjas_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jj3533",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero profesionales adidas corte negativo - naranjas",
+    "tagline": "Rendimiento profesional",
+    "intro": "Los adidas Predator Pro han sido diseñados para porteros que buscan comodidad, control y ajuste perfecto en cada intervención. Su estructura se adapta al juego moderno, permitiendo una respuesta rápida y segura.",
+    "collection": "CORAL BLAZE",
+    "key_benefits": [
+      "Ajuste ergonómico: Diseñados para adaptarse a la mano con precisión.",
+      "Comodidad en todo momento: Materiales que permiten jugar sin distracciones.",
+      "Palma técnica: Látex URG 2.0 que mejora el agarre y la amortiguación.",
+      "Estilo adidas: Diseño moderno con identidad deportiva reconocible."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jj3533"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Predator",
+    "submodel": "Pro",
+    "product_model": "Predator Pro",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "050.5559.02",
+  "slug": "mallas-de-portero-ho-soccer-3-4-logo-black",
+  "name": "Mallas de Goalkeeper HO Soccer 3/4 Logo",
+  "model": "Mallas de Goalkeeper HO Soccer 3/4 Logo",
+  "brand": "Ho Soccer",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de portero HO Soccer 3/4 Logo",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a7a8d65d5d0480428ad5e1a0f861b935239021db-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a7a8d65d5d0480428ad5e1a0f861b935239021db-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/207950124992271b20f9dca1d107a07044754551-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aa43dcf658d968f5e3a27e87e28afbb913091751-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f16de814bd56e2123a7eacb3cfd79b0380c65ae1-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a7a8d65d5d0480428ad5e1a0f861b935239021db-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/207950124992271b20f9dca1d107a07044754551-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/aa43dcf658d968f5e3a27e87e28afbb913091751-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f16de814bd56e2123a7eacb3cfd79b0380c65ae1-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a7a8d65d5d0480428ad5e1a0f861b935239021db-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a7a8d65d5d0480428ad5e1a0f861b935239021db-1500x1500.jpg"
+    },
+    {
+      "_id": "image-207950124992271b20f9dca1d107a07044754551-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/207950124992271b20f9dca1d107a07044754551-1500x1500.jpg"
+    },
+    {
+      "_id": "image-aa43dcf658d968f5e3a27e87e28afbb913091751-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/aa43dcf658d968f5e3a27e87e28afbb913091751-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f16de814bd56e2123a7eacb3cfd79b0380c65ae1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f16de814bd56e2123a7eacb3cfd79b0380c65ae1-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/050-5559-02",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/050-5559-02"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas de Goalkeeper HO Soccer 3/4 Logo",
+    "sole_type": ""
+  }
+}

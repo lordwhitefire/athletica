@@ -1,0 +1,102 @@
+{
+  "id": "JN7515",
+  "slug": "camiseta-adidas-bayern-nino-pre-match-black",
+  "name": "adidas Bayern Kids Pre-Match",
+  "model": "Bayern niño Pre-Match",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de calentamiento prepartido adidas del Bayern de Múnich 25 26 - negra",
+    "tagline": "Inspiración para las futuras estrellas del Bayern",
+    "intro": "Esta camiseta prepartido adidas para jóvenes hinchas celebra el 20 aniversario del Allianz Arena. Con un diseño audaz que rinde homenaje a los partidos nocturnos, ofrece ligereza, comodidad y orgullo bávaro. Ideal para entrenar o animar con el corazón.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo exclusivo: Estampado vibrante inspirado en la iluminación del estadio.",
+      "Confort óptimo: Tejido AEROREADY que mantiene la piel seca.",
+      "Corte funcional: Regular fit para libertad de movimiento.",
+      "Detalles icónicos: Escudo bordado en el pecho.",
+      "Diseñada para jóvenes fans: Comodidad y estilo para los más pequeños del club."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern niño Pre-Match",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-color-negro-adidas-bayern-nino-pre-match_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-color-negro-adidas-bayern-nino-pre-match_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-negra-adidas-bayern-nino-pre-match_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-adidas-bayern-nino-pre-match-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-adidas-bayern-nino-pre-match-negra_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-color-negro-adidas-bayern-nino-pre-match_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-negra-adidas-bayern-nino-pre-match_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-adidas-bayern-nino-pre-match-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN7515_camiseta-adidas-bayern-nino-pre-match-negra_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jn7515",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de calentamiento prepartido adidas del Bayern de Múnich 25 26 - negra",
+    "tagline": "Inspiración para las futuras estrellas del Bayern",
+    "intro": "Esta camiseta prepartido adidas para jóvenes hinchas celebra el 20 aniversario del Allianz Arena. Con un diseño audaz que rinde homenaje a los partidos nocturnos, ofrece ligereza, comodidad y orgullo bávaro. Ideal para entrenar o animar con el corazón.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo exclusivo: Estampado vibrante inspirado en la iluminación del estadio.",
+      "Confort óptimo: Tejido AEROREADY que mantiene la piel seca.",
+      "Corte funcional: Regular fit para libertad de movimiento.",
+      "Detalles icónicos: Escudo bordado en el pecho.",
+      "Diseñada para jóvenes fans: Comodidad y estilo para los más pequeños del club."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jn7515"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Bayern Kids",
+    "submodel": "",
+    "product_model": "Bayern niño Pre-Match",
+    "sole_type": ""
+  }
+}

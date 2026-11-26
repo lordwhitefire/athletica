@@ -1,0 +1,100 @@
+{
+  "id": "HJ7772-347",
+  "slug": "sudadera-nike-chelsea-entrenamiento-dri-fit-strike-green",
+  "name": "Nike Chelsea Training Dri-Fit Strike",
+  "model": "Chelsea entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento Nike del Chelsea - verde",
+    "tagline": "Calidez y rendimiento para cada entrenamiento",
+    "intro": "La sudadera Nike Chelsea ofrece una combinación ideal de protección térmica y transpirabilidad. Gracias a su tecnología Dri-FIT y tejido técnico, es perfecta para mantener el ritmo sin que el frío interfiera.",
+    "collection": "",
+    "key_benefits": [
+      "Control de humedad: Tecnología Dri-FIT que mantiene la piel seca.",
+      "Libertad de movimiento: Diseño ergonómico que no limita tus entrenamientos.",
+      "Inspiración oficial: Imagen fiel a la que usa el Chelsea en sus sesiones.",
+      "Comodidad térmica: Tejido cálido y ligero para climas fríos.",
+      "Detalles funcionales: Cuello alto y puños elásticos para un ajuste óptimo."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7772-347_sudadera-color-verde-nike-chelsea-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7772-347_sudadera-color-verde-nike-chelsea-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7772-347_sudadera-nike-chelsea-entrenamiento-dri-fit-strike-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7772-347_sudadera-verde-nike-chelsea-entrenamiento-dri-fit-strike_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7772-347_sudadera-color-verde-nike-chelsea-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7772-347_sudadera-nike-chelsea-entrenamiento-dri-fit-strike-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7772-347_sudadera-verde-nike-chelsea-entrenamiento-dri-fit-strike_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj7772-347",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Nike del Chelsea - verde",
+    "tagline": "Calidez y rendimiento para cada entrenamiento",
+    "intro": "La sudadera Nike Chelsea ofrece una combinación ideal de protección térmica y transpirabilidad. Gracias a su tecnología Dri-FIT y tejido técnico, es perfecta para mantener el ritmo sin que el frío interfiera.",
+    "collection": "",
+    "key_benefits": [
+      "Control de humedad: Tecnología Dri-FIT que mantiene la piel seca.",
+      "Libertad de movimiento: Diseño ergonómico que no limita tus entrenamientos.",
+      "Inspiración oficial: Imagen fiel a la que usa el Chelsea en sus sesiones.",
+      "Comodidad térmica: Tejido cálido y ligero para climas fríos.",
+      "Detalles funcionales: Cuello alto y puños elásticos para un ajuste óptimo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj7772-347"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Chelsea Training",
+    "submodel": "",
+    "product_model": "Chelsea entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

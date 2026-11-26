@@ -1,0 +1,104 @@
+{
+  "id": "JZ5881",
+  "slug": "mochila-adidas-liverpool-red",
+  "name": "Backpack adidas Liverpool",
+  "model": "Backpack adidas Liverpool",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deportes adidas del Liverpool - roja",
+    "tagline": "Estilo red con funcionalidad premium",
+    "intro": "La mochila adidas del Liverpool destaca por su diseño elegante en rojo con detalles funcionales como el cierre enrollable, correa central y amplio espacio interior. Perfecta para entrenamientos, desplazamientos o uso diario con orgullo red.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Estética roja con escudo del Liverpool en relieve.",
+      "Gran capacidad: Espacio interior amplio con cierre enrollable.",
+      "Comodidad garantizada: Correas acolchadas ajustables.",
+      "Durabilidad asegurada: Base resistente para soportar el uso diario.",
+      "Ideal para fans activos: Perfecta para deporte o vida urbana."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-color-rojo-adidas-liverpool_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-color-rojo-adidas-liverpool_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-roja-adidas-liverpool_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-adidas-liverpool-color-rojo_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-adidas-liverpool-roja_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-color-rojo-adidas-liverpool_5_detalle-asa.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-color-rojo-adidas-liverpool_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-roja-adidas-liverpool_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-adidas-liverpool-color-rojo_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-adidas-liverpool-roja_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ5881_mochila-color-rojo-adidas-liverpool_5_detalle-asa.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jz5881",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes adidas del Liverpool - roja",
+    "tagline": "Estilo red con funcionalidad premium",
+    "intro": "La mochila adidas del Liverpool destaca por su diseño elegante en rojo con detalles funcionales como el cierre enrollable, correa central y amplio espacio interior. Perfecta para entrenamientos, desplazamientos o uso diario con orgullo red.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Estética roja con escudo del Liverpool en relieve.",
+      "Gran capacidad: Espacio interior amplio con cierre enrollable.",
+      "Comodidad garantizada: Correas acolchadas ajustables.",
+      "Durabilidad asegurada: Base resistente para soportar el uso diario.",
+      "Ideal para fans activos: Perfecta para deporte o vida urbana."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jz5881"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack adidas Liverpool",
+    "sole_type": ""
+  }
+}

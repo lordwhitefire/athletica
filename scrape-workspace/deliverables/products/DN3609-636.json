@@ -1,0 +1,89 @@
+{
+  "id": "DN3609-636",
+  "slug": "nike-mercurial-lite-superlock-red",
+  "name": "Nike Mercurial Lite Superlock",
+  "model": "Mercurial Lite Superlock",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - rojas",
+    "tagline": "Comodidad ultraligera con sujeción inteligente",
+    "intro": "Las Nike Mercurial Lite Superlock combinan una estructura ligera con el revolucionario sistema Superlock que se adhiere a la media. Diseñadas para jugadores rápidos que necesitan libertad de movimiento y seguridad.",
+    "collection": "SCARY GOOD",
+    "key_benefits": [
+      "Estabilidad sin velcro: Se sujetan a la media sin bandas externas.",
+      "Diseño ergonómico: Se adapta a la pierna para más comodidad.",
+      "Resistencia de alto nivel: Listas para partidos exigentes.",
+      "Sensación natural: Ni notarás que las llevas puestas."
+    ],
+    "technical_details": {
+      "range": "Mercurial Lite Superlock",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-636_espinilleras-color-rosa-y-rojo-nike-mercurial-lite-superlock_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-636_espinilleras-color-rosa-y-rojo-nike-mercurial-lite-superlock_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3609-636_espinilleras-color-rosa-y-rojo-nike-mercurial-lite-superlock_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dn3609-636",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Nike con mallas de sujeción - rojas",
+    "tagline": "Comodidad ultraligera con sujeción inteligente",
+    "intro": "Las Nike Mercurial Lite Superlock combinan una estructura ligera con el revolucionario sistema Superlock que se adhiere a la media. Diseñadas para jugadores rápidos que necesitan libertad de movimiento y seguridad.",
+    "collection": "SCARY GOOD",
+    "key_benefits": [
+      "Estabilidad sin velcro: Se sujetan a la media sin bandas externas.",
+      "Diseño ergonómico: Se adapta a la pierna para más comodidad.",
+      "Resistencia de alto nivel: Listas para partidos exigentes.",
+      "Sensación natural: Ni notarás que las llevas puestas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dn3609-636"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Lite Superlock",
+    "product_model": "Mercurial Lite Superlock",
+    "sole_type": ""
+  }
+}

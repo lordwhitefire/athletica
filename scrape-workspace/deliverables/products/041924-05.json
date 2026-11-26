@@ -1,0 +1,99 @@
+{
+  "id": "041924-05",
+  "slug": "puma-future-pro-hybrid-gris-verde",
+  "name": "Puma Future Pro Hybrid",
+  "model": "Future Pro Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Gris / Verde",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Future Pro Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6ca2a928127c45af12582f53e82c613a4d8256e9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/6ca2a928127c45af12582f53e82c613a4d8256e9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0934c9e5beeac5dc441f19091f31367b8a220191-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/232dcc435b9ff79c7984434ef20e8f9c663901a5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/222a8489f08ac60e28f1bb20aae5cd25715ce982-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6ca2a928127c45af12582f53e82c613a4d8256e9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0934c9e5beeac5dc441f19091f31367b8a220191-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/232dcc435b9ff79c7984434ef20e8f9c663901a5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/222a8489f08ac60e28f1bb20aae5cd25715ce982-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-6ca2a928127c45af12582f53e82c613a4d8256e9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6ca2a928127c45af12582f53e82c613a4d8256e9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0934c9e5beeac5dc441f19091f31367b8a220191-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0934c9e5beeac5dc441f19091f31367b8a220191-1500x1500.jpg"
+    },
+    {
+      "_id": "image-232dcc435b9ff79c7984434ef20e8f9c663901a5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/232dcc435b9ff79c7984434ef20e8f9c663901a5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-222a8489f08ac60e28f1bb20aae5cd25715ce982-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/222a8489f08ac60e28f1bb20aae5cd25715ce982-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/041924-05",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/041924-05"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro Hybrid",
+    "product_model": "Future Pro Hybrid",
+    "sole_type": ""
+  }
+}

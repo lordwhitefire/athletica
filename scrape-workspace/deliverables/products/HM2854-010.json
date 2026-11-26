@@ -1,0 +1,92 @@
+{
+  "id": "HM2854-010",
+  "slug": "sudadera-con-capucha-nike-atletico-sportswear-club-black",
+  "name": "con capucha Nike Atlético Sportswear Club",
+  "model": "con capucha Nike Atlético Sportswear Club",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera con capucha Nike del Atlético de Madrid - negra",
+    "tagline": "Comodidad y rendimiento sobre el terreno",
+    "intro": "Esta sudadera Nike con el escudo del Atleti es perfecta para animar al equipo desde las gradas o disfrutar del día a día con estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad: Mantiene el cuerpo seco en todo momento.",
+      "Ajuste ergonómico: Acompaña tus movimientos sin restricciones.",
+      "Estilo profesional: Con los colores y escudo del equipo."
+    ],
+    "technical_details": {
+      "range": "con capucha Nike Atlético Sportswear Club",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2854-010_sudadera-con-capucha-color-negro-nike-atletico-sportswear-club_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2854-010_sudadera-con-capucha-color-negro-nike-atletico-sportswear-club_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2854-010_sudadera-con-capucha-negro-nike-atletico-sportswear-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2854-010_sudadera-con-capucha-nike-atletico-sportswear-club-color-negro_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2854-010_sudadera-con-capucha-color-negro-nike-atletico-sportswear-club_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2854-010_sudadera-con-capucha-negro-nike-atletico-sportswear-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2854-010_sudadera-con-capucha-nike-atletico-sportswear-club-color-negro_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm2854-010",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera con capucha Nike del Atlético de Madrid - negra",
+    "tagline": "Comodidad y rendimiento sobre el terreno",
+    "intro": "Esta sudadera Nike con el escudo del Atleti es perfecta para animar al equipo desde las gradas o disfrutar del día a día con estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad: Mantiene el cuerpo seco en todo momento.",
+      "Ajuste ergonómico: Acompaña tus movimientos sin restricciones.",
+      "Estilo profesional: Con los colores y escudo del equipo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm2854-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "con",
+    "submodel": "",
+    "product_model": "con capucha Nike Atlético Sportswear Club",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "JZ9380",
+  "slug": "sudadera-adidas-italia-entrenamiento-white",
+  "name": "adidas Italia Training",
+  "model": "Italia entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas de la selección italiana 2026 - blanca",
+    "tagline": "Comodidad térmica para la élite italiana",
+    "intro": "Forma parte del equipo con este diseño inspirado en la Italia 2026. Máximo rendimiento, comodidad y estilo para cada sesión deportiva o momento de orgullo nacional.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración oficial: Diseño y escudo de la selección italiana.",
+      "Comodidad en movimiento: Ajuste técnico y tejido ligero.",
+      "Preparado para el deporte: Ideal para entrenar, calentar o viajar."
+    ],
+    "technical_details": {
+      "range": "adidas Italia entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-color-blanco-adidas-italia-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-color-blanco-adidas-italia-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-blanca-adidas-italia-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-adidas-italia-entrenamiento-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-adidas-italia-entrenamiento-blanca_4_detalle-acabado-mangas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-color-blanco-adidas-italia-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-blanca-adidas-italia-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-adidas-italia-entrenamiento-color-blanco_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9380_sudadera-adidas-italia-entrenamiento-blanca_4_detalle-acabado-mangas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9380",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas de la selección italiana 2026 - blanca",
+    "tagline": "Comodidad térmica para la élite italiana",
+    "intro": "Forma parte del equipo con este diseño inspirado en la Italia 2026. Máximo rendimiento, comodidad y estilo para cada sesión deportiva o momento de orgullo nacional.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración oficial: Diseño y escudo de la selección italiana.",
+      "Comodidad en movimiento: Ajuste técnico y tejido ligero.",
+      "Preparado para el deporte: Ideal para entrenar, calentar o viajar."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9380"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Italia",
+    "submodel": "",
+    "product_model": "Italia entrenamiento",
+    "sole_type": ""
+  }
+}

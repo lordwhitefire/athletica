@@ -1,0 +1,100 @@
+{
+  "id": "HJ7051-411",
+  "slug": "sudadera-nike-psg-mujer-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike PSG Women Training Dri-Fit Strike",
+  "model": "PSG mujer entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera para mujer de entrenamiento Nike del PSG - azul marino",
+    "tagline": "Rinde como los profesionales del PSG",
+    "intro": "La sudadera para mujer de entrenamiento del PSG ofrece ajuste atlético y frescura para cada sesión. Confeccionada con tecnología Dri-FIT, es ideal para mantener el ritmo en cada entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño técnico: Ideal para jugadores activos.",
+      "Evacuación de sudor: Tejido Dri-FIT para mantener la piel seca.",
+      "Libertad de movimiento: Corte entallado y materiales elásticos.",
+      "Inspiración PSG: Detalles oficiales del club.",
+      "Versatilidad deportiva: Perfecta para antes, durante o después del juego."
+    ],
+    "technical_details": {
+      "range": "Nike PSG mujer entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7051-411_sudadera-color-azul-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7051-411_sudadera-color-azul-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7051-411_sudadera-azul-marino-nike-psg-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7051-411_sudadera-nike-psg-mujer-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7051-411_sudadera-color-azul-nike-psg-mujer-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7051-411_sudadera-azul-marino-nike-psg-mujer-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7051-411_sudadera-nike-psg-mujer-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj7051-411",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera para mujer de entrenamiento Nike del PSG - azul marino",
+    "tagline": "Rinde como los profesionales del PSG",
+    "intro": "La sudadera para mujer de entrenamiento del PSG ofrece ajuste atlético y frescura para cada sesión. Confeccionada con tecnología Dri-FIT, es ideal para mantener el ritmo en cada entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño técnico: Ideal para jugadores activos.",
+      "Evacuación de sudor: Tejido Dri-FIT para mantener la piel seca.",
+      "Libertad de movimiento: Corte entallado y materiales elásticos.",
+      "Inspiración PSG: Detalles oficiales del club.",
+      "Versatilidad deportiva: Perfecta para antes, durante o después del juego."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj7051-411"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "PSG Women",
+    "submodel": "",
+    "product_model": "PSG mujer entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

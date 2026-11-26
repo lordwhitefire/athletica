@@ -1,0 +1,98 @@
+{
+  "id": "KA8017",
+  "slug": "pantalon-adidas-real-madrid-vis-tech-grey",
+  "name": "adidas Real Madrid Vis Tech",
+  "model": "Real Madrid Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo adidas del Real Madrid - gris",
+    "tagline": "Funcionalidad y estilo blanco",
+    "intro": "Muévete con libertad y representa a tu equipo con el pantalón adidas Real Madrid Vis Tech. Diseñado para los desplazamientos de los jugadores, combina tecnología transpirable con detalles sofisticados. Ideal para viajar, entrenar o disfrutar del día a día con el orgullo merengue.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blanca: Escudo del Real Madrid para mostrar tu pasión.",
+      "Comodidad técnica: Tejido elástico y suave con ajuste atlético.",
+      "Detalles funcionales: Bolsillos con cremallera y acabados reflectantes.",
+      "Diseño versátil: Perfecto para viaje, entrenamiento o uso urbano.",
+      "Transpirabilidad AEROREADY: Mantiene tu piel seca en todo momento."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-largo-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-largo-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-chandal-gris-adidas-real-madrid-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-chandal-adidas-real-madrid-vis-tech-color-gris_3_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-largo-adidas-real-madrid-vis-tech-gris_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-largo-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-chandal-gris-adidas-real-madrid-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-chandal-adidas-real-madrid-vis-tech-color-gris_3_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8017_pantalon-largo-adidas-real-madrid-vis-tech-gris_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka8017",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Real Madrid - gris",
+    "tagline": "Funcionalidad y estilo blanco",
+    "intro": "Muévete con libertad y representa a tu equipo con el pantalón adidas Real Madrid Vis Tech. Diseñado para los desplazamientos de los jugadores, combina tecnología transpirable con detalles sofisticados. Ideal para viajar, entrenar o disfrutar del día a día con el orgullo merengue.",
+    "collection": "",
+    "key_benefits": [
+      "Identidad blanca: Escudo del Real Madrid para mostrar tu pasión.",
+      "Comodidad técnica: Tejido elástico y suave con ajuste atlético.",
+      "Detalles funcionales: Bolsillos con cremallera y acabados reflectantes.",
+      "Diseño versátil: Perfecto para viaje, entrenamiento o uso urbano.",
+      "Transpirabilidad AEROREADY: Mantiene tu piel seca en todo momento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka8017"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Vis Tech",
+    "sole_type": ""
+  }
+}

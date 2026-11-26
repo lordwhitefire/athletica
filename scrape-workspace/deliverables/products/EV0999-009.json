@@ -1,0 +1,88 @@
+{
+  "id": "EV0999-009",
+  "slug": "gafas-de-sol-nike-essential-chaser-black",
+  "name": "Gafas de Sol Nike Essential Chaser",
+  "model": "Gafas de Sol Nike Essential Chaser",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gafas de Sol deportivas Nike - negras",
+    "tagline": "Comodidad y protección en cada momento",
+    "intro": "Las gafas de sol Nike Essential Chaser están diseñadas para ofrecer un equilibrio entre funcionalidad y estilo. Con detalles prácticos que mejoran el ajuste, se convierten en un accesorio versátil para tus actividades al aire libre.",
+    "collection": "",
+    "key_benefits": [
+      "Protección solar: Filtro categoría 3 para una visión cómoda en condiciones de alta luminosidad.",
+      "Mayor ajuste: Patillas flexibles que proporcionan estabilidad y confort durante su uso.",
+      "Practicidad: Se entregan con funda de tela para guardarlas y protegerlas cuando no se usan."
+    ],
+    "technical_details": {
+      "range": "de Sol Nike Essential Chaser",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-color-negro-nike-essential-chaser_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-color-negro-nike-essential-chaser_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-negras-nike-essential-chaser_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-nike-essential-chaser-color-negro_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-nike-essential-chaser-negras_4_logo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-color-negro-nike-essential-chaser_5_conjunto.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-color-negro-nike-essential-chaser_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-negras-nike-essential-chaser_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-nike-essential-chaser-color-negro_3_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-nike-essential-chaser-negras_4_logo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/E/V/EV0999-009_gafas-color-negro-nike-essential-chaser_5_conjunto.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ev0999-009",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gafas de Sol deportivas Nike - negras",
+    "tagline": "Comodidad y protección en cada momento",
+    "intro": "Las gafas de sol Nike Essential Chaser están diseñadas para ofrecer un equilibrio entre funcionalidad y estilo. Con detalles prácticos que mejoran el ajuste, se convierten en un accesorio versátil para tus actividades al aire libre.",
+    "collection": "",
+    "key_benefits": [
+      "Protección solar: Filtro categoría 3 para una visión cómoda en condiciones de alta luminosidad.",
+      "Mayor ajuste: Patillas flexibles que proporcionan estabilidad y confort durante su uso.",
+      "Practicidad: Se entregan con funda de tela para guardarlas y protegerlas cuando no se usan."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ev0999-009"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Gafas",
+    "submodel": "",
+    "product_model": "Gafas de Sol Nike Essential Chaser",
+    "sole_type": ""
+  }
+}

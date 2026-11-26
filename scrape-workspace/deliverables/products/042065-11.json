@@ -1,0 +1,109 @@
+{
+  "id": "042065-11",
+  "slug": "puma-future-pro-hybrid-white",
+  "name": "Puma Future Pro Hybrid",
+  "model": "Future Pro Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma hybrid cut goalkeeper gloves - white",
+    "tagline": "Advanced Performance for Competitive Goalkeepers",
+    "intro": "The Puma Future Pro Hybrid combines advanced technologies with a modern design. Its hybrid cut improves the contact surface with the ball, offering more precision and confidence under pressure. Perfect for those looking for a jump in quality in their training and matches.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Tactical versatility: Hybrid cut for greater adaptability.",
+      "Excellent cushioning: Absorbs impacts and improves control.",
+      "Secure fit: Wraparound wristband for added stability.",
+      "Modern design: Attractive aesthetics to stand out on the field."
+    ],
+    "technical_details": {
+      "range": "Future Pro Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/2f08e07c051cb03c3222f29e40d120590249882f-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/2f08e07c051cb03c3222f29e40d120590249882f-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/ca5d84f98fd984b2c46e9e8390e0f0665523c849-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2a78a222d10f07a4e9a6c522e158746520e96db7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5261dc5f8d8c1ee18c6929eb02eac5c6481c4d31-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2f08e07c051cb03c3222f29e40d120590249882f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ca5d84f98fd984b2c46e9e8390e0f0665523c849-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2a78a222d10f07a4e9a6c522e158746520e96db7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5261dc5f8d8c1ee18c6929eb02eac5c6481c4d31-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-2f08e07c051cb03c3222f29e40d120590249882f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2f08e07c051cb03c3222f29e40d120590249882f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ca5d84f98fd984b2c46e9e8390e0f0665523c849-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ca5d84f98fd984b2c46e9e8390e0f0665523c849-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2a78a222d10f07a4e9a6c522e158746520e96db7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2a78a222d10f07a4e9a6c522e158746520e96db7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5261dc5f8d8c1ee18c6929eb02eac5c6481c4d31-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5261dc5f8d8c1ee18c6929eb02eac5c6481c4d31-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042065-11",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte híbrido - blancos",
+    "tagline": "Rendimiento Avanzado para Porteros Competitivos",
+    "intro": "Los Puma Future Pro Hybrid combinan tecnologías avanzadas con un diseño moderno. Su corte híbrido mejora la superficie de contacto con el balón, ofreciendo más precisión y confianza bajo presión. Perfectos para quienes buscan un salto de calidad en sus entrenamientos y partidos.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Versatilidad táctica: Corte híbrido para mayor adaptabilidad.",
+      "Excelente amortiguación: Absorbe impactos y mejora el control.",
+      "Ajuste seguro: Muñequera envolvente para mayor estabilidad.",
+      "Diseño moderno: Estética atractiva para destacar en el campo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042065-11"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Pro Hybrid",
+    "product_model": "Future Pro Hybrid",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "AV2609-057",
+  "slug": "camiseta-interior-termica-nike-dri-fit-park-grey",
+  "name": "interior térmica Nike Dri-Fit Park",
+  "model": "interior térmica Nike Dri-Fit Park",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta interior compresiva de manga larga Nike - gris",
+    "tagline": "Una capa ligera para jugar con mayor comodidad",
+    "intro": "La camiseta interior térmica Nike Dri-Fit Park está diseñada para utilizarse como primera capa bajo la equipación y aportar cobertura sin limitar tus movimientos. Su tejido elástico de poliéster reciclado ofrece un ajuste ceñido y cómodo, ideal para entrenamientos y partidos en los que necesitas una capa adicional.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad durante el juego: Su tejido suave favorece una sensación agradable bajo la equipación.",
+      "Mayor frescura: Ayuda a gestionar la humedad para mantener una sensación más seca durante el esfuerzo.",
+      "Libertad de movimiento: Las mangas raglán y el tejido elástico acompañan los movimientos de los brazos."
+    ],
+    "technical_details": {
+      "range": "interior térmica Nike Dri-Fit Park",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/a/v/av2609-057_imagen-de-la-camiseta-manga-larga-entrenamiento-nike-dri-fit-park-first-layer-2019-gris_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/a/v/av2609-057_imagen-de-la-camiseta-manga-larga-entrenamiento-nike-dri-fit-park-first-layer-2019-gris_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/a/v/av2609-057_imagen-de-la-camiseta-manga-larga-entrenamiento-nike-dri-fit-park-first-layer-2019-gris_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/a/v/av2609-057_imagen-de-la-camiseta-manga-larga-entrenamiento-nike-dri-fit-park-first-layer-2019-gris_3_detalle-cuello.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/a/v/av2609-057_imagen-de-la-camiseta-manga-larga-entrenamiento-nike-dri-fit-park-first-layer-2019-gris_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/a/v/av2609-057_imagen-de-la-camiseta-manga-larga-entrenamiento-nike-dri-fit-park-first-layer-2019-gris_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/a/v/av2609-057_imagen-de-la-camiseta-manga-larga-entrenamiento-nike-dri-fit-park-first-layer-2019-gris_3_detalle-cuello.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/av2609-057",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta interior compresiva de manga larga Nike - gris",
+    "tagline": "Una capa ligera para jugar con mayor comodidad",
+    "intro": "La camiseta interior térmica Nike Dri-Fit Park está diseñada para utilizarse como primera capa bajo la equipación y aportar cobertura sin limitar tus movimientos. Su tejido elástico de poliéster reciclado ofrece un ajuste ceñido y cómodo, ideal para entrenamientos y partidos en los que necesitas una capa adicional.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad durante el juego: Su tejido suave favorece una sensación agradable bajo la equipación.",
+      "Mayor frescura: Ayuda a gestionar la humedad para mantener una sensación más seca durante el esfuerzo.",
+      "Libertad de movimiento: Las mangas raglán y el tejido elástico acompañan los movimientos de los brazos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/av2609-057"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "interior",
+    "submodel": "",
+    "product_model": "interior térmica Nike Dri-Fit Park",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "100226101-A",
+  "slug": "camiseta-interior-uhlsport-base-layer-padded-black",
+  "name": "interior Uhlsport Base Layer Padded",
+  "model": "interior Uhlsport Base Layer Padded",
+  "brand": "Uhlsport",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport goalkeeper base layer - black",
+    "tagline": "Your second skin with protection",
+    "intro": "Designed for demanding goalkeepers, the Uhlsport padded undershirt conforms to the body to offer thermal and extra impact protection, without sacrificing mobility.",
+    "collection": "",
+    "key_benefits": [
+      "Smart protection: Padded areas that protect without limiting.",
+      "Thermal Fit: Keeps you warm during cold play.",
+      "Elasticity: Freedom of movement with a feeling of light compression."
+    ],
+    "technical_details": {
+      "range": "interior Uhlsport Base Layer Padded",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/722988bbd9b84fdbe83eccabcb193fc546c1ac28-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/722988bbd9b84fdbe83eccabcb193fc546c1ac28-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/65835a478c21862f8070dee3a8e71d723e21a49f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6860230048316807f29efafa999bf0eed5c25953-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/30678b5ff924012324bc819a4be2da781bd4c147-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/722988bbd9b84fdbe83eccabcb193fc546c1ac28-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/65835a478c21862f8070dee3a8e71d723e21a49f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6860230048316807f29efafa999bf0eed5c25953-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/30678b5ff924012324bc819a4be2da781bd4c147-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-722988bbd9b84fdbe83eccabcb193fc546c1ac28-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/722988bbd9b84fdbe83eccabcb193fc546c1ac28-1500x1500.jpg"
+    },
+    {
+      "_id": "image-65835a478c21862f8070dee3a8e71d723e21a49f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/65835a478c21862f8070dee3a8e71d723e21a49f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6860230048316807f29efafa999bf0eed5c25953-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6860230048316807f29efafa999bf0eed5c25953-1500x1500.jpg"
+    },
+    {
+      "_id": "image-30678b5ff924012324bc819a4be2da781bd4c147-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/30678b5ff924012324bc819a4be2da781bd4c147-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100226101-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta interior Uhlsport de portero - negro",
+    "tagline": "Tu segunda piel con protección",
+    "intro": "Diseñada para porteros exigentes, la camiseta interior Uhlsport acolchada se ajusta al cuerpo para ofrecer protección térmica y extra en los impactos, sin sacrificar movilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Protección inteligente: Zonas acolchadas que protegen sin limitar.",
+      "Ajuste térmico: Te mantiene abrigado durante el juego en frío.",
+      "Elasticidad: Libertad de movimiento con sensación de compresión ligera."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100226101-a"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "interior",
+    "submodel": "",
+    "product_model": "interior Uhlsport Base Layer Padded",
+    "sole_type": ""
+  }
+}

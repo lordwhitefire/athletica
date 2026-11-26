@@ -1,0 +1,94 @@
+{
+  "id": "DD0559-010",
+  "slug": "mochila-nike-elemental-black",
+  "name": "Backpack Nike Elemental",
+  "model": "Backpack Nike Elemental",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deporte Nike 21 L - negra",
+    "tagline": "Capacidad y orden para tu jornada",
+    "intro": "La mochila Nike Elemental combina espacio amplio con una organización sencilla para el día a día. Cómoda y resistente, te ayuda a llevar tus básicos siempre a mano en trabajo, estudio o entrenamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad útil: 21 l para tus básicos diarios.",
+      "Acceso rápido: Cremalleras dobles para abrir y cerrar con facilidad.",
+      "Comodidad constante: Tirantes acolchados y ajuste estable.",
+      "Resistencia: Material pensado para uso frecuente."
+    ],
+    "technical_details": {
+      "range": "Nike Elemental",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-color-negro-nike-elemental_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-color-negro-nike-elemental_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-negra-nike-elemental_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-nike-elemental-color-negro_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-nike-elemental-negra_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-color-negro-nike-elemental_5_detalle-cierre.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-color-negro-nike-elemental_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-negra-nike-elemental_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-nike-elemental-color-negro_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-nike-elemental-negra_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/D/DD0559-010_mochila-color-negro-nike-elemental_5_detalle-cierre.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dd0559-010",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte Nike 21 L - negra",
+    "tagline": "Capacidad y orden para tu jornada",
+    "intro": "La mochila Nike Elemental combina espacio amplio con una organización sencilla para el día a día. Cómoda y resistente, te ayuda a llevar tus básicos siempre a mano en trabajo, estudio o entrenamientos.",
+    "collection": "",
+    "key_benefits": [
+      "Capacidad útil: 21 l para tus básicos diarios.",
+      "Acceso rápido: Cremalleras dobles para abrir y cerrar con facilidad.",
+      "Comodidad constante: Tirantes acolchados y ajuste estable.",
+      "Resistencia: Material pensado para uso frecuente."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dd0559-010"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Nike Elemental",
+    "sole_type": ""
+  }
+}

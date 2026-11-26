@@ -1,0 +1,89 @@
+{
+  "id": "DN3614-702",
+  "slug": "nike-mercurial-hardshell-verde-amarillo",
+  "name": "Nike Mercurial Hardshell",
+  "model": "Mercurial Hardshell",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Verde / Amarillo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con cintas de velcro - verde flúor",
+    "tagline": "Protección resistente para jugar sin límites",
+    "intro": "Las espinilleras Nike Mercurial Hardshell combinan una cubierta rígida de gran resistencia con una amortiguación interior de espuma para ofrecer seguridad y comodidad durante el juego. Diseñadas para futbolistas intensos y veloces, ayudan a absorber impactos sin sacrificar movilidad.",
+    "collection": "MAD VOLTAGE PACK",
+    "key_benefits": [
+      "Carcasa rígida: Protección resistente frente a impactos.",
+      "Espuma interior: Mejor absorción y comodidad.",
+      "Cintas de velcro: Ajuste seguro y estable.",
+      "Perfil anatómico: Diseño cómodo y discreto bajo las medias."
+    ],
+    "technical_details": {
+      "range": "Mercurial Hardshell",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-702_espinilleras-color-amarillo-nike-mercurial-hardshell_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-702_espinilleras-color-amarillo-nike-mercurial-hardshell_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/N/DN3614-702_espinilleras-color-amarillo-nike-mercurial-hardshell_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/dn3614-702",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Nike con cintas de velcro - verde flúor",
+    "tagline": "Protección resistente para jugar sin límites",
+    "intro": "Las espinilleras Nike Mercurial Hardshell combinan una cubierta rígida de gran resistencia con una amortiguación interior de espuma para ofrecer seguridad y comodidad durante el juego. Diseñadas para futbolistas intensos y veloces, ayudan a absorber impactos sin sacrificar movilidad.",
+    "collection": "MAD VOLTAGE PACK",
+    "key_benefits": [
+      "Carcasa rígida: Protección resistente frente a impactos.",
+      "Espuma interior: Mejor absorción y comodidad.",
+      "Cintas de velcro: Ajuste seguro y estable.",
+      "Perfil anatómico: Diseño cómodo y discreto bajo las medias."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/dn3614-702"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Mercurial",
+    "submodel": "Hardshell",
+    "product_model": "Mercurial Hardshell",
+    "sole_type": ""
+  }
+}

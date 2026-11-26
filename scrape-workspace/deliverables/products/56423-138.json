@@ -1,0 +1,88 @@
+{
+  "id": "56423-138",
+  "slug": "kelme-heritage-mg-black",
+  "name": "Kelme Heritage MG",
+  "model": "Heritage",
+  "brand": "Kelme",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Heritage",
+      "sole_type": "MG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "MG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-para-cesped-artificial-color-negro-kelme-heritage-mg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-para-cesped-artificial-color-negro-kelme-heritage-mg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-cesped-artificial-negras-kelme-heritage-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-hierba-artificial-kelme-heritage-mg-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_zapatillas-de-futbol-para-hierba-sintetica-kelme-heritage-mg-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-con-tacos-color-negro-kelme-heritage-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-para-cesped-artificial-negras-kelme-heritage-mg_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-cesped-artificial-kelme-heritage-mg-color-negro_7_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-para-cesped-artificial-color-negro-kelme-heritage-mg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-cesped-artificial-negras-kelme-heritage-mg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-hierba-artificial-kelme-heritage-mg-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_zapatillas-de-futbol-para-hierba-sintetica-kelme-heritage-mg-negras_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-con-tacos-color-negro-kelme-heritage-mg_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-para-cesped-artificial-negras-kelme-heritage-mg_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/5/6/56423-138_botas-de-futbol-cesped-artificial-kelme-heritage-mg-color-negro_7_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/56423-138",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/56423-138"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Heritage",
+    "submodel": "",
+    "product_model": "Heritage",
+    "sole_type": "MG"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "KG2901",
+  "slug": "chaqueta-adidas-liverpool-og-2-0-blanco-gris",
+  "name": "adidas Liverpool OG 2.0",
+  "model": "Liverpool OG 2.0",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blanco / Gris",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas del Liverpool - blanca, gris",
+    "tagline": "Tradición red con sello Originals",
+    "intro": "La chaqueta adidas Liverpool Originals 2.0 reinterpreta el legado del Liverpool FC con un diseño inspirado en la historia y la identidad del club. Integrada en la colección adidas Originals, combina una estética retro con acabados modernos para lucir los colores de los Reds dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Colección adidas Originals: Inspirada en el legado futbolístico del Liverpool FC.",
+      "Tejido interlock: Suave, resistente y cómodo para el uso diario.",
+      "Cremallera completa: Fácil de poner y quitar con un estilo clásico.",
+      "Diseño retro: Recupera la esencia histórica del Liverpool con una estética futbolera atemporal.",
+      "Estilo versátil: Perfecta para combinar con cualquier look deportivo o casual."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool OG 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-color-blanco-y-gris-adidas-liverpool-og-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-color-blanco-y-gris-adidas-liverpool-og-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-chandal-blanca--gris-adidas-liverpool-og-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-entretiempo-adidas-liverpool-og-2-0-color-blanco-y-gris_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-adidas-liverpool-og-2-0-blanca--gris_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-color-blanco-y-gris-adidas-liverpool-og-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-chandal-blanca--gris-adidas-liverpool-og-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-entretiempo-adidas-liverpool-og-2-0-color-blanco-y-gris_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2901_chaqueta-adidas-liverpool-og-2-0-blanca--gris_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2901",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Liverpool - blanca, gris",
+    "tagline": "Tradición red con sello Originals",
+    "intro": "La chaqueta adidas Liverpool Originals 2.0 reinterpreta el legado del Liverpool FC con un diseño inspirado en la historia y la identidad del club. Integrada en la colección adidas Originals, combina una estética retro con acabados modernos para lucir los colores de los Reds dentro y fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Colección adidas Originals: Inspirada en el legado futbolístico del Liverpool FC.",
+      "Tejido interlock: Suave, resistente y cómodo para el uso diario.",
+      "Cremallera completa: Fácil de poner y quitar con un estilo clásico.",
+      "Diseño retro: Recupera la esencia histórica del Liverpool con una estética futbolera atemporal.",
+      "Estilo versátil: Perfecta para combinar con cualquier look deportivo o casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2901"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Liverpool OG",
+    "submodel": "",
+    "product_model": "Liverpool OG 2.0",
+    "sole_type": ""
+  }
+}

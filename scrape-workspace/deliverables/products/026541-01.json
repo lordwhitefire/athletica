@@ -1,0 +1,111 @@
+{
+  "id": "026541-01",
+  "slug": "gorra-puma-valencia-essentials-white",
+  "name": "Puma Valencia Essentials",
+  "model": "Valencia Essentials",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Valencia Puma Walking Cap - White",
+    "tagline": "Valencian style with urban essence",
+    "intro": "Show your passion for Valencia CF with this Puma cap with an essential design. Its white finish combines with any look, while its light and breathable structure accompanies you in your daily life.",
+    "collection": "",
+    "key_benefits": [
+      "Valencian pride: Valencia CF shield embroidered on the front.",
+      "Timeless style: Versatile white color and minimalist Puma design.",
+      "Lightweight Comfort: Soft, breathable fabric for everyday wear.",
+      "Adjustable fit: Back closure with metal buckle to customize the size.",
+      "Perfect for all times: Whether for the stadium or your daily routine."
+    ],
+    "technical_details": {
+      "range": "Puma Valencia Essentials",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/fc5c1aa58155f6be41733daef23f89365aac9eaf-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/fc5c1aa58155f6be41733daef23f89365aac9eaf-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/05f5e91ce82c12ab95d5f07854d46d9cc1621618-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cd3e55d6c29eca8efaf7d2488eaeba7a25bea9ab-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6cd8e42a2995a31a8c9b67088e2385b4c05cb13b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fc5c1aa58155f6be41733daef23f89365aac9eaf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/05f5e91ce82c12ab95d5f07854d46d9cc1621618-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cd3e55d6c29eca8efaf7d2488eaeba7a25bea9ab-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6cd8e42a2995a31a8c9b67088e2385b4c05cb13b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-fc5c1aa58155f6be41733daef23f89365aac9eaf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fc5c1aa58155f6be41733daef23f89365aac9eaf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-05f5e91ce82c12ab95d5f07854d46d9cc1621618-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/05f5e91ce82c12ab95d5f07854d46d9cc1621618-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cd3e55d6c29eca8efaf7d2488eaeba7a25bea9ab-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cd3e55d6c29eca8efaf7d2488eaeba7a25bea9ab-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6cd8e42a2995a31a8c9b67088e2385b4c05cb13b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6cd8e42a2995a31a8c9b67088e2385b4c05cb13b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/026541-01",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma del Valencia - blanca",
+    "tagline": "Estilo valencianista con esencia urbana",
+    "intro": "Demuestra tu pasión por el Valencia CF con esta gorra Puma de diseño esencial. Su acabado blanco combina con cualquier look, mientras que su estructura ligera y transpirable te acompaña en tu día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo valencianista: Escudo del Valencia CF bordado al frente.",
+      "Estilo atemporal: Color blanco versátil y diseño minimalista Puma.",
+      "Comodidad ligera: Tejido suave y transpirable para el uso diario.",
+      "Ajuste regulable: Cierre trasero con hebilla metálica para personalizar la talla.",
+      "Perfecta para todo momento: Ya sea para el estadio o tu rutina diaria."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/026541-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Valencia",
+    "submodel": "",
+    "product_model": "Valencia Essentials",
+    "sole_type": ""
+  }
+}

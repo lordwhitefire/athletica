@@ -1,0 +1,90 @@
+{
+  "id": "HC3289",
+  "slug": "pantalon-adidas-juventus-nino-entrenamiento-ucl-blue",
+  "name": "adidas Juventus Kids Training UCL",
+  "model": "Juventus niño entrenamiento UCL",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "adidas Juventus niño entrenamiento UCL",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-largo-color-z-purpura-oscuro-adidas-juventus-nino-entrenamiento-ucl_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-largo-color-z-purpura-oscuro-adidas-juventus-nino-entrenamiento-ucl_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-chandal-azul-marino-adidas-juventus-nino-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-chandal-adidas-juventus-nino-entrenamiento-ucl-color-z-purpura-oscuro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-largo-adidas-juventus-nino-entrenamiento-ucl-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-largo-color-z-purpura-oscuro-adidas-juventus-nino-entrenamiento-ucl_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-chandal-azul-marino-adidas-juventus-nino-entrenamiento-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-chandal-adidas-juventus-nino-entrenamiento-ucl-color-z-purpura-oscuro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/C/HC3289_pantalon-largo-adidas-juventus-nino-entrenamiento-ucl-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/hc3289",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/hc3289"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Juventus Kids",
+    "submodel": "",
+    "product_model": "Juventus niño entrenamiento UCL",
+    "sole_type": ""
+  }
+}

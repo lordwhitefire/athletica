@@ -1,0 +1,96 @@
+{
+  "id": "HM3125-594",
+  "slug": "pantalon-nike-barcelona-mujer-fleece-blue",
+  "name": "Nike Barcelona Women Fleece",
+  "model": "Barcelona mujer Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de algodón para mujer Nike del FC Barcelona 2025 2026 - azul marino",
+    "tagline": "Estilo cómodo para las culers",
+    "intro": "El Pantalón Nike Barcelona mujer Fleece está pensado para las aficionadas que quieren lucir el escudo con comodidad en su día a día. Su tejido Fleece es suave, cálido y ligero.",
+    "collection": "",
+    "key_benefits": [
+      "Confort casual: Algodón suave ideal para uso diario.",
+      "Diseño femenino: Corte estilizado con ajuste perfecto.",
+      "Orgullo Barça: Detalles oficiales y escudo bordado.",
+      "Uso versátil: Para vestir, viajar o relajarse con estilo."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona mujer Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-largo-color-azul-nike-barcelona-mujer-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-largo-color-azul-nike-barcelona-mujer-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-chandal-azul-marino-nike-barcelona-mujer-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-chandal-nike-barcelona-mujer-fleece-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-largo-nike-barcelona-mujer-fleece-azul-marino_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-largo-color-azul-nike-barcelona-mujer-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-chandal-azul-marino-nike-barcelona-mujer-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-chandal-nike-barcelona-mujer-fleece-color-azul_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3125-594_pantalon-largo-nike-barcelona-mujer-fleece-azul-marino_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3125-594",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de algodón para mujer Nike del FC Barcelona 2025 2026 - azul marino",
+    "tagline": "Estilo cómodo para las culers",
+    "intro": "El Pantalón Nike Barcelona mujer Fleece está pensado para las aficionadas que quieren lucir el escudo con comodidad en su día a día. Su tejido Fleece es suave, cálido y ligero.",
+    "collection": "",
+    "key_benefits": [
+      "Confort casual: Algodón suave ideal para uso diario.",
+      "Diseño femenino: Corte estilizado con ajuste perfecto.",
+      "Orgullo Barça: Detalles oficiales y escudo bordado.",
+      "Uso versátil: Para vestir, viajar o relajarse con estilo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3125-594"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Barcelona Women",
+    "submodel": "",
+    "product_model": "Barcelona mujer Fleece",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "041948-01",
+  "slug": "puma-ultra-ultimate-hybrid-purple",
+  "name": "Puma Ultra Ultimate Hybrid",
+  "model": "Ultra Ultimate Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Ultimate Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f4b8fbbeb58ad00b1bae76b9479169e7e52d229d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f4b8fbbeb58ad00b1bae76b9479169e7e52d229d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/451aaabeec7604a9a363b3136939f888ca6e7f5a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/861e61bcf76b2e982631d2e4e22bd8cca0562107-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0d6c91cf286532bb561eabf2d7ac32872e699d05-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c1ce09623502615be156afc0fbbc0b3edeb11746-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f4b8fbbeb58ad00b1bae76b9479169e7e52d229d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/451aaabeec7604a9a363b3136939f888ca6e7f5a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/861e61bcf76b2e982631d2e4e22bd8cca0562107-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0d6c91cf286532bb561eabf2d7ac32872e699d05-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c1ce09623502615be156afc0fbbc0b3edeb11746-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f4b8fbbeb58ad00b1bae76b9479169e7e52d229d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f4b8fbbeb58ad00b1bae76b9479169e7e52d229d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-451aaabeec7604a9a363b3136939f888ca6e7f5a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/451aaabeec7604a9a363b3136939f888ca6e7f5a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-861e61bcf76b2e982631d2e4e22bd8cca0562107-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/861e61bcf76b2e982631d2e4e22bd8cca0562107-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0d6c91cf286532bb561eabf2d7ac32872e699d05-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0d6c91cf286532bb561eabf2d7ac32872e699d05-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c1ce09623502615be156afc0fbbc0b3edeb11746-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c1ce09623502615be156afc0fbbc0b3edeb11746-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/041948-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/041948-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Ultimate Hybrid",
+    "product_model": "Ultra Ultimate Hybrid",
+    "sole_type": ""
+  }
+}

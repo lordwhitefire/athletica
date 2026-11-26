@@ -1,0 +1,96 @@
+{
+  "id": "KD3199",
+  "slug": "bufanda-adidas-espana-red",
+  "name": "Bufanda adidas España",
+  "model": "Bufanda adidas España",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Bufanda adidas de la selección de España - roja",
+    "tagline": "Luce los colores de España",
+    "intro": "La bufanda adidas España es el complemento perfecto para apoyar a la selección en cualquier momento. Inspirada en la equipación oficial, combina estilo clásico y pasión por el fútbol.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con escudo de España para un look auténtico.",
+      "Tejido suave: Aporta comodidad y calidez en días fríos.",
+      "Estilo clásico: Perfecta para animar en el estadio o el día a día.",
+      "Ligera y cómoda: Fácil de llevar durante todo el partido.",
+      "Detalles cuidados: Acabados de calidad con flecos tradicionales."
+    ],
+    "technical_details": {
+      "range": "adidas España",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD3199_bufanda-color-rojo-adidas-espana_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD3199_bufanda-color-rojo-adidas-espana_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD3199_bufanda-roja-adidas-espana_2_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD3199_bufanda-adidas-espana-color-rojo_3_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD3199_bufanda-color-rojo-adidas-espana_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD3199_bufanda-roja-adidas-espana_2_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/D/KD3199_bufanda-adidas-espana-color-rojo_3_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kd3199",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Bufanda adidas de la selección de España - roja",
+    "tagline": "Luce los colores de España",
+    "intro": "La bufanda adidas España es el complemento perfecto para apoyar a la selección en cualquier momento. Inspirada en la equipación oficial, combina estilo clásico y pasión por el fútbol.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Con escudo de España para un look auténtico.",
+      "Tejido suave: Aporta comodidad y calidez en días fríos.",
+      "Estilo clásico: Perfecta para animar en el estadio o el día a día.",
+      "Ligera y cómoda: Fácil de llevar durante todo el partido.",
+      "Detalles cuidados: Acabados de calidad con flecos tradicionales."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kd3199"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'equipos'",
+    "root_model": "Bufanda",
+    "submodel": "",
+    "product_model": "Bufanda adidas España",
+    "sole_type": ""
+  }
+}

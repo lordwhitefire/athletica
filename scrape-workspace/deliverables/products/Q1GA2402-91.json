@@ -1,0 +1,86 @@
+{
+  "id": "Q1GA2402-91",
+  "slug": "mizuno-morelia-sala-classic-in-white",
+  "name": "Mizuno Morelia Sala Classic IN",
+  "model": "Morelia Sala Classic IN",
+  "brand": "Mizuno",
+  "category": "Indoor Shoes",
+  "category_slug": "indoor-shoes",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Morelia Sala Classic IN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_zapatillas-futbol-sala-color-blanco-mizuno-morelia-sala-classic-in_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_zapatillas-futbol-sala-color-blanco-mizuno-morelia-sala-classic-in_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_zapatillas-de-futbol-sala-blancas--rojas-mizuno-morelia-sala-classic-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_botas-futbol-sala-mizuno-morelia-sala-classic-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_bambas-futbol-sala-mizuno-morelia-sala-classic-in-blancas--rojas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_tenis-futbol-sala-color-blanco-mizuno-morelia-sala-classic-in_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_zapatillas-futbol-sala-blancas--rojas-mizuno-morelia-sala-classic-in_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_zapatillas-futbol-sala-color-blanco-mizuno-morelia-sala-classic-in_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_zapatillas-de-futbol-sala-blancas--rojas-mizuno-morelia-sala-classic-in_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_botas-futbol-sala-mizuno-morelia-sala-classic-in-color-blanco_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_bambas-futbol-sala-mizuno-morelia-sala-classic-in-blancas--rojas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_tenis-futbol-sala-color-blanco-mizuno-morelia-sala-classic-in_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Q/1/Q1GA2402-91_zapatillas-futbol-sala-blancas--rojas-mizuno-morelia-sala-classic-in_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/q1ga2402-91",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Zapatillas fútbol sala"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/q1ga2402-91"
+  },
+  "classification": {
+    "category": "indoor-shoes",
+    "confidence": "high",
+    "rule": "name contains 'sala'",
+    "root_model": "Morelia",
+    "submodel": "Sala Classic IN",
+    "product_model": "Morelia Sala Classic IN",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "TRUCAL100",
+  "slug": "calcetines-antideslizantes-trusox-tobillero-white",
+  "name": "antideslizantes Trusox tobillero",
+  "model": "antideslizantes Trusox tobillero",
+  "brand": "Trusox",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "antideslizantes Trusox tobillero",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/R/TRUCAL100_calcetines-antideslizantes-color-blanco-trusox-tobillero_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/R/TRUCAL100_calcetines-antideslizantes-color-blanco-trusox-tobillero_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/R/TRUCAL100_calcetines-antideslizantes-blancos-trusox-tobillero_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/R/TRUCAL100_calcetines-antideslizantes-trusox-tobillero-color-blanco_3_detalle-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/R/TRUCAL100_calcetines-antideslizantes-color-blanco-trusox-tobillero_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/R/TRUCAL100_calcetines-antideslizantes-blancos-trusox-tobillero_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/R/TRUCAL100_calcetines-antideslizantes-trusox-tobillero-color-blanco_3_detalle-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/trucal100",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/trucal100"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'calcetin'",
+    "root_model": "antideslizantes",
+    "submodel": "",
+    "product_model": "antideslizantes Trusox tobillero",
+    "sole_type": ""
+  }
+}

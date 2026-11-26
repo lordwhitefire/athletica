@@ -1,0 +1,104 @@
+{
+  "id": "IH7687",
+  "slug": "adidas-super-sala-3-green",
+  "name": "adidas Super Sala 3",
+  "model": "adidas Super Sala 3",
+  "brand": "adidas",
+  "category": "Offers",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Super Sala 3",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/ih7687",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_zapatillas-futbol-sala-color-verde-adidas-super-sala-iii_1_pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_zapatillas-de-futbol-sala-verde-fluor-adidas-super-sala-iii_2_suela-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_botas-futbol-sala-adidas-super-sala-iii-color-verde_3_interior-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_bambas-futbol-sala-adidas-super-sala-iii-verde-fluor_4_superior.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_tenis-futbol-sala-color-verde-adidas-super-sala-iii_5_perspectiva.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_zapatillas-futbol-sala-verde-fluor-adidas-super-sala-iii_6_detalle-suela.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_zapatillas-de-futbol-sala-adidas-super-sala-iii-color-verde_7_pie-izquierdo.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_botas-futbol-sala-adidas-super-sala-iii-verde-fluor_8_detalle-lateral.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/H/IH7687_zapatillas-futbol-sala-color-verde-adidas-super-sala-iii_1_pie-derecho.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level1",
+      "name": "Zapatillas fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level2",
+      "name": "Nuevas zapatillas fútbol sala",
+      "href": "https://www.futbolmania.com/es/nuevas-botas-de-futbol-sala"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level2",
+      "name": "Zapatillas fútbol sala adidas",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala-adidas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level1",
+      "name": "Ofertas fútbol",
+      "href": "https://www.futbolmania.com/es/productos-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level2",
+      "name": "Calzado",
+      "href": "https://www.futbolmania.com/es/calzado-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level3",
+      "name": "Fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-futbol-sala-ofertas"
+    }
+  ]
+}

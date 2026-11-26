@@ -1,0 +1,105 @@
+{
+  "id": "101132901",
+  "slug": "uhlsport-prediction-supergrip-finger-surround-blue",
+  "name": "Uhlsport Prediction Supergrip+ Finger Surround",
+  "model": "Prediction Supergrip+ Finger Surround",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Prediction Supergrip+ Finger Surround",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b6f35334aa2884472bfe6a3a8cf0506f4e4fd2f0-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b6f35334aa2884472bfe6a3a8cf0506f4e4fd2f0-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b17ae6bbfb051188c2af1fa432e09da2a3af9a57-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fce918c835198e4e8555ff726863b03a8f46d7b4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/90a515473c873a1ea7d2d67ff8aed3c63165b261-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1913c1b3ff3a5bf11c410f048a4f84e2a03ed03b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b6f35334aa2884472bfe6a3a8cf0506f4e4fd2f0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b17ae6bbfb051188c2af1fa432e09da2a3af9a57-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fce918c835198e4e8555ff726863b03a8f46d7b4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/90a515473c873a1ea7d2d67ff8aed3c63165b261-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1913c1b3ff3a5bf11c410f048a4f84e2a03ed03b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b6f35334aa2884472bfe6a3a8cf0506f4e4fd2f0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b6f35334aa2884472bfe6a3a8cf0506f4e4fd2f0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b17ae6bbfb051188c2af1fa432e09da2a3af9a57-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b17ae6bbfb051188c2af1fa432e09da2a3af9a57-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fce918c835198e4e8555ff726863b03a8f46d7b4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fce918c835198e4e8555ff726863b03a8f46d7b4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-90a515473c873a1ea7d2d67ff8aed3c63165b261-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/90a515473c873a1ea7d2d67ff8aed3c63165b261-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1913c1b3ff3a5bf11c410f048a4f84e2a03ed03b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1913c1b3ff3a5bf11c410f048a4f84e2a03ed03b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101132901",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101132901"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Prediction",
+    "submodel": "",
+    "product_model": "Prediction Supergrip+ Finger Surround",
+    "sole_type": ""
+  }
+}

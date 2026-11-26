@@ -1,0 +1,108 @@
+{
+  "id": "3071073",
+  "slug": "munich-one-yellow",
+  "name": "Munich One",
+  "model": "Munich One",
+  "brand": "Munich",
+  "category": "Offers",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "One",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/3071073",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3071073_zapatillas-futbol-sala-color-amarillo-munich-one_1_pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3071073_zapatillas-de-futbol-sala-amarillas-munich-one_2_suela-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3071073_botas-futbol-sala-munich-one-color-amarillo_3_interior-pie-derecho.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3071073_bambas-futbol-sala-munich-one-amarillas_4_superior.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3071073_tenis-futbol-sala-color-amarillo-munich-one_5_conjunto.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/0/3071073_zapatillas-futbol-sala-color-amarillo-munich-one_1_pie-derecho.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level1",
+      "name": "Zapatillas fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level2",
+      "name": "Zapatillas Munich fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-de-futbol-sala-munich"
+    },
+    {
+      "audience": "adult",
+      "root": "Zapatillas fútbol sala",
+      "level": "level3",
+      "name": "Munich One",
+      "href": "https://www.futbolmania.com/es/zapatillas-munich-one"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level1",
+      "name": "Ofertas fútbol",
+      "href": "https://www.futbolmania.com/es/productos-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level2",
+      "name": "Calzado",
+      "href": "https://www.futbolmania.com/es/calzado-futbol-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level3",
+      "name": "Fútbol sala",
+      "href": "https://www.futbolmania.com/es/zapatillas-futbol-sala-ofertas"
+    },
+    {
+      "audience": "adult",
+      "root": "Ofertas fútbol",
+      "level": "level4",
+      "name": "Ofertas Munich fútbol sala",
+      "href": "https://www.futbolmania.com/es/oferta-munich-zapatillas-futbol-sala"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "KB0924",
+  "slug": "short-adidas-mexico-entrenamiento-black",
+  "name": "adidas México Training",
+  "model": "México entrenamiento",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento adidas de la selección de México 2026 - negro",
+    "tagline": "Entrena con intensidad y estilo mexicano",
+    "intro": "El short adidas México 2026 de entrenamiento está diseñado para ofrecer máximo rendimiento en cada sesión. Inspirado en la equipación de la selección, combina funcionalidad y diseño para que entrenes como los profesionales.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Expulsa el sudor y mantiene la piel fresca y seca.",
+      "Tejido técnico resistente: Ideal para soportar entrenamientos intensos.",
+      "Cintura elástica con cordón: Ajuste cómodo y seguro.",
+      "Diseño oficial: Inspirado en la selección de México."
+    ],
+    "technical_details": {
+      "range": "adidas México entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_pantalon-corto-color-negro-adidas-mexico-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_pantalon-corto-color-negro-adidas-mexico-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_short-negro-adidas-mexico-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_pantalon-corto-adidas-mexico-entrenamiento-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_short-adidas-mexico-entrenamiento-negro_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_pantalon-corto-color-negro-adidas-mexico-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_short-negro-adidas-mexico-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_pantalon-corto-adidas-mexico-entrenamiento-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB0924_short-adidas-mexico-entrenamiento-negro_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb0924",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas de la selección de México 2026 - negro",
+    "tagline": "Entrena con intensidad y estilo mexicano",
+    "intro": "El short adidas México 2026 de entrenamiento está diseñado para ofrecer máximo rendimiento en cada sesión. Inspirado en la equipación de la selección, combina funcionalidad y diseño para que entrenes como los profesionales.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Expulsa el sudor y mantiene la piel fresca y seca.",
+      "Tejido técnico resistente: Ideal para soportar entrenamientos intensos.",
+      "Cintura elástica con cordón: Ajuste cómodo y seguro.",
+      "Diseño oficial: Inspirado en la selección de México."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb0924"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "México",
+    "submodel": "Training",
+    "product_model": "México entrenamiento",
+    "sole_type": ""
+  }
+}

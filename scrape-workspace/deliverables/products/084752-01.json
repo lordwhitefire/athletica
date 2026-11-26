@@ -1,0 +1,113 @@
+{
+  "id": "084752-01",
+  "slug": "balon-puma-milan-culture-talla-mini-red",
+  "name": "Puma Milan Culture talla mini",
+  "model": "Milan Culture talla mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Milan Mini Soccer Ball - Red",
+    "tagline": "Bold design for true Rossoneri",
+    "intro": "Show off Milan's colors with this Puma mini ball inspired by their 25/26 kit. Ideal for technical sessions, decorating your space or taking the passion of the club everywhere. Compact, light and with an unmistakable look.",
+    "collection": "",
+    "key_benefits": [
+      "Inspired by the official 25/26 t-shirt: Red and black design with exclusive graphic pattern.",
+      "Perfect to improve your technique: Mini size ideal for control and precision training.",
+      "Easy to carry and store: Fits in any backpack or bookshelf.",
+      "Collectible accessory for fans: Take Rossonero pride with you wherever you go.",
+      "Guaranteed Puma Durability: Durable construction for frequent use."
+    ],
+    "technical_details": {
+      "range": "Puma Milan Culture talla mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e7ed019c147565d7d2b0567879b6305a43df63ff-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e7ed019c147565d7d2b0567879b6305a43df63ff-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a1ab9fc670b1b95a18099633feea1dfb95c85e6c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5a5d856bd19f12a86e1ded26a1ef4926f88647bf-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e7ed019c147565d7d2b0567879b6305a43df63ff-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a1ab9fc670b1b95a18099633feea1dfb95c85e6c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5a5d856bd19f12a86e1ded26a1ef4926f88647bf-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e7ed019c147565d7d2b0567879b6305a43df63ff-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e7ed019c147565d7d2b0567879b6305a43df63ff-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a1ab9fc670b1b95a18099633feea1dfb95c85e6c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a1ab9fc670b1b95a18099633feea1dfb95c85e6c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5a5d856bd19f12a86e1ded26a1ef4926f88647bf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5a5d856bd19f12a86e1ded26a1ef4926f88647bf-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084752-01",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Milan de talla mini - rojo",
+    "tagline": "Diseño atrevido para verdaderos rossoneri",
+    "intro": "Luce los colores del Milan con este mini balón Puma inspirado en su equipación 25/26. Ideal para sesiones técnicas, decorar tu espacio o llevar la pasión del club a todas partes. Compacto, ligero y con un look inconfundible.",
+    "collection": "",
+    "key_benefits": [
+      "Inspirado en la camiseta oficial 25/26: Diseño en rojo y negro con patrón gráfico exclusivo.",
+      "Perfecto para mejorar tu técnica: Tamaño mini ideal para entrenamientos de control y precisión.",
+      "Fácil de transportar y almacenar: Cabe en cualquier mochila o estantería.",
+      "Accesorio de colección para fans: Lleva el orgullo rossonero contigo donde vayas.",
+      "Durabilidad Puma garantizada: Fabricación resistente para uso frecuente."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084752-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Milan Culture",
+    "submodel": "",
+    "product_model": "Milan Culture talla mini",
+    "sole_type": ""
+  }
+}

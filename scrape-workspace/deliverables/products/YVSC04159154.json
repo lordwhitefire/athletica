@@ -1,0 +1,85 @@
+{
+  "id": "YVSC04159154",
+  "slug": "g-form-v2-nino-white",
+  "name": "G-Form V2 Kids",
+  "model": "V2 niño",
+  "brand": "G-Form",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol infantiles G-Form con mallas de sujeción integradas - blancas",
+    "tagline": "Protección ligera, comodidad total",
+    "intro": "G-Form V2 de niño ofrece una combinación perfecta entre seguridad, ligereza y comodidad para los más pequeños. Diseñadas para adaptarse a tu juego, estas espinilleras son ideales para jugadores que buscan rendimiento sin distracciones.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Espinillera con media integrada que se adapta perfectamente a la pierna para evitar movimientos innecesarios.",
+      "Máxima libertad: Sin sacrificar protección, permite un juego fluido y rápido.",
+      "Comodidad duradera: Materiales ligeros y transpirables para sesiones intensas.",
+      "Protección avanzada: Absorbe los impactos sin comprometer la movilidad."
+    ],
+    "technical_details": {
+      "range": "V2 niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC04159154_espinilleras-color-blanco-g-form-v2-nino_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC04159154_espinilleras-color-blanco-g-form-v2-nino_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/Y/V/YVSC04159154_espinilleras-color-blanco-g-form-v2-nino_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/yvsc04159154",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol infantiles G-Form con mallas de sujeción integradas - blancas",
+    "tagline": "Protección ligera, comodidad total",
+    "intro": "G-Form V2 de niño ofrece una combinación perfecta entre seguridad, ligereza y comodidad para los más pequeños. Diseñadas para adaptarse a tu juego, estas espinilleras son ideales para jugadores que buscan rendimiento sin distracciones.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Espinillera con media integrada que se adapta perfectamente a la pierna para evitar movimientos innecesarios.",
+      "Máxima libertad: Sin sacrificar protección, permite un juego fluido y rápido.",
+      "Comodidad duradera: Materiales ligeros y transpirables para sesiones intensas.",
+      "Protección avanzada: Absorbe los impactos sin comprometer la movilidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/yvsc04159154"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "V2",
+    "submodel": "",
+    "product_model": "V2 niño",
+    "sole_type": ""
+  }
+}

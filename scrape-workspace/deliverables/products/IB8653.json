@@ -1,0 +1,100 @@
+{
+  "id": "IB8653",
+  "slug": "mochila-adidas-sevilla-red",
+  "name": "Backpack adidas Sevilla",
+  "model": "Backpack adidas Sevilla",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deportes adidas del Sevilla - roja",
+    "tagline": "Estilo hispalense con funcionalidad premium",
+    "intro": "La mochila adidas del Sevilla F.C destaca por su diseño llamativo en rojo con detalles funcionales como el cierre enrollable, correa central y amplio espacio interior. Perfecta para entrenamientos, desplazamientos o uso diario.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Estética blanca con escudo del Sevilla en relieve.",
+      "Gran capacidad: Espacio interior amplio con cierre enrollable.",
+      "Comodidad garantizada: Correas acolchadas ajustables.",
+      "Durabilidad asegurada: Base resistente para soportar el uso diario.",
+      "Ideal para fans activos: Perfecta para deporte o vida urbana."
+    ],
+    "technical_details": {
+      "range": "adidas Sevilla",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-color-rojo-adidas-tiro_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-color-rojo-adidas-tiro_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-roja-adidas-tiro_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-adidas-tiro-color-rojo_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-adidas-tiro-roja_4_detalle-bolsillo-exrterior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-color-rojo-adidas-tiro_5_detalle-cierre.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-color-rojo-adidas-tiro_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-roja-adidas-tiro_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-adidas-tiro-color-rojo_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-adidas-tiro-roja_4_detalle-bolsillo-exrterior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB8653_mochila-color-rojo-adidas-tiro_5_detalle-cierre.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ib8653",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes adidas del Sevilla - roja",
+    "tagline": "Estilo hispalense con funcionalidad premium",
+    "intro": "La mochila adidas del Sevilla F.C destaca por su diseño llamativo en rojo con detalles funcionales como el cierre enrollable, correa central y amplio espacio interior. Perfecta para entrenamientos, desplazamientos o uso diario.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño minimalista: Estética blanca con escudo del Sevilla en relieve.",
+      "Gran capacidad: Espacio interior amplio con cierre enrollable.",
+      "Comodidad garantizada: Correas acolchadas ajustables.",
+      "Durabilidad asegurada: Base resistente para soportar el uso diario.",
+      "Ideal para fans activos: Perfecta para deporte o vida urbana."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ib8653"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack adidas Sevilla",
+    "sole_type": ""
+  }
+}

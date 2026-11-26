@@ -1,0 +1,84 @@
+{
+  "id": "GIFTCARD150",
+  "slug": "tarjeta-regalo-150-euros-futbolmania-black",
+  "name": "Tarjeta Regalo 150 euros futbolmania",
+  "model": "Tarjeta Regalo 150 euros futbolmania",
+  "brand": "",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Tarjeta Regalo de 150 euros en futbolmania",
+    "tagline": "150 euros para elegir el regalo perfecto",
+    "intro": "La Tarjeta Regalo 150 euros futbolmania permite regalar fútbol dejando que la persona que la recibe elija aquello que realmente necesita. Con un valor de 150€, puede utilizarse tanto en las tiendas físicas como en la web de futbolmania para comprar entre los productos disponibles.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad para elegir: La persona que recibe la tarjeta puede decidir en qué productos utilizar sus 150€.",
+      "Compra flexible: Puede utilizarse tanto en las tiendas físicas como en la tienda online de futbolmania.",
+      "Regalo sin equivocaciones: Evita tener que acertar con la talla, el modelo o las preferencias concretas del destinatario.",
+      "Para cualquier futbolista: Una opción práctica para regalar material de fútbol permitiendo que cada jugador encuentre lo que busca."
+    ],
+    "technical_details": {
+      "range": "Regalo 150 euros futbolmania",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/I/GIFTCARD150_tarjeta-regalo-150-euros_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/I/GIFTCARD150_tarjeta-regalo-150-euros_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/I/GIFTCARD150_tarjeta-regalo-150-euros_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/I/GIFTCARD150_tarjeta-regalo-150-euros_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/G/I/GIFTCARD150_tarjeta-regalo-150-euros_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/giftcard150",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Tarjeta Regalo de 150 euros en futbolmania",
+    "tagline": "150 euros para elegir el regalo perfecto",
+    "intro": "La Tarjeta Regalo 150 euros futbolmania permite regalar fútbol dejando que la persona que la recibe elija aquello que realmente necesita. Con un valor de 150€, puede utilizarse tanto en las tiendas físicas como en la web de futbolmania para comprar entre los productos disponibles.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad para elegir: La persona que recibe la tarjeta puede decidir en qué productos utilizar sus 150€.",
+      "Compra flexible: Puede utilizarse tanto en las tiendas físicas como en la tienda online de futbolmania.",
+      "Regalo sin equivocaciones: Evita tener que acertar con la talla, el modelo o las preferencias concretas del destinatario.",
+      "Para cualquier futbolista: Una opción práctica para regalar material de fútbol permitiendo que cada jugador encuentre lo que busca."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/giftcard150"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Tarjeta",
+    "submodel": "",
+    "product_model": "Tarjeta Regalo 150 euros futbolmania",
+    "sole_type": ""
+  }
+}

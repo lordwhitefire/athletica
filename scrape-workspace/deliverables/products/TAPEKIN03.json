@@ -1,0 +1,84 @@
+{
+  "id": "TAPEKIN03",
+  "slug": "cinta-muscular-premier-sock-kinesio-tape-pink",
+  "name": "Cinta muscular Premier Sock Kinesio Tape",
+  "model": "Cinta muscular Premier Sock Kinesio Tape",
+  "brand": "Premier Sock Tape",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Tira muscular para uso fisioterapéutico de Kinesio Tape - rosa",
+    "tagline": "Soporte muscular para acompañar cada movimiento",
+    "intro": "La cinta muscular Premier Sock Kinesio Tape está diseñada para proporcionar soporte durante la práctica deportiva y el trabajo fisioterapéutico. Su formato de 5 cm permite aplicarla sobre diferentes zonas musculares, adaptándose al movimiento durante entrenamientos y actividad física.",
+    "collection": "",
+    "key_benefits": [
+      "Soporte durante el ejercicio: Ayuda a proporcionar apoyo en las zonas musculares donde se aplica durante la actividad física.",
+      "Libertad de movimiento: Su diseño permite acompañar los movimientos del cuerpo sin recurrir a una inmovilización rígida.",
+      "Aplicación versátil: Puede utilizarse sobre diferentes grupos musculares en función de las necesidades de cada deportista.",
+      "Uso deportivo y fisioterapéutico: Una solución práctica tanto para entrenamientos como para aplicaciones de kinesiotaping."
+    ],
+    "technical_details": {
+      "range": "muscular Premier Sock Kinesio Tape",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEKIN03_I_5.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEKIN03_I_5.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEKIN03_MED1_10.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEKIN03_I_5.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEKIN03_MED1_10.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/tapekin03",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Tira muscular para uso fisioterapéutico de Kinesio Tape - rosa",
+    "tagline": "Soporte muscular para acompañar cada movimiento",
+    "intro": "La cinta muscular Premier Sock Kinesio Tape está diseñada para proporcionar soporte durante la práctica deportiva y el trabajo fisioterapéutico. Su formato de 5 cm permite aplicarla sobre diferentes zonas musculares, adaptándose al movimiento durante entrenamientos y actividad física.",
+    "collection": "",
+    "key_benefits": [
+      "Soporte durante el ejercicio: Ayuda a proporcionar apoyo en las zonas musculares donde se aplica durante la actividad física.",
+      "Libertad de movimiento: Su diseño permite acompañar los movimientos del cuerpo sin recurrir a una inmovilización rígida.",
+      "Aplicación versátil: Puede utilizarse sobre diferentes grupos musculares en función de las necesidades de cada deportista.",
+      "Uso deportivo y fisioterapéutico: Una solución práctica tanto para entrenamientos como para aplicaciones de kinesiotaping."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/tapekin03"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'sock'",
+    "root_model": "Cinta",
+    "submodel": "",
+    "product_model": "Cinta muscular Premier Sock Kinesio Tape",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "JZ9152",
+  "slug": "camiseta-adidas-real-madrid-originals-white",
+  "name": "adidas Real Madrid Originals",
+  "model": "Real Madrid Originals",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas del Real Madrid - blanca",
+    "tagline": "La esencia del Real Madrid en clave Originals",
+    "intro": "Esta camiseta adidas Originals combina la herencia del Real Madrid con un diseño limpio y ajustado pensada para quienes viven el fútbol también fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño icónico: Estética Originals inspirada en la historia del club.",
+      "Ajuste estilizado: Corte ceñido que aporta una silueta moderna.",
+      "Comodidad diaria: Tejido suave y resistente para un uso frecuente."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-color-blanco-adidas-real-madrid-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-color-blanco-adidas-real-madrid-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-blanca-adidas-real-madrid-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-adidas-real-madrid-originals-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-adidas-real-madrid-originals-blanca_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-color-blanco-adidas-real-madrid-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-blanca-adidas-real-madrid-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-adidas-real-madrid-originals-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9152_camiseta-adidas-real-madrid-originals-blanca_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9152",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Real Madrid - blanca",
+    "tagline": "La esencia del Real Madrid en clave Originals",
+    "intro": "Esta camiseta adidas Originals combina la herencia del Real Madrid con un diseño limpio y ajustado pensada para quienes viven el fútbol también fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño icónico: Estética Originals inspirada en la historia del club.",
+      "Ajuste estilizado: Corte ceñido que aporta una silueta moderna.",
+      "Comodidad diaria: Tejido suave y resistente para un uso frecuente."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9152"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Originals",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "085164-01-5",
+  "slug": "balon-puma-serie-a-26-27-cup-t-5-stellar-white",
+  "name": "Puma Serie A 26 27 Cup T.5 Stellar",
+  "model": "Serie A 26 27 Cup T.5 Stellar",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Serie A Soccer Ball 2026 2027 in Size 5 - White",
+    "tagline": "Entrena con el estilo oficial de la Serie A",
+    "intro": "The Puma Serie A 26 27 Cup T.5 Stellar ball is designed to offer excellent performance in training and amateur matches. Inspired by the official ball of the Italian Serie A, it combines resistance, good touch and great durability to withstand sessions of frequent use. Its abrasion-resistant construction ensures reliable and consistent performance every play.",
+    "collection": "",
+    "key_benefits": [
+      "Official Serie A design: Inspired by the Italian competition ball.",
+      "Alta resistencia: Materiales preparados para entrenamientos regulares.",
+      "Stable flight: Optimized construction to improve precision.",
+      "Gran durabilidad: Excelente rendimiento en uso frecuente."
+    ],
+    "technical_details": {
+      "range": "Puma Serie A 26 27 Cup T.5 Stellar",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d3bc6eaa3c2f521363803e65aa206a174be1e750-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d3bc6eaa3c2f521363803e65aa206a174be1e750-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/960fffbeb9ab674f665b89525ffdb6bf20df6e84-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6cf3fba1614e09b9ff5f07cedfe9994cc1b3664a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9ed014d52e599be51dea7035ba2443b69cd331a1-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d3bc6eaa3c2f521363803e65aa206a174be1e750-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/960fffbeb9ab674f665b89525ffdb6bf20df6e84-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6cf3fba1614e09b9ff5f07cedfe9994cc1b3664a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9ed014d52e599be51dea7035ba2443b69cd331a1-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-d3bc6eaa3c2f521363803e65aa206a174be1e750-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d3bc6eaa3c2f521363803e65aa206a174be1e750-1500x1500.jpg"
+    },
+    {
+      "_id": "image-960fffbeb9ab674f665b89525ffdb6bf20df6e84-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/960fffbeb9ab674f665b89525ffdb6bf20df6e84-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6cf3fba1614e09b9ff5f07cedfe9994cc1b3664a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6cf3fba1614e09b9ff5f07cedfe9994cc1b3664a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9ed014d52e599be51dea7035ba2443b69cd331a1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9ed014d52e599be51dea7035ba2443b69cd331a1-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085164-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Serie A 2026 2027 en talla 5 - blanco",
+    "tagline": "Entrena con el estilo oficial de la Serie A",
+    "intro": "El balón Puma Serie A 26 27 Cup T.5 Stellar está diseñado para ofrecer un excelente rendimiento en entrenamientos y partidos amateur. Inspirado en el balón oficial de la Serie A italiana, combina resistencia, buen toque y una gran durabilidad para soportar sesiones de uso frecuente. Su construcción resistente a la abrasión garantiza un comportamiento fiable y consistente en cada jugada.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Serie A: Inspirado en el balón de la competición italiana.",
+      "Alta resistencia: Materiales preparados para entrenamientos regulares.",
+      "Vuelo estable: Construcción optimizada para mejorar la precisión.",
+      "Gran durabilidad: Excelente rendimiento en uso frecuente."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085164-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Serie A",
+    "submodel": "",
+    "product_model": "Serie A 26 27 Cup T.5 Stellar",
+    "sole_type": ""
+  }
+}

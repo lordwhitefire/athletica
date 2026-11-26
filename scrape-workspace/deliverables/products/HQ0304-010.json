@@ -1,0 +1,88 @@
+{
+  "id": "HQ0304-010",
+  "slug": "nike-gk-vapor-grip3-black",
+  "name": "Nike GK Vapor Grip3",
+  "model": "GK Vapor Grip3",
+  "brand": "Nike",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero profesionales Nike corte Grip 3 - negros",
+    "tagline": "Máximo agarre para dominar cada intervención",
+    "intro": "Los guantes de portero Nike GK Vapor Grip3 están diseñados para porteros que buscan un rendimiento profesional bajo palos. Su innovador corte Grip3 aumenta la superficie de contacto con el balón al envolver el pulgar, índice y meñique, mientras que la tecnología All Conditions Control (ACC) mantiene un agarre constante tanto en seco como en mojado.",
+    "collection": "",
+    "key_benefits": [
+      "Corte Grip3: Mayor superficie de contacto para mejorar el control y la seguridad en cada blocaje.",
+      "Tecnología ACC: Mantiene un agarre fiable en condiciones secas y húmedas.",
+      "Muñequera ajustable: Proporciona un ajuste firme y personalizado.",
+      "Espuma de látex de alto rendimiento: Excelente equilibrio entre agarre, amortiguación y sensibilidad con el balón."
+    ],
+    "technical_details": {
+      "range": "GK Vapor Grip3",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-de-portero-color-negro-nike-gk-vapor-grip3_1_completa-dorso-mano-izquierda.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-de-portero-color-negro-nike-gk-vapor-grip3_1_completa-dorso-mano-izquierda.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-portero-negros-nike-gk-vapor-grip3_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-de-arquero-nike-gk-vapor-grip3-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-de-futbol-nike-gk-vapor-grip3-negros_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-de-portero-color-negro-nike-gk-vapor-grip3_1_completa-dorso-mano-izquierda.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-portero-negros-nike-gk-vapor-grip3_2_completa-palma-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-de-arquero-nike-gk-vapor-grip3-color-negro_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ0304-010_guantes-de-futbol-nike-gk-vapor-grip3-negros_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq0304-010",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero profesionales Nike corte Grip 3 - negros",
+    "tagline": "Máximo agarre para dominar cada intervención",
+    "intro": "Los guantes de portero Nike GK Vapor Grip3 están diseñados para porteros que buscan un rendimiento profesional bajo palos. Su innovador corte Grip3 aumenta la superficie de contacto con el balón al envolver el pulgar, índice y meñique, mientras que la tecnología All Conditions Control (ACC) mantiene un agarre constante tanto en seco como en mojado.",
+    "collection": "",
+    "key_benefits": [
+      "Corte Grip3: Mayor superficie de contacto para mejorar el control y la seguridad en cada blocaje.",
+      "Tecnología ACC: Mantiene un agarre fiable en condiciones secas y húmedas.",
+      "Muñequera ajustable: Proporciona un ajuste firme y personalizado.",
+      "Espuma de látex de alto rendimiento: Excelente equilibrio entre agarre, amortiguación y sensibilidad con el balón."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq0304-010"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "GK",
+    "submodel": "Vapor Grip3",
+    "product_model": "GK Vapor Grip3",
+    "sole_type": ""
+  }
+}

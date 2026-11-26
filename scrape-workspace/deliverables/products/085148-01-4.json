@@ -1,0 +1,103 @@
+{
+  "id": "085148-01-4",
+  "slug": "balon-puma-laliga-26-27-cup-t-4-stellar-white",
+  "name": "Puma LaLiga 26 27 Cup T.4 Stellar",
+  "model": "LaLiga 26 27 Cup T.4 Stellar",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Spanish League soccer ball 2026 2027 in size 4 - white",
+    "tagline": "Entrena con el estilo oficial de La Liga",
+    "intro": "The Puma La Liga 26 27 Cup T.4 Stellar ball is designed to offer excellent performance in training and amateur matches. Inspired by the official ball of the Spanish League, it combines resistance, good touch and great durability to withstand sessions of frequent use. Its abrasion-resistant construction ensures reliable and consistent performance every play.",
+    "collection": "",
+    "key_benefits": [
+      "Official La Liga design: Inspired by the Spanish competition ball.",
+      "Alta resistencia: Materiales preparados para entrenamientos regulares.",
+      "Stable flight: Optimized construction to improve precision.",
+      "Gran durabilidad: Excelente rendimiento en uso frecuente."
+    ],
+    "technical_details": {
+      "range": "Puma LaLiga 26 27 Cup T.4 Stellar",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/42cd51b789e4a23d7272321241f33874b4568471-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/42cd51b789e4a23d7272321241f33874b4568471-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4a06dec6c83099bc05ef03997749c9cad020ebfa-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f304ab0058dbc50d013c7605aee281411be4ce6a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/42cd51b789e4a23d7272321241f33874b4568471-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4a06dec6c83099bc05ef03997749c9cad020ebfa-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f304ab0058dbc50d013c7605aee281411be4ce6a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-42cd51b789e4a23d7272321241f33874b4568471-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/42cd51b789e4a23d7272321241f33874b4568471-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4a06dec6c83099bc05ef03997749c9cad020ebfa-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4a06dec6c83099bc05ef03997749c9cad020ebfa-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f304ab0058dbc50d013c7605aee281411be4ce6a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f304ab0058dbc50d013c7605aee281411be4ce6a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085148-01-4",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Liga Española 2026 2027 en talla 4 - blanco",
+    "tagline": "Entrena con el estilo oficial de La Liga",
+    "intro": "El balón Puma La Liga 26 27 Cup T.4 Stellar está diseñado para ofrecer un excelente rendimiento en entrenamientos y partidos amateur. Inspirado en el balón oficial de La Liga Española, combina resistencia, buen toque y una gran durabilidad para soportar sesiones de uso frecuente. Su construcción resistente a la abrasión garantiza un comportamiento fiable y consistente en cada jugada.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial La Liga: Inspirado en el balón de la competición española.",
+      "Alta resistencia: Materiales preparados para entrenamientos regulares.",
+      "Vuelo estable: Construcción optimizada para mejorar la precisión.",
+      "Gran durabilidad: Excelente rendimiento en uso frecuente."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085148-01-4"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "LaLiga",
+    "submodel": "",
+    "product_model": "LaLiga 26 27 Cup T.4 Stellar",
+    "sole_type": ""
+  }
+}

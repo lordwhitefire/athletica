@@ -1,0 +1,97 @@
+{
+  "id": "041952-06",
+  "slug": "puma-ultra-play-rc-blanco-rojo",
+  "name": "Puma Ultra Play RC",
+  "model": "Ultra Play RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Play RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b601d530e5ad965985ddb8ad436cb1ad3d61b4bf-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b601d530e5ad965985ddb8ad436cb1ad3d61b4bf-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3953789d30936bcb98c986a18749082adada7b70-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/205097adbc311d1e3110727bd86c1ff66162746e-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b601d530e5ad965985ddb8ad436cb1ad3d61b4bf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3953789d30936bcb98c986a18749082adada7b70-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/205097adbc311d1e3110727bd86c1ff66162746e-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b601d530e5ad965985ddb8ad436cb1ad3d61b4bf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b601d530e5ad965985ddb8ad436cb1ad3d61b4bf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3953789d30936bcb98c986a18749082adada7b70-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3953789d30936bcb98c986a18749082adada7b70-1500x1500.jpg"
+    },
+    {
+      "_id": "image-205097adbc311d1e3110727bd86c1ff66162746e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/205097adbc311d1e3110727bd86c1ff66162746e-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/041952-06",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/041952-06"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Play RC",
+    "product_model": "Ultra Play RC",
+    "sole_type": ""
+  }
+}

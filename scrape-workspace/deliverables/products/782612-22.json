@@ -1,0 +1,92 @@
+{
+  "id": "782612-22",
+  "slug": "short-puma-milan-king-black",
+  "name": "Puma Milan King",
+  "model": "Milan King",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto Puma del AC Milan - negro",
+    "tagline": "Movilidad y estilo rossonero",
+    "intro": "Pantalón corto del Milan diseñado para vestir con comodidad, ligero y con ajuste seguro para moverte libremente en cada paso.",
+    "collection": "",
+    "key_benefits": [
+      "Ligereza: Favorece la movilidad en cada acción.",
+      "Ajuste seguro: Cintura con cordón interior.",
+      "Comodidad: Tejido suave para entrenar o vestir casual."
+    ],
+    "technical_details": {
+      "range": "Puma Milan King",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782612-22_pantalon-corto-color-negro-puma-milan-king_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782612-22_pantalon-corto-color-negro-puma-milan-king_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782612-22_pantalon-corto-puma-milan-king-color-negro_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782612-22_short-negros-puma-milan-king_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782612-22_pantalon-corto-color-negro-puma-milan-king_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782612-22_pantalon-corto-puma-milan-king-color-negro_3_detalle-logotipo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782612-22_short-negros-puma-milan-king_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/782612-22",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto Puma del AC Milan - negro",
+    "tagline": "Movilidad y estilo rossonero",
+    "intro": "Pantalón corto del Milan diseñado para vestir con comodidad, ligero y con ajuste seguro para moverte libremente en cada paso.",
+    "collection": "",
+    "key_benefits": [
+      "Ligereza: Favorece la movilidad en cada acción.",
+      "Ajuste seguro: Cintura con cordón interior.",
+      "Comodidad: Tejido suave para entrenar o vestir casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/782612-22"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Milan",
+    "submodel": "King",
+    "product_model": "Milan King",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "JZ0145",
+  "slug": "sudadera-adidas-liverpool-originals-red",
+  "name": "adidas Liverpool Originals",
+  "model": "Liverpool Originals",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Liverpool Adidas Cotton Sweatshirt - Red",
+    "tagline": "A classic Originals half-zip",
+    "intro": "This adidas Liverpool Originals sweatshirt features a timeless design with a 1/4 zip, combining the club's identity with an urban and functional style.",
+    "collection": "",
+    "key_benefits": [
+      "Versatile design: Half zipper to adjust ventilation.",
+      "Natural comfort: Skin-friendly cotton fabric.",
+      "Club style: Liverpool identity integrated into a casual look."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-color-rojo-adidas-liverpool-originals_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-color-rojo-adidas-liverpool-originals_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-roja-adidas-liverpool-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-adidas-liverpool-originals-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-adidas-liverpool-originals-roja_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-color-rojo-adidas-liverpool-originals_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-roja-adidas-liverpool-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-adidas-liverpool-originals-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0145_sudadera-adidas-liverpool-originals-roja_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz0145",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de algodón adidas del Liverpool - roja",
+    "tagline": "Un clásico Originals con media cremallera",
+    "intro": "Esta sudadera adidas Liverpool Originals apuesta por un diseño atemporal con cremallera de 1/4, combinando la identidad del club con un estilo urbano y funcional.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño versátil: Media cremallera para ajustar la ventilación.",
+      "Comodidad natural: Tejido de algodón agradable al tacto.",
+      "Estilo del club: Identidad Liverpool integrada en un look casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz0145"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Liverpool Originals",
+    "submodel": "",
+    "product_model": "Liverpool Originals",
+    "sole_type": ""
+  }
+}

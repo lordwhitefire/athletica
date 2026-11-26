@@ -1,0 +1,92 @@
+{
+  "id": "KG9652",
+  "slug": "pantalon-adidas-river-plate-125-aniversario-grey",
+  "name": "adidas River Plate 125 aniversario",
+  "model": "River Plate 125 aniversario",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo adidas de River Plate Edición 125 aniversario - gris",
+    "tagline": "Elegancia y tradición para auténticos millonarios",
+    "intro": "El pantalón largo adidas de River Plate 125 aniversario combina la esencia histórica del club argentino con un estilo moderno y cómodo para el día a día. Inspirado en el legado de River Plate, este pantalón luce detalles exclusivos de la edición aniversario.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño aniversario: Detalles exclusivos por los 125 años de River Plate.",
+      "Ajuste slim: Corte entallado para un look moderno.",
+      "Tejido suave: Mezcla de algodón y poliéster para máxima comodidad.",
+      "Cintura ajustable: Cordón integrado para un ajuste personalizado."
+    ],
+    "technical_details": {
+      "range": "adidas River Plate 125 aniversario",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-largo-color-gris-adidas-river-plate-125-aniversario_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-largo-color-gris-adidas-river-plate-125-aniversario_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-chandal-gris-adidas-river-plate-125-aniversario_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-chandal-adidas-river-plate-125-aniversario-color-gris_3_detalle-lateral-y-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-largo-adidas-river-plate-125-aniversario-gris_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-largo-color-gris-adidas-river-plate-125-aniversario_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-chandal-gris-adidas-river-plate-125-aniversario_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-chandal-adidas-river-plate-125-aniversario-color-gris_3_detalle-lateral-y-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG9652_pantalon-largo-adidas-river-plate-125-aniversario-gris_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg9652",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas de River Plate Edición 125 aniversario - gris",
+    "tagline": "Elegancia y tradición para auténticos millonarios",
+    "intro": "El pantalón largo adidas de River Plate 125 aniversario combina la esencia histórica del club argentino con un estilo moderno y cómodo para el día a día. Inspirado en el legado de River Plate, este pantalón luce detalles exclusivos de la edición aniversario.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño aniversario: Detalles exclusivos por los 125 años de River Plate.",
+      "Ajuste slim: Corte entallado para un look moderno.",
+      "Tejido suave: Mezcla de algodón y poliéster para máxima comodidad.",
+      "Cintura ajustable: Cordón integrado para un ajuste personalizado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg9652"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "River",
+    "submodel": "",
+    "product_model": "River Plate 125 aniversario",
+    "sole_type": ""
+  }
+}

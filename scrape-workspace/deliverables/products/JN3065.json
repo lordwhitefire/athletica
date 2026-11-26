@@ -1,0 +1,96 @@
+{
+  "id": "JN3065",
+  "slug": "polo-adidas-real-madrid-icon-white",
+  "name": "Polo adidas Real Madrid Icon",
+  "model": "Polo adidas Real Madrid Icon",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas polo - white",
+    "tagline": "Sporty elegance in every detail",
+    "intro": "The adidas Icon Real Madrid polo combines the classic style of a polo with the passion for football. Ideal for informal looks that don't give up the coat.",
+    "collection": "",
+    "key_benefits": [
+      "Sophisticated cut: Long-sleeved polo shirt with elegant collar.",
+      "White identity: Real Madrid shield embroidered on the chest.",
+      "Premium versatility: Ideal for work, leisure or stands.",
+      "Effortless style: Perfect combination with jeans or technical pants."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_polo-color-blanco-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_polo-color-blanco-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_niqui-blanca-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_polo-adidas-real-madrid-icon-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_niqui-adidas-real-madrid-icon-blanca_4_detalle-autenticidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_polo-color-blanco-adidas-real-madrid-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_niqui-blanca-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_polo-adidas-real-madrid-icon-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3065_niqui-adidas-real-madrid-icon-blanca_4_detalle-autenticidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn3065",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Polo adidas del Real Madrid - blanco",
+    "tagline": "Elegancia deportiva en cada detalle",
+    "intro": "El polo adidas Icon Real Madrid combina el estilo clásico de un polo con la pasión por el fútbol. Ideal para looks informales que no renuncian al escudo.",
+    "collection": "",
+    "key_benefits": [
+      "Corte sofisticado: Polo de manga larga con cuello elegante.",
+      "Identidad blanca: Escudo del Real Madrid bordado al pecho.",
+      "Versatilidad premium: Ideal para trabajo, ocio o grada.",
+      "Estilo sin esfuerzo: Combinación perfecta con jeans o pantalón técnico."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn3065"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo adidas Real Madrid Icon",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "100561213-A",
+  "slug": "camiseta-uhlsport-tower-gk-black",
+  "name": "Uhlsport Tower GK",
+  "model": "Tower GK",
+  "brand": "Uhlsport",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport Tower GK",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/058f59177e59bdad72618056569a8754d8210424-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/058f59177e59bdad72618056569a8754d8210424-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5c0fecab7bddaccd660554ebe00f38d8f4811e79-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6a0dfe3c143677a736baa2483f789a13e9de2c1a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/96b8c05cf408360551ce830a1393f1e24dfc275a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/058f59177e59bdad72618056569a8754d8210424-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5c0fecab7bddaccd660554ebe00f38d8f4811e79-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6a0dfe3c143677a736baa2483f789a13e9de2c1a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/96b8c05cf408360551ce830a1393f1e24dfc275a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-058f59177e59bdad72618056569a8754d8210424-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/058f59177e59bdad72618056569a8754d8210424-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5c0fecab7bddaccd660554ebe00f38d8f4811e79-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5c0fecab7bddaccd660554ebe00f38d8f4811e79-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6a0dfe3c143677a736baa2483f789a13e9de2c1a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6a0dfe3c143677a736baa2483f789a13e9de2c1a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-96b8c05cf408360551ce830a1393f1e24dfc275a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/96b8c05cf408360551ce830a1393f1e24dfc275a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100561213-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100561213-a"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Tower",
+    "submodel": "",
+    "product_model": "Tower GK",
+    "sole_type": ""
+  }
+}

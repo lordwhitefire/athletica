@@ -1,0 +1,105 @@
+{
+  "id": "101134301G",
+  "slug": "uhlsport-soft-resist-hn-flex-frame-orange",
+  "name": "Uhlsport Soft Resist+ HN Flex Frame",
+  "model": "Soft Resist+ HN Flex Frame",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Soft Resist+ HN Flex Frame",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/1d1c82dddd9de963cb5f94ab8d0ac5a093a2079d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/1d1c82dddd9de963cb5f94ab8d0ac5a093a2079d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/12608dfc7ecb13db0e8be08602538db8d2164d00-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/11bf9a18ee88f7e9a7991b2305023444e9762ba0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/281550533501c84681932fe70fb91fd2126cd95f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/616d1cbc682fda920373d904445c3ef6f9b0cf2d-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1d1c82dddd9de963cb5f94ab8d0ac5a093a2079d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/12608dfc7ecb13db0e8be08602538db8d2164d00-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/11bf9a18ee88f7e9a7991b2305023444e9762ba0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/281550533501c84681932fe70fb91fd2126cd95f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/616d1cbc682fda920373d904445c3ef6f9b0cf2d-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-1d1c82dddd9de963cb5f94ab8d0ac5a093a2079d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1d1c82dddd9de963cb5f94ab8d0ac5a093a2079d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-12608dfc7ecb13db0e8be08602538db8d2164d00-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/12608dfc7ecb13db0e8be08602538db8d2164d00-1500x1500.jpg"
+    },
+    {
+      "_id": "image-11bf9a18ee88f7e9a7991b2305023444e9762ba0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/11bf9a18ee88f7e9a7991b2305023444e9762ba0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-281550533501c84681932fe70fb91fd2126cd95f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/281550533501c84681932fe70fb91fd2126cd95f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-616d1cbc682fda920373d904445c3ef6f9b0cf2d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/616d1cbc682fda920373d904445c3ef6f9b0cf2d-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101134301g",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101134301g"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Soft",
+    "submodel": "",
+    "product_model": "Soft Resist+ HN Flex Frame",
+    "sole_type": ""
+  }
+}

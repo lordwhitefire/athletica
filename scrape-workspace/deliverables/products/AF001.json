@@ -1,0 +1,84 @@
+{
+  "id": "AF001",
+  "slug": "carnet-futbolmaniaco-black",
+  "name": "Carnet Futbolmaniaco",
+  "model": "Carnet Futbolmaniaco",
+  "brand": "",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Carnet de socio en futbolmania - negro",
+    "tagline": "Ventajas especiales para disfrutar aún más del fútbol",
+    "intro": "El Carnet Futbolmaniaco es el carnet de socio de futbolmania, pensado para quienes quieren acceder a precios especiales en sus compras de material de fútbol. Puede utilizarse tanto en las tiendas físicas como en la web de futbolmania, ofreciendo ventajas al comprar en cualquiera de los dos canales.",
+    "collection": "",
+    "key_benefits": [
+      "Precios especiales: Permite disfrutar de condiciones especiales para socios en productos y compras aplicables.",
+      "Uso online y en tienda: Sus ventajas pueden aprovecharse tanto en la web como en las tiendas físicas de futbolmania.",
+      "Más ventajas al comprar: Una opción pensada para clientes habituales que quieren beneficiarse de las condiciones asociadas al carnet.",
+      "Experiencia de socio: Identifica al usuario como miembro Futbolmaniaco para acceder a los beneficios disponibles."
+    ],
+    "technical_details": {
+      "range": "Futbolmaniaco",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/F/AF001_Carnet-Futbolmaniaco-de-Fidelizacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/F/AF001_Carnet-Futbolmaniaco-de-Fidelizacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/F/AF001_Carnet-de-Fidelizacion-Futbolmaniaco_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/F/AF001_Carnet-Futbolmaniaco-de-Fidelizacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/A/F/AF001_Carnet-de-Fidelizacion-Futbolmaniaco_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/af001",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Carnet de socio en futbolmania - negro",
+    "tagline": "Ventajas especiales para disfrutar aún más del fútbol",
+    "intro": "El Carnet Futbolmaniaco es el carnet de socio de futbolmania, pensado para quienes quieren acceder a precios especiales en sus compras de material de fútbol. Puede utilizarse tanto en las tiendas físicas como en la web de futbolmania, ofreciendo ventajas al comprar en cualquiera de los dos canales.",
+    "collection": "",
+    "key_benefits": [
+      "Precios especiales: Permite disfrutar de condiciones especiales para socios en productos y compras aplicables.",
+      "Uso online y en tienda: Sus ventajas pueden aprovecharse tanto en la web como en las tiendas físicas de futbolmania.",
+      "Más ventajas al comprar: Una opción pensada para clientes habituales que quieren beneficiarse de las condiciones asociadas al carnet.",
+      "Experiencia de socio: Identifica al usuario como miembro Futbolmaniaco para acceder a los beneficios disponibles."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/af001"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Carnet",
+    "submodel": "",
+    "product_model": "Carnet Futbolmaniaco",
+    "sole_type": ""
+  }
+}

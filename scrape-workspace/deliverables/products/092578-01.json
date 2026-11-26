@@ -1,0 +1,101 @@
+{
+  "id": "092578-01",
+  "slug": "mochila-puma-laliga-black",
+  "name": "Backpack Puma LaLiga",
+  "model": "Backpack Puma LaLiga",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack (47.5 x 28 x 20 cm) - black",
+    "tagline": "Passion for La Liga, wherever you go",
+    "intro": "This Puma La Liga backpack combines functionality and style with a design inspired by the top Spanish competition. Equipped with everything you need for your daily life or your trips to the countryside.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Inspired by La Liga with the distinctive colors and shield",
+      "Funcionalidad: Compartimento principal con cremallera y bolsillos laterales de malla",
+      "Comodidad diaria: Tirantes acolchados y ajustables",
+      "Estilo Puma: Logo PUMA x La Liga en la parte frontal"
+    ],
+    "technical_details": {
+      "range": "Puma LaLiga",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/780c2e0c0632efbf17d3825a2eacf1e1f1791cc5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/780c2e0c0632efbf17d3825a2eacf1e1f1791cc5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bc45a0c2e229974ab69cc7d932d76507c3d9b6e4-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/780c2e0c0632efbf17d3825a2eacf1e1f1791cc5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bc45a0c2e229974ab69cc7d932d76507c3d9b6e4-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-780c2e0c0632efbf17d3825a2eacf1e1f1791cc5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/780c2e0c0632efbf17d3825a2eacf1e1f1791cc5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-bc45a0c2e229974ab69cc7d932d76507c3d9b6e4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bc45a0c2e229974ab69cc7d932d76507c3d9b6e4-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/092578-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (47,5 x 28 x 20 cm) - negra",
+    "tagline": "Pasión por La Liga, vayas donde vayas",
+    "intro": "Esta mochila Puma La Liga combina funcionalidad y estilo con un diseño inspirado en la máxima competición española. Equipada con todo lo necesario para tu día a día o tus desplazamientos al campo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Inspirado en La Liga con los colores y escudo distintivos",
+      "Funcionalidad: Compartimento principal con cremallera y bolsillos laterales de malla",
+      "Comodidad diaria: Tirantes acolchados y ajustables",
+      "Estilo Puma: Logo PUMA x La Liga en la parte frontal"
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/092578-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma LaLiga",
+    "sole_type": ""
+  }
+}

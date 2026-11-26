@@ -1,0 +1,109 @@
+{
+  "id": "084721-01",
+  "slug": "balon-puma-orbita-pl-brilliance-25-26-talla-mini-white",
+  "name": "Puma Orbita PL Brilliance 25 26 talla mini",
+  "model": "Orbita PL Brilliance 25 26 talla mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League Soccer Ball 2025 2026 Mini Size - White",
+    "tagline": "Perfect your technique with Premier style",
+    "intro": "The Puma Orbita PL Brilliance mini size ball is the ideal choice for technical training and precision games. Its Premier League-inspired design brings a professional touch to even the most casual sessions.",
+    "collection": "",
+    "key_benefits": [
+      "Official design: Authentic 2025/2026 Premier League graphics.",
+      "Optimized control: Perfect size to train precision and touch.",
+      "Alta resistencia: Material duradero para un uso intensivo.",
+      "Light and manageable: Ideal for children and specific technical sessions.",
+      "Total versatility: Useful both indoors and outdoors."
+    ],
+    "technical_details": {
+      "range": "Puma Orbita PL Brilliance 25 26 talla mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/1eace10288ab4219a918c5e8074c58d974a478e9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/1eace10288ab4219a918c5e8074c58d974a478e9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a0fdd66783f66259a883bf2567ce33e8dd4520f5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c199e7070058b7dac75eec5d06c3ce2779a5ffef-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1eace10288ab4219a918c5e8074c58d974a478e9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a0fdd66783f66259a883bf2567ce33e8dd4520f5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c199e7070058b7dac75eec5d06c3ce2779a5ffef-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-1eace10288ab4219a918c5e8074c58d974a478e9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1eace10288ab4219a918c5e8074c58d974a478e9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a0fdd66783f66259a883bf2567ce33e8dd4520f5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a0fdd66783f66259a883bf2567ce33e8dd4520f5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c199e7070058b7dac75eec5d06c3ce2779a5ffef-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c199e7070058b7dac75eec5d06c3ce2779a5ffef-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084721-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 talla mini - blanco",
+    "tagline": "Perfecciona tu técnica con estilo Premier",
+    "intro": "El balón Puma Orbita PL Brilliance talla mini es la elección ideal para entrenamientos técnicos y juegos de precisión. Su diseño inspirado en la Premier League aporta un toque profesional incluso a las sesiones más informales.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Gráficos auténticos de la Premier League 2025/2026.",
+      "Control optimizado: Tamaño perfecto para entrenar precisión y toque.",
+      "Alta resistencia: Material duradero para un uso intensivo.",
+      "Ligero y manejable: Ideal para niños y sesiones técnicas específicas.",
+      "Versatilidad total: Útil tanto en interior como en exterior."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084721-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita PL Brilliance 25 26 talla mini",
+    "sole_type": ""
+  }
+}

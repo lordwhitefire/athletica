@@ -1,0 +1,97 @@
+{
+  "id": "100130801",
+  "slug": "spray-uhlsport-eco-wash-200-ml-white",
+  "name": "Spray Uhlsport Eco Wash 200 ml",
+  "model": "Spray Uhlsport Eco Wash 200 ml",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport goalkeeper gloves latex cleaning spray 200 ml - white",
+    "tagline": "Cleaning and care to prolong your gloves",
+    "intro": "Uhlsport Eco Wash spray 200 ml is specifically developed to clean and care for goalkeeper gloves after training and matches. Its ECO WASH formula eliminates dirt and residue accumulated in the latex, helping to preserve the properties of the palm and keeping the gloves ready for their next use.",
+    "collection": "",
+    "key_benefits": [
+      "Deep cleaning: Helps remove dirt and debris accumulated in the pores of the latex without damaging the material.",
+      "Longer-lasting grip: Keeping your palm clean helps preserve the gloves' natural grip properties over time.",
+      "Longer useful life: Regular use helps take care of the latex and prolong the performance of the gloves.",
+      "Simple care: Its format facilitates quick and effective cleaning after each training session or match."
+    ],
+    "technical_details": {
+      "range": "Uhlsport Eco Wash 200 ml",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/202fbe363ff5072616cb1261b0ef29db8b704839-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/202fbe363ff5072616cb1261b0ef29db8b704839-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/932af63a974b1514b4102f61200949ad53526a2b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/202fbe363ff5072616cb1261b0ef29db8b704839-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/932af63a974b1514b4102f61200949ad53526a2b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-202fbe363ff5072616cb1261b0ef29db8b704839-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/202fbe363ff5072616cb1261b0ef29db8b704839-1500x1500.jpg"
+    },
+    {
+      "_id": "image-932af63a974b1514b4102f61200949ad53526a2b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/932af63a974b1514b4102f61200949ad53526a2b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100130801",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Spray limpieza del látex de guantes de portero Uhlsport de 200 ml - blanco",
+    "tagline": "Limpieza y cuidado para prolongar tus guantes",
+    "intro": "El spray Uhlsport Eco Wash 200 ml está desarrollado específicamente para limpiar y cuidar los guantes de portero después de entrenamientos y partidos. Su fórmula ECO WASH elimina la suciedad y los residuos acumulados en el látex, ayudando a conservar las propiedades de la palma y mantener los guantes preparados para su próximo uso.",
+    "collection": "",
+    "key_benefits": [
+      "Limpieza profunda: Ayuda a eliminar la suciedad y los residuos acumulados en los poros del látex sin dañar el material.",
+      "Agarre más duradero: Mantener la palma limpia contribuye a conservar las propiedades naturales de agarre de los guantes con el paso del tiempo.",
+      "Mayor vida útil: Su uso regular ayuda a cuidar el látex y prolongar el rendimiento de los guantes.",
+      "Cuidado sencillo: Su formato facilita una limpieza rápida y eficaz después de cada sesión de entrenamiento o partido."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100130801"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Spray",
+    "submodel": "",
+    "product_model": "Spray Uhlsport Eco Wash 200 ml",
+    "sole_type": ""
+  }
+}

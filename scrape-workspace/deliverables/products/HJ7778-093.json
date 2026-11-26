@@ -1,0 +1,100 @@
+{
+  "id": "HJ7778-093",
+  "slug": "sudadera-nike-inter-entrenamiento-dri-fit-strike-grey",
+  "name": "Nike Inter Training Dri-Fit Strike",
+  "model": "Inter entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento Nike del Inter de Milán - gris",
+    "tagline": "Rinde al máximo con estilo",
+    "intro": "La sudadera de entrenamiento Nike Inter Strike combina un diseño ajustado con tecnología Dri-FIT que mantiene la piel seca. Su ajuste entallado y materiales flexibles la convierten en la compañera perfecta para tus sesiones más intensas. Diseñada para moverse contigo.",
+    "collection": "",
+    "key_benefits": [
+      "Control de la humedad: Tecnología Dri-FIT que aleja el sudor.",
+      "Libertad total: Tejido elástico que acompaña tus movimientos.",
+      "Diseño funcional: Cremallera media para ventilación ajustable.",
+      "Ajuste atlético: Corte ceñido para máxima agilidad.",
+      "Identidad de club: Escudo oficial del Inter en el pecho."
+    ],
+    "technical_details": {
+      "range": "Nike Inter entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7778-093_sudadera-color-gris-nike-inter-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7778-093_sudadera-color-gris-nike-inter-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7778-093_sudadera-gris-nike-inter-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7778-093_sudadera-nike-inter-entrenamiento-dri-fit-strike-color-gris_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7778-093_sudadera-color-gris-nike-inter-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7778-093_sudadera-gris-nike-inter-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ7778-093_sudadera-nike-inter-entrenamiento-dri-fit-strike-color-gris_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj7778-093",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de entrenamiento Nike del Inter de Milán - gris",
+    "tagline": "Rinde al máximo con estilo",
+    "intro": "La sudadera de entrenamiento Nike Inter Strike combina un diseño ajustado con tecnología Dri-FIT que mantiene la piel seca. Su ajuste entallado y materiales flexibles la convierten en la compañera perfecta para tus sesiones más intensas. Diseñada para moverse contigo.",
+    "collection": "",
+    "key_benefits": [
+      "Control de la humedad: Tecnología Dri-FIT que aleja el sudor.",
+      "Libertad total: Tejido elástico que acompaña tus movimientos.",
+      "Diseño funcional: Cremallera media para ventilación ajustable.",
+      "Ajuste atlético: Corte ceñido para máxima agilidad.",
+      "Identidad de club: Escudo oficial del Inter en el pecho."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj7778-093"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Inter Training",
+    "submodel": "",
+    "product_model": "Inter entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

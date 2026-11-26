@@ -1,0 +1,92 @@
+{
+  "id": "100694802-A",
+  "slug": "tobillera-compresiva-uhlsport-black",
+  "name": "Tobillera compresiva Uhlsport",
+  "model": "Tobillera compresiva Uhlsport",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport football compression ankle brace - black",
+    "tagline": "Estabilidad y confianza en cada paso",
+    "intro": "The Uhlsport Compression Ankle Brace provides lightweight, flexible support that reinforces the joint without restricting movement. Perfect for soccer players looking for prevention and support during sporting activity.",
+    "collection": "",
+    "key_benefits": [
+      "Light compression: Improves circulation and joint stability.",
+      "Anatomical fit: Adapts perfectly to the shape of the ankle.",
+      "Injury prevention: Provides safety without limiting mobility.",
+      "Functional design: Breathable fabric that maintains comfort throughout the game.",
+      "Versatility: Suitable for training, matches or recovery."
+    ],
+    "technical_details": {
+      "range": "compresiva Uhlsport",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/14ec13623ed36c3956eff04ed925d6ea093b3c83-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/14ec13623ed36c3956eff04ed925d6ea093b3c83-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/14ec13623ed36c3956eff04ed925d6ea093b3c83-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-14ec13623ed36c3956eff04ed925d6ea093b3c83-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/14ec13623ed36c3956eff04ed925d6ea093b3c83-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100694802-a",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "Tobillera compresiva para fútbol Uhlsport - negra",
+    "tagline": "Estabilidad y confianza en cada paso",
+    "intro": "La tobillera compresiva Uhlsport proporciona una sujeción ligera y flexible que refuerza la articulación sin restringir el movimiento. Perfecta para futbolistas que buscan prevención y soporte durante la actividad deportiva.",
+    "collection": "",
+    "key_benefits": [
+      "Compresión ligera: Mejora la circulación y la estabilidad articular.",
+      "Ajuste anatómico: Se adapta perfectamente a la forma del tobillo.",
+      "Prevención de lesiones: Aporta seguridad sin limitar la movilidad.",
+      "Diseño funcional: Tejido transpirable que mantiene la comodidad durante todo el partido.",
+      "Versatilidad: Apta para entrenamientos, partidos o recuperación."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100694802-a"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Tobillera",
+    "submodel": "",
+    "product_model": "Tobillera compresiva Uhlsport",
+    "sole_type": ""
+  }
+}

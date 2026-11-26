@@ -1,0 +1,109 @@
+{
+  "id": "042081-01",
+  "slug": "puma-ultra-ultimate-hybrid-blue",
+  "name": "Puma Ultra Ultimate Hybrid",
+  "model": "Ultra Ultimate Hybrid",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma professional goalkeeper gloves hybrid cut - blue",
+    "tagline": "Absolute Control for Elite Goalkeepers",
+    "intro": "PUMA ULTRA ULTIMATE HYBRID allows you to dominate each play with precision. Thanks to its mixed cut and professional materials, it offers you outstanding grip, ergonomic fit and immediate response to any shot.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Extreme grip: Professional latex to catch every ball.",
+      "Anatomical fit: Fits the hand like a second skin.",
+      "Hybrid design: Combines control and contact surface.",
+      "Maximum performance: Designed for the soccer elite."
+    ],
+    "technical_details": {
+      "range": "Ultra Ultimate Hybrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e9bd4e91706c95e279cb39dff0d8024fe5f9ceb7-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e9bd4e91706c95e279cb39dff0d8024fe5f9ceb7-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/76a009f833bb88087020f03faa72167e55f0a84b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d71d0bd3eac0f010a2abf0066e425a41438ee0bf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cd152938f3d2b786a5aa309a12d4520a7416a433-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e9bd4e91706c95e279cb39dff0d8024fe5f9ceb7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/76a009f833bb88087020f03faa72167e55f0a84b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d71d0bd3eac0f010a2abf0066e425a41438ee0bf-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cd152938f3d2b786a5aa309a12d4520a7416a433-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e9bd4e91706c95e279cb39dff0d8024fe5f9ceb7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e9bd4e91706c95e279cb39dff0d8024fe5f9ceb7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-76a009f833bb88087020f03faa72167e55f0a84b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/76a009f833bb88087020f03faa72167e55f0a84b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d71d0bd3eac0f010a2abf0066e425a41438ee0bf-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d71d0bd3eac0f010a2abf0066e425a41438ee0bf-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cd152938f3d2b786a5aa309a12d4520a7416a433-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cd152938f3d2b786a5aa309a12d4520a7416a433-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042081-01",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero profesionales Puma corte híbrido - azules",
+    "tagline": "Control Absoluto para Porteros de Élite",
+    "intro": "PUMA ULTRA ULTIMATE HYBRID te permite dominar cada jugada con precisión. Gracias a su corte mixto y materiales profesionales, te ofrece un agarre sobresaliente, ajuste ergonómico y respuesta inmediata ante cualquier disparo.",
+    "collection": "UNTAMED PACK",
+    "key_benefits": [
+      "Agarre extremo: Látex profesional para atrapar cada balón.",
+      "Ajuste anatómico: Se adapta a la mano como una segunda piel.",
+      "Diseño híbrido: Combina control y superficie de contacto.",
+      "Máximo rendimiento: Diseñado para la élite del fútbol."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042081-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Ultimate Hybrid",
+    "product_model": "Ultra Ultimate Hybrid",
+    "sole_type": ""
+  }
+}

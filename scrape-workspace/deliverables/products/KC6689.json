@@ -1,0 +1,96 @@
+{
+  "id": "KC6689",
+  "slug": "mochila-adidas-alemania-black",
+  "name": "Backpack adidas Alemania",
+  "model": "Backpack adidas Alemania",
+  "brand": "adidas",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de deporte adidas de la selección alemana 2026 (50 x 31 cm) - negra",
+    "tagline": "La mochila oficial de tus jornadas futboleras",
+    "intro": "Diseñada para acompañarte en entrenamientos, partidos o en el día a día, esta mochila adidas de Alemania 2026 combina funcionalidad y estilo con el escudo oficial del equipo. Ideal para los fans que quieren llevar su pasión a todas partes.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño robusto: Construcción resistente y duradera para el uso diario.",
+      "Gran capacidad: Compartimento principal espacioso y bolsillos laterales.",
+      "Inspiración futbolera: Escudo oficial de la selección alemana y detalles adidas."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-color-negro-adidas-alemania_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-color-negro-adidas-alemania_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-negra-adidas-alemania_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-adidas-alemania-color-negro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-adidas-alemania-negra_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-color-negro-adidas-alemania_5_detalle-asas.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-color-negro-adidas-alemania_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-negra-adidas-alemania_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-adidas-alemania-color-negro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-adidas-alemania-negra_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC6689_mochila-color-negro-adidas-alemania_5_detalle-asas.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/kc6689",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deporte adidas de la selección alemana 2026 (50 x 31 cm) - negra",
+    "tagline": "La mochila oficial de tus jornadas futboleras",
+    "intro": "Diseñada para acompañarte en entrenamientos, partidos o en el día a día, esta mochila adidas de Alemania 2026 combina funcionalidad y estilo con el escudo oficial del equipo. Ideal para los fans que quieren llevar su pasión a todas partes.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño robusto: Construcción resistente y duradera para el uso diario.",
+      "Gran capacidad: Compartimento principal espacioso y bolsillos laterales.",
+      "Inspiración futbolera: Escudo oficial de la selección alemana y detalles adidas."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/kc6689"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack adidas Alemania",
+    "sole_type": ""
+  }
+}

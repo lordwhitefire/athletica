@@ -1,0 +1,109 @@
+{
+  "id": "084717-01-4",
+  "slug": "balon-puma-orbita-pl-brilliance-play-25-26-talla-4-white",
+  "name": "Puma Orbita PL Brilliance Play 25 26 talla 4",
+  "model": "Orbita PL Brilliance Play 25 26 talla 4",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League Soccer Ball 2025 2026 Size 4 - White",
+    "tagline": "Prepared for every workout",
+    "intro": "The Puma Orbita PL Brilliance Play size 4 ball combines a design inspired by the Premier League with performance ideal for young players. Perfect for perfecting technique in each training session.",
+    "collection": "",
+    "key_benefits": [
+      "Youth size: Ideal for soccer players between 8 and 12 years old.",
+      "Attractive design: Inspired by the aesthetics of the Premier League.",
+      "Control mejorado: Superficie con textura que mejora el contacto con el pie.",
+      "Durabilidad optimizada: Estructura pensada para soportar un uso intensivo.",
+      "Constant performance: Good response on natural or artificial grass."
+    ],
+    "technical_details": {
+      "range": "Puma Orbita PL Brilliance Play 25 26 talla 4",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/c451c0a9c5efe02e755c054503ab3e4299fe903a-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/c451c0a9c5efe02e755c054503ab3e4299fe903a-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2fa17bf78e6ee73b181bc5698d2cb975b657d5b7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3628e93fade9ad987948177f82362852cb74e037-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c451c0a9c5efe02e755c054503ab3e4299fe903a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2fa17bf78e6ee73b181bc5698d2cb975b657d5b7-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/3628e93fade9ad987948177f82362852cb74e037-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-c451c0a9c5efe02e755c054503ab3e4299fe903a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c451c0a9c5efe02e755c054503ab3e4299fe903a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2fa17bf78e6ee73b181bc5698d2cb975b657d5b7-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2fa17bf78e6ee73b181bc5698d2cb975b657d5b7-1500x1500.jpg"
+    },
+    {
+      "_id": "image-3628e93fade9ad987948177f82362852cb74e037-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3628e93fade9ad987948177f82362852cb74e037-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084717-01-4",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 talla 4 - blanco",
+    "tagline": "Preparado para cada entrenamiento",
+    "intro": "El balón Puma Orbita PL Brilliance Play talla 4 combina un diseño inspirado en la Premier League con un rendimiento ideal para jóvenes jugadores. Perfecto para perfeccionar la técnica en cada sesión de entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Tamaño juvenil: Ideal para futbolistas entre 8 y 12 años.",
+      "Diseño atractivo: Inspirado en la estética de la Premier League.",
+      "Control mejorado: Superficie con textura que mejora el contacto con el pie.",
+      "Durabilidad optimizada: Estructura pensada para soportar un uso intensivo.",
+      "Rendimiento constante: Buena respuesta en césped natural o artificial."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084717-01-4"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita PL Brilliance Play 25 26 talla 4",
+    "sole_type": ""
+  }
+}

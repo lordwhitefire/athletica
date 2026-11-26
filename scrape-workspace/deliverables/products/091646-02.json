@@ -1,0 +1,111 @@
+{
+  "id": "091646-02",
+  "slug": "mochila-de-cuerdas-puma-milan-red",
+  "name": "Backpack de cuerdas Puma Milan",
+  "model": "Backpack de cuerdas Puma Milan",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Borussia Dortmund Puma Drawstring Backpack - Yellow",
+    "tagline": "Design with identity and practicality",
+    "intro": "The Puma Borussia Dortmund drawstring backpack is more than a bag: it's an extension of your football style. Thanks to its lightweight design, resistant materials and ideal capacity, it accompanies you everywhere effortlessly. Ideal for training, matches or quick getaways. A functional accessory with a sporty seal.",
+    "collection": "",
+    "key_benefits": [
+      "Light and comfortable: Transport your objects without feeling additional burden.",
+      "Sports design: Soccer aesthetics that make a difference anywhere.",
+      "Material resistente: Preparado para el uso diario intensivo.",
+      "Versatilidad total: Ideal para entrenamientos, gimnasio o uso urbano."
+    ],
+    "technical_details": {
+      "range": "de cuerdas Puma Milan",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/60780e4bde74a98f3f6295ccf14f45b14900e272-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/60780e4bde74a98f3f6295ccf14f45b14900e272-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/afaaeeb8fdc1704d95fd459356254a9c1fd4d00e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0dedebc273726f127dad71523622a271e0f156a3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/60780e4bde74a98f3f6295ccf14f45b14900e272-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/afaaeeb8fdc1704d95fd459356254a9c1fd4d00e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0dedebc273726f127dad71523622a271e0f156a3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-60780e4bde74a98f3f6295ccf14f45b14900e272-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/60780e4bde74a98f3f6295ccf14f45b14900e272-1500x1500.jpg"
+    },
+    {
+      "_id": "image-afaaeeb8fdc1704d95fd459356254a9c1fd4d00e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/afaaeeb8fdc1704d95fd459356254a9c1fd4d00e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0dedebc273726f127dad71523622a271e0f156a3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0dedebc273726f127dad71523622a271e0f156a3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091646-02",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de cuerdas Puma del Borussia Dortmund - amarilla",
+    "tagline": "Diseño con identidad y practicidad",
+    "intro": "La mochila de cuerdas Puma Borussia Dortmund es más que una bolsa: es una extensión de tu estilo futbolero. Gracias a su diseño ligero, materiales resistentes y capacidad ideal, te acompaña a todos lados sin esfuerzo. Ideal para entrenamientos, partidos o escapadas rápidas. Un accesorio funcional con sello deportivo.",
+    "collection": "",
+    "key_benefits": [
+      "Ligera y cómoda: Transporta tus objetos sin sentir carga adicional.",
+      "Diseño deportivo: Estética futbolera que marca diferencia en cualquier lugar.",
+      "Material resistente: Preparado para el uso diario intensivo.",
+      "Versatilidad total: Ideal para entrenamientos, gimnasio o uso urbano."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/091646-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Puma Milan",
+    "sole_type": ""
+  }
+}

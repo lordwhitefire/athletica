@@ -1,0 +1,98 @@
+{
+  "id": "783237-01",
+  "slug": "camiseta-puma-islandia-26-blue",
+  "name": "Puma Islandia 26",
+  "model": "Islandia 26",
+  "brand": "Puma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de la primera equipación Puma de Islandia 2026 - azul marino",
+    "tagline": "Islandia 2026: la camiseta que late con el Ártico",
+    "intro": "La camiseta local de Islandia para 2026 rinde homenaje a los paisajes helados y al fútbol valiente del país nórdico. Una prenda que refleja la pasión de una nación pequeña con corazón gigante.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración ártica: Diseño gráfico que evoca los glaciares y volcanes islandeses.",
+      "Comodidad térmica: Tejido técnico que mantiene una temperatura corporal óptima.",
+      "Diseño exclusivo: Corte moderno con detalles que distinguen a Islandia del resto del mundo."
+    ],
+    "technical_details": {
+      "range": "Puma Islandia 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-color-azul-puma-islandia-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-color-azul-puma-islandia-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-azul-marino-puma-islandia-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-puma-islandia-26-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-puma-islandia-26-azul-marino_4_detalle-autenticidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-color-azul-puma-islandia-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-azul-marino-puma-islandia-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-puma-islandia-26-color-azul_3_detalle-cuello-y-pecho-con-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783237-01_camiseta-puma-islandia-26-azul-marino_4_detalle-autenticidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/783237-01",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de la primera equipación Puma de Islandia 2026 - azul marino",
+    "tagline": "Islandia 2026: la camiseta que late con el Ártico",
+    "intro": "La camiseta local de Islandia para 2026 rinde homenaje a los paisajes helados y al fútbol valiente del país nórdico. Una prenda que refleja la pasión de una nación pequeña con corazón gigante.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración ártica: Diseño gráfico que evoca los glaciares y volcanes islandeses.",
+      "Comodidad térmica: Tejido técnico que mantiene una temperatura corporal óptima.",
+      "Diseño exclusivo: Corte moderno con detalles que distinguen a Islandia del resto del mundo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/783237-01"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Islandia",
+    "submodel": "",
+    "product_model": "Islandia 26",
+    "sole_type": ""
+  }
+}

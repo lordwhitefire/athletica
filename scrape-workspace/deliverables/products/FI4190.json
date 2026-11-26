@@ -1,0 +1,90 @@
+{
+  "id": "FI4190",
+  "slug": "peto-adidas-training-bib-14-orange",
+  "name": "Peto adidas Training Bib 14",
+  "model": "Peto adidas Training Bib 14",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Peto de entrenamiento de fútbol adidas - naranja",
+    "tagline": "Prepárate para dominar cada sesión",
+    "intro": "Con el Peto adidas Training Bib 14 naranja llevas comodidad, aireación y libertad de movimiento a otro nivel. Diseñado para entrenos intensos con máxima visibilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Alta visibilidad: Ideal para ejercicios de equipo.",
+      "Microperforaciones: Evitan acumulación de calor y sudor.",
+      "Diseño sin mangas: Máximo rango de movimiento.",
+      "Resistencia: Soporta el uso diario sin deterioro."
+    ],
+    "technical_details": {
+      "range": "adidas Training Bib 14",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4190_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-rojo_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4190_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-rojo_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4190_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-rojo_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4190_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-rojo_3_detalle-cuello.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4190_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-rojo_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4190_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-rojo_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/F/I/FI4190_imagen-del-peto-de-entrenamiento-adidas-TRG-BIB-14-2021-rojo_3_detalle-cuello.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/fi4190",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Peto de entrenamiento de fútbol adidas - naranja",
+    "tagline": "Prepárate para dominar cada sesión",
+    "intro": "Con el Peto adidas Training Bib 14 naranja llevas comodidad, aireación y libertad de movimiento a otro nivel. Diseñado para entrenos intensos con máxima visibilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Alta visibilidad: Ideal para ejercicios de equipo.",
+      "Microperforaciones: Evitan acumulación de calor y sudor.",
+      "Diseño sin mangas: Máximo rango de movimiento.",
+      "Resistencia: Soporta el uso diario sin deterioro."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/fi4190"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Peto",
+    "submodel": "",
+    "product_model": "Peto adidas Training Bib 14",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "KA8198",
+  "slug": "pantalon-adidas-espana-entrenamiento-blue",
+  "name": "adidas España Training",
+  "model": "España entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento adidas de la selección española 2026 - azul marino",
+    "tagline": "Entrena con estilo y control",
+    "intro": "Pantalón de entrenamiento España 2026, ajuste atlético y libertad de movimiento en cada ejercicio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Parte de la colección de entrenamiento de la selección española.",
+      "Tejido técnico: Material transpirable y ligero para un uso intensivo.",
+      "Tecnología aplicada: Incluye CLIMACOOL.",
+      "Ajuste ergonómico: Favorece la libertad de movimiento y el confort."
+    ],
+    "technical_details": {
+      "range": "adidas España entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-largo-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-largo-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-chandal-azul-marino-adidas-espana-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-chandal-adidas-espana-entrenamiento-color-azul_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-largo-adidas-espana-entrenamiento-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-largo-color-azul-adidas-espana-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-chandal-azul-marino-adidas-espana-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-chandal-adidas-espana-entrenamiento-color-azul_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8198_pantalon-largo-adidas-espana-entrenamiento-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka8198",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas de la selección española 2026 - azul marino",
+    "tagline": "Entrena con estilo y control",
+    "intro": "Pantalón de entrenamiento España 2026, ajuste atlético y libertad de movimiento en cada ejercicio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial: Parte de la colección de entrenamiento de la selección española.",
+      "Tejido técnico: Material transpirable y ligero para un uso intensivo.",
+      "Tecnología aplicada: Incluye CLIMACOOL.",
+      "Ajuste ergonómico: Favorece la libertad de movimiento y el confort."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka8198"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "España",
+    "submodel": "",
+    "product_model": "España entrenamiento",
+    "sole_type": ""
+  }
+}

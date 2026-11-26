@@ -1,0 +1,82 @@
+{
+  "id": "IC1277",
+  "slug": "calcetines-tobilleros-adidas-sportwear-acolchados-3-pares-black",
+  "name": "tobilleros adidas Sportwear acolchados 3 pares",
+  "model": "tobilleros adidas Sportwear acolchados 3 pares",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "tobilleros adidas Sportwear acolchados 3 pares",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-tobilleros-color-negro-adidas-sportswear-acolchados-3-pares_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-tobilleros-color-negro-adidas-sportswear-acolchados-3-pares_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-cortos-negros-adidas-sportswear-acolchados-3-pares_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-tobilleros-adidas-sportswear-acolchados-3-pares-color-negro_3_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-cortos-adidas-sportswear-acolchados-3-pares-negros_4_detalle-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-tobilleros-color-negro-adidas-sportswear-acolchados-3-pares_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-cortos-negros-adidas-sportswear-acolchados-3-pares_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-tobilleros-adidas-sportswear-acolchados-3-pares-color-negro_3_detalle-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/C/IC1277_calcetines-cortos-adidas-sportswear-acolchados-3-pares-negros_4_detalle-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ic1277",
+    "language": "es",
+    "category": "Marcas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ic1277"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'calcetin'",
+    "root_model": "tobilleros",
+    "submodel": "",
+    "product_model": "tobilleros adidas Sportwear acolchados 3 pares",
+    "sole_type": ""
+  }
+}

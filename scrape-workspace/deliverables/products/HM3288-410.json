@@ -1,0 +1,100 @@
+{
+  "id": "HM3288-410",
+  "slug": "short-nike-barcelona-entrenamiento-dfadv-strike-elite-blue",
+  "name": "Nike Barcelona Training DFADV Strike Elite",
+  "model": "Barcelona entrenamiento DFADV Strike Elite",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento Nike del FC Barcelona 2025 2026 - azul marino",
+    "tagline": "Libertad total para entrenar como los cracks",
+    "intro": "El short de entrenamiento Nike Barça Strike 25/26 te da movilidad y frescura para tus sesiones más intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Ligereza técnica: Tejido de alto rendimiento para moverse sin límites.",
+      "Transpirabilidad avanzada: Tecnología Dri-FIT para mantenerte seco.",
+      "Ajuste cómodo: Cintura elástica con cordón.",
+      "Look oficial Barça: Diseño 25/26 con colores Strike."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona entrenamiento DFADV Strike Elite",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_pantalon-corto-color-azul-nike-barcelona-entrenamiento-dfadv-strike-elite_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_pantalon-corto-color-azul-nike-barcelona-entrenamiento-dfadv-strike-elite_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_pantalon-corto-nike-barcelona-entrenamiento-dfadv-strike-elite-color-azul_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_short-azul-marino-nike-barcelona-entrenamiento-dfadv-strike-elite_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_short-nike-barcelona-entrenamiento-dfadv-strike-elite-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_pantalon-corto-color-azul-nike-barcelona-entrenamiento-dfadv-strike-elite_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_pantalon-corto-nike-barcelona-entrenamiento-dfadv-strike-elite-color-azul_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_short-azul-marino-nike-barcelona-entrenamiento-dfadv-strike-elite_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM3288-410_short-nike-barcelona-entrenamiento-dfadv-strike-elite-azul-marino_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm3288-410",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike del FC Barcelona 2025 2026 - azul marino",
+    "tagline": "Libertad total para entrenar como los cracks",
+    "intro": "El short de entrenamiento Nike Barça Strike 25/26 te da movilidad y frescura para tus sesiones más intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Ligereza técnica: Tejido de alto rendimiento para moverse sin límites.",
+      "Transpirabilidad avanzada: Tecnología Dri-FIT para mantenerte seco.",
+      "Ajuste cómodo: Cintura elástica con cordón.",
+      "Look oficial Barça: Diseño 25/26 con colores Strike."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm3288-410"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Barcelona Training",
+    "submodel": "",
+    "product_model": "Barcelona entrenamiento DFADV Strike Elite",
+    "sole_type": ""
+  }
+}

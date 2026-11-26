@@ -1,0 +1,96 @@
+{
+  "id": "HM2936-010",
+  "slug": "pantalon-nike-inter-sportswear-club-black",
+  "name": "Nike Inter Sportswear Club",
+  "model": "Inter Sportswear Club",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del Inter de Milán - negro",
+    "tagline": "Entrena con el alma del Inter",
+    "intro": "Este pantalón técnico Nike combina un ajuste estilizado con materiales de alto rendimiento. Diseñado para entrenar o vestir con comodidad, te permite moverte con libertad sin perder el estilo nerazzurro.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en el campo: Diseñado con el ADN del Inter para tus entrenamientos.",
+      "Libertad total: Corte slim y tejido flexible que se adapta a cada movimiento.",
+      "Estilo sobrio: Color negro con detalles del club para un look elegante.",
+      "Máxima utilidad: Bolsillos prácticos para llevar lo esencial."
+    ],
+    "technical_details": {
+      "range": "Nike Inter Sportswear Club",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-largo-color-negro-nike-inter-sportswear-club_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-largo-color-negro-nike-inter-sportswear-club_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-chandal-negro-nike-inter-sportswear-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-chandal-nike-inter-sportswear-club-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-largo-nike-inter-sportswear-club-negro_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-largo-color-negro-nike-inter-sportswear-club_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-chandal-negro-nike-inter-sportswear-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-chandal-nike-inter-sportswear-club-color-negro_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM2936-010_pantalon-largo-nike-inter-sportswear-club-negro_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm2936-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del Inter de Milán - negro",
+    "tagline": "Entrena con el alma del Inter",
+    "intro": "Este pantalón técnico Nike combina un ajuste estilizado con materiales de alto rendimiento. Diseñado para entrenar o vestir con comodidad, te permite moverte con libertad sin perder el estilo nerazzurro.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración en el campo: Diseñado con el ADN del Inter para tus entrenamientos.",
+      "Libertad total: Corte slim y tejido flexible que se adapta a cada movimiento.",
+      "Estilo sobrio: Color negro con detalles del club para un look elegante.",
+      "Máxima utilidad: Bolsillos prácticos para llevar lo esencial."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm2936-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Inter Sportswear",
+    "submodel": "",
+    "product_model": "Inter Sportswear Club",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "101138001",
+  "slug": "uhlsport-cybertec-supersoft-hn-azul-blanco",
+  "name": "Uhlsport Cybertec Supersoft HN",
+  "model": "Cybertec Supersoft HN",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Azul / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport goalkeeper gloves Half Negative cut - white, cyan blue",
+    "tagline": "The control is in your hands",
+    "intro": "The Uhlsport Cybertec Supersoft HN combines Uhlsport technology with specialized cuts to offer a perfect fit and confident grip at every stop.",
+    "collection": "",
+    "key_benefits": [
+      "Wraparound fit: HN cut that offers greater sensitivity and contact with the ball.",
+      "Great cushioning: SUPERSOFT latex designed for training and matches.",
+      "Renewed design: Modern Cybertec line with striking aesthetics.",
+      "Advanced comfort: Technical materials that maximize comfort."
+    ],
+    "technical_details": {
+      "range": "Cybertec Supersoft HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9cc78c754814d5d9754f92a12d3ecaa9ef7e7065-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9cc78c754814d5d9754f92a12d3ecaa9ef7e7065-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/381f4357ef91ef5650ee6d7e7ae21194832710be-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8dbc667171797a3a7cf5e16d89f9e7ef00bc8b4a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6385a22d25583086a92f95ccd0c535d8cdba9bb9-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9cc78c754814d5d9754f92a12d3ecaa9ef7e7065-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/381f4357ef91ef5650ee6d7e7ae21194832710be-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8dbc667171797a3a7cf5e16d89f9e7ef00bc8b4a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6385a22d25583086a92f95ccd0c535d8cdba9bb9-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9cc78c754814d5d9754f92a12d3ecaa9ef7e7065-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9cc78c754814d5d9754f92a12d3ecaa9ef7e7065-1500x1500.jpg"
+    },
+    {
+      "_id": "image-381f4357ef91ef5650ee6d7e7ae21194832710be-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/381f4357ef91ef5650ee6d7e7ae21194832710be-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8dbc667171797a3a7cf5e16d89f9e7ef00bc8b4a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8dbc667171797a3a7cf5e16d89f9e7ef00bc8b4a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-6385a22d25583086a92f95ccd0c535d8cdba9bb9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6385a22d25583086a92f95ccd0c535d8cdba9bb9-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/101138001",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Uhlsport corte Half Negative - blancos, azul cian",
+    "tagline": "El control está en tus manos",
+    "intro": "Los Uhlsport Cybertec Supersoft HN combinan tecnología Uhlsport con cortes especializados para ofrecer un ajuste perfecto y un agarre de confianza en cada parada.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste envolvente: Corte HN que ofrece mayor sensibilidad y contacto con el balón.",
+      "Gran amortiguación: Látex SUPERSOFT pensado para entrenamientos y partidos.",
+      "Diseño renovado: Línea Cybertec moderna con estética impactante.",
+      "Comodidad avanzada: Materiales técnicos que maximizan el confort."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/101138001"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Cybertec",
+    "submodel": "",
+    "product_model": "Cybertec Supersoft HN",
+    "sole_type": ""
+  }
+}

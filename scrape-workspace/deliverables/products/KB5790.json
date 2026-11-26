@@ -1,0 +1,96 @@
+{
+  "id": "KB5790",
+  "slug": "camiseta-adidas-liverpool-pre-match-red",
+  "name": "adidas Liverpool Pre-Match",
+  "model": "Liverpool Pre-Match",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de calentamiento prepartido adidas del Liverpool 2026 2027 - roja",
+    "tagline": "Vive el Liverpool",
+    "intro": "La camiseta adidas del Liverpool Pre-Match 26 27 es la prenda oficial utilizada por los jugadores reds durante los ejercicios de calentamiento previos al encuentro. Su diseño dinámico incorpora gráficos modernos inspirados en la identidad competitiva del Liverpool FC.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Ayuda a evacuar el sudor y mantener la piel fresca y seca durante el calentamiento.",
+      "Tejido ligero y transpirable: Proporciona comodidad incluso en los momentos previos más intensos al partido.",
+      "Corte entallado: Ofrece una silueta deportiva que acompaña el movimiento natural del cuerpo.",
+      "Diseño oficial Liverpool: Detalles auténticos para aficionados reds."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool Pre-Match",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-color-rojo-adidas-liverpool-pre-match_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-color-rojo-adidas-liverpool-pre-match_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-roja-adidas-liverpool-pre-match_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-adidas-liverpool-pre-match-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-adidas-liverpool-pre-match-roja_4_detalle-hombro-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-color-rojo-adidas-liverpool-pre-match_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-roja-adidas-liverpool-pre-match_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-adidas-liverpool-pre-match-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB5790_camiseta-adidas-liverpool-pre-match-roja_4_detalle-hombro-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb5790",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de calentamiento prepartido adidas del Liverpool 2026 2027 - roja",
+    "tagline": "Vive el Liverpool",
+    "intro": "La camiseta adidas del Liverpool Pre-Match 26 27 es la prenda oficial utilizada por los jugadores reds durante los ejercicios de calentamiento previos al encuentro. Su diseño dinámico incorpora gráficos modernos inspirados en la identidad competitiva del Liverpool FC.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Ayuda a evacuar el sudor y mantener la piel fresca y seca durante el calentamiento.",
+      "Tejido ligero y transpirable: Proporciona comodidad incluso en los momentos previos más intensos al partido.",
+      "Corte entallado: Ofrece una silueta deportiva que acompaña el movimiento natural del cuerpo.",
+      "Diseño oficial Liverpool: Detalles auténticos para aficionados reds."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb5790"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Liverpool Pre-Match",
+    "submodel": "",
+    "product_model": "Liverpool Pre-Match",
+    "sole_type": ""
+  }
+}

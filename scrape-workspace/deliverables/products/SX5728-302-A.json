@@ -1,0 +1,92 @@
+{
+  "id": "SX5728-302-A",
+  "slug": "medias-nike-classic-2-cushion-green",
+  "name": "Nike Classic 2 Cushion",
+  "model": "Classic 2 Cushion",
+  "brand": "Nike",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Medias de fútbol Nike Classic II Cushion - verdes",
+    "tagline": "El verde que vibra con energía",
+    "intro": "Las medias verdes Nike Classic 2 Cushion combinan comodidad, frescura y estilo llamativo. Acompañan tu intensidad en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Amortiguación estratégica: Refuerzo acolchado en zonas clave del pie.",
+      "Tecnología Dri-FIT: Ayuda a mantener los pies secos y cómodos.",
+      "Ajuste seguro: Banda de compresión en el arco que mejora la estabilidad.",
+      "Diseño ergonómico: Diferenciación entre pie derecho e izquierdo para mayor precisión."
+    ],
+    "technical_details": {
+      "range": "Nike Classic 2 Cushion",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-302-A_medias-nike-verde_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-302-A_medias-nike-verde_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-302-A_medias-nike-verde_2_trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-302-A_medias-nike-verde_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/X/SX5728-302-A_medias-nike-verde_2_trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sx5728-302-a",
+    "language": "es",
+    "category": "Equipaciones de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Medias de fútbol Nike Classic II Cushion - verdes",
+    "tagline": "El verde que vibra con energía",
+    "intro": "Las medias verdes Nike Classic 2 Cushion combinan comodidad, frescura y estilo llamativo. Acompañan tu intensidad en todo momento.",
+    "collection": "",
+    "key_benefits": [
+      "Amortiguación estratégica: Refuerzo acolchado en zonas clave del pie.",
+      "Tecnología Dri-FIT: Ayuda a mantener los pies secos y cómodos.",
+      "Ajuste seguro: Banda de compresión en el arco que mejora la estabilidad.",
+      "Diseño ergonómico: Diferenciación entre pie derecho e izquierdo para mayor precisión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sx5728-302-a"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Classic",
+    "submodel": "",
+    "product_model": "Classic 2 Cushion",
+    "sole_type": ""
+  }
+}

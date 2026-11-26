@@ -1,0 +1,92 @@
+{
+  "id": "030870-05",
+  "slug": "puma-ultra-twist-sleeve-white",
+  "name": "Puma Ultra Twist Sleeve",
+  "model": "Ultra Twist Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - White, Red",
+    "tagline": "Flexible protection for free play",
+    "intro": "The Puma Ultra Twist Sleeve soccer shin guards are designed for soccer players looking to combine protection, lightness and freedom of movement. Its construction incorporates an EVA cover with EVA and nylon padding, accompanied by elastic support meshes that help keep the shin guards correctly positioned during the game.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight Protection: Its construction helps protect the shin while maintaining a light feel during play.",
+      "Greater cushioning: Padding helps absorb impacts and improve comfort.",
+      "Stable fit: Elastic meshes help keep the protections correctly placed while you move.",
+      "Freedom of movement: Its flexible design allows you to run, change direction and compete for the ball naturally.",
+      "Comfortable feeling: Its construction is designed to accompany movement without being excessively restrictive."
+    ],
+    "technical_details": {
+      "range": "Ultra Twist Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9dace81e9d51301cafa996be43ef425f32871614-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9dace81e9d51301cafa996be43ef425f32871614-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9dace81e9d51301cafa996be43ef425f32871614-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9dace81e9d51301cafa996be43ef425f32871614-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9dace81e9d51301cafa996be43ef425f32871614-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030870-05",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - blancas, rojas",
+    "tagline": "Protección flexible para jugar con libertad",
+    "intro": "Las espinilleras de fútbol Puma Ultra Twist Sleeve están diseñadas para futbolistas que buscan combinar protección, ligereza y libertad de movimiento. Su construcción incorpora una cubierta de EVA con acolchado de EVA y nylon, acompañada de mallas elásticas de sujeción que ayudan a mantener las espinilleras correctamente colocadas durante el juego.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su construcción ayuda a proteger la espinilla manteniendo una sensación ligera durante el juego.",
+      "Mayor amortiguación: El acolchado contribuye a absorber los impactos y mejorar la comodidad.",
+      "Ajuste estable: Las mallas elásticas ayudan a mantener las protecciones correctamente colocadas mientras te mueves.",
+      "Libertad de movimiento: Su diseño flexible permite correr, cambiar de dirección y disputar el balón con naturalidad.",
+      "Sensación cómoda: Su construcción está pensada para acompañar el movimiento sin resultar excesivamente restrictiva."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030870-05"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Twist Sleeve",
+    "product_model": "Ultra Twist Sleeve",
+    "sole_type": ""
+  }
+}

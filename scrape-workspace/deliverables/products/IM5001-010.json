@@ -1,0 +1,86 @@
+{
+  "id": "IM5001-010",
+  "slug": "braga-nike-dri-fit-academy-t90-black",
+  "name": "Braga Nike Dri-Fit Academy T90",
+  "model": "Braga Nike Dri-Fit Academy T90",
+  "brand": "Nike",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Total 90 Football Neck Gaiter - Black",
+    "tagline": "Lightweight protection with a retro spirit",
+    "intro": "The Nike Total 90 Dri-FIT neck warmer keeps your neck warm without losing breathability. Ideal for cold training days, with a fitted design and 100% football aesthetic.",
+    "collection": "",
+    "key_benefits": [
+      "Keeps you dry: Dri-FIT technology that eliminates sweat.",
+      "Perfect fit: Ergonomic design with optional nose cover.",
+      "T90 style: Details that pay tribute to a golden era.",
+      "Light and functional: Ideal for training without distractions."
+    ],
+    "technical_details": {
+      "range": "Nike Dri-Fit Academy T90",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5001-010_cuello-color-negro-nike-dri-fit-academy-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5001-010_cuello-color-negro-nike-dri-fit-academy-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5001-010_braga-negra-nike-dri-fit-academy-t90_2_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5001-010_tubular-cuello-nike-dri-fit-academy-t90-color-negro_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5001-010_cuello-color-negro-nike-dri-fit-academy-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5001-010_braga-negra-nike-dri-fit-academy-t90_2_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/M/IM5001-010_tubular-cuello-nike-dri-fit-academy-t90-color-negro_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/im5001-010",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Braga de cuello para fútbol Nike Total 90 - negra",
+    "tagline": "Protección ligera con espíritu retro",
+    "intro": "La braga Nike Total 90 Dri-FIT mantiene el cuello caliente sin perder transpirabilidad. Ideal para los días fríos de entreno, con diseño ajustado y estética 100% futbolera.",
+    "collection": "",
+    "key_benefits": [
+      "Te mantiene seco: Tecnología Dri-FIT que elimina el sudor.",
+      "Ajuste perfecto: Diseño ergonómico con cubrenariz opcional.",
+      "Estilo T90: Detalles que rinden tributo a una era dorada.",
+      "Ligera y funcional: Ideal para entrenar sin distracciones."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/im5001-010"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "high",
+    "rule": "name contains 'braga'",
+    "root_model": "Braga",
+    "submodel": "",
+    "product_model": "Braga Nike Dri-Fit Academy T90",
+    "sole_type": ""
+  }
+}

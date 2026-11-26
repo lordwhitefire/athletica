@@ -1,0 +1,103 @@
+{
+  "id": "030992-04",
+  "slug": "puma-ultra-light-strap-blue",
+  "name": "Puma Ultra Light Strap",
+  "model": "Ultra Light Strap",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Velcro Straps - Blue",
+    "tagline": "Lightness with a classic fit",
+    "intro": "The Puma Ultra Light Strap offer basic protection with a velcro system, perfect for players looking for functionality and comfort.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Velcro closure: Simple and secure fit.",
+      "Basic comfort: Lightweight material that protects without rigidity.",
+      "Easy maintenance: Washable and resistant.",
+      "Simple aesthetics: Functional and clean design.",
+      "Versatilidad: Perfectas para entrenamientos o partidos ocasionales."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Strap",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0e62b1247f940abe971f61ea7b48485405cdd5a3-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0e62b1247f940abe971f61ea7b48485405cdd5a3-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/eb6f8b2c9e08296514164a4eded1587a47d9ad8b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0e62b1247f940abe971f61ea7b48485405cdd5a3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/eb6f8b2c9e08296514164a4eded1587a47d9ad8b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-0e62b1247f940abe971f61ea7b48485405cdd5a3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0e62b1247f940abe971f61ea7b48485405cdd5a3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-eb6f8b2c9e08296514164a4eded1587a47d9ad8b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/eb6f8b2c9e08296514164a4eded1587a47d9ad8b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/030992-04",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Puma con cintas de velcro - azules",
+    "tagline": "Ligereza con ajuste clásico",
+    "intro": "Las Puma Ultra Light Strap ofrecen una protección básica con sistema de velcro, perfectas para jugadores que buscan funcionalidad y confort.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Cierre de velcro: Ajuste sencillo y seguro.",
+      "Comodidad básica: Material ligero que protege sin rigidez.",
+      "Fácil mantenimiento: Lavables y resistentes.",
+      "Estética sencilla: Diseño funcional y limpio.",
+      "Versatilidad: Perfectas para entrenamientos o partidos ocasionales."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/030992-04"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Strap",
+    "product_model": "Ultra Light Strap",
+    "sole_type": ""
+  }
+}

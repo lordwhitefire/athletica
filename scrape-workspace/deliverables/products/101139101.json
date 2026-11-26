@@ -1,0 +1,113 @@
+{
+  "id": "101139101",
+  "slug": "uhlsport-starter-resist-naranja-negro",
+  "name": "Uhlsport Starter Resist+",
+  "model": "Starter Resist+",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Naranja / Negro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero Uhlsport corte Classic - negros, naranjas",
+    "tagline": "Maximum precision for demanding goalkeepers",
+    "intro": "The Uhlsport Starter Resist+ combines high-performance technologies with a modern design to offer a perfect fit and superior control. Ideal for goalkeepers looking for professional performance in every stop. Its advanced construction guarantees grip, comfort and durability at key moments.",
+    "collection": "",
+    "key_benefits": [
+      "Elite grip: Professional palm that maximizes ball control in dry and wet conditions.",
+      "Ergonomic comfort: Snug fit that fits your hand like a second skin.",
+      "Positive cut: Natural feel and greater contact surface.",
+      "Secure closure: Wraparound wristband for maximum support in every action."
+    ],
+    "technical_details": {
+      "range": "Starter Resist+",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/cdd4b79ec5f4a7907d6516cd19e543e18396e600-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/cdd4b79ec5f4a7907d6516cd19e543e18396e600-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cd3ce42dca8cc393a13bb936827525e333f0cc46-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0bcd490ca88656aae93e9bdcc62f21ff7dc0c38c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fcbc33e1f69af5af7e2083436aa3343c0d45ee0c-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/cdd4b79ec5f4a7907d6516cd19e543e18396e600-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cd3ce42dca8cc393a13bb936827525e333f0cc46-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0bcd490ca88656aae93e9bdcc62f21ff7dc0c38c-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fcbc33e1f69af5af7e2083436aa3343c0d45ee0c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-cdd4b79ec5f4a7907d6516cd19e543e18396e600-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cdd4b79ec5f4a7907d6516cd19e543e18396e600-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cd3ce42dca8cc393a13bb936827525e333f0cc46-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cd3ce42dca8cc393a13bb936827525e333f0cc46-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0bcd490ca88656aae93e9bdcc62f21ff7dc0c38c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0bcd490ca88656aae93e9bdcc62f21ff7dc0c38c-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fcbc33e1f69af5af7e2083436aa3343c0d45ee0c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fcbc33e1f69af5af7e2083436aa3343c0d45ee0c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/101139101",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero Uhlsport corte Classic - negros, naranjas",
+    "tagline": "Máxima precisión para porteros exigentes",
+    "intro": "Los Uhlsport Starter Resist+ combinan tecnologías de alto rendimiento con un diseño moderno para ofrecer un ajuste perfecto y control superior. Ideales para porteros que buscan rendimiento profesional en cada parada. Su confección avanzada garantiza agarre, comodidad y durabilidad en los momentos clave.",
+    "collection": "",
+    "key_benefits": [
+      "Agarre de élite: Palma profesional que maximiza el control del balón en seco y mojado.",
+      "Comodidad ergonómica: Ajuste ceñido que se adapta a la mano como una segunda piel.",
+      "Corte positivo: Sensación natural y mayor superficie de contacto.",
+      "Cierre seguro: Muñequera envolvente para máxima sujeción en cada acción."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/101139101"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "medium",
+    "rule": "source fallback 'porteros'",
+    "root_model": "Starter",
+    "submodel": "",
+    "product_model": "Starter Resist+",
+    "sole_type": ""
+  }
+}

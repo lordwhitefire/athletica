@@ -1,0 +1,92 @@
+{
+  "id": "IR0070-498",
+  "slug": "pantalon-nike-barcelona-mujer-tech-fleece-jogger-blue",
+  "name": "Nike Barcelona Women Tech Fleece Jogger",
+  "model": "Barcelona mujer Tech Fleece Jogger",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo para mujer de algodón Nike del FC Barcelona - azul marino",
+    "tagline": "Comodidad premium con el estilo del Barça",
+    "intro": "El pantalón Nike FC Barcelona Tech Fleece Jogger para mujer combina un diseño moderno con el exclusivo tejido Nike Tech Fleece para ofrecer una gran sensación de calidez sin añadir peso. Perfecto para el día a día, viajar o animar al Barça con el máximo confort.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido Nike Tech Fleece: Ligero, cálido y muy suave al tacto.",
+      "Cintura elástica con cordón: Ajuste seguro y personalizado.",
+      "Bolsillos: Espacio práctico para llevar pequeños objetos.",
+      "Corte Jogger: Diseño moderno y cómodo para uso diario.",
+      "Escudo oficial del FC Barcelona: Muestra tu pasión por el club con un acabado premium."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona mujer Tech Fleece Jogger",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR0070-498_pantalon-largo-color-azul-nike-barcelona-mujer-tech-fleece-jogger_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR0070-498_pantalon-largo-color-azul-nike-barcelona-mujer-tech-fleece-jogger_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR0070-498_pantalon-chandal-azul-marino-nike-barcelona-mujer-tech-fleece-jogger_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR0070-498_pantalon-chandal-nike-barcelona-mujer-tech-fleece-jogger-color-azul_3_detalle-cintura-bolsillo-y-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR0070-498_pantalon-largo-color-azul-nike-barcelona-mujer-tech-fleece-jogger_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR0070-498_pantalon-chandal-azul-marino-nike-barcelona-mujer-tech-fleece-jogger_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR0070-498_pantalon-chandal-nike-barcelona-mujer-tech-fleece-jogger-color-azul_3_detalle-cintura-bolsillo-y-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ir0070-498",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo para mujer de algodón Nike del FC Barcelona - azul marino",
+    "tagline": "Comodidad premium con el estilo del Barça",
+    "intro": "El pantalón Nike FC Barcelona Tech Fleece Jogger para mujer combina un diseño moderno con el exclusivo tejido Nike Tech Fleece para ofrecer una gran sensación de calidez sin añadir peso. Perfecto para el día a día, viajar o animar al Barça con el máximo confort.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido Nike Tech Fleece: Ligero, cálido y muy suave al tacto.",
+      "Cintura elástica con cordón: Ajuste seguro y personalizado.",
+      "Bolsillos: Espacio práctico para llevar pequeños objetos.",
+      "Corte Jogger: Diseño moderno y cómodo para uso diario.",
+      "Escudo oficial del FC Barcelona: Muestra tu pasión por el club con un acabado premium."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ir0070-498"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Barcelona Women",
+    "submodel": "",
+    "product_model": "Barcelona mujer Tech Fleece Jogger",
+    "sole_type": ""
+  }
+}

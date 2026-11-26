@@ -1,0 +1,106 @@
+{
+  "id": "JP3982",
+  "slug": "camiseta-sin-mangas-adidas-real-madrid-entrenamiento-green",
+  "name": "sin mangas adidas Real Madrid Training",
+  "model": "sin mangas adidas Real Madrid Training",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Training Tank Top - Light Green",
+    "tagline": "Train with freedom and freshness",
+    "intro": "With this sleeveless Real Madrid training t-shirt, you will feel freer in the most demanding training sessions. Its breathable AEROREADY fabric keeps skin dry even in the most intense sessions.",
+    "collection": "",
+    "key_benefits": [
+      "Freedom of movement: Sleeveless design that enhances the mobility of the upper body.",
+      "Quick drying: AEROREADY technology that expels sweat and keeps the skin dry.",
+      "Technical design: Inspired by the official Real Madrid kit.",
+      "Continuous comfort: Soft-touch and lightweight fabric.",
+      "Sports style: Heat-transferred shield that marks your passion."
+    ],
+    "technical_details": {
+      "range": "sin mangas adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-verde-claro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-adidas-real-madrid-entrenamiento-verde-claro_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-verde-claro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3982_camiseta-tirantes-adidas-real-madrid-entrenamiento-verde-claro_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3982",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta sin mangas de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Entrena con libertad y frescura",
+    "intro": "Con esta camiseta sin mangas de entrenamiento del Real Madrid, te sentirás más libre en los entrenamientos más exigentes. Su tejido transpirable AEROREADY mantiene la piel seca incluso en las sesiones más intensas.",
+    "collection": "",
+    "key_benefits": [
+      "Libertad de movimiento: Diseño sin mangas que potencia la movilidad del tren superior.",
+      "Secado rápido: Tecnología AEROREADY que expulsa el sudor y mantiene la piel seca.",
+      "Diseño técnico: Inspirada en la equipación oficial del Real Madrid.",
+      "Comodidad continua: Tejido suave al tacto y ligero.",
+      "Estilo deportivo: Escudo termotransferido que marca tu pasión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3982"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin mangas adidas Real Madrid Training",
+    "sole_type": ""
+  }
+}

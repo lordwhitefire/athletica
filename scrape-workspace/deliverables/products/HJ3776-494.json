@@ -1,0 +1,92 @@
+{
+  "id": "HJ3776-494",
+  "slug": "pantalon-nike-dri-fit-academy-25-br-blue",
+  "name": "Nike Dri-Fit Academy 25 BR",
+  "model": "Dri-Fit Academy 25 BR",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo para entrenamiento de fútbol Nike - azul marino",
+    "tagline": "Entrena con comodidad y constancia",
+    "intro": "Diseñado para sesiones intensas, este pantalón Academy acompaña al jugador en cada ejercicio con un equilibrio perfecto entre ligereza y funcionalidad.",
+    "collection": "",
+    "key_benefits": [
+      "Gestión del sudor: Mantiene la piel seca durante el entrenamiento.",
+      "Libertad de movimiento: Corte pensado para ejercicios dinámicos.",
+      "Uso diario: Ideal para entrenamientos regulares."
+    ],
+    "technical_details": {
+      "range": "Nike Dri-Fit Academy 25 BR",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ3776-494_pantalon-largo-color-azul-nike-dri-fit-academy-25-br_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ3776-494_pantalon-largo-color-azul-nike-dri-fit-academy-25-br_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ3776-494_pantalon-chandal-azul-marino-nike-dri-fit-academy-25-br_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ3776-494_pantalon-chandal-nike-dri-fit-academy-25-br-color-azul_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ3776-494_pantalon-largo-color-azul-nike-dri-fit-academy-25-br_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ3776-494_pantalon-chandal-azul-marino-nike-dri-fit-academy-25-br_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ3776-494_pantalon-chandal-nike-dri-fit-academy-25-br-color-azul_3_detalle-cintura-bolsillo-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj3776-494",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo para entrenamiento de fútbol Nike - azul marino",
+    "tagline": "Entrena con comodidad y constancia",
+    "intro": "Diseñado para sesiones intensas, este pantalón Academy acompaña al jugador en cada ejercicio con un equilibrio perfecto entre ligereza y funcionalidad.",
+    "collection": "",
+    "key_benefits": [
+      "Gestión del sudor: Mantiene la piel seca durante el entrenamiento.",
+      "Libertad de movimiento: Corte pensado para ejercicios dinámicos.",
+      "Uso diario: Ideal para entrenamientos regulares."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj3776-494"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Dri-Fit",
+    "submodel": "",
+    "product_model": "Dri-Fit Academy 25 BR",
+    "sole_type": ""
+  }
+}

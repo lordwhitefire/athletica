@@ -1,0 +1,93 @@
+{
+  "id": "041954-06",
+  "slug": "puma-ultra-match-protect-rc-blanco-rojo",
+  "name": "Puma Ultra Match Protect RC",
+  "model": "Ultra Match Protect RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blanco / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Match Protect RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/fc33107b738a9c4c43b89f3f5c43779e35d90174-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/fc33107b738a9c4c43b89f3f5c43779e35d90174-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/be4b3ea6d576c415046e889ea88401d871ae7ffa-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4525ea3bff702ff98ed7f8d3d6cbb649027aada1-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fc33107b738a9c4c43b89f3f5c43779e35d90174-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/be4b3ea6d576c415046e889ea88401d871ae7ffa-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4525ea3bff702ff98ed7f8d3d6cbb649027aada1-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-fc33107b738a9c4c43b89f3f5c43779e35d90174-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fc33107b738a9c4c43b89f3f5c43779e35d90174-1500x1500.jpg"
+    },
+    {
+      "_id": "image-be4b3ea6d576c415046e889ea88401d871ae7ffa-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/be4b3ea6d576c415046e889ea88401d871ae7ffa-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4525ea3bff702ff98ed7f8d3d6cbb649027aada1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4525ea3bff702ff98ed7f8d3d6cbb649027aada1-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/041954-06",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/041954-06"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Match Protect RC",
+    "product_model": "Ultra Match Protect RC",
+    "sole_type": ""
+  }
+}

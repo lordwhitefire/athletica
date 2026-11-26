@@ -1,0 +1,83 @@
+{
+  "id": "DX4608-458",
+  "slug": "nike-charge-blue",
+  "name": "Nike Charge",
+  "model": "Charge",
+  "brand": "Nike",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol Nike con tobillera protectora - azules",
+    "tagline": "Seguridad que empieza desde abajo",
+    "intro": "Una opción funcional y asequible para futbolistas que buscan seguridad sin complicaciones.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Diseño todo en uno: Espinillera con tobillera integrada para mayor cobertura.",
+      "Ajuste seguro: Se mantiene en su sitio durante el juego.",
+      "Ideal para principiantes: Protección básica con gran comodidad."
+    ],
+    "technical_details": {
+      "range": "Charge",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4608-458_espinilleras-con-tobillera-color-azul-nike-charge-_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4608-458_espinilleras-con-tobillera-color-azul-nike-charge-_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/X/DX4608-458_espinilleras-con-tobillera-color-azul-nike-charge-_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dx4608-458",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Nike con tobillera protectora - azules",
+    "tagline": "Seguridad que empieza desde abajo",
+    "intro": "Una opción funcional y asequible para futbolistas que buscan seguridad sin complicaciones.",
+    "collection": "ATTACK PACK",
+    "key_benefits": [
+      "Diseño todo en uno: Espinillera con tobillera integrada para mayor cobertura.",
+      "Ajuste seguro: Se mantiene en su sitio durante el juego.",
+      "Ideal para principiantes: Protección básica con gran comodidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dx4608-458"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Charge",
+    "submodel": "",
+    "product_model": "Charge",
+    "sole_type": ""
+  }
+}

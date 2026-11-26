@@ -1,0 +1,96 @@
+{
+  "id": "IV0416-451",
+  "slug": "gorro-nike-barcelona-performance-blue",
+  "name": "Gorro Nike Barcelona Performance",
+  "model": "Gorro Nike Barcelona Performance",
+  "brand": "Nike",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Barcelona Nike Winter Beanie - Navy",
+    "tagline": "Keep warm with Barça style",
+    "intro": "The Nike Barcelona Performance hat is designed to protect you from the cold during training or in your daily life without giving up the club style. Its stretch fabric offers a comfortable and secure fit, while the details allow you to show off your FCB feeling.",
+    "collection": "",
+    "key_benefits": [
+      "Stretch fabric: Fits comfortably to the head for a secure fit.",
+      "Detalles reflectantes: Luce los colores de tu equipo.",
+      "Diseño ligero: Proporciona comodidad durante todo el día.",
+      "Escudo oficial del FC Barcelona: Muestra tu pasión por el club en cualquier ocasión."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Performance",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-color-azul-nike-barcelona-performance_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-color-azul-nike-barcelona-performance_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-azul-marino-nike-barcelona-performance_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-nike-barcelona-performance-color-azul_3_detalle-frontal-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-nike-barcelona-performance-azul-marino_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-color-azul-nike-barcelona-performance_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-azul-marino-nike-barcelona-performance_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-nike-barcelona-performance-color-azul_3_detalle-frontal-e-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/V/IV0416-451_gorro-nike-barcelona-performance-azul-marino_4_detalle-logotipo-y-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/iv0416-451",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorro de invierno Nike del Barcelona - azul marino",
+    "tagline": "Mantén el calor con el estilo del Barça",
+    "intro": "El gorro Nike Barcelona Performance está diseñado para protegerte del frío durante los entrenamientos o en tu día a día sin renunciar al estilo del club. Su tejido elástico ofrece un ajuste cómodo y seguro, mientras que los detalles te permiten lucir tu sentimiento FCB.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido elástico: Se adapta cómodamente a la cabeza para un ajuste seguro.",
+      "Detalles reflectantes: Luce los colores de tu equipo.",
+      "Diseño ligero: Proporciona comodidad durante todo el día.",
+      "Escudo oficial del FC Barcelona: Muestra tu pasión por el club en cualquier ocasión."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/iv0416-451"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "high",
+    "rule": "name contains 'gorro'",
+    "root_model": "Gorro",
+    "submodel": "",
+    "product_model": "Gorro Nike Barcelona Performance",
+    "sole_type": ""
+  }
+}

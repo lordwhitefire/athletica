@@ -1,0 +1,103 @@
+{
+  "id": "090239-01",
+  "slug": "mochila-puma-teamgoal-black",
+  "name": "Backpack Puma TeamGoal",
+  "model": "Backpack Puma TeamGoal",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack (47 x 30 x 12 cm) - black",
+    "tagline": "Comfort and space for everyday life",
+    "intro": "The Puma TeamGoal backpack combines sporty design with total functionality. It offers the perfect space for your equipment, clothes or laptop with a clean and resistant look.",
+    "collection": "",
+    "key_benefits": [
+      "Amplio espacio: Ideal para ropa, accesorios o libros.",
+      "Puma Durability: Durable and easy-to-clean fabric.",
+      "Comodidad garantizada: Tirantes ajustables acolchados.",
+      "Versatile design: Perfect for sports or urban use."
+    ],
+    "technical_details": {
+      "range": "Puma TeamGoal",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/105f30df1fb35b1c2140dc478355227b85f716d1-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/105f30df1fb35b1c2140dc478355227b85f716d1-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4a3dec1fc5f04e865bad027db334df420fa03d39-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e2eea23891e17f8e57fbff0ac31bc210799dc121-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/105f30df1fb35b1c2140dc478355227b85f716d1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4a3dec1fc5f04e865bad027db334df420fa03d39-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e2eea23891e17f8e57fbff0ac31bc210799dc121-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-105f30df1fb35b1c2140dc478355227b85f716d1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/105f30df1fb35b1c2140dc478355227b85f716d1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4a3dec1fc5f04e865bad027db334df420fa03d39-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4a3dec1fc5f04e865bad027db334df420fa03d39-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e2eea23891e17f8e57fbff0ac31bc210799dc121-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e2eea23891e17f8e57fbff0ac31bc210799dc121-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090239-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (47 x 30 x 12 cm) - negra",
+    "tagline": "Comodidad y espacio para el día a día",
+    "intro": "La mochila Puma TeamGoal combina diseño deportivo con funcionalidad total. Ofrece el espacio perfecto para tu equipación, ropa o portátil con un look limpio y resistente.",
+    "collection": "",
+    "key_benefits": [
+      "Amplio espacio: Ideal para ropa, accesorios o libros.",
+      "Durabilidad Puma: Tejido resistente y fácil de limpiar.",
+      "Comodidad garantizada: Tirantes ajustables acolchados.",
+      "Diseño versátil: Perfecta para deporte o uso urbano."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090239-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma TeamGoal",
+    "sole_type": ""
+  }
+}

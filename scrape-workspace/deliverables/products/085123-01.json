@@ -1,0 +1,103 @@
+{
+  "id": "085123-01",
+  "slug": "balon-puma-premier-26-27-mini-stellar-reactivity-white",
+  "name": "Puma Premier 26 27 mini Stellar Reactivity",
+  "model": "Premier 26 27 mini Stellar Reactivity",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League Soccer Ball 2026 2027 Mini - White",
+    "tagline": "The official mini ball of the Premier League",
+    "intro": "The Puma Premier 26 27 mini Stellar Reactivity ball is perfect for improving control, practicing technical skills or enjoying football anywhere. Inspired by the official ball of the Premier League, it presents a compact and resistant design ideal for recreational sessions and technical training. Its mini size makes it easy to handle and makes it a perfect option for players of all ages.",
+    "collection": "",
+    "key_benefits": [
+      "Official Premier League design: Inspired by the English competition ball.",
+      "Mini size: Ideal for improving control and technique.",
+      "Gran resistencia: Materiales preparados para un uso frecuente.",
+      "Versatile use: Perfect for recreational play and technical training."
+    ],
+    "technical_details": {
+      "range": "Puma Premier 26 27 mini Stellar Reactivity",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/292457f8ca6ef2ffa61a442c2af19ee4bca9d9c6-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/292457f8ca6ef2ffa61a442c2af19ee4bca9d9c6-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/72253b025c12a9d5ba3b73becf4fedb20108acc8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a413b1642de1001e8f5f59183b639c9e58f451b9-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/292457f8ca6ef2ffa61a442c2af19ee4bca9d9c6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/72253b025c12a9d5ba3b73becf4fedb20108acc8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a413b1642de1001e8f5f59183b639c9e58f451b9-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-292457f8ca6ef2ffa61a442c2af19ee4bca9d9c6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/292457f8ca6ef2ffa61a442c2af19ee4bca9d9c6-1500x1500.jpg"
+    },
+    {
+      "_id": "image-72253b025c12a9d5ba3b73becf4fedb20108acc8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/72253b025c12a9d5ba3b73becf4fedb20108acc8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a413b1642de1001e8f5f59183b639c9e58f451b9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a413b1642de1001e8f5f59183b639c9e58f451b9-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085123-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2026 2027 mini - blanco",
+    "tagline": "El mini balón oficial de la Premier League",
+    "intro": "El balón Puma Premier 26 27 mini Stellar Reactivity es perfecto para mejorar el control, practicar habilidades técnicas o disfrutar del fútbol en cualquier lugar. Inspirado en el balón oficial de la Premier League, presenta un diseño compacto y resistente ideal para sesiones recreativas y entrenamiento técnico. Su tamaño mini facilita el manejo y lo convierte en una opción perfecta para jugadores de todas las edades.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Premier League: Inspirado en el balón de la competición inglesa.",
+      "Tamaño mini: Ideal para mejorar el control y la técnica.",
+      "Gran resistencia: Materiales preparados para un uso frecuente.",
+      "Uso versátil: Perfecto para juego recreativo y entrenamiento técnico."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085123-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Premier 26",
+    "submodel": "",
+    "product_model": "Premier 26 27 mini Stellar Reactivity",
+    "sole_type": ""
+  }
+}

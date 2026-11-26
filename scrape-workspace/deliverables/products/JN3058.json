@@ -1,0 +1,96 @@
+{
+  "id": "JN3058",
+  "slug": "chaqueta-adidas-real-madrid-icon-blue",
+  "name": "adidas Real Madrid Icon",
+  "model": "Real Madrid Icon",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Track Jacket - Blue",
+    "tagline": "A reinvented classic for Bernabéu faithful",
+    "intro": "The adidas Icon Real Madrid jacket brings the club's legacy into the present. Perfect for setting style on cold days or completing the Icon 25/26 set.",
+    "collection": "",
+    "key_benefits": [
+      "90s-inspired design: Retro cut with classic adidas logo.",
+      "Thermal comfort: Material that provides warmth without losing mobility.",
+      "Total versatility: Use it as a coat or walking garment.",
+      "Visual identity: Real Madrid Blue with white details."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-chandal-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-entretiempo-adidas-real-madrid-icon-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-adidas-real-madrid-icon-azul_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-chandal-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-entretiempo-adidas-real-madrid-icon-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3058_chaqueta-adidas-real-madrid-icon-azul_4_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn3058",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - azul",
+    "tagline": "Un clásico reinventado para los fieles al Bernabéu",
+    "intro": "La chaqueta adidas Icon del Real Madrid trae el legado del club al presente. Perfecta para marcar estilo en días fríos o completar el conjunto Icon 25/26.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño inspirado en los 90: Corte retro con logo clásico adidas.",
+      "Confort térmico: Material que abriga sin perder movilidad.",
+      "Versatilidad total: Úsala como abrigo o prenda de paseo.",
+      "Identidad visual: Azul Real Madrid con detalles blancos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn3058"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Icon",
+    "sole_type": ""
+  }
+}

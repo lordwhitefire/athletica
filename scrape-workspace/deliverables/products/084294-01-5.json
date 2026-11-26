@@ -1,0 +1,103 @@
+{
+  "id": "084294-01-5",
+  "slug": "balon-puma-orbita-liga-f-fifa-quality-pro-talla-5-white",
+  "name": "Puma Orbita Liga F FIFA Quality Pro talla 5",
+  "model": "Orbita Liga F FIFA Quality Pro talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Orbita Liga F FIFA Quality Pro talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/5f725d08e46753d6c3ebe037f193a0a646ca7ab5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/5f725d08e46753d6c3ebe037f193a0a646ca7ab5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/811cfd8646fe8b0165371560dfd9d047f60bd52a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e86a353cec3a2383bdebd0bf24f1b1470b97e7f0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e94ab2f42f00376c063c84219f3291bb2914f926-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/5f725d08e46753d6c3ebe037f193a0a646ca7ab5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/811cfd8646fe8b0165371560dfd9d047f60bd52a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e86a353cec3a2383bdebd0bf24f1b1470b97e7f0-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/e94ab2f42f00376c063c84219f3291bb2914f926-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-5f725d08e46753d6c3ebe037f193a0a646ca7ab5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5f725d08e46753d6c3ebe037f193a0a646ca7ab5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-811cfd8646fe8b0165371560dfd9d047f60bd52a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/811cfd8646fe8b0165371560dfd9d047f60bd52a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e86a353cec3a2383bdebd0bf24f1b1470b97e7f0-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e86a353cec3a2383bdebd0bf24f1b1470b97e7f0-1500x1500.jpg"
+    },
+    {
+      "_id": "image-e94ab2f42f00376c063c84219f3291bb2914f926-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e94ab2f42f00376c063c84219f3291bb2914f926-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084294-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084294-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita Liga F FIFA Quality Pro talla 5",
+    "sole_type": ""
+  }
+}

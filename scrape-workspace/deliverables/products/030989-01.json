@@ -1,0 +1,92 @@
+{
+  "id": "030989-01",
+  "slug": "puma-ultra-light-sleeve-white",
+  "name": "Puma Ultra Light Sleeve",
+  "model": "Ultra Light Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - White",
+    "tagline": "Lightweight protection for free play",
+    "intro": "The Puma Ultra Light Sleeve soccer shin guards are designed for soccer players looking for protection, lightness and comfort during the game. Its PP cover incorporates EVA padding and is complemented by elastic support meshes to help keep the shin guards correctly positioned.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight Protection: Its construction helps protect the shin while maintaining a light feel during play.",
+      "Greater comfort: The padding helps soften the contact of the shin guard with the leg.",
+      "Stable fit: The support meshes help keep the protections correctly placed during the game.",
+      "Freedom of movement: Its lightweight design allows you to run, change direction and compete for the ball naturally.",
+      "Not too bulky feel: Its profile is designed to offer protection without being excessively restrictive."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/62119d1fc50064662d0a9ab3e3cbc28f7da59624-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/62119d1fc50064662d0a9ab3e3cbc28f7da59624-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/62119d1fc50064662d0a9ab3e3cbc28f7da59624-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-62119d1fc50064662d0a9ab3e3cbc28f7da59624-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/62119d1fc50064662d0a9ab3e3cbc28f7da59624-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030989-01",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - blancas",
+    "tagline": "Protección ligera para jugar con libertad",
+    "intro": "Las espinilleras de fútbol Puma Ultra Light Sleeve están diseñadas para futbolistas que buscan protección, ligereza y comodidad durante el juego. Su cubierta de PP incorpora acolchado de EVA y se complementa con mallas elásticas de sujeción para ayudar a mantener las espinilleras correctamente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su construcción ayuda a proteger la espinilla manteniendo una sensación ligera durante el juego.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Ajuste estable: Las mallas de sujeción ayudan a mantener las protecciones correctamente colocadas durante el juego.",
+      "Libertad de movimiento: Su diseño ligero permite correr, cambiar de dirección y disputar el balón con naturalidad.",
+      "Sensación poco voluminosa: Su perfil está pensado para ofrecer protección sin resultar excesivamente restrictivo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030989-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Sleeve",
+    "product_model": "Ultra Light Sleeve",
+    "sole_type": ""
+  }
+}

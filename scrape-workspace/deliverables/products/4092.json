@@ -1,0 +1,74 @@
+{
+  "id": "4092",
+  "slug": "bolsa-porta-pizarra-zastor-45x60-cm-black",
+  "name": "Bolsa porta-pizarra Zastor 45x60 cm",
+  "model": "Bolsa porta-pizarra Zastor 45x60 cm",
+  "brand": "Zastor",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "porta-pizarra Zastor 45x60 cm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4092_imagen-de-la-bolsa-Pizarra-Entrenador-futbol-Zastor-GAME-45x60cm-2019-negro_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4092_imagen-de-la-bolsa-Pizarra-Entrenador-futbol-Zastor-GAME-45x60cm-2019-negro_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4092_imagen-de-la-bolsa-Pizarra-Entrenador-futbol-Zastor-GAME-45x60cm-2019-negro_3_detalle-interior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4092_imagen-de-la-bolsa-Pizarra-Entrenador-futbol-Zastor-GAME-45x60cm-2019-negro_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/4/0/4092_imagen-de-la-bolsa-Pizarra-Entrenador-futbol-Zastor-GAME-45x60cm-2019-negro_3_detalle-interior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/4092",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/4092"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'bolsa'",
+    "root_model": "Bolsa",
+    "submodel": "",
+    "product_model": "Bolsa porta-pizarra Zastor 45x60 cm",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "KA7808",
+  "slug": "adidas-copa-club-j-white",
+  "name": "adidas Copa Club J",
+  "model": "Copa Club J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - blancos",
+    "tagline": "Ideal para porteros que se inician",
+    "intro": "Estos guantes ofrecen un ajuste cómodo y un buen agarre para iniciarse o mejorar bajo palos.",
+    "collection": "BORN FOR GOALS",
+    "key_benefits": [
+      "Comodidad inmediata: Materiales suaves y ligeros que se adaptan bien desde el primer uso.",
+      "Ajuste seguro: El corte positivo permite controlar mejor el balón y reaccionar rápido.",
+      "Durabilidad: Perfectos para entrenamientos continuos gracias a su resistencia."
+    ],
+    "technical_details": {
+      "range": "Copa Club J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7808_guantes-de-portero-color-blanco-adidas-copa-club-j_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7808_guantes-de-portero-color-blanco-adidas-copa-club-j_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7808_guantes-portero-blancos-adidas-copa-club-j_2_completa-palma-mano-izquierda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7808_guantes-de-portero-color-blanco-adidas-copa-club-j_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA7808_guantes-portero-blancos-adidas-copa-club-j_2_completa-palma-mano-izquierda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ka7808",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero infantiles adidas corte positivo - blancos",
+    "tagline": "Ideal para porteros que se inician",
+    "intro": "Estos guantes ofrecen un ajuste cómodo y un buen agarre para iniciarse o mejorar bajo palos.",
+    "collection": "BORN FOR GOALS",
+    "key_benefits": [
+      "Comodidad inmediata: Materiales suaves y ligeros que se adaptan bien desde el primer uso.",
+      "Ajuste seguro: El corte positivo permite controlar mejor el balón y reaccionar rápido.",
+      "Durabilidad: Perfectos para entrenamientos continuos gracias a su resistencia."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ka7808"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Copa",
+    "submodel": "Club J",
+    "product_model": "Copa Club J",
+    "sole_type": ""
+  }
+}

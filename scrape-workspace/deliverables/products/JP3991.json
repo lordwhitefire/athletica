@@ -1,0 +1,102 @@
+{
+  "id": "JP3991",
+  "slug": "polo-adidas-real-madrid-grey",
+  "name": "Polo adidas Real Madrid",
+  "model": "Polo adidas Real Madrid",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas polo - gray",
+    "tagline": "Merengue style beyond the field",
+    "intro": "Show your passion for the Real Madrid adidas polo. A versatile garment that combines sporty elegance and everyday comfort, perfect for representing your team outside the stadium.",
+    "collection": "",
+    "key_benefits": [
+      "Distinctive design: Official colors of the Real Madrid training collection.",
+      "Premium comfort: Soft fabric that guarantees a pleasant touch at all times.",
+      "Club identity: Embroidered shield that reflects Madrid pride.",
+      "Absolute versatility: Ideal to wear on casual occasions with a football touch.",
+      "adidas style: Modern cut with classic details for a flawless look."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_polo-color-gris-adidas-real-madrid_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_polo-color-gris-adidas-real-madrid_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_niqui-gris-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_polo-adidas-real-madrid-color-gris_3_detalle-hombro-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_niqui-adidas-real-madrid-gris_4_detalle-hombro-y-espalda-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_polo-color-gris-adidas-real-madrid_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_niqui-gris-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_polo-adidas-real-madrid-color-gris_3_detalle-hombro-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3991_niqui-adidas-real-madrid-gris_4_detalle-hombro-y-espalda-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3991",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Polo adidas del Real Madrid - gris",
+    "tagline": "Estilo merengue más allá del campo",
+    "intro": "Demuestra tu pasión por el polo adidas del Real Madrid. Una prenda versátil que combina elegancia deportiva y comodidad diaria, perfecta para representar a tu equipo fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño distintivo: Colores oficiales de la colección de entrenamiento del Real Madrid.",
+      "Comodidad premium: Tejido suave que garantiza un tacto agradable en todo momento.",
+      "Identidad de club: Escudo bordado que refleja el orgullo madridista.",
+      "Versatilidad absoluta: Ideal para llevar en ocasiones casuales con un toque futbolero.",
+      "Estilo adidas: Corte moderno con detalles clásicos para un look impecable."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3991"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo adidas Real Madrid",
+    "sole_type": ""
+  }
+}

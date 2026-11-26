@@ -1,0 +1,96 @@
+{
+  "id": "KG2972",
+  "slug": "pantalon-adidas-real-madrid-originals-2-0-green",
+  "name": "adidas Real Madrid Originals 2.0",
+  "model": "Real Madrid Originals 2.0",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo adidas del Real Madrid - verde oscuro",
+    "tagline": "El legado del Real Madrid en un diseño Originals",
+    "intro": "El pantalón adidas Real Madrid Originals 2.0 combina la esencia del fútbol clásico con un estilo urbano inspirado en la segunda equipación del Real Madrid. Su diseño retro y su confección en tejido suave lo convierten en una prenda perfecta para el día a día de cualquier madridista.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de felpa suave: Comodidad y calidez para un uso diario.",
+      "Corte regular: Ajuste cómodo con libertad de movimiento.",
+      "Elastic waist with drawstring: Customized and secure fit.",
+      "Diseño Originals: Inspirado en la historia del Real Madrid."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Originals 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-largo-color-verde-adidas-real-madrid-originals-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-largo-color-verde-adidas-real-madrid-originals-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-chandal-verde-oscuro-adidas-real-madrid-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-chandal-adidas-real-madrid-originals-2-0-color-verde_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-largo-adidas-real-madrid-originals-2-0-verde-oscuro_4_detalle-lateral-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-largo-color-verde-adidas-real-madrid-originals-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-chandal-verde-oscuro-adidas-real-madrid-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-chandal-adidas-real-madrid-originals-2-0-color-verde_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2972_pantalon-largo-adidas-real-madrid-originals-2-0-verde-oscuro_4_detalle-lateral-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2972",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Real Madrid - verde oscuro",
+    "tagline": "El legado del Real Madrid en un diseño Originals",
+    "intro": "El pantalón adidas Real Madrid Originals 2.0 combina la esencia del fútbol clásico con un estilo urbano inspirado en la segunda equipación del Real Madrid. Su diseño retro y su confección en tejido suave lo convierten en una prenda perfecta para el día a día de cualquier madridista.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de felpa suave: Comodidad y calidez para un uso diario.",
+      "Corte regular: Ajuste cómodo con libertad de movimiento.",
+      "Cintura elástica con cordón: Ajuste personalizado y seguro.",
+      "Diseño Originals: Inspirado en la historia del Real Madrid."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2972"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Originals 2.0",
+    "sole_type": ""
+  }
+}

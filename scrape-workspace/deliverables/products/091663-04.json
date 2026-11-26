@@ -1,0 +1,97 @@
+{
+  "id": "091663-04",
+  "slug": "mochila-puma-manchester-city-blue",
+  "name": "Backpack Puma Manchester City",
+  "model": "Backpack Puma Manchester City",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Manchester City",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/73bedc6e77cbedf3b870c18c27b737d8433622cd-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/73bedc6e77cbedf3b870c18c27b737d8433622cd-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d27ab9b686adfaf679070b47acdea693d7664b5e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8e75101d5125e37770d49e4b3214364f52f3cbd3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/73bedc6e77cbedf3b870c18c27b737d8433622cd-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d27ab9b686adfaf679070b47acdea693d7664b5e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8e75101d5125e37770d49e4b3214364f52f3cbd3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-73bedc6e77cbedf3b870c18c27b737d8433622cd-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/73bedc6e77cbedf3b870c18c27b737d8433622cd-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d27ab9b686adfaf679070b47acdea693d7664b5e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d27ab9b686adfaf679070b47acdea693d7664b5e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8e75101d5125e37770d49e4b3214364f52f3cbd3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8e75101d5125e37770d49e4b3214364f52f3cbd3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091663-04",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/091663-04"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Manchester City",
+    "sole_type": ""
+  }
+}

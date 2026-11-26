@@ -1,0 +1,98 @@
+{
+  "id": "IR4747-677",
+  "slug": "mochila-nike-barcelona-academy-red",
+  "name": "Backpack Nike Barcelona Academy",
+  "model": "Backpack Nike Barcelona Academy",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Barcelona Nike Sports Backpack - Maroon",
+    "tagline": "Performance and endurance with FCB style",
+    "intro": "The Nike Barcelona Academy backpack is designed to accompany you in training and matches, even in demanding conditions. Inspired by Barcelona, ​​it combines capacity, resistance and functionality to transport all your equipment.",
+    "collection": "",
+    "key_benefits": [
+      "Weather Protection: Storm-FIT Technology helps keep your gear dry.",
+      "Large capacity: Enough space for clothes, accessories and ball.",
+      "Comfort and ventilation: Mesh panels that improve breathability.",
+      "Official Barcelona style: Represent the team in your daily life."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Academy",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-color-rojo-nike-barcelona-academy_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-color-rojo-nike-barcelona-academy_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-granate-nike-barcelona-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-nike-barcelona-academy-color-rojo_3_completa-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-nike-barcelona-academy-granate_4_detalle-compartimento-exterior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-color-rojo-nike-barcelona-academy_5_detalle-escudo-y-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-color-rojo-nike-barcelona-academy_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-granate-nike-barcelona-academy_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-nike-barcelona-academy-color-rojo_3_completa-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-nike-barcelona-academy-granate_4_detalle-compartimento-exterior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR4747-677_mochila-color-rojo-nike-barcelona-academy_5_detalle-escudo-y-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ir4747-677",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Nike del Barcelona - granate",
+    "tagline": "Rendimiento y resistencia con estilo FCB",
+    "intro": "La mochila Nike Barcelona Academy está diseñada para acompañarte en entrenamientos y partidos, incluso en condiciones exigentes. Inspirada en el Barcelona, combina capacidad, resistencia y funcionalidad para transportar todo tu equipamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Protección contra el clima: Tecnología Storm-FIT que ayuda a mantener tu equipación seca.",
+      "Gran capacidad: Espacio suficiente para ropa, accesorios y balón.",
+      "Comodidad y ventilación: Paneles de malla que mejoran la transpirabilidad.",
+      "Estilo oficial Barcelona: Representa al equipo en tu día a día."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ir4747-677"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Nike Barcelona Academy",
+    "sole_type": ""
+  }
+}

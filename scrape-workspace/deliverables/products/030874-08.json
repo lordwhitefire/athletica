@@ -1,0 +1,96 @@
+{
+  "id": "030874-08",
+  "slug": "puma-ultra-light-ankle-pink",
+  "name": "Puma Ultra Light Ankle",
+  "model": "Ultra Light Ankle",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Pink",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Protective Ankle Pad - Pink",
+    "tagline": "Lightweight protection with additional coverage",
+    "intro": "The Puma Ultra Light Ankle football shin guards are designed for footballers looking to combine protection, comfort and freedom of movement. Its PP cover incorporates EVA padding and is complemented by a protective ankle strap to offer stable support and greater coverage during play.",
+    "collection": "",
+    "key_benefits": [
+      "Lightweight protection: Its construction helps protect the shin without adding excessive bulk to the equipment.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Additional coverage: The integrated ankle support provides additional protection in the ankle area.",
+      "Stable fit: Its design helps keep the protections correctly placed during the game.",
+      "Freedom of movement: Its light profile allows you to run and change direction naturally."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Ankle",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e2ff093c203049a153e784cf45d48c2b9a07c526-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e2ff093c203049a153e784cf45d48c2b9a07c526-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e2ff093c203049a153e784cf45d48c2b9a07c526-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e2ff093c203049a153e784cf45d48c2b9a07c526-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e2ff093c203049a153e784cf45d48c2b9a07c526-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/030874-08",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Puma con tobillera protectora - rosas",
+    "tagline": "Protección ligera con cobertura adicional",
+    "intro": "Las espinilleras de fútbol Puma Ultra Light Ankle están diseñadas para futbolistas que buscan combinar protección, comodidad y libertad de movimiento. Su cubierta de PP incorpora acolchado de EVA y se complementa con una tobillera protectora para ofrecer una sujeción estable y una mayor cobertura durante el juego.",
+    "collection": "",
+    "key_benefits": [
+      "Protección ligera: Su construcción ayuda a proteger la espinilla sin añadir un volumen excesivo al equipamiento.",
+      "Mayor comodidad: El acolchado ayuda a suavizar el contacto de la espinillera con la pierna.",
+      "Cobertura adicional: La tobillera integrada aporta protección complementaria en la zona del tobillo.",
+      "Ajuste estable: Su diseño ayuda a mantener las protecciones correctamente colocadas durante el juego.",
+      "Libertad de movimiento: Su perfil ligero permite correr y cambiar de dirección con naturalidad."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/030874-08"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Ankle",
+    "product_model": "Ultra Light Ankle",
+    "sole_type": ""
+  }
+}

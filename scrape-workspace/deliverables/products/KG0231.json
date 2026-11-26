@@ -1,0 +1,92 @@
+{
+  "id": "KG0231",
+  "slug": "chaqueta-adidas-japon-eqt-blue",
+  "name": "adidas Japón EQT",
+  "model": "Japón EQT",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de chándal adidas de la selección de Japón - azul",
+    "tagline": "El regreso del estilo más icónico de Japón",
+    "intro": "La chaqueta adidas Japón EQT recupera la esencia de la legendaria línea Equipment con un diseño inspirado en la selección japonesa. Su estética retro combina paneles de color llamativos, detalles clásicos de la JFA y un corte holgado que aporta comodidad y personalidad. Una prenda perfecta para los aficionados al fútbol y a la moda deportiva vintage.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT retro: Inspirado en una de las colecciones más emblemáticas de adidas.",
+      "Corte holgado: Ofrece comodidad y libertad de movimiento para el día a día.",
+      "Cuello alto con cremallera: Mayor protección y estilo deportivo.",
+      "Detalles oficiales de Japón: Escudo de la JFA y elementos gráficos exclusivos."
+    ],
+    "technical_details": {
+      "range": "adidas Japón EQT",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-color-azul-adidas-japon-eqt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-color-azul-adidas-japon-eqt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-chandal-azul-adidas-japon-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-entretiempo-adidas-japon-eqt-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-adidas-japon-eqt-azul_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-color-azul-adidas-japon-eqt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-chandal-azul-adidas-japon-eqt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-entretiempo-adidas-japon-eqt-color-azul_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG0231_chaqueta-adidas-japon-eqt-azul_4_detalle-cuello-y-espalda.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg0231",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas de la selección de Japón - azul",
+    "tagline": "El regreso del estilo más icónico de Japón",
+    "intro": "La chaqueta adidas Japón EQT recupera la esencia de la legendaria línea Equipment con un diseño inspirado en la selección japonesa. Su estética retro combina paneles de color llamativos, detalles clásicos de la JFA y un corte holgado que aporta comodidad y personalidad. Una prenda perfecta para los aficionados al fútbol y a la moda deportiva vintage.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño EQT retro: Inspirado en una de las colecciones más emblemáticas de adidas.",
+      "Corte holgado: Ofrece comodidad y libertad de movimiento para el día a día.",
+      "Cuello alto con cremallera: Mayor protección y estilo deportivo.",
+      "Detalles oficiales de Japón: Escudo de la JFA y elementos gráficos exclusivos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg0231"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Japón",
+    "submodel": "",
+    "product_model": "Japón EQT",
+    "sole_type": ""
+  }
+}

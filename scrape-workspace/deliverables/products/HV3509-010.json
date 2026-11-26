@@ -1,0 +1,90 @@
+{
+  "id": "HV3509-010",
+  "slug": "sudadera-con-capucha-nike-t90-club-black",
+  "name": "con capucha Nike T90 Club",
+  "model": "con capucha Nike T90 Club",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Total 90 Hoodie - Black",
+    "tagline": "Urban style with a football soul",
+    "intro": "The Nike T90 Club hoodie brings back the classic spirit of Total 90 with a comfortable, warm and versatile design. Ideal for everyday wear or to wear before the game.",
+    "collection": "",
+    "key_benefits": [
+      "Retro inspiration: Logos and cut that pay tribute to the T90 era.",
+      "Guaranteed comfort: Warm fabric for prolonged use.",
+      "Urban functionality: Adjustable hood and kangaroo pocket.",
+      "Absolute versatility: Perfect for training or walking."
+    ],
+    "technical_details": {
+      "range": "con capucha Nike T90 Club",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3509-010_sudadera-con-capucha-color-negro-nike-t90-club_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3509-010_sudadera-con-capucha-color-negro-nike-t90-club_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3509-010_sudadera-con-capucha-negra-nike-t90-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3509-010_sudadera-con-capucha-nike-t90-club-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3509-010_sudadera-con-capucha-color-negro-nike-t90-club_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3509-010_sudadera-con-capucha-negra-nike-t90-club_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3509-010_sudadera-con-capucha-nike-t90-club-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv3509-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera con capucha Nike Total 90 - negra",
+    "tagline": "Estilo urbano con alma de fútbol",
+    "intro": "La sudadera con capucha Nike T90 Club recupera el espíritu clásico de Total 90 con un diseño cómodo, cálido y versátil. Ideal para el día a día o para llevar antes del partido.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración retro: Logos y corte que rinden tributo a la era T90.",
+      "Confort asegurado: Tejido cálido para uso prolongado.",
+      "Funcionalidad urbana: Capucha ajustable y bolsillo canguro.",
+      "Versatilidad absoluta: Perfecta para entrenar o pasear."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv3509-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "con",
+    "submodel": "",
+    "product_model": "con capucha Nike T90 Club",
+    "sole_type": ""
+  }
+}

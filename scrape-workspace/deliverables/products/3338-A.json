@@ -1,0 +1,88 @@
+{
+  "id": "3338-A",
+  "slug": "codera-arquer-termica-tubular-black",
+  "name": "Codera Arquer térmica tubular",
+  "model": "Codera Arquer térmica tubular",
+  "brand": "Arquer",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Codera de neopreno tubular - negra",
+    "tagline": "Compresión ligera con soporte confortable",
+    "intro": "La codera Arquer tubular está fabricada en neopreno de alta calidad que aporta compresión uniforme y retiene el calor natural de la zona. De este modo, ayuda a aliviar molestias en el codo y antebrazo, ofreciendo comodidad en entrenamientos, actividades diarias o procesos de recuperación.",
+    "collection": "",
+    "key_benefits": [
+      "Compresión uniforme: Ayuda a reducir molestias sin limitar la movilidad.",
+      "Soporte térmico natural: El neopreno mantiene la zona caliente y favorece la recuperación.",
+      "Uso sencillo: Diseño tubular fácil de colocar y quitar."
+    ],
+    "technical_details": {
+      "range": "Arquer térmica tubular",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/3/3338-A_codera-termica-arquer_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/3/3338-A_codera-termica-arquer_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/3/3338-A_codera-negra-arquer-termica-tubular_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/3/3338-A_codera-arquer-termica-tubular-color-negro_3_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/3/3338-A_codera-termica-arquer_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/3/3338-A_codera-negra-arquer-termica-tubular_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/3/3/3338-A_codera-arquer-termica-tubular-color-negro_3_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/3338-a",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Codera de neopreno tubular - negra",
+    "tagline": "Compresión ligera con soporte confortable",
+    "intro": "La codera Arquer tubular está fabricada en neopreno de alta calidad que aporta compresión uniforme y retiene el calor natural de la zona. De este modo, ayuda a aliviar molestias en el codo y antebrazo, ofreciendo comodidad en entrenamientos, actividades diarias o procesos de recuperación.",
+    "collection": "",
+    "key_benefits": [
+      "Compresión uniforme: Ayuda a reducir molestias sin limitar la movilidad.",
+      "Soporte térmico natural: El neopreno mantiene la zona caliente y favorece la recuperación.",
+      "Uso sencillo: Diseño tubular fácil de colocar y quitar."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/3338-a"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Codera",
+    "submodel": "",
+    "product_model": "Codera Arquer térmica tubular",
+    "sole_type": ""
+  }
+}

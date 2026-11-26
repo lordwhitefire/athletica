@@ -1,0 +1,92 @@
+{
+  "id": "JM1325",
+  "slug": "short-adidas-argentina-26-blue",
+  "name": "adidas Argentina 26",
+  "model": "Argentina 26",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Argentina national team adidas home shorts 2026 - navy blue",
+    "tagline": "The official shorts to accompany the Albiceleste",
+    "intro": "These adidas Argentina 2026 shorts connect you directly with the spirit of the champions. Designed for training and matches, it gives you comfort and style with the national shield on the thigh.",
+    "collection": "",
+    "key_benefits": [
+      "Design: Same style used by players, adapted to the fan.",
+      "Guaranteed breathability: Climacool technology that keeps the body dry.",
+      "Elastic waist: Comfortable fit to move freely."
+    ],
+    "technical_details": {
+      "range": "adidas Argentina 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1325_pantalon-corto-color-azul-adidas-argentina-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1325_pantalon-corto-color-azul-adidas-argentina-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1325_short-azul-marino-adidas-argentina-26_2_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1325_pantalon-corto-adidas-argentina-26-color-azul_3_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1325_pantalon-corto-color-azul-adidas-argentina-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1325_short-azul-marino-adidas-argentina-26_2_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1325_pantalon-corto-adidas-argentina-26-color-azul_3_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm1325",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de la primera equipación adidas de la selección argentina 2026 - azul marino",
+    "tagline": "El short oficial para acompañar a la Albiceleste",
+    "intro": "Este pantalón corto adidas Argentina 2026 te conecta directamente con el espíritu de los campeones. Diseñado para los entrenamientos y partidos, te brinda confort y estilo con el escudo nacional en el muslo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño: Mismo estilo que usan los jugadores, adaptado al aficionado.",
+      "Transpirabilidad garantizada: Tecnología Climacool que mantiene el cuerpo seco.",
+      "Cintura elástica: Ajuste cómodo para moverte con libertad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm1325"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Argentina",
+    "submodel": "",
+    "product_model": "Argentina 26",
+    "sole_type": ""
+  }
+}

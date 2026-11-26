@@ -1,0 +1,103 @@
+{
+  "id": "030987-04",
+  "slug": "puma-ultra-flex-sleeve-blue",
+  "name": "Puma Ultra Flex Sleeve",
+  "model": "Ultra Flex Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - Blue",
+    "tagline": "Flexible protection, secure fit",
+    "intro": "The Puma Ultra Flex Sleeve are designed to offer comfort and freedom of movement with a structure that adapts to the contour of the leg.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Total flexibility: Ergonomic design that adapts to the movement of the game.",
+      "Controlled compression: Stockings that stabilize and secure without excessive tightening.",
+      "Sports style: Modern image with visual impact graphics.",
+      "Functional protection: Resistant panels where more security is needed.",
+      "Natural feel: Play freely without feeling stiff."
+    ],
+    "technical_details": {
+      "range": "Ultra Flex Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/27422408e730dcba9b5ed62db4b12d62114723f8-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/27422408e730dcba9b5ed62db4b12d62114723f8-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f052c1f81d60abcac7c38594702ecb5ccce52840-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/27422408e730dcba9b5ed62db4b12d62114723f8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f052c1f81d60abcac7c38594702ecb5ccce52840-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-27422408e730dcba9b5ed62db4b12d62114723f8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/27422408e730dcba9b5ed62db4b12d62114723f8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f052c1f81d60abcac7c38594702ecb5ccce52840-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f052c1f81d60abcac7c38594702ecb5ccce52840-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/030987-04",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - azules",
+    "tagline": "Protección flexible, ajuste seguro",
+    "intro": "Las Puma Ultra Flex Sleeve están pensadas para ofrecer comodidad y libertad de movimiento con una estructura que se adapta al contorno de la pierna.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Flexibilidad total: Diseño ergonómico que se adapta al movimiento del juego.",
+      "Compresión controlada: Medias que estabilizan y aseguran sin apretar en exceso.",
+      "Estilo deportivo: Imagen moderna con gráficos de impacto visual.",
+      "Protección funcional: Paneles resistentes donde se necesita más seguridad.",
+      "Sensación natural: Juega con libertad sin sentir rigidez."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/030987-04"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Flex Sleeve",
+    "product_model": "Ultra Flex Sleeve",
+    "sole_type": ""
+  }
+}

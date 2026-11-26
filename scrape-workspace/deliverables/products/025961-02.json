@@ -1,0 +1,99 @@
+{
+  "id": "025961-02",
+  "slug": "gorra-puma-borussia-dortmund-ftblarchive-black",
+  "name": "Puma Borussia Dortmund FtblArchive",
+  "model": "Borussia Dortmund FtblArchive",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Borussia Dortmund FtblArchive",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f08461aa03fc55a2ed0113d90297774525a16fc8-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f08461aa03fc55a2ed0113d90297774525a16fc8-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f08f90a32cb63d2b7b87ea72eed50cca8d36c5a1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a7a9888bc8dbbf44292ce71777f3e910b7739637-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d7a6abe05734dc4a8fd2c59c910da6c59f97d32a-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f08461aa03fc55a2ed0113d90297774525a16fc8-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f08f90a32cb63d2b7b87ea72eed50cca8d36c5a1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a7a9888bc8dbbf44292ce71777f3e910b7739637-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d7a6abe05734dc4a8fd2c59c910da6c59f97d32a-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f08461aa03fc55a2ed0113d90297774525a16fc8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f08461aa03fc55a2ed0113d90297774525a16fc8-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f08f90a32cb63d2b7b87ea72eed50cca8d36c5a1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f08f90a32cb63d2b7b87ea72eed50cca8d36c5a1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a7a9888bc8dbbf44292ce71777f3e910b7739637-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a7a9888bc8dbbf44292ce71777f3e910b7739637-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d7a6abe05734dc4a8fd2c59c910da6c59f97d32a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d7a6abe05734dc4a8fd2c59c910da6c59f97d32a-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/025961-02",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/025961-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'gorra'",
+    "root_model": "Borussia",
+    "submodel": "",
+    "product_model": "Borussia Dortmund FtblArchive",
+    "sole_type": ""
+  }
+}

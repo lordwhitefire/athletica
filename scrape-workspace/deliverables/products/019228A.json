@@ -1,0 +1,111 @@
+{
+  "id": "019228A",
+  "slug": "adidas-mundial-team-black",
+  "name": "adidas Mundial Team",
+  "model": "Mundial Team",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Mundial Team",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a8f2792e9d6603b5cfaef6cf6ad95cb4ecacf0e1-1600x1600.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a8f2792e9d6603b5cfaef6cf6ad95cb4ecacf0e1-1600x1600.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d737c77070589de1c233b9d486a9dcfd942ca316-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/21c5a4fcf0d86fdc9cf85a22c7003d1f1f49e7fa-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a2b3d49591f808a774dd1d150abe45eb31102be0-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c7606926f21bed5ae1ea9c74399b76f22e5857dd-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6f609fe86f8435e74a92d27a5016d08bd9f36a91-1600x1600.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a8f2792e9d6603b5cfaef6cf6ad95cb4ecacf0e1-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d737c77070589de1c233b9d486a9dcfd942ca316-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/21c5a4fcf0d86fdc9cf85a22c7003d1f1f49e7fa-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a2b3d49591f808a774dd1d150abe45eb31102be0-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c7606926f21bed5ae1ea9c74399b76f22e5857dd-1600x1600.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/6f609fe86f8435e74a92d27a5016d08bd9f36a91-1600x1600.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a8f2792e9d6603b5cfaef6cf6ad95cb4ecacf0e1-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a8f2792e9d6603b5cfaef6cf6ad95cb4ecacf0e1-1600x1600.jpg"
+    },
+    {
+      "_id": "image-d737c77070589de1c233b9d486a9dcfd942ca316-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d737c77070589de1c233b9d486a9dcfd942ca316-1600x1600.jpg"
+    },
+    {
+      "_id": "image-21c5a4fcf0d86fdc9cf85a22c7003d1f1f49e7fa-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/21c5a4fcf0d86fdc9cf85a22c7003d1f1f49e7fa-1600x1600.jpg"
+    },
+    {
+      "_id": "image-a2b3d49591f808a774dd1d150abe45eb31102be0-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a2b3d49591f808a774dd1d150abe45eb31102be0-1600x1600.jpg"
+    },
+    {
+      "_id": "image-c7606926f21bed5ae1ea9c74399b76f22e5857dd-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c7606926f21bed5ae1ea9c74399b76f22e5857dd-1600x1600.jpg"
+    },
+    {
+      "_id": "image-6f609fe86f8435e74a92d27a5016d08bd9f36a91-1600x1600-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6f609fe86f8435e74a92d27a5016d08bd9f36a91-1600x1600.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/019228a",
+    "language": "es",
+    "category": "Botas multitaco",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas multitaco"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/019228a"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Mundial",
+    "submodel": "Team",
+    "product_model": "Mundial Team",
+    "sole_type": ""
+  }
+}

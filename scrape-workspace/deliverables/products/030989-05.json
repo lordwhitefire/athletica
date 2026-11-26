@@ -1,0 +1,94 @@
+{
+  "id": "030989-05",
+  "slug": "puma-ultra-light-sleeve-orange",
+  "name": "Puma Ultra Light Sleeve",
+  "model": "Ultra Light Sleeve",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - Orange",
+    "tagline": "Lightweight protection, superior fit",
+    "intro": "Ultralight and breathable model for players who want speed and comfort. Includes compression stockings for a secure fit.",
+    "collection": "HOT PERSUIT PACK",
+    "key_benefits": [
+      "Superior comfort: Designed not to hinder your game.",
+      "Lightweight protection: Ventilated shells and anatomical design",
+      "Reliable fit: Mesh or straps depending on model.",
+      "Exclusive design: Puma Hot Pursuit Collection."
+    ],
+    "technical_details": {
+      "range": "Ultra Light Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3eb502fb4cad5fab783786d67266b7b6be718447-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3eb502fb4cad5fab783786d67266b7b6be718447-1500x1500.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3eb502fb4cad5fab783786d67266b7b6be718447-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3eb502fb4cad5fab783786d67266b7b6be718447-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3eb502fb4cad5fab783786d67266b7b6be718447-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/030989-05",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - naranjas",
+    "tagline": "Protección ligera, ajuste superior",
+    "intro": "Modelo ultraligero y transpirable para jugadores que quieren velocidad y confort. Incluye medias de compresión para un ajuste seguro.",
+    "collection": "HOT PERSUIT PACK",
+    "key_benefits": [
+      "Comodidad superior: Diseñadas para no entorpecer tu juego.",
+      "Protección ligera: Carcasas ventiladas y diseño anatómico",
+      "Ajuste fiable: Malla o correas según modelo.",
+      "Diseño exclusivo: Colección Hot Pursuit de Puma."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/030989-05"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Light Sleeve",
+    "product_model": "Ultra Light Sleeve",
+    "sole_type": ""
+  }
+}

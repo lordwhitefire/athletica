@@ -1,0 +1,107 @@
+{
+  "id": "085216-01-5",
+  "slug": "balon-puma-milan-essentials-t-5-negro-rojo",
+  "name": "Puma Milan Essentials T.5",
+  "model": "Milan Essentials T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Negro / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "AC Milan Puma Soccer Ball in Size 5 - Black, Red",
+    "tagline": "Rossonera passion in every hit",
+    "intro": "The Puma AC Milan Essentials Size 5 soccer ball has been designed for fans who want to train and play representing one of the most historic clubs in European football. Its striking design incorporates the official AC Milan crest and reflects the unmistakable identity of the Rossoneri team. Thanks to its machine-stitched construction and durable materials, it offers great durability.",
+    "collection": "",
+    "key_benefits": [
+      "Official AC Milan design: With club crest and traditional Rossoneri colors.",
+      "Machine-stitched construction: Greater resistance for continued use.",
+      "Talla 5: Medida oficial para entrenamientos y partidos recreativos.",
+      "Great durability: Materials designed to withstand frequent use."
+    ],
+    "technical_details": {
+      "range": "Puma Milan Essentials T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/7f8f94de80ab7f5c68fec3dba3752cd204c93c4d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/7f8f94de80ab7f5c68fec3dba3752cd204c93c4d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0ac0e4e954334a7c787d71f1b9a43172b7bd3c17-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/356a919f62df8b436e9a94089741542a446c73f6-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/7f8f94de80ab7f5c68fec3dba3752cd204c93c4d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0ac0e4e954334a7c787d71f1b9a43172b7bd3c17-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/356a919f62df8b436e9a94089741542a446c73f6-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-7f8f94de80ab7f5c68fec3dba3752cd204c93c4d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7f8f94de80ab7f5c68fec3dba3752cd204c93c4d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0ac0e4e954334a7c787d71f1b9a43172b7bd3c17-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0ac0e4e954334a7c787d71f1b9a43172b7bd3c17-1500x1500.jpg"
+    },
+    {
+      "_id": "image-356a919f62df8b436e9a94089741542a446c73f6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/356a919f62df8b436e9a94089741542a446c73f6-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/085216-01-5",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del AC Milan en talla 5 - negro, rojo",
+    "tagline": "La pasión rossonera en cada golpeo",
+    "intro": "El balón de fútbol Puma del AC Milan Essentials Talla 5 ha sido diseñado para los aficionados que quieren entrenar y jugar representando a uno de los clubes más históricos del fútbol europeo. Su llamativo diseño incorpora el escudo oficial del AC Milan y refleja la identidad inconfundible del conjunto rossonero. Gracias a su construcción cosida a máquina y a sus materiales resistentes, ofrece una gran durabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial AC Milan: Con escudo del club y colores tradicionales rossoneri.",
+      "Construcción cosida a máquina: Mayor resistencia para el uso continuado.",
+      "Talla 5: Medida oficial para entrenamientos y partidos recreativos.",
+      "Gran durabilidad: Materiales diseñados para soportar un uso frecuente."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/085216-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Milan Essentials",
+    "submodel": "",
+    "product_model": "Milan Essentials T.5",
+    "sole_type": ""
+  }
+}

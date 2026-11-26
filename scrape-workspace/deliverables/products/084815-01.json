@@ -1,0 +1,113 @@
+{
+  "id": "084815-01",
+  "slug": "balon-puma-valencia-culture-talla-mini-white",
+  "name": "Puma Valencia Culture talla mini",
+  "model": "Valencia Culture talla mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Valencia soccer ball mini size - white",
+    "tagline": "Black and white fun in mini format",
+    "intro": "The Puma Valencia Culture Mini Size Ball combines club identity and functional performance in an official design. Thanks to its machine sewing with a soft touch, it is ideal for your training sessions or matches with friends.",
+    "collection": "",
+    "key_benefits": [
+      "Club pride: Official Valencia design to show off your colors.",
+      "Sturdy Construction: Machine stitched with soft touch ensures stable shape and long time use.",
+      "Good control: Textured material for greater precision in passing and shooting.",
+      "Adapted to your age: Mini Size: Mini ball for technical and precision training.",
+      "Perfect for training: Designed to improve technique and consistency."
+    ],
+    "technical_details": {
+      "range": "Puma Valencia Culture talla mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/58fc0e4f1718151fb5d9618fb2c6a39b2faf9270-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/58fc0e4f1718151fb5d9618fb2c6a39b2faf9270-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2f4fdf9d41b1de0a821add73ddf0a69db9773463-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/02ad4dfa3b1972eee57f670f773827a4debe88f5-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/58fc0e4f1718151fb5d9618fb2c6a39b2faf9270-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2f4fdf9d41b1de0a821add73ddf0a69db9773463-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/02ad4dfa3b1972eee57f670f773827a4debe88f5-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-58fc0e4f1718151fb5d9618fb2c6a39b2faf9270-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/58fc0e4f1718151fb5d9618fb2c6a39b2faf9270-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2f4fdf9d41b1de0a821add73ddf0a69db9773463-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2f4fdf9d41b1de0a821add73ddf0a69db9773463-1500x1500.jpg"
+    },
+    {
+      "_id": "image-02ad4dfa3b1972eee57f670f773827a4debe88f5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/02ad4dfa3b1972eee57f670f773827a4debe88f5-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084815-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Valencia talla mini - blanco",
+    "tagline": "Diversión blanquinegra en formato mini",
+    "intro": "El Balón Puma Valencia Culture talla mini combina identidad de club y rendimiento funcional en un diseño oficial. Gracias a su cosido a máquina con tacto suave, es ideal para tus sesiones de entrenamiento o partidos con amigos.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo de club: Diseño oficial del Valencia para lucir tus colores.",
+      "Construcción resistente: Cosido a máquina con tacto suave que garantiza forma estable y uso prolongado.",
+      "Buen control: Material con textura para mayor precisión en el pase y tiro.",
+      "Adaptado a tu edad: Tamaño Mini: Mini balón para entrenamiento técnico y precisión.",
+      "Perfecto para entrenar: Diseñado para mejorar técnica y consistencia."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084815-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Valencia",
+    "submodel": "",
+    "product_model": "Valencia Culture talla mini",
+    "sole_type": ""
+  }
+}

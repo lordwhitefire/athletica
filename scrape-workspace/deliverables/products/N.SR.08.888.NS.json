@@ -1,0 +1,88 @@
+{
+  "id": "N.SR.08.888.NS",
+  "slug": "conos-nike-training-10-unidades-orange",
+  "name": "Conos Nike training 10 unidades",
+  "model": "Conos Nike training 10 unidades",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Conos de entrenamiento Nike - naranjas",
+    "tagline": "Entrenamiento con visibilidad total",
+    "intro": "Los conos Nike naranjas son ideales para mejorar la precisión y el orden en cada sesión. Su color vibrante garantiza máxima visibilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Alta visibilidad: Color naranja perfecto para todo tipo de terreno.",
+      "Versatilidad de uso: Entrena conducción, reacción, agilidad o delimitación de zonas.",
+      "Ligereza y estabilidad: Fabricados en material ligero pero firme para uso intensivo.",
+      "Fácil transporte: Diseño apilable para llevarlos y guardarlos cómodamente.",
+      "Marca Nike visible: Estampado con el Swoosh para estilo y reconocimiento."
+    ],
+    "technical_details": {
+      "range": "Nike training 10 unidades",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/_/N.SR.08.888.NS_conos-futbol-nike-training-10-unidades-naranjas_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/_/N.SR.08.888.NS_conos-futbol-nike-training-10-unidades-naranjas_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/_/N.SR.08.888.NS_conos-futbol-nike-training-10-unidades-naranjas_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/_/N.SR.08.888.NS_conos-futbol-nike-training-10-unidades-naranjas_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/_/N.SR.08.888.NS_conos-futbol-nike-training-10-unidades-naranjas_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/_/N.SR.08.888.NS_conos-futbol-nike-training-10-unidades-naranjas_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/_/N.SR.08.888.NS_conos-futbol-nike-training-10-unidades-naranjas_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n-sr-08-888-ns",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Conos de entrenamiento Nike - naranjas",
+    "tagline": "Entrenamiento con visibilidad total",
+    "intro": "Los conos Nike naranjas son ideales para mejorar la precisión y el orden en cada sesión. Su color vibrante garantiza máxima visibilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Alta visibilidad: Color naranja perfecto para todo tipo de terreno.",
+      "Versatilidad de uso: Entrena conducción, reacción, agilidad o delimitación de zonas.",
+      "Ligereza y estabilidad: Fabricados en material ligero pero firme para uso intensivo.",
+      "Fácil transporte: Diseño apilable para llevarlos y guardarlos cómodamente.",
+      "Marca Nike visible: Estampado con el Swoosh para estilo y reconocimiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n-sr-08-888-ns"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Conos",
+    "submodel": "",
+    "product_model": "Conos Nike training 10 unidades",
+    "sole_type": ""
+  }
+}

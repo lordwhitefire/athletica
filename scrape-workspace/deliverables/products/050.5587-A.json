@@ -1,0 +1,97 @@
+{
+  "id": "050.5587-A",
+  "slug": "mallas-de-portero-ho-soccer-3-4-raven-black",
+  "name": "Mallas de Goalkeeper Ho Soccer 3/4 Raven",
+  "model": "Mallas de Goalkeeper Ho Soccer 3/4 Raven",
+  "brand": "Ho Soccer",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pirate goalkeeper tights with Ho Soccer protections - black",
+    "tagline": "Protection and comfort under the sticks",
+    "intro": "The Ho Soccer 3/4 Raven goalkeeper tights are designed to offer greater protection to the goalkeeper during training and matches. Its elastic construction and padded areas help you deal with falls, slides and stretches with greater confidence, especially on synthetic and abrasive surfaces.",
+    "collection": "",
+    "key_benefits": [
+      "Greater protection: Padded areas help reduce impact on the most exposed areas during falls.",
+      "Freedom of movement: The elastic fabric accompanies the goalkeeper's movements during stretches and movements.",
+      "Comfortable support: The elastic waist area promotes a firm and stable fit during play.",
+      "Prepared for abrasive surfaces: Its design provides additional protection for training and competing on synthetic fields."
+    ],
+    "technical_details": {
+      "range": "de portero Ho Soccer 3/4 Raven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/bb6cd7c72f4dd90e83dcc6197da4355cb53471f5-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/bb6cd7c72f4dd90e83dcc6197da4355cb53471f5-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0a1db5266593d0b8d4ba28066f2d7657f2c89fc6-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bb6cd7c72f4dd90e83dcc6197da4355cb53471f5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0a1db5266593d0b8d4ba28066f2d7657f2c89fc6-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-bb6cd7c72f4dd90e83dcc6197da4355cb53471f5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bb6cd7c72f4dd90e83dcc6197da4355cb53471f5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0a1db5266593d0b8d4ba28066f2d7657f2c89fc6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0a1db5266593d0b8d4ba28066f2d7657f2c89fc6-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/050-5587-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Mallas pirata de portero con protecciones Ho Soccer - negras",
+    "tagline": "Protección y comodidad bajo palos",
+    "intro": "Las mallas de portero Ho Soccer 3/4 Raven están diseñadas para ofrecer una mayor protección al portero durante entrenamientos y partidos. Su construcción elástica y sus zonas acolchadas ayudan a afrontar caídas, deslizamientos y estiradas con mayor confianza, especialmente sobre superficies sintéticas y abrasivas.",
+    "collection": "",
+    "key_benefits": [
+      "Mayor protección: Las zonas acolchadas ayudan a reducir el impacto en las áreas más expuestas durante las caídas.",
+      "Libertad de movimiento: El tejido elástico acompaña los movimientos del portero durante estiradas y desplazamientos.",
+      "Sujeción cómoda: La zona elástica de la cintura favorece un ajuste firme y estable durante el juego.",
+      "Preparadas para superficies abrasivas: Su diseño aporta protección adicional para entrenar y competir en campos sintéticos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/050-5587-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas de Goalkeeper Ho Soccer 3/4 Raven",
+    "sole_type": ""
+  }
+}

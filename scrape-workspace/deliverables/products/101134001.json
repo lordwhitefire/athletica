@@ -1,0 +1,99 @@
+{
+  "id": "101134001",
+  "slug": "uhlsport-aquasoft-hn-blue",
+  "name": "Uhlsport Aquasoft HN",
+  "model": "Aquasoft HN",
+  "brand": "Uhlsport",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Aquasoft HN",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/0da58eddaf9e720a097e8dee4c64642ad587fb2d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/0da58eddaf9e720a097e8dee4c64642ad587fb2d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/24b0ad1fa73e2aa77b81839fc7ebd492dd087ccc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1a978130c2020906d08424e448284c87fdd642f5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/075fb4b546c42ede1eb8be7056c1fc3962d9738d-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0da58eddaf9e720a097e8dee4c64642ad587fb2d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/24b0ad1fa73e2aa77b81839fc7ebd492dd087ccc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1a978130c2020906d08424e448284c87fdd642f5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/075fb4b546c42ede1eb8be7056c1fc3962d9738d-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-0da58eddaf9e720a097e8dee4c64642ad587fb2d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0da58eddaf9e720a097e8dee4c64642ad587fb2d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-24b0ad1fa73e2aa77b81839fc7ebd492dd087ccc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/24b0ad1fa73e2aa77b81839fc7ebd492dd087ccc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1a978130c2020906d08424e448284c87fdd642f5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1a978130c2020906d08424e448284c87fdd642f5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-075fb4b546c42ede1eb8be7056c1fc3962d9738d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/075fb4b546c42ede1eb8be7056c1fc3962d9738d-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/101134001",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/101134001"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "low",
+    "rule": "no rule matched",
+    "root_model": "Aquasoft",
+    "submodel": "",
+    "product_model": "Aquasoft HN",
+    "sole_type": ""
+  }
+}

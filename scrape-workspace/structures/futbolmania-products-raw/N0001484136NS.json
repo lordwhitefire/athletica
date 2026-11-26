@@ -1,0 +1,77 @@
+{
+  "id": "N0001484136NS",
+  "slug": "inflador-nike-essential-white",
+  "name": "Inflador Nike Essential",
+  "model": "Inflador Nike Essential",
+  "brand": "Nike",
+  "category": "Accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Essential",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/n0001484136ns",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": []
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484136NS_inflador-manual-pelotas-color-blanco-nike-essential_1_vista-completa.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484136NS_inflador-balones-blanco--rojo-nike-essential_2_detalle.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484136NS_inflador-manual-pelotas-color-blanco-nike-essential_1_vista-completa.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level1",
+      "name": "Accesorios fútbol",
+      "href": "https://www.futbolmania.com/es/accesorios-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level2",
+      "name": "Balones",
+      "href": "https://www.futbolmania.com/es/accesorios-balon-futbol"
+    },
+    {
+      "audience": "adult",
+      "root": "Accesorios fútbol",
+      "level": "level3",
+      "name": "Infladores",
+      "href": "https://www.futbolmania.com/es/hinchador-balon-futbol"
+    }
+  ]
+}

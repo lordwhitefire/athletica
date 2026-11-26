@@ -1,0 +1,94 @@
+{
+  "id": "JN2079",
+  "slug": "medias-adidas-alemania-26-white",
+  "name": "adidas Alemania 26",
+  "model": "Alemania 26",
+  "brand": "adidas",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Medias de la primera equipación adidas de la selección alemana 2026 - blancas",
+    "tagline": "El último paso para un look completo",
+    "intro": "Las medias de Alemania 2026 completan el conjunto oficial con un diseño elegante, cómodo y lleno de identidad futbolera. Tecnología y orgullo en cada pisada.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Compresión en puntos clave para máximo confort.",
+      "Diseño auténtico: Idénticas a las que usa la selección en partidos oficiales.",
+      "Transpirabilidad integrada: Paneles de ventilación estratégicos."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-color-blanco-adidas-alemania-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-color-blanco-adidas-alemania-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-blancas-adidas-alemania-26_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-adidas-alemania-26-color-blanco_3_detalle-punta.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-adidas-alemania-26-blancas_4_detalle-talon.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-color-blanco-adidas-alemania-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-blancas-adidas-alemania-26_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-adidas-alemania-26-color-blanco_3_detalle-punta.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN2079_medias-adidas-alemania-26-blancas_4_detalle-talon.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jn2079",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Medias de la primera equipación adidas de la selección alemana 2026 - blancas",
+    "tagline": "El último paso para un look completo",
+    "intro": "Las medias de Alemania 2026 completan el conjunto oficial con un diseño elegante, cómodo y lleno de identidad futbolera. Tecnología y orgullo en cada pisada.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste anatómico: Compresión en puntos clave para máximo confort.",
+      "Diseño auténtico: Idénticas a las que usa la selección en partidos oficiales.",
+      "Transpirabilidad integrada: Paneles de ventilación estratégicos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jn2079"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania 26",
+    "sole_type": ""
+  }
+}

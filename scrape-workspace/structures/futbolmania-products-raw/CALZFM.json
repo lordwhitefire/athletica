@@ -1,0 +1,91 @@
+{
+  "id": "CALZFM",
+  "slug": "calzador-futbolmania-black",
+  "name": "Calzador Futbolmania",
+  "model": "Calzador Futbolmania",
+  "brand": "Futbolmania",
+  "category": "Kids Accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Calzador de botas de fútbol - negro",
+    "tagline": "Ponte tus botas de forma rápida y cómoda",
+    "intro": "El calzador Futbolmania es un accesorio práctico diseñado para facilitar la entrada del pie en las botas de fútbol. Su forma curvada ayuda a deslizar el talón hacia el interior del calzado de manera sencilla, evitando tener que forzar la zona trasera de la bota durante el proceso.",
+    "collection": "",
+    "key_benefits": [
+      "Calzado más sencillo: Facilita la entrada del talón y ayuda a ponerse las botas con mayor comodidad.",
+      "Menos manipulación: Reduce la necesidad de tirar o presionar directamente sobre la zona trasera de la bota al introducir el pie.",
+      "Uso rápido: Su diseño permite colocar y retirar el calzador fácilmente antes de entrenamientos y partidos.",
+      "Fácil de transportar: Su formato compacto permite guardarlo junto al resto del equipamiento deportivo."
+    ],
+    "technical_details": {
+      "range": "Futbolmania",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/calzfm",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Calzador de botas de fútbol - negro",
+    "tagline": "Ponte tus botas de forma rápida y cómoda",
+    "intro": "El calzador Futbolmania es un accesorio práctico diseñado para facilitar la entrada del pie en las botas de fútbol. Su forma curvada ayuda a deslizar el talón hacia el interior del calzado de manera sencilla, evitando tener que forzar la zona trasera de la bota durante el proceso.",
+    "collection": "",
+    "key_benefits": [
+      "Calzado más sencillo: Facilita la entrada del talón y ayuda a ponerse las botas con mayor comodidad.",
+      "Menos manipulación: Reduce la necesidad de tirar o presionar directamente sobre la zona trasera de la bota al introducir el pie.",
+      "Uso rápido: Su diseño permite colocar y retirar el calzador fácilmente antes de entrenamientos y partidos.",
+      "Fácil de transportar: Su formato compacto permite guardarlo junto al resto del equipamiento deportivo."
+    ]
+  },
+  "images": {
+    "source_gallery": [
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CALZFM_calzador-de-futbolmania-color-negro_1_completa.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CALZFM_calzador-de-futbolmania-detalle-logotipo-negro_2_detalle-logotipo.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CALZFM_detalle-calzador-de-futbolmania-color-negro_3_detalle.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CALZFM_accesorio-calzado-color-negro_4_detalle-escala.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CALZFM_calzador-futbolmania-color-negro_5_detalle-aplicacion.jpg",
+      "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CALZFM_calzador-futbolmania-color-negro_6_detalle-uso.jpg"
+    ],
+    "source_main": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/C/A/CALZFM_calzador-de-futbolmania-color-negro_1_completa.jpg"
+  },
+  "menu_items": [
+    {
+      "audience": "kids",
+      "root": "Accesorios",
+      "level": "level1",
+      "name": "Accesorios",
+      "href": "https://www.futbolmania.com/es/kids/accesorios-futbol"
+    },
+    {
+      "audience": "kids",
+      "root": "Accesorios",
+      "level": "level2",
+      "name": "Calzado",
+      "href": "https://www.futbolmania.com/es/infantil/complementos/calzado"
+    },
+    {
+      "audience": "kids",
+      "root": "Marcas",
+      "level": "level1",
+      "name": "Marcas",
+      "href": "https://www.futbolmania.com/es/kids/marcas-futbol-infantil"
+    }
+  ]
+}

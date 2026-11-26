@@ -1,0 +1,96 @@
+{
+  "id": "JY7641",
+  "slug": "camiseta-adidas-belgica-pre-match-red",
+  "name": "adidas Bélgica Pre-Match",
+  "model": "Bélgica Pre-Match",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Belgium 2026 Adidas Pre-Match Warm-Up Top - Red",
+    "tagline": "The spirit of Belgium in every training session",
+    "intro": "The adidas Belgium Pre-Match 2026 Jersey reflects the brave and competitive identity of the Red Devils with a striking design inspired by their unique character. Designed for the moments before the game, it combines style and performance to stand out on and off the field.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool Technology: Keeps skin cool and dry during activity.",
+      "Breathable fabric: Promotes ventilation and comfort at all times.",
+      "Official design: Inspired by the Belgian national team for an authentic look.",
+      "Light and comfortable: Perfect for training or daily use."
+    ],
+    "technical_details": {
+      "range": "adidas Bélgica Pre-Match",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-color-rojo-adidas-belgica-pre-match_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-color-rojo-adidas-belgica-pre-match_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-adidas-belgica-pre-match-color-rojo_3_detalle-cuello-pecho-escudo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-adidas-belgica-pre-match-roja_4_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-roja-adidas-belgica-pre-match_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-color-rojo-adidas-belgica-pre-match_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-adidas-belgica-pre-match-color-rojo_3_detalle-cuello-pecho-escudo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-adidas-belgica-pre-match-roja_4_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7641_camiseta-roja-adidas-belgica-pre-match_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jy7641",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de calentamiento prepartido adidas de la selección de Bélgica 2026 - roja",
+    "tagline": "El espíritu de Bélgica en cada entrenamiento",
+    "intro": "La camiseta adidas Bélgica Pre-Match 2026 refleja la identidad valiente y competitiva de los Red Devils con un diseño impactante inspirado en su carácter único. Pensada para los momentos previos al partido, combina estilo y rendimiento para destacar dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Mantiene la piel fresca y seca durante la actividad.",
+      "Tejido transpirable: Favorece la ventilación y el confort en todo momento.",
+      "Diseño oficial: Inspirado en la selección belga para un look auténtico.",
+      "Ligera y cómoda: Perfecta para entrenamientos o uso diario."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jy7641"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Bélgica",
+    "submodel": "",
+    "product_model": "Bélgica Pre-Match",
+    "sole_type": ""
+  }
+}

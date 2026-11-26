@@ -1,0 +1,94 @@
+{
+  "id": "KB9995",
+  "slug": "short-adidas-arsenal-entrenamiento-black",
+  "name": "adidas Arsenal Training",
+  "model": "Arsenal entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón corto de entrenamiento adidas del Arsenal 2026 2027 - negro",
+    "tagline": "Entrena con el ADN del Arsenal",
+    "intro": "El pantalón corto de entrenamiento adidas del Arsenal 26 27 está diseñado para futbolistas que buscan comodidad y rendimiento en cada sesión. Inspirado en la equipación de entrenamiento del club londinense, combina un diseño moderno en color negro con detalles naranjas y materiales ligeros que favorecen la movilidad sobre el terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirado en la ropa de entrenamiento utilizada por los jugadores.",
+      "CLIMACOOL: Ayuda a mantener la piel fresca y seca durante el ejercicio.",
+      "Corte regular: Ofrece comodidad y libertad de movimiento.",
+      "Cintura ajustable: Permite adaptar el ajuste para una mayor seguridad y confort."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9995_pantalon-corto-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9995_pantalon-corto-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9995_short-negro-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9995_pantalon-corto-adidas-arsenal-entrenamiento-color-negro_3_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9995_pantalon-corto-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9995_short-negro-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB9995_pantalon-corto-adidas-arsenal-entrenamiento-color-negro_3_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb9995",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de entrenamiento adidas del Arsenal 2026 2027 - negro",
+    "tagline": "Entrena con el ADN del Arsenal",
+    "intro": "El pantalón corto de entrenamiento adidas del Arsenal 26 27 está diseñado para futbolistas que buscan comodidad y rendimiento en cada sesión. Inspirado en la equipación de entrenamiento del club londinense, combina un diseño moderno en color negro con detalles naranjas y materiales ligeros que favorecen la movilidad sobre el terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirado en la ropa de entrenamiento utilizada por los jugadores.",
+      "CLIMACOOL: Ayuda a mantener la piel fresca y seca durante el ejercicio.",
+      "Corte regular: Ofrece comodidad y libertad de movimiento.",
+      "Cintura ajustable: Permite adaptar el ajuste para una mayor seguridad y confort."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb9995"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Arsenal Training",
+    "submodel": "",
+    "product_model": "Arsenal entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "100572304-Y",
+  "slug": "camiseta-uhlsport-save-goalkeeper-red",
+  "name": "Uhlsport Save Goalkeeper",
+  "model": "Save Goalkeeper",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Uhlsport Save Goalkeeper",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-color-rojo-uhlsport-nino-save-goalkeeper_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-color-rojo-uhlsport-nino-save-goalkeeper_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-roja-uhlsport-nino-save-goalkeeper_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-uhlsport-nino-save-goalkeeper-color-rojo_3_vista-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-uhlsport-nino-save-goalkeeper-roja_4_detalle-acabado-manga-y-protecciones.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-color-rojo-uhlsport-nino-save-goalkeeper_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-roja-uhlsport-nino-save-goalkeeper_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-uhlsport-nino-save-goalkeeper-color-rojo_3_vista-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100572304-Y_camiseta-manga-larga-uhlsport-nino-save-goalkeeper-roja_4_detalle-acabado-manga-y-protecciones.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100572304-y",
+    "language": "es",
+    "category": "Ofertas",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100572304-y"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'goalkeeper'",
+    "root_model": "Save",
+    "submodel": "",
+    "product_model": "Save Goalkeeper",
+    "sole_type": ""
+  }
+}

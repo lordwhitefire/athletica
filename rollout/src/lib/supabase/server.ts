@@ -18,3 +18,10 @@ export function createPublicClient() {
     db: { schema: 'rollout' },
   });
 }
+
+// Service-role client (bypasses RLS) — the name the service layer imports.
+// Same client as createAdminClient; kept as a separate name so service code
+// does not have to know which constructor the app uses.
+export function createServiceClient() {
+  return createAdminClient();
+}

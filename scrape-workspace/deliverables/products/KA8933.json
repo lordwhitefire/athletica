@@ -1,0 +1,100 @@
+{
+  "id": "KA8933",
+  "slug": "pantalon-adidas-manchester-united-entrenamiento-purple",
+  "name": "adidas Manchester United Training",
+  "model": "Manchester United entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento adidas del Manchester United 2025 2026 - púrpura",
+    "tagline": "Movilidad total con estilo United",
+    "intro": "Diseñado para entrenamientos exigentes, este pantalón técnico adidas combina comodidad, ajuste y diseño profesional.",
+    "collection": "",
+    "key_benefits": [
+      "Oficial Manchester United 25/26: Parte de la colección técnica adidas.",
+      "Tejido funcional: Ligero, transpirable y cómodo en todo momento.",
+      "Ajuste profesional: Diseñado para moverse contigo en cada ejercicio.",
+      "Estilo Red Devil: Escudo y colores del club visibles con orgullo."
+    ],
+    "technical_details": {
+      "range": "adidas Manchester United entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-largo-color-purpura-adidas-manchester-united-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-largo-color-purpura-adidas-manchester-united-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-chandal-purpura-adidas-manchester-united-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-chandal-adidas-manchester-united-entrenamiento-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-largo-adidas-manchester-united-entrenamiento-purpura_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-largo-color-purpura-adidas-manchester-united-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-chandal-purpura-adidas-manchester-united-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-chandal-adidas-manchester-united-entrenamiento-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/A/KA8933_pantalon-largo-adidas-manchester-united-entrenamiento-purpura_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ka8933",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas del Manchester United 2025 2026 - púrpura",
+    "tagline": "Movilidad total con estilo United",
+    "intro": "Diseñado para entrenamientos exigentes, este pantalón técnico adidas combina comodidad, ajuste y diseño profesional.",
+    "collection": "",
+    "key_benefits": [
+      "Oficial Manchester United 25/26: Parte de la colección técnica adidas.",
+      "Tejido funcional: Ligero, transpirable y cómodo en todo momento.",
+      "Ajuste profesional: Diseñado para moverse contigo en cada ejercicio.",
+      "Estilo Red Devil: Escudo y colores del club visibles con orgullo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ka8933"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Manchester United",
+    "submodel": "",
+    "product_model": "Manchester United entrenamiento",
+    "sole_type": ""
+  }
+}

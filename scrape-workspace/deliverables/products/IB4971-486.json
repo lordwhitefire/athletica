@@ -1,0 +1,98 @@
+{
+  "id": "IB4971-486",
+  "slug": "camiseta-nike-inglaterra-entrenamiento-dri-fit-strike-blue",
+  "name": "Nike Inglaterra Training Dri-Fit Strike",
+  "model": "Inglaterra entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "England Nike Training Short Sleeve Top - Light Blue",
+    "tagline": "The England training shirt",
+    "intro": "The Nike England Dri-FIT Strike T-shirt is designed to accompany each training session with the style and identity of the English team. Its light blue design provides a modern look inspired by international football.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT Technology: Wicks sweat away to keep your skin dry and comfortable during your workout.",
+      "Strike Design: Inspired by the training garments used by professional players.",
+      "Light and breathable fabric: Promotes ventilation to maintain freshness during intense sessions.",
+      "England identity: Design with official details of the English team."
+    ],
+    "technical_details": {
+      "range": "Nike Inglaterra entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4971-486_camiseta-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4971-486_camiseta-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4971-486_camiseta-azul-claro-nike-inglaterra-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4971-486_camiseta-nike-inglaterra-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4971-486_camiseta-color-azul-nike-inglaterra-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4971-486_camiseta-azul-claro-nike-inglaterra-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4971-486_camiseta-nike-inglaterra-entrenamiento-dri-fit-strike-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib4971-486",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de manga corta de entrenamiento Nike de la selección de Inglaterra - azul claro",
+    "tagline": "La camiseta de entrenamiento de Inglaterra",
+    "intro": "La camiseta Nike Inglaterra Dri-FIT Strike está diseñada para acompañar cada sesión de entrenamiento con el estilo y la identidad de la selección inglesa. Su diseño en color azul claro aporta un look moderno inspirado en el fútbol internacional.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Nike Dri-FIT: Evacúa el sudor para mantener la piel seca y cómoda durante el entrenamiento.",
+      "Diseño Strike: Inspirado en las prendas de entrenamiento utilizadas por los jugadores profesionales.",
+      "Tejido ligero y transpirable: Favorece la ventilación para mantener la frescura en sesiones intensas.",
+      "Identidad Inglaterra: Diseño con detalles oficiales de la selección inglesa."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib4971-486"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Inglaterra",
+    "submodel": "",
+    "product_model": "Inglaterra entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "100009.100-Y",
+  "slug": "camiseta-manga-larga-joma-negro-nino-black",
+  "name": "Long Sleeve Joma Black Kids",
+  "model": "Long Sleeve Joma Black Kids",
+  "brand": "Joma",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "manga larga Joma negro niño",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-frontal-800.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-frontal-800.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-trasera-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-cuello-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-manga-800.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-frontal-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-trasera-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-cuello-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/1/0/100009100-y-camiseta-interior-de-portero-de-manga-larga-para-nino-joma-protec-manga-800.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100009-100-y",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100009-100-y"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "manga",
+    "submodel": "",
+    "product_model": "Long Sleeve Joma Black Kids",
+    "sole_type": ""
+  }
+}

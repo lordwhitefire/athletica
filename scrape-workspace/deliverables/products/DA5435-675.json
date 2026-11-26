@@ -1,0 +1,98 @@
+{
+  "id": "DA5435-675",
+  "slug": "mochila-de-cuerdas-nike-academy-rosa-gris",
+  "name": "Backpack de cuerdas Nike Academy",
+  "model": "Backpack de cuerdas Nike Academy",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Rosa / Gris",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mochila de cuerdas Nike - rosa",
+    "tagline": "Ligereza y practicidad en cada salida",
+    "intro": "El gymsack Nike Academy ofrece un diseño ligero y resistente, ideal para llevar lo esencial de manera cómoda y sin añadir peso.",
+    "collection": "",
+    "key_benefits": [
+      "Acceso rápido: Sistema de cordones que permite abrir y cerrar fácilmente el compartimento principal.",
+      "Organización práctica: Bolsillo frontal con cremallera para objetos pequeños.",
+      "Comodidad: Tejido ligero y duradero que se adapta al uso diario.",
+      "Ventilación: Malla en la parte inferior que favorece la transpiración del contenido."
+    ],
+    "technical_details": {
+      "range": "de cuerdas Nike Academy",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_mochila-de-cuerdas-color-rosa-y-gris-nike-academy-_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_mochila-de-cuerdas-color-rosa-y-gris-nike-academy-_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_bolsa-de-cuerdas-rosa-nike-academy-_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_saco-de-cuerdas-nike-academy--color-rosa-y-gris_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_mochila-de-cordones-nike-academy--rosa_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_bolsa-cuerdas-color-rosa-y-gris-nike-academy-_5_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_mochila-de-cuerdas-color-rosa-y-gris-nike-academy-_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_bolsa-de-cuerdas-rosa-nike-academy-_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_saco-de-cuerdas-nike-academy--color-rosa-y-gris_3_detalle-capacidad.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_mochila-de-cordones-nike-academy--rosa_4_detalle-compartimento-interior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/A/DA5435-675_bolsa-cuerdas-color-rosa-y-gris-nike-academy-_5_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/da5435-675",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de cuerdas Nike - rosa",
+    "tagline": "Ligereza y practicidad en cada salida",
+    "intro": "El gymsack Nike Academy ofrece un diseño ligero y resistente, ideal para llevar lo esencial de manera cómoda y sin añadir peso.",
+    "collection": "",
+    "key_benefits": [
+      "Acceso rápido: Sistema de cordones que permite abrir y cerrar fácilmente el compartimento principal.",
+      "Organización práctica: Bolsillo frontal con cremallera para objetos pequeños.",
+      "Comodidad: Tejido ligero y duradero que se adapta al uso diario.",
+      "Ventilación: Malla en la parte inferior que favorece la transpiración del contenido."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/da5435-675"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack de cuerdas Nike Academy",
+    "sole_type": ""
+  }
+}

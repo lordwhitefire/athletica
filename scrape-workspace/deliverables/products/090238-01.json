@@ -1,0 +1,103 @@
+{
+  "id": "090238-01",
+  "slug": "mochila-puma-teamgoal-core-black",
+  "name": "Backpack Puma TeamGoal Core",
+  "model": "Backpack Puma TeamGoal Core",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack (44 x 30 x 14 cm) - black",
+    "tagline": "Comfort and space for everyday life",
+    "intro": "The Puma TeamGoal Core backpack combines sporty design with total functionality. It offers the perfect space for your equipment, clothes or laptop with a clean and resistant look.",
+    "collection": "",
+    "key_benefits": [
+      "Amplio espacio: Ideal para ropa, accesorios o libros.",
+      "Puma Durability: Durable and easy-to-clean fabric.",
+      "Comodidad garantizada: Tirantes ajustables acolchados.",
+      "Versatile design: Perfect for sports or urban use."
+    ],
+    "technical_details": {
+      "range": "Puma TeamGoal Core",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/10591e92f67d5693df87c20baca8d569eca346ec-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/10591e92f67d5693df87c20baca8d569eca346ec-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/55fc52aa1517f1dd02079f80a335abbe224817c5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a0d107c060fd77c9560d67d6b14faa6674965ab3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/10591e92f67d5693df87c20baca8d569eca346ec-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/55fc52aa1517f1dd02079f80a335abbe224817c5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a0d107c060fd77c9560d67d6b14faa6674965ab3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-10591e92f67d5693df87c20baca8d569eca346ec-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/10591e92f67d5693df87c20baca8d569eca346ec-1500x1500.jpg"
+    },
+    {
+      "_id": "image-55fc52aa1517f1dd02079f80a335abbe224817c5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/55fc52aa1517f1dd02079f80a335abbe224817c5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a0d107c060fd77c9560d67d6b14faa6674965ab3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a0d107c060fd77c9560d67d6b14faa6674965ab3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/090238-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (44 x 30 x 14 cm) - negra",
+    "tagline": "Comodidad y espacio para el día a día",
+    "intro": "La mochila Puma TeamGoal Core combina diseño deportivo con funcionalidad total. Ofrece el espacio perfecto para tu equipación, ropa o portátil con un look limpio y resistente.",
+    "collection": "",
+    "key_benefits": [
+      "Amplio espacio: Ideal para ropa, accesorios o libros.",
+      "Durabilidad Puma: Tejido resistente y fácil de limpiar.",
+      "Comodidad garantizada: Tirantes ajustables acolchados.",
+      "Diseño versátil: Perfecta para deporte o uso urbano."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/090238-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma TeamGoal Core",
+    "sole_type": ""
+  }
+}

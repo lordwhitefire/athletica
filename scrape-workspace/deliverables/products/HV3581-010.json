@@ -1,0 +1,94 @@
+{
+  "id": "HV3581-010",
+  "slug": "chaqueta-nike-repel-academy-woven-black",
+  "name": "Nike Repel Academy+ Woven",
+  "model": "Repel Academy+ Woven",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike track jacket - black",
+    "tagline": "Waterproof comfort to train with confidence",
+    "intro": "The Nike Repel Academy+ Woven is a technical jacket designed to offer rain protection and freedom of movement.",
+    "collection": "",
+    "key_benefits": [
+      "Water-repellent fabric: Train without worrying about light rain.",
+      "Lightweight design: Does not add weight and allows you to move freely.",
+      "Full Zipper: Versatile fit and easy to put on or take off.",
+      "Sporty style: Professional look for committed players."
+    ],
+    "technical_details": {
+      "range": "Nike Repel Academy+ Woven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3581-010_chaqueta-color-negro-nike-repel-academy--woven_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3581-010_chaqueta-color-negro-nike-repel-academy--woven_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3581-010_chaqueta-chandal-negra-nike-repel-academy--woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3581-010_chaqueta-entretiempo-nike-repel-academy--woven-color-negro_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3581-010_chaqueta-color-negro-nike-repel-academy--woven_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3581-010_chaqueta-chandal-negra-nike-repel-academy--woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/V/HV3581-010_chaqueta-entretiempo-nike-repel-academy--woven-color-negro_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hv3581-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta de chándal Nike - negra",
+    "tagline": "Comodidad impermeable para entrenar con confianza",
+    "intro": "La Nike Repel Academy+ Woven es una chaqueta técnica diseñada para ofrecer protección contra la lluvia y libertad de movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido repelente al agua: Entrena sin preocuparte por la lluvia ligera.",
+      "Diseño ligero: No añade peso y permite moverte libremente.",
+      "Cremallera completa: Ajuste versátil y fácil de poner o quitar.",
+      "Estilo deportivo: Look profesional para jugadores comprometidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hv3581-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Repel",
+    "submodel": "",
+    "product_model": "Repel Academy+ Woven",
+    "sole_type": ""
+  }
+}

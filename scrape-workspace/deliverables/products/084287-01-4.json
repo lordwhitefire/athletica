@@ -1,0 +1,103 @@
+{
+  "id": "084287-01-4",
+  "slug": "balon-puma-orbita-laliga-1-2024-2025-hybrid-talla-4-white",
+  "name": "Puma Orbita LaLiga 1 2024 2025 Hybrid talla 4",
+  "model": "Orbita LaLiga 1 2024 2025 Hybrid talla 4",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Orbita LaLiga 1 2024 2025 Hybrid talla 4",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/75bc9e830c3c55cd4a7ab4ae4ac3479840c847fb-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/75bc9e830c3c55cd4a7ab4ae4ac3479840c847fb-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8fecca72e1a3d78a9def75fbaddc703e78d61192-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/136074e6ec928591c2adbcd9caf8ccb88dfddbbb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8070f5f874d53786b597ddbdc6d5c84ecf10b216-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/75bc9e830c3c55cd4a7ab4ae4ac3479840c847fb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8fecca72e1a3d78a9def75fbaddc703e78d61192-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/136074e6ec928591c2adbcd9caf8ccb88dfddbbb-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8070f5f874d53786b597ddbdc6d5c84ecf10b216-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-75bc9e830c3c55cd4a7ab4ae4ac3479840c847fb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/75bc9e830c3c55cd4a7ab4ae4ac3479840c847fb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8fecca72e1a3d78a9def75fbaddc703e78d61192-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8fecca72e1a3d78a9def75fbaddc703e78d61192-1500x1500.jpg"
+    },
+    {
+      "_id": "image-136074e6ec928591c2adbcd9caf8ccb88dfddbbb-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/136074e6ec928591c2adbcd9caf8ccb88dfddbbb-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8070f5f874d53786b597ddbdc6d5c84ecf10b216-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8070f5f874d53786b597ddbdc6d5c84ecf10b216-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084287-01-4",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084287-01-4"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita LaLiga 1 2024 2025 Hybrid talla 4",
+    "sole_type": ""
+  }
+}

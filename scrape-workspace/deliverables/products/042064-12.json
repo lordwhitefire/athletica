@@ -1,0 +1,109 @@
+{
+  "id": "042064-12",
+  "slug": "puma-future-ultimate-nc-orange",
+  "name": "Puma Future Ultimate NC",
+  "model": "Future Ultimate NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Professional Goalkeeper Gloves Negative Cut - Orange",
+    "tagline": "Designed for goalkeepers who dominate their area",
+    "intro": "The Puma Future Ultimate NC offers anatomical fit, advanced grip technology and a durable construction for the demands of the modern game.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Precise fit: Negative cut that adapts to the natural shape of the hand.",
+      "Professional performance: Construction optimized for highly demanding situations.",
+      "Lasting comfort: Technical materials that guarantee comfort throughout the session.",
+      "Shocking style: Hot Pursuit design that transmits power and personality."
+    ],
+    "technical_details": {
+      "range": "Future Ultimate NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/222b73499de0ffeac5d413ee1879a3f14ad0d122-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/222b73499de0ffeac5d413ee1879a3f14ad0d122-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/fc0c875d67bc0a6830fddc5478d139cc27e701d4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5f0c54b5201ac39ebd5687ab31928ecc295a435f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/acdbade1153c14f06c65b7136264c45ac3844824-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/222b73499de0ffeac5d413ee1879a3f14ad0d122-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fc0c875d67bc0a6830fddc5478d139cc27e701d4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5f0c54b5201ac39ebd5687ab31928ecc295a435f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/acdbade1153c14f06c65b7136264c45ac3844824-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-222b73499de0ffeac5d413ee1879a3f14ad0d122-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/222b73499de0ffeac5d413ee1879a3f14ad0d122-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fc0c875d67bc0a6830fddc5478d139cc27e701d4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fc0c875d67bc0a6830fddc5478d139cc27e701d4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5f0c54b5201ac39ebd5687ab31928ecc295a435f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5f0c54b5201ac39ebd5687ab31928ecc295a435f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-acdbade1153c14f06c65b7136264c45ac3844824-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/acdbade1153c14f06c65b7136264c45ac3844824-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042064-12",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero profesionales Puma corte negativo - naranjas",
+    "tagline": "Diseñados para porteros que dominan su área",
+    "intro": "Los Puma Future Ultimate NC ofrecen ajuste anatómico, tecnología de agarre avanzada y una estructura resistente para las exigencias del juego moderno.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Ajuste preciso: Corte Negativo que se adapta a la forma natural de la mano.",
+      "Rendimiento profesional: Construcción optimizada para situaciones de máxima exigencia.",
+      "Comodidad duradera: Materiales técnicos que garantizan confort durante toda la sesión.",
+      "Estilo impactante: Diseño Hot Pursuit que transmite potencia y personalidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042064-12"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Ultimate NC",
+    "product_model": "Future Ultimate NC",
+    "sole_type": ""
+  }
+}

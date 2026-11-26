@@ -1,0 +1,84 @@
+{
+  "id": "N0001484091",
+  "slug": "inflador-nike-essential-black",
+  "name": "Inflador Nike Essential",
+  "model": "Inflador Nike Essential",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Mancha para inflar balones Nike - negra",
+    "tagline": "Inflado rápido y práctico para tus balones",
+    "intro": "El inflador Nike Essential es una solución compacta y eficiente para mantener tus balones con la presión adecuada antes de entrenamientos y partidos. Su diseño incorpora una manguera conectada que facilita el transporte y permite tener todo lo necesario para inflar el balón siempre a mano.",
+    "collection": "",
+    "key_benefits": [
+      "Inflado eficiente: Su sistema comprime el aire de forma eficaz para llenar los balones con rapidez.",
+      "Fácil de transportar: El diseño compacto permite guardarlo cómodamente junto al resto del equipamiento deportivo.",
+      "Todo en una pieza: La manguera permanece unida al inflador para facilitar su transporte y reducir el riesgo de perder componentes.",
+      "Uso sencillo: Su formato manual permite preparar la presión del balón de manera práctica antes de jugar."
+    ],
+    "technical_details": {
+      "range": "Nike Essential",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484091_inflador-manual-pelotas-color-negro-nike-essential_1_general.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484091_inflador-manual-pelotas-color-negro-nike-essential_1_general.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484091_inflador-balones-negra-nike-essential_2_detalle-aguja.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484091_inflador-manual-pelotas-color-negro-nike-essential_1_general.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/N/0/N0001484091_inflador-balones-negra-nike-essential_2_detalle-aguja.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n0001484091",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mancha para inflar balones Nike - negra",
+    "tagline": "Inflado rápido y práctico para tus balones",
+    "intro": "El inflador Nike Essential es una solución compacta y eficiente para mantener tus balones con la presión adecuada antes de entrenamientos y partidos. Su diseño incorpora una manguera conectada que facilita el transporte y permite tener todo lo necesario para inflar el balón siempre a mano.",
+    "collection": "",
+    "key_benefits": [
+      "Inflado eficiente: Su sistema comprime el aire de forma eficaz para llenar los balones con rapidez.",
+      "Fácil de transportar: El diseño compacto permite guardarlo cómodamente junto al resto del equipamiento deportivo.",
+      "Todo en una pieza: La manguera permanece unida al inflador para facilitar su transporte y reducir el riesgo de perder componentes.",
+      "Uso sencillo: Su formato manual permite preparar la presión del balón de manera práctica antes de jugar."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n0001484091"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Inflador",
+    "submodel": "",
+    "product_model": "Inflador Nike Essential",
+    "sole_type": ""
+  }
+}

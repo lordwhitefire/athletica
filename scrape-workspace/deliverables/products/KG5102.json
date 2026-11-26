@@ -1,0 +1,94 @@
+{
+  "id": "KG5102",
+  "slug": "camiseta-adidas-arsenal-originals-2-0-blue",
+  "name": "adidas Arsenal Originals 2.0",
+  "model": "Arsenal Originals 2.0",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas del Arsenal - azul marino",
+    "tagline": "La esencia del Arsenal con el estilo Originals",
+    "intro": "La camiseta adidas Arsenal Originals 2.0 combina el legado del Arsenal FC con el inconfundible estilo de adidas Originals. Inspirada en diseños clásicos del club y confeccionada en un cómodo tejido de algodón, es una prenda perfecta para lucir tu pasión por los gunners con un look casual y atemporal.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Suave y cómodo para el uso diario.",
+      "Corte entallado: Ofrece un ajuste moderno y favorecedor.",
+      "Estilo Originals: Diseño retro con el trébol de adidas y detalles exclusivos del Arsenal.",
+      "Gran versatilidad: Ideal para combinar con cualquier look casual."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal Originals 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5102_camiseta-color-azul-adidas-arsenal-og-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5102_camiseta-color-azul-adidas-arsenal-og-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5102_camiseta-azul-marino-adidas-arsenal-og-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5102_camiseta-adidas-arsenal-og-2-0-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5102_camiseta-color-azul-adidas-arsenal-og-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5102_camiseta-azul-marino-adidas-arsenal-og-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG5102_camiseta-adidas-arsenal-og-2-0-color-azul_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg5102",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Arsenal - azul marino",
+    "tagline": "La esencia del Arsenal con el estilo Originals",
+    "intro": "La camiseta adidas Arsenal Originals 2.0 combina el legado del Arsenal FC con el inconfundible estilo de adidas Originals. Inspirada en diseños clásicos del club y confeccionada en un cómodo tejido de algodón, es una prenda perfecta para lucir tu pasión por los gunners con un look casual y atemporal.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de algodón: Suave y cómodo para el uso diario.",
+      "Corte entallado: Ofrece un ajuste moderno y favorecedor.",
+      "Estilo Originals: Diseño retro con el trébol de adidas y detalles exclusivos del Arsenal.",
+      "Gran versatilidad: Ideal para combinar con cualquier look casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg5102"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Arsenal Originals",
+    "submodel": "",
+    "product_model": "Arsenal Originals 2.0",
+    "sole_type": ""
+  }
+}

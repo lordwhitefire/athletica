@@ -1,0 +1,107 @@
+{
+  "id": "042082-02",
+  "slug": "puma-ultra-pro-nc-orange",
+  "name": "Puma Ultra Pro NC",
+  "model": "Ultra Pro NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma negative cut goalkeeper gloves - orange",
+    "tagline": "Designed for goalkeepers who dominate their area",
+    "intro": "The Puma Ultra Pro NC offers anatomical fit, advanced grip technology and a durable construction for the demands of the modern game.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Precise fit: Negative cut that adapts to the natural shape of the hand.",
+      "Lasting comfort: Technical materials that guarantee comfort throughout the session.",
+      "Shocking style: Hot Pursuit design that transmits power and personality."
+    ],
+    "technical_details": {
+      "range": "Ultra Pro NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/dc2c2d33915fb78791a74b1f04f8b0b05f8ce222-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/dc2c2d33915fb78791a74b1f04f8b0b05f8ce222-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/c7696a63603c3ede0daff1b40acd735fd5822607-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/076638049d8daa5a445dadd19dcbcba31f39d580-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/25db6bb3a2eac946c149a247603e17d531516add-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/dc2c2d33915fb78791a74b1f04f8b0b05f8ce222-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c7696a63603c3ede0daff1b40acd735fd5822607-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/076638049d8daa5a445dadd19dcbcba31f39d580-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/25db6bb3a2eac946c149a247603e17d531516add-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-dc2c2d33915fb78791a74b1f04f8b0b05f8ce222-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/dc2c2d33915fb78791a74b1f04f8b0b05f8ce222-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c7696a63603c3ede0daff1b40acd735fd5822607-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c7696a63603c3ede0daff1b40acd735fd5822607-1500x1500.jpg"
+    },
+    {
+      "_id": "image-076638049d8daa5a445dadd19dcbcba31f39d580-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/076638049d8daa5a445dadd19dcbcba31f39d580-1500x1500.jpg"
+    },
+    {
+      "_id": "image-25db6bb3a2eac946c149a247603e17d531516add-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/25db6bb3a2eac946c149a247603e17d531516add-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/042082-02",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "Guantes de portero Puma corte negativo - naranjas",
+    "tagline": "Diseñados para porteros que dominan su área",
+    "intro": "Los Puma Ultra Pro NC ofrecen ajuste anatómico, tecnología de agarre avanzada y una estructura resistente para las exigencias del juego moderno.",
+    "collection": "HOT PURSUIT PACK",
+    "key_benefits": [
+      "Ajuste preciso: Corte Negativo que se adapta a la forma natural de la mano.",
+      "Comodidad duradera: Materiales técnicos que garantizan confort durante toda la sesión.",
+      "Estilo impactante: Diseño Hot Pursuit que transmite potencia y personalidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/042082-02"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Pro NC",
+    "product_model": "Ultra Pro NC",
+    "sole_type": ""
+  }
+}

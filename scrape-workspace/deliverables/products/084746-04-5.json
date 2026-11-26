@@ -1,0 +1,113 @@
+{
+  "id": "084746-04-5",
+  "slug": "balon-puma-borussia-dortmund-culture-talla-5-silver",
+  "name": "Puma Borussia Dortmund Culture talla 5",
+  "model": "Borussia Dortmund Culture talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Silver",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Borussia Dortmund Soccer Ball 2025 2026 Size 5 - Silver",
+    "tagline": "Entrena con orgullo",
+    "intro": "The Puma Borusia Dortmund Culture Size 5 Ball combines club identity and functional performance in an official design. Thanks to its machine sewing with a rubber chamber, it is ideal for your training sessions or matches with friends.",
+    "collection": "",
+    "key_benefits": [
+      "Club pride: Official Borussia design to show off your colors.",
+      "Sturdy Construction: Machine stitched with rubber chamber ensuring stable shape and long-lasting use.",
+      "Good control: Textured material for greater precision in passing and shooting.",
+      "Adapted to your age: Size 5: Standard for competitions and players from 12 years old.",
+      "Perfect for training: Designed to improve technique and consistency."
+    ],
+    "technical_details": {
+      "range": "Puma Borussia Dortmund Culture talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/d2ae97e0d440b519ab17f59699406b777a8f152e-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/d2ae97e0d440b519ab17f59699406b777a8f152e-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/43d475e5da5c844d523d24bb853ebb014537396a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c4ac6668bc1713d1e528dbfa6b0a26ea941eb281-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d2ae97e0d440b519ab17f59699406b777a8f152e-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/43d475e5da5c844d523d24bb853ebb014537396a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/c4ac6668bc1713d1e528dbfa6b0a26ea941eb281-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-d2ae97e0d440b519ab17f59699406b777a8f152e-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d2ae97e0d440b519ab17f59699406b777a8f152e-1500x1500.jpg"
+    },
+    {
+      "_id": "image-43d475e5da5c844d523d24bb853ebb014537396a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/43d475e5da5c844d523d24bb853ebb014537396a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-c4ac6668bc1713d1e528dbfa6b0a26ea941eb281-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/c4ac6668bc1713d1e528dbfa6b0a26ea941eb281-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084746-04-5",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma del Borussia Dortmund 2025 2026 talla 5 - plateado",
+    "tagline": "Entrena con orgullo",
+    "intro": "El Balón Puma Borusia Dortmund Culture talla 5 combina identidad de club y rendimiento funcional en un diseño oficial. Gracias a su cosido a máquina con cámara de goma, es ideal para tus sesiones de entrenamiento o partidos con amigos.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo de club: Diseño oficial del Borussia para lucir tus colores.",
+      "Construcción resistente: Cosido a máquina con cámara de goma que garantiza forma estable y uso prolongado.",
+      "Buen control: Material con textura para mayor precisión en el pase y tiro.",
+      "Adaptado a tu edad: Tamaño 5: Estándar para competiciones y jugadores a partir de 12 años.",
+      "Perfecto para entrenar: Diseñado para mejorar técnica y consistencia."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084746-04-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Borussia",
+    "submodel": "",
+    "product_model": "Borussia Dortmund Culture talla 5",
+    "sole_type": ""
+  }
+}

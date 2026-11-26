@@ -1,0 +1,94 @@
+{
+  "id": "IB4216-306",
+  "slug": "camiseta-nike-t90-energy-dri-fit-green",
+  "name": "Nike T90 Energy Dri-Fit",
+  "model": "T90 Energy Dri-Fit",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Training Top - Green",
+    "tagline": "Vibrant design for intense workouts",
+    "intro": "The green Nike T90 Energy T-shirt combines bold style with technical functionality. Perfect for those who train tirelessly and are looking for a garment that breathes with them.",
+    "collection": "",
+    "key_benefits": [
+      "Sweat evacuation: Dri-FIT technology that keeps skin cool.",
+      "Slim fit: Slim fit for maximum freedom of movement.",
+      "Eye-catching color: Energetic green that stands out on the ground.",
+      "Light fabric: Ideal for high intensity exercises."
+    ],
+    "technical_details": {
+      "range": "Nike T90 Energy Dri-Fit",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4216-306_camiseta-color-verde-nike-t90-energy-5-dri-fit_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4216-306_camiseta-color-verde-nike-t90-energy-5-dri-fit_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4216-306_camiseta-verde-nike-t90-energy-5-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4216-306_camiseta-nike-t90-energy-5-dri-fit-color-verde_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4216-306_camiseta-color-verde-nike-t90-energy-5-dri-fit_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4216-306_camiseta-verde-nike-t90-energy-5-dri-fit_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB4216-306_camiseta-nike-t90-energy-5-dri-fit-color-verde_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib4216-306",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de entrenamiento Nike - verde",
+    "tagline": "Diseño vibrante para entrenamientos intensos",
+    "intro": "La camiseta Nike T90 Energy verde combina un estilo atrevido con funcionalidad técnica. Perfecta para quienes entrenan sin descanso y buscan una prenda que respire con ellos.",
+    "collection": "",
+    "key_benefits": [
+      "Evacuación del sudor: Tecnología Dri-FIT que mantiene la piel fresca.",
+      "Ajuste ceñido: Slim fit para máxima libertad de movimiento.",
+      "Color llamativo: Verde energético que destaca sobre el terreno.",
+      "Tejido ligero: Ideal para ejercicios de alta intensidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib4216-306"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "T90",
+    "submodel": "",
+    "product_model": "T90 Energy Dri-Fit",
+    "sole_type": ""
+  }
+}

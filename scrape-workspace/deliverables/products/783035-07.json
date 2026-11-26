@@ -1,0 +1,98 @@
+{
+  "id": "783035-07",
+  "slug": "camiseta-puma-girona-nino-entrenamiento-green",
+  "name": "Puma Girona Kids Training",
+  "model": "Girona niño entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de entrenamiento Puma del Girona FC - verde menta",
+    "tagline": "El look oficial de los jóvenes talentos del Girona",
+    "intro": "Con la camiseta de entrenamiento Puma del Girona FC para niño, los pequeños futbolistas podrán entrenar con la misma estética del equipo profesional. Su color verde menta aporta frescura, mientras el tejido técnico ofrece confort y transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo profesional: Mismo diseño que el equipo oficial en sus sesiones.",
+      "Comodidad sin límites: Tejido ligero y adaptable para los más activos.",
+      "Transpirabilidad total: Tecnología que mantiene la piel seca durante la actividad.",
+      "Color distintivo: Verde menta llamativo que destaca en el campo.",
+      "Diseñada para el deporte: Ideal para entrenamientos o uso casual."
+    ],
+    "technical_details": {
+      "range": "Puma Girona niño entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783035-07_camiseta-color-verde-puma-girona-nino-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783035-07_camiseta-color-verde-puma-girona-nino-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783035-07_camiseta-verde-menta-puma-girona-nino-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783035-07_camiseta-color-verde-puma-girona-nino-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/783035-07_camiseta-verde-menta-puma-girona-nino-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/783035-07",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de entrenamiento Puma del Girona FC - verde menta",
+    "tagline": "El look oficial de los jóvenes talentos del Girona",
+    "intro": "Con la camiseta de entrenamiento Puma del Girona FC para niño, los pequeños futbolistas podrán entrenar con la misma estética del equipo profesional. Su color verde menta aporta frescura, mientras el tejido técnico ofrece confort y transpirabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo profesional: Mismo diseño que el equipo oficial en sus sesiones.",
+      "Comodidad sin límites: Tejido ligero y adaptable para los más activos.",
+      "Transpirabilidad total: Tecnología que mantiene la piel seca durante la actividad.",
+      "Color distintivo: Verde menta llamativo que destaca en el campo.",
+      "Diseñada para el deporte: Ideal para entrenamientos o uso casual."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/783035-07"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Girona",
+    "submodel": "",
+    "product_model": "Girona niño entrenamiento",
+    "sole_type": ""
+  }
+}

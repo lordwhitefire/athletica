@@ -1,0 +1,85 @@
+{
+  "id": "706028-02",
+  "slug": "medias-sin-pie-puma-teamgoal-sleeve-blue",
+  "name": "sin pie Puma TeamGoal Sleeve",
+  "model": "sin pie Puma TeamGoal Sleeve",
+  "brand": "Puma",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Medias de fútbol Puma sin pie - azules",
+    "tagline": "Juega con frescura y libertad",
+    "intro": "Estas medias sin pie azules de Puma están diseñadas para entrenamientos dinámicos y sesiones de alto ritmo. Se adaptan a la pierna con firmeza sin perder ligereza.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste ceñido: Se adapta cómodamente al gemelo y mantiene las espinilleras en su sitio.",
+      "Elasticidad controlada: Favorece la movilidad sin perder compresión.",
+      "Diseño Puma TeamGoal: Inspiración profesional para tus sesiones diarias.",
+      "Material funcional: Ideal para entrenos intensos o partidos semanales."
+    ],
+    "technical_details": {
+      "range": "sin pie Puma TeamGoal Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/706028-02_medias-sin-pie-color-azul-puma-teamgoal-sleeve_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/706028-02_medias-sin-pie-color-azul-puma-teamgoal-sleeve_1_completa-frontal.jpg",
+  "image_gallery": [],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/0/706028-02_medias-sin-pie-color-azul-puma-teamgoal-sleeve_1_completa-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/706028-02",
+    "language": "es",
+    "category": "Equipaciones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Medias de fútbol Puma sin pie - azules",
+    "tagline": "Juega con frescura y libertad",
+    "intro": "Estas medias sin pie azules de Puma están diseñadas para entrenamientos dinámicos y sesiones de alto ritmo. Se adaptan a la pierna con firmeza sin perder ligereza.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste ceñido: Se adapta cómodamente al gemelo y mantiene las espinilleras en su sitio.",
+      "Elasticidad controlada: Favorece la movilidad sin perder compresión.",
+      "Diseño Puma TeamGoal: Inspiración profesional para tus sesiones diarias.",
+      "Material funcional: Ideal para entrenos intensos o partidos semanales."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/706028-02"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin pie Puma TeamGoal Sleeve",
+    "sole_type": ""
+  }
+}

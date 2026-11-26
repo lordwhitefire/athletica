@@ -1,0 +1,90 @@
+{
+  "id": "DD3046-429",
+  "slug": "pantalon-nike-tottenham-dri-fit-strike-mujer-blue",
+  "name": "Nike Tottenham Dri-Fit Strike Women",
+  "model": "Tottenham Dri-Fit Strike mujer",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Tottenham Dri-Fit Strike mujer",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_3_cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_4_bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_2_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_3_cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/d/d/dd3046-429_imagen-del-pantalon-largo-entrenamiento-mujer-tottenham-fc-nike-dri-fit-strike-2021-2022-azul_4_bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dd3046-429",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dd3046-429"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Tottenham",
+    "submodel": "",
+    "product_model": "Tottenham Dri-Fit Strike mujer",
+    "sole_type": ""
+  }
+}

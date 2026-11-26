@@ -1,0 +1,103 @@
+{
+  "id": "084640-02-5",
+  "slug": "balon-puma-serie-a-25-26-replica-t-5-orbita-orange",
+  "name": "Puma Serie A 25 26 Replica T.5 Orbita",
+  "model": "Serie A 25 26 Replica T.5 Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Serie A 2025 2026 High Visibility Soccer Ball Size 5 - Orange",
+    "tagline": "Bring the Italian game to every training session",
+    "intro": "This size 5 ball from Puma is inspired by the official Serie A 25/26 model. Ideal for cold winter nights, it combines an eye-catching design with durability and professional design in every play.",
+    "collection": "",
+    "key_benefits": [
+      "Eye-catching Design: Orange design that stands out, ideal for cold winter nights.",
+      "Regulatory size and weight: Ideal for training of players from 12 years old.",
+      "Excelente equilibrio entre control y durabilidad: Fabricado para resistir sesiones exigentes.",
+      "Reliable touch and stable trajectory: Heat-sealed panels that optimize the flight of the ball.",
+      "Perfect for regular use: Ideal for school training, clubs and amateur football."
+    ],
+    "technical_details": {
+      "range": "Puma Serie A 25 26 Replica T.5 Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/df54973154802eb582bad3534ffe21c998e43189-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/df54973154802eb582bad3534ffe21c998e43189-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2d026e7f5620173ed2f8062984a716e0a2f6f6a4-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/df54973154802eb582bad3534ffe21c998e43189-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2d026e7f5620173ed2f8062984a716e0a2f6f6a4-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-df54973154802eb582bad3534ffe21c998e43189-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/df54973154802eb582bad3534ffe21c998e43189-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2d026e7f5620173ed2f8062984a716e0a2f6f6a4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2d026e7f5620173ed2f8062984a716e0a2f6f6a4-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084640-02-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Serie A 2025 2026 de alta visibilidad talla 5 - naranja",
+    "tagline": "Lleva el juego italiano a cada entrenamiento",
+    "intro": "Este balón talla 5 de Puma está inspirado en el modelo oficial de la Serie A 25/26. Ideal para las noches frías de invierno combina un diseño llamativo con durabilidad y diseño profesional en cada jugada.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño Llamativo: Diseño en color naranja que resaltan a la vista ideal para las noches frías de invierno.",
+      "Tamaño y peso reglamentarios: Ideal para entrenamientos de jugadores a partir de 12 años.",
+      "Excelente equilibrio entre control y durabilidad: Fabricado para resistir sesiones exigentes.",
+      "Toque fiable y trayectoria estable: Paneles termosellados que optimizan el vuelo del balón.",
+      "Perfecto para uso habitual: Ideal para entrenamientos escolares, clubes y fútbol aficionado."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084640-02-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Serie A",
+    "submodel": "",
+    "product_model": "Serie A 25 26 Replica T.5 Orbita",
+    "sole_type": ""
+  }
+}

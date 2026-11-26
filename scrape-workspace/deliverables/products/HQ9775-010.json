@@ -1,0 +1,96 @@
+{
+  "id": "HQ9775-010",
+  "slug": "sudadera-nike-atletico-t90-black",
+  "name": "Nike Atlético T90",
+  "model": "Atlético T90",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de paseo Nike del Atlético - negra",
+    "tagline": "Calidez y orgullo colchonero en cada detalle",
+    "intro": "La sudadera Nike Atlético T90 negra ofrece abrigo y estilo en una sola prenda. Inspirada en la estética retro del fútbol, es perfecta para mostrar tu pasión sin renunciar al confort.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño nostálgico: Líneas T90 adaptadas a la moda urbana.",
+      "Sensación acogedora: Interior suave para días más frescos.",
+      "Escudo visible: Detalle del Atleti en el pecho que habla por sí solo.",
+      "Versatilidad total: Válida para uso casual o momentos previos al partido.",
+      "Diseño fiel al escudo: Gráficos alineados con el estilo del Atlético."
+    ],
+    "technical_details": {
+      "range": "Nike Atlético T90",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9775-010_sudadera-color-negro-nike-atletico-t90_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9775-010_sudadera-color-negro-nike-atletico-t90_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9775-010_sudadera-negro-nike-atletico-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9775-010_sudadera-nike-atletico-t90-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9775-010_sudadera-color-negro-nike-atletico-t90_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9775-010_sudadera-negro-nike-atletico-t90_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ9775-010_sudadera-nike-atletico-t90-color-negro_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq9775-010",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Sudadera de paseo Nike del Atlético - negra",
+    "tagline": "Calidez y orgullo colchonero en cada detalle",
+    "intro": "La sudadera Nike Atlético T90 negra ofrece abrigo y estilo en una sola prenda. Inspirada en la estética retro del fútbol, es perfecta para mostrar tu pasión sin renunciar al confort.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño nostálgico: Líneas T90 adaptadas a la moda urbana.",
+      "Sensación acogedora: Interior suave para días más frescos.",
+      "Escudo visible: Detalle del Atleti en el pecho que habla por sí solo.",
+      "Versatilidad total: Válida para uso casual o momentos previos al partido.",
+      "Diseño fiel al escudo: Gráficos alineados con el estilo del Atlético."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq9775-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Atlético",
+    "submodel": "",
+    "product_model": "Atlético T90",
+    "sole_type": ""
+  }
+}

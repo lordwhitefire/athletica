@@ -1,0 +1,96 @@
+{
+  "id": "KC2417",
+  "slug": "sudadera-adidas-arsenal-entrenamiento-black",
+  "name": "adidas Arsenal Training",
+  "model": "Arsenal entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas del Arsenal 2026 2027 - negra",
+    "tagline": "Entrena con el espíritu de los Gunners",
+    "intro": "La sudadera de entrenamiento adidas del Arsenal 26 27 está diseñada para futbolistas que buscan comodidad, protección y libertad de movimiento durante los entrenamientos. Su diseño oficial en color negro con detalles naranjas refleja la identidad del club londinense, mientras que su corte ajustado favorece un rendimiento óptimo dentro y fuera del terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirada en la equipación de entrenamiento del club.",
+      "FORMOTION: Favorece movimientos naturales y una mayor comodidad.",
+      "Cierre de cremallera corta: Facilita la regulación de la ventilación y la puesta de la prenda.",
+      "Corte ajustado: Proporciona una sensación deportiva sin limitar la movilidad."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-negra-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-adidas-arsenal-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-adidas-arsenal-entrenamiento-negra_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-color-negro-adidas-arsenal-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-negra-adidas-arsenal-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-adidas-arsenal-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC2417_sudadera-adidas-arsenal-entrenamiento-negra_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kc2417",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas del Arsenal 2026 2027 - negra",
+    "tagline": "Entrena con el espíritu de los Gunners",
+    "intro": "La sudadera de entrenamiento adidas del Arsenal 26 27 está diseñada para futbolistas que buscan comodidad, protección y libertad de movimiento durante los entrenamientos. Su diseño oficial en color negro con detalles naranjas refleja la identidad del club londinense, mientras que su corte ajustado favorece un rendimiento óptimo dentro y fuera del terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño oficial Arsenal: Inspirada en la equipación de entrenamiento del club.",
+      "FORMOTION: Favorece movimientos naturales y una mayor comodidad.",
+      "Cierre de cremallera corta: Facilita la regulación de la ventilación y la puesta de la prenda.",
+      "Corte ajustado: Proporciona una sensación deportiva sin limitar la movilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kc2417"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Arsenal Training",
+    "submodel": "",
+    "product_model": "Arsenal entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "JM1220",
+  "slug": "camiseta-adidas-benfica-entrenamiento-black",
+  "name": "adidas Benfica Training",
+  "model": "Benfica entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Benfica Adidas Training Short Sleeve T-Shirt - Black",
+    "tagline": "Lightness and freshness in every workout",
+    "intro": "This adidas Benfica training shirt offers maximum breathability for your most demanding sessions. Its technical fabric dries quickly and fits comfortably, ideal for those who train with intensity and club style.",
+    "collection": "",
+    "key_benefits": [
+      "Constant freshness: Material that promotes ventilation at all times.",
+      "Functional design: Strategic seams for total freedom of movement.",
+      "Embodied pride: Benfica crest visible on the chest.",
+      "Comfortable fit: Regular cut that does not restrict or restrict.",
+      "Sporty aesthetic: Classic adidas details on the sleeves."
+    ],
+    "technical_details": {
+      "range": "adidas Benfica entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-color-negro-adidas-benfica-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-color-negro-adidas-benfica-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-negra-adidas-benfica-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-adidas-benfica-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-adidas-benfica-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-color-negro-adidas-benfica-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-negra-adidas-benfica-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-adidas-benfica-entrenamiento-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM1220_camiseta-adidas-benfica-entrenamiento-negra_4_detalle-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm1220",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de manga corta de entrenamiento adidas del Benfica - negra",
+    "tagline": "Ligereza y frescura en cada entrenamiento",
+    "intro": "Esta camiseta de entrenamiento adidas del Benfica ofrece máxima transpirabilidad para tus sesiones más exigentes. Su tejido técnico se seca rápido y se ajusta cómodamente, ideal para quienes entrenan con intensidad y estilo de club.",
+    "collection": "",
+    "key_benefits": [
+      "Frescura constante: Material que favorece la ventilación en todo momento.",
+      "Diseño funcional: Costuras estratégicas para libertad total de movimiento.",
+      "Orgullo encarnado: Escudo del Benfica visible en el pecho.",
+      "Ajuste cómodo: Corte regular que no limita ni aprieta.",
+      "Estética deportiva: Detalles clásicos de adidas en las mangas."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm1220"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Benfica Training",
+    "submodel": "",
+    "product_model": "Benfica entrenamiento",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "084818-01-5",
+  "slug": "balon-puma-girona-essentials-talla-5-blanco-rojo",
+  "name": "Puma Girona Essentials talla 5",
+  "model": "Girona Essentials talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blanco / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Girona Essentials talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/6db48dec5449f31d9a68161183569168a2864bf4-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/6db48dec5449f31d9a68161183569168a2864bf4-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/0f5a1c3e3b63bf89d58ee2054896adba14e4ddf8-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/6db48dec5449f31d9a68161183569168a2864bf4-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/0f5a1c3e3b63bf89d58ee2054896adba14e4ddf8-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-6db48dec5449f31d9a68161183569168a2864bf4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/6db48dec5449f31d9a68161183569168a2864bf4-1500x1500.jpg"
+    },
+    {
+      "_id": "image-0f5a1c3e3b63bf89d58ee2054896adba14e4ddf8-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/0f5a1c3e3b63bf89d58ee2054896adba14e4ddf8-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084818-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084818-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Girona",
+    "submodel": "",
+    "product_model": "Girona Essentials talla 5",
+    "sole_type": ""
+  }
+}

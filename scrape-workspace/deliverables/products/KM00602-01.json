@@ -1,0 +1,92 @@
+{
+  "id": "KM00602-01",
+  "slug": "calcetines-knap-man-compression-black",
+  "name": "Knap'man Compression",
+  "model": "Compression",
+  "brand": "Knap'Man",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Medias compresivas Knap'man que mejoran la recuperación - negras",
+    "tagline": "Recuperación y frescura después del esfuerzo",
+    "intro": "Las medias compresivas Knap’man Ultra Strong están pensadas para favorecer la recuperación tras entrenamientos intensos y para mantener la frescura en viajes largos. Gracias a su compresión progresiva, ayudan a mejorar la circulación y reducir la fatiga muscular.",
+    "collection": "",
+    "key_benefits": [
+      "Alivio post-esfuerzo: Favorecen la recuperación tras entrenamientos intensos.",
+      "Circulación mejorada: Ayudan a reducir la fatiga y mantener las piernas ligeras.",
+      "Compañeras de viaje: Ideales para trayectos largos y descanso activo."
+    ],
+    "technical_details": {
+      "range": "Knap'man Compression",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/k/m/km00602-01_1.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/k/m/km00602-01_1.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-negros-knap-man-compression_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-knap-man-compression-color-negro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-knap-man-compression-negros_4_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-color-negro-knap-man-compression_1_general.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/k/m/km00602-01_1.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-negros-knap-man-compression_2_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-knap-man-compression-color-negro_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-knap-man-compression-negros_4_detalle.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/M/KM00602-01_calcetines-compresion-color-negro-knap-man-compression_1_general.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/km00602-01",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-19",
+    "subtitle": "Medias compresivas Knap'man que mejoran la recuperación - negras",
+    "tagline": "Recuperación y frescura después del esfuerzo",
+    "intro": "Las medias compresivas Knap’man Ultra Strong están pensadas para favorecer la recuperación tras entrenamientos intensos y para mantener la frescura en viajes largos. Gracias a su compresión progresiva, ayudan a mejorar la circulación y reducir la fatiga muscular.",
+    "collection": "",
+    "key_benefits": [
+      "Alivio post-esfuerzo: Favorecen la recuperación tras entrenamientos intensos.",
+      "Circulación mejorada: Ayudan a reducir la fatiga y mantener las piernas ligeras.",
+      "Compañeras de viaje: Ideales para trayectos largos y descanso activo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/km00602-01"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'calcetin'",
+    "root_model": "Compression",
+    "submodel": "",
+    "product_model": "Compression",
+    "sole_type": ""
+  }
+}

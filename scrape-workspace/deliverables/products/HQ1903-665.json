@@ -1,0 +1,94 @@
+{
+  "id": "HQ1903-665",
+  "slug": "polo-nike-barcelona-dri-fit-2-0-orange",
+  "name": "Polo Nike Barcelona Dri-Fit 2.0",
+  "model": "Polo Nike Barcelona Dri-Fit 2.0",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Orange",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Polo Nike del FC Barcelona - melocotón",
+    "tagline": "Un básico con toque de club",
+    "intro": "El polo Barça Dri-FIT 2.0 combina estilo clásico y transpirabilidad moderna para vestir con identidad culé.",
+    "collection": "",
+    "key_benefits": [
+      "Corte clásico: Cuello de botón con ajuste tradicional.",
+      "Tejido técnico Nike: Transpirable y cómodo para todo el día.",
+      "Look informal: Ideal para vestir elegante con alma deportiva.",
+      "Logo Barça: Toque discreto y reconocible."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Dri-Fit 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1903-665_polo-color-naranja-nike-barcelona-dri-fit-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1903-665_polo-color-naranja-nike-barcelona-dri-fit-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1903-665_niqui-melocoton-nike-barcelona-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1903-665_polo-nike-barcelona-dri-fit-2-0-color-naranja_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1903-665_polo-color-naranja-nike-barcelona-dri-fit-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1903-665_niqui-melocoton-nike-barcelona-dri-fit-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ1903-665_polo-nike-barcelona-dri-fit-2-0-color-naranja_3_detalle-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hq1903-665",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Polo Nike del FC Barcelona - melocotón",
+    "tagline": "Un básico con toque de club",
+    "intro": "El polo Barça Dri-FIT 2.0 combina estilo clásico y transpirabilidad moderna para vestir con identidad culé.",
+    "collection": "",
+    "key_benefits": [
+      "Corte clásico: Cuello de botón con ajuste tradicional.",
+      "Tejido técnico Nike: Transpirable y cómodo para todo el día.",
+      "Look informal: Ideal para vestir elegante con alma deportiva.",
+      "Logo Barça: Toque discreto y reconocible."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hq1903-665"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo Nike Barcelona Dri-Fit 2.0",
+    "sole_type": ""
+  }
+}

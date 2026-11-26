@@ -1,0 +1,84 @@
+{
+  "id": "214592-AU6",
+  "slug": "lotto-maestro-300-4-fg-blue",
+  "name": "Lotto Maestro 300 4 FG",
+  "model": "Maestro 300 4",
+  "brand": "Lotto",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Maestro 300 4",
+      "sole_type": "FG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "FG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-color-azul-lotto-maestro-300-4-fg_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-color-azul-lotto-maestro-300-4-fg_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-con-tacos-azules-lotto-maestro-300-4-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-futbol-lotto-maestro-300-4-fg-color-azul_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-tacos-lotto-maestro-300-4-fg-azules_4_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-con-tacos-lotto-maestro-300-4-fg-color-azul_5_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-color-azul-lotto-maestro-300-4-fg_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-con-tacos-azules-lotto-maestro-300-4-fg_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-futbol-lotto-maestro-300-4-fg-color-azul_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-tacos-lotto-maestro-300-4-fg-azules_4_trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/2/1/214592-AU6_botas-de-futbol-con-tacos-lotto-maestro-300-4-fg-color-azul_5_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/214592-au6",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/214592-au6"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Maestro",
+    "submodel": "300 4",
+    "product_model": "Maestro 300 4",
+    "sole_type": "FG"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "JN3066",
+  "slug": "sudadera-adidas-real-madrid-icon-blue",
+  "name": "adidas Real Madrid Icon",
+  "model": "Real Madrid Icon",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas cotton sweatshirt - blue",
+    "tagline": "White warmth with a classic spirit",
+    "intro": "The blue adidas Icon sweatshirt keeps you warm with style and pays tribute to the merengue legacy. Perfect for cool afternoons or to take to every workout.",
+    "collection": "",
+    "key_benefits": [
+      "Retro design: Royal Blue with adidas Originals logo.",
+      "Classic crew neck: Comfort and style in a single garment.",
+      "Controlled warmth: Thick cotton with a pleasant touch.",
+      "Urban style: Compatible with any casual outfit."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Icon",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-adidas-real-madrid-icon-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-adidas-real-madrid-icon-azul_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-color-azul-adidas-real-madrid-icon_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-azul-adidas-real-madrid-icon_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-adidas-real-madrid-icon-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3066_sudadera-adidas-real-madrid-icon-azul_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn3066",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de algodón adidas del Real Madrid - azul",
+    "tagline": "Calidez blanca con espíritu clásico",
+    "intro": "La sudadera adidas Icon azul te abriga con estilo y rinde tributo al legado merengue. Perfecta para las tardes frescas o para llevar a cada entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño retro: Azul Real con logo adidas Originals.",
+      "Cuello redondo clásico: Comodidad y estilo en una sola prenda.",
+      "Calidez controlada: Algodón grueso de tacto agradable.",
+      "Estilo urbano: Compatible con cualquier outfit casual."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn3066"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Icon",
+    "sole_type": ""
+  }
+}

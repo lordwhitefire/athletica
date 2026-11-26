@@ -1,0 +1,78 @@
+{
+  "id": "SX5728-545",
+  "slug": "medias-nike-classic-2-cushion-purple",
+  "name": "Nike Classic 2 Cushion",
+  "model": "Classic 2 Cushion",
+  "brand": "Nike",
+  "category": "Socks",
+  "category_slug": "socks",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike Classic 2 Cushion",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/x/sx5728-545_imagen-de-las-medias-de-futbol-nike-classic-sock-ii-morado-lila-2018-2019_1_frontal_1.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/x/sx5728-545_imagen-de-las-medias-de-futbol-nike-classic-sock-ii-morado-lila-2018-2019_1_frontal_1.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/x/sx5728-545_imagen-de-las-medias-de-futbol-nike-classic-sock-ii-morado-lila-2018-2019_2_trasera_1.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/x/sx5728-545_imagen-de-las-medias-de-futbol-nike-classic-sock-ii-morado-lila-2018-2019_1_frontal_1.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/s/x/sx5728-545_imagen-de-las-medias-de-futbol-nike-classic-sock-ii-morado-lila-2018-2019_2_trasera_1.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sx5728-545",
+    "language": "es",
+    "category": "Medias y calcetines",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Medias y calcetines"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sx5728-545"
+  },
+  "classification": {
+    "category": "socks",
+    "confidence": "high",
+    "rule": "name contains 'media'",
+    "root_model": "Classic",
+    "submodel": "",
+    "product_model": "Classic 2 Cushion",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "IR5155-480-5",
+  "slug": "balon-nike-barcelona-academy-t-5-blue",
+  "name": "Nike Barcelona Academy T.5",
+  "model": "Barcelona Academy T.5",
+  "brand": "Nike",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Barcelona Nike soccer ball in size 5 - navy blue",
+    "tagline": "Precision and control with the FCB ball",
+    "intro": "The Nike Barcelona Academy T.5 ball is designed to offer optimal performance in every pass, shot or control. Inspired by Barcelona, ​​it combines resistance and technology to accompany you in training and matches.",
+    "collection": "",
+    "key_benefits": [
+      "More precise flight: Grooves designed to deliver consistent turning in the air.",
+      "Greater visibility: High contrast graphics that make it easier to track the ball.",
+      "High durability: Resistant material for frequent use in training and matches.",
+      "Official Barcelona style: Represents the team on the pitch."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Academy T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5155-480-5_balon-de-futbol-color-azul-nike-barcelona-academy-t-5_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5155-480-5_balon-de-futbol-color-azul-nike-barcelona-academy-t-5_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5155-480-5_pelota-futbol-11-azul-marino-nike-barcelona-academy-t-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5155-480-5_pelota-futbol-nike-barcelona-academy-t-5-color-azul_3_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5155-480-5_balon-de-futbol-color-azul-nike-barcelona-academy-t-5_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5155-480-5_pelota-futbol-11-azul-marino-nike-barcelona-academy-t-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/R/IR5155-480-5_pelota-futbol-nike-barcelona-academy-t-5-color-azul_3_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ir5155-480-5",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Nike del Barcelona en talla 5 - azul marino",
+    "tagline": "Precisión y control con el balón del FCB",
+    "intro": "El balón Nike Barcelona Academy T.5 está diseñado para ofrecer un rendimiento óptimo en cada pase, tiro o control. Inspirado en el Barcelona, combina resistencia y tecnología para acompañarte en entrenamientos y partidos.",
+    "collection": "",
+    "key_benefits": [
+      "Vuelo más preciso: Ranuras diseñadas para ofrecer un giro consistente en el aire.",
+      "Mayor visibilidad: Gráficos de alto contraste que facilitan el seguimiento del balón.",
+      "Alta durabilidad: Material resistente para uso frecuente en entrenamientos y partidos.",
+      "Estilo oficial Barcelona: Representa al equipo en el terreno de juego."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ir5155-480-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Barcelona Academy",
+    "submodel": "",
+    "product_model": "Barcelona Academy T.5",
+    "sole_type": ""
+  }
+}

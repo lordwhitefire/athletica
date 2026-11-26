@@ -1,0 +1,94 @@
+{
+  "id": "JY7032",
+  "slug": "pantalon-adidas-argentina-entrenamiento-blue",
+  "name": "adidas Argentina Training",
+  "model": "Argentina entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Adidas long training pants for the Argentina national team 2026 - navy blue",
+    "tagline": "Protection, performance and style",
+    "intro": "The adidas Argentina 2026 Tiro long pants offer light coverage for cool days and maximum freedom of movement. Train without distractions, Albiceleste style.",
+    "collection": "",
+    "key_benefits": [
+      "Train in comfort: Technical fabric that regulates temperature.",
+      "Functional fit: Ankle zippers and adjustable waist.",
+      "Professional style: Embroidered crest and official team details."
+    ],
+    "technical_details": {
+      "range": "adidas Argentina entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-largo-color-azul-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-largo-color-azul-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-chandal-azul-marino-adidas-argentina-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-chandal-adidas-argentina-entrenamiento-color-azul_3_detalle-bolsillo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-largo-adidas-argentina-entrenamiento-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-largo-color-azul-adidas-argentina-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-chandal-azul-marino-adidas-argentina-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-chandal-adidas-argentina-entrenamiento-color-azul_3_detalle-bolsillo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY7032_pantalon-largo-adidas-argentina-entrenamiento-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jy7032",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas de la selección argentina 2026 - azul marino",
+    "tagline": "Protección, rendimiento y estilo",
+    "intro": "El pantalón largo adidas Argentina 2026 Tiro ofrece cobertura ligera para los días frescos y máxima libertad de movimiento. Entrena sin distracciones, al estilo Albiceleste.",
+    "collection": "",
+    "key_benefits": [
+      "Entrena con confort: Tejido técnico que regula la temperatura.",
+      "Ajuste funcional: Cremalleras en los tobillos y cintura ajustable.",
+      "Estilo profesional: Escudo bordado y detalles del equipo oficial."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jy7032"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Argentina",
+    "submodel": "",
+    "product_model": "Argentina entrenamiento",
+    "sole_type": ""
+  }
+}

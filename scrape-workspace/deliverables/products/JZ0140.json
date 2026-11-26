@@ -1,0 +1,98 @@
+{
+  "id": "JZ0140",
+  "slug": "camiseta-adidas-liverpool-originals-white",
+  "name": "adidas Liverpool Originals",
+  "model": "Liverpool Originals",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Liverpool Adidas Short Sleeve Cotton T-Shirt - White",
+    "tagline": "Liverpool's legacy in Originals key",
+    "intro": "This adidas Originals t-shirt connects Liverpool's football culture with a timeless urban style, designed to show off the club's crest beyond match day.",
+    "collection": "",
+    "key_benefits": [
+      "Iconic style: Originals design inspired by football heritage.",
+      "Natural comfort: Soft fabric ideal for everyday use.",
+      "Club identity: Liverpool crest integrated with a careful finish."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool Originals",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-color-blanco-adidas-liverpool-originals_1_completa-frotal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-color-blanco-adidas-liverpool-originals_1_completa-frotal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-blanca-adidas-liverpool-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-adidas-liverpool-originals-color-blanco_3_detalle-cuello-pecho-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-adidas-liverpool-originals-blanca_4_detalle-lateral-hombro-derecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-color-blanco-adidas-liverpool-originals_1_completa-frotal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-blanca-adidas-liverpool-originals_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-adidas-liverpool-originals-color-blanco_3_detalle-cuello-pecho-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ0140_camiseta-adidas-liverpool-originals-blanca_4_detalle-lateral-hombro-derecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz0140",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Liverpool - blanca",
+    "tagline": "El legado del Liverpool en clave Originals",
+    "intro": "Esta camiseta adidas Originals conecta la cultura futbolera del Liverpool con un estilo urbano atemporal, pensada para lucir el escudo del club más allá del día de partido.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo icónico: Diseño Originals inspirado en la herencia futbolística.",
+      "Comodidad natural: Tejido suave ideal para el uso diario.",
+      "Identidad del club: Escudo del Liverpool integrado con un acabado cuidado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz0140"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Liverpool Originals",
+    "submodel": "",
+    "product_model": "Liverpool Originals",
+    "sole_type": ""
+  }
+}

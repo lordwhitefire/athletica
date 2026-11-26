@@ -1,0 +1,86 @@
+{
+  "id": "N.MS.39.010-A",
+  "slug": "codera-nike-pro-combat-2-0-black",
+  "name": "Codera Nike Pro Combat 2.0",
+  "model": "Codera Nike Pro Combat 2.0",
+  "brand": "Nike",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Codera de neopreno Nike - negra",
+    "tagline": "Compresión ligera con máxima movilidad",
+    "intro": "La codera Nike Pro Combat 2.0 combina neopreno y nylon para ofrecer una compresión ligera con gran confort y transpirabilidad. Su diseño con abertura interna está pensado para quienes necesitan mantener la flexibilidad total del codo, siendo ideal para entrenamientos con gran movilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Movilidad total: Abertura interna que facilita la flexión natural del codo.",
+      "Sujeción ligera: Compresión moderada que ayuda a reducir el riesgo de lesiones.",
+      "Comodidad y frescura: Tejido transpirable de neopreno y nylon."
+    ],
+    "technical_details": {
+      "range": "Nike Pro Combat 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/n/_/n.ms.39.010-nike-pro-combat-frontal-800.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/n/_/n.ms.39.010-nike-pro-combat-frontal-800.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/n/_/n.ms.39.010-nike-pro-combat-trasera-800.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/n/_/n.ms.39.010-nike-pro-combat-frontal-800.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/n/_/n.ms.39.010-nike-pro-combat-trasera-800.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/n-ms-39-010-a",
+    "language": "es",
+    "category": "Ofertas fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Codera de neopreno Nike - negra",
+    "tagline": "Compresión ligera con máxima movilidad",
+    "intro": "La codera Nike Pro Combat 2.0 combina neopreno y nylon para ofrecer una compresión ligera con gran confort y transpirabilidad. Su diseño con abertura interna está pensado para quienes necesitan mantener la flexibilidad total del codo, siendo ideal para entrenamientos con gran movilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Movilidad total: Abertura interna que facilita la flexión natural del codo.",
+      "Sujeción ligera: Compresión moderada que ayuda a reducir el riesgo de lesiones.",
+      "Comodidad y frescura: Tejido transpirable de neopreno y nylon."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/n-ms-39-010-a"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'ofertas'",
+    "root_model": "Codera",
+    "submodel": "",
+    "product_model": "Codera Nike Pro Combat 2.0",
+    "sole_type": ""
+  }
+}

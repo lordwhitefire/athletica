@@ -1,0 +1,102 @@
+{
+  "id": "IT4104",
+  "slug": "camiseta-adidas-arsenal-dna-red",
+  "name": "adidas Arsenal DNA",
+  "model": "Arsenal DNA",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Arsenal Adidas Short Sleeve Cotton T-Shirt - Red",
+    "tagline": "Estilo ADN Gunner",
+    "intro": "A garment that connects with the history and heart of Arsenal. The adidas Arsenal DNA t-shirt stands out for its soft cotton construction and iconic red design. Ideal for expressing your football passion with a casual and authentic style, both inside and outside the stadium.",
+    "collection": "",
+    "key_benefits": [
+      "Classic design: Inspired by the club's traditional colors.",
+      "Natural Comfort: Soft touch cotton fabric for everyday wear.",
+      "Versatilidad total: Perfecta para looks deportivos o urbanos.",
+      "Relaxed fit: Regular cut that fits comfortably.",
+      "Orgullo Gunner: Escudo bordado con el emblema del Arsenal."
+    ],
+    "technical_details": {
+      "range": "adidas Arsenal DNA",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-color-rojo-adidas-arsenal-dna_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-color-rojo-adidas-arsenal-dna_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-roja-adidas-arsenal-dna_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-adidas-arsenal-dna-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-adidas-arsenal-dna-roja_4_detalle-lateral.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-color-rojo-adidas-arsenal-dna_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-roja-adidas-arsenal-dna_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-adidas-arsenal-dna-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/T/IT4104_camiseta-adidas-arsenal-dna-roja_4_detalle-lateral.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/it4104",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Arsenal - roja",
+    "tagline": "Estilo ADN Gunner",
+    "intro": "Una prenda que conecta con la historia y el corazón del Arsenal. La camiseta adidas Arsenal DNA destaca por su confección en algodón suave y su diseño icónico en color rojo. Ideal para expresar tu pasión futbolera con un estilo casual y auténtico, tanto dentro como fuera del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño clásico: Inspirado en los colores tradicionales del club.",
+      "Comodidad natural: Tejido de algodón suave al tacto para uso diario.",
+      "Versatilidad total: Perfecta para looks deportivos o urbanos.",
+      "Ajuste relajado: Corte regular que se adapta con comodidad.",
+      "Orgullo Gunner: Escudo bordado con el emblema del Arsenal."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/it4104"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Arsenal DNA",
+    "submodel": "",
+    "product_model": "Arsenal DNA",
+    "sole_type": ""
+  }
+}

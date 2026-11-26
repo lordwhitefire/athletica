@@ -1,0 +1,94 @@
+{
+  "id": "KG2240",
+  "slug": "pantalon-adidas-bayern-originals-2-0-blue",
+  "name": "adidas Bayern Originals 2.0",
+  "model": "Bayern Originals 2.0",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo adidas del Bayern de Múnich - azul marino",
+    "tagline": "El estilo Originals con ADN bávaro",
+    "intro": "El pantalón adidas Bayern Originals 2.0 combina la esencia del FC Bayern de Múnich con el diseño atemporal de adidas Originals. Inspirado en los colores de la histórica segunda equipación del club, ofrece un estilo deportivo y urbano perfecto para cualquier aficionado que quiera representar al Bayern más allá del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Colección adidas Originals: Inspirada en el legado futbolístico con un estilo urbano.",
+      "Tejido interlock: Suave, resistente y cómodo para el uso diario.",
+      "Cintura elástica con cordón: Ajuste personalizado y mayor comodidad.",
+      "Diseño Bayern Originals: Inspirado en los colores históricos del club.",
+      "Estilo versátil: Perfecto para combinar con prendas deportivas o casuales."
+    ],
+    "technical_details": {
+      "range": "adidas Bayern Originals 2.0",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-largo-color-azul-adidas-bayern-originals-2-0_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-largo-color-azul-adidas-bayern-originals-2-0_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-chandal-azul-marino-adidas-bayern-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-chandal-adidas-bayern-originals-2-0-color-azul_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-largo-adidas-bayern-originals-2-0-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-largo-color-azul-adidas-bayern-originals-2-0_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-chandal-azul-marino-adidas-bayern-originals-2-0_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-chandal-adidas-bayern-originals-2-0-color-azul_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/G/KG2240_pantalon-largo-adidas-bayern-originals-2-0-azul-marino_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kg2240",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Bayern de Múnich - azul marino",
+    "tagline": "El estilo Originals con ADN bávaro",
+    "intro": "El pantalón adidas Bayern Originals 2.0 combina la esencia del FC Bayern de Múnich con el diseño atemporal de adidas Originals. Inspirado en los colores de la histórica segunda equipación del club, ofrece un estilo deportivo y urbano perfecto para cualquier aficionado que quiera representar al Bayern más allá del estadio.",
+    "collection": "",
+    "key_benefits": [
+      "Colección adidas Originals: Inspirada en el legado futbolístico con un estilo urbano.",
+      "Tejido interlock: Suave, resistente y cómodo para el uso diario.",
+      "Cintura elástica con cordón: Ajuste personalizado y mayor comodidad.",
+      "Diseño Bayern Originals: Inspirado en los colores históricos del club.",
+      "Estilo versátil: Perfecto para combinar con prendas deportivas o casuales."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kg2240"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Bayern Originals",
+    "submodel": "",
+    "product_model": "Bayern Originals 2.0",
+    "sole_type": ""
+  }
+}

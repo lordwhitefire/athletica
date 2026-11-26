@@ -1,0 +1,97 @@
+{
+  "id": "030887-01",
+  "slug": "puma-attacanto-sleeve-white",
+  "name": "Puma Attacanto Sleeve",
+  "model": "Attacanto Sleeve",
+  "brand": "Puma",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Football Shin Guards with Support Tights - White, Red",
+    "tagline": "Protection and comfort for every game",
+    "intro": "The Puma Attacanto Sleeve football shin guards are designed for footballers looking for protection, cushioning and stable support during the game. Its PP cover incorporates EVA padding to help absorb impacts and is complemented by elastic meshes that keep the protections correctly placed.",
+    "collection": "",
+    "key_benefits": [
+      "Resistant protection: Its cover is designed to help protect the shin against the impacts of the game.",
+      "Greater cushioning: Padding helps absorb shock and improve comfort.",
+      "Stable fit: Elastic tights help keep shin guards positioned correctly during play.",
+      "Comfort in movement: Its construction allows you to play with a comfortable feeling during training and matches."
+    ],
+    "technical_details": {
+      "range": "Attacanto Sleeve",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/f1b0d26883336e41d44a5883723fd47a703ba99a-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/f1b0d26883336e41d44a5883723fd47a703ba99a-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a5ece199ec1fa9bf8c4b01a89891b6a168d099e4-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f1b0d26883336e41d44a5883723fd47a703ba99a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/a5ece199ec1fa9bf8c4b01a89891b6a168d099e4-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-f1b0d26883336e41d44a5883723fd47a703ba99a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f1b0d26883336e41d44a5883723fd47a703ba99a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-a5ece199ec1fa9bf8c4b01a89891b6a168d099e4-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a5ece199ec1fa9bf8c4b01a89891b6a168d099e4-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/030887-01",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Espinilleras de fútbol Puma con mallas de sujeción - blancas, rojas",
+    "tagline": "Protección y comodidad para cada partido",
+    "intro": "Las espinilleras de fútbol Puma Attacanto Sleeve están diseñadas para futbolistas que buscan protección, amortiguación y una sujeción estable durante el juego. Su cubierta de PP incorpora acolchado de EVA para ayudar a absorber los impactos y se complementa con mallas elásticas que mantienen las protecciones correctamente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección resistente: Su cubierta está diseñada para ayudar a proteger la espinilla frente a los impactos propios del juego.",
+      "Mayor amortiguación: El acolchado contribuye a absorber los golpes y mejorar la comodidad.",
+      "Ajuste estable: Las mallas elásticas ayudan a mantener las espinilleras correctamente colocadas durante el juego.",
+      "Comodidad en movimiento: Su construcción permite jugar con una sensación cómoda durante entrenamientos y partidos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/030887-01"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Attacanto",
+    "submodel": "",
+    "product_model": "Attacanto Sleeve",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "VSC020201",
+  "slug": "g-form-volt-black",
+  "name": "G-Form Volt",
+  "model": "Volt",
+  "brand": "G-Form",
+  "category": "Shin Guards",
+  "category_slug": "shin-guards",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol G-Form con mallas de sujeción integradas - negras",
+    "tagline": "Protección que te acompaña en cada choque",
+    "intro": "Las espinilleras G-Form Volt ofrecen un equilibrio entre protección y confort para que te centres en el juego. Su diseño estable mantiene la espinillera en su sitio durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Protección sólida: Placa resistente que dispersa el impacto.",
+      "Ajuste seguro: Sistema de sujeción que mantiene la espinillera en su sitio.",
+      "Comodidad prolongada: Acolchado interior que evita rozaduras.",
+      "Ventilación activa: Zonas transpirables que favorecen la circulación de aire."
+    ],
+    "technical_details": {
+      "range": "Volt",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-color-negro-g-form-volt_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-color-negro-g-form-volt_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_canilleras-negras-g-form-volt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-g-form-volt-color-negro_3_vista-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_canilleras-g-form-volt-negras_4_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-color-negro-g-form-volt_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_canilleras-negras-g-form-volt_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_espinilleras-g-form-volt-color-negro_3_vista-conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/V/S/VSC020201_canilleras-g-form-volt-negras_4_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/vsc020201",
+    "language": "es",
+    "category": "Espinilleras fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol G-Form con mallas de sujeción integradas - negras",
+    "tagline": "Protección que te acompaña en cada choque",
+    "intro": "Las espinilleras G-Form Volt ofrecen un equilibrio entre protección y confort para que te centres en el juego. Su diseño estable mantiene la espinillera en su sitio durante todo el partido.",
+    "collection": "",
+    "key_benefits": [
+      "Protección sólida: Placa resistente que dispersa el impacto.",
+      "Ajuste seguro: Sistema de sujeción que mantiene la espinillera en su sitio.",
+      "Comodidad prolongada: Acolchado interior que evita rozaduras.",
+      "Ventilación activa: Zonas transpirables que favorecen la circulación de aire."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Espinilleras fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/vsc020201"
+  },
+  "classification": {
+    "category": "shin-guards",
+    "confidence": "medium",
+    "rule": "source fallback 'espinilleras'",
+    "root_model": "Volt",
+    "submodel": "",
+    "product_model": "Volt",
+    "sole_type": ""
+  }
+}

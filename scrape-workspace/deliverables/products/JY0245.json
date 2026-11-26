@@ -1,0 +1,98 @@
+{
+  "id": "JY0245",
+  "slug": "balon-adidas-alemania-mini-white",
+  "name": "adidas Alemania mini",
+  "model": "Alemania mini",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol adidas de la selección alemana 2026 mini - blanco",
+    "tagline": "El espíritu del fútbol alemán en formato mini",
+    "intro": "El balón adidas Alemania mini rinde homenaje a la historia y al carácter competitivo de la selección alemana. Inspirado en el diseño del balón oficial Trionda, incorpora los colores de Alemania para representar la pasión y tradición futbolística del país.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño inspirado en Alemania: Gráficos y colores que reflejan el orgullo de la selección alemana.",
+      "Perfecto para precisión y control: Ideal para mejorar la técnica en espacios reducidos y practicar toques rápidos.",
+      "Tamaño reducido y práctico: Fácil de transportar y usar en cualquier lugar, desde el parque hasta casa."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_mini-balon-color-blanco-adidas-alemania-mini_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_mini-balon-color-blanco-adidas-alemania-mini_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_mini-pelota-blanco-adidas-alemania-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_balon-mini-adidas-alemania-mini-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_mini-balon-adidas-alemania-mini-blanco_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_mini-balon-color-blanco-adidas-alemania-mini_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_mini-pelota-blanco-adidas-alemania-mini_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_balon-mini-adidas-alemania-mini-color-blanco_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY0245_mini-balon-adidas-alemania-mini-blanco_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jy0245",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol adidas de la selección alemana 2026 mini - blanco",
+    "tagline": "El espíritu del fútbol alemán en formato mini",
+    "intro": "El balón adidas Alemania mini rinde homenaje a la historia y al carácter competitivo de la selección alemana. Inspirado en el diseño del balón oficial Trionda, incorpora los colores de Alemania para representar la pasión y tradición futbolística del país.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño inspirado en Alemania: Gráficos y colores que reflejan el orgullo de la selección alemana.",
+      "Perfecto para precisión y control: Ideal para mejorar la técnica en espacios reducidos y practicar toques rápidos.",
+      "Tamaño reducido y práctico: Fácil de transportar y usar en cualquier lugar, desde el parque hasta casa."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jy0245"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania mini",
+    "sole_type": ""
+  }
+}

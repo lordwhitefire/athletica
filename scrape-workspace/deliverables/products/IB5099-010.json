@@ -1,0 +1,96 @@
+{
+  "id": "IB5099-010",
+  "slug": "short-nike-holanda-entrenamiento-dri-fit-strike-black",
+  "name": "Nike Holanda Training Dri-Fit Strike",
+  "model": "Holanda entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Netherlands National Team Nike Training Shorts - Black",
+    "tagline": "Holland's training shorts",
+    "intro": "The Nike Netherlands Dri-FIT Strike shorts combine comfort and performance to accompany every training session. Its black design provides a modern style inspired by the Dutch national team.",
+    "collection": "",
+    "key_benefits": [
+      "Nike Dri-FIT Technology: Helps keep skin dry and comfortable during exercise.",
+      "Strike Design: Inspired by professional training garments.",
+      "Breathable mesh panels: Improve ventilation for greater freshness.",
+      "Zippered pockets: Allow small items to be stored safely."
+    ],
+    "technical_details": {
+      "range": "Nike Holanda entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_pantalon-corto-color-negro-nike-holanda-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_pantalon-corto-color-negro-nike-holanda-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_pantalon-corto-nike-holanda-entrenamiento-dri-fit-strike-color-negro_3_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_short-negro-nike-holanda-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_short-nike-holanda-entrenamiento-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_pantalon-corto-color-negro-nike-holanda-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_pantalon-corto-nike-holanda-entrenamiento-dri-fit-strike-color-negro_3_detalle-lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_short-negro-nike-holanda-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/B/IB5099-010_short-nike-holanda-entrenamiento-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/ib5099-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto de entrenamiento Nike de la selección de Holanda - negro",
+    "tagline": "El pantalón corto de entrenamiento de Holanda",
+    "intro": "El short Nike Holanda Dri-FIT Strike combina comodidad y rendimiento para acompañar cada sesión de entrenamiento. Su diseño en color negro aporta un estilo moderno inspirado en la selección neerlandesa.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Nike Dri-FIT: Ayuda a mantener la piel seca y cómoda durante el ejercicio.",
+      "Diseño Strike: Inspirado en las prendas de entrenamiento profesionales.",
+      "Paneles de malla transpirables: Mejoran la ventilación para mayor frescura.",
+      "Bolsillos con cremallera: Permiten guardar pequeños objetos de forma segura."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/ib5099-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Holanda",
+    "submodel": "",
+    "product_model": "Holanda entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

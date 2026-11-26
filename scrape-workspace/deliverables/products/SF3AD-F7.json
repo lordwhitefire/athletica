@@ -1,0 +1,86 @@
+{
+  "id": "SF3AD-F7",
+  "slug": "new-balance-furon-v7-dispatch-ag-naranja-rojo",
+  "name": "New Balance Furon v7 Dispatch AG",
+  "model": "Furon v7 Dispatch",
+  "brand": "New Balance",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Naranja / Rojo",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Balance Furon v7 Dispatch",
+      "sole_type": "AG",
+      "upper_material": "",
+      "adjustment": "Lace-up"
+    }
+  },
+  "traction": "AG",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-para-cesped-artificial-color-rojo-y-naranja-new-balance-furon-v7-dispatch-ag_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-para-cesped-artificial-color-rojo-y-naranja-new-balance-furon-v7-dispatch-ag_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-cesped-artificial-naranjas-rojizas-new-balance-furon-v7-dispatch-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-hierba-artificial-new-balance-furon-v7-dispatch-ag-color-rojo-y-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-con-tacos-color-rojo-y-naranja-new-balance-furon-v7-dispatch-ag_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-para-cesped-artificial-naranjas-rojizas-new-balance-furon-v7-dispatch-ag_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-cesped-artificial-new-balance-furon-v7-dispatch-ag-color-rojo-y-naranja_7_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-para-cesped-artificial-color-rojo-y-naranja-new-balance-furon-v7-dispatch-ag_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-cesped-artificial-naranjas-rojizas-new-balance-furon-v7-dispatch-ag_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-hierba-artificial-new-balance-furon-v7-dispatch-ag-color-rojo-y-naranja_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-con-tacos-color-rojo-y-naranja-new-balance-furon-v7-dispatch-ag_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-para-cesped-artificial-naranjas-rojizas-new-balance-furon-v7-dispatch-ag_6_detalle-suela.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/S/F/SF3AD-F7_botas-de-futbol-cesped-artificial-new-balance-furon-v7-dispatch-ag-color-rojo-y-naranja_7_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/sf3ad-f7",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/sf3ad-f7"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Furon",
+    "submodel": "v7 Dispatch",
+    "product_model": "Furon v7 Dispatch",
+    "sole_type": "AG"
+  }
+}

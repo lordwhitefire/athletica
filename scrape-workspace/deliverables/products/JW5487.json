@@ -1,0 +1,102 @@
+{
+  "id": "JW5487",
+  "slug": "camiseta-adidas-liverpool-us-red",
+  "name": "adidas Liverpool US",
+  "model": "Liverpool US",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Liverpool Adidas Short Sleeve Cotton T-Shirt - Red",
+    "tagline": "Baseball aesthetic with a red soul",
+    "intro": "This adidas Liverpool t-shirt takes inspiration from the American university style, fusing it with the club's football identity. Made of cotton and with a vibrant look, it is perfect for showing your hobby on any occasion.",
+    "collection": "",
+    "key_benefits": [
+      "College inspiration: Design with American sports aesthetics.",
+      "Natural comfort: Soft cotton that cares for the skin.",
+      "Net style: Liverpool FC crest and colors.",
+      "Total versatility: To train, go out or cheer on the team.",
+      "Functional fit: Regular cut that adapts to any body."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool US",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-color-rojo-adidas-liverpool-us_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-color-rojo-adidas-liverpool-us_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-roja-adidas-liverpool-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-adidas-liverpool-us-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-adidas-liverpool-us-roja_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-color-rojo-adidas-liverpool-us_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-roja-adidas-liverpool-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-adidas-liverpool-us-color-rojo_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/W/JW5487_camiseta-adidas-liverpool-us-roja_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jw5487",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Liverpool - roja",
+    "tagline": "Estética beisbolera con alma red",
+    "intro": "Esta camiseta adidas del Liverpool toma como inspiración el estilo universitario americano, fusionándolo con la identidad futbolística del club. Confeccionada en algodón y con un look vibrante, es perfecta para mostrar tu afición en cualquier ocasión.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración college: Diseño con estética americana deportiva.",
+      "Comodidad natural: Algodón suave que cuida la piel.",
+      "Estilo red: Escudo y colores del Liverpool FC.",
+      "Versatilidad total: Para entrenar, salir o animar al equipo.",
+      "Ajuste funcional: Corte regular que se adapta a cualquier cuerpo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jw5487"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Liverpool US",
+    "submodel": "",
+    "product_model": "Liverpool US",
+    "sole_type": ""
+  }
+}

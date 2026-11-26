@@ -1,0 +1,94 @@
+{
+  "id": "HM4234-084",
+  "slug": "chaqueta-nike-barcelona-tech-woven-wind-runner-grey",
+  "name": "Nike Barcelona Tech Woven Wind Runner",
+  "model": "Barcelona Tech Woven Wind Runner",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta cortavientos Nike del FC Barcelona 2025 2026 - gris",
+    "tagline": "Protección ligera, identidad blaugrana",
+    "intro": "Chaqueta Nike Wind Runner del FC Barcelona, diseñada para ofrecer cobertura sin sacrificar movilidad ni estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño Windrunner: Estética icónica de Nike con escudo del Barça.",
+      "Resistencia al viento: Ideal para entrenamientos al aire libre.",
+      "Capucha funcional: Ajuste cómodo en condiciones variables.",
+      "Versatilidad urbana: Perfecta dentro y fuera del campo."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Tech Woven Wind Runner",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM4234-084_chaqueta-color-gris-nike-barcelona-tech-woven_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM4234-084_chaqueta-color-gris-nike-barcelona-tech-woven_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM4234-084_chaqueta-chandal-gris-nike-barcelona-tech-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM4234-084_chaqueta-entretiempo-nike-barcelona-tech-woven-color-gris_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM4234-084_chaqueta-color-gris-nike-barcelona-tech-woven_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM4234-084_chaqueta-chandal-gris-nike-barcelona-tech-woven_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/M/HM4234-084_chaqueta-entretiempo-nike-barcelona-tech-woven-color-gris_3_detalle-manga-y-bolsillo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hm4234-084",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Chaqueta cortavientos Nike del FC Barcelona 2025 2026 - gris",
+    "tagline": "Protección ligera, identidad blaugrana",
+    "intro": "Chaqueta Nike Wind Runner del FC Barcelona, diseñada para ofrecer cobertura sin sacrificar movilidad ni estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño Windrunner: Estética icónica de Nike con escudo del Barça.",
+      "Resistencia al viento: Ideal para entrenamientos al aire libre.",
+      "Capucha funcional: Ajuste cómodo en condiciones variables.",
+      "Versatilidad urbana: Perfecta dentro y fuera del campo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hm4234-084"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Barcelona Tech",
+    "submodel": "",
+    "product_model": "Barcelona Tech Woven Wind Runner",
+    "sole_type": ""
+  }
+}

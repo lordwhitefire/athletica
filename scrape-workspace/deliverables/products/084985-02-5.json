@@ -1,0 +1,109 @@
+{
+  "id": "084985-02-5",
+  "slug": "balon-puma-austria-culture-t-5-rojo-negro",
+  "name": "Puma Austria Culture T.5",
+  "model": "Austria Culture T.5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Rojo / Negro",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Austria 2026 Puma Soccer Ball in Size 5 - Red, Black",
+    "tagline": "Entrena con el orgullo de Austria",
+    "intro": "The Puma Austria Culture size 5 ball is designed to accompany you in every training session and informal match. Inspired by the Austrian selection, it combines resistance, precision and a striking design.",
+    "collection": "",
+    "key_benefits": [
+      "32-panel construction: Improves precision and ball control.",
+      "Machine sewn: Greater resistance and durability.",
+      "Stable flight: Ensures more precise trajectories.",
+      "Versatile use: Ideal for training and recreational play.",
+      "Official design: Inspired by the Austria national team."
+    ],
+    "technical_details": {
+      "range": "Puma Austria Culture T.5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/b6b514f68aa98d3993f98968e059b5805ba7bf83-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/b6b514f68aa98d3993f98968e059b5805ba7bf83-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bb505c2445af20d3060a648bd8342120296e244b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/65545ccc3671a90d7f9dfff3c666571788b4cb48-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b6b514f68aa98d3993f98968e059b5805ba7bf83-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/bb505c2445af20d3060a648bd8342120296e244b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/65545ccc3671a90d7f9dfff3c666571788b4cb48-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-b6b514f68aa98d3993f98968e059b5805ba7bf83-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b6b514f68aa98d3993f98968e059b5805ba7bf83-1500x1500.jpg"
+    },
+    {
+      "_id": "image-bb505c2445af20d3060a648bd8342120296e244b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bb505c2445af20d3060a648bd8342120296e244b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-65545ccc3671a90d7f9dfff3c666571788b4cb48-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/65545ccc3671a90d7f9dfff3c666571788b4cb48-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084985-02-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la selección de Austria 2026 en talla 5 - rojo, negro",
+    "tagline": "Entrena con el orgullo de Austria",
+    "intro": "El balón Puma Austria Culture talla 5 está diseñado para acompañarte en cada entrenamiento y partido informal. Inspirado en la selección austríaca, combina resistencia, precisión y un diseño llamativo.",
+    "collection": "",
+    "key_benefits": [
+      "Construcción de 32 paneles: Mejora la precisión y el control del balón.",
+      "Cosido a máquina: Mayor resistencia y durabilidad.",
+      "Vuelo estable: Garantiza trayectorias más precisas.",
+      "Uso versátil: Ideal para entrenamientos y juego recreativo.",
+      "Diseño oficial: Inspirado en la selección de Austria."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084985-02-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Austria",
+    "submodel": "",
+    "product_model": "Austria Culture T.5",
+    "sole_type": ""
+  }
+}

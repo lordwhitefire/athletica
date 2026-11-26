@@ -1,0 +1,90 @@
+{
+  "id": "IF1463-010",
+  "slug": "short-nike-dri-fit-strike-black",
+  "name": "Nike Dri-Fit Strike",
+  "model": "Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Nike Soccer Training Shorts - Black",
+    "tagline": "Distraction-free mobility",
+    "intro": "These Strike shorts are designed for training where freedom of movement and breathability are essential.",
+    "collection": "",
+    "key_benefits": [
+      "Lightness: Facilitates quick movements.",
+      "Sweat management: Keeps skin dry.",
+      "Frequent use: Ideal for intense training."
+    ],
+    "technical_details": {
+      "range": "Nike Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_pantalon-corto-color-negro-nike-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_pantalon-corto-color-negro-nike-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_short-negro-nike-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_pantalon-corto-nike-dri-fit-strike-color-negro_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_short-nike-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_pantalon-corto-color-negro-nike-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_short-negro-nike-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_pantalon-corto-nike-dri-fit-strike-color-negro_3_detalle-cintura-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/I/F/IF1463-010_short-nike-dri-fit-strike-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/if1463-010",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón corto para entrenamiento de fútbol Nike - negro",
+    "tagline": "Movilidad sin distracciones",
+    "intro": "Este short Strike está diseñado para entrenamientos donde la libertad de movimiento y la transpirabilidad son esenciales.",
+    "collection": "",
+    "key_benefits": [
+      "Ligereza: Facilita movimientos rápidos.",
+      "Gestión del sudor: Mantiene la piel seca.",
+      "Uso frecuente: Ideal para entrenamientos intensos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/if1463-010"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Dri-Fit",
+    "submodel": "",
+    "product_model": "Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "HJ6964-594",
+  "slug": "pantalon-nike-barcelona-entrenamiento-dri-fit-strike-purple",
+  "name": "Nike Barcelona Training Dri-Fit Strike",
+  "model": "Barcelona entrenamiento Dri-Fit Strike",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento Nike del FC Barcelona 2025 2026 - púrpura",
+    "tagline": "Rendimiento y estilo para tus entrenamientos",
+    "intro": "Con este pantalón Nike del FC Barcelona, entrenarás con el confort y la libertad de movimiento que necesitas. Su diseño transpirable y el tejido elástico se adaptan a tu ritmo, mientras que el look oficial del club te acompaña en cada sesión. Ideal para llevar tu pasión al siguiente nivel.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad optimizada: El tejido Dri-FIT aleja el sudor para mantenerte seco y concentrado.",
+      "Movimiento sin límites: El ajuste entallado y el tejido elástico mejoran la movilidad.",
+      "Inspiración culé: Diseño oficial del Barcelona temporada 2025/26.",
+      "Comodidad ligera: Material suave y ligero para uso prolongado."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona entrenamiento Dri-Fit Strike",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-largo-color-purpura-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-largo-color-purpura-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-chandal-purpura-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-chandal-nike-barcelona-entrenamiento-dri-fit-strike-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-largo-nike-barcelona-entrenamiento-dri-fit-strike-purpura_4_detalle-utilizacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-largo-color-purpura-nike-barcelona-entrenamiento-dri-fit-strike_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-chandal-purpura-nike-barcelona-entrenamiento-dri-fit-strike_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-chandal-nike-barcelona-entrenamiento-dri-fit-strike-color-purpura_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6964-594_pantalon-largo-nike-barcelona-entrenamiento-dri-fit-strike-purpura_4_detalle-utilizacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6964-594",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo de entrenamiento Nike del FC Barcelona 2025 2026 - púrpura",
+    "tagline": "Rendimiento y estilo para tus entrenamientos",
+    "intro": "Con este pantalón Nike del FC Barcelona, entrenarás con el confort y la libertad de movimiento que necesitas. Su diseño transpirable y el tejido elástico se adaptan a tu ritmo, mientras que el look oficial del club te acompaña en cada sesión. Ideal para llevar tu pasión al siguiente nivel.",
+    "collection": "",
+    "key_benefits": [
+      "Transpirabilidad optimizada: El tejido Dri-FIT aleja el sudor para mantenerte seco y concentrado.",
+      "Movimiento sin límites: El ajuste entallado y el tejido elástico mejoran la movilidad.",
+      "Inspiración culé: Diseño oficial del Barcelona temporada 2025/26.",
+      "Comodidad ligera: Material suave y ligero para uso prolongado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6964-594"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Barcelona Training",
+    "submodel": "",
+    "product_model": "Barcelona entrenamiento Dri-Fit Strike",
+    "sole_type": ""
+  }
+}

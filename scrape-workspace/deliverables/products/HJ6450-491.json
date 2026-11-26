@@ -1,0 +1,96 @@
+{
+  "id": "HJ6450-491",
+  "slug": "pantalon-nike-psg-tech-fleece-gris-azul",
+  "name": "Nike PSG Tech Fleece",
+  "model": "PSG Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Gris / Azul",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del PSG - gris",
+    "tagline": "Estilo urbano con identidad PSG",
+    "intro": "El pantalón largo Tech Fleece del PSG es la combinación perfecta entre moda y pasión por el fútbol. Su tejido cálido y suave lo convierte en una prenda imprescindible para tus looks casuales con un toque parisino auténtico.",
+    "collection": "",
+    "key_benefits": [
+      "Estética moderna: Corte estilizado con inspiración streetwear.",
+      "Comodidad superior: Tejido suave y ligero ideal para todo el día.",
+      "Identidad PSG: Escudo bordado y colores del club.",
+      "Uso versátil: Combina con sudaderas o zapatillas.",
+      "Acabados premium: Detalles cuidados y diseño Nike Tech Fleece."
+    ],
+    "technical_details": {
+      "range": "Nike PSG Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6450-491_pantalon-largo-color-gris-y-azul-nike-psg-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6450-491_pantalon-largo-color-gris-y-azul-nike-psg-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6450-491_pantalon-chandal-gris-nike-psg-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6450-491_pantalon-chandal-nike-psg-tech-fleece-color-gris-y-azul_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6450-491_pantalon-largo-color-gris-y-azul-nike-psg-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6450-491_pantalon-chandal-gris-nike-psg-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6450-491_pantalon-chandal-nike-psg-tech-fleece-color-gris-y-azul_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6450-491",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del PSG - gris",
+    "tagline": "Estilo urbano con identidad PSG",
+    "intro": "El pantalón largo Tech Fleece del PSG es la combinación perfecta entre moda y pasión por el fútbol. Su tejido cálido y suave lo convierte en una prenda imprescindible para tus looks casuales con un toque parisino auténtico.",
+    "collection": "",
+    "key_benefits": [
+      "Estética moderna: Corte estilizado con inspiración streetwear.",
+      "Comodidad superior: Tejido suave y ligero ideal para todo el día.",
+      "Identidad PSG: Escudo bordado y colores del club.",
+      "Uso versátil: Combina con sudaderas o zapatillas.",
+      "Acabados premium: Detalles cuidados y diseño Nike Tech Fleece."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6450-491"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "PSG Tech",
+    "submodel": "",
+    "product_model": "PSG Tech Fleece",
+    "sole_type": ""
+  }
+}

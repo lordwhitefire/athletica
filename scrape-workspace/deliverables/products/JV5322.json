@@ -1,0 +1,98 @@
+{
+  "id": "JV5322",
+  "slug": "chaqueta-adidas-real-madrid-vis-tech-grey",
+  "name": "adidas Real Madrid Vis Tech",
+  "model": "Real Madrid Vis Tech",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Track Jacket - Gray",
+    "tagline": "Conquer white style with every move",
+    "intro": "The adidas Real Madrid Vis Tech gray jacket pays tribute to your passion for the club with a technical design that combines elegance and functionality. Ideal for keeping you warm with class before, during and after training.",
+    "collection": "",
+    "key_benefits": [
+      "White pride: Embroidered crest and official adidas design of Real Madrid.",
+      "Lightweight Protection: Full-zip and stand-up collar for cool weather.",
+      "Superior comfort: Technical fabric that is soft against the skin.",
+      "Everyday practicality: Functional pockets and perfect fit.",
+      "Versatility: Ideal for warm-ups, travel and urban use."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Vis Tech",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-chandal-gris-adidas-real-madrid-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-entretiempo-adidas-real-madrid-vis-tech-color-gris_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-adidas-real-madrid-vis-tech-gris_4_detalle-manga-y-tecnologia.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-color-gris-adidas-real-madrid-vis-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-chandal-gris-adidas-real-madrid-vis-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-entretiempo-adidas-real-madrid-vis-tech-color-gris_3_detalle-cierre-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/V/JV5322_chaqueta-adidas-real-madrid-vis-tech-gris_4_detalle-manga-y-tecnologia.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jv5322",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de chándal adidas del Real Madrid - gris",
+    "tagline": "Conquista el estilo blanco con cada movimiento",
+    "intro": "La chaqueta adidas Real Madrid Vis Tech gris rinde homenaje a tu pasión por el club con un diseño técnico que combina elegancia y funcionalidad. Ideal para mantenerte abrigado con clase antes, durante y después del entrenamiento.",
+    "collection": "",
+    "key_benefits": [
+      "Orgullo blanco: Escudo bordado y diseño oficial adidas del Real Madrid.",
+      "Protección ligera: Cierre completo y cuello alzado para climas frescos.",
+      "Comodidad superior: Tejido técnico suave al contacto con la piel.",
+      "Practicidad diaria: Bolsillos funcionales y ajuste perfecto.",
+      "Versatilidad: Ideal para calentamientos, viajes y uso urbano."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jv5322"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Vis Tech",
+    "sole_type": ""
+  }
+}

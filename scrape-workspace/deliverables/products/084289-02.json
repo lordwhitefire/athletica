@@ -1,0 +1,97 @@
+{
+  "id": "084289-02",
+  "slug": "balon-puma-orbita-la-liga-1-2024-2025-mini-yellow",
+  "name": "Puma Orbita La Liga 1 2024 2025 Mini",
+  "model": "Orbita La Liga 1 2024 2025 Mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Orbita La Liga 1 2024 2025 Mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/e1f0ddf42f3b693eeff78d4cc905c083d98333fc-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/e1f0ddf42f3b693eeff78d4cc905c083d98333fc-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f554fe1b26d1f97bd2a3a60eae48bf40b71b0308-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9629ea96709babe82aa6e4f85af7dbf8f868e45c-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/e1f0ddf42f3b693eeff78d4cc905c083d98333fc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f554fe1b26d1f97bd2a3a60eae48bf40b71b0308-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9629ea96709babe82aa6e4f85af7dbf8f868e45c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-e1f0ddf42f3b693eeff78d4cc905c083d98333fc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/e1f0ddf42f3b693eeff78d4cc905c083d98333fc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f554fe1b26d1f97bd2a3a60eae48bf40b71b0308-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f554fe1b26d1f97bd2a3a60eae48bf40b71b0308-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9629ea96709babe82aa6e4f85af7dbf8f868e45c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9629ea96709babe82aa6e4f85af7dbf8f868e45c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084289-02",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084289-02"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita La Liga 1 2024 2025 Mini",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "100572307-A",
+  "slug": "camiseta-uhlsport-save-goalkeeper-yellow",
+  "name": "Uhlsport Save Goalkeeper",
+  "model": "Save Goalkeeper",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Uhlsport long sleeve goalkeeper shirt - yellow",
+    "tagline": "Visibility and safety at every stop",
+    "intro": "With the Uhlsport Save yellow goalkeeper jersey you won't go unnoticed. Its light fabric and technical design accompany you in every intervention.",
+    "collection": "",
+    "key_benefits": [
+      "Technical design: Ergonomic cut to move with confidence.",
+      "Functional fabric: Light material that promotes breathability.",
+      "Modern goalkeeper style: Bright colors and fitted collar."
+    ],
+    "technical_details": {
+      "range": "Uhlsport Save Goalkeeper",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/3fb40ba7cd388eab53a86296a8825af011f854ea-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/3fb40ba7cd388eab53a86296a8825af011f854ea-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2cbfe1eddc6655eaea7999daaffb770a086b9cbc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/778fa9da1856f1fa85e177529e31b2053d08101f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7eb4ae89fa156eddc14c8fc040be6346beaaad3b-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/3fb40ba7cd388eab53a86296a8825af011f854ea-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2cbfe1eddc6655eaea7999daaffb770a086b9cbc-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/778fa9da1856f1fa85e177529e31b2053d08101f-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7eb4ae89fa156eddc14c8fc040be6346beaaad3b-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-3fb40ba7cd388eab53a86296a8825af011f854ea-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/3fb40ba7cd388eab53a86296a8825af011f854ea-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2cbfe1eddc6655eaea7999daaffb770a086b9cbc-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2cbfe1eddc6655eaea7999daaffb770a086b9cbc-1500x1500.jpg"
+    },
+    {
+      "_id": "image-778fa9da1856f1fa85e177529e31b2053d08101f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/778fa9da1856f1fa85e177529e31b2053d08101f-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7eb4ae89fa156eddc14c8fc040be6346beaaad3b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7eb4ae89fa156eddc14c8fc040be6346beaaad3b-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/100572307-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta portero manga larga Uhlsport - amarilla",
+    "tagline": "Visibilidad y seguridad en cada parada",
+    "intro": "Con la camiseta de portero Uhlsport Save amarilla no pasarás desapercibido. Su tejido ligero y su diseño técnico te acompañan en cada intervención.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño técnico: Corte ergonómico para moverse con confianza.",
+      "Tejido funcional: Material ligero que favorece la transpiración.",
+      "Estilo de portero moderno: Colores vivos y cuello ajustado."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/100572307-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'goalkeeper'",
+    "root_model": "Save",
+    "submodel": "",
+    "product_model": "Save Goalkeeper",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "P1GA2542-04",
+  "slug": "mizuno-morelia-neo-4-beta-elite-md-silver",
+  "name": "Mizuno Morelia Neo 4 Beta Elite MD",
+  "model": "Morelia Neo 4 Beta Elite MD",
+  "brand": "Mizuno",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Silver",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Morelia Neo 4 Beta Elite MD",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-color-plata-mizuno-morelia-neo-4-beta-elite-md_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-color-plata-mizuno-morelia-neo-4-beta-elite-md_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-con-tacos-plateadas-mizuno-morelia-neo-4-beta-elite-md_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-futbol-mizuno-morelia-neo-4-beta-elite-md-color-plata_3_pie-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-tacos-mizuno-morelia-neo-4-beta-elite-md-plateadas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_zapatillas-futbol-color-plata-mizuno-morelia-neo-4-beta-elite-md_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-plateadas-mizuno-morelia-neo-4-beta-elite-md_6_pie-izquierdo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-color-plata-mizuno-morelia-neo-4-beta-elite-md_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-con-tacos-plateadas-mizuno-morelia-neo-4-beta-elite-md_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-futbol-mizuno-morelia-neo-4-beta-elite-md-color-plata_3_pie-izquierdo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-tacos-mizuno-morelia-neo-4-beta-elite-md-plateadas_4_superior.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_zapatillas-futbol-color-plata-mizuno-morelia-neo-4-beta-elite-md_5_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2542-04_botas-de-futbol-plateadas-mizuno-morelia-neo-4-beta-elite-md_6_pie-izquierdo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/p1ga2542-04",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/p1ga2542-04"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Morelia",
+    "submodel": "Neo 4 Beta Elite MD",
+    "product_model": "Morelia Neo 4 Beta Elite MD",
+    "sole_type": ""
+  }
+}

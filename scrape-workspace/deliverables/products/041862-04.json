@@ -1,0 +1,99 @@
+{
+  "id": "041862-04",
+  "slug": "puma-ultra-play-rc-yellow",
+  "name": "Puma Ultra Play RC",
+  "model": "Ultra Play RC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Yellow",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Ultra Play RC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/bfde04c1e30cd286855760776b549827949bbaec-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/bfde04c1e30cd286855760776b549827949bbaec-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/d6b1743469d291a7c007f26b6ed523acb55889d5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/948aa168fd6349898f9b4848a239bd8952ea3eb3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cfa53eff7fff643601ee7186f7715f51cf7e39a9-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bfde04c1e30cd286855760776b549827949bbaec-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d6b1743469d291a7c007f26b6ed523acb55889d5-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/948aa168fd6349898f9b4848a239bd8952ea3eb3-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/cfa53eff7fff643601ee7186f7715f51cf7e39a9-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-bfde04c1e30cd286855760776b549827949bbaec-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bfde04c1e30cd286855760776b549827949bbaec-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d6b1743469d291a7c007f26b6ed523acb55889d5-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d6b1743469d291a7c007f26b6ed523acb55889d5-1500x1500.jpg"
+    },
+    {
+      "_id": "image-948aa168fd6349898f9b4848a239bd8952ea3eb3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/948aa168fd6349898f9b4848a239bd8952ea3eb3-1500x1500.jpg"
+    },
+    {
+      "_id": "image-cfa53eff7fff643601ee7186f7715f51cf7e39a9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/cfa53eff7fff643601ee7186f7715f51cf7e39a9-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/041862-04",
+    "language": "es",
+    "category": "Guantes de portero",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Guantes de portero"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/041862-04"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Ultra",
+    "submodel": "Play RC",
+    "product_model": "Ultra Play RC",
+    "sole_type": ""
+  }
+}

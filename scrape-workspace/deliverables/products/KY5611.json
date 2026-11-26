@@ -1,0 +1,90 @@
+{
+  "id": "KY5611",
+  "slug": "adidas-f50-training-j-grey",
+  "name": "adidas F50 Training J",
+  "model": "F50 Training J",
+  "brand": "adidas",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Espinilleras de fútbol infantiles adidas con cintas de velcro - grises",
+    "tagline": "Protección para los futuros velocistas del fútbol",
+    "intro": "Las espinilleras adidas F50 Training J están diseñadas para jóvenes futbolistas que quieren jugar con confianza en cada entrenamiento y partido. Inspiradas en la velocidad de la familia F50, incorporan una carcasa resistente que protege frente a impactos y un diseño anatómico que favorece la libertad de movimiento. Gracias a sus correas de velcro ajustables, ofrecen una sujeción segura y cómoda durante toda la actividad.",
+    "collection": "",
+    "key_benefits": [
+      "Ergo-Flex Design: Diseño anatómico que se adapta a la forma natural de la pierna.",
+      "Shell-Tec Fit System: Carcasa resistente que proporciona protección fiable frente a impactos.",
+      "Correas de velcro ajustables: Ajuste seguro y personalizado durante el juego.",
+      "SoftFoam Comfort System: Acolchado que mejora la comodidad y absorbe golpes."
+    ],
+    "technical_details": {
+      "range": "F50 Training J",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Y/KY5611_espinilleras-color-gris-adidas-f50-training-j_1_conjunto.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Y/KY5611_espinilleras-color-gris-adidas-f50-training-j_1_conjunto.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Y/KY5611_canilleras-grises-adidas-f50-training-j_2_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Y/KY5611_espinilleras-adidas-f50-training-j-color-gris_3_detalle-frontal.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Y/KY5611_espinilleras-color-gris-adidas-f50-training-j_1_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Y/KY5611_canilleras-grises-adidas-f50-training-j_2_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Y/KY5611_espinilleras-adidas-f50-training-j-color-gris_3_detalle-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/ky5611",
+    "language": "es",
+    "category": "Espinilleras",
+    "captured_at": "2026-11-19",
+    "subtitle": "Espinilleras de fútbol infantiles adidas con cintas de velcro - grises",
+    "tagline": "Protección para los futuros velocistas del fútbol",
+    "intro": "Las espinilleras adidas F50 Training J están diseñadas para jóvenes futbolistas que quieren jugar con confianza en cada entrenamiento y partido. Inspiradas en la velocidad de la familia F50, incorporan una carcasa resistente que protege frente a impactos y un diseño anatómico que favorece la libertad de movimiento. Gracias a sus correas de velcro ajustables, ofrecen una sujeción segura y cómoda durante toda la actividad.",
+    "collection": "",
+    "key_benefits": [
+      "Ergo-Flex Design: Diseño anatómico que se adapta a la forma natural de la pierna.",
+      "Shell-Tec Fit System: Carcasa resistente que proporciona protección fiable frente a impactos.",
+      "Correas de velcro ajustables: Ajuste seguro y personalizado durante el juego.",
+      "SoftFoam Comfort System: Acolchado que mejora la comodidad y absorbe golpes."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Espinilleras"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/ky5611"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "F50",
+    "submodel": "Training J",
+    "product_model": "F50 Training J",
+    "sole_type": ""
+  }
+}

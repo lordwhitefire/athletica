@@ -1,0 +1,103 @@
+{
+  "id": "027658-01",
+  "slug": "gorra-puma-milan-x-slam-jam-grey",
+  "name": "Puma Milan x Slam Jam",
+  "model": "Milan x Slam Jam",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "AC Milan Puma Walking Cap - Gray",
+    "tagline": "The Puma AC Milan x Slam Jam cap",
+    "intro": "PUMA and AC Milan join forces with Slam Jam to create a collection that fuses football and urban culture. This cap reflects the essence of San Siro and the contemporary style of Milan, becoming an essential accessory for fans.",
+    "collection": "",
+    "key_benefits": [
+      "Exclusive collaboration: AC Milan x Slam Jam design that mixes football and streetwear.",
+      "Cotton Material: Comfortable and breathable fabric for daily use.",
+      "Structured design: 6-panel cap that offers a comfortable and stable fit.",
+      "Adjustable closure: Allows you to easily adapt the cap to different sizes."
+    ],
+    "technical_details": {
+      "range": "Puma Milan x Slam Jam",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/9e5052312ddbe08e647576a4f52dce72d5a538df-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/9e5052312ddbe08e647576a4f52dce72d5a538df-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/4564eb54556ea32bb97e28c7c742c9f2045adea9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d7b51df11c3adcd2ebf7b0a67e9995ad425f73e9-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/9e5052312ddbe08e647576a4f52dce72d5a538df-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/4564eb54556ea32bb97e28c7c742c9f2045adea9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/d7b51df11c3adcd2ebf7b0a67e9995ad425f73e9-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-9e5052312ddbe08e647576a4f52dce72d5a538df-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9e5052312ddbe08e647576a4f52dce72d5a538df-1500x1500.jpg"
+    },
+    {
+      "_id": "image-4564eb54556ea32bb97e28c7c742c9f2045adea9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/4564eb54556ea32bb97e28c7c742c9f2045adea9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-d7b51df11c3adcd2ebf7b0a67e9995ad425f73e9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/d7b51df11c3adcd2ebf7b0a67e9995ad425f73e9-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/027658-01",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorra de paseo Puma del AC Milan - gris",
+    "tagline": "La gorra Puma AC Milan x Slam Jam",
+    "intro": "PUMA y el AC Milan se unen con Slam Jam para crear una colección que fusiona fútbol y cultura urbana. Esta gorra refleja la esencia de San Siro y el estilo contemporáneo de Milán, convirtiéndose en un accesorio imprescindible para los aficionados.",
+    "collection": "",
+    "key_benefits": [
+      "Colaboración exclusiva: Diseño AC Milan x Slam Jam que mezcla fútbol y streetwear.",
+      "Material de algodón: Tejido cómodo y transpirable para uso diario.",
+      "Diseño estructurado: Gorra de 6 paneles que ofrece un ajuste cómodo y estable.",
+      "Cierre ajustable: Permite adaptar la gorra a diferentes tamaños con facilidad."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/027658-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Milan",
+    "submodel": "x Slam Jam",
+    "product_model": "Milan x Slam Jam",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "050.5532-A",
+  "slug": "mallas-de-portero-ho-soccer-raven-black",
+  "name": "Mallas de Goalkeeper HO Soccer Raven",
+  "model": "Mallas de Goalkeeper HO Soccer Raven",
+  "brand": "Ho Soccer",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "de portero HO Soccer Raven",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a876715d45e0b946728923bcf739733aee9e9528-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a876715d45e0b946728923bcf739733aee9e9528-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/f1e7fa0e23f14b9e73ab52195fb54c71a91c3b02-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f8f3be21ee8da08cfa94e3150efbb6d5789ea95d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/758dedd0a01462b16514c9de9f143db2b5006a15-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fe148470d512cea609d5759e4435f9511d365575-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a876715d45e0b946728923bcf739733aee9e9528-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f1e7fa0e23f14b9e73ab52195fb54c71a91c3b02-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/f8f3be21ee8da08cfa94e3150efbb6d5789ea95d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/758dedd0a01462b16514c9de9f143db2b5006a15-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/fe148470d512cea609d5759e4435f9511d365575-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a876715d45e0b946728923bcf739733aee9e9528-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a876715d45e0b946728923bcf739733aee9e9528-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f1e7fa0e23f14b9e73ab52195fb54c71a91c3b02-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f1e7fa0e23f14b9e73ab52195fb54c71a91c3b02-1500x1500.jpg"
+    },
+    {
+      "_id": "image-f8f3be21ee8da08cfa94e3150efbb6d5789ea95d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/f8f3be21ee8da08cfa94e3150efbb6d5789ea95d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-758dedd0a01462b16514c9de9f143db2b5006a15-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/758dedd0a01462b16514c9de9f143db2b5006a15-1500x1500.jpg"
+    },
+    {
+      "_id": "image-fe148470d512cea609d5759e4435f9511d365575-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/fe148470d512cea609d5759e4435f9511d365575-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/050-5532-a",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/050-5532-a"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Mallas",
+    "submodel": "",
+    "product_model": "Mallas de Goalkeeper HO Soccer Raven",
+    "sole_type": ""
+  }
+}

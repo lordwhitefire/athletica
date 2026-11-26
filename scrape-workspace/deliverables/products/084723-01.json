@@ -1,0 +1,101 @@
+{
+  "id": "084723-01",
+  "slug": "balon-puma-premier-25-26-play-mini-thrill-orbita-white",
+  "name": "Puma Premier 25 26 Play mini Thrill Orbita",
+  "model": "Premier 25 26 Play mini Thrill Orbita",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League Soccer Ball 2025 2026 Mini - White",
+    "tagline": "Designed for future stars",
+    "intro": "This Puma Premier League 25/26 mini soccer ball combines style and functionality so you can practice your skills wherever you want. Perfect for promising young players and fans of English football.",
+    "collection": "",
+    "key_benefits": [
+      "Improved Durability: Machine stitching extends its life.",
+      "Exclusive design: Inspired by the speed and energy of the Premier League.",
+      "Small size: Ideal for practicing technique anywhere."
+    ],
+    "technical_details": {
+      "range": "Puma Premier 25 26 Play mini Thrill Orbita",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/472b1c429fbc95c25ecc26655380e5aae7eb52a1-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/472b1c429fbc95c25ecc26655380e5aae7eb52a1-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/8696d9cca78e07fbf64ae7db34fefa2c688e49b6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b81d5eadd3093ddfc9a3e620aa1653bdfc90cf0c-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/472b1c429fbc95c25ecc26655380e5aae7eb52a1-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/8696d9cca78e07fbf64ae7db34fefa2c688e49b6-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b81d5eadd3093ddfc9a3e620aa1653bdfc90cf0c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-472b1c429fbc95c25ecc26655380e5aae7eb52a1-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/472b1c429fbc95c25ecc26655380e5aae7eb52a1-1500x1500.jpg"
+    },
+    {
+      "_id": "image-8696d9cca78e07fbf64ae7db34fefa2c688e49b6-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/8696d9cca78e07fbf64ae7db34fefa2c688e49b6-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b81d5eadd3093ddfc9a3e620aa1653bdfc90cf0c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b81d5eadd3093ddfc9a3e620aa1653bdfc90cf0c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084723-01",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 mini - blanco",
+    "tagline": "Diseñado para los futuros cracks",
+    "intro": "Este mini balón de fútbol Puma de la Premier League 25/26 combina estilo y funcionalidad para que practiques tus habilidades donde quieras. Perfecto para jóvenes promesas y fans del fútbol inglés.",
+    "collection": "",
+    "key_benefits": [
+      "Durabilidad mejorada: Costuras a máquina que prolongan su vida útil.",
+      "Diseño exclusivo: Inspirado en la velocidad y energía de la Premier League.",
+      "Tamaño reducido: Ideal para practicar técnica en cualquier lugar."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084723-01"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Premier 25",
+    "submodel": "",
+    "product_model": "Premier 25 26 Play mini Thrill Orbita",
+    "sole_type": ""
+  }
+}

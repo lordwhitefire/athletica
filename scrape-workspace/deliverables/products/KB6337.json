@@ -1,0 +1,104 @@
+{
+  "id": "KB6337",
+  "slug": "camiseta-sin-mangas-adidas-real-madrid-entrenamiento-green",
+  "name": "sin mangas adidas Real Madrid Training",
+  "model": "sin mangas adidas Real Madrid Training",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta sin mangas de entrenamiento adidas del Real Madrid 2026 2027 - verde",
+    "tagline": "Entrena con la intensidad del Real Madrid",
+    "intro": "La camiseta sin mangas de entrenamiento adidas del Real Madrid 2026/2027 está diseñada para ofrecer máxima libertad de movimiento en cada sesión. Inspirada en la equipación de entrenamiento del club blanco, combina ligereza, transpirabilidad y un diseño oficial pensado para rendir al máximo.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool: Mantiene la piel fresca y seca durante el esfuerzo.",
+      "Diseño sin mangas: Favorece una total libertad de movimiento.",
+      "Escudo oficial del Real Madrid: Refleja la pasión por el club en cada entrenamiento.",
+      "Paneles de ventilación: Mejoran la circulación del aire para mayor confort."
+    ],
+    "technical_details": {
+      "range": "sin mangas adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-tirantes-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-pecho-con-escudo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-tirantes-adidas-real-madrid-entrenamiento-verde_4_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-verde-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-color-verde-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-tirantes-adidas-real-madrid-entrenamiento-color-verde_3_detalle-cuello-pecho-con-escudo-y-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-tirantes-adidas-real-madrid-entrenamiento-verde_4_detalle-tecnologia.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB6337_camiseta-verde-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb6337",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta sin mangas de entrenamiento adidas del Real Madrid 2026 2027 - verde",
+    "tagline": "Entrena con la intensidad del Real Madrid",
+    "intro": "La camiseta sin mangas de entrenamiento adidas del Real Madrid 2026/2027 está diseñada para ofrecer máxima libertad de movimiento en cada sesión. Inspirada en la equipación de entrenamiento del club blanco, combina ligereza, transpirabilidad y un diseño oficial pensado para rendir al máximo.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool: Mantiene la piel fresca y seca durante el esfuerzo.",
+      "Diseño sin mangas: Favorece una total libertad de movimiento.",
+      "Escudo oficial del Real Madrid: Refleja la pasión por el club en cada entrenamiento.",
+      "Paneles de ventilación: Mejoran la circulación del aire para mayor confort."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb6337"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "sin",
+    "submodel": "",
+    "product_model": "sin mangas adidas Real Madrid Training",
+    "sole_type": ""
+  }
+}

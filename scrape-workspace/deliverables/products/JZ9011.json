@@ -1,0 +1,98 @@
+{
+  "id": "JZ9011",
+  "slug": "pantalon-adidas-real-madrid-entrenamiento-black",
+  "name": "adidas Real Madrid Training",
+  "model": "Real Madrid entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento adidas del Real Madrid 2025 2026 - negro",
+    "tagline": "Máxima comodidad, máximo compromiso",
+    "intro": "Diseñado para rendir en cada entrenamiento, este pantalón largo del Real Madrid combina comodidad térmica y estilo técnico con el escudo del club en el pecho.",
+    "collection": "",
+    "key_benefits": [
+      "Te mantiene seco: Tecnología AEROREADY que elimina el sudor.",
+      "Ajuste de alto rendimiento: Corte entallado que no limita el movimiento.",
+      "Identidad visible: Escudo del club termotransferido en la pierna."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-largo-color-negro-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-largo-color-negro-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-chandal-negro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-chandal-adidas-real-madrid-entrenamiento-color-negro_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-largo-adidas-real-madrid-entrenamiento-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-largo-color-negro-adidas-real-madrid-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-chandal-negro-adidas-real-madrid-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-chandal-adidas-real-madrid-entrenamiento-color-negro_3_detalle-lateral-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ9011_pantalon-largo-adidas-real-madrid-entrenamiento-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz9011",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento adidas del Real Madrid 2025 2026 - negro",
+    "tagline": "Máxima comodidad, máximo compromiso",
+    "intro": "Diseñado para rendir en cada entrenamiento, este pantalón largo del Real Madrid combina comodidad térmica y estilo técnico con el escudo del club en el pecho.",
+    "collection": "",
+    "key_benefits": [
+      "Te mantiene seco: Tecnología AEROREADY que elimina el sudor.",
+      "Ajuste de alto rendimiento: Corte entallado que no limita el movimiento.",
+      "Identidad visible: Escudo del club termotransferido en la pierna."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz9011"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid entrenamiento",
+    "sole_type": ""
+  }
+}

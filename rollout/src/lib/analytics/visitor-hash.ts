@@ -27,7 +27,7 @@ function sipHash64(key: Uint8Array, data: string): bigint {
     sipRound(v => v, { get v0_() { return v0; }, set v0_(x) { v0 = x; }, get v1_() { return v1; }, set v1_(x) { v1 = x; }, get v2_() { return v2; }, set v2_(x) { v2 = x; }, get v3_() { return v3; }, set v3_(x) { v3 = x; } });
   }
   // last block (0-7 bytes) + length
-  const b = (BigInt(len) << 56n);
+  let b = (BigInt(len) << 56n);
   const remaining = len - last;
   for (let i = 0; i < remaining; i++) b |= BigInt(msg[last + i]) << BigInt(i * 8);
   v3 ^= b;

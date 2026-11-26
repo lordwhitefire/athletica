@@ -1,0 +1,96 @@
+{
+  "id": "KZ2493",
+  "slug": "chaqueta-adidas-real-madrid-presentacion-ucl-white",
+  "name": "adidas Real Madrid presentación UCL",
+  "model": "Real Madrid presentación UCL",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de presentación adidas del Real Madrid para la Champions League 2026 2027 - blanca",
+    "tagline": "Representa al Real Madrid con elegancia",
+    "intro": "La Chaqueta adidas Real Madrid presentación UCL esta diseñada para los momentos que rodean al terreno de juego, presenta un corte entallado que crea una silueta deportiva y moderna, adecuada tanto para desplazamientos como para el día a día. El logotipo de adidas bordado, las emblemáticas 3 bandas aplicadas y el escudo cosido del Real Madrid completan un diseño reconocible que permite mostrar el orgullo por el club en entrenamientos, viajes y momentos de ocio.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste deportivo: El corte entallado crea una silueta moderna y estilizada.",
+      "Comodidad ligera: El tejido técnico está pensado para ofrecer confort durante el uso diario.",
+      "Cobertura adaptable: La cremallera frontal facilita la colocación y permite combinarla con otras prendas.",
+      "Estilo versátil: Adecuada para desplazamientos, entrenamientos y momentos informales.",
+      "Identidad madridista: El escudo del club y los detalles adidas aportan un acabado futbolístico reconocible."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid presentación UCL",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2493_chaqueta-color-blanco-adidas-real-madrid-presentacion-ucl_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2493_chaqueta-color-blanco-adidas-real-madrid-presentacion-ucl_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2493_chaqueta-chandal-blanca-adidas-real-madrid-presentacion-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2493_chaqueta-entretiempo-adidas-real-madrid-presentacion-ucl-color-blanco_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2493_chaqueta-color-blanco-adidas-real-madrid-presentacion-ucl_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2493_chaqueta-chandal-blanca-adidas-real-madrid-presentacion-ucl_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/Z/KZ2493_chaqueta-entretiempo-adidas-real-madrid-presentacion-ucl-color-blanco_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kz2493",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de presentación adidas del Real Madrid para la Champions League 2026 2027 - blanca",
+    "tagline": "Representa al Real Madrid con elegancia",
+    "intro": "La Chaqueta adidas Real Madrid presentación UCL esta diseñada para los momentos que rodean al terreno de juego, presenta un corte entallado que crea una silueta deportiva y moderna, adecuada tanto para desplazamientos como para el día a día. El logotipo de adidas bordado, las emblemáticas 3 bandas aplicadas y el escudo cosido del Real Madrid completan un diseño reconocible que permite mostrar el orgullo por el club en entrenamientos, viajes y momentos de ocio.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste deportivo: El corte entallado crea una silueta moderna y estilizada.",
+      "Comodidad ligera: El tejido técnico está pensado para ofrecer confort durante el uso diario.",
+      "Cobertura adaptable: La cremallera frontal facilita la colocación y permite combinarla con otras prendas.",
+      "Estilo versátil: Adecuada para desplazamientos, entrenamientos y momentos informales.",
+      "Identidad madridista: El escudo del club y los detalles adidas aportan un acabado futbolístico reconocible."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kz2493"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid presentación UCL",
+    "sole_type": ""
+  }
+}

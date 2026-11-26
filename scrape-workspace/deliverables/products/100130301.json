@@ -1,0 +1,91 @@
+{
+  "id": "100130301",
+  "slug": "limpiador-guantes-uhlsport-grey",
+  "name": "Limpiador Gloves Uhlsport",
+  "model": "Limpiador Gloves Uhlsport",
+  "brand": "Uhlsport",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Grey",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "guantes Uhlsport",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/1efe1ac8f082e6e6f5393fc6b74c7db2f49b0bb9-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/1efe1ac8f082e6e6f5393fc6b74c7db2f49b0bb9-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/b0350fa54cd04281a440e44120813cfeaaba3d5f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1efe1ac8f082e6e6f5393fc6b74c7db2f49b0bb9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/b0350fa54cd04281a440e44120813cfeaaba3d5f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-1efe1ac8f082e6e6f5393fc6b74c7db2f49b0bb9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1efe1ac8f082e6e6f5393fc6b74c7db2f49b0bb9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-b0350fa54cd04281a440e44120813cfeaaba3d5f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/b0350fa54cd04281a440e44120813cfeaaba3d5f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/100130301",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/100130301"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'guante'",
+    "root_model": "Limpiador",
+    "submodel": "",
+    "product_model": "Limpiador Gloves Uhlsport",
+    "sole_type": ""
+  }
+}

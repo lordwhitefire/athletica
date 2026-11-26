@@ -1,0 +1,92 @@
+{
+  "id": "651-BK",
+  "slug": "manguitos-antebrazo-mcdavid-hex-black",
+  "name": "Manguitos antebrazo McDavid Hex",
+  "model": "Manguitos antebrazo McDavid Hex",
+  "brand": "Mc David",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Manguitos protección antebrazo McDavid 2 unidades - negros",
+    "tagline": "Impacto controlado en cada acción",
+    "intro": "Los manguitos McDavid HEX protegen el antebrazo con celdas técnicas de absorción, sin comprometer la agilidad. Perfectos para porteros que buscan equilibrio entre libertad y seguridad.",
+    "collection": "",
+    "key_benefits": [
+      "Zona HEX: Protección efectiva en bloqueos bajos o caídas.",
+      "Tejido ligero: Aporta frescura y movilidad al brazo.",
+      "Diseño deportivo: Ideal para entrenamientos intensos."
+    ],
+    "technical_details": {
+      "range": "antebrazo McDavid Hex",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/651-BK_manguitos-portero-color-negro-mcdavid-hex_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/651-BK_manguitos-portero-color-negro-mcdavid-hex_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/651-BK_manguitos-negros-mcdavid-hex_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/651-BK_manguitos-negros-mcdavid-hex_3_detalle-frontal.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/651-BK_manguitos-portero-color-negro-mcdavid-hex_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/651-BK_manguitos-negros-mcdavid-hex_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/6/5/651-BK_manguitos-negros-mcdavid-hex_3_detalle-frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/651-bk",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Manguitos protección antebrazo McDavid 2 unidades - negros",
+    "tagline": "Impacto controlado en cada acción",
+    "intro": "Los manguitos McDavid HEX protegen el antebrazo con celdas técnicas de absorción, sin comprometer la agilidad. Perfectos para porteros que buscan equilibrio entre libertad y seguridad.",
+    "collection": "",
+    "key_benefits": [
+      "Zona HEX: Protección efectiva en bloqueos bajos o caídas.",
+      "Tejido ligero: Aporta frescura y movilidad al brazo.",
+      "Diseño deportivo: Ideal para entrenamientos intensos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/651-bk"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Manguitos",
+    "submodel": "",
+    "product_model": "Manguitos antebrazo McDavid Hex",
+    "sole_type": ""
+  }
+}

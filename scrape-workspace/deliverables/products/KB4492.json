@@ -1,0 +1,98 @@
+{
+  "id": "KB4492",
+  "slug": "sudadera-adidas-alemania-entrenamiento-white",
+  "name": "adidas Alemania Training",
+  "model": "Alemania entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de entrenamiento adidas de la selección alemana 2026 - blanca",
+    "tagline": "Diseñada para rendir en cada sesión",
+    "intro": "Esta sudadera de entrenamiento es parte de la equipación de entrenamiento de la selección alemana. Te acompaña con ligereza, transpirabilidad y orgullo nacional en cada movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad de élite: Material técnico de alto rendimiento.",
+      "Diseño pro: Parte de la colección oficial de entrenamiento.",
+      "Regulación térmica: Perfecta para climas frescos."
+    ],
+    "technical_details": {
+      "range": "adidas Alemania entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-blanca-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-adidas-alemania-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-adidas-alemania-entrenamiento-blanca_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-color-blanco-adidas-alemania-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-blanca-adidas-alemania-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-adidas-alemania-entrenamiento-color-blanco_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/B/KB4492_sudadera-adidas-alemania-entrenamiento-blanca_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kb4492",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de entrenamiento adidas de la selección alemana 2026 - blanca",
+    "tagline": "Diseñada para rendir en cada sesión",
+    "intro": "Esta sudadera de entrenamiento es parte de la equipación de entrenamiento de la selección alemana. Te acompaña con ligereza, transpirabilidad y orgullo nacional en cada movimiento.",
+    "collection": "",
+    "key_benefits": [
+      "Comodidad de élite: Material técnico de alto rendimiento.",
+      "Diseño pro: Parte de la colección oficial de entrenamiento.",
+      "Regulación térmica: Perfecta para climas frescos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kb4492"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Alemania",
+    "submodel": "",
+    "product_model": "Alemania entrenamiento",
+    "sole_type": ""
+  }
+}

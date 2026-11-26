@@ -1,0 +1,96 @@
+{
+  "id": "JM8385",
+  "slug": "short-adidas-belgica-26-black",
+  "name": "adidas Bélgica 26",
+  "model": "Bélgica 26",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Belgium 2026 Adidas Home Shorts - Black",
+    "tagline": "Belgian character in every play",
+    "intro": "The adidas Belgium 2026 home shorts feature a black design with yellow details inspired by the Red Devils identity. A garment designed to perform at your best on and off the field.",
+    "collection": "",
+    "key_benefits": [
+      "Climacool Technology: Promotes ventilation and keeps the skin cool and dry.",
+      "Light fabric: Allows you to move with total freedom.",
+      "Elastic waist with drawstring: Comfortable and secure fit.",
+      "Official design: Inspired by the players' equipment."
+    ],
+    "technical_details": {
+      "range": "adidas Bélgica 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_pantalon-corto-color-negro-adidas-belgica-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_pantalon-corto-color-negro-adidas-belgica-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_short-negro-adidas-belgica-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_pantalon-corto-adidas-belgica-26-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_short-adidas-belgica-26-negro_4_detalle-logotipo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_pantalon-corto-color-negro-adidas-belgica-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_short-negro-adidas-belgica-26_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_pantalon-corto-adidas-belgica-26-color-negro_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM8385_short-adidas-belgica-26-negro_4_detalle-logotipo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm8385",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón corto de la primera equipación adidas de la selección de Bélgica 2026 - negro",
+    "tagline": "Carácter belga en cada jugada",
+    "intro": "El short adidas Bélgica 2026 de local presenta un diseño en negro con detalles en amarillo inspirado en la identidad de los Red Devils. Una prenda pensada para rendir al máximo dentro y fuera del campo.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología Climacool: Favorece la ventilación y mantiene la piel fresca y seca.",
+      "Tejido ligero: Permite moverse con total libertad.",
+      "Cintura elástica con cordón: Ajuste cómodo y seguro.",
+      "Diseño oficial: Inspirado en la equipación de los jugadores."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Equipaciones de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm8385"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "Bélgica",
+    "submodel": "",
+    "product_model": "Bélgica 26",
+    "sole_type": ""
+  }
+}

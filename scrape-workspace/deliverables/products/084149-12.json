@@ -1,0 +1,101 @@
+{
+  "id": "084149-12",
+  "slug": "balon-puma-manchester-ftblcore-mini-azul-blanco",
+  "name": "Puma Manchester Ftblcore mini",
+  "model": "Manchester Ftblcore mini",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Azul / Blanco",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma Manchester Ftblcore mini",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/74730e9ee017c539e9512b62fc56f263d84fcd4b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/74730e9ee017c539e9512b62fc56f263d84fcd4b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/93e7d85070cd20330127d407d7cdc31624a09a8d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9010311e26b4ba9f75de121407bb573bd61b5f05-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/74730e9ee017c539e9512b62fc56f263d84fcd4b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/93e7d85070cd20330127d407d7cdc31624a09a8d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9010311e26b4ba9f75de121407bb573bd61b5f05-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-74730e9ee017c539e9512b62fc56f263d84fcd4b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/74730e9ee017c539e9512b62fc56f263d84fcd4b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-93e7d85070cd20330127d407d7cdc31624a09a8d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/93e7d85070cd20330127d407d7cdc31624a09a8d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9010311e26b4ba9f75de121407bb573bd61b5f05-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9010311e26b4ba9f75de121407bb573bd61b5f05-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084149-12",
+    "language": "es",
+    "category": "Equipos internacionales",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084149-12"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Manchester Ftblcore",
+    "submodel": "",
+    "product_model": "Manchester Ftblcore mini",
+    "sole_type": ""
+  }
+}

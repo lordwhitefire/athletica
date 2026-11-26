@@ -1,0 +1,109 @@
+{
+  "id": "084704-01-5",
+  "slug": "balon-puma-orbita-pl-brilliance-fifa-quality-25-26-talla-5-white",
+  "name": "Puma Orbita PL Brilliance FIFA Quality 25 26 talla 5",
+  "model": "Orbita PL Brilliance FIFA Quality 25 26 talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Premier League Soccer Ball 2025 2026 Size 5 - White",
+    "tagline": "The official ball of the English elite",
+    "intro": "Dominate the field with the Puma Orbita PL Brilliance 25/26 ball, designed for the Premier League and designed to offer superior performance in every pass, shot and control.",
+    "collection": "",
+    "key_benefits": [
+      "Absolute precision: Panels designed for a stable and controlled trajectory.",
+      "Professional durability: Durable materials for long-term use on natural or artificial grass.",
+      "Toque optimizado: Superficie texturizada que mejora el contacto con el pie.",
+      "Official design: Ball with exclusive Premier League 25/26 graphics.",
+      "Approved: Complies with FIFA Quality standards."
+    ],
+    "technical_details": {
+      "range": "Puma Orbita PL Brilliance FIFA Quality 25 26 talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/bd728c59b16041e7dd4a5f4dc6a4f485cd08750b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/bd728c59b16041e7dd4a5f4dc6a4f485cd08750b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/1ec0adf98a6be0f0e02767236385d6bed52fa786-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1b7ec8fce10e6cc277391a0617a9029157956d8c-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/bd728c59b16041e7dd4a5f4dc6a4f485cd08750b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1ec0adf98a6be0f0e02767236385d6bed52fa786-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1b7ec8fce10e6cc277391a0617a9029157956d8c-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-bd728c59b16041e7dd4a5f4dc6a4f485cd08750b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/bd728c59b16041e7dd4a5f4dc6a4f485cd08750b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1ec0adf98a6be0f0e02767236385d6bed52fa786-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1ec0adf98a6be0f0e02767236385d6bed52fa786-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1b7ec8fce10e6cc277391a0617a9029157956d8c-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1b7ec8fce10e6cc277391a0617a9029157956d8c-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084704-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol Puma de la Premier League 2025 2026 talla 5 - blanco",
+    "tagline": "El balón oficial de la élite inglesa",
+    "intro": "Domina el campo con el balón Puma Orbita PL Brilliance 25/26, diseñado para la Premier League y pensado para ofrecer un rendimiento superior en cada pase, disparo y control.",
+    "collection": "",
+    "key_benefits": [
+      "Precisión absoluta: Paneles diseñados para una trayectoria estable y controlada.",
+      "Durabilidad profesional: Materiales resistentes para un uso prolongado en césped natural o artificial.",
+      "Toque optimizado: Superficie texturizada que mejora el contacto con el pie.",
+      "Diseño oficial: Balón con gráficos exclusivos de la Premier League 25/26.",
+      "Homologado: Cumple con estándares de calidad FIFA Quality."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084704-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Orbita",
+    "submodel": "",
+    "product_model": "Orbita PL Brilliance FIFA Quality 25 26 talla 5",
+    "sole_type": ""
+  }
+}

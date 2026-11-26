@@ -1,0 +1,102 @@
+{
+  "id": "JY6164-5",
+  "slug": "balon-adidas-liverpool-club-talla-5-red",
+  "name": "adidas Liverpool Club talla 5",
+  "model": "Liverpool Club talla 5",
+  "brand": "adidas",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Balón de fútbol adidas del Liverpool talla 5 - rojo",
+    "tagline": "Tu pasión se transforma en cada toque",
+    "intro": "El balón adidas del Liverpool es perfecto para los seguidores que quieren llevar su orgullo al campo. Con un diseño inspirado en el club y una estructura resistente, está diseñado para soportar entrenamientos frecuentes. Su superficie cosida a máquina ofrece un buen equilibrio entre rendimiento y durabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo Red: Gráficos y colores representativos del Livepool.",
+      "Ideal para entrenamientos: Buen control y tacto en superficies variadas.",
+      "Alta resistencia: Fabricado en TPU duradero para uso prolongado.",
+      "Mantenimiento de forma: Cámara de butilo que conserva la presión.",
+      "Control consistente: Paneles cosidos a máquina para una trayectoria fiable."
+    ],
+    "technical_details": {
+      "range": "adidas Liverpool Club talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_balon-de-futbol-color-rojo-adidas-liverpool-club-talla-5_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_balon-de-futbol-color-rojo-adidas-liverpool-club-talla-5_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_pelota-futbol-11-roja-adidas-liverpool-club-talla-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_pelota-futbol-adidas-liverpool-club-talla-5-color-rojo_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_balon-de-futbol-11-adidas-liverpool-club-talla-5-roja_4_detalle-escudo.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_balon-de-futbol-color-rojo-adidas-liverpool-club-talla-5_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_pelota-futbol-11-roja-adidas-liverpool-club-talla-5_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_pelota-futbol-adidas-liverpool-club-talla-5-color-rojo_3_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Y/JY6164-5_balon-de-futbol-11-adidas-liverpool-club-talla-5-roja_4_detalle-escudo.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/jy6164-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol adidas del Liverpool talla 5 - rojo",
+    "tagline": "Tu pasión se transforma en cada toque",
+    "intro": "El balón adidas del Liverpool es perfecto para los seguidores que quieren llevar su orgullo al campo. Con un diseño inspirado en el club y una estructura resistente, está diseñado para soportar entrenamientos frecuentes. Su superficie cosida a máquina ofrece un buen equilibrio entre rendimiento y durabilidad.",
+    "collection": "",
+    "key_benefits": [
+      "Estilo Red: Gráficos y colores representativos del Livepool.",
+      "Ideal para entrenamientos: Buen control y tacto en superficies variadas.",
+      "Alta resistencia: Fabricado en TPU duradero para uso prolongado.",
+      "Mantenimiento de forma: Cámara de butilo que conserva la presión.",
+      "Control consistente: Paneles cosidos a máquina para una trayectoria fiable."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Equipos internacionales"
+      },
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/jy6164-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Liverpool Club",
+    "submodel": "",
+    "product_model": "Liverpool Club talla 5",
+    "sole_type": ""
+  }
+}

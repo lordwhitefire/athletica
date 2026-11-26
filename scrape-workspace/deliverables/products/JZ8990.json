@@ -1,0 +1,98 @@
+{
+  "id": "JZ8990",
+  "slug": "polo-adidas-real-madrid-purple",
+  "name": "Polo adidas Real Madrid",
+  "model": "Polo adidas Real Madrid",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Polo adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Estilo elegante con ADN blanco",
+    "intro": "El polo oficial del Real Madrid aporta un look sofisticado y deportivo al mismo tiempo. Perfecto para los que quieren llevar el escudo con clase.",
+    "collection": "",
+    "key_benefits": [
+      "Versatilidad: Ideal para ocasiones casual o looks elegantes deportivos.",
+      "Comodidad premium: Tejido suave al tacto, muy agradable.",
+      "Estilo madridista: Escudo bordado y detalles sobrios."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_polo-color-purpura-adidas-real-madrid_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_polo-color-purpura-adidas-real-madrid_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_niqui-lila-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_polo-adidas-real-madrid-color-purpura_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_niqui-adidas-real-madrid-lila_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_polo-color-purpura-adidas-real-madrid_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_niqui-lila-adidas-real-madrid_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_polo-adidas-real-madrid-color-purpura_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8990_niqui-adidas-real-madrid-lila_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz8990",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Polo adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Estilo elegante con ADN blanco",
+    "intro": "El polo oficial del Real Madrid aporta un look sofisticado y deportivo al mismo tiempo. Perfecto para los que quieren llevar el escudo con clase.",
+    "collection": "",
+    "key_benefits": [
+      "Versatilidad: Ideal para ocasiones casual o looks elegantes deportivos.",
+      "Comodidad premium: Tejido suave al tacto, muy agradable.",
+      "Estilo madridista: Escudo bordado y detalles sobrios."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz8990"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'polo'",
+    "root_model": "Polo",
+    "submodel": "",
+    "product_model": "Polo adidas Real Madrid",
+    "sole_type": ""
+  }
+}

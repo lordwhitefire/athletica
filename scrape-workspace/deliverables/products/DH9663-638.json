@@ -1,0 +1,84 @@
+{
+  "id": "DH9663-638",
+  "slug": "short-nike-fc-dri-fit-libero-25-cm-red",
+  "name": "Nike FC Dri-Fit Libero 25 cm",
+  "model": "FC Dri-Fit Libero 25 cm",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Nike FC Dri-Fit Libero 25 cm",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_pantalon-corto-color-z-granate-nike-fc-dri-fit-libero-25-cm_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_pantalon-corto-color-z-granate-nike-fc-dri-fit-libero-25-cm_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_short-granate-nike-fc-dri-fit-libero-25-cm_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_pantalon-corto-nike-fc-dri-fit-libero-25-cm-color-z-granate_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_short-nike-fc-dri-fit-libero-25-cm-granate_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_pantalon-corto-color-z-granate-nike-fc-dri-fit-libero-25-cm_5_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_pantalon-corto-color-z-granate-nike-fc-dri-fit-libero-25-cm_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_short-granate-nike-fc-dri-fit-libero-25-cm_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_pantalon-corto-nike-fc-dri-fit-libero-25-cm-color-z-granate_3_detalle-cintura.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_short-nike-fc-dri-fit-libero-25-cm-granate_4_detalle-logotipo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH9663-638_pantalon-corto-color-z-granate-nike-fc-dri-fit-libero-25-cm_5_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dh9663-638",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dh9663-638"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'short'",
+    "root_model": "FC",
+    "submodel": "",
+    "product_model": "FC Dri-Fit Libero 25 cm",
+    "sole_type": ""
+  }
+}

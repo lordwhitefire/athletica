@@ -1,0 +1,96 @@
+{
+  "id": "KC7807",
+  "slug": "sudadera-adidas-real-madrid-tiro-travel-black",
+  "name": "adidas Real Madrid Tiro Travel",
+  "model": "Real Madrid Tiro Travel",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Sudadera de algodón adidas del Real Madrid - negra",
+    "tagline": "Elegancia urbana con identidad madridista",
+    "intro": "La sudadera adidas Real Madrid Tiro Travel Crew combina las líneas limpias del diseño urbano moderno con la esencia del club blanco. Inspirada en la colección de viaje del equipo, aporta un estilo sobrio y sofisticado perfecto para el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño Travel oficial: Inspirada en la ropa de viaje del Real Madrid.",
+      "Mezcla de tejidos: Tacto suave con mayor resistencia al desgaste.",
+      "Corte ergonómico: Ajuste cómodo que acompaña el movimiento.",
+      "Cuello redondo: Diseño clásico tipo crew para un look versátil."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid Tiro Travel",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-color-negro-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-color-negro-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-negra-adidas-real-madrid-tiro-travel_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-adidas-real-madrid-tiro-travel-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-adidas-real-madrid-tiro-travel-negra_4_detalle.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-color-negro-adidas-real-madrid-tiro-travel_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-negra-adidas-real-madrid-tiro-travel_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-adidas-real-madrid-tiro-travel-color-negro_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/K/C/KC7807_sudadera-adidas-real-madrid-tiro-travel-negra_4_detalle.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kc7807",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera de algodón adidas del Real Madrid - negra",
+    "tagline": "Elegancia urbana con identidad madridista",
+    "intro": "La sudadera adidas Real Madrid Tiro Travel Crew combina las líneas limpias del diseño urbano moderno con la esencia del club blanco. Inspirada en la colección de viaje del equipo, aporta un estilo sobrio y sofisticado perfecto para el día a día.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño Travel oficial: Inspirada en la ropa de viaje del Real Madrid.",
+      "Mezcla de tejidos: Tacto suave con mayor resistencia al desgaste.",
+      "Corte ergonómico: Ajuste cómodo que acompaña el movimiento.",
+      "Cuello redondo: Diseño clásico tipo crew para un look versátil."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kc7807"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'sudadera'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid Tiro Travel",
+    "sole_type": ""
+  }
+}

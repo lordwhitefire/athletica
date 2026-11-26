@@ -1,0 +1,96 @@
+{
+  "id": "782657-06",
+  "slug": "pantalon-puma-manchester-city-blue",
+  "name": "Puma Manchester City",
+  "model": "Manchester City",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Puma del Manchester City - azul marino",
+    "tagline": "Comodidad y rendimiento para cada jugada",
+    "intro": "El pantalón largo del Manchester City es tu aliado ideal para entrenar o moverte con soltura en el día a día. Diseñado con tejidos funcionales y corte ergonómico, te ofrece confort, estilo y libertad de acción.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste técnico y estilizado: Corte tapered con tobillos ceñidos que combina libertad de movimiento y estética moderna.",
+      "Comodidad activa: Mezcla de algodón y poliéster reciclado que aporta transpirabilidad y suavidad para el día a día.",
+      "Funcionalidad completa: Bolsillos laterales con cremallera para guardar tus objetos esenciales de forma segura.",
+      "Look profesional: Inspirado en la equipación del Manchester City, ideal para entrenar o representar al club fuera del campo."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-largo-color-azul-puma-manchester-city-tech_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-largo-color-azul-puma-manchester-city-tech_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-chandal-azul-marino-puma-manchester-city-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-chandal-puma-manchester-city-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-largo-puma-manchester-city-azul-marino_4_detalle-bolsillo-y-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-largo-color-azul-puma-manchester-city-tech_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-chandal-azul-marino-puma-manchester-city-tech_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-chandal-puma-manchester-city-color-azul_3_detalle-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/782657-06_pantalon-largo-puma-manchester-city-azul-marino_4_detalle-bolsillo-y-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/782657-06",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Puma del Manchester City - azul marino",
+    "tagline": "Comodidad y rendimiento para cada jugada",
+    "intro": "El pantalón largo del Manchester City es tu aliado ideal para entrenar o moverte con soltura en el día a día. Diseñado con tejidos funcionales y corte ergonómico, te ofrece confort, estilo y libertad de acción.",
+    "collection": "",
+    "key_benefits": [
+      "Ajuste técnico y estilizado: Corte tapered con tobillos ceñidos que combina libertad de movimiento y estética moderna.",
+      "Comodidad activa: Mezcla de algodón y poliéster reciclado que aporta transpirabilidad y suavidad para el día a día.",
+      "Funcionalidad completa: Bolsillos laterales con cremallera para guardar tus objetos esenciales de forma segura.",
+      "Look profesional: Inspirado en la equipación del Manchester City, ideal para entrenar o representar al club fuera del campo."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/782657-06"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City",
+    "sole_type": ""
+  }
+}

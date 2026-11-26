@@ -1,0 +1,107 @@
+{
+  "id": "050.6048.02",
+  "slug": "rodilleras-ho-soccer-pegasus-black",
+  "name": "Rodilleras HO Soccer Pegasus",
+  "model": "Rodilleras HO Soccer Pegasus",
+  "brand": "Ho Soccer",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "HO Soccer Pegasus",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/a92f497a6efddc9104a1c06a3668ffa2d38c1957-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/a92f497a6efddc9104a1c06a3668ffa2d38c1957-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/2ca7ba19d153e917f2baf538643d8316ddd1c089-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5eae86f9f1245dbc9c8e51a4cb8d4c8ddc218c0a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/646f3f2d244abd2a8d535450ba2ca9bc49d514d3-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/a92f497a6efddc9104a1c06a3668ffa2d38c1957-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/2ca7ba19d153e917f2baf538643d8316ddd1c089-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/5eae86f9f1245dbc9c8e51a4cb8d4c8ddc218c0a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/646f3f2d244abd2a8d535450ba2ca9bc49d514d3-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-a92f497a6efddc9104a1c06a3668ffa2d38c1957-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/a92f497a6efddc9104a1c06a3668ffa2d38c1957-1500x1500.jpg"
+    },
+    {
+      "_id": "image-2ca7ba19d153e917f2baf538643d8316ddd1c089-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/2ca7ba19d153e917f2baf538643d8316ddd1c089-1500x1500.jpg"
+    },
+    {
+      "_id": "image-5eae86f9f1245dbc9c8e51a4cb8d4c8ddc218c0a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/5eae86f9f1245dbc9c8e51a4cb8d4c8ddc218c0a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-646f3f2d244abd2a8d535450ba2ca9bc49d514d3-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/646f3f2d244abd2a8d535450ba2ca9bc49d514d3-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/050-6048-02",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/050-6048-02"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "medium",
+    "rule": "source fallback 'accesorios'",
+    "root_model": "Rodilleras",
+    "submodel": "",
+    "product_model": "Rodilleras HO Soccer Pegasus",
+    "sole_type": ""
+  }
+}

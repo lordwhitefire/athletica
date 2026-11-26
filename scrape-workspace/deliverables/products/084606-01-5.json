@@ -1,0 +1,109 @@
+{
+  "id": "084606-01-5",
+  "slug": "balon-puma-cumbre-libertadores-fifaquality-pro-25-talla-5-white",
+  "name": "Puma Cumbre Libertadores FIFAQuality Pro 25 talla 5",
+  "model": "Cumbre Libertadores FIFAQuality Pro 25 talla 5",
+  "brand": "Puma",
+  "category": "Balls",
+  "category_slug": "balls",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "White",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma Copa Libertadores 2025 Professional Soccer Ball Size 5 - White",
+    "tagline": "Designed to dominate the game",
+    "intro": "The Puma Cumbre Libertadores FIFAQuality Pro 25 Size 5 Ball is the official model for the most demanding matches on the continent. Its seamless heat-sealed construction offers precise and controlled flight. Ideal for those looking for professional performance and unmatched touch on the playing field.",
+    "collection": "",
+    "key_benefits": [
+      "Professional performance: Approved with FIFA Quality Pro certification for maximum precision.",
+      "Toque excepcional: Superficie termosellada que ofrece un control superior en cada pase.",
+      "Durability in competition: Resistant material designed for the most demanding matches.",
+      "Vuelo predecible: Paneles sin costuras para trayectorias estables.",
+      "Libertadores Inspiration: Official design of the most prestigious competition in South America."
+    ],
+    "technical_details": {
+      "range": "Puma Cumbre Libertadores FIFAQuality Pro 25 talla 5",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/724f52943e06939717a90990db2939b9579ef16b-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/724f52943e06939717a90990db2939b9579ef16b-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/564bf9d72ecbe05c8646e881da5bb0fefd1c9ba9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9abb21e32a265324bd9be75f105ece275a61e641-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/724f52943e06939717a90990db2939b9579ef16b-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/564bf9d72ecbe05c8646e881da5bb0fefd1c9ba9-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/9abb21e32a265324bd9be75f105ece275a61e641-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-724f52943e06939717a90990db2939b9579ef16b-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/724f52943e06939717a90990db2939b9579ef16b-1500x1500.jpg"
+    },
+    {
+      "_id": "image-564bf9d72ecbe05c8646e881da5bb0fefd1c9ba9-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/564bf9d72ecbe05c8646e881da5bb0fefd1c9ba9-1500x1500.jpg"
+    },
+    {
+      "_id": "image-9abb21e32a265324bd9be75f105ece275a61e641-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/9abb21e32a265324bd9be75f105ece275a61e641-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/084606-01-5",
+    "language": "es",
+    "category": "Balones",
+    "captured_at": "2026-11-19",
+    "subtitle": "Balón de fútbol profesional Puma de la Copa Libertadores 2025 talla 5 - blanco",
+    "tagline": "Diseñado para dominar el juego",
+    "intro": "El Balón Puma Cumbre Libertadores FIFAQuality Pro 25 talla 5 es el modelo oficial para los partidos más exigentes del continente. Su construcción termosellada sin costuras ofrece un vuelo preciso y controlado. Ideal para quienes buscan rendimiento profesional y un tacto inigualable en el terreno de juego.",
+    "collection": "",
+    "key_benefits": [
+      "Rendimiento profesional: Aprobado con certificación FIFA Quality Pro para máxima precisión.",
+      "Toque excepcional: Superficie termosellada que ofrece un control superior en cada pase.",
+      "Durabilidad en competición: Material resistente diseñado para los partidos más exigentes.",
+      "Vuelo predecible: Paneles sin costuras para trayectorias estables.",
+      "Inspiración Libertadores: Diseño oficial de la competición más prestigiosa de Sudamérica."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Balones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/084606-01-5"
+  },
+  "classification": {
+    "category": "balls",
+    "confidence": "high",
+    "rule": "name contains 'balon'",
+    "root_model": "Cumbre",
+    "submodel": "",
+    "product_model": "Cumbre Libertadores FIFAQuality Pro 25 talla 5",
+    "sole_type": ""
+  }
+}

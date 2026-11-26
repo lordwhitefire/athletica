@@ -1,0 +1,94 @@
+{
+  "id": "HQ8362-620",
+  "slug": "camiseta-nike-barcelona-nino-futura-red",
+  "name": "Nike Barcelona Kids Futura",
+  "model": "Barcelona niño Futura",
+  "brand": "Nike",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta infantil de algodón de manga corta Nike del FC Barcelona - roja",
+    "tagline": "Estilo urbano con inspiración futbolera",
+    "intro": "La camiseta infantil de algodón del FCB combina funcionalidad y diseño moderno. Confeccionada con materiales cálidos y ligeros, es perfecta para tus días de calle sin perder el ADN culé.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración futbolera: Detalles que rinden tributo al FCB.",
+      "Tacto suave: Tejido 100% algodón, comodidad todo el día.",
+      "Versatilidad total: Ideal para looks deportivos o urbanos."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona niño Futura",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8362-620_camiseta-color-rojo-nike-barcelona-nino-futura_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8362-620_camiseta-color-rojo-nike-barcelona-nino-futura_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8362-620_camiseta-roja-nike-barcelona-nino-futura_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8362-620_camiseta-color-rojo-nike-barcelona-nino-futura_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/Q/HQ8362-620_camiseta-roja-nike-barcelona-nino-futura_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/hq8362-620",
+    "language": "es",
+    "category": "La Liga",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta infantil de algodón de manga corta Nike del FC Barcelona - roja",
+    "tagline": "Estilo urbano con inspiración futbolera",
+    "intro": "La camiseta infantil de algodón del FCB combina funcionalidad y diseño moderno. Confeccionada con materiales cálidos y ligeros, es perfecta para tus días de calle sin perder el ADN culé.",
+    "collection": "",
+    "key_benefits": [
+      "Inspiración futbolera: Detalles que rinden tributo al FCB.",
+      "Tacto suave: Tejido 100% algodón, comodidad todo el día.",
+      "Versatilidad total: Ideal para looks deportivos o urbanos."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "La Liga"
+      },
+      {
+        "audience": "kids",
+        "root": "Equipaciones"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/hq8362-620"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Barcelona Kids",
+    "submodel": "",
+    "product_model": "Barcelona niño Futura",
+    "sole_type": ""
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "JM5159",
+  "slug": "camiseta-adidas-inter-miami-og-blue",
+  "name": "adidas Inter Miami OG",
+  "model": "Inter Miami OG",
+  "brand": "adidas",
+  "category": "Jerseys",
+  "category_slug": "jerseys",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de algodón de manga corta adidas del Inter de Miami - cian",
+    "tagline": "Un básico urbano con esencia futbolera",
+    "intro": "Inspirada en la energía única del Inter de Miami, esta camiseta combina estilo casual con orgullo futbolístico. Ideal para acompañarte en cualquier momento del día sin perder identidad de club.",
+    "collection": "",
+    "key_benefits": [
+      "Estética casual: Corte clásico con estilo desenfadado.",
+      "Comodidad asegurada: Algodón suave y transpirable para el día a día.",
+      "Orgullo de club: Escudo del Inter de Miami bordado al pecho.",
+      "Versatilidad total: Perfecta para viajes, salidas o descanso."
+    ],
+    "technical_details": {
+      "range": "adidas Inter Miami OG",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-azul-claro-adidas-inter-miami-og_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-adidas-inter-miami-og-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-adidas-inter-miami-og-azul-claro_4_detalle-autenticidad.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-color-azul-adidas-inter-miami-og_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-azul-claro-adidas-inter-miami-og_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-adidas-inter-miami-og-color-azul_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/M/JM5159_camiseta-adidas-inter-miami-og-azul-claro_4_detalle-autenticidad.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jm5159",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Camiseta de algodón de manga corta adidas del Inter de Miami - cian",
+    "tagline": "Un básico urbano con esencia futbolera",
+    "intro": "Inspirada en la energía única del Inter de Miami, esta camiseta combina estilo casual con orgullo futbolístico. Ideal para acompañarte en cualquier momento del día sin perder identidad de club.",
+    "collection": "",
+    "key_benefits": [
+      "Estética casual: Corte clásico con estilo desenfadado.",
+      "Comodidad asegurada: Algodón suave y transpirable para el día a día.",
+      "Orgullo de club: Escudo del Inter de Miami bordado al pecho.",
+      "Versatilidad total: Perfecta para viajes, salidas o descanso."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jm5159"
+  },
+  "classification": {
+    "category": "jerseys",
+    "confidence": "high",
+    "rule": "name contains 'camiseta'",
+    "root_model": "Inter Miami",
+    "submodel": "",
+    "product_model": "Inter Miami OG",
+    "sole_type": ""
+  }
+}

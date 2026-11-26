@@ -1,0 +1,102 @@
+{
+  "id": "JP3980",
+  "slug": "sudadera-adidas-real-madrid-mujer-entrenamiento-green",
+  "name": "adidas Real Madrid Women Training",
+  "model": "Real Madrid mujer entrenamiento",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Women",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid Adidas Women's Training Sweatshirt - Light Green",
+    "tagline": "Performs at its best even on cold days",
+    "intro": "The Real Madrid women's training sweatshirt offers warmth, freedom of movement and style. Its slim fit and technical fabric adapt to your most demanding workouts.",
+    "collection": "",
+    "key_benefits": [
+      "Light warmth: Coverage without excess weight.",
+      "Constant breathability: AEROREADY technology that keeps the skin dry.",
+      "Feminine design: Slim fit for a slim silhouette.",
+      "White inspiration: Heat-transferred shield that connects with your team.",
+      "Ideal for training: Technical and functional garment for any climate."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid mujer entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-color-verde-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-color-verde-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-verde-claro-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-adidas-real-madrid-mujer-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-adidas-real-madrid-mujer-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-color-verde-adidas-real-madrid-mujer-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-verde-claro-adidas-real-madrid-mujer-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-adidas-real-madrid-mujer-entrenamiento-color-verde_3_detalle-cuello-y-pecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/P/JP3980_sudadera-adidas-real-madrid-mujer-entrenamiento-verde-claro_4_detalle-acabado-manga.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jp3980",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Sudadera para mujer de entrenamiento adidas del Real Madrid - verde claro",
+    "tagline": "Rinde al máximo incluso en los días fríos",
+    "intro": "La sudadera de entrenamiento para mujer del Real Madrid ofrece calidez, libertad de movimiento y estilo. Su ajuste entallado y tejido técnico se adaptan a tus entrenamientos más exigentes.",
+    "collection": "",
+    "key_benefits": [
+      "Calidez ligera: Cobertura sin exceso de peso.",
+      "Transpirabilidad constante: Tecnología AEROREADY que mantiene la piel seca.",
+      "Diseño femenino: Corte ajustado para una silueta estilizada.",
+      "Inspiración blanca: Escudo termotransferido que conecta con tu equipo.",
+      "Ideal para entrenar: Prenda técnica y funcional para cualquier clima."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jp3980"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid mujer entrenamiento",
+    "sole_type": ""
+  }
+}

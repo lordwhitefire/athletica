@@ -1,0 +1,107 @@
+{
+  "id": "091164-01",
+  "slug": "mochila-puma-phase-black",
+  "name": "Backpack Puma Phase",
+  "model": "Backpack Puma Phase",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma sports backpack (44 x 30 x 14 cm) - black",
+    "tagline": "An urban adventure companion",
+    "intro": "With a modern and functional design, the Puma Phase backpack combines comfort and style for your daily trips. Its compact size and resistant structure make it an ideal option for the urban rhythm.",
+    "collection": "",
+    "key_benefits": [
+      "Functional design: Large main compartment with two-way zipper.",
+      "Confort diario: Panel trasero acolchado y tirantes ajustables para mayor comodidad.",
+      "Efficient organization: Front zipper pocket and side mesh bottle compartment."
+    ],
+    "technical_details": {
+      "range": "Puma Phase",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/595158902b65ef6a13d411a7e344e1ae3e95f891-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/595158902b65ef6a13d411a7e344e1ae3e95f891-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/da2c8abaf81b0871cc7775c45cdc9f99b0399552-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7eac81900d660a3269f0d12604748e3eaa5f507a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1f96fc1216f255314c2e3e577dfe4fb2fde4d266-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/595158902b65ef6a13d411a7e344e1ae3e95f891-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/da2c8abaf81b0871cc7775c45cdc9f99b0399552-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/7eac81900d660a3269f0d12604748e3eaa5f507a-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/1f96fc1216f255314c2e3e577dfe4fb2fde4d266-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-595158902b65ef6a13d411a7e344e1ae3e95f891-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/595158902b65ef6a13d411a7e344e1ae3e95f891-1500x1500.jpg"
+    },
+    {
+      "_id": "image-da2c8abaf81b0871cc7775c45cdc9f99b0399552-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/da2c8abaf81b0871cc7775c45cdc9f99b0399552-1500x1500.jpg"
+    },
+    {
+      "_id": "image-7eac81900d660a3269f0d12604748e3eaa5f507a-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/7eac81900d660a3269f0d12604748e3eaa5f507a-1500x1500.jpg"
+    },
+    {
+      "_id": "image-1f96fc1216f255314c2e3e577dfe4fb2fde4d266-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/1f96fc1216f255314c2e3e577dfe4fb2fde4d266-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/091164-01",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "Mochila de deportes Puma (44 x 30 x 14 cm) - negra",
+    "tagline": "Una compañera de aventuras urbana",
+    "intro": "Con un diseño moderno y funcional, la mochila Puma Phase combina comodidad y estilo para tus desplazamientos diarios. Su tamaño compacto y su estructura resistente la convierten en una opción ideal para el ritmo urbano.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño funcional: Compartimento principal amplio con cremallera bidireccional.",
+      "Confort diario: Panel trasero acolchado y tirantes ajustables para mayor comodidad.",
+      "Organización eficiente: Bolsillo frontal con cremallera y compartimento lateral de malla para botella."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/091164-01"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma Phase",
+    "sole_type": ""
+  }
+}

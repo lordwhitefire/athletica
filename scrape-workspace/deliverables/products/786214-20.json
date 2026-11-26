@@ -1,0 +1,100 @@
+{
+  "id": "786214-20",
+  "slug": "camiseta-puma-manchester-city-entrenamiento-blue",
+  "name": "Puma Manchester City Training",
+  "model": "Manchester City entrenamiento",
+  "brand": "Puma",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Camiseta de entrenamiento Puma del Manchester City 2026 2027 - azul claro",
+    "tagline": "Entrena como el Manchester City",
+    "intro": "La camiseta de entrenamiento Puma del Manchester City 26 27 está diseñada para ofrecer máximo rendimiento en cada sesión. Diseñada para ofrecer comodidad tanto dentro como fuera del terreno de juego, incorpora la tecnología dryCELL y un tejido ligero fabricado con materiales reciclados.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Evacúa el sudor para mantener la piel seca y cómoda.",
+      "Lightweight fabric: 100% recycled polyester that promotes breathability.",
+      "Diseño oficial: Parte de la equipación de entrenamiento del club.",
+      "Libertad de movimiento: Corte deportivo ideal para entrenamientos intensos."
+    ],
+    "technical_details": {
+      "range": "Puma Manchester City entrenamiento",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-color-azul-puma-manchester-city-entrenamiento_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-color-azul-puma-manchester-city-entrenamiento_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-azul-claro-puma-manchester-city-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-puma-manchester-city-entrenamiento-azul-claro_4_dorsal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-puma-manchester-city-entrenamiento-color-azul_3_frontal.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-color-azul-puma-manchester-city-entrenamiento_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-azul-claro-puma-manchester-city-entrenamiento_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-puma-manchester-city-entrenamiento-azul-claro_4_dorsal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/7/8/786214-20_camiseta-puma-manchester-city-entrenamiento-color-azul_3_frontal.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/786214-20",
+    "language": "es",
+    "category": "Camisetas de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Camiseta de entrenamiento Puma del Manchester City 2026 2027 - azul claro",
+    "tagline": "Entrena como el Manchester City",
+    "intro": "La camiseta de entrenamiento Puma del Manchester City 26 27 está diseñada para ofrecer máximo rendimiento en cada sesión. Diseñada para ofrecer comodidad tanto dentro como fuera del terreno de juego, incorpora la tecnología dryCELL y un tejido ligero fabricado con materiales reciclados.",
+    "collection": "",
+    "key_benefits": [
+      "Tecnología dryCELL: Evacúa el sudor para mantener la piel seca y cómoda.",
+      "Tejido ligero: 100% poliéster reciclado que favorece la transpirabilidad.",
+      "Diseño oficial: Parte de la equipación de entrenamiento del club.",
+      "Libertad de movimiento: Corte deportivo ideal para entrenamientos intensos."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Camisetas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/786214-20"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Manchester City",
+    "submodel": "",
+    "product_model": "Manchester City entrenamiento",
+    "sole_type": ""
+  }
+}

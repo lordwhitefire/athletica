@@ -1,0 +1,88 @@
+{
+  "id": "TAPEGK07",
+  "slug": "tape-para-portero-premier-gk-5cm-x-4-5m-green",
+  "name": "Tape",
+  "model": "Tape",
+  "brand": "Premier Sock Tape",
+  "category": "Goalkeeper Gloves",
+  "category_slug": "goalkeeper-gloves",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Esparadrapo para portero Premier GK (5 cm x 4,5 m) - amarillo flúor",
+    "tagline": "Protección y sujeción para el portero",
+    "intro": "El Tape para portero Premier GK 5cm x 4,5m está diseñado para ofrecer una solución versátil durante entrenamientos y partidos. Su construcción ligera, porosa y resistente permite utilizarlo como protección en dedos y muñecas o para ayudar a mantener las espinilleras firmemente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección para el portero: Puede utilizarse alrededor de dedos y muñecas para aportar sujeción durante entrenamientos y partidos.",
+      "Contacto cómodo con la piel: Su construcción sin adhesivo permite colocarlo directamente junto a la piel.",
+      "Sujeción versátil: También ayuda a mantener las espinilleras colocadas para reducir reajustes durante el juego.",
+      "Uso continuado: Su diseño resistente al agua y reutilizable permite utilizarlo en múltiples sesiones."
+    ],
+    "technical_details": {
+      "range": "para portero Premier GK 5cm x 4,5m",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_imagen-del-tape-portero-futbol-premier-sock-tape-amarillo_1_frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_imagen-del-tape-portero-futbol-premier-sock-tape-amarillo_1_frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_vendaje-para-portero-amarillo-fluor-premier-sock-goalkeeper-tape_2_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_vendaje-para-portero-premier-sock-goalkeeper-tape-amarillo-fluor_4_aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_vendajes-premier-sock-goalkeeper-tape-color-verde_3_textura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_imagen-del-tape-portero-futbol-premier-sock-tape-amarillo_1_frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_vendaje-para-portero-amarillo-fluor-premier-sock-goalkeeper-tape_2_lateral.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_vendaje-para-portero-premier-sock-goalkeeper-tape-amarillo-fluor_4_aplicacion.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/A/TAPEGK07_vendajes-premier-sock-goalkeeper-tape-color-verde_3_textura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/tapegk07",
+    "language": "es",
+    "category": "Accesorios fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Esparadrapo para portero Premier GK (5 cm x 4,5 m) - amarillo flúor",
+    "tagline": "Protección y sujeción para el portero",
+    "intro": "El Tape para portero Premier GK 5cm x 4,5m está diseñado para ofrecer una solución versátil durante entrenamientos y partidos. Su construcción ligera, porosa y resistente permite utilizarlo como protección en dedos y muñecas o para ayudar a mantener las espinilleras firmemente colocadas.",
+    "collection": "",
+    "key_benefits": [
+      "Protección para el portero: Puede utilizarse alrededor de dedos y muñecas para aportar sujeción durante entrenamientos y partidos.",
+      "Contacto cómodo con la piel: Su construcción sin adhesivo permite colocarlo directamente junto a la piel.",
+      "Sujeción versátil: También ayuda a mantener las espinilleras colocadas para reducir reajustes durante el juego.",
+      "Uso continuado: Su diseño resistente al agua y reutilizable permite utilizarlo en múltiples sesiones."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/tapegk07"
+  },
+  "classification": {
+    "category": "goalkeeper-gloves",
+    "confidence": "high",
+    "rule": "name contains 'portero'",
+    "root_model": "Tape",
+    "submodel": "",
+    "product_model": "Tape",
+    "sole_type": ""
+  }
+}

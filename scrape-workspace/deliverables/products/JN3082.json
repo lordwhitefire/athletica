@@ -1,0 +1,98 @@
+{
+  "id": "JN3082",
+  "slug": "pantalon-adidas-real-madrid-us-blue",
+  "name": "adidas Real Madrid US",
+  "model": "Real Madrid US",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Real Madrid adidas long pants - navy blue",
+    "tagline": "Relaxed style with sporty identity",
+    "intro": "The adidas Real Madrid US pants combine the comfort of plush with a design that celebrates the white club's heritage and the American touch. Ideal for relaxing or completing a casual look with a soccer essence.",
+    "collection": "",
+    "key_benefits": [
+      "US Pack Design: Aesthetics inspired by American baseball.",
+      "Absolute comfort: Soft plush fabric ideal for everyday use.",
+      "Real Madrid pride: Club name on the leg as a distinctive nod.",
+      "Versatile use: Perfect for home, training or street.",
+      "Relaxed fit: Comfortable cut for freedom of movement."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid US",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-largo-color-negro-adidas-real-madrid-us_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-largo-color-negro-adidas-real-madrid-us_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-chandal-negro-adidas-real-madrid-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-chandal-adidas-real-madrid-us-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-largo-adidas-real-madrid-us-negro_4_detalle-bajos.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-largo-color-negro-adidas-real-madrid-us_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-chandal-negro-adidas-real-madrid-us_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-chandal-adidas-real-madrid-us-color-negro_3_detalle-bolsillo-y-escudo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/N/JN3082_pantalon-largo-adidas-real-madrid-us-negro_4_detalle-bajos.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jn3082",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo adidas del Real Madrid - azul marino",
+    "tagline": "Estilo relajado con identidad deportiva",
+    "intro": "El pantalón adidas Real Madrid US combina la comodidad de la felpa con un diseño que celebra la herencia del club blanco y el toque estadounidense. Ideal para relajarse o completar un look casual con esencia futbolera.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño US Pack: Estética inspirada en el béisbol americano.",
+      "Comodidad absoluta: Tejido de felpa suave ideal para el día a día.",
+      "Orgullo madridista: Nombre del club en la pernera como guiño distintivo.",
+      "Uso versátil: Perfecto para casa, entrenamiento o calle.",
+      "Ajuste relajado: Corte cómodo para libertad de movimiento."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jn3082"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid US",
+    "sole_type": ""
+  }
+}

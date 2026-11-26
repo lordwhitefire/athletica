@@ -1,0 +1,96 @@
+{
+  "id": "HJ6442-370",
+  "slug": "pantalon-nike-chelsea-tech-fleece-green",
+  "name": "Nike Chelsea Tech Fleece",
+  "model": "Chelsea Tech Fleece",
+  "brand": "Nike",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Green",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo Nike del Chelsea - verde claro",
+    "tagline": "Comodidad térmica con estilo urbano",
+    "intro": "El pantalón Nike Chelsea Tech Fleece combina abrigo ligero con un diseño atlético perfecto para el día a día. Su tejido técnico proporciona calidez sin volumen, ideal para mostrar tu pasión por el Chelsea con estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo sin peso: Tejido Fleece técnico que proporciona calidez ligera.",
+      "Diseño auténtico del club: Detalles y colores representativos del Chelsea FC.",
+      "Movilidad total: Corte ajustado que acompaña tus movimientos sin restricciones.",
+      "Almacenamiento seguro: Bolsillos laterales con cremallera para tus objetos esenciales.",
+      "Estilo versátil: Perfecto para tus looks urbanos o momentos de relax."
+    ],
+    "technical_details": {
+      "range": "Nike Chelsea Tech Fleece",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6442-370_pantalon-largo-color-verde-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6442-370_pantalon-largo-color-verde-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6442-370_pantalon-chandal-verde-claro-nike-chelsea-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6442-370_pantalon-chandal-nike-chelsea-tech-fleece-color-verde_3_detalle-cintura.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6442-370_pantalon-largo-color-verde-nike-chelsea-tech-fleece_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6442-370_pantalon-chandal-verde-claro-nike-chelsea-tech-fleece_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/H/J/HJ6442-370_pantalon-chandal-nike-chelsea-tech-fleece-color-verde_3_detalle-cintura.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/hj6442-370",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Pantalón largo Nike del Chelsea - verde claro",
+    "tagline": "Comodidad térmica con estilo urbano",
+    "intro": "El pantalón Nike Chelsea Tech Fleece combina abrigo ligero con un diseño atlético perfecto para el día a día. Su tejido técnico proporciona calidez sin volumen, ideal para mostrar tu pasión por el Chelsea con estilo.",
+    "collection": "",
+    "key_benefits": [
+      "Abrigo sin peso: Tejido Fleece técnico que proporciona calidez ligera.",
+      "Diseño auténtico del club: Detalles y colores representativos del Chelsea FC.",
+      "Movilidad total: Corte ajustado que acompaña tus movimientos sin restricciones.",
+      "Almacenamiento seguro: Bolsillos laterales con cremallera para tus objetos esenciales.",
+      "Estilo versátil: Perfecto para tus looks urbanos o momentos de relax."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/hj6442-370"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'pantalon'",
+    "root_model": "Chelsea Tech",
+    "submodel": "",
+    "product_model": "Chelsea Tech Fleece",
+    "sole_type": ""
+  }
+}

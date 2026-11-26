@@ -1,0 +1,97 @@
+{
+  "id": "076855-03",
+  "slug": "mochila-puma-teamgoal-23-core-black",
+  "name": "Backpack Puma TeamGoal 23 Core",
+  "model": "Backpack Puma TeamGoal 23 Core",
+  "brand": "Puma",
+  "category": "Accessories",
+  "category_slug": "accessories",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Black",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Puma TeamGoal 23 Core",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://cdn.sanity.io/images/cuiis46d/production/db3762571590a1ada5e9eb4be47c9e3b09897e9d-1500x1500.jpg",
+  "thumbnail": "https://cdn.sanity.io/images/cuiis46d/production/db3762571590a1ada5e9eb4be47c9e3b09897e9d-1500x1500.jpg",
+  "image_gallery": [
+    "https://cdn.sanity.io/images/cuiis46d/production/06a3da2410ddfcf0851171208654de4e8956ee82-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ca111f41dac4a72674f22cd30a6f1eeb431ba16f-1500x1500.jpg"
+  ],
+  "image_links": [
+    "https://cdn.sanity.io/images/cuiis46d/production/db3762571590a1ada5e9eb4be47c9e3b09897e9d-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/06a3da2410ddfcf0851171208654de4e8956ee82-1500x1500.jpg",
+    "https://cdn.sanity.io/images/cuiis46d/production/ca111f41dac4a72674f22cd30a6f1eeb431ba16f-1500x1500.jpg"
+  ],
+  "sanity_assets": [
+    {
+      "_id": "image-db3762571590a1ada5e9eb4be47c9e3b09897e9d-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/db3762571590a1ada5e9eb4be47c9e3b09897e9d-1500x1500.jpg"
+    },
+    {
+      "_id": "image-06a3da2410ddfcf0851171208654de4e8956ee82-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/06a3da2410ddfcf0851171208654de4e8956ee82-1500x1500.jpg"
+    },
+    {
+      "_id": "image-ca111f41dac4a72674f22cd30a6f1eeb431ba16f-1500x1500-jpg",
+      "url": "https://cdn.sanity.io/images/cuiis46d/production/ca111f41dac4a72674f22cd30a6f1eeb431ba16f-1500x1500.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/076855-03",
+    "language": "es",
+    "category": "Accesorios",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Accesorios"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/076855-03"
+  },
+  "classification": {
+    "category": "accessories",
+    "confidence": "high",
+    "rule": "name contains 'mochila'",
+    "root_model": "Backpack",
+    "submodel": "",
+    "product_model": "Backpack Puma TeamGoal 23 Core",
+    "sole_type": ""
+  }
+}

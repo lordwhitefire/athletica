@@ -1,0 +1,98 @@
+{
+  "id": "JZ8991",
+  "slug": "chaqueta-adidas-real-madrid-presentacion-purple",
+  "name": "adidas Real Madrid presentación",
+  "model": "Real Madrid presentación",
+  "brand": "adidas",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Chaqueta de presentación adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Estilo profesional desde el vestuario",
+    "intro": "La chaqueta de presentación del Real Madrid te da el look oficial de los jugadores en cada aparición. Diseño moderno, tejido premium y escudo visible.",
+    "collection": "",
+    "key_benefits": [
+      "Look del equipo: Mismo modelo que usan los jugadores.",
+      "Comodidad superior: Ajuste moderno y tejido flexible.",
+      "Identidad madridista: Detalles del club visibles al instante."
+    ],
+    "technical_details": {
+      "range": "adidas Real Madrid presentación",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-chandal-gris-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-adidas-real-madrid-presentacion-gris_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-entretiempo-adidas-real-madrid-presentacion-color-gris_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-color-gris-adidas-real-madrid-presentacion_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-chandal-gris-adidas-real-madrid-presentacion_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-adidas-real-madrid-presentacion-gris_4_detalle-manga-y-bolsillo.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/J/Z/JZ8991_chaqueta-entretiempo-adidas-real-madrid-presentacion-color-gris_3_detalle-cierre-cuello-y-pecho.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/jz8991",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Chaqueta de presentación adidas del Real Madrid 2025 2026 - lila",
+    "tagline": "Estilo profesional desde el vestuario",
+    "intro": "La chaqueta de presentación del Real Madrid te da el look oficial de los jugadores en cada aparición. Diseño moderno, tejido premium y escudo visible.",
+    "collection": "",
+    "key_benefits": [
+      "Look del equipo: Mismo modelo que usan los jugadores.",
+      "Comodidad superior: Ajuste moderno y tejido flexible.",
+      "Identidad madridista: Detalles del club visibles al instante."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/jz8991"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains 'chaqueta'",
+    "root_model": "Real Madrid",
+    "submodel": "",
+    "product_model": "Real Madrid presentación",
+    "sole_type": ""
+  }
+}

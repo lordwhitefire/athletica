@@ -1,0 +1,96 @@
+{
+  "id": "TM11147-023",
+  "slug": "pantalon-castore-athletic-club-entrenamiento-25-26-blue",
+  "name": "Castore Athletic Club Training 25 26",
+  "model": "Athletic Club entrenamiento 25 26",
+  "brand": "Castore",
+  "category": "Apparel",
+  "category_slug": "apparel",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Pantalón largo de entrenamiento Castore del Athletic Club 2025 2026 - azul marino",
+    "tagline": "Comodidad de élite, actitud rojiblanca",
+    "intro": "El pantalón largo Castore de entrenamiento combina ajuste funcional y calidez ligera para cualquier rutina.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de punto flexible: Acompaña cada movimiento.",
+      "Cintura elástica: Ajuste cómodo y seguro.",
+      "Diseño afelpado: Calidez ligera en climas fríos.",
+      "Look profesional: Inspirado en los jugadores del Athletic."
+    ],
+    "technical_details": {
+      "range": "Castore Athletic Club entrenamiento  25 26",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11147-023_pantalon-largo-color-azul-castore-athletic-club--25-26_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11147-023_pantalon-largo-color-azul-castore-athletic-club--25-26_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11147-023_pantalon-chandal-azul-marino-castore-athletic-club--25-26_2_completa-trasera.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11147-023_pantalon-largo-color-azul-castore-athletic-club--25-26_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/T/M/TM11147-023_pantalon-chandal-azul-marino-castore-athletic-club--25-26_2_completa-trasera.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/tm11147-023",
+    "language": "es",
+    "category": "Ropa de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "Pantalón largo de entrenamiento Castore del Athletic Club 2025 2026 - azul marino",
+    "tagline": "Comodidad de élite, actitud rojiblanca",
+    "intro": "El pantalón largo Castore de entrenamiento combina ajuste funcional y calidez ligera para cualquier rutina.",
+    "collection": "",
+    "key_benefits": [
+      "Tejido de punto flexible: Acompaña cada movimiento.",
+      "Cintura elástica: Ajuste cómodo y seguro.",
+      "Diseño afelpado: Calidez ligera en climas fríos.",
+      "Look profesional: Inspirado en los jugadores del Athletic."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Ropa de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/tm11147-023"
+  },
+  "classification": {
+    "category": "apparel",
+    "confidence": "high",
+    "rule": "name contains training",
+    "root_model": "Athletic",
+    "submodel": "",
+    "product_model": "Athletic Club entrenamiento 25 26",
+    "sole_type": ""
+  }
+}

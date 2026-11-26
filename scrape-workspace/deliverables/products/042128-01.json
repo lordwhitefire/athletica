@@ -1,0 +1,96 @@
+{
+  "id": "042128-01",
+  "slug": "puma-future-play-jr-nc-red",
+  "name": "Puma Future Play Jr NC",
+  "model": "Future Play Jr NC",
+  "brand": "Puma",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "kids",
+  "gender": "Kids",
+  "color": "Red",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Puma children's goalkeeper gloves negative cut - red",
+    "tagline": "Comodidad y agarre para cada parada",
+    "intro": "The Puma Future Play Jr NC combines a perfect fit, specific technologies and high-performance materials to raise your level as a goalkeeper. Enjoy superior grip and total control on every play.",
+    "collection": "THE UNLEASHED PACK",
+    "key_benefits": [
+      "Negative fit: Snug fit that improves ball control.",
+      "Super soft palm: Greater shock absorption and comfort.",
+      "Dorso con relieve: Aporta flexibilidad y mejora la potencia en los despejes.",
+      "Thumb wrap: Larger contact surface for a firmer grip."
+    ],
+    "technical_details": {
+      "range": "Future Play Jr NC",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-de-portero-color-rojo-puma-future-play-jr-nc_1_completa-dorso-mano-derecha.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-de-portero-color-rojo-puma-future-play-jr-nc_1_completa-dorso-mano-derecha.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-portero-rojos-puma-future-play-jr-nc_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-de-arquero-puma-future-play-jr-nc-color-rojo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-de-futbol-puma-future-play-jr-nc-rojos_4_detalle-cierre-muneca.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-de-portero-color-rojo-puma-future-play-jr-nc_1_completa-dorso-mano-derecha.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-portero-rojos-puma-future-play-jr-nc_2_conjunto.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-de-arquero-puma-future-play-jr-nc-color-rojo_3_detalle-corte.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/0/4/042128-01_guantes-de-futbol-puma-future-play-jr-nc-rojos_4_detalle-cierre-muneca.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/kids-producto/042128-01",
+    "language": "es",
+    "category": "Porteros",
+    "captured_at": "2026-11-19",
+    "subtitle": "Guantes de portero infantiles Puma corte negativo - rojos",
+    "tagline": "Comodidad y agarre para cada parada",
+    "intro": "Los Puma Future Play Jr NC combinan un ajuste perfecto, tecnologías específicas y materiales de alto rendimiento para elevar tu nivel como portero. Disfruta de un agarre superior y control total en cada jugada.",
+    "collection": "THE UNLEASHED PACK",
+    "key_benefits": [
+      "Ajuste negativo: Ajuste ceñido que mejora el control del balón.",
+      "Palma supersuave: Mayor absorción de impactos y comodidad.",
+      "Dorso con relieve: Aporta flexibilidad y mejora la potencia en los despejes.",
+      "Envoltura en el pulgar: Mayor superficie de contacto para un agarre más firme."
+    ],
+    "menu": [
+      {
+        "audience": "kids",
+        "root": "Porteros"
+      },
+      {
+        "audience": "kids",
+        "root": "Ofertas"
+      },
+      {
+        "audience": "kids",
+        "root": "Marcas"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/kids-producto/042128-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "high",
+    "rule": "boot model",
+    "root_model": "Future",
+    "submodel": "Play Jr NC",
+    "product_model": "Future Play Jr NC",
+    "sole_type": ""
+  }
+}

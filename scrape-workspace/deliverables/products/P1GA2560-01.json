@@ -1,0 +1,84 @@
+{
+  "id": "P1GA2560-01",
+  "slug": "mizuno-alpha-2-japan-md-purple",
+  "name": "Mizuno Alpha 2 Japan MD",
+  "model": "Alpha 2 Japan MD",
+  "brand": "Mizuno",
+  "category": "Boots",
+  "category_slug": "boots",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Purple",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "technical_details": {
+      "range": "Alpha 2 Japan MD",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": "",
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-de-futbol-color-negro-mizuno-alpha-2-japan-md_1_pie-derecho.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-de-futbol-color-negro-mizuno-alpha-2-japan-md_1_pie-derecho.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-de-futbol-con-tacos-negras-mizuno-alpha-2-japan-md_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-futbol-mizuno-alpha-2-japan-md-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-de-futbol-tacos-mizuno-alpha-2-japan-md-lilas_4_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_zapatillas-futbol-color-purpura-mizuno-alpha-2-japan-md_5_vista-superior.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-de-futbol-color-negro-mizuno-alpha-2-japan-md_1_pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-de-futbol-con-tacos-negras-mizuno-alpha-2-japan-md_2_suela-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-futbol-mizuno-alpha-2-japan-md-color-negro_3_interior-pie-derecho.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_botas-de-futbol-tacos-mizuno-alpha-2-japan-md-lilas_4_perspectiva.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/P/1/P1GA2560-01_zapatillas-futbol-color-purpura-mizuno-alpha-2-japan-md_5_vista-superior.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/p1ga2560-01",
+    "language": "es",
+    "category": "Botas de fútbol",
+    "captured_at": "2026-11-19",
+    "subtitle": "",
+    "tagline": "",
+    "intro": "",
+    "collection": "",
+    "key_benefits": [],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Botas de fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/p1ga2560-01"
+  },
+  "classification": {
+    "category": "boots",
+    "confidence": "medium",
+    "rule": "source fallback 'botas'",
+    "root_model": "Alpha",
+    "submodel": "2 Japan MD",
+    "product_model": "Alpha 2 Japan MD",
+    "sole_type": ""
+  }
+}

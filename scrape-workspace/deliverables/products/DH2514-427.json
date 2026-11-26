@@ -1,0 +1,96 @@
+{
+  "id": "DH2514-427",
+  "slug": "gorro-nike-barcelona-beanie-fisherman-blue",
+  "name": "Gorro Nike Barcelona Beanie Fisherman",
+  "model": "Gorro Nike Barcelona Beanie Fisherman",
+  "brand": "Nike",
+  "category": "Clothing",
+  "category_slug": "clothing",
+  "audience": "adult",
+  "gender": "Unisex",
+  "color": "Blue",
+  "color_variants": [],
+  "price": {
+    "current": 0,
+    "original": 0,
+    "discount_percent": 0,
+    "member_price": 0,
+    "currency": "€"
+  },
+  "sizes": [],
+  "description": {
+    "subtitle": "Gorro de invierno Nike del Barcelona - azul celeste",
+    "tagline": "Orgullo blaugrana con estilo urbano",
+    "intro": "El gorro Beanie Fisherman Nike une el estilo pesquero con los colores del Barça. Diseño en completo color azul celeste con el escudo bordado del club.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño original: Estilo fisherman para fans auténticos.",
+      "Escudo del Barça: Bordado en la parte frontal.",
+      "Look moderno: Ideal para looks urbanos con identidad culé."
+    ],
+    "technical_details": {
+      "range": "Nike Barcelona Beanie Fisherman",
+      "sole_type": "",
+      "upper_material": "",
+      "adjustment": ""
+    }
+  },
+  "traction": null,
+  "asin": null,
+  "status": "published",
+  "main_image": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH2514-427_gorro-color-celeste-nike-barcelona-beanie-fisherman_1_completa-frontal.jpg",
+  "thumbnail": "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH2514-427_gorro-color-celeste-nike-barcelona-beanie-fisherman_1_completa-frontal.jpg",
+  "image_gallery": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH2514-427_gorro-azul-celeste-nike-barcelona-beanie-fisherman_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH2514-427_gorro-nike-barcelona-beanie-fisherman-color-celeste_3_detalle-aplicacion.jpg"
+  ],
+  "image_links": [
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH2514-427_gorro-color-celeste-nike-barcelona-beanie-fisherman_1_completa-frontal.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH2514-427_gorro-azul-celeste-nike-barcelona-beanie-fisherman_2_completa-trasera.jpg",
+    "https://media.futbolmania.com/media/catalog/product/cache/1//9df78eab33525d08d6e5fb8d27136e95/D/H/DH2514-427_gorro-nike-barcelona-beanie-fisherman-color-celeste_3_detalle-aplicacion.jpg"
+  ],
+  "sanity_assets": [],
+  "source": {
+    "url": "https://www.futbolmania.com/es/dh2514-427",
+    "language": "es",
+    "category": "Equipos fútbol",
+    "captured_at": "2026-11-18",
+    "subtitle": "Gorro de invierno Nike del Barcelona - azul celeste",
+    "tagline": "Orgullo blaugrana con estilo urbano",
+    "intro": "El gorro Beanie Fisherman Nike une el estilo pesquero con los colores del Barça. Diseño en completo color azul celeste con el escudo bordado del club.",
+    "collection": "",
+    "key_benefits": [
+      "Diseño original: Estilo fisherman para fans auténticos.",
+      "Escudo del Barça: Bordado en la parte frontal.",
+      "Look moderno: Ideal para looks urbanos con identidad culé."
+    ],
+    "menu": [
+      {
+        "audience": "adult",
+        "root": "Ropa entrenamiento"
+      },
+      {
+        "audience": "adult",
+        "root": "Accesorios fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Ofertas fútbol"
+      },
+      {
+        "audience": "adult",
+        "root": "Equipos fútbol"
+      }
+    ],
+    "futbolmania_url": "https://www.futbolmania.com/es/dh2514-427"
+  },
+  "classification": {
+    "category": "clothing",
+    "confidence": "high",
+    "rule": "name contains 'gorro'",
+    "root_model": "Gorro",
+    "submodel": "",
+    "product_model": "Gorro Nike Barcelona Beanie Fisherman",
+    "sole_type": ""
+  }
+}
