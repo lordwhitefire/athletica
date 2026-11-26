@@ -31,6 +31,7 @@ Every product should read like a normal shop wrote it, without changing its stru
 - The product data structure stays exactly as Futbolmania provides it: same fields, same sections, same order.
 - Simplify the language only. Do not merge, split, remove or add fields.
 - Keep the exact number of key benefits. If the source has four, the rewrite has four. If it has six, the rewrite has six. Never decide a number.
+- Translate the slug to English. Keep it lowercase, hyphenated, no accents and URL-safe.
 - Category and model stay empty for now. We will fill them later.
 
 ## The rule for every product
@@ -48,7 +49,7 @@ For each product:
    - colour
    - material and main features
    - who it is for (adult, kids, women, men)
-4. Simplify the name in English.
+4. Simplify the name in English and translate the slug to English: lowercase, hyphenated, no accents.
 5. Simplify the subtitle, tagline and intro in place. Keep each field separate.
 6. Simplify each key benefit in place. Keep the same number as the source.
 7. Keep category and model empty for now. Keep the colour as the source has it.
@@ -79,6 +80,7 @@ For each product:
 - [ ] No Spanish prose.
 - [ ] No machine errors (for example "Doorman" for goalkeeper, "price" for pride, "cheese" for enjoy).
 - [ ] Name is clear and simple.
+- [ ] Slug is English, lowercase and hyphenated.
 - [ ] Subtitle, tagline and intro are separate and simplified.
 - [ ] Same number of key benefits as the source.
 - [ ] Category and model left empty for now.
@@ -111,7 +113,7 @@ Every product starts as not done. Update this table after each product.
 
 | Category | Total | Done | Left |
 |---|---:|---:|---:|
-| Boots | 2,903 | 1 | 2,902 |
+| Boots | 2,903 | 5 | 2,898 |
 | Jerseys | 2,341 | 0 | 2,341 |
 | Apparel | 1,634 | 0 | 1,634 |
 | Accessories | 1,389 | 0 | 1,389 |
@@ -122,7 +124,7 @@ Every product starts as not done. Update this table after each product.
 | Clothing | 132 | 0 | 132 |
 | Shin Guards | 114 | 0 | 114 |
 | Indoor Shoes | 108 | 0 | 108 |
-| **Total** | **9,786** | **1** | **9,785** |
+| **Total** | **9,786** | **5** | **9,781** |
 
 Done-list: `scrape-workspace/plans/product-rewrite-done.txt` — one product file per line.
 
