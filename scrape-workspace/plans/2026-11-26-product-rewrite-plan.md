@@ -113,7 +113,7 @@ Every product starts as not done. Update this table after each product.
 
 | Category | Total | Done | Left |
 |---|---:|---:|---:|
-| Boots | 2,903 | 21 | 2,882 |
+| Boots | 2,903 | 28 | 2,875 |
 | Jerseys | 2,341 | 0 | 2,341 |
 | Apparel | 1,634 | 0 | 1,634 |
 | Accessories | 1,389 | 0 | 1,389 |
@@ -124,7 +124,7 @@ Every product starts as not done. Update this table after each product.
 | Clothing | 132 | 0 | 132 |
 | Shin Guards | 114 | 0 | 114 |
 | Indoor Shoes | 108 | 0 | 108 |
-| **Total** | **9,786** | **21** | **9,765** |
+| **Total** | **9,786** | **28** | **9,758** |
 
 Done-list: `scrape-workspace/plans/product-rewrite-done.txt` — one product file per line.
 
