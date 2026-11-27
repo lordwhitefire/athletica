@@ -26,6 +26,12 @@ Every product should read like a normal shop wrote it, without changing its stru
 2. This step is not automated. No batch rewriting.
 3. Research may be done in batches, but each product is written one by one.
 
+## Push rule
+
+- Commit and push to GitHub every 20 rewritten products, without being asked.
+- The done list (`product-rewrite-done.txt`) is the count that decides when 20 are reached.
+- Update the tracker in this file at the same time as each push.
+
 ## Structure rule
 
 - The product data structure stays exactly as Futbolmania provides it: same fields, same sections, same order.
@@ -113,7 +119,7 @@ Every product starts as not done. Update this table after each product.
 
 | Category | Total | Done | Left |
 |---|---:|---:|---:|
-| Boots | 2,903 | 157 | 2,746 |
+| Boots | 2,903 | 168 | 2,735 |
 | Jerseys | 2,341 | 0 | 2,341 |
 | Apparel | 1,634 | 0 | 1,634 |
 | Accessories | 1,389 | 0 | 1,389 |
@@ -124,7 +130,7 @@ Every product starts as not done. Update this table after each product.
 | Clothing | 132 | 0 | 132 |
 | Shin Guards | 114 | 0 | 114 |
 | Indoor Shoes | 108 | 0 | 108 |
-| **Total** | **9,786** | **157** | **9,629** |
+| **Total** | **9,786** | **168** | **9,618** |
 
 Done-list: `scrape-workspace/plans/product-rewrite-done.txt` — one product file per line.
 
