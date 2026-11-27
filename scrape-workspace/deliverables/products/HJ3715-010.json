@@ -1,7 +1,7 @@
 {
   "id": "HJ3715-010",
   "slug": "chandal-nike-nino-dri-fit-academy-25-black",
-  "name": "Chándal Nike Kids Dri-Fit Academy 25",
+  "name": "Nike Kids Dri-Fit Academy 25",
   "model": "Chándal Nike Kids Dri-Fit Academy 25",
   "brand": "Nike",
   "category": "Kits",
@@ -80,9 +80,9 @@
     "category": "kits",
     "confidence": "medium",
     "rule": "source fallback 'equipaciones'",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Kids Dri-Fit Academy 25",
+    "product_model": "Nike Kids Dri-Fit Academy 25",
     "sole_type": ""
   }
 }

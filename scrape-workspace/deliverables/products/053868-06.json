@@ -1,7 +1,7 @@
 {
   "id": "053868-06",
   "slug": "botellin-puma-training-stainless-steel-750-ml-black",
-  "name": "Botellín Puma Training Stainless Steel 750 ml",
+  "name": "Puma Training Stainless Steel 750 ml bottle",
   "model": "Botellín Puma Training Stainless Steel 750 ml",
   "brand": "Puma",
   "category": "Apparel",
@@ -113,9 +113,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Puma Training Stainless Steel 750 ml",
+    "product_model": "Puma Training Stainless Steel 750 ml bottle",
     "sole_type": ""
   }
 }

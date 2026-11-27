@@ -1,7 +1,7 @@
 {
   "id": "DX5025-903",
   "slug": "calcetines-media-cana-nike-sw-everyday-essentia-l3-pares",
-  "name": "media caña Nike SW Everyday Essentia l3 pares",
+  "name": "half-cane Nike SW Everyday Essentia l3 pairs",
   "model": "media caña Nike SW Everyday Essentia l3 pares",
   "brand": "Nike",
   "category": "Socks",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines Nike Sportswear Everyday Essential - azul marino, blancos, grises",
+    "subtitle": "Pack of 3 socks Nike Sportswear Everyday Essential - navy blue, white, grey",
     "tagline": "Comodidad urbana en cada pisada",
-    "intro": "Estos calcetines Nike Everyday Essential azul marino, blancos y grises combinan estilo discreto, ajuste cómodo y diseño urbano para acompañarte a diario en cada paso.",
+    "intro": "These Nike Everyday Essential navy blue, white and grey socks combine discreet style, comfortable fit and urban design to accompany you every day at every step.",
     "collection": "",
     "key_benefits": [
-      "Look atemporal: Color blanco, azul marino y gris versátil para cualquier outfit.",
-      "Media caña ideal: Altura perfecta para sneakers o calzado deportivo.",
-      "Ajuste sin presión: Sujeción suave que se adapta sin apretar.",
+      "Timeless look: White, navy blue and versatile grey color for any outfit.",
+      "Ideal mid-cane: Perfect height for sneakers or sports shoes.",
+      "Pressure-free adjustment: Soft grip that adapts without tightening.",
       "Durabilidad diaria: Material resistente al uso continuado."
     ],
     "technical_details": {
@@ -92,9 +92,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike SW Everyday Essentia l3 pares",
+    "product_model": "half-cane Nike SW Everyday Essentia l3 pairs",
     "sole_type": ""
   }
 }

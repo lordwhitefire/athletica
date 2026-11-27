@@ -1,7 +1,7 @@
 {
   "id": "JL6953",
   "slug": "camiseta-adidas-2a-arabia-saudi-26-white",
-  "name": "adidas 2a Arabia Saudí 26",
+  "name": "adidas 2nd Saudi Arabia 26",
   "model": "2a Arabia Saudí 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Arabia Saudí 26",
+    "product_model": "2nd Saudi Arabia 26",
     "sole_type": ""
   }
 }

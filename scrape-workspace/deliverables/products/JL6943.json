@@ -1,7 +1,7 @@
 {
   "id": "JL6943",
   "slug": "short-adidas-2a-italia-26-blue",
-  "name": "adidas 2a Italia 26",
+  "name": "adidas 2nd Italia 26",
   "model": "2a Italia 26",
   "brand": "adidas",
   "category": "Apparel",
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Italia 26",
+    "product_model": "2nd Italia 26",
     "sole_type": ""
   }
 }

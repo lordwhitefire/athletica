@@ -1,7 +1,7 @@
 {
   "id": "JJ1925",
   "slug": "short-adidas-3a-real-madrid-25-26-blue",
-  "name": "adidas 3a Real Madrid 25 26",
+  "name": "adidas 3rd Real Madrid 25 26",
   "model": "3a Real Madrid 25 26",
   "brand": "adidas",
   "category": "Apparel",
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Real Madrid 25 26",
+    "product_model": "3rd Real Madrid 25 26",
     "sole_type": ""
   }
 }

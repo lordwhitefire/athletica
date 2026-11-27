@@ -1,7 +1,7 @@
 {
   "id": "311P3DW-XMX",
   "slug": "camiseta-kappa-3a-genoa-25-26-blue",
-  "name": "Kappa 3a Genoa 25 26",
+  "name": "Kappa 3rd Genoa 25 26",
   "model": "3a Genoa 25 26",
   "brand": "Kappa",
   "category": "Jerseys",
@@ -19,7 +19,7 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la tercera equipación Kappa del Genoa 25 26 - azul marino",
+    "subtitle": "Third equipment Kappa del Genoa T-shirt 25 26 - navy blue",
     "tagline": "Rossoblù passion in every detail",
     "intro": "The Genoa 25/26 shirt combines tradition and innovation in a design that beats with Serie A. A tribute to the Rossoblù identity so that every fan can wear the club's history with pride.",
     "collection": "",
@@ -100,9 +100,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Genoa 25 26",
+    "product_model": "3rd Genoa 25 26",
     "sole_type": ""
   }
 }

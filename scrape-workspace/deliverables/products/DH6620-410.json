@@ -1,7 +1,7 @@
 {
   "id": "DH6620-410",
   "slug": "calcetines-media-cana-nike-strike-crew-blue",
-  "name": "media caña Nike Strike Crew",
+  "name": "half-cane Nike Strike Crew",
   "model": "media caña Nike Strike Crew",
   "brand": "Nike",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Par de calcetines de media caña Nike de entrenamiento de fútbol - azul marino",
-    "tagline": "Color único. Prestaciones técnicas",
-    "intro": "Los calcetines azul marino Nike Strike Crew están diseñados para jugadores que quieren rendimiento y personalidad en cada jugada. Máxima sujeción, compresión y frescura, todo en un tono vibrante.",
+    "subtitle": "Nike Half Cane Sock Pair Football Training - Navy Blue",
+    "tagline": "Unique color.",
+    "intro": "Nike Strike Crew navy blue socks are designed for players who want performance and personality on every move. Maximum grip, compression and freshness, all in a vibrant tone.",
     "collection": "",
     "key_benefits": [
-      "Estilo diferencial: El azul marino te hace destacar con personalidad.",
-      "Ajuste inteligente: Malla elástica que envuelve sin presionar.",
-      "Evita el deslizamiento: Talón con refuerzo para más estabilidad.",
-      "Alivio en cada pisada: Acolchado suave donde más lo necesitas."
+      "Differential style: Navy blue makes you stand out with personality.",
+      "Smart fit: Elastic mesh that wraps without pressing.",
+      "Avoid slip: Heel with reinforcement for more stability.",
+      "Relief in each step: Soft padding where you need it most."
     ],
     "technical_details": {
       "range": "media caña Nike Strike Crew",
@@ -84,9 +84,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Strike Crew",
+    "product_model": "half-cane Nike Strike Crew",
     "sole_type": ""
   }
 }

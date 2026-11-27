@@ -1,7 +1,7 @@
 {
   "id": "KA3500",
   "slug": "short-adidas-espana-downtown-blue",
-  "name": "adidas España DownTown",
+  "name": "adidas Spain DownTown",
   "model": "España DownTown",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón corto de la selección española 2026 - azul marino",
-    "tagline": "Estilo español con esencia futbolera",
-    "intro": "El Short adidas España DownTown fusiona la herencia de la selección española con un diseño urbano actual. Inspirado en los colores vibrantes de la bandera, es una prenda pensada para disfrutar del fútbol con comodidad dentro y fuera del campo.",
+    "subtitle": "Short trousers of the Spanish selection 2026 - navy blue",
+    "tagline": "Spanish style with football essence",
+    "intro": "The Short adidas Spain DownTown combines the Spanish team’s heritage with a modern urban design. Inspired by the vibrant colors of the flag, it is a garment designed to enjoy football with comfort both on and off the field.",
     "collection": "",
     "key_benefits": [
-      "Libertad total de movimiento: Tejido ligero que acompaña cada paso.",
-      "Ajuste seguro: Cintura elástica con cordón regulable.",
-      "Inspiración nacional: Diseño basado en la identidad visual de España 2026.",
+      "Total freedom of movement: Light fabric that accompanies each step.",
+      "Secure fit: Elastic waistband with adjustable cord.",
+      "National inspiration: Design based on the visual identity of Spain 2026.",
       "Comodidad diaria: Ideal para descanso, entrenamientos suaves o uso casual."
     ],
     "technical_details": {
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España DownTown",
+    "product_model": "Spain DownTown",
     "sole_type": ""
   }
 }

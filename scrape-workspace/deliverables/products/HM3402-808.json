@@ -1,7 +1,7 @@
 {
   "id": "HM3402-808",
   "slug": "chandal-nike-barcelona-entrenamiento-dri-fit-strike-orange",
-  "name": "Chándal Nike Barcelona Training Dri-Fit Strike",
+  "name": "Tracksuit Nike Barcelona Training Dri-Fit Strike",
   "model": "Chándal Nike Barcelona Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal de entrenamiento Nike del FC Barcelona 2025 2026 - melocotón",
-    "tagline": "Equipamiento completo, actitud de campeón",
-    "intro": "El chándal Nike Barça Strike Third combina estilo, tecnología y comodidad total para entrenar como los grandes.",
+    "subtitle": "Nike training sweatshirt from FC Barcelona 2025 2026 - peach",
+    "tagline": "Complete equipment, champion attitude",
+    "intro": "The Nike Barça Strike Third sweatshirt combines style, technology and total comfort to train like the great ones.",
     "collection": "",
     "key_benefits": [
-      "Conjunto completo: Sudadera + pantalón largo técnico.",
-      "Diseño exclusivo: Inspiración Strike Third Barça 25/26.",
-      "Tejido transpirable: Con tecnología Dri-FIT para mantenerte seco.",
+      "Complete set: Sweatshirt + technical long pants.",
+      "Exclusive design: Inspiration Strike Third Barça 25/26.",
+      "Breathable fabric: With Dri-FIT technology to keep you dry.",
       "Versatilidad total: Ideal para entrenar o vestir con estilo deportivo."
     ],
     "technical_details": {
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Barcelona Training Dri-Fit Strike",
+    "product_model": "Tracksuit Nike Barcelona Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

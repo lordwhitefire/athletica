@@ -1,7 +1,7 @@
 {
   "id": "KF4127",
   "slug": "botellin-adidas-alemania-600-ml-white",
-  "name": "Botellín adidas Alemania 600 ml",
+  "name": "Adidas bottle Germany 600 ml",
   "model": "Botellín adidas Alemania 600 ml",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento adidas de la selección alemana de 600 ml - blanco",
-    "tagline": "El botellín metálico de la selección alemana",
-    "intro": "El botellín metálico adidas Alemania está diseñado para aficionados y deportistas que quieren mantenerse hidratados mientras muestran su apoyo a la selección alemana. Inspirado en la identidad del equipo, combina un diseño elegante con la funcionalidad necesaria para el día a día.",
+    "subtitle": "Water bottle for training adidas of the German 600 ml selection - white",
+    "tagline": "The metal bottle of the German selection",
+    "intro": "The adidas metal bottle is designed for fans and athletes who want to stay hydrated while showing their support for the German selection. Inspired by the team’s identity, it combines an elegant design with the functionality needed for day to day.",
     "collection": "",
     "key_benefits": [
-      "Construcción en acero inoxidable: Ofrece resistencia y durabilidad para uso diario.",
-      "Capacidad de 600 ml: Permite mantener una hidratación adecuada durante entrenamientos o actividades.",
-      "Diseño deportivo oficial: Incluye el logotipo adidas Performance y el escudo de la federación alemana.",
-      "Estructura robusta: Fabricación moldeada por inyección para mayor resistencia."
+      "Stainless steel construction: Offers strength and durability for daily use.",
+      "600 ml capacity: Allows to maintain adequate hydration during training or activities.",
+      "Official sports design: Includes the adidas Performance logo and the German Federation's coat of arms.",
+      "Robust structure: Injection molded manufacture for greater resistance."
     ],
     "technical_details": {
       "range": "adidas Alemania 600 ml",
@@ -90,9 +90,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'equipos'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Alemania 600 ml",
+    "product_model": "Adidas bottle Germany 600 ml",
     "sole_type": ""
   }
 }

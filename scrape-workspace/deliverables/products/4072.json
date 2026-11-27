@@ -1,7 +1,7 @@
 {
   "id": "4072",
   "slug": "set-zastor-entrenador-mister-futbol-sala-black",
-  "name": "Set Zastor entrenador Míster fútbol sala",
+  "name": "Set Zastor Coach Mister Football Room",
   "model": "Set Zastor entrenador Míster fútbol sala",
   "brand": "Zastor",
   "category": "Indoor Shoes",
@@ -69,8 +69,8 @@
     "confidence": "high",
     "rule": "name contains 'sala'",
     "root_model": "Set",
-    "submodel": "Zastor entrenador Míster fútbol sala",
-    "product_model": "Set Zastor entrenador Míster fútbol sala",
+    "submodel": "Zastor Coach Mister Football Room",
+    "product_model": "Set Zastor Coach Mister Football Room",
     "sole_type": ""
   }
 }

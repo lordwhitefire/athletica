@@ -1,7 +1,7 @@
 {
   "id": "JJ1387",
   "slug": "camiseta-adidas-2a-bayern-munich-pre-match-black",
-  "name": "adidas 2a Bayern Múnich Pre-Match",
+  "name": "adidas 2nd Bayern Munich Pre-Match",
   "model": "2a Bayern Múnich Pre-Match",
   "brand": "adidas",
   "category": "Jerseys",
@@ -82,9 +82,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Bayern Múnich Pre-Match",
+    "product_model": "2nd Bayern Munich Pre-Match",
     "sole_type": ""
   }
 }

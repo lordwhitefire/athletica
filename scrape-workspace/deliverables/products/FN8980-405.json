@@ -8,7 +8,7 @@
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Women",
-  "color": "Rojo / Blanco",
+  "color": "Red / White",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -90,9 +90,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético mujer 2024 2025 Dri-Fit Stadium",
+    "product_model": "Athletic female 2024 2025 Dri-Fit Stadium",
     "sole_type": ""
   }
 }

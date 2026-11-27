@@ -1,7 +1,7 @@
 {
   "id": "JX0626-A",
   "slug": "gorra-adidas-3a-bayern-black",
-  "name": "adidas 3a Bayern",
+  "name": "adidas 3rd Bayern",
   "model": "3a Bayern",
   "brand": "adidas",
   "category": "Accessories",
@@ -82,9 +82,9 @@
     "category": "accessories",
     "confidence": "high",
     "rule": "name contains 'gorra'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Bayern",
+    "product_model": "3rd Bayern",
     "sole_type": ""
   }
 }

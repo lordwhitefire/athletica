@@ -1,7 +1,7 @@
 {
   "id": "KB0622",
   "slug": "chaqueta-adidas-espana-blue",
-  "name": "adidas España",
+  "name": "adidas Spain",
   "model": "España",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chaqueta de invierno adidas de la selección española 2026 - azul marino",
-    "tagline": "Protección elegante para La Roja",
-    "intro": "Chaqueta invierno España 2026, combina funcionalidad térmica con estilo oficial.",
+    "subtitle": "Winter jacket adidas from the Spanish selection 2026 - navy blue",
+    "tagline": "Elegant protection for the Red",
+    "intro": "Winter jacket Spain 2026, combines thermal functionality with official style.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial: Parte de la colección de entrenamiento de la selección española.",
-      "Tejido técnico: Material transpirable y ligero para un uso intensivo.",
-      "Tecnología aplicada: Incluye CLIMACOOL.",
-      "Ajuste ergonómico: Favorece la libertad de movimiento y el confort."
+      "Official design: Part of the Spanish team training collection.",
+      "Technical fabric: Breathable and lightweight material for intensive use.",
+      "Applied technology: Includes CLIMACOOL.",
+      "Ergonomic adjustment: Promotes freedom of movement and comfort."
     ],
     "technical_details": {
       "range": "adidas España",
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España",
+    "product_model": "Spain",
     "sole_type": ""
   }
 }

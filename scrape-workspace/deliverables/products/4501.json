@@ -1,7 +1,7 @@
 {
   "id": "4501",
   "slug": "tarjetero-arbitro-zastor-rule-black",
-  "name": "Tarjetero árbitro Zastor Rule",
+  "name": "Tarjetero referido Zastor Rule",
   "model": "Tarjetero árbitro Zastor Rule",
   "brand": "Zastor",
   "category": "Accessories",
@@ -68,7 +68,7 @@
     "rule": "source fallback 'accesorios'",
     "root_model": "Tarjetero",
     "submodel": "",
-    "product_model": "Tarjetero árbitro Zastor Rule",
+    "product_model": "Tarjetero referido Zastor Rule",
     "sole_type": ""
   }
 }

@@ -8,7 +8,7 @@
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Azul / Amarillo",
+  "color": "Blue/yellow",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de calentamiento prepartido Nike del Atlético de Madrid 2025 2026 - azul marino, amarillo",
-    "tagline": "Diseño rompedor para el calentamiento",
-    "intro": "Destaca en el campo antes del partido con esta camiseta pre-match del Atlético de Madrid. Su gráfico caótico y sus colores vibrantes transmiten toda la energía del equipo colchonero. Ideal para quienes buscan un look atrevido y lleno de personalidad.",
+    "subtitle": "Nike pre-party heating shirt from Atlético de Madrid 2025 2025 - navy blue, yellow",
+    "tagline": "Breaker design for heating",
+    "intro": "Highlights in the field before the match with this pre-match shirt from Atlético de Madrid. Its chaotic graphic and vibrant colors convey all the energy of the mattress team. Ideal for those looking for a daring look full of personality.",
     "collection": "",
     "key_benefits": [
-      "Gráfico llamativo: Diseño frontal con franjas distorsionadas y detalles inspirados en el escudo del club.",
-      "Comodidad óptima: Ajuste slim y tejido elástico que acompaña tus movimientos.",
-      "Control de sudor: Tecnología Dri-FIT que mantiene la piel seca durante todo el calentamiento.",
-      "Identidad única: El Oso y el Madroño sustituyen el logo clásico, realzando el orgullo rojiblanco."
+      "Highlighting graphic: Front design with distorted stripes and details inspired by the club's shield.",
+      "Optimum comfort: Slim fit and elastic fabric that accompanies your movements.",
+      "Sweat Control: Dri-FIT technology that keeps the skin dry during all heating.",
+      "Unique identity: The Bear and the Madroño replace the classic logo, enhancing the reddish-white pride."
     ],
     "technical_details": {
       "range": "Nike Atlético Pre-Match Dri-Fit Academy Pro",
@@ -90,9 +90,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético Pre-Match Dri-Fit Academy Pro",
+    "product_model": "Athletic Pre-Match Dri-Fit Academy Pro",
     "sole_type": ""
   }
 }

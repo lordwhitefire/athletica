@@ -1,14 +1,14 @@
 {
   "id": "JF8895",
   "slug": "calcetines-media-cana-adidas-real-madrid-2024-2025-blanco-gris",
-  "name": "media caña adidas Real Madrid 2024 2025",
+  "name": "half cane adidas Real Madrid 2024 2025",
   "model": "media caña adidas Real Madrid 2024 2025",
   "brand": "adidas",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Blanco / Gris",
+  "color": "White / Grey",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -75,9 +75,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Real Madrid 2024 2025",
+    "product_model": "half cane adidas Real Madrid 2024 2025",
     "sole_type": ""
   }
 }

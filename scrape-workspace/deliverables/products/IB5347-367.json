@@ -1,7 +1,7 @@
 {
   "id": "IB5347-367",
   "slug": "camiseta-nike-2a-australia-26-dri-fit-stadium-blue",
-  "name": "Nike 2a Australia 26 Dri-Fit Stadium",
+  "name": "Nike 2nd Australia 26 Dri-Fit Stadium",
   "model": "2a Australia 26 Dri-Fit Stadium",
   "brand": "Nike",
   "category": "Jerseys",
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Australia 26 Dri-Fit Stadium",
+    "product_model": "2nd Australia 26 Dri-Fit Stadium",
     "sole_type": ""
   }
 }

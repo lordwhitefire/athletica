@@ -1,14 +1,14 @@
 {
   "id": "JP4014",
   "slug": "chandal-adidas-real-madrid-nino-entrenamiento-verde-gris",
-  "name": "Chándal adidas Real Madrid Kids Training",
+  "name": "Tracksuit adidas Real Madrid Kids Training",
   "model": "Chándal adidas Real Madrid Kids Training",
   "brand": "adidas",
   "category": "Apparel",
   "category_slug": "apparel",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Verde / Gris",
+  "color": "Green / Grey",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal infantil de entrenamiento adidas del Real Madrid - verde claro",
-    "tagline": "Pasión madridista en cada movimiento",
-    "intro": "El chándal adidas Real Madrid niño entrenamiento combina confort, estilo y funcionalidad para los jóvenes futbolistas más exigentes.",
+    "subtitle": "Real Madrid adidas children's training sweatshirt - light green",
+    "tagline": "Madrid Passion in Every Movement",
+    "intro": "The adidas Real Madrid children training sweatshirt combines comfort, style and functionality for the most demanding young footballers.",
     "collection": "",
     "key_benefits": [
-      "Comodidad superior: Tejido de punto suave y ligero para uso prolongado.",
-      "Regulación de la humedad: Tecnología AEROREADY que mantiene la piel seca.",
-      "Diseño completo: Incluye chaqueta con cremallera y pantalón a juego.",
+      "Superior comfort: Soft and lightweight knit fabric for long use.",
+      "Moisture regulation: AEROREADY technology that keeps the skin dry.",
+      "Full design: Includes zip jacket and matching pants.",
       "Identidad visible: Escudo del Real Madrid en pecho y pierna.",
-      "Inspiración profesional: Colores basados en la segunda equipación oficial del club."
+      "Professional inspiration: Colors based on the club's second official equipment."
     ],
     "technical_details": {
       "range": "adidas Real Madrid niño entrenamiento",
@@ -94,9 +94,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal adidas Real Madrid Kids Training",
+    "product_model": "Tracksuit adidas Real Madrid Kids Training",
     "sole_type": ""
   }
 }

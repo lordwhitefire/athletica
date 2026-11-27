@@ -1,7 +1,7 @@
 {
   "id": "8841-BK",
   "slug": "medias-compresion-mcdavid-compression-black",
-  "name": "compresión McDavid Compression",
+  "name": "McDavid Compression compression",
   "model": "compresión McDavid Compression",
   "brand": "Mc David",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Medias de compresión McDavid - negras",
-    "tagline": "Compresión activa para el día a día",
-    "intro": "Las medias negras McDavid Compression combinan tejido técnico y ajuste progresivo para ofrecer soporte continuo y confort muscular durante y después de la actividad.",
+    "subtitle": "McDavid compression media - black",
+    "tagline": "Active compression for day to day",
+    "intro": "McDavid Compression black stockings combine technical fabric and progressive adjustment to provide continuous support and muscle comfort during and after activity.",
     "collection": "",
     "key_benefits": [
-      "Compresión graduada: Facilita el retorno venoso y reduce la fatiga.",
-      "Tejido médico: Diseñado para mejorar la recuperación muscular.",
-      "Uso prolongado: Cómodas para llevar durante horas sin molestias.",
-      "Diseño deportivo: Pensado para futbolistas de alto rendimiento."
+      "Graduated compression: Facilitates venous return and reduces fatigue.",
+      "Medical tissue: Designed to improve muscle recovery.",
+      "Long-term use: Comfortable to carry for hours without discomfort.",
+      "Sport Design: Thought for high-performance footballers."
     ],
     "technical_details": {
       "range": "compresión McDavid Compression",
@@ -88,9 +88,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "compresión",
+    "root_model": "compression",
     "submodel": "",
-    "product_model": "compresión McDavid Compression",
+    "product_model": "McDavid Compression compression",
     "sole_type": ""
   }
 }

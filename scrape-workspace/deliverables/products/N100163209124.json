@@ -1,7 +1,7 @@
 {
   "id": "N100163209124",
   "slug": "botellin-nike-recharge-straw-700-ml-black",
-  "name": "Botellín Nike Recharge Straw 700 ml",
+  "name": "Nike Recharge Straw 700 ml bottle",
   "model": "Botellín Nike Recharge Straw 700 ml",
   "brand": "Nike",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento de acero inoxidable Nike de 700 ml - negro",
-    "tagline": "Hidratación cómoda para llevar a todas partes",
-    "intro": "El botellín Nike Recharge Straw 700 ml está diseñado para facilitar la hidratación durante entrenamientos, partidos y actividad deportiva. Su formato ergonómico incorpora una práctica asa para transportarlo con facilidad y un tapón con cierre estanco que ayuda a evitar derrames mientras lo llevas junto al resto del equipamiento.",
+    "subtitle": "Water bottle for training in Nike 700 ml stainless steel - black",
+    "tagline": "Comfortable hydration to carry everywhere",
+    "intro": "The Nike Recharge Straw 700 ml bottle is designed to facilitate hydration during training, matches and sports activity. Its ergonomic format incorporates a practical handle to transport it easily and a plug with a watertight closure that helps prevent spills while carrying it along with the rest of the equipment.",
     "collection": "",
     "key_benefits": [
-      "Hidratación práctica: Su capacidad de 700 ml ofrece un formato adecuado para acompañar entrenamientos y actividad deportiva.",
-      "Transporte cómodo: El asa integrada facilita llevar el botellín en la mano o junto al resto del equipamiento.",
-      "Cierre seguro: Su tapón estanco ayuda a reducir el riesgo de pérdidas de líquido durante el transporte.",
-      "Agarre confortable: Su diseño ergonómico facilita sujetarlo y utilizarlo cómodamente durante las pausas."
+      "Practical hydration: Its capacity of 700 ml offers a suitable format to accompany training and sports activity.",
+      "Comfortable transport: The integrated handle makes it easy to carry the bottle in your hand or next to the rest of the equipment.",
+      "Safe closure: Your watertight cap helps reduce the risk of fluid loss during transport.",
+      "Comfortable grip: Its ergonomic design makes it easy to hold and use comfortably during breaks."
     ],
     "technical_details": {
       "range": "Nike Recharge Straw 700 ml",
@@ -80,9 +80,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Nike Recharge Straw 700 ml",
+    "product_model": "Nike Recharge Straw 700 ml bottle",
     "sole_type": ""
   }
 }

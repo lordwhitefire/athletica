@@ -1,7 +1,7 @@
 {
   "id": "JN2074-10M",
   "slug": "camiseta-adidas-2a-alemania-musiala-26-blue",
-  "name": "adidas 2a Alemania Musiala 26",
+  "name": "adidas 2nd Alemania Musiala 26",
   "model": "2a Alemania Musiala 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Alemania Musiala 26",
+    "product_model": "2nd Alemania Musiala 26",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "JL6974",
   "slug": "camiseta-adidas-2a-colombia-26-blue",
-  "name": "adidas 2a Colombia 26",
+  "name": "adidas 2nd Colombia 26",
   "model": "2a Colombia 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Colombia 26",
+    "product_model": "2nd Colombia 26",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "DX5025-100",
   "slug": "calcetines-media-cana-nike-sw-everyday-essential-3-pares-white",
-  "name": "media caña Nike SW Everyday Essential 3 pares",
+  "name": "half rod Nike SW Everyday Essential 3 pairs",
   "model": "media caña Nike SW Everyday Essential 3 pares",
   "brand": "Nike",
   "category": "Socks",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines de media caña Nike de calle - blancos",
+    "subtitle": "Pack of 3 half-cane Nike socks from street - white",
     "tagline": "Comodidad urbana en cada pisada",
-    "intro": "Estos calcetines Nike Everyday Essential blancos combinan estilo discreto, ajuste cómodo y diseño urbano para acompañarte a diario en cada paso.",
+    "intro": "These white Nike Everyday Essential socks combine discreet style, comfortable fit and urban design to accompany you every day at every step.",
     "collection": "",
     "key_benefits": [
-      "Look atemporal: Color blanco versátil para cualquier outfit.",
-      "Media caña ideal: Altura perfecta para sneakers o calzado deportivo.",
-      "Ajuste sin presión: Sujeción suave que se adapta sin apretar.",
+      "Timeless look: Versatile white color for any outfit.",
+      "Ideal mid-cane: Perfect height for sneakers or sports shoes.",
+      "Pressure-free adjustment: Soft grip that adapts without tightening.",
       "Durabilidad diaria: Material resistente al uso continuado."
     ],
     "technical_details": {
@@ -90,9 +90,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike SW Everyday Essential 3 pares",
+    "product_model": "half rod Nike SW Everyday Essential 3 pairs",
     "sole_type": ""
   }
 }

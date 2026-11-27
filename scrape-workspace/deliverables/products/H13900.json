@@ -1,7 +1,7 @@
 {
   "id": "H13900",
   "slug": "medias-adidas-2a-united-2022-2023-white",
-  "name": "adidas 2a United 2022 2023",
+  "name": "adidas 2nd United 2022 2023",
   "model": "2a United 2022 2023",
   "brand": "adidas",
   "category": "Socks",
@@ -78,9 +78,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a United 2022 2023",
+    "product_model": "2nd United 2022 2023",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "HJ8032-411",
   "slug": "chandal-nike-psg-nino-entrenamiento-dri-fit-strike-blue",
-  "name": "Chándal Nike PSG Kids Training Dri-Fit Strike",
+  "name": "Nike PSG Kids Training Dri-Fit Strike",
   "model": "Chándal Nike PSG Kids Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal infantil de entrenamiento Nike del PSG - azul marino",
-    "tagline": "Diseño Pro para Jóvenes Talentos",
-    "intro": "Con este chándal Nike del PSG para niño podrás entrenar como las estrellas del club parisino. Su tejido con tecnología Dri-FIT mantiene la frescura y la comodidad incluso en las sesiones más intensas. Presenta un ajuste inspirado en los jugadores profesionales para garantizar movilidad y rendimiento.",
+    "subtitle": "PSG Nike Child Training Track - Navy Blue",
+    "tagline": "Pro Design for Talent Youth",
+    "intro": "With this PSG children’s Nike sweatshirt you can train like the stars of the Parisian club. Its Dri-FIT technology fabric maintains freshness and comfort even in the most intense sessions. It features an adjustment inspired by professional players to ensure mobility and performance.",
     "collection": "",
     "key_benefits": [
-      "Comodidad total: Tejido Knit suave con tecnología de capilarización del sudor.",
-      "Inspirado en la élite: Diseño basado en el equipamiento oficial del PSG.",
-      "Libertad de movimiento: Corte entallado que acompaña tus movimientos en cada jugada.",
-      "Entrena como los pros: Ideal para jóvenes futbolistas en desarrollo.",
-      "Estilo PSG: Escudo del club y detalles oficiales que destacan tu pasión."
+      "Total comfort: Soft Knit fabric with sweat capillary technology.",
+      "Inspired by the elite: Design based on the official equipment of the PSG.",
+      "Freedom of movement: Cut-in that accompanies your movements in each play.",
+      "Train as the pros: Ideal for young footballers in development.",
+      "PSG Style: Club Shield and official details that highlight your passion."
     ],
     "technical_details": {
       "range": "Nike PSG niño entrenamiento Dri-Fit Strike",
@@ -98,9 +98,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike PSG Kids Training Dri-Fit Strike",
+    "product_model": "Nike PSG Kids Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

@@ -1,14 +1,14 @@
 {
   "id": "JP4013",
   "slug": "chandal-adidas-real-madrid-entrenamiento-verde-gris",
-  "name": "Chándal adidas Real Madrid Training",
+  "name": "Candal adidas Real Madrid Training",
   "model": "Chándal adidas Real Madrid Training",
   "brand": "adidas",
   "category": "Apparel",
   "category_slug": "apparel",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Verde / Gris",
+  "color": "Green / Grey",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal adidas Real Madrid Training",
+    "product_model": "Candal adidas Real Madrid Training",
     "sole_type": ""
   }
 }

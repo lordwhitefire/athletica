@@ -1,0 +1,97 @@
+{
+  "product_files": 9786,
+  "files_with_spanish": 444,
+  "field_counts": {
+    "name": 249,
+    "description.subtitle": 232,
+    "description.intro": 205,
+    "classification.product_model": 154,
+    "key_benefits": 152,
+    "description.tagline": 49,
+    "description.collection": 38,
+    "classification.root_model": 19,
+    "classification.submodel": 2
+  },
+  "unique_missing_strings": 873,
+  "cache_real_translations": 23643,
+  "examples": [
+    {
+      "file": "HJ7063-424.json",
+      "fields": [
+        "name",
+        "description.subtitle"
+      ]
+    },
+    {
+      "file": "HJ4551-425.json",
+      "fields": [
+        "name",
+        "description.subtitle",
+        "description.intro",
+        "classification.product_model"
+      ]
+    },
+    {
+      "file": "IV6172-701.json",
+      "fields": [
+        "description.subtitle",
+        "description.tagline",
+        "description.collection"
+      ]
+    },
+    {
+      "file": "JL8580-09R.json",
+      "fields": [
+        "name",
+        "description.subtitle",
+        "classification.submodel",
+        "classification.product_model"
+      ]
+    },
+    {
+      "file": "227842-6279.json",
+      "fields": [
+        "name",
+        "classification.product_model"
+      ]
+    },
+    {
+      "file": "IB5158-480-20D.json",
+      "fields": [
+        "name",
+        "description.subtitle",
+        "classification.product_model"
+      ]
+    },
+    {
+      "file": "KF4419.json",
+      "fields": [
+        "description.intro",
+        "key_benefits"
+      ]
+    },
+    {
+      "file": "JN8870-10M.json",
+      "fields": [
+        "name",
+        "description.subtitle",
+        "classification.product_model"
+      ]
+    },
+    {
+      "file": "948295-01.json",
+      "fields": [
+        "name",
+        "description.subtitle",
+        "description.intro",
+        "classification.root_model"
+      ]
+    },
+    {
+      "file": "KC1031.json",
+      "fields": [
+        "description.subtitle"
+      ]
+    }
+  ]
+}

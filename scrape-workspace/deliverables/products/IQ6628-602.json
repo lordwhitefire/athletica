@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Sudadera de entrenamiento Nike del Atlético de Madrid 2026 2027 - roja",
+    "subtitle": "Nike training sweatshirt from Atlético Madrid 2026 2027 - red",
     "tagline": "Preparada para las sesiones rojiblancas",
-    "intro": "La sudadera Nike Atlético entrenamiento Dri-Fit Strike combina funcionalidad deportiva y la identidad del Atlético de Madrid para acompañarte antes, durante y después de cada sesión. Su mayor cobertura respecto a una camiseta la convierte en una opción especialmente práctica para calentamientos y entrenamientos en condiciones frescas, además de resultar adecuada para aficionados que buscan vestir una prenda deportiva del Atlético de Madrid en su día a día.",
+    "intro": "The Nike Atlético training sweatshirt Dri-Fit Strike combines sport functionality and the identity of the Atlético de Madrid to accompany you before, during and after each session. Its increased coverage of a T-shirt makes it a particularly practical option for warm-ups and training in fresh conditions, as well as being suitable for fans looking to wear a sports garment of the Atlético de Madrid in their day to day.",
     "collection": "",
     "key_benefits": [
-      "Mayor cobertura: Su formato de sudadera resulta práctico para calentamientos y sesiones de entrenamiento en días frescos.",
-      "Gestión de la humedad: La tecnología Dri-FIT ayuda a alejar el sudor de la piel para favorecer una sensación más seca.",
-      "Diseño para el fútbol: La línea Nike Strike ofrece una estética deportiva orientada específicamente a las sesiones de entrenamiento.",
-      "Identidad rojiblanca: Su acabado rojo permite entrenar y vestir mostrando la pasión por el Atlético de Madrid."
+      "Increased coverage: Its hoodie format is practical for warm-ups and training sessions on cool days.",
+      "Moisture management: Dri-FIT technology helps to keep sweat away from the skin to help a drier sensation.",
+      "Design for football: The Nike Strike line offers a sporty aesthetic specifically oriented to training sessions.",
+      "Red-white identity: Its red finish allows training and dressing showing the passion for Atlético de Madrid."
     ],
     "technical_details": {
       "range": "Nike Atlético entrenamiento Dri-Fit Strike",
@@ -90,9 +90,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético entrenamiento Dri-Fit Strike",
+    "product_model": "Athletic Dri-Fit Strike Training",
     "sole_type": ""
   }
 }

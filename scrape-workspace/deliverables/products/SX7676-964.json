@@ -1,14 +1,14 @@
 {
   "id": "SX7676-964",
   "slug": "calcetines-media-cana-nike-everyday-finos-3-pares-blanco-negro",
-  "name": "media caña Nike Everyday finos 3 pares",
+  "name": "half cane Nike Everyday fine 3 pairs",
   "model": "media caña Nike Everyday finos 3 pares",
   "brand": "Nike",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Blanco / Negro",
+  "color": "White / Black",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines finos Nike de media caña - grises, blancos, negros",
-    "tagline": "Comodidad ligera para tu día a día",
-    "intro": "Los Calcetines media caña Nike Everyday finos blancos, grises y negros te ofrecen una sensación suave, transpirable y con sujeción ligera para entrenar o vestir a diario. Un básico imprescindible para tu armario deportivo.",
+    "subtitle": "Pack of 3 thin Nike socks half-cane - grey, white, black",
+    "tagline": "Light comfort for your day to day",
+    "intro": "Nike Everyday mid-cane socks fine white, grey and black offer a soft, breathable feel with light support for daily training or dressing. A basic essential for your sports wardrobe.",
     "collection": "",
     "key_benefits": [
-      "Transpirabilidad constante: Tejido ligero con capilarización del sudor.",
-      "Confort todo el día: Material suave que no aprieta ni marca.",
-      "Sujeción sutil: Banda elástica en el arco del pie para mejor ajuste.",
-      "Pack de 3: Tres pares ideales para entrenamiento o uso diario."
+      "Constant breathability: Light fabric with capillary sweating.",
+      "Comfort all day: Soft material that neither tightens nor marks.",
+      "Subtle fastening: Elastic band on the arch of the foot for better fit.",
+      "Pack of 3: Three pairs ideal for training or daily use."
     ],
     "technical_details": {
       "range": "media caña Nike Everyday finos 3 pares",
@@ -86,9 +86,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Everyday finos 3 pares",
+    "product_model": "half cane Nike Everyday fine 3 pairs",
     "sole_type": ""
   }
 }

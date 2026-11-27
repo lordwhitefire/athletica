@@ -1,7 +1,7 @@
 {
   "id": "JF2591",
   "slug": "camiseta-algodon-adidas-real-madrid-ubp-white",
-  "name": "algodón adidas Real Madrid UBP",
+  "name": "cotton adidas Real Madrid UBP",
   "model": "algodón adidas Real Madrid UBP",
   "brand": "adidas",
   "category": "Jerseys",
@@ -80,9 +80,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "algodón",
+    "root_model": "cotton",
     "submodel": "",
-    "product_model": "algodón adidas Real Madrid UBP",
+    "product_model": "cotton adidas Real Madrid UBP",
     "sole_type": ""
   }
 }

@@ -1,14 +1,14 @@
 {
   "id": "JN4399",
   "slug": "short-adidas-2a-espana-26-marron",
-  "name": "adidas 2a España 26",
+  "name": "adidas 2nd Spain 26",
   "model": "2a España 26",
   "brand": "adidas",
   "category": "Apparel",
   "category_slug": "apparel",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a España 26",
+    "product_model": "2nd Spain 26",
     "sole_type": ""
   }
 }

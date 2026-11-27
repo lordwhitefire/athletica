@@ -1,7 +1,7 @@
 {
   "id": "KS4643",
   "slug": "chandal-adidas-real-madrid-green",
-  "name": "Chándal adidas Real Madrid",
+  "name": "Tracksuit adidas Real Madrid",
   "model": "Chándal adidas Real Madrid",
   "brand": "adidas",
   "category": "Clothing",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal adidas del Real Madrid - verde",
+    "subtitle": "Real Madrid adidas tracks - green",
     "tagline": "Entrena y anima al Real Madrid con estilo",
-    "intro": "El chándal adidas del Real Madrid combina comodidad, diseño deportivo y la identidad de uno de los clubes más prestigiosos del mundo. Con detalles oficiales del equipo y un estilo inspirado en la equipación de entrenamiento, es perfecto para mostrar tu pasión por el Real Madrid dentro y fuera del campo.",
+    "intro": "Real Madrid’s adidas tracksuit combines comfort, sport design and the identity of one of the most prestigious clubs in the world. With official team details and a style inspired by the training equipment, it is perfect to show your passion for Real Madrid in and out of the field.",
     "collection": "",
     "key_benefits": [
       "Climacool: Ayuda a mantener la piel fresca y seca durante la actividad.",
-      "Diseño oficial Real Madrid: Escudo y detalles inspirados en el club blanco.",
-      "Tejido ligero: Favorece la comodidad durante todo el día.",
-      "Chaqueta con cremallera: Práctica y fácil de combinar con cualquier look deportivo."
+      "Official design Real Madrid: Shield and details inspired by the white club.",
+      "Lightweight fabric: Promote comfort throughout the day.",
+      "Zipped jacket: Practical and easy to combine with any sporty look."
     ],
     "technical_details": {
       "range": "adidas Real Madrid",
@@ -90,9 +90,9 @@
     "category": "clothing",
     "confidence": "medium",
     "rule": "source fallback 'ropa'",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal adidas Real Madrid",
+    "product_model": "Tracksuit adidas Real Madrid",
     "sole_type": ""
   }
 }

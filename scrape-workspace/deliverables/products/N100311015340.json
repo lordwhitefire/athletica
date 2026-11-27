@@ -1,7 +1,7 @@
 {
   "id": "N100311015340",
   "slug": "botellin-nike-fuel-jug-chug-1-2-l-white",
-  "name": "Botellín Nike Fuel Jug Chug 1,2 L",
+  "name": "Nike Fuel Jug Jug 1.2 L",
   "model": "Botellín Nike Fuel Jug Chug 1,2 L",
   "brand": "Nike",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín grande de agua para entrenamiento Nike de 1,2 L - blanco",
-    "tagline": "Hidratación a gran escala",
-    "intro": "El bidón Nike Fuel Jug Chug de 1,2 L está diseñado para quienes necesitan llevar más agua en sesiones largas de entrenamiento o en competiciones exigentes. Su boquilla ancha y tapa de rosca permiten beber y rellenar de forma rápida y cómoda.",
+    "subtitle": "Large 1.2 L Nike training water bottle - white",
+    "tagline": "Large-scale hydration",
+    "intro": "The 1.2 L Nike Fuel Jug Chug drum is designed for those who need to bring more water in long training sessions or demanding competitions. Its wide nozzle and screw cap allow for quick and comfortable drinking and filling.",
     "collection": "",
     "key_benefits": [
-      "Máxima capacidad: 1,2 L de agua para mantenerte hidratado durante entrenamientos de larga duración.",
-      "Uso práctico: Boquilla ancha que facilita beber rápidamente y rellenar sin complicaciones.",
+      "Maximum capacity: 1.2 L of water to keep you hydrated during long-term workouts.",
+      "Practical use: Wide mouth that facilitates fast drinking and filling without complications.",
       "Cierre seguro: Tapa de rosca resistente que evita derrames.",
-      "Diseño robusto: Fabricado con materiales duraderos para soportar el uso diario intensivo."
+      "Robust design: Made of durable materials to support intensive daily use."
     ],
     "technical_details": {
       "range": "Nike Fuel Jug Chug 1,2 L",
@@ -78,9 +78,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Nike Fuel Jug Chug 1,2 L",
+    "product_model": "Nike Fuel Jug Jug 1.2 L",
     "sole_type": ""
   }
 }

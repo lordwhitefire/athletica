@@ -1,7 +1,7 @@
 {
   "id": "JC6411",
   "slug": "calcetines-media-cana-adidas-acolchados-3-pares-black",
-  "name": "media caña adidas acolchados 3 pares",
+  "name": "half cane adidas padded 3 pairs",
   "model": "media caña adidas acolchados 3 pares",
   "brand": "adidas",
   "category": "Socks",
@@ -78,9 +78,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas acolchados 3 pares",
+    "product_model": "half cane adidas padded 3 pairs",
     "sole_type": ""
   }
 }

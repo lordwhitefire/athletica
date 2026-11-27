@@ -1,7 +1,7 @@
 {
   "id": "HM2960-084",
   "slug": "chandal-nike-atletico-woven-grey",
-  "name": "Chándal Nike Atlético Woven",
+  "name": "Nike Atlético Woven",
   "model": "Chándal Nike Atlético Woven",
   "brand": "Nike",
   "category": "Accessories",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal Nike del Atlético de Madrid 2025 2026 - gris",
-    "tagline": "Diseño integral con alma rojiblanca",
-    "intro": "Este chándal Nike combina estilo y funcionalidad para los auténticos fans del Atlético. Con capucha y tejido técnico, es perfecto para tus rutinas o tu día a día.",
+    "subtitle": "Tracksuit Nike del Atlético de Madrid 2025 2026 - grey",
+    "tagline": "Integral design with a reddish-white soul",
+    "intro": "This Nike sweatshirt combines style and functionality for authentic Atlético fans. With Hoodie and technical fabric, it is perfect for your routines or your day-to-day.",
     "collection": "",
     "key_benefits": [
-      "Conjunto completo: Chaqueta con capucha y pantalón a juego.",
-      "Inspiración deportiva: Detalles y escudo del club bordados.",
-      "Tejido técnico: Protección ligera contra el viento."
+      "Complete set: Jacket with Hoodie and matching pants.",
+      "Sport Inspiration: Club details and shield embroidered.",
+      "Technical fabric: Light protection against wind."
     ],
     "technical_details": {
       "range": "Nike Atlético Woven",
@@ -92,9 +92,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'equipos'",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Atlético Woven",
+    "product_model": "Nike Atlético Woven",
     "sole_type": ""
   }
 }

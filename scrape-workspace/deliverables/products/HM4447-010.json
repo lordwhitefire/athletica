@@ -8,7 +8,7 @@
   "category_slug": "jerseys",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Negro / Azul",
+  "color": "Black / Blue",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta infantil de calentamiento prepartido Nike del Atlético de Madrid de la tercera equipación 2025 2026 - negra, azul",
+    "subtitle": "Nike pre-party children's t-shirt from the Atlético de Madrid of the third gear 2025 2025 - black, blue",
     "tagline": "Calienta motores como los grandes",
-    "intro": "La Camiseta Nike Atlético niño Pre-Match Dri-Fit Academy Pro es perfecta para los jovenes aficionados del club colchonero. Su combinación de tecnología Nike Dri-FIT y diseño vibrante los hace sentir parte del equipo.",
+    "intro": "The Nike Athletic Kid Pre-Match Dri-Fit Academy Pro is perfect for young fans of the Mattress Club. Their combination of Nike Dri-FIT technology and vibrant design makes them feel part of the team.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial para niños: Misma estética del primer equipo adaptada a su talla.",
+      "Official design for children: Same aesthetic of the first team adapted to your size.",
       "Comodidad al entrenar: Ligera y transpirable para moverse con libertad.",
-      "Inspiración real: Para que se sientan como parte del once inicial.",
-      "Estilo atlético: Colores y escudo del Atleti visibles con orgullo."
+      "Real Inspiration: So that you feel like part of the initial eleven.",
+      "Athletic style: Atleti colors and shield visible with pride."
     ],
     "technical_details": {
       "range": "Nike Atlético niño Pre-Match Dri-Fit Academy Pro",
@@ -94,9 +94,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético niño Pre-Match Dri-Fit Academy Pro",
+    "product_model": "Athletic child Pre-Match Dri-Fit Academy Pro",
     "sole_type": ""
   }
 }

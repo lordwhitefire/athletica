@@ -1,7 +1,7 @@
 {
   "id": "054748-01",
   "slug": "botellin-puma-portugal-750-ml-black",
-  "name": "Botellín Puma Portugal 750 ml",
+  "name": "Puma bottle Portugal 750 ml",
   "model": "Botellín Puma Portugal 750 ml",
   "brand": "Puma",
   "category": "Accessories",
@@ -93,9 +93,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Puma Portugal 750 ml",
+    "product_model": "Puma bottle Portugal 750 ml",
     "sole_type": ""
   }
 }

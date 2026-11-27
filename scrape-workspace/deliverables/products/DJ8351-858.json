@@ -1,7 +1,7 @@
 {
   "id": "DJ8351-858",
   "slug": "medias-nike-3a-atletico-2022-2023-stadium-orange",
-  "name": "Nike 3a Atlético 2022 2023 Stadium",
+  "name": "Nike 3rd Atlético 2022 2023 Stadium",
   "model": "3a Atlético 2022 2023 Stadium",
   "brand": "Nike",
   "category": "Socks",
@@ -80,9 +80,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Atlético 2022 2023 Stadium",
+    "product_model": "3rd Athletic 2022 2023 Stadium",
     "sole_type": ""
   }
 }

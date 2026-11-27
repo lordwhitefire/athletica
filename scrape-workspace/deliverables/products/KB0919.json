@@ -1,7 +1,7 @@
 {
   "id": "KB0919",
   "slug": "camiseta-adidas-mexico-entrenamiento-black",
-  "name": "adidas México Training",
+  "name": "adidas Mexico Training",
   "model": "México entrenamiento",
   "brand": "adidas",
   "category": "Boots",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de manga corta de entrenamiento adidas de la selección de México 2026 - negra",
-    "tagline": "Entrena con el espíritu de México",
-    "intro": "La camiseta adidas México 2026 de entrenamiento combina diseño moderno y rendimiento para acompañarte en cada sesión. Inspirada en la identidad de la selección, conecta con la energía y pasión del fútbol mexicano.",
+    "subtitle": "Adidas short sleeve training shirt from the Mexican selection 2026 - black",
+    "tagline": "Trains with the spirit of Mexico",
+    "intro": "The adidas Mexico 2026 training shirt combines modern design and performance to accompany you in each session. Inspired by the identity of the selection, it connects with the energy and passion of Mexican football.",
     "collection": "",
     "key_benefits": [
-      "Tecnología Climacool: Favorece la ventilación y mantiene la piel fresca y seca.",
+      "Climacool technology: Promotes ventilation and keeps skin fresh and dry.",
       "Lightweight fabric: Provides comfort and freedom of movement.",
-      "Paneles de ventilación: Mejoran la transpirabilidad durante el ejercicio.",
-      "Diseño entallado: Ajuste cómodo que acompaña el movimiento."
+      "Ventilation panels: Improve breathability during exercise.",
+      "Detailed design: Comfortable fit that accompanies movement."
     ],
     "technical_details": {
       "range": "adidas México entrenamiento",
@@ -96,9 +96,9 @@
     "category": "boots",
     "confidence": "high",
     "rule": "boot model",
-    "root_model": "México",
+    "root_model": "Mexico",
     "submodel": "Training",
-    "product_model": "México entrenamiento",
+    "product_model": "Mexico Training",
     "sole_type": ""
   }
 }

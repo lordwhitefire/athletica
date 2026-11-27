@@ -1,7 +1,7 @@
 {
   "id": "IB5225-475",
   "slug": "camiseta-nike-2a-usa-match-26-aero-fit-blue",
-  "name": "Nike 2a USA Match 26 Aero-Fit",
+  "name": "Nike 2nd USA Match 26 Aero-Fit",
   "model": "2a USA Match 26 Aero-Fit",
   "brand": "Nike",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a USA Match 26 Aero-Fit",
+    "product_model": "2nd USA Match 26 Aero-Fit",
     "sole_type": ""
   }
 }

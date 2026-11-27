@@ -1,7 +1,7 @@
 {
   "id": "JM8395-09J.A",
   "slug": "camiseta-adidas-2a-argentina-j-alvarez-26-black",
-  "name": "adidas 2a Argentina J.Álvarez 26",
+  "name": "adidas 2nd Argentina J.Álvarez 26",
   "model": "2a Argentina J.Álvarez 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Argentina J.Álvarez 26",
+    "product_model": "2nd Argentina J.Álvarez 26",
     "sole_type": ""
   }
 }

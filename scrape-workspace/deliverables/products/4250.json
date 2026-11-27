@@ -1,7 +1,7 @@
 {
   "id": "4250",
   "slug": "botiquin-de-futbol-zastor-first-black",
-  "name": "Botiquín de fútbol Zastor First",
+  "name": "Zastor First Football Kit",
   "model": "Botiquín de fútbol Zastor First",
   "brand": "Zastor",
   "category": "Accessories",
@@ -66,9 +66,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botiquín",
+    "root_model": "Kit",
     "submodel": "",
-    "product_model": "Botiquín de fútbol Zastor First",
+    "product_model": "Zastor First Football Kit",
     "sole_type": ""
   }
 }

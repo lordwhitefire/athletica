@@ -1,7 +1,7 @@
 {
   "id": "FQ2716-011",
   "slug": "camiseta-nike-3a-liverpool-nino-pre-match-dri-fit-black",
-  "name": "Nike 3a Liverpool Kids Pre-Match Dri-Fit",
+  "name": "Nike 3rd Liverpool Kids Pre-Match Dri-Fit",
   "model": "3a Liverpool niño Pre-Match Dri-Fit",
   "brand": "Nike",
   "category": "Jerseys",
@@ -82,9 +82,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Liverpool niño Pre-Match Dri-Fit",
+    "product_model": "3rd Liverpool Pre-Match Dri-Fit child",
     "sole_type": ""
   }
 }

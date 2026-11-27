@@ -1,7 +1,7 @@
 {
   "id": "HJ8029-092",
   "slug": "chandal-nike-inter-nino-entrenamiento-dri-fit-strike-grey",
-  "name": "Chándal Nike Inter Kids Training Dri-Fit Strike",
+  "name": "Nike Inter Kids Training Dri-Fit Strike",
   "model": "Chándal Nike Inter Kids Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal infantil de entrenamiento Nike del Inter de Milán - gris",
+    "subtitle": "Nike Children's Training Track from Inter Milan - grey",
     "tagline": "El futuro del Inter empieza en los entrenamientos",
-    "intro": "El chándal Nike Dri-FIT para niño del Inter de Milán combina el estilo oficial del club con un tejido técnico ideal para la actividad física. Un conjunto cómodo y funcional, diseñado para acompañar a los más jóvenes en cada paso de su evolución deportiva.",
+    "intro": "The Inter Milan’s Nike Dri-FIT for children combines the club’s official style with an ideal technical fabric for physical activity. A comfortable and functional set designed to accompany the youngest in every step of their sporting evolution.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial del Inter: Inspirado en la equipación de entrenamiento del club nerazzurro.",
-      "Comodidad total: Tejido suave y ligero que favorece la movilidad.",
-      "Control del sudor: Tecnología Dri-FIT que mantiene la piel seca durante el juego.",
-      "Ajuste juvenil: Corte slim fit adaptado a los movimientos infantiles.",
-      "Detalles funcionales: Cremalleras, bolsillos y acabado elástico para máxima practicidad."
+      "Official design of Inter: Inspired by the training equipment of the Nerazzurro club.",
+      "Total comfort: Soft and lightweight fabric that promotes mobility.",
+      "Sweat Control: Dri-FIT technology that keeps skin dry during play.",
+      "Juvenile adjustment: Slim fit cut adapted to children's movements.",
+      "Functional details: Zippers, pockets and elastic finish for maximum practicality."
     ],
     "technical_details": {
       "range": "Nike Inter niño entrenamiento Dri-Fit Strike",
@@ -100,9 +100,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Inter Kids Training Dri-Fit Strike",
+    "product_model": "Nike Inter Kids Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

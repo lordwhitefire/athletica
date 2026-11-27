@@ -1,7 +1,7 @@
 {
   "id": "P2GABX09-09",
   "slug": "camiseta-mizuno-3a-lazio-24-25-black",
-  "name": "Mizuno 3a Lazio 24 25",
+  "name": "Mizuno 3rd Lazio 24 25",
   "model": "3a Lazio 24 25",
   "brand": "Mizuno",
   "category": "Jerseys",
@@ -82,9 +82,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Lazio 24 25",
+    "product_model": "3rd Lazio 24 25",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "FP8397",
   "slug": "calcetines-media-cana-adidas-alphaskin-crew-acolchados-black",
-  "name": "media caña adidas Alphaskin Crew acolchados",
+  "name": "half adidas adidas Alphaskin Crew padded",
   "model": "media caña adidas Alphaskin Crew acolchados",
   "brand": "adidas",
   "category": "Socks",
@@ -78,9 +78,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Alphaskin Crew acolchados",
+    "product_model": "half adidas adidas Alphaskin Crew padded",
     "sole_type": ""
   }
 }

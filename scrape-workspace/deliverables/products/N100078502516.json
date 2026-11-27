@@ -1,7 +1,7 @@
 {
   "id": "N100078502516",
   "slug": "botellin-nike-hypercharge-straw-500-ml-grey",
-  "name": "Botellín Nike Hypercharge Straw 500 ml",
+  "name": "Nike Hypercharge Straw 500 ml bottle",
   "model": "Botellín Nike Hypercharge Straw 500 ml",
   "brand": "Nike",
   "category": "Accessories",
@@ -68,9 +68,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Nike Hypercharge Straw 500 ml",
+    "product_model": "Nike Hypercharge Straw 500 ml bottle",
     "sole_type": ""
   }
 }

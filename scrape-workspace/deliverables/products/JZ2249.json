@@ -1,14 +1,14 @@
 {
   "id": "JZ2249",
   "slug": "chaqueta-adidas-2a-espana-himno-originals-marron",
-  "name": "adidas 2a España himno Originals",
+  "name": "adidas 2nd Spain anthem Originals",
   "model": "2a España himno Originals",
   "brand": "adidas",
   "category": "Apparel",
   "category_slug": "apparel",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -90,9 +90,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a España himno Originals",
+    "product_model": "2nd Spain anthem Originals",
     "sole_type": ""
   }
 }

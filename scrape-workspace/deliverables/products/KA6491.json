@@ -1,14 +1,14 @@
 {
   "id": "KA6491",
   "slug": "camiseta-adidas-2a-espana-pre-match-marron",
-  "name": "adidas 2a España Pre-Match",
+  "name": "adidas 2nd Spain Pre-Match",
   "model": "2a España Pre-Match",
   "brand": "adidas",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de calentamiento prepartido adidas de la selección de España de la segunda equipación 2026 - borgoña",
-    "tagline": "Inspirada en la tradición literaria de España",
-    "intro": "La camiseta de calentamiento de la segunda equipación de España 2026 rinde homenaje a la riqueza cultural del país. Su diseño se inspira en obras clásicas y detalles de antiguos manuscritos, fusionando la tradición literaria española con el estilo futbolístico moderno.",
+    "subtitle": "Pre-partitioned heating t-shirt adidas from the selection of Spain of the second equipment 2026 - Burgundy",
+    "tagline": "Inspired by the literary tradition of Spain",
+    "intro": "The warm-up shirt of Spain’s second team 2026 pays tribute to the country’s cultural richness. Its design is inspired by classical works and details of ancient manuscripts, merging Spanish literary tradition with modern football style.",
     "collection": "",
     "key_benefits": [
-      "Tecnología Climacool: Ayuda a mantener la piel fresca y seca durante el entrenamiento.",
-      "Prenda oficial de calentamiento: Inspirada en la que utilizan los jugadores antes del partido.",
-      "Tejido ligero y transpirable: Favorece la comodidad durante el entrenamiento o el uso diario.",
-      "Diseño oficial de España: Perfecta para mostrar tu apoyo a la selección."
+      "Climacool Technology: Helps keep skin fresh and dry during training.",
+      "Official Warm-Up Pitch: Inspired by the one used by players before the match.",
+      "Lightweight and breathable fabric: Promote comfort during training or daily use.",
+      "Official design of Spain: Perfect to show your support for the selection."
     ],
     "technical_details": {
       "range": "adidas 2a España Pre-Match",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a España Pre-Match",
+    "product_model": "2nd Spain Pre-Match",
     "sole_type": ""
   }
 }

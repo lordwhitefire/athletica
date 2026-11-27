@@ -1,7 +1,7 @@
 {
   "id": "FQ2717-011",
   "slug": "camiseta-nike-3a-psg-nino-pre-match-dri-fit-black",
-  "name": "Nike 3a PSG Kids Pre-Match Dri-Fit",
+  "name": "Nike 3rd PSG Kids Pre-Match Dri-Fit",
   "model": "3a PSG niño Pre-Match Dri-Fit",
   "brand": "Nike",
   "category": "Jerseys",
@@ -84,9 +84,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a PSG niño Pre-Match Dri-Fit",
+    "product_model": "3rd PSG Pre-Match Dri-Fit child",
     "sole_type": ""
   }
 }

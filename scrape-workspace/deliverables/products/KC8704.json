@@ -1,7 +1,7 @@
 {
   "id": "KC8704",
   "slug": "camiseta-adidas-2a-italia-26-blue",
-  "name": "adidas 2a Italia 26",
+  "name": "adidas 2nd Italia 26",
   "model": "2a Italia 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la segunda equipación adidas de la selección de Italia 2026 - azul claro",
-    "tagline": "Elegancia y tradición del fútbol italiano",
-    "intro": "El diseño y el color de la camiseta de la segunda equipación de Italia 2026 se inspiran en la elegancia de los trajes de celebración que han lucido las selecciones italianas tras conquistar la victoria. Una prenda que refleja la tradición y el estilo característico del fútbol italiano.",
+    "subtitle": "T-shirt of the second equipment adidas of the Italian selection 2026 - light blue",
+    "tagline": "Elegance and tradition of Italian football",
+    "intro": "The design and colour of the T-shirt of Italy’s second team 2026 are inspired by the elegance of the celebration costumes that have been worn by Italian teams after winning the victory. A garment that reflects the tradition and style characteristic of Italian football.",
     "collection": "",
     "key_benefits": [
-      "Tecnología Climacool: Absorbe y dispersa el sudor para mantenerte fresco y seco durante el juego.",
-      "Tejido ligero y transpirable: Favorece la comodidad incluso en los momentos más intensos del partido.",
-      "Ajuste entallado: Proporciona una silueta deportiva y moderna.",
-      "Diseño oficial de Italia: Inspirado en la equipación que luce la selección en sus partidos como visitante."
+      "Climatecool technology: Absorb and disperse sweat to keep you cool and dry during play.",
+      "Lightweight and breathable fabric: Favor comfort even in the most intense moments of the match.",
+      "Fitting: Provides a sporty and modern silhouette.",
+      "Official Italian design: Inspired by the team that the selection looks like a visitor in their matches."
     ],
     "technical_details": {
       "range": "adidas 2a Italia 26",
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Italia 26",
+    "product_model": "2nd Italia 26",
     "sole_type": ""
   }
 }

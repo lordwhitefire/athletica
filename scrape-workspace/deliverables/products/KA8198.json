@@ -1,7 +1,7 @@
 {
   "id": "KA8198",
   "slug": "pantalon-adidas-espana-entrenamiento-blue",
-  "name": "adidas España Training",
+  "name": "adidas Spain Training",
   "model": "España entrenamiento",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo de entrenamiento adidas de la selección española 2026 - azul marino",
+    "subtitle": "Long training trousers adidas from the Spanish team 2026 - navy blue",
     "tagline": "Entrena con estilo y control",
-    "intro": "Pantalón de entrenamiento España 2026, ajuste atlético y libertad de movimiento en cada ejercicio.",
+    "intro": "Training pants Spain 2026, athletic fit and freedom of movement in each exercise.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial: Parte de la colección de entrenamiento de la selección española.",
-      "Tejido técnico: Material transpirable y ligero para un uso intensivo.",
-      "Tecnología aplicada: Incluye CLIMACOOL.",
-      "Ajuste ergonómico: Favorece la libertad de movimiento y el confort."
+      "Official design: Part of the Spanish team training collection.",
+      "Technical fabric: Breathable and lightweight material for intensive use.",
+      "Applied technology: Includes CLIMACOOL.",
+      "Ergonomic adjustment: Promotes freedom of movement and comfort."
     ],
     "technical_details": {
       "range": "adidas España entrenamiento",
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España entrenamiento",
+    "product_model": "Spain Training",
     "sole_type": ""
   }
 }

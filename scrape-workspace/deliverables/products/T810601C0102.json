@@ -1,14 +1,14 @@
 {
   "id": "T810601C0102",
   "slug": "camiseta-joma-2a-brentford-25-26-marron",
-  "name": "Joma 2a Brentford 25 26",
+  "name": "Joma 2nd Brentford 25 26",
   "model": "2a Brentford 25 26",
   "brand": "Joma",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la segunda equipación Joma del Brentford 2025 2026 - marrón",
+    "subtitle": "T-shirt of the second equipment Joma del Brentford 2025 2025 - brown",
     "tagline": "Elegancia para conquistar la Premier",
-    "intro": "La camiseta alternativa Joma del Brentford 25/26 apuesta por un diseño en marrón que combina tradición y modernidad. Con un estilo único, simboliza la determinación del club de marcar diferencia en la máxima competición inglesa.",
+    "intro": "The alternative Joma T-shirt of the Brentford 25/26 is a brown design that combines tradition and modernity. With a unique style, it symbolizes the club’s determination to make a difference in the maximum English competition.",
     "collection": "",
     "key_benefits": [
-      "Comodidad: Tejido ligero y flexible que asegura confort.",
-      "Transpirabilidad: Material de secado rápido que mantiene la frescura en todo momento.",
-      "Orgullo de club: Diseño oficial del Brentford."
+      "Comfort: Lightweight and flexible fabric that ensures comfort.",
+      "Breathability: Quick drying material that maintains freshness at all times.",
+      "Club Pride: Official design of Brentford."
     ],
     "technical_details": {
       "range": "Joma 2a Brentford 25 26",
@@ -94,9 +94,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Brentford 25 26",
+    "product_model": "2nd Brentford 25 26",
     "sole_type": ""
   }
 }

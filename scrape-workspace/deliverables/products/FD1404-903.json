@@ -1,7 +1,7 @@
 {
   "id": "FD1404-903",
   "slug": "calcetines-media-cana-nike-psg-everyday-3-pares",
-  "name": "media caña Nike PSG Everyday 3 pares",
+  "name": "half cane Nike PSG Everyday 3 pairs",
   "model": "media caña Nike PSG Everyday 3 pares",
   "brand": "Nike",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines Nike de media caña - multicolor",
-    "tagline": "Vive tu pasión parisina en cada paso",
-    "intro": "Estos calcetines Nike PSG Everyday no solo ofrecen confort y durabilidad, sino que llevan el escudo del club francés para que expreses tu lealtad en cada movimiento.",
+    "subtitle": "Pack of 3 Nike socks in half rod - multicolor",
+    "tagline": "Live your Parisian passion at every step",
+    "intro": "These Nike PSG Everyday socks not only offer comfort and durability, but also wear the French club's shield to express your loyalty in every move.",
     "collection": "",
     "key_benefits": [
       "Identidad PSG: Escudo bordado, letras y colores representativos del club.",
-      "Diseño versátil: Media caña ideal para looks deportivos o urbanos.",
-      "Comodidad fiable: Tejido suave y ajuste anatómico.",
-      "Pack práctico: Tres pares combinables y resistentes al uso frecuente."
+      "Versatile design: Medium rod ideal for sports or urban looks.",
+      "Reliable comfort: Soft fabric and anatomical fit.",
+      "Practical pack: Three pairs combinable and resistant to frequent use."
     ],
     "technical_details": {
       "range": "media caña Nike PSG Everyday 3 pares",
@@ -92,9 +92,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike PSG Everyday 3 pares",
+    "product_model": "half cane Nike PSG Everyday 3 pairs",
     "sole_type": ""
   }
 }

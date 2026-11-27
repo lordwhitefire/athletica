@@ -1,7 +1,7 @@
 {
   "id": "JX5738",
   "slug": "botellin-adidas-arsenal-red",
-  "name": "Botellín adidas Arsenal",
+  "name": "Adidas Arsenal bottle",
   "model": "Botellín adidas Arsenal",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento adidas del Arsenal de 750 ml - rojo",
-    "tagline": "Hidratación al ritmo del Arsenal",
-    "intro": "Lleva tu pasión al entrenamiento con este botellín adidas del Arsenal. Con 750 ml de capacidad, es ligero, resistente y cómodo para el uso diario.",
+    "subtitle": "Water bottle for training adidas of the Arsenal 750 ml - red",
+    "tagline": "Hydration at Arsenal rhythm",
+    "intro": "Take your passion to training with this Arsenal adidas bottle. With 750 ml capacity, it is lightweight, resistant and comfortable for daily use.",
     "collection": "",
     "key_benefits": [
-      "Hidratación sin interrupciones: Perfecto para beber rápidamente durante el ejercicio.",
-      "Diseño ligero y duradero: Material resistente que acompaña tu rutina diaria.",
-      "Fácil limpieza: Compatible con lavavajillas.",
-      "Boquilla retráctil: Práctica, higiénica y sin fugas.",
-      "Capacidad ideal de 750 ml: Lo justo para tu sesión de entrenamiento."
+      "Uninterrupted Hydration: Perfect for fast drinking during exercise.",
+      "Lightweight and durable design: Durable material that accompanies your daily routine.",
+      "Easy cleaning: Compatible with dishwasher.",
+      "Retractable nozzle: Practical, hygienic and without leaks.",
+      "Ideal 750 ml capacity: Just right for your training session."
     ],
     "technical_details": {
       "range": "adidas Arsenal",
@@ -92,9 +92,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'equipos'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Arsenal",
+    "product_model": "Adidas Arsenal bottle",
     "sole_type": ""
   }
 }

@@ -1,14 +1,14 @@
 {
   "id": "JM8386-11D",
   "slug": "camiseta-adidas-2a-belgica-doku-26-azul-rosa",
-  "name": "adidas 2a Bélgica Doku 26",
+  "name": "adidas 2nd Belgium Doku 26",
   "model": "2a Bélgica Doku 26",
   "brand": "adidas",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Azul / Rosa",
+  "color": "Blue / Pink",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Bélgica Doku 26",
+    "product_model": "2nd Belgium Doku 26",
     "sole_type": ""
   }
 }

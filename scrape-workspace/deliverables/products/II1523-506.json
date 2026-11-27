@@ -1,14 +1,14 @@
 {
   "id": "II1523-506",
   "slug": "camiseta-nike-2a-barcelona-mujer-26-27-df-stadium-bimbo-morado-negro",
-  "name": "Nike 2a Barcelona Women 26 27 DF Stadium BIMBO",
+  "name": "Nike 2nd Barcelona Women 26 27 DF Stadium BIMBO",
   "model": "2a Barcelona mujer 26 27 DF Stadium BIMBO",
   "brand": "Nike",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Women",
-  "color": "Morado / Negro",
+  "color": "Purple / Black",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Barcelona mujer 26 27 DF Stadium BIMBO",
+    "product_model": "2nd Barcelona woman 26 27 DF Stadium BIMBO",
     "sole_type": ""
   }
 }

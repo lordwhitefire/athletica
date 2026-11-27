@@ -1,7 +1,7 @@
 {
   "id": "N101086709124",
   "slug": "botellin-nike-refuel-grip-700-ml-black",
-  "name": "Botellín Nike Refuel Grip 700 ml",
+  "name": "Nike Reuel Grip 700 ml bottle",
   "model": "Botellín Nike Refuel Grip 700 ml",
   "brand": "Nike",
   "category": "Accessories",
@@ -68,9 +68,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Nike Refuel Grip 700 ml",
+    "product_model": "Nike Reuel Grip 700 ml bottle",
     "sole_type": ""
   }
 }

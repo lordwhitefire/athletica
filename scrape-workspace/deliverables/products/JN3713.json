@@ -1,7 +1,7 @@
 {
   "id": "JN3713",
   "slug": "camiseta-adidas-2a-colombia-1990-yellow",
-  "name": "adidas 2a Colombia 1990",
+  "name": "adidas 2nd Colombia 1990",
   "model": "2a Colombia 1990",
   "brand": "adidas",
   "category": "Jerseys",
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Colombia 1990",
+    "product_model": "2nd Colombia 1990",
     "sole_type": ""
   }
 }

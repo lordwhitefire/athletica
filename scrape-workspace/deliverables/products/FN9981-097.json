@@ -1,7 +1,7 @@
 {
   "id": "FN9981-097",
   "slug": "chandal-nike-tottenham-nino-entrenamiento-dri-fit-strike-grey",
-  "name": "Chándal Nike Tottenham Kids Training Dri-Fit Strike",
+  "name": "Nike Tottenham Kids Training Dri-Fit Strike",
   "model": "Chándal Nike Tottenham Kids Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -84,9 +84,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Tottenham Kids Training Dri-Fit Strike",
+    "product_model": "Nike Tottenham Kids Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "HF4000",
   "slug": "camiseta-algodon-adidas-alemania-nino-black",
-  "name": "algodón adidas Alemania Kids",
+  "name": "cotton adidas Germany Kids",
   "model": "algodón adidas Alemania Kids",
   "brand": "adidas",
   "category": "Jerseys",
@@ -82,9 +82,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "algodón",
+    "root_model": "cotton",
     "submodel": "",
-    "product_model": "algodón adidas Alemania Kids",
+    "product_model": "cotton adidas Germany Kids",
     "sole_type": ""
   }
 }

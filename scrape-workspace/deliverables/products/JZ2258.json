@@ -1,14 +1,14 @@
 {
   "id": "JZ2258",
   "slug": "vestido-adidas-espana-mujer-originals-marron",
-  "name": "Vestido adidas España Women Originals",
+  "name": "Adidas Spain Women Originals Dress",
   "model": "Vestido adidas España Women Originals",
   "brand": "adidas",
   "category": "Accessories",
   "category_slug": "accessories",
   "audience": "adult",
   "gender": "Women",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -96,7 +96,7 @@
     "rule": "source fallback 'equipos'",
     "root_model": "Vestido",
     "submodel": "",
-    "product_model": "Vestido adidas España Women Originals",
+    "product_model": "Adidas Spain Women Originals Dress",
     "sole_type": ""
   }
 }

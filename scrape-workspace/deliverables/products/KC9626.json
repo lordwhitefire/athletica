@@ -1,7 +1,7 @@
 {
   "id": "KC9626",
   "slug": "calcetines-media-cana-adidas-essential-crew-acolchado-3-par-black",
-  "name": "media caña adidas Essential Crew acolchado 3 par",
+  "name": "half cane adidas Essential Crew padded 3 pair",
   "model": "media caña adidas Essential Crew acolchado 3 par",
   "brand": "adidas",
   "category": "Socks",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines acolchados de media caña para entrenamiento adidas - negros",
-    "tagline": "Comodidad diaria con refuerzo y amortiguación",
-    "intro": "Los calcetines adidas Essential Crew acolchados están diseñados para ofrecer máximo confort en tu día a día. Su estructura con refuerzo en el arco plantar y amortiguación en zonas clave los convierte en una opción ideal tanto para entrenar como para uso diario.",
+    "subtitle": "Pack of 3 medium-cane padded socks for adidas training - black",
+    "tagline": "Daily comfort with reinforcement and cushioning",
+    "intro": "The adidas Essential Crew padded socks are designed to offer maximum comfort in your day to day. Their structure with reinforcement in the arch plantar and cushioning in key areas makes them an ideal choice for both training and daily use.",
     "collection": "",
     "key_benefits": [
-      "Amortiguación integrada: Plantilla acolchada que reduce el impacto y mejora la comodidad.",
-      "Refuerzo en el arco plantar: Mayor sujeción y ajuste para una pisada más estable.",
-      "Tejido suave y adaptable: Mezcla de materiales que proporciona confort durante todo el día.",
+      "Integrated dampening: Padded template that reduces impact and improves comfort.",
+      "Reinforcement in the plantar arch: Greater clamping and adjustment for a more stable tread.",
+      "Soft and adaptable fabric: Mixing materials that provides comfort throughout the day.",
       "Formato pack de 3: Practicidad y versatilidad para el uso diario o deportivo.",
-      "Diseño media caña: Cobertura ideal para entrenamiento y estilo casual."
+      "Medium rod design: Ideal coverage for training and casual style."
     ],
     "technical_details": {
       "range": "media caña adidas Essential Crew acolchado 3 par",
@@ -90,9 +90,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Essential Crew acolchado 3 par",
+    "product_model": "half cane adidas Essential Crew padded 3 pair",
     "sole_type": ""
   }
 }

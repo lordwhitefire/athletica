@@ -1,7 +1,7 @@
 {
   "id": "JZ2253",
   "slug": "chaqueta-adidas-espana-himno-blue",
-  "name": "adidas España himno",
+  "name": "adidas Spain anthem",
   "model": "España himno",
   "brand": "adidas",
   "category": "Apparel",
@@ -90,9 +90,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España himno",
+    "product_model": "Spain anthem",
     "sole_type": ""
   }
 }

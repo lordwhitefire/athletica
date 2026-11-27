@@ -1,7 +1,7 @@
 {
   "id": "ESP26TX1021",
   "slug": "camiseta-kelme-2a-espanyol-26-27-red",
-  "name": "Kelme 2a Espanyol 26 27",
+  "name": "Kelme 2nd Espanyol 26 27",
   "model": "2a Espanyol 26 27",
   "brand": "Kelme",
   "category": "Jerseys",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la segunda equipación Kelme del Espanyol 2026 2027 - roja",
+    "subtitle": "Shirt of the second equipment Kelme del Espanyol 2026 2027 - red",
     "tagline": "Un icono de los 90 regresa con el Espanyol",
-    "intro": "La camiseta Kelme 2a Espanyol 26 27 recupera una de las equipaciones más singulares y reconocibles de la historia del club: la camiseta visitante de la temporada 1992/93. Su característica base roja y las franjas horizontales blanquiazules de las mangas mantienen la esencia del diseño original, incorporando acabados contemporáneos y una textura exclusiva inspirada en el plumaje del perico. Una reedición que conecta historia, identidad y diseño para volver a lucir un clásico del RCD Espanyol.",
+    "intro": "The Kelme 2nd Espanyol 26 27 T-shirt recovers one of the most unique and recognizable equipment in the club's history: the visiting T-shirt of the 1992/93 season. Its characteristic red base and the white horizontal stripes of the sleeves maintain the essence of the original design, incorporating contemporary finishes and an exclusive texture inspired by the plumage of the perico. A re-editation that connects history, identity and design to re-show a classic of the RCD Espanyol.",
     "collection": "",
     "key_benefits": [
-      "Diseño histórico: Reedición de la segunda equipación utilizada por el Espanyol durante la temporada 1992/93.",
-      "Identidad perica: Una textura exclusiva integrada en el tejido interpreta los patrones geométricos del plumaje del perico.",
-      "Estética renovada: Conserva la reconocible base roja y las franjas blanquiazules incorporando detalles y acabados contemporáneos."
+      "Historical design: Reissued the second equipment used by Espanyol during the 1992/93 season.",
+      "Perique identity: An exclusive texture integrated into the fabric interprets the geometric patterns of the perico plumage.",
+      "Renovated aesthetics: Keep the recognizable red base and whiteish stripes incorporating contemporary details and finishes."
     ],
     "technical_details": {
       "range": "Kelme 2a Espanyol 26 27",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Espanyol 26 27",
+    "product_model": "2nd Espanyol 26 27",
     "sole_type": ""
   }
 }

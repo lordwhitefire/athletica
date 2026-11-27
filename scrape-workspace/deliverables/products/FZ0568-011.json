@@ -1,7 +1,7 @@
 {
   "id": "FZ0568-011",
   "slug": "sudadera-nike-2a-barcelona-pre-match-dri-fit-black",
-  "name": "Nike 2a Barcelona Pre-Match Dri-Fit",
+  "name": "Nike 2nd Barcelona Pre-Match Dri-Fit",
   "model": "2a Barcelona Pre-Match Dri-Fit",
   "brand": "Nike",
   "category": "Apparel",
@@ -78,9 +78,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'sudadera'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Barcelona Pre-Match Dri-Fit",
+    "product_model": "2nd Barcelona Pre-Match Dri-Fit",
     "sole_type": ""
   }
 }

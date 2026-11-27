@@ -1,7 +1,7 @@
 {
   "id": "GH7252",
   "slug": "guantes-termicos-adidas-tiro-black",
-  "name": "térmicos adidas Tiro",
+  "name": "adidas Tyre thermals",
   "model": "térmicos adidas Tiro",
   "brand": "adidas",
   "category": "Goalkeeper Gloves",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Guantes térmicos para el invierno adidas - negros",
-    "tagline": "Calidez sencilla para tu día a día",
-    "intro": "Los guantes adidas Tiro están confeccionados en tejido cálido y elástico que mantiene las manos abrigadas durante todo el invierno. Un diseño versátil que se adapta a tu día a día, entrenamientos y actividades al aire libre.",
+    "subtitle": "Adidas Winter Thermal Gloves - Black",
+    "tagline": "Simple warmth for your day to day",
+    "intro": "The adidas Tyre gloves are made of warm and elastic fabric that keeps your hands warm throughout the winter. A versatile design that adapts to your day-to-day, workouts and outdoor activities.",
     "collection": "",
     "key_benefits": [
-      "Aislamiento térmico: protege las manos del frío sin añadir volumen.",
-      "Comodidad elástica: punto que se adapta para un ajuste agradable.",
-      "Versátiles: ideales para el día a día, entrenamientos y actividades al aire libre.",
-      "Agarre funcional: refuerzos discretos que aportan sujeción cuando la necesitas."
+      "Thermal insulation: protects hands from cold without adding volume.",
+      "Elastic comfort: a point that fits for a pleasant fit.",
+      "Versatiles: ideal for day to day, workouts and outdoor activities.",
+      "Functional grip: discrete reinforcements that provide support when you need it."
     ],
     "technical_details": {
       "range": "térmicos adidas Tiro",
@@ -86,9 +86,9 @@
     "category": "goalkeeper-gloves",
     "confidence": "high",
     "rule": "name contains 'guante'",
-    "root_model": "térmicos",
+    "root_model": "thermal",
     "submodel": "",
-    "product_model": "térmicos adidas Tiro",
+    "product_model": "adidas Tyre thermals",
     "sole_type": ""
   }
 }

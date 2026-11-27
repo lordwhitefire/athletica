@@ -1,14 +1,14 @@
 {
   "id": "II1674-505-16R.C",
   "slug": "camiseta-nike-2a-fcb-rodrigo-nino-26-27-dri-fit-stadium-ucl-morado-negro",
-  "name": "Nike 2a FCB Rodrigo Kids 26 27 Dri-Fit Stadium UCL",
+  "name": "Nike 2nd FCB Rodrigo Kids 26 27 Dri-Fit Stadium UCL",
   "model": "2a FCB Rodrigo niño 26 27 Dri-Fit Stadium UCL",
   "brand": "Nike",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Morado / Negro",
+  "color": "Purple / Black",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -94,9 +94,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a FCB Rodrigo niño 26 27 Dri-Fit Stadium UCL",
+    "product_model": "2nd FCB Rodrigo child 26 27 Dri-Fit Stadium UCL",
     "sole_type": ""
   }
 }

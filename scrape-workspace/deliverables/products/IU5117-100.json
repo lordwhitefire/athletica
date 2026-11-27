@@ -1,7 +1,7 @@
 {
   "id": "IU5117-100",
   "slug": "calcetines-media-cana-nike-psg-everyday-crew-white",
-  "name": "media caña Nike PSG Everyday Crew",
+  "name": "half-cane Nike PSG Everyday Crew",
   "model": "media caña Nike PSG Everyday Crew",
   "brand": "Nike",
   "category": "Socks",
@@ -19,7 +19,7 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Par de calcetines de media caña Nike del PSG - blancos",
+    "subtitle": "Pair of PSG Nike Half Cane Socks - White",
     "tagline": "Comodidad y rendimiento con el estilo del PSG",
     "intro": "The Nike PSG Everyday Crew mid-calf socks are designed to offer comfort and support for every workout or daily use. Inspired by Paris Saint-Germain, they combine sporty style with high-quality materials.",
     "collection": "",
@@ -92,9 +92,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike PSG Everyday Crew",
+    "product_model": "half-cane Nike PSG Everyday Crew",
     "sole_type": ""
   }
 }

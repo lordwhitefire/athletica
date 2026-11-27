@@ -1,14 +1,14 @@
 {
   "id": "KC3251",
   "slug": "chandal-adidas-juventus-nino-entrenamiento-blanco-negro",
-  "name": "Chándal adidas Juventus Kids Training",
+  "name": "Adidas Juventus Kids Training Track",
   "model": "Chándal adidas Juventus Kids Training",
   "brand": "adidas",
   "category": "Apparel",
   "category_slug": "apparel",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Blanco / Negro",
+  "color": "White / Black",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal infantil de entrenamiento adidas de la Juventus 2025 2026 - blanco y negro",
-    "tagline": "Entrena con el espíritu de la Vecchia Signora",
-    "intro": "Este chándal de entrenamiento adidas de la Juventus para niños ofrece comodidad y estilo profesional inspirado en los colores del club. Perfecto para jóvenes que quieren entrenar como sus ídolos, con tejido técnico y ajuste juvenil.",
+    "subtitle": "Adidas children's training sweatshirt from Juventus 2025 2025 - black and white",
+    "tagline": "Train with the spirit of the Vecchia Signora",
+    "intro": "This adidas training sweatshirt from the Juventus for children offers comfort and professional style inspired by the colors of the club. Perfect for young people who want to train like their idols, with technical fabric and youthful fit.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial: Inspirado en la ropa de entrenamiento de la Juventus.",
-      "Confort térmico: Tejido suave ideal para mantener el calor durante los entrenos.",
-      "Libertad de movimiento: Corte optimizado para jugadores en crecimiento.",
+      "Official design: Inspired by Juventus training clothes.",
+      "Thermal comfort: Soft fabric ideal for keeping the heat during training.",
+      "Freedom of movement: Optimised cut for growing players.",
       "Identidad del club: Escudo visible y detalles adidas en ambas piezas.",
-      "Conjunto completo: Chaqueta con cremallera y pantalón con cintura elástica."
+      "Complete set: Jacket with zipper and pants with elastic waist."
     ],
     "technical_details": {
       "range": "adidas Juventus niño entrenamiento",
@@ -94,9 +94,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal adidas Juventus Kids Training",
+    "product_model": "Adidas Juventus Kids Training Track",
     "sole_type": ""
   }
 }

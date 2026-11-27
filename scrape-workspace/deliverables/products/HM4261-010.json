@@ -1,7 +1,7 @@
 {
   "id": "HM4261-010",
   "slug": "chaqueta-nike-2a-barcelona-mujer-entrenamiento-black",
-  "name": "Nike 2a Barcelona Women Training",
+  "name": "Nike 2nd Barcelona Women Training",
   "model": "2a Barcelona mujer entrenamiento",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chaqueta de chándal para mujer de entrenamiento Nike del FC Barcelona 2025 2026 - negra",
-    "tagline": "Diseño sobrio, rendimiento total",
-    "intro": "La chaqueta Nike de entrenamiento femenina del Barça rinde tributo a Kobe Bryant con un look elegante en negro, acompañada de tecnología Dri-FIT para mantenerte cómoda antes, durante y después del entreno.",
+    "subtitle": "Women's Nike training jacket from FC Barcelona 2025 2026 - black",
+    "tagline": "Sober design, total performance",
+    "intro": "The Barça’s Nike Women’s Training Jacket pays tribute to Kobe Bryant with a stylish black look, accompanied by Dri-FIT technology to keep you comfortable before, during and after training.",
     "collection": "",
     "key_benefits": [
-      "Logo de Kobe: Detalle especial que aporta exclusividad y carácter.",
-      "Ajuste femenino: Corte entallado que favorece la movilidad.",
-      "Tejido funcional: Secado rápido y ventilación eficiente.",
-      "Estilo versátil: Ideal para entrenar o vestir con un look deportivo premium."
+      "Kobe logo: Special detail that brings exclusivity and character.",
+      "Female adjustment: Cut-in which promotes mobility.",
+      "Functional fabric: Quick drying and efficient ventilation.",
+      "Versatile Style: Ideal for training or dressing with a premium sport look."
     ],
     "technical_details": {
       "range": "Nike 2a Barcelona mujer entrenamiento",
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Barcelona mujer entrenamiento",
+    "product_model": "2nd Barcelona woman training",
     "sole_type": ""
   }
 }

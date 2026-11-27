@@ -1,7 +1,7 @@
 {
   "id": "JW4938",
   "slug": "botellin-adidas-juventus-black",
-  "name": "Botellín adidas Juventus",
+  "name": "Adidas Juventus bottle",
   "model": "Botellín adidas Juventus",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento adidas de la Juventus de 750 ml - negro",
-    "tagline": "Hidratación con esencia bianconera",
-    "intro": "Este botellín adidas de la Juventus es el aliado ideal para mantenerte fresco durante entrenamientos y partidos. Su diseño ligero y resistente ofrece la comodidad que necesitas en cada sesión.",
+    "subtitle": "Water bottle for training adidas of the Juventus 750 ml - black",
+    "tagline": "Hydration with a biancaner essence",
+    "intro": "This adidas Juventus bottle is the ideal ally for keeping you cool during workouts and matches. Its lightweight and sturdy design offers the comfort you need in each session.",
     "collection": "",
     "key_benefits": [
-      "Hidratación rápida: Perfecto para usar durante la actividad física.",
+      "Fast Hydration: Perfect for use during physical activity.",
       "Material resistente y ligero: Ideal para llevar al campo o al gimnasio.",
-      "Fácil limpieza: Compatible con lavavajillas.",
-      "Boquilla retráctil: Hidratación sin esfuerzo y sin fugas.",
+      "Easy cleaning: Compatible with dishwasher.",
+      "Retractable nozzle: Hydration effortlessly and without leaks.",
       "Capacidad adecuada: 750 ml para tus entrenamientos diarios."
     ],
     "technical_details": {
@@ -87,9 +87,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Juventus",
+    "product_model": "Adidas Juventus bottle",
     "sole_type": ""
   }
 }

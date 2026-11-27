@@ -1,7 +1,7 @@
 {
   "id": "N100062243024",
   "slug": "botellin-nike-hypercharge-700-ml-blue",
-  "name": "Botellín Nike Hypercharge 700 ml",
+  "name": "Nike Hypercharge 700 ml bottle",
   "model": "Botellín Nike Hypercharge 700 ml",
   "brand": "Nike",
   "category": "Accessories",
@@ -74,9 +74,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Nike Hypercharge 700 ml",
+    "product_model": "Nike Hypercharge 700 ml bottle",
     "sole_type": ""
   }
 }

@@ -8,7 +8,7 @@
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Negro / Azul",
+  "color": "Black / Blue",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de calentamiento prepartido Nike del Atlético de Madrid de la tercera equipación 2025 2026 - negra, azul",
+    "subtitle": "Nike pre-partitioned warm-up shirt from the Atlético de Madrid of the third equipment 2025 2025 - black, blue",
     "tagline": "Preparado para rendir desde el primer minuto",
-    "intro": "La Camiseta Nike Atlético Pre-Match Dri-Fit Academy Pro es la camiseta perfecta para un look deportivo con estilo. Su tecnología Dri-FIT y diseño dinámico en negro y azul te permiten entrar en calor con estilo y eficacia.",
+    "intro": "The Nike Athletic Pre-Match Dri-Fit Academy Pro T-shirt is the perfect shirt for a stylish sport look. Its Dri-FIT technology and dynamic design in black and blue allow you to warm up with style and efficiency.",
     "collection": "",
     "key_benefits": [
-      "Diseño pre-match oficial: Misma estética usada por los jugadores.",
-      "Tejido técnico Dri-FIT: Absorbe el sudor antes del pitido inicial.",
-      "Estilo moderno: Colores en contraste con detalles en azul eléctrico.",
+      "Official pre-match design: Same aesthetic used by players.",
+      "Dri-FIT technical fabric: Absorb sweat before initial beeping.",
+      "Modern Style: Contrast colors with details in electric blue.",
       "Comodidad total: Corte ligero que se adapta al cuerpo."
     ],
     "technical_details": {
@@ -94,9 +94,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético Pre-Match Dri-Fit Academy Pro",
+    "product_model": "Athletic Pre-Match Dri-Fit Academy Pro",
     "sole_type": ""
   }
 }

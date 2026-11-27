@@ -1,7 +1,7 @@
 {
   "id": "DN2725-100",
   "slug": "short-nike-2a-liverpool-2022-2023-dri-fit-stadium-white",
-  "name": "Nike 2a Liverpool 2022 2023 Dri-Fit Stadium",
+  "name": "Nike 2nd Liverpool 2022 2023 Dri-Fit Stadium",
   "model": "2a Liverpool 2022 2023 Dri-Fit Stadium",
   "brand": "Nike",
   "category": "Apparel",
@@ -80,9 +80,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Liverpool 2022 2023 Dri-Fit Stadium",
+    "product_model": "2nd Liverpool 2022 2023 Dri-Fit Stadium",
     "sole_type": ""
   }
 }

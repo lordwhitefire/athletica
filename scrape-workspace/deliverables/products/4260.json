@@ -1,14 +1,14 @@
 {
   "id": "4260",
   "slug": "bolsa-frio-zastor-intantaneo-icy-azul-blanco",
-  "name": "Bolsa frío Zastor intantáneo ICY",
+  "name": "Cold bag Intantaneous Zastor ICY",
   "model": "Bolsa frío Zastor intantáneo ICY",
   "brand": "Zastor",
   "category": "Accessories",
   "category_slug": "accessories",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Azul / Blanco",
+  "color": "Blue / White",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Bolsa de frío instantáneo Zastor - blanca y azul",
-    "tagline": "Alivio inmediato y práctico en situaciones de emergencia",
-    "intro": "La bolsa Zastor de frío instantáneo proporciona un efecto frío rápido y eficaz para aliviar el dolor tras un golpe o lesión. Su diseño desechable la convierte en un recurso seguro y listo para usar en cualquier momento.",
+    "subtitle": "Instant cold bag Zastor - white and blue",
+    "tagline": "Immediate and practical relief in emergency situations",
+    "intro": "The Instant Cold Zastor bag provides a quick and effective cold effect to relieve pain after a blow or injury. Its disposable design makes it a safe and ready to use resource at any time.",
     "collection": "",
     "key_benefits": [
-      "Acción inmediata: Ofrece frío instantáneo tras la activación.",
+      "Immediate action: Offers instant cold after activation.",
       "Alivio eficaz: Reduce inflamaciones y molestias ocasionadas por golpes o lesiones.",
-      "Uso práctico: Efecto frío sin necesidad de almacenarla en la nevera.",
-      "Fácil activación: Basta con golpear la bolsa para que la reacción de las sales nitrogenadas genere el efecto frío."
+      "Practical use: Cold effect without storage in the refrigerator.",
+      "Easy activation: Just hit the bag so that the reaction of the nitrogen salts generates the cold effect."
     ],
     "technical_details": {
       "range": "frío Zastor intantáneo ICY",
@@ -75,7 +75,7 @@
     "rule": "name contains 'bolsa'",
     "root_model": "Bolsa",
     "submodel": "",
-    "product_model": "Bolsa frío Zastor intantáneo ICY",
+    "product_model": "Cold bag Intantaneous Zastor ICY",
     "sole_type": ""
   }
 }

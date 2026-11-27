@@ -1,7 +1,7 @@
 {
   "id": "973125",
   "slug": "botellin-runbott-termo-espanyol-600-ml-blue",
-  "name": "Botellín Runbott Termo Espanyol 600 ml",
+  "name": "Runbott Hot Bottle Espanyol 600 ml",
   "model": "Botellín Runbott Termo Espanyol 600 ml",
   "brand": "Runbott",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín térmico de agua Runbott del Espanyol de 600 ml - azul marino",
+    "subtitle": "Water Heat Bottle Runbott of the Spanish 600 ml - navy blue",
     "tagline": "Orgullo perico en cada detalle",
-    "intro": "Este botellín de 600 ml es el compañero perfecto para los fieles del Espanyol. Su tono púrpura oscuro y el escudo grabado lo convierten en un accesorio con personalidad y pasión.",
+    "intro": "This 600 ml bottle is the perfect companion for the faithful of the Espanyol. Its dark purple tone and engraved shield make it an accessory with personality and passion.",
     "collection": "",
     "key_benefits": [
-      "Diseño sobrio: Color púrpura oscuro con escudo del Espanyol.",
+      "Sober design: Dark purple color with Spanish shield.",
       "Capacidad funcional: 600 ml ideal para cualquier rutina.",
-      "Construcción de calidad: Acero inoxidable reutilizable y resistente.",
-      "Termo eficiente: Mantiene bebidas frías o calientes durante horas."
+      "Quality construction: Reusable and resistant stainless steel.",
+      "Efficient Thermo: Keeps drinks cold or hot for hours."
     ],
     "technical_details": {
       "range": "Runbott Termo Espanyol 600 ml",
@@ -90,9 +90,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Runbott Termo Espanyol 600 ml",
+    "product_model": "Runbott Hot Bottle Espanyol 600 ml",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "JY5076",
   "slug": "camiseta-adidas-2a-venezuela-26-white",
-  "name": "adidas 2a Venezuela 26",
+  "name": "adidas 2nd Venezuela 26",
   "model": "2a Venezuela 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Venezuela 26",
+    "product_model": "2nd Venezuela 26",
     "sole_type": ""
   }
 }

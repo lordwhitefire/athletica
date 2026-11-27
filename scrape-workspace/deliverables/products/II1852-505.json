@@ -1,14 +1,14 @@
 {
   "id": "II1852-505",
   "slug": "camiseta-nike-2a-barcelona-nino-match-26-27-aero-fit-negro-morado",
-  "name": "Nike 2a Barcelona Kids Match 26 27 Aero-Fit",
+  "name": "Nike 2nd Barcelona Kids Match 26 27 Aero-Fit",
   "model": "2a Barcelona niño Match 26 27 Aero-Fit",
   "brand": "Nike",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Negro / Morado",
+  "color": "Black / Purple",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Barcelona niño Match 26 27 Aero-Fit",
+    "product_model": "2nd Barcelona boy Match 26 27 Aero-Fit",
     "sole_type": ""
   }
 }

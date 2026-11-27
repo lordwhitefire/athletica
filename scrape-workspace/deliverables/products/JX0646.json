@@ -1,14 +1,14 @@
 {
   "id": "JX0646",
   "slug": "calcetines-media-cana-adidas-bayern-negro-blanco",
-  "name": "media caña adidas Bayern",
+  "name": "half cane adidas Bayern",
   "model": "media caña adidas Bayern",
   "brand": "adidas",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Negro / Blanco",
+  "color": "Black / White",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Par de calcetines de media caña adidas del Bayern de Múnich - negros, blancos",
+    "subtitle": "Pair of half-cane socks adidas from Bayern Munich - black, white",
     "tagline": "Comodidad diaria con alma futbolera",
-    "intro": "Estos calcetines adidas del Bayern de Múnich son el accesorio perfecto para llevar el escudo del club incluso en tu día a día. De media caña, ligeros y elásticos, te ofrecen sujeción y estilo con un diseño limpio y deportivo.",
+    "intro": "These adidas socks from Bayern Munich are the perfect accessory to wear the club’s shield even on your day. Half-cane, lightweight and elastic, offer you fastening and style with a clean and sporty design.",
     "collection": "",
     "key_benefits": [
-      "Diseño inspirado en el Bayern: Detalles oficiales y estética sobria.",
-      "Ajuste cómodo: Tejido elástico que se adapta sin apretar.",
-      "Uso diario: Perfectos para vestir con deportivas o para entrenamiento ligero.",
-      "Tejido transpirable: Permite que el pie respire durante todo el día.",
-      "Durabilidad garantizada: Refuerzos en talón y puntera para mayor resistencia."
+      "Bayern-inspired design: Official details and sober aesthetics.",
+      "Comfortable fit: Elastic fabric that adapts without tightening.",
+      "Daily use: Perfect for wearing sports or for light training.",
+      "Breathable fabric: Allows the foot to breathe throughout the day.",
+      "Guaranteed durability: Heel and toe reinforcements for greater strength."
     ],
     "technical_details": {
       "range": "media caña adidas Bayern",
@@ -92,9 +92,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Bayern",
+    "product_model": "half cane adidas Bayern",
     "sole_type": ""
   }
 }

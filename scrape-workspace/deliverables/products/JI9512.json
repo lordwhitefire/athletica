@@ -1,7 +1,7 @@
 {
   "id": "JI9512",
   "slug": "short-adidas-2a-arsenal-25-26-blue",
-  "name": "adidas 2a Arsenal 25 26",
+  "name": "adidas 2nd Arsenal 25 26",
   "model": "2a Arsenal 25 26",
   "brand": "adidas",
   "category": "Apparel",
@@ -94,9 +94,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Arsenal 25 26",
+    "product_model": "2nd Arsenal 25 26",
     "sole_type": ""
   }
 }

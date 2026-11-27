@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Sudadera de paseo Nike del Atlético - negra",
+    "subtitle": "Nike Walk Hoodie from Atlético - Black",
     "tagline": "Calidez y orgullo colchonero en cada detalle",
-    "intro": "La sudadera Nike Atlético T90 negra ofrece abrigo y estilo en una sola prenda. Inspirada en la estética retro del fútbol, es perfecta para mostrar tu pasión sin renunciar al confort.",
+    "intro": "The Nike Atlético T90 black sweatshirt offers coat and style in a single garment. Inspired by the retro aesthetics of football, it is perfect to show your passion without giving up comfort.",
     "collection": "",
     "key_benefits": [
-      "Diseño nostálgico: Líneas T90 adaptadas a la moda urbana.",
-      "Sensación acogedora: Interior suave para días más frescos.",
-      "Escudo visible: Detalle del Atleti en el pecho que habla por sí solo.",
-      "Versatilidad total: Válida para uso casual o momentos previos al partido.",
-      "Diseño fiel al escudo: Gráficos alineados con el estilo del Atlético."
+      "Nostalgic design: T90 lines adapted to urban fashion.",
+      "Cozy feeling: Soft interior for cooler days.",
+      "Visible Shield: Detail of Atleti in the chest speaking on its own.",
+      "Total Versatility: Valid for casual use or moments prior to the match.",
+      "Shield-faithful design: Graphics aligned with the Atlético style."
     ],
     "technical_details": {
       "range": "Nike Atlético T90",
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'sudadera'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético T90",
+    "product_model": "Athletic T90",
     "sole_type": ""
   }
 }

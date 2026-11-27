@@ -1,14 +1,14 @@
 {
   "id": "JX3186",
   "slug": "calcetines-media-cana-adidas-real-madrid-blanco-azul",
-  "name": "media caña adidas Real Madrid",
+  "name": "half cane adidas Real Madrid",
   "model": "media caña adidas Real Madrid",
   "brand": "adidas",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Blanco / Azul",
+  "color": "White / Blue",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Par de calcetines de media caña adidas del Real Madrid - blancos, azules",
+    "subtitle": "Pair of socks of half cane adidas from Real Madrid - white, blue",
     "tagline": "Comodidad diaria con alma futbolera",
-    "intro": "Estos calcetines adidas del Real Madrid son el accesorio perfecto para llevar el escudo del club incluso en tu día a día. De media caña, ligeros y elásticos, te ofrecen sujeción y estilo con un diseño limpio y deportivo.",
+    "intro": "These adidas socks from Real Madrid are the perfect accessory to wear the club’s shield even in your day to day. Half-cane, lightweight and elastic, offer you fastening and style with a clean and sporty design.",
     "collection": "",
     "key_benefits": [
-      "Diseño inspirado en el Madrid: Detalles oficiales y estética sobria.",
-      "Ajuste cómodo: Tejido elástico que se adapta sin apretar.",
-      "Uso diario: Perfectos para vestir con deportivas o para entrenamiento ligero.",
-      "Tejido transpirable: Permite que el pie respire durante todo el día.",
-      "Durabilidad garantizada: Refuerzos en talón y puntera para mayor resistencia."
+      "Madrid-inspired design: Official details and sober aesthetics.",
+      "Comfortable fit: Elastic fabric that adapts without tightening.",
+      "Daily use: Perfect for wearing sports or for light training.",
+      "Breathable fabric: Allows the foot to breathe throughout the day.",
+      "Guaranteed durability: Heel and toe reinforcements for greater strength."
     ],
     "technical_details": {
       "range": "media caña adidas Real Madrid",
@@ -88,9 +88,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Real Madrid",
+    "product_model": "half cane adidas Real Madrid",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "IK0353",
   "slug": "calcetines-media-cana-adidas-sportwear-acolchados-3-pares",
-  "name": "media caña adidas Sportwear acolchados 3 pares",
+  "name": "half cane adidas Sportwear padded 3 pairs",
   "model": "media caña adidas Sportwear acolchados 3 pares",
   "brand": "adidas",
   "category": "Socks",
@@ -71,9 +71,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Sportwear acolchados 3 pares",
+    "product_model": "half cane adidas Sportwear padded 3 pairs",
     "sole_type": ""
   }
 }

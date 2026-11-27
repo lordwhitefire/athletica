@@ -1,7 +1,7 @@
 {
   "id": "FQ3104-492",
   "slug": "pantalon-nike-3a-atletico-nino-sportswear-club-blue",
-  "name": "Nike 3a Atlético Kids Sportswear Club",
+  "name": "Nike 3rd Atlético Kids Sportswear Club",
   "model": "3a Atlético niño Sportswear Club",
   "brand": "Nike",
   "category": "Apparel",
@@ -80,9 +80,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'pantalon'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Atlético niño Sportswear Club",
+    "product_model": "3rd Athletic Child Sportswear Club",
     "sole_type": ""
   }
 }

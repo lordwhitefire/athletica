@@ -1,7 +1,7 @@
 {
   "id": "4252",
   "slug": "botiquin-zastor-19-x-14-x-6-cm-red",
-  "name": "Botiquín Zastor 19 x 14 x 6 cm",
+  "name": "Zastor 19 x 14 x 6 cm",
   "model": "Botiquín Zastor 19 x 14 x 6 cm",
   "brand": "Zastor",
   "category": "Accessories",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botiquín de primeros auxilios Zastor (19 cm x 14 cm x 6 cm) - rojo",
+    "subtitle": "First aid kit Zastor (19 cm x 14 cm x 6 cm) - red",
     "tagline": "Asistencia inmediata siempre a mano",
-    "intro": "Compacto, ligero y funcional, este botiquín de primeros auxilios Zastor es el compañero ideal para entrenamientos y partidos. Su tamaño optimizado lo hace perfecto para llevar en mochilas técnicas o dentro del banquillo.",
+    "intro": "Compact, lightweight and functional, this first aid kit Zastor is the ideal companion for training and matches. Its optimized size makes it perfect for carrying in technical backpacks or inside the bench.",
     "collection": "",
     "key_benefits": [
-      "Diseño compacto: Medidas reducidas para un fácil transporte.",
-      "Alta visibilidad: Color rojo para una rápida identificación.",
-      "Espacio funcional: Compartimentos útiles para llevar lo esencial."
+      "Compact design: Reduced measures for easy transport.",
+      "High visibility: Red color for quick identification.",
+      "Functional space: Useful compartments to carry the essentials."
     ],
     "technical_details": {
       "range": "Zastor 19 x 14 x 6 cm",
@@ -71,9 +71,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botiquín",
+    "root_model": "Kit",
     "submodel": "",
-    "product_model": "Botiquín Zastor 19 x 14 x 6 cm",
+    "product_model": "Zastor 19 x 14 x 6 cm",
     "sole_type": ""
   }
 }

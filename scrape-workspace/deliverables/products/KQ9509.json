@@ -1,7 +1,7 @@
 {
   "id": "KQ9509",
   "slug": "calcetines-media-cana-adidas-football-acolchados-black",
-  "name": "media caña adidas Football acolchados",
+  "name": "half adidas football padded cane",
   "model": "media caña adidas Football acolchados",
   "brand": "adidas",
   "category": "Balls",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Calcetines acolchados de media caña para entrenamiento adidas - negros",
+    "subtitle": "Half-cane padded socks for adidas training - black",
     "tagline": "Rendimiento y frescura en cada movimiento",
-    "intro": "Los calcetines adidas Football Crew acolchados están diseñados para jugadores que buscan comodidad y rendimiento en cada sesión. Gracias a la tecnología CLIMACOOL y su diseño acolchado, mantienen los pies frescos, secos y protegidos durante todo el entrenamiento.",
+    "intro": "The adidas Football Crew padded socks are designed for players who seek comfort and performance in each session. Thanks to CLIMACOOL technology and its padded design, they keep their feet fresh, dry and protected throughout the training.",
     "collection": "",
     "key_benefits": [
-      "CLIMACOOL: Tecnología que evacua el sudor para mantener los pies secos y frescos.",
-      "Amortiguación estratégica: Refuerzo en zonas clave para mejorar la comodidad y reducir impactos.",
-      "Tejido de secado rápido: Mantiene el confort incluso en sesiones intensas.",
-      "Diseño media caña: Equilibrio perfecto entre sujeción y libertad de movimiento."
+      "CLIMACOOL: Technology that evacuates sweat to keep feet dry and fresh.",
+      "Strategic dampening: Reinforcement in key areas to improve comfort and reduce impacts.",
+      "Fast drying fabric: Maintains comfort even in intense sessions.",
+      "Medium cane design: Perfect balance between subjection and freedom of movement."
     ],
     "technical_details": {
       "range": "media caña adidas Football acolchados",
@@ -88,9 +88,9 @@
     "category": "balls",
     "confidence": "high",
     "rule": "name contains 'ball'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Football acolchados",
+    "product_model": "half adidas football padded cane",
     "sole_type": ""
   }
 }

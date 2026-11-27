@@ -1,7 +1,7 @@
 {
   "id": "KG0231",
   "slug": "chaqueta-adidas-japon-eqt-blue",
-  "name": "adidas Japón EQT",
+  "name": "adidas Japan EQT",
   "model": "Japón EQT",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chaqueta de chándal adidas de la selección de Japón - azul",
-    "tagline": "El regreso del estilo más icónico de Japón",
-    "intro": "La chaqueta adidas Japón EQT recupera la esencia de la legendaria línea Equipment con un diseño inspirado en la selección japonesa. Su estética retro combina paneles de color llamativos, detalles clásicos de la JFA y un corte holgado que aporta comodidad y personalidad. Una prenda perfecta para los aficionados al fútbol y a la moda deportiva vintage.",
+    "subtitle": "Adidas sweatshirt jacket from the Japan selection - blue",
+    "tagline": "The return of Japan’s most iconic style",
+    "intro": "The adidas Japan EQT jacket recovers the essence of the legendary Equipment line with a design inspired by the Japanese selection. Its retro aesthetic combines striking color panels, classic JFA details and a loose cut that brings comfort and personality. A perfect garment for football fans and vintage sports fashion.",
     "collection": "",
     "key_benefits": [
-      "Diseño EQT retro: Inspirado en una de las colecciones más emblemáticas de adidas.",
-      "Corte holgado: Ofrece comodidad y libertad de movimiento para el día a día.",
-      "Cuello alto con cremallera: Mayor protección y estilo deportivo.",
-      "Detalles oficiales de Japón: Escudo de la JFA y elementos gráficos exclusivos."
+      "Retro EQT design: Inspired by one of the most iconic adidas collections.",
+      "Loose cut: Offers comfort and freedom of movement for day to day.",
+      "High neck with zipper: Greater protection and sporty style.",
+      "Official details of Japan: JFA Shield and exclusive graphics elements."
     ],
     "technical_details": {
       "range": "adidas Japón EQT",
@@ -84,9 +84,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "Japón",
+    "root_model": "Japan",
     "submodel": "",
-    "product_model": "Japón EQT",
+    "product_model": "Japan EQT",
     "sole_type": ""
   }
 }

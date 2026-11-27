@@ -1,7 +1,7 @@
 {
   "id": "IU6256-100",
   "slug": "calcetines-media-cana-nike-chelsea-everyday-crew-white",
-  "name": "media caña Nike Chelsea Everyday Crew",
+  "name": "half-cane Nike Chelsea Everyday Crew",
   "model": "media caña Nike Chelsea Everyday Crew",
   "brand": "Nike",
   "category": "Socks",
@@ -92,9 +92,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Chelsea Everyday Crew",
+    "product_model": "half-cane Nike Chelsea Everyday Crew",
     "sole_type": ""
   }
 }

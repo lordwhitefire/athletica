@@ -1,7 +1,7 @@
 {
   "id": "HM3222-010",
   "slug": "short-nike-3a-chelsea-25-26-df-stadium-black",
-  "name": "Nike 3a Chelsea 25 26 DF Stadium",
+  "name": "Nike 3rd Chelsea 25 26 DF Stadium",
   "model": "3a Chelsea 25 26 DF Stadium",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón corto de la tercera equipación Nike del Chelsea 2025 2026 - negro",
+    "subtitle": "Short pants of the third Nike team of Chelsea 2025 2025 - black",
     "tagline": "Ligereza para acelerar",
-    "intro": "El short 2025/2026 une identidad y rendimiento en un diseño pensado para la afición del club.",
+    "intro": "The short 2025/2026 combines identity and performance in a design designed for the club's hobby.",
     "collection": "",
     "key_benefits": [
-      "Frescura inmediata: Tejido liviano para altas temperaturas.",
-      "Ajuste cómodo: Cintura elástica que se adapta al cuerpo.",
-      "Movilidad total: Patrón pensado para acelerar y girar.",
+      "Immediate freshness: Light fabric for high temperatures.",
+      "Comfortable fit: Elastic waistband that fits the body.",
+      "Total mobility: Pattern designed to accelerate and rotate.",
       "Identidad: Detalles del equipo que inspiran."
     ],
     "technical_details": {
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Chelsea 25 26 DF Stadium",
+    "product_model": "3rd Chelsea 25 26 DF Stadium",
     "sole_type": ""
   }
 }

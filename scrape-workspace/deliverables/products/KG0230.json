@@ -1,7 +1,7 @@
 {
   "id": "KG0230",
   "slug": "camiseta-adidas-japon-eqt-white",
-  "name": "adidas Japón EQT",
+  "name": "adidas Japan EQT",
   "model": "Japón EQT",
   "brand": "adidas",
   "category": "Jerseys",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de algodón de manga corta adidas de la selección de Japón - blanca",
-    "tagline": "Un homenaje al legado del fútbol japonés",
-    "intro": "La camiseta adidas Japón EQT recupera la esencia de una de las líneas más icónicas de adidas combinando inspiración futbolera y estilo urbano. Su diseño en color blanco incorpora detalles clásicos de la federación japonesa y de la colección EQT, convirtiéndola en una prenda perfecta para quienes quieren mostrar su pasión por la selección de Japón dentro y fuera del estadio.",
+    "subtitle": "Japanese selection of short sleeve cotton shirt - white",
+    "tagline": "A tribute to the legacy of Japanese football",
+    "intro": "The adidas Japan EQT T-shirt recovers the essence of one of the most iconic adidas lines combining football inspiration and urban style. Its white design incorporates classic details from the Japanese federation and the EQT collection, making it a perfect garment for those who want to show their passion for Japan's selection inside and outside the stadium.",
     "collection": "",
     "key_benefits": [
-      "Diseño EQT retro: Inspirado en la histórica colección Equipment de adidas.",
-      "Tejido de algodón: Suave, cómodo y agradable al tacto para el uso diario.",
+      "Retro EQT design: Inspired by the historic Equipment collection of adidas.",
+      "Cotton fabric: Soft, comfortable and pleasant to the touch for daily use.",
       "Corte holgado: Aporta libertad de movimiento y un estilo desenfadado.",
-      "Detalles oficiales de Japón: Incluye escudo federativo y logotipos adidas distintivos."
+      "Official details of Japan: Includes federative shield and distinctive adidas logos."
     ],
     "technical_details": {
       "range": "adidas Japón EQT",
@@ -88,9 +88,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Japón",
+    "root_model": "Japan",
     "submodel": "",
-    "product_model": "Japón EQT",
+    "product_model": "Japan EQT",
     "sole_type": ""
   }
 }

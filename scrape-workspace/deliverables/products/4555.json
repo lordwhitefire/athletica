@@ -1,7 +1,7 @@
 {
   "id": "4555",
   "slug": "munequera-silbato-arbitro-zastor-keep-black",
-  "name": "Muñequera silbato árbitro Zastor Keep",
+  "name": "Doll whistle referee Zastor Keep",
   "model": "Muñequera silbato árbitro Zastor Keep",
   "brand": "Zastor",
   "category": "Accessories",
@@ -68,9 +68,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Muñequera",
+    "root_model": "Doll",
     "submodel": "",
-    "product_model": "Muñequera silbato árbitro Zastor Keep",
+    "product_model": "Doll whistle referee Zastor Keep",
     "sole_type": ""
   }
 }

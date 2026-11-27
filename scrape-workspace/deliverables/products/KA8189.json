@@ -1,7 +1,7 @@
 {
   "id": "KA8189",
   "slug": "short-adidas-espana-entrenamiento-blue",
-  "name": "adidas España Training",
+  "name": "adidas Spain Training",
   "model": "España entrenamiento",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón corto de entrenamiento adidas de la selección española 2026 - azul marino",
+    "subtitle": "Short training trousers adidas from the Spanish team 2026 - navy blue",
     "tagline": "Agilidad y frescura en cada paso",
-    "intro": "Short de entrenamiento oficial de España 2026, diseñado para máxima libertad de movimiento y transpirabilidad.",
+    "intro": "Official Spanish training short 2026, designed for maximum freedom of movement and breathability.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial: Inspirado en la indumentaria de entrenamiento de la selección española.",
-      "Comodidad superior: Tejido suave, ligero y transpirable para el máximo confort.",
-      "Tecnología aplicada: Incluye CLIMACOOL (transpirabilidad en cada movimiento).",
-      "Preparado para la acción: Diseño atlético para sesiones de entrenamiento dinámicas."
+      "Official design: Inspired by the Spanish team's training outfit.",
+      "Superior comfort: Soft, lightweight and breathable fabric for maximum comfort.",
+      "Applied technology: Includes CLIMACOOL (perspirability in each movement).",
+      "Ready for action: Athletic design for dynamic training sessions."
     ],
     "technical_details": {
       "range": "adidas España entrenamiento",
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España entrenamiento",
+    "product_model": "Spain Training",
     "sole_type": ""
   }
 }

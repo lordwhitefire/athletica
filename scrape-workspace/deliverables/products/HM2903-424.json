@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo Nike del Atlético de Madrid - azul marino",
-    "tagline": "Comodidad atlética para tus días de afición",
-    "intro": "Este pantalón del Atlético de Madrid te ofrece un look deportivo y relajado, ideal para entrenar, pasear o animar al Atleti. Inspirado en la ropa urbana con ADN rojiblanco.",
+    "subtitle": "Nike Long Pant of Atlético de Madrid - navy blue",
+    "tagline": "Athletic comfort for your days of hobby",
+    "intro": "This Atlético de Madrid trousers offers a sporty and relaxed look, ideal for training, walking or animating the Atleti. Inspired by urban clothes with red-white DNA.",
     "collection": "",
     "key_benefits": [
       "Orgullo colchonero: Detalles oficiales del Atleti visibles.",
-      "Tacto suave: Tejido agradable para llevar a diario.",
-      "Versatilidad: Úsalo para entrenar o para vestir con estilo.",
-      "Comodidad ajustable: Cintura elástica con cordón y tobillos ceñidos."
+      "Soft touch: Nice fabric to wear daily.",
+      "Versatility: Use it for training or dress in style.",
+      "Adjustable comfort: Elastic waistband with lace and tight ankles."
     ],
     "technical_details": {
       "range": "Nike Atlético Sportswear Club",
@@ -86,7 +86,7 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'pantalon'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
     "product_model": "Atlético Sportswear Club",
     "sole_type": ""

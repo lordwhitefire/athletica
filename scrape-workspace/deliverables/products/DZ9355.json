@@ -1,14 +1,14 @@
 {
   "id": "DZ9355",
   "slug": "calcetines-media-cana-adidas-cush-crew-3-pares-blanco-negro",
-  "name": "media caña adidas Cush Crew 3 pares",
+  "name": "half cane adidas Cush Crew 3 pairs",
   "model": "media caña adidas Cush Crew 3 pares",
   "brand": "adidas",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Blanco / Negro",
+  "color": "White / Black",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -74,9 +74,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Cush Crew 3 pares",
+    "product_model": "half cane adidas Cush Crew 3 pairs",
     "sole_type": ""
   }
 }

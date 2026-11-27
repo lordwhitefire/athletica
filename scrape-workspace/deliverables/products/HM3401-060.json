@@ -1,7 +1,7 @@
 {
   "id": "HM3401-060",
   "slug": "chandal-nike-atletico-entrenamiento-dri-fit-strike-grey",
-  "name": "Chándal Nike Atlético Training Dri-Fit Strike",
+  "name": "Nike Atlético Training Dri-Fit Strike",
   "model": "Chándal Nike Atlético Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal de entrenamiento Nike del Atlético de Madrid 2025 2026 - gris",
+    "subtitle": "Nike training track from Atlético Madrid 2025 2025 - grey",
     "tagline": "Entrena como el equipo rojiblanco",
-    "intro": "El Chándal Nike Atlético entrenamiento Dri-Fit Strike forma parte de la línea Strike del Atlético. Con tecnología Dri-FIT y corte deportivo, es ideal para llevar tu entrenamiento al siguiente nivel.",
+    "intro": "The Nike Athletic Dri-Fit Strike training is part of the Strike line of Athletics. With Dri-FIT technology and sports cut, it is ideal to take your training to the next level.",
     "collection": "",
     "key_benefits": [
-      "Diseño técnico: Inspirado en las sesiones de entrenamiento del equipo.",
+      "Technical design: Inspired by the team's training sessions.",
       "Transpirabilidad superior: Te mantiene seco incluso en entrenos intensos.",
-      "Libertad de movimiento: Ajuste dinámico y materiales flexibles.",
+      "Freedom of movement: Dynamic adjustment and flexible materials.",
       "Identidad del club: Escudo y logo Nike en el pecho."
     ],
     "technical_details": {
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Atlético Training Dri-Fit Strike",
+    "product_model": "Nike Atlético Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

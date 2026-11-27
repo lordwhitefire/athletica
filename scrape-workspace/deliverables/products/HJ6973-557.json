@@ -1,7 +1,7 @@
 {
   "id": "HJ6973-557",
   "slug": "chandal-nike-atletico-entrenamiento-dri-fit-strike-purple",
-  "name": "Chándal Nike Atlético Training Dri-Fit Strike",
+  "name": "Nike Atlético Training Dri-Fit Strike",
   "model": "Chándal Nike Atlético Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal de entrenamiento Nike del Atlético de Madrid - púrpura",
+    "subtitle": "Nike Training Track of Atlético de Madrid - Purple",
     "tagline": "Entrena con intensidad, luce como un profesional",
-    "intro": "El chándal Nike Strike del Atlético de Madrid está diseñado para quienes entrenan con la misma entrega que los grandes. Su tejido técnico Dri-FIT mantiene el cuerpo seco mientras perfeccionas tu juego.",
+    "intro": "The Nike Strike Track from Atlético Madrid is designed for those who train with the same delivery as the big ones. Its Dri-FIT technical fabric keeps the body dry while you perfect your game.",
     "collection": "",
     "key_benefits": [
-      "Inspiración profesional: Mismo diseño que el usado por los jugadores en los entrenamientos oficiales.",
-      "Regulación térmica: Tecnología Dri-FIT que evacua el sudor para mayor frescura.",
-      "Ajuste deportivo: Corte estilizado para libertad total de movimiento.",
+      "Professional Inspiration: Same design as used by players in official trainings.",
+      "Thermal regulation: Dri-FIT technology that evacuates sweat for freshness.",
+      "Sport fit: Stylized cut for total freedom of movement.",
       "Detalles funcionales: Cremalleras en bajos y bolsillos con cierre.",
-      "Look completo: Incluye chaqueta con cremallera y pantalón a juego."
+      "Full look: Includes zip jacket and matching pants."
     ],
     "technical_details": {
       "range": "Nike Atlético entrenamiento Dri-Fit Strike",
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Atlético Training Dri-Fit Strike",
+    "product_model": "Nike Atlético Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

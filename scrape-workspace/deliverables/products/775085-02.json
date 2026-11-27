@@ -1,14 +1,14 @@
 {
   "id": "775085-02",
   "slug": "camiseta-puma-2a-manchester-city-authentic-24-25-amarillo-azul",
-  "name": "Puma 2a Manchester City authentic 24 25",
+  "name": "Puma 2nd Manchester City authentic 24 25",
   "model": "2a Manchester City authentic 24 25",
   "brand": "Puma",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Amarillo / Azul",
+  "color": "Yellow / Blue",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -86,9 +86,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Manchester City authentic 24 25",
+    "product_model": "2nd Manchester City authentic 24 25",
     "sole_type": ""
   }
 }

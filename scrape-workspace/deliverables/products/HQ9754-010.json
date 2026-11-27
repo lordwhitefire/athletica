@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo de paseo Nike del Atlético - negro",
-    "tagline": "Comodidad rojiblanca para tu día a día",
-    "intro": "El pantalón largo Nike Atlético T90 ofrece confort premium y estilo deportivo. Un básico para representar a tu equipo con orgullo y elegancia.",
+    "subtitle": "Nike Long Walk Pant from Atlético - Black",
+    "tagline": "Red-white comfort for your day to day",
+    "intro": "Nike Atlético T90 long trousers offer premium comfort and sporty style. A basic to represent your team with pride and elegance.",
     "collection": "",
     "key_benefits": [
-      "Estilo Total90: Detalles visuales que evocan la herencia Nike fútbol.",
-      "Ajuste cómodo: Cintura elástica con cordón para un fit personalizado.",
+      "Total Style90: Visual details that evoke the Nike football heritage.",
+      "Comfortable fit: Elastic waistband with cord for a custom fit.",
       "Versatilidad urbana: Ideal para entrenar o vestir informal.",
       "Funcionalidad extra: Bolsillos seguros para objetos personales.",
-      "Inspiración deportiva: Parte del conjunto oficial del club."
+      "Sport Inspiration: Part of the club's official ensemble."
     ],
     "technical_details": {
       "range": "Nike Atlético T90 Woven",
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'pantalon'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético T90 Woven",
+    "product_model": "Athletic T90 Woven",
     "sole_type": ""
   }
 }

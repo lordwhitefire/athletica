@@ -1,7 +1,7 @@
 {
   "id": "JI7420",
   "slug": "short-adidas-3a-manchester-united-25-26-black",
-  "name": "adidas 3a Manchester United 25 26",
+  "name": "adidas 3rd Manchester United 25 26",
   "model": "3a Manchester United 25 26",
   "brand": "adidas",
   "category": "Apparel",
@@ -94,9 +94,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Manchester United 25 26",
+    "product_model": "3rd Manchester United 25 26",
     "sole_type": ""
   }
 }

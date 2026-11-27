@@ -1,7 +1,7 @@
 {
   "id": "HQ1821-010",
   "slug": "camiseta-nike-2a-barcelona-primary-stmt-dri-fit-black",
-  "name": "Nike 2a Barcelona Primary STMT Dri-Fit",
+  "name": "Nike 2nd Barcelona Primary STMT Dri-Fit",
   "model": "2a Barcelona Primary STMT Dri-Fit",
   "brand": "Nike",
   "category": "Jerseys",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de algodón de manga corta Nike del FC Barcelona - negra",
+    "subtitle": "FC Barcelona Nike Short Sleeve Cotton T-Shirt - black",
     "tagline": "Estilo callejero con alma blaugrana",
-    "intro": "La camiseta Nike Kobe x Barça Primary es mucho más que una prenda: es un homenaje a la conexión entre dos leyendas. Su diseño negro y detalles exclusivos unen el espíritu competitivo de Kobe Bryant con la identidad del FC Barcelona.",
+    "intro": "The Nike Kobe x Barça Primary T-shirt is much more than just a garment: it is a tribute to the connection between two legends. Its black design and exclusive details unite Kobe Bryant's competitive spirit with the identity of FC Barcelona.",
     "collection": "",
     "key_benefits": [
-      "Diseño icónico: Gráficos que rinden tributo a Kobe Bryant y al Barça.",
-      "Comodidad urbana: Tejido de algodón suave y transpirable.",
+      "Iconic design: Graphics that pay tribute to Kobe Bryant and Barça.",
+      "Urban comfort: Soft and breathable cotton fabric.",
       "Estilo lifestyle: Ideal para looks streetwear y deportivos.",
-      "Edición limitada: Producto exclusivo con esencia coleccionable."
+      "Limited Edition: Exclusive product with collectible essence."
     ],
     "technical_details": {
       "range": "Nike 2a Barcelona Primary STMT Dri-Fit",
@@ -94,9 +94,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Barcelona Primary STMT Dri-Fit",
+    "product_model": "2nd Barcelona Primary STMT Dri-Fit",
     "sole_type": ""
   }
 }

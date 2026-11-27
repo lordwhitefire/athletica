@@ -1,7 +1,7 @@
 {
   "id": "JN4456",
   "slug": "camiseta-adidas-2a-argelia-26-green",
-  "name": "adidas 2a Argelia 26",
+  "name": "adidas 2nd Argelia 26",
   "model": "2a Argelia 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Argelia 26",
+    "product_model": "2nd Argelia 26",
     "sole_type": ""
   }
 }

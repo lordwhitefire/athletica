@@ -1,14 +1,14 @@
 {
   "id": "JZ2256",
   "slug": "camiseta-adidas-espana-originals-marron",
-  "name": "adidas España Originals",
+  "name": "adidas Spain Originals",
   "model": "España Originals",
   "brand": "adidas",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -94,9 +94,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España Originals",
+    "product_model": "Spain Originals",
     "sole_type": ""
   }
 }

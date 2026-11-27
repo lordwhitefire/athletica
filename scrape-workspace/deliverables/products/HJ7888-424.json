@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo infantil de entrenamiento Nike del Atlético de Madrid - azul marino",
-    "tagline": "Rinde al máximo como un profesional",
-    "intro": "El pantalón de entrenamiento Nike Strike del Atlético de Madrid está diseñado para ofrecer comodidad y rendimiento en cada sesión. Su ajuste entallado y tejido técnico mantienen la piel seca incluso en los entrenamientos más intensos. Ideal para jóvenes futbolistas que entrenan con pasión y estilo.",
+    "subtitle": "Nike long training trousers from Atlético de Madrid - navy blue",
+    "tagline": "He's doing the best he can as a professional.",
+    "intro": "The Nike Strike training pants from the Atlético de Madrid are designed to offer comfort and performance in each session. Their fit and technical fabric keep the skin dry even in the most intense workouts. Ideal for young footballers who train with passion and style.",
     "collection": "",
     "key_benefits": [
-      "Comodidad superior: Tejido Dri-FIT que elimina el sudor y mantiene la piel seca.",
-      "Libertad de movimiento: Corte slim y diseño entallado para moverte con agilidad.",
-      "Detalles prácticos: Cremalleras en los bajos para un ajuste fácil sobre botas.",
-      "Uso versátil: Perfecto para entrenamientos, partidos o uso diario."
+      "Superior Comfort: Dri-FIT fabric that removes sweat and keeps the skin dry.",
+      "Freedom of movement: Slim cut and detailed design to move with agility.",
+      "Practical details: Zippers on the bass for easy fit on boots.",
+      "Versatile use: Perfect for workouts, matches or daily use."
     ],
     "technical_details": {
       "range": "Nike Atlético niño entrenamiento Dri-Fit Strike",
@@ -90,9 +90,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético niño entrenamiento Dri-Fit Strike",
+    "product_model": "Athletic Kid Dri-Fit Strike Training",
     "sole_type": ""
   }
 }

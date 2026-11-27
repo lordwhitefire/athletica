@@ -1,7 +1,7 @@
 {
   "id": "KD2772",
   "slug": "botellin-adidas-performance-750-ml-white",
-  "name": "Botellín adidas Performance 750 ml",
+  "name": "Adidas Performance 750 ml bottle",
   "model": "Botellín adidas Performance 750 ml",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento adidas de 750 ml - blanco",
-    "tagline": "Tu compañero diario de hidratación",
-    "intro": "Diseñado para quienes entrenan duro y se mantienen activos, el botellín adidas de 0,75 L combina resistencia, estilo y funcionalidad en cada sorbo. Su diseño ergonómico y estructura duradera lo convierten en una opción ideal para el gimnasio, el entrenamiento o tu día a día.",
+    "subtitle": "750 ml adidas water bottle for training - white",
+    "tagline": "Your daily hydration partner",
+    "intro": "Designed for hard training and active, the 0.75 L adidas bottle combines strength, style and functionality in each sip. Its ergonomic design and durable structure make it an ideal choice for the gym, workout or day-to-day.",
     "collection": "",
     "key_benefits": [
-      "Diseño resistente: Estructura moldeada por inyección que garantiza durabilidad.",
-      "Apertura segura: Cierre de rosca hermético que evita derrames.",
-      "Estilo adidas: Logotipo frontal icónico y acabado deportivo."
+      "Durable design: Injection molded structure that ensures durability.",
+      "Safe opening: Watertight screw closure that prevents spills.",
+      "Adidas style: iconic front logo and sporty finish."
     ],
     "technical_details": {
       "range": "adidas Performance 750 ml",
@@ -80,9 +80,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Performance 750 ml",
+    "product_model": "Adidas Performance 750 ml bottle",
     "sole_type": ""
   }
 }

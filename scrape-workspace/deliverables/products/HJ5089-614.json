@@ -8,7 +8,7 @@
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Women",
-  "color": "Rojo / Blanco",
+  "color": "Red / White",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta para mujer de la primera equipación Nike del Atlético de Madrid 2025 2026 - blanca, roja",
-    "tagline": "Estilo rojiblanco para cada ocasión",
-    "intro": "Luce los colores del Atleti con la Camiseta Nike Atlético mujer 25 26 Dri-Fit Stadium. Diseñada para seguidores fieles, esta camiseta combina comodidad, transpirabilidad y un diseño auténtico. Ideal para entrenar o animar a tu equipo con orgullo.",
+    "subtitle": "Women's T-shirt of the first Nike equipment of the Atlético de Madrid 2025 2025 - white, red",
+    "tagline": "Red-white style for every occasion",
+    "intro": "Light the Atleti colors with the Nike Athletic Women's T-Shirt 25 26 Dri-Fit Stadium. Designed for faithful followers, this T-shirt combines comfort, breathability and authentic design. Ideal for training or cheering your team with pride.",
     "collection": "",
     "key_benefits": [
-      "Diseño auténtico: Inspirada en la clássica equipación del Atlético",
-      "Comodidad total: Tejido suave y corte adaptado al cuerpo.",
+      "Authentic design: Inspired by the classic Atlético equipment",
+      "Total comfort: Soft fabric and cut adapted to the body.",
       "Transpirabilidad activa: Mantiene tu piel seca en todo momento.",
-      "Pasión rojiblanca: Incluye escudo y detalles del club.",
+      "Red-white Passion: Includes shield and club details.",
       "Versatilidad: Perfecta para entrenar, jugar o animar."
     ],
     "technical_details": {
@@ -100,9 +100,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético mujer 25 26 Dri-Fit Stadium",
+    "product_model": "Athletic woman 25 26 Dri-Fit Stadium",
     "sole_type": ""
   }
 }

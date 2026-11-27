@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo de entrenamiento Nike del Atlético de Madrid - azul marino",
+    "subtitle": "Nike long training trousers from Atlético de Madrid - navy blue",
     "tagline": "Comodidad y rendimiento en cada movimiento",
-    "intro": "El Pantalón Nike Atlético entrenamiento Dri-Fit Strike está diseñado para ofrecer libertad de movimiento y transpirabilidad en cada jugada. Ideal para entrenamientos o partidos intensos, su tejido técnico mantiene la piel seca y el ajuste cómodo garantiza un desempeño óptimo.",
+    "intro": "The Nike Athletic Dri-Fit Strike training pants are designed to offer freedom of movement and breathability in every move. Ideal for intense workouts or matches, their technical fabric keeps the skin dry and comfortable fit ensures optimal performance.",
     "collection": "",
     "key_benefits": [
-      "Rendimiento activo: Diseñado para ofrecer libertad en cada movimiento.",
-      "Control de la humedad: Tecnología Dri-FIT que mantiene la piel seca.",
-      "Comodidad superior: Cintura elástica con ajuste regulable.",
-      "Identidad de equipo: Incluye escudo del Atlético de Madrid.",
-      "Uso versátil: Perfecto para entrenar o vestir con estilo deportivo."
+      "Active Performance: Designed to offer freedom in every move.",
+      "Moisture control: Dri-FIT technology that keeps the skin dry.",
+      "Superior comfort: Elastic waist with adjustable fit.",
+      "Team identity: Includes the coat of arms of Atlético de Madrid.",
+      "Versatile use: Perfect for training or dressing in sports style."
     ],
     "technical_details": {
       "range": "Nike Atlético entrenamiento Dri-Fit Strike",
@@ -94,9 +94,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético entrenamiento Dri-Fit Strike",
+    "product_model": "Athletic Dri-Fit Strike Training",
     "sole_type": ""
   }
 }

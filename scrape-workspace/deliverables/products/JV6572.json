@@ -1,7 +1,7 @@
 {
   "id": "JV6572",
   "slug": "chaqueta-adidas-liverpool-presentacion-black",
-  "name": "adidas Liverpool presentación",
+  "name": "adidas Liverpool presentation",
   "model": "Liverpool presentación",
   "brand": "adidas",
   "category": "Apparel",
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "Liverpool presentación",
+    "root_model": "Liverpool presentation",
     "submodel": "",
-    "product_model": "Liverpool presentación",
+    "product_model": "Liverpool presentation",
     "sole_type": ""
   }
 }

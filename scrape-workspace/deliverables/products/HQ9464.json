@@ -1,14 +1,14 @@
 {
   "id": "HQ9464",
   "slug": "adidas-espana-barreda-decode-j-azul-rojo",
-  "name": "adidas España Barreda Decode J",
+  "name": "adidas Spain Barreda Decode J",
   "model": "España Barreda Decode J",
   "brand": "adidas",
   "category": "Accessories",
   "category_slug": "accessories",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Azul / Rojo",
+  "color": "Blue / Red",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Zapatillas de fútbol infantiles adidas de la selección española - azul marino, rojas",
-    "tagline": "Pasión por España en cada paso",
-    "intro": "Las adidas España Barreda Decode J combinan estilo deportivo y orgullo de selección en un diseño pensado para jóvenes futbolistas.",
+    "subtitle": "Adidas children's football shoes from the Spanish team - navy blue, red",
+    "tagline": "Passion for Spain at every step",
+    "intro": "The adidas Spain Barreda Decode J combine sports style and selection pride in a design designed for young footballers.",
     "collection": "",
     "key_benefits": [
       "Comodidad infantil: Empeine textil que se adapta con suavidad al pie.",
-      "Estabilidad segura: Suela de goma que aporta tracción fiable.",
-      "Identidad española: Diseño inspirado en la selección nacional."
+      "Safe stability: Rubber sole that provides reliable traction.",
+      "Spanish identity: Design inspired by the national team."
     ],
     "technical_details": {
       "range": "España Barreda Decode J",
@@ -98,9 +98,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'equipos'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España Barreda Decode J",
+    "product_model": "Spain Barreda Decode J",
     "sole_type": ""
   }
 }

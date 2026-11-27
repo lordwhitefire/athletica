@@ -1,7 +1,7 @@
 {
   "id": "JM8381-11D",
   "slug": "camiseta-adidas-belgica-doku-26-red",
-  "name": "adidas Bélgica Doku 26",
+  "name": "adidas Belgium Doku 26",
   "model": "Bélgica Doku 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica Doku 26",
+    "product_model": "Belgium Doku 26",
     "sole_type": ""
   }
 }

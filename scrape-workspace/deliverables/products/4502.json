@@ -1,7 +1,7 @@
 {
   "id": "4502",
   "slug": "tarjetero-arbitro-zastor-club-black",
-  "name": "Tarjetero árbitro Zastor Club",
+  "name": "Tarjetero referido Zastor Club",
   "model": "Tarjetero árbitro Zastor Club",
   "brand": "Zastor",
   "category": "Accessories",
@@ -72,7 +72,7 @@
     "rule": "source fallback 'accesorios'",
     "root_model": "Tarjetero",
     "submodel": "",
-    "product_model": "Tarjetero árbitro Zastor Club",
+    "product_model": "Tarjetero referido Zastor Club",
     "sole_type": ""
   }
 }

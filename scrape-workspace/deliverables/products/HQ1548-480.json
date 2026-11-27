@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo Nike del Atlético de Madrid - azul",
-    "tagline": "Comodidad y estilo colchonero para tu día a día",
-    "intro": "Este pantalón largo Nike del Atlético de Madrid combina rendimiento deportivo y diseño casual. Con tejido suave y tecnología Dri-FIT, ofrece comodidad y frescura tanto en movimiento como en descanso.",
+    "subtitle": "Nike Long Pant of Atlético de Madrid - blue",
+    "tagline": "Comfort and mattress style for your day to day",
+    "intro": "This Nike long trousers from the Atlético de Madrid combines sporty performance and casual design. With soft fabric and Dri-FIT technology, it offers comfort and freshness both in motion and in rest.",
     "collection": "",
     "key_benefits": [
-      "Diseño atlético y moderno: Inspirado en la ropa de entrenamiento profesional del Atleti.",
-      "Tejido con tecnología Dri-FIT: Expulsa el sudor para mantenerte seco en cualquier momento.",
-      "Comodidad total: Ajuste regular con cintura elástica y cordón interno.",
-      "Funcionalidad práctica: Bolsillos laterales para tus objetos esenciales.",
-      "Estilo versátil: Ideal para entrenamientos, viajes o looks urbanos."
+      "Athletic and modern design: Inspired by Atleti's professional training clothing.",
+      "Dri-FIT technology fabric: Expel sweat to keep you dry at any time.",
+      "Total comfort: Regular fit with elastic waistband and internal cord.",
+      "Practical functionality: Side pockets for your essential objects.",
+      "Versatile style: Ideal for training, travel or urban looks."
     ],
     "technical_details": {
       "range": "Nike Atlético Dri-Fit",
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'pantalon'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético Dri-Fit",
+    "product_model": "Athletic Dri-Fit",
     "sole_type": ""
   }
 }

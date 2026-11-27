@@ -1,7 +1,7 @@
 {
   "id": "SX6835-451",
   "slug": "calcetines-media-cana-nike-matchfit-crew-blue",
-  "name": "media caña Nike Matchfit Crew",
+  "name": "half-cane Nike Matchfit Crew",
   "model": "media caña Nike Matchfit Crew",
   "brand": "Nike",
   "category": "Socks",
@@ -78,9 +78,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Matchfit Crew",
+    "product_model": "half-cane Nike Matchfit Crew",
     "sole_type": ""
   }
 }

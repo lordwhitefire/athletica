@@ -1,7 +1,7 @@
 {
   "id": "090127-01",
   "slug": "rinonera-puma-manchester-city-fan-blue",
-  "name": "Riñonera Puma Manchester City fan",
+  "name": "Pum Puma Manchester City fan",
   "model": "Riñonera Puma Manchester City fan",
   "brand": "Puma",
   "category": "Accessories",
@@ -95,9 +95,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'equipos'",
-    "root_model": "Riñonera",
+    "root_model": "Kidney",
     "submodel": "",
-    "product_model": "Riñonera Puma Manchester City fan",
+    "product_model": "Pum Puma Manchester City fan",
     "sole_type": ""
   }
 }

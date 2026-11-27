@@ -1,7 +1,7 @@
 {
   "id": "JM8385",
   "slug": "short-adidas-belgica-26-black",
-  "name": "adidas Bélgica 26",
+  "name": "adidas Belgium 26",
   "model": "Bélgica 26",
   "brand": "adidas",
   "category": "Apparel",
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica 26",
+    "product_model": "Belgium 26",
     "sole_type": ""
   }
 }

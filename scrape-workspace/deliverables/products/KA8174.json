@@ -1,7 +1,7 @@
 {
   "id": "KA8174",
   "slug": "chaqueta-adidas-espana-presentacion-blue",
-  "name": "adidas España presentación",
+  "name": "adidas Spain submission",
   "model": "España presentación",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chaqueta de presentación adidas de la selección española 2026 - azul marino",
-    "tagline": "Vístete como los campeones",
-    "intro": "Chaqueta de presentación oficial de España 2026, estilo premium para representar a La Roja.",
+    "subtitle": "Adidas presentation jacket from the Spanish team 2026 - navy blue",
+    "tagline": "Dress like champions",
+    "intro": "Official Spanish 2026 presentation jacket, premium style to represent La Roja.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial: Representa a la selección española con cada detalle.",
-      "Tejido técnico: Transpirable y cómodo durante toda la actividad.",
-      "Ajuste ergonómico: Favorece la movilidad y el confort en cada movimiento.",
-      "Tecnología aplicada: Cuenta con CLIMACOOL."
+      "Official design: Represents the Spanish team in every detail.",
+      "Technical fabric: Breathable and comfortable throughout the activity.",
+      "Ergonomic adjustment: Promotes mobility and comfort in each movement.",
+      "Applied technology: CLIMACOOL is available."
     ],
     "technical_details": {
       "range": "adidas España presentación",
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España presentación",
+    "product_model": "Spain",
     "sole_type": ""
   }
 }

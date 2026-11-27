@@ -1,7 +1,7 @@
 {
   "id": "IQ6946-420",
   "slug": "camiseta-nike-2a-psg-nino-pre-match-dri-fit-blue",
-  "name": "Nike 2a PSG Kids Pre-Match Dri-Fit",
+  "name": "Nike 2nd PSG Kids Pre-Match Dri-Fit",
   "model": "2a PSG niño Pre-Match Dri-Fit",
   "brand": "Nike",
   "category": "Jerseys",
@@ -88,9 +88,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a PSG niño Pre-Match Dri-Fit",
+    "product_model": "2nd PSG Pre-Match Dri-Fit child",
     "sole_type": ""
   }
 }

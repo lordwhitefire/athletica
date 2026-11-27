@@ -1,7 +1,7 @@
 {
   "id": "4029",
   "slug": "tripode-para-pizarras-tacticas-zastor-holt-black",
-  "name": "Trípode",
+  "name": "Tripod",
   "model": "Trípode",
   "brand": "Zastor",
   "category": "Accessories",
@@ -68,9 +68,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Trípode",
+    "root_model": "Tripod",
     "submodel": "",
-    "product_model": "Trípode",
+    "product_model": "Tripod",
     "sole_type": ""
   }
 }

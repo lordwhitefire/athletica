@@ -1,7 +1,7 @@
 {
   "id": "JX0015",
   "slug": "botellin-adidas-real-madrid-blue",
-  "name": "Botellín adidas Real Madrid",
+  "name": "Adidas Real Madrid bottle",
   "model": "Botellín adidas Real Madrid",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento adidas del Real Madrid de 750 ml - azul marino",
-    "tagline": "Hidratación con estilo merengue",
-    "intro": "Este botellín oficial del Real Madrid es perfecto para acompañarte en tus entrenamientos, partidos o salidas al aire libre. Fabricado en material resistente y con un diseño ergonómico, te permite mantenerte hidratado mientras representas a tu club con orgullo.",
+    "subtitle": "Real Madrid adidas water bottle for training 750 ml - navy blue",
+    "tagline": "Hydration with merengue style",
+    "intro": "This official Real Madrid bottle is perfect to accompany you in your workouts, matches or outdoors. Made of resistant material and ergonomic design, it allows you to stay hydrated while representing your club with pride.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial del club: Luce el escudo del Real Madrid con orgullo.",
+      "Official club design: Light the Royal Madrid shield with pride.",
       "Ligereza y comodidad: Solo 97 gramos para llevarlo a cualquier parte.",
-      "Uso rápido y fácil: Boquilla deportiva para beber sin complicaciones.",
-      "Material duradero: Composición en polietileno resistente al uso diario.",
-      "Ideal para entrenamientos: Mantente hidratado durante la actividad física."
+      "Quick and easy use: Sports nozzle for easy drinking.",
+      "Durable material: Composition in polyethylene resistant to daily use.",
+      "Ideal for workouts: Stay hydrated during physical activity."
     ],
     "technical_details": {
       "range": "adidas Real Madrid",
@@ -92,9 +92,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Real Madrid",
+    "product_model": "Adidas Real Madrid bottle",
     "sole_type": ""
   }
 }

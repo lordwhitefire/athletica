@@ -1,7 +1,7 @@
 {
   "id": "JZ2206",
   "slug": "chaqueta-adidas-belgica-originals-black",
-  "name": "adidas Bélgica Originals",
+  "name": "adidas Belgium Originals",
   "model": "Bélgica Originals",
   "brand": "adidas",
   "category": "Apparel",
@@ -90,9 +90,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica Originals",
+    "product_model": "Belgium Originals",
     "sole_type": ""
   }
 }

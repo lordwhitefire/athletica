@@ -1,7 +1,7 @@
 {
   "id": "IR4731-417",
   "slug": "rinonera-nike-psg-heritage-blue",
-  "name": "Riñonera Nike PSG Heritage",
+  "name": "Kidney Nike PSG Heritage",
   "model": "Riñonera Nike PSG Heritage",
   "brand": "Nike",
   "category": "Accessories",
@@ -88,9 +88,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'equipos'",
-    "root_model": "Riñonera",
+    "root_model": "Kidney",
     "submodel": "",
-    "product_model": "Riñonera Nike PSG Heritage",
+    "product_model": "Kidney Nike PSG Heritage",
     "sole_type": ""
   }
 }

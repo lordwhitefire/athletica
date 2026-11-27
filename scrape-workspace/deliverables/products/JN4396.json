@@ -1,7 +1,7 @@
 {
   "id": "JN4396",
   "slug": "short-adidas-espana-26-blue",
-  "name": "adidas España 26",
+  "name": "adidas Spain 26",
   "model": "España 26",
   "brand": "adidas",
   "category": "Apparel",
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España 26",
+    "product_model": "Spain 26",
     "sole_type": ""
   }
 }

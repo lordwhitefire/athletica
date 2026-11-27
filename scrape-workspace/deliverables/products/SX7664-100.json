@@ -1,7 +1,7 @@
 {
   "id": "SX7664-100",
   "slug": "calcetines-media-cana-nike-everyday-cushion-crew-3-pares-white",
-  "name": "media caña Nike Everyday Cushion Crew 3 pares",
+  "name": "half cane Nike Everyday Cushion Crew 3 pairs",
   "model": "media caña Nike Everyday Cushion Crew 3 pares",
   "brand": "Nike",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines acolchados Nike de media caña - blancos",
-    "tagline": "Comodidad y sujeción en blanco total",
-    "intro": "Estos calcetines Nike acolchados blancos combinan amortiguación suave, ajuste seguro y estilo limpio para tus rutinas diarias o tus partidos más exigentes.",
+    "subtitle": "Pack of 3 Nike half-cane padded socks - white",
+    "tagline": "Comfort and total white fastening",
+    "intro": "These white Nike padded socks combine soft cushioning, safe fit and clean style for your daily routines or your most demanding matches.",
     "collection": "",
     "key_benefits": [
-      "Diseño acolchado: Amortigua cada paso y evita la fricción.",
-      "Estética clásica: Color blanco que combina con todo tu outfit deportivo.",
-      "Soporte anatómico: Banda ajustada en el puente del pie.",
-      "Uso diario o deportivo: Perfectos para entreno o para tu día a día activo."
+      "Padded design: Shock every step and avoid friction.",
+      "Classic aesthetic: White color that combines with all your sports outfit.",
+      "Anatomical support: Stitched band on the foot bridge.",
+      "Daily or sports use: Perfect for training or for your active day-to-day."
     ],
     "technical_details": {
       "range": "media caña Nike Everyday Cushion Crew 3 pares",
@@ -86,9 +86,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Everyday Cushion Crew 3 pares",
+    "product_model": "half cane Nike Everyday Cushion Crew 3 pairs",
     "sole_type": ""
   }
 }

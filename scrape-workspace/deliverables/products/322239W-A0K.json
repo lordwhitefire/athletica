@@ -1,14 +1,14 @@
 {
   "id": "322239W-A0K",
   "slug": "camiseta-kappa-3a-tunez-25-26-marron",
-  "name": "Kappa 3a Túnez 25 26",
+  "name": "Kappa 3rd Tunisia 25 26",
   "model": "3a Túnez 25 26",
   "brand": "Kappa",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,13 +19,13 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la tercera equipación Kappa de la selección de Túnez 25 26 - tan",
-    "tagline": "Orgullo de las Águilas de Cartago",
-    "intro": "La camiseta de Túnez 25/26 refleja la fuerza y el espíritu de la selección. Un diseño que une la pasión nacional con el rendimiento necesario para brillar en el campo.",
+    "subtitle": "T-shirt of the third team Kappa of the Tunisian selection 25 26 - so",
+    "tagline": "Pride of the Carthage Eagles",
+    "intro": "The Tunisian T-shirt 25/26 reflects the strength and spirit of the selection. A design that unites the national passion with the performance needed to shine in the field.",
     "collection": "",
     "key_benefits": [
-      "Transpirabilidad: Favorece la ventilación en climas cálidos.",
-      "Comodidad: Tejido técnico que cuida la piel.",
+      "Breathability: Promotes ventilation in warm climates.",
+      "Comfort: Technical fabric that cares for the skin.",
       "Libertad de movimiento: Corte adaptado al juego moderno.",
       "Estilo del club: Colores y escudo que representan la identidad.",
       "Durabilidad: Resiste el uso continuo en entrenamientos."
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Túnez 25 26",
+    "product_model": "Tunisia 25 26",
     "sole_type": ""
   }
 }

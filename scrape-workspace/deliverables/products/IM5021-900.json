@@ -1,7 +1,7 @@
 {
   "id": "IM5021-900",
   "slug": "calcetines-media-cana-nike-t90-acolchados-3-pares",
-  "name": "media caña Nike T90 acolchados 3 pares",
+  "name": "half-cane Nike T90 padded 3 pairs",
   "model": "media caña Nike T90 acolchados 3 pares",
   "brand": "Nike",
   "category": "Socks",
@@ -86,9 +86,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike T90 acolchados 3 pares",
+    "product_model": "half-cane Nike T90 padded 3 pairs",
     "sole_type": ""
   }
 }

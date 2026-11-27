@@ -1,14 +1,14 @@
 {
   "id": "DX2722-417",
   "slug": "camiseta-nike-2a-atletico-mujer-2023-2024-dri-fit-stadium-azul-blanco",
-  "name": "Nike 2a Atlético Women 2023 2024 Dri-Fit Stadium",
+  "name": "Nike 2nd Atlético Women 2023 2024 Dri-Fit Stadium",
   "model": "2a Atlético mujer 2023 2024 Dri-Fit Stadium",
   "brand": "Nike",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Women",
-  "color": "Azul / Blanco",
+  "color": "Blue / White",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -86,9 +86,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Atlético mujer 2023 2024 Dri-Fit Stadium",
+    "product_model": "2nd Atlético woman 2023 2024 Dri-Fit Stadium",
     "sole_type": ""
   }
 }

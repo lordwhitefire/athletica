@@ -1,7 +1,7 @@
 {
   "id": "8831-BK",
   "slug": "medias-compresion-mcdavid-elite-recovery-black",
-  "name": "compresión McDavid Elite Recovery",
+  "name": "McDavid Elite Recovery compression",
   "model": "compresión McDavid Elite Recovery",
   "brand": "Mc David",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Medias de recuperación McDavid - negras",
-    "tagline": "Recuperación profesional post-partido",
-    "intro": "Estas medias negras McDavid Elite Recovery ofrecen compresión graduada y estimulación sanguínea para acelerar la recuperación muscular. Ideales para futbolistas que quieren rendir al máximo día tras día.",
+    "subtitle": "McDavid recovery media - black",
+    "tagline": "Post-party professional recovery",
+    "intro": "These McDavid Elite Recovery black stockings offer graduated compression and blood stimulation to accelerate muscle recovery. Ideal for footballers who want to perform at the maximum day after day.",
     "collection": "",
     "key_benefits": [
-      "Compresión graduada: Facilita el retorno venoso y reduce la fatiga.",
-      "Tejido médico: Diseñado para mejorar la recuperación muscular.",
-      "Uso prolongado: Cómodas para llevar durante horas sin molestias.",
-      "Diseño deportivo: Pensado para futbolistas de alto rendimiento."
+      "Graduated compression: Facilitates venous return and reduces fatigue.",
+      "Medical tissue: Designed to improve muscle recovery.",
+      "Long-term use: Comfortable to carry for hours without discomfort.",
+      "Sport Design: Thought for high-performance footballers."
     ],
     "technical_details": {
       "range": "compresión McDavid Elite Recovery",
@@ -88,9 +88,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "compresión",
+    "root_model": "compression",
     "submodel": "",
-    "product_model": "compresión McDavid Elite Recovery",
+    "product_model": "McDavid Elite Recovery compression",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "IU1073-417",
   "slug": "short-nike-2a-brasil-26-dri-fit-stadium-blue",
-  "name": "Nike 2a Brasil 26 Dri-Fit Stadium",
+  "name": "Nike 2nd Brasil 26 Dri-Fit Stadium",
   "model": "2a Brasil 26 Dri-Fit Stadium",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón corto de la segunda equipación Nike de la selección de Brasil 2026 - azul marino",
-    "tagline": "El pantalón corto de la segunda equipación de Brasil",
-    "intro": "El pantalón corto Nike Brasil 2026 de visitante completa el uniforme de la Canarinha con un diseño moderno inspirado en la energía y creatividad del fútbol brasileño. Su color azul marino con gráficos dinámicos refleja el estilo atrevido de la segunda equipación del equipo.",
+    "subtitle": "Short pants of the second Nike team of the Brazilian selection 2026 - navy blue",
+    "tagline": "The shorts of the second equipment in Brazil",
+    "intro": "The shorts Nike Brasil 2026 visitor completes the uniform of the Canarinha with a modern design inspired by the energy and creativity of Brazilian football. Its navy blue color with dynamic graphics reflects the daring style of the second team.",
     "collection": "",
     "key_benefits": [
       "Nike Dri-FIT Technology: Helps wick away sweat to keep skin dry and comfortable.",
-      "Diseño Stadium: Inspirado en el pantalón que utilizan los jugadores.",
-      "Tejido ligero y transpirable: Favorece la ventilación durante el juego o el entrenamiento.",
+      "Stadium Design: Inspired by the pants used by players.",
+      "Lightweight and breathable fabric: Promote ventilation during play or training.",
       "Escudo Brasil: Detalle oficial que representa el orgullo de la Canarinha."
     ],
     "technical_details": {
@@ -90,9 +90,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Brasil 26 Dri-Fit Stadium",
+    "product_model": "2nd Brasil 26 Dri-Fit Stadium",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "KT3405",
   "slug": "botellin-adidas-bayern-600-ml-white",
-  "name": "Botellín adidas Bayern 600 ml",
+  "name": "Adidas Bayern 600 ml bottle",
   "model": "Botellín adidas Bayern 600 ml",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua adidas del Bayern de Múnich de 600 ml - blanco",
-    "tagline": "Hidratación con el orgullo del Bayern",
-    "intro": "El botellín metálico adidas del Bayern de Múnich de 600 ml es el complemento perfecto para tu día a día o tus entrenamientos. Con un diseño limpio en color blanco y el escudo del Bayern de Múnich, refleja la identidad de uno de los clubes más grandes del mundo.",
+    "subtitle": "600 ml adidas Bayern Munich water bottle - white",
+    "tagline": "Hydration with Bayern’s pride",
+    "intro": "The 600 ml adidas metal bottle from Bayern Munich is the perfect complement to your day-to-day training. With a clean white design and the Bayern shield of Munich, it reflects the identity of one of the largest clubs in the world.",
     "collection": "",
     "key_benefits": [
       "Capacidad de 600 ml: Ideal para entrenamientos y uso diario.",
       "Material resistente: Fabricado en metal duradero.",
-      "Tapón con cierre seguro: Evita derrames y facilita el uso.",
-      "Diseño oficial Bayern: Con escudo del club y logo adidas.",
-      "Fácil transporte: Incluye asa para mayor comodidad."
+      "Safe closure cap: Avoid spills and facilitate use.",
+      "Official design Bayern: With club shield and adidas logo.",
+      "Easy transport: Includes handle for convenience."
     ],
     "technical_details": {
       "range": "adidas Bayern 600 ml",
@@ -84,9 +84,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Bayern 600 ml",
+    "product_model": "Adidas Bayern 600 ml bottle",
     "sole_type": ""
   }
 }

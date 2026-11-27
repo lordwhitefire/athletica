@@ -1,7 +1,7 @@
 {
   "id": "513",
   "slug": "munequera-ortopedica-mcdavid-black",
-  "name": "Muñequera ortopédica McDavid",
+  "name": "McDavid orthopedic wristband",
   "model": "Muñequera ortopédica McDavid",
   "brand": "Mc David",
   "category": "Apparel",
@@ -67,9 +67,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'top'",
-    "root_model": "Muñequera",
+    "root_model": "Doll",
     "submodel": "",
-    "product_model": "Muñequera ortopédica McDavid",
+    "product_model": "McDavid orthopedic wristband",
     "sole_type": ""
   }
 }

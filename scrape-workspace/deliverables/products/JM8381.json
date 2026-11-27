@@ -1,7 +1,7 @@
 {
   "id": "JM8381",
   "slug": "camiseta-adidas-belgica-26-red",
-  "name": "adidas Bélgica 26",
+  "name": "adidas Belgium 26",
   "model": "Bélgica 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica 26",
+    "product_model": "Belgium 26",
     "sole_type": ""
   }
 }

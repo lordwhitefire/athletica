@@ -1,7 +1,7 @@
 {
   "id": "FZ7580-405",
   "slug": "pantalon-nike-3a-barcelona-sportswear-club-blue",
-  "name": "Nike 3a Barcelona Sportswear Club",
+  "name": "Nike 3rd Barcelona Sportswear Club",
   "model": "3a Barcelona Sportswear Club",
   "brand": "Nike",
   "category": "Apparel",
@@ -80,9 +80,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'pantalon'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Barcelona Sportswear Club",
+    "product_model": "3rd Barcelona Sportswear Club",
     "sole_type": ""
   }
 }

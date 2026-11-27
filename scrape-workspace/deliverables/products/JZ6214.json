@@ -1,7 +1,7 @@
 {
   "id": "JZ6214",
   "slug": "chaqueta-adidas-belgica-himno-red",
-  "name": "adidas Bélgica himno",
+  "name": "adidas Belgium anthem",
   "model": "Bélgica himno",
   "brand": "adidas",
   "category": "Apparel",
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica himno",
+    "product_model": "Belgium anthem",
     "sole_type": ""
   }
 }

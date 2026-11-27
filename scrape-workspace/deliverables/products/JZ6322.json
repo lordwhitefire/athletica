@@ -8,7 +8,7 @@
   "category_slug": "apparel",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Rojo / Naranja",
+  "color": "Red / Orange",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Sudadera de entrenamiento adidas del Bayern de Múnich 2025 2026 - roja",
-    "tagline": "Preparado para todo, incluso el frío",
-    "intro": "La sudadera adidas del Bayern es tu aliada en sesiones de entrenamiento con clima fresco. Diseño ajustado y tecnología térmica para mantener la concentración.",
+    "subtitle": "Bayern Munich adidas training sweatshirt 2025 2026 - red",
+    "tagline": "Ready for everything, even the cold",
+    "intro": "Bayern's adidas sweatshirt is your ally in cool weather training sessions. Adjusted design and thermal technology to maintain concentration.",
     "collection": "",
     "key_benefits": [
-      "Confort térmico: Te protege del frío sin sobrecalentarte.",
-      "Estilo Bayern: Escudo visible y diseño profesional.",
-      "Movilidad garantizada: Tejido elástico que acompaña tus gestos."
+      "Thermal comfort: Protects you from the cold without overheating.",
+      "Bayern Style: Visible Shield and Professional Design.",
+      "Guaranteed mobility: Elastic fabric that accompanies your gestures."
     ],
     "technical_details": {
       "range": "adidas Bayern entrenamiento",
@@ -92,7 +92,7 @@
     "rule": "name contains training",
     "root_model": "Bayern Training",
     "submodel": "",
-    "product_model": "Bayern entrenamiento",
+    "product_model": "Bayern training",
     "sole_type": ""
   }
 }

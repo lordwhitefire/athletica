@@ -1,7 +1,7 @@
 {
   "id": "KT3417",
   "slug": "calcetines-media-cana-adidas-bayern-3-pares",
-  "name": "media caña adidas Bayern 3 pares",
+  "name": "half cane adidas Bayern 3 pairs",
   "model": "media caña adidas Bayern 3 pares",
   "brand": "adidas",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines de media caña adidas del Bayern de Múnich - varios colores",
-    "tagline": "Comodidad y orgullo bávaro en cada paso",
-    "intro": "El pack de 3 calcetines media caña adidas Bayern combina confort, estilo y la identidad de uno de los clubes más importantes del mundo. Con tres diseños inspirados en el Bayern de Múnich, son perfectos para el día a día o para animar a tu equipo con la máxima comodidad.",
+    "subtitle": "Pack of 3 socks of half adidas cane from Bayern Munich - various colors",
+    "tagline": "Bavarian comfort and pride at every step",
+    "intro": "The 3 half-cane adidas Bayern pack combines comfort, style and the identity of one of the most important clubs in the world. With three designs inspired by Bayern Munich, they are perfect for day to day or to cheer your team with maximum comfort.",
     "collection": "",
     "key_benefits": [
-      "Pack de 3 pares: Diferentes diseños para combinar con cualquier estilo.",
-      "Tejido suave y elástico: Ajuste cómodo y seguro durante todo el día.",
-      "Media caña: Sujeción confortable con cobertura ideal.",
-      "Diseño oficial del Bayern: Con el icónico trébol de adidas y colores inspirados en el club."
+      "Pack of 3 pairs: Different designs to combine with any style.",
+      "Soft and elastic fabric: Comfortable and safe fit throughout the day.",
+      "Half rod: Comfortable grip with ideal cover.",
+      "Official Bayern design: With iconic adidas clover and club-inspired colors."
     ],
     "technical_details": {
       "range": "media caña adidas Bayern 3 pares",
@@ -84,9 +84,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Bayern 3 pares",
+    "product_model": "half cane adidas Bayern 3 pairs",
     "sole_type": ""
   }
 }

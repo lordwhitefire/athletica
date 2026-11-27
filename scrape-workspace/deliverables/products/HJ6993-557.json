@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de manga corta para mujer de entrenamiento Nike del Atlético de Madrid 2025 2026 – púrpura",
+    "subtitle": "Short sleeve shirt for women training Nike from Atlético Madrid 2025 2026 – purple",
     "tagline": "Entrena con potencia y elegancia",
-    "intro": "Esta camiseta Nike Strike para mujer te acompaña en cada entrenamiento con un ajuste entallado y un tejido que mejora tu rendimiento. Con un diseño oficial del Atlético de Madrid y tecnología que controla la humedad, es ideal para seguir tu ritmo con estilo.",
+    "intro": "This Nike Strike shirt for women accompanies you in each training with a fit and fabric that improves your performance. With an official design of the Atlético de Madrid and technology that controls humidity, it is ideal to keep up with your rhythm in style.",
     "collection": "",
     "key_benefits": [
-      "Diseñada para moverse contigo: Tejido elástico y corte femenino para máxima libertad.",
-      "Control del sudor: Tecnología Dri-FIT que mantiene la piel seca.",
-      "Estética colchonera: Look oficial del Atleti con un tono púrpura moderno.",
+      "Designed to move with you: Elastic fabric and female cut for maximum freedom.",
+      "Sweat control: Dri-FIT technology that keeps the skin dry.",
+      "Aesthetic Mattress: Official look of Atleti with a modern purple tone.",
       "Comodidad ligera: Perfecta para sesiones intensas sin perder frescura.",
       "Versatilidad: Ideal tanto para entrenar como para uso deportivo diario."
     ],
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético mujer entrenamiento Dri-Fit Strike",
+    "product_model": "Athletic woman training Dri-Fit Strike",
     "sole_type": ""
   }
 }

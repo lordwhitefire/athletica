@@ -1,7 +1,7 @@
 {
   "id": "657270-03",
   "slug": "calcetines-media-cana-puma-teamliga-training-black",
-  "name": "media caña Puma teamLiga Training",
+  "name": "half-cane Puma teamLiga Training",
   "model": "media caña Puma teamLiga Training",
   "brand": "Puma",
   "category": "Apparel",
@@ -80,9 +80,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Puma teamLiga Training",
+    "product_model": "half-cane Puma teamLiga Training",
     "sole_type": ""
   }
 }

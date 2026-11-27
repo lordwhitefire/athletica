@@ -1,7 +1,7 @@
 {
   "id": "KA3503",
   "slug": "sudadera-adidas-espana-hoodie-blue",
-  "name": "adidas España Hoodie",
+  "name": "adidas Spain Hoodie",
   "model": "España Hoodie",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Sudadera con capucha adidas de la selección española 2026 - azul marino",
+    "subtitle": "Adidas hoodie from the Spanish selection 2026 - navy blue",
     "tagline": "Comodidad con identidad nacional",
-    "intro": "La sudadera con capucha España 2026 combina abrigo, suavidad y orgullo por La Roja.",
+    "intro": "The hoodie Spain 2026 combines coat, softness and pride for La Roja.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial: Con los colores y el escudo de la selección española.",
-      "Comodidad total: Tejidos suaves y transpirables para todo el día.",
-      "Tecnología integrada: Incorpora la tecnología CLIMACOOL.",
+      "Official design: With the colors and shield of the Spanish selection.",
+      "Total comfort: Soft and breathable fabrics for the whole day.",
+      "Integrated technology: Incorporates CLIMACOOL technology.",
       "Versatilidad: Perfecta para entrenar, salir o animar con estilo."
     ],
     "technical_details": {
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'sudadera'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España Hoodie",
+    "product_model": "Spain Hoodie",
     "sole_type": ""
   }
 }

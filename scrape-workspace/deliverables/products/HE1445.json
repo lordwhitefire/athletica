@@ -1,7 +1,7 @@
 {
   "id": "HE1445",
   "slug": "camiseta-adidas-belgica-pre-match",
-  "name": "adidas Bélgica pre-match",
+  "name": "adidas Belgium pre-match",
   "model": "Bélgica pre-match",
   "brand": "adidas",
   "category": "Jerseys",
@@ -82,9 +82,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica pre-match",
+    "product_model": "Belgium pre-match",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "JN3709",
   "slug": "camiseta-adidas-2a-argentina-messi-2006-blue",
-  "name": "adidas 2a Argentina Messi 2006",
+  "name": "adidas 2nd Argentina Messi 2006",
   "model": "2a Argentina Messi 2006",
   "brand": "adidas",
   "category": "Boots",
@@ -92,9 +92,9 @@
     "category": "boots",
     "confidence": "high",
     "rule": "boot model",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "Argentina Messi 2006",
-    "product_model": "2a Argentina Messi 2006",
+    "product_model": "2nd Argentina Messi 2006",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "KQ7901",
   "slug": "botellin-adidas-bayern-white",
-  "name": "Botellín adidas Bayern",
+  "name": "Adidas Bayern bottle",
   "model": "Botellín adidas Bayern",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua adidas del Bayern de Múnich de 750 ml - blanco",
-    "tagline": "Hidrátate con el orgullo del Bayern",
-    "intro": "El botellín adidas del Bayern de Múnich es el accesorio perfecto de cualquier aficionado del club bávaro. Su diseño incorpora el escudo oficial del Bayern y el logotipo adidas para mostrar tu pasión por el fútbol en cada entrenamiento, partido o desplazamiento.",
+    "subtitle": "Adidas water bottle from the Bayern Munich 750 ml - white",
+    "tagline": "Swallow yourself with Bayern's pride",
+    "intro": "The adidas boat of Bayern Munich is the perfect accessory for any Bavarian club fan. Its design incorporates the Bayern's official shield and the adidas logo to show your passion for football in every workout, match or ride.",
     "collection": "",
     "key_benefits": [
       "Capacidad de 750 ml: Ideal para mantenerte hidratado.",
-      "Diseño ergonómico: Fácil de sujetar y transportar.",
-      "Boquilla deportiva: Permite beber cómodamente en movimiento.",
+      "Ergonomic design: Easy to hold and transport.",
+      "Sports nozzle: Allows you to drink comfortably in motion.",
       "Material resistente: Fabricado para soportar el uso diario.",
-      "Estilo oficial Bayern: Diseño con escudo y detalles adidas inspirados en el club inglés."
+      "Official Bayern Style: Design with shield and adidas details inspired by the English club."
     ],
     "technical_details": {
       "range": "adidas Bayern",
@@ -86,9 +86,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Bayern",
+    "product_model": "Adidas Bayern bottle",
     "sole_type": ""
   }
 }

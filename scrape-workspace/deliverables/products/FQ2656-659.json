@@ -1,7 +1,7 @@
 {
   "id": "FQ2656-659",
   "slug": "chandal-nike-chelsea-nino-entrenamiento-dri-fit-strike-pink",
-  "name": "Chándal Nike Chelsea Kids Training Dri-Fit Strike",
+  "name": "Nike Chelsea Kids Training Dri-Fit Strike",
   "model": "Chándal Nike Chelsea Kids Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -86,9 +86,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Chelsea Kids Training Dri-Fit Strike",
+    "product_model": "Nike Chelsea Kids Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

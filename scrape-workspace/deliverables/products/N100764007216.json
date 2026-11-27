@@ -1,7 +1,7 @@
 {
   "id": "N100764007216",
   "slug": "botellin-nike-renew-recharge-straw-500-ml-transparente",
-  "name": "Botellín Nike Renew Recharge Straw 500 ml",
+  "name": "Nike Renew Recharge Straw 500 ml bottle",
   "model": "Botellín Nike Renew Recharge Straw 500 ml",
   "brand": "Nike",
   "category": "Accessories",
@@ -72,9 +72,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Nike Renew Recharge Straw 500 ml",
+    "product_model": "Nike Renew Recharge Straw 500 ml bottle",
     "sole_type": ""
   }
 }

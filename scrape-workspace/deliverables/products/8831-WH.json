@@ -1,7 +1,7 @@
 {
   "id": "8831-WH",
   "slug": "medias-compresion-mcdavid-elite-recovery-white",
-  "name": "compresión McDavid Elite Recovery",
+  "name": "McDavid Elite Recovery compression",
   "model": "compresión McDavid Elite Recovery",
   "brand": "Mc David",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Medias de recuperación McDavid - blancas",
-    "tagline": "Recupérate con precisión en cada detalle",
-    "intro": "El modelo blanco de McDavid Elite Recovery combina ajuste médico y confort térmico, facilitando el drenaje y reduciendo la fatiga tras partidos o sesiones exigentes.",
+    "subtitle": "McDavid recovery media - white",
+    "tagline": "Get back to you accurately in every detail",
+    "intro": "McDavid Elite Recovery's white model combines medical adjustment and thermal comfort, facilitating drainage and reducing fatigue after demanding matches or sessions.",
     "collection": "",
     "key_benefits": [
-      "Compresión graduada: Facilita el retorno venoso y reduce la fatiga.",
-      "Tejido médico: Diseñado para mejorar la recuperación muscular.",
-      "Uso prolongado: Cómodas para llevar durante horas sin molestias.",
-      "Diseño deportivo: Pensado para futbolistas de alto rendimiento."
+      "Graduated compression: Facilitates venous return and reduces fatigue.",
+      "Medical tissue: Designed to improve muscle recovery.",
+      "Long-term use: Comfortable to carry for hours without discomfort.",
+      "Sport Design: Thought for high-performance footballers."
     ],
     "technical_details": {
       "range": "compresión McDavid Elite Recovery",
@@ -86,9 +86,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "compresión",
+    "root_model": "compression",
     "submodel": "",
-    "product_model": "compresión McDavid Elite Recovery",
+    "product_model": "McDavid Elite Recovery compression",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "DH6620-657",
   "slug": "calcetines-media-cana-nike-strike-crew-red",
-  "name": "media caña Nike Strike Crew",
+  "name": "half-cane Nike Strike Crew",
   "model": "media caña Nike Strike Crew",
   "brand": "Nike",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Par de calcetines de media caña Nike de entrenamiento de fútbol - rojos",
-    "tagline": "Impulsa tu energía con cada pisada",
-    "intro": "Los calcetines rojos Nike Strike Crew están hechos para jugadores que pisan fuerte. Acolchados, ajustados y con carácter, dan soporte y fuerza visual en cada sprint.",
+    "subtitle": "Pair of Nike Half Cane Soccer Training Socks - Red",
+    "tagline": "Boost your energy with every step",
+    "intro": "Nike Strike Crew red socks are made for players who step on hard. Padded, adjusted and character, they give support and visual strength in each sprint.",
     "collection": "",
     "key_benefits": [
-      "Estímulo visual: El rojo añade presencia y determinación.",
-      "Sujeción total: Compresión para evitar deslizamientos.",
-      "Confort activo: Diseñados para sesiones largas y explosivas.",
-      "Durabilidad: Refuerzo técnico en zonas de fricción."
+      "Visual stimulation: Red adds presence and determination.",
+      "Total clamping: Compression to avoid slips.",
+      "Active Comfort: Designed for long and explosive sessions.",
+      "Durability: Technical reinforcement in friction zones."
     ],
     "technical_details": {
       "range": "media caña Nike Strike Crew",
@@ -84,9 +84,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Strike Crew",
+    "product_model": "half-cane Nike Strike Crew",
     "sole_type": ""
   }
 }

@@ -1,14 +1,14 @@
 {
   "id": "MT230493-THD",
   "slug": "camiseta-new-balance-3a-porto-25-26-marron",
-  "name": "New Balance 3a Porto 25 26",
+  "name": "New Balance 3rd Porto 25 26",
   "model": "3a Porto 25 26",
   "brand": "New Balance",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la tercera equipación New Balance del FC Porto 2025 2026 - beige",
+    "subtitle": "T-shirt of the third equipment New Balance of the FC Porto 2025 2026 - beige",
     "tagline": "Estilo alternativo con esencia portuguesa",
-    "intro": "Descubre la camiseta de la tercera equipación del FC Porto 2025/2026, una fusión de tradición y modernidad con un tono beige exclusivo. Diseñada por New Balance para destacar tanto en el campo como en la calle, su tejido técnico y corte cómodo la convierten en una prenda ideal para los verdaderos dragones.",
+    "intro": "Discover the third-team shirt of FC Porto 2025/2026, a fusion of tradition and modernity with an exclusive beige tone. Designed by New Balance to stand out both in the field and on the street, its technical fabric and comfortable cut make it an ideal garment for true dragons.",
     "collection": "",
     "key_benefits": [
-      "Diseño distintivo: Color beige elegante para destacar entre la multitud.",
-      "Orgullo portista: Escudo del FC Porto y detalles auténticos de la temporada.",
-      "Confort activo: Tejido técnico que mantiene la frescura en todo momento.",
+      "Distinctive design: Elegant beige color to stand out among the crowd.",
+      "Portista Pride: FC Porto Shield and authentic details of the season.",
+      "Active comfort: Technical fabric that maintains freshness at all times.",
       "Estilo urbano: Perfecta para lucir dentro y fuera del estadio.",
-      "Durabilidad garantizada: Composición resistente y ligera para el uso diario."
+      "Guaranteed durability: Durable and lightweight composition for daily use."
     ],
     "technical_details": {
       "range": "New Balance 3a Porto 25 26",
@@ -102,9 +102,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Porto 25 26",
+    "product_model": "3rd Porto 25 26",
     "sole_type": ""
   }
 }

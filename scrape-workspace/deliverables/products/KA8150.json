@@ -1,7 +1,7 @@
 {
   "id": "KA8150",
   "slug": "camiseta-adidas-espana-entrenamiento-pro-blue",
-  "name": "adidas España Training Pro",
+  "name": "adidas Spain Training Pro",
   "model": "España entrenamiento Pro",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de manga corta de entrenamiento adidas de la selección española 2026 - azul turquesa",
-    "tagline": "Rinde al máximo, como los profesionales",
-    "intro": "Camiseta Pro de entrenamiento España 2026: ligereza, frescura y ADN de alto nivel.",
+    "subtitle": "Adidas short sleeve training shirt from the Spanish selection 2026 - turquoise blue",
+    "tagline": "It's as high as professional.",
+    "intro": "Spain 2026 Pro training T-shirt: lightness, freshness and high-level DNA.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial: Representa a la selección española con cada detalle.",
-      "Tejido técnico: Transpirable y cómodo durante toda la actividad.",
-      "Ajuste ergonómico: Favorece la movilidad y el confort en cada movimiento.",
-      "Tecnología aplicada: Cuenta con CLIMACOOL."
+      "Official design: Represents the Spanish team in every detail.",
+      "Technical fabric: Breathable and comfortable throughout the activity.",
+      "Ergonomic adjustment: Promotes mobility and comfort in each movement.",
+      "Applied technology: CLIMACOOL is available."
     ],
     "technical_details": {
       "range": "adidas España entrenamiento Pro",
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España entrenamiento Pro",
+    "product_model": "Spain training Pro",
     "sole_type": ""
   }
 }

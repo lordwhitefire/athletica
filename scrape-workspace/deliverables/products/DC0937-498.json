@@ -1,7 +1,7 @@
 {
   "id": "DC0937-498",
   "slug": "medias-nike-3a-barcelona-2021-2022-stadium-blue",
-  "name": "Nike 3a Barcelona 2021 2022 Stadium",
+  "name": "Nike 3rd Barcelona 2021 2022 Stadium",
   "model": "3a Barcelona 2021 2022 Stadium",
   "brand": "Nike",
   "category": "Socks",
@@ -80,9 +80,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Barcelona 2021 2022 Stadium",
+    "product_model": "3rd Barcelona 2021 2022 Stadium",
     "sole_type": ""
   }
 }

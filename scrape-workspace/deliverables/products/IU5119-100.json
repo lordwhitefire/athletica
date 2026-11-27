@@ -1,7 +1,7 @@
 {
   "id": "IU5119-100",
   "slug": "calcetines-media-cana-nike-barcelona-everyday-crew-white",
-  "name": "media caña Nike Barcelona Everyday Crew",
+  "name": "half cane Nike Barcelona Everyday Crew",
   "model": "media caña Nike Barcelona Everyday Crew",
   "brand": "Nike",
   "category": "Socks",
@@ -19,9 +19,9 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Par de calcetines de media caña Nike del Barcelona - blancos",
+    "subtitle": "Pair of half-cane socks Nike del Barcelona - white",
     "tagline": "Comodidad y rendimiento con el estilo del FCB",
-    "intro": "Los calcetines de media caña Nike Barcelona Everyday Crew están diseñados para ofrecer confort y sujeción en cada entrenamiento o uso diario. Inspirados en el Barcelona, combinan estilo deportivo con materiales de alta calidad.",
+    "intro": "Nike Barcelona Everyday Crew half-cane socks are designed to offer comfort and support in every workout or everyday use. Inspired by Barcelona, they combine sport style with high quality materials.",
     "collection": "",
     "key_benefits": [
       "Optimal breathability: Dri-FIT technology that helps keep feet dry.",
@@ -92,9 +92,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Barcelona Everyday Crew",
+    "product_model": "half cane Nike Barcelona Everyday Crew",
     "sole_type": ""
   }
 }

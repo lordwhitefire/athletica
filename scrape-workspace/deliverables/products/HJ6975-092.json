@@ -1,7 +1,7 @@
 {
   "id": "HJ6975-092",
   "slug": "chandal-nike-inter-entrenamiento-dri-fit-strike-grey",
-  "name": "Chándal Nike Inter Training Dri-Fit Strike",
+  "name": "Nike Inter Training Dri-Fit Strike",
   "model": "Chándal Nike Inter Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal de entrenamiento Nike del Inter de Milán - gris",
+    "subtitle": "Nike Training Track from Inter Milan - grey",
     "tagline": "Entrena como un verdadero nerazzurro",
-    "intro": "El chándal de entrenamiento Nike del Inter 2025/26 destaca por su diseño técnico y elegante en color gris, pensado para acompañarte dentro y fuera del campo. Combina estilo moderno con tejido transpirable para un rendimiento óptimo.",
+    "intro": "The Nike training track from Inter 2025/26 stands out for its technical and elegant design in grey, designed to accompany you both inside and outside the field. It combines modern style with breathable fabric for optimal performance.",
     "collection": "",
     "key_benefits": [
-      "Diseño oficial del Inter: Inspirado en la equipación de entrenamiento del club.",
-      "Comodidad térmica: Tejido ligero que favorece la movilidad y regula la temperatura.",
-      "Transpirabilidad activa: Tecnología Dri-FIT que mantiene la piel seca durante la actividad física.",
-      "Ajuste atlético: Corte slim fit con detalles elásticos en zonas clave.",
-      "Practicidad diaria: Cremalleras y bolsillos funcionales para el día a día."
+      "Official design of Inter: Inspired by the club's training equipment.",
+      "Thermal comfort: Light fabric that promotes mobility and regulates temperature.",
+      "Active breathability: Dri-FIT technology that keeps the skin dry during physical activity.",
+      "Athletic adjustment: Slim fit cut with elastic details in key areas.",
+      "Daily practice: Zippers and functional pockets for day to day."
     ],
     "technical_details": {
       "range": "Nike Inter entrenamiento Dri-Fit Strike",
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Inter Training Dri-Fit Strike",
+    "product_model": "Nike Inter Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

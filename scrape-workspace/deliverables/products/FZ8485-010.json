@@ -1,7 +1,7 @@
 {
   "id": "FZ8485-010",
   "slug": "calcetines-media-cana-nike-strike-crew-black",
-  "name": "media caña Nike Strike Crew",
+  "name": "half-cane Nike Strike Crew",
   "model": "media caña Nike Strike Crew",
   "brand": "Nike",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Par de calcetines de media caña Nike de entrenamiento – negros",
-    "tagline": "Comodidad duradera para cada entrenamiento",
-    "intro": "Los Nike Strike Crew combinan amortiguación estratégica, ajuste ceñido y transpirabilidad para ofrecer rendimiento y confort en cada sesión.",
+    "subtitle": "Pair of Nike half-cane training socks – black",
+    "tagline": "Durable comfort for each training",
+    "intro": "Nike Strike Crew combine strategic cushioning, tight fit and breathability to deliver performance and comfort in each session.",
     "collection": "",
     "key_benefits": [
-      "Ajuste de alto rendimiento: Sujeción en el arco y diseño anatómico para pie derecho e izquierdo.",
-      "Amortiguación donde la necesitas: Refuerzos en zonas clave para proteger el impacto.",
-      "Evita deslizamientos: Banda superior acanalada que mantiene el calcetín en su sitio.",
-      "Transpirables: Zonas de ventilación que mantienen el pie seco."
+      "High performance adjustment: Arch fastening and anatomical design for right and left foot.",
+      "Shock where you need it: Reinforcements in key areas to protect impact.",
+      "Avoid slips: Upper ribbed band that keeps the sock in place.",
+      "Breathable: Ventilation areas that keep the foot dry."
     ],
     "technical_details": {
       "range": "media caña Nike Strike Crew",
@@ -88,9 +88,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Strike Crew",
+    "product_model": "half-cane Nike Strike Crew",
     "sole_type": ""
   }
 }

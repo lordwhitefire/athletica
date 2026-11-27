@@ -1,7 +1,7 @@
 {
   "id": "FN9976-491",
   "slug": "chandal-nike-inter-nino-dri-fit-strike-blue",
-  "name": "Chándal Nike Inter Kids Dri-Fit Strike",
+  "name": "Nike Inter Kids Dri-Fit Strike",
   "model": "Chándal Nike Inter Kids Dri-Fit Strike",
   "brand": "Nike",
   "category": "Kits",
@@ -88,9 +88,9 @@
     "category": "kits",
     "confidence": "medium",
     "rule": "source fallback 'equipaciones'",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Inter Kids Dri-Fit Strike",
+    "product_model": "Nike Inter Kids Dri-Fit Strike",
     "sole_type": ""
   }
 }

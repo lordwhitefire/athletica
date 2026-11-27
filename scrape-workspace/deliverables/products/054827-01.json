@@ -1,7 +1,7 @@
 {
   "id": "054827-01",
   "slug": "botellin-puma-manchester-city-750-ml-blue",
-  "name": "Botellín Puma Manchester City 750 ml",
+  "name": "Puma Manchester City 750 ml bottle",
   "model": "Botellín Puma Manchester City 750 ml",
   "brand": "Puma",
   "category": "Accessories",
@@ -91,9 +91,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Puma Manchester City 750 ml",
+    "product_model": "Puma Manchester City 750 ml bottle",
     "sole_type": ""
   }
 }

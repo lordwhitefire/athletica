@@ -1,7 +1,7 @@
 {
   "id": "SX7664-010",
   "slug": "calcetines-media-cana-nike-everyday-cushion-crew-3-pares-black",
-  "name": "media caña Nike Everyday Cushion Crew 3 pares",
+  "name": "half cane Nike Everyday Cushion Crew 3 pairs",
   "model": "media caña Nike Everyday Cushion Crew 3 pares",
   "brand": "Nike",
   "category": "Socks",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines acolchados Nike de media caña - negros",
-    "tagline": "Máxima protección para tus entrenamientos más duros",
-    "intro": "Los calcetines negros Nike Cushion Crew están pensados para absorber impactos y evitar rozaduras durante tus sesiones deportivas más exigentes.",
+    "subtitle": "Pack of 3 Nike half-cane padded socks - black",
+    "tagline": "Maximum protection for your toughest workouts",
+    "intro": "Nike Cushion Crew black socks are designed to absorb impacts and avoid scratches during your most demanding sports sessions.",
     "collection": "",
     "key_benefits": [
-      "Acolchado estratégico: Refuerzos en talón y planta para mayor protección.",
-      "Ajuste firme: Banda de sujeción en el arco para mayor estabilidad.",
-      "Diseño deportivo: Color negro versátil y sobrio para cualquier equipación.",
-      "Pack funcional: Tres pares para acompañarte en cada entreno."
+      "Strategic padding: Heel and plant reinforcements for greater protection.",
+      "Firm fit: Clamping band on the arch for greater stability.",
+      "Sporting design: Versatile and sober black color for any equipment.",
+      "Functional pack: Three pairs to accompany you in each training."
     ],
     "technical_details": {
       "range": "media caña Nike Everyday Cushion Crew 3 pares",
@@ -88,9 +88,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Everyday Cushion Crew 3 pares",
+    "product_model": "half cane Nike Everyday Cushion Crew 3 pairs",
     "sole_type": ""
   }
 }

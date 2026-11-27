@@ -1,7 +1,7 @@
 {
   "id": "FS9762",
   "slug": "calcetines-media-cana-adidas-alphaskin-crew-ultralight-white",
-  "name": "media caña adidas Alphaskin Crew Ultralight",
+  "name": "half cane adidas Alphaskin Crew Ultralight",
   "model": "media caña adidas Alphaskin Crew Ultralight",
   "brand": "adidas",
   "category": "Boots",
@@ -78,9 +78,9 @@
     "category": "boots",
     "confidence": "high",
     "rule": "boot model",
-    "root_model": "media",
-    "submodel": "caña adidas Alphaskin Crew Ultralight",
-    "product_model": "media caña adidas Alphaskin Crew Ultralight",
+    "root_model": "average",
+    "submodel": "adidas Alphaskin Crew Ultralight rod",
+    "product_model": "half cane adidas Alphaskin Crew Ultralight",
     "sole_type": ""
   }
 }

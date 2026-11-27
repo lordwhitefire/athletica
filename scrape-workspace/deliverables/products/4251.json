@@ -1,7 +1,7 @@
 {
   "id": "4251",
   "slug": "botiquin-de-futbol-zastor-rescue-black",
-  "name": "Botiquín de fútbol Zastor Rescue",
+  "name": "Zastor Rescue Football Kit",
   "model": "Botiquín de fútbol Zastor Rescue",
   "brand": "Zastor",
   "category": "Accessories",
@@ -68,9 +68,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botiquín",
+    "root_model": "Kit",
     "submodel": "",
-    "product_model": "Botiquín de fútbol Zastor Rescue",
+    "product_model": "Zastor Rescue Football Kit",
     "sole_type": ""
   }
 }

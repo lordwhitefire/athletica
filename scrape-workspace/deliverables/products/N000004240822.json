@@ -1,7 +1,7 @@
 {
   "id": "N000004240822",
   "slug": "botellin-nike-big-mouth-2-0-650-ml-blue",
-  "name": "Botellín Nike Big Mouth 2.0 650 ml",
+  "name": "Nike Big Mouth 2.0 650 ml bottle",
   "model": "Botellín Nike Big Mouth 2.0 650 ml",
   "brand": "Nike",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín Nike Big Mouth 650 ml - azul",
+    "subtitle": "Nike Big Mouth 650 ml bottle - blue",
     "tagline": "Practical hydration for every workout",
-    "intro": "El botellín Nike Big Mouth 2.0 650 ml está diseñado para mantener la hidratación durante entrenamientos, partidos y actividad deportiva. Su cuerpo flexible y su boquilla push-pull permiten beber de forma rápida y cómoda entre ejercicios o durante las pausas del juego.",
+    "intro": "The Nike Big Mouth 2.0 650 ml bottle is designed to maintain hydration during workouts, matches and sports activity. Its flexible body and push-pull nozzle allow you to drink quickly and comfortably between exercises or during play breaks.",
     "collection": "",
     "key_benefits": [
-      "Formato manejable: Su capacidad de 650 ml ofrece un equilibrio práctico entre hidratación y facilidad de transporte.",
+      "Handleable format: Its capacity of 650 ml offers a practical balance between hydration and ease of transport.",
       "Quick use: The push-pull spout makes it easy to drink directly from the bottle during breaks.",
-      "Manejo cómodo: Su cuerpo flexible permite presionar el botellín para facilitar la salida del líquido.",
-      "Preparado para entrenar: Su diseño funcional resulta adecuado para llevar al campo, al gimnasio o utilizar durante cualquier sesión deportiva."
+      "Comfortable handling: Its flexible body allows you to press the bottle to facilitate the flow of the liquid.",
+      "Ready to train: Its functional design is suitable for taking to the field, to the gym or to use during any sports session."
     ],
     "technical_details": {
       "range": "Nike Big Mouth 2.0 650 ml",
@@ -76,9 +76,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Nike Big Mouth 2.0 650 ml",
+    "product_model": "Nike Big Mouth 2.0 650 ml bottle",
     "sole_type": ""
   }
 }

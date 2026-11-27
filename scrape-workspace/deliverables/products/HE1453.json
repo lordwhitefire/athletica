@@ -1,7 +1,7 @@
 {
   "id": "HE1453",
   "slug": "short-adidas-belgica-entrenamiento-black",
-  "name": "adidas Bélgica Training",
+  "name": "adidas Belgium Training",
   "model": "Bélgica entrenamiento",
   "brand": "adidas",
   "category": "Apparel",
@@ -82,9 +82,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica entrenamiento",
+    "product_model": "Belgium training",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "FQ2474-013",
   "slug": "chandal-nike-psg-entrenamiento-dri-fit-strike-black",
-  "name": "Chándal Nike PSG Training Dri-Fit Strike",
+  "name": "Nike PSG Training Dri-Fit Strike",
   "model": "Chándal Nike PSG Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -80,9 +80,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike PSG Training Dri-Fit Strike",
+    "product_model": "Nike PSG Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

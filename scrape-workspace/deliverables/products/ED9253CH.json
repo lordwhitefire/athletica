@@ -1,7 +1,7 @@
 {
   "id": "ED9253CH",
   "slug": "chandal-adidas-condivo-20-presentacion-black",
-  "name": "Chándal adidas Condivo 20 Presentación",
+  "name": "Adidas Condivo 20 Presentation",
   "model": "Chándal adidas Condivo 20 Presentación",
   "brand": "adidas",
   "category": "Clothing",
@@ -78,9 +78,9 @@
     "category": "clothing",
     "confidence": "medium",
     "rule": "source fallback 'ropa'",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal adidas Condivo 20 Presentación",
+    "product_model": "Adidas Condivo 20 Presentation",
     "sole_type": ""
   }
 }

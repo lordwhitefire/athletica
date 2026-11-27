@@ -1,7 +1,7 @@
 {
   "id": "HA0106",
   "slug": "calcetines-media-cana-adidas-football-acolchados-white",
-  "name": "media caña adidas Football acolchados",
+  "name": "half adidas football padded cane",
   "model": "media caña adidas Football acolchados",
   "brand": "adidas",
   "category": "Balls",
@@ -78,9 +78,9 @@
     "category": "balls",
     "confidence": "high",
     "rule": "name contains 'ball'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Football acolchados",
+    "product_model": "half adidas football padded cane",
     "sole_type": ""
   }
 }

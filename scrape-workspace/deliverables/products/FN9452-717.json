@@ -1,7 +1,7 @@
 {
   "id": "FN9452-717",
   "slug": "chandal-nike-barcelona-entrenamiento-dri-fit-strike-gold",
-  "name": "Chándal Nike Barcelona Training Dri-Fit Strike",
+  "name": "Tracksuit Nike Barcelona Training Dri-Fit Strike",
   "model": "Chándal Nike Barcelona Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -90,9 +90,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Barcelona Training Dri-Fit Strike",
+    "product_model": "Tracksuit Nike Barcelona Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

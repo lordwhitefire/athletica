@@ -1,14 +1,14 @@
 {
   "id": "KD2770",
   "slug": "botellin-adidas-performance-500-ml-marron",
-  "name": "Botellín adidas Performance 500 ml",
+  "name": "Adidas Performance 500 ml bottle",
   "model": "Botellín adidas Performance 500 ml",
   "brand": "adidas",
   "category": "Accessories",
   "category_slug": "accessories",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,13 +19,13 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento adidas de 500 ml - marrón",
-    "tagline": "Diseñado para tu ritmo diario",
-    "intro": "Este botellín adidas de 500 ml combina funcionalidad y estilo deportivo con el logo adidas en primer plano. Su diseño ergonómico y resistente lo convierte en el aliado perfecto para tus rutinas de entrenamiento y tus desplazamientos.",
+    "subtitle": "Water bottle for 500 ml adidas training - brown",
+    "tagline": "Designed for your daily rhythm",
+    "intro": "This 500 ml adidas bottle combines functionality and sport style with the adidas logo in the foreground. Its ergonomic and resistant design makes it the perfect ally for your workout routines and your travels.",
     "collection": "",
     "key_benefits": [
-      "Hidratación práctica: Capacidad de 0,5 L ideal para entrenamientos o uso diario.",
-      "Diseño ergonómico: Fabricado en PE moldeado por inyección para una mayor resistencia.",
+      "Practical hydration: Capacity of 0.5 L ideal for training or daily use.",
+      "Ergonomic design: Made of injection molded PE for greater resistance.",
       "Cierre seguro: Rosca con sellado fiable para evitar fugas."
     ],
     "technical_details": {
@@ -80,9 +80,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Performance 500 ml",
+    "product_model": "Adidas Performance 500 ml bottle",
     "sole_type": ""
   }
 }

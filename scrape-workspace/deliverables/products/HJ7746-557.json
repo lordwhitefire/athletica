@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de manga corta de entrenamiento Nike del Atlético de Madrid 2025 2026 – púrpura",
+    "subtitle": "Nike Short Sleeve Training T-Shirt from Atlético Madrid 2025 2025 – purple",
     "tagline": "Rendimiento y estilo para tus entrenamientos",
-    "intro": "Con esta camiseta Nike del Atlético de Madrid, entrenarás con el confort y la libertad de movimiento que necesitas. Su diseño transpirable y el tejido elástico se adaptan a tu ritmo, mientras que el look oficial del club te acompaña en cada sesión. Ideal para llevar tu pasión al siguiente nivel.",
+    "intro": "With this Nike shirt from Atlético Madrid, you will train with the comfort and freedom of movement you need. Its breathable design and elastic fabric adapt to your rhythm, while the club’s official look accompanies you in each session. Ideal to take your passion to the next level.",
     "collection": "",
     "key_benefits": [
-      "Transpirabilidad optimizada: El tejido Dri-FIT aleja el sudor para mantenerte seco y concentrado.",
-      "Movimiento sin límites: El ajuste entallado y el tejido elástico mejoran la movilidad.",
-      "Inspiración colchonera: Diseño oficial del Atlético de Madrid temporada 2025/26.",
+      "Optimized breathability: The Dri-FIT fabric moves the sweat away to keep you dry and concentrated.",
+      "Movement without limits: The fit and elastic fabric improve mobility.",
+      "Inspiration mat: Official design of the Atlético de Madrid season 2025/26.",
       "Comodidad ligera: Material suave y ligero para uso prolongado.",
-      "Estilo actual: Color púrpura distintivo para destacar en el campo."
+      "Current Style: Distinctive purple color to stand out in the field."
     ],
     "technical_details": {
       "range": "Nike Atlético entrenamiento Dri-Fit Strike",
@@ -96,9 +96,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético entrenamiento Dri-Fit Strike",
+    "product_model": "Athletic Dri-Fit Strike Training",
     "sole_type": ""
   }
 }

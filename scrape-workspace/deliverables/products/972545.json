@@ -1,7 +1,7 @@
 {
   "id": "972545",
   "slug": "botellin-runbott-termo-real-madrid-1l-black",
-  "name": "Botellín Runbott Termo Real Madrid 1L",
+  "name": "Bottle Runbott Thermo Real Madrid 1L",
   "model": "Botellín Runbott Termo Real Madrid 1L",
   "brand": "Runbott",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín térmico de agua Runbott del Real Madrid de 1L - negro",
-    "tagline": "Hidratación a lo grande con estilo merengue",
-    "intro": "Ideal para largas jornadas o entrenamientos intensos, este botellín de 1L combina funcionalidad con la elegancia del Real Madrid. Una pieza que no solo refresca, sino que representa una historia de grandeza.",
+    "subtitle": "Real Madrid 1L Runbott Water Heat Bottle - black",
+    "tagline": "Large hydration with merengue style",
+    "intro": "Ideal for long days or intense training, this 1L bottle combines functionality with the elegance of Real Madrid. A piece that not only refreshes, but represents a history of greatness.",
     "collection": "",
     "key_benefits": [
-      "Gran capacidad: 1 litro para mantenerte hidratado todo el día.",
-      "Diseño exclusivo: Escudo oficial del Real Madrid sobre fondo negro elegante.",
-      "Durabilidad asegurada: Construcción robusta en acero inoxidable.",
-      "Tecnología térmica: Bebidas frías o calientes por horas."
+      "Great capacity: 1 liter to keep you hydrated all day.",
+      "Exclusive design: Royal Madrid's official shield on elegant black background.",
+      "Durability assured: Robust construction in stainless steel.",
+      "Thermal technology: Cold or hot drinks for hours."
     ],
     "technical_details": {
       "range": "Runbott Termo Real Madrid 1L",
@@ -90,9 +90,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín Runbott Termo Real Madrid 1L",
+    "product_model": "Bottle Runbott Thermo Real Madrid 1L",
     "sole_type": ""
   }
 }

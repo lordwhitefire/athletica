@@ -1,7 +1,7 @@
 {
   "id": "4510",
   "slug": "tarjeta-arbitro-zastor-yellow",
-  "name": "Tarjeta árbitro Zastor",
+  "name": "Arbitrator card Zastor",
   "model": "Tarjeta árbitro Zastor",
   "brand": "Zastor",
   "category": "Accessories",
@@ -65,7 +65,7 @@
     "rule": "source fallback 'accesorios'",
     "root_model": "Tarjeta",
     "submodel": "",
-    "product_model": "Tarjeta árbitro Zastor",
+    "product_model": "Arbitrator card Zastor",
     "sole_type": ""
   }
 }

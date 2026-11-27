@@ -1,7 +1,7 @@
 {
   "id": "KG3872",
   "slug": "botellin-adidas-real-madrid-750-ml-green",
-  "name": "Botellín adidas Real Madrid 750 ml",
+  "name": "Adidas Real Madrid 750 ml bottle",
   "model": "Botellín adidas Real Madrid 750 ml",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua adidas del Real Madrid de 750 ml - verde",
-    "tagline": "Hidrátate con el orgullo del Real Madrid",
-    "intro": "El botellín adidas del Real Madrid es el accesorio perfecto de cualquier aficionado del club blanco. Su diseño incorpora el escudo oficial del Real Madrid y el logotipo adidas para mostrar tu pasión por el fútbol en cada entrenamiento, partido o desplazamiento.",
+    "subtitle": "Real Madrid adidas water bottle of 750 ml - green",
+    "tagline": "Hydrate yourself with the pride of Real Madrid",
+    "intro": "Real Madrid's adidas boat is the perfect accessory for any white club fan. Its design incorporates the official Real Madrid coat of arms and the adidas logo to show your passion for football in every workout, match or ride.",
     "collection": "",
     "key_benefits": [
       "Capacidad de 750 ml: Ideal para mantenerte hidratado.",
-      "Diseño ergonómico: Fácil de sujetar y transportar.",
-      "Boquilla deportiva: Permite beber cómodamente en movimiento.",
+      "Ergonomic design: Easy to hold and transport.",
+      "Sports nozzle: Allows you to drink comfortably in motion.",
       "Material resistente: Fabricado para soportar el uso diario.",
-      "Estilo oficial Real Madrid: Diseño con escudo y detalles adidas inspirados en el club blanco."
+      "Official Real Madrid style: Design with shield and adidas details inspired by the white club."
     ],
     "technical_details": {
       "range": "adidas Real Madrid 750 ml",
@@ -88,9 +88,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Real Madrid 750 ml",
+    "product_model": "Adidas Real Madrid 750 ml bottle",
     "sole_type": ""
   }
 }

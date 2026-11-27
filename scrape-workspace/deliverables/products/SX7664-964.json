@@ -1,14 +1,14 @@
 {
   "id": "SX7664-964",
   "slug": "calcetines-media-cana-nike-everyday-cushion-crew-3-pares-blanco-negro",
-  "name": "media caña Nike Everyday Cushion Crew 3 pares",
+  "name": "half cane Nike Everyday Cushion Crew 3 pairs",
   "model": "media caña Nike Everyday Cushion Crew 3 pares",
   "brand": "Nike",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Blanco / Negro",
+  "color": "White / Black",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines acolchados Nike de media caña - grises, blancos, negros",
+    "subtitle": "Pack of 3 Nike half-cane padded socks - grey, white, black",
     "tagline": "Variedad y confort para cualquier ritmo",
-    "intro": "Este pack de calcetines Nike Cushion te ofrece acolchado fiable y estilo versátil para acompañarte en cada momento, ya sea en cancha o en tu rutina diaria.",
+    "intro": "This Nike Cushion socks pack offers you reliable padding and versatile style to accompany you at every moment, whether on the court or in your daily routine.",
     "collection": "",
     "key_benefits": [
-      "Combinación de colores: Blanco, negro y gris para adaptar tu estilo.",
+      "Colour combination: White, black and grey to suit your style.",
       "Acolchado suave: Protege del impacto y aumenta la durabilidad.",
-      "Ajuste ergonómico: Banda de sujeción integrada en el empeine.",
+      "Ergonomic adjustment: Adhesive strap integrated in the instep.",
       "Versatilidad: Ideales tanto para entrenar como para caminar con comodidad."
     ],
     "technical_details": {
@@ -84,9 +84,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Everyday Cushion Crew 3 pares",
+    "product_model": "half cane Nike Everyday Cushion Crew 3 pairs",
     "sole_type": ""
   }
 }

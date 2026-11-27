@@ -8,7 +8,7 @@
   "category_slug": "apparel",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Gris / Azul",
+  "color": "Grey / Blue",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chaqueta de entretiempo Nike del Atlético de Madrid - gris",
-    "tagline": "Estilo urbano colchonero para los más pequeños",
-    "intro": "Esta chaqueta del Atlético de Madrid para niño es ideal para entretiempo. Combina un diseño moderno en gris y azul con el orgullo rojiblanco, perfecta para llevar al cole o salir con amigos.",
+    "subtitle": "Nike Midtime Jacket from Atlético de Madrid - grey",
+    "tagline": "City style mattress for the little ones",
+    "intro": "This Atlético de Madrid jacket for kids is ideal for the time. It combines a modern design in grey and blue with the reddish-white pride, perfect for taking to school or dating friends.",
     "collection": "",
     "key_benefits": [
-      "Identidad atlética: Escudo del Atlético visible y colores representativos.",
-      "Uso diario: Ideal para el entretiempo o días frescos.",
-      "Cómoda y funcional: Cremallera completa y bolsillos laterales.",
-      "Ajuste juvenil: Pensado para la comodidad en movimiento."
+      "Athletic identity: Shield of visible Athletic and representative colors.",
+      "Daily use: Ideal for betweentime or cool days.",
+      "Comfortable and functional: Full zip and side pockets.",
+      "Youth fit: Thought for comfort in motion."
     ],
     "technical_details": {
       "range": "Nike Atlético niño Sportswear Club",
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'chaqueta'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético niño Sportswear Club",
+    "product_model": "Athletic boy Sportswear Club",
     "sole_type": ""
   }
 }

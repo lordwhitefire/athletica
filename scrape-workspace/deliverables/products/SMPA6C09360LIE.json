@@ -1,7 +1,7 @@
 {
   "id": "SMPA6C09360LIE",
   "slug": "camiseta-errea-3a-liechtenstein-26-white",
-  "name": "Errea 3a Liechtenstein 26",
+  "name": "Errea 3rd Liechtenstein 26",
   "model": "3a Liechtenstein 26",
   "brand": "Errea",
   "category": "Jerseys",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la tercera equipación Errea de Liechtenstein 2026 - blanca",
+    "subtitle": "T-shirt of the third equipment Errea Liechtenstein 2026 - white",
     "tagline": "Identidad alpina en cada costura",
-    "intro": "La tercera equipación de Liechtenstein 2026 fusiona simbolismo montañoso con tecnología moderna. Un diseño audaz que te conecta con la historia y el carácter de una nación orgullosa.",
+    "intro": "The third equipment in Liechtenstein 2026 combines mountainous symbolism with modern technology. A bold design that connects you with the history and character of a proud nation.",
     "collection": "",
     "key_benefits": [
-      "Inspiración natural: Estampado gráfico que representa los Alpes y la geografía del país.",
-      "Comodidad térmica: Tejido técnico que regula la temperatura en cualquier clima.",
-      "Diseño funcional: Corte entallado que se adapta sin restricciones."
+      "Natural inspiration: Graphical print depicting the Alps and the geography of the country.",
+      "Thermal comfort: Technical fabric that regulates temperature in any climate.",
+      "Functional design: Cut-in which adapts without restrictions."
     ],
     "technical_details": {
       "range": "Errea 3a Liechtenstein 26",
@@ -90,9 +90,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a Liechtenstein 26",
+    "product_model": "3rd Liechtenstein 26",
     "sole_type": ""
   }
 }

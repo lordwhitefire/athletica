@@ -1,7 +1,7 @@
 {
   "id": "DZ9357",
   "slug": "calcetines-media-cana-adidas-cushioned-crew-3-pares-black",
-  "name": "media caña adidas Cushioned Crew 3 pares",
+  "name": "half cane adidas Cushioned Crew 3 pairs",
   "model": "media caña adidas Cushioned Crew 3 pares",
   "brand": "adidas",
   "category": "Socks",
@@ -74,9 +74,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Cushioned Crew 3 pares",
+    "product_model": "half cane adidas Cushioned Crew 3 pairs",
     "sole_type": ""
   }
 }

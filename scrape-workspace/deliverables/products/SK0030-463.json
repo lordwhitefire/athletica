@@ -1,7 +1,7 @@
 {
   "id": "SK0030-463",
   "slug": "calcetines-media-cana-nike-squad-blue",
-  "name": "media caña Nike Squad",
+  "name": "half-cane Nike Squad",
   "model": "media caña Nike Squad",
   "brand": "Nike",
   "category": "Socks",
@@ -78,9 +78,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Squad",
+    "product_model": "half-cane Nike Squad",
     "sole_type": ""
   }
 }

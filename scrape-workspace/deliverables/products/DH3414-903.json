@@ -1,14 +1,14 @@
 {
   "id": "DH3414-903",
   "slug": "calcetines-media-cana-nike-everyday-essential-crew-3-pares-marron",
-  "name": "media caña Nike Everyday Essential Crew 3 pares",
+  "name": "half cane Nike Everyday Essential Crew 3 pairs",
   "model": "media caña Nike Everyday Essential Crew 3 pares",
   "brand": "Nike",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -76,9 +76,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Everyday Essential Crew 3 pares",
+    "product_model": "half cane Nike Everyday Essential Crew 3 pairs",
     "sole_type": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "IY3828",
   "slug": "botellin-adidas-arsenal-750-ml-red",
-  "name": "Botellín adidas Arsenal 750 ml",
+  "name": "Adidas Arsenal 750 ml bottle",
   "model": "Botellín adidas Arsenal 750 ml",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín de agua para entrenamiento adidas del Arsenal FC de 750 ml - rojo",
-    "tagline": "Hidratación con los colores del Arsenal",
-    "intro": "El botellín adidas Arsenal 750 ml combina un formato práctico para entrenamientos y actividad deportiva con el diseño característico del club londinense. Su forma ergonómica facilita el agarre y el sistema de boquilla extraíble permite beber rápidamente durante las pausas sin necesidad de desenroscar la tapa.",
+    "subtitle": "Water bottle for training adidas of the Arsenal FC 750 ml - red",
+    "tagline": "Hydration with the colors of Arsenal",
+    "intro": "The adidas Arsenal 750 ml bottle combines a practical format for training and sports activity with the typical design of the London club. Its ergonomic shape facilitates grip and the removable nozzle system allows to drink quickly during breaks without needing to unscrew the lid.",
     "collection": "",
     "key_benefits": [
-      "Hidratación durante el entrenamiento: Su capacidad permite disponer de agua para acompañar sesiones deportivas y partidos.",
-      "Uso rápido: La boquilla extraíble facilita beber durante las pausas sin tener que retirar completamente la tapa.",
-      "Agarre cómodo: Su forma ergonómica está diseñada para sujetar el botellín con facilidad.",
-      "Diseño del Arsenal: Los colores del equipo y el característico cañón permiten mostrar la pasión por el club dentro y fuera del campo."
+      "Hydration during training: Its capacity allows water to accompany sports sessions and matches.",
+      "Quick use: The removable nozzle facilitates drinking during pauses without having to remove the lid completely.",
+      "Comfortable grip: Its ergonomic shape is designed to hold the bottle easily.",
+      "Arsenal design: The team colours and the characteristic canyon allow to show the passion for the club inside and outside the field."
     ],
     "technical_details": {
       "range": "adidas Arsenal 750 ml",
@@ -88,9 +88,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'equipos'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas Arsenal 750 ml",
+    "product_model": "Adidas Arsenal 750 ml bottle",
     "sole_type": ""
   }
 }

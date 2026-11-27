@@ -1,7 +1,7 @@
 {
   "id": "HC2882",
   "slug": "short-adidas-2a-belgica-2022-2023",
-  "name": "adidas 2a Bélgica 2022 2023",
+  "name": "adidas 2nd Belgium 2022 2023",
   "model": "2a Bélgica 2022 2023",
   "brand": "adidas",
   "category": "Apparel",
@@ -82,9 +82,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Bélgica 2022 2023",
+    "product_model": "2nd Belgium 2022 2023",
     "sole_type": ""
   }
 }

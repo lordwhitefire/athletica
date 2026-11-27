@@ -1,7 +1,7 @@
 {
   "id": "HM2292",
   "slug": "guantes-adidas-espana-blue",
-  "name": "adidas España",
+  "name": "adidas Spain",
   "model": "España",
   "brand": "adidas",
   "category": "Goalkeeper Gloves",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Guantes de fútbol adidas España - negros",
+    "subtitle": "Adidas Spain - black football gloves",
     "tagline": "Orgullo y abrigo para tus manos",
-    "intro": "Estos guantes adidas celebran a la selección española con un tejido elástico y cálido para entrenar en clima frío. Confección en punto que aporta comodidad y ajuste fiable durante el uso.",
+    "intro": "These adidas gloves celebrate the Spanish selection with a warm and elastic fabric to train in cold weather. Knitting that provides comfort and reliable fit during use.",
     "collection": "",
     "key_benefits": [
-      "Tejido cálido: punto con alto contenido en acrílico que protege del frío.",
-      "Elasticidad cómoda: mezcla con elastano para un ajuste que acompaña el movimiento.",
-      "Identidad de equipo: diseño inspirado en la selección para entrenar con orgullo.",
+      "Warm fabric: knit with high acrylic content that protects from cold.",
+      "Comfortable elasticity: mix with elastane for an adjustment that accompanies the movement.",
+      "Team identity: design inspired by the selection to train proudly.",
       "Uso diario: confort fiable para entrenamientos y desplazamientos en invierno."
     ],
     "technical_details": {
@@ -90,9 +90,9 @@
     "category": "goalkeeper-gloves",
     "confidence": "high",
     "rule": "name contains 'guante'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España",
+    "product_model": "Spain",
     "sole_type": ""
   }
 }

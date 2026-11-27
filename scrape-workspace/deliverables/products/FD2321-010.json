@@ -1,7 +1,7 @@
 {
   "id": "FD2321-010",
   "slug": "medias-nike-3a-psg-2023-2024-strike-black",
-  "name": "Nike 3a PSG 2023 2024 Strike",
+  "name": "Nike 3rd PSG 2023 2024 Strike",
   "model": "3a PSG 2023 2024 Strike",
   "brand": "Nike",
   "category": "Socks",
@@ -84,9 +84,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "3a",
+    "root_model": "3rd",
     "submodel": "",
-    "product_model": "3a PSG 2023 2024 Strike",
+    "product_model": "3rd PSG 2023 2024 Strike",
     "sole_type": ""
   }
 }

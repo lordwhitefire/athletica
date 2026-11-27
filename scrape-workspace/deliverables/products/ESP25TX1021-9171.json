@@ -1,14 +1,14 @@
 {
   "id": "ESP25TX1021-9171",
   "slug": "camiseta-kelme-2a-espanyol-25-26-marron",
-  "name": "Kelme 2a Espanyol 25 26",
+  "name": "Kelme 2nd Espanyol 25 26",
   "model": "2a Espanyol 25 26",
   "brand": "Kelme",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,13 +19,13 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la segunda equipación Kelme del Espanyol 2025 2026 - beige",
-    "tagline": "Rinde al máximo, vayas donde vayas",
-    "intro": "La Camiseta Kelme 2a Espanyol 25 26 combina confort, transpirabilidad y un diseño inspirado en el ADN del RCD Espanyol. Camiseta de la segunda equipación Kelme del Espanyol 2025 2026 - beige. Su acabado en tonos arena y los detalles oficiales elevan tu presencia dentro y fuera del campo. Ideal para quienes buscan rendimiento sin renunciar al estilo.",
+    "subtitle": "T-shirt of the second equipment Kelme del Espanyol 2025 2025 - beige",
+    "tagline": "Make it to the fullest, wherever you go",
+    "intro": "The Kelme 2nd Espanyol 25 26 T-Shirt combines comfort, breathability and a DNA-inspired design from the RCD Espanyol. The second Kelme equipment T-shirt from the Espanyol 2025 2025 - beige. Its sand-tone finish and official details raise your presence in and out of the field. Ideal for those looking for performance without giving up style.",
     "collection": "",
     "key_benefits": [
-      "Confort que acompaña: Tejido ligero y suave que evita roces para que te concentres en el juego.",
-      "Frescura durante el partido: Paneles transpirables que ayudan a gestionar el sudor en momentos de máxima intensidad.",
+      "Comfort that accompanies: Lightweight and soft fabric that prevents frictions to concentrate on the game.",
+      "Fresh during the match: breathable panels that help manage sweat at peak moments.",
       "Orgullo que se nota: Detalles y escudo oficiales para lucir tus colores con autenticidad.",
       "Versatilidad total: Perfecta para partidos, entrenamientos o combinar con tu outfit diario."
     ],
@@ -96,9 +96,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Espanyol 25 26",
+    "product_model": "2nd Espanyol 25 26",
     "sole_type": ""
   }
 }

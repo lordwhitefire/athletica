@@ -1,7 +1,7 @@
 {
   "id": "SX4508-001",
   "slug": "calcetines-media-cana-nike-cushioned-crew-3-pares-black",
-  "name": "media caña Nike Cushioned Crew 3 pares",
+  "name": "half cane Nike Cushioned Crew 3 pairs",
   "model": "media caña Nike Cushioned Crew 3 pares",
   "brand": "Nike",
   "category": "Socks",
@@ -82,9 +82,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña Nike Cushioned Crew 3 pares",
+    "product_model": "half cane Nike Cushioned Crew 3 pairs",
     "sole_type": ""
   }
 }

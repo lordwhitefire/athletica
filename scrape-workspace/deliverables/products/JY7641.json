@@ -1,7 +1,7 @@
 {
   "id": "JY7641",
   "slug": "camiseta-adidas-belgica-pre-match-red",
-  "name": "adidas Bélgica Pre-Match",
+  "name": "adidas Belgium Pre-Match",
   "model": "Bélgica Pre-Match",
   "brand": "adidas",
   "category": "Jerseys",
@@ -88,9 +88,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "Bélgica",
+    "root_model": "Belgium",
     "submodel": "",
-    "product_model": "Bélgica Pre-Match",
+    "product_model": "Belgium Pre-Match",
     "sole_type": ""
   }
 }

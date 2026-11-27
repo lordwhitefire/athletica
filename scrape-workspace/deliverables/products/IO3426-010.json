@@ -1,7 +1,7 @@
 {
   "id": "IO3426-010",
   "slug": "short-nike-2a-barcelona-kobe-bryant-mamba-black",
-  "name": "Nike 2a Barcelona Kobe Bryant Mamba",
+  "name": "Nike 2nd Barcelona Kobe Bryant Mamba",
   "model": "2a Barcelona Kobe Bryant Mamba",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón corto Nike del FC Barcelona x Kobe Bryant - negro",
+    "subtitle": "Short Nike pants from FC Barcelona x Kobe Bryant - black",
     "tagline": "Estilo FCB x Mamba dentro y fuera del campo",
-    "intro": "El short Nike 2a Barcelona Kobe Bryant Mamba une el espíritu competitivo del FC Barcelona con el legado de Kobe Bryant en una prenda diseñada para ofrecer el máximo rendimiento. Su diseño en negro con detalles dorados refleja la ambición, el carácter y la personalidad de una colección exclusiva.",
+    "intro": "The short Nike 2nd Barcelona Kobe Bryant Mamba combines FC Barcelona's competitive spirit with Kobe Bryant's legacy in a garment designed to deliver maximum performance. Its black design with gold details reflects the ambition, character and personality of an exclusive collection.",
     "collection": "",
     "key_benefits": [
-      "Tecnología Nike Dri-FIT: Ayuda a evacuar el sudor y mantener la piel seca.",
-      "Tejido ligero: Favorece una gran libertad de movimiento.",
-      "Cintura elástica con cordón: Permite un ajuste seguro y personalizado.",
-      "Bolsillos laterales: Ideales para guardar pequeños objetos de forma práctica.",
-      "Diseño FC Barcelona: Estampado inspirado en el legado de Kobe Bryant y la identidad blaugrana."
+      "Nike Dri-FIT Technology: Helps to evacuate sweat and keep skin dry.",
+      "Light fabric: Promotes great freedom of movement.",
+      "Elastic waistband with cord: Allows a safe and personalized fit.",
+      "Side pockets: Ideal for storing small objects in a practical way.",
+      "FC Barcelona Design: Print inspired by Kobe Bryant's legacy and the Blaugrana identity."
     ],
     "technical_details": {
       "range": "Nike 2a Barcelona Kobe Bryant Mamba",
@@ -86,9 +86,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'short'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Barcelona Kobe Bryant Mamba",
+    "product_model": "2nd Barcelona Kobe Bryant Mamba",
     "sole_type": ""
   }
 }

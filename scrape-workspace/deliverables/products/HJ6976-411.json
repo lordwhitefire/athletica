@@ -1,7 +1,7 @@
 {
   "id": "HJ6976-411",
   "slug": "chandal-nike-psg-entrenamiento-dri-fit-strike-blue",
-  "name": "Chándal Nike PSG Training Dri-Fit Strike",
+  "name": "Nike PSG Training Dri-Fit Strike",
   "model": "Chándal Nike PSG Training Dri-Fit Strike",
   "brand": "Nike",
   "category": "Apparel",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Chándal de entrenamiento Nike del PSG - azul marino",
+    "subtitle": "PSG Nike Training Track - Navy Blue",
     "tagline": "Entrena como un profesional",
-    "intro": "El chándal Nike PSG Strike está diseñado para ofrecer rendimiento, estilo y libertad de movimiento en tus sesiones de entrenamiento. Confeccionado con tejido técnico transpirable y un corte ceñido, es ideal para climas variables.",
+    "intro": "The Nike PSG Strike tracker is designed to deliver performance, style and freedom of movement in your training sessions. Made of breathable technical fabric and a tight cut, it is ideal for varying climates.",
     "collection": "",
     "key_benefits": [
-      "Inspirado en el equipo: Mismo estilo que usan los jugadores del PSG en entrenamientos.",
-      "Transpirabilidad superior: Tecnología Dri-FIT que elimina el sudor.",
-      "Diseño funcional: Cremalleras en tobillos y bolsillos con cierre.",
-      "Ajuste atlético: Corte entallado para libertad de movimiento sin exceso de tela.",
-      "Ideal todo el año: Capa exterior ligera y eficaz."
+      "Inspired by the team: Same style that PSG players use in training.",
+      "Superior breathability: Dri-FIT technology that eliminates sweat.",
+      "Functional design: Zips on ankles and pockets with closure.",
+      "Athletic adjustment: Cut cut for freedom of movement without excess fabric.",
+      "Ideal all year round: Light and effective outer layer."
     ],
     "technical_details": {
       "range": "Nike PSG entrenamiento Dri-Fit Strike",
@@ -94,9 +94,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains training",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike PSG Training Dri-Fit Strike",
+    "product_model": "Nike PSG Training Dri-Fit Strike",
     "sole_type": ""
   }
 }

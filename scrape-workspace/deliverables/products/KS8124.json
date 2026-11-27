@@ -1,14 +1,14 @@
 {
   "id": "KS8124",
   "slug": "calcetines-media-cana-adidas-real-madrid-3-pares-blanco-verde",
-  "name": "media caña adidas Real Madrid 3 pares",
+  "name": "half cane adidas Real Madrid 3 pairs",
   "model": "media caña adidas Real Madrid 3 pares",
   "brand": "adidas",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Blanco / Verde",
+  "color": "White / Green",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines de media caña adidas del Real Madrid - blancos, verdes",
+    "subtitle": "Pack of 3 socks of half cane adidas of Real Madrid - white, green",
     "tagline": "Comodidad y orgullo madridista en cada paso",
-    "intro": "El pack de 3 calcetines media caña adidas Real Madrid combina confort, estilo y la identidad de uno de los clubes más importantes del mundo. Con tres diseños inspirados en la 3a equipación del Real Madrid, son perfectos para el día a día o para animar a tu equipo con la máxima comodidad.",
+    "intro": "The pack of 3 socks half cane adidas Real Madrid combines comfort, style and identity of one of the most important clubs in the world. With three designs inspired by the 3rd equipment of Real Madrid, they are perfect for day to day or to encourage your team with maximum comfort.",
     "collection": "",
     "key_benefits": [
-      "Pack de 3 pares: Diferentes diseños para combinar con cualquier estilo.",
-      "Tejido suave y elástico: Ajuste cómodo y seguro durante todo el día.",
-      "Media caña: Sujeción confortable con cobertura ideal.",
-      "Diseño oficial del Madrid: Con el icónico trébol de adidas y colores inspirados en el club."
+      "Pack of 3 pairs: Different designs to combine with any style.",
+      "Soft and elastic fabric: Comfortable and safe fit throughout the day.",
+      "Half rod: Comfortable grip with ideal cover.",
+      "Official Madrid design: With the iconic adidas clover and club-inspired colors."
     ],
     "technical_details": {
       "range": "media caña adidas Real Madrid 3 pares",
@@ -86,9 +86,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Real Madrid 3 pares",
+    "product_model": "half cane adidas Real Madrid 3 pairs",
     "sole_type": ""
   }
 }

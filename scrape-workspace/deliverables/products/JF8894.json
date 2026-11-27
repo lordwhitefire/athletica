@@ -1,14 +1,14 @@
 {
   "id": "JF8894",
   "slug": "calcetines-media-cana-adidas-bayern-2024-2025-rojo-blanco",
-  "name": "media caña adidas Bayern 2024 2025",
+  "name": "half cane adidas Bayern 2024 2025",
   "model": "media caña adidas Bayern 2024 2025",
   "brand": "adidas",
   "category": "Socks",
   "category_slug": "socks",
   "audience": "kids",
   "gender": "Kids",
-  "color": "Rojo / Blanco",
+  "color": "Red / White",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -80,9 +80,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Bayern 2024 2025",
+    "product_model": "half cane adidas Bayern 2024 2025",
     "sole_type": ""
   }
 }

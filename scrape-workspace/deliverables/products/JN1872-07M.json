@@ -1,7 +1,7 @@
 {
   "id": "JN1872-07M",
   "slug": "camiseta-adidas-2a-japon-mitoma-26-white",
-  "name": "adidas 2a Japón Mitoma 26",
+  "name": "adidas 2nd Japan Mitoma 26",
   "model": "2a Japón Mitoma 26",
   "brand": "adidas",
   "category": "Jerseys",
@@ -92,9 +92,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Japón Mitoma 26",
+    "product_model": "2nd Japan Mitoma 26",
     "sole_type": ""
   }
 }

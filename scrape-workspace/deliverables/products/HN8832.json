@@ -1,7 +1,7 @@
 {
   "id": "HN8832",
   "slug": "calcetines-media-cana-adidas-football-finos-black",
-  "name": "media caña adidas Football finos",
+  "name": "half cane adidas Football fine",
   "model": "media caña adidas Football finos",
   "brand": "adidas",
   "category": "Balls",
@@ -74,9 +74,9 @@
     "category": "balls",
     "confidence": "high",
     "rule": "name contains 'ball'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Football finos",
+    "product_model": "half cane adidas Football fine",
     "sole_type": ""
   }
 }

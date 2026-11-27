@@ -1,7 +1,7 @@
 {
   "id": "TRUXL010",
   "slug": "medias-futbol-antideslizantes-trusox-black",
-  "name": "fútbol antideslizantes Trusox",
+  "name": "Trusox anti-slip football",
   "model": "fútbol antideslizantes Trusox",
   "brand": "Trusox",
   "category": "Socks",
@@ -72,9 +72,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "fútbol",
+    "root_model": "football",
     "submodel": "",
-    "product_model": "fútbol antideslizantes Trusox",
+    "product_model": "Trusox anti-slip football",
     "sole_type": ""
   }
 }

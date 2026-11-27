@@ -1,7 +1,7 @@
 {
   "id": "4515",
   "slug": "lapiz-arbitro-futbol-zastor-red",
-  "name": "Lápiz árbitro fútbol Zastor",
+  "name": "Pencil referee football Zastor",
   "model": "Lápiz árbitro fútbol Zastor",
   "brand": "Zastor",
   "category": "Accessories",
@@ -63,9 +63,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Lápiz",
+    "root_model": "Pencil",
     "submodel": "",
-    "product_model": "Lápiz árbitro fútbol Zastor",
+    "product_model": "Pencil referee football Zastor",
     "sole_type": ""
   }
 }

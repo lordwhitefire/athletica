@@ -19,13 +19,13 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo infantil Nike del Atlético de Madrid - negro",
-    "tagline": "Comodidad rojiblanca para los más pequeños",
-    "intro": "El pantalón Nike Sportswear Club del Atlético de Madrid para niño es ideal para entrenar, jugar o disfrutar del día a día con estilo colchonero. Su tejido suave y la tecnología Dri-FIT lo hacen perfecto para mantenerse seco y cómodo.",
+    "subtitle": "Nike Children's Long Pant of Atlético de Madrid - black",
+    "tagline": "Red-white comfort for the little ones",
+    "intro": "The Nike Sportswear Club at the Atlético de Madrid for children is ideal for training, playing or enjoying the day-to-day style of mattress. Its soft fabric and Dri-FIT technology make it perfect for keeping dry and comfortable.",
     "collection": "",
     "key_benefits": [
-      "Rendimiento infantil: Diseñado para acompañar cada movimiento.",
-      "Tejido técnico: Tecnología Dri-FIT que elimina el sudor.",
+      "Child performance: Designed to accompany each movement.",
+      "Technical fabric: Dri-FIT technology that eliminates sweat.",
       "Orgullo rojiblanco: Escudo del Atleti visible y elegante.",
       "Versatilidad: Para entrenar, ir al cole o animar desde casa."
     ],
@@ -92,9 +92,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'pantalon'",
-    "root_model": "Atlético",
+    "root_model": "Athletic",
     "submodel": "",
-    "product_model": "Atlético niño Sportswear Club",
+    "product_model": "Athletic boy Sportswear Club",
     "sole_type": ""
   }
 }

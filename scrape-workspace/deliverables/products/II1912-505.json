@@ -1,14 +1,14 @@
 {
   "id": "II1912-505",
   "slug": "camiseta-nike-2a-barcelona-26-27-dri-fit-stadium-negro-morado",
-  "name": "Nike 2a Barcelona 26 27 Dri-Fit Stadium",
+  "name": "Nike 2nd Barcelona 26 27 Dri-Fit Stadium",
   "model": "2a Barcelona 26 27 Dri-Fit Stadium",
   "brand": "Nike",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Negro / Morado",
+  "color": "Black / Purple",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -94,9 +94,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Barcelona 26 27 Dri-Fit Stadium",
+    "product_model": "2nd Barcelona 26 27 Dri-Fit Stadium",
     "sole_type": ""
   }
 }

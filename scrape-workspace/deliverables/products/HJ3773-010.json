@@ -1,7 +1,7 @@
 {
   "id": "HJ3773-010",
   "slug": "chandal-nike-dri-fit-academy-25-black",
-  "name": "Chándal Nike Dri-Fit Academy 25",
+  "name": "Nike Dri-Fit Academy 25",
   "model": "Chándal Nike Dri-Fit Academy 25",
   "brand": "Nike",
   "category": "Clothing",
@@ -78,9 +78,9 @@
     "category": "clothing",
     "confidence": "medium",
     "rule": "source fallback 'ropa'",
-    "root_model": "Chándal",
+    "root_model": "Snail",
     "submodel": "",
-    "product_model": "Chándal Nike Dri-Fit Academy 25",
+    "product_model": "Nike Dri-Fit Academy 25",
     "sole_type": ""
   }
 }

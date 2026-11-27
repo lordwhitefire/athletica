@@ -1,7 +1,7 @@
 {
   "id": "KG2576",
   "slug": "pantalon-adidas-espana-eqt-blue",
-  "name": "adidas España EQT",
+  "name": "adidas Spain EQT",
   "model": "España EQT",
   "brand": "adidas",
   "category": "Apparel",
@@ -19,15 +19,15 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pantalón largo adidas de la selección de España - azul marino",
-    "tagline": "La esencia de España con el estilo legendario EQT",
-    "intro": "El pantalón adidas España EQT recupera la estética icónica de la colección Equipment para rendir homenaje a la selección española. Su diseño combina detalles retro inspirados en los años 90 con materiales ligeros y cómodos pensados para el uso diario. Perfecto para los aficionados que quieren mostrar su pasión por La Roja con una prenda versátil, cómoda y llena de personalidad.",
+    "subtitle": "Long adidas trousers from the selection of Spain - navy blue",
+    "tagline": "The essence of Spain with the legendary style EQT",
+    "intro": "The Adidas Spain EQT pants recover the iconic aesthetics of the Equipment collection to pay tribute to the Spanish selection. Its design combines retro details inspired by the 90s with lightweight and comfortable materials designed for daily use. Perfect for fans who want to show their passion for La Roja with a versatile, comfortable and full of personality.",
     "collection": "",
     "key_benefits": [
-      "Diseño EQT clásico: Inspirado en la histórica colección adidas Equipment.",
-      "Tejido técnico ligero: Ofrece comodidad y resistencia para el día a día.",
-      "Cintura elástica con cordón: Permite un ajuste personalizado y seguro.",
-      "Detalles oficiales de España: Acabados exclusivos inspirados en la selección nacional."
+      "Classic EQT design: Inspired by the historic adidas Equipment collection.",
+      "Lightweight technical fabric: Offers comfort and strength for day to day.",
+      "Elastic waistband with cord: Allows a personalised and safe fit.",
+      "Official details of Spain: Exclusive finishes inspired by the national team."
     ],
     "technical_details": {
       "range": "adidas España EQT",
@@ -88,9 +88,9 @@
     "category": "apparel",
     "confidence": "high",
     "rule": "name contains 'pantalon'",
-    "root_model": "España",
+    "root_model": "Spain",
     "submodel": "",
-    "product_model": "España EQT",
+    "product_model": "Spain EQT",
     "sole_type": ""
   }
 }

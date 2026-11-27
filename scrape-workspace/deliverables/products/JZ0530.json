@@ -1,7 +1,7 @@
 {
   "id": "JZ0530",
   "slug": "calcetines-media-cana-adidas-essential-crew-acolchado-3-par-white",
-  "name": "media caña adidas Essential Crew acolchado 3 par",
+  "name": "half cane adidas Essential Crew padded 3 pair",
   "model": "media caña adidas Essential Crew acolchado 3 par",
   "brand": "adidas",
   "category": "Socks",
@@ -90,9 +90,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Essential Crew acolchado 3 par",
+    "product_model": "half cane adidas Essential Crew padded 3 pair",
     "sole_type": ""
   }
 }

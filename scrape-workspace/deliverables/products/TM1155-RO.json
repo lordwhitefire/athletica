@@ -1,7 +1,7 @@
 {
   "id": "TM1155-RO",
   "slug": "short-castore-sevilla-entrenamiento-jugadores-red",
-  "name": "Castore Sevilla Training jugadores",
+  "name": "Catstore Sevilla Training Players",
   "model": "Sevilla entrenamiento jugadores",
   "brand": "Castore",
   "category": "Apparel",
@@ -84,7 +84,7 @@
     "rule": "name contains training",
     "root_model": "Sevilla",
     "submodel": "",
-    "product_model": "Sevilla entrenamiento jugadores",
+    "product_model": "Sevilla training players",
     "sole_type": ""
   }
 }

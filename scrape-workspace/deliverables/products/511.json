@@ -1,7 +1,7 @@
 {
   "id": "511",
   "slug": "tobillera-mcdavid-elastica-black",
-  "name": "Tobillera McDavid elástica",
+  "name": "Tobillera McDavid elastic",
   "model": "Tobillera McDavid elástica",
   "brand": "Mc David",
   "category": "Accessories",
@@ -68,7 +68,7 @@
     "rule": "source fallback 'accesorios'",
     "root_model": "Tobillera",
     "submodel": "",
-    "product_model": "Tobillera McDavid elástica",
+    "product_model": "Tobillera McDavid elastic",
     "sole_type": ""
   }
 }

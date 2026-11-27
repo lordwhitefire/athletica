@@ -1,14 +1,14 @@
 {
   "id": "AI10601C0202",
   "slug": "camiseta-joma-2a-villarreal-25-26-marron",
-  "name": "Joma 2a Villarreal 25 26",
+  "name": "Joma 2nd Villarreal 25 26",
   "model": "2a Villarreal 25 26",
   "brand": "Joma",
   "category": "Jerseys",
   "category_slug": "jerseys",
   "audience": "adult",
   "gender": "Unisex",
-  "color": "Marrón",
+  "color": "Brown",
   "color_variants": [],
   "price": {
     "current": 0,
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Camiseta de la segunda equipación Joma del Villarreal 2025 2026 - beige",
+    "subtitle": "T-shirt of the second equipment Joma del Villarreal 2025 2025 - beige",
     "tagline": "Una segunda piel elegante para el Villarreal",
-    "intro": "La camiseta Joma 25/26 de segunda equipación del Villarreal apuesta por un tono beige sobrio y moderno. Inspirada en el estilo contemporáneo, combina ligereza y transpirabilidad con un diseño que destaca por su elegancia tanto en el césped como en la grada.",
+    "intro": "The Joma 25/26 T-shirt of the Villarreal’s second outfit is a sober and modern beige tone. Inspired by contemporary style, it combines lightness and breathability with a design that stands out for its elegance both in the lawn and in the grada.",
     "collection": "",
     "key_benefits": [
       "Estilo innovador: Color beige alternativo para los partidos fuera de casa.",
-      "Comodidad ligera: Tejido técnico que regula la temperatura.",
-      "Ajuste moderno: Corte ergonómico que se adapta a los movimientos.",
+      "Light comfort: Technical fabric that regulates the temperature.",
+      "Modern fit: Ergonomic cut that adapts to movements.",
       "Detalles exclusivos: Escudo y branding oficiales de la temporada 25/26."
     ],
     "technical_details": {
@@ -98,9 +98,9 @@
     "category": "jerseys",
     "confidence": "high",
     "rule": "name contains 'camiseta'",
-    "root_model": "2a",
+    "root_model": "2nd",
     "submodel": "",
-    "product_model": "2a Villarreal 25 26",
+    "product_model": "2nd Villarreal 25 26",
     "sole_type": ""
   }
 }

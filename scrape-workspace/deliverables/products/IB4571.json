@@ -1,7 +1,7 @@
 {
   "id": "IB4571",
   "slug": "botellin-adidas-united-black",
-  "name": "Botellín adidas United",
+  "name": "Adidas United bottle",
   "model": "Botellín adidas United",
   "brand": "adidas",
   "category": "Accessories",
@@ -19,14 +19,14 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Botellín adidas del Manchester United de 0,75 L - negro",
-    "tagline": "La hidratación de los Red Devils",
-    "intro": "Lleva tu pasión por el Manchester United a cada entrenamiento con este botellín adidas de 0,75 L. Su diseño práctico y resistente lo convierte en el accesorio imprescindible para jugadores y aficionados que buscan mantener la energía en cada momento del día.",
+    "subtitle": "Manchester United adidas bottle of 0.75 L - black",
+    "tagline": "The hydration of the Red Devils",
+    "intro": "Bring your passion for Manchester United to every workout with this 0.75 L adidas bottle. Its practical and robust design makes it the essential accessory for players and fans who seek to maintain energy at every moment of the day.",
     "collection": "",
     "key_benefits": [
-      "Capacidad generosa: 0,75 L para mantenerte hidratado durante toda la sesión.",
-      "Identidad de club: Diseño oficial del Manchester United para mostrar tu pasión en el campo o el gimnasio.",
-      "Comodidad de uso: Tamaño perfecto para mochilas deportivas y porta botellines.",
+      "Generous ability: 0.75 L to keep you hydrated throughout the session.",
+      "Club Identity: Official Manchester United design to show your passion in the field or gym.",
+      "Comfort of use: Perfect size for sports backpacks and bottle holder.",
       "Durabilidad: Fabricado con materiales resistentes que soportan el uso intensivo."
     ],
     "technical_details": {
@@ -86,9 +86,9 @@
     "category": "accessories",
     "confidence": "medium",
     "rule": "source fallback 'accesorios'",
-    "root_model": "Botellín",
+    "root_model": "Botellin",
     "submodel": "",
-    "product_model": "Botellín adidas United",
+    "product_model": "Adidas United bottle",
     "sole_type": ""
   }
 }

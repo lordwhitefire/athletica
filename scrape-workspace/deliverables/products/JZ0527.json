@@ -1,7 +1,7 @@
 {
   "id": "JZ0527",
   "slug": "calcetines-media-cana-adidas-nino-crew-acolchados-3-pares-black",
-  "name": "media caña adidas Kids Crew acolchados 3 pares",
+  "name": "half cane adidas Kids Crew padded 3 pairs",
   "model": "media caña adidas Kids Crew acolchados 3 pares",
   "brand": "adidas",
   "category": "Socks",
@@ -19,16 +19,16 @@
   },
   "sizes": [],
   "description": {
-    "subtitle": "Pack de 3 calcetines acolchados infantiles de media caña para entrenamiento adidas - negros",
-    "tagline": "Comodidad y sujeción para el día a día",
-    "intro": "Los calcetines adidas Crew acolchados para niño están diseñados para ofrecer confort y soporte en cada paso. Con refuerzo en el arco plantar y amortiguación en la planta, son perfectos tanto para el cole como para actividades deportivas.",
+    "subtitle": "Pack of 3 padded socks for children with half rod for adidas training - black",
+    "tagline": "Comfort and subjection to day to day",
+    "intro": "The child-padded adidas Crew socks are designed to provide comfort and support at every step. With reinforcement in the plantar arch and cushioning on the floor, they are perfect for both school and sports activities.",
     "collection": "",
     "key_benefits": [
-      "Amortiguación integrada: Plantilla acolchada que mejora la comodidad durante todo el día.",
-      "Refuerzo en el arco plantar: Aporta sujeción y estabilidad en cada movimiento.",
-      "Tejido suave y elástico: Ajuste cómodo que se adapta al pie del niño.",
-      "Pack de 3 pares: Prácticos y versátiles para el uso diario.",
-      "Diseño media caña: Perfecto para actividades escolares y deportivas."
+      "Integrated dampening: Padded template that improves comfort throughout the day.",
+      "Reinforcement in the plantar arch: Provides support and stability in each movement.",
+      "Soft and elastic fabric: Comfortable fit that fits the child's foot.",
+      "Pack of 3 pairs: Practical and versatile for daily use.",
+      "Medium cane design: Perfect for school and sports activities."
     ],
     "technical_details": {
       "range": "media caña adidas niño Crew acolchados 3 pares",
@@ -86,9 +86,9 @@
     "category": "socks",
     "confidence": "high",
     "rule": "name contains 'media'",
-    "root_model": "media",
+    "root_model": "average",
     "submodel": "",
-    "product_model": "media caña adidas Kids Crew acolchados 3 pares",
+    "product_model": "half cane adidas Kids Crew padded 3 pairs",
     "sole_type": ""
   }
 }
